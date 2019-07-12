@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25824b616bb833a715727033504776767b5aa958
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.openlocfilehash: 130cc8511b90da3e95c69f9239e57e2c7ac61d8c
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354804"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623358"
 ---
 # <a name="enhanced-http"></a>고급 HTTP
 
@@ -51,7 +51,7 @@ Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스�
 ### <a name="bkmk_scenario1"></a> 시나리오 1: 관리 지점의 클라이언트
 
 <!--1356889-->
-[Azure AD 조인 디바이스](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices)는 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.
+[Azure AD 조인 디바이스](/azure/active-directory/devices/concept-azure-ad-join)는 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.
 
 > [!Note]  
 > 이 동작은 Configuration Manager 현재 분기 버전 1802에서 클라우드 관리 게이트웨이를 통해 통신하는 Azure AD 조인 클라이언트에 대한 HTTPS 지원 관리 지점을 요구하는 것으로 변경됩니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)을 참조하세요.  
@@ -66,7 +66,7 @@ Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스�
 ### <a name="bkmk_scenario3"></a> 시나리오 3: Azure AD 디바이스 ID
 
 <!--1358460-->
-Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 클라우드 기반 디바이스 ID는 이제 디바이스 중심 시나리오에 대한 CMG 및 관리 지점을 인증하기에 충분합니다. (사용자 중심 시나리오에서는 여전히 사용자 토큰이 필요합니다.)  
+Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/devices/concept-azure-ad-join-hybrid)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 클라우드 기반 디바이스 ID는 이제 디바이스 중심 시나리오에 대한 CMG 및 관리 지점을 인증하기에 충분합니다. (사용자 중심 시나리오에서는 여전히 사용자 토큰이 필요합니다.)  
 
 
 ## <a name="features"></a>기능

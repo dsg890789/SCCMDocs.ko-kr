@@ -2,7 +2,7 @@
 title: OSD 인프라 요구 사항
 titleSuffix: Configuration Manager
 description: 외부 및 제품 종속성과 Configuration Manager의 OS 배포에 대한 요구 사항을 알아봅니다.
-ms.date: 10/02/2018
+ms.date: 07/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7a484bc3e3491ac832ca7b3d6ed926627cbfaa
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 9115fb3e0d36e4664541c70b29929dfe3ef8b6d9
+ms.sourcegitcommit: 5e43c0c6b0b1f449e596f59ceaa92a9b6ca194cc
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133700"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572731"
 ---
 # <a name="infrastructure-requirements-for-os-deployment-in-configuration-manager"></a>Configuration Manager의 OS 배포에 대한 인프라 요구 사항
 
@@ -262,7 +262,9 @@ OS 배포에 Configuration Manager 보고서를 사용하려면 보고 지점을
      `WDSUTIL /Set-Server /UseDHCPPorts:No /DHCPOption60:Yes`  
 
 > [!NOTE]
-> WDS 대신 WDS 없는 PXE 응답기를 사용하는 경우 동일한 서버에서 DHCP 실행도 지원되지 않습니다.
+> 버전 1810 이하에서는 DHCP 서버도 실행하는 서버에서 WDS 없이 PXE 응답기를 사용하도록 지원되지 않습니다.
+>
+> 버전 1902부터는 Windows 배포 서비스 없이 배포 지점에서 PXE 응답기를 사용하도록 설정하면 이제 DHCP 서비스와 동일한 서버에서 실행할 수 있습니다. 자세한 내용은 [PXE 요청을 수락하도록 하나 이상의 배포 지점 구성](/sccm/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network#BKMK_Configure)을 참조하세요.
 
 
 ##  <a name="BKMK_SupportedOS"></a> 지원되는 운영 체제  

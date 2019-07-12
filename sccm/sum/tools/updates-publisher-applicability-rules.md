@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 649c0a134f7ebc77c214801d30720f75b80d34ee
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 30200c9da2ea37ef0868db680d04fe6aae9fd314
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159453"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678080"
 ---
 # <a name="manage-applicability-rules-in-updates-publisher"></a>Updates Publisher의 적용 가능성 규칙 관리
 
@@ -31,11 +31,13 @@ Updates Publisher에서 적용 가능성 규칙은 디바이스에 업데이트�
 
 예를 들어 다음은 세 가지 규칙을 포함하는 규칙 집합입니다. 첫 번째 규칙은 *MyFile* 파일이 있는지 확인하고, 두 번째와 세 번째 규칙은 Windows 운영 체제의 언어가 영어인지 일본어인지 확인합니다.
 
-    And  
-      File ‘\[PROGRAM\_FILES\] \\Microsoft\\MyFile’ exists  
-      Or  
-        Windows Language is English   
-        Windows Language is Japanese
+```
+And  
+  File ‘\[PROGRAM\_FILES\] \\Microsoft\\MyFile’ exists  
+  Or  
+    Windows Language is English   
+    Windows Language is Japanese
+```
 
 모든 업데이트에는 하나 이상의 적용 가능성 규칙이 필요합니다. 가져오는 업데이트에 이미 적용 가능성 규칙이 적용되어 있고 고유한 업데이트를 만들 경우 이 업데이트에 하나 이상의 규칙을 추가해야 합니다. Updates Publisher의 모든 업데이트에 대한 규칙을 수정하고 업데이트할 수 있습니다.
 

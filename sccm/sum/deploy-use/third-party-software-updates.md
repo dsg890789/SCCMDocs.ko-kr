@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3279ba7cd78ca6fc10ddb8662ac816679d01d7cf
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 821f37f7c4b001fdf49d805dcdca2eef40cdce74
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194679"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623419"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 
@@ -38,7 +38,7 @@ ms.locfileid: "67194679"
 ## <a name="additional-requirements-when-the-sup-is-remote-from-the-top-level-site-server"></a>SUP가 최상위 사이트 서버에서 원격일 때 추가 요구 사항 
 
 1. SSL은 원격일 경우 SUP에서 사용하도록 설정되어야 합니다. 이를 위해 내부 인증 기관 또는 공용 공급자를 통해 생성된 서버 인증 인증서가 필요합니다.
-    - [WSUS에서 SSL 구성](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#bkmk_2.5.ConfigSSL)
+    - [WSUS에서 SSL 구성](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#25-secure-wsus-with-the-secure-sockets-layer-protocol)
         - WSUS에서 SSL을 구성하는 경우 일부 웹 서비스 및 가상 디렉터리는 항상 HTTP이며 HTTPS가 아닙니다. 
         - Configuration Manager는 HTTP를 통해 WSUS 콘텐츠 디렉터리에서 소프트웨어 업데이트 패키지에 대한 타사 콘텐츠를 다운로드합니다.   
     - [SUP에서 SSL 구성](../get-started/install-a-software-update-point.md#configure-ssl-communications-to-wsus)

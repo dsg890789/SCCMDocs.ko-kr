@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01253487d7fb90aaa24dae6a55b9110e516ab4ad
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 7e3cb09f6220f7a0fd57960a9b46087a25ee81c5
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66175998"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677343"
 ---
 # <a name="capabilities-in-technical-preview-1708-for-system-center-configuration-manager"></a>System Center Configuration Manager용 기술 미리 보기 1708의 기능
 
@@ -88,17 +88,17 @@ Configuration Manager 1706 이상에서는 [Configuration Manager 콘솔에서 P
 다시 시작을 보류 중인 디바이스를 확인하려면**자산 및 준수** > **디바이스**로 차례로 이동하여 다시 시작해야 할 수 있는 디바이스가 포함된 컬렉션을 선택합니다. 컬렉션을 선택하면 세부 정보 창의 **다시 부팅 보류 중**이라는 새로운 열에서 각 디바이스에 대한 상태를 확인할 수 있습니다. 각 디바이스의 값은 **예** 또는 **아니요**입니다.
 
 디바이스를 다시 시작하라는 클라이언트 알림을 만들려면
-1.  콘솔의 [디바이스] 노드에서 다시 시작하려는 디바이스를 찾습니다.
-2.  해당 디바이스를 마우스 오른쪽 단추로 클릭하고 **클라이언트 알림**을 선택한 다음 **다시 부팅**을 선택합니다. 이렇게 하면 다시 시작에 대한 정보 창이 열립니다. **확인**을 클릭하여 다시 시작 요청을 확인합니다.
+1. 콘솔의 [디바이스] 노드에서 다시 시작하려는 디바이스를 찾습니다.
+2. 해당 디바이스를 마우스 오른쪽 단추로 클릭하고 **클라이언트 알림**을 선택한 다음 **다시 부팅**을 선택합니다. 이렇게 하면 다시 시작에 대한 정보 창이 열립니다. **확인**을 클릭하여 다시 시작 요청을 확인합니다.
 
 클라이언트에서 알림을 받으면 **소프트웨어 센터** 알림 창이 열려 사용자에게 다시 시작을 알려줍니다. 기본적으로 90분 후에 다시 시작됩니다. [클라이언트 설정](/sccm/core/clients/deploy/configure-client-settings)을 구성하여 다시 시작 시간을 수정할 수 있습니다. 다시 시작 동작에 대한 설정은 기본 설정의 [컴퓨터 다시 시작](/sccm/core/clients/deploy/about-client-settings#computer-restart) 탭에 있습니다.
 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 다음 작업을 완료한 다음 리본 메뉴의 **홈** 탭에서 **사용자 의견**을 전송하여 작동 상황을 알려주세요.
-1.  다시 시작하여 설치를 완료해야 하는 디바이스에 응용 프로그램 또는 업데이트를 배포합니다.
-2.  콘솔의 **자산 및 준수** > **디바이스** 노드에서 디바이스를 찾은 다음 **다시 부팅 보류 중** 열에서 **예**가 표시되는지 확인합니다 . [다시 부팅 보류 중] 상태가 콘솔에 반영되는 데 최대 20분이 걸릴 수 있습니다.
-3.  디바이스를 모니터링하여 소프트웨어 센터 알림이 열리고 디바이스가 성공적으로 다시 시작되는지 확인합니다.
+1. 다시 시작하여 설치를 완료해야 하는 디바이스에 응용 프로그램 또는 업데이트를 배포합니다.
+2. 콘솔의 **자산 및 준수** > **디바이스** 노드에서 디바이스를 찾은 다음 **다시 부팅 보류 중** 열에서 **예**가 표시되는지 확인합니다 . [다시 부팅 보류 중] 상태가 콘솔에 반영되는 데 최대 20분이 걸릴 수 있습니다.
+3. 디바이스를 모니터링하여 소프트웨어 센터 알림이 열리고 디바이스가 성공적으로 다시 시작되는지 확인합니다.
 
 
 ## <a name="software-center-customization"></a>소프트웨어 센터 사용자 지정

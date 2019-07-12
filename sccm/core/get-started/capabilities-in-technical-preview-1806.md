@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b57720d800e224d68f92f339e0c3b4964010e05
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 424710431f9c17642b3a8c6190f8919665f3ac6c
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285940"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623282"
 ---
 # <a name="capabilities-in-technical-preview-1806-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1806의 기능
 
@@ -81,7 +81,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
     > [!Tip]  
     > 서명 인증서를 처리하는 데 사용되는 WSUS API에 대한 요구 사항이 있기 때문에 소프트웨어 업데이트 지점에는 HTTPS가 필요합니다. 클라이언트에도 HTTPS를 설정할 필요가 없습니다. WSUS에서 HTTPS를 사용하도록 설정하는 방법은 지원하기 위한 다음 문서를 참조하세요.  
-    > - [Secure Sockets Layer 프로토콜을 사용한 WSUS 보안](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#bkmk_2.5.ConfigSSL) 
+    > - [Secure Sockets Layer 프로토콜을 사용한 WSUS 보안](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#25-secure-wsus-with-the-secure-sockets-layer-protocol) 
     > - [WSUS 지원 블로그 게시물](https://blogs.technet.microsoft.com/sus/2011/05/09/how-to-create-an-internet-facing-wsus-server-that-uses-different-internal-and-external-names/)
 
 - 타사 소프트웨어 업데이트에 대한 원본 이진 콘텐츠를 저장하려면 소프트웨어 업데이트 지점인 WSUSContent 폴더에 충분한 디스크 공간이 있어야 합니다. 필요한 스토리지 양은 공급 업체, 업데이트 유형 및 배포를 위해 게시하는 특정 업데이트에 따라 다릅니다. 더 많은 여유 공간을 사용하여 WSUSContent 폴더를 다른 드라이브로 이동해야 하는 경우 WSUS 지원 팀의 블로그 게시물 [WSUS가 로컬로 업데이트를 저장하는 위치를 변경하는 방법](https://blogs.technet.microsoft.com/sus/2008/05/19/wsus-how-to-change-the-location-where-wsus-stores-updates-locally/)을 참조합니다.  

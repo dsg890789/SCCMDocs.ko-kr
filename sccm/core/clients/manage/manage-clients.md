@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa92ed294196d44aaafcf4e873c706e135928c90
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 8bfcb73f359bd8d1b4438ac28b2395b01217e35d
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176651"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677738"
 ---
 # <a name="how-to-manage-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 관리하는 방법
 
@@ -202,8 +202,8 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
  - **기능 추가 또는 제거**: Windows 기능 추가 또는 제거에 다시 시작이 필요함을 보고하는 Windows 구성 요소 기반 서비스에서 이 값을 가져옵니다(HKLM\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing\Reboot Pending).
 
 **디바이스를 다시 시작하라는 클라이언트 알림을 만들려면**
-1.  콘솔의 **디바이스 컬렉션** 노드의 컬렉션 내에서 다시 시작하려는 디바이스를 찾습니다.
-2.  해당 디바이스를 마우스 오른쪽 단추로 클릭하고, **클라이언트 알림**을 선택한 다음, **다시 시작**을 선택합니다. 다시 시작에 대한 정보 창이 열립니다. **확인**을 클릭하여 다시 시작 요청을 확인합니다.
+1. 콘솔의 **디바이스 컬렉션** 노드의 컬렉션 내에서 다시 시작하려는 디바이스를 찾습니다.
+2. 해당 디바이스를 마우스 오른쪽 단추로 클릭하고, **클라이언트 알림**을 선택한 다음, **다시 시작**을 선택합니다. 다시 시작에 대한 정보 창이 열립니다. **확인**을 클릭하여 다시 시작 요청을 확인합니다.
 
 클라이언트에서 알림을 받으면 **소프트웨어 센터** 알림 창이 열려 사용자에게 다시 시작을 알려줍니다. 기본적으로 90분 후에 다시 시작됩니다. [클라이언트 설정](/sccm/core/clients/deploy/configure-client-settings)을 구성하여 다시 시작 시간을 수정할 수 있습니다. 다시 시작 동작에 대한 설정은 기본 설정의 [컴퓨터 다시 시작](/sccm/core/clients/deploy/about-client-settings#computer-restart) 탭에 있습니다.
 

@@ -11,12 +11,12 @@ ms.assetid: b34fe701-5d05-42be-b965-e3dccc9363ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9ab7816e017d48b937a634b5031ba80e7dbfa093
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: f5ed06951fab313a4a1453864ffefb963cc4d8e9
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286959"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623259"
 ---
 # <a name="internet-access-requirements"></a>인터넷 액세스 요구 사항
 
@@ -120,7 +120,7 @@ Azure AD 사용자 검색을 위해서는 **서비스 연결 지점**에서 다�
 
 - 1902 이상 버전: Microsoft Graph 엔드포인트 `https://graph.microsoft.com/`
 
-CMG(클라우드 관리 지점) 연결 지점 사이트 시스템은 웹 프록시 사용을 지원합니다. 프록시에 대해 이 역할을 구성하는 방법에 대한 자세한 내용은 [프록시 서버 지원](/sccm/core/plan-design/network/proxy-server-support#to-set-up-the-proxy-server-for-a-site-system-server)을 참조하세요. CMG 연결 지점은 CMG 서비스 엔드포인트에만 연결하면 됩니다. 다른 Azure 엔드포인트에는 액세스할 필요가 없습니다.
+CMG(클라우드 관리 지점) 연결 지점 사이트 시스템은 웹 프록시 사용을 지원합니다. 프록시에 대해 이 역할을 구성하는 방법에 대한 자세한 내용은 [프록시 서버 지원](proxy-server-support.md#configure-the-proxy-for-a-site-system-server)을 참조하세요. CMG 연결 지점은 CMG 서비스 엔드포인트에만 연결하면 됩니다. 다른 Azure 엔드포인트에는 액세스할 필요가 없습니다.
 
 CMG에 대한 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)을 참조하세요.
 

@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89ba5d63b1a033db49da73cc0df3fa0a41f2b696
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 31f47fa04275f2be4efa1558e1d816f74b05d369
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285847"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677306"
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 
@@ -50,14 +50,14 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 
 ### <a name="improvements-for-in-console-search"></a>콘솔 내 검색의 향상된 기능
 다음은 Configuration Manager 콘솔의 검색 사용에 대한 향상된 기능입니다.
- - **개체 경로:**  
+- **개체 경로:**  
   이제 많은 개체가 **개체 경로**라는 열을 지원합니다.  이 열을 검색하고 표시 결과에 포함하는 경우 각 개체의 경로를 볼 수 있습니다. 예를 들어 애플리케이션 노드에서 앱 검색을 실행하고 하위 노드도 검색하는 경우 결과 창의 *개체 경로* 열에 반환된 각 개체의 경로가 표시됩니다.   
 
 - **검색 텍스트 보존:**  
   검색 텍스트 상자에 텍스트를 입력한 후 하위 노드 및 현재 노드 검색 간을 전환하는 경우 입력한 텍스트가 이제 보존되어 다시 입력하지 않고 새 검색에 사용할 수 있습니다.
 
 - **하위 노드 검색 결정 보존:**  
- 이제 *현재 노드* 또는 *모든 하위 노드* 검색에 대해 선택한 옵션이 작업하는 노드를 변경할 때 유지됩니다. 이 새로운 동작으로 인해 콘솔 내에서 이동할 때 지속적으로 이 결정을 다시 설정할 필요가 없습니다. 기본적으로 콘솔을 열 때 옵션은 현재 노드만 검색입니다.
+  이제 *현재 노드* 또는 *모든 하위 노드* 검색에 대해 선택한 옵션이 작업하는 노드를 변경할 때 유지됩니다. 이 새로운 동작으로 인해 콘솔 내에서 이동할 때 지속적으로 이 결정을 다시 설정할 필요가 없습니다. 기본적으로 콘솔을 열 때 옵션은 현재 노드만 검색입니다.
 
 
 ### <a name="send-feedback-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 피드백 보내기

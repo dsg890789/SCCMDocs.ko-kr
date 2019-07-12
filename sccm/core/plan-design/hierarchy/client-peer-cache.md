@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90c5c57d1717363d83fa921d68caced8cf9e8da1
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: aadb544180d7662f1b60c73db6a35b64f8b7efe7
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251721"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676844"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -55,11 +55,11 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 피어 캐시를 사용하도록 설정하려면 [클라이언트 설정](#bkmk_settings)을 컬렉션에 배포합니다. 그런 다음, 컬렉션의 멤버는 동일한 경계 그룹에 있는 다른 클라이언트에 대한 피어 캐시 원본 역할을 합니다.  
 
- -  피어 콘텐츠 원본으로 작동하는 클라이언트는 사용할 수 있는 캐시된 콘텐츠 목록을 해당 관리 지점에 제출합니다.  
+ - 피어 콘텐츠 원본으로 작동하는 클라이언트는 사용할 수 있는 캐시된 콘텐츠 목록을 해당 관리 지점에 제출합니다.  
 
- -  동일한 경계 그룹의 다른 클라이언트는 관리 지점에 콘텐츠 위치 요청을 수행합니다. 서버는 잠재적 콘텐츠 원본의 목록을 반환합니다. 이 목록에는 콘텐츠가 있고 온라인 상태인 각 피어 캐시 원본이 포함됩니다. 또한 해당 경계 그룹의 배포 지점 및 다른 콘텐츠 원본 위치도 포함됩니다. 자세한 내용은 [콘텐츠 원본 우선 순위](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority)를 참조하세요.  
+ - 동일한 경계 그룹의 다른 클라이언트는 관리 지점에 콘텐츠 위치 요청을 수행합니다. 서버는 잠재적 콘텐츠 원본의 목록을 반환합니다. 이 목록에는 콘텐츠가 있고 온라인 상태인 각 피어 캐시 원본이 포함됩니다. 또한 해당 경계 그룹의 배포 지점 및 다른 콘텐츠 원본 위치도 포함됩니다. 자세한 내용은 [콘텐츠 원본 우선 순위](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority)를 참조하세요.  
 
- -  일반적으로 콘텐츠를 검색하는 클라이언트는 제공된 목록에서 원본 하나를 선택합니다. 그런 다음 클라이언트에서 해당 콘텐츠를 가져오려고 시도합니다.  
+ - 일반적으로 콘텐츠를 검색하는 클라이언트는 제공된 목록에서 원본 하나를 선택합니다. 그런 다음 클라이언트에서 해당 콘텐츠를 가져오려고 시도합니다.  
 
 1806 버전부터 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.<!--1356193-->
 

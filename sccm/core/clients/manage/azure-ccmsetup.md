@@ -11,12 +11,12 @@ ms.assetid: 9aaf466a-3f40-4468-b3cd-f0010f21f05a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8bb386aea70253fa033f59ab85732e0b99987c16
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: 24c8dd69c32cf624526dd1dc2b8bcab4920a1ec5
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67550983"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677799"
 ---
 # <a name="azure-ad-authentication-workflow"></a>Azure AD 인증 워크플로
 
@@ -138,8 +138,8 @@ Appending CCM Token to the header.
 다음 항목이 **ClientIDManagerStartup.log**에 로깅됩니다.
 
 ```
-[RegTask] - Client is not registered. Sending registration request for GUID:1XXXXXEF-5XX8-4XX3-XEDX-XXXFBFF78XXX ...        
-Registering client using AAD auth.  
+[RegTask] - Client is not registered. Sending registration request for GUID:1XXXXXEF-5XX8-4XX3-XEDX-XXXFBFF78XXX ... 
+Registering client using AAD auth. 
 ```
 
 ### <a name="2-configuration-manager-request-azure-ad-token-to-register-client"></a>2. 클라이언트를 등록하기 위한 Configuration Manager 요청 Azure AD 토큰
@@ -147,7 +147,7 @@ Registering client using AAD auth.
 다음 항목이 **ADALOperationProvider.log**에 로깅됩니다.
 ```
 Getting AAD (user) token with: ClientId = f1f9b14e-XXXX-4f17-XXXX-2593f6eee91e, ResourceUrl = https://ConfigMgrService, AccountId = X49FC29A-ECE3-XXX-A3C1-XXXXXXF035A6E
-Retrieved AAD token for AAD user '00000000-0000-0000-0000-000000000000' 
+Retrieved AAD token for AAD user '00000000-0000-0000-0000-000000000000'
 
 ```
 
@@ -156,7 +156,7 @@ Retrieved AAD token for AAD user '00000000-0000-0000-0000-000000000000'
 다음 항목이 **ClientIDManagerStartup.log**에 로깅됩니다.
 
 ```
-[RegTask] - Client is registered. Server assigned ClientID is GUID:1XXXXXEF-5XX8-4XX3-XEDX-XXXFBFF78XXX. Approval status 3  
+[RegTask] - Client is registered. Server assigned ClientID is GUID:1XXXXXEF-5XX8-4XX3-XEDX-XXXFBFF78XXX. Approval status 3
 ```
 
 > [!NOTE]  
@@ -170,10 +170,10 @@ Retrieved AAD token for AAD user '00000000-0000-0000-0000-000000000000'
 다음 항목이 **ClientIDManagerStartup.log**에 로깅됩니다.
 
 ```
-Getting CCM Token from STS server 'MP.MYCORP.COM'   
+Getting CCM Token from STS server 'MP.MYCORP.COM'
 Getting CCM Token from https://MP.MYCORP.COM/CCM_STS
 ...
-Cached encrypted token for 'S-1-5-18'. Will expire at 'XX/XX/XX XX:XX:XX'   
+Cached encrypted token for 'S-1-5-18'. Will expire at 'XX/XX/XX XX:XX:XX'
 ```
 
 #### <a name="31-cmg-gets-request"></a>3.1 CMG가 요청 가져오기

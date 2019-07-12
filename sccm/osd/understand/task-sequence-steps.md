@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e862fe4907d5e480fd8a19c28d890987f73240fa
-ms.sourcegitcommit: d8cfd0edf2579e2b08a0ca8a0a7b8f53d1e4196f
+ms.openlocfilehash: f5434e42bfdcdf9bd423035c1d30a3c68974d9dd
+ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67463783"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67726255"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -719,7 +719,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 - OS 업그레이드 패키지  
 - 드라이버 패키지  
 - 패키지  
-- 부팅 이미지  
+- 부팅 이미지 (1810 및 이전 버전)에  
 
 다음 단계는 다음과 같은 시나리오에서 OS를 업그레이드하는 작업 순서에서 잘 작동합니다.  
 
@@ -1623,7 +1623,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 #### <a name="account"></a>계정
 
 <!-- 3556028 -->
-버전 1902부터, 이 단계에서 PowerShell 스크립트를 실행하기 위해 사용하는 Windows 사용자 계정을 지정합니다. 스크립트는 지정된 계정의 권한으로 실행됩니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
+버전 1902부터, 이 단계에서 PowerShell 스크립트를 실행하기 위해 사용하는 Windows 사용자 계정을 지정합니다. 지정된 된 계정에 시스템에서 로컬 관리자 여야 합니다. 하 고이 계정의 권한으로 스크립트를 실행 합니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
 
 > [!IMPORTANT]  
 > 이 단계에서 사용자 계정을 지정하고 Windows PE에서 실행하면 동작이 실패합니다. Windows PE는 도메인에 조인할 수 없습니다. **smsts.log** 파일은 이 실패를 기록합니다.  

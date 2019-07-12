@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c6bffc94abecb5f700fbb7236c923f26f3a0de0
-ms.sourcegitcommit: 949db4d2af7f605ee40610e45ae9d917b1045772
+ms.openlocfilehash: 2d329f2d0125a168d776b2855b6fd35e7a223111
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67314416"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677915"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -658,11 +658,11 @@ Configuration Manager 버전 1806부터 소프트웨어 센터에서 애플리�
 
 - **기본 애플리케이션 필터**를 **모두** 또는 **필수** 애플리케이션만으로 구성합니다.  
 
-    - 소프트웨어 센터는 항상 사용자의 기본 설정을 사용합니다. 사용자는 이 필터를 변경할 수 있으나, 소프트웨어 센터에 사용자의 선택 사항이 저장되지 않습니다.  
+  - 소프트웨어 센터는 항상 사용자의 기본 설정을 사용합니다. 사용자는 이 필터를 변경할 수 있으나, 소프트웨어 센터에 사용자의 선택 사항이 저장되지 않습니다.  
 
- - **기본 애플리케이션 보기**를 **타일 보기** 또는 **목록 보기**로 설정합니다. 
+- **기본 애플리케이션 보기**를 **타일 보기** 또는 **목록 보기**로 설정합니다. 
 
-    - 사용자가 이 구성을 변경하면 소프트웨어 센터에 향후 사용자의 선택 사항이 저장됩니다. 
+  - 사용자가 이 구성을 변경하면 소프트웨어 센터에 향후 사용자의 선택 사항이 저장됩니다. 
 
 
 ## <a name="software-deployment"></a>소프트웨어 배포  

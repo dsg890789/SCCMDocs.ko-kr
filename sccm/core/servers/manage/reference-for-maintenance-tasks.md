@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc2e1783843f600f88b78e0db0cc6b8b8db0f55
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 24e76f9281158aa28e153efe9124ba2adf94a14d
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500991"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676371"
 ---
 # <a name="reference-for-maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 유지 관리 작업 참조
 
@@ -50,7 +50,7 @@ ms.locfileid: "65500991"
 
 **오래된 클라이언트 다운로드 기록 삭제**: 이 작업을 사용하여 클라이언트에서 사용한 다운로드 원본에 대한 기록 데이터를 삭제합니다. 다운로드 원본 정보는 [클라이언트 데이터 원본 대시보드](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard)를 채우는 데 사용됩니다.  
 -  중앙 관리 사이트 - 사용할 수 없음
--    **기본 사이트** - 사용
+-  **기본 사이트** - 사용
 -  보조 사이트 - 사용할 수 없음
 
 **오래된 클라이언트 작업 삭제**: 이 작업을 사용하면 클라이언트 작업의 오래된 데이터를 사이트 데이터베이스에서 모두 삭제할 수 있습니다. 예를 들어 오래되거나 만료된 클라이언트 알림(예: 컴퓨터 또는 사용자 정책에 대한 다운로드 요청) 데이터 및 Endpoint Protection에 대한 데이터(예: 검사를 실행하거나 업데이트된 정의를 다운로드하기 위한 클라이언트 관리자의 요청)가 여기에 포함됩니다.

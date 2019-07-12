@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebf07aa7fba1a017821eb63a57f8c721b4a9860b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 313f49804bb526d3a1e8d208b8efdc849d674e2e
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499430"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623374"
 ---
 # <a name="support-for-virtualization-environments-with-configuration-manager"></a>Configuration Manager를 사용하여 가상화 환경 지원
 
@@ -39,7 +39,7 @@ Configuration Manager는 다음 문서의 가상 환경에서 가상 머신으�
 - Windows Server 2008 R2  
 
 #### <a name="bkmk_note1"></a> 참고 1: 중첩된 가상화
-Configuration Manager는 Windows Server 2016에 새로 도입된 [중첩 가상화](https://docs.microsoft.com/windows-server/virtualization/hyper-v/What-s-new-in-Hyper-V-on-Windows#BKMK_nested)를 지원하지 않습니다.
+Configuration Manager는 Windows Server 2016에 새로 도입된 [중첩 가상화](/windows-server/virtualization/hyper-v/What-s-new-in-Hyper-V-on-Windows#nested-virtualization-new)를 지원하지 않습니다.
 
 
 ### <a name="virtualization-environment-support"></a>가상화 환경 지원

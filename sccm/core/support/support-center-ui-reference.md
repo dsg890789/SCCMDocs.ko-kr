@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7858497f1ff49e5068da066cc481ca5fd38f825f
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 42c1fc69d237b6209b49e45e1b185483b1c55163
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500709"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676323"
 ---
 # <a name="support-center-user-interface-reference"></a>지원 센터 사용자 인터페이스 참조
 
@@ -229,13 +229,13 @@ ms.locfileid: "65500709"
 
     - **콘텐츠 요청 시간 초과**: 콘텐츠 위치 요청이 너무 오래 실행되는 경우 이 작업은 요청을 중지합니다.  
 
-  - **애플리케이션 배포 평가**: 배포된 애플리케이션을 평가하는 작업을 시작합니다.  
+- **애플리케이션 배포 평가**: 배포된 애플리케이션을 평가하는 작업을 시작합니다.  
 
-  - **소프트웨어 업데이트 배포 평가**: 배포된 소프트웨어 업데이트를 평가하는 작업을 시작합니다.  
+- **소프트웨어 업데이트 배포 평가**: 배포된 소프트웨어 업데이트를 평가하는 작업을 시작합니다.  
 
-  - **소프트웨어 업데이트 원본 검사**: 업데이트 원본 위치를 검사하는 작업을 시작합니다.  
+- **소프트웨어 업데이트 원본 검사**: 업데이트 원본 위치를 검사하는 작업을 시작합니다.  
 
-  - **Windows Installer 원본 목록 업데이트**: Windows Installer(MSI) 설치의 원본 위치를 업데이트하는 작업을 시작합니다.  
+- **Windows Installer 원본 목록 업데이트**: Windows Installer(MSI) 설치의 원본 위치를 업데이트하는 작업을 시작합니다.  
 
 #### <a name="content-view"></a>콘텐츠 보기
 클라이언트에 로르된 애플리케이션, 패키지 및 업데이트를 봅니다. 애플리케이션, 패키지 또는 업데이트를 선택하면 해당 콘텐츠에 대한 세부 정보를 볼 수 있습니다. 일부 애플리케이션의 경우 다음 작업을 수행할 수도 있습니다.  

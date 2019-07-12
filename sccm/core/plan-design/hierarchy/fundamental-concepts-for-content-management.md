@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf0b57ad1753d797b163b0016517cdad09459013
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: 5e4585d21b06bbfaa659fe09693af8cff109a1b6
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251632"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676825"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -152,13 +152,13 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 
 클라이언트에 콘텐츠가 필요한 경우 관리 지점에 콘텐츠 위치 요청을 수행합니다. 관리 지점은 요청된 콘텐츠에 대해 유효한 원본 위치의 목록을 반환합니다. 이 목록은 특정 시나리오, 사용되는 기술, 사이트 디자인, 경계 그룹 및 배포 설정에 따라 달라집니다. 다음 목록에는 우선 순위를 지정하는 순서로 클라이언트가 사용할 수 있는 가능한 모든 콘텐츠 원본 위치가 포함됩니다.  
 
-1.  클라이언트와 동일한 컴퓨터에 있는 배포 지점
-2.  동일한 네트워크 서브넷의 피어 원본
-3.  동일한 네트워크 서브넷의 배포 지점
-4.  동일한 경계 그룹의 피어 원본
-5.  현재 경계 그룹의 배포 지점
-6.  대체용으로 구성된 인접 경계 그룹의 배포 지점
-9.  기본 사이트 경계 그룹의 배포 지점 
+1. 클라이언트와 동일한 컴퓨터에 있는 배포 지점
+2. 동일한 네트워크 서브넷의 피어 원본
+3. 동일한 네트워크 서브넷의 배포 지점
+4. 동일한 경계 그룹의 피어 원본
+5. 현재 경계 그룹의 배포 지점
+6. 대체용으로 구성된 인접 경계 그룹의 배포 지점
+9. 기본 사이트 경계 그룹의 배포 지점 
 10. Windows 업데이트 클라우드 서비스
 11. 인터넷 연결 배포 지점
 12. Azure의 클라우드 배포 지점

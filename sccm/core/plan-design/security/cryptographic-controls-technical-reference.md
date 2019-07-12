@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 253710602ca4c46e3ed0d929fb62edea6c3efeb3
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.openlocfilehash: 8caed88289af0947bb9924e50f8369412e3c55f2
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354827"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676684"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -265,11 +265,11 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 ## <a name="about-ssl-vulnerabilities"></a>SSL 취약점 정보
 Configuration Manager 클라이언트 및 서버의 보안을 강화하려면 다음을 수행합니다.
 
--   TLS 1.2 사용
+- TLS 1.2 사용
 
-    Configuration Manager에 대해 TLS 1.2를 사용하도록 설정하려면 [Configuration Manager에 대해 TLS 1.2를 사용하도록 설정하는 방법](enable-tls-1-2.md)을 참조하세요.
--   SSL 3.0, TLS 1.0 및 TLS 1.1 사용 안 함 
--   TLS 관련 암호 도구 모음 순서 변경 
+  Configuration Manager에 대해 TLS 1.2를 사용하도록 설정하려면 [Configuration Manager에 대해 TLS 1.2를 사용하도록 설정하는 방법](enable-tls-1-2.md)을 참조하세요.
+- SSL 3.0, TLS 1.0 및 TLS 1.1 사용 안 함 
+- TLS 관련 암호 도구 모음 순서 변경 
 
 자세한 내용은 [Schannel.dll에서 특정 암호화 알고리즘 및 프로토콜의 사용을 제한하는 방법](https://support.microsoft.com/en-us/kb/245030/) 및 [Schannel 암호 도구 무음 우선 순위 지정](https://msdn.microsoft.com/library/windows/desktop/bb870930.aspx)을 참조하세요. 이 절차는 Configuration Manager 기능에는 영향을 주지 않습니다.
 

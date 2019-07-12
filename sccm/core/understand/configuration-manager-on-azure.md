@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4efea7baf7820c4edfb61882b14812336c85518
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: 042ef488354ff1b527d41407d3ef590ee9fe0e45
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67516176"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676312"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -36,11 +36,11 @@ ms.locfileid: "67516176"
 
 ### <a name="what-areas-should-i-pay-attention-to-when-considering-a-move-of-my-configuration-manager-infrastructure-to-azure"></a>Configuration Manager 인프라를 Azure로 이동할 때 주의해야 할 점은 무엇인가요?
 좋은 질문입니다. 이 작업을 수행할 때 가장 중요한 점은 다음과 같으며 각각 이 항목의 별도의 섹션에서 설명합니다.
-1.  네트워킹
-2.  가용성
-3.  성능
-4.  비용
-5.  사용자 환경
+1. 네트워킹
+2. 가용성
+3. 성능
+4. 비용
+5. 사용자 환경
 
 ## <a name="networking"></a>네트워킹
 ### <a name="what-about-networking-requirements-should-i-use-expressroute-or-an-azure-vpn-gateway"></a>네트워킹 요구 사항은 무엇인가요? ExpressRoute 또는 Azure VPN Gateway를 사용해야 하나요?

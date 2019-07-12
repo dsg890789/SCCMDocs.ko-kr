@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2312cb68940f5d0eb3d0dd33d192d07b6801d8e
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: ea90ff0b9c163dac79a96494b03252fbd1935b43
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501033"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676492"
 ---
 # <a name="management-insights-in-configuration-manager"></a>Configuration Manager의 관리 인사이트
 
@@ -146,7 +146,7 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 ### <a name="proactive-maintenance"></a>자동 유지 관리
 <!--1352184-->
-1806 버전부터, 이 그룹의 규칙은 Configuration Manager 개체의 유지를 통해 방지할 수 있는 잠재적 구성 문제를 강조 표시합니다.    
+1806 버전부터, 이 그룹의 규칙은 Configuration Manager 개체의 유지를 통해 방지할 수 있는 잠재적 구성 문제를 강조 표시합니다. 
 
 - **할당된 사이트 시스템이 없는 경계 그룹**: 할당된 사이트 시스템이 없으면 경계 그룹은 사이트 할당에만 사용할 수 있습니다. 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
 

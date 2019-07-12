@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deb27df76bb3ed6fc9c6338f302fcc612443cee9
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: 8560c34f1db76afcfe2e65eeaf8311b0a58cc926
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251922"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623445"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -176,7 +176,7 @@ Configuration Manager는 피어 캐시 원본이 다른 위치로 로밍되었�
 
 ### <a name="azure-ad-device-identity"></a>Azure AD 디바이스 ID 
 <!--1358460-->
-Azure AD 사용자가 로그인되지 않은 [Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-introduction#azure-ad-joined-devices) 또는 [하이브리드 Azure AD 디바이스](https://docs.microsoft.com/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+Azure AD 사용자가 로그인되지 않은 [Azure AD 조인](/azure/active-directory/devices/concept-azure-ad-join) 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/devices/concept-azure-ad-join-hybrid)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 

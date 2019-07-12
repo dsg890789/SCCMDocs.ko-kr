@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ebcbec87edf52d7ca7d3f9e6f4341ec60c191
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: 8f830100bd2d227df0206c40071711d9c7888f88
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67515839"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677481"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -58,12 +58,12 @@ ms.locfileid: "67515839"
 
 ### <a name="how-to-get-the-application-identifier-of-an-application"></a>애플리케이션의 애플리케이션 식별자를 가져오는 방법
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
-2.  소프트웨어 라이브러리 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **애플리케이션**을 클릭합니다.
-3.  **애플리케이션** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 애플리케이션의 고유 ID가 표시됩니다.
-4.  링크를 제공하려는 애플리케이션의 **CI 고유 ID**(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**)를 참조합니다.
-5.  그런 다음 애플리케이션 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 애플리케이션 식별자가 남습니다.
-6.  마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=** 을 붙입니다. 위의 예제를 사용한 최종 링크는 다음과 같습니다. **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**.
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리**를 클릭합니다.
+2. 소프트웨어 라이브러리 작업 영역에서 **애플리케이션 관리**를 확장한 다음 **애플리케이션**을 클릭합니다.
+3. **애플리케이션** 보기에서 열 머리글 중 하나를 마우스 오른쪽 단추로 클릭한 다음 목록에서 **CI 고유 ID**를 선택합니다. 이제 목록에 각 애플리케이션의 고유 ID가 표시됩니다.
+4. 링크를 제공하려는 애플리케이션의 **CI 고유 ID**(예: **ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**)를 참조합니다.
+5. 그런 다음 애플리케이션 GUID 뒤에 있는 모든 텍스트를 제거합니다(이 경우 **/2**). 그러면 애플리케이션 식별자가 남습니다.
+6. 마지막으로 링크 구성을 마치려면 링크 앞에 **Softwarecenter:SoftwareID=** 을 붙입니다. 위의 예제를 사용한 최종 링크는 다음과 같습니다. **Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**.
 
 이 링크를 사용하여 최종 사용자는 지정된 애플리케이션에 대한 소프트웨어 센터를 직접 열 수 있습니다.
 
@@ -83,17 +83,17 @@ Technical Preview 1703에는 **Azure 서비스 구성** 마법사가 도입되�
 
 Technical Preview 1703에서는 WSfB(비즈니스용 Windows 스토어)만 이 마법사를 사용하여 구성됩니다.  다른 클라우드 서비스는 별도의 워크플로를 사용하여 구성됩니다.
 
--   이 Preview 항목의 정보를 사용하여 현재 분기 항목 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 [비즈니스용 Windows 스토어 동기화 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#bkmk_setup) 섹션에 있는 구성 단계를 바꿉니다.
+- 이 Preview 항목의 정보를 사용하여 현재 분기 항목 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 [비즈니스용 Windows 스토어 동기화 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#bkmk_setup) 섹션에 있는 구성 단계를 바꿉니다.
 
--   웹앱에 대한 자세한 내용은 [Azure App Service의 인증 및 권한 부여](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview) 및 [Web Apps 개요](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)를 참조하세요.
+- 웹앱에 대한 자세한 내용은 [Azure App Service의 인증 및 권한 부여](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview) 및 [Web Apps 개요](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)를 참조하세요.
 
 ### <a name="prerequisites-and-planning"></a>필수 조건 및 계획
 Configuration Manager와 비즈니스용 Windows 스토어 간의 연결을 설정하는 경우 스토어에서 동기화된 앱 콘텐츠를 보관할 폴더를 제공해야 합니다. 이 폴더가 안전하고 해당 콘텐츠를 디바이스에 배포할 수 있도록 다음 사용 권한을 지정해야 합니다.
--   서비스 연결 지점 사이트 시스템 역할(계층 구조의 최상위 사이트)를 설치하는 컴퓨터에는 **Computer$** 계정을 사용할 때 지정한 폴더에 대한 읽기 및 쓰기 권한이 있어야 합니다.  
+- 서비스 연결 지점 사이트 시스템 역할(계층 구조의 최상위 사이트)를 설치하는 컴퓨터에는 **Computer$** 계정을 사용할 때 지정한 폴더에 대한 읽기 및 쓰기 권한이 있어야 합니다.  
 
--   앱 작성자에게 지정한 폴더에 대한 읽기 권한이 있어야 합니다.  
+- 앱 작성자에게 지정한 폴더에 대한 읽기 권한이 있어야 합니다.  
 
--   SMS 공급자 인스턴스를 호스트하는 각 컴퓨터의 **Computer$** 계정이 지정한 폴더를 사용할 수 있어야 합니다.
+- SMS 공급자 인스턴스를 호스트하는 각 컴퓨터의 **Computer$** 계정이 지정한 폴더를 사용할 수 있어야 합니다.
 
 Azure Active Directory에서 Configuration Manager를 웹 애플리케이션 또는 Web API 관리 도구로 등록합니다. 그러면 나중에 필요한 클라이언트 ID가 만들어집니다.
 

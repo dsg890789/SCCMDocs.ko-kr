@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 838a1dffd5a84544259d26cc8d58eb843cc57d0f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 979409f34e4c32ce812f2a84ce062d2312a85d3c
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141071"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676131"
 ---
 # <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 애플리케이션 만들기 및 배포
 
@@ -57,7 +57,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
    -   **형식**: **Windows Installer(\*.msi 파일)** 를 선택합니다.  
 
-   -   **위치**: 설치 파일**Contoso.msi**의 위치를 입력하거나 **찾아보기**를 선택하여 위치를 선택합니다. Configuration Manager에서 설치 파일을 찾을 수 있도록 하려면 위치를 *\\\Server\Share\File* 형식으로 지정해야 합니다.  
+   -   **위치**: 설치 파일 **Contoso.msi**의 위치를 입력하거나 **찾아보기**를 선택하여 위치를 선택합니다. Configuration Manager에서 설치 파일을 찾을 수 있도록 하려면 위치를 *\\\Server\Share\File* 형식으로 지정해야 합니다.  
 
    그러면 다음 스크린샷과 같은 화면이 표시됩니다.  
 
@@ -88,14 +88,14 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
  **&lt;Contoso\> 애플리케이션 속성** 대화 상자에는 애플리케이션의 동작을 구체화하기 위해 구성할 수 있는 많은 항목이 표시됩니다. 구성할 수 있는 모든 설정에 대한 자세한 내용은 [애플리케이션 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요. 이 예제의 목적을 위해 애플리케이션 배포 유형의 일부 속성을 변경하겠습니다.  
 
- **배포 유형** 탭 &gt; **Contoso 애플리케이션** 배포 유형 &gt; **편집**을 선택합니다.  
+ **배포 유형** 탭 &gt; **Contoso 애플리케이션** 배포 유형 &gt; **편집**을 선택합니다. 
 
 다음과 같은 대화 상자가 표시됩니다.  
 
 ![앱 관리 앱 속성 페이지](/sccm/apps/get-started/media/App-management-app-properties-page.png)  
 
 ## <a name="add-a-requirement-to-the-deployment-type"></a>배포 유형에 요구 사항 추가  
- 요구 사항은 장치에 애플리케이션을 설치하기 전에 충족해야 하는 조건을 지정합니다.  기본 제공 요구 사항에서 선택하거나 요구 사항을 직접 만들 수 있습니다. 이 예제에서는 Windows 10을 실행하는 PC에만 애플리케이션을 설치해야 하는 요구 사항을 추가합니다.  
+ 요구 사항은 디바이스에 응용 프로그램을 설치하기 전에 충족해야 하는 조건을 지정합니다.  기본 제공 요구 사항에서 선택하거나 요구 사항을 직접 만들 수 있습니다. 이 예제에서는 Windows 10을 실행하는 PC에만 애플리케이션을 설치해야 하는 요구 사항을 추가합니다.  
 
 1.  방금 열린 배포 유형 속성 페이지에서 **요구 사항** 탭을 선택합니다.  
 
@@ -109,7 +109,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
     -   **규칙 유형**: **값**  
 
-    -   **연산자**: **중 하나**  
+    -   **연산자**: **다음 중 하나**  
 
     -   운영 체제 목록에서 **Windows 10**을 선택합니다.  
 
@@ -147,7 +147,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
 ## <a name="deploy-the-application"></a>애플리케이션 배포  
 
-이제, 계층 구조의 장치 컬렉션에 애플리케이션을 배포합니다. 이 예제에서는 **모든 시스템** 장치 컬렉션에 애플리케이션을 배포합니다.  
+이제, 계층 구조의 디바이스 컬렉션에 응용 프로그램을 배포합니다. 이 예제에서는 **모든 시스템** 디바이스 컬렉션에 응용 프로그램을 배포합니다.  
 
 > [!TIP]  
 >  이전에 선택한 요구 사항 때문에 Windows 10 컴퓨터에서만 애플리케이션을 설치합니다.  
@@ -186,7 +186,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
 5.  다음 탭 중 하나를 선택하여 애플리케이션 배포에 대한 추가 상태 업데이트를 확인합니다.  
 
-    -   **성공**: 표시된 PC에 애플리케이션을 성공적으로 설치했습니다.  
+    -   **성공**: 애플리케이션이 표시된 PC에 설치되었습니다.  
 
     -   **진행 중**: 애플리케이션 설치가 아직 완료되지 않았습니다.  
 

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6efa58c2257730de0703d850b814f871684b72c6
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 20b50fcd54513ccd780a7da173766fb177bf5da7
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129037"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676125"
 ---
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>장기 서비스 분기를 현재 분기로 업그레이드
 
@@ -28,7 +28,7 @@ ms.locfileid: "56129037"
 
 여러 사이트가 있는 경우 계층 구조의 최상위 계층 사이트만 변환하면 됩니다. 최상위 계층 사이트를 변환하면
 - 하위 기본 사이트가 자동으로 변환됩니다.
--   Configuration Manager 콘솔 내에서 보조 사이트를 수동으로 업데이트해야 합니다.
+- Configuration Manager 콘솔 내에서 보조 사이트를 수동으로 업데이트해야 합니다.
 
 ## <a name="run-setup-to-convert-the-long-term-servicing-branch"></a>설치 프로그램을 실행하여 장기 서비스 분기 변환
 계층 구조의 최상위 계층 사이트에서 정식 기준 미디어를 통해 Configuration Manager 설치 프로그램을 실행하고 **사이트 유지 관리**를 선택할 수 있습니다.  그런 다음 라이선스 페이지가 표시되면 현재 분기에 대한 옵션을 선택하고 마법사를 완료합니다.

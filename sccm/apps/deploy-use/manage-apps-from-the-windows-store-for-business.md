@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5178a84443779384e3223998ab8336b46c2d4d0
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 41fb296f45b54723c59c7d6fe803916af95752ad
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176897"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67675847"
 ---
 # <a name="manage-apps-from-the-microsoft-store-for-business-with-configuration-manager"></a>Configuration Manager를 사용하여 비즈니스용 Microsoft Store에서 앱 관리
 
@@ -164,7 +164,7 @@ Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정�
 
 온라인 앱을 배포한 후에는 해당 앱에 대한 모든 업데이트가 Microsoft Store에서 직접 제공됩니다. 또한 Configuration Manager는 온라인 앱의 버전 준수를 확인하지 않으며 Windows는 설치된 앱을 보고합니다.  
 
-Configuration Manager 클라이언트를 사용하여 Windows 10 디바이스에 오프라인 앱을 배포할 때 사용자가 Configuration Manager 배포에 외부의 응용 프로그램을 업데이트할 수 없습니다. 오프라인 앱에 대한 업데이트의 제어는 학급과 같은 다중 사용자 환경에서 특히 중요합니다. [그룹 정책](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store#a-href-idblock-store-group-policyablock-microsoft-store-using-group-policy)을 사용하여 Microsoft Store를 사용하지 않도록 설정할 수 있습니다. 
+Configuration Manager 클라이언트를 사용하여 Windows 10 디바이스에 오프라인 앱을 배포할 때 사용자가 Configuration Manager 배포에 외부의 응용 프로그램을 업데이트할 수 없습니다. 오프라인 앱에 대한 업데이트의 제어는 학급과 같은 다중 사용자 환경에서 특히 중요합니다. [그룹 정책](/windows/configuration/stop-employees-from-using-microsoft-store#block-microsoft-store-using-group-policy)을 사용하여 Microsoft Store를 사용하지 않도록 설정할 수 있습니다. 
 
 비즈니스용 Microsoft Store 관리자가 오프라인 앱을 구매한 후에 스토어를 통해 사용자에게 앱을 게시하지 마세요. 이렇게 구성하면 사용자가 온라인으로 설치하거나 업데이트할 수 없습니다. 사용자는 Configuration Manager를 통해서만 오프라인 앱 업데이트를 수신하게 됩니다. 
 

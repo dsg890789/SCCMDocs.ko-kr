@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 243e38273488f72e3e5e693270b10d6865c3a422
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: bf20d24b8a1322f1d74c42c66f49fd8026ac075e
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67252246"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676617"
 ---
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 
@@ -93,7 +93,7 @@ Configuration Manager 백업 서비스가 실행될 때 이 서비스는 백업 
     -   **사이트 서버 및 SQL Server의 로컬 드라이브**: 작업이 사이트의 백업 파일을 사이트 데이터베이스 서버의 로컬 드라이브에서 지정된 경로에 저장하도록 지정합니다. 이 작업은 사이트 데이터베이스의 백업 파일을 사이트 데이터베이스 서버의 로컬 드라이브에서 지정된 경로에 저장합니다. 백업 작업이 실행되기 전에 로컬 폴더를 만듭니다. 사이트 서버의 컴퓨터 계정에 사이트 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. SQL Server의 컴퓨터 계정에 사이트 데이터베이스 서버에서 만든 폴더에 대한 **쓰기** NTFS 권한이 있어야 합니다. 이 옵션은 사이트 데이터베이스가 사이트 서버에 설치되지 않은 경우에만 사용할 수 있습니다.  
 
     > [!NOTE]  
-    >   백업 대상을 찾는 옵션은 백업 대상의 네트워크 경로를 지정하는 경우에만 사용할 수 있습니다.  
+    > 백업 대상을 찾는 옵션은 백업 대상의 네트워크 경로를 지정하는 경우에만 사용할 수 있습니다.  
     >  
     > 백업 대상으로 사용되는 폴더 이름 또는 공유 이름은 유니코드 문자 사용을 지원하지 않습니다.  
 

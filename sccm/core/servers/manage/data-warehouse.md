@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02990fa09e18a9e46914ff622ed20f4cbb958f33
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 7672af696844cfa8afbbe54b1260d8f4c78437a8
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501147"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676513"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
@@ -94,7 +94,7 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 - **SQL Server의 정규화된 도메인 이름**: 데이터 웨어하우스 서비스 지점 데이터베이스를 호스트하는 서버의 FQDN(정규화된 도메인 이름)을 지정합니다.  
 
-- **SQL Server 인스턴스 이름(적용되는 경우)**: SQL Server의 기본 인스턴스를 사용하지 않는 경우 명명된 인스턴스를 지정합니다.  
+- **SQL Server 인스턴스 이름(적용되는 경우)** : SQL Server의 기본 인스턴스를 사용하지 않는 경우 명명된 인스턴스를 지정합니다.  
 
 - **데이터베이스 이름**: 데이터 웨어하우스 데이터베이스의 이름을 지정합니다. Configuration Manager는 이 이름으로 데이터 웨어하우스 데이터베이스를 만듭니다. SQL Server 인스턴스에 이미 존재하는 데이터베이스 이름을 지정하면 Configuration Manager는 해당 데이터베이스를 사용합니다.  
 
@@ -154,7 +154,7 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 - **인프라 상태 개요 - 기록**: Configuration Manager 인프라의 상태 개요를 표시합니다.  
 
-- **검색된 맬웨어 목록 - 기록**:    조직에서 검색된 맬웨어를 확인합니다.  
+- **검색된 맬웨어 목록 - 기록**: 조직에서 검색된 맬웨어를 확인합니다.  
 
 - **소프트웨어 배포 요약 - 기록**: 특정 보급 알림 및 컴퓨터에 대한 소프트웨어 배포 요약입니다.  
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13db7793b0d5a5b4f0845af21f976089205fdc7d
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: a88052e0d799b324ddbed6acbdf0b25a97f4d80c
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286161"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677369"
 ---
 # <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
 
@@ -63,8 +63,8 @@ ms.locfileid: "67286161"
 
 일반적인 프로세스를 사용하여 새 VPN 프로필을 만듭니다. VPN 프로필 마법사의 옵션에서 첫 번째 페이지가 변경되었습니다.
 
-1.  **자산 및 준수** > **개요** > **규정 준수 설정** > **회사 리소스 액세스** > **VPN 프로필**로 이동한 후 **VPN 프로필 만들기**를 선택합니다.
-2.  **일반** 페이지에서 이름을 입력하고 **만들려는 VPN 프로필의 유형 지정** 아래에서 다음 옵션 중 하나를 선택합니다.
+1. **자산 및 준수** > **개요** > **규정 준수 설정** > **회사 리소스 액세스** > **VPN 프로필**로 이동한 후 **VPN 프로필 만들기**를 선택합니다.
+2. **일반** 페이지에서 이름을 입력하고 **만들려는 VPN 프로필의 유형 지정** 아래에서 다음 옵션 중 하나를 선택합니다.
 
     - Windows 10  
     - Windows 8.1  
@@ -73,8 +73,8 @@ ms.locfileid: "67286161"
     - Android  
     - Android for Work  
 
-3.  **Windows 8.1**을 선택하는 경우 **새 프로필 만들기** 또는 **파일에서 가져오기**에 대한 옵션도 제공됩니다.
-4.  마법사를 완료하여 프로필 만들기를 완료합니다.
+3. **Windows 8.1**을 선택하는 경우 **새 프로필 만들기** 또는 **파일에서 가져오기**에 대한 옵션도 제공됩니다.
+4. 마법사를 완료하여 프로필 만들기를 완료합니다.
 
 다른 플랫폼을 선택하면 선택한 플랫폼과 관련된 설정만 표시됩니다.
 

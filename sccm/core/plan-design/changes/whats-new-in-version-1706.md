@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b9dcd7465265021d52e44d72c77172d4323144e
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 050122d6a1b799a30bd2c5a83ab261e92aaafabe
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285768"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677213"
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
 
@@ -59,8 +59,8 @@ Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했�
 ### <a name="improvements--for-sql-server-always-on-availability-groups"></a>SQL Server Always On 가용성 그룹에 대한 향상된 기능
 <!-- 1352094 -->
 이 릴리스에서는 이제 Configuration Manager에서 SQL Server Always On 가용성 그룹의 비동기 커밋 복제본을 사용할 수 있습니다. 즉, 오프사이트(원격) 백업으로 사용하도록 추가 복제본을 가용성 그룹에 추가한 다음 재해 복구 시나리오에서 사용할 수 있습니다.  
-  -   Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/core/servers/manage/recover-sites#site-database-recovery-options)을 참조하세요.
-  -   이 릴리스에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
+  - Configuration Manager에서는 비동기 커밋 복제본을 사용하여 동기 복제본을 복구하도록 지원합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 백업 및 복구 항목에서 [사이트 데이터베이스 복구 옵션](/sccm/core/servers/manage/recover-sites#site-database-recovery-options)을 참조하세요.
+  - 이 릴리스에서는 비동기 커밋 복제본을 사이트 데이터베이스로 사용하기 위한 장애 조치를 지원하지 않습니다.
 자세한 내용은 [Always On 가용성 그룹 사용 준비](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)를 참조하세요.
 
 ### <a name="update-reset-tool"></a>업데이트 다시 설정 도구
@@ -118,25 +118,25 @@ Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했�
 이 릴리스에서는 Intune에 등록되었거나 Configuration Manager를 통해 온-프레미스에서 관리되는 Windows 10 디바이스에 대한 새 구성 항목 설정을 추가했습니다. 이러한 설정은 다음과 같습니다.
 
 - **암호**
-    - 디바이스 암호화
+  - 디바이스 암호화
 - **디바이스**
-    - 지역 설정 수정(데스크톱만 해당)
-    - 전원 및 절전 모드 설정 수정
-    - 언어 설정 수정
-    - 시스템 시간 수정
-    - 디바이스 이름 수정
+  - 지역 설정 수정(데스크톱만 해당)
+  - 전원 및 절전 모드 설정 수정
+  - 언어 설정 수정
+  - 시스템 시간 수정
+  - 디바이스 이름 수정
 - **스토어**
-    - 스토어에서 앱 자동 업데이트
-    - 프라이빗 저장소만 사용
-    - 스토어에서 시작된 앱 시작
+  - 스토어에서 앱 자동 업데이트
+  - 프라이빗 저장소만 사용
+  - 스토어에서 시작된 앱 시작
 - **Microsoft Edge**
-    - 플래그에 대한 액세스 차단
-    - SmartScreen 프롬프트 재정의
-    - 파일에 대한 SmartScreen 프롬프트 재정의
-    - WebRTC 로컬 호스트 IP 주소
-    - 기본 검색 엔진
-    - OpenSearch XML URL
-    - 홈페이지(데스크톱만 해당)
+  - 플래그에 대한 액세스 차단
+  - SmartScreen 프롬프트 재정의
+  - 파일에 대한 SmartScreen 프롬프트 재정의
+  - WebRTC 로컬 호스트 IP 주소
+  - 기본 검색 엔진
+  - OpenSearch XML URL
+  - 홈페이지(데스크톱만 해당)
 
 모든 Windows 10 설정에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 10 및 Windows 8.1 디바이스에 대한 구성 항목을 만드는 방법](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)을 참조하세요.
 

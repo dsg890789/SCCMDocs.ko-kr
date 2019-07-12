@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 709442083cd2d9c935aeb2c5fe6c2ad30a2dddf5
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: c82de88250a7faa44747fc897fcfee09bed45823
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083043"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678800"
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-configuration-manager"></a>Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기
 
@@ -28,9 +28,9 @@ ms.locfileid: "65083043"
 
 ## <a name="task-sequence-steps"></a>작업 순서 단계  
 
- 사용자 상태를 캡처하고 복원하려면 작업 순서에 다음 단계를 추가합니다.  
+사용자 상태를 캡처하고 복원하려면 작업 순서에 다음 단계를 추가합니다.  
 
- - [상태 저장소 요청](/sccm/osd/understand/task-sequence-steps#BKMK_RequestStateStore): 상태 마이그레이션 지점에 사용자 상태를 저장하는 경우 이 단계가 필요합니다.  
+- [상태 저장소 요청](/sccm/osd/understand/task-sequence-steps#BKMK_RequestStateStore): 상태 마이그레이션 지점에 사용자 상태를 저장하는 경우 이 단계가 필요합니다.  
 
 - [사용자 상태 캡처](/sccm/osd/understand/task-sequence-steps#BKMK_CaptureUserState): 이 단계에서는 사용자 상태 데이터를 캡처합니다. 그런 다음 상태 마이그레이션 지점이나 하드 링크를 사용하는 로컬 디스크에 데이터를 저장합니다.  
 

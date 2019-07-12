@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0d2bc4c8ae366a5e60e9a7a3100b5a5059c341a
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: eae027f2f21c8c69e538c5fdfc429f5215bd6436
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67193959"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676163"
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
@@ -89,7 +89,7 @@ LTSB는 버전 1606을 기반으로 합니다. 이 분기는 새로운 기능을
 
 
 ### <a name="features-of-the-ltsb"></a>LTSB의 기능
--   중요한 보안 수정을 제공하는 콘솔 내 업데이트를 받습니다.
+- 중요한 보안 수정을 제공하는 콘솔 내 업데이트를 받습니다.
 - Configuration Manager에 대한 SA 계약 또는 이와 동등한 권한이 만료된 경우의 설치 옵션을 제공합니다.
 - Configuration Manager에 대한 현재 SA 계약 또는 이와 동등한 권한이 있는 경우 현재 분기로 업그레이드(변환)를 지원합니다.
 
@@ -101,14 +101,14 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 - 새로운 기능에 대한 업데이트를 받지 않습니다.
 - 다음 기능을 지원하지 않습니다. 
    - Microsoft Intune 구독을 추가하면 다음을 사용할 수 없습니다.
-     -  하이브리드 MDM 구성에서 Intune을 사용할 수 없음
+     - 하이브리드 MDM 구성에서 Intune을 사용할 수 없음
      - 온-프레미스 MDM을 사용할 수 없음
-   -    Windows 10 서비스 대시보드, 서비스 계획 또는 Windows 10 반기 채널
+   - Windows 10 서비스 대시보드, 서비스 계획 또는 Windows 10 반기 채널
    - Windows 10 LTSB 및 Windows Server의 향후 릴리스
-   -    Asset intelligence
-   -    클라우드 기반 배포 지점
-   -    Exchange Connector로 사용되는 Exchange Online
-   -    모든 시험판 기능
+   - Asset intelligence
+   - 클라우드 기반 배포 지점
+   - Exchange Connector로 사용되는 Exchange Online
+   - 모든 시험판 기능
 
 
 ### <a name="update-options"></a>업데이트 옵션
@@ -119,7 +119,7 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
   - [System Center Configuration Manager의 라이선스 및 분기](learn-more-editions.md)
   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines) 
 - LTSB를 기술 미리 보기 분기로 변환하는 옵션은 없습니다. 기술 미리 보기 분기는 라이선스가 필요하지 않은 별도 설치입니다.
--   현재 분기의 평가판을 LTSB 설치로 업그레이드할 수 없습니다.
+- 현재 분기의 평가판을 LTSB 설치로 업그레이드할 수 없습니다.
 
 
 
@@ -150,8 +150,8 @@ LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한
 
 
 ### <a name="update-options"></a>업데이트 옵션
--   새 기술 미리 보기 분기 버전의 콘솔 내 업데이트를 설치할 수 있습니다.
--   기술 미리 보기 분기를 현재 분기 또는 LTSB로 변환하는 옵션이 없습니다.
+- 새 기술 미리 보기 분기 버전의 콘솔 내 업데이트를 설치할 수 있습니다.
+- 기술 미리 보기 분기를 현재 분기 또는 LTSB로 변환하는 옵션이 없습니다.
 
 
 

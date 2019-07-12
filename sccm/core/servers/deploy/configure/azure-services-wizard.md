@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6d7acf1d5c73c59f2ce1e6d2b7f3f7354e21979
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: 1e6ef01d38b9359bbb82449ad045312e58646475
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251882"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676708"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -107,11 +107,11 @@ Azure 앱에 대한 자세한 내용은 다음 문서부터 참조하세요.
 
 ## <a name="start-the-azure-services-wizard"></a>Azure 서비스 마법사 시작
 
-1.  Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다.  
+1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다.  
 
-2.  리본의 **홈** 탭에 있는 **Azure 서비스** 그룹에서 **Azure 서비스 구성**을 선택합니다.  
+2. 리본의 **홈** 탭에 있는 **Azure 서비스** 그룹에서 **Azure 서비스 구성**을 선택합니다.  
 
-3.  Azure 서비스 마법사의 **Azure 서비스** 페이지에서 다음 작업을 수행합니다.  
+3. Azure 서비스 마법사의 **Azure 서비스** 페이지에서 다음 작업을 수행합니다.  
 
     1. Configuration Manager의 개체 **이름**을 지정합니다.  
 
@@ -180,7 +180,7 @@ Azure 서비스 마법사의 서버 앱 대화 상자 또는 앱 페이지에서
 
 
 ### <a name="native-client-app"></a>네이티브 클라이언트 앱
-    
+
 이 앱은 Azure AD 형식 *네이티브*이며, Configuration Manager에서는 클라이언트 앱이라고도 합니다.
 
 #### <a name="client-app-dialog"></a>클라이언트 앱 대화 상자
@@ -261,11 +261,11 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 ![Configuration Manager와 Azure AD 및 클라우드 관리 간의 데이터 흐름 다이어그램](media/aad-auth.png)
 
-1.  Configuration Manager 관리자가 Azure AD에서 클라이언트 앱 및 서버 앱을 가져오거나 만듭니다.  
+1. Configuration Manager 관리자가 Azure AD에서 클라이언트 앱 및 서버 앱을 가져오거나 만듭니다.  
 
-2.  Configuration Manager Azure AD 사용자 검색 메서드가 실행됩니다. 사이트에서 Azure AD 서버 앱 토큰을 사용하여 Microsoft Graph에 사용자 개체를 쿼리합니다.  
+2. Configuration Manager Azure AD 사용자 검색 메서드가 실행됩니다. 사이트에서 Azure AD 서버 앱 토큰을 사용하여 Microsoft Graph에 사용자 개체를 쿼리합니다.  
 
-3.  사이트에서 사용자 개체에 대한 데이터를 저장합니다. 자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.  
+3. 사이트에서 사용자 개체에 대한 데이터를 저장합니다. 자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.  
 
 4.  Configuration Manager 클라이언트가 Azure AD 사용자 토큰을 요청합니다. 클라이언트에서 Azure AD 클라이언트 앱의 애플리케이션 ID를 사용하여, 그리고 서버 앱을 대상 그룹으로 사용하여 클레임을 만듭니다. 자세한 내용은 [Azure AD 보안 토큰의 클레임](/azure/active-directory/develop/authentication-scenarios#claims-in-microsoft-identity-platform-security-tokens)을 참조하세요.  
 

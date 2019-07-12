@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3ac315806edd90e85fe654039d620ec0097d1b
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: d7c6fcdf0113dd9fa83d2d303661ad5690362715
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176671"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678744"
 ---
 # <a name="device-guard-management-with-configuration-manager"></a>Configuration Manager로 Device Guard 관리
 
@@ -38,8 +38,8 @@ Configuration Manager를 사용하여 Windows Defender 애플리케이션 제어
 
 다음 모드 중 하나를 구성할 수 있습니다.
 
-1.  **적용 사용** - 신뢰할 수 있는 실행 파일만 실행할 수 있습니다.
-2.  **감사 전용** - 모든 실행 파일을 실행할 수 있지만, 실행되는 신뢰할 수 없는 실행 파일을 로컬 클라이언트 이벤트 로그에 로깅합니다.
+1. **적용 사용** - 신뢰할 수 있는 실행 파일만 실행할 수 있습니다.
+2. **감사 전용** - 모든 실행 파일을 실행할 수 있지만, 실행되는 신뢰할 수 없는 실행 파일을 로컬 클라이언트 이벤트 로그에 로깅합니다.
 
 >[!TIP]
 >이 버전의 Configuration Manager에서 Device Guard는 시험판 기능입니다. 이 기능을 사용하도록 설정하려면 [System Center Configuration Manager의 시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
@@ -77,10 +77,10 @@ Windows Defender 애플리케이션 제어 정책을 구성하거나 배포하�
 - 선택한 적용 모드와 관계 없이 Windows Defender 애플리케이션 제어 정책을 배포할 때는 클라이언트 PC에서 .hta 확장명을 사용하는 HTML 애플리케이션을 실행할 수 없습니다.
 
 ## <a name="how-to-create-a-windows-defender-application-control-policy"></a>Windows Defender 애플리케이션 제어 정책을 만드는 방법
-1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
-2.  **자산 및 준수** 작업 영역에서 **Endpoint Protection**을 확장한 다음, **Windows Defender 애플리케이션 제어**를 클릭합니다.
-3.  **홈** 탭의 **만들기** 그룹에서 **애플리케이션 제어 정책 만들기**를 클릭합니다.
-4.  **애플리케이션 제어 정책 만들기 마법사**의 **일반** 페이지에서 다음 설정을 지정합니다.
+1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
+2. **자산 및 준수** 작업 영역에서 **Endpoint Protection**을 확장한 다음, **Windows Defender 애플리케이션 제어**를 클릭합니다.
+3. **홈** 탭의 **만들기** 그룹에서 **애플리케이션 제어 정책 만들기**를 클릭합니다.
+4. **애플리케이션 제어 정책 만들기 마법사**의 **일반** 페이지에서 다음 설정을 지정합니다.
     - **이름** - 이 Windows Defender 애플리케이션 제어 정책에 대한 고유한 이름을 입력합니다. 
     - **설명** - 필요에 따라 Configuration Manager 콘솔에서 이 정책을 식별하는 데 도움이 되는 설명을 입력합니다.
     - **모든 프로세스에 대해 이 정책을 적용할 수 있도록 디바이스 다시 시작 적용** - 정책이 클라이언트 PC에서 처리되면 **컴퓨터 다시 시작**에 대한 **클라이언트 설정**에 따라 클라이언트에서 다시 시작이 예약됩니다.
@@ -89,22 +89,22 @@ Windows Defender 애플리케이션 제어 정책을 구성하거나 배포하�
     - **적용 모드** - 클라이언트 PC에서 다음과 같은 Device Guard 적용 방법 중 하나를 선택합니다.
         - **적용 사용** - 신뢰할 수 있는 실행 파일만 실행할 수 있습니다.
         - **감사 전용** - 모든 실행 파일을 실행할 수 있지만, 실행되는 신뢰할 수 없는 실행 파일을 로컬 클라이언트 이벤트 로그에 로깅합니다.
-5.  **애플리케이션 제어 정책 만들기 마법사**의 **포함** 탭에서 **Intelligent Security Graph에서 신뢰하는 소프트웨어 권한 부여** 를 사용할지를 선택합니다.
+5. **애플리케이션 제어 정책 만들기 마법사**의 **포함** 탭에서 **Intelligent Security Graph에서 신뢰하는 소프트웨어 권한 부여** 를 사용할지를 선택합니다.
 6. PC의 특정 파일 또는 폴더에 대한 신뢰를 추가하려면 **추가**를 클릭합니다. **신뢰할 수 있는 파일 또는 폴더 추가** 대화 상자에서 신뢰할 로컬 파일 또는 폴더 경로를 지정할 수 있습니다. 또한 연결할 권한이 있는 원격 디바이스에서 파일 또는 폴더 경로를 지정할 수도 있습니다. Windows Defender 애플리케이션 제어 정책에서 특정 파일 또는 폴더에 대한 신뢰를 추가하면 다음을 수행할 수 있습니다.
     - 관리되는 설치 관리자 동작 문제 해결
     - Configuration Manager로 배포할 수 없는 LOB(기간 업무) 앱 신뢰
     - 운영 체제 배포 이미지에 포함된 앱 신뢰 
-8.  **다음**을 클릭하여 마법사를 완료합니다.
+8. **다음**을 클릭하여 마법사를 완료합니다.
 
 >[!IMPORTANT]
 >Configuration Manager 클라이언트의 버전 1706 이상을 실행하는 클라이언트 PC에서만 신뢰할 수 있는 파일 또는 폴더를 포함하도록 지원됩니다. 모든 포함 규칙이 Windows Defender 애플리케이션 제어 정책에 포함되어 있고 정책이 Configuration Manager 클라이언트에서 이전 버전을 실행하는 클라이언트 PC에 배포되는 경우 정책이 적용되지 않습니다. 이전 클라이언트를 업그레이드하여 이 문제를 해결합니다. 포함 규칙을 포함하지 않는 정책은 여전히 이전 버전의 Configuration Manager 클라이언트에 적용될 수 있습니다.
 
 ## <a name="how-to-deploy-a-windows-defender-application-control-policy"></a>Windows Defender 애플리케이션 제어 정책을 배포하는 방법
-1.  Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
-2.  **자산 및 준수** 작업 영역에서 **Endpoint Protection**을 확장한 다음, **Windows Defender 애플리케이션 제어**를 클릭합니다.
-3.  정책 목록에서 배포하려는 정책을 선택하고 **홈** 탭의 **배포** 그룹에서 **애플리케이션 제어 정책 배포**를 클릭합니다.
-4.  **애플리케이션 제어 정책 배포** 대화 상자에서 정책을 배포하려는 컬렉션을 선택합니다. 그런 다음 클라이언트에서 정책을 평가하는 일정을 구성합니다. 마지막으로 클라이언트에는 구성된 모든 유지 관리 기간 외에도 정책을 평가할 수 있는지 여부를 선택합니다.
-5.  작업을 마쳤으면 **확인**을 클릭하여 정책을 배포합니다. 
+1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
+2. **자산 및 준수** 작업 영역에서 **Endpoint Protection**을 확장한 다음, **Windows Defender 애플리케이션 제어**를 클릭합니다.
+3. 정책 목록에서 배포하려는 정책을 선택하고 **홈** 탭의 **배포** 그룹에서 **애플리케이션 제어 정책 배포**를 클릭합니다.
+4. **애플리케이션 제어 정책 배포** 대화 상자에서 정책을 배포하려는 컬렉션을 선택합니다. 그런 다음 클라이언트에서 정책을 평가하는 일정을 구성합니다. 마지막으로 클라이언트에는 구성된 모든 유지 관리 기간 외에도 정책을 평가할 수 있는지 여부를 선택합니다.
+5. 작업을 마쳤으면 **확인**을 클릭하여 정책을 배포합니다. 
 
 <!--Reworked article to put this inline while working on VSO 1355092
 ### Restarting the device after deploying the policy
@@ -126,8 +126,8 @@ Windows Defender 애플리케이션 제어 정책의 처리를 모니터링하�
 
 차단 또는 감사되는 특정 소프트웨어를 확인하려면 다음 로컬 클라이언트 이벤트 로그를 참조하세요.
 
-1.  실행 파일을 차단하고 감사하려면 **애플리케이션 및 서비스 로그** > **Microsoft** > **Windows** > **코드 무결성** > **운영**을 사용합니다.
-2.  Windows Installer 및 스크립트 파일을 차단하고 감사하려면 **애플리케이션 및 서비스 로그** > **Microsoft** > **Windows** > **AppLocker** > **MSI 및 스크립트**를 사용합니다.
+1. 실행 파일을 차단하고 감사하려면 **애플리케이션 및 서비스 로그** > **Microsoft** > **Windows** > **코드 무결성** > **운영**을 사용합니다.
+2. Windows Installer 및 스크립트 파일을 차단하고 감사하려면 **애플리케이션 및 서비스 로그** > **Microsoft** > **Windows** > **AppLocker** > **MSI 및 스크립트**를 사용합니다.
 
 <!--Reworked article to put this inline while working on VSO 1355092
 ## Automatically let software run if it is trusted by Intelligent Security Graph

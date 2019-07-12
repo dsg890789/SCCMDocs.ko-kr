@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fba1d6793b2b285cc9874de316bb2c435a526e8
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: f88334a9c330d3af298ec63b3d7baa56c9714647
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67252311"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676597"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -100,7 +100,7 @@ Configuration Manager에서는 비동기 커밋 복제본의 상태를 확인하
 
 - **읽을 수 있는 보조** 설정은 **예**입니다.  
 
-- **수동 장애 조치**가 설정되어 있습니다.     
+- **수동 장애 조치**가 설정되어 있습니다.   
 
   > [!TIP]
   >  Configuration Manager에서는 **자동 장애 조치**로 설정된 가용성 그룹 동기 복제본을 사용할 수 있습니다. 다음의 경우 **수동 장애 조치**를 설정합니다.

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac26a9b161f869ec3f6410f9f6fb9e5edbc9f8f8
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 5499fae986dcd266e0b2a31d2619aa79146f8981
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194020"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676018"
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기에 대해 지원되는 구성
 
@@ -35,7 +35,7 @@ ms.locfileid: "67194020"
 **Windows:**
 - Windows에 대한 품질 및 보안 업데이트만 지원됩니다.
 - Windows 10의 CB(현재 분기), CBB(비즈니스용 현재 분기) 또는 LTSB에 대한 지원은 추가되지 않습니다.
--   Windows Server의 새로운 주 버전은 지원되지 않습니다.
+- Windows Server의 새로운 주 버전은 지원되지 않습니다.
 
 **SQL Server:**
 - SQL Server에 대한 품질 및 보안 업데이트나 서비스 팩 등의 부 업그레이드만 지원됩니다.

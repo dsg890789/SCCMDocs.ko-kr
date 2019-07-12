@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0982c2096d835bc46d92ef473f5e9878657b22b2
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: cb6b3c800a3083caa3e053e920afc1367a311f67
+ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176946"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67818157"
 ---
 # <a name="pki-certificate-requirements-for-system-center-configuration-manager"></a>System Center Configuration Manager를 위한 PKI 인증서 요구 사항
 
@@ -43,12 +43,6 @@ Configuration Manager에서 CNG(Cryptography API: Next Generation) 인증서를 
 > 대부분의 경우 SHA-2 인증서로 변경해도 작업에는 영향을 주지 않습니다. 자세한 내용은 [SHA1 인증서의 Windows 적용](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx)을 참조하세요.
 
  System Center Configuration Manager가 모바일 디바이스 및 Mac 컴퓨터에 등록하는 클라이언트 인증서, Microsoft Intune에서 모바일 디바이스를 관리하기 위해 자동으로 만드는 인증서 및 System Center Configuration Manager가 AMT 기반 컴퓨터에 설치하는 인증서를 제외한 다음 인증서는 PKI를 사용하여 만들고, 배포하고, 관리할 수 있습니다. 그러나 Active Directory 인증서 서비스 및 인증서 템플릿을 사용하는 경우 이 Microsoft PKI 솔루션을 사용하면 인증서를 쉽게 관리할 수 있습니다. 인증서 요구 사항에 가장 부합하는 인증서 템플릿을 알아보려면 다음 표의 **사용할 Microsoft 인증서 템플릿** 열을 참조하세요. 템플릿 기반 인증서는 Windows Server 2008 Enterprise 및 Windows Server 2008 Datacenter와 같은 Enterprise Edition 또는 Datacenter Edition의 서버 운영 체제에서 실행되는 엔터프라이즈 인증 기관에서만 발행할 수 있습니다.  
-
-> [!IMPORTANT]
->  엔터프라이즈 인증 기관과 인증서 템플릿을 사용하는 경우 버전 3 템플릿을 사용하지 마세요. 이러한 인증서 템플릿은 System Center Configuration Manager와 호환되지 않는 인증서를 만듭니다. 대신 다음 지침을 사용하여 버전 2 템플릿을 사용합니다.  
-> 
-> - Windows Server 2012에 설치된 CA의 경우: 인증서 템플릿 속성의 **호환성** 탭에서 **인증 기관** 옵션에는 **Windows Server 2003**을, **인증서 받는 사람** 옵션에는 **Windows XP / Server 2003**을 지정합니다.  
->   -   Windows Server 2008에 설치된 CA의 경우: 인증서 템플릿을 복제할 때 **템플릿 복제** 대화 상자에서 메시지가 표시되면 기본 선택 항목인 **Windows Server 2003 Enterprise**를 그대로 유지합니다. **Windows Server 2008, Enterprise Edition**은 선택하지 마세요.  
 
  인증서 요구 사항을 보려면 다음 섹션을 참조하세요.  
 

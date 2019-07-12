@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d16cbc892a3f4c7565a9672ca7c0145396dcaa3d
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: b1a18371a7f75935b3d72262b35385f8f4e81923
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59673618"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677664"
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
 
@@ -65,7 +65,7 @@ ms.locfileid: "59673618"
         - **모든 화면** - Configuration Manager 1902에 추가되었습니다. 연결한 컴퓨터에 다중 모니터가 있으면 이러한 모든 모니터의 화면 표시가 원격 제어 창에 표시됩니다. 1902 이전에는 **모든 화면**이 다중 모니터가 있는 컴퓨터의 유일한 뷰입니다.
         -  **첫 번째 화면** - Configuration Manager 1902에 추가되었습니다. *첫 번째 화면*은 Windows 디스플레이 설정에서 가장 왼쪽 상단에 표시되는 화면입니다. 특정 화면을 선택할 수는 없습니다. 뷰어의 구성을 변경한 후에는 원격 세션을 다시 연결해야 합니다. 이때부터 뷰어에 선택 사항이 저장됩니다.
         -  **크기 조정** - 원격 컴퓨터의 화면 표시를 **Configuration Manager 원격 제어** 창의 크기에 맞게 조정합니다.
-       - **상태 표시줄** – **Configuration Manager 원격 제어** 창 상태 표시줄의 화면 표시를 전환합니다.  
+        - **상태 표시줄** – **Configuration Manager 원격 제어** 창 상태 표시줄의 화면 표시를 전환합니다.  
 
        > [!NOTE]  
        >  이때부터 뷰어에 선택 사항이 저장됩니다.
@@ -84,7 +84,7 @@ ms.locfileid: "59673618"
 
 ## <a name="to-start-the-remote-control-viewer-from-the-windows-command-line"></a>Windows 명령줄에서 원격 제어 뷰어를 시작하려면  
 
--   Windows 명령 프롬프트에 _<Configuration Manager 설치 폴더\>_**\AdminConsole\Bin\x64\CmRcViewer.exe**를 입력합니다.  
+-   Windows 명령 프롬프트에 _<Configuration Manager 설치 폴더\>_ **\AdminConsole\Bin\x64\CmRcViewer.exe**를 입력합니다.  
 
 CmRcViewer.exe에서 다음 명령줄 옵션을 지원합니다.  
 

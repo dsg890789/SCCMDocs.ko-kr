@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd6abbb6b4a11bb9b412b6a2ad1c2f8e5d648c59
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 263ec638afa62cee4f8fce86a9f7b9e35b37f0bb
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67193973"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676038"
 ---
 # <a name="about-upgrade-update-and-install-for-site-and-hierarchy-infrastructure"></a>사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보
 
@@ -37,7 +37,7 @@ System Center 2012 Configuration Manager를 System Center Configuration Manager�
 *업데이트*는 System Center Configuration Manager에 대한 콘솔 내 업데이트 설치 및 Configuration Manager 콘솔 내에서 배달할 수 없는 업데이트인 대역 외 업데이트에 사용됩니다. 콘솔 내 업데이트는 상위 버전을 실행할 수 있도록 현재 분기 사이트(또는 기술 미리 보기 사이트)의 버전을 수정할 수 있습니다. 예를 들어 사이트에서 버전 1806을 실행하는 경우 버전 1810에 대한 업데이트를 설치할 수 있습니다. 또한 사이트 버전을 수정하지 않고 업데이트에서 알려진 문제에 대한 수정 프로그램을 설치할 수 있습니다.      
 
 일반적으로 업데이트는 기존 배포에 보안 수정 프로그램, 품질 개선 및 새로운 기능을 추가합니다. 기술 미리 보기 분기를 사용하는 경우 업데이트를 통해 기술 미리 보기의 최신 버전을 설치할 수 있습니다.
--   콘솔 내 업데이트를 설치할 시기는 계층의 최상위 계층 사이트부터 선택합니다.
+- 콘솔 내 업데이트를 설치할 시기는 계층의 최상위 계층 사이트부터 선택합니다.
 - 콘솔 내에서 사용할 수 있는 모든 업데이트를 설치할 수 있습니다. 예를 들어 사이트에서 버전 1802를 실행하고 1806과 1810이 둘 다 제공된 경우 버전 1810을 설치하는 것이 좋습니다. 각 버전에는 이전에 릴리스된 버전에서 처음으로 제공된 기능이 포함되어 있기 때문입니다.
 - 최상위 계층 사이트에서 새 업데이트 설치가 완료되면 자식 기본 사이트에서 업데이트 프로세스가 자동으로 시작됩니다. 그러나 [서비스 기간](/sccm/core/servers/manage/service-windows)을 설정하여 업데이트 시기를 제어할 수 있습니다.
 - 보조 사이트에는 업데이트가 자동으로 설치되지 않습니다. 대신 Configuration Manager 콘솔 내에서 수동으로 업데이트를 시작해야 합니다.

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4da8ff0e4d35284c5b1f2f465da468677cdfbb65
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: ce70f690899e6ad9413c1fcd57e3f1b47a61fd4b
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286078"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623310"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
 
@@ -285,7 +285,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 #### <a name="bkmk_token1"></a> 시나리오 1: 관리 지점의 클라이언트
 <!--1356889-->
-[Azure AD 조인 디바이스](/azure/active-directory/device-management-introduction#azure-ad-joined-devices)가 CMG(클라우드 관리 게이트웨이)를 통해 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
+[Azure AD 조인 디바이스](/azure/active-directory/devices/concept-azure-ad-join)가 CMG(클라우드 관리 게이트웨이)를 통해 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.   
 
 > [!Note]  
 > 이 동작은 Configuration Manager 현재 분기 버전 1802에서 변경되어 이 시나리오에 HTTPS 사용 관리 지점이 필요합니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)을 참조하세요.  
@@ -296,7 +296,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 #### <a name="bkmk_token3"></a> 시나리오 3: Azure AD 디바이스 ID 
 <!--1358460-->
-Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/device-management-introduction#hybrid-azure-ad-joined-devices)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
+Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/devices/concept-azure-ad-join-hybrid)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 
 ### <a name="prerequisites"></a>필수 구성 요소  

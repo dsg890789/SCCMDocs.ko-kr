@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec448f0d2752cda2509b6daa0302ff521044bef4
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: e60ce54c5f792f7ea9c7a6c6d05b32c79c1e9b8d
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65493774"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678788"
 ---
 # <a name="create--software-updates-and-update-bundles-with-updates-publisher"></a>Updates Publisher를 사용하여 소프트웨어 업데이트 및 업데이트 번들 만들기
 
@@ -47,7 +47,7 @@ Updates Publisher를 사용하면 **Create Update**(업데이트 만들기) 마�
 
    -   소프트웨어 업데이트를 설치하는 데 필요한 명령줄 인수를 지정합니다.
 
-       -   Windows Installer 파일 및 패치(.MSI 및 .MSP 파일)는 이러한 값을 자동으로 설정합니다. 이러한 파일 형식의 경우 인수는 **\[name\]=\[value\]** 로 지정해야 합니다. 또한 .MSI 또는 .MSP 소프트웨어 업데이트에는 **/**(예: **/qn**)로 시작하는 모든 옵션이 지원되지 않습니다.
+       -   Windows Installer 파일 및 패치(.MSI 및 .MSP 파일)는 이러한 값을 자동으로 설정합니다. 이러한 파일 형식의 경우 인수는 **\[name\]=\[value\]** 로 지정해야 합니다. 또한 .MSI 또는 .MSP 소프트웨어 업데이트에는 **/** (예: **/qn**)로 시작하는 모든 옵션이 지원되지 않습니다.
 
        -   .EXE 업데이트의 경우 모든 인수가 유효합니다.
 
@@ -61,7 +61,7 @@ Updates Publisher를 사용하면 **Create Update**(업데이트 만들기) 마�
 
    - **설명**: 업데이트에 대한 설명입니다. 업데이트가 설치하는 항목과 사용 이유 또는 시기를 포함할 수 있습니다.
 
-     **분류:** 다음은 다양한 분류에 대한 일반적인 설명입니다.
+   **분류:** 다음은 다양한 분류에 대한 일반적인 설명입니다.
 
    - **업데이트**: 현재 설치된 애플리케이션 또는 파일에 대한 업데이트를 지정합니다.
 
@@ -77,30 +77,30 @@ Updates Publisher를 사용하면 **Create Update**(업데이트 만들기) 마�
 
    - **도구**: 하나 이상의 작업을 완료하는 데 도움이 되는 도구 또는 기능을 지정합니다.
 
-     -   **드라이버**: 드라이버 소프트웨어에 대한 업데이트입니다.
+   - **드라이버**: 드라이버 소프트웨어에 대한 업데이트입니다.
 
    **공급업체**: 업데이트에 대한 공급업체를 지정합니다. 드롭다운 목록을 사용하여 리포지토리에 있는 업데이트의 값을 사용할 수 있습니다. 공급업체를 지정하면 해당 폴더가 없는 경우 마법사가 **업데이트 작업 영역**의 **모든 소프트웨어 업데이트**에 해당 공급업체 이름의 폴더를 만듭니다. 다음은 만든 업데이트에 대해 입력할 수 없는 WSUS(Windows Server Update Services) 예약 이름입니다.
-   >*   Microsoft Corporation
-   >*   Microsoft
-   >*   업데이트
-   >*   소프트웨어 업데이트
-   >*   도구
-   >*   도구
-   >*   중요
-   >*   중요 업데이트
-   >*   보안
-   >*   보안 업데이트
-   >*   Feature Pack
-   >*   업데이트 롤업
-   >*   서비스 팩
-   >*   드라이버
-   >*   드라이버 업데이트
-   >*   번들
-   >*   번들 업데이트
+   - Microsoft Corporation
+   - Microsoft
+   - 업데이트
+   - 소프트웨어 업데이트
+   - 도구
+   - 도구
+   - 중요
+   - 중요 업데이트
+   - 보안
+   - 보안 업데이트
+   - Feature Pack
+   - 업데이트 롤업
+   - 서비스 팩
+   - 드라이버
+   - 드라이버 업데이트
+   - 번들
+   - 번들 업데이트
 
-**제품**: 업데이트가 필요한 제품 유형을 지정합니다. 드롭다운 목록을 사용하여 리포지토리에 있는 업데이트의 값을 사용할 수 있습니다. **공급업체**에 사용할 수 없는 WSUS 예약 이름의 목록은 **제품**에서도 동일하게 사용할 수 없습니다.
+   **제품**: 업데이트가 필요한 제품 유형을 지정합니다. 드롭다운 목록을 사용하여 리포지토리에 있는 업데이트의 값을 사용할 수 있습니다. **공급업체**에 사용할 수 없는 WSUS 예약 이름의 목록은 **제품**에서도 동일하게 사용할 수 없습니다.
 
- **추가 정보 URL**: 이 업데이트에 대한 추가 정보를 확인할 수 있는 URL을 지정합니다. 이 URL을 입력할 때는 소문자 **https** 또는 **http**를 사용해야 합니다.
+   **추가 정보 URL**: 이 업데이트에 대한 추가 정보를 확인할 수 있는 URL을 지정합니다. 이 URL을 입력할 때는 소문자 **https** 또는 **http**를 사용해야 합니다.
 
 4. **Optional Info**(선택적 정보) 페이지에서 업데이트에 대한 추가 정보를 제공하는 세부 정보를 구성할 수 있습니다.
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23fbb29ba4676f6c7282e5337f691f88209e15e6
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: ee32d282bc04e6c1f97b12dedb8d69ccdcca8915
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551225"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677543"
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
@@ -72,10 +72,10 @@ System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기
 
 ### <a name="set-up-configuration-manager-to-use-azure-ad"></a>Azure AD를 사용하도록 Configuration Manager 설정
 Configuration Manager에서 Azure AD를 사용하려면 다음이 필요합니다.
--   Azure 구독
--   Azure AD 및 DS(Domain Services)
--   Azure AD에 가입된 Azure VM에서 실행되는 Configuration Manager 사이트
--   동일한 Azure AD 환경에서 실행되는 Configuration Manager 클라이언트
+- Azure 구독
+- Azure AD 및 DS(Domain Services)
+- Azure AD에 가입된 Azure VM에서 실행되는 Configuration Manager 사이트
+- 동일한 Azure AD 환경에서 실행되는 Configuration Manager 클라이언트
 
 Azure AD Domain Services를 구성하려면 [Azure AD Domain Services 시작](https://docs.microsoft.com/azure/active-directory-domain-services/create-instance)을 참조하세요.
 
@@ -212,9 +212,9 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 
 ### <a name="try-it-out"></a>직접 시도해 보세요.
 
-1.  Configuration Manager 배포 유형의 속성에서 **설치 동작** 탭을 선택합니다.
-2.  **추가**를 선택하여 확인할 실행 파일 이름을 하나 이상 추가합니다. 사용자가 목록에서 애플리케이션을 식별하기 쉽도록 표시 이름을 추가할 수도 있습니다.
-3.  배포 용도가 필수인 경우 소프트웨어 배포 마법사에서 필요에 따라 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기**를 선택할 수 있습니다.
+1. Configuration Manager 배포 유형의 속성에서 **설치 동작** 탭을 선택합니다.
+2. **추가**를 선택하여 확인할 실행 파일 이름을 하나 이상 추가합니다. 사용자가 목록에서 애플리케이션을 식별하기 쉽도록 표시 이름을 추가할 수도 있습니다.
+3. 배포 용도가 필수인 경우 소프트웨어 배포 마법사에서 필요에 따라 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기**를 선택할 수 있습니다.
 
 애플리케이션이 **사용 가능**으로 배포된 경우 최종 사용자가 애플리케이션을 설치하려고 하면 지정된 실행 중인 실행 파일을 닫아야 설치를 계속할 수 있다는 메시지가 표시됩니다.
 

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 002ed233a679cdee928160490c8e1ee4425c7382
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 83838e2642d09c001b638900b6cc4fa23975745e
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496253"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676360"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -101,7 +101,7 @@ ms.locfileid: "65496253"
 
 #### <a name="specify-the-type-of-updates-to-download"></a>다운로드할 업데이트 유형 지정
 1706 버전부터 도구 기본 다운로드 동작이 변경되었으며 어떤 파일을 다운로드할지 제어하는 옵션을 지원합니다.
--   기본적으로 이 도구는 사이트의 버전에 적용되는 사용 가능한 최신 업데이트만 다운로드합니다. 핫픽스는 다운로드하지 않습니다.
+- 기본적으로 이 도구는 사이트의 버전에 적용되는 사용 가능한 최신 업데이트만 다운로드합니다. 핫픽스는 다운로드하지 않습니다.
 
 이 동작을 수정하려면 다음 매개 변수 중 하나를 사용하여 다운로드할 파일을 변경합니다. 
 
@@ -110,9 +110,9 @@ ms.locfileid: "65496253"
 >
 > .cab 파일 내의 *SiteVersion*.txt 파일을 찾아서 버전을 확인할 수 있습니다.
 
--   **-downloadall** 이 옵션은 사이트 버전에 관계없이 업데이트와 핫픽스를 포함한 모든 항목을 다운로드합니다.
--   **-downloadhotfix** 이 옵션은 사이트 버전에 관계없이 모든 핫픽스를 다운로드합니다.
--   **-downloadsiteversion** 이 옵션은 사이트의 버전보다 최신 버전인 업데이트와 핫픽스를 다운로드합니다.
+- **-downloadall** 이 옵션은 사이트 버전에 관계없이 업데이트와 핫픽스를 포함한 모든 항목을 다운로드합니다.
+- **-downloadhotfix** 이 옵션은 사이트 버전에 관계없이 모든 핫픽스를 다운로드합니다.
+- **-downloadsiteversion** 이 옵션은 사이트의 버전보다 최신 버전인 업데이트와 핫픽스를 다운로드합니다.
 
 *-downloadsiteversion*을 사용하는 명령줄 예제:
 - **serviceconnectiontool.exe -connect  *-downloadsiteversion* -usagedatasrc D:\USB -updatepackdest D:\USB\UpdatePacks**

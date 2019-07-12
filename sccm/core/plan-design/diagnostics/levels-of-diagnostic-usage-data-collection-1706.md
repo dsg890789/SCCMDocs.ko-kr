@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23659fab5e0f6410c98c09f2a4d94c5168c9ac8c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 2a091df7d451d5eff17407e7ccab88ee909366c9
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138690"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677000"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -87,7 +87,7 @@ System Center Configuration Manager 버전 1706에서 이 수준에는 다음이
 
      - Software Assurance 만료 날짜      
 
-     - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류     
+     - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류 
 
      - 업데이트 빠른 링 사용
 

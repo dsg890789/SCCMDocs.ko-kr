@@ -10,12 +10,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7304730b-b517-4c76-aadd-4cbd157dc971
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 013d00fd7c207df45b0f6b7910283c3e8b60b44d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 9ff03c20ccbb79a527f23b6c5cf0cd179751e980
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137173"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677750"
 ---
 # <a name="security-and-privacy-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 보안 및 개인 정보
 
@@ -68,7 +68,8 @@ URL은 각 관리 지점에 대해 고유합니다. 그런 다음, Configuration
 <a name="bkmk_ctl"></a>
 
 ### <a name="review-entries-in-the-sites-certificate-trust-list"></a>사이트의 인증서 신뢰 목록에서 항목 검토
-<!--503739--> 각 Configuration Manager 사이트에는 신뢰할 수 있는 루트 인증 기관 목록인 CTL(인증서 신뢰 목록)이 포함됩니다. 관리 작업 영역으로 이동하여 목록을 보고 수정하고, 사이트 구성을 확장하고, 사이트를 선택합니다. 사이트를 선택하고 리본 메뉴에서 속성을 클릭합니다. 클라이언트 컴퓨터 통신 탭으로 전환한 다음, 신뢰할 수 있는 루트 인증 기관에서 **설정**을 클릭합니다.
+<!--503739-->
+각 Configuration Manager 사이트에는 신뢰할 수 있는 루트 인증 기관 목록인 CTL(인증서 신뢰 목록)이 포함됩니다. 관리 작업 영역으로 이동하여 목록을 보고 수정하고, 사이트 구성을 확장하고, 사이트를 선택합니다. 사이트를 선택하고 리본 메뉴에서 속성을 클릭합니다. 클라이언트 컴퓨터 통신 탭으로 전환한 다음, 신뢰할 수 있는 루트 인증 기관에서 **설정**을 클릭합니다.
  
 PKI 클라이언트 인증을 사용하여 CMG가 포함된 사이트에 더 제한적인 CTL을 사용합니다. 그렇지 않은 경우, 관리 지점에 이미 존재하는 신뢰할 수 있는 루트에서 발급한 클라이언트 인증 인증서가 포함된 클라이언트는 자동으로 클라이언트 등록에 승인됩니다.
 

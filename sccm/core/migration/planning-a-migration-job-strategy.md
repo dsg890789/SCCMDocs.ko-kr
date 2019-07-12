@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f6b445bb2e84cb7c3f35d81c66038686f2b9833
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: b7acec3488d016a309fe2f159d81087d28b795f7
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715987"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677244"
 ---
 # <a name="plan-a-migration-job-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 작업 전략 계획
 
@@ -241,7 +241,7 @@ ms.locfileid: "66715987"
 ### <a name="specify-conflict-resolution-for-migrated-data"></a>마이그레이션된 데이터에 대한 충돌 해결 지정  
  이전에 대상 데이터베이스로 마이그레이션된 데이터를 건너뛰거나 덮어쓰도록 마이그레이션 작업을 구성하지 않으면 기본적으로 마이그레이션 작업은 대상 데이터베이스의 데이터를 덮어쓰지 않습니다.  
 
-##  <a name="About_Collection_Migration "></a> 컬렉션 마이그레이션 작업 계획  
+##  <a name="About_Collection_Migration"></a> 컬렉션 마이그레이션 작업 계획  
  컬렉션 마이그레이션 작업은 지원되는 버전의 Configuration Manager 2007을 실행하는 원본 계층에서 데이터를 마이그레이션하는 경우에만 사용할 수 있습니다. 컬렉션별로 마이그레이션할 때 마이그레이션할 컬렉션을 하나 이상 지정해야 합니다. 지정한 각 컬렉션별로 마이그레이션 작업 시 모든 마이그레이션 관련 개체가 자동으로 선택됩니다. 예를 들어 특정 사용자 컬렉션을 선택하는 경우 컬렉션 구성원이 식별된 후 해당 컬렉션과 연결된 배포를 마이그레이션할 수 있습니다. 선택적으로, 해당 구성원에 연결된 다른 배포 개체를 마이그레이션하도록 선택할 수 있습니다. 이러한 선택한 모든 항목이 마이그레이션할 개체 목록에 추가됩니다.  
 
  컬렉션을 마이그레이션할 때 System Center Configuration Manager는 유지 관리 기간 및 컬렉션 변수를 포함하는 컬렉션 설정도 마이그레이션하지만 AMT 클라이언트 프로비전에 대한 컬렉션 설정은 마이그레이션할 수 없습니다.  

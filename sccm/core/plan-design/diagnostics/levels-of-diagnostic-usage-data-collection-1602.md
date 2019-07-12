@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 667a734eefab0e7634d13fd971c218a0803acc13
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e4742e697737cdb71ad8d668566a289cef5b5f1d
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136418"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677170"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -86,7 +86,7 @@ System Center Configuration Manager 버전 1602에서는 다음과 같은 세 �
 - ***[새로운 기능]*** 네트워크 검색 사용(사용 또는 사용 안 함)
 - ***[새로운 기능]*** 관리 콘솔:
 
-    -  콘솔 연결에 대한 통계(운영 체제 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩)
+  -  콘솔 연결에 대한 통계(운영 체제 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩)
 
 ##  <a name="bkmk_level2"></a> 수준 2 - 고급
 설정이 완료된 후에는 고급 수준이 기본값입니다. 이 수준은 기본 수준에서 수집한 데이터 외에 기능별 데이터(사용 빈도 및 기간), Configuration Manager 클라이언트 설정(구성 요소 이름, 상태 및 폴링 간격과 같은 특정 설정) 및 소프트웨어 업데이트에 대한 기본 정보를 포함합니다.

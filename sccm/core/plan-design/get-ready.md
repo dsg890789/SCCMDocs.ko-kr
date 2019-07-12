@@ -10,12 +10,12 @@ ms.assetid: 3e839a3e-e476-4ec2-bf29-21e78180441d
 author: mestew
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c7444a30e46b407f01351b7e1d57158cc3b5433
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 2c28e0ab445199233842d4dfcbaed5041203174a
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499296"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676777"
 ---
 # <a name="get-ready-for-system-center-configuration-manager"></a>System Center Configuration Manager 준비
 
@@ -24,13 +24,13 @@ ms.locfileid: "65499296"
 System Center Configuration Manager 배포 계획을 시작할 준비가 되면 다음 항목의 내용을 따르세요.  
 
 
-  -   [System Center Configuration Manager에 대한 사이트 계층 구조 디자인](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md)  
+-   [System Center Configuration Manager에 대한 사이트 계층 구조 디자인](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md)  
 
-  -   [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)  
+-   [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)  
 
-  -   [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)  
+-   [System Center Configuration Manager에서 콘텐츠 관리의 기본 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)  
 
-  -   [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)  
+-   [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)  
 
 -   [System Center Configuration Manager에 대한 네트워크 환경 준비](/sccm/core/plan-design/network/configure-firewalls-ports-domains)  
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8383b654182ba57b52a53755595413b18d1cd4e7
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 69bec7c52d826d76502e52d0d5ddbc1d0cf9c3ef
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121712"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677188"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606에 대한 진단 사용 현황 데이터 수집의 수준
 
@@ -42,10 +42,10 @@ System Center Configuration Manager 버전 1606에서는 다음과 같은 세 �
  System Center Configuration Manager 버전 1606부터 이 수준에는 다음이 포함됩니다.
 
 
- -   설정 정보:
+-   설정 정보:
       - 빌드, 설치 유형, 언어 팩, 사용하도록 설정한 기능  
 
-      -   업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류  
+      -   업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류 
 
       -  업그레이드 후 스크립트의 버전
 
@@ -86,7 +86,7 @@ System Center Configuration Manager 버전 1606에서는 다음과 같은 세 �
 -  네트워크 검색 사용(사용 또는 사용 안 함)
 -  관리 콘솔:
 
-     -  콘솔 연결에 대한 통계(운영 체제 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩)    
+    -  콘솔 연결에 대한 통계(운영 체제 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩)    
 
 
 - ***[새로운 기능]*** SQL 버전, 서비스 팩 수준, 버전, 데이터 정렬 ID 및 문자 집합

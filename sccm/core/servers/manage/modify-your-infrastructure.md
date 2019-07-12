@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82784006e959dc960c0fa3bd80db3cf7705f295
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 4bc8df791ba24a112d8311246a2c3a82b0acd313
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497412"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676425"
 ---
 # <a name="modify-your-system-center-configuration-manager-infrastructure"></a>System Center Configuration Manager 인프라 수정
 
@@ -226,7 +226,7 @@ SQL Server 설명서는 [수동으로 SPN을 등록](https://technet.microsoft.c
 
 2.  필요한 경우 사이트 서버의 도메인에 연결합니다.  
 
-3.  콘솔 창에서 사이트 서버의 도메인, **DC=&lt;서버 고유 이름\>**, **CN=Users**를 차례로 확장하고 **CN=&lt;서비스 계정 사용자\>** 를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
+3.  콘솔 창에서 사이트 서버의 도메인, **DC=&lt;서버 고유 이름\>** , **CN=Users**를 차례로 확장하고 **CN=&lt;서비스 계정 사용자\>** 를 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
 
 4.  **CN=&lt;서비스 계정 사용자\> 속성** 대화 상자에서 **servicePrincipalName** 값을 검토하여 유효한 SPN이 작성되어 올바른 SQL Server 컴퓨터에 연결되었는지 확인합니다.  
 

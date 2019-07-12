@@ -12,12 +12,12 @@ manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 339ad109eae4d54ff5f8e04e18f29c9e47e8930d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 246c690550711e15930987794a001ee870456d5a
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121678"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677679"
 ---
 # <a name="capabilities-in-technical-preview-1608-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1608의 기능
 
@@ -48,7 +48,7 @@ ms.locfileid: "56121678"
 
 ### <a name="filter-the-software-display"></a>소프트웨어 표시 필터링
 부모 자식 관계를 정의한 후에 부모인 소프트웨어만 표시하도록 보기를 필터링하거나 정의된 관계가 없는 소프트웨어만 표시하도록 필터링할 수 있습니다. 이렇게 하면 또 다른 인벤토리 소프트웨어의 자식으로 설정된 모든 소프트웨어가 숨겨집니다. 확인 방법은 다음과 같습니다.
-   1.   검색 창에서 **조건 추가**를 선택합니다.
+   1. 검색 창에서 **조건 추가**를 선택합니다.
    2. **부모 소프트웨어**를 선택한 다음 조건 값을 **비어 있음**으로 변경한 후 **검색**을 클릭합니다.
 
 이제 부모 소프트웨어 항목 또는 정의된 관계가 없는 소프트웨어만 표시됩니다. 다른 제목의 자식에만 해당하는 소프트웨어는 표시되지 않습니다.
