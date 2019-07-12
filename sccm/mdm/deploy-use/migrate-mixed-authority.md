@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 6f0201d7-5714-4ba0-b2bf-d1acd0203e9a
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccc38188729a05329cc240a9f424ccce9fd433b2
-ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
+ms.openlocfilehash: 9ca39be68074213e4bb0a3f667ae69d5257f7a3c
+ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974082"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67818064"
 ---
 # <a name="change-the-mdm-authority-for-specific-users-mixed-mdm-authority"></a>특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)
 
@@ -105,7 +105,7 @@ Intune 구독과 연결된 컬렉션의 사용자에 대한 디바이스는 하�
 ![컬렉션 제외](../media/migrate-excludecollections.png)
 
 > [!Note]  
-> 경우는 **모든 사용자** Intune 구독에 대 한 선택한 컬렉션 제외 컬렉션 규칙을 추가 하려면 허용 되지 않습니다. 기반으로 새 컬렉션을 만들 합니다 **모든 사용자에 게** 컬렉션입니다. 예상 되는 사용자 컬렉션에 포함 되어 있는지 확인 합니다. 그런 다음 새 컬렉션을 사용 하려면 Intune 구독을 편집 합니다. 새 컬렉션에서 사용자 컬렉션을 제외하여 사용자를 마이그레이션할 수 있습니다.  
+>   경우는 **모든 사용자에 게** Intune 구독에 대 한 선택한 컬렉션에 사용자는 허용 되지 않습니다 제외 컬렉션 규칙을 추가 합니다. 대신에 기반한 새 컬렉션을 만들 합니다 **모든 사용자** 컬렉션 예상 다음 새 컬렉션을 사용 하려면 Intune 구독을 편집 하는 사용자 컬렉션에 포함 되어 있는지 확인 합니다. 새 컬렉션에서 사용자 컬렉션을 제외하여 사용자를 마이그레이션할 수 있습니다. 컬렉션에서 사용자를 제외 해도 사용자가 멤버인 그룹을 포함 하는 경우 사용자는 컬렉션에서 제외할 수 없습니다.
 
 테스트 사용자 그룹을 Intune로 마이그레이션하기 위해 마이그레이션할 사용자가 포함 된 사용자 컬렉션을 만듭니다. 다음 Intune 구독에 사용 되는 컬렉션에서 사용자 컬렉션을 제외 합니다.  
 
