@@ -2,7 +2,7 @@
 title: 데스크톱 Analytics 문제 해결
 titleSuffix: Configuration Manager
 description: 데스크톱 Analytics를 사용 하 여 문제를 해결 하려면 기술 세부 정보입니다.
-ms.date: 06/28/2019
+ms.date: 07/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 246ee2c314df3d942d40d16ac9953580fed32803
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: 9a1c170394e3db46572c424dcb04715713d4b24f
+ms.sourcegitcommit: 448cc0d9094a3c9e23f011c4673cd1e8b956280a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551244"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67860853"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>데스크톱 Analytics 문제 해결
 
@@ -28,7 +28,7 @@ ms.locfileid: "67551244"
 
 많은 일반적인 문제는 누락 된 필수 구성 요소에서 발생 합니다. 먼저 다음과 같은 구성을 확인 합니다.
 
-- [전제 조건](/sccm/desktop-analytics/overview#prerequisites)  
+- [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)  
 
 - [Windows 구성 요소 업데이트](/sccm/desktop-analytics/enroll-devices#update-devices)  
 
@@ -74,7 +74,7 @@ Azure ad에 응용 프로그램을 추가 하는 데스크톱 분석:
 
 ### <a name="create-and-import-app-for-configuration-manager"></a>만들기 및 Configuration Manager에 대 한 앱 가져오기
 
-완료 한 후 합니다 [초기 온 보 딩](/sccm/desktop-analytics/set-up#initial-onboarding) 데스크톱 Analytics 포털에서 사용 하 여 다음 단계를 수동으로 만들고 Azure 서비스 구성에서이 Azure AD 앱을 만들 수 없는 경우 Configuration Manager에 대 한 앱 가져오기 마법사입니다.
+Azure 서비스 구성 마법사에서 Configuration Manager에 대 한 Azure AD 앱을 만들 수 없습니다 또는 기존 앱을 다시 사용 하려는 경우 수동으로 만들고 가져와서 해야 합니다. 완료 한 후 합니다 [초기 온 보 딩](/sccm/desktop-analytics/set-up#initial-onboarding) 데스크톱 Analytics 포털에서 다음 단계를 사용 하 여:
 
 #### <a name="create-app-in-azure-ad"></a>Azure AD에서 앱 만들기
 
@@ -181,7 +181,7 @@ Azure ad에 응용 프로그램을 추가 하는 데스크톱 분석:
 
     - **선택**: **MALogAnalyticsReader**  
 
-4. **저장**을 선택합니다.
+4.           **저장**을 선택합니다.
 
 알림 역할 할당을 추가 하는 포털 보여 줍니다.
 

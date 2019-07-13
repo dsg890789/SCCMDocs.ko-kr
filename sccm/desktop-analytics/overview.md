@@ -2,7 +2,7 @@
 title: Desktop Analytics
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 서비스의 개요를 Configuration Manager를 통합 합니다.
-ms.date: 06/07/2019
+ms.date: 07/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: overview
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0daf2943b0859227d08069be9c9da69165d5d1a
-ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
+ms.openlocfilehash: 45a8e71a3a8777686547ef4e3e05ef868b459792
+ms.sourcegitcommit: 448cc0d9094a3c9e23f011c4673cd1e8b956280a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67726234"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67860867"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 Analytics 란?
 
@@ -70,6 +70,9 @@ ms.locfileid: "67726234"
 ### <a name="technical"></a>기술
 
 - 활성 Azure 구독을 사용 하 여 [전역 관리자](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator) 권한  
+
+    > [!Important]  
+    > 데스크톱 Office 365 서비스를 제공 하는 데는 현재가 분석과 Azure AD 테 넌 트에 Office 365 구독이 필요 합니다. 나중에 요구 사항이 아닐 수 있습니다.
 
     - **작업 영역 소유자** 나 **참가자** 권한을 **작업 영역 설정**, 및 다음 역할:  
 

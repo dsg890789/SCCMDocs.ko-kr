@@ -2,7 +2,7 @@
 title: 데스크톱 분석에 대 한 FAQ
 titleSuffix: Configuration Manager
 description: 질문과 대답 데스크톱 분석용입니다.
-ms.date: 06/10/2019
+ms.date: 07/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9daf94a21b66fa0137e0a6bf041f10c87c64c34e
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 663490349bcb61f243980c5e1a3fe1f5651d8573
+ms.sourcegitcommit: 448cc0d9094a3c9e23f011c4673cd1e8b956280a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159085"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67860845"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
@@ -45,8 +45,7 @@ ms.locfileid: "67159085"
 
 요청 시 데이터 새로 고침을 요청 하지 하는 경우에 모든 데이터는 하루에 한 번 자동으로 업데이트 됩니다. 진단 데이터의 주문형 새로 고침을 트리거할 방법이 없습니다. 다양 한 데스크톱 Analytics에서 데이터에 대 한 자세한 내용은 참조 하세요. [의 데이터 대기 시간이](/sccm/desktop-analytics/troubleshooting#data-latency)합니다.
 
-
-## <a name="privacy"></a>개인 정보 보호
+## <a name="privacy"></a>개인 정보 취급 방침
 
 ### <a name="can-desktop-analytics-be-used-without-a-direct-client-connection-to-the-microsoft-data-management-service"></a>Microsoft 데이터 관리 서비스에 직접 클라이언트 연결 없이 데스크톱 Analytics는 사용할 수 있습니까?
 
@@ -61,3 +60,9 @@ Microsoft 데이터 관리 서비스 및 분석에 대 한 Azure Storage: 아니
 ### <a name="where-is-my-organizations-data-stored"></a>조직의 데이터 저장 위치
 
 Windows 컴퓨터에서 진단 데이터는 암호화, 전송 및 미국에 있는 Microsoft에서 관리 하는 보안 데이터 센터에서 처리 합니다. 데스크톱 Analytics와 관련 된 데이터의 분석 후에 Azure portal에서 데스크톱 분석 솔루션을 통해 제공 됩니다. 데스크톱 분석은 모든 Azure 지역에서 지원 됩니다. 국가별 Azure 지역 선택 것을 막기 위해 진단 데이터에서 전송 및 미국에서 Microsoft의 보안 데이터 센터에서 처리 합니다.
+
+## <a name="other"></a>기타
+
+### <a name="can-i-use-desktop-analytics-for-my-office-365-proplus-upgrades"></a>Office 365 ProPlus 업그레이드에 대 한 데스크톱 Analytics를 사용할 수 있나요?
+
+아니요, 데스크톱 Analytics는 Windows에 포커스가 있습니다. Microsoft은 Desktop Analytics 다양 한 고객과 긴밀 한 공동 작업 개발. 미리 보기 프로그램을 통해 데스크톱 분석 안심 하 고 Windows 배포를 관리 하는 기능을 개선 하는 방법에 대 한 고객 의견이 했습니다. 또한 추천한 그걸 [Office 365 ProPlus 준비 ](/sccm/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) Configuration Manager 및 Intune에서 office 관리 도구와 더욱 긴밀 하 게 통합 합니다. Microsoft는 Windows 데스크톱 분석 시나리오에 초점을 맞추면서 이러한 영역에 투자를 계속 합니다.
