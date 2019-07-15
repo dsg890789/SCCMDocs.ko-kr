@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7404e97cd1ef9c68f80904b5ba26373605c7c751
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 024902baa4c8bb3b893b60feacad7993af8200e5
+ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285459"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623442"
 ---
 # <a name="plan-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -299,7 +299,7 @@ WSUS 서버가 소프트웨어 업데이트 지점으로 구성되면 더 이상
 기본 사이트 서버에 소프트웨어 업데이트 지점 역할을 추가하는 경우 복제본으로 구성된 WSUS 서버를 사용할 수 없습니다. WSUS 서버가 복제본으로 구성되면 Configuration Manager가 WSUS 서버 구성에 실패하고 WSUS 동기화가 실패합니다. 기본 사이트에 설치하는 첫 번째 소프트웨어 업데이트 지점이 기본 소프트웨어 업데이트 지점이 됩니다. 사이트의 추가 소프트웨어 업데이트 지점은 기본 소프트웨어 업데이트 지점의 복제본으로 구성됩니다.  
 
 ####  <a name="BKMK_WSUSandSSL"></a> SSL을 사용하도록 WSUS를 구성할지 여부 결정  
-SSL 프로토콜을 사용하여 소프트웨어 업데이트 지점을 보호합니다. WSUS에서는 SSL을 사용하여 클라이언트 컴퓨터 및 다운스트림 WSUS 서버를 WSUS 서버에 대해 인증합니다. 또한 WSUS는 SSL을 사용하여 소프트웨어 업데이트 메타데이터를 암호화합니다. SSL을 사용하여 WSUS를 보호하도록 선택할 경우 소프트웨어 업데이트 지점을 설치하기 전에 WSUS 서버를 준비합니다. 자세한 내용은 WSUS 설명서에서 [WSUS 서버에서 SSL 구성](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#bkmk_2.5.ConfigSSL) 문서를 참조하세요. 
+SSL 프로토콜을 사용하여 소프트웨어 업데이트 지점을 보호합니다. WSUS에서는 SSL을 사용하여 클라이언트 컴퓨터 및 다운스트림 WSUS 서버를 WSUS 서버에 대해 인증합니다. 또한 WSUS는 SSL을 사용하여 소프트웨어 업데이트 메타데이터를 암호화합니다. SSL을 사용하여 WSUS를 보호하도록 선택할 경우 소프트웨어 업데이트 지점을 설치하기 전에 WSUS 서버를 준비합니다. 자세한 내용은 WSUS 설명서에서 [WSUS 서버에서 SSL 구성](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#25-secure-wsus-with-the-secure-sockets-layer-protocol) 문서를 참조하세요. 
 
 소프트웨어 업데이트 지점을 설치하고 구성할 때 **WSUS 서버에 SSL 통신 사용** 옵션을 선택합니다. 그렇지 않으면, Configuration Manager는 SSL을 사용하지 않도록 WSUS를 구성합니다. 소프트웨어 업데이트 지점에서 SSL을 사용하도록 설정하는 경우 자식 사이트의 모든 소프트웨어 업데이트 지점에서도 SSL을 사용하도록 구성합니다.  
 
@@ -318,9 +318,9 @@ Microsoft Update 연결은 항상 HTTP용으로 포트 80, HTTPS용으로 포트
 
 #### <a name="restrict-access-to-specific-domains"></a>특정 도메인에 대한 액세스 제한  
 
-방화벽 또는 프록시 장치를 사용 하 여 인터넷을 사용 하 여 네트워크 통신을 제한 하는 조직에 활성 소프트웨어 업데이트 지점이 인터넷 끝점에 액세스할 수 있도록 해야 합니다. 그런 다음 WSUS 및 자동 업데이트는 Microsoft Update 클라우드 서비스와 통신할 수 있습니다.
+조직에서 방화벽 또는 프록시 디바이스를 사용하여 인터넷과의 네트워크 통신을 제한하는 경우 활성 소프트웨어 업데이트 지점에서 인터넷 엔드포인트에 액세스하도록 허용해야 합니다. 그런 다음 WSUS 및 자동 업데이트는 Microsoft Update 클라우드 서비스와 통신할 수 있습니다.
 
-자세한 내용은 [인터넷 액세스 요구 사항](/sccm/core/plan-design/network/internet-endpoints#bkmk_sum)합니다.
+자세한 내용은 [Internet access requirements](/sccm/core/plan-design/network/internet-endpoints#bkmk_sum)(인터넷 액세스 요구 사항)를 참조하세요.
 
 
 ##  <a name="BKMK_SyncSettings"></a> 동기화 설정에 대한 계획  

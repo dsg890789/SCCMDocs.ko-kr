@@ -2,7 +2,7 @@
 title: Windows 10 업데이트 배달 최적화
 titleSuffix: Configuration Manager
 description: Configuration Manager로 업데이트 콘텐츠를 관리하여 Windows 10으로 최신 상태를 유지하는 방법을 알아봅니다.
-ms.date: 06/15/2018
+ms.date: 07/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d037baba858b3aacc3724e99a66819197b1dd89
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 4f3f5eb1b25021adee5feecd3119776180250496
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194508"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67678661"
 ---
 # <a name="optimize-windows-10-update-delivery-with-configuration-manager"></a>Configuration Manager로 Windows 10 업데이트 배달 최적화
 
@@ -24,7 +24,7 @@ ms.locfileid: "67194508"
 
 많은 고객이 Windows 10 월별 업데이트로 최신 상태를 유지하는 성공적인 방법은 Configuration Manager를 사용하는 뛰어난 콘텐츠 배포 전략에서 시작됩니다. 대규모 조직의 경우 월별 품질 업데이트의 크기가 문제가 될 수 있습니다. 업데이트 배달을 최적화하는 데 필요한 대역폭 및 네트워크 부하를 줄이는 데 도움이 되는 몇 가지 기술을 사용할 수 있습니다. 이 문서에서는 이러한 기술에 대해 설명하고, 이러한 기술을 비교하며, 사용할 기술을 결정하는 데 도움이 되는 권장 사항을 제공합니다.  
  
-Windows 10은 여러 가지 형식의 업데이트를 제공합니다. 자세한 내용은 [비즈니스용 Windows 업데이트의 업데이트 형식](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)을 참조하세요. 이 문서에서는 Configuration Manager를 사용하는 Windows 10 *품질* 업데이트를 중점적으로 다룹니다. 
+Windows 10은 여러 가지 형식의 업데이트를 제공합니다. 자세한 내용은 [비즈니스용 Windows 업데이트의 업데이트 형식](/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)을 참조하세요. 이 문서에서는 Configuration Manager를 사용하는 Windows 10 *품질* 업데이트를 중점적으로 다룹니다. 
 
 
 ## <a name="express-update-delivery"></a>Express 업데이트 배달
@@ -92,7 +92,7 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 | 피어 검색 | 배달 최적화 클라우드 서비스 사용(인터넷 액세스 필요) | 관리 지점 사용(클라이언트 경계 그룹 기반) | 멀티캐스트 |
 | 보고 | 예(Windows Analytics 사용) | ConfigMgr 클라이언트 데이터 원본 대시보드 | ConfigMgr 클라이언트 데이터 원본 대시보드 |
 | WAN 사용량 제어 | 예(기본, 그룹 정책 설정을 통해 제어할 수 있음) | 경계 그룹 | 서브넷 지원만 |
-| 지원되는 콘텐츠 유형 | - Express 업데이트(ConfigMgr 사용)</br> - Windows 및 보안 업데이트</br> - 드라이버</br> - Windows 스토어 앱</br> - 비즈니스용 Windows 스토어 앱 | 모든 ConfigMgr 콘텐츠 유형([Windows PE](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic)에서 다운로드한 이미지 포함) | 모든 ConfigMgr 콘텐츠 유형(이미지 제외) |
+| 지원되는 콘텐츠 유형 | **ConfigMgr 통해:** </br> 빠른 업데이트 </br> </br> **통해 Microsoft 클라우드:**</br> Windows 및 보안 업데이트</br> 드라이버</br> Windows 스토어 앱</br> 비즈니스용 Windows 스토어 앱 | 모든 ConfigMgr 콘텐츠 유형([Windows PE](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic)에서 다운로드한 이미지 포함) | 모든 ConfigMgr 콘텐츠 유형(이미지 제외) |
 | ConfigMgr를 통한 관리 | 일부(클라이언트 에이전트 설정) | 예(클라이언트 에이전트 설정) | 예(클라이언트 에이전트 설정) |
 
 
