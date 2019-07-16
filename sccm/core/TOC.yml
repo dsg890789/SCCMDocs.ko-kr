@@ -103,6 +103,8 @@
           href: plan-design/configs/supported-configurations.md
         - name: 크기 조정 및 규모 숫자 값
           href: plan-design/configs/size-and-scale-numbers.md
+        - name: 사이트 및 사이트 시스템 필수 조건
+          href: plan-design/configs/site-and-site-system-prerequisites.md
         - name: 사이트의 크기 조정과 성능 지침
           href: plan-design/configs/site-size-performance-guidelines.md
         - name: 사이트 시스템 서버에 대해 지원되는 운영 체제

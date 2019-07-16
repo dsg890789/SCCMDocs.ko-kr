@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4177417941d5af98b4558705cb53681410349a4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 65cea36edd50af6beeae20c5ab0eaf1f7b4855fc
+ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135207"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67818099"
 ---
 # <a name="how-to-upgrade-clients-for-windows-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법
 
@@ -34,7 +34,7 @@ Configuration Manager에서 클라이언트 설치 방법 또는 자동 클라�
 
   클라이언트 설치 방법을 사용하는 클라이언트 업그레이드에 관심이 있는 경우 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md)에서 해당 방법 사용에 대해 자세히 알아보세요.
 
-  버전 1610부터 제외 그룹을 지정하여 클라이언트가 업그레이드되지 않도록 제외할 수 있습니다. 자세한 내용은 [Windows 컴퓨터에서 클라이언트 업그레이드를 제외하는 방법](exclude-clients-windows.md)을 참조하세요.  
+  제외 그룹을 지정하여 클라이언트가 업그레이드되지 않도록 제외할 수 있습니다. 자세한 내용은 [Windows 컴퓨터에서 클라이언트 업그레이드를 제외하는 방법](exclude-clients-windows.md)을 참조하세요. 제외된 클라이언트는 여전히 CCMSETUP을 다운로드하여 실행하지만 업그레이드되지는 않습니다.
 
 
 > [!TIP]  

@@ -157,7 +157,7 @@ Do not run a test database upgrade on the production site database. Doing so upd
 
 콘솔에서 필수 구성 요소 검사를 실행 하려면 **관리 > 개요 > 클라우드 서비스 > 업데이트 및 서비스**로 이동합니다. 다음으로 **Configuration Manager 1610 업데이트 패키지**를 마우스 오른쪽 단추로 클릭한 후 **필수 구성 요소 검사 실행**을 선택합니다.
 
-시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의 3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행** 을 참조하세요.
+시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 ** [System Center Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의 3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행** 을 참조하세요.
 
 > [!IMPORTANT]  
 > 필수 조건 검사가 독립적으로 또는 업데이트 설치의 일부로 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 1610 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
