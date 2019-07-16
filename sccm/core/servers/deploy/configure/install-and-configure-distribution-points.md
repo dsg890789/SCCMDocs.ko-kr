@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21ed29204a5ed41e54a12a1294bc9582d3e6eaa1
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: 91bcdf4e593d2c39fed19f0b01045cab32f921da
+ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67252320"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67818164"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -256,6 +256,7 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
 
 - [일반 설정](#bkmk_config-general)
 - [드라이브 설정](#bkmk_config-drive)
+- [방화벽 설정](#bkmk_firewall)
 - [풀(pull) 배포 지점](#bkmk_config-pull)
 - [PXE 설정](#bkmk_config-pxe)
 - [멀티캐스트](#bkmk_config-multicast)
@@ -351,6 +352,15 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
 > Configuration Manager가 특정 드라이브에 설치되지 않도록 하려면 배포 지점을 설치하기 전에 **no_sms_on_drive.sms**라는 빈 파일을 만들고 드라이브의 루트 폴더에 복사합니다.  
 
 자세한 내용은 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)를 참조하세요.
+
+### <a name="bkmk_firewall"></a> 방화벽 설정
+
+배포 지점에는 Windows 방화벽에 구성된 다음 인바운드 규칙이 있어야 합니다.
+
+- WMI(Windows Management Instrumentation)(DCOM-In)
+- WMI(Windows Management Instrumentation)(WMI-In)
+
+이러한 규칙이 없으면 클라이언트는 콘텐츠를 다운로드할 때 DataTransferService.log에서 0x801901F4 오류를 수신합니다.
 
 ### <a name="bkmk_config-pull"></a> 풀(pull) 배포 지점  
 

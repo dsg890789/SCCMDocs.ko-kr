@@ -10,12 +10,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0af894becf4aa74beb250cc4672e6ba2cb0108af
-ms.sourcegitcommit: 0bd336e11c9a7f2de05656496a1bc747c5630452
+ms.openlocfilehash: e77402bbaf5ce0f0f756418be38b6435d70e9e4d
+ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66834805"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67726193"
 ---
 <!-- 
 - Feature 1357546
@@ -100,10 +100,16 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
 
-2019년 5월 14일부터 6월 10일 사이에 새로 제공되었거나 업데이트된 지원 문서입니다.
+2019년 6월 10일부터 7월 10일 사이에 새로 제공되었거나 업데이트된 지원 문서입니다.
 
-- [KB 4503442: Configuration Manager 클라이언트가 CMG와 통신하려고 할 때 403 오류 발생](https://support.microsoft.com/help/4503442)
-- [KB 4503578: Configuration Manager에서 보고 서비스 지점을 이동하거나 TLS 1.2를 사용하도록 설정한 이후부터 보고 기능이 작동하지 않음](https://support.microsoft.com/help/4503578)
-- [KB 4505440: Configuration Manager의 소프트웨어 업데이트 관리 문제 해결](https://support.microsoft.com/help/4505440)
+- [KB 4505439: Configuration Manager에서 소프트웨어 업데이트 동기화 문제 해결](https://support.microsoft.com/help/4505439)
+- [KB 4508653: 로그온 실패로 인해 원격 배포 지점에 패키지 배포가 실패함](https://support.microsoft.com/help/4508653)
+- [KB 4508855: Configuration Manager에서 도메인 컨트롤러에 로그온한 사용자에게 애플리케이션이 배포되지 않음](https://support.microsoft.com/help/4508855)
+- [KB 4500571: System Center Configuration Manager 현재 분기, 버전 1902에 대한 업데이트 롤업](https://support.microsoft.com/help/4500571)
+- [KB 4508760: "함수 시퀀스 오류"가 Configuration Manager 버전 1902의 Smsdbmon.log에 반복적으로 기록됨](https://support.microsoft.com/help/4508760)
+- [KB 4509131: Configuration Manager OSD 작업 순서가 오류 코드 80070005와 함께 실패함](https://support.microsoft.com/help/4509131)
+- [KB 4509132: ConfigMgr의 콘텐츠 배포 중 "IDispatch 오류 #3603"](https://support.microsoft.com/help/4509132)
+- [KB 4509681: ConfigMgr 데이터베이스 업그레이드에서 Configuration Manager 업그레이드 중지](https://support.microsoft.com/help/4509681)
+- [KB 4509484: ConfigMgr에는 CMG 또는 클라우드 DP로 콘텐츠 배포 동안 80070070](https://support.microsoft.com/help/4509484)
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

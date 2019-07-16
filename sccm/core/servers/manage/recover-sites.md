@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8506996f7b769003c937de69a9c7f659341c4294
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 48e0f2c1d04f0592cd794aa4315641fe6f9cd15b
+ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501020"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67818116"
 ---
 #  <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 
@@ -177,11 +177,11 @@ SQL Server 변경 내용 추적 내부에 대한 자세한 내용은 SQL Server 
 
 ### <a name="start-a-site-recovery-in-the-setup-wizard"></a>설치 마법사에서 사이트 복구 시작
 
-1.  [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)를 Configuration Manager 설치 폴더 외부 위치로 복사합니다. CD.Latest 폴더의 복사본에서 Configuration Manager 설치 마법사를 실행합니다.  
+1. [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)를 Configuration Manager 설치 폴더 외부 위치로 복사합니다. CD.Latest 폴더의 복사본에서 Configuration Manager 설치 마법사를 실행합니다.  
 
-2.  **시작** 페이지에서 **사이트 복구**를 선택한 후 **다음**을 클릭합니다.  
+2. **시작** 페이지에서 **사이트 복구**를 선택한 후 **다음**을 클릭합니다.  
 
-3.  해당 사이트 복구에 적합한 옵션을 사용하여 마법사를 완료합니다.  
+3. 해당 사이트 복구에 적합한 옵션을 사용하여 마법사를 완료합니다.  
 
      - 복구 중에 설치 프로그램은 SQL Server에서 사용하는 SQL Server Service Broker(SSB) 포트를 식별합니다. 복구 중에 이 포트 설정을 변경하지 마세요. 만약 이 설정을 변경하면 복구가 완료된 후 데이터 복제가 올바로 작동하지 않습니다.  
 
@@ -256,7 +256,7 @@ HTTPS에 대해 구성했던 IIS를 실행하는 사이트 시스템을 복구�
 
 ### <a name="reinstall-hotfixes"></a>핫픽스 다시 설치 
 
-사이트 복구 후에 사이트 서버에 적용했던 모든 핫픽스를 다시 설치해야 합니다. 사이트 복구 후 설치 마법사의 **마침** 페이지에서 이전에 설치한 핫픽스 목록을 확인합니다. 이 목록은 복구된 사이트 서버의 `C:\ConfigMgrPostRecoveryActions.html`에 저장됩니다.
+사이트 복구 후에 사이트 서버에 적용했던 모든 [대역 외 핫픽스](/sccm/core/servers/manage/updates#bkmk_outofband)를 다시 설치해야 합니다. 사이트 복구 후 설치 마법사의 **마침** 페이지에서 이전에 설치한 핫픽스 목록을 확인합니다. 이 목록은 복구된 사이트 서버의 `C:\ConfigMgrPostRecoveryActions.html`에 저장됩니다.
 
 
 ### <a name="recover-custom-reports"></a>사용자 지정 보고서 복구 
