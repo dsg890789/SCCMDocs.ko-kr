@@ -2,7 +2,7 @@
 title: 1802에 대한 진단 및 사용량 데이터
 titleSuffix: Configuration Manager
 description: 1802 버전에서 수집된 진단 및 사용량 데이터의 수준에 대해 알아봅니다.
-ms.date: 03/22/2018
+ms.date: 05/13/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0925a4cc4e4db0a178a4ccf1c7e959a76910f6e8
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 5c492a4fc90b1fba51c8db0031fa73bad2a1e2d2
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56142173"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676914"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1802에 대한 진단 및 사용량 데이터 수집 수준
 
@@ -87,7 +87,7 @@ Configuration Manager 버전 1802의 경우 이 수준에는 다음과 같은 �
 
      - Software Assurance 만료 날짜      
 
-     - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류     
+     - 업데이트 팩 배포 상태 및 오류, 다운로드 진행률 및 필수 구성 요소 오류 
 
      - 업데이트 빠른 링 사용
 
@@ -296,7 +296,7 @@ Configuration Manager 버전 1802의 경우 이 수준에는 다음과 같은 �
 
 ### <a name="endpoint-protection"></a>Endpoint Protection  
 
-   - Windows Defender ATP(Advanced Threat Protection) 정책: 정책 개수 및 정책 배포 여부
+   - Microsoft Defender ATP(Advanced Threat Protection) 정책(이전의 Windows Defender ATP로 알려짐): 정책 개수 및 정책 배포 여부.
 
    - Endpoint Protection 기능에 대해 구성된 경고 개수  
 

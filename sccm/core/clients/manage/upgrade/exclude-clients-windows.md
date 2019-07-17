@@ -11,18 +11,22 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba556ffe98fbcf51dbc20975875ddb0c0b1370bb
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: bc1d82de7863f6aa82e43515c28392865388a79f
+ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139928"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67818197"
 ---
 # <a name="how-to-exclude-upgrading-clients-for-windows-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트 업그레이드를 제외하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-버전 1610부터 업데이트된 클라이언트 버전을 자동으로 설치하지 않도록 클라이언트 컬렉션을 제외할 수 있습니다. 이 설정은 자동 업그레이드 및 소프트웨어 업데이트 기반 업그레이드, 로그온 스크립트 및 그룹 정책 등에 적용됩니다. 클라이언트를 업그레이드할 때 주의가 필요한 컴퓨터 컬렉션에 이 설정을 사용할 수 있습니다. 제외된 컬렉션에 있는 클라이언트는 업데이트된 클라이언트 소프트웨어 설치 요청을 무시합니다.
+업데이트된 클라이언트 버전을 자동으로 설치하지 않도록 클라이언트 컬렉션을 제외할 수 있습니다. 이 설정은 자동 업그레이드 및 소프트웨어 업데이트 기반 업그레이드, 로그온 스크립트 및 그룹 정책 등에 적용됩니다. 클라이언트를 업그레이드할 때 주의가 필요한 컴퓨터 컬렉션에 이 설정을 사용할 수 있습니다. 제외된 컬렉션에 있는 클라이언트는 업데이트된 클라이언트 소프트웨어 설치 요청을 무시합니다.
+
+>[!NOTE]
+>제외된 클라이언트는 여전히 CCMSETUP을 다운로드하여 실행하지만 업그레이드되지는 않습니다.
+
 
 ## <a name="configure-exclusion-for-automatic-upgrades"></a>자동 업그레이드의 제외 구성
 
@@ -35,8 +39,6 @@ ms.locfileid: "56139928"
 4.  **확인**을 클릭하여 구성을 닫고 저장합니다. 그러면 클라이언트가 정책을 업데이트한 후 제외된 컬렉션의 클라이언트가 클라이언트 소프트웨어에 대한 업데이트를 더 이상 자동으로 설치하지 않습니다. 자세한 내용은 [Windows 컴퓨터에 대한 클라이언트를 업그레이드하는 방법](upgrade-clients-for-windows-computers.md)을 참조하세요.
 
 ![자동 업그레이드 제외에 대한 설정](media/automatic_upgrade_exclusion.png)
-
-
 
 >[!NOTE]
 >사용자 인터페이스에는 어떠한 방법으로도 클라이언트가 업그레이드되지 않는다고 명시되어 있지만 두 가지 방법을 통해 이러한 설정을 재정의할 수 있습니다. 클라이언트 강제 설치 및 수동 클라이언트 설치를 사용하여 이 구성을 재정의할 수 있습니다. 자세한 내용은 다음 섹션을 참조하세요.

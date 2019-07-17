@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f497272431d8587010ecd7dc0a8205162d9ae7fd
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: ccd6efc583805022bab908a06d908e010b9ec9d9
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286348"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677575"
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1610의 기능
 
@@ -62,10 +62,10 @@ ms.locfileid: "67286348"
 #### <a name="try-it-out"></a>기능 직접 사용해 보기
 승인된 애플리케이션 요청을 거부하려면:
 
-1.  Configuration Manager 콘솔에서 승인이 필요한 [애플리케이션을 만들고 배포합니다](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications).
-2.  클라이언트 컴퓨터에서 소프트웨어 센터를 열고 애플리케이션에 대한 요청을 제출합니다.
-3.  Configuration Manager 콘솔에서 애플리케이션 요청을 승인합니다.
-4.  승인된 애플리케이션 요청 거부: Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **애플리케이션 관리** > **승인 요청**으로 이동한 다음, 거부하려는 애플리케이션 요청을 선택합니다.  리본에서 **거부**를 클릭합니다.
+1. Configuration Manager 콘솔에서 승인이 필요한 [애플리케이션을 만들고 배포합니다](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications).
+2. 클라이언트 컴퓨터에서 소프트웨어 센터를 열고 애플리케이션에 대한 요청을 제출합니다.
+3. Configuration Manager 콘솔에서 애플리케이션 요청을 승인합니다.
+4. 승인된 애플리케이션 요청 거부: Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **개요** > **애플리케이션 관리** > **승인 요청**으로 이동한 다음, 거부하려는 애플리케이션 요청을 선택합니다.  리본에서 **거부**를 클릭합니다.
 
 ## <a name="exclude-clients-from-automatic-upgrade"></a>자동 업그레이드에서 클라이언트 제외
 Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으로 설치하지 않도록 제외할 클라이언트 컬렉션을 지정할 수 있는 설정이 새로 추가되었습니다.  이 설정은 자동 업그레이드 및 소프트웨어 업데이트 기반 업그레이드, 로그온 스크립트 및 그룹 정책 등에 적용됩니다. 클라이언트를 업그레이드할 때 주의가 필요한 컴퓨터 컬렉션에 이 설정을 사용할 수 있습니다. 제외된 컬렉션에 있는 클라이언트는 업데이트된 클라이언트 소프트웨어 설치 요청을 무시합니다.
@@ -127,13 +127,13 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1.  Configuration Manager 콘솔에서 **자산 및 호환성** > **개요** > **준수 설정** > **구성 항목**으로 이동한 다음 새 **구성 항목**을 만듭니다.
-2.  이름을 입력하고 **Configuration Manager 클라이언트를 사용하지 않고 관리되는 디바이스에 대한 설정**에서 **Windows 8.1 및 Windows 10**을 선택하고 **다음**을 클릭합니다.
-3.  **지원되는 플랫폼** 페이지에서 **모든 Windows 10(64비트)** 및 **모든 Windows 10(32비트)** 가 선택되었는지 확인하고 **다음**을 클릭합니다.
-4.  **Windows Defender** 설정 그룹을 선택하고 **다음**을 클릭합니다.
-5.  이 페이지에서 원하는 설정을 구성하고 **다음**을 클릭합니다.
-6.  마법사를 완료합니다.
-7.  구성 기준에 이 구성 항목을 추가하고 Windows 10 11월 업데이트(1511) 이상을 실행하는 컴퓨터에 이 기준을 배포합니다.
+1. Configuration Manager 콘솔에서 **자산 및 호환성** > **개요** > **준수 설정** > **구성 항목**으로 이동한 다음 새 **구성 항목**을 만듭니다.
+2. 이름을 입력하고 **Configuration Manager 클라이언트를 사용하지 않고 관리되는 디바이스에 대한 설정**에서 **Windows 8.1 및 Windows 10**을 선택하고 **다음**을 클릭합니다.
+3. **지원되는 플랫폼** 페이지에서 **모든 Windows 10(64비트)** 및 **모든 Windows 10(32비트)** 가 선택되었는지 확인하고 **다음**을 클릭합니다.
+4. **Windows Defender** 설정 그룹을 선택하고 **다음**을 클릭합니다.
+5. 이 페이지에서 원하는 설정을 구성하고 **다음**을 클릭합니다.
+6. 마법사를 완료합니다.
+7. 구성 기준에 이 구성 항목을 추가하고 Windows 10 11월 업데이트(1511) 이상을 실행하는 컴퓨터에 이 기준을 배포합니다.
 
 > [!NOTE]
 > 구성 기준을 배포할 때 **비호환 설정 재구성** 확인란을 선택해야 합니다.
@@ -144,14 +144,16 @@ Technical Preview 1610에는 업데이트된 클라이언트 버전을 자동으
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** &gt; 디바이스로 이동합니다.
-2.  **원격 디바이스 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** &gt; 디바이스로 이동합니다.
+2. **원격 디바이스 작업** 메뉴에서 **동기화 요청 보내기**를 선택합니다.
 
 동기화는 5~10분 정도 걸릴 수 있습니다. 정책의 모든 변경 내용이 디바이스에 동기화됩니다. **디바이스** 보기의 **원격 동기화 상태** 열이나 디바이스의 **속성** 대화 상자에서 동기화 요청 상태를 추적할 수 있습니다.
 
 ## <a name="additional-security-role-support"></a>추가 보안 역할 지원
 
-이제는 전체 관리자 권한 외에 다음과 같은 기본 제공 보안 역할도 **회사가 소유한 모든 디바이스** 노드의 항목(**미리 선언된 디바이스**, **iOS 등록 프로필**, **Windows 등록 프로필** 포함)에 대한 모든 권한을 소유합니다. •   **자산 관리자** •   **회사 리소스 액세스 관리자**
+이제는 전체 관리자 권한 외에 다음과 같은 기본 제공 보안 역할도 **회사가 소유한 모든 디바이스** 노드의 항목(**미리 선언된 디바이스**, **iOS 등록 프로필**, **Windows 등록 프로필** 포함)에 대한 모든 권한을 소유합니다.
+- **자산 관리자**
+- **회사 리소스 액세스 관리자**
 
 **읽기 전용 분석가** 역할에는 이러한 Configuration Manager 콘솔 영역에 대한 읽기 전용 권한이 계속 부여됩니다.
 

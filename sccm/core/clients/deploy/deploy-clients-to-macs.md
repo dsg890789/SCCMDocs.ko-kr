@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cfb945c2189d54c8e74f9f972df784cb441a8e1
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e686f9cdbece2ceb652ecd2e0f3c6d5eca420caf
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129819"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677830"
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>How to deploy clients to Macs
 
@@ -159,7 +159,7 @@ CMEnroll 도구를 사용하여 클라이언트 설치를 자동화하고 클라
 
 7. 등록된 인증서를 Configuration Manager로 제한하려면 Mac 컴퓨터에서 터미널 창을 열고 다음과 같이 변경합니다.  
 
-    1. `sudo /Applications/Utilities/Keychain Access.app/Contents/MacOS/Keychain Access` 명령을 입력합니다.  
+    1. `sudo /Applications/Utilities/Keychain Access.app/Contents/MacOS/Keychain Access` 명령 입력  
 
     2. **키 집합 액세스** 창의 **키 집합** 섹션에서 **시스템**을 클릭합니다. 그런 다음, **범주** 섹션에서 **키**를 선택합니다.  
 

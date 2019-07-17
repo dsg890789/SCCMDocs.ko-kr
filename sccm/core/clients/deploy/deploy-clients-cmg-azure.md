@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b45c5938e9c1980802055bd73d5fd7e71122fc2a
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
+ms.openlocfilehash: 6af2f179a540c4a532173eacf265ec11bf292209
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57558119"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67677869"
 ---
 # <a name="install-and-assign-configuration-manager-windows-10-clients-using-azure-ad-for-authentication"></a>인증을 위해 Azure AD를 사용하여 Configuration Manager Windows 10 클라이언트 설치 및 할당
 
@@ -42,7 +42,7 @@ Azure AD를 설정하는 것은 인증서 기반 인증에 대한 공개 키 인
 
     - 로그온한 사용자는 Azure AD ID이어야 합니다.   
 
-    - 사용자가 페더레이션되거나 동기화된 ID인 경우 Configuration Manager [Active Directory 사용자 겸색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser) 및 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 사용해야 합니다. 하이브리드 ID에 대한 자세한 내용은 [하이브리드 ID 채택 전략 정의](/azure/active-directory/active-directory-hybrid-identity-design-considerations-identity-adoption-strategy)를 참조합니다.<!--497750-->  
+    - 사용자가 페더레이션되거나 동기화된 ID인 경우 Configuration Manager [Active Directory 사용자 겸색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser) 및 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 사용해야 합니다. 하이브리드 ID에 대한 자세한 내용은 [하이브리드 ID 채택 전략 정의](/azure/active-directory/active-directory-hybrid-identity-design-considerations-identity-adoption-strategy)를 참조하세요.<!--497750-->  
 
 - 관리 지점 사이트 시스템 역할에 대한 [기존 필수 구성 요소](/sccm/core/plan-design/configs/site-and-site-system-prerequisites#bkmk_2012MPpreq) 외에 이 서버에 **ASP.NET 4.5**도 사용하도록 설정합니다. ASP.NET 4.5를 사용하도록 설정할 경우 자동으로 선택된 다른 모든 옵션을 포함합니다.  
 
@@ -65,7 +65,7 @@ Azure AD를 설정하는 것은 인증서 기반 인증에 대한 공개 키 인
 
 이러한 클라이언트 설정은 Azure AD를 사용하여 Windows 10 디바이스에 연결하도록 지원합니다. 또한 CMG 및 클라우드 배포 지점을 사용하려면 인터넷 기반 클라이언트를 사용하도록 설정할 수 있습니다.
 
-1.  [클라이언트 설정 구성 방법](/sccm/core/clients/deploy/configure-client-settings)의 정보를 사용하여 **Cloud Services** 섹션에서 다음 클라이언트 설정을 구성합니다.  
+1. [클라이언트 설정 구성 방법](/sccm/core/clients/deploy/configure-client-settings)의 정보를 사용하여 **Cloud Services** 섹션에서 다음 클라이언트 설정을 구성합니다.  
 
     - **클라우드 배포 지점에 대한 액세스 허용**: 이 설정을 사용하면 인터넷 기반 디바이스에서 Configuration Manager 클라이언트를 설치하는 데 필요한 콘텐츠를 가져올 수 있습니다. 콘텐츠가 클라우드 배포 지점에서 사용할 수 없는 경우 디바이스는 CMG에서 콘텐츠를 검색할 수 있습니다. 클라이언트 설치 부트스트랩은 CMG로 되돌아가기 전에 4시간 동안 클라우드 배포 지점을 다시 시도합니다.<!--495533-->  
 
@@ -73,7 +73,7 @@ Azure AD를 설정하는 것은 인증서 기반 인증에 대한 공개 키 인
 
     - **클라이언트가 클라우드 관리 게이트웨이를 사용하도록 설정** – **예**(기본값) 또는 **아니요**로 설정합니다.  
 
-2.  필요한 디바이스 컬렉션에 클라이언트 설정을 배포합니다. 이러한 설정을 사용자 컬렉션에 배포하지 않습니다.
+2. 필요한 디바이스 컬렉션에 클라이언트 설정을 배포합니다. 이러한 설정을 사용자 컬렉션에 배포하지 않습니다.
 
 디바이스가 Azure AD에 연결됐는지 확인하려면 명령 프롬프트에서 `dsregcmd.exe /status`을 실행합니다. 결과의 **AzureAdjoined** 필드는 디바이스가 Azure AD에 연결된 경우 **예**를 표시합니다.
 
@@ -95,7 +95,7 @@ Azure AD ID를 사용하여 클라이언트를 수동으로 설치하려면 먼�
 - 클라우드 관리 게이트웨이
 - 인터넷 기반 관리 지점, SMSMP 속성은 온-프레미스 또는 인터넷 기반 관리 지점 중 하나를 지정합니다.
 
-이 예제는 클라우드 관리 게이트웨이를 사용합니다. 각 속성에 대한 예제 값을 대체합니다. `ccmsetup.exe /mp:https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC SMSMP=https://mp1.contoso.com AADTENANTID=daf4a1c2-3a0c-401b-966f-0b855d3abd1a AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver`
+이 예제는 클라우드 관리 게이트웨이를 사용합니다. 각 속성에 대한 예제 값을 대체합니다. `ccmsetup.exe /mp: https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC SMSMP=https://mp1.contoso.com AADTENANTID=daf4a1c2-3a0c-401b-966f-0b855d3abd1a AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver`
 
 버전 1810부터 사이트는 추가 Azure AD 정보를 CMG(클라우드 관리 게이트웨이)에 게시합니다. Azure AD에 가입된 클라이언트는 가입된 동일한 테넌트를 사용하여 ccmsetup 프로세스 중에 CMG에서 이 정보를 가져옵니다. 이 동작은 둘 이상의 Azure AD 테넌트가 있는 환경에 클라이언트를 설치하는 작업을 추가로 간소화합니다. 이제 유일한 두 개의 필수 ccmsetup 속성은 **CCMHOSTNAME** 및 **SMSSiteCode**입니다.<!--3607731-->
 

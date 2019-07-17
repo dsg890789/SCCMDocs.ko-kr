@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 596c88cd679b2cb37cfcc7a1d8df5f82e3e56702
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 53505aed5fcdcfcaf3603250a40f484cd49c762f
+ms.sourcegitcommit: 5e43c0c6b0b1f449e596f59ceaa92a9b6ca194cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715966"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572751"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -577,9 +577,9 @@ Configuration Manager 설치 프로그램은 이 계정을 [SMS Admins](#sms-adm
 
 ### <a name="task-sequence-run-as-account"></a>작업 순서 실행 계정  
 
- 작업 순서 엔진에서는 **작업 순서 실행 계정**을 사용하여 로컬 시스템 계정 이외의 자격 증명으로 명령줄을 실행합니다. 이 계정은 **이 단계를 다음 계정으로 실행** 옵션을 사용하는 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 작업 순서 단계에서 필요합니다.  
+ 작업 순서 엔진에서는 **작업 순서 실행 계정**을 사용하여 로컬 시스템 계정 이외의 자격 증명으로 명령줄 또는 PowerShell 스크립트를 실행합니다. 이 계정은 선택된 **이 단계를 다음 계정으로 실행** 옵션을 사용하는 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 및 [PowerShell 스크립트](/sccm/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript) 작업 순서 단계에서 필요합니다.  
 
- 작업 순서에 지정된 명령줄을 실행하는 데 필요한 최소 권한을 가지도록 계정을 설정합니다. 계정에는 대화형 로그인 권한이 필요합니다. 일반적으로 소프트웨어를 설치하고 네트워크 리소스에 액세스할 수 있는 권한이 있어야 합니다.  
+ 작업 순서에 지정된 명령줄을 실행하는 데 필요한 최소 권한을 가지도록 계정을 설정합니다. 계정에는 대화형 로그인 권한이 필요합니다. 일반적으로 소프트웨어를 설치하고 네트워크 리소스에 액세스할 수 있는 권한이 있어야 합니다. PowerShell 스크립트 실행 작업의 경우 이 계정에는 로컬 관리자 권한이 필요합니다. 
 
 > [!IMPORTANT]  
 >  이 계정에 네트워크 액세스 계정을 사용하지 마세요.  

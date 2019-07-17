@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e25d164680530b88670b2589d81231f8e649d1d1
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f996aa1457fc8b49f914d0f0932836b5fcbd90b9
+ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122970"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67676217"
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 버전 1606 기준 미디어를 사용하여 설치 및 업그레이드
 
@@ -29,7 +29,7 @@ Configuration Manager용 버전 1606 기준 미디어에서 설치 프로그램�
 
 버전 1606 기준선 미디어를 사용하는 경우 설치 또는 업그레이드되는 사이트는 다음과 같습니다.
 - *현재 분기 사이트* - 1511 기준선 미디어를 사용하여 처음 설치된 다음 버전 1606 및 1606 핫픽스 롤업 - KB3186654로 업데이트된 사이트에 해당합니다.
--   *LTSB 사이트* - 버전 1606 및 1606 핫픽스 롤업 - KB3186654를 실행하는 현재 분기 사이트에 해당합니다. 기준선 미디어에 핫픽스 롤업이 이미 포함되어 있습니다.  그러나 LTSB는 [System Center Configuration Manager의 장기 서비스 분기 소개](introduction-to-the-ltsb.md)에 자세히 설명된 대로 현재 분기에서 사용할 수 있는 일부 기능이나 특성을 지원하지 않습니다.
+- *LTSB 사이트* - 버전 1606 및 1606 핫픽스 롤업 - KB3186654를 실행하는 현재 분기 사이트에 해당합니다. 기준선 미디어에 핫픽스 롤업이 이미 포함되어 있습니다.  그러나 LTSB는 [System Center Configuration Manager의 장기 서비스 분기 소개](introduction-to-the-ltsb.md)에 자세히 설명된 대로 현재 분기에서 사용할 수 있는 일부 기능이나 특성을 지원하지 않습니다.
 
 System Center Configuration Manager의 다양한 분기에 대해 잘 모르겠으면 [사용해야 하는 Configuration Manager 분기](which-branch-should-i-use.md)를 참조하세요.
 
@@ -73,17 +73,17 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 
  **SABranchOptions**
 - **키 이름: SAActive**
-  - 값: 0 또는 1  
+  - 값: 0 또는 1입니다.  
   - 세부 정보:  값이 0이면 현재 분기의 사용이 허가되지 않은 평가판이 설치되고, 값이 1이면 사용이 허가된 버전이 설치됩니다.   
 
 - **CurrentBranch**
-  - 값: 0 또는 1  
+  - 값: 0 또는 1입니다.  
   - 세부 정보:  값이 0이면 장기 서비스 분기가 설치되고, 값이 1이면 현재 분기가 설치됩니다.  
 
 예를 들어 사용이 허가된 현재 분기 버전을 설치하려면 다음을 사용합니다.
 
   **키 이름: SABranchOptions**
-   -    **SAActive = 1**
+   - **SAActive = 1**
    - **CurrentBranch = 1**
 
 
@@ -100,7 +100,7 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 
 - 설치하는 동안 설치할 Configuration Manager 분기를 선택해야 하며, Software Assurance 계약에 대한 세부 정보를 지정할 수 있습니다.
 - 동일한 계층 구조의 모든 사이트가 동일한 분기를 실행해야 합니다. 여러 사이트에 LTSB와 현재 분기가 혼합되어 있는 계층 구조는 사용할 수 없습니다.
--   스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
+- 스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
 
 ## <a name="expand-a-stand-alone-primary-site"></a>독립 실행형 기본 사이트 확장
 LTSB를 실행하는 독립 실행형 기본 사이트를 확장할 수 있습니다.  이 프로세스는 현재 분기 사이트에 사용되는 프로세스와 같지만 다음 한 가지 사항에 주의해야 합니다.
@@ -114,7 +114,7 @@ System Center 2012 Configuration Manager에서 업그레이드하는 경우 [Sys
 
 **현재 분기로 업그레이드:**
 - 설치하는 동안 현재 분기를 선택해야 하며, Software Assurance 계약에 대한 세부 정보를 지정할 수 있습니다.
--   스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
+- 스크립팅된 새 설치. 자세한 내용은 이 문서의 앞부분에서 "스크립팅된 새 설치 옵션"을 참조하세요.
 
 **LTSB로 업그레이드:**  
 - 업그레이드 전 체크리스트에서 수행할 추가 단계
