@@ -1,5 +1,6 @@
 ---
 title: CMG FAQ
+titleSuffix: Configuration Manager
 description: 이 아티클을 사용하여 클라우드 관리 게이트웨이에 관련된 FAQ 정리
 author: aczechowski
 ms.author: aaroncz
@@ -10,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c1a128d-22fb-49f1-8e0b-36513a8dc117
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61afe2a98fa6ec76a872501d76293ab077cc2df8
-ms.sourcegitcommit: 5e43c0c6b0b1f449e596f59ceaa92a9b6ca194cc
+ms.openlocfilehash: 010cf8b244290090b8bb2143b0d280bd5c0fd4b4
+ms.sourcegitcommit: b62de6c9cb1bc3e4c9ea5ab5ed3355d83e3a59bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572749"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894134"
 ---
 # <a name="frequently-asked-questions-about-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 FAQ
 
