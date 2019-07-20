@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eda9de25d3bdb1a1563d8b74e78ddcad259683f6
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 571334f94d1fcd3f53219b406185af3015356e3a
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678721"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68338060"
 ---
 # <a name="overview-of-device-enrollment-methods"></a>디바이스 등록 방법 개요
 
@@ -31,18 +31,18 @@ Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 �
 
 **iOS 등록 방법**
 
-| **방법** | **초기화** | **선호도** | **잠금** | **세부 정보** |
+| **메서드** | **초기화** | **선호도** | **잠금** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 아니요| 사용자 계정 컨트롤 | 아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
+|**[BYOD](#byod)** | 아니요| 예 | 아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
 |**[DEM](#dem)**| 아니요 |아니요 |아니요 | [자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
-|**[DEP](#dep)**| 예 | 선택 사항 | 선택 사항|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
-|**[USB-SA](#usb-sa)**| 예 | 선택 사항 | 아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
+|**[DEP](#dep)**| 예 | Optional | Optional|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
+|**[USB-SA](#usb-sa)**| 예 | Optional | 아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
 
 **Windows 및 Android 등록 방법**
 
 | **방법** | **초기화** | **선호도** | **잠금** | **세부 정보**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 아니요| 사용자 계정 컨트롤 | 아니요 | [자세히](../deploy-use/enroll-hybrid-windows.md)|
+|**[BYOD](#byod)** | 아니요| 예 | 아니요 | [자세히](../deploy-use/enroll-hybrid-windows.md)|
 |**[DEM](#dem)**| 아니요 |아니요 |아니요 |[자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
 
 올바른 방법을 찾는 데 도움이 되는 질문은 [Choose how to enroll devices](/intune/get-started/choose-how-to-enroll-devices1)(디바이스 등록 방법 선택)를 참조하세요.
@@ -60,18 +60,18 @@ Configuration Manager 콘솔을 사용하여 COD(회사 소유 디바이스)를 
 
 ### <a name="dep"></a>DEP
 Apple DEP(디바이스 등록 프로그램) 관리에서는 정책을 만든 후, 구입한 iOS 디바이스 중에서 DEP로 관리하는 디바이스에 "무선으로" 정책을 배포할 수 있습니다. 사용자가 처음으로 디바이스를 켜고 iOS 설치 도우미를 실행하면 디바이스가 등록됩니다. 이 방법은 **iOS 감독** 모드를 지원하고, 다시 이 모드에서 다음 기능이 사용됩니다.
-  - 잠긴 등록
-  - 조건부 액세스
-  - 탈옥 검색
-  - 모바일 애플리케이션 관리
+- 잠긴 등록
+- 조건부 액세스
+- 탈옥 검색
+- 모바일 애플리케이션 관리
 
 [DEP](../deploy-use/ios-device-enrollment-program-for-hybrid.md)에 대해 자세히 알아보세요. ([표로 돌아가기](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 USB로 연결된 설정 도우미 등록입니다. 관리자가 정책을 만들어 Apple Configurator로 내보냅니다. USB로 연결된 회사 소유 디바이스는 정책을 사용하여 준비됩니다. 관리자가 각 디바이스를 직접 등록해야 합니다. 사용자가 디바이스를 받아 설치 도우미를 실행하여 해당 디바이스를 등록합니다. 이 방법은 **iOS 감독** 모드를 지원하고, 다시 이 모드에서 다음 기능이 사용됩니다.
-  - 조건부 액세스
-  - 탈옥 검색
-  - 모바일 애플리케이션 관리
+- 조건부 액세스
+- 탈옥 검색
+- 모바일 애플리케이션 관리
 
 자세한 내용은 [Apple Configurator를 사용한 설정 도우미 등록](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)을 참조하세요. ([표로 돌아가기](#overview-of-device-enrollment-methods))
 

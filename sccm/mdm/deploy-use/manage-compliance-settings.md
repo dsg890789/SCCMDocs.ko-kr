@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c81e7198a01e2d5dfca7abc80f6a23714184a32c
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 78ff2181c3ae4bc7069998bf4a6db526da835037
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255981"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68337882"
 ---
 # <a name="managing-compliance-on-devices-managed-with-intune"></a>Intune으로 관리되는 디바이스에 대한 준수 관리
 
@@ -60,7 +60,7 @@ ms.locfileid: "62255981"
 
 ## <a name="scenarios-for-windows-phone-devices-managed-with-intune"></a>Intune으로 관리되는 Windows Phone 디바이스에 대한 시나리오  
 
-### <a name="scenario-disable-the-use-of-screen-capture-on-a-windows-phone"></a>시나리오: Windows Phone 화면 캡처를 사용 하지 않도록 설정  
+### <a name="scenario-disable-the-use-of-screen-capture-on-a-windows-phone"></a>시나리오: Windows Phone에서 화면 캡처를 사용 하지 않도록 설정  
  이 시나리오에서는, 회사에서 Windows Phone 8.1 디바이스를 사용합니다. 이러한 디바이스는 중요한 정보를 포함하는 판매 앱을 실행합니다. 회사를 보호하기 위해 회사 외부에서 중요한 정보를 전송하는 데 사용할 수 있는 디바이스에서 화면 캡처를 사용하지 않도록 설정할 수 있습니다.  
 
 1. 구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows Phone** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
@@ -111,7 +111,7 @@ ms.locfileid: "62255981"
 
    -   **디바이스에 암호 설정 필요** > **필수**  
 
-   -   **최소 암호 길이(문자 수)** > **6**  
+   -   **최소 암호 길이(문자 수)**  > **6**  
 
    -   **다음 로그온 실패 횟수 후 디바이스 초기화** > **5**  
 
@@ -123,10 +123,10 @@ ms.locfileid: "62255981"
 
 다음 System Center Configuration Manager 구성 항목은 Configuration Manager 클라이언트로 관리되지 않는 디바이스(예: Microsoft Intune에 등록된 디바이스)에 사용할 수 있습니다.  
 
- -   [Intune으로 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)  
+-   [Intune으로 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)  
 
- -   [Intune으로 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-windows-phone-devices-managed-without-the-client.md)  
+-   [Intune으로 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-windows-phone-devices-managed-without-the-client.md)  
 
- -   [Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)  
+-   [Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)  
 
- -   [Intune으로 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)  
+-   [Intune으로 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)  
