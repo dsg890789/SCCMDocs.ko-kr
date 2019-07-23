@@ -2,7 +2,7 @@
 title: 데스크톱 분석 FAQ
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에 대 한 질문과 대답입니다.
-ms.date: 07/19/2019
+ms.date: 07/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,23 +11,35 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a1760e0039280e686e716d8cf876813083d544c
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 58230d373d7269c95937a108c021e7c73cdbf07a
+ms.sourcegitcommit: 315fbb9c44773b3b1796ae398568cb61bd07092e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340173"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374433"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
 > [!Note]  
 > 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
-## <a name="prerequisites"></a>필수 구성 요소 
+## <a name="prerequisites"></a>전제 조건 
 
 ### <a name="can-i-use-desktop-analytics-with-intune-managed-devices"></a>Intune 관리 장치에서 데스크톱 분석을 사용할 수 있나요? 
 
 데스크톱 분석 워크플로에서 이점을 누릴 수 있는 대다수의 고객은 Configuration Manager를 사용 하 여 Windows를 배포할 수 있습니다. Intune 고객은 분석 데이터의 추가 정보를 선호 하며,이를 통해 정보를 공유 하는 방법에 대해 노력 하 고 있습니다.
+
+### <a name="its-been-over-72-hours-and-the-portal-is-still-processing-data-what-next"></a>72 시간을 초과 하 여 포털에서 여전히 데이터를 처리 하 고 있으며, 그 다음에는 어떻게 되나요? 
+
+데스크톱 분석을 처음 설정 하는 경우 Configuration Manager 및 데스크톱 분석 포털의 보고서에 전체 데이터가 즉시 표시 되지 않을 수 있습니다. 서비스가 데이터를 처리 하는 데 2-3 일이 소요 될 수 있습니다. 72 시간을 초과 하는 경우 포털에서 계속 데이터를 처리 하는 경우 다음 단계를 수행 합니다.
+
+- 활성 장치가 올바르게 구성 되었는지 확인 하려면 [연결 상태 대시보드](/sccm/desktop-analytics/monitor-connection-health)를 사용 합니다. 이 대시보드는 실시간으로 업데이트 되지 않습니다.
+- 장치에서 진단 데이터를 데스크톱 분석 서비스로 전송 하는지 확인 합니다. 자세한 내용은 [데이터 공유 사용](/sccm/desktop-analytics/enable-data-sharing)을 참조 하세요.
+- Azure AD에서 [AZURE ad 응용 프로그램](/sccm/desktop-analytics/troubleshooting#bkmk_AzureADApps) 을 프로 비전 합니다.
+- 지난 7 일간 조직에 연결 된 장치를 확인 합니다. [데스크톱 분석 포털](https://aka.ms/desktopanalytics)에서 **연결 된 서비스** 창으로 이동 합니다. **장치 등록**을 선택 하 고 **최근 데이터 보기**
+
+장치가 제대로 구성 되어 있고 작업 영역에 아직 데이터가 표시 되지 않는 경우 [Microsoft 지원에 문의 하세요](https://support.microsoft.com/hub/4343728/support-for-business).
+
 
 ## <a name="windows-upgrade"></a>Windows 업그레이드
 
