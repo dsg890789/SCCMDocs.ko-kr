@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34fca23c43b34d905e6ecea210c0ba7487feeea2
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 5b425103d4d7455a6453f6415f911e01defdc0d6
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677529"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340118"
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
 
@@ -155,8 +155,8 @@ Technical Preview 1612를 설치한 후 Technical Preview 사이트 서버의 \*
 이 Technical Preview와 함께 릴리스된 도구는 이전 Configuration Manager 제품에 대해 릴리스된 이전 버전의 유사 도구를 대체합니다. 이 도구 버전은 2017년 3월 1일 후에 작동이 중단되지만 이 도구가 현재 분기 또는 프로덕션 준비 대역 외 릴리스의 일부로 릴리스될 때까지 이후 Technical Preview와 함께 새 버전이 릴리스됩니다.
 
 ### <a name="requirements"></a>요구 사항  
- - 이 도구는 배포 지점을 호스트하는 컴퓨터에서 직접 실행하거나 다른 서버에서 원격으로 실행할 수 있습니다. 한 번에 하나의 배포 지점에 대해서만 도구를 실행할 수 있습니다.
- - 도구를 실행하는 사용자 계정에 직접 Configuration Manager 계층 구조의 전체 관리자와 동일한 역할 기반 관리 권한이 있어야 합니다.  사용자 계정에 전체 관리자 권한이 있는 Windows 보안 그룹의 구성원으로 권한이 부여된 경우에는 도구가 작동하지 않습니다.
+- 이 도구는 배포 지점을 호스트하는 컴퓨터에서 직접 실행하거나 다른 서버에서 원격으로 실행할 수 있습니다. 한 번에 하나의 배포 지점에 대해서만 도구를 실행할 수 있습니다.
+- 도구를 실행하는 사용자 계정에 직접 Configuration Manager 계층 구조의 전체 관리자와 동일한 역할 기반 관리 권한이 있어야 합니다.  사용자 계정에 전체 관리자 권한이 있는 Windows 보안 그룹의 구성원으로 권한이 부여된 경우에는 도구가 작동하지 않습니다.
 
 ### <a name="modes-of-operation"></a>작동 모드
 다음 두 가지 모드로 도구를 실행할 수 있습니다.

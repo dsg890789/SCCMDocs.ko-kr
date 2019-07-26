@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f560c5bf4ca9a3b58652bc3c53b83d8cf0479cf
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: b468162ce19718b6c0f6f31b961cf61378834597
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551052"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339777"
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
@@ -482,13 +482,13 @@ Configuration Manager 사이트가 인트라넷 및 인터넷 간에 이동하�
 `CCMSetup.exe /source: D:\Clients /UsePKICert CCMHOSTNAME=server1.contoso.com SMSSIGNCERT=siteserver.cer SMSSITECODE=ABC FSP=server2.contoso.com CCMALWAYSINF=1 CCMFIRSTCERT=1`    
 
 이 예제에서는 다음 동작으로 클라이언트를 설치합니다.
-  - 드라이브 D의 폴더에서 원본 파일을 사용합니다.
-  - 클라이언트 PKI 인증서를 사용합니다.
-  - 유효 기간이 가장 긴 인증서를 선택합니다.
-  - 인터넷 전용 클라이언트 관리
-  - SERVER1이라는 인터넷 기반 관리 지점을 사용하도록 클라이언트를 할당합니다.
-  - contoso.com 도메인에 인터넷 기반 대체 상태 지점을 할당합니다.
-  - ABC 사이트에 클라이언트를 할당합니다.  
+- 드라이브 D의 폴더에서 원본 파일을 사용합니다.
+- 클라이언트 PKI 인증서를 사용합니다.
+- 유효 기간이 가장 긴 인증서를 선택합니다.
+- 인터넷 전용 클라이언트 관리
+- SERVER1이라는 인터넷 기반 관리 지점을 사용하도록 클라이언트를 할당합니다.
+- contoso.com 도메인에 인터넷 기반 대체 상태 지점을 할당합니다.
+- ABC 사이트에 클라이언트를 할당합니다.  
 
 
 ###  <a name="BKMK_ConfigureIBCM_MP"></a>클라이언트 설치 후 인터넷 기반 클라이언트 관리용 클라이언트를 구성하려면  

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01fa13c907b451a3539ca8169c3a04ebbaa1b92c
-ms.sourcegitcommit: d47d2f03482e48d343e2139a341e61022331e6c2
+ms.openlocfilehash: 7c0975c2b8dcf945464273930073ebf370bd4c32
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67145767"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340163"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
@@ -44,13 +44,13 @@ SA(**Software Assurance**) 및 L&SA(**라이선스 및 Software Assurance**)는 
 
 - **SA(Software Assurance)** : Configuration Manager의 현재 분기 옵션을 설치하고 사용하려면 고객에게 Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있어야 합니다.    
 
-    - SA가 일부 Microsoft 제품에 대한 선택 사항이지만, Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA(또는 동등한 구독 권한)를 사용하는 것입니다.  자세한 내용은 [Software Assurance FAQ](https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx)를 참조하세요.<!--this link doesn't work without some language code-->
+  - SA가 일부 Microsoft 제품에 대한 선택 사항이지만, Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA(또는 동등한 구독 권한)를 사용하는 것입니다.  자세한 내용은 [Software Assurance FAQ](https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx)를 참조하세요.<!--this link doesn't work without some language code-->
 
 - **Microsoft L&SA(라이선스 및 Software Assurance)** : Configuration Manager에 대한 새 라이선스를 구매하는 고객은 L&SA(라이선스 및 Software Assurance)를 획득해야 합니다.   
 
-    - SA는 현재 분기를 사용할 수 있는 권한을 부여합니다.
+  - SA는 현재 분기를 사용할 수 있는 권한을 부여합니다.
 
-    - 프로그램 SA가 만료되고 Configuration Manager에 대한 라이선스가 여전히 있는 경우 더 이상 현재 분기를 사용할 수 없습니다. 자세한 내용은 FAQ의 [내 SA가 만료되었지만 L&SA가 있으면 어떻게 되나요?](#bkmk_sa-expires)를 참조하세요.
+  - 프로그램 SA가 만료되고 Configuration Manager에 대한 라이선스가 여전히 있는 경우 더 이상 현재 분기를 사용할 수 없습니다. 자세한 내용은 FAQ의 [내 SA가 만료되었지만 L&SA가 있으면 어떻게 되나요?](#bkmk_sa-expires)를 참조하세요.
 
 라이선스 제공에 대한 자세한 내용은 [구입 방법](https://www.microsoft.com/Licensing/licensing-programs/licensing-programs)<!--this link doesn't work without some language code--> 및 [Licensing Product Terms](http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64)(라이선스 제품 사용 약관)를 참조하세요.  
 
@@ -104,12 +104,12 @@ System Center Endpoint Protection을 사용하는 경우 SA가 만료되면 제�
 모든 System Center 제품에는 SQL Server 기술이 포함되어 있습니다. 이러한 제품에 대한 Microsoft의 사용 약관에 따르면 고객은 System Center 구성 요소를 지원하기 위해서만 SQL Server 기술을 사용할 수 있습니다. 해당 용도로는 SQL Server 클라이언트 액세스 라이선스가 필요하지 않습니다. 
  
 Configuration Manager와 함께 SQL 기능에 대해 승인된 사용 권한은 다음과 같습니다.
- - 사이트 데이터베이스 역할
- - 소프트웨어 업데이트 지점 역할용 WSUS(Windows Server Update Service)
- - 보고 지점 역할용 SSRS(SQL Server Reporting Services)
- - 데이터 웨어하우스 서비스 지점 역할
- - 관리 지점 역할용 데이터베이스 복제본
- - SQL Server Always On 
+- 사이트 데이터베이스 역할
+- 소프트웨어 업데이트 지점 역할용 WSUS(Windows Server Update Service)
+- 보고 지점 역할용 SSRS(SQL Server Reporting Services)
+- 데이터 웨어하우스 서비스 지점 역할
+- 관리 지점 역할용 데이터베이스 복제본
+- SQL Server Always On 
 
 Configuration Manager에 포함된 SQL Server 라이선스는 Configuration Manager용 데이터베이스를 호스트하기 위해 설치하는 SQL Server의 각 인스턴스를 지원합니다. 그러나 이 라이선스를 사용하는 경우 이전 목록에서 Configuration Manager용 데이터베이스만 해당 SQL Server에서 실행할 수 있습니다. 추가 Microsoft 또는 타사 제품용 데이터베이스가 SQL Server를 공유하는 경우 해당 SQL Server 인스턴스에 대한 별도의 라이선스가 있어야 합니다. 
  <!-- sms500967 -->

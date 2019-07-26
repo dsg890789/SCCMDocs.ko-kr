@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87b9910e5ad7e8f6cb732ef4046d83f5122a6b8f
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 29e0f58404df2cadf2a1e28939ebcec2647b3e6d
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497780"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339418"
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
 
@@ -58,45 +58,45 @@ ms.locfileid: "65497780"
 Configuration Manager 콘솔에서 보조 사이트를 설치해야 합니다. 이러한 방식으로 보조 사이트는 항상 부모 기본 사이트의 소스 파일을 사용하여 설치됩니다.
 
 **설치 방법**: 추가 사이트를 설치하는 방법은 설치하려는 사이트의 유형에 따라 다릅니다.
--   **중앙 관리 사이트 추가**:  Configuration Manager 설치 마법사 또는 스크립팅된 명령줄을 사용하여 새 중앙 관리 사이트를 기존 독립 실행형 기본 사이트에 부모 사이트로 설치할 수 있습니다. 자세한 내용은 [독립 실행형 기본 사이트 확장](../../../../core/servers/deploy/install/prerequisites-for-installing-sites.md#bkmk_expand)을 참조하세요.
--   **자식 기본 사이트 추가**:  Configuration Manager 설치 마법사 또는 명령줄 설치를 사용하여 중앙 관리 사이트 아래 자식 기본 사이트를 추가합니다.
--   **보조 사이트 추가**:  Configuration Manager 콘솔을 사용하여 보조 사이트를 기본 사이트의 자식 사이트로 설치합니다. 보조 사이트를 추가하는 다른 방법은 지원되지 않습니다.
+- **중앙 관리 사이트 추가**:  Configuration Manager 설치 마법사 또는 스크립팅된 명령줄을 사용하여 새 중앙 관리 사이트를 기존 독립 실행형 기본 사이트에 부모 사이트로 설치할 수 있습니다. 자세한 내용은 [독립 실행형 기본 사이트 확장](../../../../core/servers/deploy/install/prerequisites-for-installing-sites.md#bkmk_expand)을 참조하세요.
+- **자식 기본 사이트 추가**:  Configuration Manager 설치 마법사 또는 명령줄 설치를 사용하여 중앙 관리 사이트 아래 자식 기본 사이트를 추가합니다.
+- **보조 사이트 추가**:  Configuration Manager 콘솔을 사용하여 보조 사이트를 기본 사이트의 자식 사이트로 설치합니다. 보조 사이트를 추가하는 다른 방법은 지원되지 않습니다.
 
 ## <a name="bkmk_tasks"></a> 설치를 시작하기 전에 완료해야 하는 일반적인 작업
--   **배포에 사용할 계층 구조 토폴로지 이해**    
+- **배포에 사용할 계층 구조 토폴로지 이해**    
 자세한 내용은 [System Center Configuration Manager에 대한 사이트 계층 구조 디자인](../../../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md)을 참조하세요.  
 
--   **Configuration Manager에 사용할 수 있도록 필수 조건과 지원되는 구성을 충족하는 개별 서버 준비 및 구성**         
+- **Configuration Manager에 사용할 수 있도록 필수 조건과 지원되는 구성을 충족하는 개별 서버 준비 및 구성**         
 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](../../../../core/plan-design/configs/site-and-site-system-prerequisites.md)을 참조하세요.  
 
--   **사이트 데이터베이스를 호스트하는 SQL Server 설치 및 구성**     
+- **사이트 데이터베이스를 호스트하는 SQL Server 설치 및 구성**     
 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
 
--   **Configuration Manager를 지원하도록 네트워크 환경 준비**      
+- **Configuration Manager를 지원하도록 네트워크 환경 준비**      
 자세한 내용은 [Configuration Manager를 준비하기 위한 방화벽, 포트 및 도메인 구성](../../../../core/plan-design/network/configure-firewalls-ports-domains.md)을 참조하세요.  
 
 - **PKI(공개 키 인프라)를 사용하려는 경우 인프라 및 인증서 준비**      
 자세한 내용은 [Configuration Manager를 위한 PKI 인증서 요구 사항](../../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.
 
--   **사이트 서버 또는 사이트 시스템 서버로 사용할 컴퓨터에 최신 보안 업데이트 설치 및 필요한 경우 다시 시작**
+- **사이트 서버 또는 사이트 시스템 서버로 사용할 컴퓨터에 최신 보안 업데이트 설치 및 필요한 경우 다시 시작**
 
 ## <a name="bkmk_sitecodes"></a> 사이트 이름 및 사이트 코드 정보
 사이트 코드 및 사이트 이름은 Configuration Manager 계층 구조의 사이트를 식별하고 관리하는 데 사용됩니다. Configuration Manager 콘솔에서 사이트 코드 및 사이트 이름은 &lt;*사이트 코드*\> - &lt;*사이트 이름*\> 형식으로 표시됩니다. 계층에 사용하는 사이트 코드는 모두 서로 고유해야 합니다. Active Directory 스키마가 Configuration Manager에 대해 확장된 경우 사이트에서 데이터를 게시하면 Active Directory 포리스트 내에 사용되는 사이트 코드는 다른 Configuration Manager 계층 구조에 사용되거나 이전 Configuration Manager 설치에 사용되었던 경우라도 반드시 고유해야 합니다. 따라서 계층을 배포하기 전에 사이트 코드 및 사이트 이름을 신중하게 계획해야 합니다.
 
 ### <a name="specify-a-site-code-and-site-name"></a>사이트 코드 및 사이트 이름 지정
 Configuration Manager 설치 프로그램을 실행하는 경우 중앙 관리 사이트와 각 기본 사이트 및 보조 사이트 설치에 대한 사이트 코드 및 사이트 이름을 지정하라는 메시지가 나타납니다. 사이트 코드는 계층 구조의 각 사이트를 고유하게 식별해야 합니다. 사이트 코드는 폴더 이름에 사용되므로 사이트 코드에 다음 이름(Configuration Manager 및 Windows에 예약된 이름 포함)을 사용하지 마세요.
-  -  AUX
-  -  CON
-  -  NUL
-  -  PRN
-  -  SMS
+- AUX
+- CON
+- NUL
+- PRN
+- SMS
 
 > [!NOTE]
 > Configuration Manager 설치 프로그램은 사이트 코드를 이미 사용 중인지 여부를 확인하지 않습니다.
 
 Configuration Manager 설치 프로그램을 실행하는 동안 사이트의 사이트 코드를 입력하려면 3자리 영숫자를 입력해야 합니다. *A*~*Z* 문자와 *0*~*9* 숫자만 임의로 조합해서 사이트 코드에 사용할 수 있습니다. 연속된 문자나 숫자는 사이트 간 통신에 아무런 영향을 미치지 않습니다. 예를 들어 기본 사이트 이름을 *ABC*로 지정하고 보조 사이트 이름을 *DEF*로 지정할 필요가 없습니다.
 
-사이트 이름은 사이트의 이름 식별자입니다. 문자 *A*~*Z*, *a*~*z*, *0*~*9* 및 하이픈(*-*)만 사이트 이름에 사용할 수 있습니다.
+사이트 이름은 사이트의 이름 식별자입니다. 문자 *A*~*Z*, *a*~*z*, *0*~*9* 및 하이픈( *-* )만 사이트 이름에 사용할 수 있습니다.
 
 > [!IMPORTANT]
 > 사이트를 설치한 후에는 사이트 코드 또는 사이트 이름을 변경할 수 없습니다.
@@ -107,26 +107,26 @@ Configuration Manager 설치 프로그램을 실행하는 동안 사이트의 �
 ## <a name="limits-and-restrictions-for-installed-sites"></a>설치되는 사이트에 대한 제한 사항
 사이트를 설치하기 전에 사이트 및 계층 구조에 적용되는 다음 제한 사항을 이해하는 것이 중요합니다.
 - 설치 프로그램을 실행한 후 사이트를 제거하고 새 값을 사용하여 다시 설치하지 않으면 다음 사이트 속성을 변경할 수 없습니다.  
-  -   프로그램 파일 설치 디렉터리  
-  -   사이트 코드  
-  -   사이트 설명  
+  - 프로그램 파일 설치 디렉터리  
+  - 사이트 코드  
+  - 사이트 설명  
 - 계층 구조에 중앙 관리 사이트가 포함된 경우:  
-  -   Configuration Manager에서는 독립 실행형 기본 사이트를 만들거나 다른 계층 구조에 연결하기 위해 계층 구조에서 자식 기본 사이트를 이동할 수 없습니다. 대신, 자식 기본 사이트를 제거한 다음 새 독립 실행형 기본 사이트로 다시 설치하거나 다른 계층 구조의 중앙 관리 사이트의 자식 사이트로 다시 설치할 수 있습니다.  
+  - Configuration Manager에서는 독립 실행형 기본 사이트를 만들거나 다른 계층 구조에 연결하기 위해 계층 구조에서 자식 기본 사이트를 이동할 수 없습니다. 대신, 자식 기본 사이트를 제거한 다음 새 독립 실행형 기본 사이트로 다시 설치하거나 다른 계층 구조의 중앙 관리 사이트의 자식 사이트로 다시 설치할 수 있습니다.  
 
 
 ## <a name="bkmk_optionalsteps"></a> 설치 프로그램을 실행하기 전의 선택적 단계
 **수동으로 [설치 다운로더](../../../../core/servers/deploy/install/setup-downloader.md) 실행**
 
 Configuration Manager의 업데이트된 설치 파일을 다운로드하려면 설치 다운로더를 실행합니다. 설치 프로그램을 실행할 컴퓨터가 인터넷에 연결되어 있지 않거나 여러 사이트 서버를 설치하려는 경우에는 설치 다운로더를 사용하여 설치 프로그램에 대한 필수 업데이트를 다운로드하는 것이 좋습니다. 추가 정보는 다음과 같습니다.
--  기본적으로 설치 프로그램은 인터넷에 연결하여 업데이트된 설치 파일을 다운로드합니다.
--  기본적으로 파일은 Redist 폴더에 저장됩니다.
--  설치 프로그램이 이전에 이러한 파일의 복사본을 저장한 네트워크의 위치를 사용하도록 지정할 수 있습니다.
+- 기본적으로 설치 프로그램은 인터넷에 연결하여 업데이트된 설치 파일을 다운로드합니다.
+- 기본적으로 파일은 Redist 폴더에 저장됩니다.
+- 설치 프로그램이 이전에 이러한 파일의 복사본을 저장한 네트워크의 위치를 사용하도록 지정할 수 있습니다.
 
 **수동으로 [필수 조건 검사기](../../../../core/servers/deploy/install/prerequisite-checker.md) 실행**
 
 설치 프로그램을 실행하여 사이트를 설치하기 전과 서버에 사이트 시스템 역할을 설치하기 전에 문제를 식별하고 해결하려면 필수 조건 검사기를 실행할 수 있습니다. 필수 조건 검사기는 컴퓨터가 사이트 또는 사이트 시스템 역할을 호스트하기 위한 요구 사항을 충족하는지 확인합니다. 추가 정보는 다음과 같습니다.
- -  기본적으로 설치 프로그램은 필수 조건 검사기를 실행합니다.
- -  오류가 발생하면 문제를 해결할 때까지 설치 프로그램이 중지됩니다.
+- 기본적으로 설치 프로그램은 필수 조건 검사기를 실행합니다.
+- 오류가 발생하면 문제를 해결할 때까지 설치 프로그램이 중지됩니다.
 
 **선택적 포트 식별**
 
@@ -134,4 +134,4 @@ Configuration Manager의 업데이트된 설치 파일을 다운로드하려면 
 - 기본적으로 사이트 시스템 및 클라이언트는 미리 정의된 포트를 사용하여 통신합니다.
 - 설치하는 동안 대체 포트를 구성할 수 있습니다.
 
-  자세한 내용은 [System Center Configuration Manager에서 사용되는 포트](../../../../core/plan-design/hierarchy/ports.md)를 참조하세요.
+자세한 내용은 [System Center Configuration Manager에서 사용되는 포트](../../../../core/plan-design/hierarchy/ports.md)를 참조하세요.

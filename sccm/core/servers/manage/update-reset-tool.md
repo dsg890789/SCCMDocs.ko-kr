@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec78a903bd3fa897a240ea04ca7f14349f9a0acd
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: d6366e4a92be6aea0441adf6c81c8c8416b05f33
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500966"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68337985"
 ---
 # <a name="update-reset-tool"></a>업데이트 다시 설정 도구
 
@@ -33,9 +33,9 @@ ms.locfileid: "65500966"
 
 ### <a name="prerequisites"></a>필수 구성 요소
 이 도구를 실행하는 데 사용하는 계정에는 다음 권한이 필요합니다.
--   중앙 관리 사이트 및 계층 구조에 있는 각 기본 사이트의 사이트 데이터베이스에 대한 **읽기** 및 **쓰기** 권한 이러한 권한을 설정하려면 사용자 계정을 각 사이트의 Configuration Manager 데이터베이스에 **db_datawriter** 및 **db_datareader** [고정 데이터베이스 역할](/sql/relational-databases/security/authentication-access/database-level-roles#fixed-database-roles)의 구성원으로 추가할 수 있습니다. 이 도구는 보조 사이트와는 상호 작용하지 않습니다.
--   계층 구조의 최상위 사이트에 대한 **로컬 관리자**
--   서비스 연결 지점을 호스트하는 컴퓨터의 **로컬 관리자**
+- 중앙 관리 사이트 및 계층 구조에 있는 각 기본 사이트의 사이트 데이터베이스에 대한 **읽기** 및 **쓰기** 권한 이러한 권한을 설정하려면 사용자 계정을 각 사이트의 Configuration Manager 데이터베이스에 **db_datawriter** 및 **db_datareader** [고정 데이터베이스 역할](/sql/relational-databases/security/authentication-access/database-level-roles#fixed-database-roles)의 구성원으로 추가할 수 있습니다. 이 도구는 보조 사이트와는 상호 작용하지 않습니다.
+- 계층 구조의 최상위 사이트에 대한 **로컬 관리자**
+- 서비스 연결 지점을 호스트하는 컴퓨터의 **로컬 관리자**
 
 다시 설정하려는 업데이트 패키지의 GUID가 필요합니다. GUID를 가져오려면
   1.   콘솔에서 **관리** > **업데이트 및 서비스**로 이동합니다.
@@ -49,17 +49,17 @@ ms.locfileid: "65500966"
 이 도구는 계층의 최상위 사이트에서 실행해야 합니다.
 
 이 도구를 실행하는 경우 명령줄 매개 변수를 사용하여 다음을 지정합니다.
-  -   계층 구조의 최상위 계층 사이트에 있는 SQL Server
-  -   최상위 계층 사이트에 있는 사이트 데이터베이스 이름
-  -   다시 설정하려는 업데이트 패키지의 GUID
+- 계층 구조의 최상위 계층 사이트에 있는 SQL Server
+- 최상위 계층 사이트에 있는 사이트 데이터베이스 이름
+- 다시 설정하려는 업데이트 패키지의 GUID
 
 이 도구는 업데이트 상태에 따라 액세스해야 하는 추가 서버를 식별합니다.   
 
 업데이트 패키지가 *다운로드 게시* 상태이면 도구는 패키지를 정리하지 않습니다. 선택적으로 force delete 매개 변수를 사용하여 성공적으로 다운로드한 업데이트를 강제로 제거할 수 있습니다(이 항목 뒷부분에 나오는 명령줄 매개 변수 참조).
 
 도구가 실행된 후에 다음 작업을 수행합니다.
--   패키지가 삭제된 경우 최상위 계층 사이트에서 SMS_Executive 서비스를 다시 시작합니다. 그런 후 패키지를 다시 다운로드할 수 있도록 업데이트를 확인합니다.
--   패키지가 삭제되지 않은 경우 어떤 작업도 필요하지 않습니다. 업데이트를 다시 초기화한 다음 복제 또는 설치를 다시 시작합니다.
+- 패키지가 삭제된 경우 최상위 계층 사이트에서 SMS_Executive 서비스를 다시 시작합니다. 그런 후 패키지를 다시 다운로드할 수 있도록 업데이트를 확인합니다.
+- 패키지가 삭제되지 않은 경우 어떤 작업도 필요하지 않습니다. 업데이트를 다시 초기화한 다음 복제 또는 설치를 다시 시작합니다.
 
 **명령줄 매개 변수:**  
 
@@ -72,7 +72,7 @@ ms.locfileid: "65500966"
 |           **-I &lt;SQL Server 인스턴스 이름>**           |                    *선택 사항* <br> 사이트 데이터베이스를 호스트하는 SQL Server 인스턴스를 식별합니다.                     |
 |                       **-FDELETE**                       |                       *선택 사항* <br> 성공적으로 다운로드한 업데이트 패키지를 강제로 삭제합니다.                        |
 
- **예:**  
- 일반적인 시나리오에서는 다운로드 문제가 있는 업데이트를 다시 설정하려고 할 것입니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
+**예:**  
+일반적인 시나리오에서는 다운로드 문제가 있는 업데이트를 다시 설정하려고 할 것입니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
 
- 좀 더 극단적인 시나리오에서는 문제가 있는 업데이트 패키지를 강제로 삭제하려고 할 수 있습니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
+좀 더 극단적인 시나리오에서는 문제가 있는 업데이트 패키지를 강제로 삭제하려고 할 수 있습니다. SQL Server FQDN은 *server1.fabrikam.com*, 사이트 데이터베이스는 *CM_XYZ*, 패키지 GUID는 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*입니다.  실행: ***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***

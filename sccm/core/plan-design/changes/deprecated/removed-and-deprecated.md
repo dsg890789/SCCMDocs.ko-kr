@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf7fd4902f5aa30347d2ccc2410227078035872
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 300d3763ba877bcd05817e40f4a8a86a1e899ce5
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496249"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339697"
 ---
 # <a name="removed-and-deprecated-items-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 제거된 기능과 사용되지 않는 항목
 
@@ -47,6 +47,6 @@ ms.locfileid: "65496249"
 ## <a name="more-information"></a>추가 정보
 
 자세한 내용은 다음을 참조하십시오.
- - [Microsoft 지원 주기 정책](https://support.microsoft.com/lifecycle) 웹 사이트
- - [Configuration Manager 현재 분기 버전에 대한 지원](/sccm/core/servers/manage/current-branch-versions-supported)
+- [Microsoft 지원 주기 정책](https://support.microsoft.com/lifecycle) 웹 사이트
+- [Configuration Manager 현재 분기 버전에 대한 지원](/sccm/core/servers/manage/current-branch-versions-supported)
 

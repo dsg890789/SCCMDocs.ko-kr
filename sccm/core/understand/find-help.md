@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e767d46c81e3942efb44d9d94ba7f66ecd1f5281
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: be9fd76105685a283931bc298e534a6a8f6683d8
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083112"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340270"
 ---
 # <a name="find-help-for-using-configuration-manager"></a>Configuration Manager 사용 도움말 찾기
 
@@ -52,11 +52,11 @@ ms.locfileid: "65083112"
 
 Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 보낼 수 있습니다. 로그를 첨부해야 하는 경우 [피드백 허브](#BKMK_FeedbackHub)를 사용합니다. 수행할 수 있는 작업은 다음과 같습니다. <!--1357542-->
 
-  - **웃는 얼굴 보내기**: 좋아하는 것에 대한 피드백을 보냅니다.
-  - **찡그린 얼굴 보내기**: 싫어하는 것에 대한 피드백을 보냅니다.
-  - **제안 보내기**: [UserVoice 웹 사이트](https://configurationmanager.uservoice.com/)로 이동하여 아이디어를 공유합니다.
+- **웃는 얼굴 보내기**: 좋아하는 것에 대한 피드백을 보냅니다.
+- **찡그린 얼굴 보내기**: 싫어하는 것에 대한 피드백을 보냅니다.
+- **제안 보내기**: [UserVoice 웹 사이트](https://configurationmanager.uservoice.com/)로 이동하여 아이디어를 공유합니다.
 
-    ![Configuration Manager 1806에서 피드백 제출](media/1806-send-a-smile.png)
+  ![Configuration Manager 1806에서 피드백 제출](media/1806-send-a-smile.png)
 
 
 ### <a name="send-a-smile"></a>웃는 얼굴 보내기
@@ -98,13 +98,13 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
 ### <a name="information-sent-with-feedback"></a>피드백과 함께 전송되는 정보
 
 **웃는 얼굴 보내기** 또는 **찡그린 얼굴 보내기**를 사용하면 피드백으로 다음 정보가 전송됩니다.
- 
-   - OS 빌드 정보
-   - Configuration Manager 계층 구조 ID
-   - 제품 빌드 정보
-   - 언어 정보
-   - 디바이스 식별자 
-       - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient:MachineId
+
+- OS 빌드 정보
+- Configuration Manager 계층 구조 ID
+- 제품 빌드 정보
+- 언어 정보
+- 디바이스 식별자 
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient:MachineId
 
 
 
@@ -141,10 +141,10 @@ Configuration Manager 버전 1806부터 제품 피드백은 콘솔에서 직접 
 ##  <a name="BKMK_FeedbackHub"></a> 1802 및 이전 버전에 대한 제품 피드백
 
 Windows 10에 기본 제공된 [피드백 허브 앱](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)을 통해 잠재적인 제품 결함을 보고합니다. **새 피드백을 추가**할 때 **엔터프라이즈 관리** 범주를 선택하고 다음과 같은 하위 범주가 중 하나를 선택해야 합니다.
- - Configuration Manager 클라이언트
- - Configuration Manager 콘솔
- - Configuration Manager OS 배포
- - Configuration Manager 서버
+- Configuration Manager 클라이언트
+- Configuration Manager 콘솔
+- Configuration Manager OS 배포
+- Configuration Manager 서버
 
 Configuration Manager에서 [UserVoice 페이지](https://configurationmanager.uservoice.com/)를 계속 사용하여 새로운 기능 아이디어에 투표하세요. Configuration Manager 제품 팀은 다음 UserVoice 상태 값을 사용합니다.
 

@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7397fc17-3ae8-4525-8386-aea8a9cffa06
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81ab388784e5fba380eab36db5e6a023199d41e0
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e131f8c76b03c36557f3f1161729d523e4e7f946
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137003"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339863"
 ---
 # <a name="surface-device-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Surface 디바이스 대시보드
 
@@ -52,16 +52,17 @@ Surface 디바이스 대시보드는 사용자 환경에 대한 세 개의 그�
       ![Surface 모델 디바이스 목록](media/Surface-Model-Device-List.PNG)
 
 - **상위 5개 펌웨어 버전** - 환경에서 상위 5개 펌웨어 모델을 포함한 차트를 표시합니다. 
-  - 그래프 섹션을 마우스로 가리키면 선택한 펌웨어 버전인 Surface 디바이스 수를 제공합니다. Configuration Manager 버전 1806부터 그래프 섹션을 클릭하면 관련 디바이스의 목록이 표시됩니다. <!--1358654-->![Surface 모델 디바이스 목록](media/Surface-Firmware-Hover.PNG)
+  - 그래프 섹션을 마우스로 가리키면 선택한 펌웨어 버전인 Surface 디바이스 수를 제공합니다. Configuration Manager 버전 1806부터 그래프 섹션을 클릭하면 관련 디바이스의 목록이 표시됩니다. <!--1358654-->
+     ![Surface 모델 디바이스 목록](media/Surface-Firmware-Hover.PNG)
 
 
 ## <a name="more-information"></a>추가 정보
 
 Surface 디바이스에 대한 자세한 내용은 다음을 참조하세요.
- - [Surface]( https://go.microsoft.com/fwlink/?linkid=861998) 웹 사이트
-    
+- [Surface]( https://go.microsoft.com/fwlink/?linkid=861998) 웹 사이트
+
 Configuration Manager에서 Surface 펌웨어 업데이트를 배포하는 방법에 대한 자세한 내용은
- - [Configuration Manager에서 Surface 드라이버 업데이트를 관리하는 방법]( https://support.microsoft.com/help/4098906)을 참조하세요.
+- [Configuration Manager에서 Surface 드라이버 업데이트를 관리하는 방법]( https://support.microsoft.com/help/4098906)을 참조하세요.
 
 
 

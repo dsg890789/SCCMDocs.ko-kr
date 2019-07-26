@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83838e2642d09c001b638900b6cc4fa23975745e
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 6a7206c6eeab7b737ea4f0130cdf736a52635fce
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676360"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68337873"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -31,25 +31,25 @@ ms.locfileid: "67676360"
 
 **필수 조건:**
 
--   서비스 연결 지점이 설치되어 있고 **오프라인, 주문형 연결**로 설정되었습니다.  
+- 서비스 연결 지점이 설치되어 있고 **오프라인, 주문형 연결**로 설정되었습니다.  
 
--   명령 프롬프트에서 도구를 실행해야 합니다.  
+- 명령 프롬프트에서 도구를 실행해야 합니다.  
 
--   도구가 실행되는 각 컴퓨터(서비스 연결 지점 컴퓨터 및 인터넷에 연결된 컴퓨터)는 x64비트 시스템이고 다음 요소가 설치되어 있어야 합니다.  
+- 도구가 실행되는 각 컴퓨터(서비스 연결 지점 컴퓨터 및 인터넷에 연결된 컴퓨터)는 x64비트 시스템이고 다음 요소가 설치되어 있어야 합니다.  
 
-    -   **Visual C++ 재배포 가능 패키지** x86 및 x64 파일 모두.   기본적으로 Configuration Manager는 서비스 연결 지점을 호스트하는 컴퓨터에 x64 버전을 설치합니다.  
+  - **Visual C++ 재배포 가능 패키지** x86 및 x64 파일 모두.   기본적으로 Configuration Manager는 서비스 연결 지점을 호스트하는 컴퓨터에 x64 버전을 설치합니다.  
 
-         Visual C++ 파일의 복사본을 다운로드하려면 Microsoft 다운로드 센터에서 [Visual Studio 2013용 Visual C++ 재배포 가능 패키지](http://www.microsoft.com/download/details.aspx?id=40784) 를 방문하세요.  
+    Visual C++ 파일의 복사본을 다운로드하려면 Microsoft 다운로드 센터에서 [Visual Studio 2013용 Visual C++ 재배포 가능 패키지](http://www.microsoft.com/download/details.aspx?id=40784) 를 방문하세요.  
 
-    -   .NET Framework 4.5.2 이상  
+  - .NET Framework 4.5.2 이상  
 
--   이 도구를 실행하는 데 사용할 계정에는 다음과 같은 권한이 있어야 합니다.
-    -   서비스 연결 지점을 호스트하는(도구가 실행되는) 컴퓨터에 대한**로컬 관리자** 권한
-    -   사이트 데이터베이스에 대한**읽기** 권한  
+- 이 도구를 실행하는 데 사용할 계정에는 다음과 같은 권한이 있어야 합니다.
+  - 서비스 연결 지점을 호스트하는(도구가 실행되는) 컴퓨터에 대한**로컬 관리자** 권한
+  - 사이트 데이터베이스에 대한**읽기** 권한  
 
 
 
--   파일 및 업데이트를 저장할 수 있는 충분한 여유 공간이 있는 USB 드라이브나, 서비스 연결 지점 컴퓨터와 인터넷에 액세스할 수 있는 컴퓨터 간에 파일을 전송하는 다른 방법이 필요합니다. 이 시나리오에서는 사이트와 관리되는 컴퓨터가 인터넷에 직접 연결되어 있지 않다고 가정합니다.  
+- 파일 및 업데이트를 저장할 수 있는 충분한 여유 공간이 있는 USB 드라이브나, 서비스 연결 지점 컴퓨터와 인터넷에 액세스할 수 있는 컴퓨터 간에 파일을 전송하는 다른 방법이 필요합니다. 이 시나리오에서는 사이트와 관리되는 컴퓨터가 인터넷에 직접 연결되어 있지 않다고 가정합니다.  
 
 
 
@@ -60,21 +60,21 @@ ms.locfileid: "67676360"
 
  이 절차에서 명령줄 예제는 다음 파일 이름과 폴더 위치를 사용합니다. 이러한 경로와 파일 이름 대신 사용자 환경 및 기본 설정에 맞는 대체 경로와 이름을 사용해도 됩니다.  
 
--   서버 간 전송을 위해 데이터가 저장되는 USB 스틱의 경로:  **D:\USB\\**  
+- 서버 간 전송을 위해 데이터가 저장되는 USB 스틱의 경로:  **D:\USB\\**  
 
--   사이트에서 내보낸 데이터가 포함된 .cab 파일의 이름: **UsageData.cab**  
+- 사이트에서 내보낸 데이터가 포함된 .cab 파일의 이름: **UsageData.cab**  
 
--   Configuration Manager에 대해 다운로드한 업데이트가 서버 간 전송을 위해 저장되는 빈 폴더의 이름: **UpdatePacks**  
+- Configuration Manager에 대해 다운로드한 업데이트가 서버 간 전송을 위해 저장되는 빈 폴더의 이름: **UpdatePacks**  
 
 서비스 연결 지점을 호스트하는 컴퓨터:  
 
--   관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경합니다.  
+- 관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경합니다.  
 
-     기본적으로 이 도구는 Configuration Manager 설치 미디어의 **%path%\smssetup\tools\ServiceConnectionTool** 폴더에 있습니다. 서비스 연결 도구가 작동하려면 이 폴더의 모든 파일이 동일한 폴더에 있어야 합니다.  
+  기본적으로 이 도구는 Configuration Manager 설치 미디어의 **%path%\smssetup\tools\ServiceConnectionTool** 폴더에 있습니다. 서비스 연결 도구가 작동하려면 이 폴더의 모든 파일이 동일한 폴더에 있어야 합니다.  
 
 다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사합니다. .cab 파일의 데이터는 사이트가 수집하도록 구성된 진단 사용 현황 데이터의 수준을 기반으로 합니다. [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  다음 명령을 실행하여 .cab 파일을 만듭니다.  
 
--   **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
+- **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
 
 모든 내용이 포함된 ServiceConnectionTool 폴더를 USB 드라이브에 복사하거나, 3 및 4단계를 사용할 컴퓨터에서 사용할 수 있도록 해야 합니다.  
 
@@ -90,14 +90,14 @@ ms.locfileid: "67676360"
 버전1606부터, Microsoft에 연결할 때 한 번에 여러 .cab 파일을 업로드하고(각기 다른 계층 구조에서) 프록시 서버 및 프록시 서버의 사용자를 지정할 수 있습니다.   
 
 #### <a name="to-upload-multiple-cab-files"></a>여러.cab 파일을 업로드하려면
- -  별도 계층 구조에서 내보내는 각.cab 파일을 동일한 폴더에 배치합니다. 각 파일의 이름은 고유해야 하며, 필요한 경우 수동으로 바꿀 수 있습니다.
- -  그런 다음 Microsoft로 데이터를 업로드하는 명령을 실행할 때 .cab 파일이 포함된 폴더를 지정합니다. 업데이트 1606 전에는, 한 번에 단일 계층 구조의 데이터만 업로드할 수 있었고, 도구에서 폴더의 .cab 파일의 이름을 지정하도록 요구했습니다.
- -  나중에 계층 구조의 서비스 연결 지점에서 가져오기 작업을 실행할 때 도구에서 해당 계층 구조의 데이터만 자동으로 가져옵니다.  
+- 별도 계층 구조에서 내보내는 각.cab 파일을 동일한 폴더에 배치합니다. 각 파일의 이름은 고유해야 하며, 필요한 경우 수동으로 바꿀 수 있습니다.
+- 그런 다음 Microsoft로 데이터를 업로드하는 명령을 실행할 때 .cab 파일이 포함된 폴더를 지정합니다. 업데이트 1606 전에는, 한 번에 단일 계층 구조의 데이터만 업로드할 수 있었고, 도구에서 폴더의 .cab 파일의 이름을 지정하도록 요구했습니다.
+- 나중에 계층 구조의 서비스 연결 지점에서 가져오기 작업을 실행할 때 도구에서 해당 계층 구조의 데이터만 자동으로 가져옵니다.  
 
 #### <a name="to-specify-a-proxy-server"></a>프록시 서버를 지정하려면
 다음과 같은 선택적 매개 변수를 사용하여 프록시 서버를 지정할 수 있습니다. 이러한 매개 변수를 사용하는 방법에 대한 자세한 내용은 이 항목의 명령줄 매개 변수 섹션에서 사용할 수 있습니다.
-  - **-proxyserveruri [FQDN_of_proxy_server]**  이 매개 변수를 사용하여 이 연결에 사용할 프록시 서버를 지정합니다.
-  -  **-proxyusername [username]**  프록시 서버의 사용자를 지정해야 할 때 이 매개 변수를 사용합니다.
+- **-proxyserveruri [FQDN_of_proxy_server]**  이 매개 변수를 사용하여 이 연결에 사용할 프록시 서버를 지정합니다.
+- **-proxyusername [username]**  프록시 서버의 사용자를 지정해야 할 때 이 매개 변수를 사용합니다.
 
 #### <a name="specify-the-type-of-updates-to-download"></a>다운로드할 업데이트 유형 지정
 1706 버전부터 도구 기본 다운로드 동작이 변경되었으며 어떤 파일을 다운로드할지 제어하는 옵션을 지원합니다.
@@ -124,17 +124,17 @@ ms.locfileid: "67676360"
 
 1. 서비스 연결 지점을 호스트하는 컴퓨터:  
 
-   -   관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경합니다.   
+   - 관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경합니다.   
 
 2. 다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사할 수 있습니다.  
 
-   -   **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
+   - **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
 
    둘 이상의 계층 구조에서.cab 파일을 동시에 업로드하는 경우 폴더의 각.cab 파일에 고유한 이름이 있어야 합니다. 폴더에 추가하는 파일의 이름을 수동으로 바꿀 수 있습니다.
 
    Configuration Manager 클라우드 서비스에 업로드하기 위해 수집되는 사용 현황 정보를 보려는 경우 다음 명령을 실행하여 .csv 파일과 동일한 데이터를 내보낸 다음 Excel과 같은 애플리케이션을 사용하여 볼 수 있습니다.  
 
-   -   **serviceconnectiontool.exe -export -dest D:\USB\UsageData.csv**  
+   - **serviceconnectiontool.exe -export -dest D:\USB\UsageData.csv**  
 
 3. 준비 단계가 완료되면 인터넷에 연결된 컴퓨터로 USB 드라이브를 이동(또는 내보낸 데이터를 다른 방법으로 전송)합니다.  
 
@@ -142,14 +142,14 @@ ms.locfileid: "67676360"
 
 5. 다음 명령을 실행하여 사용 정보 업로드 및 Configuration Manager 업데이트 다운로드를 시작합니다.  
 
-   -   **serviceconnectiontool.exe -connect -usagedatasrc D:\USB -updatepackdest D:\USB\UpdatePacks**
+   - **serviceconnectiontool.exe -connect -usagedatasrc D:\USB -updatepackdest D:\USB\UpdatePacks**
 
    이 명령줄의 추가 예제에 대해서는 이 항목의 뒷부분에 있는 [명령줄 옵션](../../../core/servers/manage/use-the-service-connection-tool.md#bkmk_cmd) 섹션을 참조하세요.
 
    > [!NOTE]  
    >  Configuration Manager 클라우드 서비스에 연결하는 명령줄을 실행하면 다음과 유사한 오류가 발생할 수 있습니다.  
    >   
-   >  -   처리되지 않은 예외: System.UnauthorizedAccessException:  
+   > - 처리되지 않은 예외: System.UnauthorizedAccessException:  
    >   
    >      'C:\  
    >     Users\br\AppData\Local\Temp\extractmanifestcab\95F8A562.sql' 경로에 대한 액세스가 거부되었습니다.  
@@ -160,7 +160,7 @@ ms.locfileid: "67676360"
 
 7. 서비스 연결 지점을 호스트하는 컴퓨터에서 관리자 권한으로 명령 프롬프트를 열고 디렉터리를 **serviceconnectiontool.exe**가 포함된 위치로 변경한 후 다음 명령을 실행합니다.  
 
-   -   **serviceconnectiontool.exe -import -updatepacksrc D:\USB\UpdatePacks**  
+   - **serviceconnectiontool.exe -import -updatepacksrc D:\USB\UpdatePacks**  
 
 8. 가져오기가 완료되면 명령 프롬프트를 닫아도 됩니다. 해당 계층 구조에 대한 업데이트만 가져옵니다.  
 
@@ -179,7 +179,7 @@ ms.locfileid: "67676360"
 도구를 사용하여 연결하고 업데이트를 다운로드할 때 로그 파일이 **ConfigMgrSetup.log**라는 시스템 드라이브의 루트에 생성됩니다.  이 로그 파일은 다운로드된 파일, 추출된 파일 및 해시 검사의 성공 여부와 같은 자세한 정보를 제공합니다.
 
 ## <a name="bkmk_cmd"></a> 명령줄 옵션  
- 서비스 연결 지점 도구에 대한 도움말 정보를 보려면 도구가 포함된 폴더에서 명령 프롬프트를 열고  **serviceconnectiontool.exe**명령을 실행합니다.  
+서비스 연결 지점 도구에 대한 도움말 정보를 보려면 도구가 포함된 폴더에서 명령 프롬프트를 열고  **serviceconnectiontool.exe**명령을 실행합니다.  
 
 
 |명령줄 옵션|세부 정보|  

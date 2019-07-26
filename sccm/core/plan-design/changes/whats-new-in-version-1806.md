@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8560c34f1db76afcfe2e65eeaf8311b0a58cc926
-ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
+ms.openlocfilehash: 4e260f26295a27c91a69cad563eaec2395b00a5c
+ms.sourcegitcommit: e0438c191df945305625ae91596c9417d16e8510
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67623445"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491686"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -328,7 +328,8 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 이 릴리스에서는 단계적 배포의 다음 사항이 개선되었습니다.  
 
 #### <a name="create-a-phased-deployment-with-manually-configured-phases"></a>수동으로 구성된 단계를 사용하여 단계별 배포 만들기
-<!--1358148--> 이제 작업 순서에 대해 단계적 배포를 만들 때 단계를 수동으로 구성할 수 있습니다. 단계별 배포 만들기 마법사의 **단계** 탭에서 최대 10개의 추가 단계를 추가합니다. 자동으로 기본 두 단계 배포를 만드는 것도 계속 가능합니다. 
+<!--1358148-->
+이제 작업 순서에 대해 단계적 배포를 만들 때 단계를 수동으로 구성할 수 있습니다. 단계별 배포 만들기 마법사의 **단계** 탭에서 최대 10개의 추가 단계를 추가합니다. 자동으로 기본 두 단계 배포를 만드는 것도 계속 가능합니다. 
 
 자세한 내용은 [수동으로 구성된 단계를 사용하여 단계적 배포 만들기 ](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence#bkmk_manual)를 참조하세요.
 
@@ -404,11 +405,11 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
  자세한 내용은 [운영 체제 업그레이드](/sccm/osd/understand/task-sequence-steps#BKMK_UpgradeOS)를 참조하세요.
 
 #### <a name="revised-documentation-for-task-sequence-variables"></a>작업 순서 변수에 대한 설명서 수정
- 이제 작업 순서 변수 이해를 위한 다음 두 개의 새 문서가 제공됩니다.  
+이제 작업 순서 변수 이해를 위한 다음 두 개의 새 문서가 제공됩니다.  
 
- - [작업 순서 변수를 사용하는 방법](/sccm/osd/understand/using-task-sequence-variables)은 다양한 변수 형식, 변수를 설정하는 방법 및 변수에 액세스하는 방법을 설명하는 새 문서입니다.  
+- [작업 순서 변수를 사용하는 방법](/sccm/osd/understand/using-task-sequence-variables)은 다양한 변수 형식, 변수를 설정하는 방법 및 변수에 액세스하는 방법을 설명하는 새 문서입니다.  
 
- - [작업 순서 변수](/sccm/osd/understand/task-sequence-variables)는 모든 사용 가능한 작업 순서 변수에 대한 참조입니다. 이 문서는 기본 제공 변수와 작업 변수가 서로 분리되어 있던 이전 문서가 결합된 것입니다. 
+- [작업 순서 변수](/sccm/osd/understand/task-sequence-variables)는 모든 사용 가능한 작업 순서 변수에 대한 참조입니다. 이 문서는 기본 제공 변수와 작업 변수가 서로 분리되어 있던 이전 문서가 결합된 것입니다. 
 
 
 
@@ -607,9 +608,9 @@ Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 �
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용합니다.  
 >
->  다음에 대해 자세히 알아보세요.    
->   - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
+> 다음에 대해 자세히 알아보세요.    
+> - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
+> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 알려진 중요한 문제는 [릴리스 정보](/sccm/core/servers/deploy/install/release-notes)를 참조하세요.
 

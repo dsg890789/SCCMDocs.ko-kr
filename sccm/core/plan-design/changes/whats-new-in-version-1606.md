@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 401565308ac78e1d6db047eca7cda63715474764
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 64cb1be506f958363b1ebfeef66bff1ad865c113
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67158882"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339844"
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1606의 새로운 기능
 
@@ -25,10 +25,10 @@ ms.locfileid: "67158882"
 
 System Center Configuration Manager 업데이트 1606은 버전 1511 또는 1602를 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다. 버전 1511은 새 Configuration Manager 사이트를 설치하는 데 사용하는 초기 기준 버전입니다.
 > [!TIP]  
->  다음에 대해 자세히 알아보세요.  
+> 다음에 대해 자세히 알아보세요.  
 >   
->  -   [새 사이트 설치](/sccm/core/servers/deploy/install/prepare-to-install-sites)(1511 등의 기준 버전 사용)  
->  -   [사이트에서 업데이트 설치](/sccm/core/servers/manage/updates)(예: 업데이트 1602 또는 1606)  
+> - [새 사이트 설치](/sccm/core/servers/deploy/install/prepare-to-install-sites)(1511 등의 기준 버전 사용)  
+> - [사이트에서 업데이트 설치](/sccm/core/servers/manage/updates)(예: 업데이트 1602 또는 1606)  
 
  다음 섹션에서는 Configuration Manager 버전 1606에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 

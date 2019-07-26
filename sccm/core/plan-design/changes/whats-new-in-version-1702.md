@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31f47fa04275f2be4efa1558e1d816f74b05d369
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 1e41779d7901471e208c26b9050c4db82b678244
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677306"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339829"
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
 
@@ -27,10 +27,11 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
->  다음에 대해 자세히 알아보세요.    
->   - [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
->   - [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
+>
+> 다음에 대해 자세히 알아보세요.    
+> - [새 사이트 설치](https://technet.microsoft.com/library/mt590197.aspx)  
+> - [사이트에 업데이트 설치](https://technet.microsoft.com/library/mt607046.aspx)  
+> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 다음 섹션에서는 Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 
@@ -62,9 +63,9 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 
 ### <a name="send-feedback-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 피드백 보내기
 
- 콘솔 내 피드백 옵션을 사용하여 개발 팀에게 직접 피드백을 보낼 수 있습니다.
+콘솔 내 피드백 옵션을 사용하여 개발 팀에게 직접 피드백을 보낼 수 있습니다.
 
- **피드백** 옵션은 다음 위치에서 찾을 수 있습니다.
+**피드백** 옵션은 다음 위치에서 찾을 수 있습니다.
 - 리본에서 각 노드의 홈 탭 맨 왼쪽  
   ![리본](./media/feedback-home.png)
 
@@ -96,25 +97,25 @@ System Center Configuration Manager 현재 분기의 업데이트 1702는 버전
 
 
 ### <a name="data-warehouse-service-point"></a>데이터 웨어하우스 서비스 지점
- 데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
+데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
 
- 데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 스토리지는 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다.
+데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 스토리지는 Configuration Manager 사이트 데이터베이스에서 데이터 웨어하우스 데이터베이스로의 자동화된 동기화를 통해 수행됩니다. 이 정보는 보고 서비스 지점에서 액세스할 수 있습니다.
 
- 자세한 내용은 [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse)을 참조하세요.
+자세한 내용은 [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse)을 참조하세요.
 
 
 ### <a name="peer-cache-improvements"></a>피어 캐시 개선
- 버전 1702부터 피어 캐시 원본 컴퓨터가 다음 조건 중 하나라도 충족할 경우 피어 캐시 원본 컴퓨터는 콘텐츠 요청을 거부합니다.  
-  -  배터리 부족 모드에 있는 경우
-  -  콘텐츠를 요청 시 CPU 로드가 80%를 초과하는 경우
-  -  디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우
-  -  컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우   
+버전 1702부터 피어 캐시 원본 컴퓨터가 다음 조건 중 하나라도 충족할 경우 피어 캐시 원본 컴퓨터는 콘텐츠 요청을 거부합니다.  
+-  배터리 부족 모드에 있는 경우
+-  콘텐츠를 요청 시 CPU 로드가 80%를 초과하는 경우
+-  디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우
+-  컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우   
 자세한 내용은 [Configuration Manager 클라이언트용 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)에서 **피어 캐시 원본에 대한 제한된 액세스**를 참조하세요.   
 
 또한 세 가지 새로운 보고서가 보고 지점에 추가되었습니다. 이러한 보고서를 사용하여 관련된 경계 그룹 및 콘텐츠와 같은 거부된 콘텐츠 요청에 대한 자세한 정보를 이해할 수 있습니다. 피어 캐시 항목에서 [모니터링](/sccm/core/plan-design/hierarchy/client-peer-cache#monitoring)을 참조하세요.
 
 ### <a name="content-library-cleanup-tool"></a>콘텐츠 라이브러리 정리 도구
- [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 해당 콘텐츠가 더 이상 애플리케이션과 연결되지 않을 경우 배포 지점에서 콘텐츠를 제거합니다.
+[콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)를 사용하여 해당 콘텐츠가 더 이상 애플리케이션과 연결되지 않을 경우 배포 지점에서 콘텐츠를 제거합니다.
 
 
 ### <a name="use-the-oms-connector-with-the-azure-government-cloud"></a>Azure Government 클라우드에서 OMS 커넥터 사용
@@ -201,14 +202,14 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 ### <a name="improvements-to-the-auto-apply-driver-task-sequence"></a>드라이버 자동 적용 작업 순서의 향상된 기능
 이제 새 작업 순서 변수를 사용하여 HTTP 카탈로그 요청 시 드라이버 자동 적용 작업 순서 단계에 대한 시간 제한 값을 구성할 수 있습니다. 다음 변수와 기본값(초)을 사용할 수 있습니다.
-   - SMSTSDriverRequestResolveTimeOut  
-     기본값: 60
-   - SMSTSDriverRequestConnectTimeOut  
-     기본값: 60
-   - SMSTSDriverRequestSendTimeOut  
-     기본값: 60
-   - SMSTSDriverRequestReceiveTimeOut  
-     기본값: 480
+- SMSTSDriverRequestResolveTimeOut  
+  기본값: 60
+- SMSTSDriverRequestConnectTimeOut  
+  기본값: 60
+- SMSTSDriverRequestSendTimeOut  
+  기본값: 60
+- SMSTSDriverRequestReceiveTimeOut  
+  기본값: 480
 
 ### <a name="windows-10-adk-tracked-by-build-version"></a>Windows 10 ADK가 빌드 버전별로 추적됨
 이제 Windows 10 ADK가 빌드 버전별로 추적되므로 Windows 10 부팅 이미지를 사용자 지정할 때 환경에서 더 많은 지원이 제공됩니다. 예를 들어 사이트에서 Windows 10 버전 1607용 Windows ADK를 사용하는 경우 버전 10.0.14393인 부팅 이미지만 콘솔에서 사용자 지정할 수 있습니다. WinPE 버전을 사용자 지정하는 방법에 대한 자세한 내용은 [부팅 이미지 사용자 지정](/sccm/osd/get-started/customize-boot-images)을 참조하세요.

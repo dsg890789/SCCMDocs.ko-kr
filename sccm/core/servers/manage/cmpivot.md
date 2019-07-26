@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3626514d4cd7f2d26e3c198931eb6fad49123dd2
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: 704e9ea1c8ddaf8cfebf1377381f6f345a9f7ea1
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551302"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339727"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -468,9 +468,9 @@ Configuration Manager 1810부터 CMPivot은 확장된 하드웨어 인벤토리 
 - StateSys.log
 
 **클라이언트 쪽:**
- - CCMNotificationAgent.log
- - Scripts.log
- - StateMessage.log
+- CCMNotificationAgent.log
+- Scripts.log
+- StateMessage.log
 
 자세한 내용은 [로그 파일](/sccm/core/plan-design/hierarchy/log-files) 및 [CMPivot 문제 해결](/sccm/core/servers/manage/cmpivot-tsg)을 참조하세요.
 

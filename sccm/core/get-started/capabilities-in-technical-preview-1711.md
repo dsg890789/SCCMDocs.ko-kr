@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 645f41a7bad4bd9365c9ec9d51e2567ae270385a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: c4194472965ea498626921a1277047783251649e
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123300"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340065"
 ---
 # <a name="capabilities-in-technical-preview-1711-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1711의 기능
 
@@ -57,11 +57,11 @@ ms.locfileid: "56123300"
 
 이 기술 미리 보기는 작업 순서 실행 단계를 향상시킵니다. 향상된 기능은 다음과 같습니다.
 
- - 소프트웨어 센터, PXE 및 미디어에서 모든 운영 체제 배포 시나리오를 지원합니다.
- - 개체 삭제 중 복사, 가져오기, 내보내기 및 경고와 같은 콘솔 작업이 향상되었습니다.
- - **사전 준비된 콘텐츠 파일 만들기** 마법사를 지원합니다.
- - 배포 확인과 통합됩니다.
- - 작업 순서 실행 단계는 이제 단일 부모-자식 관계뿐만 아니라 여러 수준의 작업 순서에서도 사용할 수 있습니다. 여러 수준 관계는 복잡성이 증가되므로 신중하게 사용합니다. 이러한 관계는 여전히 순환 참조를 확인합니다.
+- 소프트웨어 센터, PXE 및 미디어에서 모든 운영 체제 배포 시나리오를 지원합니다.
+- 개체 삭제 중 복사, 가져오기, 내보내기 및 경고와 같은 콘솔 작업이 향상되었습니다.
+- **사전 준비된 콘텐츠 파일 만들기** 마법사를 지원합니다.
+- 배포 확인과 통합됩니다.
+- 작업 순서 실행 단계는 이제 단일 부모-자식 관계뿐만 아니라 여러 수준의 작업 순서에서도 사용할 수 있습니다. 여러 수준 관계는 복잡성이 증가되므로 신중하게 사용합니다. 이러한 관계는 여전히 순환 참조를 확인합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
 
@@ -99,7 +99,7 @@ ms.locfileid: "56123300"
 3.  클라이언트에 작업 순서를 배포합니다.
 4.  소프트웨어 센터에서 작업 순서를 설치합니다.
 
-작업 순서를 진행하는 동안 애플리케이션 설치 인터페이스가 대상 최종 사용자 장치에 표시됩니다. 최종 사용자가 애플리케이션 설치 워크플로를 완료할 때까지 작업 순서 진행률이 일시 중지됩니다.
+작업 순서를 진행하는 동안 응용 프로그램 설치 인터페이스가 대상 최종 사용자 디바이스에 표시됩니다. 최종 사용자가 애플리케이션 설치 워크플로를 완료할 때까지 작업 순서 진행률이 일시 중지됩니다.
 
 ### <a name="install-using-the-wizard"></a>마법사를 사용하여 설치
 

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee32d282bc04e6c1f97b12dedb8d69ccdcca8915
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 0ed8434086a7f1515cc538c3b265cb4e8f54780e
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677543"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340102"
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
 
@@ -54,10 +54,10 @@ ms.locfileid: "67677543"
 
 ## <a name="peer-cache-improvements"></a>피어 캐시 개선
 이 릴리스부터 피어 캐시 원본 컴퓨터가 다음 조건 중 하나라도 충족할 경우 피어 캐시 원본 컴퓨터는 콘텐츠 요청을 거부합니다.  
- -  배터리 부족 모드에 있는 경우
- -  콘텐츠를 요청 시 CPU 로드가 80%를 초과하는 경우
- -  디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우
- -  컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우   
+-  배터리 부족 모드에 있는 경우
+-  콘텐츠를 요청 시 CPU 로드가 80%를 초과하는 경우
+-  디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우
+-  컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우   
 
 System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기능에 대한 클라이언트 에이전트 구성 클래스(*SMS_WinPEPeerCacheConfig*)를 사용하여 이러한 설정을 구성할 수 있습니다.
 
@@ -101,8 +101,8 @@ Azure AD에서 실행되도록 Configuration Manager를 설정하면 다음 Acti
 Azure AD에는 그룹을 저장하는 OU가 없습니다. 대신, 시스템 또는 사용자 쿼리와 동일한 일반적인 구조를 사용하고 검색할 그룹을 포함하는 OU를 가리키도록 LDAP 쿼리를 구성합니다.
 
 Azure AD에 대한 자세한 내용은 다음을 참조하세요.  
- - azure.microsoft.com의 [Azure Active Directory Domain Services](https://azure.microsoft.com/services/active-directory-ds)
- - docs.microsoft.com의 [Active Directory Domain Services 설명서](https://docs.microsoft.com/azure/active-directory-domain-services)
+- azure.microsoft.com의 [Azure Active Directory Domain Services](https://azure.microsoft.com/services/active-directory-ds)
+- docs.microsoft.com의 [Active Directory Domain Services 설명서](https://docs.microsoft.com/azure/active-directory-domain-services)
 
 ## <a name="conditional-access-device-compliance-policy-improvements"></a>조건부 액세스 디바이스 준수 정책 개선
 

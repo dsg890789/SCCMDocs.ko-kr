@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9246ea46787b1db466b8aca5d8a602617c80e26a
-ms.sourcegitcommit: ab9f2a7fb7ea3a0c65808fce2975ab25a670281f
+ms.openlocfilehash: 192206c7ffcb2d958935cbe66f79400ee422a774
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612518"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339503"
 ---
 # <a name="support-center-for-configuration-manager"></a>Configuration Manager에 대한 지원 센터
 
@@ -33,11 +33,11 @@ ms.locfileid: "65612518"
 
 이제 지원 센터를 사용하여 지원 환경을 간소화할 수 있습니다. 이를 통해 다음을 수행할 수 있습니다.
 
- - Configuration Manager 클라이언트 로그 파일을 포함하는 문제 해결 번들(.zip 파일)를 만듭니다. 그러면 지원 담당자에게 보낼 수 있는 단일 파일을 갖게 됩니다.  
+- Configuration Manager 클라이언트 로그 파일을 포함하는 문제 해결 번들(.zip 파일)를 만듭니다. 그러면 지원 담당자에게 보낼 수 있는 단일 파일을 갖게 됩니다.  
 
- - Configuration Manager 클라이언트 로그 파일, 인증서, 레지스트리 설정, 디버그 덤프, 클라이언트 정책을 확인합니다.  
+- Configuration Manager 클라이언트 로그 파일, 인증서, 레지스트리 설정, 디버그 덤프, 클라이언트 정책을 확인합니다.  
 
- - 인벤토리(ContentSpy 대체), 정책(PolicySpy 대체) 및 클라이언트 캐시에 대한 실시간 진단  
+- 인벤토리(ContentSpy 대체), 정책(PolicySpy 대체) 및 클라이언트 캐시에 대한 실시간 진단  
 
 
 ### <a name="support-center-viewer"></a>지원 센터 뷰어

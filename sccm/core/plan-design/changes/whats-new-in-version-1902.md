@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf8a9ff65ad90928f4f5679940891ff34b571616
-ms.sourcegitcommit: b62de6c9cb1bc3e4c9ea5ab5ed3355d83e3a59bc
+ms.openlocfilehash: 2f3100e9580566b072bed6c8813018876f720eb3
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894179"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68338805"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -510,8 +510,7 @@ The following additional hotfixes are available to address specific issues:
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용합니다.  
 >
-> 다음에 대해 자세히 알아보세요.
->
+> 다음에 대해 자세히 알아보세요.    
 > - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
 > - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)  
 

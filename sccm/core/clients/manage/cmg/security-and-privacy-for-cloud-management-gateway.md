@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7304730b-b517-4c76-aadd-4cbd157dc971
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c584169d56c11be29cd536bf408f20ee59dbf3c
-ms.sourcegitcommit: b62de6c9cb1bc3e4c9ea5ab5ed3355d83e3a59bc
+ms.openlocfilehash: 10c47a9f0da6c61ded9b3ef7de5dc854ce931c37
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894170"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339167"
 ---
 # <a name="security-and-privacy-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 보안 및 개인 정보
 
@@ -43,8 +43,8 @@ ms.locfileid: "67894170"
 
 ### <a name="configuration-manager-client-facing-roles"></a>Configuration Manager 클라이언트 측 역할
 관리 지점 및 소프트웨어 업데이트 지점은 서비스 클라이언트 요청에 대한 IIS의 엔드포인트를 호스팅합니다. CMG는 모든 내부 엔드포인트를 노출하지 않습니다. CMG에 게시된 모든 엔드포인트에는 URL 매핑이 있습니다.
-  - 외부 URL은 클라이언트에서 CMG와 통신하기 위해 사용합니다.
-  - 내부 URL은 내부 서버에 요청을 전달하는 데 사용되는 CMG 연결 지점입니다.
+- 외부 URL은 클라이언트에서 CMG와 통신하기 위해 사용합니다.
+- 내부 URL은 내부 서버에 요청을 전달하는 데 사용되는 CMG 연결 지점입니다.
 
 #### <a name="url-mapping-example"></a>URL 매핑 예제
 관리 지점에서 CMG 트래픽을 사용하도록 설정하면 Configuration Manager는 각 관리 지점 서버에 대해 내부 URL 매핑 집합을 만듭니다. 예: ccm_system, ccm_incoming 및 sms_mp 관리 지점 ccm_system 엔드포인트에 대한 외부 URL은 다음과 같습니다.  

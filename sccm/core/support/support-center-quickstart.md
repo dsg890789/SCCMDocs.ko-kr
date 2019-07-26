@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f63193f9d4c9c754a56186f7a36cb9fabaf95725
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: f9124f412b7e22fadf08ddc87668481747d52152
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500726"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339511"
 ---
 # <a name="support-center-quickstart-guide"></a>지원 센터 빠른 시작 가이드
 
@@ -76,15 +76,15 @@ ms.locfileid: "65500726"
 
 이러한 기본 기능 외에도 Support Center는 그 밖에 다양한 클라이언트 상태 정보를 수집할 수 있습니다. **지원 센터**를 열고 **모든 데이터 수집**을 선택합니다. 이 프로세스는 일반적으로 최신 컴퓨터에서도 몇 분 정도 지속됩니다. 지원 센터에는 다음 추가 데이터를 수집합니다.
 
-  - **정책**: 요청된 정책 구성 및 실제 정책 구성을 포함하여 Configuration Manager 정책 설정을 수집합니다.  
+- **정책**: 요청된 정책 구성 및 실제 정책 구성을 포함하여 Configuration Manager 정책 설정을 수집합니다.  
 
-  - **인증서**: 클라이언트 인증서의 공개 키 정보 지원 센터는 인증서 프라이빗 키를 수집하지 않습니다.  
+- **인증서**: 클라이언트 인증서의 공개 키 정보 지원 센터는 인증서 프라이빗 키를 수집하지 않습니다.  
 
-  - **클라이언트 레지스트리**: 레지스트리에서 클라이언트 구성 정보를 수집합니다. 지원 센터는 Configuration Manager 레지스트리 정보만 수집합니다.  
+- **클라이언트 레지스트리**: 레지스트리에서 클라이언트 구성 정보를 수집합니다. 지원 센터는 Configuration Manager 레지스트리 정보만 수집합니다.  
 
-  - **클라이언트 WMI**: WMI의 클라이언트 구성 정보. 지원 센터는 클라이언트 정책을 수집하지 않습니다.  
+- **클라이언트 WMI**: WMI의 클라이언트 구성 정보. 지원 센터는 클라이언트 정책을 수집하지 않습니다.  
 
-  - **문제 해결**: Active Directory, 관리 지점, 네트워킹, 정책 할당 및 등록과 관련된 일반적인 클라이언트 문제를 진단하는 데 도움이 되는 실시간 문제 해결 데이터  
+- **문제 해결**: Active Directory, 관리 지점, 네트워킹, 정책 할당 및 등록과 관련된 일반적인 클라이언트 문제를 진단하는 데 도움이 되는 실시간 문제 해결 데이터  
 
-  - **디버그 덤프**: 클라이언트의 디버그 덤프 및 관련된 프로세스를 수행합니다. 디버그 덤프는 클 수 있습니다. 클라이언트 성능 문제를 해결하는 경우에만 이 옵션을 활성화합니다.  
+- **디버그 덤프**: 클라이언트의 디버그 덤프 및 관련된 프로세스를 수행합니다. 디버그 덤프는 클 수 있습니다. 클라이언트 성능 문제를 해결하는 경우에만 이 옵션을 활성화합니다.  
 

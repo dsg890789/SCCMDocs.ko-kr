@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f996aa1457fc8b49f914d0f0932836b5fcbd90b9
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: f0c3c77175f739ff45364c3c014fee6f11fd662c
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676217"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340128"
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 버전 1606 기준 미디어를 사용하여 설치 및 업그레이드
 
@@ -82,9 +82,9 @@ LTSB에서 지원되지 않는 사이트 시스템 역할을 제거합니다.
 
 예를 들어 사용이 허가된 현재 분기 버전을 설치하려면 다음을 사용합니다.
 
-  **키 이름: SABranchOptions**
-   - **SAActive = 1**
-   - **CurrentBranch = 1**
+**키 이름: SABranchOptions**
+- **SAActive = 1**
+- **CurrentBranch = 1**
 
 
 > [!IMPORTANT]  

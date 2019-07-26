@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 424710431f9c17642b3a8c6190f8919665f3ac6c
-ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
+ms.openlocfilehash: 7d27baa691c3adca6dd859b79fc92bdd4fe539ab
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67623282"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339899"
 ---
 # <a name="capabilities-in-technical-preview-1806-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1806의 기능
 
@@ -258,15 +258,15 @@ Office 사용자 지정 도구는 Configuration Manager 콘솔에서 Office 365 
 CMG를 통해 Configuration Manager 클라이언트를 인터넷에 설치할 때 적은 수의 명령줄 속성이 이제 필요합니다. 이 시나리오의 한 가지 예에 대한 자세한 내용은 공동 관리를 준비하는 경우 [Configuration Manager 클라이언트를 설치하는 명령줄](/sccm/comanage/how-to-prepare-Win10#install-the-configuration-manager-client)을 참조합니다. 
 
 모든 시나리오에서 다음 명령줄 속성이 필요합니다.
-  - CCMHOSTNAME  
-  - SMSSITECODE  
+- CCMHOSTNAME  
+- SMSSITECODE  
 
 다음 속성은 PKI 기반의 클라이언트 인증 인증서 대신 클라이언트 인증용 Azure AD를 사용하는 경우 필요합니다.
-  - AADCLIENTAPPID  
-  - AADRESOURCEURI  
+- AADCLIENTAPPID  
+- AADRESOURCEURI  
 
 클라이언트가 인트라넷으로 다시 로밍되는 경우 다음 속성이 필요합니다.
-  - SMSMP  
+- SMSMP  
 
 다음 예제에서는 위의 속성 모두를 포함합니다.   
 `ccmsetup.exe CCMHOSTNAME=CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72186325152220500 SMSSiteCode=ABC AADCLIENTAPPID=7506ee10-f7ec-415a-b415-cd3d58790d97 AADRESOURCEURI=https://contososerver SMSMP=https://mp1.contoso.com`

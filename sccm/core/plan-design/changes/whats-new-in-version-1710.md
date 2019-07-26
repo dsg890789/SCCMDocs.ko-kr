@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43fdf80a9876c6cfe4b07b3e3df2756fdf64f8d9
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 89c977f0970a46c5f4b52628b35b2d565b15189b
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285784"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339808"
 ---
 # <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
 
@@ -32,10 +32,11 @@ System Center Configuration Manager 현재 분기의 업데이트 1710은 버전
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
->  다음에 대해 자세히 알아보세요.    
->   - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
->   - [사이트에 업데이트 설치](/sccm/core/servers/manage/updates)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
+>
+> 다음에 대해 자세히 알아보세요.    
+> - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
+> - [사이트에 업데이트 설치](/sccm/core/servers/manage/updates)  
+> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 다음 섹션에서는 Configuration Manager 버전 1710에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.  
 

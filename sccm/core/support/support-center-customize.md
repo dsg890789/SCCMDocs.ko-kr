@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8ae8d006555a79be1a27b327a3de78c75743bad
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: ac2290c630393a047c5bdd8677562df6e0f0410d
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500744"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340255"
 ---
 # <a name="customize-support-center"></a>지원 센터 사용자 지정
 
@@ -24,11 +24,11 @@ ms.locfileid: "65500744"
 
 [지원 센터](/sccm/core/support/support-center) 도구에는 사용자 지정할 수 있는 구성 파일이 포함됩니다. 기본적으로 지원 센터를 설치할 때 이 파일은 다음 경에 있습니다. `C:\Program Files (x86)\Configuration Manager Support Center\ConfigMgrSupportCenter.exe.config` 구성 파일은 프로그램의 동작을 변경합니다.
 
-  - [데이터 수집 사용자 지정:](#bkmk_datacoll) 데이터를 수집하는 동안 포함하는 레지스트리 키 및 WMI 네임스페이스 세트를 편집합니다.  
+- [데이터 수집 사용자 지정:](#bkmk_datacoll) 데이터를 수집하는 동안 포함하는 레지스트리 키 및 WMI 네임스페이스 세트를 편집합니다.  
 
-  - [로그 그룹 사용자 지정](#bkmk_loggroups): 정규식을 사용하여 로그 파일의 새 그룹을 정의합니다. 또한 그룹을 기록할 다른 로그 파일을 추가합니다.  
+- [로그 그룹 사용자 지정](#bkmk_loggroups): 정규식을 사용하여 로그 파일의 새 그룹을 정의합니다. 또한 그룹을 기록할 다른 로그 파일을 추가합니다.  
 
-  - [와일드카드를 사용하여 추가 로그 파일 수집](#bkmk_wildcards): 와일드카드 검색을 사용하여 추가 로그 파일을 수집합니다.  
+- [와일드카드를 사용하여 추가 로그 파일 수집](#bkmk_wildcards): 와일드카드 검색을 사용하여 추가 로그 파일을 수집합니다.  
 
 이렇게 변경하려면 지원 센터를 설치한 클라이언트에서 로컬 관리자 권한이 필요합니다. 메모장 또는 Visual Studio와 같은 XML 편집기 또는 텍스트를 사용하여 이러한 사용자 지정을 확인합니다.
 
@@ -97,9 +97,9 @@ ms.locfileid: "65500744"
 
 지원 센터가 수집하는 로그 파일 및 **로그 그룹** 목록에서 표시되는 방법을 사용자 지정하려면 `<logGroups>` 요소의 요소를 사용합니다. 지원 센터를 시작하는 경우 구성 파일의 이 섹션을 검사합니다. 그런 다음, `<logGroups>` 요소에 포함된 `<add/>` 요소에 있는 각 고유 키 특성 값에 대한 **로그 그룹** 목록에서 그룹을 만듭니다.
 
-  - **구성 요소 로그 그룹**: `<componentLogGroup>` 요소는 키 특성을 사용하여 목록에 표시되는 로그 그룹의 이름을 정의합니다. 또한 정규식(regex)이 포함된 값 특성을 사용합니다. 이 regex를 사용하여 관련된 로그 파일의 세트를 수집합니다.  
+- **구성 요소 로그 그룹**: `<componentLogGroup>` 요소는 키 특성을 사용하여 목록에 표시되는 로그 그룹의 이름을 정의합니다. 또한 정규식(regex)이 포함된 값 특성을 사용합니다. 이 regex를 사용하여 관련된 로그 파일의 세트를 수집합니다.  
 
-  - **정적 로그 그룹:** `<staticLogGroup>` 요소는 키 특성을 사용하여 목록에 표시되는 로그 그룹의 이름을 정의합니다. 또한 로그 파일 이름을 정의하는 값 특성을 사용합니다.  
+- **정적 로그 그룹:** `<staticLogGroup>` 요소는 키 특성을 사용하여 목록에 표시되는 로그 그룹의 이름을 정의합니다. 또한 로그 파일 이름을 정의하는 값 특성을 사용합니다.  
 
 `<componentLogGroup>` 요소 및 `<staticLogGroup>` 요소 내에서 모두 `<add/>` 요소에 동일한 키 특성 값을 사용하는 경우 지원 센터는 단일 그룹을 만듭니다. 이 그룹에는 동일한 키를 사용하는 두 요소에 의해 정의된 로그 파일이 포함되어 있습니다.
 

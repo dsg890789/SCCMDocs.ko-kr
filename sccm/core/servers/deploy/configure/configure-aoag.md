@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac3967059b7cb8b8e4d4a3d32a9c88bfdfd1567b
-ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
+ms.openlocfilehash: 84d2c8581eb7ce93ef946a61b8b435815e802b04
+ms.sourcegitcommit: e0438c191df945305625ae91596c9417d16e8510
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67818083"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491661"
 ---
 # <a name="configure-sql-server-always-on-availability-groups-for-configuration-manager"></a>Configuration Manager용 SQL Server Always On 가용성 그룹 구성
 
@@ -157,7 +157,7 @@ Configuration Manager 1706 이상 버전에서는 비동기 복제본을 사용�
 
 4. 사이트 데이터베이스를 호스트하는 서버(기본 복제본 또는 사이트 데이터베이스를 복원한 서버)에서 사이트 데이터베이스의 백업 모델을 **전체**에서 **간단**으로 변경합니다. SQL Server 문서에서 [데이터베이스의 복구 모델 보기 또는 변경](/sql/relational-databases/backup-restore/view-or-change-the-recovery-model-of-a-database-sql-server) 을 참조하세요.  
 
-5. **&lt;*Configuration Manager 사이트 설치 폴더>* \BIN\X64\setup.exe**에서 **Configuration Manager 설치 프로그램**을 실행합니다.
+5. **\<*Configuration Manager 사이트 설치 폴더>* \BIN\X64\setup.exe**에서 **Configuration Manager 설치 프로그램**을 실행합니다.
 
 6. **시작** 페이지에서 **사이트 유지 관리 수행 또는 이 사이트 다시 설정**을 선택하고 **다음**을 클릭합니다.  
 

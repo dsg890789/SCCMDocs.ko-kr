@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d35558da6b25bba16b84c931b0254436ac3dd1e
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 9fdf140b998b4d6d64ade232503b64b14a11416f
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285540"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68338659"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -32,10 +32,10 @@ Configuration Manager의 현재 분기에 대한 1802 업데이트는 콘솔 내
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
 >
->  다음에 대해 자세히 알아보세요.    
->   - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
->   - [사이트에 업데이트 설치](/sccm/core/servers/manage/updates)  
->   - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
+> 다음에 대해 자세히 알아보세요.    
+> - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
+> - [사이트에 업데이트 설치](/sccm/core/servers/manage/updates)  
+> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)
 
 다음 섹션에서는 Configuration Manager 1802 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.  
 
@@ -208,15 +208,15 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ### <a name="improvements-to-operating-system-deployment"></a>운영 체제 배포 향상
 이 릴리스에 포함된 운영 체제 배포에 대한 향상된 기능은 다음과 같습니다.
- - Windows PE에서 cmtrace.exe를 시작할 때 이 프로그램을 로그 파일에 대한 기본 뷰어로 만들지 여부를 선택하는 메시지가 더 이상 표시되지 않습니다. <!-- SMS 500897 -->
- - [패키지 콘텐츠 다운로드](/sccm/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent) 작업 순서 단계에 부팅 이미지를 추가합니다.
- - [작업 순서 실행](/sccm/osd/understand/task-sequence-steps#child-task-sequence) 단계의 향상된 기능: <!-- 1261338 -->   
-     - 소프트웨어 센터, PXE 및 미디어에서 모든 운영 체제 배포 시나리오를 지원합니다.
-     - 개체 삭제 중 복사, 가져오기, 내보내기 및 경고와 같은 콘솔 작업이 향상되었습니다.
-     - [사전 준비된 콘텐츠 파일 만들기](/sccm/core/plan-design/hierarchy/manage-network-bandwidth#BKMK_PrestagingContent) 마법사를 지원합니다.
-     - 배포 확인과 통합됩니다. 자세한 내용은 [높은 위험 수준의 작업 순서 배포](/sccm/osd/deploy-use/deploy-a-task-sequence)를 참조하세요. 
-     - 작업 순서 실행 단계는 이제 단일 부모-자식 관계뿐만 아니라 여러 수준의 작업 순서에서도 사용할 수 있습니다. 여러 수준 관계는 복잡성이 증가되므로 신중하게 사용합니다. 이러한 관계는 여전히 순환 참조를 확인합니다.
-    
+- Windows PE에서 cmtrace.exe를 시작할 때 이 프로그램을 로그 파일에 대한 기본 뷰어로 만들지 여부를 선택하는 메시지가 더 이상 표시되지 않습니다. <!-- SMS 500897 -->
+- [패키지 콘텐츠 다운로드](/sccm/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent) 작업 순서 단계에 부팅 이미지를 추가합니다.
+- [작업 순서 실행](/sccm/osd/understand/task-sequence-steps#child-task-sequence) 단계의 향상된 기능: <!-- 1261338 -->   
+  - 소프트웨어 센터, PXE 및 미디어에서 모든 운영 체제 배포 시나리오를 지원합니다.
+  - 개체 삭제 중 복사, 가져오기, 내보내기 및 경고와 같은 콘솔 작업이 향상되었습니다.
+  - [사전 준비된 콘텐츠 파일 만들기](/sccm/core/plan-design/hierarchy/manage-network-bandwidth#BKMK_PrestagingContent) 마법사를 지원합니다.
+  - 배포 확인과 통합됩니다. 자세한 내용은 [높은 위험 수준의 작업 순서 배포](/sccm/osd/deploy-use/deploy-a-task-sequence)를 참조하세요. 
+  - 작업 순서 실행 단계는 이제 단일 부모-자식 관계뿐만 아니라 여러 수준의 작업 순서에서도 사용할 수 있습니다. 여러 수준 관계는 복잡성이 증가되므로 신중하게 사용합니다. 이러한 관계는 여전히 순환 참조를 확인합니다.
+
 ### <a name="deployment-templates-for-task-sequences"></a>작업 순서에 대한 배포 템플릿
 <!-- 1357391 -->
 [작업 순서에 대한 배포 마법사](/sccm/osd/deploy-use/deploy-a-task-sequence)에서 이제 배포 템플릿을 만들 수 있습니다. 배포 템플릿을 저장하고 기존 작업 순서나 새 작업 순서에 적용하여 배포를 만들 수 있습니다. 

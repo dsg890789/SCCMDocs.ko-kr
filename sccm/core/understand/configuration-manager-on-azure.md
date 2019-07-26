@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 042ef488354ff1b527d41407d3ef590ee9fe0e45
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: d8c713dd1de90eaf8705859f5a814e38da9435e6
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676312"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340208"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -129,7 +129,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 ### <a name="what-about-content-distribution-and-content-management-should-standard-distribution-points-be-in-azure-or-on-premises-and-should-i-use-branchcache-or-pull-distribution-points-on-premises-or-should-i-make-exclusive-use-of-cloud-distribution-points"></a>콘텐츠 배포 및 콘텐츠 관리란 무엇인가요? 표준 배포 지점은 Azure 또는 온-프레미스에 있어야 하고 BranchCache 또는 전체 배포 지점 온-프레미스를 사용해야 하나요? 아니면 클라우드 배포 지점을 단독으로 사용해야 하나요?
 콘텐츠 관리를 위한 방법은 사이트 서버 및 사이트 시스템의 경우와 거의 동일합니다.
 - 무제한 데이터 요금제를 사용하고 Azure와 인트라넷 간에 빠르고 안정적인 네트워크 연결을 사용하는 경우 Azure의 표준 배포 지점을 호스트할 수 있습니다.
--  데이터 요금제를 사용하고 대역폭 비용이 제한되거나 Azure와 인트라넷 간의 네트워크 연결이 느리거나 불안정한 경우 다른 방법을 생각해 볼 수 있습니다. BranchCache를 사용하거나 표준 또는 풀(pull) 배포 지점을 온-프레미스에 배치하는 방법을 고려할 수 있습니다. 클라우드 기반의 배포 지점 사용을 선택할 수 있지만 지원되는 콘텐츠 형식이 약간 제한됩니다. 예를 들어 소프트웨어 업데이트 패키지가 지원되지 않습니다.
+- 데이터 요금제를 사용하고 대역폭 비용이 제한되거나 Azure와 인트라넷 간의 네트워크 연결이 느리거나 불안정한 경우 다른 방법을 생각해 볼 수 있습니다. BranchCache를 사용하거나 표준 또는 풀(pull) 배포 지점을 온-프레미스에 배치하는 방법을 고려할 수 있습니다. 클라우드 기반의 배포 지점 사용을 선택할 수 있지만 지원되는 콘텐츠 형식이 약간 제한됩니다. 예를 들어 소프트웨어 업데이트 패키지가 지원되지 않습니다.
 
 > [!NOTE]
 >  PXE 지원이 필요한 경우 온-프레미스 배포 지점(표준 또는 풀(pull))을 사용하여 부팅 요청에 응답해야 합니다. [WDS는 현재 Azure VM에서의 실행이 지원되지 않습니다](https://technet.microsoft.com/library/hh831764(v=ws.11).aspx).
@@ -156,23 +156,21 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 **기본 항목:** https://azure.microsoft.com/documentation/articles/fundamentals-introduction-to-azure/
 
 **Azure VM 컴퓨터 유형:**
- - 가상 머신 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
- - VM 가격 책정: https://azure.microsoft.com/pricing/details/virtual-machines/  
- - 저장소 가격 책정: https://azure.microsoft.com/pricing/details/storage/
+- 가상 머신 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
+- VM 가격 책정: https://azure.microsoft.com/pricing/details/virtual-machines/  
+- 저장소 가격 책정: https://azure.microsoft.com/pricing/details/storage/
 
 **디스크 성능 고려 사항:**    
- - 프리미엄 디스크 소개: https://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  
- - 자세한 프리미엄 디스크 정보: https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/   
- - 스토리지용 최대 크기 및 성능 대상에 대한 차트의 간편한 컬렉션: https://azure.microsoft.com/documentation/articles/storage-scalability-targets/  
- - Premium Storage에 대한 기타 소개 및 원리에 대한 유용한 데이터: https://azure.microsoft.com/blog/2015/04/16/azure-premium-storage-now-generally-available-2/
+- 프리미엄 디스크 소개: https://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  
+- 자세한 프리미엄 디스크 정보: https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/   
+- 스토리지용 최대 크기 및 성능 대상에 대한 차트의 간편한 컬렉션: https://azure.microsoft.com/documentation/articles/storage-scalability-targets/  
+- Premium Storage에 대한 기타 소개 및 원리에 대한 유용한 데이터: https://azure.microsoft.com/blog/2015/04/16/azure-premium-storage-now-generally-available-2/
 
 **가용성:**
- - Azure IaaS 작동 시간 SLA: https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_0/  
- - 가용성 집합 설명: https://azure.microsoft.com/documentation/articles/virtual-machines-manage-availability/
+- Azure IaaS 작동 시간 SLA: https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_0/  
+- 가용성 집합 설명: https://azure.microsoft.com/documentation/articles/virtual-machines-manage-availability/
 
 **연결:**
- - Express 경로 및 Azure VPN: https://azure.microsoft.com/blog/2014/06/10/expressroute-or-virtual-network-vpn-whats-right-for-me/
- - Express 경로 가격 책정: https://azure.microsoft.com/pricing/details/expressroute/
- - Express 경로에 대해 자세히: https://azure.microsoft.com/documentation/articles/expressroute-introduction/
-
- 
+- Express 경로 및 Azure VPN: https://azure.microsoft.com/blog/2014/06/10/expressroute-or-virtual-network-vpn-whats-right-for-me/
+- Express 경로 가격 책정: https://azure.microsoft.com/pricing/details/expressroute/
+- Express 경로에 대해 자세히: https://azure.microsoft.com/documentation/articles/expressroute-introduction/

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3154f705afc48cebe075083666e7a5d2b7f726b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: ce992a7d47d77d6542c4f6ede3fb37195714659a
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130278"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339972"
 ---
 # <a name="capabilities-in-technical-preview-1712-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1712의 기능
 
@@ -58,17 +58,19 @@ ms.locfileid: "56130278"
 -->
 
 ## <a name="do-not-automatically-upgrade-superseded-applications"></a>교체된 애플리케이션을 자동으로 업그레이드하지 않습니다
-<!-- 1351266 --> [사용자 음성 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/11532669-fix-supercedence-behavior)에 따라 이 릴리스에서 교체된 버전을 자동으로 업그레이드하지 않도록 애플리케이션 배포를 구성하는 옵션이 있습니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 또는 **필수** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다.
+<!-- 1351266 -->
+[사용자 음성 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/11532669-fix-supercedence-behavior)에 따라 이 릴리스에서 교체된 버전을 자동으로 업그레이드하지 않도록 애플리케이션 배포를 구성하는 옵션이 있습니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 또는 **필수** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다.
 
 
 ## <a name="install-multiple-applications-in-software-center"></a>소프트웨어 센터에서 여러 애플리케이션 설치
-<!-- 1357126 --> 이제 최종 사용자 또는 데스크톱 기술자가 장치에 여러 애플리케이션을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 애플리케이션을 설치하도록 지원합니다. 그러면 사용자가 다음 단계를 시작하기 전에 설치가 완료되기를 기다리지 않고 효율적으로 작업할 수 있습니다.
+<!-- 1357126 -->
+이제 최종 사용자 또는 데스크톱 기술자가 디바이스에 여러 응용 프로그램을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 응용 프로그램을 설치하도록 지원합니다. 그러면 사용자가 다음 단계를 시작하기 전에 설치가 완료되기를 기다리지 않고 효율적으로 작업할 수 있습니다.
 
 **애플리케이션** 탭에서 다중 선택 모드를 사용하는 경우 다음 조건은 다중 선택에서 소프트웨어 센터가 사용하도록 설정할 앱을 결정합니다.
- - 앱이 사용자에게 표시됩니다.
- - 앱이 설치되어 있지 않습니다.
- - 관리자의 승인이 필요하지 않거나 이미 부여되었습니다.
- - 앱 상태가 제공됩니다(예: 콘텐츠를 아직 다운로드하지 않음).
+- 앱이 사용자에게 표시됩니다.
+- 앱이 설치되어 있지 않습니다.
+- 관리자의 승인이 필요하지 않거나 이미 부여되었습니다.
+- 앱 상태가 제공됩니다(예: 콘텐츠를 아직 다운로드하지 않음).
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 **Configuration Manager 콘솔에서:** 사용할 수 있는 또는 필수로 설치할 여러 애플리케이션을 사용자 또는 디바이스에 배포합니다(나중에 최종 기한 지정됨). 관리자 승인이 필요하지 않습니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.
@@ -83,7 +85,8 @@ ms.locfileid: "56130278"
 
 
 ## <a name="client-based-pxe-responder-service"></a>클라이언트 기반 PXE 응답자 서비스
-<!-- 1357148 --> 고객에 대한 일반적인 문제는 서버 인프라가 거의 또는 전혀 없이 원격으로/지점에서 PXE 서비스를 제공해야 한다는 점입니다. 배포 지점 역할은 클라이언트 운영 체제를 지원하지만 Windows 배포 서비스에 대한 종속성으로 인해 PXE를 사용할 수 없습니다.
+<!-- 1357148 -->
+고객에 대한 일반적인 문제는 서버 인프라가 거의 없거나 전혀 없이 원격으로/지점에서 PXE 서비스를 제공해야 한다는 점입니다. 배포 지점 역할은 클라이언트 운영 체제를 지원하지만 Windows 배포 서비스에 대한 종속성으로 인해 PXE를 사용할 수 없습니다.
 
 새 클라이언트 설정을 사용하여 Configuration Manager 클라이언트에서 PXE 응답기 서비스를 활성합니다. PXE 사용 부팅 이미지는 PXE 응답자의 클라이언트 캐시에 있어야 합니다.
 
@@ -105,8 +108,8 @@ Configuration Manager 콘솔에서:
 4. 일반적으로 PXE/네트워크 부팅에 대한 동일한 서브넷에서 다른 클라이언트를 시작합니다.
 
 ### <a name="known-issues"></a>알려진 문제
- - 부팅 이미지를 추가할 때 작업 순서 편집기가 **패키지 콘텐츠 다운로드** 단계에 대해 빨간색 오류 아이콘을 표시했지만 작업 순서는 성공적으로 저장되었습니다. 또한 편집기에서 이 작업 순서를 다시 열면 참조된 개체를 찾을 수 없다는 별다른 해가 없는 경고가 표시됩니다. <!-- sms427542 -->
- - 패키지 콘텐츠 다운로드 단계의 부팅 이미지는 사용자 지정 작업 순서의 참조 목록에 표시되지 않습니다. 또한 **콘텐츠 배포** 작업을 사용할 수 없습니다. <!-- sms504017 -->
+- 부팅 이미지를 추가할 때 작업 순서 편집기가 **패키지 콘텐츠 다운로드** 단계에 대해 빨간색 오류 아이콘을 표시했지만 작업 순서는 성공적으로 저장되었습니다. 또한 편집기에서 이 작업 순서를 다시 열면 참조된 개체를 찾을 수 없다는 별다른 해가 없는 경고가 표시됩니다. <!-- sms427542 -->
+- 패키지 콘텐츠 다운로드 단계의 부팅 이미지는 사용자 지정 작업 순서의 참조 목록에 표시되지 않습니다. 또한 **콘텐츠 배포** 작업을 사용할 수 없습니다. <!-- sms504017 -->
 
 
 ## <a name="change-in-the-configuration-manager-client-install"></a>Configuration Manager 클라이언트 설치 변경  
@@ -117,7 +120,8 @@ Configuration Manager 콘솔에서:
 이제 Surface 대시보드는 운영 체제 버전이 아닌 Surface 디바이스에 대한 펌웨어 버전을 표시합니다. 콘솔에서 **Surface 디바이스**  > **모니터링**으로 이동합니다. 다음 항목을 볼 수 있습니다.
 - Surfaces의 백분율
 - Surface 모델의 백분율
-- 상위 5개 펌웨어 버전 <!--1355788-->
+- 상위 5개 펌웨어 버전
+ <!--1355788-->
 
 
 ## <a name="improvements-to-office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드에 대한 향상된 기능 
@@ -134,17 +138,17 @@ Configuration Manager 콘솔에서:
 
 ## <a name="improvements-to-operating-system-deployment"></a>운영 체제 배포 향상
 사용자 의견 피드백을 일부 반영하여 운영 체제 배포가 다음과 같이 향상되었습니다.
- - [부팅 이미지의 기본 로그 뷰어](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/19269823-stop-cmtrace-from-asking-us-if-we-want-to-use-it-a): Windows PE에서 cmtrace.exe를 시작할 때 이 프로그램을 로그 파일에 대한 기본 뷰어로 만들지 여부를 선택하는 메시지가 더 이상 표시되지 않습니다. <!-- SMS 500897 -->
- - 패키지 콘텐츠 다운로드 단계: 이제 이 작업 순서 단계에 부팅 이미지를 추가할 수 있습니다.
+- [부팅 이미지의 기본 로그 뷰어](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/19269823-stop-cmtrace-from-asking-us-if-we-want-to-use-it-a): Windows PE에서 cmtrace.exe를 시작할 때 이 프로그램을 로그 파일에 대한 기본 뷰어로 만들지 여부를 선택하는 메시지가 더 이상 표시되지 않습니다. <!-- SMS 500897 -->
+- 패키지 콘텐츠 다운로드 단계: 이제 이 작업 순서 단계에 부팅 이미지를 추가할 수 있습니다.
 
 
 ## <a name="windows-10-feedback-hub-app-integration"></a>Windows 10 피드백 허브 앱 통합
 
 Windows 10에 기본 제공되는 [피드백 허브 앱](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)을 통해 피드백을 활성화할 정도로 피드백을 선호합니다. **새 피드백을 추가**할 때 **엔터프라이즈 관리** 범주를 선택하고 다음과 같은 하위 범주가 중 하나를 선택해야 합니다.
- - Configuration Manager 클라이언트
- - Configuration Manager 콘솔
- - Configuration Manager OS 배포
- - Configuration Manager 서버
+- Configuration Manager 클라이언트
+- Configuration Manager 콘솔
+- Configuration Manager OS 배포
+- Configuration Manager 서버
 
 [사용자 의견 페이지](http://configurationmanager.uservoice.com/)를 계속 사용하려면 Configuration Manager에서 새로운 기능 아이디어에 투표하세요.
 

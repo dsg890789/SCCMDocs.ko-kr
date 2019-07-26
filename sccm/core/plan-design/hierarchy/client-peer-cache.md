@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aadb544180d7662f1b60c73db6a35b64f8b7efe7
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 4754077f1a91cd11ce16e17dd3d2ea2f1704ee08
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676844"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68338885"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -46,8 +46,8 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 피어 캐시는 Windows BranchCache 또는 배달 최적화와 같은 다른 솔루션의 사용을 대체하지 않습니다. 피어 캐시는 다른 솔루션과 함께 작동합니다. 이러한 기술은 배포 지점과 같은 기존의 콘텐츠 배포 솔루션을 확장할 수 있는 추가 옵션을 제공합니다. 피어 캐시는 BranchCache를 사용하지 않는 사용자 지정 솔루션입니다. BranchCache를 사용하도록 설정하거나 사용하지 않는 경우에도 피어 캐시는 계속 작동합니다.  
 
-  > [!Note]  
-  > 버전 1802부터 Windows BranchCache는 항상 배포에서 사용할 수 있습니다. **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**하는 설정이 제거됩니다.<!--SCCMDocs issue 539--> 배포 지점에서 지원하고 클라이언트 설정에서 사용하도록 설정된 경우 클라이언트에서는 BranchCache를 사용합니다. 자세한 내용은 [BranchCache 구성](/sccm/core/clients/deploy/about-client-settings#configure-branchcache)을 참조하세요.<!--SCCMDocs issue 735-->   
+> [!Note]  
+> 버전 1802부터 Windows BranchCache는 항상 배포에서 사용할 수 있습니다. **클라이언트가 동일한 서브넷에 있는 다른 클라이언트와 콘텐츠를 공유하도록 허용**하는 설정이 제거됩니다.<!--SCCMDocs issue 539--> 배포 지점에서 지원하고 클라이언트 설정에서 사용하도록 설정된 경우 클라이언트에서는 BranchCache를 사용합니다. 자세한 내용은 [BranchCache 구성](/sccm/core/clients/deploy/about-client-settings#configure-branchcache)을 참조하세요.<!--SCCMDocs issue 735-->   
 
 
 
@@ -55,11 +55,11 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 피어 캐시를 사용하도록 설정하려면 [클라이언트 설정](#bkmk_settings)을 컬렉션에 배포합니다. 그런 다음, 컬렉션의 멤버는 동일한 경계 그룹에 있는 다른 클라이언트에 대한 피어 캐시 원본 역할을 합니다.  
 
- - 피어 콘텐츠 원본으로 작동하는 클라이언트는 사용할 수 있는 캐시된 콘텐츠 목록을 해당 관리 지점에 제출합니다.  
+- 피어 콘텐츠 원본으로 작동하는 클라이언트는 사용할 수 있는 캐시된 콘텐츠 목록을 해당 관리 지점에 제출합니다.  
 
- - 동일한 경계 그룹의 다른 클라이언트는 관리 지점에 콘텐츠 위치 요청을 수행합니다. 서버는 잠재적 콘텐츠 원본의 목록을 반환합니다. 이 목록에는 콘텐츠가 있고 온라인 상태인 각 피어 캐시 원본이 포함됩니다. 또한 해당 경계 그룹의 배포 지점 및 다른 콘텐츠 원본 위치도 포함됩니다. 자세한 내용은 [콘텐츠 원본 우선 순위](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority)를 참조하세요.  
+- 동일한 경계 그룹의 다른 클라이언트는 관리 지점에 콘텐츠 위치 요청을 수행합니다. 서버는 잠재적 콘텐츠 원본의 목록을 반환합니다. 이 목록에는 콘텐츠가 있고 온라인 상태인 각 피어 캐시 원본이 포함됩니다. 또한 해당 경계 그룹의 배포 지점 및 다른 콘텐츠 원본 위치도 포함됩니다. 자세한 내용은 [콘텐츠 원본 우선 순위](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority)를 참조하세요.  
 
- - 일반적으로 콘텐츠를 검색하는 클라이언트는 제공된 목록에서 원본 하나를 선택합니다. 그런 다음 클라이언트에서 해당 콘텐츠를 가져오려고 시도합니다.  
+- 일반적으로 콘텐츠를 검색하는 클라이언트는 제공된 목록에서 원본 하나를 선택합니다. 그런 다음 클라이언트에서 해당 콘텐츠를 가져오려고 시도합니다.  
 
 1806 버전부터 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 자세한 내용은 [피어 다운로드를 위한 경계 그룹 옵션](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_bgoptions)을 참조하세요.<!--1356193-->
 
@@ -73,13 +73,13 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 피어 캐시 원본은 피어가 콘텐츠를 요청할 때 다음 조건 중 하나라도 충족할 경우 콘텐츠 요청을 거부합니다.  
 
-  -  배터리 부족 모드  
+- 배터리 부족 모드  
 
-  -  프로세서 로드가 80%를 초과하는 경우  
+- 프로세서 로드가 80%를 초과하는 경우  
 
-  -  디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우  
+- 디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우  
 
-  -  컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우  
+- 컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우  
 
 > [!Tip]  
 > Configuration Manager SDK에서 피어 원본 기능에 대한 클라이언트 구성 서버 WMI 클래스(*SMS_WinPEPeerCacheConfig*)를 사용하여 이러한 설정을 구성합니다.  
@@ -98,14 +98,14 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 - [네트워크 액세스 계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)은 다음과 같은 경우에만 필요합니다.  
 
-    - 피어 캐시 사용 클라이언트가 소프트웨어 센터에서 작업 순서를 실행하고 부팅 이미지로 다시 부팅될 때 사이트에서 네트워크 액세스 계정을 구성합니다. 디바이스가 Windows PE에 있으면 네트워크 액세스 계정을 사용하여 피어 캐시 원본에서 콘텐츠를 가져옵니다.  
+  - 피어 캐시 사용 클라이언트가 소프트웨어 센터에서 작업 순서를 실행하고 부팅 이미지로 다시 부팅될 때 사이트에서 네트워크 액세스 계정을 구성합니다. 디바이스가 Windows PE에 있으면 네트워크 액세스 계정을 사용하여 피어 캐시 원본에서 콘텐츠를 가져옵니다.  
 
-    - 필요한 경우 피어 캐시 원본에서 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증합니다. 이 계정에는 이 용도의 도메인 사용자 권한만 필요합니다.  
+  - 필요한 경우 피어 캐시 원본에서 네트워크 액세스 계정을 사용하여 피어의 다운로드 요청을 인증합니다. 이 계정에는 이 용도의 도메인 사용자 권한만 필요합니다.  
 
 - 1802 이하 버전에서는 클라이언트의 마지막 하트비트 검색 제출에 따라 피어 캐시 원본의 현재 경계가 결정됩니다. 다른 경계 그룹으로 로밍하는 클라이언트는 여전히 피어 캐시를 위해 이전 경계 그룹의 멤버일 수 있습니다. 이 동작으로 인해 직접 네트워크 위치에 있지 않은 피어 캐시 원본이 클라이언트에 제공됩니다. 로밍 클라이언트를 피어 캐시 원본으로 사용하지 마세요.<!--SCCMDocs issue 641-->  
 
-    > [!Important]  
-    > 1806 버전부터는 피어 캐시 원본이 다른 위치로 로밍되었는지 확인하는 Configuration Manager의 효율이 향상되었습니다. 이 동작을 통해 관리 지점은 피어 캐시 원본을 이전 위치가 아닌 새 위치의 클라이언트에 콘텐츠 원본으로 제공합니다. 로밍 피어 캐시 원본에 피어 캐시 기능을 사용하는 경우 사이트를 1806 버전으로 업데이트 한 후 모든 피어 캐시 원본을 최신 클라이언트 버전으로 업데이트해야 합니다. 피어 캐시 원본이 버전 1806 이상으로 업데이트되기 전에는, 관리 지점이 이러한 피어 캐시 원본을 콘텐츠 위치 목록에 포함하지 않습니다.<!--SCCMDocs issue 850-->  
+  > [!Important]  
+  > 1806 버전부터는 피어 캐시 원본이 다른 위치로 로밍되었는지 확인하는 Configuration Manager의 효율이 향상되었습니다. 이 동작을 통해 관리 지점은 피어 캐시 원본을 이전 위치가 아닌 새 위치의 클라이언트에 콘텐츠 원본으로 제공합니다. 로밍 피어 캐시 원본에 피어 캐시 기능을 사용하는 경우 사이트를 1806 버전으로 업데이트 한 후 모든 피어 캐시 원본을 최신 클라이언트 버전으로 업데이트해야 합니다. 피어 캐시 원본이 버전 1806 이상으로 업데이트되기 전에는, 관리 지점이 이러한 피어 캐시 원본을 콘텐츠 위치 목록에 포함하지 않습니다.<!--SCCMDocs issue 850-->  
 
 - 콘텐츠를 다운로드하기 전에 관리 지점은 먼저 피어 캐시 원본이 온라인 상태인지 확인합니다.<!--sms.498675--> 이 유효성 검사는 TCP 포트 10123을 사용하는 클라이언트 알림의 “빠른 채널”을 통해 수행됩니다.<!--511673-->  
 
@@ -187,11 +187,11 @@ Contoso는 다음과 같은 두 경계 그룹이 있는 단일 주 사이트를 
 - 필요한 경우, OS 배포 작업 순서 중에 **SMSTSPreserveContent** 변수를 사용하여 콘텐츠를 클라이언트 캐시에 보관합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSPreserveContent)\(작업 순서 변수\)를 참조하세요.  
 
 - 필요한 경우, 다음 소프트웨어를 만들 때 **클라이언트 캐시의 콘텐츠 유지** 옵션을 사용합니다.  
-    - 애플리케이션
-    - 패키지
-    - OS 이미지
-    - OS 업그레이드 패키지
-    - 부팅 이미지
+  - 애플리케이션
+  - 패키지
+  - OS 이미지
+  - OS 업그레이드 패키지
+  - 부팅 이미지
 
 
 
