@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36304b836dbedcb411310d5f0dd8d0f0a8fd91f1
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 2a0ef3dc874e1a90042859fce745f44e8a1e0472
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194462"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340351"
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows를 최신 버전으로 업그레이드
 
@@ -24,16 +24,16 @@ ms.locfileid: "67194462"
 
 이 문서에서는 컴퓨터의 OS를 업그레이드하는 Configuration Manager의 단계를 제공합니다. 독립 실행형 미디어 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 현재 위치 업그레이드 시나리오에는 다음과 같은 기능이 있습니다.  
 
--   현재 다음을 실행하는 컴퓨터의 OS를 업그레이드합니다.
-    - Windows 7, Windows 8 또는 Windows 8.1. Windows 10의 빌드 간 업그레이드를 수행할 수도 있습니다. 예를 들어 Windows 10 버전 1607을 Windows 10, 버전 1709로 업그레이드할 수 있습니다.  
-    
-    - Windows Server 2012. Windows Server 2016의 빌드 간 업그레이드를 수행할 수도 있습니다. 지원되는 업그레이드 경로에 대한 자세한 내용은 [지원되는 업그레이드 경로](https://docs.microsoft.com/windows-server/get-started/supported-upgrade-paths#upgrading-previous-retail-versions-of-windows-server-to-windows-server-2016)를 참조하세요.    
+- 현재 다음을 실행하는 컴퓨터의 OS를 업그레이드합니다.
+  - Windows 7, Windows 8 또는 Windows 8.1. Windows 10의 빌드 간 업그레이드를 수행할 수도 있습니다. 예를 들어 Windows 10 버전 1607을 Windows 10, 버전 1709로 업그레이드할 수 있습니다.  
+  
+  - Windows Server 2012. Windows Server 2016의 빌드 간 업그레이드를 수행할 수도 있습니다. 지원되는 업그레이드 경로에 대한 자세한 내용은 [지원되는 업그레이드 경로](https://docs.microsoft.com/windows-server/get-started/supported-upgrade-paths#upgrading-previous-retail-versions-of-windows-server-to-windows-server-2016)를 참조하세요.    
 
--   컴퓨터의 애플리케이션, 설정 및 사용자 데이터는 그대로 유지됩니다.  
+- 컴퓨터의 애플리케이션, 설정 및 사용자 데이터는 그대로 유지됩니다.  
 
--   Windows ADK와 같은 외부 종속성이 없습니다.  
+- Windows ADK와 같은 외부 종속성이 없습니다.  
 
--   기존의 OS 배포에 비해 속도가 빠르고 복원성도 뛰어납니다.  
+- 기존의 OS 배포에 비해 속도가 빠르고 복원성도 뛰어납니다.  
 
 
 > [!Note]  
@@ -89,12 +89,12 @@ OS를 업그레이드하는 작업 순서에 대한 다음 요구 사항과 제�
 
 OS를 배포하려면 다음 배포 방법 중 하나를 사용합니다.  
 
-  -   [소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포](use-software-center-to-deploy-windows-over-the-network.md)  
+- [소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포](use-software-center-to-deploy-windows-over-the-network.md)  
 
-  -   [독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포](use-stand-alone-media-to-deploy-windows-without-using-the-network.md)  
+- [독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포](use-stand-alone-media-to-deploy-windows-without-using-the-network.md)  
 
-      > [!IMPORTANT]  
-      > 독립 실행형 미디어를 사용할 경우 부팅 이미지를 작업 순서 미디어 마법사에서 사용할 수 있도록 작업 순서에 포함해야 합니다.
+  > [!IMPORTANT]  
+  > 독립 실행형 미디어를 사용할 경우 부팅 이미지를 작업 순서 미디어 마법사에서 사용할 수 있도록 작업 순서에 포함해야 합니다.
 
 
 

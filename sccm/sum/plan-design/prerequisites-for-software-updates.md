@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92e1d0e672d4fc5e6e98f87ba92cec2602f7d240
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: dcbbd799a87992fb34234f89a8660ed85c05dc3a
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496203"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340505"
 ---
 # <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
 
@@ -40,7 +40,8 @@ ms.locfileid: "65496203"
 >[!NOTE]
 >-   버전 1702부터 Windows Server 2008 R2는 소프트웨어 업데이트 지점 역할을 지원하지 않습니다. 자세한 내용은 [사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers#bkmk_2008r2sp1)를 참조하세요.  
 
-한 사이트에 여러 소프트웨어 업데이트 지점이 있는 경우 모두 동일한 버전의 WSUS를 실행해야 합니다.  
+> [!WARNING]  
+> 한 사이트에 여러 소프트웨어 업데이트 지점이 있는 경우 모두 동일한 버전의 WSUS를 실행해야 합니다.  
 
 > [!WARNING]  
 >  소프트웨어 업데이트 분류 **업그레이드**는 WSUS 4.0부터 지원됩니다. 새로운 분류를 동기화하고 Windows 10 서비스 계획에서 Windows 10 컴퓨터를 평가하는 기능을 얻기 전에 소프트웨어 업데이트 지점 및 사이트 서버에 WSUS용 [핫픽스 3095113](https://support.microsoft.com/kb/3095113) 을 반드시 설치해야 합니다. 이 핫픽스를 통해 Windows Server 2012 기반 서버 또는 Windows Server 2012 R2 기반 서버의 WSUS에서 Windows 10용 기능 업그레이드를 동기화하고 배포할 수 있습니다. 자세한 내용은 [Windows as a Service 관리](../../osd/deploy-use/manage-windows-as-a-service.md)를 참조하세요.  

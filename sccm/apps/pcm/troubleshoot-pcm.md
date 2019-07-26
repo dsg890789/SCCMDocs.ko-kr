@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e253d731c5c5cefa6bc13b04f40ab18855af4b8
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: 475f80dc4d5841eb014b8f1ecb4d23ffdb699944
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176892"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339189"
 ---
 # <a name="troubleshoot-package-conversion-manager"></a>Package Conversion Manager 문제 해결
 
@@ -40,16 +40,16 @@ SMS 공급자가 제대로 작동하지 않으면 Package Conversion Manager를 
 
 패키지를 애플리케이션으로 변환하기 전에 Package Conversion Manager **분석** 기능을 사용하여 패키지를 분석합니다. 분석 후 Configuration Manager 콘솔의 **패키지** 노드에 **준비** 열을 추가합니다. 패키지 목록에는 분석된 패키지의 준비 상태가 다음 중 하나로 표시됩니다.
 
- - **자동**: **변환** 기능을 사용하여 패키지를 바로 변환할 수 있습니다.      
+- **자동**: **변환** 기능을 사용하여 패키지를 바로 변환할 수 있습니다.      
 
-    > [!NOTE]  
-    > 자동 변환을 수행해도 WQL 쿼리는 애플리케이션 요구 사항으로 변환되지 않습니다. 이러한 쿼리를 변환하려면 **수정 및 변환** 프로세스를 사용합니다.  
+  > [!NOTE]  
+  > 자동 변환을 수행해도 WQL 쿼리는 애플리케이션 요구 사항으로 변환되지 않습니다. 이러한 쿼리를 변환하려면 **수정 및 변환** 프로세스를 사용합니다.  
 
- - **수동**: **수정 및 변환** 기능을 사용하여 패키지를 변환하려면 먼저 패키지에 일부 추가 또는 변경이 있어야 합니다.  
+- **수동**: **수정 및 변환** 기능을 사용하여 패키지를 변환하려면 먼저 패키지에 일부 추가 또는 변경이 있어야 합니다.  
 
- - **적용할 수 없음**: 패키지가 변환에 적합하지 않습니다. 이러한 패키지의 경우 문제를 해결하거나 계속해서 패키지로 배포할 수 있습니다.  
+- **적용할 수 없음**: 패키지가 변환에 적합하지 않습니다. 이러한 패키지의 경우 문제를 해결하거나 계속해서 패키지로 배포할 수 있습니다.  
 
- - **오류**: 패키지에 오류가 있습니다. 분석하고 변환하려면 먼저 수동으로 이러한 오류를 수정합니다.  
+- **오류**: 패키지에 오류가 있습니다. 분석하고 변환하려면 먼저 수동으로 이러한 오류를 수정합니다.  
 
 Configuration Manager 콘솔의 **패키지** 노드 세부 정보 창은 준비 문제를 보여 줍니다. 패키지를 선택하고 세부 정보 창에서 **요약** 탭을 선택합니다.
 

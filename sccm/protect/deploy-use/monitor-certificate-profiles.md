@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f5518346f0085293a2a9b5422c7aef375076d0c
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: 3a4ea6d12a41de37325cb64e0a702d6842f9508a
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67516164"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340508"
 ---
 # <a name="how-to-monitor-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인증서 프로필을 모니터링하는 방법
 
@@ -63,16 +63,16 @@ SCEP 인증서 준수 여부를 모니터링하려면 [보고서](#view-complian
 
 ##  <a name="view-compliance-results-by-using-reports"></a>보고서를 사용하여 준수 결과 보기
 
- System Center Configuration Manager의 준수 설정에는 인증서 프로필에 대한 정보를 모니터링하는 데 사용할 수 있는 기본 제공 보고서가 포함됩니다. 이러한 보고서에는 **호환 및 설정 관리**라는 보고서 범주가 있습니다.  
+System Center Configuration Manager의 준수 설정에는 인증서 프로필에 대한 정보를 모니터링하는 데 사용할 수 있는 기본 제공 보고서가 포함됩니다. 이러한 보고서에는 **호환 및 설정 관리**라는 보고서 범주가 있습니다.  
 
 > [!IMPORTANT]  
 >  호환성 설정 보고서에서 **디바이스 필터** 및 **사용자 필터** 매개 변수를 사용할 경우 와일드카드(%) 문자를 사용해야 합니다.  
 
 SCEP 인증서 준수 여부를 모니터링하려면 **회사 리소스 액세스** 보고서 노드에 있는 다음과 같은 인증서 보고서를 사용하세요.  
 
- -   인증서 발급 기록  
- -   만료 날짜에 가까운 인증서와 자산 목록  
- -   인증서 발급 상태별 자산 목록  
+-   인증서 발급 기록  
+-   만료 날짜에 가까운 인증서와 자산 목록  
+-   인증서 발급 상태별 자산 목록  
 
 
 

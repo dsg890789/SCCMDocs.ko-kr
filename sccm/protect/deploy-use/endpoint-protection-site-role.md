@@ -11,22 +11,22 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f0b489d4241350dc7b0f5ee7f9a9a48fcf026cf
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 2c1cdbbd1c4ede5c5f2e58bd6c42c982ebaa86fe
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500501"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340335"
 ---
 # <a name="create-an-endpoint-protection-point-site-system-role"></a>Endpoint Protection 지점 사이트 시스템 역할 만들기
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
- Endpoint Protection을 사용하려면 먼저 Endpoint Protection 지점 사이트 시스템 역할을 설치해야 합니다. 하나의 사이트 시스템 서버에만 설치해야 하며, 중앙 관리 사이트 또는 독립 실행형 기본 사이트의 계층 구조 맨 위에 설치해야 합니다.
+Endpoint Protection을 사용하려면 먼저 Endpoint Protection 지점 사이트 시스템 역할을 설치해야 합니다. 하나의 사이트 시스템 서버에만 설치해야 하며, 중앙 관리 사이트 또는 독립 실행형 기본 사이트의 계층 구조 맨 위에 설치해야 합니다.
 
- Endpoint Protection용 새 사이트 시스템 서버를 설치할지 아니면 기존 사이트 시스템 서버를 사용할지에 따라 다음 절차 중 하나를 사용합니다.
- - [새 사이트 시스템 서버에 설치](#new-site-system-server)
- - [기존 사이트 시스템 서버에 설치](#existing-site-system-server)
+Endpoint Protection용 새 사이트 시스템 서버를 설치할지 아니면 기존 사이트 시스템 서버를 사용할지에 따라 다음 절차 중 하나를 사용합니다.
+- [새 사이트 시스템 서버에 설치](#new-site-system-server)
+- [기존 사이트 시스템 서버에 설치](#existing-site-system-server)
 
 > [!IMPORTANT]
 >  Endpoint Protection 지점을 설치할 때 Endpoint Protection 클라이언트는 Endpoint Protection 지점을 호스트하는 서버에 설치됩니다. 서버에 설치되어 있는 기존 맬웨어 방지 솔루션과 함께 사용할 수 있도록 이 클라이언트에서 서비스 및 검사가 비활성화됩니다. 나중에 이 서버를 Endpoint Protection으로 관리하도록 설정하고 타사 맬웨어 방지 솔루션을 제거하는 옵션을 선택할 경우 타사 제품은 제거되지 않습니다. 이 제품은 수동으로 제거해야 합니다.

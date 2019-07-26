@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abfa18bdf454850510c18551f2f64813a7891ea
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: a90dff8b187c28d925daeb9dae02849dd5027bab
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58523931"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339250"
 ---
 # <a name="package-conversion-manager"></a>Package Conversion Manager
 
@@ -24,13 +24,13 @@ ms.locfileid: "58523931"
 
 <!--1357861-->
 
-버전 1806부터 Package Conversion Manager가 Configuration Manager 레거시 패키지를 애플리케이션으로 변환하는 데 도움을 줍니다. 애플리케이션에는 종속성, 요구 사항 규칙, 검색 방법 및 사용자 장치 선호도와 같은 추가 혜택이 있습니다.
+버전 1806부터 Package Conversion Manager가 Configuration Manager 레거시 패키지를 애플리케이션으로 변환하는 데 도움을 줍니다. 응용 프로그램에는 종속성, 요구 사항 규칙, 검색 방법 및 사용자 디바이스 선호도와 같은 추가 혜택이 있습니다.
 
 > [!Tip]  
 > 이 기능은 버전 1806에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1810 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
 
 
-Configuration Manager 애플리케이션에는 클라이언트 장치에 배포할 파일 및 프로그램이 포함되어 있습니다. 그러나 레거시 패키지 및 프로그램과 달리 애플리케이션은 사용자 중심 기능을 추가로 제공합니다. 예를 들어 애플리케이션에는 소프트웨어 패키지, 가상 애플리케이션 패키지 또는 모바일 장치용 애플리케이션 버전 등의 로컬 설치를 위한 배포 유형이 포함될 수 있습니다.
+Configuration Manager 응용 프로그램에는 클라이언트 디바이스에 배포할 파일 및 프로그램이 포함되어 있습니다. 그러나 레거시 패키지 및 프로그램과 달리 애플리케이션은 사용자 중심 기능을 추가로 제공합니다. 예를 들어 응용 프로그램에는 소프트웨어 패키지, 가상 응용 프로그램 패키지 또는 모바일 디바이스용 응용 프로그램 버전 등의 로컬 설치를 위한 배포 유형이 포함될 수 있습니다.
 
 자세한 내용은 다음 아티클을 참조하세요. 
 - [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)  
@@ -42,10 +42,10 @@ Configuration Manager 애플리케이션에는 클라이언트 장치에 배포�
 이 통합 버전의 Package Conversion Manager는 Configuration Manager 현재 분기 사이트의 패키지에서 작동합니다. 독립 실행형 도구가 아닙니다. 이전 버전의 Configuration Manager에 패키지 및 프로그램이 있는 경우 먼저 패키지를 현재 분기 사이트로 마이그레이션합니다. 자세한 내용은 [계층 구조 간에 데이터 마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)을 참조하세요.
 
 <!-- SCCMDocs-pr issue #3357 -->
-Configuration Manager 버전 1902 다음과 같은 개선 사항이 포함 됩니다.
-- 예약 된 패키지 분석 기본적으로 7 일 마다 실행 됩니다.
-- 분석 및 변환 패키지에 대 한 PowerShell cmdlet
-- 일반 버그 수정 및 향상 된 기능
+Configuration Manager 버전 1902에는 다음과 같은 향상 된 기능이 포함 되어 있습니다.
+- 기본적으로 7일마다 예약된 패키지 분석이 실행됩니다.
+- 패키지 분석 및 변환을 위한 PowerShell cmdlet
+- 일반 버그 수정 및 개선 사항
 
 
 
@@ -131,17 +131,17 @@ Configuration Manager 버전 1902 다음과 같은 개선 사항이 포함 됩�
 
 애플리케이션으로 변환하기에 가장 적합한 패키지 유형은 다음과 같이 사용자용 소프트웨어가 포함된 패키지입니다.  
 
- - Windows Installer 파일(.msi 및 .msu)  
+- Windows Installer 파일(.msi 및 .msu)  
 
- - Microsoft Application Virtualization(App-V) 프로그램  
+- Microsoft Application Virtualization(App-V) 프로그램  
 
- - Windows 실행 파일(.exe)  
+- Windows 실행 파일(.exe)  
 
 애플리케이션으로 변환하지 않고 패키지로 유지하는 것이 가장 좋은 패키지 유형은 다음과 같습니다.
 
- - 스크립트 또는 백업 유틸리티와 같은 시스템 유지 관리 도구  
+- 스크립트 또는 백업 유틸리티와 같은 시스템 유지 관리 도구  
 
- - 지원되지 않는 소프트웨어 패키지
+- 지원되지 않는 소프트웨어 패키지
 
 > [!Tip]  
 > 애플리케이션으로 변환하기에 적합하지 않은 패키지를 파악한 후 Configuration Manager 콘솔의 별도 폴더로 이동합니다. Configuration Manager 콘솔에 패키지 폴더를 만들려면 다음을 수행합니다.  
@@ -154,26 +154,26 @@ Configuration Manager 버전 1902 다음과 같은 개선 사항이 포함 됩�
 
 변환하려는 각 패키지가 다음 조건을 준수하는지 확인합니다.  
 
- - 원본 파일 위치는 전체 UNC 경로(예: `\\Server\Share\File`)입니다.  
+- 원본 파일 위치는 전체 UNC 경로(예: `\\Server\Share\File`)입니다.  
 
- - Windows Installer 파일은 고유한 제품 코드를 하나만 사용합니다.  
+- Windows Installer 파일은 고유한 제품 코드를 하나만 사용합니다.  
 
 
 ### <a name="bkmk_test"></a> 테스트 패키지 선택
 
 가능하면 테스트 패키지 그룹에 다음 기준을 충족하는 패키지가 포함되어야 합니다.  
 
- - 준비 상태가 **자동**인 테스트 패키지 하나 이상  
+- 준비 상태가 **자동**인 테스트 패키지 하나 이상  
 
- - 준비 상태가 **수동**인 테스트 패키지 하나 이상  
+- 준비 상태가 **수동**인 테스트 패키지 하나 이상  
 
 다음과 같이 테스트 패키지가 코어 패키지여야 가장 바람직합니다.  
 
- - 사용자가 잘 알고 있는 패키지  
+- 사용자가 잘 알고 있는 패키지  
 
- - 조직에 가장 중요한 패키지  
+- 조직에 가장 중요한 패키지  
 
- - 가장 쉽게 테스트할 수 있는 패키지  
+- 가장 쉽게 테스트할 수 있는 패키지  
 
 테스트하기 적합한 패키지를 파악합니다. 그런 다음, Configuration Manager 콘솔의 별도 폴더로 이동합니다.
 
@@ -191,13 +191,13 @@ Configuration Manager 버전 1902 다음과 같은 개선 사항이 포함 됩�
 
 테스트 패키지를 분석한 후에는 준비 상태가 **수동** 또는 **오류**인 패키지를 조사하여 패키지가 이러한 상태로 설정된 이유를 확인합니다. 준비 상태가 **수동** 또는 **오류** 인 경우의 몇 가지 일반적인 원인은 다음과 같습니다.
 
- - 애플리케이션 배포 유형에서 검색 방법을 만드는 데 필요한 정보가 패키지에 포함되어 있지 않습니다.  
+- 애플리케이션 배포 유형에서 검색 방법을 만드는 데 필요한 정보가 패키지에 포함되어 있지 않습니다.  
 
- - 컬렉션을 글로벌 조건 및 요구 사항으로 변환하는 데 필요한 정보가 패키지에 포함되어 있지 않습니다.  
+- 컬렉션을 글로벌 조건 및 요구 사항으로 변환하는 데 필요한 정보가 패키지에 포함되어 있지 않습니다.  
 
- - 패키지에 프로그램이 두 개 이상 포함되어 있습니다.  
+- 패키지에 프로그램이 두 개 이상 포함되어 있습니다.  
 
- - 패키지가 애플리케이션으로 변환하지 않은 다른 패키지에 종속됩니다.  
+- 패키지가 애플리케이션으로 변환하지 않은 다른 패키지에 종속됩니다.  
 
 자세한 내용은 다음 리소스를 참조하세요.  
 
