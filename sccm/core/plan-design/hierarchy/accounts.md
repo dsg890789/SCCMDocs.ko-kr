@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53505aed5fcdcfcaf3603250a40f484cd49c762f
-ms.sourcegitcommit: 5e43c0c6b0b1f449e596f59ceaa92a9b6ca194cc
+ms.openlocfilehash: 254639f905ca52f922d84fd19366807c3be2c339
+ms.sourcegitcommit: d74415e49a6db28ee5198440c7f321529a9f7f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572751"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68312474"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -601,16 +601,16 @@ Configuration Manager는 다음과 같은 사용자 개체를 SQL에서 자동�
 >  이러한 개체를 수정하거나 제거하면 Configuration Manager 환경 내에서 급격한 문제가 발생할 수 있습니다.  이러한 개체는 변경하지 않는 것이 좋습니다.
 
 
-### <a name="smsdbuserreadonly"></a>smsdbuser_ReadOnly
+### ### <a name="smsdbuser_readonly"></a>smsdbuser_ReadOnly
 
 이 개체는 읽기 전용 컨텍스트에서 쿼리를 실행하는 데 사용됩니다.  이 개체는 여러 저장 프로시저에서 사용됩니다.
 
 
-### <a name="smsdbuserreadwrite"></a>smsdbuser_ReadWrite
+### <a name="smsdbuser_readwrite"></a>smsdbuser_ReadWrite
 
 이 개체는 동적 SQL 문에 대한 사용 권한을 제공하는 데 사용됩니다.
 
 
-### <a name="smsdbuserreportschema"></a>smsdbuser_ReportSchema
+### <a name="smsdbuser_reportschema"></a>smsdbuser_ReportSchema
 
 이 개체는 SQL Reporting 실행에 사용됩니다.  이 함수에는 저장 프로시저 spSRExecQuery가 함께 사용됩니다.

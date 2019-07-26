@@ -2,7 +2,7 @@
 title: 클라이언트 모니터링
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라이언트를 모니터링하는 방법에 대한 자세한 지침을 가져옵니다.
-ms.date: 05/31/2019
+ms.date: 07/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55fd698ac5213a3b11b207d0625d953f687e319f
-ms.sourcegitcommit: 65753c51fbf596f233fc75a5462ea4a44005c70b
+ms.openlocfilehash: 9b3c3f52f15ba4d61a589833e43144ce5ecb6de0
+ms.sourcegitcommit: b62de6c9cb1bc3e4c9ea5ab5ed3355d83e3a59bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66463036"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894203"
 ---
 # <a name="how-to-monitor-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 모니터링하는 방법
 
@@ -70,6 +70,96 @@ Configuration Manager에서는 다음과 같은 정보 유형을 클라이언트
     - **마지막 오프라인 시간**상태가 오프라인으로 변경되었을 때를 나타냅니다.  
 
 3. 목록 창의 개별 클라이언트를 선택하여 세부 정보 창에서 자세한 상태를 확인합니다. 이 정보는 클라이언트 작업 및 클라이언트 검사 상태를 포함합니다.  
+
+
+## <a name="bkmk_health"></a> 클라이언트 상태 대시보드
+
+<!--3599209-->
+사용자의 환경을 보호하기 위해 소프트웨어 업데이트 및 기타 앱을 배포하지만 이러한 배포는 정상 클라이언트에만 적용됩니다. 비정상 Configuration Manager 클라이언트는 전반적인 규정 준수에 부정적인 영향을 줍니다. 클라이언트 상태 확인은 분모에 따라 어려울 수 있습니다. 관리 범위에 있어야 하는 총 디바이스는 몇 개인가요? 예를 들어 Active Directory에서 모든 시스템을 검색 하는 경우 이러한 레코드의 일부가 사용 중지된 머신에 해당된다 해도 이 프로세스는 분모를 증가시킵니다.
+
+버전 1902부터 사용자 환경에서 Configuration Manager 클라이언트의 상태에 대한 정보가 포함된 대시보드를 볼 수 있습니다. 클라이언트 상태, 시나리오 상태 및 일반적인 오류를 봅니다. OS 및 클라이언트 버전으로 잠재적인 문제를 확인하려면 몇 가지 특성으로 뷰를 필터링합니다.
+
+Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동합니다. **클라이언트 상태**를 확장하고 **클라이언트 상태 대시보드** 노드를 선택합니다.
+
+![클라이언트 상태 대시보드 스크린샷](media/3599209-client-health-dashboard.png)
+
+> [!Tip]  
+> ccmeval에 대한 변경 내용이 없습니다.  
+
+클라이언트 상태 대시보드는 기본적으로 온라인 클라이언트와 지난 3일간 활성 상태에 있었던 클라이언트를 표시합니다. 따라서 이 대시보드에 표시되는 숫자가 **클라이언트 상태** 아래의 다른 노드나 클라이언트 상태 범주의 보고서와 같은 여타 클라이언트 상태 이력 소스에 표시되는 숫자와 다를 수 있습니다.
+
+### <a name="filters"></a>필터
+
+대시보드 맨 위의 대시보드에 표시되는 데이터를 조정하기 위한 필터 집합이 있습니다.
+
+- **컬렉션**: 기본적으로 대시보드는 **모든 시스템** 컬렉션에 디바이스를 표시합니다. 목록에서 디바이스 컬렉션을 선택하여 특정 컬렉션에서 디바이스 하위 집합에 대한 보기의 범위를 지정합니다.  
+
+- **온라인/오프라인**: 기본적으로 대시보드는 온라인 클라이언트만 표시합니다. 이 상태는 5분마다 클라이언트의 상태를 업데이트하는 클라이언트 알림 채널에서 제공됩니다. 자세한 내용은 [클라이언트 상태 정보](/sccm/core/clients/manage/monitor-clients#bkmk_about)를 참조하세요.  
+
+- **활성화 \# 일**: 기본적으로 대시보드는 지난 3일 동안 활성화된 클라이언트를 표시합니다.  
+
+- **오류만**: 클라이언트 상태 오류를 보고 하는 디바이스에 대해서만 보기의 범위를 지정합니다.  
+
+    > [!Tip]  
+    > 클라이언트 버전 및 OS 버전 타일과 함께 이 필터를 사용합니다. 자세한 내용은 [버전 타일](#version-tiles)을 참조하세요.
+
+### <a name="client-health-percentage"></a>클라이언트 상태 백분율
+
+이 타일은 계층 구조의 전반적인 클라이언트 상태를 표시합니다.
+
+정상 Configuration Manager 클라이언트에는 다음 속성이 있습니다.
+
+- Online  
+- 적극적으로 데이터 전송하기  
+- 모든 클라이언트 상태 평가 통과 확인  
+
+자세한 내용은 [클라이언트 상태 정보](/sccm/core/clients/manage/monitor-clients#bkmk_about)를 참조하세요.
+
+정상 클라이언트는 사이트와 성공적으로 통신합니다. 클라이언트 설정에서 정의된 일정에 따라 모든 데이터를 보고합니다.
+
+이 차트의 세그먼트를 선택하여 디바이스 목록 보기로 드릴다운합니다.
+
+### <a name="version-tiles"></a>버전 타일
+
+Configuration Manager 클라이언트 버전 및 OS 버전으로 클라이언트 상태를 표시하는 두 개의 타일이 있습니다. 이러한 타일은 **오류만**과 같이 필터를 변경하는 경우 유용합니다. 이러한 타일은 특정 버전에서 문제가 일관되는지 여부를 강조 표시할 수 있습니다. 이 정보를 사용하여 업그레이드 결정을 내릴 수 있습니다.
+
+이러한 차트의 세그먼트를 선택하여 디바이스 목록 보기로 드릴다운합니다.
+
+### <a name="scenario-health"></a>시나리오 상태
+
+이 막대형 차트에는 다음 핵심 시나리오에 대한 전반적인 상태가 표시됩니다.
+
+- 클라이언트 정책
+- 하트비트 검색
+- 하드웨어 인벤토리
+- 소프트웨어 인벤토리
+- 상태 메시지
+
+차트에서 특정 시나리오에 대한 초점을 조정하려면 선택기를 사용합니다.
+
+다음 두 개의 막대는 항상 다음과 같이 표시됩니다.
+
+- **결합됨(모두)** : 모든 시나리오의 조합(AND)  
+- **결합됨(임의)** : 하나 이상의 시나리오(OR)
+
+> [!Tip]  
+> 시나리오 상태는 클라이언트 설정의 구성에서 측정되지 않습니다. 이러한 값은 디바이스당 정책의 결과 세트에 따라 달라질 수 있습니다. 시나리오 상태에 대한 평가 기간을 조정하려면 다음 단계를 사용합니다.
+>
+> - Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동하고 **클라이언트 상태** 노드를 선택합니다.  
+> - 리본 메뉴에서 **클라이언트 상태 설정**을 선택합니다.  
+>
+> 기본적으로 클라이언트가 **7일** 안에 시나리오별 데이터를 보내지 않는 경우 Configuration Manager에서는 해당 시나리오를 비정상으로 간주합니다.
+
+### <a name="top-10-client-health-failures"></a>상위 10개 클라이언트 상태 오류
+
+이 차트에는 사용자 환경에서 가장 일반적인 오류가 나열됩니다. 이러한 오류는 Windows 또는 Configuration Manager에서 제공됩니다.
+
+<!-- The following list includes some of the more common failures overall:
+
+#### Failure 1 title
+Failure 1 description
+
+Solution for failure 1 -->
 
 
 ## <a name="bkmk_allStatus"></a> 모든 클라이언트의 상태 모니터링

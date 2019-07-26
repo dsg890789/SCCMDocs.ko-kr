@@ -1,6 +1,6 @@
 ---
 title: 콘솔 내 설명서
-ms.date: 06/10/2019
+ms.date: 06/15/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,12 +10,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e77402bbaf5ce0f0f756418be38b6435d70e9e4d
-ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
+ms.openlocfilehash: 4cf8cd6d750549b307530dff17269e32356e7057
+ms.sourcegitcommit: b62de6c9cb1bc3e4c9ea5ab5ed3355d83e3a59bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67726193"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894147"
 ---
 <!-- 
 - Feature 1357546
@@ -26,7 +26,7 @@ ms.locfileid: "67726193"
 
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
 
-*마지막 업데이트: 2019/06/10*
+*마지막 업데이트: 2019/06/15*
 
 이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다.
 
@@ -54,20 +54,20 @@ ms.locfileid: "67726193"
 
 ## <a name="trending"></a>인기
 
-2019년 5월 1일부터 5월 31일 사이에 가장 많이 조회된 문서입니다.
+2019년 6월 1일부터 6월 30일 사이에 가장 많이 조회된 문서입니다.
 
 | 페이지 보기 | 제목 |
 |------------|-------|
-| 21370 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
-| 17017 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
-| 12122 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
-| 11906 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
-| 11463 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
-| 10421 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
-| 9138 | [1902에 대한 검사 목록](https://docs.microsoft.com/sccm/core/servers/manage/checklist-for-installing-update-1902) |
-| 8944 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
-| 8508 | [클라이언트 설치 매개 변수 및 속성](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-installation-properties) |
-| 8399 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+| 20786 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
+| 17237 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/sccm/core/plan-design/security/enable-tls-1-2) |
+| 12788 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
+| 12418 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
+| 11553 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 9889 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
+| 8781 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 8464 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+| 8349 | [작업 순서 단계](https://docs.microsoft.com/sccm/osd/understand/task-sequence-steps) |
+| 8021 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
 
@@ -75,16 +75,16 @@ ms.locfileid: "67726193"
 
 | 마지막 검토 | 제목 |
 |---------------|-------|
-| 2019/5/31 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/sccm/core/plan-design/security/enable-tls-1-2) |
-| 2019/5/29 | [프로비저닝 모드](https://docs.microsoft.com/sccm/osd/understand/provisioning-mode) |
-| 2019/5/29 | [앱 배포 문제 해결](https://docs.microsoft.com/sccm/apps/deploy-use/troubleshoot-application-deployment) |
-| 2019/5/29 | [Approve-CMApprovalRequest](https://docs.microsoft.com/powershell/module/configurationmanager/approve-cmapprovalrequest) |
-| 2019/5/29 | [애플리케이션 가져오기 및 내보내기](https://docs.microsoft.com/sccm/apps/deploy-use/import-export-applications) |
-| 2019/5/28 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
-| 2019/5/28 | [고급 HTTP](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/enhanced-http) |
-| 2019/5/24 | [Azure AD 인증 워크플로](https://docs.microsoft.com/sccm/core/clients/manage/azure-ccmsetup) |
-| 2019/5/24 | [SetDPMaintenanceMode 메서드](https://docs.microsoft.com/sccm/develop/reference/core/servers/configure/setdpmaintenancemode-method-in-class-sms-distributionpointinfo) |
-| 2019/5/21 | [사용되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) |
+| 2019/6/28 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview) |
+| 2019/6/28 | [Desktop Analytics 문제 해결](https://docs.microsoft.com/sccm/desktop-analytics/troubleshooting) |
+| 2019/6/27 | [Paths to co-management](https://docs.microsoft.com/sccm/comanage/quickstart-paths)(공동 관리 경로) |
+| 2019/6/20 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
+| 2019/6/20 | [클라이언트 설정](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings) |
+| 2019/6/20 | [스크립트 만들기 및 실행](https://docs.microsoft.com/sccm/apps/deploy-use/create-deploy-scripts) |
+| 2019/6/20 | [Configuration Manager 콘솔](https://docs.microsoft.com/sccm/core/servers/manage/admin-console) |
+| 2019/6/19 | [CMG FAQ](https://docs.microsoft.com/sccm/core/clients/manage/cmg/cloud-management-gateway-faq) |
+| 2019/6/19 | [인터넷 액세스 요구 사항](https://docs.microsoft.com/sccm/core/plan-design/network/internet-endpoints) |
+| 2019/6/17 | [릴리스 정보](https://docs.microsoft.com/sccm/core/servers/deploy/install/release-notes) |
 
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
 
