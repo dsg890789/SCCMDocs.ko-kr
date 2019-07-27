@@ -2,7 +2,7 @@
 title: Desktop Analytics
 titleSuffix: Configuration Manager
 description: Configuration Manager와 통합 된 데스크톱 분석 서비스에 대 한 개요입니다.
-ms.date: 07/19/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: overview
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 154c142b285c58da714193c964b353dc1e173481
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 07d2a1b38f77a3b45c3327c054a9f1f36793e504
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339267"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535898"
 ---
 # <a name="what-is-desktop-analytics"></a>데스크톱 분석 이란?
 
@@ -84,7 +84,7 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 
 - Configuration Manager 업데이트 롤업 (4500571) 이상 버전 1902. 자세한 내용은 [Update Configuration Manager](/sccm/desktop-analytics/connect-configmgr#bkmk_hotfix)를 참조 하세요.  
 
-    - Configuration Manager의 **전체 관리자** 역할  
+    - Configuration Manager의 [**전체 관리자**](/sccm/core/understand/fundamentals-of-role-based-administration#bkmk_Planroles) 역할  
 
     > [!Note]  
     > 데스크톱 분석은 Azure Active Directory (Azure AD) 테 넌 트 및 Configuration Manager 계층 별로 하나의 상용 ID를 지원 합니다. 환경에 여러 계층이 있는 경우 다른 상업적 Id와 Azure AD 테 넌 트를 사용 합니다.<!-- 4958160 -->
