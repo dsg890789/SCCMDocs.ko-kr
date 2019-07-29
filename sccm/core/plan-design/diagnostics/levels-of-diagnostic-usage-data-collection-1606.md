@@ -228,7 +228,7 @@ System Center Configuration Manager 버전 1606부터 이 수준에는 다음이
     - ***[새로운 기능]*** ATP(Advanced Threat Protection) 정책(정책 개수 및 정책 배포 여부)
 
 
--   ***[제거된 기능]*****MAM(모바일 애플리케이션 관리):**  
+-   ***[제거된 기능]*** **MAM(모바일 애플리케이션 관리):**  
 
     -   ***[제거된 기능]*** 운영 체제별 MAM 사용 Office 애플리케이션, LOB(기간 업무) 애플리케이션 및 정책의 개수  
 
