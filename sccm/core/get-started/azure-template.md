@@ -1,8 +1,8 @@
 ---
 title: Azure에서 랩 만들기
 titleSuffix: Configuration Manager
-description: Azure 템플릿을 사용하여 Configuration Manager Technical Preview 랩 생성 자동화
-ms.date: 03/18/2019
+description: Azure 템플릿을 사용하여 Configuration Manager Technical Preview 랩 또는 현재 분기 평가 랩 생성 자동화
+ms.date: 07/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,22 +11,25 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aeef8e447d646df183f7f2075954e381b08d8c93
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 0c4c565d3c1754ce60ec8f9b7d5dcd2d487f8db1
+ms.sourcegitcommit: cdad3ca82018f1755e5186f8949a898cd201b565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499730"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68411487"
 ---
-# <a name="create-a-configuration-manager-technical-preview-lab-in-azure"></a>Azure에서 Configuration Manager Technical Preview 랩 만들기
+# <a name="create-a-configuration-manager-lab-in-azure"></a>Azure에서 Configuration Manager 랩 만들기
 
 *적용 대상: System Center Configuration Manager(Technical Preview)*
 
 <!--3556017-->
 
-이 가이드에서는 Microsoft Azure에서 Configuration Manager 랩 환경을 빌드하는 방법을 설명합니다. Azure 리소스를 사용하여 랩의 생성을 단순화하고 자동화하려면 Azure 템플릿을 사용합니다. 이 프로세스는 최신 버전의 Configuration Manager Technical Preview 분기를 설치합니다. 
+이 가이드에서는 Microsoft Azure에서 Configuration Manager 랩 환경을 빌드하는 방법을 설명합니다. Azure 리소스를 사용하여 랩의 생성을 단순화하고 자동화하려면 Azure 템플릿을 사용합니다. 두 개의 Azure 템플릿이 제공됩니다. 
 
-Configuration Manager 현재 분기에 대한 자세한 내용은 [Azure의 Configuration Manager](/sccm/core/understand/configuration-manager-on-azure)를 참조하세요.
+- Configuration Manager Technical Preview Azure 템플릿은 최신 버전의 Configuration Manager Technical Preview 분기를 설치합니다.
+- Configuration Manager 현재 분기 Azure 템플릿은 최신 버전의 Configuration Manager 현재 분기 평가를 설치합니다. 
+
+자세한 내용은 [Azure의 Configuration Manager](/sccm/core/understand/configuration-manager-on-azure)를 참조하세요.
 
 
 
@@ -44,7 +47,7 @@ Configuration Manager 현재 분기에 대한 자세한 내용은 [Azure의 Conf
 
 ## <a name="process"></a>프로세스
 
-1. [Configuration Manager 템플릿](https://azure.microsoft.com/resources/templates/sccm-technicalpreview/)으로 이동합니다.  
+1. [Configuration Manager Technical Preview 템플릿](https://azure.microsoft.com/resources/templates/sccm-technicalpreview/) 또는 [Configuration Manager 현재 분기 템플릿](https://azure.microsoft.com/resources/templates/sccm-currentbranch/)으로 이동합니다.  
 
 2. **Azure에 배포**를 선택하면 Azure Portal이 열립니다.  
 
@@ -88,17 +91,17 @@ VM에 연결하려면 먼저 Azure Portal에서 각 VM에 대한 공용 IP 주�
 ## <a name="azure-vm-info"></a>Azure VM 정보
 
 3개의 VM은 모두 다음 사양을 충족합니다.
-- 두 개의 CPU 코어와 8GB의 메모리가 있는 Standard_D2s_v3  
-- Windows Server 2016 Datacenter Edition
 - 150GB의 디스크 공간
 - 퍼블릭 및 프라이빗 IP 주소 모두입니다. 공용 IP는 TCP 포트 3389에서 원격 데스크톱 연결만 허용하는 네트워크 보안 그룹에 있습니다. 
 
 배포 템플릿에서 지정한 접두사는 VM 이름 접두사입니다. 예를 들어 "contoso"를 접두사로 설정한 경우 도메인 컨트롤러 머신 이름은 `contosoDC`입니다.
 
 
-### `<prefix>DC`
+### `<prefix>DC01`
 
-Active Directory 도메인 컨트롤러
+- Active Directory 도메인 컨트롤러
+- 두 개의 CPU와 4GB의 메모리가 있는 Standard_B2s
+- Windows Server 2019 Datacenter Edition
 
 #### <a name="windows-features-and-roles"></a>Windows 기능 및 역할
 - ADDS(Active Directory Domain Services)
@@ -106,8 +109,10 @@ Active Directory 도메인 컨트롤러
 - RDC(원격 차등 압축)
 
 
-### `<prefix>PS1`
+### `<prefix>PS01`
 
+- 두 개의 CPU와 8GB의 메모리가 있는 Standard_B2ms
+- Windows Server 2016 Datacenter Edition
 - SQL Server
 - Windows PE가 포함된 Windows 10 ADK 
 - Configuration Manager 기본 사이트
@@ -118,8 +123,10 @@ Active Directory 도메인 컨트롤러
 - IIS(인터넷 정보 서비스)
 
 
-### `<prefix>DPMP`
+### `<prefix>DPMP01`
 
+- 두 개의 CPU와 4GB의 메모리가 있는 Standard_B2s
+- Windows Server 2019 Datacenter Edition
 - 배포 지점
 - 관리 지점
 
@@ -129,3 +136,8 @@ Active Directory 도메인 컨트롤러
 - IIS(인터넷 정보 서비스)
 - BITS(Background Intelligent Transfer Service)
 
+### `<prefix>CL01`
+
+- Configuration Manager 현재 분기 평가 템플릿 전용
+- Windows 10
+- Configuration Manager 클라이언트

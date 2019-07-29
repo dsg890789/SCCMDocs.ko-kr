@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d060a9426207550352216c215efca50e0b774e46
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 5c21f85271b0fd1f96b3e5397d2f2fb7a3e3798d
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129700"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339878"
 ---
 # <a name="capabilities-in-technical-preview-1804-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1804의 기능
 
@@ -32,14 +32,16 @@ ms.locfileid: "56129700"
 ## <a name="known-issues-in-this-technical-preview"></a>이 기술 미리 보기의 알려진 문제
 
 ### <a name="bkmk_ki-prereqs"></a> 업데이트를 다운로드하는 설치 링크가 작동하지 않음
-<!--514334--> 미디어에서 설치를 실행하는 경우 초기 페이지에 **최신 Configuration Manager 업데이트 다운로드**라는 제목의 링크가 포함되어 있으며, 이 링크는 이 릴리스에서 작동하지 않습니다. 이 링크는 설치에 필요한 파일을 다운로드하기 위한 것입니다.
+<!--514334-->
+미디어에서 설치를 실행하는 경우 초기 페이지에 **최신 Configuration Manager 업데이트 다운로드**라는 제목의 링크가 포함되어 있으며, 이 링크는 이 릴리스에서 작동하지 않습니다. 이 링크는 설치에 필요한 파일을 다운로드하기 위한 것입니다.
 
 #### <a name="workaround"></a>해결 방법
 설치에 필요한 파일을 다운로드하려면 설치 마법사를 실행합니다. 필수 다운로드 페이지에서 **필수 파일 다운로드** 옵션을 사용합니다. 
 
 
 ### <a name="bkmk_appcathttps"></a> 애플리케이션 카탈로그 웹 서비스 지점에서 HTTPS를 사용할 수 없음
-<!--512637--> 응용 프로그램 카탈로그 웹 서비스 지점에서 HTTPS를 사용하도록 설정할 경우
+<!--512637-->
+애플리케이션 카탈로그 웹 서비스 지점에서 HTTPS를 사용하도록 설정할 경우
 
 - 사용자가 사용할 수 있도록 배포된 애플리케이션이 소프트웨어 센터에 표시되지 않습니다.  
 
@@ -59,7 +61,8 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 
 ## <a name="configure-a-remote-content-library-for-the-site-server"></a>사이트 서버에 대해 원격 콘텐츠 라이브러리 구성  
-<!--1357525--> 기본 사이트 서버에서 하드 드라이브 공간을 확보하려면 해당 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)를 다른 저장소 위치로 이동합니다. 사이트 서버의 다른 드라이브, 별도의 서버 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동할 수 있습니다. 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 SAN을 사용하는 것이 좋습니다. 
+<!--1357525-->
+기본 사이트 서버에서 하드 드라이브 공간을 확보하려면 해당 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library)를 다른 스토리지 위치로 이동합니다. 사이트 서버의 다른 드라이브, 별도의 서버 또는 SAN(스토리지 영역 네트워크)의 내결함성 디스크로 콘텐츠 라이브러리를 이동할 수 있습니다. 시간 경과에 따라 사용자의 변화하는 콘텐츠 요구 사항에 맞게 확장되거나 축소되는 탄력적인 스토리지를 제공하므로 SAN을 사용하는 것이 좋습니다. 
 
 이 원격 콘텐츠 라이브러리는 [사이트 서버 역할 고가용성](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)을 위한 새로운 필수 조건입니다. 
 
@@ -109,21 +112,21 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 컨텍스트를 위해 항상 다음 익명 정보가 피드백과 함께 포함됩니다.  
 
- - Configuration Manager 콘솔 버전 및 언어  
+- Configuration Manager 콘솔 버전 및 언어  
 
- - Configuration Manager 사이트 버전  
+- Configuration Manager 사이트 버전  
 
- - 지원 ID(계층 구조 ID라고도 함)  
+- 지원 ID(계층 구조 ID라고도 함)  
 
- - 콘솔을 실행 중인 시스템의 OS 버전 및 언어  
+- 콘솔을 실행 중인 시스템의 OS 버전 및 언어  
 
- - 콘솔에서 웃는 얼굴을 클릭한 정확한 위치  
+- 콘솔에서 웃는 얼굴을 클릭한 정확한 위치  
 
 이 데이터는 진단 및 사용 데이터 컬렉션과 일치합니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
 
 ### <a name="known-issues"></a>알려진 문제
 
-인터넷에 액세스할 수 없는 장치에서 피드백을 보내려고 하면 애플리케이션이 예기치 않게 닫힐 수 있습니다. 웃는 얼굴이나 찡그린 얼굴을 보내려면 디바이스가 petrol.office.microsoft.com에 액세스할 수 있는지 확인합니다.
+인터넷에 액세스할 수 없는 디바이스에서 피드백을 보내려고 하면 응용 프로그램이 예기치 않게 닫힐 수 있습니다. 웃는 얼굴이나 찡그린 얼굴을 보내려면 디바이스가 petrol.office.microsoft.com에 액세스할 수 있는지 확인합니다.
 
 
 
@@ -137,9 +140,9 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 ### <a name="new-support-center-features"></a>새로운 지원 센터 기능  
 
- - 새 로그 뷰어, OneTrace. CMTrace와 유사하게 작동하며 탭 보기, 도킹 가능한 창 등의 개선 사항을 포함합니다.  
+- 새 로그 뷰어, OneTrace. CMTrace와 유사하게 작동하며 탭 보기, 도킹 가능한 창 등의 개선 사항을 포함합니다.  
 
- - 새 데이터 수집기 기능은 로컬 또는 원격 구성 관리자 클라이언트에서 진단 로그를 수집합니다. 인벤토리(클라이언트 감시 대체), 정책(정책 감시 대체) 및 클라이언트 캐시에 대한 실시간 진단을 제공합니다.  
+- 새 데이터 수집기 기능은 로컬 또는 원격 구성 관리자 클라이언트에서 진단 로그를 수집합니다. 인벤토리(클라이언트 감시 대체), 정책(정책 감시 대체) 및 클라이언트 캐시에 대한 실시간 진단을 제공합니다.  
 
 
 
@@ -150,37 +153,37 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 #### <a name="server-tools"></a>서버 도구  
 
- - **DP 작업 관리자**: 배포 지점에 콘텐츠를 배포하는 작업의 문제를 해결합니다.  
+- **DP 작업 관리자**: 배포 지점에 콘텐츠를 배포하는 작업의 문제를 해결합니다.  
 
- - **컬렉션 평가 뷰어**: 컬렉션 평가 세부 정보를 봅니다.  
+- **컬렉션 평가 뷰어**: 컬렉션 평가 세부 정보를 봅니다.  
 
- - **콘텐츠 라이브러리 탐색기**: 콘텐츠 라이브러리 단일 인스턴스 저장소의 콘텐츠를 표시합니다.  
+- **콘텐츠 라이브러리 탐색기**: 콘텐츠 라이브러리 단일 인스턴스 저장소의 콘텐츠를 표시합니다.  
 
- - **콘텐츠 라이브러리 전송**: 드라이브 간에 콘텐츠 라이브러리를 전송합니다.  
+- **콘텐츠 라이브러리 전송**: 드라이브 간에 콘텐츠 라이브러리를 전송합니다.  
 
- - **콘텐츠 소유권 도구**: 분리된 패키지의 소유권을 변경합니다. 이러한 패키지는 소유하는 사이트 서버가 없는 사이트에 존재합니다.  
+- **콘텐츠 소유권 도구**: 분리된 패키지의 소유권을 변경합니다. 이러한 패키지는 소유하는 사이트 서버가 없는 사이트에 존재합니다.  
 
- - **역할 기반 관리 및 감사 도구**: 관리자가 역할 구성을 감사하도록 지원합니다.  
+- **역할 기반 관리 및 감사 도구**: 관리자가 역할 구성을 감사하도록 지원합니다.  
 
 #### <a name="client-tools"></a>클라이언트 도구
 
- - **CMTrace**: 로그를 봅니다.  
+- **CMTrace**: 로그를 봅니다.  
 
- - **배포 모니터링 도구**: 애플리케이션, 업데이트 및 기준 배포의 문제를 해결합니다.  
+- **배포 모니터링 도구**: 애플리케이션, 업데이트 및 기준 배포의 문제를 해결합니다.  
 
- - **정책 감시**: 정책 할당을 표시합니다.  
+- **정책 감시**: 정책 할당을 표시합니다.  
 
- - **전원 뷰어 도구**: 전원 관리 기능의 상태를 표시합니다.  
+- **전원 뷰어 도구**: 전원 관리 기능의 상태를 표시합니다.  
 
- - **일정 보내기 도구**: DCM 기준의 일정과 평가를 트리거합니다.  
+- **일정 보내기 도구**: DCM 기준의 일정과 평가를 트리거합니다.  
 
 > [!Important]  
 > [지원 센터](#support-center)는 다음 도구와 동일하거나 향상된 기능을 포함하므로 대부분의 사용 사례에서 권장됩니다.  
->  - 클라이언트 감시
->  - CMTrace<sup>1</sup> 
->  - 배포 모니터링 도구
->  - 정책 감시
->  - 일정 보내기 도구
+> - 클라이언트 감시
+> - CMTrace<sup>1</sup> 
+> - 배포 모니터링 도구
+> - 정책 감시
+> - 일정 보내기 도구
 > 
 > <sup>1</sup> CMTrace는 .NET 또는 WPF(Windows Presentation Foundation)를 사용하지 않으므로 Windows PE 부팅 이미지에서 계속 사용됩니다.
 
@@ -192,33 +195,34 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 ## <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
 <!--1357891-->
 
-애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 장치에서 애플리케이션을 제거합니다. 
+애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 
 
 ### <a name="prerequisites"></a>필수 구성 요소
-- **장치당 사용자에 대한 애플리케이션 요청 승인** 기능을 사용하도록 설정합니다.
+- **디바이스당 사용자에 대한 응용 프로그램 요청 승인** 기능을 사용하도록 설정합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
-1. Configuration Manager 콘솔에서 승인이 필요한 애플리케이션을 사용자에게 배포합니다. 배포의 **배포 설정** 탭에서 **관리자가 장치에서 이 애플리케이션에 대한 요청을 승인해야 합니다.** 옵션을 사용하도록 설정합니다.  
+1. Configuration Manager 콘솔에서 승인이 필요한 애플리케이션을 사용자에게 배포합니다. 배포의 **배포 설정** 탭에서 **관리자가 디바이스에서 이 응용 프로그램에 대한 요청을 승인해야 합니다.** 옵션을 사용하도록 설정합니다.  
 
 2. 구성 관리자 클라이언트의 소프트웨어 센터에서 사용자가 애플리케이션 설치 승인을 요청합니다.  
 
-3. Configuration Manager 콘솔에서 장치에 애플리케이션을 설치하려는 이 사용자의 요청을 승인합니다. 애플리케이션 승인 요청은 **소프트웨어 라이브러리** 작업 영역의 **애플리케이션 관리** 아래에 있는 **승인 요청** 노드에 표시됩니다.  
+3. Configuration Manager 콘솔에서 디바이스에 응용 프로그램을 설치하려는 이 사용자의 요청을 승인합니다. 애플리케이션 승인 요청은 **소프트웨어 라이브러리** 작업 영역의 **애플리케이션 관리** 아래에 있는 **승인 요청** 노드에 표시됩니다.  
 
 4. 클라이언트의 소프트웨어 센터에서 사용자가 애플리케이션을 설치합니다.  
 
-5. Configuration Manager 콘솔에서 장치의 애플리케이션에 대한 사용자 요청을 거부합니다.  
+5. Configuration Manager 콘솔에서 디바이스의 응용 프로그램에 대한 사용자 요청을 거부합니다.  
 
 ### <a name="known-issues"></a>알려진 문제
-- 사용자가 클라이언트에 애플리케이션을 설치한 후 사용자 정책을 업데이트합니다. 소프트웨어 센터에서 **옵션** 탭으로 전환하고 **컴퓨터 유지 관리**를 확장한 다음 **정책 동기화**를 클릭합니다.<!--480609-->  
+- 사용자가 클라이언트에 애플리케이션을 설치한 후 사용자 정책을 업데이트합니다. 소프트웨어 센터에서 **옵션** 탭으로 전환하고 **컴퓨터 유지 관리**를 확장한 다음, **정책 동기화**를 클릭합니다.<!--480609-->  
 
 - 애플리케이션 카탈로그 웹 서비스 지점은 HTTP여야 합니다. 자세한 내용은 [이 기술 미리 보기의 알려진 문제](#bkmk_appcathttps)를 참조하세요.<!--512637-->  
 
 
 
 ## <a name="exclude-active-directory-containers-from-discovery"></a>검색에서 Active Directory 컨테이너 제외
-<!--1358143--> 검색되는 개체 수를 줄이기 위해 이제 Active Directory 시스템 검색에서 특정 컨테이너를 제외할 수 있습니다. 이 기능은 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8414520-exclude-virtual-cluster-and-ou-from-discovery)을 반영한 결과입니다.
+<!--1358143-->
+검색되는 개체 수를 줄이기 위해 이제 Active Directory 시스템 검색에서 특정 컨테이너를 제외할 수 있습니다. 이 기능은 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8414520-exclude-virtual-cluster-and-ou-from-discovery)을 반영한 결과입니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
  작업을 완료합니다. 그런 다음, [피드백](#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
@@ -264,7 +268,8 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 
 ## <a name="filter-automatic-deployment-rules-by-software-update-architecture"></a>소프트웨어 업데이트 아키텍처를 기준으로 자동 배포 규칙 필터링
- <!--1322266--> 이제 자동 배포 규칙을 필터링하여 Itanium, ARM64 등의 아키텍처를 제외할 수 있습니다.
+ <!--1322266-->
+이제 자동 배포 규칙을 필터링하여 Itanium, ARM64 등의 아키텍처를 제외할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 작업을 완료합니다. 그런 다음, [피드백](#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
@@ -290,17 +295,17 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 ## <a name="improvements-to-os-deployment"></a>향상된 OS 배포
 OS 배포가 다음과 같이 향상되었으며, 일부는 사용자 의견 피드백을 반영한 결과입니다.  
 
- - [작업 순서 변수에 저장된 중요한 데이터 마스킹](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 예를 들어 암호를 지정하는 경우입니다.<!--1358330--> 이 옵션을 사용하도록 설정하는 경우 다음 동작이 적용됩니다.
-   - 변수 값이 smsts.log에 표시되지 않습니다.
-   - Configuration Manager 콘솔과 SMS 공급자에서 이 값이 암호 등의 다른 비밀과 동일하게 처리됩니다.
-   - 작업 순서를 내보낼 때 값이 포함되지 않습니다.
-   - 단계를 편집할 때 작업 순서 편집기에서 이 값을 읽지 않습니다. 변경하려면 전체 값을 다시 입력합니다.
+- [작업 순서 변수에 저장된 중요한 데이터 마스킹](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계에서 새 옵션인 **이 값 표시 안 함**을 선택합니다. 예를 들어 암호를 지정하는 경우입니다.<!--1358330--> 이 옵션을 사용하도록 설정하는 경우 다음 동작이 적용됩니다.
+  - 변수 값이 smsts.log에 표시되지 않습니다.
+  - Configuration Manager 콘솔과 SMS 공급자에서 이 값이 암호 등의 다른 비밀과 동일하게 처리됩니다.
+  - 작업 순서를 내보낼 때 값이 포함되지 않습니다.
+  - 단계를 편집할 때 작업 순서 편집기에서 이 값을 읽지 않습니다. 변경하려면 전체 값을 다시 입력합니다.
 
-   > [!Important]  
-   > 변수와 해당 값이 작업 순서와 함께 XML로 저장되고 데이터베이스에서 난독 처리됩니다. 클라이언트가 관리 지점에서 작업 순서 정책을 요청하는 경우 전송 중 및 클라이언트에 저장될 때 암호화됩니다. 그러나 클라이언트에서 런타임 중 메모리 내 작업 순서 환경의 모든 변수 값은 일반 텍스트입니다. 작업 순서에 변수 값을 출력하는 단계가 포함된 경우 이 출력은 일반 텍스트입니다. 이 동작의 경우 관리자가 작업 순서에 이러한 단계를 포함하는 명시적 작업을 수행해야 합니다. 
+  > [!Important]  
+  > 변수와 해당 값이 작업 순서와 함께 XML로 저장되고 데이터베이스에서 난독 처리됩니다. 클라이언트가 관리 지점에서 작업 순서 정책을 요청하는 경우 전송 중 및 클라이언트에 저장될 때 암호화됩니다. 그러나 클라이언트에서 런타임 중 메모리 내 작업 순서 환경의 모든 변수 값은 일반 텍스트입니다. 작업 순서에 변수 값을 출력하는 단계가 포함된 경우 이 출력은 일반 텍스트입니다. 이 동작의 경우 관리자가 작업 순서에 이러한 단계를 포함하는 명시적 작업을 수행해야 합니다. 
 
 
- - [작업 순서의 명령 실행 단계에서 프로그램 이름 마스크](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 `TRUE`로 설정합니다. 이 변수는 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 작업 순서 단계 중 smsts.log에서 프로그램 이름을 마스크합니다. <!--1358493-->  
+- [작업 순서의 명령 실행 단계에서 프로그램 이름 마스크](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/15282795-secret-task-sequence-variable-value-exposed): 잠재적으로 중요한 데이터가 표시되거나 기록되지 않도록 하려면 작업 순서 변수 **OSDDoNotLogCommand**를 `TRUE`로 설정합니다. 이 변수는 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 작업 순서 단계 중 smsts.log에서 프로그램 이름을 마스크합니다. <!--1358493-->  
 
 
 

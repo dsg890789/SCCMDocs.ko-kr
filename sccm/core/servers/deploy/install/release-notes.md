@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 06/17/2019
+ms.date: 07/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e84180aca830be6a4b8b5c7110679d857e95be
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 49600557e304edb86ec9a87bb02ef0ddb82ea037
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159346"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339435"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -159,6 +159,14 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 컬렉션을 제거하면 **확인**을 선택하여 속성 창을 닫습니다. 그런 다음 속성을 다시 열어 **Desktop Analytics 연결** 탭에서 새 컬렉션을 추가합니다.
 
+### <a name="pilot-status-tile-shows-some-devices-as-undefined"></a>파일럿 상태 타일에서 일부 디바이스를 ‘정의되지 않음’으로 표시함
+
+<!-- 4547783 -->
+*적용 대상: Configuration Manager 버전 1902, 업데이트 롤업’*
+
+Configuration Manager 콘솔을 사용하여 파일럿 배포 상태를 모니터링하는 경우 해당 배포 플랜의 Windows 대상 버전에서 최신 상태인 파일럿 디바이스는 파일럿 상태 타일에 **정의되지 않음**으로 표시됩니다.  
+
+이러한 **정의되지 않음** 디바이스는 해당 배포 플랜의 OS 대상 버전에서 **최신** 상태입니다. 추가 작업은 필요하지 않습니다.
 
 
 ## <a name="mobile-device-management"></a>모바일 디바이스 관리  

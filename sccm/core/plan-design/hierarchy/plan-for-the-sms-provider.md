@@ -2,7 +2,7 @@
 title: SMS 공급자에 대한 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager의 SMS 공급 기업 사이트 시스템 역할에 대해 알아봅니다.
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30ac544aca07ef9d08753b2a93c361194894c91a
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: 392789eef28dd959af7ffc65af50cb720b7f617b
+ms.sourcegitcommit: cdad3ca82018f1755e5186f8949a898cd201b565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67516118"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68411468"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획 
 
@@ -287,6 +287,8 @@ OData 커넥터 옵션을 사용하여 PowerBI에서 사이트 데이터에 액�
 
 #### <a name="prerequisites"></a>필수 구성 요소
 - SMS 공급자를 호스트하는 서버에는 .NET 4.5.2 이상이 필요합니다.  
+
+    - 버전 1902부터 이 필수 구성 요소는 .NET 4.5 이상 버전입니다.  
 
 - SMS 공급자에서 인증서를 사용하도록 설정합니다. 다음 옵션 중 하나를 사용합니다.  
 

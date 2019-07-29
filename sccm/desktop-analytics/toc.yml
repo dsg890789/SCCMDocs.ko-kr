@@ -40,6 +40,8 @@
           href: privacy.md
         - name: 문제 해결
           href: troubleshooting.md
+        - name: 로그 수집기
+          href: log-collector.md
         - name: 연결 상태 모니터링
           href: monitor-connection-health.md
         - name: 자주 묻는 질문

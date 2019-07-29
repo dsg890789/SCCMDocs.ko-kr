@@ -101,6 +101,10 @@
           href: deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md
         - name: 작업 순서 배포
           href: deploy-use/deploy-a-task-sequence.md
+        - name: 작업 순서 디버그
+          href: deploy-use/debug-task-sequence.md
+        - name: 사전 캐시 콘텐츠 구성
+          href: deploy-use/configure-precache-content.md
         - name: 작업 순서를 사용하여 가상 하드 디스크 관리
           href: deploy-use/use-a-task-sequence-to-manage-virtual-hard-disks.md
     - name: 사용자 지정 작업 순서 시나리오
