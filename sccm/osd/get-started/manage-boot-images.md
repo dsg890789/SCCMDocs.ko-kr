@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ed731b9b931e76e6d6b6d1399bf5a273bf561b
-ms.sourcegitcommit: 56ec6933cf7bfc93842f55835ad336ee3a1c6ab5
+ms.openlocfilehash: ddc856b3c1615045aadba60c4616223349a7b61d
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211655"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68340411"
 ---
 # <a name="manage-boot-images-with-configuration-manager"></a>Configuration Manager를 사용하여 부팅 이미지 관리
 
@@ -28,7 +28,7 @@ Configuration Manager의 부팅 이미지는 OS 배포 중에 사용되는 [WinP
 
 ## <a name="BKMK_BootImageDefault"></a> 기본 부팅 이미지
 
-Configuration Manager에서 두 개의 기본 부팅 이미지 제공: x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지의 두 가지 부팅 이미지를 제공합니다. 이러한 이미지는 사이트 서버의 공유 위치인 `\\<SiteServerName>\SMS_<sitecode>\osd\boot\`에 있는 *x64* 또는 *i386* 폴더에 저장됩니다. 기본 부팅 이미지는 수행하는 작업에 따라 업데이트되거나 다시 생성됩니다.
+Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 기본 부팅 이미지를 제공합니다. 이러한 이미지는 사이트 서버의 공유 위치인 `\\<SiteServerName>\SMS_<sitecode>\osd\boot\`에 있는 *x64* 또는 *i386* 폴더에 저장됩니다. 기본 부팅 이미지는 수행하는 작업에 따라 업데이트되거나 다시 생성됩니다.
 
 기본 부팅 이미지에 대해 설명된 작업 중 하나에 대한 다음과 같은 동작을 고려합니다.
 
@@ -63,10 +63,10 @@ Configuration Manager 2012를 현재 분기로 업그레이드하면 사이트�
 콘솔의 **부팅 이미지** 노드에서 **배포 지점 업데이트** 작업을 사용하는 경우 사이트는 클라이언트 구성 요소, 드라이버 및 사용자 지정이 포함된 대상 부팅 이미지를 업데이트합니다.    
 
 Windows ADK 설치 디렉터리의 최신 버전 WinPE로 부팅 이미지를 다시 로드할 수 있습니다. 배포 지점 업데이트 마법사의 **일반** 페이지에서 다음 정보를 제공합니다. 
- - 사이트 서버에 설치된 현재 Windows ADK 버전
- - 현재 프로덕션 클라이언트 버전
- - 부팅 이미지의 WinPE의 Windows ADK 버전
- - 부팅 이미지의 구성 관리자 클라이언트 버전
+- 사이트 서버에 설치된 현재 Windows ADK 버전
+- 현재 프로덕션 클라이언트 버전
+- 부팅 이미지의 WinPE의 Windows ADK 버전
+- 부팅 이미지의 구성 관리자 클라이언트 버전
 
 부팅 이미지의 버전이 오래된 경우 **Windows ADK의 현재 Windows PE 버전으로 이 부팅 이미지 다시 로드** 옵션을 사용합니다. 
 
@@ -94,7 +94,7 @@ Windows ADK 설치 디렉터리의 최신 버전 WinPE로 부팅 이미지를 �
 |---------|---------|
 | Windows ADK 버전 | Windows 10용 Windows ADK |
 | Configuration Manager 콘솔에서 사용자 지정 가능한 부팅 이미지의 Windows PE 버전 | Windows PE 10 |
-| Configuration Manager 콘솔에서 ‘사용자 지정할 수 없지만’ 지원되는 부팅 이미지의 Windows PE 버전 | - Windows PE 3.1<sup>[참고 1](#bkmk_note1)</sup> <br> - Windows PE 5 |
+| Configuration Manager 콘솔에서 ‘사용자 지정할 수 없지만’ 지원되는 부팅 이미지의 Windows PE 버전  | - Windows PE 3.1<sup>[참고 1](#bkmk_note1)</sup> <br> - Windows PE 5 |
 
 예를 들어 Configuration Manager 콘솔을 사용하여 Windows 10용 Windows ADK의 Windows PE 10 기반의 부팅 이미지를 사용자 지정합니다. Windows PE 5에 기반하는 부팅 이미지의 경우 Windows 8용 Windows ADK에서 DISM의 버전을 사용하여 다른 컴퓨터에서 사용자 지정합니다. 그런 다음, 사용자 지정 부팅 이미지를 Configuration Manager 콘솔에 추가합니다. 자세한 내용은 다음 아티클을 참조하세요.
 - [부팅 이미지 사용자 지정](/sccm/osd/get-started/customize-boot-images)
@@ -103,7 +103,7 @@ Windows ADK 설치 디렉터리의 최신 버전 WinPE로 부팅 이미지를 �
 
 #### <a name="bkmk_note1"></a> 참고 1: Windows PE 3.1 지원
 
-Windows PE ‘버전 3.1’을 기반으로 하는 Configuration Manager에만 부팅 이미지를 추가합니다. Windows 7용 Windows AIK(Windows PE 3.0에 기반)를 Windows 7 SP1용 Windows AIK 추가 기능(Windows PE 3.1에 기반)으로 업그레이드합니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=5188)에서 Windows 7 SP1용 Windows AIK 추가 기능을 다운로드합니다.  
+Windows PE ‘버전 3.1’을 기반으로 하는 Configuration Manager에만 부팅 이미지를 추가합니다.  Windows 7용 Windows AIK(Windows PE 3.0에 기반)를 Windows 7 SP1용 Windows AIK 추가 기능(Windows PE 3.1에 기반)으로 업그레이드합니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=5188)에서 Windows 7 SP1용 Windows AIK 추가 기능을 다운로드합니다.  
 
 
 #### <a name="process-to-add-a-boot-image"></a>부팅 이미지를 추가하는 프로세스  
@@ -221,8 +221,8 @@ PXE를 사용하여 운영 체제를 배포하는 방법에 대한 자세한 내
 **구성 요소** 목록은 이 부팅 이미지에 추가되는 추가 항목을 보여 줍니다. 구성 요소를 더 추가하려면 금색 별표를 선택합니다. 구성 요소를 제거하려면 목록에서 해당 구성 요소를 선택한 후 빨간색 X를 선택합니다. 
 
 다음은 고객이 일반적으로 사용하는 구성 요소입니다.
-- Microsoft .NET(WinPE-NetFX): 이 구성 요소는 PowerShell의 필수 구성 요소입니다. 크기가 큰 선택적 구성 요소 중 하나입니다.  
-- Windows PowerShell(WinPE-PowerShell): 이 구성 요소는 .NET이 있어야 하며 제한된 PowerShell 지원을 추가합니다. 작업 순서의 WinPE 단계에서 사용자 지정 PowerShell 스크립트를 실행하는 경우 이 구성 요소를 추가합니다. 다른 PowerShell cmdlet에는 다른 구성 요소가 필요할 수 있습니다.   
+- Microsoft .NET (WinPE-NetFX):이 구성 요소는 PowerShell에 대 한 필수 구성 요소입니다. 크기가 큰 선택적 구성 요소 중 하나입니다.  
+- Windows PowerShell (WinPE-PowerShell):이 구성 요소는 .NET을 필요로 하며 제한 된 PowerShell 지원을 추가 합니다. 작업 순서의 WinPE 단계에서 사용자 지정 PowerShell 스크립트를 실행하는 경우 이 구성 요소를 추가합니다. 다른 PowerShell cmdlet에는 다른 구성 요소가 필요할 수 있습니다.   
 - HTML(WinPE-HTA): 작업 순서의 WinPE 단계에서 사용자 지정 HTML 애플리케이션을 실행하는 경우 이 구성 요소를 추가합니다. 
 
 언어 추가에 대한 자세한 내용은 [여러 언어 구성](#BKMK_BootImageLanguage)을 참조하세요. 

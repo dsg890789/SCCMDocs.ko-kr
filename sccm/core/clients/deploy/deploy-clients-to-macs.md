@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/09/2019
 ms.locfileid: "67677830"
 ---
-# <a name="how-to-deploy-clients-to-macs"></a>How to deploy clients to Macs
+# <a name="how-to-deploy-clients-to-macs"></a>Mac에 클라이언트를 배포하는 방
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

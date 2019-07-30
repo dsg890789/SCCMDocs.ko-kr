@@ -11,20 +11,20 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93fdbc2097c0607be42c712e3e3aba309829da4e
-ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
+ms.openlocfilehash: 9cfb8209343581f8d6b9dc7949032d6399669f95
+ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67726144"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68339148"
 ---
 # <a name="create-configuration-items-for-windows-10-devices"></a>Windows 10 장치에 대 한 구성 항목 만들기
 System Center Configuration Manager **Windows 10** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다.  
   
 > [!IMPORTANT]  
->  만든 경우이 릴리스에서 **암호** 형식의 구성 항목의 일부로 설정 **Windows 10** (한 장치에 대 한 Configuration Manager 클라이언트로 관리 되는) 다음 문제를 알고 수입니다. 경우 설정이 존재 하지 않는 Windows 10 장치에서 구성 되지 않았습니다,이 잘못 평가 준수 상태로 합니다.  
+>  이 릴리스에서는 **Windows 10** 형식의 구성 항목의 일부로 **암호** 설정을 만든 경우 (Configuration Manager 클라이언트를 사용 하 여 관리 되는 장치의 경우) 다음 문제에 주의 해야 합니다. 이 설정이 아직 존재 하지 않거나 Windows 10 장치에서 구성 되지 않은 경우 호환 되는 것으로 잘못 평가 됩니다.  
 >   
->  해결 방법으로, 이러한 디바이스에 대한 설정을 만들 때 구성 항목 만들기 마법사의 설정 페이지에서 **비규격 설정 재구성** 이 선택되어 있는지 확인합니다. 또한 암호 설정을 포함하는 Windows 10 구성 항목이 포함된 구성 기준을 배포할 경우 **지원되는 경우 비규격 규칙 재구성**을 선택합니다. 구성 기준 배포 대화 상자에서이 항목을이 선택을 해야 합니다. 이 해결 방법을 사용하면 설정이 모니터링되고 비규격 상태로 확인되는 경우 재구성됩니다. 재구성 후에는 **오류**로 보고할 문제가 발생하지 않는 경우 설정이 **규격**으로 올바르게 보고됩니다.  
+>  해결 방법으로, 이러한 디바이스에 대한 설정을 만들 때 구성 항목 만들기 마법사의 설정 페이지에서 **비규격 설정 재구성** 이 선택되어 있는지 확인합니다. 또한 암호 설정을 포함하는 Windows 10 구성 항목이 포함된 구성 기준을 배포할 경우 **지원되는 경우 비규격 규칙 재구성**을 선택합니다. 이렇게 하려면 구성 기준 배포 대화 상자에서이 옵션을 선택 합니다. 이 해결 방법을 사용하면 설정이 모니터링되고 비규격 상태로 확인되는 경우 재구성됩니다. 재구성 후에는 **오류**로 보고할 문제가 발생하지 않는 경우 설정이 **규격**으로 올바르게 보고됩니다.  
   
 ### <a name="to-create-a-windows-10-configuration-item"></a>Windows 10 구성 항목을 만들려면  
   
@@ -42,7 +42,7 @@ System Center Configuration Manager **Windows 10** 구성 항목을 사용하여
   
 7. 마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가할 특정 Windows 10 플랫폼을 선택합니다.  
   
-8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. (자세한 내용은 참조 하세요 [Windows 10 구성 항목 설정 참조](#BKMK_Ref) 이 문서의.) **다음**을 선택합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은이 문서에서 [Windows 10 구성 항목 설정 참조](#BKMK_Ref) 를 참조 하세요. **다음**을 선택합니다.  
   
    > [!TIP]  
    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
@@ -117,29 +117,29 @@ System Center Configuration Manager **Windows 10** 구성 항목을 사용하여
 |------------------|-------------|  
 |**사용자 계정 컨트롤**|디바이스에서 Windows 사용자 계정 컨트롤이 작동하는 방법을 구성합니다.<br />예를 들어 사용하지 않도록 설정하거나 알리는 수준을 설정할 수 있습니다.|  
 |**네트워크 방화벽**|Windows 방화벽을 사용하거나 사용하지 않도록 설정합니다.|  
-|**SmartScreen**|사용 하거나 Windows SmartScreen을 사용 하지 않도록 설정 합니다.|  
+|**SmartScreen**|Windows SmartScreen을 사용 하거나 사용 하지 않도록 설정 합니다.|  
 |**바이러스 방지**|바이러스 백신 소프트웨어를 설치 및 구성해야 합니다.|  
 |**바이러스 방지 서명이 최신임**|디바이스에서 바이러스 백신 소프트웨어에 대한 서명 파일이 최신이어야 합니다.|  
   
 ### <a name="windows-information-protection"></a>Windows Information Protection
 
-기업에서 직원 소유 디바이스가 증가하면서 메일, 소셜 미디어 및 공용 클라우드와 같은 앱 및 서비스를 통해 실수로 데이터가 유출될 위험이 높아지고 있습니다. 이러한 조직의 컨트롤 외부에 있습니다. 때 직원을 예로 들 수 있습니다.
+기업에서 직원 소유 디바이스가 증가하면서 메일, 소셜 미디어 및 공용 클라우드와 같은 앱 및 서비스를 통해 실수로 데이터가 유출될 위험이 높아지고 있습니다. 이러한 기능은 조직의 제어를 벗어납니다. 직원의 경우를 예로 들면 다음과 같습니다.
 
-- 자신의 개인 메일 계정에서 최신 엔지니어링 사진을 전송 합니다.
-- 트 윗 제품 정보 복사 및 붙여 넣습니다.
-- 해당 공용 클라우드 저장소에는 진행 중인 판매 보고서를 저장합니다.
+- 개인 전자 메일 계정에서 최신 엔지니어링 사진을 보냅니다.
+- 제품 정보를 복사 하 여 트 윗에 붙여넣습니다.
+- 진행 중인 판매 보고서를 해당 공용 클라우드 저장소에 저장 합니다.
 
-WIP(Windows Information Protection, 이전 엔터프라이즈 데이터 보호)는 직원 환경을 방해하지 않으면서 이러한 잠재적인 데이터 유출로부터 보호하는 데 도움이 됩니다. 또한 WIP는 회사 소유 디바이스 및 직원이 회사로 가져오는 개인 디바이스에서 엔터프라이즈 앱 및 데이터가 실수로 데이터를 누출되지 않게 하는 데도 유용합니다. WIP는 사용자 환경 또는 다른 앱을 변경 필요 하지 않습니다.
+WIP(Windows Information Protection, 이전 엔터프라이즈 데이터 보호)는 직원 환경을 방해하지 않으면서 이러한 잠재적인 데이터 유출로부터 보호하는 데 도움이 됩니다. 또한 WIP는 회사 소유 디바이스 및 직원이 회사로 가져오는 개인 디바이스에서 엔터프라이즈 앱 및 데이터가 실수로 데이터를 누출되지 않게 하는 데도 유용합니다. WIP는 사용자 환경 또는 다른 앱을 변경할 필요가 없습니다.
 
- 다음 관리 하는 configuration Manager Windows Information Protection 구성 항목:
- 
- - WIP로 보호 되는 앱 목록
- - 엔터프라이즈 네트워크 위치
- - 보호 수준
- - 암호화 설정
+Windows Information Protection 구성 항목 Configuration Manager 다음을 관리 합니다.
+
+- WIP로 보호 되는 앱 목록
+- 엔터프라이즈 네트워크 위치
+- 보호 수준
+- 암호화 설정
   
 
 Configuration Manager로 WIP를 구성하는 방법에 대한 자세한 내용은 [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)(WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호)을 참조하세요.
   
 ## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)
+[System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)
