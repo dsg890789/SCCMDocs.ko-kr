@@ -46,7 +46,7 @@ Configuration Manager의 현재 분기에 대한 1810 업데이트는 콘솔 내
 
 Mac 및 Linux(모든 버전)용 SCEP(System Center Endpoint Protection)에 대한 지원은 2018년 12월 31일에 종료됩니다. Mac용 SCEP 및 Linux용 SCEP에 대한 새 바이러스 정의는 지원이 종료된 후에 중단될 수 있습니다. 자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.
 
-Azure의 클래식 서비스 배포는 이제 Configuration Manager에서 사용되지 않습니다. 클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대해 Azure Resource Manager 배포를 사용하기 시작합니다. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.
+Azure의 클래식 서비스 배포는 이제 Configuration Manager에서 사용되지 않습니다. 클라우드 관리 게이트웨이 및 클라우드 배포 지점에서 Azure Resource Manager 배포를 사용하기 시작합니다. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.
 
 
 
@@ -76,7 +76,7 @@ Configuration Manager는 이제 사이트 시스템으로 Windows Server 2019 �
 
 - **SQL 변경 내용 추적 정리**: 사이트 데이터베이스에 SQL 변경 내용 추적 데이터의 백로그가 있는지 확인하는 새로운 검사입니다. 이 백로그를 확인하고 지우는 절차를 포함한 자세한 내용은 [SQL 변경 내용 추적 정리](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#bkmk_changetracking)를 참조하세요. <!--SCCMDocs-pr issue 3023-->  
 
-- **SQL Native Client 버전**: 이 필수 구성 요소 검사가 TLS 1.2를 지원하는 SQL Native Client 버전에 대해 업데이트되었습니다. 최소 버전은 [SQL 2012 SP4](https://www.microsoft.com/download/details.aspx?id=50402)입니다. 자세한 내용은 [SQL Native Client 버전](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)을 참조하세요. <!--SCCMDocs-pr issue 3094-->  
+- **SQL Native Client 버전**: 이 필수 구성 요소 검사가 TLS 1.2를 지원하는 SQL Native Client 버전에 업데이트되어있습니다. 최소 버전은 [SQL 2012 SP4](https://www.microsoft.com/download/details.aspx?id=50402)입니다. 자세한 내용은 [SQL Native Client 버전](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)을 참조하세요. <!--SCCMDocs-pr issue 3094-->  
 
 - **Windows 클러스터 노드의 사이트 시스템**: Configuration Manager 설치 프로세스는 장애 조치(Failover) 클러스터링을 위한 Windows 역할이 있는 컴퓨터에서 사이트 서버 역할의 설치를 더 이상 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. 자세한 내용은 [Windows 장애 조치(failover) 클러스터](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#windows-failover-cluster)를 참조하세요. <!--1359132-->  
 
@@ -260,7 +260,7 @@ PowerShell 프로필은 PowerShell이 시작될 때 실행되는 스크립트입
 ### <a name="improvements-to-driver-maintenance"></a>드라이버 유지 관리 기능 개선
 
 <!--3607716, fka 1358270-->
-이제 드라이버 패키지에는 **제조업체** 및 **모델**에 대한 추가 메타데이터 필드가 포함됩니다. 이러한 필드를 사용하여 일반적인 하우스키핑을 지원하거나 삭제할 수 있는 이전 및 중복 드라이버를 식별하기 위한 정보로 드라이버 패키지에 태그를 지정합니다.
+이제 드라이버 패키지에는 **제조업체** 및 **모델**에 대한 추가 메타데이터 필드가 포함됩니다. 일반적인 하우스키핑을 지원하거나, 삭제해도 되는 오래되거나 중복되는 드라이버를 식별하기 위해 이 필드를 사용하여 드라이버 패키지를 정보에 태그합니다.
 
 자세한 내용은 [드라이버 관리](/sccm/osd/get-started/manage-drivers)를 참조하세요.
 
@@ -348,7 +348,7 @@ WSUS 정리 작업은 이제 보조 사이트에서 실행됩니다. 만료된 �
 ### <a name="support-center"></a>지원 센터
 
 <!--1357489-->
-클라이언트 문제 해결, 실시간 로그 보기, 나중에 분석하기 위해 구성 관리자 클라이언트 컴퓨터의 상태 캡처 등의 작업에 지원 센터를 사용합니다. 지원 센터는 많은 관리자 문제 해결 도구를 결합하는 단일 도구입니다. 사이트 서버의 **cd.latest\SMSSETUP\Tools\SupportCenter** 폴더에서 지원 센터 설치 관리자를 찾습니다.
+클라이언트 문제 해결, 실시간 로그 보기, 나중에 분석하기 위해 구성 관리자 클라이언트 컴퓨터의 상태 캡처 등의 작업에 지원 센터를 사용합니다. 지원 센터는 많은 관리자 문제 해결 도구를 결합하는 단일 도구입니다. **cd.latest\SMSSETUP\Tools\SupportCenter** 폴더의 사이트 서버에서 지원 센터 설치 관리자를 찾습니다.
 
 자세한 내용은 [지원 센터](/sccm/core/support/support-center)를 참조하세요.
 

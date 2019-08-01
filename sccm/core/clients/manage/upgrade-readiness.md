@@ -18,11 +18,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 06/20/2019
 ms.locfileid: "67286431"
 ---
-# <a name="integrate-upgrade-readiness-with-configuration-manager"></a>업그레이드 준비를 Configuration Manager와 통합합니다.
+# <a name="integrate-upgrade-readiness-with-configuration-manager"></a>업그레이드 준비와 Configuration Manager 통합
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-업그레이드 준비는 [Windows Analytics](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)의 일부로, Windows 10으로 업그레이드하기 위해 사용자 환경에서 디바이스의 준비 상태를 평가하고 분석할 수 있습니다. 업그레이드 준비를 Configuration Manager와 통합하면 Configuration Manager 콘솔에서 클라이언트 업그레이드 호환성 데이터에 액세스할 수 있습니다. 이 데이터를 사용하여 컬렉션과 업그레이드 또는 수정 대상 디바이스를 생성합니다.
+업그레이드 준비는 [Windows Analytics](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)의 일부로, Windows 10으로 업그레이드하기 위해 사용자 환경에서 디바이스의 준비 상태를 평가하고 분석할 수 있습니다. 업그레이드 준비를 Configuration Manager와 통합하면 Configuration Manager 콘솔에서 클라이언트 업그레이드 호환성 데이터에 액세스할 수 있습니다. 이 데이터를 사용하여 컬렉션을 생성하거나 업그레이드나 수정을 할 디바이스를 정합니다.
 
 
 
