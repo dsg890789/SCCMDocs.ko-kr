@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbc042975840e5b4e840928f01257785f4859dd4
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: fe3f5e35fcec9bfc9bf0746ecfd118e10487f78c
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176834"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533835"
 ---
 # <a name="upgrade-windows-10-for-co-management"></a>공동 관리를 위해 Windows 10 업그레이드
 
@@ -41,7 +41,7 @@ Windows 10 버전 1709 이상에서는 향상된 다른 플랫폼 기능 외에 
 
 - 단계적 배포를 사용하여 이 업그레이드를 적합한 사용자에게 적절한 시기에 배포합니다. 자세한 내용은 [단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.  
 
-- 사전 캐싱을 사용하여 사용자 대기 시간을 줄입니다. 자세한 내용은 [사전 캐시 콘텐츠 구성](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)을 참조하세요.  
+- 사전 캐싱을 사용하여 사용자 대기 시간을 줄입니다. 자세한 내용은 [사전 캐시 콘텐츠 구성](/sccm/osd/deploy-use/configure-precache-content)을 참조하세요.  
 
 - 기본 현재 위치 업그레이드 작업 순서 템플릿을 사용합니다. 그런 다음 업그레이드 전후를 위한 단계와 오류 동작을 구성합니다. 자세한 내용은 [사후 처리를 위한 권장되는 작업 순서 단계](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#recommended-task-sequence-steps-for-post-processing)를 참조하세요.  
 

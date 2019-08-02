@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe4e1c83f4079e0df959563ac8209a98983b8d90
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e58f5cffa201224516e03dd6a1e919f352c297d0
+ms.sourcegitcommit: b59e57ab4cf9f03e8beeb70588f3b9f1a6021e36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132458"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662639"
 ---
 # <a name="use-cloud-services-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라우드 서비스 사용
 
@@ -66,17 +66,6 @@ Azure 가상 컴퓨터를 사용하려면 Azure 구독이 필요합니다. 사�
 -   인터넷과 인트라넷에서 클라이언트를 지원합니다.  
 
 Azure를 사용하여 배포 지점을 호스트하려면 Azure 구독이 필요합니다. 서비스에서 데이터를 전송하는 데이터 양에 따라 요금이 부과됩니다.  
-
-### <a name="microsoft-intune-for-mobile-device-management"></a>Microsoft Intune(모바일 디바이스 관리의 경우)  
- Microsoft Intune 구독을 Configuration Manager와 통합하여 Intune 서비스로 디바이스를 관리하도록 설정할 수 있습니다. 이 통합의 특징은 다음과 같습니다.  
-
--   하이브리드 구성이라고 하며, 다양한 디바이스를 지원하도록 Configuration Manager 또는 사용자 관점에 따라 Intune을 확장합니다.  
-
--   Microsoft Intune 커넥터 사이트 시스템 역할이 필요합니다.  
-
--   Intune을 사용하여 관리하려는 디바이스에 대해 충분한 라이선스가 있는 별도의 Intune 구독이 필요합니다.  
-
-Intune에서 Azure를 사용하지만 Azure를 독립적으로 구성할 필요는 없으며 Intune 구독 비용 이외의 추가 비용도 들지 않습니다.  
 
 ### <a name="additional-configuration-manager-capabilities"></a>추가 Configuration Manager 기능  
  일부 Configuration Manager 기능은 다음과 같은 클라우드 기반 서비스에 연결할 수 있습니다.  

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afcc3c2d70e1f6d94e7239a0be78c00294108c76
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: a4ecf757a35556d4b810df47ca50a6c7bac59467
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176692"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535650"
 ---
 # <a name="plan-for-internet-based-client-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획
 
@@ -56,6 +56,9 @@ System Center Configuration Manager 클라이언트가 회사 네트워크에 �
  기본 사이트에 설치된 다음 사이트 시스템 역할은 인터넷 또는 신뢰할 수 없는 포리스트와 같은 신뢰할 수 없는 위치에 있는 클라이언트에서의 연결을 지원합니다(보조 사이트는 신뢰할 수 없는 위치에서의 클라이언트 연결을 지원하지 않음).  
 
 - 애플리케이션 카탈로그 웹 사이트 지점  
+
+    > [!Important]  
+    > 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 - Configuration Manager 정책 모듈  
 

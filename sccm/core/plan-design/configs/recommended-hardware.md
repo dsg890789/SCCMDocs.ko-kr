@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbad2440f9309e712fb00da2739ed5302866ff63
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: af69076b4a1f1e8d18cced225ff2373d8172051d
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339473"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536870"
 ---
 # <a name="recommended-hardware-for-system-center-configuration-manager"></a>System Center Configuration Manager에 권장되는 하드웨어
 
@@ -63,7 +63,6 @@ ms.locfileid: "68339473"
 |----------------------|---------------|---------------|--------------------|  
 |관리 지점|4|8|50|  
 |배포 지점|2|8|운영 체제의 요구 사항을 충족하고 배포되는 콘텐츠를 저장할 수 있는 크기|  
-|사이트 시스템 컴퓨터에서 웹 서비스와 웹 사이트를 사용하는 애플리케이션 카탈로그|4|16|50|  
 |소프트웨어 업데이트 지점<sup>1</sup>|8|16|운영 체제의 요구 사항을 충족하고 배포되는 업데이트를 저장할 수 있는 크기|  
 |기타 모든 사이트 시스템 역할|4|8|50|  
 
@@ -116,18 +115,14 @@ ms.locfileid: "68339473"
 
 - **디스크 공간:** 500MB의 사용 가능한 디스크 공간(Configuration Manager 클라이언트 캐시의 경우 5GB 권장) 사용자 지정된 설정을 사용하여 Configuration Manager 클라이언트를 설치하는 경우에는 필요한 디스크 공간이 더 적어집니다.  
 
-  - 클라이언트에 불필요한 파일을 설치하지 않으려면 CCMSetup 명령줄 속성 /skipprereq를 사용합니다. 예를 들어 클라이언트가 응용 프로그램 카탈로그를 사용하지 않는 경우에는 `CCMSetup.exe /skipprereq:silverlight.exe`를 실행합니다. Configuration Manager 1802부터 Silverlight는 더 이상 자동으로 설치되지 않습니다.  
+    - 기본값인 5120MB보다 작은 캐시 파일을 설정하려면 Client.msi 속성 SMSCACHESIZE를 사용합니다. 최소 크기는 1MB입니다. 예를 들어 `CCMSetup.exe SMSCachesize=2`를 사용하는 경우 크기가 2MB인 캐시가 만들어집니다.  
 
-  - 기본값인 5120MB보다 작은 캐시 파일을 설정하려면 Client.msi 속성 SMSCACHESIZE를 사용합니다. 최소 크기는 1MB입니다. 예를 들어 `CCMSetup.exe SMSCachesize=2`를 사용하는 경우 크기가 2MB인 캐시가 만들어집니다.  
+    이러한 클라이언트 설치 설정에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
-  이러한 클라이언트 설치 설정에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+    > [!TIP]  
+    > 일반적으로 표준 Windows 컴퓨터에 비해 디스크 크기가 작은 Windows Embedded 디바이스에서는 최소 디스크 공간을 사용하여 클라이언트를 설치하면 유용합니다.  
 
-  > [!TIP]  
-  >  일반적으로 표준 Windows 컴퓨터에 비해 디스크 크기가 작은 Windows Embedded 디바이스에서는 최소 디스크 공간을 사용하여 클라이언트를 설치하면 유용합니다.  
-
-
-
- Configuration Manager의 선택적 기능에 대한 최소 추가 하드웨어 요구 사항은 다음과 같습니다.  
+Configuration Manager의 선택적 기능에 대한 최소 추가 하드웨어 요구 사항은 다음과 같습니다.  
 
 - **운영 체제 배포:** 384MB의 RAM  
 

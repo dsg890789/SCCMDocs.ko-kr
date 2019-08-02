@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77a296c20d75603c432282ea84e2b453702f5e86
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 796412b0b2f147c73a13b2f0a363a53177e8c9bc
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133023"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537021"
 ---
 # <a name="manage-os-upgrade-packages-with-configuration-manager"></a>Configuration Manager에서 OS 업그레이드 패키지 관리
 
@@ -46,7 +46,7 @@ OS 업그레이드 패키지를 사용하려면 먼저 Configuration Manager 사
         > [!IMPORTANT]  
         >  원치 않는 변조를 방지하기 위해 이러한 설치 원본 파일에 대한 액세스가 제한됩니다.  
 
-    - 클라이언트에서 콘텐츠를 사전 캐시하려는 경우 이미지의 **아키텍처** 및 **언어**를 지정합니다. 자세한 내용은 [사전 캐시 콘텐츠 구성](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)을 참조하세요.  
+    - 클라이언트에서 콘텐츠를 사전 캐시하려는 경우 이미지의 **아키텍처** 및 **언어**를 지정합니다. 자세한 내용은 [사전 캐시 콘텐츠 구성](/sccm/osd/deploy-use/configure-precache-content)을 참조하세요.  
 
 4.  **일반** 페이지에서 다음 정보를 지정합니다. 이 정보는 OS 업그레이드 패키지가 여러 개인 경우 목적을 식별하는 데 유용합니다.  
 
@@ -54,7 +54,7 @@ OS 업그레이드 패키지를 사용하려면 먼저 Configuration Manager 사
 
     -   **버전**: 선택적 버전 식별자입니다. 이 속성은 업그레이드 패키지의 OS 버전이 아니어도 됩니다. 패키지에 대한 조직의 버전인 경우가 많습니다.  
 
-    -   **설명**: 선택적 간략한 설명입니다.  
+    -   **주석**: 선택적 간략한 설명입니다.  
 
 5.  마법사를 완료합니다.  
 

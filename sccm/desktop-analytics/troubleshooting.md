@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e13911ef7337ca4f1f9fb2291aa026c90cfee8
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 1ecb1657903fd3d1dfe43f2ad46258b4643c2f55
+ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536020"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712597"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>데스크톱 분석 문제 해결
 
@@ -80,7 +80,7 @@ Azure 서비스 구성 마법사에서 Configuration Manager 용 Azure AD 앱을
 
 #### <a name="create-app-in-azure-ad"></a>Azure AD에서 앱 만들기
 
-1. *전역 관리자* 권한이 있는 사용자로 [Azure Portal](http://portal.azure.com) 를 열고 **Azure Active Directory**으로 이동한 다음 **앱 등록**를 선택 합니다. 그런 다음 **새 등록**을 선택 합니다.  
+1. *전역 관리자* 권한이 있는 사용자로 [Azure Portal](https://portal.azure.com) 를 열고 **Azure Active Directory**으로 이동한 다음 **앱 등록**를 선택 합니다. 그런 다음 **새 등록**을 선택 합니다.  
 
 2. **만들기** 패널에서 다음 설정을 구성 합니다.  
 
@@ -171,7 +171,7 @@ Azure 서비스 구성 마법사에서 Configuration Manager 용 Azure AD 앱을
 
 설치 하는 동안이 프로세스에 문제가 있는 경우 다음 프로세스를 사용 하 여이 권한을 수동으로 추가 합니다.
 
-1. [Azure Portal](http://portal.azure.com)로 이동 하 여 **모든 리소스**를 선택 합니다. **Log Analytics**유형의 작업 영역을 선택 합니다.  
+1. [Azure Portal](https://portal.azure.com)로 이동 하 여 **모든 리소스**를 선택 합니다. **Log Analytics**유형의 작업 영역을 선택 합니다.  
 
 2. 작업 영역 메뉴에서 **액세스 제어 (IAM)** 를 선택한 다음 **추가**를 선택 합니다.  
 
@@ -191,13 +191,16 @@ Azure 서비스 구성 마법사에서 Configuration Manager 용 Azure AD 앱을
 ## <a name="data-latency"></a>데이터 대기 시간
 
 <!-- 3846531 -->
-데스크톱 분석을 처음 설정 하는 경우 Configuration Manager 및 데스크톱 분석 포털의 보고서에 전체 데이터가 즉시 표시 되지 않을 수 있습니다. 다음 단계를 수행 하는 데 2-3 일이 소요 될 수 있습니다.
+데스크톱 분석을 처음 설정 하거나 새 클라이언트를 등록 하거나 새 배포 계획을 구성 하는 경우 Configuration Manager의 보고서와 데스크톱 분석 포털에서 전체 데이터를 즉시 표시 하지 않을 수 있습니다. 다음 단계를 수행 하는 데 2-3 일이 소요 될 수 있습니다.
 
 - 활성 장치에서 데스크톱 분석 서비스로 진단 데이터 보내기
 - 서비스는 데이터를 처리 합니다.
 - 서비스는 Configuration Manager 사이트와 동기화 됩니다.
 
-Configuration Manager 계층에서 데스크톱 분석으로 장치 컬렉션을 동기화 하는 경우 해당 컬렉션이 데스크톱 분석 포털에 표시 되는 데 최대 10 분 정도 걸릴 수 있습니다. 마찬가지로, 데스크톱 분석에서 배포 계획을 만들 때 배포 계획과 연결 된 새 컬렉션이 Configuration Manager 계층 구조에 표시 되는 데 최대 10 분이 걸릴 수 있습니다. 기본 사이트에서 컬렉션을 만들고 중앙 관리 사이트가 데스크톱 분석과 동기화 합니다.
+Configuration Manager 계층에서 데스크톱 분석으로 장치 컬렉션을 동기화 하는 경우 해당 컬렉션이 데스크톱 분석 포털에 표시 되는 데 최대 1 시간이 걸릴 수 있습니다. 마찬가지로, 데스크톱 분석에서 배포 계획을 만들 때 배포 계획과 연결 된 새 컬렉션이 Configuration Manager 계층 구조에 표시 되는 데 최대 1 시간이 걸릴 수 있습니다. 기본 사이트에서 컬렉션을 만들고 중앙 관리 사이트가 데스크톱 분석과 동기화 합니다. 컬렉션 멤버 자격을 평가 하 고 업데이트 하는 데 최대 24 시간이 걸릴 수 Configuration Manager. 이 프로세스의 속도를 높이려면 컬렉션 멤버 자격을 수동으로 업데이트 합니다.<!-- 4984639 -->
+
+> [!Note]
+> 변경 사항을 반영 하는 수동 컬렉션 업데이트의 경우 SMS_SERVICE_CONNECTOR_M365ADeploymentPlanWorker 구성 요소를 먼저 동기화 해야 합니다. 이 프로세스를 실행 하는 데 최대 1 시간이 걸릴 수 있습니다. 자세한 내용은 **M365ADeploymentPlanWorker**를 참조 하세요.
 
 데스크톱 분석 포털에는 두 가지 유형의 데이터가 있습니다. **관리자 데이터** 및 **진단 데이터**:
 

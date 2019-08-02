@@ -2,7 +2,7 @@
 title: 작업 순서 관리
 titleSuffix: Configuration Manager
 description: 사용자 환경에서 작업을 자동화하고 작업 순서를 관리하려면 작업 순서를 만들고 편집하고 배포하고 가져오기 및 내보내기 합니다.
-ms.date: 05/03/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbc76a4f2ada16edfbdc139aca77e6a43d3c4a8b
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 041654b3ba1a25c832232fb26fa09f7ea12e8f97
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65082930"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537077"
 ---
 # <a name="manage-task-sequences-to-automate-tasks"></a>작업 순서를 관리하여 작업 자동화
 
@@ -67,6 +67,12 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
 사용 가능한 작업 순서 단계 목록을 보려면 [작업 순서 단계](/sccm/osd/understand/task-sequence-steps)를 참조하세요.  
 
+### <a name="bkmk_sedo"></a> 작업 순서를 편집하기 위해 잠금 확보
+
+<!--3699337-->
+Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금상태가 끝날 때까지 어떤 변경 도 할 수 없습니다. 이 잠금은 Configuration Manager SEDO(erialized Editing of Distributed Objects) 시스템의 일부입니다. 자세한 내용은 [Configuration Manager SEDO](/sccm/develop/core/understand/sedo)를 참조하세요.
+
+버전 1906부터 작업 순서에 대 한 잠금을 해제할 수 있습니다. 이 작업은 잠금에 대한 권한이 있는 사용자 계정 및 사이트에서 잠금을 허가한 동일한 디바이스에만 적용됩니다. 잠긴 작업 순서에 액세스하려고 하면 이제 **변경 내용을 취소**하고, 계속 개체를 편집할 수 있습니다. 이러한 변경 내용은 잠금이 만료된 경우에도 손실됩니다.
 
 
 ## <a name="bkmk_prop-general"></a> 소프트웨어 센터 속성 구성
@@ -81,9 +87,9 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
     - **다시 시작 필요**: 설치하는 동안 다시 시작해야 하는지 여부를 사용자에게 알립니다.  
 
-    - **다운로드 크기(MB)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
+    - **다운로드 크기(MB)** : 작업 순서에 대해 소프트웨어 센터에 표시되는 메가바이트 수를 지정합니다.  
 
-    - **예상 실행 시간(분)**: 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.  
+    - **예상 실행 시간(분)** : 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.  
 
 
 
