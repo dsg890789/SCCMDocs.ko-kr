@@ -1,4 +1,7 @@
+- name: 소프트웨어 업데이트 관리
+  href: understand/software-updates-introduction.md
 - name: 이해 및 탐색
+  expanded: true
   items:
     - name: 소프트웨어 업데이트 소개
       href: understand/software-updates-introduction.md

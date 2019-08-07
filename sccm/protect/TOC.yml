@@ -1,5 +1,7 @@
 - name: 데이터 및 인프라 보호
+  href: understand\protect-data-and-site-infrastructure.md
 - name: 이해 및 탐색
+  expanded: true
   items:
     - name: 개요
       href: understand\protect-data-and-site-infrastructure.md
@@ -83,7 +85,7 @@
               href: deploy-use/endpoint-protection-configure-client.md
         - name: Windows 방화벽 정책
           href: deploy-use/create-windows-firewall-policies.md
-        - name: Windows Defender Advanced Threat Protection
+        - name: Microsoft Defender Advanced Threat Protection
           href: deploy-use/windows-defender-advanced-threat-protection.md
         - name: Exploit Guard 정책 만들기 및 배포
           href: deploy-use/create-deploy-exploit-guard-policy.md

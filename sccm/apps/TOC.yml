@@ -1,4 +1,7 @@
+- name: 애플리케이션 관리
+  href: understand/introduction-to-application-management.md
 - name: 이해 및 탐색
+  expanded: true
   items:
     - name: 소개
       href: understand/introduction-to-application-management.md
