@@ -1,6 +1,6 @@
 - name: Desktop Analytics
   items:
-    - name: 개요
+    - name: Desktop Analytics란?
       href: overview.md
     - name: 자습서
       items:
