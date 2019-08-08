@@ -5,18 +5,18 @@ description: Configuration Manager 프로덕션 환경에서 소프트웨어 업
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 07/31/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce5a80b99149d31282036b33b97b57294ab38663
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: fc5c4fd7627aaa95f53a8a67ef983fda862a2526
+ms.sourcegitcommit: 8c296886e79e20b971842458f6e88761e5df30be
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68684690"
 ---
 # <a name="plan-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -64,6 +64,9 @@ Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 
 
 또한 구성 기준에서 소프트웨어 업데이트 수를 1000개로 제한합니다. 자세한 내용은 [Create configuration baselines](/sccm/compliance/deploy-use/create-configuration-baselines)(구성 기준 만들기)를 참조하세요.
 
+#### <a name="limit-of-580-security-scopes-for-automatic-deployment-rules"></a>자동 배포 규칙에 대 한 580 보안 범위 제한
+<!--ado 4962928-->
+ADRs (자동 배포 규칙)의 보안 범위 수를 580 미만으로 제한 합니다. ADR를 만들 때 액세스할 수 있는 보안 범위가 자동으로 추가 됩니다. 580 개가 넘는 보안 범위가 설정 된 경우 ADR가 실행 되지 않으며 ruleengine에 오류가 기록 됩니다.
 
 
 ##  <a name="BKMK_SUPInfrastructure"></a> 소프트웨어 업데이트 지점 인프라 파악  
@@ -332,6 +335,7 @@ Microsoft Update 연결은 항상 HTTP용으로 포트 80, HTTPS용으로 포트
 - [제품](#BKMK_UpdateProducts)
 - [교체 규칙](#BKMK_SupersedenceRules)
 - [언어](#BKMK_UpdateLanguages)  
+- [최대 실행 시간](#bkmk_maxruntime)
 
 
 Configuration Manager의 소프트웨어 업데이트 동기화는 구성한 기준에 따라 소프트웨어 업데이트 메타데이터를 다운로드합니다. 계층 구조의 최상위 사이트는 Microsoft Update의 소프트웨어 업데이트를 동기화합니다. Configuration Manager 계층 구조 외에서 기존 WSUS 서버와 동기화할 수 있도록 최상위 사이트의 소프트웨어 업데이트 지점을 구성할 수 있는 옵션이 제공됩니다. 자식 기본 사이트는 중앙 관리 사이트의 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 메타데이터를 동기화합니다. 소프트웨어 업데이트 지점을 설치 및 구성하기 전에 이 섹션을 참고하여 동기화 설정을 계획하세요.  
@@ -437,6 +441,8 @@ Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 �
 
 사용자 환경에서 가장 자주 사용되는 언어로 소프트웨어 업데이트 파일 언어 설정을 구성합니다. 예를 들어 사이트의 클라이언트는 Windows 또는 애플리케이션에 영어와 일본어를 주로 사용합니다. 사이트에서 사용되는 다른 언어는 거의 없습니다. 소프트웨어 업데이트를 다운로드 또는 배포할 때 **소프트웨어 업데이트 파일** 열에서 영어와 일본어만 선택합니다. 이 작업을 통해 배포 및 다운로드 마법사의 **언어 선택** 페이지에서 기본 설정을 사용할 수 있습니다. 또한 이 작업을 수행하면 불필요한 업데이트 파일이 다운로드되지 않습니다. Configuration Manager 계층 구조의 각 소프트웨어 업데이트 지점에 이 설정을 구성합니다.  
 
+
+
 #### <a name="summary-details"></a>요약 정보  
 동기화 프로세스 중에, 소프트웨어 업데이트에 대한 요약 정보(소프트웨어 업데이트 메타데이터)가 지정된 언어로 업데이트됩니다. 메타데이터는 소프트웨어 업데이트에 대한 정보를 제공합니다. 예를 들면 다음과 같습니다.
 - Name
@@ -450,9 +456,35 @@ Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 �
 최상위 사이트에서만 요약 세부 정보 설정을 구성합니다. 소프트웨어 업데이트 메타데이터는 파일 기반 복제를 사용하여 중앙 관리 사이트에서 복제되므로 자식 사이트의 소프트웨어 업데이트 지점에는 요약 세부 정보가 구성되지 않습니다. 요약 정보 언어를 선택하는 경우 사용 환경에 필요한 언어만 선택하세요. 언어를 많이 선택할수록 소프트웨어 업데이트 메타데이터를 동기화하는 데 시간이 많이 걸립니다. Configuration Manager에는 Configuration Manager 콘솔을 실행하는 OS의 로캘로 소프트웨어 업데이트 메타데이터가 표시됩니다. 소프트웨어 업데이트의 지역화된 속성을 이 OS의 로캘로 사용할 수 없는 경우 소프트웨어 업데이트 정보가 영어로 표시됩니다.  
 
 > [!IMPORTANT]  
->  필요한 모든 요약 세부 정보 언어를 선택합니다. 최상위 사이트의 소프트웨어 업데이트 지점을 동기화 원본과 동기화하면 선택한 요약 정보 언어에 따라 검색되는 소프트웨어 업데이트 메타데이터가 결정됩니다. 동기화를 한 번 이상 실행한 후 요약 정보 언어를 수정하면 새 소프트웨어 업데이트나 업데이트된 소프트웨어 업데이트에 대해서만 수정된 요약 정보 언어로 소프트웨어 업데이트 메타 데이터를 검색합니다. 이미 동기화된 소프트웨어 업데이트는 동기화 원본의 소프트웨어 업데이트가 변경되지 않는 한 수정된 언어의 새 메타데이터로 업데이트되지 않습니다.  
+>  필요한 모든 요약 세부 정보 언어를 선택합니다. 최상위 사이트의 소프트웨어 업데이트 지점을 동기화 원본과 동기화하면 선택한 요약 정보 언어에 따라 검색되는 소프트웨어 업데이트 메타데이터가 결정됩니다. 동기화를 한 번 이상 실행한 후 요약 정보 언어를 수정하면 새 소프트웨어 업데이트나 업데이트된 소프트웨어 업데이트에 대해서만 수정된 요약 정보 언어로 소프트웨어 업데이트 메타 데이터를 검색합니다. 이미 동기화된 소프트웨어 업데이트는 동기화 원본의 소프트웨어 업데이트가 변경되지 않는 한 수정된 언어의 새 메타데이터로 업데이트되지 않습니다.
 
 
+###  <a name="bkmk_maxruntime"></a> 최대 실행 시간
+<!--3734426-->
+*(1906 버전에서 도입됨)*
+
+1906 버전부터는 소프트웨어 업데이트 설치를 완료해야 하는 최대 시간을 지정할 수 있습니다. 다음의 최대 실행 시간을 지정할 수 있습니다.
+
+- **Windows 기능 업데이트의 최대 실행 시간(분)**
+  - **기능 업데이트** - 다음 세 분류 중 하나인 업데이트입니다.
+    - 업그레이드
+    - 업데이트 롤업
+    - 서비스 팩
+
+- **Office 365 업데이트 및 Windows 용 기능 이외의 업데이트에 대 한 최대 실행 시간 (분)**
+  - **기능 이외 업데이트** - 기능 업그레이드가 아니면서 제품이 다음 목록 중 하나에 해당하는 업데이트입니다.
+    - Windows 10(모든 버전)
+    - Windows Server 2012
+    - Windows Server 2012 R2
+    - Windows Server 2016
+    - Windows Server 2019
+    - Office 365
+
+- 이러한 설정은 Microsoft Update로부터 동기화되는 새 업데이트의 최대 런타임만 변경합니다. 기존 기능 또는 기능 이외 업데이트에 대한 실행 시간은 변경하지 않습니다.
+- 그 밖의 모든 제품 및 분류는 이 설정으로 구성할 수 없습니다. 이 업데이트 중 하나의 최대 실행 시간을 변경해야 할 경우 [소프트웨어 업데이트 설정을 구성](/sccm/sum/get-started/manage-settings-for-software-updates#BKMK_SoftwareUpdatesSettings)합니다.
+
+> [!NOTE]
+> 버전 1906에서는 최상위 소프트웨어 업데이트 지점을 설치할 때 최대 런타임을 사용할 수 없습니다. 설치 후 최상위 소프트웨어 업데이트 지점에서 최대 실행 시간을 편집 합니다.
 
 ##  <a name="BKMK_MaintenanceWindow"></a> 소프트웨어 업데이트 유지 관리 기간에 대한 계획  
 

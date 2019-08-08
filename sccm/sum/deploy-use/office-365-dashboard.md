@@ -5,18 +5,18 @@ description: Office 365 클라이언트 관리 대시보드에서 Office 365 클
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 69f234a2-b04b-445a-b81f-6b4acfc00eaf
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aff55aee5b2eaa584a6161452b4a232fab07412a
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: cf18203d4b6d4c8858e3547671b7bf63a2250db7
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802175"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537277"
 ---
 # <a name="office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드
 
@@ -75,6 +75,34 @@ Office 365 클라이언트 관리 대시보드에는 새 타일인 **Office 365 
 - 매크로 콘텐츠가 있는지 여부를 나타내지 않는 이전 Office 형식입니다. 예: Excel 97-2003 통합 문서(.xls).
 
 보다 자세한 평가가 필요한 경우 **Office Readiness Toolkit**을 배포합니다. 이 도구는 매크로 파일 내의 코드를 분석합니다. 잠재적인 호환성 문제가 있는지 여부를 확인합니다. 예를 들어 파일은 최신 버전의 Office에서 변경된 함수를 사용합니다. Office Readiness Toolkit을 실행한 후 Configuration Manager는 해당 결과를 사용할 수 있습니다. 이 추가 데이터는 디바이스 준비 계산을 향상시킵니다. 자세한 내용은 [Readiness Toolkit을 사용하여 Office 365 ProPlus 애플리케이션 호환성 평가](http://aka.ms/readinesstoolkit)를 참조하세요.
+
+## <a name="office-365-proplus-upgrade-readiness-dashboard"></a>Office 365 ProPlus 업그레이드 준비 대시보드
+
+*(1906 버전에서 도입됨)*
+
+<!--4021125-->
+1906 버전부터는 Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편리하게 확인할 수 있도록 하기 위해 준비 대시보드가 제공됩니다. 여기에는 Configuration Manager 현재 분기 버전 1902에 릴리스된 **Office 365 ProPlus 업그레이드 준비** 타일이 포함되어 있습니다. 이 대시보드의 다음 새 타일에서 Office 추가 기능 및 매크로 준비 상태를 평가할 수 있습니다.
+
+- 배포
+- 장치 준비
+- 추가 기능 준비 상태
+- 추가 기능 지원 설명
+- 버전별 상위 추가 기능
+- 매크로가 있는 디바이스 수
+- 매크로 준비 상태
+- 매크로 권고 사항
+
+### <a name="using-the-office-365-proplus-upgrade-readiness-dashboard"></a>Office 365 ProPlus 업그레이드 준비 대시보드 사용
+ 
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하고 **Office 365 클라이언트 관리**를 확장합니다.
+1. **Office 365 ProPlus 업그레이드 준비** 노드를 선택 합니다.
+1. **컬렉션** 및 **대상 Office 아키텍처** 를 변경 하 여 대시보드에서 릴레이 된 정보를 변경 합니다.
+
+![Office 365 ProPlus 업그레이드 준비 대시보드](./media/4021125-office-365-upgrade-readiness-dashboard.png)
+
+![Office 365 ProPlus 업그레이드 준비 대시보드](./media/4021125-office-365-to-add-ins.png)
+
+![Office 365 ProPlus 업그레이드 준비 대시보드](./media/4021125-office-365-macro-advisories.png)
 
 ## <a name="next-steps"></a>다음 단계
 

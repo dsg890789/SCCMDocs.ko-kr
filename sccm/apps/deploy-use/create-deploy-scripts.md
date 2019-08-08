@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28d1f01cbdd6238754cafc36be8d30499b041597
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: d4d4775819efbbb33bdd46e80e857a7d1b2d47ab
+ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676208"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712482"
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -251,17 +251,17 @@ Write-Output (Get-WmiObject -Class Win32_operatingSystem).Caption
 
 ### <a name="edit-a-script"></a>스크립트 편집
 
-1. 로 이동 합니다 **스크립트** 노드 아래에 노드를 **소프트웨어 라이브러리** 작업 영역.
-1. 스크립트를 편집한 다음 클릭 **편집** 리본 메뉴에 있습니다. 
-1. 변경 하거나 스크립트를 다시 가져와야 합니다 **스크립트 세부 정보** 페이지입니다.
-1. 클릭 **다음** 보려는 합니다 **요약** 한 다음 **닫기** 완료 되 면 편집 합니다.
+1. **소프트웨어 라이브러리** 작업 영역 아래의 **스크립트** 노드로 이동 합니다.
+1. 편집할 스크립트를 선택 하 고 리본에서 **편집** 을 클릭 합니다. 
+1. 스크립트 **세부 정보** 페이지에서 스크립트를 변경 하거나 다시 가져옵니다.
+1. **다음** 을 클릭 하 여 편집을 마치면 **요약** 을 확인 한 다음 **닫기** 를 클릭 합니다.
 
-### <a name="copy-a-script"></a>스크립트를 복사 합니다.
+### <a name="copy-a-script"></a>스크립트 복사
 
-1. 로 이동 합니다 **스크립트** 노드 아래에 노드를 **소프트웨어 라이브러리** 작업 영역.
-1. 스크립트를 복사 하 고, 클릭 **복사** 리본 메뉴에 있습니다.
-1. 스크립트 이름을 변경 합니다 **스크립트 이름** 필드 및 모든 추가 편집 해야 할 수 있습니다.
-1. 클릭 **다음** 보려는 합니다 **요약** 한 다음 **닫기** 완료 되 면 편집 합니다.
+1. **소프트웨어 라이브러리** 작업 영역 아래의 **스크립트** 노드로 이동 합니다.
+1. 복사할 스크립트를 선택 하 고 리본에서 **복사** 를 클릭 합니다.
+1. **스크립트 이름** 필드에서 스크립트의 이름을 바꾸고 필요할 수 있는 추가 편집 작업을 수행 합니다.
+1. **다음** 을 클릭 하 여 편집을 마치면 **요약** 을 확인 한 다음 **닫기** 를 클릭 합니다.
 
 
 ## <a name="run-a-script"></a>스크립트 실행

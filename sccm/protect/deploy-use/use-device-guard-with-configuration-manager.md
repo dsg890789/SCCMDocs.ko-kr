@@ -1,8 +1,8 @@
 ---
 title: Windows Device Guard 관리 방법
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 Windows Device Guard를 관리하는 방법을 알아봅니다.
-ms.date: 12/19/2017
+description: Configuration Manager를 사용하여 Windows Device Guard를 관리하는 방법을 알아봅니다.
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7c6fcdf0113dd9fa83d2d303661ad5690362715
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 82f262b01129452da7c34ffb6f1a1bb2f15be8a8
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678744"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533806"
 ---
 # <a name="device-guard-management-with-configuration-manager"></a>Configuration Manager로 Device Guard 관리
 
@@ -41,8 +41,8 @@ Configuration Manager를 사용하여 Windows Defender 애플리케이션 제어
 1. **적용 사용** - 신뢰할 수 있는 실행 파일만 실행할 수 있습니다.
 2. **감사 전용** - 모든 실행 파일을 실행할 수 있지만, 실행되는 신뢰할 수 없는 실행 파일을 로컬 클라이언트 이벤트 로그에 로깅합니다.
 
->[!TIP]
->이 버전의 Configuration Manager에서 Device Guard는 시험판 기능입니다. 이 기능을 사용하도록 설정하려면 [System Center Configuration Manager의 시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.
+> [!Tip]  
+> 이 기능은 버전 1702에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1906 버전부터는 더 이상 시험판 기능이 아닙니다.  
 
 ## <a name="what-can-run-when-you-deploy-a-windows-defender-application-control-policy"></a>Windows Defender 애플리케이션 제어 정책을 배포할 때 실행할 수 있는 항목
 

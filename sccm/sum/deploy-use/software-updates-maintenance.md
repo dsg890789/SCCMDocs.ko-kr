@@ -3,7 +3,7 @@ title: 소프트웨어 업데이트 유지 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 업데이트를 유지 관리하려면 WSUS 정리 태스크를 예약하거나 수동으로 실행할 수 있습니다.
 author: mestew
-ms.date: 03/27/2019
+ms.date: 07/30/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
@@ -11,12 +11,12 @@ ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f8624e898e22ebb2eef66d72a242d02b36d342d
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 11a817b907a27c0991fe6fc610063e1151ae94f9
+ms.sourcegitcommit: 75f48834b98ea6a238d39f24e04c127b2959d913
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083352"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604539"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -100,6 +100,50 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 - 불필요한 업데이트 파일
 
   자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint/) 블로그 게시물을 참조하세요.
+
+## <a name="wsus-cleanup-starting-in-version-1906"></a>WSUS 정리 버전 1906부터
+<!--41101009-->
+
+ 정상적인 소프트웨어 업데이트 지점의 유지 관리를 위해 실행할 수 Configuration Manager 있는 추가 WSUS 유지 관리 작업이 있습니다. Wsus에서 만료 된 업데이트를 거부 하는 것 외에도, wsus 데이터베이스에 비클러스터형 인덱스를 추가 하 고 WSUS 데이터베이스에서 사용 되지 않는 업데이트를 제거할 수 Configuration Manager. 모든 동기화 후 WSUS 유지 관리가 발생합니다.
+
+### <a name="add-non-clustered-indexes-to-the-wsus-database-to-improve-wsus-cleanup-performance"></a>Wsus 데이터베이스에 비클러스터형 인덱스를 추가 하 여 WSUS 정리 성능 향상
+
+클러스터 되지 않은 인덱스를 추가 하면 Configuration Manager 하는 WSUS 정리 성능이 향상 됩니다.
+
+1. Configuration Manager 콘솔에서 **관리** > **개요** > **사이트 구성** > **사이트**로 이동합니다.
+2. Configuration Manager 계층 구조의 최상위 사이트를 선택합니다.
+3. 설정 그룹에서 **사이트 구성 요소 구성**을 클릭하고 **소프트웨어 업데이트 지점**을 클릭하여 소프트웨어 업데이트 지점 구성 요소 속성을 엽니다.
+4. **WSUS 유지 관리** 탭에서 **WSUS 데이터베이스에 비클러스터형 인덱스 추가**를 선택합니다.
+5. Configuration Manager에서 사용하는 각 SUSDB에서 인덱스는 다음 테이블에 추가됩니다.
+   - tbLocalizedPropertyForRevision
+   - tbRevisionSupersedesUpdate
+
+#### <a name="sql-permissions-for-creating-indexes"></a>인덱스를 만들기 위한 SQL 사용 권한
+
+WSUS 데이터베이스가 원격 SQL Server인 경우 사이트 서버의 컴퓨터 계정에 다음 SQL 권한이 필요합니다.
+
+- 인덱스를 만들려면 테이블이나 뷰에 대해 `ALTER` 권한이 있어야 합니다. 사이트 서버의 컴퓨터 계정은 `sysadmin` 고정 서버 역할 또는 `db_ddladmin` 및 `db_owner` 고정 데이터베이스 역할의 구성원이어야 합니다. 인덱스 만들기 및 권한에 대한 자세한 내용은 [인덱스 만들기(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/create-index-transact-sql?view=sql-server-2017#permissions)를 참조하세요.
+- `CONNECT SQL` 서버 권한을 사이트 서버의 컴퓨터 계정에 부여해야 합니다. 자세한 내용은 [GRANT 서버 권한(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/grant-server-permissions-transact-sql?view=sql-server-2017)을 참조하세요. 
+
+> [!NOTE]  
+>  WSUS 데이터베이스가 기본이 아닌 포트를 사용하는 원격 SQL Server에 있으면 인덱스를 추가할 수 없습니다. 이 시나리오의 경우 [SQL Server 구성 관리자를 사용하여 서버 별칭](https://docs.microsoft.com/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client?view=sql-server-2017)을 만들 수 있습니다. 별칭이 추가되고 Configuration Manager가 WSUS 데이터베이스에 연결할 수 있으면, 인덱스가 추가됩니다.
+
+### <a name="remove-obsolete-updates-from-the-wsus-database"></a>WSUS 데이터베이스에서 사용 되지 않는 업데이트 제거
+
+사용 되지 않는 업데이트는 WSUS 데이터베이스에서 사용 되지 않는 업데이트 및 업데이트 수정 버전입니다. 일반적으로 [Microsoft 업데이트 카탈로그](https://www.catalog.update.microsoft.com/) 에는 없는 경우 업데이트는 사용 되지 않는 것으로 간주 되 고, 필수 구성 요소 또는 종속성으로 다른 업데이트에는 필요 하지 않습니다.
+
+1. Configuration Manager 콘솔에서 **관리** > **개요** > **사이트 구성** > **사이트**로 이동합니다.
+2. Configuration Manager 계층 구조의 최상위 사이트를 선택합니다.
+3. 설정 그룹에서 **사이트 구성 요소 구성**을 클릭하고 **소프트웨어 업데이트 지점**을 클릭하여 소프트웨어 업데이트 지점 구성 요소 속성을 엽니다.
+4. **WSUS 유지 관리** 탭에서 **WSUS 데이터베이스에서 사용되지 않는 업데이트 제거**를 선택합니다.
+   - 사용되지 않는 업데이트 제거는 중지되기 전까지 최대 30분 동안 실행이 허용됩니다. 다음 동기화가 발생한 후 다시 시작됩니다.  
+
+#### <a name="sql-permissions-for-removing-obsolete-updates"></a>사용 되지 않는 업데이트 제거에 대 한 SQL 사용 권한
+
+WSUS 데이터베이스가 원격 SQL Server인 경우 사이트 서버의 컴퓨터 계정에 다음 SQL 권한이 필요합니다.
+
+- `db_datareader` 및 `db_datawriter` 고정 데이터베이스 역할. 자세한 내용은 [데이터베이스 수준 역할](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/database-level-roles?view=sql-server-2017#fixed-database-roles)을 참조하세요.
+- `CONNECT SQL` 서버 권한을 사이트 서버의 컴퓨터 계정에 부여해야 합니다. 자세한 내용은 [GRANT 서버 권한(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/grant-server-permissions-transact-sql?view=sql-server-2017)을 참조하세요.
 
 ## <a name="updates-cleanup-log-entries"></a>정리 로그 항목 업데이트
 

@@ -2,7 +2,7 @@
 title: OS 이미지 관리
 titleSuffix: Configuration Manager
 description: WIM(Windows 이미지) 파일에 저장된 OS 이미지를 관리하는 방법을 알아봅니다.
-ms.date: 05/28/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35670ea78c2883d232040da30898f753c88e39b1
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.openlocfilehash: ecee342fb65cde6a210a4f2d13d4d75a5f30f19a
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355095"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537003"
 ---
 # <a name="manage-os-images-with-configuration-manager"></a>Configuration Manager를 사용하여 OS 이미지 관리
 
@@ -77,6 +77,8 @@ OS 이미지를 사용하려면 Configuration Manager 사이트에 추가합니�
         > Configuration Manager는 원본 이미지 파일을 수정하지 않습니다. 동일한 원본 디렉터리에서 새 이미지 파일을 만듭니다.
         >
         > 이 추출 프로세스는 매우 큰 이미지 파일(예: 60GB 초과)의 경우 실패할 수 있습니다. DISM 오류는 `Not enough storage is available to process this command.`입니다. Configuration Manager가 사용하는 명령줄은 smsprov.log 및 dism.log에 있습니다. 동일한 명령을 수동으로 실행한 다음, 이미지를 가져옵니다.<!-- SCCMDocs-pr issue 3502 -->  
+
+    - 1906 버전부터 클라이언트에서 콘텐츠를 사전 캐시하려는 경우 이미지의 **아키텍처** 및 **언어**를 지정합니다. 자세한 내용은 [사전 캐시 콘텐츠 구성](/sccm/osd/deploy-use/configure-precache-content)을 참조하세요.<!--4224642-->  
 
 4. **일반** 페이지에서 다음 정보를 지정합니다. 이 정보는 OS 이미지가 여러 개인 경우 목적을 식별하는 데 유용합니다.  
 

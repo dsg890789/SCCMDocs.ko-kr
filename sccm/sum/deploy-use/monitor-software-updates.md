@@ -5,18 +5,18 @@ description: System Center Configuration Manager 콘솔은 업데이트 및 준�
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 07/09/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 9afd7b0f-5c8e-48bc-9a65-1f7d74103688
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cd5c27aa04f25b044f74533983a214dc9f9341b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 0933346884c0bad9fcc6923629228391b707a710
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500148"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537187"
 ---
 # <a name="monitor-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트 모니터링
 
@@ -25,7 +25,23 @@ ms.locfileid: "65500148"
 System Center Configuration Manager는 소프트웨어 업데이트 개체, 프로세스 및 준수 정보를 모니터링할 수 있도록 여러 가지 방법을 제공합니다. 다음 섹션을 사용하여 소프트웨어 업데이트를 모니터링합니다.
 
 ## <a name="software-updates-dashboard"></a>소프트웨어 업데이트 대시보드
-Configuration Manager 버전 1610부터 소프트웨어 업데이트 대시보드를 사용하여 조직 내 디바이스의 현재 준수 상태를 보고 데이터를 빠르게 분석하여 위험한 디바이스를 확인할 수 있습니다. 대시보드를 보려면 **모니터링** > **개요** > **보안** > **소프트웨어 업데이트 대시보드**로 이동합니다.   
+
+*(1610 버전에서 도입됨)*
+
+Configuration Manager 버전 1610부터 소프트웨어 업데이트 대시보드를 사용하여 조직 내 디바이스의 현재 준수 상태를 보고 데이터를 빠르게 분석하여 위험한 디바이스를 확인할 수 있습니다. 대시보드를 보려면 **모니터링** > **개요** > **보안** > **소프트웨어 업데이트 대시보드**로 이동합니다.
+
+## <a name="drill-through-required-updates"></a>필수 업데이트 드릴스루
+<!--4224414-->
+*(1906 버전에서 도입됨)*
+
+규정 준수 통계를 통해 특정 Office 365 소프트웨어 업데이트를 필요로 하는 장치를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
+
+1. **소프트웨어 라이브러리** > **소프트웨어 업데이트** > **모든 소프트웨어 업데이트**로 가기.
+1. 하나 이상의 디바이스에 필요한 업데이트를 선택합니다.
+1. **요약** 탭을 확인하고 **통계**에서 원형 차트를 찾습니다.
+1. 원형 차트 옆에 있는 **필수 보기** 하이퍼링크를 선택하여 디바이스 목록으로 드릴다운합니다.
+1. 이 작업에서는 업데이트를 필요로 하는 디바이스를 볼 수 있는 **디바이스**의 임시 노드로 이동합니다. 목록에서 새 컬렉션 만들기와 같이 노드에 대한 조치를 취할 수도 있습니다.
+
 
 ##  <a name="BKMK_SUAlerts"></a> 소프트웨어 업데이트에 대한 경고  
  소프트웨어 업데이트에 대한 경고를 구성하여 소프트웨어 업데이트 배포의 호환성 수준이 구성된 백분율 이하인 경우 관리자에게 알릴 수 있습니다. 소프트웨어 업데이트 배포에 대한 경고는 다음 위치에서 구성할 수 있습니다.  

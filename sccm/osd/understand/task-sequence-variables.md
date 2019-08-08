@@ -2,7 +2,7 @@
 title: 작업 순서 변수 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서를 제어 및 사용자 지정하는 변수에 대해 알아봅니다.
-ms.date: 05/06/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e1ad62c8b8b0f780670e7baf7ebf11de7f6b483
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: b92fad9054c50ea58caeb11e209cd04b6951493f
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194577"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537123"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
@@ -140,6 +140,11 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 - 마지막 단계가 실패한 경우에는 `false`입니다.  
 
 - 이 단계가 비활성화되거나 연결된 조건이 **false**로 평가되어 작업 순서에서 마지막 작업을 건너뛴 경우 이 변수가 다시 설정되지 않습니다. 이전 작업에 대한 값을 계속 유지합니다.  
+
+### <a name="SMSTSLastContentDownloadLocation"></a>_SMSTSLastContentDownloadLocation
+
+<!-- 2840337 -->
+1906 버전부터 이 변수는 작업 순서에서 콘텐츠를 다운로드했거나 다운로드하려고 시도한 마지막 위치를 포함하고 있습니다. 이 콘텐츠 위치의 클라이언트 로그를 구문 분석 하는 대신이 변수를 검사 합니다.
 
 ### <a name="SMSTSLaunchMode"></a> _SMSTSLaunchMode
 
@@ -480,6 +485,28 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 (입력)
 
 쉼표로 구분된 드라이버 카탈로그 범주의 고유한 ID 목록입니다. **드라이버 자동 적용** 단계는 지정된 범주 중 하나 이상의 드라이버만 고려합니다. 이 값은 선택 사항이므로 기본적으로 설정되어 있지 않습니다. 사이트에서 **SMS_CategoryInstance** 개체 목록을 열거하여 사용 가능한 범주 ID를 가져옵니다.
+
+### <a name="OSDBitLockerRebootCount"></a>OSDBitLockerRebootCount
+
+*[BitLocker 사용 안 함](task-sequence-steps.md#BKMK_DisableBitLocker) 단계에 적용됩니다.*
+
+<!-- 4512937 -->
+버전 1906부터이 변수를 사용 하 여 보호를 다시 시작할 때까지 다시 시작 횟수를 설정 합니다.
+
+#### <a name="valid-values"></a>유효한 값
+
+에서 사이의 `1` `15`정수입니다.
+
+### <a name="OSDBitLockerRebootCountOverride"></a>OSDBitLockerRebootCountOverride
+
+*[BitLocker 사용 안 함](task-sequence-steps.md#BKMK_DisableBitLocker) 단계에 적용됩니다.*
+
+<!-- 4512937 -->
+버전 1906부터이 값을 설정 하 여 단계 또는 [OSDBitLockerRebootCount](#OSDBitLockerRebootCount) 변수에 의해 설정 된 수를 재정의 합니다. 다른 메서드는 1~15 사이의 값만 허용하지만, 이 변수를 0으로 설정하면 BitLocker가 무기한 비활성 상태로 있습니다. 이 변수는 작업 순서에서 값을 하나 설정할 때 유용하지만, 디바이스 또는 컬렉션마다 별도의 값을 설정해야 합니다.
+
+#### <a name="valid-values"></a>유효한 값
+
+에서 사이의 `0` `15`정수입니다.
 
 ### <a name="OSDBitLockerRecoveryPassword"></a> OSDBitLockerRecoveryPassword
 
@@ -1477,6 +1504,16 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 - `60`: 1분 동안 알림을 표시합니다.  
 
+### <a name="SMSTSRebootDelayNext"></a>SMSTSRebootDelayNext
+
+<!--4447680-->
+1906 버전부터 기존 [SMSTSRebootDelay](/sccm/osd/understand/task-sequence-variables#SMSTSRebootDelay) 변수를 사용 하 여이 변수를 사용 합니다. 이후에 수행되는 다시 부팅은 첫 번째 다시 부팅보다 다른 시간 제한에 따라 수행되도록 하려면 SMSTSRebootDelayNext를 다른 값(초)으로 설정합니다.
+
+#### <a name="example"></a>예
+
+Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시 부팅 알림을 제공할 수 있습니다. 이러한 긴 첫 번째 시간 제한 후에는 추가 시간 제한을 60초만 줄 수 있습니다. SMSTSRebootDelay를 `3600`으로 설정한 후 SMSTSRebootDelayNext를 `60`으로 설정합니다.  
+
+
 ### <a name="SMSTSRebootMessage"></a> SMSTSRebootMessage
 
 다시 시작 알림 대화 상자에 표시할 메시지를 지정합니다. 이 변수를 설정하지 않으면 기본 메시지가 표시됩니다.
@@ -1541,6 +1578,13 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 컴퓨터가 다시 시작될 때 이 단계에서 작업 순서가 일시 중지되는 시간을 지정하려면 SMSTSWaitForSecondReboot 값을 초 단위로 설정합니다. 두 번째 다시 시작이 있을 경우 충분한 시간을 허용합니다.
 
 예를 들어 SMSTSWaitForSecondReboot를 `600`으로 설정하면 다시 시작된 후 추가 단계가 실행되기 전에 작업 순서가 10분간 일시 중지됩니다. 이 변수는 단일 소프트웨어 업데이트 설치 작업 순서 단계에서 수백 개의 소프트웨어 업데이트를 설치하는 경우에 유용합니다.
+
+### <a name="TSDebugMode"></a>TSDebugMode
+
+<!--3612274-->
+버전 1906부터 작업 순서가 배포 되는 컬렉션 `TRUE` 에 대해이 변수를로 설정 합니다. 이 변수는 작업 순서 디버거를 사용 하도록 해당 컬렉션의 모든 장치에서 작업 순서의 동작을 변경 합니다.
+
+자세한 내용은 [작업 순서 디버그](/sccm/osd/deploy-use/debug-task-sequence) 항목을 참조하세요.
 
 ### <a name="TSDisableProgressUI"></a> TSDisableProgressUI
 

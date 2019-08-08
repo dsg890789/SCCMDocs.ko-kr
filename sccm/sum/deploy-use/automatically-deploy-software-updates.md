@@ -5,18 +5,18 @@ description: ADR(자동 배포 규칙)을 사용하여 소프트웨어 업데이
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 10/02/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a7cd2e499ac55f9a1210d4f3309b6e0b6cefe16
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 6a45b1d1853ef4b0faa6205919b8b06d58a81b12
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678188"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537157"
 ---
 #  <a name="automatically-deploy-software-updates"></a>소프트웨어 업데이트 자동 배포  
 
@@ -88,6 +88,13 @@ ADR을 사용하여 소프트웨어 업데이트를 자동으로 승인하고 �
 
      - 버전 1806부터 **아키텍처**에 대한 속성 필터를 이제 사용할 수 있습니다. 이 필터를 사용하여 일반적이지 않은 Itanium 및 ARM64와 같은 아키텍처를 제외합니다. 64비트(x64) 시스템에서 실행되는 32비트(x86) 애플리케이션 및 구성 요소도 있습니다. 확실히 x86이 필요 없는 경우가 아니면 x64를 선택할 때 x86도 사용하도록 설정합니다.<!--1322266-->  
 
+    > [!NOTE]  
+    > **Windows 10 버전 1903 이상**이 이전 버전처럼 **Windows 10** 제품의 일부가 아닌 제품 자체로 Microsoft 업데이트에 추가되었습니다. 이번 변화로 인해 클라이언트가 이러한 업데이트를 확인할 수 있도록 여러 수동 단계를 수행해야 했습니다. Configuration Manager 버전 1906에서 새 제품을 위해 수행 해야 하는 수동 단계의 수를 줄이는 데 도움을 주었습니다. <!--4682946-->
+    >
+    > Configuration Manager 버전 1906으로 업데이트할 때 **Windows 10** 제품을 동기화하도록 선택한 경우 다음 작업이 자동으로 수행됩니다.
+    > - **Windows 10** 제품을 포함하고 있는 자동 배포 규칙은 **Windows 10 버전 1903 이상**을 포함하도록 업데이트됩니다.
+    > - **Windows 10 버전 1903 이상** 제품이 동기화에 추가됩니다. 자세한 내용은 [분류 및 제품 구성](/sccm/sum/get-started/configure-classifications-and-products)을 참조하세요
+    > - [서비스 플랜](/sccm/osd/deploy-use/manage-windows-as-a-service#servicing-plan-workflow)은 **Windows 10 버전 1903 이상** 제품을 포함하도록 업데이트됩니다.
 
 6.  **평가 일정** 페이지에서 ADR이 일정에 따라 실행되도록 설정할지 여부를 지정합니다. 일정에 따라 실행되도록 선택한 경우 **사용자 지정** 을 클릭하여 되풀이 일정을 설정합니다.  
 

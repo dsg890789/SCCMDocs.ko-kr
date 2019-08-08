@@ -2,7 +2,7 @@
 title: 작업 순서 단계
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
-ms.date: 06/12/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5434e42bfdcdf9bd423035c1d30a3c68974d9dd
-ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
+ms.openlocfilehash: 6f5760e26b7a52f31aea0a272c0e76a2eee547bd
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67726255"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537146"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -695,6 +695,11 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 이 단계는 전체 OS에서만 실행됩니다. Windows PE에서는 실행되지 않습니다.  
 
+버전 1906부터이 단계에서 다음 작업 순서 변수를 사용 합니다.  
+
+- [OSDBitLockerRebootCount](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCount)  
+- [OSDBitLockerRebootCountOverride](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCountOverride)  
+
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **디스크**, **BitLocker 사용 안 함**을 차례로 선택합니다.
 
 ### <a name="properties"></a>속성  
@@ -709,6 +714,12 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 특정 드라이브에서 BitLocker를 사용하지 않도록 설정합니다. 드롭다운 목록을 사용하여 BitLocker를 사용하지 않도록 설정할 드라이브를 지정할 수 있습니다.  
 
+#### <a name="resume-protection-after-windows-has-been-restarted-the-specified-number-of-times"></a>지정 된 횟수 만큼 Windows를 다시 시작한 후 보호를 다시 시작 합니다.
+
+<!-- 4512937 -->
+1906 버전부터 이 옵션을 사용하여 BitLocker를 사용하지 않는 상태로 유지하는 다시 시작 횟수를 지정합니다. 이 단계에 여러 인스턴스를 추가하는 대신 1(기본값)에서 15 사이의 값을 설정합니다.
+
+작업 순서 변수 [OSDBitLockerRebootCount](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCount) 및 [OSDBitLockerRebootCountOverride](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCountOverride)를 사용 하 여이 동작을 설정 하 고 수정할 수 있습니다.
 
 
 ## <a name="BKMK_DownloadPackageContent"></a> 패키지 콘텐츠 다운로드  
@@ -719,7 +730,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 - OS 업그레이드 패키지  
 - 드라이버 패키지  
 - 패키지  
-- 부팅 이미지 (1810 및 이전 버전)에  
+- 부팅 이미지 (버전 1810 및 이전 버전)  
 
 다음 단계는 다음과 같은 시나리오에서 OS를 업그레이드하는 작업 순서에서 잘 작동합니다.  
 
@@ -733,7 +744,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 이 단계는 전체 OS 또는 Windows PE에서 실행됩니다. 구성 관리자 클라이언트 캐시에 패키지를 저장하는 옵션은 Windows PE에서 지원되지 않습니다.
 
 > [!NOTE]  
-> 합니다 **패키지 콘텐츠 다운로드** 작업 독립 실행형 미디어를 사용 하 여 사용 하 여 지원 되지 않습니다. 자세한 내용은 [독립 실행형 미디어에 대 한 작업을 지원 되지 않는](/sccm/osd/deploy-use/create-stand-alone-media#unsupported-actions-for-stand-alone-media)합니다.  
+> **패키지 콘텐츠 다운로드** 작업은 독립 실행형 미디어에서 사용할 지원 되지 않습니다. 자세한 내용은 [독립 실행형 미디어에 대해 지원 되지 않는 작업](/sccm/osd/deploy-use/create-stand-alone-media#unsupported-actions-for-stand-alone-media)을 참조 하세요.  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **패키지 콘텐츠 다운로드**를 차례로 선택합니다.
 
@@ -909,9 +920,9 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 
 > [!NOTE]  
 > 다른 애플리케이션을 대체하는 애플리케이션을 설치하려면 대체되는 애플리케이션에 대한 콘텐츠 파일을 사용할 수 있어야 합니다. 그렇지 않으면 이 작업 순서 단계가 실패합니다. 예를 들어 클라이언트 또는 캡처된 이미지에 Microsoft Visio 2010이 설치되어 있을 때 **애플리케이션 설치** 단계에서 Microsoft Visio 2013을 설치하면, Microsoft Visio 2010(대체되는 애플리케이션)에 대한 콘텐츠 파일을 배포 지점에서 사용할 수 있어야 합니다. Microsoft Visio가 클라이언트 또는 캡처된 이미지에 전혀 설치되어 있지 않으면, Microsoft Visio 2010 콘텐츠 파일을 확인하지 않고 Microsoft Visio 2013이 설치됩니다.  
-
-> [!NOTE]  
-> 클라이언트가 위치 서비스에서 관리 지점 목록을 검색하지 못하면, **SMSTSMPListRequestTimeoutEnabled** 및 **SMSTSMPListRequestTimeout** 작업 순서 변수를 사용합니다. 이 변수는 애플리케이션 설치를 다시 시도하기 전까지 작업 순서에서 기다리는 시간(밀리초)을 지정합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.
+>
+> 대체 된 앱을 사용 중지 하 고 새 앱이 작업 순서에서 참조 되는 경우 작업 순서를 시작 하지 못합니다.
+이 동작은 의도 된 것입니다. 작업 순서에는 모든 앱 참조가 필요 합니다.<!-- SCCMDocs 1711 -->  
 
 이 작업 순서 단계는 전체 OS에서만 실행되고, Windows PE에서는 실행되지 않습니다.  
 
@@ -922,7 +933,17 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 - [SMSTSMPListRequestTimeout](/sccm/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeout)  
 - [TSErrorOnWarning](/sccm/osd/understand/task-sequence-variables#TSErrorOnWarning)  
 
+> [!NOTE]  
+> 클라이언트가 위치 서비스에서 관리 지점 목록을 검색하지 못하면, **SMSTSMPListRequestTimeoutEnabled** 및 **SMSTSMPListRequestTimeout** 작업 순서 변수를 사용합니다. 이 변수는 애플리케이션 설치를 다시 시도하기 전까지 작업 순서에서 기다리는 시간(밀리초)을 지정합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.
+
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **애플리케이션 설치**를 차례로 선택합니다.
+
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get CMTSStepInstallApplication](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepinstallapplication?view=sccm-ps)
+- [신규-CMTSStepInstallApplication](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepinstallapplication?view=sccm-ps)
+- [제거-CMTSStepInstallApplication](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepinstallapplication?view=sccm-ps)
+- [Set-CMTSStepInstallApplication](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepinstallapplication?view=sccm-ps)
 
 ### <a name="properties"></a>속성  
 
@@ -973,6 +994,12 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 #### <a name="if-an-application-fails-continue-installing-other-applications-in-the-list"></a>애플리케이션 설치가 실패할 경우 목록의 다른 애플리케이션 설치 계속
 
 이 설정은 개별 애플리케이션 설치가 실패할 때 단계가 계속되도록 지정합니다. 이 설정을 지정하면 설치 오류에 관계없이 작업 순서가 계속됩니다. 이 설정을 지정하지 않고 설치가 실패하면 이 단계는 즉시 종료됩니다.  
+
+#### <a name="clear-application-content-from-cache-after-installing"></a>설치한 후 캐시에서 응용 프로그램 콘텐츠 지우기
+
+<!--4485675-->
+버전 1906부터 단계가 실행 된 후 클라이언트 캐시에서 앱 콘텐츠를 삭제 합니다. 이 동작은 디바이스의 하드 드라이브 용량이 작을 때 또는 다수의 큰 앱을 연속으로 설치할 때 유용합니다.
+
 
 ### <a name="options"></a>Options
 
@@ -1623,7 +1650,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 #### <a name="account"></a>계정
 
 <!-- 3556028 -->
-버전 1902부터, 이 단계에서 PowerShell 스크립트를 실행하기 위해 사용하는 Windows 사용자 계정을 지정합니다. 지정된 된 계정에 시스템에서 로컬 관리자 여야 합니다. 하 고이 계정의 권한으로 스크립트를 실행 합니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
+버전 1902부터, 이 단계에서 PowerShell 스크립트를 실행하기 위해 사용하는 Windows 사용자 계정을 지정합니다. 지정 된 계정은 시스템의 로컬 관리자 여야 하며 스크립트는이 계정의 사용 권한으로 실행 됩니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
 
 > [!IMPORTANT]  
 > 이 단계에서 사용자 계정을 지정하고 Windows PE에서 실행하면 동작이 실패합니다. Windows PE는 도메인에 조인할 수 없습니다. **smsts.log** 파일은 이 실패를 기록합니다.  
@@ -1647,6 +1674,11 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 이 단계는 다른 작업 순서를 실행합니다. 이렇게 하면 작업 순서 간에 부모-자식 관계가 만들어집니다. 자식 작업 순서를 사용하면 재사용 가능한 모듈식 작업 순서를 만들 수 있습니다.
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **작업 순서 실행**을 차례로 선택합니다.
+
+버전 1906부터 다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- 2839943, SCCMDocs #1118 -->
+
+- **New-CMTSStepRunTaskSequence**
+- **Set-CMTSStepRunTaskSequence**
 
 ### <a name="specifications-and-limitations"></a>사양 및 제한 사항
 
@@ -1774,7 +1806,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 이 단계를 사용하여 Windows PE에서 새 OS로 전환합니다. 이 작업 순서 단계는 임의의 OS 배포 중 필요합니다. 구성 관리자 클라이언트를 새 OS에 설치하고 새 OS에서 작업 순서를 계속 실행하도록 준비합니다.  
 
-이 단계는 전체 운영 체제를 Windows PE에서 작업 순서를 전환 하는 일을 담당 합니다. 단계는이 전환으로 인해 Windows PE 및 전체 운영 체제를 실행합니다. 그러나 Windows PE에서 시작 되는 전환 되므로 작업 순서가 Windows PE 부분 중 추가할만 있습니다.  
+이 단계는 작업 순서를 Windows PE에서 전체 OS로 전환 하는 작업을 담당 합니다. 이 전환으로 인해이 단계는 Windows PE 및 전체 OS에서 실행 됩니다. 그러나 전환은 Windows PE에서 시작 되므로 작업 순서의 Windows PE 부분에만 추가할 수 있습니다.  
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 

@@ -5,18 +5,18 @@ description: Configuration Manager는 WSUS 카탈로그의 Office 365 클라이�
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 04/11/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbaf7322b0103b9958b4d7b2c66c018d12d20a4
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 276c5dd71b62a29a3f68b1eed2cdc814cfd1c804
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194616"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537170"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -58,7 +58,7 @@ Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration
 3. **애플리케이션 설정** 페이지에서 앱에 대한 이름과 설명을 제공하고 파일에 대한 다운로드 위치를 입력한 후 **다음**을 클릭합니다. 위치는 &#92;&#92;*server*&#92;*share*로 지정해야 합니다.
 4. **Office 설정** 페이지에서 **Office 사용자 지정 도구로 이동**을 클릭합니다. 그러면 [간편 실행용 Office 사용자 지정 도구](https://config.office.com)가 열립니다.
 5. Office 365 설치에 대해 원하는 설정을 구성합니다. 구성이 완료되면 페이지의 오른쪽 위에 있는 **제출**을 클릭합니다. 
-6. **배포** 페이지에서 지금 배포할지 또는 나중에 배포할지 결정합니다. 나중에 배포하려는 경우에는, **소프트웨어 라이브러리** < **애플리케이션 관리** < **애플리케이션**에서 애플리케이션을 찾을 수 있습니다.  
+6. **배포** 페이지에서 지금 배포할지 또는 나중에 배포할지 결정합니다. 나중에 배포하려는 경우에는, **소프트웨어 라이브러리** > **애플리케이션 관리** > **애플리케이션**에서 애플리케이션을 찾을 수 있습니다.  
 7. **요약** 페이지에서 설정을 확인합니다. 
 8. Office 365 클라이언트 설치 마법사가 완료되면 **다음**을 클릭한 후 **닫기**를 클릭합니다. 
 
@@ -83,6 +83,19 @@ Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration
 Office 365 설치 관리자를 사용하여 Office 365 애플리케이션을 만들고 배포한 후에는 기본적으로 Configuration Manager가 Office 업데이트를 관리하지 않습니다. Office 365 클라이언트가 Configuration Manager에서 업데이트를 받게 하려면 [Configuration Manager를 사용하여 Office 365 업데이트 배포](#deploy-office-365-updates)를 참조하세요.
 
 Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 규칙을 만들 수 있습니다. Office 365 앱에 대한 자동 배포 규칙을 만들려면 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)에서 **ADR 만들기**를 클릭합니다. 제품을 선택할 때 **Office 365 클라이언트**를 선택합니다. 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.
+
+
+## <a name="drill-through-required-office-365-updates"></a>필수 Office 365 업데이트를 통한 드릴스루
+<!--4224414-->
+*(1906 버전에서 도입됨)*
+
+규정 준수 통계를 통해 특정 Office 365 소프트웨어 업데이트를 필요로 하는 장치를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
+
+1. **소프트웨어 라이브러리** > **Office 365 클라이언트 관리** > **Office 365 업데이트**로 가기.
+1. 하나 이상의 디바이스에 필요한 업데이트를 선택합니다.
+1. **요약** 탭을 확인하고 **통계**에서 원형 차트를 찾습니다.
+1. 원형 차트 옆에 있는 **필수 보기** 하이퍼링크를 선택하여 디바이스 목록으로 드릴다운합니다.
+1. 이 작업에서는 업데이트를 필요로 하는 디바이스를 볼 수 있는 **디바이스**의 임시 노드로 이동합니다. 목록에서 새 컬렉션 만들기와 같이 노드에 대한 조치를 취할 수도 있습니다.
 
 
 ## <a name="deploy-office-365-updates"></a>Office 365 업데이트 배포

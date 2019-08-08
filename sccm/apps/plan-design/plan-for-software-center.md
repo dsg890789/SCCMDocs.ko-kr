@@ -2,7 +2,7 @@
 title: 소프트웨어 센터 계획
 titleSuffix: Configuration Manager
 description: 사용자가 Configuration Manager와 상호 작용하도록 소프트웨어 센터를 구성하고 브랜딩하는 방법을 결정합니다.
-ms.date: 05/01/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,25 +11,33 @@ ms.assetid: c6826794-aa19-469d-ae47-1a0db68a1ff1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 50683b43cff113f7cd77efb5d8798fd24b53f90a
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 2384fb0584fde331cf8667822c81de51eb60cbf0
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65106522"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68534961"
 ---
 # <a name="plan-for-software-center"></a>소프트웨어 센터 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-사용자는 소프트웨어 센터에서 설정을 변경하고, 애플리케이션을 탐색하여 설치할 수 있습니다. Windows 디바이스에서 구성 관리자 클라이언트를 설치할 때 소프트웨어 센터가 자동으로 설치됩니다. 소프트웨어 센터가 새로운 세련된 디자인으로 바뀌었습니다. 이전에는 Silverlight 종속 애플리케이션 카탈로그에서만 표시되었던 앱(사용자가 사용할 수 있는 앱)이 이제 소프트웨어 센터의 **애플리케이션** 탭 아래에 표시됩니다.
+사용자는 소프트웨어 센터에서 설정을 변경하고, 애플리케이션을 탐색하여 설치할 수 있습니다. Windows 디바이스에서 구성 관리자 클라이언트를 설치할 때 소프트웨어 센터가 자동으로 설치됩니다.
 
 소프트웨어 센터의 다른 기능에 자세한 내용은 [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)를 참조하세요.  
 
-
 ## <a name="bkmk_userex"></a> 소프트웨어 센터 구성  
 
+최신 개선 사항을 활용 하기 위해 Configuration Manager 사이트와 클라이언트를 1906 이상 버전으로 업데이트 합니다.
+
 소프트웨어 센터에 대한 다음 개선 사항을 검토하세요.
+
+> [!Important]  
+> 소프트웨어 센터 및 관리 지점에 대한 이러한 반복적 향상은 애플리케이션 카탈로그 역할의 사용 중지를 위한 것입니다.
+>
+> - 현재 분기 버전 1806을 기준으로 Silverlight 사용자 환경은 지원되지 않습니다.
+> - 버전 1906부터 업데이트 된 클라이언트에서 사용자가 사용할 수 있는 응용 프로그램 배포에 대 한 관리 지점을 자동으로 사용 합니다. 또한 새 응용 프로그램 카탈로그 역할을 설치할 수 없습니다.
+> - 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 
 ### <a name="starting-in-version-1802"></a>버전 1802부터 가능
 
@@ -47,6 +55,24 @@ ms.locfileid: "65106522"
     > 현재 애플리케이션 카탈로그를 사용 중인 경우, Configuration Manager를 버전 1806으로 업데이트하면 계속 작동합니다. 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점 역할은 더 이상 *필요하지 않지만* *지원은 계속* 됩니다. 응용 프로그램 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
     >
     > 이후에 인프라에서 응용 프로그램 카탈로그 역할을 제거할 계획을 시작합니다. 관리 지점을 사용할 수 있도록 소프트웨어 센터 개선 사항을 활용하고 Configuration Manager 환경을 간소화합니다.  
+
+### <a name="starting-in-version-1902"></a>버전 1902부터 가능
+
+- 사용자 디바이스 선호도를 구성합니다. 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
+
+### <a name="starting-in-version-1906"></a>버전 1906부터 가능
+
+- 이제 소프트웨어 센터는 사용자를 대상으로 하는 앱의 관리 지점과 통신합니다. 애플리케이션 카탈로그는 더 이상 사용하지 않습니다. 이러한 변경을 통해 사이트에서 애플리케이션 카탈로그를 보다 쉽게 제거할 수 있습니다.
+
+- 이전에 소프트웨어 센터는 사용 가능한 서버 목록에서 첫 번째 관리 지점을 선택했습니다. 이 릴리스부터 클라이언트가 사용하는 동일한 관리 지점을 사용합니다. 이러한 변경을 통해 소프트웨어 센터에서는 클라이언트와 동일한 할당된 기본 사이트의 관리 지점을 사용할 수 있습니다.
+
+- 관리 지점에는 이러한 새 기능을 지 원하는 소프트웨어 센터 끝점이 있습니다. 이제 5 분 마다 이러한 끝점의 상태를 확인 합니다. SMS_MP_CONTROL_MANAGER 사이트 구성 요소에 대한 상태 메시지를 통해 문제를 보고합니다.
+
+- 새 응용 프로그램 카탈로그 역할을 사이트에 추가할 수 없습니다. 기존 역할은 계속 작동 합니다. 기존 클라이언트만 사용자가 사용할 수 있는 배포에 응용 프로그램 카탈로그를 사용 합니다. 업데이트 된 클라이언트는 모든 배포에 대해 관리 지점을 자동으로 사용 합니다.
+
+- 소프트웨어 센터에 최대 5 개의 사용자 지정 탭을 추가할 수 있습니다. 자세한 내용은 [소프트웨어 센터 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#software-center)을 참조하세요. <!--4063773-->
+
+### <a name="summary-of-infrastructure-requirements-per-version"></a>버전 당 인프라 요구 사항 요약
 
 다음 표를 활용하여 Configuration Manager의 특정 버전에 따른 소프트웨어 센터 요구 사항을 파악합니다.
 
@@ -109,24 +135,6 @@ ms.locfileid: "65106522"
 
 조직의 브랜딩 요구 사항에 맞게 소프트웨어 센터 디자인을 변경합니다. 이 구성은 사용자가 소프트웨어 센터를 신뢰하는 데 도움이 됩니다.
 
-Configuration Manager는 다음과 같은 우선 순위에 따라 소프트웨어 센터에 대한 사용자 지정 브랜딩을 적용합니다.  
-
-- 애플리케이션 카탈로그를 설치하지 않은 경우(권장):  
-
-    1. **소프트웨어 센터** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-center)를 참조하세요.  
-
-    2. **컴퓨터 에이전트** 그룹에 있는**조직 이름** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#computer-agent)를 참조하세요.  
-
-- 응용 프로그램 카탈로그를 설치한 경우:  
-
-    1. **소프트웨어 센터** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-center)를 참조하세요.  
-
-    2. Microsoft Intune 구독을 Configuration Manager에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정한 *조직 이름*, *색* 및 *회사 로고*를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하십시오.  
-
-    3. 응용 프로그램 카탈로그 웹 사이트 지점 속성에 지정한 *조직 이름* 및 *색*입니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.  
-
-    4. **컴퓨터 에이전트** 그룹에 있는**조직 이름** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#computer-agent)를 참조하세요.  
-
 ### <a name="configure-software-center-branding"></a>소프트웨어 센터 브랜딩 구성
 
 <!-- 1351224 -->
@@ -136,6 +144,32 @@ Configuration Manager는 다음과 같은 우선 순위에 따라 소프트웨�
 
 - 클라이언트 설정의 [소프트웨어 센터](/sccm/core/clients/deploy/about-client-settings#software-center) 그룹  
 - [클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)  
+
+### <a name="branding-priorities"></a>브랜딩 우선 순위
+
+Configuration Manager는 다음과 같은 우선 순위에 따라 소프트웨어 센터에 대한 사용자 지정 브랜딩을 적용합니다.  
+
+1. **소프트웨어 센터** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-center)를 참조하세요.  
+
+2. **컴퓨터 에이전트** 그룹에 있는**조직 이름** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#computer-agent)를 참조하세요.  
+
+#### <a name="application-catalog-branding-priorities"></a>응용 프로그램 카탈로그 브랜딩 우선 순위
+
+> [!Important]
+> 응용 프로그램 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806에서 지원 되지 않습니다. 버전 1906부터 업데이트 된 클라이언트에서 사용자가 사용할 수 있는 응용 프로그램 배포에 대 한 관리 지점을 자동으로 사용 합니다. 또한 새 응용 프로그램 카탈로그 역할을 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+
+응용 프로그램 카탈로그를 사용 하는 경우 브랜딩은 다음 우선 순위를 따릅니다.  
+
+1. **소프트웨어 센터** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-center)를 참조하세요.  
+
+2. Microsoft Intune 구독을 Configuration Manager에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정한 *조직 이름*, *색* 및 *회사 로고*를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하십시오.  
+
+    > [!Important]
+    > 하이브리드 모바일 디바이스 관리는 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)입니다.
+
+3. 애플리케이션 카탈로그 웹 사이트 지점 속성에 지정한 *조직 이름* 및 *색*입니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.  
+
+4. **컴퓨터 에이전트** 그룹에 있는**조직 이름** 클라이언트 설정. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#computer-agent)를 참조하세요.  
 
 
 ## <a name="see-also"></a>참고 항목
