@@ -2,7 +2,7 @@
 title: Configuration Manager 콘솔
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔을 통해 이동에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 08/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ca011fda7227092f44961e5636ecf86b683129b
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: b93e636ea690fa99fd2a0dfc63bd12932d2f7a5e
+ms.sourcegitcommit: b5c7496ca408803046acc8403858aafd5dca8808
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536378"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68794677"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 
@@ -337,13 +337,6 @@ Configuration Manager 콘솔의 디바이스 보기에서 MAC 주소를 검색�
 *(버전 1906에서 도입됨)*
 
 **소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 펼치고 **작업 순서** 노드를 선택합니다. 작업 순서를 편집하고 [패키지 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallPackage) 단계를 선택하거나 추가합니다. 패키지에 둘 이상의 프로그램이 있는 경우 이제 드롭다운 목록이 프로그램을 사전순으로 정렬합니다.
-
-#### <a name="multiselect-and-delete-packages"></a>다중 선택 및 패키지 삭제
-<!--4616810-->
-*(버전 1906에서 도입됨)*
-
-**소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 펼치고 **패키지** 노드를 선택합니다. 둘 이상의 패키지를 선택합니다. 리본 메뉴의 패키지 그룹에서 이제 한 번에 둘 이상의 패키지를 삭제할 수 있습니다.
-
 
 #### <a name="task-sequences-tab-in-applications-node"></a>애플리케이션 노드의 작업 순서 탭
 <!--4616810-->
