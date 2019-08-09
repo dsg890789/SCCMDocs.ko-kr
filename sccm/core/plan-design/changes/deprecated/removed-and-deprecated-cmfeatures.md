@@ -2,7 +2,7 @@
 title: 사용되지 않는 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 더 이상 지원하지 않는 기능에 대해 알아보세요.
-ms.date: 07/03/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60b00c5621f829cd77193758ec415e5173c9da5a
-ms.sourcegitcommit: d74415e49a6db28ee5198440c7f321529a9f7f33
+ms.openlocfilehash: b6cd440043c61431b648411eb4eea1bda0635d34
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68312502"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536933"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -36,7 +36,7 @@ ms.locfileid: "68312502"
 | Configuration Manager 회사 포털 앱 | 2019년 5월 21일 | 2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 | 애플리케이션 카탈로그 웹 사이트 지점과 웹 서비스 지점 등, 두 사이트 서비스 역할을 포함한 애플리케이션 카탈로그. 자세한 정보는 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요. | 2019년 5월 21일 | 2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 |Azure 콘텐츠 공유를 위한 구현이 변경되었습니다. 콘텐츠 지원 클라우드 관리 게이트웨이를 사용합니다. 나중에는 기존 클라우드 배포 지점을 만들 수 없습니다.|2019년 2월|2019년 11월 1일 이후 릴리스된 첫 번째 버전|
-|클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대한 클래식 서비스 배포. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.|2018년 11월|2019년 7월 1일 이후 릴리스된 첫 번째 버전|
+|클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대한 클래식 서비스 배포. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.|2018년 11월|버전 1906|
 |Mac 및 Linux용 System Center Endpoint Protection<br>자세한 내용은 [지원 종료 블로그 게시물](https://go.microsoft.com/fwlink/?linkid=870182)을 참조하세요.|2018년 10월|2018년 12월 31일|
 |온-프레미스 조건부 액세스<br>자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.|2019년 1월 30일|2019년 9월 1일|
 |MDM(하이브리드 모바일 디바이스 관리)<br>자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<br><br>2019년 2월 말로 예정된 1902 Intune 서비스 릴리스부터, 신규 고객은 새 하이브리드 연결을 만들 수 없습니다.<!--Intune feature 2683117-->|2018년 8월 14일|2019년 9월 1일|

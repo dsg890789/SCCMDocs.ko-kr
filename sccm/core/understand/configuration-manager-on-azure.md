@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8c713dd1de90eaf8705859f5a814e38da9435e6
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: cb185a009740b73a7836b94aca18f9748aa76fb5
+ms.sourcegitcommit: b59e57ab4cf9f03e8beeb70588f3b9f1a6021e36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340208"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662613"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -132,7 +132,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 - 데이터 요금제를 사용하고 대역폭 비용이 제한되거나 Azure와 인트라넷 간의 네트워크 연결이 느리거나 불안정한 경우 다른 방법을 생각해 볼 수 있습니다. BranchCache를 사용하거나 표준 또는 풀(pull) 배포 지점을 온-프레미스에 배치하는 방법을 고려할 수 있습니다. 클라우드 기반의 배포 지점 사용을 선택할 수 있지만 지원되는 콘텐츠 형식이 약간 제한됩니다. 예를 들어 소프트웨어 업데이트 패키지가 지원되지 않습니다.
 
 > [!NOTE]
->  PXE 지원이 필요한 경우 온-프레미스 배포 지점(표준 또는 풀(pull))을 사용하여 부팅 요청에 응답해야 합니다. [WDS는 현재 Azure VM에서의 실행이 지원되지 않습니다](https://technet.microsoft.com/library/hh831764(v=ws.11).aspx).
+>  PXE나 멀티캐스트 지원이 필요한 경우 온-프레미스 배포 지점(표준 또는 풀(pull))을 사용하여 부팅 요청에 응답해야 합니다.
 
 
 ### <a name="while-i-am-ok-with-the-limitations-of-cloud-based-distribution-points-i-dont-want-to-put-my-management-point-into-a-dmz-even-though-that-is-needed-to-support-my-internet-based-clients-do-i-have-any-other-options"></a>클라우드 기반 배포 지점의 제한은 괜찮지만 내 인터넷 기반 클라이언트 지원에 필요하더라도 관리 지점을 DMZ에 배치하고 싶지 않습니다. 다른 방법은 없나요?

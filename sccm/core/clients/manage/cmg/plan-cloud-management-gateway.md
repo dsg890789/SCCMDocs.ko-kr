@@ -2,7 +2,7 @@
 title: 클라우드 관리 게이트웨이에 대한 계획
 titleSuffix: Configuration Manager
 description: 인터넷 기반 클라이언트의 관리를 간소화하도록 CMG(클라우드 관리 게이트웨이)를 계획하고 설계합니다.
-ms.date: 06/19/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9dadd289c0a275964273d27c5b9685c1fa7f08e6
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 43145e7f94fb381d1051ddb7de09367f4f69d556
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286776"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535603"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -47,7 +47,7 @@ CMG가 유용한 몇 가지 시나리오가 있습니다. 일반적인 몇 가�
     - 인벤토리 및 클라이언트 상태
     - 호환성 설정
     - 디바이스에 소프트웨어 배포
-    - Windows 10 전체 업그레이드 작업 순서(1802 버전 현재)
+    - Windows 10 전체 업그레이드 작업 순서
 
 - Azure AD(Azure Active Directory)와 함께 하이브리드 또는 순수 클라우드 도메인에 가입한 최신 ID를 사용하여 기존 Windows 10 클라이언트를 관리합니다. 클라이언트는 PKI 인증서 대신 Azure AD를 사용하여 인증합니다. Azure AD를 사용하면 복잡한 PKI 시스템보다 설치, 구성 및 유지 관리가 더 간단합니다. 관리 작업은 첫 번째 시나리오와 동일하며, 다음과 같습니다.  
     - 사용자에게 소프트웨어 배포  
@@ -171,14 +171,12 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 
 - 클라이언트 OS 버전 및 인증 모델에 따라 **다른 인증서**가 필요할 수 있습니다. 자세한 내용은 [CMG 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway)를 참조하세요.  
 
-    - 1802 버전에서는 모든 CMG 지원 [**관리 지점에서 HTTPS를 사용**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)하도록 구성해야 합니다.  
-
-    - 버전 1806부터 **HTTP 사이트 시스템에 대해 Configuration Manager가 생성한 인증서 사용**이라는 사이트 옵션을 사용하는 경우 관리 지점이 HTTP가 될 수 있습니다. 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.  
+    버전 1806부터 **HTTP 사이트 시스템에 대해 Configuration Manager가 생성한 인증서 사용**이라는 사이트 옵션을 사용하는 경우 관리 지점이 HTTP가 될 수 있습니다. 자세한 내용은 [고급 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http)를 참조하세요.
 
 - Configuration Manager 1810 이전 버전에서는 Azure 클래식 배포 방법을 사용하는 경우 [**Azure 관리 인증서**](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_azuremgmt)를 사용해야 합니다.  
 
     > [!TIP]  
-    > Configuration Manager 버전 1802부터 **Azure Resource Manager** 배포 모델을 사용합니다. 이 배포 모델에는 관리 인증서가 필요하지 않습니다.
+    > **Azure Resource Manager 배포**를 사용합니다. 이 배포 모델에는 관리 인증서가 필요하지 않습니다.
     >
     > 클래식 배포 방법은 1810 버전을 기준으로 더 이상 사용되지 않습니다.  
 
@@ -195,7 +193,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 
 - 네트워크 부하 분산 장치를 사용하는 소프트웨어 업데이트 지점은 CMG에서 작동하지 않습니다. <!--505311-->  
 
-- 버전 1802부터 Azure 리소스 모델을 사용하는 CMG 배포는 Azure CSP(클라우드 서비스 공급자)에 대한 지원을 사용하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에 사용할 수 있는 Azure 서비스](https://docs.microsoft.com/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
+- Azure 리소스 모델을 사용하는 CMG 배포는 Azure CSP(클라우드 서비스 공급자)에 대한 지원을 사용하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP에서 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에 사용할 수 있는 Azure 서비스](https://docs.microsoft.com/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
 
 ### <a name="support-for-configuration-manager-features"></a>Configuration Manager 기능 지원
 
@@ -212,14 +210,13 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 | 클라이언트 설치<br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png) |
 | 소프트웨어 배포(디바이스 대상)     | ![지원됨](media/green_check.png) |
 | 소프트웨어 배포(사용자 대상, 필수)<br>(Azure AD 통합 포함)     | ![지원됨](media/green_check.png) |
-| 소프트웨어 배포(사용자 대상, 사용 가능)<br>([모든 요구 사항](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)) | ![지원됨](media/green_check.png)  (1802) |
-| Windows 10 전체 업그레이드 작업 순서      | ![지원됨](media/green_check.png)  (1802) |
-| 부팅 이미지를 사용하지 않고 **작업 순서를 시작하기 전에 모든 콘텐츠를 로컬에 다운로드** 옵션을 사용하여 배포되는 작업 순서      | ![지원됨](media/green_check.png)  (1802) |
+| 소프트웨어 배포(사용자 대상, 사용 가능)<br>([모든 요구 사항](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)) | ![지원됨](media/green_check.png) |
+| Windows 10 전체 업그레이드 작업 순서      | ![지원됨](media/green_check.png) |
+| 부팅 이미지를 사용하지 않고 **작업 순서를 시작하기 전에 모든 콘텐츠를 로컬에 다운로드** 옵션을 사용하여 배포되는 작업 순서      | ![지원됨](media/green_check.png) |
 | CMPivot     | ![지원됨](media/green_check.png)  (1806) |
 | 다른 작업 순서 시나리오     | ![지원되지 않음](media/Red_X.png) |
 | 클라이언트 강제 설치     | ![지원되지 않음](media/Red_X.png) |
 | 자동 사이트 할당     | ![지원되지 않음](media/Red_X.png) |
-| 애플리케이션 카탈로그     | ![지원되지 않음](media/Red_X.png) |
 | 소프트웨어 승인 요청     | ![지원되지 않음](media/Red_X.png) |
 | Configuration Manager 콘솔     | ![지원되지 않음](media/Red_X.png) |
 | 원격 도구     | ![지원되지 않음](media/Red_X.png) |
@@ -272,6 +269,8 @@ CMG는 다음과 같은 Azure 구성 요소를 사용하며, 이 경우 Azure �
 
     > [!NOTE]  
     > 소프트웨어 업데이트 또는 애플리케이션 배포와 같은 다른 작업을 수행하는 경우 Azure로부터의 아웃바운드 데이터 전송량이 늘어납니다.
+
+- **클라이언트 인증서 해지 확인**을 위한 CMG 옵션을 잘못 구성하면 클라이언트에서 CMG로 추가 트래픽이 발생할 수 있습니다. 이러한 추가 트래픽은 Azure 송신 데이터를 증가시켜 Azure 비용을 증가시킬 수 있습니다.<!-- SCCMDocs#1434 --> 자세한 내용은 [인증서 해지 목록 게시](https://docs.microsoft.com/sccm/core/clients/manage/cmg/security-and-privacy-for-cloud-management-gateway#bkmk_crl)를 참조하세요.  
 
 ### <a name="content-storage"></a>콘텐츠 스토리지
 

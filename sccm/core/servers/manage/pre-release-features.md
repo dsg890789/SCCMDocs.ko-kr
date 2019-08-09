@@ -2,7 +2,7 @@
 title: 시험판 기능
 titleSuffix: Configuration Manager
 description: 시험판 기능은 프로덕션 환경에서의 초기 테스트를 위해 현재 분기에 포함된 기능입니다.
-ms.date: 11/27/2018
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab1c8e462e22206177e4907df3c5549ec9ba1692
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: bfcaa12634b313cc1d0071d76e704ed07fc06608
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194204"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536157"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -60,7 +60,7 @@ ms.locfileid: "67194204"
 
 
 
-## <a name="pre-release-features"></a>시험판 기능
+## <a name="bkmk_table"></a>
 
 <!--Note/tip for target article
 
@@ -69,16 +69,21 @@ ms.locfileid: "67194204"
 
 
 > [!Tip]  
-> This feature was first introduced in version 1702 as a [pre-release feature](/sccm/core/servers/manage/pre-release-features). Beginning with version 1706, this feature is no longer a pre-release feature.  
+> This feature was first introduced in version 1702 as a [pre-release feature](/sccm/core/servers/manage/pre-release-features). Beginning with version 1906, it's no longer a pre-release feature.  
 
 -->
 
-
+<!-- With each current branch release, to help purge this list a bit, remove any entries that were added as a full feature in a version that's no longer supported -->
 | 기능          | 시험판으로 추가됨 | 전체 기능으로 추가됨 |  
 |------------------|----------------------|-------------------------|
-| SMS 공급자 API <!--1359052--> | 버전 1810 | ![아직 추가되지 않음](media/red_x.png) |
+| [작업 순서 배포](/sccm/osd/deploy-use/debug-task-sequence) <!--3612274,C3F37661-69E4-4D53-A39C-5D02F97E0E71--> | 버전 1906 | ![아직 추가되지 않음](media/red_x.png) |
+| [애플리케이션 그룹](/sccm/apps/deploy-use/create-app-groups) <!--3555907,EE16A1D8-EF1B-4094-845F-AC107E7C621D--> | 버전 1906 | ![아직 추가되지 않음](media/red_x.png) |
+| [Azure Active Directory 사용자 그룹 검색](/sccm/core/servers/deploy/configure/configure-discovery-methods#bkmk_azuregroupdisco) <!--3611956,023715E7-BFBA-4E9E-A80F-B5B626464ADD-->| 버전 1906 | ![아직 추가되지 않음](media/red_x.png) |
+| [Azure Active Directory 그룹에 컬렉션 멤버 자격 결과 동기화](/sccm/core/clients/manage/collections/create-collections#bkmk_aadcollsync) <!--3607475,C2127144-C8DE-49F6-9CB3-D4F5B59F9515-->| 버전 1906| ![아직 추가되지 않음](media/red_x.png)|
+| [CMPivot 독립 실행형](/sccm/core/servers/manage/cmpivot#bkmk_standalone) <!--3555890/4692885,no GUID--> | 버전 1906 | ![아직 추가되지 않음](media/red_x.png) |
+| [SMS 공급자 관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service) <!--1359052--> | 버전 1810 | 버전 1906 |
 | [향상된 HTTP 사이트 시스템](/sccm/core/plan-design/hierarchy/enhanced-http) <!--1356889,1358228--> | 버전 1806 | 버전 1810 |
-| [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps) <!--1357892--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
+| [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps) <!--1357892,CC3AE625-BF72-49B1-8AB1-AF0DCF2D6F4C--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
 | [SCAP 확장](/sccm/compliance/plan-design/scap/about-scap) <!--3607889--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
 | [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager) <!--1357861--> | 버전 1806 | 버전 1810 |
 | [iOS용 Cisco AnyConnect 4.0.07x 이상 지원](/sccm/mdm/deploy-use/create-vpn-profiles) <!--1357393--> | 1802 버전 | 1802 버전 <br>4163547 업데이트 포함 |
@@ -87,16 +92,10 @@ ms.locfileid: "67194204"
 | [Windows Defender Exploit Guard](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) <!--1355468--> | 버전 1710 | 1802 버전 |
 | [조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616--> | 버전 1710 | 1802 버전 |
 | [Windows PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459--> | 버전 1706 | 1802 버전 |
-| [Microsoft Surface 드라이버 업데이트 관리](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490--> | 버전 1706 | 버전 1710 |
-| [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) <!--1355092 (1319346)--> | 버전 1702 | ![아직 추가되지 않음](media/red_x.png) |
-| [작업 순서 콘텐츠 사전 캐싱](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) <!--1021244--> | 버전 1702 | 버전 1710 |
-| [애플리케이션을 설치하기 전에 실행 중인 실행 파일 확인](/sccm/apps/deploy-use/deploy-applications#bkmk_exe-check) <!--1284624--> | 버전 1702 | 버전 1706 |
-| [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse) <!--1277922--> | 버전 1702 | 버전 1706 |
-| [클라이언트에 콘텐츠 배포를 위한 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) <!--1101436--> | 버전 1610 | 버전 1710 |
+| [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager) <!--3600958 (fka 1355092 & 1319346)--> | 버전 1702 | 버전 1906 |
 | [클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-management-gateway) <!--1101764--> | 버전 1610 | 1802 버전 |
 | [Azure Log Analytics 커넥터](/sccm/core/clients/manage/sync-data-log-analytics) <!--1236739--> | 버전 1606 | 1802 버전 |
-| [클러스터 인식 컬렉션 서비스(서버 그룹 서비스)](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_ServerGroups) <!--1081776--> | 버전 1602 | ![아직 추가되지 않음](media/red_x.png) |
-| [Configuration Manager에서 관리하는 PC에 대한 조건부 액세스](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--  --> | 버전 1602 | 버전 1702 |
+| [클러스터 인식 컬렉션 서비스(서버 그룹 서비스)](/sccm/sum/deploy-use/service-a-server-group) <!--1081776,290B66D8-C735-4895-B59A-DD732D84A697--> | 버전 1602 | ![아직 추가되지 않음](media/red_x.png) |
 
 <!--Image used = ![Not yet](media/red_x.png) -->
 

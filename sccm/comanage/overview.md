@@ -5,18 +5,18 @@ description: Configuration Manager와 Microsoft Intune을 모두 사용하여 Wi
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 04/26/2019
+ms.date: 08/01/2019
 ms.topic: overview
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e0ae5c392acd03509f70c19f551731065bc4be2
-ms.sourcegitcommit: 23852dda81bb8496dd10c0a8ec4f740a8e15efc3
+ms.openlocfilehash: 3710cc7178020af1d03bfd02953e2a2f3ed64f26
+ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64873273"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68743608"
 ---
 # <a name="what-is-co-management"></a>공동 관리란?
 
@@ -29,7 +29,9 @@ Windows 10 디바이스에 Configuration Manager 클라이언트가 있고 디�
 
 또한 워크로드를 별도의 디바이스 컬렉션으로 파일럿 실행할 수도 있습니다. 파일럿 실행을 사용하면 더 큰 그룹을 전환하기 전에 하위 집합의 디바이스로 Intune 기능을 테스트할 수 있습니다.
 
-![공동 관리의 개요 다이어그램](media/co-management-overview.png)
+![공동 관리의 개요 다이어그램](media/co-management-overview.svg)
+
+[전체 화면 크기로 다이어그램 보기](media/co-management-overview.svg)
 
 > [!Note]  
 > Configuration Manager 및 Microsoft Intune을 둘 다 사용해서 Windows 10 디바이스를 동시에 관리할 경우 이 구성을 *공동 관리*라고 합니다. Configuration Manager로 디바이스를 관리하고 타사 MDM 서비스에 등록하는 경우 이 구성을 *공존*이라고 합니다. 두 관리 기관을 제대로 오케스트레이션하지 못한 상태에서 단일 디바이스 관리에 사용하는 일은 어려운 일일 수 있습니다. 공동 관리를 사용하면 Configuration Manager와 Intune이 [워크로드](#workloads)의 균형을 유지하여 충돌이 일어나지 않도록 합니다. 이러한 상호 작용은 타사 서비스와 공존하지 않으므로 공존의 관리 기능은 제한됩니다. 자세한 내용은 [Configuration Manager와 타사 MDM 공존](/sccm/comanage/coexistence)을 참조하세요.

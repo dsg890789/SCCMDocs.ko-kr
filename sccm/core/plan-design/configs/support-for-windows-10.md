@@ -2,7 +2,7 @@
 title: Windows 10에 대한 지원
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager가 OSD나 클라이언트로 지원되는 Windows 10 버전에 대해 알아보세요.
-ms.date: 05/21/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67c7c84850d22d7f73a745c61b0c1cb577088f83
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: e95cc6be22c05afcf489fa7e9db8456cb0da0f79
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251686"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536798"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
@@ -31,7 +31,6 @@ ms.locfileid: "67251686"
 > 클라이언트인 Windows Server 빌드는 연결된 Windows 10 버전과 동일하게 지원됩니다. 예를 들어 Windows Server 2016은 Windows 10 LTSB 2016과 동일한 빌드 버전이고 Windows Server 버전 1803은 Windows 10 버전 1803과 동일한 빌드 버전입니다.
 >
 > 사이트 시스템인 Windows Server에 대한 자세한 내용은 [Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers#bkmk_core)를 참조하세요.
-
 
 
 ## <a name="windows-10-as-a-client"></a>클라이언트인 Windows 10
@@ -52,16 +51,16 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 <br/>
 다음 표에는 여러 버전의 Configuration Manager에서 클라이언트로서 사용할 수 있는 Windows 10 버전이 나와 있습니다.
 
-| Windows 10 버전 | Configuration Manager 1710 | Configuration Manager 1802 | Configuration Manager 1806 | Configuration Manager 1810 | Configuration Manager 1902 |
+| Windows 10 버전 | Configuration Manager 1802 | Configuration Manager 1806 | Configuration Manager 1810 | Configuration Manager 1902 | Configuration Manager 1906 |
 |---------------------|-----|-----|-----|-----|-----|
 | Enterprise 2015 LTSB <!--10/14/2025-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | Enterprise 2016 LTSB <!--10/13/2026-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| Enterprise LTSC 2019 <!--01/09/2029-->   | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png)   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| Enterprise LTSC 2019 <!--01/09/2029-->   | ![지원되지 않음](media/Red_X.png)   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1703   <!--10/08/2019-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1709   <!--04/14/2020-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1803   <!--11/10/2020-->   | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1809   <!--05/11/2021-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1903   <!--TBD-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) |
+| 1803   <!--11/10/2020-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1809   <!--05/11/2021-->   | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1903   <!--TBD-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 
 <!-- lifecycle reference: https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet -->
 
@@ -74,10 +73,9 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
 
 > [!NOTE]  
-> 버전 1802부터 Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 -->
+> Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 -->
 
 Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
-
 
 
 ## <a name="windows-10-adk"></a>Windows 10 ADK
@@ -90,13 +88,13 @@ Configuration Manager로 운영 체제를 배포할 때 Windows ADK는 필요한
 <br/>
 다음 표에는 여러 버전의 Configuration Manager에서 사용할 수 있는 Windows 10 ADK 버전이 나와 있습니다.
 
-| Windows 10 ADK 버전  | Configuration Manager 1710 | Configuration Manager 1802 | Configuration Manager 1806 | Configuration Manager 1810 | Configuration Manager 1902 |
+| Windows 10 ADK 버전  | Configuration Manager 1802 | Configuration Manager 1806 | Configuration Manager 1810 | Configuration Manager 1902 | Configuration Manager 1906 |
 |--------------------|-----|-----|-----|-----|-----|
-| **1703**<br>(10.1.15063) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) |
-| **1709**<br>(10.1.16299) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png) |
-| **1803**<br>(10.1.17134) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) |
-| **1809**<br>(10.1.17763) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| **1903**<br>(10.1.18362) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) |
+| **1703**<br>(10.1.15063) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) |
+| **1709**<br>(10.1.16299) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) |
+| **1803**<br>(10.1.17134) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png) |
+| **1809**<br>(10.1.17763) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) |
+| **1903**<br>(10.1.18362) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 
 |키|
 |--|

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feef839af1f51c4cbb291f4ed5bc6336da6409b3
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: e5526afcf826c29ff5cf5d55f730092ce3031a0b
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286870"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68859812"
 ---
 # <a name="about-client-installation-parameters-and-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
 
@@ -114,7 +114,7 @@ FQDN을 사용하는 경우의 예: `ccmsetup.exe /mp:smsmp01.contoso.com`
 - 다음 명령을 실행합니다. `(Get-WmiObject -Namespace Root\Ccm\LocationServices -Class SMS_ActiveMPCandidate | Where-Object {$_.Type -eq "Internet"}).MP`
 - **/mp** 매개 변수에 사용할 “https://” 접두사를 추가합니다.
 
-클라우드 관리 게이트웨이 URL을 사용하는 경우에 대한 예제. `ccmsetup.exe /mp:https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100`
+클라우드 관리 게이트웨이 URL을 사용하는 경우에 대한 예제. `ccmsetup.exe /mp: https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100`
 
  > [!Important]
  > **/mp** 매개 변수에 대해 클라우드 관리 게이트웨이의 URL을 지정하는 경우 **https://** 로 시작해야 합니다.
@@ -253,7 +253,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
 ccmsetup.msi로 설치된 후에 ccmsetup.exe에 전달되는 명령줄 매개 변수와 속성을 지정합니다. 따옴표 안에 다른 속성을 포함합니다. Intune MDM 설치 방법을 사용하여 Configuration Manager 클라이언트를 부트스트래핑할 때 이 속성을 사용합니다. 
 
-예: `ccmsetup.msi CCMSETUPCMD="/mp:https://mp.contoso.com CCMHOSTNAME=mp.contoso.com"`
+예: `ccmsetup.msi CCMSETUPCMD="/mp: https://mp.contoso.com CCMHOSTNAME=mp.contoso.com"`
 
  > [!Tip]
  > Microsoft Intune은 명령줄을 1024자로 제한합니다. 
@@ -488,7 +488,7 @@ TRUE로 설정된 경우 이 속성은 관리자의 능력이 **Configuration Ma
 
 Configuration Manager 클라이언트 컴퓨터에서 전송한 상태 메시지를 받아서 처리하는 대체 상태 지점을 지정합니다.  
 
-대체 상태 지점에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)을 참조하세요.  
+대체 상태 지점에 대한 자세한 내용은 [대체 상태 지점 필요 여부 결정](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#fallback-status-point)을 참조하세요.  
 
 예: `CCMSetup.exe FSP=SMSFP01`  
 

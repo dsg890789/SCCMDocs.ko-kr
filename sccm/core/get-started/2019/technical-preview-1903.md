@@ -10,13 +10,14 @@ ms.assetid: fd35798a-ecea-40df-8174-c6a824d58e6f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
+ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b5320df41e3a2cbfb2bd7e1d25d49f1ff42d927
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.openlocfilehash: f90d04b82ba75a0a7cee8108a3ebdffbca0d6da9
+ms.sourcegitcommit: 159c6c9fe1df03fd2c4633125a593e3050a2f2da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802277"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833119"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1903"></a>Configuration Manager 버전 1903 기능 미리 보기
 

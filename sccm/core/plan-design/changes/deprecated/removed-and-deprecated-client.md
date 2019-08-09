@@ -2,7 +2,7 @@
 title: 클라이언트에서 사용되지 않음
 titleSuffix: Configuration Manager
 description: Configuration Manager가 더 이상 지원하지 않는 클라이언트 운영 체제에 대해 알아봅니다.
-ms.date: 03/27/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad9dba601a1ddc6d16e0c820bf7577531b6eb1db
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: f8f881b828ba30d1e38e76c96c71709fb0e744f2
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496815"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536926"
 ---
 # <a name="removed-and-deprecated-items-for-configuration-manager-clients"></a>Configuration Manager 클라이언트에서 제거되는 항목과 사용되지 않는 항목
 
@@ -33,14 +33,17 @@ ms.locfileid: "65496815"
 
 |**운영 체제**|**처음 중단 발표**|**제거된 지원**|  
 |-|-|-|
+|Windows CE 7.0|2019년 7월 19일|2020년 6월 30일 이후 릴리스된 첫 번째 버전|
+|Windows 10 Mobile|2019년 7월 19일|2020년 6월 30일 이후 릴리스된 첫 번째 버전|
+|Windows 10 Mobile Enterprise|2019년 7월 19일|2020년 6월 30일 이후 릴리스된 첫 번째 버전|
 |Linux 및 UNIX|2018년 3월 22일|버전 1902|
 |Windows 8: Professional, Enterprise|2016년 1월 12일|1802 버전|
 |Windows Embedded 8 Pro|2016년 1월 12일|1802 버전|
 |Windows Embedded 8 Industry|2016년 1월 12일|1802 버전|
-|Windows XP Embedded <br><br> 모든 [XP 기반 포함 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#windows-embedded-computers)를 포함합니다.|2015년 7월 10일|버전 1702| 
-|Windows Vista|2015년 7월 10일|버전 1511| 
+|Windows XP Embedded <br><br> 모든 [XP 기반 포함 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#windows-embedded-computers)를 포함합니다.|2015년 7월 10일|버전 1702|
+|Windows Vista|2015년 7월 10일|버전 1511|
 |Windows Server 2003 R2|2015년 7월 10일|버전 1511|
-|Windows Server 2003|2015년 7월 10일|버전 1511|   
+|Windows Server 2003|2015년 7월 10일|버전 1511|
 |Windows XP|2015년 7월 10일|버전 1511|  
 |Mac OS X 10.6 – 10.8|2015년 7월 10일|버전 1511|  
 |Windows Mobile 6.0 - 6.5|2015년 7월 10일|버전 1511|  
@@ -48,8 +51,7 @@ ms.locfileid: "65496815"
 |Windows CE 5.0 – 6.0|2015년 7월 10일|버전 1511|  
 
 
-
-## <a name="more-information"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 자세한 내용은 다음 아티클을 참조하세요.
 

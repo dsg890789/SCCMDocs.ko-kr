@@ -2,7 +2,7 @@
 title: 업데이트 및 서비스
 titleSuffix: Configuration Manager
 description: 업데이트 및 서비스라는 콘솔 내 서비스 메서드에 대해 알아봅니다. 이 방법을 사용하면 권장 업데이트를 간편하게 찾아서 설치할 수 있습니다.
-ms.date: 06/06/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb875529224655fb56aeea5636bf92c7ddaf8b2c
-ms.sourcegitcommit: 9d186b8b9ff652d5ea8a5d352f3f793f11db66f0
+ms.openlocfilehash: 4901494c195c4602fe40aa191621a0322bc9f8e2
+ms.sourcegitcommit: 75f48834b98ea6a238d39f24e04c127b2959d913
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "66822056"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604512"
 ---
 # <a name="updates-and-servicing-for-configuration-manager"></a>Configuration Manager에 대한 업데이트 및 서비스
 
@@ -28,7 +28,7 @@ Configuration Manager는 **업데이트 및 서비스**라는 콘솔 내 서비�
 > *업그레이드*, *업데이트* 및 *설치* 용어들은 Configuration Manager의 세 가지 별도 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지에 대한 자세한 내용은 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.  
 
 
-##  <a name="bkmk_Baselines"></a> 기준 및 업데이트 버전  
+## <a name="bkmk_Baselines"></a> 기준 및 업데이트 버전  
 
 새 계층 구조에 새로운 사이트를 설치할 때 최신 기준 버전을 사용합니다.
 
@@ -62,11 +62,11 @@ Configuration Manager의 다음과 같은 지원되는 버전은 기준, 업데�
 
 | Version | 가용일 | [지원 종료 날짜](/sccm/core/servers/manage/current-branch-versions-supported) | 기준 | 콘솔 내 업데이트 |  
 |-------------|-----------|------------|--------------|------------------------|  
+| [1906](/sccm/core/plan-design/changes/whats-new-in-version-1906)<br /><br /> 5.00.8853.1000 | 2019년 7월 26일 | 2021년 1월 26일 | 아니요 | 예 |
 | [1902](/sccm/core/plan-design/changes/whats-new-in-version-1902)<br /><br /> 5.00.8790.1000 | 2019년 3월 27일 | 2020년 9월 27일 | 예<sup>[참고 1](#bkmk_note1)</sup> | 예 |
 | [1810](/sccm/core/plan-design/changes/whats-new-in-version-1810)<br /><br /> 5.00.8740.1000 | 2018년 11월 27일 | 2020년 5월 27일 | 아니요 | 예 |
 | [1806](/sccm/core/plan-design/changes/whats-new-in-version-1806)<br /><br /> 5.00.8692.1000 | 2018년 7월 31일 | 2020년 1월 31일 | 아니요 | 예 |
 | [1802](/sccm/core/plan-design/changes/whats-new-in-version-1802)<br /><br /> 5.00.8634.1000 | 2018년 3월 22일 | 2019년 9월 22일 | 예<sup>[참고 1](#bkmk_note1)</sup> | 예 |
-| [1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)<br /><br /> 5.00.8577.1000 | 2017년 11월 20일 | 2019 년 5 월 20 | 아니요 | 예 |
 
 <a name="bkmk_note1"></a>
 
@@ -85,12 +85,13 @@ Configuration Manager의 다음과 같은 지원되는 버전은 기준, 업데�
 
 | Version | 가용일 | 지원 종료 날짜 | 기준 | 콘솔 내 업데이트 |  
 |-------------|-----------|------------|--------------|------------------------|  
+| 1710 <br /><br /> 5.00.8577.1000 | 2017년 11월 20일 | 2019 년 5 월 20 | 아니요 | 예 |
 | 1706 <br /><br /> 5.00.8540.1000 | 2017년 7월 31일 | 2018년 7월 31일 | 아니요 | 예 |
 | 1702 <br /><br /> 5.00.8498.1000 | 2017년 3월 27일 | 2018년 3월 27일 | 예 | 예 |
 | 1610 <br /><br /> 5.00.8458.1000 | 2016년 11월 18일 | 2017년 11월 18일 | 아니요 | 예 |
 | 1606 <br /><br /> 5.00.8412.1000 | 2016년 7월 22일 | 2017년 7월 22일 | 아니요 | 예 |
 | 1606 및 1606 핫픽스 롤업(KB3186654) <br><br>5.00.8412.1307 | 2016년 10월 12일 | 2017년 10월 12일 | 예 | 아니요 |
-| 1602<br /><br /> 5.00.8355.1000 | 2016년 3월 11일 | 2017년 3월 11일 | 아니요 | 예 |
+| 1602 <br /><br /> 5.00.8355.1000 | 2016년 3월 11일 | 2017년 3월 11일 | 아니요 | 예 |
 | 1511 <br /><br /> 5.00.8325.1000 | 2015년 12월 8일 | 2016년 12월 8일 | 예 | 아니요 |  
 
 #### <a name="how-to-check-the-version"></a>버전을 확인하는 방법
@@ -98,7 +99,7 @@ Configuration Manager의 다음과 같은 지원되는 버전은 기준, 업데�
 Configuration Manager 사이트 버전을 확인하려면 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다. 이 대화 상자에는 사이트 및 콘솔 버전이 표시됩니다.  
 
 > [!Note]  
-> 1802 버전부터는 콘솔 버전이 이제 사이트 버전과 약간 다릅니다. 이제 콘솔의 부 버전이 Configuration Manager 릴리스 버전에 해당합니다. 예를 들어, Configuration Manager 버전 1802에서 초기 사이트 버전은 5.0.8634.1000이고 초기 콘솔 버전은 5.**1802**.1082.1700입니다. 빌드(1082) 및 수정(1700) 번호는 향후 핫픽스에서 1802 릴리스로 변경될 수 있습니다.
+> 콘솔 버전은 사이트 버전과 약간 다릅니다. 콘솔의 부 버전이 Configuration Manager 릴리스 버전에 해당합니다. 예를 들어, Configuration Manager 버전 1802에서 초기 사이트 버전은 5.0.8634.1000이고 초기 콘솔 버전은 5.**1802**.1082.1700입니다. 빌드(1082) 및 수정(1700) 번호는 향후 핫픽스에서 변경될 수 있습니다.
 
 
 ## <a name="bkmk_inconsole"></a> 콘솔 내 업데이트 및 서비스  
@@ -179,7 +180,7 @@ Configuration Manager는 사용자를 위해 새 업데이트를 검색합니다
 
 이러한 수정 프로그램은 다음 두 가지 방법 중 한 가지를 사용하여 수동으로 설치합니다.  
 
-#### <a name="update-registration-tool"></a>업데이트 등록 도구
+### <a name="update-registration-tool"></a>업데이트 등록 도구
 
 이 도구로 핫픽스를 Configuration Manager 콘솔에 수동으로 가져옵니다. 그런 다음, 자동으로 검색되는 콘솔 내 업데이트를 수행할 때 업데이트를 설치합니다.  
 
@@ -188,7 +189,7 @@ Configuration Manager는 사용자를 위해 새 업데이트를 검색합니다
 
 자세한 내용은 [업데이트 등록 도구를 사용하여 핫픽스 가져오기](/sccm/core/servers/manage/use-the-update-registration-tool-to-import-hotfixes)를 참조하세요.  
 
-#### <a name="hotfix-installer"></a>핫픽스 설치 관리자
+### <a name="hotfix-installer"></a>핫픽스 설치 관리자
 
 콘솔 내 메서드를 사용하여 설치할 수 없는 핫픽스를 수동으로 설치하려면 이 도구를 사용합니다.  
 

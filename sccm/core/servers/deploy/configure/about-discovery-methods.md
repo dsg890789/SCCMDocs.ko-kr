@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02c61a3af0088a2f2bb564643a085bd117d63bb
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 21183b620b8161056377bb7fc6e86bde79f31767
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536611"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68860073"
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
 
@@ -230,7 +230,7 @@ Azure AD 사용자 검색을 구성하려면 클라우드 관리에 대한 [Azur
 - onPremisesSecurityIdentifier
 - AAD tenantID
 
-Azure AD 사용자 그룹 검색에 대한 작업은 계층 구조에서 최상위 계층 사이트 서버에 있는 **SMS_AZUREAD_DISCOVERY_AGENT.log** 파일에 기록됩니다. 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [Azure AD 사용자 그룹 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azuregroupdisco)을 참조하세요.
+Azure AD 사용자 그룹 검색에 대한 작업은 계층 구조에서 최상위 계층 사이트 서버에 있는 **SMS_AZUREAD_DISCOVERY_AGENT.log** 파일에 기록됩니다. 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [Azure AD 사용자 그룹 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#bkmk_azuregroupdisco)을 참조하세요.
 
 ##  <a name="bkmk_aboutHeartbeat"></a> 하트비트 검색  
 **구성 가능 여부:** 예  

@@ -1,7 +1,7 @@
 ---
-title: Intune을 사용 하 여 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목 만들기
+title: Intune으로 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager iOS 및 macOS 구성 항목을 사용 하 여 iOS 및 macOS 장치에 대 한 설정을 관리할 수 있습니다.
+description: Ios 및 macos 구성 항목 System Center Configuration Manager를 사용 하 여 iOS 및 macOS 장치에 대 한 설정을 관리 합니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a528ef0e53744f5cac466cd08bf2426089a15907
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: 5d1b15f441015ebea7ca00e9fa8bee7e02f168b8
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551497"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68859994"
 ---
-# <a name="how-to-create-configuration-items-for-ios-and-macos-devices-managed-with-intune"></a>Intune을 사용 하 여 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목을 만드는 방법
+# <a name="how-to-create-configuration-items-for-ios-and-macos-devices-managed-with-intune"></a>Intune으로 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목을 만드는 방법
 
-System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 항목을 Configuration Manager에서 온-프레미스 관리 되거나 Microsoft Intune에 등록 된 iOS 및 macOS 장치에 대 한 설정을 관리 합니다.  
+**Ios 및 macos** 구성 항목 System Center Configuration Manager를 사용 하 여 Configuration Manager에서 온-프레미스로 Microsoft Intune 또는 관리 되는 Ios 및 macos 장치에 대 한 설정을 관리 합니다.  
   
 ## <a name="create-an-ios-and-macos-configuration-item"></a>IOS 및 macOS 구성 항목 만들기  
   
@@ -32,13 +32,13 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   
 4. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
   
-5. 아래 **만들려는 구성 항목의 유형을 지정**를 선택 **iOS 및 macOS**합니다.  
+5. **만들려는 구성 항목의 유형 지정**에서 **IOS 및 macos**를 선택 합니다.  
   
 6. Configuration Manager 콘솔에서 구성 항목을 검색하고 필터링하기 위해 범주를 만들고 할당하려면 **범주**를 클릭합니다.  
   
-7. 에 **지원 되는 플랫폼** 구성 항목을 평가 하는 마법사, 선택 특정 iOS 또는 macOS 플랫폼의 페이지입니다.  
+7. 마법사의 **지원 되는 플랫폼** 페이지에서 구성 항목을 평가 하는 특정 IOS 또는 macos 플랫폼을 선택 합니다.  
   
-8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 참조 [iOS 및 macOS 구성 항목 설정 참조](#ios-and-mac-os-x-configuration-item-settings-reference) 대 한 정보와 클릭 한 다음이 항목의 **다음**합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은이 항목의 [iOS 및 macOS 구성 항목 설정 참조](#ios-and-macos-configuration-item-settings-reference) 를 참조 하 고 **다음**을 클릭 합니다.  
   
    > [!TIP]  
    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
@@ -83,7 +83,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
 |**암호 수정**(감독 모드인 경우에만)|디바이스 암호를 추가, 변경 또는 제거할 수 있습니다.|
   
 ###  <a name="device"></a>디바이스  
- 이러한 설정은 iOS 및 macOS 장치에 적용 됩니다.  
+ 이러한 설정은 iOS 및 macOS 장치에 모두 적용 됩니다.  
   
 |설정 이름|세부 정보|  
 |------------------|-------------|  
@@ -93,7 +93,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
 |**잠겨 있는 동안 음성 도우미 허용**|디바이스가 잠겨 있을 때 Siri 등의 음성 도우미 앱을 사용할 수 있습니다.|  
 |**화면 캡처**|디바이스 디스플레이의 스크린샷을 찍을 수 있습니다.|  
 |**영상 채팅 클라이언트**|Facetime과 같은 화상 채팅 앱을 사용할 수 있습니다.|  
-|**다중 접속 게임**|인터넷에서 다른 플레이어를 사용 하 여 게임을 플레이할 수 있습니다.|  
+|**다중 접속 게임**|인터넷의 다른 플레이어와 게임을 즐길 수 있습니다.|  
 |**잠겨 있는 동안 개인 전자지갑 소프트웨어 허용**|Passbook과 같은 개인 전자지갑 소프트웨어를 사용할 수 있습니다.|  
 |**진단 데이터 전송**|앱 로그 파일을 전송할 수 있습니다.|  
 |**알림 센터 알림**|사용자에게 잠금 화면에서 알림 보기에 대한 액세스를 허용합니다.|
@@ -117,8 +117,8 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
 |**자동 완성 키보드**(감독 모드인 경우에만)|사용자가 입력할 가능성이 있는 단어를 제안하는 자동 완성 키보드를 사용할 수 있습니다.|
 |**키보드 맞춤법 검사**(감독 모드인 경우에만)|디바이스 맞춤법 검사기를 사용할 수 있습니다.|
 |**알림 설정 수정**(감독 모드인 경우에만)|사용자가 디바이스 알림 설정을 변경할 수 있습니다.|
-|**스포트라이트 검색에서 인터넷 검색 결과 반환할** (감독 모드인 경우에)|Spotlight 검색을 결과 제공 하려면 인터넷에 연결할 수 있습니다.|
-|**Siri가 인터넷에서 사용자 생성 콘텐츠 쿼리를 사용 하 여** (감독 모드인 경우에)|Siri가 질문에 대답할 수 있는 웹 사이트에 액세스할 수 있습니다.|
+|**스포트라이트 검색에서 인터넷을 통해 결과 반환** (감독 모드인 경우에만)|스포트라이트 검색을 통해 인터넷에 연결 하 여 추가 결과를 제공할 수 있습니다.|
+|**Siri를 사용 하 여 인터넷에서 사용자 생성 콘텐츠 쿼리** (감독 모드인 경우에만)|Siri가 질문에 대답할 수 있는 웹 사이트에 액세스할 수 있습니다.|
 
   
 ###  <a name="store"></a>스토어  
@@ -139,7 +139,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   
 |설정 이름|세부 정보|  
 |------------------|-------------|  
-|**기본 브라우저**|사용자는 기본 인터넷 브라우저를 변경할 수 있습니다.|  
+|**기본 브라우저**|사용자가 기본 인터넷 브라우저를 변경할 수 있습니다.|  
 |**자동 채우기**|사용자가 브라우저에서 자동 완성 설정을 변경할 수 있습니다.|  
 |**액티브 스크립팅**|브라우저에서 ActiveX 스크립트와 같은 스크립트를 실행할 수 있습니다.|  
 |**팝업 차단**|브라우저 팝업 차단을 사용하거나 사용하지 않도록 설정합니다.|  
@@ -172,7 +172,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
 |**사진 동기화**|클라우드 서비스에 대한 사진 동기화를 수행할 수 있습니다.| 
 |**iCloud 사진 라이브러리**|**아니요**로 설정하면 사용자가 클라우드에 사진과 비디오를 저장할 수 있는 iCloud 사진 보관함을 사용할 수 없게 됩니다. **아니요**로 설정되면 iCloud 사진 라이브러리에서 디바이스로 완전히 다운로드되지 않은 모든 사진이 디바이스에서 제거됩니다.|
 |**iCloud 사진 공유**|디바이스에서 iCloud 사진 공유를 사용하지 않으려면 **아니요**로 설정합니다.|
-|**다른 디바이스에서 작업을 계속하도록 핸드오프**|사용자가 다른 iOS에서 iOS 장치 또는 macOS 장치에서 시작 하는 작업을 계속할 수 있습니다.|
+|**다른 디바이스에서 작업을 계속하도록 핸드오프**|사용자가 다른 iOS 또는 macOS 장치에서 iOS 장치에서 시작한 작업을 계속할 수 있습니다.|
 |**관리되는 앱에서 데이터를 iCloud와 동기화**|Intune을 사용하여 관리하는 앱에서 데이터를 사용자의 iCloud 계정과 동기화할 수 있습니다.|
 
   
@@ -240,7 +240,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   
         앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.  
   
-        **예제:** 저장소를 검색 합니다 **iPad 용 Microsoft Word** 앱. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
+        **예제:** 스토어에서 **iPad 용 Microsoft Word** 앱을 검색 합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    -   **편집** - 선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.  
   
@@ -248,7 +248,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   
    -   **가져오기** - 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.  
   
-2. 작업을 완료한 경우 **다음**을 클릭합니다.  
+2. 작업이 완료되면 **다음**을 클릭합니다.  
   
    다음 보고서 모니터 규격 및 비규격 앱 중 하나를 사용할 수 있습니다.  
   
@@ -259,13 +259,13 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   보고서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../core/servers/manage/reporting.md)을 참조하세요.  
   
 ###  <a name="compliant-and-noncompliant-apps-macos"></a>규격 및 비규격 앱 (macOS)  
- 준수 또는 비준수 회사에서 macOS 앱 목록을 지정할 수 있습니다. 그런 다음 보고서를 사용하여 비호환 앱이 설치된 디바이스와 관련 사용자를 표시할 수 있습니다.  
+ 회사에서 규정을 준수 하거나 비준수 인 macOS 앱 목록을 지정할 수 있습니다. 그런 다음 보고서를 사용하여 비호환 앱이 설치된 디바이스와 관련 사용자를 표시할 수 있습니다.  
   
  같은 구성 항목에서 호환 앱과 비호환 앱을 모두 지정할 수는 없습니다.  
   
 #### <a name="to-specify-the-compliant-or-noncompliant-apps-list"></a>호환 또는 비호환 앱 목록을 지정하려면  
   
-1. 에 **호환 및 비호환 앱 (macOS)** 페이지에서 다음 정보를 지정 합니다.  
+1. **규격 및 비규격 앱 (macOS)** 페이지에서 다음 정보를 지정 합니다.  
   
    - **호환되지 않는 앱 목록** - 사용자가 설치하는 경우 호환되지 않는 것으로 보고되는 앱 목록을 지정하려면 이 옵션을 선택합니다.  
   
@@ -289,7 +289,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   
    - **가져오기** - 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 앱 이름, 게시자, 앱 번들 ID를 사용합니다.  
   
-2. 작업을 완료한 경우 **다음**을 클릭합니다.  
+2. 작업이 완료되면 **다음**을 클릭합니다.  
   
    다음 보고서 모니터 규격 및 비규격 앱 중 하나를 사용할 수 있습니다.  
   
@@ -300,14 +300,14 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   보고서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../core/servers/manage/reporting.md)을 참조하세요.  
   
 ### <a name="ios-and-macos-custom-profile-settings"></a>iOS 및 macOS 사용자 지정 프로필 설정  
- 사용 하 여 **iOS 및 macOS 사용자 지정 프로필** 사용 하 여 만든 설정을 배포 하는 [Apple Configurator 도구](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) iOS 및 macOS 장치에 합니다. 이 도구를 사용하면 이러한 디바이스의 작업을 제어하는 많은 설정을 만들어 구성 프로필에 내보낼 수 있습니다. 그런 다음이 구성 프로필을 iOS 및 macOS 사용자 지정 프로필을 가져올 하 고 조직에서 사용자 및 장치에 설정을 배포할 수 있습니다.  
+ **Ios 및 Macos 사용자 지정 프로필** 을 사용 하 여 [Apple Configurator 도구](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 를 사용 하 여 만든 설정을 ios 및 macos 장치에 배포 합니다. 이 도구를 사용하면 이러한 디바이스의 작업을 제어하는 많은 설정을 만들어 구성 프로필에 내보낼 수 있습니다. 그런 다음이 구성 프로필을 iOS 및 macOS 사용자 지정 프로필로 가져와서 조직의 사용자와 장치에 설정을 배포할 수 있습니다.  
   
 > [!NOTE]  
->  Apple Configurator 도구에서 내보내는 설정이 iOS 또는 macOS 프로필을 배포 하는 장치에서의 버전과 호환 되는지 확인 합니다. 호환되지 않는 설정을 해결하는 방법에 대한 정보를 보려면 [Apple 개발자](https://developer.apple.com/) 웹 사이트에서 구성 프로필 참조 및 모바일 디바이스 관리 프로토콜 참조를 검색하세요.  
+>  Apple Configurator 도구에서 내보내는 설정이 프로필을 배포 하는 장치에서 iOS 또는 macOS 버전과 호환 되는지 확인 합니다. 호환되지 않는 설정을 해결하는 방법에 대한 정보를 보려면 [Apple 개발자](https://developer.apple.com/) 웹 사이트에서 구성 프로필 참조 및 모바일 디바이스 관리 프로토콜 참조를 검색하세요.  
   
 #### <a name="to-create-an-ios-and-macos-custom-profile"></a>IOS 및 macOS 사용자 지정 프로필을 만들려면  
   
-1.  에 **iOS 및 macOS 사용자 지정 프로필 설정 구성** 페이지의 **구성 항목 만들기 마법사**, 다음 정보를 지정:  
+1.  **구성 항목 만들기 마법사**의 **IOS 및 macos 사용자 지정 프로필 설정 구성** 페이지에서 다음 정보를 지정 합니다.  
   
     -   **사용자 지정 구성 프로필 이름(사용자에게 표시)** - 디바이스 및 Configuration Manager 보고서에 표시되는 정책의 이름을 입력합니다.  
   
@@ -322,7 +322,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
     -   **보고할 비준수 심각도** - 이 준수 정책이 비준수로 평가되는 경우 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
   
         > [!NOTE]  
-        >  MacOS 장치를 절전 모드 이면 정책과 프로필 배달 이거나 안 인벤토리에 포함 된. 따라서 다음번에 디바이스가 절전 모드에서 해제될 때까지 Configuration Manager 콘솔에 오류가 있는 정책 설정 상태가 일시적으로 표시될 수도 있습니다.  
+        >  MacOS 장치가 절전 모드에 있는 경우 정책과 프로필을 배달 하거나 인벤토리에 추가할 수 없습니다. 따라서 다음번에 디바이스가 절전 모드에서 해제될 때까지 Configuration Manager 콘솔에 오류가 있는 정책 설정 상태가 일시적으로 표시될 수도 있습니다.  
   
         -   **없음** 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   
@@ -360,7 +360,7 @@ System Center Configuration Manager를 사용 하 여 **iOS 및 macOS** 구성 �
   
      - 페이지의 URL을 복사한 다음 키오스크 모드에서 실행할 앱을 지정하는 URL로 사용합니다.  
   
-     - **예제:** 검색할 **iPad 용 Microsoft Word**합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
+     - **예제:** **IPad 용 Microsoft Word**를 검색 합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    - **터치** - 디바이스에서 터치 스크린을 사용하거나 사용하지 않도록 설정합니다.  
   
