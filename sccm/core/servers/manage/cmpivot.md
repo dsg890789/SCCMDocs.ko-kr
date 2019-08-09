@@ -2,7 +2,7 @@
 title: 실시간 데이터에 대한 CMPivot
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 CMPivot을 사용하여 실시간으로 클라이언트를 쿼리하는 방법을 알아봅니다.
-ms.date: 05/24/2019
+ms.date: 07/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 704e9ea1c8ddaf8cfebf1377381f6f345a9f7ea1
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 19275385c75477c1c0da24109d6a9c601c5aa8d0
+ms.sourcegitcommit: 75f48834b98ea6a238d39f24e04c127b2959d913
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339727"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604559"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -368,7 +368,7 @@ CMPivot 창의 아래쪽에 있는 **쿼리 요약** 탭을 선택합니다. 이
 
 ### <a name="cmpivot-audit-status-messages"></a>CMPivot 감사 상태 메시지
 
-1810 버전부터는 CMPivot를 실행하는 경우 **MessageID 40805**로 감사 상태 메시지를 생성합니다. **모니터링** < **시스템 상태** < **상태 메시지 쿼리**로 이동하여 상태 메시지를 볼 수 있습니다. **특정 사용자에 대한 모든 감사 상태 메시지**, **특정 사이트에 대한 모든 감사 상태 메시지**를 실행하거나 고유의 상태 메시지 쿼리를 만들 수 있습니다.
+1810 버전부터는 CMPivot를 실행하는 경우 **MessageID 40805**로 감사 상태 메시지를 생성합니다. **모니터링** > **시스템 상태** > **상태 메시지 쿼리**로 이동하여 상태 메시지를 볼 수 있습니다. **특정 사용자에 대한 모든 감사 상태 메시지**, **특정 사이트에 대한 모든 감사 상태 메시지**를 실행하거나 고유의 상태 메시지 쿼리를 만들 수 있습니다.
 
 메시지에 대해 다음 형식을 사용합니다.
 
@@ -386,7 +386,7 @@ MessageId 40805: &lt;UserName> 사용자는 &lt;Collection-ID> 컬렉션에서 &
 <!--3610960-->
 Configuration Manager 버전 1902부터는 계층 구조의 CAS(중앙 관리 사이트)에서 CMPivot을 실행할 수 있습니다. 기본 사이트는 계속 클라이언트 통신을 처리합니다. 중앙 관리 사이트에서 CMPivot을 실행하는 경우 고속 메시지 구독 채널을 통해 기본 사이트와 통신합니다. 이 통신은 사이트 간 표준 SQL 복제를 따르지 않습니다.
 
-CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에 있지 않거나 SQL Always On 구성이 아닌 경우 추가 사용 권한이 필요합니다. 이러한 원격 구성을 사용하면 CMPivot에 대해 "더블 홉 시나리오"가 있습니다.
+CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에 있지 않거나 SQL Always On 구성인 경우 추가 사용 권한이 필요합니다. 이러한 원격 구성을 사용하면 CMPivot에 대해 "더블 홉 시나리오"가 있습니다.
 
 이러한 "더블 홉 시나리오"의 경우 CMPivot를 CAS에서 작동하도록 하기 위해 제한된 위임을 정의할 수 있습니다. 이 구성의 보안 의미를 이해하려면 [Kerberos 제한 위임](https://docs.microsoft.com/windows-server/security/kerberos/kerberos-constrained-delegation-overview) 문서를 참고하세요. CAS와 함께 배치된 SQL 또는 SCCM 공급자와 같은 원격 구성이 둘 이상 있는 경우 조합된 사용 권한 설정이 필요합니다. 수행해야 하는 단계는 다음과 같습니다.
 
@@ -445,6 +445,111 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 1. 기본 SQL server를 다시 시작합니다.
 1. CAS 사이트 서버 및 CAS SQL Server를 다시 시작합니다.
 
+## <a name="bkmk_cmpivot1906"></a> 버전 1906부터의 CMPivot
+
+버전 1906부터 다음 항목이 CMPivot에 추가되었습니다.
+
+- [조인, 추가 연산자, 집계](#bkmk_cmpivot_joins)
+- [보안 관리자 역할에 CMPivot 권한 추가](#bkmk_cmpivot_secadmin1906)
+- [CMPivot 독립 실행형](#bkmk_standalone)이 **시험판 기능으로 추가되었습니다**
+
+### <a name="bkmk_cmpivot_joins"></a> CMPivot에서 조인, 추가 연산자 및 집계 추가
+<!--4054074-->
+이제 추가 산술 연산자와 집계뿐 아니라 레지스트리와 파일을 함께 사용하는 것과 같이 쿼리 조인을 추가하는 기능이 생겼습니다. 다음 항목이 추가되었습니다.
+
+#### <a name="table-operators"></a>테이블 연산자
+
+|테이블 연산자| 설명|
+|-----|-----|
+| [조인](https://docs.microsoft.com/azure/kusto/query/joinoperator)| 두 테이블의 행을 병합하고 동일한 디바이스의 행을 매칭하는 방법으로 새 테이블을 만듭니다.|
+|렌더|결과를 그래픽 출력으로 렌더링합니다.|
+
+렌더링 연산자는 CMPivot에 이미 있습니다. 여러 시리즈와 **with** 문에 대한 지원이 추가되었습니다. 자세한 내용은 [예제](#bkmk_cmpivot_examples1906) 섹션과 Kusto의 [조인 연산자](https://docs.microsoft.com/azure/kusto/query/joinoperator) 문서를 참조하세요.
+
+#### <a name="limitations-for-joins"></a>조인의 제한 사항
+
+1. 조인 열은 항상 **디바이스** 필드에서 암시적으로 수행됩니다.
+1. 쿼리마다 조인을 5개까지 사용할 수 있습니다.
+1. 최대 64개까지 열을 결합할 수 있습니다.
+
+#### <a name="scalar-operators"></a>스칼라 연산자
+
+|연산자| 설명|예|
+|-----|-----|-----|
+| + | 추가| `2 + 1, now() + 1d`|
+| - |  빼기| `2 - 1, now() - 1d`|
+| * | 곱하기| `2 * 2`|
+| / | 나누기 | `2 / 1`|
+| % | 나머지값 | `2 % 1`
+
+#### <a name="aggregation-functions"></a>집계 함수
+
+|기능| 설명|
+|-----|-----|
+| percentile()| Expr로 정의한 모집단에 대해 지정된 가장 가까운 백분위수의 추정치를 반환합니다.|
+| sumif() | 조건자가 true로 평가되는 Expr의 합계를 반환합니다.|
+
+#### <a name="scalar-functions"></a>스칼라 함수
+
+|기능| 설명|
+|-----|-----|
+| case()| 조건자 목록을 평가하여 조건자를 충족하는 첫 번째 결과 식을 반환합니다. |
+| iff() | 첫 번째 인수를 평가하고 조건자가 true로 평가되는지(두 번째) 아니면 false(세 번째)로 평가되는지 여부에 따라 두 번째 또는 세 번째 인수의 값을 반환합니다.|
+ | indexof() | 이 함수는 입력 문자열 내에서 발견된 첫 번째 지정된 문자열의 0부터 시작하는 인덱스를 보고합니다.|
+| strcat() | 1~64 사이의 인수를 연결합니다. |
+| strlen()| 입력 문자열의 길이(문자 수)를 반환합니다.|
+| substring() | 원본 문자열의 어떤 인덱스부터 문자열 끝까지 하위 문자열을 추출합니다. |
+| tostring() | 입력을 문자열 작업으로 변환합니다. |
+
+#### <a name="bkmk_cmpivot_examples1906"></a> 예제
+
+- 디바이스, 제조업체, 모델 및 OSVersion 표시:
+
+   ```Kusto
+   ComputerSystem
+   | project Device, Manufacturer, Model
+   | join (OperatingSystem | project Device, OSVersion=Caption)
+   ```
+
+- 디바이스의 부팅 시간 그래프 표시:
+
+   ```Kusto
+   SystemBootData
+   | where Device == 'MyDevice'
+   | project SystemStartTime, BootDuration, OSStart=EventLogStart, GPDuration, UpdateDuration
+   | order by SystemStartTime desc
+   | render barchart with (kind=stacked, title='Boot times for MyDevice', ytitle='Time (ms)')
+   ```
+
+   ![디바이스의 부팅 시간을 밀리초 단위로 보여주는 누적 가로 막대형 차트](./media/4054074-render-using-with-statement.png)
+
+### <a name="bkmk_cmpivot_secadmin1906"></a> 보안 관리자 역할에 CMPivot 권한 추가
+<!--4683130-->
+
+버전 1906부터 다음 권한이 Configuration Manager의 기본 제공 **보안 관리자** 역할에 추가되었습니다.
+ - SMS 스크립트 읽기
+ - 컬렉션에서 CMPivot 실행
+ - 인벤토리 보고서 읽기
+
+### <a name="bkmk_standalone"></a> CMPivot 독립 실행형
+<!--3555890, 4619340, 4683130 -->
+
+버전 1906부터 CMPivot을 독립 실행형 앱으로 사용할 수 있습니다. CMPivot 독립 실행형은 [시험판 기능](/sccm/core/servers/manage/pre-release-features#bkmk_table)이며 영어로만 제공됩니다. Configuration Manager 콘솔 외부에서 CMPivot을 실행하여 사용자 환경에 포함된 디바이스의 실시간 상태를 확인할 수 있습니다. 이 변경을 통해 먼저 콘솔을 설치하지 않고도 디바이스에서 CMPivot을 사용할 수 있습니다.
+
+컴퓨터에 콘솔을 설치하지 않은 기술 지원팀 또는 보안 관리자 등의 가상 사용자와 CMPivot 기능을 공유할 수 있습니다. 이러한 다른 가상 사용자는 일반적으로 사용하는 다른 도구와 함께 CMPivot을 사용하여 Configuration Manager를 쿼리할 수 있습니다. 이 풍부한 관리 데이터를 공유하면서 공조하여 여러 역할에서 나타나는 비즈니스 문제를 사전에 해결할 수 있습니다.
+
+#### <a name="install-cmpivot-standalone"></a>CMPivot 독립 실행형 설치
+
+1. CMPivot을 실행하는 데 필요한 사용 권한을 설정합니다. 자세한 내용은 [필수 구성 요소](#prerequisites)를 참조하세요. 권한이 사용자에게 적절한 경우 [보안 관리자 역할](#bkmk_cmpivot_secadmin1906)을 사용할 수도 있습니다.
+2. `<site install path>\tools\CMPivot\CMPivot.msi` 경로에서 CMPivot 앱 설치 프로그램을 찾습니다. 이 경로에서 설치 프로그램을 실행하거나 다른 위치로 복사할 수 있습니다.
+3. CMPivot 독립 실행형 앱을 실행하면 사이트에 연결하라는 메시지가 표시됩니다. 중앙 관리 또는 기본 사이트 서버의 정규화된 도메인 이름이나 컴퓨터 이름을 지정합니다.
+   - CMPivot 독립 실행형을 열 때마다 사이트 서버에 연결하라는 메시지가 표시됩니다.
+4. CMPivot을 실행하려는 컬렉션을 찾은 다음 쿼리를 실행합니다.
+
+   ![쿼리를 실행하려는 컬렉션 찾기](./media/3555890-cmpivot-standalone-browse-collection.png)
+
+> [!NOTE]
+> **스크립트 실행** 및 **리소스 탐색기** 같은 마우스 오른쪽 버튼 동작은 CMPivot 독립 실행형에서 사용할 수 없습니다.
 
 ## <a name="inside-cmpivot"></a>내부 CMPivot
 

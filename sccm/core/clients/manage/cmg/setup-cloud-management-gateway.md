@@ -5,18 +5,18 @@ description: CMG(클라우드 관리 게이트웨이)를 설정하기 위해 이
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69ad130dddaecf2a9247126802f9c14fb7176db9
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 7d9f3d922093319c3bfc9341f8fe5472a198a083
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286593"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535462"
 ---
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
@@ -38,7 +38,7 @@ ms.locfileid: "67286593"
 
 - 디자인에 따라 CMG에 하나 이상의 인증서가 필요합니다. 자세한 내용은 [클라우드 관리 게이트웨이에 대한 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway)를 참조하세요.  
 
-- 1802 버전 및 ‘권장 버전’부터 **Azure Resource Manager 배포**를 선택합니다.  자세한 내용은 [Azure Resource Manager](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)를 참조하세요. CMG의 Azure Resource Manager 배포에 다음 요구 사항이 필요합니다.  
+- CMG의 [Azure Resource Manager](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager) 배포에 다음 요구 사항이 필요합니다.  
 
     - **클라우드 관리**를 위해 [Azure AD](/sccm/core/servers/deploy/configure/azure-services-wizard)와 통합 Azure AD 사용자 검색은 필요하지 않습니다.  
 
@@ -74,12 +74,10 @@ ms.locfileid: "67286593"
 
 2. 리본에서 **클라우드 관리 게이트웨이 만들기**를 선택합니다.  
 
-3. 1802 버전부터는 마법사의 일반 페이지에서 CMG 배포 메서드로 **Azure Resource Manager 배포**를 선택합니다.  
-
-    **로그인**을 선택하여 Azure 구독 관리자 계정으로 인증합니다. 마법사가 Azure AD 통합 필수 구성 요소 중에 저장된 정보로 나머지 필드를 자동으로 채웁니다. 여러 구독을 소유하고 있는 경우 사용할 구독의 **구독 ID**를 선택합니다.
+3. 마법사의 일반 페이지에서 **로그인**을 선택합니다. Azure 구독 관리자 계정으로 인증합니다. 마법사가 Azure AD 통합 필수 구성 요소 중에 저장된 정보로 나머지 필드를 자동으로 채웁니다. 여러 구독을 소유하고 있는 경우 사용할 구독의 **구독 ID**를 선택합니다.
 
     > [!Note]  
-    > 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다.
+    > 버전 1810부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 버전 1902 및 이전 버전에서는 CMG 배포 방법으로 **Azure Resource Manager 배포**를 선택합니다.
     >
     > 클래식 서비스 배포를 사용해야 하는 경우 이 페이지에서 해당 옵션을 선택합니다. 먼저 Azure **구독 ID**를 입력합니다. 그런 다음, **찾아보기**를 선택하고, Azure 관리 인증서에 대한 .PFX 파일을 선택합니다.
 
@@ -90,30 +88,34 @@ ms.locfileid: "67286593"
 6. 마법사의 설정 페이지에서 먼저 **찾아보기**를 선택하고, CMG 서버 인증 인증서에 대한 .PFX 파일을 선택합니다. 이 인증서의 이름은 필수 **서비스 FQDN** 및 **서비스 이름** 필드를 채웁니다.  
 
    > [!NOTE]  
-   > 1802 버전부터 CMG 서버 인증 인증서는 와일드카드를 지원합니다. 와일드카드 인증서를 사용하는 경우 **서비스 FQDN** 필드의 별표(`*`)를 CMG에 원하는 호스트 이름으로 바꿉니다.<!--491233-->  
+   > CMG 서버 인증 인증서는 와일드카드를 지원합니다. 와일드카드 인증서를 사용하는 경우 **서비스 FQDN** 필드의 별표(`*`)를 CMG에 원하는 호스트 이름으로 바꿉니다.<!--491233-->  
 
 7. **지역** 드롭다운 목록을 선택하고 이 CMG에 대한 Azure 지역을 선택합니다.  
 
-8. 1802 버전부터는 Azure Resource Manager 배포를 사용하고 **리소스 그룹** 옵션을 선택합니다.
+8. **리소스 그룹** 옵션을 선택합니다.
    1. **기존 항목 사용**을 선택하는 경우 드롭다운 목록에서 기존 리소스 그룹을 선택합니다. 선택한 리소스 그룹이 7단계에서 선택한 지역에 이미 있어야 합니다. 이전에 선택한 지역과 다른 지역에 위치한 기존 리소스 그룹을 선택하면 CMG는 프로비전에 실패합니다.
    2. **새로 만들기**를 선택하면 새 리소스 그룹 이름을 입력합니다.
 
 9. **VM 인스턴스** 필드에서 이 서비스에 대한 VM 수를 입력합니다. 기본값은 1이지만 CMG당 최대 16대의 VM으로 확장할 수 있습니다.  
 
-10. **인증서**를 선택하여 신뢰할 수 있는 클라이언트 루트 인증서를 추가합니다. 최대 두 개의 신뢰할 수 있는 루트 CA 및 네 개의 중간(하위) CA를 추가합니다. 신뢰 체인의 모든 인증서를 추가해야 합니다.  
+10. **인증서**를 선택하여 신뢰할 수 있는 클라이언트 루트 인증서를 추가합니다. 신뢰 체인의 모든 인증서를 추가합니다.  
 
     > [!Note]  
     > 버전 1806부터는 CMG를 만들 경우 설정 페이지에서 신뢰할 수 있는 루트 인증서를 더 이상 제공할 필요가 없습니다. 이 인증서는 클라이언트 인증용 Azure AD(Azure Active Directory)를 사용할 때 필요하지 않지만 마법사에서는 필요합니다. PKI 클라이언트 인증 인증서를 사용하는 경우 여전히 신뢰할 수 있는 루트 인증서를 CMG에 추가해야 합니다.<!--SCCMDocs-pr issue #2872-->  
+    >
+    > 버전 1902 및 이전 버전에서는 두 개의 신뢰할 수 있는 루트 CA 및 네 개의 중간(하위) CA만 추가할 수 있습니다.<!-- SCCMDocs-pr#4022 -->
 
-11. 마법사는 기본적으로 **클라이언트 인증서 해지를 확인**하는 옵션을 사용합니다. 이 확인이 작동하도록 CRL(인증서 해지 목록)이 공개적으로 게시되어야 합니다. CRL을 게시하지 않는 경우 이 옵션의 선택을 취소합니다.  
+11. 마법사는 기본적으로 **클라이언트 인증서 해지를 확인**하는 옵션을 사용합니다. 이 확인이 작동하도록 CRL(인증서 해지 목록)이 공개적으로 게시되어야 합니다. 자세한 내용은 [인증서 해지 목록 게시](https://docs.microsoft.com/sccm/core/clients/manage/cmg/security-and-privacy-for-cloud-management-gateway#bkmk_crl)를 참조하세요.  
 
-12. 버전 1806부터 기본적으로 마법사가 다음 옵션을 사용하도록 설정합니다. **CMG가 클라우드 배포 지점으로 작동하고 Azure Storage에서 콘텐츠를 제공하도록 허용**. 이제 CMG도 클라이언트에 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다.  
+12. 버전 1906부터 **TLS 1.2 적용**이 가능합니다. 이 설정은 Azure 클라우드 서비스 VM에만 적용됩니다. 온-프레미스 Configuration Manager 사이트 서버 또는 클라이언트에는 적용되지 않습니다. TLS 1.2에 대한 자세한 내용은 [TLS 1.2를 사용하도록 설정하는 방법](/sccm/core/plan-design/security/enable-tls-1-2)을 참조하세요.<!-- SCCMDocs-pr#4021 -->
 
-13. **다음**을 선택합니다.  
+13. 버전 1806부터 기본적으로 마법사가 다음 옵션을 사용하도록 설정합니다. **CMG가 클라우드 배포 지점으로 작동하고 Azure Storage에서 콘텐츠를 제공하도록 허용**. 이제 CMG도 클라이언트에 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다.  
 
-14. 14일 임계값을 포함한 CMG 트래픽을 모니터링하려면 임계값 경고를 설정하는 확인란을 선택합니다. 그런 다음 임계값을 지정하고 각 경고 수준을 높일 백분율을 지정합니다. 작업을 완료한 후 **다음**을 선택합니다.  
+14. **다음**을 선택합니다.  
 
-15. 설정을 검토하고 **다음**을 선택합니다. Configuration Manager가 서비스 설정을 시작합니다. 마법사를 닫은 후 Azure에서 서비스를 완전히 프로비전하는 데 5-15분 정도 걸립니다. 새 CMG에 대한 **상태** 열을 통해 서비스가 준비되었는지 확인합니다.  
+15. 14일 임계값을 포함한 CMG 트래픽을 모니터링하려면 임계값 경고를 설정하는 확인란을 선택합니다. 그런 다음 임계값을 지정하고 각 경고 수준을 높일 백분율을 지정합니다. 작업을 완료한 후 **다음**을 선택합니다.  
+
+16. 설정을 검토하고 **다음**을 선택합니다. Configuration Manager가 서비스 설정을 시작합니다. 마법사를 닫은 후 Azure에서 서비스를 완전히 프로비전하는 데 5-15분 정도 걸립니다. 새 CMG에 대한 **상태** 열을 통해 서비스가 준비되었는지 확인합니다.  
 
     > [!Note]  
     > 배포 문제를 해결하려면 **CloudMgr.log** 및 **CMGSetup.log**를 사용합니다. 자세한 내용은 [로그 파일](/sccm/core/plan-design/hierarchy/log-files#cloud-management-gateway)을 참조하세요.
@@ -127,7 +129,10 @@ ms.locfileid: "67286593"
 
 2. 인터넷 기반 클라이언트를 할당할 기본 사이트를 선택하고 **속성**을 선택합니다.  
 
-3. 기본 사이트 속성 시트의 **클라이언트 컴퓨터 통신** 탭으로 전환하고, **사용 가능한 경우 PKI 클라이언트 인증서(클라이언트 인증 기능) 사용**을 선택합니다.  
+3. 기본 사이트 속성 시트의 **클라이언트 컴퓨터 통신** 탭으로 전환하고 **사용 가능한 경우 PKI 클라이언트 인증서(클라이언트 인증) 사용** 확인란을 선택합니다.  
+
+    > [!Note]
+    > 버전 1906부터 이 탭을 **통신 보안**이라고 합니다.<!-- SCCMDocs#1645 -->  
 
 4. CRL을 게시하지 않는 경우 **클라이언트는 사이트 시스템에 대한 CRL(인증서 해지 목록)을 확인** 옵션을 선택 취소합니다.  
 
@@ -209,7 +214,7 @@ CMG를 만든 후에 일부 설정을 수정할 수 있습니다. Configuration 
 
 - **인증서**: 신뢰할 수 있는 루트 또는 중간 CA 인증서를 추가하거나 제거합니다. 새 CA를 추가하거나 만료된 인증서의 사용을 중지하는 경우 이 옵션이 유용합니다.  
 
-- **클라이언트 인증서 해지 확인**: CMG를 만들 때 원래 이 설정을 사용하지 않은 경우 나중에 CRL을 게시하고 나서 사용하도록 설정할 수 있습니다.  
+- **클라이언트 인증서 해지 확인**: CMG를 만들 때 원래 이 설정을 사용하지 않은 경우 나중에 CRL을 게시하고 나서 사용하도록 설정할 수 있습니다. 자세한 내용은 [인증서 해지 목록 게시](https://docs.microsoft.com/sccm/core/clients/manage/cmg/security-and-privacy-for-cloud-management-gateway#bkmk_crl)를 참조하세요.  
 
 - **CMG가 클라우드 배포 지점으로 작동하고 Azure Storage에서 콘텐츠를 제공하도록 허용**: 버전 1806부터 기본적으로 이 새 옵션이 사용되도록 설정됩니다. 이제 CMG도 클라이언트에 콘텐츠를 제공할 수 있습니다. 이 기능은 필요한 인증서 및 Azure VM 비용을 줄여줍니다.<!--1358651-->  
 
@@ -232,7 +237,7 @@ CMG를 만든 후 언제든지 경고를 다시 구성합니다.
 
 클라이언트는 기본적으로 24시간마다 정책을 새로 고치므로 이전 CMG를 삭제하기 전에 새 CMG를 만들고 나서 적어도 하루를 기다립니다. 클라이언트가 꺼지거나 인터넷이 연결되지 않은 경우 더 많이 대기해야 합니다.
 
-1802 버전부터는 클래식 배포 메서드에서 기존 CMG가 설치되어 있다면 새 CMG를 배포하여 Azure Resource Manager 배포 메서드를 사용해야 합니다.<!--509753--> 두 가지 옵션 중이 있습니다.  
+클래식 배포 방법에 기존 CMG가 있는 경우 Azure Resource Manager 배포 방법을 사용하려면 새 CMG를 배포해야 합니다.<!--509753--> 두 가지 옵션 중이 있습니다.  
 
 - 동일한 서비스 이름을 다시 사용하려면:  
 

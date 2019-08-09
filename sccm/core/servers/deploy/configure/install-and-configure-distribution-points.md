@@ -2,7 +2,7 @@
 title: 배포 지점 관리
 titleSuffix: Configuration Manager
 description: 배포 지점을 사용하여 디바이스 및 사용자에게 배포하는 콘텐츠를 호스팅합니다.
-ms.date: 05/28/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91bcdf4e593d2c39fed19f0b01045cab32f921da
-ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
+ms.openlocfilehash: 49be9ccc0f44656752de18f4814b91c0c0d25f66
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67818164"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536475"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -72,6 +72,7 @@ ms.locfileid: "67818164"
 [사이트 시스템 역할을 설치](/sccm/core/servers/deploy/configure/install-site-system-roles)하는 일반적인 절차부터 시작합니다. 사이트 시스템 서버 만들기 마법사의 **시스템 역할 선택** 페이지에서 **배포 지점** 역할을 선택합니다. 이 작업을 수행하면 다음 페이지가 마법사에 추가됩니다.  
 
 - [배포 지점](#bkmk_config-general)
+- [통신](#bkmk_config-comm)
 - [드라이브 설정](#bkmk_config-drive)
 - [풀(pull) 배포 지점](#bkmk_config-pull)
 - [PXE 설정](#bkmk_config-pxe)
@@ -167,7 +168,7 @@ ms.locfileid: "67818164"
 
 많은 고객들이 대형 Configuration Manager 인프라를 보유하고 있으며 환경을 단순화하기 위해 기본 또는 보조 사이트를 줄이고 있습니다. 하지만 관리 대상 고객에게 콘텐츠를 제공하기 위해 각 지사에서 배포 지점을 유지해야 합니다. 이러한 배포 지점에는 종종 여러 테라바이트 이상의 콘텐츠가 포함됩니다. 이 컨텐츠는 이러한 원격 서버에 배포하는 데 상당한 시간과 네트워크 대역폭을 소비합니다.
 
-버전 1802부터 이 기능을 사용하면 콘텐츠를 재배포하지 않고 다른 기본 사이트에 배포 지점을 재할당할 수 있습니다. 이 작업은 서버의 모든 콘텐츠를 유지하면서 사이트 시스템 할당을 업데이트합니다. 여러 배포 지점을 재할당해야 하는 경우 먼저 단일 배포 지점에서 이 작업을 수행합니다. 그런 다음, 추가 서버를 한 번에 하나씩 진행합니다.
+이 기능을 사용하면 콘텐츠를 재배포하지 않고 다른 기본 사이트에 배포 지점을 재할당할 수 있습니다. 이 작업은 서버의 모든 콘텐츠를 유지하면서 사이트 시스템 할당을 업데이트합니다. 여러 배포 지점을 재할당해야 하는 경우 먼저 단일 배포 지점에서 이 작업을 수행합니다. 그런 다음, 추가 서버를 한 번에 하나씩 진행합니다.
 
 > [!IMPORTANT]  
 > 대상 서버는 배포 지점 역할만 호스팅할 수 있습니다. 사이트 시스템 서버가 상태 마이그레이션 지점과 같은 다른 Configuration Manager 서버 역할을 호스팅하는 경우 배포 지점을 재할당할 수 없습니다. 클라우드 배포 지점을 재할당할 수 없습니다.
@@ -255,6 +256,7 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
 다음 섹션에서는 [새로 설치](#bkmk_install-procedure)하거나 [기존 항목을 편집](#bkmk_change-procedure)할 때의 배포 지점 구성에 대해 설명합니다.  
 
 - [일반 설정](#bkmk_config-general)
+- [통신](#bkmk_config-comm)
 - [드라이브 설정](#bkmk_config-drive)
 - [방화벽 설정](#bkmk_firewall)
 - [풀(pull) 배포 지점](#bkmk_config-pull)
@@ -275,9 +277,14 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
 
 ### <a name="bkmk_config-general"></a> 일반  
 
+> [!Note]  
+> 버전 1902 및 이전 버전에서는 이 페이지에 HTTP/HTTPS 및 인증서에 대한 추가 설정이 있습니다. 버전 1906부터 이러한 설정은 이제 [통신](#bkmk_config-comm) 페이지에 있습니다.
+
 다음 설정은 사이트 시스템 서버 만들기 마법사의 **배포 지점** 페이지와 배포 지점 속성 창의 **일반** 탭에 있습니다.  
 
-- **Configuration Manager에서 필요한 경우 IIS 설치 및 구성**: 아직 서버에 설치되지 않은 경우 Configuration Manager에서 IIS를 설치 및 구성합니다. Configuration Manager를 사용하려면 모든 배포 지점에서 IIS가 필요합니다. 이 설정을 선택하지 않고 IIS가 서버에 설치되지 않은 경우 Configuration Manager에서 배포 지점을 성공적으로 설치하기 전에 먼저 IIS를 설치합니다.  
+- **설명**: 이 배포 지점 역할에 대한 선택적 설명입니다.  
+
+- **Configuration Manager에 필요한 경우 IIS 설치 및 구성**: 아직 서버에 설치되지 않은 경우 Configuration Manager에서 IIS를 설치 및 구성합니다. Configuration Manager를 사용하려면 모든 배포 지점에서 IIS가 필요합니다. 이 설정을 선택하지 않고 IIS가 서버에 설치되지 않은 경우 Configuration Manager에서 배포 지점을 성공적으로 설치하기 전에 먼저 IIS를 설치합니다.  
 
     > [!NOTE]  
     > 이 옵션은 사이트 시스템 서버 만들기 마법사의 **배포 지점** 페이지에만 있으며, [새 배포 지점을 설치](#bkmk_install-procedure)하는 경우에만 사용할 수 있습니다.  
@@ -301,7 +308,17 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
         - Windows Server 2016, 업데이트 KB4132216 및 KB4284833
         - Windows Server 2019  
 
-- **설명**: 이 배포 지점 역할에 대한 선택적 설명입니다.  
+- **사전 준비된 콘텐츠에 이 배포 지점 사용**: 이 설정을 사용하면 소프트웨어를 배포하기 전에 서버에 콘텐츠를 추가할 수 있습니다. 콘텐츠 파일은 콘텐츠 라이브러리에 이미 있으므로 소프트웨어를 배포할 때 네트워크를 통해 전송되지 않습니다. 자세한 내용은 [사전 준비된 콘텐츠](/sccm/core/plan-design/hierarchy/manage-network-bandwidth#BKMK_PrestagingContent)를 참조하세요.  
+
+- **이 배포 지점을 배달 최적화 네트워크 내 캐시 서버로 사용하도록 설정**: 버전 1906부터 배포 지점에 배달 최적화 네트워크 내 캐시(DOINC) 서버를 설치할 수 있습니다. 이 온-프레미스 콘텐츠를 캐시하면 클라이언트들이 전송 최적화 기능을 활용하는 동시에 WAN 링크도 보호할 수 있습니다. 추가 설정에 대한 설명을 비롯한 자세한 내용은 [Configuration Manager의 배달 최적화 네트워크 내 캐시](/sccm/core/plan-design/hierarchy/delivery-optimization-in-network-cache)를 참조하세요.
+
+
+### <a name="bkmk_config-comm"></a> 통신
+
+> [!Note]  
+> 버전 1906부터 다음 설정은 **통신** 탭에 있습니다. 버전 1902 및 이전 버전에서는 이 설정이 [일반](#bkmk_config-general) 탭에 있습니다.
+
+다음 설정은 사이트 시스템 서버 만들기 마법사의 **통신** 페이지와 배포 지점 속성 창에 있습니다.  
 
 - **클라이언트 디바이스와 배포 지점의 통신 방식 구성**: **HTTP** 또는 **HTTPS**를 사용하는 데는 장단점이 있습니다. 자세한 내용은 [콘텐츠 관리에 대한 보안 모범 사례](/sccm/core/plan-design/hierarchy/security-and-privacy-for-content-management#BKMK_Security_ContentManagement)를 참조하세요.  
 
@@ -334,8 +351,6 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
     인증서 요구 사항에 대한 자세한 내용은 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
     이 인증서의 배포 예제는 [배포 지점용 클라이언트 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clientdistributionpoint2008_cm2012)를 참조하세요.  
-
-- **사전 준비된 콘텐츠에 이 배포 지점 사용**: 이 설정을 사용하면 소프트웨어를 배포하기 전에 서버에 콘텐츠를 추가할 수 있습니다. 콘텐츠 파일은 콘텐츠 라이브러리에 이미 있으므로 소프트웨어를 배포할 때 네트워크를 통해 전송되지 않습니다. 자세한 내용은 [사전 준비된 콘텐츠](/sccm/core/plan-design/hierarchy/manage-network-bandwidth#BKMK_PrestagingContent)를 참조하세요.  
 
 ### <a name="bkmk_config-drive"></a> 드라이브 설정  
 

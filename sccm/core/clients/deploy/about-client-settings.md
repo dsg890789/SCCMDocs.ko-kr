@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 06/20/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d329f2d0125a168d776b2855b6fd35e7a223111
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: a7d43a2eea28073ef0193c454c4e1a10bc5f3763
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677915"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535176"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -75,7 +75,10 @@ Windows 컴퓨터의 Configuration Manager 클라이언트 캐시에서 애플�
 - **최대 캐시 크기(MB)**
 - **최대 캐시 크기(디스크의 비율)** : 클라이언트 캐시 크기가 MB(메가바이트) 또는 디스크에 대한 백분율 최댓값(둘 중 더 작은 크기)으로 확장됩니다.
 
-### <a name="enable-configuration-manager-client-in-full-os-to-share-content"></a>콘텐츠를 공유하도록 정품 OS에서 구성 관리자 클라이언트 사용
+### <a name="enable-as-peer-cache-source"></a>피어 캐시로 사용
+
+> [!Note]  
+> 버전 1902 이하에서 이 설정은 **콘텐츠를 공유하도록 정품 OS에서 Configuration Manager 클라이언트 사용**으로 명명되었습니다. 설정의 동작은 변경되지 않았습니다.
 
 Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache)를 사용하도록 설정합니다. **예**를 선택한 다음, 클라이언트가 피어 컴퓨터와 통신하는 포트를 지정합니다.
 
@@ -84,6 +87,16 @@ Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-
 - **피어에서 콘텐츠를 다운로드하기 위한 포트**(기본값 TCP 8003): Configuration Manager는 이 트래픽을 허용하도록 자동으로 Windows 방화벽 규칙을 구성합니다. 다른 방화벽을 사용하는 경우 이 트래픽을 허용하도록 수동으로 포트를 구성해야 합니다.  
 
     자세한 내용은 [연결에 사용되는 포트](/sccm/core/plan-design/hierarchy/ports#BKMK_PortsClient-ClientWakeUp)를 참조하세요.  
+
+### <a name="minimum-duration-before-cached-content-can-be-removed-minutes"></a>캐시된 콘텐츠를 제거하기 전까지 최소 기간(분)
+
+<!--4485509-->
+버전 1906부터는 Configuration Manager 클라이언트가 캐시된 콘텐츠를 유지하는 최소 시간을 지정할 수 있습니다. 이 클라이언트 설정은 클라이언트가 캐시에 콘텐츠 삭제 전까지 보존하는 기간을 제어합니다.
+
+이 값은 기본적으로 1,440분(24시간)입니다.
+
+이 설정을 통해 다양한 디바이스 유형에서 클라이언트 캐시를 더 상세히 제어할 수 있습니다. 하드 드라이브 크기가 적은 클라이언트에서는 값을 줄여야 했습니다. 다른 배포가 실행되기 전에 기존 콘텐츠를 유지할 필요가 없습니다.
+
 
 ## <a name="client-policy"></a>클라이언트 정책  
 
@@ -102,11 +115,15 @@ Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-
 
 이 옵션을 **예**로 설정하고 [사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser)을 사용하면 로그인한 사용자를 대상으로 하는 애플리케이션 및 프로그램이 클라이언트에 수신됩니다.  
 
-애플리케이션 카탈로그는 사이트 서버에서 사용자에게 사용 가능한 소프트웨어 목록을 수신합니다. 따라서 사용자가 애플리케이션 카탈로그에서 애플리케이션을 확인하고 요청하기 위해 이 설정이 **예**일 필요가 없습니다. 설정이 **아니요**인 경우, 사용자가 응용 프로그램 카탈로그에 표시된 응용 프로그램을 설치할 수 없습니다.  
-
-또한 이 설정이 **아니요**이면 사용자는 배포되는 필수 애플리케이션을 받을 수 없습니다. 또한 사용자는 사용자 정책에서 다른 관리 작업도 받을 수 없습니다.  
+이 설정이 **아니요**이면 사용자는 배포되는 필수 애플리케이션을 받을 수 없습니다. 또한 사용자는 사용자 정책에서 다른 관리 작업도 받을 수 없습니다.  
 
 이 설정은 컴퓨터가 인트라넷 또는 인터넷에 있는 경우 사용자에게 적용됩니다. 인터넷에서도 사용자 정책을 사용하려는 경우 **예**로 설정해야 합니다.  
+
+> [!Note]  
+> 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할을 설치할 수 없습니다.
+>
+> 애플리케이션 카탈로그를 계속 사용할 경우, 해당 카탈로그는 사이트 서버에서 사용자가 이용할 수 있는 소프트웨어의 목록을 수신합니다. 따라서 사용자가 애플리케이션 카탈로그에서 애플리케이션을 확인하고 요청하기 위해 이 설정이 **예**일 필요가 없습니다. 설정이 **아니요**인 경우, 사용자는 애플리케이션 카탈로그에 표시된 애플리케이션을 설치할 수 없습니다.  
+
 
 ### <a name="enable-user-policy-requests-from-internet-clients"></a>인터넷 클라이언트의 사용자 정책 요청 사용
 
@@ -118,9 +135,9 @@ Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-
 
 - 인터넷 기반 관리 지점이 Windows 인증(Kerberos 또는 NTLM)을 사용하여 사용자를 성공적으로 인증합니다. 자세한 내용은 [인터넷에서의 클라이언트 통신에 대한 고려 사항](/sccm/core/plan-design/hierarchy/communications-between-endpoints#BKMK_clientspan)을 참조하세요.  
 
-- 1710 버전부터 클라우드 관리 게이트웨이는 Azure Active Directory를 사용하여 사용자를 성공적으로 인증합니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
+- 클라우드 관리 게이트웨이는 Azure Active Directory를 사용하여 사용자를 성공적으로 인증합니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
 
-이 옵션을 **아니요**로 설정하거나 이전 요구 사항이 충족되지 않으면 인터넷상의 컴퓨터에서 컴퓨터 정책만 받습니다. 이 시나리오에서는 사용자가 여전히 인터넷 기반 애플리케이션 카탈로그에서 애플리케이션을 확인, 요청 및 설치할 수 있습니다. 이 설정이 **아니요**이지만 **클라이언트에 대한 사용자 정책 사용**이 **예**이면 컴퓨터가 인트라넷에 연결될 때까지 사용자는 사용자 정책을 받을 수 없습니다.  
+이 옵션을 **아니요**로 설정하거나 이전 요구 사항이 충족되지 않으면 인터넷상의 컴퓨터에서 컴퓨터 정책만 받습니다. 이 시나리오에서는 사용자가 인터넷 기반 애플리케이션 카탈로그에서 애플리케이션을 계속 확인, 요청 및 설치할 수 있습니다. 이 설정이 **아니요**이지만 **클라이언트에 대한 사용자 정책 사용**이 **예**이면 컴퓨터가 인트라넷에 연결될 때까지 사용자는 사용자 정책을 받을 수 없습니다.  
 
 > [!NOTE]  
 > 인터넷 기반 클라이언트 관리의 경우 사용자의 애플리케이션 승인 요청에는 사용자 정책 또는 사용자 인증이 필요하지 않습니다. 클라우드 관리 게이트웨이는 애플리케이션 승인 요청을 지원하지 않습니다.  
@@ -171,34 +188,40 @@ Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-
 
 ### <a name="default-application-catalog-website-point"></a>기본 애플리케이션 카탈로그 웹 사이트 지점
 
-> [!Note]  
-> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.
+> [!Important]  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
-> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 자세한 내용은 다음 아티클을 참조하세요.
+>
+> - [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)
+> - [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)  
 
 Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터의 애플리케이션 카탈로그에 사용자를 연결합니다. **웹 사이트 설정**을 선택하여 애플리케이션 카탈로그 웹 사이트 지점을 호스트하는 서버를 지정합니다. NetBIOS 이름 또는 FQDN을 입력하거나, 자동 검색을 지정하거나, 사용자 지정된 배포에 URL을 지정합니다. 대부분의 경우 자동 검색이 가장 좋은 방법입니다.
 
 ### <a name="add-default-application-catalog-website-to-internet-explorer-trusted-sites-zone"></a>기본 애플리케이션 카탈로그 웹 사이트를 Internet Explorer의 신뢰할 수 있는 사이트 영역에 추가
 
-> [!Note]  
-> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점은 더 이상 *필요하지 않지만* *지원은 계속됩니다*. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.
+> [!Important]  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
-> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+> 자세한 내용은 다음 아티클을 참조하세요.
+>
+> - [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)
+> - [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)  
 
 이 옵션이 **예**인 경우 클라이언트에서는 현재 기본 애플리케이션 카탈로그 웹 사이트 URL을 Internet Explorer 신뢰할 수 있는 사이트 영역에 자동으로 추가합니다.  
 
-이 설정은 보호 모드에 대한 Internet Explorer 설정이 사용되지 않도록 합니다. 보호 모드가 사용될 경우 Configuration Manager 클라이언트가 애플리케이션 카탈로그에서 애플리케이션을 설치하지 못할 수 있습니다. 또한 신뢰할 수 있는 사이트 영역은 기본적으로 Windows 인증을 요구하는 애플리케이션 카탈로그에 대한 사용자 로그인을 지원합니다.  
+이 설정은 보호 모드에 대한 Internet Explorer 설정이 사용되지 않도록 합니다. 보호 모드가 사용될 경우 Configuration Manager 클라이언트가 애플리케이션 카탈로그에서 애플리케이션을 설치하지 못할 수 있습니다. 또한 신뢰할 수 있는 사이트 영역은 Windows 인증을 요구하는 애플리케이션 카탈로그에 대한 사용자 로그인을 기본적으로 지원합니다.  
 
 이 옵션을 **아니요**로 두는 경우 Configuration Manager 클라이언트는 애플리케이션 카탈로그에서 애플리케이션을 설치하지 못할 수 있습니다. 다른 방법은 클라이언트에서 사용하는 애플리케이션 카탈로그 URL의 다른 영역에 이러한 Internet Explorer 설정을 구성하는 것입니다.  
 
 ### <a name="allow-silverlight-applications-to-run-in-elevated-trust-mode"></a>Silverlight 애플리케이션의 높은 권한 모드 실행을 허용합니다.
 
 > [!Important]  
-> Configuration Manager 버전 1802부터 클라이언트는 Silverlight를 자동으로 설치하지 않습니다.
+> 클라이언트는 Silverlight를 자동으로 설치하지 않습니다.
 >
-> 버전 1806부터 응용 프로그램 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
+> 버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 사용자는 새로운 소프트웨어 센터를 사용해야 합니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.  
 
-애플리케이션 카탈로그를 사용할 사용자의 경우 이 설정을 **예**로 지정해야 합니다.  
+애플리케이션 카탈로그를 사용할 사용자의 경우 이 설정은 **예**여야 합니다.  
 
 이 설정을 변경하면 사용자가 다음에 브라우저를 로드하거나 현재 열려 있는 브라우저 창을 새로 고칠 때 변경 내용이 적용됩니다.  
 
@@ -210,14 +233,9 @@ Configuration Manager에서는 이 설정을 사용하여 소프트웨어 센터
 
 ### <a name="use-new-software-center"></a>새 소프트웨어 센터 사용
 
-Configuration Manager 1802부터 기본 설정은 **예**입니다.
+기본 설정은 **예**입니다.
 
-이 옵션을 **예**로 설정하면 모든 클라이언트 컴퓨터에서 소프트웨어 센터를 사용합니다. 소프트웨어 센터에서는 이전에 애플리케이션 카탈로그에서만 액세스할 수 있었던 사용자가 사용할 수 있는 앱을 보여줍니다. 애플리케이션 카탈로그에는 소프트웨어 센터의 필수 구성 요소가 아닌 Silverlight가 필요합니다.
-
-버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점은 더 이상 *필요하지 않지만* *지원은 계속*됩니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.
-
-> [!Note]  
-> 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
+이 옵션을 **예**로 설정하면 모든 클라이언트 컴퓨터에서 소프트웨어 센터를 사용합니다. 소프트웨어 센터에서는 사용자나 디바이스에 배포되는 소프트웨어, 소프트웨어 업데이트, 작업 순서가 표시됩니다.
 
 ### <a name="enable-communication-with-health-attestation-service"></a>상태 증명 서비스를 통한 통신 사용
 
@@ -229,10 +247,7 @@ Windows 10 디바이스에서 [상태 증명](/sccm/core/servers/manage/health-a
 
 ### <a name="install-permissions"></a>설치 권한
 
-> [!IMPORTANT]  
-> 이 설정은 애플리케이션 카탈로그와 소프트웨어 센터에 적용됩니다. 사용자가 회사 포털을 사용할 때는 이 설정이 적용되지 않습니다.  
-
-사용자가 소프트웨어, 소프트웨어 업데이트 및 작업 순서의 설치를 시작하는 방식을 구성합니다.  
+사용자의 소프트웨어, 소프트웨어 업데이트 및 작업 순서 설치 방식을 구성합니다.  
 
 - **모든 사용자**: 게스트 이외의 권한 있는 사용자입니다.  
 
@@ -240,7 +255,7 @@ Windows 10 디바이스에서 [상태 증명](/sccm/core/servers/manage/health-a
 
 - **관리자 및 기본 사용자만**: 사용자가 로컬 관리자 그룹의 멤버 또는 컴퓨터의 기본 사용자여야 합니다.  
 
-- **사용자 없음**: 클라이언트 컴퓨터에 로그인한 사용자가 소프트웨어 설치, 소프트웨어 업데이트 및 작업 순서를 시작할 수 없습니다. 컴퓨터에 필요한 배포는 항상 최종 기한에 설치됩니다. 사용자는 애플리케이션 카탈로그 또는 소프트웨어 센터에서 소프트웨어 설치를 시작할 수 없습니다.  
+- **사용자 없음**: 클라이언트 컴퓨터에 로그인한 사용자 중에서 소프트웨어, 소프트웨어 업데이트 및 작업 순서 설치가 가능한 사용자가 없습니다. 컴퓨터에 필요한 배포는 항상 최종 기한에 설치됩니다. 사용자는 소프트웨어 센터에서 소프트웨어를 설치할 수 없습니다.  
 
 ### <a name="suspend-bitlocker-pin-entry-on-restart"></a>다시 시작 시 BitLocker PIN 항목 일시 중단
 
@@ -259,7 +274,7 @@ Windows 10 디바이스에서 [상태 증명](/sccm/core/servers/manage/health-a
 - Configuration Manager SDK(소프트웨어 개발 키트)를 사용하여 클라이언트 에이전트 알림과 애플리케이션 및 소프트웨어 업데이트의 설치를 관리합니다.  
 
 > [!WARNING]  
-> 이러한 조건을 모두 적용하지 않을 때 이 옵션을 선택하면 클라이언트에서 소프트웨어 업데이트 및 필수 애플리케이션을 설치하지 않습니다. 이 설정은 사용자가 애플리케이션 카탈로그에서 애플리케이션을 설치하거나 패키지, 프로그램 및 작업 순서를 설치하지 못하도록 합니다.  
+> 이러한 조건을 모두 적용하지 않을 때 이 옵션을 선택하면 클라이언트에서 소프트웨어 업데이트 및 필수 애플리케이션을 설치하지 않습니다. 이 설정에서는 사용자가 애플리케이션, 패키지, 작업 순서 등 소프트웨어 센터에서 이용 가능한 소프트웨어를 방해 없이 설치할 수 있습니다.  
 
 ### <a name="powershell-execution-policy"></a>PowerShell 실행 정책
 
@@ -306,7 +321,13 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 - **사용자가 로그오프되거나 컴퓨터가 다시 시작되기 전의 간격(분)을 표시하는 임시 알림을 사용자에게 표시**
 - **사용자가 로그오프되거나 컴퓨터가 다시 시작되기 전의 카운트다운 간격(분)을 표시하는 대화 상자 표시(사용자가 닫을 수 없음)**
 
+
 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.
+
+- **컴퓨터 다시 시작 카운트다운 알림의 다시 알림 기간 지정(시간)** (버전 1906부터 가능)<!--3976435-->
+  - 기본값은 4시간입니다.
+  - 다시 알림 기간 값은 임시 알림 값에서 사용자가 놓치면 안 되는 알림의 값을 뺀 값보다 작아야 합니다.
+  - 자세한 내용은 [디바이스 다시 시작 알림](/sccm/core/clients/deploy/device-restart-notifications)을 참조하세요.
 
 **배포를 다시 시작해야 하는 경우 알림 메시지 대신 사용자에게 대화 상자 창 표시**<!--3555947-->: 버전 1902부터, 이 설정을 **예**로 구성하면 사용자 환경이 좀 더 간편해집니다. 이 설정은 애플리케이션의 모든 배포, 작업 순서 및 소프트웨어 업데이트에 적용됩니다. 자세한 내용은 [소프트웨어 센터 계획](/sccm/apps/plan-design/plan-for-software-center#bkmk_impact)을 참조하세요.
 
@@ -315,7 +336,7 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 ## <a name="delivery-optimization"></a>배달 최적화
 
 <!-- 1324696 -->
-Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 1802 버전부터 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다.
+Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다.
 
 > [!Note]
 > 배달 최적화는 Windows 10 클라이언트에서만 사용할 수 있습니다.
@@ -324,6 +345,10 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 
 **예**를 선택하여 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다.
 
+### <a name="enable-devices-managed-by-configuration-manager-to-use-delivery-optimization-in-network-cache-servers-beta-for-content-download"></a>Configuration Manager에서 관리하는 디바이스를 사용하여 다운로드된 콘텐츠에 적합한 배달 최적화 네트워크 내 캐시 서버(베타)를 사용하세요
+
+<!--3555764-->
+**예**를 선택하면 클라이언트가 DOINC(배달 최적화 네트워크 내 캐시) 서버로서 사용하게 되는 온-프레미스 배포 지점에서 콘텐츠를 다운로드할 수 있습니다. 자세한 내용은 [Configuration Manager의 배달 최적화 네트워크 내 캐시](/sccm/core/plan-design/hierarchy/delivery-optimization-in-network-cache)를 참조하세요.
 
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
@@ -335,11 +360,11 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 
 계층 구조의 컴퓨터에서 기존 Endpoint Protection 및 Windows Defender 클라이언트를 관리하려면 **예**를 선택합니다.  
 
-Endpoint Protection 클라이언트를 이미 설치했고 Configuration Manager를 사용하여 이를 관리하려면 이 옵션을 선택합니다. 이 별도 설치에는 Configuration Manager 애플리케이션 또는 패키지와 프로그램을 사용하는 스크립팅된 프로세스가 포함됩니다. Configuration Manager 1802부터 Windows 10 디바이스에 Endpoint Protection 에이전트를 설치할 필요가 없습니다. 그러나 이러한 디바이스는 여전히 사용하도록 설정된 **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트를 관리**해야 합니다. <!--503654-->
+Endpoint Protection 클라이언트를 이미 설치했고 Configuration Manager를 사용하여 이를 관리하려면 이 옵션을 선택합니다. 이 별도 설치에는 Configuration Manager 애플리케이션 또는 패키지와 프로그램을 사용하는 스크립팅된 프로세스가 포함됩니다. Windows 10 디바이스에 Endpoint Protection 에이전트를 설치할 필요가 없습니다. 그러나 이러한 디바이스는 여전히 사용하도록 설정된 **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트를 관리**해야 합니다. <!--503654-->
 
 ### <a name="install-endpoint-protection-client-on-client-computers"></a>클라이언트 컴퓨터에 Endpoint Protection 클라이언트 설치
 
-아직 클라이언트를 실행하지 않는 클라이언트 컴퓨터에서 Endpoint Protection 클라이언트를 설치하고 사용하도록 설정하려면 **예**를 선택합니다. Configuration Manager 1802부터 Windows 10 클라이언트에 Endpoint Protection 에이전트를 설치할 필요가 없습니다.  
+아직 클라이언트를 실행하지 않는 클라이언트 컴퓨터에서 Endpoint Protection 클라이언트를 설치하고 사용하도록 설정하려면 **예**를 선택합니다. Windows 10 클라이언트에 Endpoint Protection 에이전트를 설치할 필요가 없습니다.  
 
 > [!NOTE]  
 > Endpoint Protection 클라이언트가 이미 설치되어 있는 경우 **아니요**를 선택하면 Endpoint Protection 클라이언트가 제거되지 않습니다. Endpoint Protection 클라이언트를 제거하려면 **클라이언트 컴퓨터에서 Endpoint Protection 클라이언트 관리** 클라이언트 설정을 **아니요**로 설정합니다. 그런 다음 패키지 및 프로그램을 배포하여 Endpoint Protection 클라이언트를 제거합니다.  
@@ -457,12 +482,12 @@ Windows 8 이상 컴퓨터에서 데이터 통신 연결을 사용하여 Configu
 
     - 사이트에 보낼 클라이언트 상태 메시지  
 
-    - 애플리케이션 카탈로그를 사용한 소프트웨어 설치 요청  
+    - 소프트웨어 센터의 소프트웨어 설치 요청  
 
     - 필수 배포(설치 최종 기한에 도달하는 경우)  
 
     > [!IMPORTANT]  
-    > 클라이언트가 데이터 통신 연결 설정에 관계없이 소프트웨어 센터 또는 애플리케이션 카탈로그에서 소프트웨어 설치를 항상 허용합니다.  
+    > 클라이언트가 데이터 통신 연결 설정에 관계없이 소프트웨어 센터에서 소프트웨어 설치를 항상 허용합니다.  
 
     데이터 통신 연결의 데이터 전송 제한에 도달할 경우 클라이언트에서 더 이상 Configuration Manager 사이트와 통신을 시도하지 않습니다.  
 
@@ -620,18 +645,40 @@ NLA(네트워크 수준 인증)를 사용하여 클라이언트 컴퓨터에 대
 
 ### <a name="bkmk_HideUnapproved"></a> 소프트웨어 센터에서 승인되지 않은 프로그램 숨기기
 
-Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 승인이 필요한 사용자가 사용할 수 있는 애플리케이션이 소프트웨어 센터에서 숨겨집니다.<!--1355146-->
+이 옵션을 사용하면 승인이 필요한 사용자 이용 가능 애플리케이션이 소프트웨어 센터에서 숨겨집니다.<!--1355146-->
 
 ### <a name="bkmk_HideInstalled"></a> 소프트웨어 센터에서 설치된 애플리케이션 숨기기
 
-Configuration Manager 버전 1802부터 이 옵션을 사용하도록 설정하면 이미 설치된 애플리케이션이 더 이상 애플리케이션 탭에 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다. 설치 상태 탭에서는 설치된 애플리케이션을 계속 검토할 수 있습니다. <!--1357592-->
+이 옵션을 사용하면 이미 설치된 애플리케이션이 애플리케이션 탭에 더 이상 표시되지 않습니다. 이 옵션은 Configuration Manager 1802를 설치하거나 이 버전으로 업그레이드할 때 기본값으로 설정됩니다. 설치 상태 탭에서는 설치된 애플리케이션을 계속 검토할 수 있습니다. <!--1357592-->
 
 ### <a name="bkmk_HideAppCat"></a> 소프트웨어 센터에서 애플리케이션 카탈로그 링크 숨기기
 
-Configuration Manager 버전 1806부터 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부를 지정할 수 있습니다. 이 옵션을 설정하면 사용자는 소프트웨어 센터의 설치 상태 노드에서 애플리케이션 카탈로그 웹 사이트 링크를 볼 수 없습니다. <!--1358214-->
+Configuration Manager 버전 1806부터는 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 링크의 표시 여부를 지정할 수 있습니다. 이 옵션을 설정하면 사용자는 소프트웨어 센터의 설치 상태 노드에서 애플리케이션 카탈로그 웹 사이트 링크를 볼 수 없습니다. <!--1358214-->
 
 
 ### <a name="software-center-tab-visibility"></a>소프트웨어 센터 탭 표시 여부
+
+#### <a name="starting-in-version-1906"></a>버전 1906부터 가능
+<!--4063773-->
+
+소프트웨어 센터에서 표시될 탭을 선택합니다. **추가** 단추를 사용하여 **표시되는 탭**으로 탭을 가져옵니다. **제거** 단추를 사용하여 **숨겨진 탭** 목록으로 가져옵니다. **위로 이동** 또는 **아래로 이동** 단추를 사용하여 탭의 순서를 지정합니다. 
+
+사용 가능한 탭:
+- **애플리케이션**
+- **업데이트**
+- **운영 체제**
+- **설치 상태**
+- **디바이스 호환성**
+- **Options**
+- **탭 추가** 단추를 클릭하여 사용자 지정 탭을 최대 5개까지 추가합니다.
+  - 사용자 지정 탭의 **탭 이름**과 **콘텐츠 URL**을 지정합니다.
+  - **탭 삭제**를 클릭하여 사용자 지정 탭을 제거합니다.  
+
+  >[!Important]  
+  > - 소프트웨어 센터에서 사용자 지정 탭으로 사용하는 경우 일부 웹 사이트 기능이 작동하지 않을 수 있습니다. 클라이언트에 배포하기 전에 이 결과를 테스트해야 합니다. <!--519659-->
+  > - 사용자 지정 탭을 추가할 때는 신뢰하거나 인트라넷의 웹 사이트 주소만 지정합니다.<!--SCCMDocs issue 1575-->
+
+#### <a name="version-1902-and-earlier"></a>버전 1902 이하
 
 이 그룹에서 추가 설정을 **예**로 구성하여 소프트웨어 센터에서 다음과 같은 탭을 표시하도록 설정합니다.
 
@@ -849,7 +896,19 @@ Configuration Manager 버전 1902에서 시작하여 [Windows 10 서비스](/scc
 
 ### <a name="enable-third-party-software-updates"></a>타사 소프트웨어 업데이트 사용
 
-이 옵션을 **예**로 설정하면 **인트라넷 Microsoft 업데이트 서비스 위치에 대해 서명된 업데이트 허용** 정책이 설정되고, 클라이언트의 신뢰할 수 있는 게시자 저장소에 서명 인증서가 설치됩니다. 이 클라이언트 설정은 Configuration Manager 버전 1802에 추가되었습니다.
+이 옵션을 **예**로 설정하면 **인트라넷 Microsoft 업데이트 서비스 위치에 대해 서명된 업데이트 허용** 정책이 설정되고, 클라이언트의 신뢰할 수 있는 게시자 저장소에 서명 인증서가 설치됩니다.
+
+### <a name="bkmk_du"></a>기능 업데이트를 위한 동적 업데이트 사용
+<!--4062619-->
+Configuration Manager 버전 1906부터는 [Windows 10의 동적 업데이트](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847) 구성이 가능합니다. 동적 업데이트에서는 Windows 설치 중에 언어 팩, 주문형 기능, 드라이버, 누적 업데이트를 다운로드하라는 지시를 인터넷에서 클라이언트에게 전달하여 설치를 진행합니다. 이 설정이 **예**나 **아니요**로 되어 있으면 Configuration Manager에서는 기능 업데이트 설치 중에 사용되는 [setupconfig](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options) 파일을 수정합니다.
+
+- **구성되지 않음** - 기본값입니다. setupconfig 파일이 변경되지 않습니다.
+  - 동적 업데이트는 지원되는 모든 버전의 Windows 10에서 기본적으로 사용됩니다.
+    - Windows 10 버전 1803 이하의 경우에는 동적 업데이트에서 디바이스의 WSUS 서버 확인이 승인된 동적 업데이트에 대해 진행됩니다. Configuration Manager 환경에서 동적 업데이트는 WSUS 서버에서 직접 승인이 절대 불가하므로 해당 디바이스에서는 이 업데이트가 설치되지 않습니다.
+    - Windows 10 버전 1809부터는 동적 업데이트에서 디바이스의 인터넷 연결을 사용하여 Microsoft Update에서 동적 업데이트를 받습니다. 이러한 동적 업데이트는 WSUS용으로 게시되지 않습니다.
+- **예** - 동적 업데이트를 사용합니다.
+- **아니요** - 동적 업데이트를 사용하지 않습니다.
+
 
 ## <a name="state-messaging"></a>상태 메시지
 

@@ -2,7 +2,7 @@
 title: 컬렉션 만들기
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 컬렉션을 만들어 사용자 및 디바이스 그룹을 더 쉽게 관리할 수 있습니다.
-ms.date: 03/05/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed08a9abb746681eb8e89d471e19990ced313788
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: b8ff3dac5c5ff4d04be6f30c02dba8523ce1b80b
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67550906"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535472"
 ---
 # <a name="how-to-create-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 만드는 방법
 
@@ -217,6 +217,61 @@ Configuration Manager 컬렉션에 다른 컬렉션의 멤버를 포함합니다
 
 5. 컬렉션을 가져오는 마법사를 완료합니다. 새 컬렉션이 **자산 및 준수** 작업 영역의 **사용자 컬렉션** 또는 **디바이스 컬렉션** 노드에 표시됩니다. 새로 가져온 컬렉션에 대한 컬렉션 멤버를 확인하려면 Configuration Manager 콘솔을 새로 고치거나 다시 로드합니다.  
 
+## <a name="bkmk_aadcollsync"></a>Azure Active Directory 그룹에 컬렉션 멤버 자격 결과 동기화
+*(버전 1906부터 시험판 기능으로 도입)*
+<!--3607475-->
+> [!NOTE]
+> Azure AD(Active Directory) 그룹으로의 컬렉션 멤버 자격 동기화는 버전 1906에 시험판으로 처음 도입된 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features) 문서를 참조하세요.
+
+Azure AD(Active Directory) 그룹에 대한 컬렉션 멤버 자격 동기화를 사용할 수 있습니다. 이 동기화 기능으로 컬렉션 멤버 자격 결과에 따라 Azure AD 그룹 멤버 자격을 만들어 클라우드에서 기존 온-프레미스 그룹화 규칙을 사용할 수 있습니다. 디바이스 컬렉션을 동기화할 수 있습니다. Azure AD 그룹에는 Azure Active Directory 레코드가 있는 디바이스만 반영됩니다. 하이브리드 Azure AD 조인 디바이스와 Azure Active Directory 조인 디바이스가 모두 지원됩니다.
+
+Azure AD 동기화는 5분마다 발생합니다. Configuration Manager에서 Azure AD로의 단방향 프로세스입니다. Azure AD의 변경 내용은 Configuration Manager 컬렉션에 반영되지 않으며 Configuration Manager가 덮어씁니다. 예를 들어 Configuration Manager 컬렉션에 2개의 디바이스가 있고 Azure AD 그룹에 3개의 다른 디바이스가 있다면 동기화 후 Azure AD 그룹에는 5개의 디바이스가 있게 됩니다.
+
+
+### <a name="prerequisites"></a>필수 구성 요소
+
+- [클라우드 관리](/sccm/core/servers/deploy/configure/azure-services-wizard)
+- [Azure Active Directory 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)
+
+### <a name="create-a-group-and-set-the-owner-in-azure-ad"></a>Azure AD 내의 그룹 생성 및 소유자 설정
+
+1. [https://portal.azure.com](https://portal.azure.com)으로 이동합니다.
+1. **Azure Active Directory** > **그룹** > **모든 그룹**으로 이동합니다.
+1. **새 그룹**을 클릭하고 **그룹 이름**과 **그룹 설명**을 입력합니다.
+1. **소유자**를 선택한 다음 Configuration Manager에 동기화 관계를 만들 ID를 추가합니다.
+1. **만들기**를 클릭하여 Azure AD 그룹 생성을 완료합니다.
+
+### <a name="enable-collection-synchronization-for-the-azure-service"></a>Azure 서비스에 대한 컬렉션 동기화 사용
+
+1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라우드 서비스** > **Azure 서비스**로 이동합니다.
+1. 그룹을 생성했다면 Azure AD 테넌트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+1. **컬렉션 동기화** 탭에서 **Azure Directory 그룹 동기화 사용** 상자를 선택합니다.
+1. **확인**을 클릭하여 설정을 저장합니다.
+
+### <a name="enable-the-collection-to-synchronize"></a>컬렉션 동기화 사용
+
+1. Configuration Manager 콘솔에서 **자산 및 호환성** > **개요** > **디바이스 컬렉션**으로 이동합니다.
+1. 동기화할 컬렉션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다. 
+1. **AAD 그룹 동기화** 탭에서 **추가**를 클릭합니다.
+1. 드롭다운 메뉴에서 Azure AD 그룹을 만든 **테넌트**를 선택합니다.
+1. **이름 시작 문자** 필드에 검색 조건을 입력한 다음 **검색**을 클릭합니다.
+  - 로그인하라는 메시지가 표시되면 Azure AD 그룹에 대해 소유자로 지정한 ID를 사용합니다.
+1. 대상 그룹을 선택한 다음 **확인**을 클릭하여 그룹을 추가하고 **확인**을 다시 클릭하여 컬렉션의 속성에서 나갑니다.
+1. Azure Portal에서 그룹 멤버 자격을 확인하려면 5~7분 정도 기다려야 합니다.
+   - 전체 동기화를 시작하려면 컬렉션을 마우스 오른쪽 단추로 클릭한 다음 **멤버 자격 동기화**를 선택합니다.
+
+
+### <a name="verify-the-azure-ad-group-membership"></a>Azure AD 그룹 멤버 자격 확인
+
+1. [https://portal.azure.com](https://portal.azure.com)으로 이동합니다.
+1. **Azure Active Directory** > **그룹** > **모든 그룹**으로 이동합니다.
+1. 만들어 놓은 그룹을 찾아 **멤버**를 선택합니다. 
+1. 멤버가 Configuration Manager 컬렉션의 멤버를 반영하는지 확인합니다.
+   - Azure AD ID가 있는 디바이스만 그룹에 표시됩니다.
+
+
+![Azure AD로의 컬렉션 동기화](media/3607475-sync-collection-to-azuread.png)
+
 ## <a name="bkmk_powershell"></a> PowerShell 사용
 
 PowerShell을 사용하여 컬렉션을 만들고 가져올 수 있습니다. 자세한 내용은 다음을 참조하십시오.
@@ -224,3 +279,7 @@ PowerShell을 사용하여 컬렉션을 만들고 가져올 수 있습니다. �
 * [New-CMCollection](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmcollection)
 * [Set-CMCollection](https://docs.microsoft.com/powershell/module/ConfigurationManager/Set-CMCollection)
 * [Import-CMCollection](https://docs.microsoft.com/powershell/module/ConfigurationManager/Import-CMCollection)
+
+## <a name="next-steps"></a>다음 단계
+
+[컬렉션 관리](/sccm/core/clients/manage/collections/manage-collections)

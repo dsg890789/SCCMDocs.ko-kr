@@ -1,7 +1,7 @@
 ---
 title: 설치 마법사
 titleSuffix: Configuration Manager
-ms.date: 05/23/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e69dbd246e9989494db95cfe5996862c7772822b
-ms.sourcegitcommit: bfb8a17f60dcb9905e739045a5141ae45613fa2c
+ms.openlocfilehash: e424254af1068bdb6f637f38622dc737528702b4
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66198489"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536258"
 ---
 # <a name="use-the-setup-wizard-to-install-configuration-manager-sites"></a>설치 마법사를 사용하여 Configuration Manager 사이트 설치
 
@@ -25,13 +25,29 @@ ms.locfileid: "66198489"
 
 Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보조 사이트는 스크립팅된 명령줄 설치를 지원하지 않습니다.
 
+> [!Note]  
+> 버전 1906부터는 설치 미디어의 루트에 **splash.hta** 파일이 없습니다. 다음 정보의 링크를 제공했습니다.<!--SCCMDocs-pr#3545-->
+>
+> - **사이트 설치**: `smssetup\bin\x64\setup.exe`. 자세한 내용은 [중앙 관리 사이트 또는 기본 사이트 설치](#bkmk_primary)를 참조하세요.
+> - **시작하기 전에**: [사이트 계층 구조 디자인](/sccm/core/plan-design/hierarchy/design-a-hierarchy-of-sites) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626543 -->
+> - **서버 준비 상태 평가**: [필수 구성 요소 검사기](/sccm/core/servers/deploy/install/prerequisite-checker) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626546 -->
+> - **필요한 필수 구성 요소 파일 다운로드**: `smssetup\bin\x64\setupdl.exe`. 자세한 내용은 [설치 다운로더](/sccm/core/servers/deploy/install/setup-downloader)를 참조하세요.
+> - **Configuration Manager 콘솔 설치**: `smssetup\bin\i386\consolesetup.exe`. 자세한 내용은 [콘솔 설치](/sccm/core/servers/deploy/install/install-consoles)를 참조하세요.
+> - [**System Center 업데이트 게시자 다운로드**](/sccm/sum/tools/updates-publisher) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626548 -->
+> - [**추가 운영 체제에 대한 클라이언트 다운로드**](https://www.microsoft.com/download/details.aspx?id=47719) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626550 -->
+> - [**릴리스 정보**](/sccm/core/servers/deploy/install/release-notes) <!-- https://go.microsoft.com/fwlink/?LinkID=626571 -->
+> - [**설명서 읽기**](https://docs.microsoft.com/sccm)<!-- https://go.microsoft.com/fwlink/p/?LinkId=626547 -->
+> - **설치 지원 받기**: [TechNet 포럼: Configuration Manager(현재 분기) – 사이트 및 클라이언트 배포](https://social.technet.microsoft.com/Forums/en-us/home?forum=ConfigMgrDeployment) <!--NOTE: this link requires en-us locale to work-->   <!-- https://go.microsoft.com/fwlink/p/?LinkId=626549 -->
+> - **Configuration Manager 커뮤니티**: [System Center 커뮤니티: 참여 방법](https://social.technet.microsoft.com/wiki/contents/articles/11504.system-center-community-how-to-participate.aspx) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626544 -->
+> - [**Configuration Manager 홈**](https://www.microsoft.com/en-us/cloud-platform/system-center-configuration-manager) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626545 -->
 
 
 ## <a name="bkmk_primary"></a> 중앙 관리 사이트 또는 기본 사이트 설치
 
-중앙 관리 사이트 또는 기본 사이트를 설치하려면 다음 절차를 따르세요. 이 절차를 통해 평가 사이트를 정식 라이선스의 Configuration Manager 사이트로 업그레이드할 수도 있습니다.   
+중앙 관리 사이트 또는 기본 사이트를 설치하려면 다음 절차를 따르세요. 이 절차를 통해 평가 사이트를 정식 라이선스의 Configuration Manager 사이트로 업그레이드할 수도 있습니다.
 
 사이트 설치를 시작하기 전에 다음 문서의 세부 정보를 잘 알고 있어야 합니다.
+
 - [사이트를 설치할 준비](/sccm/core/servers/deploy/install/prepare-to-install-sites)
 - [사이트 설치를 위한 필수 조건](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites)
 
@@ -60,7 +76,7 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
         > [!TIP]  
         > 일반적으로 테스트 환경에 독립 실행형 기본 사이트를 설치하려면 **독립 기본 사이트에 일반적인 설치 옵션 사용** 옵션만 선택합니다. 이 옵션을 선택하면 설치 프로그램에서 다음 작업을 수행합니다.  
-        > 
+        >
         > - 사이트를 독립 실행형 기본 사이트로 자동 구성합니다.  
         > - 기본 설치 경로를 사용합니다.  
         > - 사이트 데이터베이스에 대해 SQL Server 기본 인스턴스의 로컬 설치를 사용합니다.  
@@ -77,8 +93,8 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
     - 라이선스 계약의 **Software Assurance 만료 날짜**를 지정할 수도 있습니다. 해당 날짜에 대해 편리한 미리 알림으로 지정할 수 있습니다. 설치 중에 이 날짜를 입력하지 않는 경우 나중에 Configuration Manager 콘솔 내에서 지정할 수 있습니다.  
 
-        > [!NOTE]   
-        > Microsoft는 입력된 만료 날짜의 유효성을 검사하지 않으며 이 날짜를 라이선스 유효성 검사에 사용하지 않습니다. 이 날짜는 만료 날짜 미리 알림으로 사용할 수 있습니다. 이 날짜는 Configuration Manager가 온라인으로 제공되는 새 소프트웨어 업데이트를 주기적으로 확인하기 때문에 유용합니다. 이러한 추가 업데이트를 사용할 수 있도록 Software Assurance 라이선스가 최신 상태여야 합니다.    
+        > [!NOTE]  
+        > Microsoft는 입력된 만료 날짜의 유효성을 검사하지 않으며 이 날짜를 라이선스 유효성 검사에 사용하지 않습니다. 이 날짜는 만료 날짜 미리 알림으로 사용할 수 있습니다. 이 날짜는 Configuration Manager가 온라인으로 제공되는 새 소프트웨어 업데이트를 주기적으로 확인하기 때문에 유용합니다. 이러한 추가 업데이트를 사용할 수 있도록 Software Assurance 라이선스가 최신 상태여야 합니다.  
 
     자세한 내용은 [라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.  
 
@@ -104,11 +120,11 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
 10. **사이트 및 설치 설정** 페이지에서 설치 중인 새 사이트에 대해 다음 설정을 지정합니다.  
 
-    - **사이트 코드**: [계층 구조의 각 사이트 코드는 고유해야](/sccm/core/servers/deploy/install/prepare-to-install-sites#bkmk_sitecodes) 합니다. 다음 범위의 영숫자를 3개 사용합니다. A~Z 및 0~9. 사이트 코드는 폴더 이름에 사용되므로 다음을 포함한 Windows의 예약된 이름을 사용해서는 안 됩니다.    
+    - **사이트 코드**: [계층 구조의 각 사이트 코드는 고유해야](/sccm/core/servers/deploy/install/prepare-to-install-sites#bkmk_sitecodes) 합니다. 다음 범위의 영숫자를 3개 사용합니다. A~Z 및 0~9. 사이트 코드는 폴더 이름에 사용되므로 다음을 포함한 Windows의 예약된 이름을 사용해서는 안 됩니다.  
         - AUX  
-        - CON    
-        - NUL    
-        - PRN    
+        - CON  
+        - NUL  
+        - PRN  
         - SMS  
 
         > [!NOTE]  
@@ -211,7 +227,7 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
     - 필수 조건 검사기에서 문제가 발견되면 목록에서 항목을 선택하여 문제를 해결하는 방법에 대한 자세한 정보를 확인합니다.  
 
-    - 사이트 설치를 계속하기 전에 **실패한** 항목을 해결합니다. 상태가 **경고**인 항목도 해결해야 하지만 이러한 항목으로 인해 사이트 설치가 차단되지는 않습니다.  
+    - 사이트 설치를 계속하기 전에 **실패한** 항목을 해결합니다. 상태가 **경고**인 항목도 해결해 볼 수 있지만 이러한 항목으로 인해 사이트 설치가 차단되지는 않습니다.  
 
     - 문제를 해결한 후 **확인 실행**을 선택하여 필수 조건 검사기를 다시 실행합니다.  
 
@@ -227,10 +243,9 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
     - 설치가 완료되면 개체와 설정을 편집할 수 있는 콘솔에 연결할 수 있습니다.  
 
 
-
 ## <a name="bkmk_expand"></a> 독립 실행형 기본 사이트 확장
 
-독립 실행형 기본 사이트를 첫 번째 사이트로 설치한 경우 나중에 중앙 관리 사이트를 설치하여 해당 사이트를 더 큰 계층 구조로 확장할 수 있습니다.   
+독립 실행형 기본 사이트를 첫 번째 사이트로 설치한 경우 나중에 중앙 관리 사이트를 설치하여 해당 사이트를 더 큰 계층 구조로 확장할 수 있습니다.
 
 독립 실행형 기본 사이트를 확장할 때는 기존 독립 실행형 기본 사이트의 데이터베이스를 참조로 사용하는 새 중앙 관리 사이트가 설치됩니다. 새 중앙 관리 사이트가 설치되고 나면 독립 실행형 기본 사이트는 자식 기본 사이트로 작동합니다.
 
@@ -242,7 +257,6 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
 - 중앙 관리 사이트가 포함된 계층 구조에서 기본 사이트를 제거하려면 먼저 기본 사이트를 제거합니다.  
 
-
 사이트를 확장하려는 경우 Configuration Manager 설치 마법사를 사용하여 다음과 같은 방법으로 새 중앙 관리 사이트를 설치합니다.  
 
 - 독립 실행형 기본 사이트와 동일한 버전의 Configuration Manager를 사용하여 중앙 관리 사이트를 설치합니다.  
@@ -253,10 +267,7 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
 - **사이트 설치** 페이지에서 독립 실행형 기본 사이트를 확장하는 옵션을 선택합니다.  
 
-
 독립 실행형 기본 사이트를 확장하려면 먼저 [사이트를 확장하기 위한 필수 조건](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)을 확인하세요. 그런 다음, 이 문서의 앞부분에 있는 [기본 또는 중앙 관리 사이트를 설치하려면](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites#bkmk_installpri) 관련 절차를 따르세요.
-
-
 
 
 ## <a name="bkmk_secondary"></a> 보조 사이트 설치
@@ -268,7 +279,6 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
 - 사이트 설치를 시작하기 전에 사용자 계정에 필수 조건 권한이 있는지 확인합니다. 또한 새 보조 사이트를 서버가 보조 사이트 서버로 사용할 모든 필수 조건을 충족해야 합니다.  
 
 - 보조 사이트를 설치할 때 Configuration Manager는 부모 기본 사이트에 구성된 클라이언트 통신 포트를 사용하도록 새 사이트를 구성합니다.  
-
 
 ### <a name="bkmk_installsecondary"></a> 보조 사이트 설치 프로세스  
 
@@ -282,9 +292,9 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
 
     - **사이트 코드**: 계층 구조의 각 사이트 코드는 고유해야 합니다. 다음 범위의 영숫자를 3개 사용합니다. A~Z 및 0~9. 사이트 코드는 폴더 이름에 사용되므로 다음을 포함한 Windows의 예약된 이름을 사용해서는 안 됩니다.  
 
-        - AUX    
-        - CON    
-        - NUL    
+        - AUX  
+        - CON  
+        - NUL  
         - PRN  
         - SMS  
 
@@ -312,13 +322,13 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
         - CD.Latest 원본 파일 위치에는 **Redist** 폴더가 포함되어 있습니다. **Redist** 폴더를 **SMSSETUP** 폴더 아래의 하위 폴더로 이동합니다.  
 
             > [!Note]  
-            > 설치 중에 해시 불일치 오류가 발생하는 경우 **Redist** 폴더를 업데이트 합니다. [설치 다운로더](/sccm/core/servers/deploy/install/setup-downloader)를 사용하여 최신 파일을 가져옵니다. 해시 불일치 오류를 발생시키는 파일의 경우에도 업데이트된 **Redist** 폴더에서 해당 파일을 **SMSSETUP\BIN\X64** 폴더로 복사합니다. 
+            > 설치 중에 해시 불일치 오류가 발생하는 경우 **Redist** 폴더를 업데이트 합니다. [설치 다운로더](/sccm/core/servers/deploy/install/setup-downloader)를 사용하여 최신 파일을 가져옵니다. 해시 불일치 오류를 발생시키는 파일의 경우에도 업데이트된 **Redist** 폴더에서 해당 파일을 **SMSSETUP\BIN\X64** 폴더로 복사합니다.
 
     - **버전 1806 이상**<!-- SCCMDocs-pr issue 3164 -->
 
         - CD.Latest 원본 파일 위치에는 **Redist** 폴더가 포함되어 있습니다. **Redist** 폴더를 **SMSSETUP** 폴더 아래의 하위 폴더로 이동합니다.  
 
-        - 다음 파일을 **Redist** 폴더에서 **SMSSETUP\BIN\X64** 폴더로 복사합니다.   
+        - 다음 파일을 **Redist** 폴더에서 **SMSSETUP\BIN\X64** 폴더로 복사합니다.  
             - SharedManagementObjects.msi
             - SQLSysClrTypes.msi
             - sqlncli.msi
@@ -400,7 +410,6 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
 
 11. **요약** 페이지에서 설정을 확인한 후 **다음**을 선택하여 보조 사이트를 설치합니다. 마법사에서 **완료** 페이지가 표시되면 마법사를 닫아도 됩니다. 보조 사이트 설치는 백그라운드에서 계속됩니다.  
 
-
 ### <a name="bkmk_verify"></a> 보조 사이트 설치 상태를 확인하는 방법  
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **사이트 구성**을 확장하고 **사이트** 노드를 선택합니다.  
@@ -409,4 +418,3 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
 
     > [!TIP]  
     > 한 번에 둘 이상의 보조 사이트를 설치하는 경우 필수 조건 검사기는 한 번에 하나의 사이트에 대해 실행됩니다. 한 사이트에 대한 검사를 완료해야 다음 사이트에 대한 검사가 시작됩니다.  
-

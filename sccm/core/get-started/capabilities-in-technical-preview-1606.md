@@ -132,7 +132,7 @@ Configuration Manager 콘솔을 사용하여 Azure에 서비스를 배포하고 
 - 관리 지점, 배포 지점 및 소프트웨어 업데이트 지점 역할만 지원합니다.
 - 사용자 정책이 지원되지 않습니다.
 - Configuration Manager에서 [온-프레미스 모바일 디바이스 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)와 함께 사용할 수 없습니다.
-- Azure의 공용 클라우드 플랫폼에만 지원됩니다.
+- Azure의 퍼블릭 클라우드 플랫폼에만 지원됩니다.
 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기

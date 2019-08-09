@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 07/18/2019
+ms.date: 07/31/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49600557e304edb86ec9a87bb02ef0ddb82ea037
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 858ba3b39ea2290e1d5ca39d9d804e3f46be3002
+ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339435"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712721"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -26,14 +26,14 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 
 기능별 문서에는 핵심 시나리오에 영향을 주는 알려진 문제에 대한 정보가 포함됩니다.  
 
-이 항목에는 Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. 기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.  
+이 문서에는 Configuration Manager의 현재 분기에 대한 릴리스 정보가 포함되어 있습니다. 기술 미리 보기 분기에 대한 자세한 내용은 [기술 미리 보기](/sccm/core/get-started/technical-preview)를 참조하세요.  
 
 다른 버전에서 도입된 새 기능에 대한 자세한 내용은 다음 문서를 참조하세요.
 
+- [버전 1906의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1906)  
 - [버전 1902의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1902)
 - [버전 1810의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1810)
 - [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806)  
-- [버전 1802의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1802)
 
 > [!Tip]  
 > 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22release+notes+-+Configuration+Manager%22&locale=en-us`
@@ -41,21 +41,38 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 
 ## <a name="set-up-and-upgrade"></a>설치 및 업그레이드  
 
-### <a name="when-using-redistributable-files-from-the-cdlatest-folder-setup-fails-with-a-manifest-verification-error"></a>CD.Latest 폴더의 재배포 가능 파일을 사용하는 경우 매니페스트 확인 오류가 발생하여 설치가 실패합니다.
+### <a name="setup-prerequisite-warning-on-domain-functional-level-on-server-2019"></a>Server 2019에서 도메인 기능 수준에 대한 필수 구성 요소 경고 설정
 
-<!-- 510080, 490569  -->
+<!-- 4904376 -->
 
-1606 버전용으로 생성된 CD.Latest 폴더에서 설치 프로그램을 실행하고 해당 CD.Latest 폴더에 포함된 재배포 가능 파일을 사용하는 경우 설치가 실패하고 Configuration Manager 설치 프로그램 로그에 다음 오류가 표시됩니다.
+*버전 1906에 적용*
 
-`ERROR: File hash check failed for defaultcategories.dll`  
-`ERROR: Manifest verification failed. Wrong version of manifest?`
+Windows Server 2019를 실행하는 도메인 컨트롤러가 있는 환경에서 버전 1906에 대한 업데이트를 설치하는 경우 도메인 기능 수준에 대한 필수 구성 요소 검사는 다음 경고를 반환합니다.
+
+`[Completed with warning]:Verify that the Active Directory domain functional level is Windows Server 2003 or later`
 
 #### <a name="workaround"></a>해결 방법
 
-다음 옵션 중 하나를 사용합니다.
+경고를 무시합니다.
 
-- 설치하는 동안 Microsoft에서 최신 재배포 가능 파일을 다운로드하도록 선택합니다. CD.Latest 폴더에 포함된 파일 대신 최신 재배포 가능 파일을 사용합니다.
-- 수동으로 *cd.latest\redist\languagepack\zhh* 폴더를 삭제한 다음 설치 프로그램을 다시 실행합니다.
+### <a name="azure-ad-user-discovery-and-collection-group-sync-dont-work-after-site-expansion"></a>사이트 확장 후 Azure AD 사용자 검색 및 컬렉션 그룹 동기화가 작동하지 않음
+
+<!-- 4797313 -->
+*버전 1906에 적용*
+
+다음 기능 중 하나를 구성합니다.
+
+- Azure Active Directory 사용자 그룹 검색
+- Azure Active Directory 그룹에 컬렉션 멤버 자격 결과 동기화
+
+그런 다음 독립 실행형 기본 사이트를 중앙 관리 사이트가 있는 계층 구조로 확장하면 SMS_AZUREAD_DISCOVERY_AGENT.log에 다음과 같은 오류가 표시됩니다.
+
+`Could not obtain application secret for tenant xxxxx. If this is after a site expansion, please run "Renew Secret Key" from admin console.`
+
+#### <a name="workaround"></a>해결 방법
+
+Azure AD에서 앱 등록에 연결된 키를 갱신합니다. 자세한 내용은 [비밀 키 갱신](/sccm/core/servers/deploy/configure/azure-services-wizard#bkmk_renew)을 참조하세요.
+
 
 ### <a name="setup-command-line-option-joinceip-must-be-specified"></a>설치 명령줄 옵션 JoinCEIP를 지정해야 함
 
@@ -148,6 +165,20 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
+### <a name="if-you-use-hardware-inventory-for-distributed-views-you-cant-onboard-to-desktop-analytics"></a>분산 보기에 하드웨어 인벤토리를 사용하는 경우 Desktop Analytics에 등록할 수 없습니다.
+
+<!-- 4950335 -->
+*적용 대상: Configuration Manager 버전 1902(업데이트 롤업 포함) 및 버전 1906*
+
+계층 구조가 있고 사이트 복제 링크에서 [분산 보기](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_distviews)에 **하드웨어 인벤토리** 사이트 데이터를 사용하도록 설정한 경우 Configuration Manager에서 Desktop Analytics 연결을 구성한 후 M365UploadWorker.log에 다음과 같은 오류가 표시됩니다.
+
+`Unexpected exception 'System.Data.SqlClient.SqlException' Remote access is not supported for transaction isolation level "SNAPSHOT".:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction)`
+
+#### <a name="workaround"></a>해결 방법
+
+모든 사이트 복제 링크에서 분산 보기에 **하드웨어 인벤토리** 사이트 데이터를 사용하지 않습니다.
+
+
 ### <a name="console-unexpectedly-closes-when-removing-collections"></a>컬렉션을 제거할 때 콘솔이 예기치 않게 닫힘
 
 <!-- 4749443 -->
@@ -166,7 +197,7 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 Configuration Manager 콘솔을 사용하여 파일럿 배포 상태를 모니터링하는 경우 해당 배포 플랜의 Windows 대상 버전에서 최신 상태인 파일럿 디바이스는 파일럿 상태 타일에 **정의되지 않음**으로 표시됩니다.  
 
-이러한 **정의되지 않음** 디바이스는 해당 배포 플랜의 OS 대상 버전에서 **최신** 상태입니다. 추가 작업은 필요하지 않습니다.
+이러한 **정의되지 않음** 디바이스는 해당 배포 계획의 OS 대상 버전에서 **최신 상태**입니다. 추가 작업은 필요하지 않습니다.
 
 
 ## <a name="mobile-device-management"></a>모바일 디바이스 관리  
@@ -189,29 +220,10 @@ URL에서 앱 이름이 누락된 iOS 앱을 만들 때 URL에 앱 이름인 것
 
 이 작업을 수행하여 마법사를 완료할 수 있습니다. 앱이 계속해서 iOS 디바이스에 성공적으로 배포됩니다. URL에 추가하는 문자열은 마법사의 **일반 정보** 탭에 있는 **이름**으로 나타납니다. 회사 포털에서 앱의 레이블이기도 합니다.
 
-### <a name="you-can-no-longer-deploy-windows-phone-81-vpn-profiles-to-windows-10"></a>Windows Phone 8.1 VPN 프로필을 Windows 10에 더 이상 배포할 수 없습니다.
-
-<!-- 503274  -->
-*적용 대상: Configuration Manager 버전 1710*
-
-Windows 10 디바이스에도 적용 가능한 Windows Phone 8.1 워크플로를 사용하여 VPN 프로필을 만들 수 없습니다. 이러한 프로필의 경우 만들기 마법사에 지원되는 플랫폼 페이지가 더 이상 표시되지 않습니다. 백 엔드에서 Windows Phone 8.1이 자동으로 선택됩니다. 지원되는 플랫폼 페이지는 프로필 속성에서 사용할 수 있지만 Windows 10 옵션이 표시되지 않습니다.
-
-#### <a name="workaround"></a>해결 방법
-
-Windows 10 디바이스의 경우 Windows 10 VPN 프로필 워크플로를 사용합니다. 이 옵션이 환경에 적합하지 않은 경우 지원 서비스에 문의하세요. 지원 서비스를 통해 Windows 10 타기팅을 추가할 수 있습니다.
 
 
 
 <!-- ## Reports and monitoring    -->
 <!-- ## Conditional access   -->
 
-## <a name="endpoint-protection"></a>Endpoint Protection
-
-### <a name="you-cannot-deploy-windows-defenderscep-policies-to-client-devices-without-domain-connectivity"></a>도메인 연결 없이 Windows Defender/SCEP 정책을 클라이언트 디바이스에 배포할 수 없습니다.
-<!-- 4350561 -->
-*적용 대상: Configuration Manager 1902 이전 버전’*
-
-구성 관리자 클라이언트에서 Windows Defender/SCEP 정책을 적용할 때 그룹 정책 업데이트가 필요한데 도메인에 액세스할 수 없는 경우 이 업데이트가 작동하지 않습니다. 이 문제는 CMG에서 인터넷을 통해 관리하는 디바이스에 영향을 줍니다.
-
-#### <a name="workaround"></a>해결 방법
-없음
+<!-- ## Endpoint Protection -->
