@@ -2,7 +2,7 @@
 title: 필수 구성 요소 확인
 titleSuffix: Configuration Manager
 description: 특정 필수 구성 요소의 참조는 Configuration Manager 업데이트를 검사합니다.
-ms.date: 04/02/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79730167346490350a7536c6badb5f0bc0fa85f4
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: 85d868793f876d2b749eb5cfc1376278699e2a7d
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67252270"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536418"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -374,6 +374,20 @@ SQL Server Always On을 사용하면 가용성 그룹 복제본은 수동 장애
 *적용 대상: 사이트 데이터베이스 서버*
 
 SQL Server Always On을 사용하면 가용성 그룹 복제본은 기본 인스턴스에 위치합니다.
+
+### <a name="sql-availability-group-replicas-must-all-have-the-same-seeding-mode"></a>SQL 가용성 그룹 복제본은 시딩 모드가 모두 동일해야 합니다.
+
+<!-- SCCMDocs-pr#3899 -->
+*적용 대상: 사이트 데이터베이스 서버*
+
+1906년 버전부터 SQL Server Always On을 사용할 때 동일한 [시딩 모드](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/automatic-seeding-secondary-replicas)의 가용성 그룹 복제본을 구성해야 합니다.
+
+### <a name="sql-availability-group-replicas-must-be-healthy"></a>SQL 가용성 그룹 복제본이 정상 상태여야 합니다.
+
+<!-- SCCMDocs-pr#3899 -->
+*적용 대상: 사이트 데이터베이스 서버*
+
+버전 1906부터 SQL Server Always On을 사용하면 가용성 그룹 복제본은 수동 장애 조치에 대해 구성됩니다.
 
 ### <a name="sql-server-configuration-for-site-upgrade"></a>사이트 업그레이드에 대한 SQL Server 구성
 

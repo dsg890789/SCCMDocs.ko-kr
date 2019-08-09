@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 679f62bb38bab06c074c97e92ff7d3adcae80f1b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: f02c61a3af0088a2f2bb564643a085bd117d63bb
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501439"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536611"
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
 
@@ -198,14 +198,19 @@ Active Directory 사용자 검색 작업은 사이트 서버에 있는 **&lt;Ins
 
 
 ## <a name="azureaddisc"></a> Active Directory 사용자 검색
-최신 클라우드 ID가 있는 사용자의 Azure AD 구독을 검색하려면 Azure AD(Azure Active Directory) 사용자 검색을 사용합니다. Azure AD 사용자 검색에서는 다음 특성을 찾을 수 있습니다.  
--   objectId
--   displayName
--   mail
--   mailNickname
--   onPremisesSecurityIdentifier
--   userPrincipalName
--   AAD tenantID
+
+최신 클라우드 ID가 있는 사용자의 Azure AD 구독을 검색하려면 Azure AD(Azure Active Directory) 사용자 검색을 사용합니다. Azure AD 사용자 검색에서는 다음 특성을 찾을 수 있습니다.
+
+- objectId
+- displayName
+- mail
+- mailNickname
+- onPremisesSecurityIdentifier
+- userPrincipalName
+- AAD tenantID
+- onPremisesDomainName
+- onPremisesSamAccountName
+- onPremisesDistinguishedName
 
 이 메서드는 Azure AD의 사용자 특성 전체 동기화 및 델타 동기화를 지원합니다. 이러한 동기화가 수행된 후에는 이 정보를 다른 검색 방법으로 수집한 검색 데이터와 함께 사용할 수 있습니다.
 
@@ -213,7 +218,19 @@ Azure AD 사용자 검색에 대한 작업은 계층 구조에서 최상위 계�
 
 Azure AD 사용자 검색을 구성하려면 클라우드 관리에 대한 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/Azure-services-wizard)을 참조하세요. 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [Azure AD 사용자 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)을 참조하세요.
 
+## <a name="bkmk_azuregroupdisco"></a>Azure Active Directory 사용자 그룹 검색
+<!--3611956-->
+*(버전 1906에 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 도입)*
 
+이제 Azure AD(Azure Active directory)에서 사용자 그룹 및 해당 그룹의 구성원을 검색할 수 있습니다. Azure AD 사용자 그룹 검색에서는 다음 특성을 찾을 수 있습니다.
+
+- objectId
+- displayName
+- mailNickname
+- onPremisesSecurityIdentifier
+- AAD tenantID
+
+Azure AD 사용자 그룹 검색에 대한 작업은 계층 구조에서 최상위 계층 사이트 서버에 있는 **SMS_AZUREAD_DISCOVERY_AGENT.log** 파일에 기록됩니다. 이 검색 방법을 구성하는 방법에 대한 자세한 내용은 [Azure AD 사용자 그룹 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azuregroupdisco)을 참조하세요.
 
 ##  <a name="bkmk_aboutHeartbeat"></a> 하트비트 검색  
 **구성 가능 여부:** 예  

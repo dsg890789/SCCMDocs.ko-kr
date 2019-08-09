@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cac59462b037ecf857792d06b690e57ddcf6e89
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 1a97d05535b55071de6ab836f7fcd66c4c2cb8d0
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132802"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535663"
 ---
 # <a name="manage-clients-on-the-internet-with-configuration-manager"></a>Configuration Manager를 사용하여 인터넷에서 클라이언트 관리
 

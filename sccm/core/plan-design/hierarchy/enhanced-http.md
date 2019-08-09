@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 130cc8511b90da3e95c69f9239e57e2c7ac61d8c
-ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
+ms.openlocfilehash: 583db1b3ac5682ef6eb65338a3e35d280f46fe38
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67623358"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536739"
 ---
 # <a name="enhanced-http"></a>고급 HTTP
 
@@ -101,7 +101,12 @@ Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브�
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하여 **사이트 구성**을 확장하고 **사이트** 노드를 선택합니다. 사이트를 선택하고 리본 메뉴에서 **속성**을 선택합니다.  
 
-2. **클라이언트 컴퓨터 통신** 탭으로 전환합니다. **HTTPS 또는 HTTP**에 대한 옵션을 선택한 다음, **HTTP 사이트 시스템에 대해 Configuration Manager 생성 인증서 사용** 옵션을 사용하도록 설정합니다.  
+2. **클라이언트 컴퓨터 통신** 탭으로 전환합니다.
+
+    > [!Note]
+    > 버전 1906부터 이 탭을 **통신 보안**이라고 합니다.<!-- SCCMDocs#1645 -->  
+
+    **HTTPS 또는 HTTP**에 대한 옵션을 선택합니다. 일반 탭에서 **HTTP 사이트 시스템에 대해 Configuration Manager 생성 인증서 사용**에 대한 옵션을 선택합니다.
 
 > [!Tip]
 > 관리 지점이 사이트에서 새 인증서를 받고 구성하려면 최대 30분까지 기다려야 합니다.

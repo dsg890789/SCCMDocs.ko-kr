@@ -2,7 +2,7 @@
 title: TLS 1.2를 사용하도록 설정하는 방법
 titleSuffix: Configuration Manager
 description: Configuration Manager용 TLS 1.2를 사용하도록 설정하는 방법에 대한 정보입니다.
-ms.date: 06/05/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: 31de47c9-891b-4de7-8d5e-fbbc1bff7c60
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a3d97ee2e68f9f4606ad46c8566467fad459ffa9
-ms.sourcegitcommit: 725e1bf7d3250c2b7b7be9da01135517428be7a1
+ms.openlocfilehash: b58f6d1441d338c121b67754989128944adcc923
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66822079"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536563"
 ---
 # <a name="how-to-enable-tls-12"></a>TLS 1.2를 사용하도록 설정하는 방법
 
@@ -51,10 +51,11 @@ Configuration Manager가 보안 통신을 위해 사용하는 구성 요소에 �
 |사이트 시스템 역할| - [.NET Framework를 업데이트](#update-net-framework-to-support-tls-12)하고 강력한 암호화 설정 확인 <br/> - [SQL Server 및 해당 클라이언트 구성 요소](#update-sql-server-and-client-components)를 필요로 하는 역할에서 업데이트([SQL Server Native Client](#sql-server-native-client) 포함)|
 |보고 서비스 지점|- [.NET Framework](#update-net-framework-to-support-tls-12)를 사이트 서버, SQL Reporting Services 서버 및 콘솔이 있는 모든 컴퓨터에서 업데이트<br/> - 필요에 따라 SMS_Executive 서비스 다시 시작|
 |소프트웨어 업데이트 지점|[WSUS 업데이트](#update-windows-server-update-services-wsus)|
+|클라우드 관리 게이트웨이|[TLS 1.2 적용](/sccm/core/clients/manage/cmg/security-and-privacy-for-cloud-management-gateway#bkmk_tls)|
 |Configuration Manager 콘솔| - [.NET Framework 업데이트](#update-net-framework-to-support-tls-12)<br/> - 강력한 암호화 설정 확인|
 |HTTPS 사이트 시스템 역할이 있는 구성 관리자 클라이언트|[WinHTTP를 사용하여 클라이언트-서버 통신에 대해 TLS 1.2를 지원하도록 Windows 업데이트](#update-windows-and-winhttp)|
 |소프트웨어 센터| - [.NET Framework 업데이트](#update-net-framework-to-support-tls-12)<br/> - 강력한 암호화 설정 확인|
-|Windows 7 클라이언트| 서버 구성 요소에서 TLS 1.2를 사용하도록 설정하기 ‘전에’ [WinHTTP를 사용하여 클라이언트-서버 통신에 대해 TLS 1.2를 지원하도록 Windows를 업데이트](#update-windows-and-winhttp)합니다. 먼저 서버 구성 요소에서 TLS 1.2를 사용하도록 설정하는 경우 이전 버전의 클라이언트를 분리할 수 있습니다.|
+|Windows 7 클라이언트| 서버 구성 요소에서 TLS 1.2를 사용하도록 설정하기 ‘전에’ [WinHTTP를 사용하여 클라이언트-서버 통신에 대해 TLS 1.2를 지원하도록 Windows를 업데이트](#update-windows-and-winhttp)합니다.  먼저 서버 구성 요소에서 TLS 1.2를 사용하도록 설정하는 경우 이전 버전의 클라이언트를 분리할 수 있습니다.|
 
 
 ## <a name="enable-tls-12-protocol-as-a-security-provider"></a>TLS 1.2 프로토콜을 보안 공급자로 사용하도록 설정
@@ -153,7 +154,7 @@ Windows 8.1, Windows Server 2012 R2, Windows 10, Windows Server 2016 및 후속 
 이전 버전의 Windows(예: Windows 7 또는 Windows Server 2012)는 HTTPS를 통한 클라이언트-서버 통신을 위해 기본적으로 TLS 1.1 또는 1.2를 사용하도록 설정하지 않습니다. 이러한 이전 버전의 Windows에서는 [업데이트 3140245](https://support.microsoft.com/help/3140245)를 설치하여 Windows의 WinHTTP에서 기본 보안 프로토콜로 TLS 1.1 및 TLS 1.2를 사용하도록 설정합니다. 그런 후 다음 레지스트리 값을 설정합니다.
 
 > [!IMPORTANT]
-> Configuration Manager 서버에서 TLS 1.2를 사용하도록 설정하기 ‘전에’ 모든 클라이언트에서 이러한 설정을 사용하도록 설정합니다. 그렇지 않으면 클라이언트를 실수로 분리할 수 있습니다.
+> Configuration Manager 서버에서 TLS 1.2를 사용하도록 설정하기 ‘전에’ 모든 클라이언트에서 이러한 설정을 사용하도록 설정합니다.  그렇지 않으면 클라이언트를 실수로 분리할 수 있습니다.
 
 다음과 같이 `DefaultSecureProtocols` 레지스트리 설정 값을 확인합니다.
 

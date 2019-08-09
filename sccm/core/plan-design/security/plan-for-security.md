@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff14fe508efb5de410f905b8e64d30b55287cacc
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: e96c47c23bd17d7b1059bbcab62b3d1568cd92cd
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338168"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536586"
 ---
 # <a name="plan-for-security-in-configuration-manager"></a>Configuration Manager의 보안 계획
 
@@ -231,6 +231,9 @@ Configuration Manager에서 선택할 수 있는 구성 옵션은 다양하므�
 1. Configuration Manager 사이트를 설치하고 사이트 시스템에서 HTTPS 및 HTTP를 통한 클라이언트 연결을 허용하도록 사이트를 구성합니다.  
 
 2. 사이트 속성의 **클라이언트 컴퓨터 통신** 탭에서 **사이트 시스템 설정**이 **HTTP 또는 HTTPS**가 되도록 구성하고 **사용 가능한 경우 PKI 클라이언트 인증서(클라이언트 인증 기능) 사용**을 선택합니다.  자세한 내용은 [클라이언트 PKI 인증서에 대한 설정 구성](/sccm/core/plan-design/security/configure-security#BKMK_ConfigureClientPKI)을 참조하세요.  
+
+    > [!Note]
+    > 버전 1906부터 이 탭을 **통신 보안**이라고 합니다.<!-- SCCMDocs#1645 -->  
 
 3. 클라이언트 인증서에 대해 PKI 롤아웃을 시험합니다. 배포 예제는 [Windows 컴퓨터용 클라이언트 인증서 배포](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_client2008_cm2012)를 참조하세요.  
 

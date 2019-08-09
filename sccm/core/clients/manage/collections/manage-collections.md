@@ -2,7 +2,7 @@
 title: 컬렉션 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 일반적인 컬렉션 관리 작업을 수행합니다.
-ms.date: 04/23/2019
+ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3099e61b28687ac2705d3da140af272d9de9fe2
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 02161f79270176f2904ae58af5d0dbec9a204ab6
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339033"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68535428"
 ---
 # <a name="how-to-manage-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 관리하는 방법
 
@@ -180,6 +180,9 @@ Configuration Manager에 기본 제공된 컬렉션을 삭제할 수 없습니�
 
 #### <a name="distribution-point-groups"></a>배포 지점 그룹
 선택한 컬렉션의 구성원에게 게 하나 이상의 배포 지점 그룹을 연결합니다. 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.
+
+#### <a name="aad-group-sync"></a>AAD 그룹 동기화
+Azure Active Directory 그룹에 컬렉션 멤버 자격 결과를 동기화합니다. 이 동기화는 버전 1906부터 사용할 수 있는 [시험판 기능](/sccm/core/servers/manage/pre-release-features)입니다. 자세한 내용은 [컬렉션 만들기](/sccm/core/clients/manage/collections/create-collections#bkmk_aadcollsync)를 참조하세요.
 
 #### <a name="security"></a>보안
 연결된 역할 및 보안 범위에서 선택한 컬렉션에 대한 권한이 있는 관리자를 표시합니다. 자세한 내용은 [역할 기반 관리의 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)을 참조하세요.  

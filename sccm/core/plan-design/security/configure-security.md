@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c623799f4a7dd34a0556069d168f0bb3abfd5ff1
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: 08027a99f37b31ca0100dd9737819bb2eac1b94c
+ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159407"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68536631"
 ---
 # <a name="configure-security-in-configuration-manager"></a>Configuration Manager에서 보안 구성
 
@@ -42,7 +42,8 @@ IIS(인터넷 정보 서비스)를 사용하는 사이트 시스템에 대한 �
 
 2.  리본에서 **속성**을 선택합니다. 그런 다음, **클라이언트 컴퓨터 통신** 탭으로 전환합니다.  
 
-    이 탭은 기본 사이트에서만 사용할 수 있습니다. **클라이언트 컴퓨터 통신** 탭이 보이지 않으면 중앙 관리 사이트나 보조 사이트에 연결되어 있지 않은지 확인하세요.  
+    > [!Note]
+    > 버전 1906부터 이 탭을 **통신 보안**이라고 합니다.<!-- SCCMDocs#1645 -->  
 
 3.  IIS를 사용하는 사이트 시스템에 대한 설정을 선택합니다.  
 
