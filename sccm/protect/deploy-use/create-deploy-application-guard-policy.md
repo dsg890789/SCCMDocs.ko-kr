@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3859b56b71b7818baaf6f63e068c0dec80bba44
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
-ms.translationtype: HT
+ms.openlocfilehash: a21ef053cbd5f0a57d7688d69f29bc6f8871484a
+ms.sourcegitcommit: b5c7496ca408803046acc8403858aafd5dca8808
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533599"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68794726"
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포
 
@@ -81,7 +81,7 @@ Application Guard 세션 내에서 애플리케이션 동작을 구성합니다.
 <!--3555858-->
 Configuration Manager 버전 1906부터 사용자가 일반적으로 Application Guard에서 열리는 파일을 신뢰할 수 있도록 하는 정책 설정이 있습니다. 성공적으로 완료되면 파일이 Application Guard 안이 아니라 호스트 디바이스에서 열립니다. Application Guard 정책에 대한 자세한 정보는 [Windows Defender Application Guard 정책 설정 구성](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/configure-wd-app-guard)을 참조하세요.
 
-- **사용자가 Windows Defender Application Guard에서 열리는 파일을 신뢰할 수 있도록 허용** -사용자가 파일을 신뢰할 수 있는 것으로 표시할 수 있습니다. 신뢰할 수 있는 파일은 Application Guard가 아닌 호스트에서 열립니다. Windows 10 버전 1810 이상 클라이언트에 적용 됩니다.
+- **사용자가 Windows Defender Application Guard에서 열리는 파일을 신뢰할 수 있도록 허용** -사용자가 파일을 신뢰할 수 있는 것으로 표시할 수 있습니다. 신뢰할 수 있는 파일은 Application Guard가 아닌 호스트에서 열립니다. Windows 10 버전 1809 이상 클라이언트에 적용 됩니다.
   - **허용 안 함**: 사용자가 파일을 신뢰하는 항목으로 표시할 수 없습니다(기본값).
   - **파일에서 확인: 바이러스 백신:** 바이러스 검사 후 사용자가 파일을 신뢰할 수 있는 것으로 표시할 수 있습니다.
   - **모든 파일:** 사용자가 모든 파일을 신뢰할 수 있는 항목으로 표시할 수 있습니다.

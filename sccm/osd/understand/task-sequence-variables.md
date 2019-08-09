@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b92fad9054c50ea58caeb11e209cd04b6951493f
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: b78d8b6cd60f14843855d00ea44632b6feda3d90
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537123"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68859816"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
@@ -1378,7 +1378,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 작업 순서가 다시 시작되면 이 변수 값이 유지됩니다. 그러나 작업 순서는 초기 상태 메시지를 보내려고 시도합니다. 이 첫 번째 시도에 여러 번의 재시도가 포함합니다. 시도가 성공하면 이 변수 값에 관계없이 작업 순서에서 계속해서 상태를 보냅니다. 상태 전송이 실패하면 작업 순서에서 이 변수 값을 사용합니다.
 
 > [!NOTE]  
-> [작업 순서 상태 보고](/sccm/core/servers/manage/list-of-reports#task-sequence---deployment-status)에서는 이러한 상태 메시지를 사용하여 각 단계의 진행률, 기록 및 세부 정보를 표시합니다.
+> [작업 순서 상태 보고](/sccm/core/servers/manage/list-of-reports#task-sequence---deployment-status)에서는 이러한 상태 메시지를 사용하여 각 단계의 진행률, 기록 및 세부 정보를 표시합니다. 상태 메시지가 전송 되지 않으면 큐에 대기 하지 않습니다. 관리 지점으로 연결을 복원 하는 경우 나중에 전송 되지 않습니다. 이 동작으로 인해 작업 순서 상태 보고가 불완전 하 고 누락 된 항목이 됩니다.
 
 ### <a name="SMSTSDisableWow64Redirection"></a> SMSTSDisableWow64Redirection
 
