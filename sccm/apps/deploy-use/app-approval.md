@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a875c5deb30a94d91f7307f1044fc0eeea1f944a
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
-ms.translationtype: HT
+ms.openlocfilehash: 0a650fd5517fb86108d230cc997c8586520826e7
+ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712387"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68743589"
 ---
 # <a name="approve-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 승인
 
@@ -62,7 +62,7 @@ Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영�
 <!--4336307-->
 1906 버전부터 이전에 사용자 또는 디바이스에 대해 승인한 앱의 설치를 다시 시도할 수 있습니다. 승인 옵션은 사용 가능한 배포에만 해당합니다. 사용자 앱을 제거할 경우 또는 최초 설치 프로세스가 실패한 경우 Configuration Manager가 그 상태를 다시 평가하지 않고 다시 설치합니다. 이 기능을 통해 엔지니어는 지원을 요청하는 사용자에 대해 앱 설치를 신속하게 다시 시도할 수 있습니다.
 
-1. 응용 프로그램 개체에 대 한 **승인** 권한이 있는 사용자 Configuration Manager 콘솔 사용자를 엽니다. 예를 들어, **애플리케이션 관리자** 또는 **응애플리케이션 작성자** 기본 제공 역할에 이 권한이 있습니다.
+1. 응용 프로그램 개체에 대 한 **승인** 권한이 있는 사용자로 Configuration Manager 콘솔을 엽니다. 예를 들어, **애플리케이션 관리자** 또는 **응애플리케이션 작성자** 기본 제공 역할에 이 권한이 있습니다.
 
 1. 승인이 필요한 앱을 배포하고 승인합니다.
 
@@ -140,7 +140,7 @@ Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영�
 
     - Azure AD에서 설정을 수동으로 구성합니다.  
 
-        1. *전역 관리자* 권한이 있는 사용자로 [Azure Portal](https://portal.azure.com) 로 이동 합니다. **Azure Active Directory**로 이동 하 여 **앱 등록**을 선택 합니다.  
+        1. *전역 관리자* 권한을 가진 사용자로 [Azure Portal](https://portal.azure.com)로 이동합니다. **Azure Active Directory**로 이동해서 **앱 등록**을 선택합니다.  
 
         2. Configuration Manager **클라우드 관리** 통합에 대해 만든 애플리케이션을 선택합니다.  
 
