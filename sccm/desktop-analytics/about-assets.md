@@ -2,7 +2,7 @@
 title: 데스크톱 분석의 자산
 titleSuffix: Configuration Manager
 description: 데스크톱 분석의 장치, 드라이버 및 앱에 대해 알아봅니다.
-ms.date: 06/13/2019
+ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63800bf6c8fa1d35eac44f64f2f03bde4f1d5022
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 96e76eb9a1874daa9af844d598808e30bb1a45d2
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535946"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956231"
 ---
 # <a name="assets-in-desktop-analytics"></a>데스크톱 분석의 자산
 
@@ -52,6 +52,10 @@ ms.locfileid: "68535946"
 - 중요
 - 무시
 - 검토 되지 않음
+- 중요 하지 않음<!-- 3587232 -->
+
+    > [!Tip]
+    > "중요 하지 않음" 범주에 대 한 자세한 내용은 [시스템 및 스토어 앱의 자동 업그레이드 결정](/sccm/desktop-analytics/about-deployment-plans#bkmk_plan-autoapp)을 참조 하세요.
 
 목록에서 앱을 선택 하 고 **편집**을 선택 합니다. 이 작업을 수행 하면 앱에 대 한 세부 정보가 표시 됩니다. **중요도** 드롭다운 메뉴를 선택 하 고 값을 설정 합니다. 또한 **소유자**를 할당할 수 있습니다. 변경을 수행 하는 경우 **저장**을 선택 합니다.
 
