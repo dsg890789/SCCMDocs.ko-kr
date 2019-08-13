@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19275385c75477c1c0da24109d6a9c601c5aa8d0
-ms.sourcegitcommit: 75f48834b98ea6a238d39f24e04c127b2959d913
+ms.openlocfilehash: 339c9df44f2647b12936ce8a1077fd0ee0f7ee37
+ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604559"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68743736"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -38,12 +38,6 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 
 - 대상 디바이스를 Configuration Manager 클라이언트의 최신 버전으로 업그레이드합니다.  
 
-- CMPivot에 대한 사용 권한:
-  - **SMS 스크립트** 개체에 대한 **읽기** 권한
-  - **컬렉션**에 대한 **스크립트 실행** 권한
-  - **인벤토리 보고서**에 대한 **읽기** 권한
-  - 기본 범위입니다. 
-
 - 대상 클라이언트에는 PowerShell 버전 4가 필요합니다.
 
 - 다음 엔터티에 대한 데이터를 수집하기 위해 대상 클라이언트는 PowerShell 버전 5.0이 필요합니다.  
@@ -52,6 +46,16 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
   - IPConfig
   - SMBConfig
 
+
+- CMPivot에 대한 사용 권한:
+  - **SMS 스크립트** 개체에 대한 **읽기** 권한
+  - **컬렉션**에 대한 **스크립트 실행** 권한
+    - 또는, 버전 1906부터 **컬렉션**에서 **CMPivot 실행**을 사용할 수 있습니다.
+  - **인벤토리 보고서**에 대한 **읽기** 권한
+  - 기본 범위입니다.
+
+>[!NOTE]
+> **스크립트 실행**은 **CMPivot 실행** 권한의 상위 집합입니다.
  
 ## <a name="limitations"></a>제한 사항
 
@@ -527,9 +531,14 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 <!--4683130-->
 
 버전 1906부터 다음 권한이 Configuration Manager의 기본 제공 **보안 관리자** 역할에 추가되었습니다.
- - SMS 스크립트 읽기
- - 컬렉션에서 CMPivot 실행
- - 인벤토리 보고서 읽기
+
+ - SMS 스크립트 **읽기**
+ - 컬렉션에서 **CMPivot 실행**
+ - 인벤토리 보고서 **읽기**
+
+>[!NOTE]
+> **스크립트 실행**은 **CMPivot 실행** 권한의 상위 집합입니다.
+ 
 
 ### <a name="bkmk_standalone"></a> CMPivot 독립 실행형
 <!--3555890, 4619340, 4683130 -->

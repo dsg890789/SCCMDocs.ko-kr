@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 08/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 977f5cc2d9719a333aa4f063a6e4f9c505e82d3b
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 3f208a8bf66748601985434366a30297396254e4
+ms.sourcegitcommit: 159c6c9fe1df03fd2c4633125a593e3050a2f2da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535875"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833066"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -26,7 +26,7 @@ ms.locfileid: "68535875"
 
 이 릴리스는 기술적인 미리 보기이므로 세부 사항 및 기능은 변경될 수 있습니다.  
 
-이 정보는 Configuration Manager 기술 미리 보기 분기의 모든 버전에 적용됩니다. 이 문서에서는 먼저 나타나는 기술 미리 보기 버전과 함께 각 새로운 기능을 나열합니다. 예를 들어 2019년(19) 1월(01)에 대한 버전 **1901**입니다. 각 미리 보기 버전에 전용으로 제공되는 개별 문서에서 개별 기능을 자세히 설명합니다.  
+이 정보는 Configuration Manager 기술 미리 보기 분기의 모든 버전에 적용됩니다. 이 문서에서는 먼저 나타나는 기술 미리 보기 버전과 함께 각 새로운 기능을 나열합니다. 예를 들어, 2019(19)년 8월 8일의 경우 버전 **1908**입니다. 각 미리 보기 버전에 전용으로 제공되는 개별 문서에서 개별 기능을 자세히 설명합니다.  
 
 Configuration Manager *현재 분기*의 새로운 기능에 대한 자세한 내용은 [Configuration Manager 증분 버전의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions)을 참조하세요.
 
@@ -122,23 +122,35 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1907"></a>Technical Preview 버전 1907
+### <a name="technical-preview-version-1908"></a>Technical Preview 버전 1908
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
 
-- [작업 순서 편집기 검색](/sccm/core/get-started/2019/technical-preview-1907#bkmk_tsedit) <!--4621085-->
-- [Office 365 ProPlus 업그레이드 준비 대시보드 개선](/sccm/core/get-started/2019/technical-preview-1907#improvements-to-office-365-proplus-upgrade-readiness-dashboard) <!--4021125-->
+- [전원 계획의 작업 순서 성능 향상](/sccm/core/get-started/2019/technical-preview-1908#bkmk_tsperf) <!--3555926-->
+- [CMPivot 독립 실행형을 사용하는 로컬 디바이스 쿼리 평가](/sccm/core/get-started/2019/technical-preview-1908#local-device-query-evaluation-using-cmpivot-standalone) <!--3197353-->
+- [ADR용 추가 소프트웨어 업데이트 필터](/sccm/core/get-started/2019/technical-preview-1908#additional-software-update-filter-for-adrs) <!--4852033-->
+- [모든 Windows 업데이트에 대해 배달 최적화 사용](/sccm/core/get-started/2019/technical-preview-1908#use-delivery-optimization-for-all-windows-updates) <!--4699118 (4685210)-->
+- [단계적 배포 템플릿](/sccm/core/get-started/2019/technical-preview-1908#phased-deployment-templates) <!--4961086-->
+- [콘솔 연결 노드 개선](/sccm/core/get-started/2019/technical-preview-1908#improvements-to-console-connections-node) <!--4923997 (4951240)-->
+- [복사 및 붙여넣기 작업 순서 조건](/sccm/core/get-started/2019/technical-preview-1908#bkmk_tscondition) <!--4621098-->
+- [작업 순서 검색 기능 개선](/sccm/core/get-started/2019/technical-preview-1908#bkmk_tssearch) <!--4621085-->
+- [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1908#bkmk_osd) <!--4910348, 4931110, 4977616-->
 
 > [!Note]  
 > 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
 
-<!-- comment out until 1908.1 TP
-## Features in recent technical previews
+## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
 
-The following features were released with previous versions of the Configuration Manager technical preview branch since current branch version 1906:
+현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
+
+### <a name="technical-preview-version-1907"></a>Technical Preview 버전 1907
+
+- [작업 순서 편집기 검색](/sccm/core/get-started/2019/technical-preview-1907#bkmk_tsedit) <!--4621085-->
+- [Office 365 ProPlus 업그레이드 준비 대시보드 개선](/sccm/core/get-started/2019/technical-preview-1907#improvements-to-office-365-proplus-upgrade-readiness-dashboard) <!--4021125-->
+
 
 > [!Tip]  
-> When a new current branch version is available, features that are available in that version are listed in the latest *What's new* article. For more information, see [What's new in incremental versions](/sccm/core/plan-design/changes/whats-new-incremental-versions#supported-versions).
+> 새 현재 분기 버전을 사용할 수 있는 경우 해당 버전에서 사용할 수 있는 기능은 최신 *새로운 기능* 문서에 나열됩니다. 자세한 내용은 [증분 버전의 새로운 기능](/sccm/core/plan-design/changes/whats-new-incremental-versions#supported-versions)을 참조하세요.
 
 <!-- This is the full list of new features in the past TP releases since the last CB release.
 Each month, add features from the list above to a new H3 section at the top of this section.

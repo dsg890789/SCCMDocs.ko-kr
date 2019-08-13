@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43145e7f94fb381d1051ddb7de09367f4f69d556
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: dff4d0ff8fe2bcb7fbbcd8b0b1c5c701f02d20fb
+ms.sourcegitcommit: 159c6c9fe1df03fd2c4633125a593e3050a2f2da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535603"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833180"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
@@ -54,7 +54,7 @@ CMG가 유용한 몇 가지 시나리오가 있습니다. 일반적인 몇 가�
 
 - 인터넷을 통해 Windows 10 디바이스에 Configuration Manager 클라이언트를 설치합니다. Azure AD를 사용하면 디바이스에서 클라이언트 등록 및 할당을 위해 CMG를 인증할 수 있습니다. 클라이언트는 수동으로 설치하거나 Microsoft Intune과 같은 다른 소프트웨어 배포 방법을 사용하여 설치할 수 있습니다.  
 
-- 공동 관리를 사용하여 새 디바이스를 프로비전합니다. CMG는 공동 관리에 필요하지 않습니다. Windows AutoPilot, Azure AD, Microsoft Intune 및 Configuration Manager와 관련된 새 디바이스에 대한 엔드투엔드 시나리오를 완료하는 데 도움이 됩니다.  
+- 공동 관리를 사용하여 새 디바이스를 프로비전합니다. 기존 클라이언트를 자동으로 등록하는 경우에는 공동 관리에 CMG가 필요하지 않습니다. Windows AutoPilot, Azure AD, Microsoft Intune 및 Configuration Manager와 관련된 새 디바이스에는 CMG가 필요합니다. 자세한 내용은 [공동 관리 경로](https://docs.microsoft.com/sccm/comanage/quickstart-paths)를 참조하세요.
 
 ### <a name="specific-use-cases"></a>특정 사용 사례
 
@@ -109,7 +109,7 @@ Configuration Manager 1902 버전부터 Azure Resource Manager가 클라우드 �
 Configuration Manager 1810 이전 버전에서는 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 CMG 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하기 위해 모든 새 CMG 인스턴스에 Azure Resource Manager 배포 모델을 사용하는 것이 좋습니다. 가능한 경우 리소스 관리자를 통해 기존 CMG 인스턴스를 재배포합니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.
 
 > [!Important]  
-> 1810 버전부터 Azure의 기존 서비스 배포는 Configuration Manager에서 더 이상 사용되지 않습니다. 이 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다. 이 기능은 2019년 7월 1일 이후 릴리스된 첫 번째 Configuration 매니저 버전에서 제거됩니다. 이 시간 이전에 CMG 및 클라우드 배포 지점을 Azure Resource Manager 배포로 이동합니다. <!--SCCMDocs-pr issue #2993-->  
+> 1810 버전부터 Azure의 기존 서비스 배포는 Configuration Manager에서 더 이상 사용되지 않습니다. 이 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다. 이 기능은 이후 Configuration Manager 버전에서 제거될 예정입니다.<!--SCCMDocs-pr issue #2993-->  
 
 ### <a name="hierarchy-design"></a>계층 구조 디자인
 

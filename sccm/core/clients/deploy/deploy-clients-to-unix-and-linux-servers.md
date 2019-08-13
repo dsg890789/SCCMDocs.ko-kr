@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 855869db6d127999218964d06e50179c70efed0a
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.openlocfilehash: a634d252a4e5a6637b4dae18dcb57efe929fcf88
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58524101"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68859705"
 ---
 # <a name="how-to-deploy-clients-to-unix-and-linux-servers-in-configuration-manager"></a>Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
 
@@ -109,7 +109,7 @@ Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 관리하려�
 
 -   `-fsp <server_FQDN>`  
 
-     선택 사항입니다. FQDN, 상태 메시지를 전송 하는 클라이언트를 사용 하는 대체 상태 지점 서버를 지정 합니다. 자세한 내용은 [대체 상태 지점이 필요한지 확인](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)을 참조하세요.  
+     선택 사항입니다. FQDN, 상태 메시지를 전송 하는 클라이언트를 사용 하는 대체 상태 지점 서버를 지정 합니다. 자세한 내용은 [대체 상태 지점이 필요한지 확인](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#fallback-status-point)을 참조하세요.  
 
 -   `-dir <directory>`  
 

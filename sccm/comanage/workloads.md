@@ -5,18 +5,18 @@ description: Configuration Manager에서 Microsoft Intune으로 전환할 수 �
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 05/24/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c90befe-9c4e-4c27-a947-625887e15052
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5fb11ac9ffbacfc37b69cb91d34a6885f44abe08
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: ef39c354e384f130b5c585e8aeb099d083fe0418
+ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286638"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68743641"
 ---
 # <a name="co-management-workloads"></a>공동 관리 워크로드
 
@@ -120,12 +120,17 @@ Intune 기능에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Of
 
 Configuration Manager 버전 1806부터 공동 관리하는 Windows 10 디바이스에서 Intune을 사용하여 클라이언트 앱 및 PowerShell 스트립트를 관리할 수 있습니다. 이 워크로드를 전환하면 Intune에서 배포된 사용 가능한 모든 앱을 회사 포털에서 사용할 수 있습니다. Configuration Manager에서 배포하는 앱은 소프트웨어 센터에서 사용할 수 있습니다.
 
-
 Intune 기능에 대한 자세한 내용은 [Microsoft Intune 앱 관리란?](https://docs.microsoft.com/intune/app-management)을 참조하세요.
-
 
 > [!Note]  
 > 클라이언트 앱 워크로드는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+
+
+## <a name="diagram-for-app-workloads"></a>앱 워크로드에 대한 다이어그램
+
+![공동 관리 앱 워크로드 다이어그램](media/co-management-apps.svg)
+
+[전체 화면 크기로 다이어그램 보기](media/co-management-apps.svg)
 
 
 ## <a name="next-steps"></a>다음 단계

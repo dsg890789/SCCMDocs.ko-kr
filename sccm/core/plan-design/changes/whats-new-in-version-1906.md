@@ -2,7 +2,7 @@
 title: 버전 1906의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기의 버전 1906에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 07/26/2019
+ms.date: 08/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dd0b7bd83f33645028755242a48d0581de43460
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 79901ed2922348de06467efbae8d720f9f2d75b5
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68538109"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68860095"
 ---
 # <a name="whats-new-in-version-1906-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1906의 새로운 기능
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 현재 분기의 1906 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1806, 1810 또는 1902 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:When installing a new site, it's also available as a baseline version.--> 이 문서에는 Configuration Manager 버전 1906의 변경 내용과 새로운 기능이 요약되어 있습니다.  
+Configuration Manager 현재 분기의 1906 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 버전 1802 이상을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:When installing a new site, it's also available as a baseline version.--> 이 문서에는 Configuration Manager 버전 1906의 변경 내용과 새로운 기능이 요약되어 있습니다.  
 
 이 업데이트를 설치하기 위한 최신 검사 목록을 항상 검토하세요. 자세한 내용은 [업데이트 1906을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1906)을 참조하세요. 사이트를 업데이트한 후 [업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1906#post-update-checklist)도 검토하세요.
 
@@ -581,11 +581,6 @@ Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편
 
   - 이 목록의 디바이스를 선택하면 리본의 디바이스 그룹에서 **CMPivot** 및 **스크립트 실행**을 시작할 수 있습니다.  
 
-### <a name="multiselect-and-delete-packages"></a>다중 선택 및 패키지 삭제
-
-<!--4616810-->
-**소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 펼치고 **패키지** 노드를 선택합니다. 둘 이상의 패키지를 선택합니다. 리본 메뉴의 패키지 그룹에서 이제 한 번에 둘 이상의 패키지를 삭제할 수 있습니다.
-
 ### <a name="order-by-program-name-in-task-sequence"></a>작업 순서에서 프로그램 이름별로 정렬
 
 <!--4616810-->
@@ -602,8 +597,6 @@ Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편
 [제거되는 항목과 사용되지 않는 항목](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated)에서 구현되기 전의 지원 변경 내용을 알아보세요.
 
 버전 1906에서는 다음 기능이 지원되지 않습니다.  
-
-- 클라우드 관리 게이트웨이 및 클라우드 배포 지점에 대한 클래식 서비스 배포. 자세한 내용은 [CMG 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager)을 참조하세요.
 
 - 새 애플리케이션 카탈로그 역할을 설치할 수 없습니다. 업데이트된 클라이언트는 사용자가 사용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 자세한 내용은 [소프트웨어 센터 계획](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.
 
@@ -654,7 +647,7 @@ The following additional hotfixes are available to address specific issues:
 > 다음에 대해 자세히 알아보세요.
 >
 > - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
-> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)  
 
 알려진 중요한 문제는 [릴리스 정보](/sccm/core/servers/deploy/install/release-notes)를 참조하세요.
 

@@ -2,7 +2,7 @@
 title: 지원되는 SQL Server 버전
 titleSuffix: Configuration Manager
 description: Configuration Manager 사이트 데이터베이스를 호스트하기 위한 SQL Server 버전 및 구성 요구 사항을 가져옵니다.
-ms.date: 08/14/2018
+ms.date: 08/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b88ca3361390f8577dc44f2a3fd9640d5a49ad7d
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: e9c84044705c014c547291ea70203e16f3eab004
+ms.sourcegitcommit: ebce34771d39292737a60ba9f051ab4d3636903a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536814"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822486"
 ---
 # <a name="supported-sql-server-versions-for-configuration-manager"></a>Configuration Manager에 대한 지원되는 SQL Server 버전
 
@@ -24,11 +24,10 @@ ms.locfileid: "68536814"
 
 각 System Center Configuration Manager 사이트에는 사이트 데이터베이스를 호스트할 수 있는 SQL Server 버전 및 구성이 필요합니다.  
 
-
-
 ##  <a name="bkmk_Instances"></a> SQL Server 인스턴스 및 위치  
  
-### <a name="central-administration-site-and-primary-sites"></a>중앙 관리 사이트 및 기본 사이트  
+### <a name="central-administration-site-and-primary-sites"></a>중앙 관리 사이트 및 기본 사이트
+ 
 사이트 데이터베이스에서는 SQL Server의 전체 설치를 사용해야 합니다.  
 
 SQL Server의 위치는 다음과 같을 수 있습니다.  
@@ -49,138 +48,89 @@ SQL Server의 위치는 다음과 같을 수 있습니다.
 
 SQL Server는 사이트 서버 컴퓨터에 있어야 합니다.  
 
+### <a name="limitations-to-support"></a>지원 제한 사항
 
-### <a name="limitations-to-support"></a>지원 제한 사항   
 다음 구성은 지원되지 않습니다.
+
 - NLB(네트워크 부하 분산) 클러스터 구성의 SQL Server 클러스터
 - CSV(클러스터 공유 볼륨)의 SQL Server 클러스터
 - SQL Server 데이터베이스 미러링 기술과 피어 투 피어 복제
 
 SQL Server 트랜잭션 복제는 [데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 사용하도록 구성된 관리 지점에 개체를 복제하는 데에만 사용할 수 있습니다.  
 
+##  <a name="bkmk_SQLVersions"></a> 지원되는 SQL Server 버전
 
-
-##  <a name="bkmk_SQLVersions"></a> 지원되는 SQL Server 버전  
 여러 사이트가 있는 계층 구조에서 다음과 같은 경우 사이트마다 다른 SQL Server 버전을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.
+
 - Configuration Manager는 사용하는 SQL Server 버전을 지원합니다.
 - 사용하는 SQL Server 버전은 Microsoft에서 계속 지원합니다.
-- SQL Server는 두 가지 버전의 SQL Server 간 복제를 지원합니다. 예를 들어 SQL Server는 SQL Server 2008 R2와 SQL Server 2016 간의 복제를 지원하지 않습니다. 자세한 내용은 [SQL Server 복제에서 사용되지 않는 기능](https://docs.microsoft.com/sql/relational-databases/replication/deprecated-features-in-sql-server-replication)을 참조하세요.
+- SQL Server는 두 가지 버전의 SQL Server 간 복제를 지원합니다. 자세한 내용은 [SQL Server 복제 이전 버전과의 호환성](https://docs.microsoft.com/sql/relational-databases/replication/replication-backward-compatibility)을 참조하세요.
+
+SQL Server 2016 및 이전 버전의 경우 각 SQL 버전 및 서비스 팩에 대한 지원은 [Microsoft 수명 주기 정책](https://aka.ms/sqllifecycle)을 따릅니다. 누적 업데이트가 기본 서비스 팩 버전에 대한 호환성을 되돌리지 않으면 특정 SQL Server 서비스 팩에 대한 지원에는 해당 누적 업데이트가 포함됩니다. SQL Server 2017부터 서비스 팩은 [최신 서비싱 모델](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)을 따르므로 릴리스되지 않습니다. SQL Server 팀은 사용 가능한 [누적 업데이트를 지속적으로 사전 설치](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-updates-to-the-sql-server-incremental-servicing-model-ism/)하도록 권장합니다.
 
 
-
-별도로 지정되지 않은 경우 다음 버전의 SQL Server는 Configuration Manager의 모든 활성 버전에서 지원됩니다. 새 SQL Server 버전이나 서비스 팩에 대한 지원이 추가되면 해당 지원을 추가하는 Configuration Manager 버전이 표시됩니다. 마찬가지로 더 이상 지원이 제공되지 않는 경우에는 Configuration Manager의 영향 받는 버전에 대한 세부 정보를 검색합니다.   
-
-누적 업데이트가 기본 서비스 팩 버전에 대한 호환성을 되돌리지 않으면 특정 SQL Server 서비스 팩에 대한 지원에는 해당 누적 업데이트가 포함됩니다. 서비스 팩 버전이 표시되지 않으면 서비스 팩이 없는 SQL Server의 해당 버전이 지원됩니다. 나중에 SQL Server 버전에 대한 서비스 팩이 릴리스되면 새 서비스 팩 버전이 지원되기 전에 별도의 지원 정보가 선언됩니다.
-
+별도로 지정되지 않은 경우 다음 버전의 SQL Server는 Configuration Manager의 모든 활성 버전에서 지원됩니다. 새 SQL Server 버전에 대한 지원이 추가되면 해당 지원을 추가하는 Configuration Manager 버전이 표시됩니다. 마찬가지로 더 이상 지원이 제공되지 않는 경우에는 Configuration Manager의 영향 받는 버전에 대한 세부 정보를 검색합니다.
 
 > [!IMPORTANT]  
 > 중앙 관리 사이트의 데이터베이스에 대해 SQL Server Standard를 사용하는 경우에는 계층 구조가 지원할 수 있는 총 클라이언트 수를 제한합니다. [크기 조정 및 규모 숫자 값](/sccm/core/plan-design/configs/size-and-scale-numbers)을 참조하세요.
 
-### <a name="sql-server-2017-standard-enterprise"></a>SQL Server 2017: Standard, Enterprise  
-다음 사이트의 경우 [Configuration Manager 버전1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다. 
+### <a name="sql-server-2017-standard-enterprise"></a>SQL Server 2017: Standard, Enterprise
+
+누적 업데이트 버전이 SQL 수명 주기에 의해 지원되는 경우 이 버전은 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574) 이상과 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
 
 - 중앙 관리 사이트  
 - 기본 사이트  
 - 보조 사이트  
   <!--SMS.498506-->
 
-### <a name="sql-server-2016-sp2-standard-enterprise"></a>SQL Server 2016 SP2: Standard, Enterprise  
-<!--514985-->
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
-
-- 중앙 관리 사이트  
-- 기본 사이트  
-- 보조 사이트  
-
-### <a name="sql-server-2016-sp1-standard-enterprise"></a>SQL Server 2016 SP1: Standard, Enterprise  
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
-
-- 중앙 관리 사이트  
-- 기본 사이트  
-- 보조 사이트  
-
 ### <a name="sql-server-2016-standard-enterprise"></a>SQL Server 2016: Standard, Enterprise  
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+<!--514985-->
+이 버전은 SQL 수명 주기에서 지원되는 최소 서비스 팩 및 누적 업데이트와 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
 
 - 중앙 관리 사이트  
 - 기본 사이트  
 - 보조 사이트  
 
-### <a name="sql-server-2014-sp3-standard-enterprise"></a>SQL Server 2014 SP3: Standard, Enterprise  
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+### <a name="sql-server-2014-standard-enterprise"></a>SQL Server 2014: Standard, Enterprise
+
+이 버전은 SQL 수명 주기에서 지원되는 최소 서비스 팩 및 누적 업데이트와 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
 
 - 중앙 관리 사이트  
 - 기본 사이트  
 - 보조 사이트
 
-### <a name="sql-server-2014-sp2-standard-enterprise"></a>SQL Server 2014 SP2: Standard, Enterprise  
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+### <a name="sql-server-2012-standard-enterprise"></a>SQL Server 2012: Standard, Enterprise
 
-- 중앙 관리 사이트  
-- 기본 사이트  
-- 보조 사이트
-
-### <a name="sql-server-2014-sp1-standard-enterprise"></a>SQL Server 2014 SP1: Standard, Enterprise  
- 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
-
-- 중앙 관리 사이트  
-- 기본 사이트  
-- 보조 사이트
-
-### <a name="sql-server-2012-sp4-standard-enterprise"></a>SQL Server 2012 SP4: Standard, Enterprise  
- 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+이 버전은 SQL 수명 주기에서 지원되는 최소 서비스 팩 및 누적 업데이트와 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
 
 - 중앙 관리 사이트  
 - 기본 사이트  
 - 보조 사이트  
 
-### <a name="sql-server-2012-sp3-standard-enterprise"></a>SQL Server 2012 SP3: Standard, Enterprise  
- 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+### <a name="sql-server-2017-express"></a>SQL Server 2017 Express
 
-- 중앙 관리 사이트  
-- 기본 사이트  
-- 보조 사이트  
+누적 업데이트 버전이 SQL 수명 주기에 의해 지원되는 경우 이 버전은 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574) 이상과 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
 
-### <a name="sql-server-2008-r2-sp3-standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3: Standard, Enterprise, Datacenter     
-이 버전의 SQL Server는 지원되지 않습니다. 자세한 내용은 [사이트 데이터베이스인 SQL Server 버전에 대해 사용되지 않는 지원](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-server#sql-server)을 참조하세요.  
-
-### <a name="sql-server-2017-express"></a>SQL Server 2017 Express   
-다음 사이트의 경우 [Configuration Manager 버전1710](/sccm/core/plan-design/changes/whats-new-in-version-1710)에서부터 최소 [누적 업데이트 버전 2](https://support.microsoft.com/help/4052574)에서 이 버전의 SQL Server를 사용할 수 있습니다.
 - 보조 사이트
 <!--SMS.498506-->
 
-### <a name="sql-server-2016-express-sp2"></a>SQL Server 2016 Express SP2  
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
-- 보조 사이트
-
-### <a name="sql-server-2016-express-sp1"></a>SQL Server 2016 Express SP1  
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
-- 보조 사이트
-
 ### <a name="sql-server-2016-express"></a>SQL Server 2016 Express
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.
+
+이 버전은 SQL 수명 주기에서 지원되는 최소 서비스 팩 및 누적 업데이트와 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
+
 - 보조 사이트
 
-### <a name="sql-server-2014-express-sp3"></a>SQL Server 2014 Express SP3   
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+### <a name="sql-server-2014-express"></a>SQL Server 2014 Express
+
+이 버전은 SQL 수명 주기에서 지원되는 최소 서비스 팩 및 누적 업데이트와 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
 
 - 보조 사이트  
 
-### <a name="sql-server-2014-express-sp2"></a>SQL Server 2014 Express SP2   
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
+### <a name="sql-server-2012-express"></a>SQL Server 2012 Express
+
+이 버전은 SQL 수명 주기에서 지원되는 최소 서비스 팩 및 누적 업데이트와 함께 사용할 수 있습니다. 이 버전의 SQL은 다음 사이트에서 사용할 수 있습니다.
 
 - 보조 사이트  
-
-### <a name="sql-server-2014-express-sp1"></a>SQL Server 2014 Express SP1   
- 다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
-
-- 보조 사이트  
-
-### <a name="sql-server-2012-express-sp3"></a>SQL Server 2012 Express SP3  
-다음 사이트의 경우 최소 누적 업데이트 없이 이 버전의 SQL Server를 사용할 수 있습니다.  
-
-- 보조 사이트  
-
 
 ## <a name="bkmk_SQLConfig"></a> SQL Server에 대한 필수 구성
 
@@ -295,7 +245,6 @@ SQL Server를 실행하는 컴퓨터에서 방화벽을 사용하도록 설정�
 특정 포트를 사용하도록 SQL Server를 구성하는 방법에 대한 예는 [특정 TCP 포트로 수신하도록 서버 구성](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-server-to-listen-on-a-specific-tcp-port)을 참조하세요.  
 
 
-
 ## <a name="upgrade-options-for-sql-server"></a>SQL Server 업그레이드 옵션
 
 SQL Server 버전을 업그레이드해야 하는 경우, 쉬운 경우부터 시작해서 복잡한 경우까지 순차적으로 다음 방법을 사용하세요.  
@@ -304,4 +253,4 @@ SQL Server 버전을 업그레이드해야 하는 경우, 쉬운 경우부터 �
 
 - SQL Server의 새 버전을 새 컴퓨터에 설치하고 Configuration Manager 설치 프로그램의 [데이터베이스 이동 옵션을 사용](/sccm/core/servers/manage/modify-your-infrastructure#bkmk_dbconfig)하여 사이트 서버가 새 SQL Server를 가리키도록 합니다.  
 
-- [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 사용합니다. SQL 업그레이드 시나리오에 백업 및 복구를 사용할 수 있습니다. [사이트 복구 전 고려 사항](/sccm/protect/understand/recover-sites#considerations-before-recovering-a-site)을 검토할 때 SQL 버전 관리 요구 사항을 무시할 수 있습니다. 
+- [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 사용합니다. SQL 업그레이드 시나리오에 백업 및 복구를 사용할 수 있습니다. [사이트 복구 전 고려 사항](/sccm/protect/understand/recover-sites#considerations-before-recovering-a-site)을 검토할 때 SQL 버전 관리 요구 사항을 무시할 수 있습니다.

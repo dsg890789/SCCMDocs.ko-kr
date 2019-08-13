@@ -2,7 +2,7 @@
 title: 관리 정보
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔에서 지원되는 관리 정보 기능에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 08/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23b0839366502e44e37689c4b732c74ed2fe8458
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: ea543edbbb3831e1f1119118a9c9b4730ff5b527
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536212"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68860027"
 ---
 # <a name="management-insights-in-configuration-manager"></a>Configuration Manager의 관리 인사이트
 
@@ -130,6 +130,8 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 - **Configuration Manager에서 사용하도록 Azure 서비스 구성**: 이 규칙은 Configuration Manager를 Azure AD에 온보딩하여 클라이언트가 Azure AD를 사용하는 사이트를 인증할 수 있게 해줍니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요.  
 
+- **Configuration Manager 업데이트를 위해 사이트를 Microsoft 클라우드에 연결**: 이 규칙은 Configuration Manager 서비스 연결 지점이 지난 7일 이내에 Microsoft 클라우드에 연결되었는지 확인합니다. 이 연결은 정기 업데이트를 위한 콘텐츠를 다운로드하기 위한 것입니다. DMPDownloader.log 및 hman.log를 검토합니다. 자세한 내용은 [Internet access requirements](/sccm/core/plan-design/network/internet-endpoints#bkmk_scp-updates)(인터넷 액세스 요구 사항)를 참조하세요.
+
 - **디바이스가 하이브리드 Azure Active Directory에 가입하도록 설정**: Azure AD 가입 디바이스를 통해 디바이스가 조직의 보안 및 규정 준수 표준을 충족하도록 보장하면서 사용자가 해당 도메인 자격 증명을 사용하여 로그인할 수 있습니다. 자세한 내용은 [Azure AD 하이브리드 ID 디자인 고려 사항](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview)을 참조하세요.  
 
 - **클라이언트를 최신 Windows 10 버전으로 업데이트**: Windows 10, 1709 버전 이상은 사용자의 컴퓨팅 환경을 향상시키고 현대화합니다. 자세한 내용은 [Windows as a service 채택에 관한 주요 문서](/sccm/core/understand/configuration-manager-and-windows-as-service#key-articles-about-adopting-windows-as-a-service)를 참조하세요.  
@@ -200,6 +202,12 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 - **사용자를 애플리케이션 카탈로그 대신 소프트웨어 센터로 직접 연결**: 사용자가 지난 14일 동안 애플리케이션 카탈로그의 애플리케이션을 설치했거나 요청했는지를 확인합니다. 애플리케이션 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다. 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures#deprecated-features)을 참조하세요.  
 
 - **새 버전의 Software Center 사용**: 이전 버전의 소프트웨어 센터는 더 이상 지원되지 않습니다. 클라이언트 설정인 **컴퓨터 에이전트** 그룹에 **새 소프트웨어 센터 사용**을 활성화하여 새로운 소프트웨어 센터를 사용하도록 클라이언트를 설정합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#use-new-software-center)를 참조하세요.  
+
+### <a name="software-updates"></a>소프트웨어 업데이트
+
+- **클라이언트 설정이 클라이언트에서 델타 콘텐츠를 다운로드할 수 있도록 구성되어 있지 않습니다.** 사용자 환경에서 동기화되는 일부 소프트웨어 업데이트에 델타 콘텐츠가 포함되어 있습니다. 클라이언트 설정, **클라이언트가 사용 가능한 경우 델타 콘텐츠를 다운할 수 있도록 허용**을 사용하도록 설정합니다. 이 설정을 사용하도록 설정하지 않을 경우 이러한 업데이트를 배포할 때 클라이언트가 필요한 것보다 더 많은 콘텐츠를 불필요하게 다운로드합니다. 자세한 내용은 [클라이언트 설정 - 소프트웨어 업데이트](/sccm/core/clients/deploy/about-client-settings#software-updates)를 참조하세요.
+
+- **소프트웨어 업데이트 제품 범주 ‘Windows 10 버전 1903 이상’ 사용**: Windows 10 버전 1903 이상에 대한 새 소프트웨어 업데이트 제품 범주가 있습니다. Windows 10 업데이트를 동기화하고 Windows 10 버전 1903 이상 클라이언트가 있는 경우 소프트웨어 업데이트 지점 구성 요소 속성에서 **Windows 10, 버전 1903 이상** 제품 범주를 선택합니다. 자세한 내용은 [동기화할 분류 및 제품 구성](/sccm/sum/get-started/configure-classifications-and-products)을 참조하세요.
 
 ### <a name="windows-10"></a>Windows 10
 

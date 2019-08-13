@@ -2,7 +2,7 @@
 title: 디바이스 다시 시작 알림
 titleSuffix: Configuration Manager
 description: Configuration Manager의 다양한 클라이언트 설정을 위한 다시 시작 알림 동작
-ms.date: 07/26/2019
+ms.date: 08/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 948c92fc718446bba92bb92e88223fc93213c798
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 9e057a7391bbdbe697b7f53c13a90a74efe22635
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537869"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68859647"
 ---
 # <a name="device-restart-notifications-in-configuration-manager"></a>Configuration Manager에서 디바이스 다시 시작 알림
 
@@ -97,6 +97,9 @@ ms.locfileid: "68537869"
 
 - **사용자가 로그오프되거나 컴퓨터가 다시 시작되기 전의 간격(분)을 표시하는 임시 알림을 사용자에게 표시**
 - **사용자가 로그오프되거나 컴퓨터가 다시 시작되기 전의 카운트다운 간격(분)을 표시하는 대화 상자 표시(사용자가 닫을 수 없음)**
+
+> [!IMPORTANT]
+> Configuration Manager 1902에서 경우에 따라 대화 상자가 알림 메시지를 바꾸지 않습니다. 이 문제를 해결하려면 [Configuration Manager 버전 1902용 업데이트 롤업](https://support.microsoft.com/help/4500571/update-rollup-for-configuration-manager-current-branch-1902)을 설치합니다. <!--4404715-->
 
 ## <a name="device-restart-notifications-starting-in-version-1906"></a>버전 1906부터의 디바이스 다시 시작 알림
 <!--3976435-->

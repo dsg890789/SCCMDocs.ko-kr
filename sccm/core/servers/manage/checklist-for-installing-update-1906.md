@@ -2,7 +2,7 @@
 title: 1906에 대한 검사 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 1906으로 업데이트하기 전에 수행할 작업을 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 08/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65e68662217275832d7e36e331c5094f45d0b33e
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: ba3195db4445b4a96e04e9805cf92e6e21c9b2be
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68538009"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68860006"
 ---
 # <a name="checklist-for-installing-update-1906-for-configuration-manager"></a>Configuration Manager용 업데이트 1906을 설치하기 위한 검사 목록
 
@@ -34,7 +34,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1906용 콘
 
     - 프록시 서버 설정이 `silverlight.dlservice.microsoft.com`, `download.microsoft.com` 및 `go.microsoft.com`에서의 다운로드를 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
-업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#a-namebkmkinconsolea-in-console-updates-and-servicing)를 참조하세요.
+업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#bkmk_inconsole)를 참조하세요.
 
 편재 분기 버전에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
 
@@ -77,7 +77,7 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1906용 콘
 Microsoft는 스크립트를 디지털 방식으로 서명하고 이를 서명된 자동 압축 해제 가능 실행 파일 내에 번들로 묶습니다.
 
 > [!Note]  
-> 버전 1906 업데이트는 버전 1806 이상 실행되는 사이트에만 적용됩니다.
+> 버전 1906 업데이트는 버전 1802 이상을 실행하는 사이트에만 적용됩니다.
 
 조기 업데이트 링을 옵트인하려면:
 
@@ -100,7 +100,7 @@ Microsoft는 스크립트를 디지털 방식으로 서명하고 이를 서명�
 
 ### <a name="all-sites-run-a-supported-version-of-configuration-manager"></a>모든 사이트에서 지원되는 Configuration Manager 버전 실행
 
-업데이트 1906의 설치를 시작하기 전에 계층의 각 사이트 서버에서 동일한 버전의 Configuration Manager를 실행해야 합니다. 1906으로 업데이트하려면 버전 1806, 1810, 또는 1902를 사용해야 합니다.
+업데이트 1906의 설치를 시작하기 전에 계층의 각 사이트 서버에서 동일한 버전의 Configuration Manager를 실행해야 합니다. 1906으로 업데이트하려면 버전 1802 이상을 사용해야 합니다.
 
 ### <a name="review-the-status-of-your-product-licensing"></a>제품 라이선스의 상태 검토
 
@@ -131,7 +131,7 @@ Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 
 
 ### <a name="review-sql-server-native-client-version"></a>SQL Server Native Client 버전 검토
 
-TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-native-client)을 참조하세요.
+TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)을 참조하세요.
 
 ### <a name="review-the-site-and-hierarchy-status-for-unresolved-issues"></a>해결되지 않은 문제에 대해 사이트 및 계층 구조 상태 검토
 
@@ -213,7 +213,7 @@ Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Man
 
 ### <a name="update-sites"></a>사이트 업데이트
 
-이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkinstalla-install-in-console-updates)를 참조하세요.
+이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)를 참조하세요.
 
 일상적인 업무 시간 외에 업데이트를 설치하도록 계획할 수 있습니다. 프로세스가 비즈니스 작업에 최소한의 영향을 주는 시기를 확인합니다. 업데이트를 설치하면 해당 작업에서 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치합니다.
 

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6544e020f819f1ed18592ce811f2992a5603eb
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: 72b374b738a7938126d0e03a9b8b8fdb8dab220a
+ms.sourcegitcommit: 159c6c9fe1df03fd2c4633125a593e3050a2f2da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251499"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833026"
 ---
 # <a name="use-a-cloud-distribution-point-in-configuration-manager"></a>Configuration Manager에서 클라우드 배포 지점 사용
 
@@ -100,7 +100,7 @@ Configuration Manager 1902 버전부터 Azure Resource Manager가 클라우드 �
 Configuration Manager 1810 이전 버전에서는 Azure 관리 인증서를 사용하는 **클래식 서비스 배포** 옵션도 클라우드 배포 지점 마법사에서 계속 제공됩니다. 리소스의 배포 및 관리를 간소화하려면 모든 새 클라우드 배포 지점에 Azure Resource Manager 배포 모델을 사용합니다. 가능하면 Resource Manager를 통해 기존 클라우드 배포 지점을 재배포합니다.
 
 > [!Important]  
-> 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 이 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다. 이 기능은 2019년 7월 1일 이후 릴리스된 첫 번째 Configuration 매니저 버전에서 제거됩니다. 이 시간 전에 CMG 및 클라우드 배포 지점을 Azure Resource Manager 배포로 이동합니다. <!--SCCMDocs-pr issue #2993-->  
+> 1810 버전부터 Azure의 클래식 서비스 배포는 Configuration Manager에서 사용되지 않습니다. 이 버전은 이러한 Azure 배포의 만들기를 지원하는 마지막 버전입니다. 이 기능은 이후 Configuration Manager 버전에서 제거될 예정입니다.<!--SCCMDocs-pr issue #2993-->  
 
 Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Resource Manager 배포 모델로 마이그레이션하지 않습니다. Azure Resource Manager 배포를 사용하여 새 클라우드 배포 지점을 만든 다음, 클래식 클라우드 배포 지점을 제거합니다.
 

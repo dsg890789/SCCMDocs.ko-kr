@@ -2,7 +2,7 @@
 title: 인터넷 액세스 요구 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager의 기능이 완벽히 작동하는 데 필요한 인터넷 엔드포인트에 대해 알아봅니다.
-ms.date: 06/19/2019
+ms.date: 08/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: b34fe701-5d05-42be-b965-e3dccc9363ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f5ed06951fab313a4a1453864ffefb963cc4d8e9
-ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
+ms.openlocfilehash: fa7ab85d86a544b3ea0ad22325ddd63e2034982e
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67623259"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68860052"
 ---
 # <a name="internet-access-requirements"></a>인터넷 액세스 요구 사항
 
@@ -35,9 +35,12 @@ ms.locfileid: "67623259"
 > [!TIP]  
 > 서비스 연결 지점이 `go.microsoft.com` 또는 `manage.microsoft.com`에 연결된 경우 Microsoft Intune 서비스를 사용합니다. Baltimore CyberTrust 루트 인증서가 설치되지 않았거나 만료되었거나 서비스 연결 지점에서 손상된 경우, Intune 커넥터에 연결 문제가 발생하는 것으로 알려진 문제가 있습니다. 자세한 내용은 [KB 3187516: Service connection point doesn't download updates](https://support.microsoft.com/help/3187516)(KB 3187516: 서비스 연결 지점에서 업데이트를 다운로드하지 않습니다)를 참조하세요.  
 
-### <a name="updates-and-servicing"></a>업데이트 및 서비스
+### <a name="a-namebkmk_scp-updates-updates-and-servicing"></a><a name="bkmk_scp-updates"/> 업데이트 및 서비스
 
 이 기능에 대한 자세한 내용은 [Configuration Manager에 대한 업데이트 및 서비스](/sccm/core/servers/manage/updates)를 참조하세요.
+
+> [!Tip]  
+> [관리 인사이트](/sccm/core/servers/manage/management-insights) 규칙, **Configuration Manager 업데이트를 위해 사이트를 Microsoft 클라우드에 연결**에 대해 이러한 엔드포인트를 사용하도록 설정합니다.
 
 - `*.akamaiedge.net`  
 

@@ -2,7 +2,7 @@
 title: Wake on LAN 구성
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 Wake on LAN 설정을 선택합니다.
-ms.date: 05/02/2019
+ms.date: 08/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59d99a3e3626be111e927dae8651d2e01364ccf5
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: d28b4809f3f3c615657a9d4c95af67f97b3d0b66
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083153"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68859714"
 ---
 # <a name="how-to-configure-wake-on-lan-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wake on LAN을 구성하는 방법
 
@@ -67,7 +67,8 @@ Configuration Manager 1810부터 머신의 절전 모드를 해제하는 새로�
 
 - **컬렉션에서 절전 상태인 모든 클라이언트의 절전 모드를 해제하려면:** 디바이스 컬렉션을 마우스 오른쪽 단추로 클릭하고 **클라이언트 알림**으로 이동한 후 **절전 모드 해제**를 선택합니다.
    - 기본 제공 컬렉션에는 이 작업을 실행할 수 없습니다.
-   - 컬렉션에 절전 상태인 클라이언트와 절전 모드가 해제된 클라이언트가 혼합되어 있으면 절전 상태인 클라이언트에만 Wake on LAN 요청이 전송됩니다.  
+   - 컬렉션에 절전 상태인 클라이언트와 절전 모드가 해제된 클라이언트가 혼합되어 있으면 절전 상태인 클라이언트에만 Wake on LAN 요청이 전송됩니다.
+   - 이 작업은 Configuration Manager 콘솔이 독립 실행형 또는 자식 기본 사이트에 연결된 경우에만 활성화됩니다. 중앙 관리 사이트에 연결된 경우에는 해당 작업을 사용할 수 없습니다.
 
 ### <a name="what-to-expect-when-only-the-new-version-of-wake-on-lan-is-enabled"></a>새 버전의 Wake on LAN만 사용하도록 설정한 경우 예상되는 결과
 

@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 08/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7d43a2eea28073ef0193c454c4e1a10bc5f3763
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: aeba2818b44e69066c02b25429ffd03cec00909e
+ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535176"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68859794"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -331,6 +331,8 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 
 **배포를 다시 시작해야 하는 경우 알림 메시지 대신 사용자에게 대화 상자 창 표시**<!--3555947-->: 버전 1902부터, 이 설정을 **예**로 구성하면 사용자 환경이 좀 더 간편해집니다. 이 설정은 애플리케이션의 모든 배포, 작업 순서 및 소프트웨어 업데이트에 적용됩니다. 자세한 내용은 [소프트웨어 센터 계획](/sccm/apps/plan-design/plan-for-software-center#bkmk_impact)을 참조하세요.
 
+> [!IMPORTANT]
+> Configuration Manager 1902에서 경우에 따라 대화 상자가 알림 메시지를 바꾸지 않습니다. 이 문제를 해결하려면 [Configuration Manager 버전 1902용 업데이트 롤업](https://support.microsoft.com/help/4500571/update-rollup-for-configuration-manager-current-branch-1902)을 설치합니다. <!--4404715-->
 
 
 ## <a name="delivery-optimization"></a>배달 최적화
