@@ -163,6 +163,14 @@
               href: plan-design/hierarchy/manage-network-bandwidth.md
             - name: 콘텐츠 관리에 대한 보안 및 개인 정보
               href: plan-design/hierarchy/security-and-privacy-for-content-management.md
+        - name: 사이트 간 데이터 전송
+          items:
+            - name: 데이터 전송 유형
+              href: plan-design/hierarchy/data-transfers-between-sites.md
+            - name: 파일 기반 복제
+              href: plan-design/hierarchy/file-based-replication.md
+            - name: 데이터베이스 복제
+              href: plan-design/hierarchy/database-replication.md
         - name: 클라이언트가 리소스 및 서비스를 찾는 방법
           href: plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md
         - name: 사이트 관리를 위한 보안 및 개인 정보
@@ -507,16 +515,34 @@
       href: servers/manage/site-failure-impacts.md
     - name: 인프라 모니터링
       items:
+        - name: 계층 모니터링
+          href: servers/manage/monitor-hierarchy.md
         - name: 경고 및 상태 시스템 사용
           href: servers/manage/use-alerts-and-the-status-system.md
         - name: 상태 증명
           href: servers/manage/health-attestation.md
-        - name: 계층 및 복제 인프라 모니터링
+        - name: 복제 인프라
           items:
-            - name: 계층 및 복제 인프라 모니터링
-              href: servers/manage/monitor-hierarchy-and-replication-infrastructure.md
-            - name: 사이트 간 데이터 전송
-              href: servers/manage/data-transfers-between-sites.md
+            - name: 복제 모니터링
+              href: servers/manage/monitor-replication.md
+            - name: SQL 복제 문제 해결
+              items:
+                - name: SQL 복제 문제 해결
+                  href: servers/manage/replication/overview.md
+                - name: SQL 복제
+                  href: servers/manage/replication/sql-replication.md
+                - name: SQL 구성
+                  href: servers/manage/replication/sql-configuration.md
+                - name: SQL 성능
+                  href: servers/manage/replication/sql-performance.md
+                - name: SQL 복제 다시 초기화
+                  href: servers/manage/replication/sql-replication-reinit.md
+                - name: 글로벌 데이터 다시 초기화
+                  href: servers/manage/replication/global-data-reinit.md
+                - name: 사이트 데이터 다시 초기화
+                  href: servers/manage/replication/site-data-reinit.md
+                - name: 누락 메시지 다시 초기화
+                  href: servers/manage/replication/reinit-missing-message.md
         - name: 쿼리
           items:
             - name: 쿼리 소개
