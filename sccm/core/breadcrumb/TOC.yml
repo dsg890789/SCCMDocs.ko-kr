@@ -1,0 +1,15 @@
+- name: Docs
+  tochref: /
+  topichref: /
+  items:
+    - name: Enterprise Mobility + Security
+      tocref: /azure/
+      topichref: /enterprise-mobility-security/
+      items:
+        - name: Configuration Manager
+          tocHref: /azure/azure-monitor/
+          topicHref: /sccm/index
+          items:
+            - name: 핵심 인프라
+              tocHref: /azure/azure-monitor/platform/
+              topicHref: /sccm/core/understand/introduction

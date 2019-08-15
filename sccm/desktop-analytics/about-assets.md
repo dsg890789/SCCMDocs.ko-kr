@@ -2,7 +2,7 @@
 title: 데스크톱 분석의 자산
 titleSuffix: Configuration Manager
 description: 데스크톱 분석의 장치, 드라이버 및 앱에 대해 알아봅니다.
-ms.date: 08/09/2019
+ms.date: 08/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96e76eb9a1874daa9af844d598808e30bb1a45d2
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: 225cc93d38607c90332c1bc56ea12b2c344ab4ea
+ms.sourcegitcommit: fe8934487158ed3bd15c7a6a456c3cafe58aed64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956231"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995380"
 ---
 # <a name="assets-in-desktop-analytics"></a>데스크톱 분석의 자산
 
@@ -50,16 +50,37 @@ ms.locfileid: "68956231"
 
 - 심각
 - 중요
-- 무시
+- 무시 
 - 검토 되지 않음
 - 중요 하지 않음<!-- 3587232 -->
 
-    > [!Tip]
-    > "중요 하지 않음" 범주에 대 한 자세한 내용은 [시스템 및 스토어 앱의 자동 업그레이드 결정](/sccm/desktop-analytics/about-deployment-plans#bkmk_plan-autoapp)을 참조 하세요.
 
 목록에서 앱을 선택 하 고 **편집**을 선택 합니다. 이 작업을 수행 하면 앱에 대 한 세부 정보가 표시 됩니다. **중요도** 드롭다운 메뉴를 선택 하 고 값을 설정 합니다. 또한 **소유자**를 할당할 수 있습니다. 변경을 수행 하는 경우 **저장**을 선택 합니다.
 
+### <a name="a-namebkmk_plan-autoapp--automatic-upgrade-decision-of-system-and-store-apps"></a><a name="bkmk_plan-autoapp" />시스템 및 스토어 앱의 자동 업그레이드 결정
+
+<!-- 3587232 -->
+데스크톱 분석 워크플로에서 중요 한 모든 앱에 대해 **중요도** 와 **업그레이드 결정** 을 확인 하는 것이 중요 합니다. 이러한 앱에 주석을 추가 하는 데 도움을 줄 수 있도록 특정 유형의 앱은 자동으로 *중요 하지 않은*것으로 표시 됩니다. 이러한 앱에 대 한 배포 계획 업그레이드 결정도 *준비*로 표시 됩니다. 다음 앱은 호환 되며 Windows를 업그레이드 한 후에도 계속 작동 해야 합니다.
+
+- Microsoft에서 게시 한 시스템 앱 및 구성 요소
+
+- Microsoft Store에서 관리 및 업데이트 된 앱
+
+> [!Tip]
+> 전역 수준 또는 배포 계획에 따라 모든 앱에 대 한 입력을 관리 합니다. 
+>
+> 1. 데스크톱 분석 포털의 **관리** 메뉴에서 **자산**을 선택 합니다. 그런 다음 **앱**을 선택 합니다.
+>
+> 2. **유형** 및 **범주** 열을 사용 하 여 이러한 앱 범주를 관리 합니다.
+>
+>    - 스토어 앱의 경우 **형식** 을 **최신** 으로 필터링 합니다.
+>    - 시스템 앱의 경우 **범주** 를 **백그라운드 프로세스** 또는 **Windows 구성 요소로** 필터링 합니다.
+
+
+
 배포 계획에서 **업그레이드 결정**을 설정할 수도 있습니다. 자세한 내용은 [자산 계획](/sccm/desktop-analytics/about-deployment-plans#plan-assets) 을 참조 하세요.
+
+
 
 
 ## <a name="next-steps"></a>다음 단계

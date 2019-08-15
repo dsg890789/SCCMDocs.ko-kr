@@ -2,7 +2,7 @@
 title: 데스크톱 분석의 배포 계획
 titleSuffix: Configuration Manager
 description: 데스크톱 분석의 배포 계획에 대해 알아봅니다.
-ms.date: 08/09/2019
+ms.date: 08/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a1acd99ca1a4676c4397eee427cdcb8b795cf00
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: 65dff1dbf8e8154bc2d481e274dd47d352aa9d6e
+ms.sourcegitcommit: fe8934487158ed3bd15c7a6a456c3cafe58aed64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956392"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995387"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>데스크톱 분석의 배포 계획 정보
 
@@ -95,24 +95,8 @@ ms.locfileid: "68956392"
 
 데스크톱 분석에서 *주목할 만한* 것으로 표시 되는 앱은 배포 계획의 준비 규칙에 대 한 낮은 설치 수 임계값을 기반으로 합니다. 자세한 내용은 [준비 규칙](/sccm/desktop-analytics/create-deployment-plans#readiness-rules)을 참조 하세요.
 
-#### <a name="a-namebkmk_plan-autoapp--automatic-upgrade-decision-of-system-and-store-apps"></a><a name="bkmk_plan-autoapp" />시스템 및 스토어 앱의 자동 업그레이드 결정
-
-<!-- 3587232 -->
-데스크톱 분석 워크플로에서 중요 한 모든 앱에 대해 **중요도** 와 **업그레이드 결정** 을 확인 하는 것이 중요 합니다. 이러한 앱에 주석을 추가 하는 데 도움을 줄 수 있도록 특정 유형의 앱은 자동으로 *중요 하지 않은*것으로 표시 됩니다. 이러한 앱에 대 한 배포 계획 업그레이드 결정도 *준비*로 표시 됩니다. 다음 앱은 호환 되며 Windows를 업그레이드 한 후에도 계속 작동 해야 합니다.
-
-- Microsoft에서 게시 한 시스템 앱 및 구성 요소
-
-- Microsoft Store에서 관리 및 업데이트 된 앱
-
-> [!Tip]
-> 전역 수준 또는 배포 계획에 따라 모든 앱에 대 한 입력을 관리 합니다.
->
-> 1. 데스크톱 분석 포털의 **관리** 메뉴에서 **자산**을 선택 합니다. 그런 다음 **앱**을 선택 합니다.
->
-> 2. **유형** 및 **범주** 열을 사용 하 여 이러한 앱 범주를 관리 합니다.
->
->    - 스토어 앱의 경우 **형식** 을 **최신** 으로 필터링 합니다.
->    - 시스템 앱의 경우 **범주** 를 **백그라운드 프로세스** 또는 **Windows 구성 요소로** 필터링 합니다.
+   > [!Tip]
+   > "중요 하지 않은" 앱 범주에 대 한 자세한 내용은 [시스템 및 스토어 앱의 자동 업그레이드 결정](/sccm/desktop-analytics/about-assets#bkmk_plan-autoapp)을 참조 하세요. <!-- 3587232 -->
 
 
 ### <a name="drivers"></a>드라이버
