@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09f90482fc389ce33215f1bcb6dfd2bf0f36e9db
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: f12e2b8ac59fa30370a2c4640d8cac295a6eda74
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536094"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956283"
 ---
 # <a name="fundamentals-of-managing-devices-with-configuration-manager"></a>Configuration Manager를 사용한 디바이스 관리의 기본 사항
 
@@ -49,7 +49,7 @@ Configuration Manager 클라이언트 소프트웨어를 실행할 수 있는 �
 
 - 배포하는 OS 이미지의 일부로 클라이언트 포함  
 
-클라이언트를 설치한 후에 컬렉션을 사용하여 디바이스 관리의 작업을 간소화할 수 있습니다. 컬렉션은 그룹으로 관리할 수 있도록 만드는 디바이스나 사용자의 그룹입니다. 예를 들어 Configuration Manager가 등록하는 모든 모바일 디바이스에 모바일 디바이스 응용 프로그램을 설치할 수 있습니다. 이 경우 모든 모바일 디바이스 컬렉션을 사용할 수 있습니다.  
+클라이언트를 설치한 후에 컬렉션을 사용하여 디바이스 관리의 작업을 간소화할 수 있습니다. 컬렉션은 그룹으로 관리할 수 있도록 만드는 디바이스나 사용자의 그룹입니다. 예를 들어 Configuration Manager가 등록하는 모든 모바일 디바이스에 모바일 디바이스 애플리케이션을 설치할 수 있습니다. 이 경우 모든 모바일 디바이스 컬렉션을 사용할 수 있습니다.  
 
 자세한 내용은 다음 문서를 참조하세요.  
 

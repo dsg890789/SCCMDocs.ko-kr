@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7672af696844cfa8afbbe54b1260d8f4c78437a8
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 95641ed36bb3847a3f7d39c4ad8d7296ecd11e77
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676513"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956298"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
@@ -71,7 +71,7 @@ ms.locfileid: "67676513"
 
     - SQL Server 장애 조치(failover) 클러스터  
 
-- [분산 보기](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_distviews)를 사용하는 경우 데이터 웨어하우스 서비스 지점은 중앙 관리 사이트의 데이터베이스를 호스트하는 동일한 서버에 설치되어야 합니다.  
+- [분산 보기](/sccm/core/plan-design/hierarchy/database-replication#bkmk_distviews)를 사용하는 경우 데이터 웨어하우스 서비스 지점은 중앙 관리 사이트의 데이터베이스를 호스트하는 동일한 서버에 설치되어야 합니다.  
 
 SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 FAQ](/sccm/core/understand/product-and-licensing-faq)를 참조하세요. <!-- sms500967 -->
 

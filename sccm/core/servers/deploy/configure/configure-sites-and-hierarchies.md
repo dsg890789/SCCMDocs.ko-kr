@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c66a87636850a33f77fccc1c978242cf0323d413
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 975a92d2ef9e93bc5c1c5fc96cd91775a2627530
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65498929"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956370"
 ---
 # <a name="configure-sites-and-hierarchies-for-configuration-manager"></a>Configuration Manager에 대한 사이트 및 계층 구조 구성
 
@@ -47,5 +47,5 @@ ms.locfileid: "65498929"
 | 높은 위험 수준의 배포를 관리하는 설정 구성 | 관리자가 높은 위험 수준의 배포를 만들 때 경고하도록 사이트에서 설정을 구성합니다. 자세한 내용은 [높은 위험 수준의 배포를 관리하는 설정](/sccm/core/servers/manage/settings-to-manage-high-risk-deployments)을 참조하세요. |  
 | 관리 지점에 대한 데이터베이스 복제본 구성 | 데이터베이스 복제본을 구성하면 클라이언트의 요청을 처리하는 관리 지점이 사이트 데이터베이스 서버에 적용하는 프로세서 부하를 줄일 수 있습니다. 자세한 내용은 [관리 지점에 대한 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요. |  
 | SQL Server Always On 가용성 그룹 구성 | 기본 사이트와 중앙 관리 사이트에서 사이트 데이터베이스를 호스팅하기 위한 고가용성 및 재해 복구 솔루션으로 가용성 그룹을 구성합니다. 자세한 내용은 [항상 사용 가능한 사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요. |  
-| 사이트 간 복제 수정 | 다음 주제에 대해 알아보려면 [사이트 간 데이터 전송](/sccm/core/servers/manage/data-transfers-between-sites)을 참조하세요.<br /><br /> 보조 사이트 간에 [파일 기반 복제](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_fileroute) 구성<br /><br /> [데이터베이스 복제 링크](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_Dblinks)구성<br /><br /> [분산 보기](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_distviews)구성 |  
+| 사이트 간 복제 수정 | 다음 주제에 대해 알아보려면 [사이트 간 데이터 전송](/sccm/core/plan-design/hierarchy/data-transfers-between-sites)을 참조하세요.<br /><br /> 보조 사이트 간에 [파일 기반 복제](/sccm/core/plan-design/hierarchy/file-based-replication) 구성<br /><br /> [데이터베이스 복제 링크](/sccm/core/plan-design/hierarchy/database-replication)구성<br /><br /> [분산 보기](/sccm/core/plan-design/hierarchy/database-replication#bkmk_distviews)구성 |  
 | 수동 모드에서 사이트 서버 구성 | 버전 1806부터 각 기본 사이트 및 중앙 관리 사이트에 수동 모드로 사이트 서버를 구성합니다. 이 기능은 항상 사용 가능한 사이트 서버를 제공합니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요. |  

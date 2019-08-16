@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f7568a2bdd5b7a814d430a9e38378f7fb8d2149
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: b5275d24cecebbcda06b75de3d27dae1fe7c1e6c
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339391"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956354"
 ---
 # <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1606을 설치하기 위한 검사 목록
 
@@ -71,7 +71,8 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 **사이트 간의 파일 및 데이터 복제 검토:**  사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 원활한 업데이트 또는 성공적인 업데이트를 방해할 수 있습니다.    
 
-데이터베이스 복제의 경우 업데이트를 시작하기 전에 Replication Link Analyzer를 사용하여 문제를 해결할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 계층 구조 및 복제 인프라 모니터링](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md) 항목에서 [Replication Link Analyzer 정보](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md#BKMK_RLA)를 참조하세요.  
+데이터베이스 복제의 경우 업데이트를 시작하기 전에 Replication Link Analyzer를 사용하여 문제를 해결할 수 있습니다. 자세한 내용은 [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-replication#BKMK_RLA)를 참조하세요.  
+
 
 **사이트, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 호스트하는 컴퓨터에 모든 해당 중요 운영 체제 업데이트 설치:** Configuration Manager에 대한 업데이트를 설치하기 전에 각 해당 사이트 시스템에 대한 모든 중요 업데이트를 설치합니다. 설치하는 업데이트에서 다시 시작하도록 요구하는 경우 업그레이드를 시작하기 전에 해당 컴퓨터를 다시 시작합니다.  
 

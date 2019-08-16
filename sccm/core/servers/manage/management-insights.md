@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea543edbbb3831e1f1119118a9c9b4730ff5b527
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: ed1c182aabcfbd9ec974a380c379304d7eef63e9
+ms.sourcegitcommit: 9c29ee22d3af5ab2bf8d51262c11d5a756dc55c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68860027"
+ms.locfileid: "68913765"
 ---
 # <a name="management-insights-in-configuration-manager"></a>Configuration Manager의 관리 인사이트
 
@@ -130,8 +130,6 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 
 - **Configuration Manager에서 사용하도록 Azure 서비스 구성**: 이 규칙은 Configuration Manager를 Azure AD에 온보딩하여 클라이언트가 Azure AD를 사용하는 사이트를 인증할 수 있게 해줍니다. 자세한 내용은 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)을 참조하세요.  
 
-- **Configuration Manager 업데이트를 위해 사이트를 Microsoft 클라우드에 연결**: 이 규칙은 Configuration Manager 서비스 연결 지점이 지난 7일 이내에 Microsoft 클라우드에 연결되었는지 확인합니다. 이 연결은 정기 업데이트를 위한 콘텐츠를 다운로드하기 위한 것입니다. DMPDownloader.log 및 hman.log를 검토합니다. 자세한 내용은 [Internet access requirements](/sccm/core/plan-design/network/internet-endpoints#bkmk_scp-updates)(인터넷 액세스 요구 사항)를 참조하세요.
-
 - **디바이스가 하이브리드 Azure Active Directory에 가입하도록 설정**: Azure AD 가입 디바이스를 통해 디바이스가 조직의 보안 및 규정 준수 표준을 충족하도록 보장하면서 사용자가 해당 도메인 자격 증명을 사용하여 로그인할 수 있습니다. 자세한 내용은 [Azure AD 하이브리드 ID 디자인 고려 사항](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview)을 참조하세요.  
 
 - **클라이언트를 최신 Windows 10 버전으로 업데이트**: Windows 10, 1709 버전 이상은 사용자의 컴퓨팅 환경을 향상시키고 현대화합니다. 자세한 내용은 [Windows as a service 채택에 관한 주요 문서](/sccm/core/understand/configuration-manager-and-windows-as-service#key-articles-about-adopting-windows-as-a-service)를 참조하세요.  
@@ -189,6 +187,8 @@ Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정�
 ### <a name="simplified-management"></a>간소화된 관리
 
 사용자 환경의 일상적인 관리를 간소화하는 데 도움이 되는 인사이트입니다.
+
+- **Configuration Manager 업데이트를 위해 사이트를 Microsoft 클라우드에 연결**: 이 규칙은 Configuration Manager 서비스 연결 지점이 지난 7일 이내에 Microsoft 클라우드에 연결되었는지 확인합니다. 이 연결은 정기 업데이트를 위한 콘텐츠를 다운로드하기 위한 것입니다. DMPDownloader.log 및 hman.log를 검토합니다. 자세한 내용은 [Internet access requirements](/sccm/core/plan-design/network/internet-endpoints#bkmk_scp-updates)(인터넷 액세스 요구 사항)를 참조하세요.
 
 - **비 CB 클라이언트 버전**: 현재 분기(CB) 빌드가 아닌 버전을 포함한 모든 클라이언트를 나열합니다. 자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients)를 참조하세요.  
 

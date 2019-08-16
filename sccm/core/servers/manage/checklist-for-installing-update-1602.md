@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba54ff30f880520106ef615ef713781149776eda
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: b9a17bd50bd9380b410623ff0c04b6d9a4417d82
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501214"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956497"
 ---
 # <a name="checklist-for-installing-update-1602-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1602를 설치하기 위한 검사 목록
 
@@ -63,7 +63,7 @@ System Center Configuration Manager 버전 1511에서 1602로 업데이트하기
 
 데이터베이스 복제의 경우 업데이트를 시작하기 전에 Replication Link Analyzer를 사용하여 문제를 해결할 수 있습니다.    
 
- 자세한 내용은 [System Center Configuration Manager에서 계층 구조 및 복제 인프라 모니터링](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md) 항목에서 [Replication Link Analyzer 정보](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md#BKMK_RLA)를 참조하세요.  
+ 자세한 내용은 [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-replication#BKMK_RLA)를 참조하세요.  
 
  **사이트, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 호스트하는 컴퓨터에 모든 해당 중요 운영 체제 업데이트 설치:** Configuration Manager에 대한 업데이트를 설치하기 전에 각 해당 사이트 시스템에 대한 모든 중요 업데이트를 설치합니다. 설치하는 업데이트에서 다시 시작하도록 요구하는 경우 업그레이드를 시작하기 전에 해당 컴퓨터를 다시 시작합니다.  
 
