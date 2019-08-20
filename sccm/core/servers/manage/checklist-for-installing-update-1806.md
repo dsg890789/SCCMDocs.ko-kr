@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8923b380d5ee8de881e4921e9a7d5a7a680c25b0
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: 4097eb828147ec3166d4001e09332bb671db5efd
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67252098"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956345"
 ---
 # <a name="checklist-for-installing-update-1806-for-configuration-manager"></a>Configuration Manager용 업데이트 1806을 설치하기 위한 검사 목록
 
@@ -99,7 +99,7 @@ Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 
 #### <a name="review-file-and-data-replication-between-sites"></a>사이트 간의 파일 및 데이터 복제 검토   
 사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 원활한 업데이트 또는 성공적인 업데이트를 방해할 수 있습니다. 데이터베이스 복제의 경우 업데이트를 시작하기 전에 Replication Link Analyzer를 사용하여 문제를 해결할 수 있습니다.
 
-자세한 내용은 [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure#BKMK_RLA)를 참조하세요.
+자세한 내용은 [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-replication#BKMK_RLA)를 참조하세요.
 
 #### <a name="install-all-applicable-critical-windows-updates"></a>모든 적용 가능한 중요 Windows 업데이트 설치
 Configuration Manager에 대한 업데이트를 설치하기 전에 각 해당 사이트 시스템에 대한 중요한 OS 업데이트를 설치합니다. 이러한 서버는 사이트 서버, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 포함합니다. 설치하는 업데이트에서 다시 시작하도록 요구하는 경우 업그레이드를 시작하기 전에 해당 서버를 다시 시작합니다.
@@ -181,8 +181,10 @@ Configuration Manager 콘솔에서 다음 위치로 이동하여 상태를 보�
 -   **모니터링** 작업 영역, **데이터베이스 복제** 노드  
 
 자세한 내용은 다음 아티클을 참조하세요.  
-- [계층 구조 및 복제 인프라 모니터링](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure)
-- [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure#BKMK_RLA)  
+
+- [계층 모니터링](/sccm/core/servers/manage/monitor-hierarchy)
+- [복제 모니터링](/sccm/core/servers/manage/monitor-replication)
+- [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-replication#BKMK_RLA)  
 
 
 #### <a name="update-configuration-manager-consoles"></a>Configuration Manager 콘솔 업데이트

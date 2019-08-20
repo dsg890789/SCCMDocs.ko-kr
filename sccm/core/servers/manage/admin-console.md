@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b93e636ea690fa99fd2a0dfc63bd12932d2f7a5e
-ms.sourcegitcommit: b5c7496ca408803046acc8403858aafd5dca8808
+ms.openlocfilehash: e99d82a39e1b3c1ef9e52072fc01ab722f3e3e61
+ms.sourcegitcommit: 4241c15a277c57b5480dea70fc30f1ed46ffd4f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794677"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490097"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 
@@ -200,6 +200,9 @@ Configuration Manager 1902 버전부터 새 **커뮤니티** 작업 영역에 **
 
 - **문제 해결 문서**: Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 위한 안내 방식 연습입니다.
 - **새로 제공되거나 업데이트된 지원 문서**: 지난 2개월 동안 새로 제공되거나 업데이트된 문서입니다.
+
+### <a name="troubleshooting-connection-errors"></a>연결 문제 해결
+**설명서** 노드에 명시적 프록시 구성이 없습니다. **인터넷 옵션** 제어판 애플릿에서 모든 OS 정의 프록시를 사용합니다. 연결 오류가 발생한 후에 다시 시도하려면 **설명서** 노드를 새로 고칩니다.
 
 
 ## <a name="command-line-options"></a>명령줄 옵션

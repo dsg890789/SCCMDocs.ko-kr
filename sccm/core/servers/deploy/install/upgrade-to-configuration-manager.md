@@ -1,7 +1,7 @@
 ---
 title: Configuration Manager로 업그레이드
 description: System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 현재 위치 업그레이드를 성공적으로 실행하기 위한 단계를 알아봅니다.
-ms.date: 03/27/2019
+ms.date: 08/16/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e41e932995abc47b6229ce3405f810d75b992b
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: fb0d120fd9d9b301cf02af9c6126a0991524e9c6
+ms.sourcegitcommit: 4241c15a277c57b5480dea70fc30f1ed46ffd4f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159284"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490057"
 ---
 # <a name="upgrade-to-configuration-manager"></a>Configuration Manager로 업그레이드
 
@@ -35,7 +35,7 @@ System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 �
 
 ### <a name="upgrade-to-version-1902"></a>버전 1902로 업그레이드
 
-버전 1902 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1902의 정품 버전으로 업그레이드할 수 있습니다.   
+다음 제품은 System Center Configuration Manager 버전 1902의 정품 버전으로 업그레이드할 수 있습니다.   
 - System Center Configuration Manager 버전 1902의 평가판 설치
 - System Center 2012 Configuration Manager 서비스 팩 1
 - System Center 2012 Configuration Manager 서비스 팩 2
@@ -43,28 +43,14 @@ System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 �
 - System Center 2012 R2 Configuration Manager 서비스 팩 1
 
 ### <a name="upgrade-to-version-1802"></a>버전 1802로 업그레이드
-버전 1802 기준 미디어가 있는 경우 다음 버전을 System Center Configuration Manager 버전 1802의 정품 버전으로 업그레이드할 수 있습니다.   
+다음 제품은 System Center Configuration Manager 버전 1802의 정품 버전으로 업그레이드할 수 있습니다.   
 - System Center Configuration Manager 버전 1802의 평가판 설치
 - System Center 2012 Configuration Manager 서비스 팩 1
 - System Center 2012 Configuration Manager 서비스 팩 2
 - System Center 2012 R2 Configuration Manager
 - System Center 2012 R2 Configuration Manager 서비스 팩 1
 
-### <a name="upgrade-to-version-1606"></a>버전 1606으로 업그레이드
-2016년 12월 15일에 버전 1606의 기준 미디어가 추가 업그레이드 시나리오에 대한 지원을 추가하기 위해 릴리스되었습니다. 이 버전은 다음 버전에서 System Center Configuration Manager 버전 1606의 정품 버전으로의 업그레이드를 지원합니다.  
-- System Center Configuration Manager 버전 1606의 평가판 설치
-- System Center Configuration Manager의 릴리스 후보 설치  
-- System Center 2012 Configuration Manager 서비스 팩 1  
-- System Center 2012 Configuration Manager 서비스 팩 2  
-- System Center 2012 R2 Configuration Manager 서비스 팩 없음
-- System Center 2012 R2 Configuration Manager 서비스 팩 1  
-
-2016년 12월 15일 전에 다운로드한 버전 1606 기준 미디어를 사용하는 경우에는 다음 버전만 System Center Configuration Manager 버전 1606의 정품 버전으로 업그레이드할 수 있습니다.
-- System Center Configuration Manager 버전 1606의 평가판 설치
-- System Center 2012 Configuration Manager 서비스 팩 2
-- System Center 2012 R2 Configuration Manager 서비스 팩 1
-
-버전 1606의 자세한 사용 방법에 대해서는 [Configuration Manager 분기 및 라이선스에 대한 자주 묻는 질문](/sccm/core/understand/product-and-licensing-faq)을 참조하세요.
+자세한 내용은 [Configuration Manager 분기 및 라이선스에 대한 자주 묻는 질문](/sccm/core/understand/product-and-licensing-faq)을 참조하세요.
 
 > [!TIP]  
 >  System Center 2012 Configuration Manager 버전에서 현재 분기로 업그레이드하는 경우 업그레이드 프로세스를 효율적으로 수행할 수 있습니다. 자세한 내용은 다음을 참조하세요.  

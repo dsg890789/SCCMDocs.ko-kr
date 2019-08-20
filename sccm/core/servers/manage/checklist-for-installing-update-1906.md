@@ -2,7 +2,7 @@
 title: 1906에 대한 검사 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 1906으로 업데이트하기 전에 수행할 작업을 알아봅니다.
-ms.date: 08/07/2019
+ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3195db4445b4a96e04e9805cf92e6e21c9b2be
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: a64fc82121535272c0417d1c2dbc6bed65745ce8
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68860006"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956443"
 ---
 # <a name="checklist-for-installing-update-1906-for-configuration-manager"></a>Configuration Manager용 업데이트 1906을 설치하기 위한 검사 목록
 
@@ -145,9 +145,26 @@ TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native
 
 ### <a name="review-file-and-data-replication-between-sites"></a>사이트 간의 파일 및 데이터 복제 검토
 
-사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 성공적인 업데이트를 방해할 수 있습니다. 데이터베이스 복제의 경우 업데이트를 시작하기 전에 Replication Link Analyzer를 사용하여 문제를 해결합니다.
+사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 성공적인 업데이트를 방해할 수 있습니다.
 
-자세한 내용은 [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure#BKMK_RLA)를 참조하세요.
+#### <a name="database-replication"></a>데이터베이스 복제
+
+[데이터베이스 복제](/sccm/core/plan-design/hierarchy/database-replication)의 경우 업데이트를 시작하기 전에 RLA(**Replication Link Analyzer**)를 사용하여 문제를 해결합니다. 자세한 내용은 [데이터베이스 복제 모니터링](/sccm/core/servers/manage/monitor-replication)을 참조하세요.
+
+RLA를 사용하여 다음 질문에 답변합니다.
+
+- 그룹별 복제가 양호한 상태인가요?
+- 상태가 저하된 링크가 있나요?
+- 오류가 있나요?
+
+백로그가 있는 경우 지워질 때까지 기다립니다. 수백만 개의 레코드를 포함하는 경우처럼 백로그가 큰 경우 링크가 불량 상태입니다. 사이트를 업데이트하기 전에 복제 문제를 해결하세요. 추가 지원이 필요한 경우 Microsoft 지원에 문의하세요.<!-- 2838129 -->
+
+#### <a name="file-based-replication"></a>파일 기반 복제
+
+[파일 기반 복제](/sccm/core/plan-design/hierarchy/file-based-replication)의 경우 송신 및 수신 사이트 둘 다에서 백로그의 모든 사서함을 확인합니다. 지연되었거나 보류 중인 복제 작업이 많은 경우에는 지워질 때까지 기다립니다.<!-- SCCMDocs#1792 -->
+
+- 보내는 사이트에서 **sender.log**를 검토합니다.
+- 받는 사이트에서 **despooler log**를 검토합니다.
 
 ### <a name="install-all-applicable-critical-windows-updates"></a>모든 적용 가능한 중요 Windows 업데이트 설치
 
@@ -241,7 +258,7 @@ Configuration Manager 콘솔에서 다음 위치로 이동하여 상태를 보�
 자세한 내용은 다음 아티클을 참조하세요.  
 
 - [계층 구조 및 복제 인프라 모니터링](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure)
-- [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure#BKMK_RLA)  
+- [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-replication#BKMK_RLA)  
 
 ### <a name="update-configuration-manager-consoles"></a>Configuration Manager 콘솔 업데이트
 

@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 08/07/2019
+ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aeba2818b44e69066c02b25429ffd03cec00909e
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: 0074e81aade8ee5e26a4bb0024b91244a3ce4111
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68859794"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956220"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -135,7 +135,7 @@ Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-
 
 - 인터넷 기반 관리 지점이 Windows 인증(Kerberos 또는 NTLM)을 사용하여 사용자를 성공적으로 인증합니다. 자세한 내용은 [인터넷에서의 클라이언트 통신에 대한 고려 사항](/sccm/core/plan-design/hierarchy/communications-between-endpoints#BKMK_clientspan)을 참조하세요.  
 
-- 클라우드 관리 게이트웨이는 Azure Active Directory를 사용하여 사용자를 성공적으로 인증합니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
+- 클라우드 관리 게이트웨이는 Azure Active Directory를 사용하여 사용자를 성공적으로 인증합니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
 
 이 옵션을 **아니요**로 설정하거나 이전 요구 사항이 충족되지 않으면 인터넷상의 컴퓨터에서 컴퓨터 정책만 받습니다. 이 시나리오에서는 사용자가 인터넷 기반 애플리케이션 카탈로그에서 애플리케이션을 계속 확인, 요청 및 설치할 수 있습니다. 이 설정이 **아니요**이지만 **클라이언트에 대한 사용자 정책 사용**이 **예**이면 컴퓨터가 인트라넷에 연결될 때까지 사용자는 사용자 정책을 받을 수 없습니다.  
 
@@ -861,14 +861,25 @@ Configuration Manager에서 모든 배포에 대한 요구 사항 규칙을 재�
 
 이 설정을 사용하여 이전 설정의 기간을 지정할 수 있습니다. 1~23시간, 1~365일 사이의 값을 입력할 수 있습니다. 기본적으로 이 설정은 7일로 구성됩니다.  
 
-### <a name="enable-installation-of-express-installation-files-on-clients"></a>클라이언트에서 빠른 설치 파일의 설치 사용
+### <a name="allow-clients-to-download-delta-content-when-available"></a>클라이언트가 사용 가능한 경우 델타 콘텐츠를 다운할 수 있도록 허용
 
-클라이언트에서 빠른 설치 파일을 사용할 수 있게 하려면 이 옵션을 **예**로 설정합니다. 자세한 내용은 [Windows 10 업데이트에 대한 빠른 설치 파일 관리](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)를 참조하세요.
+*(1902 버전에서 도입됨)*
+
+클라이언트에서 델타 콘텐츠 파일을 사용할 수 있도록 허용하려면 이 옵션을 **예**로 설정합니다. 이 설정을 사용하면 디바이스의 Windows 업데이트 에이전트가 필요한 콘텐츠를 확인하고 선택적으로 다운로드할 수 있습니다.
+
+> [!NOTE]
+> 이 클라이언트 설정은 클라이언트 **클라이언트에서 빠른 설치 파일의 설치 사용**을 대신합니다. 클라이언트에서 빠른 설치 파일을 사용할 수 있게 하려면 이 옵션을 **예**로 설정합니다. 자세한 내용은 [Windows 10 업데이트에 대한 빠른 설치 파일 관리](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)를 참조하세요.
 
 
-### <a name="port-used-to-download-content-for-express-installation-files"></a>빠른 설치 파일 콘텐츠를 다운로드하는 데 사용할 포트
+### <a name="port-that-clients-use-to-receive-requests-for-delta-content"></a>델타 콘텐츠에 대한 요청을 받기 위해 클라이언트가 사용하는 포트
 
-이 설정은 HTTP 수신기에 대한 로컬 포트가 기본 콘텐츠를 다운로드하도록 구성합니다. 기본적으로 8005로 설정됩니다. 이 포트는 클라이언트 방화벽에서 열 필요가 없습니다.
+*(1902 버전에서 도입됨)*
+
+이 설정은 HTTP 수신기에 대한 로컬 포트가 델타 콘텐츠를 다운로드하도록 구성합니다. 기본적으로 8005로 설정됩니다. 이 포트는 클라이언트 방화벽에서 열 필요가 없습니다. 
+
+> [!NOTE]
+>이 클라이언트 설정은 **빠른 설치 파일 콘텐츠를 다운로드하는 데 사용할 포트**를 대신합니다.
+
 
 ### <a name="enable-management-of-the-office-365-client-agent"></a>Office 365 클라이언트 에이전트 관리 사용
 

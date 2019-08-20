@@ -1,8 +1,8 @@
 ---
 title: Windows 10에 대한 지원
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager가 OSD나 클라이언트로 지원되는 Windows 10 버전에 대해 알아보세요.
-ms.date: 07/26/2019
+description: Configuration Manager가 OSD나 클라이언트로 지원되는 Windows 10 버전에 대해 알아보세요.
+ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e95cc6be22c05afcf489fa7e9db8456cb0da0f79
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: f4cc83e3b7d234b7dfbab24ba54079e4633814d5
+ms.sourcegitcommit: 9c29ee22d3af5ab2bf8d51262c11d5a756dc55c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536798"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68913776"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
@@ -64,8 +64,12 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 
 <!-- lifecycle reference: https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet -->
 
+Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
+
 > [!Note]  
 > Windows 10 반기 채널 버전에 대한 지원에는 Enterprise, Pro, Education 및 Pro Education 버전이 포함됩니다.  
+>
+> 1906 버전부터 Configuration Manager는 Windows 10 Pro for Workstation을 지원합니다.
 
 | 키 |
 |--|
@@ -74,8 +78,6 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 
 > [!NOTE]  
 > Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 -->
-
-Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
 
 
 ## <a name="windows-10-adk"></a>Windows 10 ADK
@@ -96,14 +98,14 @@ Configuration Manager로 운영 체제를 배포할 때 Windows ADK는 필요한
 | **1809**<br>(10.1.17763) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) |
 | **1903**<br>(10.1.18362) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 
+> [!Note]  
+> Configuration Manager는 Windows 10 ADK의 x86 및 amd64 구성 요소만을 지원합니다. 현재 ARM 또는 ARM64 구성 요소를 지원하지 않습니다.
+
 |키|
 |--|
 | ![지원됨](media/green_check.png) = **지원됨** <br/> 배포하는 Windows 버전과 일치하는 Windows ADK를 사용하는 것이 좋습니다. 최신 Windows 10 버전을 배포하는 경우 최신 Windows ADK 버전을 사용하세요. 최신 Windows ADK 버전은 Windows 7과 같은 이전 OS 버전의 배포를 지원할 수 있습니다.<!-- SCCMDocs issue 1229 --> Windows ADK 구성 요소 지원 가능성에 대한 자세한 내용은 [DISM 지원 플랫폼](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-supported-platforms) 및 [USMT 요구 사항](https://docs.microsoft.com/windows/deployment/usmt/usmt-requirements#bkmk-1)을 참조하세요. |
 | ![이전 버전과 호환](media/blue_compat.png)  = **이전 버전과 호환** <br/> 이 조합은 테스트되지 않지만 작동해야 합니다. 알려진 문제 또는 주의 사항은 문서화할 것입니다. |
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
-
-> [!Note]  
-> Configuration Manager는 Windows 10 ADK의 x86 및 amd64 구성 요소만을 지원합니다. 현재 ARM 또는 ARM64 구성 요소를 지원하지 않습니다.
 
 > [!Tip]
 > Windows Server 빌드에는 연관된 Windows 10 버전과 동일한 Windows ADK 요구 사항이 있습니다. 예를 들어, Windows Server 2016은 Windows 10 LTSB 2016과 동일한 빌드 버전입니다.

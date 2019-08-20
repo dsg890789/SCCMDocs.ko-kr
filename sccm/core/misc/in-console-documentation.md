@@ -1,6 +1,6 @@
 ---
 title: 콘솔 내 설명서
-ms.date: 06/15/2019
+ms.date: 08/09/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,12 +10,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cf8cd6d750549b307530dff17269e32356e7057
-ms.sourcegitcommit: b62de6c9cb1bc3e4c9ea5ab5ed3355d83e3a59bc
+ms.openlocfilehash: b413dd90a30317c4dec091a7963b637024eab442
+ms.sourcegitcommit: fe8934487158ed3bd15c7a6a456c3cafe58aed64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894147"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995420"
 ---
 <!-- 
 - Feature 1357546
@@ -26,7 +26,7 @@ ms.locfileid: "67894147"
 
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
 
-*마지막 업데이트: 2019/06/15*
+*마지막 업데이트: 2019년 8월 9일*
 
 이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다.
 
@@ -54,20 +54,22 @@ ms.locfileid: "67894147"
 
 ## <a name="trending"></a>인기
 
-2019년 6월 1일부터 6월 30일 사이에 가장 많이 조회된 문서입니다.
+2019년 7월 1일부터 7월 31일 사이에 가장 많이 조회된 문서입니다.
 
 | 페이지 보기 | 제목 |
 |------------|-------|
-| 20786 | [문제 해결을 위한 로그 파일](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
-| 17237 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/sccm/core/plan-design/security/enable-tls-1-2) |
-| 12788 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
-| 12418 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
-| 11553 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
-| 9889 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
-| 8781 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
-| 8464 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
-| 8349 | [작업 순서 단계](https://docs.microsoft.com/sccm/osd/understand/task-sequence-steps) |
-| 8021 | [콘솔 설치](https://docs.microsoft.com/sccm/core/servers/deploy/install/install-consoles) |
+| 19223 | [로그 파일 참조](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
+| 17954 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/sccm/core/plan-design/security/enable-tls-1-2) |
+| 13242 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
+| 12120 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 11772 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
+| 10206 | [Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/overview) |
+| 9885 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) |
+| 8740 | [버전 1906의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1906) |
+| 8464 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 8398 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+
+[Configuration Manager 허브 페이지](https://docs.microsoft.com/sccm/)에서 이 기간에 24,008번의 페이지 보기가 있었습니다.
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
 
@@ -75,16 +77,16 @@ ms.locfileid: "67894147"
 
 | 마지막 검토 | 제목 |
 |---------------|-------|
-| 2019/6/28 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview) |
-| 2019/6/28 | [Desktop Analytics 문제 해결](https://docs.microsoft.com/sccm/desktop-analytics/troubleshooting) |
-| 2019/6/27 | [Paths to co-management](https://docs.microsoft.com/sccm/comanage/quickstart-paths)(공동 관리 경로) |
-| 2019/6/20 | [버전 1902의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1902) |
-| 2019/6/20 | [클라이언트 설정](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings) |
-| 2019/6/20 | [스크립트 만들기 및 실행](https://docs.microsoft.com/sccm/apps/deploy-use/create-deploy-scripts) |
-| 2019/6/20 | [Configuration Manager 콘솔](https://docs.microsoft.com/sccm/core/servers/manage/admin-console) |
-| 2019/6/19 | [CMG FAQ](https://docs.microsoft.com/sccm/core/clients/manage/cmg/cloud-management-gateway-faq) |
-| 2019/6/19 | [인터넷 액세스 요구 사항](https://docs.microsoft.com/sccm/core/plan-design/network/internet-endpoints) |
-| 2019/6/17 | [릴리스 정보](https://docs.microsoft.com/sccm/core/servers/deploy/install/release-notes) |
+| 2019년 7월 30일 | [네트워크 캐시의 배달 최적화](https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/delivery-optimization-in-network-cache) |
+| 2019년 7월 26일 | [디바이스 다시 시작 알림](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/device-restart-notifications) |
+| 2019년 7월 26일 | [호환성 평가](https://docs.microsoft.com/en-us/sccm/desktop-analytics/compat-assessment) |
+| 2019년 7월 26일 | [작업 순서 디버그](https://docs.microsoft.com/en-us/sccm/osd/deploy-use/debug-task-sequence) |
+| 2019년 7월 26일 | [SQL Server Always On](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database) |
+| 2019년 7월 26일 | [로그 파일 정보](https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/about-log-files) |
+| 2019년 7월 26일 | [사전 캐시 콘텐츠 구성](https://docs.microsoft.com/en-us/sccm/osd/deploy-use/configure-precache-content) |
+| 2019년 7월 26일 | [애플리케이션 그룹 만들기](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-app-groups) |
+| 2019년 7월 19일 | [버전 1906 릴리스 정보](https://docs.microsoft.com/en-us/powershell/sccm/1906-release-notes) |
+| 2019년 7월 11일 | [기술 미리 보기 1907](https://docs.microsoft.com/en-us/sccm/core/get-started/2019/technical-preview-1907) |
 
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
 
@@ -100,16 +102,10 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
 
-2019년 6월 10일부터 7월 10일 사이에 새로 제공되었거나 업데이트된 지원 문서입니다.
+2019년 7월 11일부터 8월 12일 사이에 새로 제공되었거나 업데이트된 지원 문서입니다.
 
-- [KB 4505439: Configuration Manager에서 소프트웨어 업데이트 동기화 문제 해결](https://support.microsoft.com/help/4505439)
-- [KB 4508653: 로그온 실패로 인해 원격 배포 지점에 패키지 배포가 실패함](https://support.microsoft.com/help/4508653)
-- [KB 4508855: Configuration Manager에서 도메인 컨트롤러에 로그온한 사용자에게 애플리케이션이 배포되지 않음](https://support.microsoft.com/help/4508855)
-- [KB 4500571: System Center Configuration Manager 현재 분기, 버전 1902에 대한 업데이트 롤업](https://support.microsoft.com/help/4500571)
-- [KB 4508760: "함수 시퀀스 오류"가 Configuration Manager 버전 1902의 Smsdbmon.log에 반복적으로 기록됨](https://support.microsoft.com/help/4508760)
-- [KB 4509131: Configuration Manager OSD 작업 순서가 오류 코드 80070005와 함께 실패함](https://support.microsoft.com/help/4509131)
-- [KB 4509132: ConfigMgr의 콘텐츠 배포 중 "IDispatch 오류 #3603"](https://support.microsoft.com/help/4509132)
-- [KB 4509681: ConfigMgr 데이터베이스 업그레이드에서 Configuration Manager 업그레이드 중지](https://support.microsoft.com/help/4509681)
-- [KB 4509484: ConfigMgr에는 CMG 또는 클라우드 DP로 콘텐츠 배포 동안 80070070](https://support.microsoft.com/help/4509484)
+- [KB 4511621: Configuration Manager에서 독립 실행형 또는 사전 준비된 미디어를 만들 때 "메모리 리소스가 부족함" 오류 발생](https://support.microsoft.com/help/4511621)
+- [KB 4511618: PXE 사용 DP에서 인증서가 업데이트되지 않으며 여러 로그 오류 항목이 표시됨](https://support.microsoft.com/help/4511618)
+- [KB 4509382: Configuration Manager에서 애플리케이션 배포 문제 해결](https://support.microsoft.com/help/4509382)
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e76f9281158aa28e153efe9124ba2adf94a14d
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 4bbde522e5c856bbc700fcd6ceb22d4637513d18
+ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676371"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956424"
 ---
 # <a name="reference-for-maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 유지 관리 작업 참조
 
@@ -148,7 +148,7 @@ ms.locfileid: "67676371"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 복제 요약 데이터 삭제**: 지정한 시간 동안 오래된 복제 요약 데이터가 업데이트되지 않은 경우 이 작업을 사용하여 사이트 데이터베이스에서 해당 데이터를 삭제합니다. 자세한 내용은 [System Center Configuration Manager에서 계층 및 복제 인프라 모니터링](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md) 항목의 [데이터베이스 복제 링크 및 복제 상태를 모니터링하는 방법](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md#BKMK_MonitorRepLinksAndStatuss) 섹션을 참조하세요.  
+**오래된 복제 요약 데이터 삭제**: 지정한 시간 동안 오래된 복제 요약 데이터가 업데이트되지 않은 경우 이 작업을 사용하여 사이트 데이터베이스에서 해당 데이터를 삭제합니다. 자세한 내용은 [데이터베이스 복제 모니터링](/sccm/core/servers/manage/monitor-replication)을 참조하세요.  
 
 -   **중앙 관리 사이트**: 사용    
 -   **기본 사이트**: 사용    
@@ -160,7 +160,7 @@ ms.locfileid: "67676371"
 -   **기본 사이트**: 사용    
 -   보조 사이트: 사용할 수 없음  
 
-**오래된 복제 추적 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 Configuration Manager 사이트 간 데이터베이스 복제에 대한 오래된 데이터를 삭제할 수 있습니다. 이 유지 관리 작업의 구성을 변경하는 경우 구성은 계층 내에서 해당되는 각 사이트에 적용됩니다. 자세한 내용은 [System Center Configuration Manager에서 계층 및 복제 인프라 모니터링](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md) 항목의 [데이터베이스 복제 링크 및 복제 상태를 모니터링하는 방법](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md#BKMK_MonitorRepLinksAndStatuss) 섹션을 참조하세요.  
+**오래된 복제 추적 데이터 삭제**: 이 작업을 사용하면 데이터베이스에서 Configuration Manager 사이트 간 데이터베이스 복제에 대한 오래된 데이터를 삭제할 수 있습니다. 이 유지 관리 작업의 구성을 변경하는 경우 구성은 계층 내에서 해당되는 각 사이트에 적용됩니다. 자세한 내용은 [데이터베이스 복제 모니터링](/sccm/core/servers/manage/monitor-replication)을 참조하세요.  
 
 -   **중앙 관리 사이트**: 사용    
 -   **기본 사이트**: 사용    

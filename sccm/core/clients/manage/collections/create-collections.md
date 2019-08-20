@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ff3dac5c5ff4d04be6f30c02dba8523ce1b80b
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 0bec2d55cdf7ff5d405ee689c821735413e8a9ff
+ms.sourcegitcommit: 4241c15a277c57b5480dea70fc30f1ed46ffd4f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535472"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490089"
 ---
 # <a name="how-to-create-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 만드는 방법
 
@@ -237,7 +237,8 @@ Azure AD 동기화는 5분마다 발생합니다. Configuration Manager에서 Az
 
 1. [https://portal.azure.com](https://portal.azure.com)으로 이동합니다.
 1. **Azure Active Directory** > **그룹** > **모든 그룹**으로 이동합니다.
-1. **새 그룹**을 클릭하고 **그룹 이름**과 **그룹 설명**을 입력합니다.
+1. **새 그룹**을 클릭하고 **그룹 이름**과 경우에 따라 **그룹 설명**을 입력합니다.
+1. **멤버 자격 유형**이 **할당됨**인지 확인합니다.
 1. **소유자**를 선택한 다음 Configuration Manager에 동기화 관계를 만들 ID를 추가합니다.
 1. **만들기**를 클릭하여 Azure AD 그룹 생성을 완료합니다.
 
