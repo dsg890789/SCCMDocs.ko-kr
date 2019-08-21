@@ -11,21 +11,24 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d93e7fd61b2cff49e7729a9037e56d69c6e4c5ac
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.openlocfilehash: 00d6ccd54e7be4021c6dc31d30aedac50b41e3dd
+ms.sourcegitcommit: 7b111cd8a797877031378349898810c3dd0a3750
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933519"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69632483"
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>Configuration Manager와 디바이스 등록 관리자를 사용하여 디바이스 등록
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
+> [!Important]  
+> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+
 조직에서는 Intune을 사용하여 단일 사용자 계정으로 많은 수의 모바일 디바이스를 관리할 수 있습니다. DEM(*디바이스 등록 관리자*) 계정은 디바이스를 등록하는 데 사용되는 특수한 사용자 계정입니다. 기존 사용자를 DEM 계정에 추가하여 특수 DEM 기능을 제공합니다. 등록된 각 디바이스는 단일 라이선스를 사용합니다. 이 계정을 통해 등록한 디바이스는 개인 전용 디바이스가 아닌 사용자 선호도가 없는 공유 디바이스로 사용하는 것이 좋습니다.  
 
 ## <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager"></a>디바이스 등록 관리자로 회사 소유 디바이스 등록  
- 이 사용자는 다음 작업을 수행할 수 있도록 사용자 계정 저장소 관리자나 감독자, 예를 들어, 장치 등록 관리자를 할당할 수 있습니다.  
+ 장치 등록 관리자 사용자 계정을 할당 하 여이 사용자가 다음 작업을 수행할 수 있도록 할 수 있습니다.  
 
 -   관리를 위해 최대 1000대 디바이스 등록  
 -   회사 포털 앱을 사용하여 회사 앱 설치  
@@ -40,8 +43,8 @@ ms.locfileid: "65933519"
 - 회사 포털 웹 사이트는 디바이스 등록 관리자 계정에 사용할 수 없습니다. 회사 포털 앱을 사용합니다.
 - DEM을 사용하여 iOS 디바이스를 등록하는 경우 Apple Configurator 또는 Apple DEP(디바이스 등록 프로그램)를 사용하여 디바이스를 등록할 수 없습니다. (iOS에만 해당) 
 
-  **디바이스 등록 관리자 시나리오의 예:**   
-  식당에는 서빙 직원을 위한 POS 태블릿과 주방 직원을 위한 주문 모니터가 필요합니다. 직원들이 회사 데이터에 액세스하거나 사용자로 로그온할 필요는 없습니다. Intune 관리자는 디바이스 등록 관리자 계정을 만들고 해당 계정을 사용하여 회사 소유의 디바이스를 등록합니다. 또는 관리자 수에 게 장치 등록 관리자 자격 증명은 식당 관리자에 등록 하 고 장치를 관리할 수 있도록 합니다.  
+  **디바이스 등록 관리자 시나리오의 예:**    
+  식당에는 서빙 직원을 위한 POS 태블릿과 주방 직원을 위한 주문 모니터가 필요합니다. 직원들이 회사 데이터에 액세스하거나 사용자로 로그온할 필요는 없습니다. Intune 관리자는 디바이스 등록 관리자 계정을 만들고 해당 계정을 사용하여 회사 소유의 디바이스를 등록합니다. 또는 관리자가 식당 관리자에 게 장치 등록 관리자 자격 증명을 제공 하 여 장치를 등록 하 고 관리할 수 있습니다.  
 
   관리자는 역할별 앱을 식당의 디바이스에 배포할 수 있습니다. 또한 관리자는 콘솔에서 디바이스를 선택하고 모바일 디바이스 관리에서 사용을 중지할 수도 있습니다.  
 
