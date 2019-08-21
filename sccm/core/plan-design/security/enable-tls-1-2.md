@@ -63,7 +63,7 @@ Configuration Manager가 보안 통신을 위해 사용하는 구성 요소에 �
 [.NET Framework를 사용하는 TLS(전송 계층 보안) 모범 사례](https://docs.microsoft.com/dotnet/framework/network-programming/tls#configuring-security-via-the-windows-registry)에 표시된 대로 `\SecurityProviders\SCHANNEL\Protocols` 레지스트리 하위 키 설정을 확인합니다.
 
 > [!NOTE]
-> 기본적으로 TLS 1.2가 사용하도록 설정됩니다. 따라서 이 프로토콜을 사용하도록 설정하기 위해 이러한 키를 변경할 필요는 없습니다. 이 문서에 제공된 나머지 지침을 수행하고 TLS 1.2만 사용하도록 설정하여 작업 환경이 잘 작동하는지 확인한 후에 프로토콜에서 설정을 변경하여 TLS 1.0 및 TLS 1.1을 사용하지 않도록 설정할 수 있습니다.
+> 기본적으로 TLS 1.2가 사용되도록 설정됩니다. 따라서 이 프로토콜을 사용하도록 설정하기 위해 이러한 키를 변경할 필요는 없습니다. 이 문서에 제공된 나머지 지침을 수행하고 TLS 1.2만 사용하도록 설정하여 작업 환경이 잘 작동하는지 확인한 후에 프로토콜에서 설정을 변경하여 TLS 1.0 및 TLS 1.1을 사용하지 않도록 설정할 수 있습니다.
 
 
 ## <a name="update-net-framework-to-support-tls-12"></a>TLS 1.2를 지원하도록 .NET Framework 업데이트
@@ -134,7 +134,7 @@ Configuration Manager는 다음 사이트 시스템 역할에서 SQL Server Nati
 - 관리 지점
 - 디바이스 관리 지점
 - 상태 마이그레이션 지점
-- 사이트 데이터베이스
+- SMS 공급자
 - 소프트웨어 업데이트 지점
 - 멀티캐스트 사용 배포 지점
 - Asset Intelligence 업데이트 서비스 지점
@@ -192,7 +192,7 @@ Windows Server 2012 및 Windows Server 2012 R2의 WSUS에서 클라이언트-서
 - Windows Server 2008
 - Windows CE
 - Apple OS X
-- 온-프레미스 MDM을 사용하여 관리형 Windows 10 디바이스
+- 온-프레미스 MDM을 사용하는 관리형 Windows 10 디바이스
 
 ### <a name="reports-dont-show-in-the-console"></a>콘솔에서 보고서가 표시되지 않음
 
