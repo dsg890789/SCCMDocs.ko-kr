@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3406c0fff57a1ecef24a045e3061417fc5fac46c
-ms.sourcegitcommit: e0438c191df945305625ae91596c9417d16e8510
+ms.openlocfilehash: 17a58992c01f59080edd74051329b82a0f760938
+ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491651"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974806"
 ---
 # <a name="monitor-connection-health"></a>연결 상태 모니터링
 
@@ -63,7 +63,7 @@ Configuration Manager의 **연결 상태** 대시보드를 사용 하 여 장치
 - **다음 서비스 동기화**: 데스크톱 분석에서 다음 일별 스냅숏을 예측할 수 있습니다.
 
 > [!Note]  
-> 주문형 스냅숏을 요청 하면 이러한 값이 자동으로 업데이트 되지 않습니다. 자세한 내용은 [데이터 대기 시간](/sccm/desktop-analytics/troubleshooting#data-latency)을 참조 하세요.
+> 데스크톱 분석에 처음으로 장치를 등록 하는 경우 데이터를 업로드 하 고 처리 하는 데 며칠이 걸릴 수 있습니다. 이 시간 동안 **마지막 동기화 정보** 타일이 빈 상태로 표시 될 수 있습니다. 또한 주문형 스냅숏을 요청할 때이 타일의 값이 자동으로 업데이트 되지 않습니다. 자세한 내용은 [데이터 대기 시간](/sccm/desktop-analytics/troubleshooting#data-latency)을 참조 하세요.
 
 일부 장치가 데스크톱 분석에 표시 되지 않는다고 생각 되는 경우 데스크톱 분석에서 장치를 지원 하는지 확인 합니다. 자세한 내용은 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)를 참조하세요.
 

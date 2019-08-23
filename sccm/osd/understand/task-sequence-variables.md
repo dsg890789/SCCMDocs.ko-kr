@@ -2,7 +2,7 @@
 title: 작업 순서 변수 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서를 제어 및 사용자 지정하는 변수에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 08/16/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b78d8b6cd60f14843855d00ea44632b6feda3d90
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: 2283b87f305471f2831042f4b6b66d1c8a735b24
+ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68859816"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549536"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
@@ -432,7 +432,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 (입력)
 
-드라이버 패키지에서 설치할 대용량 저장 디바이스 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 스토리지 드라이버가 설치되지 않습니다.
+드라이버 패키지에서 설치할 대용량 스토리지 디바이스 드라이버의 콘텐츠 ID를 지정합니다. 이 변수를 지정하지 않으면 대용량 스토리지 드라이버가 설치되지 않습니다.
 
 ### <a name="OSDApplyDriverBootCriticalHardwareComponent"></a> OSDApplyDriverBootCriticalHardwareComponent
 
@@ -440,7 +440,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 (입력)
 
-대용량 저장 디바이스 드라이버가 설치되었는지 여부를 지정하며 이 변수는 **scsi**여야 합니다.
+대용량 스토리지 디바이스 드라이버가 설치되었는지 여부를 지정하며 이 변수는 **scsi**여야 합니다.
 
 [OSDApplyDriverBootCriticalContentUniqueID](#OSDApplyDriverBootCriticalContentUniqueID)가 설정된 경우 이 변수가 필요합니다.
 
@@ -450,7 +450,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 (입력)
 
-설치할 대용량 저장 디바이스 드라이버의 부팅 필요 ID를 지정합니다. 이 ID는 디바이스 드라이버의 txtsetup.oem 파일의 **scsi** 섹션에 나열되어 있습니다.
+설치할 대용량 스토리지 디바이스 드라이버의 부팅 필요 ID를 지정합니다. 이 ID는 디바이스 드라이버의 txtsetup.oem 파일의 **scsi** 섹션에 나열되어 있습니다.
 
 [OSDApplyDriverBootCriticalContentUniqueID](#OSDApplyDriverBootCriticalContentUniqueID)가 설정된 경우 이 변수가 필요합니다.
 
@@ -1582,9 +1582,9 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 ### <a name="TSDebugMode"></a>TSDebugMode
 
 <!--3612274-->
-버전 1906부터 작업 순서가 배포 되는 컬렉션 `TRUE` 에 대해이 변수를로 설정 합니다. 이 변수는 작업 순서 디버거를 사용 하도록 해당 컬렉션의 모든 장치에서 작업 순서의 동작을 변경 합니다.
+버전 1906부터 작업 순서가 배포 되는 컬렉션 `TRUE` 또는 컴퓨터 개체에 대해이 변수를로 설정 합니다. 이 변수 집합이 있는 모든 장치는 해당 파일에 배포 된 모든 작업 순서를 디버그 모드로 전환 합니다.
 
-자세한 내용은 [작업 순서 디버그](/sccm/osd/deploy-use/debug-task-sequence) 항목을 참조하세요.
+자세한 내용은 [작업 순서 디버그](/sccm/osd/deploy-use/debug-task-sequence)를 참조하세요.
 
 ### <a name="TSDisableProgressUI"></a> TSDisableProgressUI
 

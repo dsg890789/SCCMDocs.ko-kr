@@ -5,68 +5,24 @@ description: Configuration Manager 프로덕션 환경에서 소프트웨어 업
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 07/31/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc5c4fd7627aaa95f53a8a67ef983fda862a2526
-ms.sourcegitcommit: 8c296886e79e20b971842458f6e88761e5df30be
+ms.openlocfilehash: 03aa63ccf8fac5c84a1a32e420434b8cefbb6dd6
+ms.sourcegitcommit: 18e88352860dcaf938dbbe1e8694b658e1bfd8ac
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68684690"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584667"
 ---
 # <a name="plan-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트 계획
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 반드시 계획 프로세스를 진행해야 합니다. 소프트웨어 업데이트 지점 인프라에 대한 좋은 계획은 성공적인 소프트웨어 업데이트 구현의 핵심입니다.
-
-
-
-## <a name="capacity-planning-recommendations-for-software-updates"></a>소프트웨어 업데이트를 위한 용량 계획 권장 사항  
-
-이 섹션에는 다음 하위 항목이 포함됩니다.  
-- [소프트웨어 업데이트 지점에 대한 용량 계획](#BKMK_SUMCapacity)
-- [소프트웨어 업데이트 개체를 위한 용량 계획](#bkmk_sum-capacity-obj)  
-
-
-다음 권장 사항을 기준으로 사용합니다. 이 기준은 조직에 적절한 소프트웨어 업데이트 용량 계획에 대한 정보를 파악하도록 도와줍니다. 실제 용량 요구 사항은 다음 기준에 따라 이 문서에 나열된 권장 사항과 다를 수 있습니다. 
-- 특정 네트워킹 환경
-- 소프트웨어 업데이트 지점 사이트 시스템을 호스팅하는 데 사용하는 하드웨어
-- 관리되는 클라이언트 수
-- 서버에 설치된 다른 사이트 시스템 역할  
-
-
-###  <a name="BKMK_SUMCapacity"></a> 소프트웨어 업데이트 지점에 대한 용량 계획  
-
-지원되는 클라이언트 수는 소프트웨어 업데이트 지점에서 실행되는 WSUS(Windows Server Update Services)의 버전에 따라 다릅니다. 또한 소프트웨어 업데이트 지점 사이트 시스템 역할이 다른 사이트 시스템 역할과 함께 있는지 여부에 따라 달라집니다.  
-
--   소프트웨어 업데이트 지점 서버에서 WSUS가 실행되고 소프트웨어 업데이트 지점이 다른 사이트 시스템 역할과 함께 있는 경우 소프트웨어 업데이트 지점은 최대 25,000개의 클라이언트를 지원할 수 있습니다.  
-
--   원격 서버가 WSUS 요구 사항을 충족하고 WSUS가 Configuration Manager에서 사용되며 다음 설정을 구성하는 경우 소프트웨어 업데이트 지점은 최대 15만 개의 클라이언트를 지원할 수 있습니다.
-
-    IIS 애플리케이션 풀:
-    - WsusPool 큐 길이를 2000으로 증가
-    - WsusPool 프라이빗 메모리 제한을 4배로 늘리거나 0(무제한)으로 설정합니다. 예를 들어, 기본 제한이 1,843,200KB이면 7,372,800으로 증가합니다. 자세한 내용은 이 [Configuration Manager 지원 팀 블로그 게시물](https://blogs.technet.microsoft.com/configurationmgr/2015/03/23/configmgr-2012-support-tip-wsus-sync-fails-with-http-503-errors/)을 참조하세요.  
-
-    소프트웨어 업데이트 지점의 하드웨어 요구 사항에 대한 자세한 내용은 [사이트 시스템용 권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware#bkmk_ScaleSieSystems)를 참조하세요.  
-
-
-### <a name="bkmk_sum-capacity-obj"></a> 소프트웨어 업데이트 개체를 위한 용량 계획  
-
-소프트웨어 업데이트 개체에 대한 계획을 세울 때에는 다음 용량 정보를 따릅니다.  
-
-#### <a name="limit-of-1000-software-updates-in-a-deployment"></a>단일 배포에 1000개의 소프트웨어 업데이트로 제한  
-각 소프트웨어 업데이트 배포의 소프트웨어 업데이트 수를 1000개로 제한합니다. ADR(자동 배포 규칙)을 만드는 경우 소프트웨어 업데이트 수를 제한하는 조건을 지정합니다. 지정된 조건에서 1000개를 초과하는 소프트웨어 업데이트가 반환되면 ADR이 실패합니다. Configuration Manager 콘솔의 **자동 배포 규칙** 노드에서 ADR의 상태를 확인합니다. 소프트웨어 업데이트를 수동으로 배포할 경우 배포할 업데이트는 1000개 이하로 선택합니다.  
-
-또한 구성 기준에서 소프트웨어 업데이트 수를 1000개로 제한합니다. 자세한 내용은 [Create configuration baselines](/sccm/compliance/deploy-use/create-configuration-baselines)(구성 기준 만들기)를 참조하세요.
-
-#### <a name="limit-of-580-security-scopes-for-automatic-deployment-rules"></a>자동 배포 규칙에 대 한 580 보안 범위 제한
-<!--ado 4962928-->
-ADRs (자동 배포 규칙)의 보안 범위 수를 580 미만으로 제한 합니다. ADR를 만들 때 액세스할 수 있는 보안 범위가 자동으로 추가 됩니다. 580 개가 넘는 보안 범위가 설정 된 경우 ADR가 실행 되지 않으며 ruleengine에 오류가 기록 됩니다.
+Configuration Manager 프로덕션 환경에서 소프트웨어 업데이트를 사용하기 전에 반드시 계획 프로세스를 진행해야 합니다. 소프트웨어 업데이트 지점 인프라에 대한 좋은 계획은 성공적인 소프트웨어 업데이트 구현의 핵심입니다. 소프트웨어 업데이트를 위한 용량 계획에 대 한 자세한 내용은 [크기 및 크기 조정 번호](/sccm/core/plan-design/configs/size-and-scale-numbers#software-update-point)를 참조 하세요.
 
 
 ##  <a name="BKMK_SUPInfrastructure"></a> 소프트웨어 업데이트 지점 인프라 파악  
@@ -245,7 +201,7 @@ Configuration Manager의 애플리케이션 관리 기능과 교체 관계를 �
 자세한 내용은 [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)를 참조하세요.
 
 #### <a name="system-center-updates-publisher"></a>System Center Updates Publisher
-SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 응용 프로그램 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
+SCUP(System Center Updates Publisher)는 독립 소프트웨어 공급업체 또는 LOB(기간 업무) 애플리케이션 개발자가 사용자 지정 업데이트를 관리할 수 있도록 하는 독립 실행형 도구입니다. 이러한 업데이트에는 드라이버 및 업데이트 번들과 같은 종속성이 있는 업데이트가 포함됩니다.
 
 자세한 내용은 [System Center Updates Publisher](/sccm/sum/tools/updates-publisher)를 참조하세요.
 
@@ -378,13 +334,13 @@ Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 �
 
 -   **보안 업데이트:** 보안과 관련된 제품별 문제에 대해 대폭 릴리스된 업데이트입니다.  
 
--   **서비스 팩**: OS 또는 응용 프로그램에 적용되는 누적 핫픽스 집합입니다. 이러한 핫픽스에는 보안 업데이트, 중요 업데이트 및 소프트웨어 업데이트가 포함됩니다.  
+-   **서비스 팩**: OS 또는 애플리케이션에 적용되는 누적 핫픽스 집합입니다. 이러한 핫픽스에는 보안 업데이트, 중요 업데이트 및 소프트웨어 업데이트가 포함됩니다.  
 
 -   **도구**: 하나 이상의 작업을 완료하는 데 도움이 되는 유틸리티 또는 기능입니다.  
 
 -   **업데이트 롤업**: 간편한 배포를 위해 하나로 패키지된 누적 핫픽스 집합입니다. 이러한 핫픽스에는 보안 업데이트, 중요 업데이트 및 소프트웨어 업데이트가 포함됩니다. 업데이트 롤업은 일반적으로 보안 또는 제품 구성 요소 등과 같은 특정 영역을 다룹니다.  
 
--   **업데이트**: 현재 설치된 응용 프로그램 또는 파일에 대한 업데이트입니다.  
+-   **업데이트**: 현재 설치된 애플리케이션 또는 파일에 대한 업데이트입니다.  
 
 -   **업그레이드**: 새 버전의 Windows 10으로 기능이 업데이트됩니다.  
 
@@ -471,7 +427,7 @@ Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 �
     - 업데이트 롤업
     - 서비스 팩
 
-- **Office 365 업데이트 및 Windows 용 기능 이외의 업데이트에 대 한 최대 실행 시간 (분)**
+- **Office 365 업데이트 및 Windows 비기능 업데이트의 최대 실행 시간(분)**
   - **기능 이외 업데이트** - 기능 업그레이드가 아니면서 제품이 다음 목록 중 하나에 해당하는 업데이트입니다.
     - Windows 10(모든 버전)
     - Windows Server 2012

@@ -11,12 +11,12 @@ ms.assetid: 3e3ff3a4-7a75-41bb-bdf9-33ede9c0e3a3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 970b1fea320d8fe039062cf81789d14398930be5
-ms.sourcegitcommit: 3f43fa8462bf39b2c18b90a11a384d199c2822d8
+ms.openlocfilehash: f0e5a313bb5afd0501f0d6027d42b5a51a7e8946
+ms.sourcegitcommit: 7b111cd8a797877031378349898810c3dd0a3750
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403426"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631951"
 ---
 # <a name="provisioning-mode"></a>프로비저닝 모드
 
@@ -45,6 +45,13 @@ Invoke-WmiMethod -Namespace root\CCM -Class SMS_Client -Name SetClientProvisioni
 
 48시간은 기본 프로비전 모드 시간 제한 값입니다. 다음 레지스트리 키 값 `HKLM\Software\Microsoft\CCM\CcmExec`에서 **ProvisioningMaxMinutes** 값을 설정하여 디바이스에서 이 타이머를 조정할 수 있습니다. 이 값이 존재하지 않거나 `0`인 경우, 클라이언트는 기본 48시간을 사용합니다.
 
+Timestamp **ProvisioningEnabledTime** 는 다음 레지스트리 키 `HKLM\Software\Microsoft\CCM\CcmExec`에 있습니다. 타임 스탬프는 컴퓨터에서 프로 비전 모드를 마지막으로 시작한 시간 값을 갖습니다. 형식은 epoch (Unix 타임 스탬프) 이며 UTC입니다.
+
+이 타임 스탬프는 다음 명령을 사용 하 여 수동으로 컴퓨터를 프로 비전 모드로 전환 하는 경우에도 현재 시간으로 다시 설정 됩니다.
+
+```powershell
+Invoke-WmiMethod -Namespace root\CCM -Class SMS_Client -Name SetClientProvisioningMode -ArgumentList $true
+```
 
 ## <a name="process-flow-diagrams"></a>프로세스 흐름 다이어그램
 
