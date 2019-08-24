@@ -2,7 +2,7 @@
 title: 데스크톱 분석 FAQ
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에 대 한 질문과 대답입니다.
-ms.date: 07/22/2019
+ms.date: 08/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58230d373d7269c95937a108c021e7c73cdbf07a
-ms.sourcegitcommit: 315fbb9c44773b3b1796ae398568cb61bd07092e
+ms.openlocfilehash: 84cbcd11790ebf83b508a3db167efc7c02152652
+ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374433"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69999378"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
@@ -84,3 +84,10 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러
 ### <a name="can-i-use-desktop-analytics-for-my-office-365-proplus-upgrades"></a>Office 365 ProPlus 업그레이드에 데스크톱 분석을 사용할 수 있나요?
 
 아니요, 데스크톱 분석은 Windows에 집중 됩니다. Microsoft는 수많은 고객과의 긴밀 한 공동 작업에서 데스크톱 분석을 개발 했습니다. 미리 보기 프로그램을 통해 고객 의견은 데스크톱 분석이 Windows 배포를 안전 하 게 관리 하는 기능을 개선 하는 방법에 대 한 것 이었습니다. 또한 [office 365 ProPlus 준비](/sccm/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) 를 Configuration Manager 및 Intune의 office 관리 도구와 더욱 긴밀 하 게 통합 하고자 했습니다. Microsoft는 데스크톱 분석의 Windows 시나리오에 중점을 두는 동시에 이러한 영역에 대 한 투자를 계속 합니다.
+
+### <a name="how-can-i-provide-feedback-about-desktop-analytics"></a>데스크톱 분석에 대 한 피드백을 제공 하려면 어떻게 해야 하나요?
+
+데스크톱 분석에 대 한 피드백을 공유 하려면 포털 위쪽에서 **웃는 얼굴 보내기** 아이콘을 선택 합니다. Microsoft에서 피드백을 더 잘 이해할 수 있도록 제출 된 스크린샷을 포함 합니다. 제품 제안 사항을 제출 하 고 [UserVoice](https://configurationmanager.uservoice.com/forums/300492-ideas?category_id=366805)에서 기타 아이디어를 제출할 수도 있습니다.
+
+> [!Note]
+> 웃는 얼굴 또는 UserVoice 보내기를 통해 개인 정보를 공유 하지 마세요. 이러한 개인 정보에는 테 넌 트 Id 또는 상업적 Id가 포함 됩니다. Microsoft는 웃는 얼굴 또는 UserVoice 채널 보내기를 통해 지원을 제공 하지 않습니다. 데스크톱 분석 작업 영역에 대 한 도움말을 보려면 탐색 메뉴에서 **도움말 및 지원** 링크를 선택 하 여 지원 티켓을 엽니다.
