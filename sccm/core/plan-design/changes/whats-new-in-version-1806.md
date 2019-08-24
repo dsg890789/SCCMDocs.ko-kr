@@ -308,14 +308,14 @@ Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번�
 
 ### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
 <!--1357891-->
-애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 응용 프로그램에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 응용 프로그램을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
+애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 애플리케이션을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
 
 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
 
 
 ### <a name="package-conversion-manager"></a>Package Conversion Manager 
 <!--1357861-->
-Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 애플리케이션으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 응용 프로그램 기능을 사용할 수 있습니다.
+Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 애플리케이션으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 애플리케이션 기능을 사용할 수 있습니다.
 
 자세한 내용은 [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager)를 참조하세요.
 

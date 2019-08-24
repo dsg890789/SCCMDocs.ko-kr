@@ -75,5 +75,5 @@ Windows 8.1 또는 이전 버전을 실행하는 디바이스에서 Internet Exp
 
 ## <a name="use-windows-analytics-to-identify-gaps-in-windows-information-protection-policies"></a>Windows Analytics를 사용하여 Windows Information Protection 정책의 차이 식별
 
-[Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)(WIP) 정책으로 Windows 10 버전 1703 이후 장치를 구성할 수 있습니다. 이러한 환경에서 기업 데이터에 액세스하는 응용 프로그램에 대한 진단 데이터를 보고하지만, 정책 응용 프로그램 규칙에는 포함되지 않습니다. 사용자가 이러한 애플리케이션의 생산성을 유지해야 할 수 있지만 WIP는 사용자의 액세스를 차단합니다. 이 정보는 Configuration Manager에서 Windows Information Protection 정책을 유지 관리하는 데 유용합니다. 
+[Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)(WIP) 정책으로 Windows 10 버전 1703 이후 디바이스를 구성할 수 있습니다. 이러한 환경에서 기업 데이터에 액세스하는 애플리케이션에 대한 진단 데이터를 보고하지만, 정책 애플리케이션 규칙에는 포함되지 않습니다. 사용자가 이러한 애플리케이션의 생산성을 유지해야 할 수 있지만 WIP는 사용자의 액세스를 차단합니다. 이 정보는 Configuration Manager에서 Windows Information Protection 정책을 유지 관리하는 데 유용합니다. 
 

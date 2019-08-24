@@ -106,7 +106,7 @@ ms.locfileid: "68537106"
 
 - [작업 순서 변수 설정](#bkmk_set-ts-step)  
 - [동적 변수 설정](#bkmk_set-dyn-step)  
-- [컬렉션 및 장치 변수](#bkmk_set-coll-var)  
+- [컬렉션 및 디바이스 변수](#bkmk_set-coll-var)  
 - [TSEnvironment COM 개체](#bkmk_set-com)  
 - [시작 전 명령](#bkmk_set-prestart)  
 - [작업 순서 마법사](#bkmk_set-tswiz)
@@ -144,7 +144,7 @@ ms.locfileid: "68537106"
 
 자세한 내용은 [동적 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetDynamicVariables)을 참조하세요.
 
-### <a name="bkmk_set-coll-var"></a> 컬렉션 및 장치 변수
+### <a name="bkmk_set-coll-var"></a> 컬렉션 및 디바이스 변수
 
 컬렉션 또는 특정 디바이스의 속성에 대한 변수를 설정합니다.
 

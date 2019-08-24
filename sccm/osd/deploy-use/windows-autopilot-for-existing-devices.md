@@ -13,7 +13,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 6878e36e5bf20774f6eef1ee855dda2f95dabfb4
 ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/07/2019
 ms.locfileid: "57558010"
@@ -116,7 +116,7 @@ ms.locfileid: "57558010"
     > [!Tip]  
     > 오프라인 이미지 서비스를 사용하여 최신 Windows 10 품질 업데이트를 통해 이미지를 최신 상태로 유지합니다. 자세한 내용은 [OS 이미지에 소프트웨어 업데이트 적용](/sccm/osd/get-started/manage-operating-system-images#BKMK_OSImagesApplyUpdates)을 참조하세요.  
 
-8. **애플리케이션 설치** 페이지에서 작업 순서가 진행되는 동안 설치할 애플리케이션을 선택할 수 있습니다. 그러나 이 시나리오를 사용하여 서명 이미지 접근 방식을 미러링하는 것이 좋습니다. Autopilot을 사용하여 장치가 프로비전된 후 Microsoft Intune 또는 Configuration Manager 공동 관리의 모든 애플리케이션 및 구성을 적용합니다. 이 프로세스는 새 디바이스를 받는 사용자와 기존 디바이스에 대한 Windows Autopilot을 사용하는 사용자 간에 일관성 있는 환경을 제공합니다.  
+8. **애플리케이션 설치** 페이지에서 작업 순서가 진행되는 동안 설치할 애플리케이션을 선택할 수 있습니다. 그러나 이 시나리오를 사용하여 서명 이미지 접근 방식을 미러링하는 것이 좋습니다. Autopilot을 사용하여 디바이스가 프로비전된 후 Microsoft Intune 또는 Configuration Manager 공동 관리의 모든 애플리케이션 및 구성을 적용합니다. 이 프로세스는 새 디바이스를 받는 사용자와 기존 디바이스에 대한 Windows Autopilot을 사용하는 사용자 간에 일관성 있는 환경을 제공합니다.  
 
 8. **시스템 준비** 페이지에서 Autopilot 구성 파일이 포함된 패키지를 선택합니다. 기본적으로 작업 순서는 Windows Sysprep을 실행한 후 컴퓨터를 다시 시작합니다. **이 작업 순서가 완료된 후 컴퓨터 종료** 옵션을 선택할 수도 있습니다. 이 옵션을 사용하여 디바이스를 준비하고 나서 일관성 있는 Autopilot 환경을 위해 사용자에게 제공할 수 있습니다.  
 

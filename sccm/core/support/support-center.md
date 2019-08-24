@@ -60,7 +60,7 @@ ms.locfileid: "68536085"
 
 지원 센터를 설치한 서버나 클라이언트 컴퓨터에 다음 구성 요소를 설치합니다.
 
-- Configuration Manager에서 지원하는 OS 버전. 자세한 내용은 [지원되는 클라이언트 OS 버전](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)을 참조하세요. 지원 센터는 모바일 장치를 지원하지 않습니다.  
+- Configuration Manager에서 지원하는 OS 버전. 자세한 내용은 [지원되는 클라이언트 OS 버전](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)을 참조하세요. 지원 센터는 모바일 디바이스를 지원하지 않습니다.  
 
 - 지원 센터와 구성 요소를 실행하는 컴퓨터에 .NET Framework 4.5.2가 필요합니다.  
 

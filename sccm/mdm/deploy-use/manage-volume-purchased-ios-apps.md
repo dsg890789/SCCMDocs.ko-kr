@@ -100,7 +100,7 @@ ms.locfileid: "62281954"
 
 ## <a name="step-2---deploy-a-volume-purchased-app"></a>2단계 - 대량 구매 앱 배포  
 
-1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
 
 2. 배포하려는 앱을 선택한 후 **홈** 탭의 **만들기** 그룹에서 **애플리케이션 만들기**를 선택합니다.
    비즈니스용 Microsoft Store 앱을 포함하여 Configuration Manager 애플리케이션이 만들어집니다. 그런 다음 이 애플리케이션을 원하는 Configuration Manager 애플리케이션으로 배포 및 모니터링할 수 있습니다.  

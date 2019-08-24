@@ -183,9 +183,9 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 <!-- 1351266 -->
 대체된 버전을 자동으로 업그레이드하지 않도록 애플리케이션 배포를 구성합니다. 이제 **소프트웨어 배포 마법사**의 **배포 설정** 페이지에서 배포를 만들 때 **사용 가능** 설치 목적으로 **이 애플리케이션의 교체된 버전을 자동으로 업그레이드**하는 옵션을 활성화하거나 비활성화할 수 있습니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings)을 참조하세요.
 
-### <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 응용 프로그램 요청 승인
+### <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 애플리케이션 요청 승인
 <!-- 1357015 -->
-이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 디바이스에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings)을 참조하세요.
+이 릴리스부터는 사용자가 승인이 필요한 애플리케이션을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 애플리케이션을 설치할 수 있습니다. 사용자가 다른 디바이스에 애플리케이션을 설치하려면 다른 요청을 제출해야 합니다. 자세한 내용은 [배포 설정 지정](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings)을 참조하세요.
 
  > [!Note]  
  > 이는 선택적 기능입니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.  
@@ -232,11 +232,11 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 ### <a name="install-multiple-applications-in-software-center"></a>소프트웨어 센터에서 여러 애플리케이션 설치
 <!-- 1357126 -->
-이제 최종 사용자 또는 데스크톱 기술자가 디바이스에 여러 응용 프로그램을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 응용 프로그램을 설치하도록 지원합니다. 이 동작을 사용하면 한 설치가 완료될 때까지 기다리지 않고 다음 설치를 시작할 수 있도록 사용자가 더 효율적으로 작업할 수 있습니다. 자세한 내용은 새 소프트웨어 센터 사용자 가이드의 [여러 애플리케이션 설치](/sccm/core/understand/software-center#install-multiple-applications)를 참조하세요.
+이제 최종 사용자 또는 데스크톱 기술자가 디바이스에 여러 애플리케이션을 설치해야 하는 경우 소프트웨어 센터는 선택한 여러 애플리케이션을 설치하도록 지원합니다. 이 동작을 사용하면 한 설치가 완료될 때까지 기다리지 않고 다음 설치를 시작할 수 있도록 사용자가 더 효율적으로 작업할 수 있습니다. 자세한 내용은 새 소프트웨어 센터 사용자 가이드의 [여러 애플리케이션 설치](/sccm/core/understand/software-center#install-multiple-applications)를 참조하세요.
 
-### <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램 찾아보기 및 설치
+### <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 디바이스에서 사용자가 사용할 수 있는 애플리케이션 찾아보기 및 설치
 <!-- 1322613 -->
-사용자가 사용할 수 있는 응용 프로그램으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 디바이스에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.
+사용자가 사용할 수 있는 애플리케이션으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 디바이스에서 소프트웨어 센터를 통해 해당 애플리케이션을 찾아보고 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.
 
 ### <a name="hide-installed-applications-in-software-center"></a>소프트웨어 센터에서 설치된 애플리케이션 숨기기
 <!--1357592-->

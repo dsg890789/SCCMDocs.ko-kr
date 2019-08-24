@@ -152,7 +152,7 @@ ms.locfileid: "56122256"
    비즈니스용 Windows 스토어 앱을 포함하여 Configuration Manager 애플리케이션이 만들어집니다. 그런 다음 이 애플리케이션을 원하는 Configuration Manager 애플리케이션으로 배포 및 모니터링할 수 있습니다.  
 
 > [!IMPORTANT]  
->  사용이 허가된 오프라인 앱에서 단일 배포 유형으로 Configuration Manager 애플리케이션을 만들 경우 MDM 관리 장치 및 Configuration Manager 클라이언트 관리 장치에도 이 애플리케이션을 배포할 수 있습니다. 여러 배포 유형으로 앱을 배포하려고 하면 설치에 실패합니다.  
+>  사용이 허가된 오프라인 앱에서 단일 배포 유형으로 Configuration Manager 애플리케이션을 만들 경우 MDM 관리 디바이스 및 Configuration Manager 클라이언트 관리 디바이스에도 이 애플리케이션을 배포할 수 있습니다. 여러 배포 유형으로 앱을 배포하려고 하면 설치에 실패합니다.  
 >   
 >  현재 Configuration Manager에서 사용이 허가된 온라인 앱을 배포할 수 없습니다.  
 
@@ -176,7 +176,7 @@ ms.locfileid: "56122256"
 -   [System Center Configuration Manager를 사용하여 EDP(엔터프라이즈 데이터 보호) 정책 만들기 및 배포](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-sccm)  
 
 ##  <a name="BKMK_End"></a> 최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.  
- System Center Configuration Manager 버전 1511에 온-프레미스 MDM이 도입되었습니다. 이전 버전에서는 온-프레미스 MDM 관리 장치에 대해 **필수** 설치 배포 용도로 MDM 관리 Windows 10 장치에 애플리케이션을 배포할 수 있었습니다.  
+ System Center Configuration Manager 버전 1511에 온-프레미스 MDM이 도입되었습니다. 이전 버전에서는 온-프레미스 MDM 관리 디바이스에 대해 **필수** 설치 배포 용도로 MDM 관리 Windows 10 디바이스에 애플리케이션을 배포할 수 있었습니다.  
 
  이 릴리스에서는 이제 온-프레미스 MDM 관리 Windows 10 컴퓨터 사용자에게 **사용 가능** 배포 용도로 앱을 배포할 수 있으며, 사용자가 회사 포털에서 이 앱을 스스로 설치할 수 있습니다.
 이 Technical Preview에서 회사 포털이 15분보다 오래 열려 있으면 최종 사용자에게 오류 메시지가 표시됩니다. 문제를 해결하려면 회사 포털을 다시 시작합니다.  
@@ -203,15 +203,15 @@ ms.locfileid: "56122256"
 
 ### <a name="configuration-steps"></a>구성 단계  
 
-#### <a name="install-the-application-catalog-roles-and-enable-mobile-device-management-support"></a>애플리케이션 카탈로그 역할 설치 및 모바일 장치 관리 지원 활성화  
+#### <a name="install-the-application-catalog-roles-and-enable-mobile-device-management-support"></a>애플리케이션 카탈로그 역할 설치 및 모바일 디바이스 관리 지원 활성화  
 
 1.  애플리케이션 카탈로그 웹 서비스 및 웹 사이트 역할 추가  
 
-    1.  **HTTPS 모드** 및 **모바일 장치가 이 애플리케이션 카탈로그 웹 서비스 지점을 사용하도록 허용** 옵션을 선택합니다.  
+    1.  **HTTPS 모드** 및 **모바일 디바이스가 이 애플리케이션 카탈로그 웹 서비스 지점을 사용하도록 허용** 옵션을 선택합니다.  
 
     2.  이 Technical Preview의 제한 사항:  
 
-        -   모바일 장치의 연결을 허용하는 옵션을 선택하기 전에 모든 기존 애플리케이션 카탈로그 역할을 제거해야 합니다.  
+        -   모바일 디바이스의 연결을 허용하는 옵션을 선택하기 전에 모든 기존 애플리케이션 카탈로그 역할을 제거해야 합니다.  
 
         -   하나의 애플리케이션 카탈로그 역할 집합만 있어야 하며 그 역할은 등록 지점 및 등록 프록시 지점 역할과 같은 사이트 시스템에 함께 배치해야 합니다.  
 
@@ -255,7 +255,7 @@ ms.locfileid: "56122256"
    > - **자산 및 준수** 작업 영역에서 **OnPremMDM 포털 구성 CI - 서버 url** 구성 항목을 찾습니다.  
    >   -   **준수 규칙** 값을 애플리케이션 카탈로그 역할이 있는 사이트 시스템의 정규화된 도메인 이름으로 변경합니다.  
 
-2. 회사 포털 애플리케이션 및 해당 구성을 모두 배포한 후 Configuration Manager 콘솔의 **배포** 섹션을 사용하여 애플리케이션 및 구성 기준이 지정된 장치와 호환되는지 확인합니다. 회사 포털은 디바이스의 시작 메뉴에 **회사 포털(Technical Preview)** 로 표시됩니다.  
+2. 회사 포털 애플리케이션 및 해당 구성을 모두 배포한 후 Configuration Manager 콘솔의 **배포** 섹션을 사용하여 애플리케이션 및 구성 기준이 지정된 디바이스와 호환되는지 확인합니다. 회사 포털은 디바이스의 시작 메뉴에 **회사 포털(Technical Preview)** 로 표시됩니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  다음 작업을 완료해 보고 어떻게 작동하는지 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/ConfigMgr%20Customer%20Feedback) 페이지에서 사용자 의견 양식을 사용하여 알려주세요.  

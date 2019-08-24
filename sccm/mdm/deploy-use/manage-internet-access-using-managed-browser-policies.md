@@ -40,7 +40,7 @@ System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 �
 
 ## <a name="create-a-managed-browser-policy"></a>관리 브라우저 정책 만들기  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램 관리 정책**을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **애플리케이션 관리 정책**을 선택합니다.  
 
 3.  **홈** 탭의 **만들기** 그룹에서 **애플리케이션 관리 정책 만들기**를 선택합니다.  
 

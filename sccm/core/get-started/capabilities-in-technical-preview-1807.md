@@ -140,7 +140,7 @@ Steps to workaround, if any.
 
 
 
-## <a name="bkmk_app-repair"></a> 응용 프로그램 복구
+## <a name="bkmk_app-repair"></a> 애플리케이션 복구
 <!--1357866-->
 
 이제 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8365071-force-reinstall-of-application)을 기반으로 Windows Installer 및 스크립트 설치 관리자 배포 유형에 대한 복구 명령줄을 지정합니다. 
@@ -154,7 +154,7 @@ Steps to workaround, if any.
 
 2. **프로그램** 탭으로 전환합니다. **프로그램 복구** 명령을 지정합니다.  
 
-3. 앱을 배포합니다. 배포의 **배포 설정** 탭에서 **최종 사용자가 이 응용 프로그램을 복구할 수 있도록 허용** 옵션을 사용하도록 설정합니다.  
+3. 앱을 배포합니다. 배포의 **배포 설정** 탭에서 **최종 사용자가 이 애플리케이션을 복구할 수 있도록 허용** 옵션을 사용하도록 설정합니다.  
 
 
 ### <a name="known-issue"></a>알려진 문제
@@ -163,7 +163,7 @@ Steps to workaround, if any.
 
 
 
-## <a name="bkmk_email-approve"></a> 메일을 통해 응용 프로그램 요청 승인
+## <a name="bkmk_email-approve"></a> 메일을 통해 애플리케이션 요청 승인
 <!--1321550-->
 
 애플리케이션 승인 요청에 대한 메일 알림을 구성합니다. 사용자가 애플리케이션을 요청하면 메일을 받게 됩니다. 메일의 링크를 클릭하면 Configuration Manager 콘솔을 사용하지 않고 요청을 승인 또는 거부할 수 있습니다.

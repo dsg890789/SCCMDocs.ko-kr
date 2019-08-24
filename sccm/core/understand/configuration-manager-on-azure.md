@@ -158,7 +158,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 **Azure VM 컴퓨터 유형:**
 - 가상 머신 크기: https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs/  
 - VM 가격 책정: https://azure.microsoft.com/pricing/details/virtual-machines/  
-- 저장소 가격 책정: https://azure.microsoft.com/pricing/details/storage/
+- 스토리지 가격 책정: https://azure.microsoft.com/pricing/details/storage/
 
 **디스크 성능 고려 사항:**    
 - 프리미엄 디스크 소개: https://azure.microsoft.com/blog/2014/12/11/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/  

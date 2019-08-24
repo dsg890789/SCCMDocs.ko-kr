@@ -235,7 +235,7 @@ Configuration Manager는 Configuration Manager 2007에서 사용된 패키지 �
     - **Embedded 디바이스** - 쓰기 필터를 사용하는 Windows Embedded 디바이스에 패키지 및 프로그램을 배포할 때 임시 오버레이에 패키지 및 프로그램을 설치하고 나중에 변경 내용을 커밋하도록 지정할 수 있습니다. 또는 설치 최종 기한에 또는 유지 관리 기간 동안 변경 내용을 커밋하세요. 유지 관리 기간 동안이나 설치 최종 기한에 변경 내용을 커밋하는 경우 디바이스를 다시 시작해야 하며 변경 내용이 디바이스에 유지됩니다.  
 
         > [!NOTE]  
-        > 패키지 및 프로그램을 Windows Embedded 디바이스에 배포할 경우 해당 디바이스가 유지 관리 기간이 구성된 컬렉션의 멤버인지 확인하세요. Windows Embedded 디바이스에 패키지 및 프로그램을 배포할 때 유지 관리 기간을 사용하는 방법에 대한 자세한 내용은 [Windows Embedded 응용 프로그램 만들기](/sccm/apps/get-started/creating-windows-embedded-applications)를 참조하세요.  
+        > 패키지 및 프로그램을 Windows Embedded 디바이스에 배포할 경우 해당 디바이스가 유지 관리 기간이 구성된 컬렉션의 멤버인지 확인하세요. Windows Embedded 디바이스에 패키지 및 프로그램을 배포할 때 유지 관리 기간을 사용하는 방법에 대한 자세한 내용은 [Windows Embedded 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-embedded-applications)를 참조하세요.  
 
 8. **배포 지점** 페이지에서 다음 정보를 지정합니다.  
 

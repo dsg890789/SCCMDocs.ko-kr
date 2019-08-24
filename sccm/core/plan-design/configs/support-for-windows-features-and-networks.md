@@ -148,11 +148,11 @@ Configuration Manager에서는 IPv4(인터넷 프로토콜 버전 4) 외에도, 
 
 Configuration Manager는 Configuration Manager 구성 요소가 설치된 OS 버전에 대해 Windows 하드웨어 호환성 목록에 인증되어 있는 모든 하드웨어에서 작동합니다.
 
-Configuration Manager가 디렉터리 및 파일 권한을 설정할 수 있도록 사이트 서버 역할에는 NTFS가 필요합니다. Configuration Manager에는 논리 드라이브의 완전한 소유권이 있다고 가정합니다. 별도 컴퓨터에서 실행되는 사이트 시스템은 스토리지 기술에 대한 논리 파티션을 공유할 수 없습니다. 그러나 각 컴퓨터는 공유 저장소 디바이스의 같은 실제 파티션에서 별도의 논리 파티션을 사용할 수 있습니다.  
+Configuration Manager가 디렉터리 및 파일 권한을 설정할 수 있도록 사이트 서버 역할에는 NTFS가 필요합니다. Configuration Manager에는 논리 드라이브의 완전한 소유권이 있다고 가정합니다. 별도 컴퓨터에서 실행되는 사이트 시스템은 스토리지 기술에 대한 논리 파티션을 공유할 수 없습니다. 그러나 각 컴퓨터는 공유 스토리지 디바이스의 같은 실제 파티션에서 별도의 논리 파티션을 사용할 수 있습니다.  
 
 ### <a name="support-considerations"></a>지원 고려 사항
 
-- **SAN**: SAN(저장 영역 네트워크)은 SAN을 통해 호스트되는 볼륨에 지원되는 Windows 기반 서버가 직접 연결되어 있으면 지원됩니다.  
+- **SAN**: SAN(스토리지 영역 네트워크)은 SAN을 통해 호스트되는 볼륨에 지원되는 Windows 기반 서버가 직접 연결되어 있으면 지원됩니다.  
 
 - **SIS**:  Configuration Manager에서는 SIS(단일 인스턴스 스토리지) 사용 볼륨에 배포 지점 패키지 및 서명 폴더를 구성할 수 없습니다.  
 

@@ -114,7 +114,7 @@ Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내�
 | 네트워크 보호  |  디바이스에서 [Windows Defender AV 실시간 보호]( https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) 기능을 사용하도록 설정해야 합니다.  |
 
 ### <a name="create-an-exploit-guard-policy----1355468---"></a>Exploit Guard 정책 만들기  <!--1355468 -->
-1. Configuration Manager 콘솔에서 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Windows Defender Exploit Guard**를 클릭합니다.
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **엔드포인트 보호**로 이동한 다음 **Windows Defender Exploit Guard**를 클릭합니다.
 2. **홈** 탭의 **만들기** 그룹에서 **악용 정책 만들기**를 클릭합니다.
 3. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.
 4. 그런 다음 이 정책으로 관리할 Exploit Guard 구성 요소를 선택합니다. 선택한 각 구성 요소에 대해 추가 세부사항을 구성할 수 있습니다.
@@ -125,7 +125,7 @@ Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내�
 5. 마법사를 완료하여 나중에 디바이스에 배포할 수 있는 정책을 만듭니다.
 
 ### <a name="deploy-an-exploit-guard-policy"></a>Exploit Guard 정책 배포     
-Exploit Guard 정책을 만든 후에는 Exploit Guard 정책 배포 마법사를 사용하여 배포합니다. 이를 위해서는 Configuration Manager 콘솔을 열고 **자산 및 준수** > **끝점 보호**로 이동한 다음 **Exploit Guard 정책 배포**를 클릭합니다.
+Exploit Guard 정책을 만든 후에는 Exploit Guard 정책 배포 마법사를 사용하여 배포합니다. 이를 위해서는 Configuration Manager 콘솔을 열고 **자산 및 준수** > **엔드포인트 보호**로 이동한 다음 **Exploit Guard 정책 배포**를 클릭합니다.
 
 ## <a name="limited-support-for-cng-certificates"></a>CNG 인증서에 대한 제한적 지원
 <!-- 1356191 -->
@@ -164,7 +164,7 @@ CNG 인증서를 사용하려면 CA(인증 기관)가 대상 컴퓨터에 대한
 Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
 
 ### <a name="restart-is-not-required-to-apply-policies"></a>정책을 적용하려면 다시 시작해야 합니다.
-Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 새 Windows 버전을 사용하는 디바이스를 다시 시작할 필요가 없습니다.
+Windows 버전 1709용 Fall Creators Update로 시작하는 경우에는 Windows Defender 애플리케이션 제어 정책을 적용하기 위해 새 Windows 버전을 사용하는 디바이스를 다시 시작할 필요가 없습니다.
 
 다시 시작은 기본적으로 이루어집니다.
 

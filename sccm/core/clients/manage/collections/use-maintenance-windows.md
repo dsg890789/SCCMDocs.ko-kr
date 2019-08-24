@@ -53,7 +53,7 @@ ms.locfileid: "65673330"
 
 ### <a name="how-to-configure-maintenance-windows"></a>유지 관리 기간을 구성하는 방법  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**>  **장치 컬렉션**을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 준수**>  **디바이스 컬렉션**을 선택합니다.  
 
 3.  **디바이스 컬렉션** 목록에서 컬렉션을 선택합니다. **모든 시스템** 컬렉션에 대해서는 유지 관리 기간을 만들 수 없습니다.  
 

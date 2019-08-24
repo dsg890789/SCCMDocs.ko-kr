@@ -84,7 +84,7 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 > [!Tip]  
 > 또한 콘텐츠 라이브러리 외부에 있는 패키지 원본 콘텐츠를 관리하기 위한 계획입니다. Configuration Manager의 모든 소프트웨어 개체에는 네트워크 공유에 패키지 원본이 있습니다. 모든 원본을 단일 공유로 중앙 집중화하는 것을 고려하되, 이 위치는 중복 및 고가용성이어야 합니다.
 >
-> 콘텐츠 라이브러리를 패키지 원본과 동일한 저장소 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
+> 콘텐츠 라이브러리를 패키지 원본과 동일한 스토리지 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
 
 ### <a name="prerequisites"></a>필수 구성 요소  
 

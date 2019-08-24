@@ -1,7 +1,7 @@
 ---
 title: 글로벌 조건 만들기
 titleSuffix: Configuration Manager
-description: 애플리케이션이 클라이언트 장치에 제공 및 배포되는 방식을 지정하는 글로벌 조건을 만듭니다.
+description: 애플리케이션이 클라이언트 디바이스에 제공 및 배포되는 방식을 지정하는 글로벌 조건을 만듭니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -22,7 +22,7 @@ ms.locfileid: "56120991"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 글로벌 조건은 비즈니스 또는 기술 조건을 나타내는 규칙으로 애플리케이션이 클라이언트 장치에 제공 및 배포되는 방식을 지정하는 데 사용할 수 있습니다. 글로벌 조건은 배포 유형 만들기 마법사의 **요구 사항** 페이지에서 액세스됩니다.  
+System Center Configuration Manager에서 글로벌 조건은 비즈니스 또는 기술 조건을 나타내는 규칙으로 애플리케이션이 클라이언트 디바이스에 제공 및 배포되는 방식을 지정하는 데 사용할 수 있습니다. 글로벌 조건은 배포 유형 만들기 마법사의 **요구 사항** 페이지에서 액세스됩니다.  
 
 > [!NOTE]  
 >  글로벌 조건이 만들어진 사이트에서만 글로벌 조건을 편집할 수 있습니다.  
@@ -32,7 +32,7 @@ System Center Configuration Manager에서 글로벌 조건은 비즈니스 또�
 ## <a name="provide-basic-information-about-the-global-condition"></a>글로벌 조건에 대한 기본적인 정보 제공  
  다양한 형식의 글로벌 조건을 사용할 수 있으며, 다양한 글로벌 조건 형식에 따른 다양한 옵션이 있습니다. 특정 글로벌 조건 형식을 선택하면 선택한 유형에 적용되는 옵션이 Configuration Manager에 표시됩니다.  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **글로벌 조건**을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **글로벌 조건**을 선택합니다.  
 
 3.  **홈** 탭의 **만들기** 그룹에서 **글로벌 조건 만들기**를 선택합니다.  
 
@@ -73,7 +73,7 @@ System Center Configuration Manager에서 글로벌 조건은 비즈니스 또�
 
      -   **속성** - 클라이언트 컴퓨터에서 호환성을 평가하는 데 사용할 Active Directory Domain Services 개체의 속성을 지정합니다.  
 
-     -   **쿼리** - **LDAP 접두사**, **DN(고유 이름)**, **검색 필터** (지정된 경우) 및 **속성**의 항목에서 구성된 LDAP 쿼리를 표시합니다. 이 쿼리는 클라이언트 컴퓨터에서 호환성을 평가하는 데 사용됩니다.  
+     -   **쿼리** - **LDAP 접두사**, **DN(고유 이름)** , **검색 필터** (지정된 경우) 및 **속성**의 항목에서 구성된 LDAP 쿼리를 표시합니다. 이 쿼리는 클라이언트 컴퓨터에서 호환성을 평가하는 데 사용됩니다.  
 
    - **어셈블리**  
 
@@ -98,7 +98,7 @@ System Center Configuration Manager에서 글로벌 조건은 비즈니스 또�
 
      - **하위 폴더 포함** – 지정한 경로 아래의 하위 폴더도 모두 검색하려면 이 옵션을 사용하도록 설정합니다.  
 
-     - **이 파일 또는 폴더가 64비트 애플리케이션과 연결되어 있음** - 64비트 버전의 Windows를 실행하는 Configuration Manager 클라이언트에서 32비트 시스템 파일 위치(*%windir%* \system32)와 함께 64비트 시스템 파일 위치(*%windir%* \syswow64)를 검색해야 하는지 여부를 선택합니다.  
+     - **이 파일 또는 폴더가 64비트 애플리케이션과 연결되어 있음** - 64비트 버전의 Windows를 실행하는 Configuration Manager 클라이언트에서 32비트 시스템 파일 위치( *%windir%* \system32)와 함께 64비트 시스템 파일 위치( *%windir%* \syswow64)를 검색해야 하는지 여부를 선택합니다.  
 
        > [!NOTE]  
        >  동일한 64비트 컴퓨터의 64비트 및 32비트 시스템 파일 위치에 같은 파일 또는 폴더가 모두 있는 경우 글로벌 조건을 통해 여러 파일이 검색됩니다.  
@@ -177,7 +177,7 @@ System Center Configuration Manager에서 글로벌 조건은 비즈니스 또�
 
      -   **하위 폴더 포함** – 지정한 경로 아래의 하위 폴더도 모두 검색하려면 이 옵션을 사용하도록 설정합니다.  
 
-     -   **이 파일은 64비트 애플리케이션에 연결되어 있음** - 64비트 버전의 Windows를 실행하는 Configuration Manager 클라이언트에서 32비트 시스템 파일 위치(*%windir%* \system32)와 함께 64비트 시스템 파일 위치(*%windir%* \syswow64)를 검색해야 하는지 여부를 선택합니다.  
+     -   **이 파일은 64비트 애플리케이션에 연결되어 있음** - 64비트 버전의 Windows를 실행하는 Configuration Manager 클라이언트에서 32비트 시스템 파일 위치( *%windir%* \system32)와 함께 64비트 시스템 파일 위치( *%windir%* \syswow64)를 검색해야 하는지 여부를 선택합니다.  
 
      -   **XPath 쿼리** - 클라이언트 컴퓨터에서 호환성을 평가하는 데 사용할 올바른 전체 XPath(XML 경로 언어) 쿼리를 지정합니다.  
 

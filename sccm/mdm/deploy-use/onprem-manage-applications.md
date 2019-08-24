@@ -1,7 +1,7 @@
 ---
-title: 온-프레미스 모바일 장치 관리를 사용하여 애플리케이션 관리
+title: 온-프레미스 모바일 디바이스 관리를 사용하여 애플리케이션 관리
 titleSuffix: Configuration Manager
-description: 온-프레미스 모바일 장치 관리를 사용하여 애플리케이션 관리
+description: 온-프레미스 모바일 디바이스 관리를 사용하여 애플리케이션 관리
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -18,10 +18,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62227959"
 ---
-# <a name="manage-applications-for-on-premises-mobile-device-management"></a>온-프레미스 모바일 장치 관리를 사용하여 애플리케이션 관리
+# <a name="manage-applications-for-on-premises-mobile-device-management"></a>온-프레미스 모바일 디바이스 관리를 사용하여 애플리케이션 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Configuration Manager에서 온-프레미스 MDM(모바일 장치 관리)을 통해 장치를 관리하는 경우 추가 애플리케이션 유형을 관리할 수 있습니다. 온-프레미스 MDM에서 애플리케이션을 관리하는 것은 하이브리드 MDM 환경에서 앱을 관리하는 것과 같습니다.
+Configuration Manager에서 온-프레미스 MDM(모바일 디바이스 관리)을 통해 디바이스를 관리하는 경우 추가 애플리케이션 유형을 관리할 수 있습니다. 온-프레미스 MDM에서 애플리케이션을 관리하는 것은 하이브리드 MDM 환경에서 앱을 관리하는 것과 같습니다.
 
 [모바일 애플리케이션 관리](management-tasks-applications.md)에서는 하이브리드 MDM 또는 온-프레미스 MDM을 사용하여 애플리케이션을 만들고 관리하는 방법에 대한 자세한 정보를 제공합니다.

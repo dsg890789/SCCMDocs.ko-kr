@@ -35,9 +35,9 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 
  그룹에 하나 이상의 설정을 구성하면 Configuration Manager가 모바일 디바이스에 대한 그룹의 모든 설정을 관리합니다. 특정 그룹에서 어떤 설정도 구성하지 않으면 Exchange가 모바일 디바이스의 이러한 설정을 계속 관리합니다. Exchange Server에 구성되어 사용자에게 할당된 모든 Exchange ActiveSync 사서함 정책은 여전히 적용됩니다.  
 
- 또한 Exchange 액세스 규칙을 관리하고 모바일 디바이스를 허용 또는 차단하거나 격리하도록 Exchange Server 커넥터를 구성할 수도 있습니다. 관리자는 Configuration Manager 콘솔을 사용하여 모바일 디바이스를 원격으로 초기화할 수 있으며, 사용자는 응용 프로그램 카탈로그를 사용하여 모바일 디바이스를 원격으로 초기화할 수 있습니다.  
+ 또한 Exchange 액세스 규칙을 관리하고 모바일 디바이스를 허용 또는 차단하거나 격리하도록 Exchange Server 커넥터를 구성할 수도 있습니다. 관리자는 Configuration Manager 콘솔을 사용하여 모바일 디바이스를 원격으로 초기화할 수 있으며, 사용자는 애플리케이션 카탈로그를 사용하여 모바일 디바이스를 원격으로 초기화할 수 있습니다.  
 
- 사용자의 모바일 디바이스가 Exchange Server 커넥터를 통해 관리되고 Exchange Server가 온-프레미스 버전인 경우 사용자의 모바일 디바이스가 응용 프로그램 카탈로그에 자동으로 표시됩니다. Microsoft Exchange Online에 대해 Exchange Server 커넥터를 구성하는 경우 사용자의 모바일 디바이스가 응용 프로그램 카탈로그에 표시되도록 사용자 디바이스 선호도를 수동으로 구성해야 합니다. 사용자 디바이스 선호도를 수동으로 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.  
+ 사용자의 모바일 디바이스가 Exchange Server 커넥터를 통해 관리되고 Exchange Server가 온-프레미스 버전인 경우 사용자의 모바일 디바이스가 애플리케이션 카탈로그에 자동으로 표시됩니다. Microsoft Exchange Online에 대해 Exchange Server 커넥터를 구성하는 경우 사용자의 모바일 디바이스가 애플리케이션 카탈로그에 표시되도록 사용자 디바이스 선호도를 수동으로 구성해야 합니다. 사용자 디바이스 선호도를 수동으로 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.  
 
 > [!TIP]  
 >  Exchange Server 커넥터를 사용 하 여 모바일 장치를 관리 하 고 모바일 장치가 다른 사용자에 게 전송 되는 경우 모바일 장치를 삭제 Configuration Manager 콘솔에서 모바일 장치의 새 소유자에 자신의 Exchange 계정을 구성 하기 전에 이 모바일 장치를 전송 합니다.  

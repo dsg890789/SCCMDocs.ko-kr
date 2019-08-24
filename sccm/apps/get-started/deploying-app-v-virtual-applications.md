@@ -114,7 +114,7 @@ Configuration Manager를 사용할 때는 다운로드하고 실행하는 것이
 |단계|추가 정보|  
 |----------|----------------------|  
 |현재 가상 애플리케이션을 검토하여 Configuration Manager 인프라로 마이그레이션할 애플리케이션을 선택합니다.|추가 정보가 없습니다.|  
-|가상 응용 프로그램을 배포할 사용자와 디바이스를 평가합니다.|가상 응용 프로그램을 배포할 사용자와 디바이스를 함께 그룹화하는 Configuration Manager 컬렉션을 만듭니다. [컬렉션 소개](/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.|  
+|가상 애플리케이션을 배포할 사용자와 디바이스를 평가합니다.|가상 애플리케이션을 배포할 사용자와 디바이스를 함께 그룹화하는 Configuration Manager 컬렉션을 만듭니다. [컬렉션 소개](/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.|  
 |App-V 5 연결 그룹을 Configuration Manager 가상 환경으로 마이그레이션합니다.|이 항목의 [App-V 5 연결 그룹을 Configuration Manager 가상 환경으로 마이그레이션](/sccm/apps/get-started/deploying-app-v-virtual-applications#migrating-app-v-5-connection-groups-to-configuration-manager-virtual-environments) 섹션을 참조하세요.|  
 |가상 애플리케이션이 Configuration Manager 인프라에 전체 애플리케이션으로 존재하는지 확인합니다.|관리를 간소화하기 위해 가상 애플리케이션을 새 배포 유형으로 기존 전체 애플리케이션에 추가할 수 있습니다. [애플리케이션 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
 |기존 APP-V 패키지를 대체하는 애플리케이션을 만듭니다.|[애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management) 및 [애플리케이션 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
@@ -132,7 +132,7 @@ App-V 5 연결 그룹을 Configuration Manager 가상 환경으로 변환하려�
 
 1.  App-V에 있던 모든 애플리케이션에 대한 Configuration Manager 애플리케이션을 만듭니다.  
 
-2.  배포 목적이 **필수**인 사용자 또는 디바이스에 응용 프로그램을 배포합니다. 사용자에게 배포할 애플리케이션은 App-V에서 애플리케이션을 사용했던 사용자에게 배포해야 합니다. 컴퓨터에 배포할 애플리케이션은 App-V에서 해당 애플리케이션이 포함되어 있었던 컴퓨터에 배포해야 합니다.  
+2.  배포 목적이 **필수**인 사용자 또는 디바이스에 애플리케이션을 배포합니다. 사용자에게 배포할 애플리케이션은 App-V에서 애플리케이션을 사용했던 사용자에게 배포해야 합니다. 컴퓨터에 배포할 애플리케이션은 App-V에서 해당 애플리케이션이 포함되어 있었던 컴퓨터에 배포해야 합니다.  
 
 3.  배포가 완료되면 독립 실행형 App-V에 게시된 연결 그룹과 일치하는 가상 환경을 만듭니다. 가상 환경에는 동일한 패키지(구체적으로는 App-V 5 배포 유형)가 같은 순서로 포함되어야 합니다.  
 

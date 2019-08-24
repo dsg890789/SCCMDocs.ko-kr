@@ -196,7 +196,7 @@ Configuration Manager에서 필수 애플리케이션의 준수 정책 규칙을
 ### <a name="convert-applications-to-msix"></a>애플리케이션을 MSIX로 변환
 
 <!--3607729, fka 1359029-->
-버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 형식의 배포를 지원합니다. 이제 기존 Windows Installer(.msi) 응용 프로그램을 MSIX 형식으로 변환할 수 있습니다.
+버전 1806부터 Configuration Manager는 새 Windows 10 앱 패키지(.msix) 형식의 배포를 지원합니다. 이제 기존 Windows Installer(.msi) 애플리케이션을 MSIX 형식으로 변환할 수 있습니다.
 
 자세한 내용은 [Windows 애플리케이션 만들기](/sccm/apps/get-started/creating-windows-applications#bkmk_msix)를 참조하세요.  
 

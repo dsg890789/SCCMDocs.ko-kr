@@ -79,7 +79,7 @@ IIS가 이미 설치되지 않은 경우 Configuration Manager가 사이트 시�
 
 - [Mac에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-macs)  
 
-- [사용자가 온-프레미스 MDM에 장치를 등록하는 방법](/sccm/mdm/deploy-use/user-enroll-devices-on-premises-mdm)  
+- [사용자가 온-프레미스 MDM에 디바이스를 등록하는 방법](/sccm/mdm/deploy-use/user-enroll-devices-on-premises-mdm)  
 
 ### <a name="allowed-connections"></a>허용된 연결
 

@@ -22,7 +22,7 @@ ms.locfileid: "62228002"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리를 통해 장치를 관리하는 경우 다음과 같은 추가 애플리케이션 유형을 관리할 수 있습니다.
+Microsoft Intune 또는 Configuration Manager 온-프레미스 디바이스 관리를 통해 디바이스를 관리하는 경우 다음과 같은 추가 애플리케이션 유형을 관리할 수 있습니다.
 - Windows Phone 앱 패키지(*.xap 파일)
 - iOS용 앱 패키지(*.ipa 파일)
 - Android용 앱 패키지(*.apk 파일)
@@ -37,12 +37,12 @@ Microsoft Intune 또는 Configuration Manager 온-프레미스 장치 관리를 
 
 ## <a name="deploying-and-monitoring-apps"></a>앱 배포 및 모니터링
 
-System Center Configuration Manager에서 애플리케이션을 배포하고 모니터링하는 프로세스는 해당 애플리케이션이 랩톱 및 데스크톱과 같은 온사이트 장치용이므로 모바일 장치에 대한 프로세스와 동일합니다. 애플리케이션 배포 및 모니터링에 대한 일반적인 내용은 다음 항목에서 확인할 수 있습니다.
+System Center Configuration Manager에서 애플리케이션을 배포하고 모니터링하는 프로세스는 해당 애플리케이션이 랩톱 및 데스크톱과 같은 온사이트 디바이스용이므로 모바일 디바이스에 대한 프로세스와 동일합니다. 애플리케이션 배포 및 모니터링에 대한 일반적인 내용은 다음 항목에서 확인할 수 있습니다.
 
 - [System Center Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)
 - [System Center Configuration Manager에서 애플리케이션 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)
 
-다음은 애플리케이션을 배포하고 모니터링할 때 염두에 두어야 하는 모바일 장치 관리에 특정한 몇 가지 고려 사항입니다.
+다음은 애플리케이션을 배포하고 모니터링할 때 염두에 두어야 하는 모바일 디바이스 관리에 특정한 몇 가지 고려 사항입니다.
 
 - MDM에 등록된 디바이스는 시뮬레이트된 배포, 사용자 환경 또는 일정 설정을 지원하지 않습니다.
 

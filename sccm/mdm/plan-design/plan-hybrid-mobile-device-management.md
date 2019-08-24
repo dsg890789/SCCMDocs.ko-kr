@@ -32,7 +32,7 @@ ms.locfileid: "62287103"
 하이브리드 MDM에 대한 자세한 내용은 다음 문서를 참조하세요.
 - [지원되는 디바이스 플랫폼](supported-device-platforms-for-hybrid.md)에서는 Microsoft Intune을 사용하여 Configuration Manager에서 지원하는 모바일 디바이스 플랫폼을 보여 줍니다.
 
-- [장치 등록 방법](device-enrollment-methods.md)에서는 회사 소유 장치와 사용자 소유 장치를 등록하는 방법 및 해당 장치의 지원되는 기능에 대한 정보를 제공합니다.
+- [디바이스 등록 방법](device-enrollment-methods.md)에서는 회사 소유 디바이스와 사용자 소유 디바이스를 등록하는 방법 및 해당 디바이스의 지원되는 기능에 대한 정보를 제공합니다.
 
 
 ### <a name="next-steps"></a>다음 단계

@@ -517,7 +517,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |Crpmsi.log|인증서 등록 지점의 설치 및 구성에 대한 세부 정보를 기록합니다.|인증서 등록 지점|  
 |NDESPlugin.log|문제 확인 및 인증서 등록 작업을 기록합니다.|Configuration Manager 정책 모듈 및 네트워크 디바이스 등록 서비스|  
 
-Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등록 서비스를 실행하는 서버와 인증서 등록 지점을 호스트하는 서버의 이벤트 뷰어에서 Windows 응용 프로그램 로그를 검토합니다. 예를 들어 **NetworkDeviceEnrollmentService** 원본에서 메시지를 찾아 봅니다. 
+Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등록 서비스를 실행하는 서버와 인증서 등록 지점을 호스트하는 서버의 이벤트 뷰어에서 Windows 애플리케이션 로그를 검토합니다. 예를 들어 **NetworkDeviceEnrollmentService** 원본에서 메시지를 찾아 봅니다. 
 
 다음 로그 파일도 사용할 수 있습니다.  
 

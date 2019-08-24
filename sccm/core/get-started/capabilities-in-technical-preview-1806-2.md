@@ -160,7 +160,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 작업을 완료합니다. 그런 다음, [피드백](capabilities-in-technical-preview-1804.md#bkmk_feedback)을 전송하여 작업이 어떻게 진행되었는지 알려주세요.
 
 1. Configuration Manager 콘솔에서 [애플리케이션을 만듭니다](/sccm/apps/deploy-use/create-applications). 
-2. 응용 프로그램 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다.
+2. 애플리케이션 설치 파일 **형식**을 **Windows 앱 패키지(\*.appx, \*.appxbundle, \*.msix, \*.msixbundle)** 로 선택합니다.
 3. 최신 Windows Insider Preview 빌드를 실행하는 클라이언트에 [애플리케이션을 배포](/sccm/apps/deploy-use/deploy-applications)합니다.
 
 

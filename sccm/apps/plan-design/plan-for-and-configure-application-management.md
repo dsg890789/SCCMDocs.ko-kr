@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 관리 계획
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 응용 프로그램 배포에 필요한 종속성을 구현하고 구성합니다.
+description: Configuration Manager에서 애플리케이션 배포에 필요한 종속성을 구현하고 구성합니다.
 ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -22,7 +22,7 @@ ms.locfileid: "68535288"
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 문서의 내용을 따르면 Configuration Manager에서 응용 프로그램을 배포하기 위해 필요한 종속성을 구현할 수 있습니다.  
+이 문서의 내용을 따르면 Configuration Manager에서 애플리케이션을 배포하기 위해 필요한 종속성을 구현할 수 있습니다.  
 
 
 
@@ -47,11 +47,11 @@ ms.locfileid: "68535288"
 > - [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)  
 
 
-### <a name="certificates-on-code-signed-applications-for-mobile-devices"></a>모바일 디바이스에 대한 코드 서명 응용 프로그램의 인증서
+### <a name="certificates-on-code-signed-applications-for-mobile-devices"></a>모바일 디바이스에 대한 코드 서명 애플리케이션의 인증서
 
-응용 프로그램을 모바일 디바이스에 배포하기 위해 코드 서명할 경우 버전 3 템플릿(**Windows Server 2008, Enterprise Edition**)을 사용하여 생성된 인증서는 사용하지 마세요. 이 인증서 템플릿을 사용하면 모바일 디바이스용 Configuration Manager 응용 프로그램과 호환되지 않는 인증서가 만들어집니다.
+애플리케이션을 모바일 디바이스에 배포하기 위해 코드 서명할 경우 버전 3 템플릿(**Windows Server 2008, Enterprise Edition**)을 사용하여 생성된 인증서는 사용하지 마세요. 이 인증서 템플릿을 사용하면 모바일 디바이스용 Configuration Manager 애플리케이션과 호환되지 않는 인증서가 만들어집니다.
 
-모바일 디바이스 응용 프로그램에 대해 Active Directory 인증서 서비스를 사용하여 코드 서명할 경우 버전 3 인증서 템플릿은 사용하지 마세요.
+모바일 디바이스 애플리케이션에 대해 Active Directory 인증서 서비스를 사용하여 코드 서명할 경우 버전 3 인증서 템플릿은 사용하지 마세요.
 
 
 ### <a name="audit-sign-in-events-for-user-device-affinity"></a>사용자 디바이스 선호도에 대한 감사 로그인 이벤트  
@@ -88,21 +88,21 @@ ms.locfileid: "68535288"
 
 ### <a name="distribution-point"></a>배포 지점
 
-계층에 배포 지점이 하나 이상 있어야만 클라이언트에 응용 프로그램을 배포할 수 있습니다. 기본적으로 사이트 서버에는 표준 설치 중 활성화된 배포 지점 사이트 역할이 있습니다. 배포 지점의 수와 위치는 각 환경의 특정 요구 사항에 따라 달라집니다.
+계층에 배포 지점이 하나 이상 있어야만 클라이언트에 애플리케이션을 배포할 수 있습니다. 기본적으로 사이트 서버에는 표준 설치 중 활성화된 배포 지점 사이트 역할이 있습니다. 배포 지점의 수와 위치는 각 환경의 특정 요구 사항에 따라 달라집니다.
 
 배포 지점을 설치하고 콘텐츠를 관리하는 방법에 대한 자세한 내용은 [콘텐츠 및 콘텐츠 인프라 관리](/sccm/core/servers/deploy/configure/manage-content-and-content-infrastructure)를 참조하세요.  
 
 
 ### <a name="reporting-services-point"></a>보고 서비스 지점
 
-응용 프로그램 관리를 위해 Configuration Manager에서 보고서를 사용하려면 먼저 보고 서비스 지점을 설치하고 구성해야 합니다.
+애플리케이션 관리를 위해 Configuration Manager에서 보고서를 사용하려면 먼저 보고 서비스 지점을 설치하고 구성해야 합니다.
 
 자세한 내용은 [Configuration Manager의 보고 기능](/sccm/core/servers/manage/reporting)을 참조하세요.  
 
 
 ### <a name="client-settings"></a>클라이언트 설정
 
-많은 클라이언트 설정은 클라이언트가 디바이스에 응용 프로그램 및 사용자 환경을 설치하는 방법을 제어합니다. 이러한 클라이언트 설정은 다음 그룹과 같습니다.
+많은 클라이언트 설정은 클라이언트가 디바이스에 애플리케이션 및 사용자 환경을 설치하는 방법을 제어합니다. 이러한 클라이언트 설정은 다음 그룹과 같습니다.
 
 - 컴퓨터 에이전트  
 - 컴퓨터 다시 시작  
@@ -118,9 +118,9 @@ ms.locfileid: "68535288"
 
 ### <a name="security-permissions-for-application-management"></a>애플리케이션 관리를 위한 보안 권한
 
-- **응용 프로그램 작성자** 보안 역할에는 응용 프로그램을 만들고, 수정하고, 사용 중지하는 데 필요한 권한이 포함되어 있습니다.  
+- **애플리케이션 작성자** 보안 역할에는 애플리케이션을 만들고, 수정하고, 사용 중지하는 데 필요한 권한이 포함되어 있습니다.  
 
-- **응용 프로그램 배포 관리자** 보안 역할에는 응용 프로그램을 배포하는 데 필요한 권한이 포함되어 있습니다.  
+- **애플리케이션 배포 관리자** 보안 역할에는 애플리케이션을 배포하는 데 필요한 권한이 포함되어 있습니다.  
 
 - **애플리케이션 관리자** 보안 역할에는 **애플리케이션 작성자** 및 **애플리케이션 배포 관리자** 보안 역할의 모든 권한이 포함되어 있습니다.  
 
@@ -129,7 +129,7 @@ ms.locfileid: "68535288"
 
 ### <a name="app-v-46-sp1-or-later-client-to-run-virtual-applications"></a>가상 애플리케이션 실행을 위한 App-V 4.6 SP1 이상의 클라이언트
 
-Configuration Manager에서 가상 응용 프로그램을 만들려면 디바이스에 App-V 4.6 SP1 이상이 설치되어 있어야 합니다.
+Configuration Manager에서 가상 애플리케이션을 만들려면 디바이스에 App-V 4.6 SP1 이상이 설치되어 있어야 합니다.
 
 또한 가상 애플리케이션을 배포하려면 [Microsoft 지원 문서 2645225](https://support.microsoft.com/help/2645225)에 설명된 핫픽스로 App-V 클라이언트를 업데이트해야 합니다.  
 
@@ -272,7 +272,7 @@ HTTPS 연결을 사용하는 경우, 애플리케이션 카탈로그 웹 사이�
 > [!TIP]  
 > 설치 후에 애플리케이션 카탈로그가 잘못된 방식으로 작동하는 원인 중 가장 일반적인 원인은 필수 구성 요소가 누락되었기 때문입니다. 애플리케이션 카탈로그 역할의 사이트 시스템 역할 필수 구성 요소를 확인합니다. 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
-브라우저에서 애플리케이션 카탈로그 웹 사이트의 주소를 입력합니다. 해당 웹 페이지에 **응용 프로그램 카탈로그**, **내 응용 프로그램 요청**, **내 디바이스** 등 세 가지 탭이 표시되는지 확인합니다.  
+브라우저에서 애플리케이션 카탈로그 웹 사이트의 주소를 입력합니다. 해당 웹 페이지에 **애플리케이션 카탈로그**, **내 애플리케이션 요청**, **내 디바이스** 등 세 가지 탭이 표시되는지 확인합니다.  
 
 애플리케이션 카탈로그에 대해 아래 목록에 나와 있는 적합한 주소를 사용합니다. 여기서 `<server>`는 컴퓨터 이름, 인트라넷 FQDN 또는 인터넷 FQDN입니다.  
 

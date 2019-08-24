@@ -43,7 +43,7 @@ ms.locfileid: "68859858"
 
 - **컴퓨터 에이전트** 그룹에서 클라이언트 설정인 **새 소프트웨어 센터 사용**이 기본적으로 활성화됩니다. 이전 버전의 소프트웨어 센터는 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.  
 
-- Azure Active Directory(Azure AD) 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램을 찾아 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 응용 프로그램 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
+- Azure Active Directory(Azure AD) 조인 디바이스에서 사용자가 사용할 수 있는 애플리케이션을 찾아 설치할 수 있습니다. 자세한 내용은 [Azure AD 가입 디바이스에 사용자가 사용할 수 있는 애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#deploy-user-available-applications-on-azure-ad-joined-devices)를 참조하세요.  
 
 ### <a name="starting-in-version-1806"></a>버전 1806부터 가능
 
@@ -52,9 +52,9 @@ ms.locfileid: "68859858"
 - 소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 이 변경은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다. 소프트웨어 센터는 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups#management-points)에 할당하여 대규모 환경의 크기 조정을 더 잘하도록 도움을 주는 이 정보를 얻으려면 관리 지점에 의존합니다.<!--1358309-->  
 
     > [!Note]  
-    > 현재 애플리케이션 카탈로그를 사용 중인 경우, Configuration Manager를 버전 1806으로 업데이트하면 계속 작동합니다. 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점 역할은 더 이상 *필요하지 않지만* *지원은 계속* 됩니다. 응용 프로그램 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
+    > 현재 애플리케이션 카탈로그를 사용 중인 경우, Configuration Manager를 버전 1806으로 업데이트하면 계속 작동합니다. 애플리케이션 카탈로그 웹 사이트 지점 및 웹 서비스 지점 역할은 더 이상 *필요하지 않지만* *지원은 계속* 됩니다. 애플리케이션 카탈로그 *웹 사이트 지점*에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
     >
-    > 이후에 인프라에서 응용 프로그램 카탈로그 역할을 제거할 계획을 시작합니다. 관리 지점을 사용할 수 있도록 소프트웨어 센터 개선 사항을 활용하고 Configuration Manager 환경을 간소화합니다.  
+    > 이후에 인프라에서 애플리케이션 카탈로그 역할을 제거할 계획을 시작합니다. 관리 지점을 사용할 수 있도록 소프트웨어 센터 개선 사항을 활용하고 Configuration Manager 환경을 간소화합니다.  
 
 ### <a name="starting-in-version-1902"></a>버전 1902부터 가능
 
@@ -80,7 +80,7 @@ ms.locfileid: "68859858"
 |-----------------|--------------|----------------|
 | Azure AD 조인 디바이스<br>(또는 “클라우드 도메인 조인”) | 1802 또는 1806 | 모든 앱 배치에 대한 관리 지점 |
 | 인터넷의 [하이브리드 Azure AD 조인](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) 디바이스 | 1802 또는 1806 | 모든 앱 배치에 대한 클라우드 관리 게이트웨이 및 관리 지점 |
-| 온-프레미스 Active Directory 도메인 조인 디바이스 | 1802 | 소프트웨어 센터를 통해 사용자가 이용할 수 있는 앱에 필요한 응용 프로그램 카탈로그 |
+| 온-프레미스 Active Directory 도메인 조인 디바이스 | 1802 | 소프트웨어 센터를 통해 사용자가 이용할 수 있는 앱에 필요한 애플리케이션 카탈로그 |
 | 온-프레미스 Active Directory 도메인 조인 디바이스 | 1806 | 모든 앱 배치에 대한 관리 지점 |
 
 > [!Important]  

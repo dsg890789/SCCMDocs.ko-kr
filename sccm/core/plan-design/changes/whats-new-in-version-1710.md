@@ -165,7 +165,7 @@ Version 1710 drops support for the following products:
 - [애플리케이션 관리](../../../mdm/deploy-use/management-tasks-applications.md)
 
 > [!NOTE]
-> 여러 아키텍처용으로 빌드된 .appxbundle 응용 프로그램을 배포하면 이들 디바이스에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
+> 여러 아키텍처용으로 빌드된 .appxbundle 애플리케이션을 배포하면 이들 디바이스에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
 
 ### <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔의 VPN 프로필 환경 개선 
 <!-- 1318232 -->
@@ -209,7 +209,7 @@ Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender A
 Device Guard 정책과 관련하여 다음 세 가지 항목이 변경되었습니다.
 
 - Device Guard 정책의 이름이 Windows Defender 애플리케이션 제어 정책으로 바뀌었습니다. 예를 들어 **Device Guard 정책 만들기 마법사**의 이름이 이제는 **Windows Defender 애플리케이션 제어 정책 만들기 마법사**입니다.
-- Windows용 Fall Creators Update 버전 1709를 사용하는 디바이스는 Windows Defender 응용 프로그램 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
+- Windows용 Fall Creators Update 버전 1709를 사용하는 디바이스는 Windows Defender 애플리케이션 제어 정책을 적용하기 위해 다시 시작할 필요가 없습니다. 다시 시작은 여전히 기본값이지만 [다시 시작을 해제](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 - Intelligent Security Graph에서 신뢰할 수 있는 [소프트웨어를 자동으로 실행하도록 디바이스를 설정](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)할 수 있습니다.
 
 

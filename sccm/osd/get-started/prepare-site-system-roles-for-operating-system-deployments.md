@@ -115,7 +115,7 @@ OS를 배포하기 전에 멀티캐스트를 지원하도록 배포 지점을 �
 
 ### <a name="user-state-migration-tool"></a>사용자 상태 마이그레이션 도구  
 
-운영 체제를 배포하는 동안 사용자 상태를 캡처 및 복원하려면 USMT 원본 파일을 가리키는 USMT(사용자 상태 마이그레이션 도구) 패키지를 사용합니다. Configuration Manager는 Configuration Manager 콘솔의 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **패키지**에서 이 패키지를 자동으로 만듭니다. Configuration Manager는 USMT 10을 사용하여 하나의 OS에서 사용자 상태 캡처한 다음, 다른 OS로 복원합니다. Windows 10용 Windows ADK(Assessment and Deployment Kit)에는 USMT 10이 포함됩니다.
+운영 체제를 배포하는 동안 사용자 상태를 캡처 및 복원하려면 USMT 원본 파일을 가리키는 USMT(사용자 상태 마이그레이션 도구) 패키지를 사용합니다. Configuration Manager는 Configuration Manager 콘솔의 **소프트웨어 라이브러리** > **애플리케이션 관리** > **패키지**에서 이 패키지를 자동으로 만듭니다. Configuration Manager는 USMT 10을 사용하여 하나의 OS에서 사용자 상태 캡처한 다음, 다른 OS로 복원합니다. Windows 10용 Windows ADK(Assessment and Deployment Kit)에는 USMT 10이 포함됩니다.
 
 USMT 10에 대한 여러 마이그레이션 시나리오 설명은 Windows 설명서에서 [일반적인 마이그레이션 시나리오](https://docs.microsoft.com/windows/deployment/usmt/usmt-common-migration-scenarios)를 참조하세요.  
 

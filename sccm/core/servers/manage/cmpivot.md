@@ -159,7 +159,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 
       - **리소스 탐색기**: 이 디바이스에 대해 Configuration Manager 리소스 탐색기를 시작합니다. 자세한 내용은 [하드웨어 인벤토리 보기](/sccm/core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory) 또는 [소프트웨어 인벤토리 보기](/sccm/core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory)를 참조하세요.  
 
-   - 비 장치 셸을 마우스 오른쪽 단추로 클릭하여 다음 추가 작업을 수행합니다.  
+   - 비 디바이스 셸을 마우스 오른쪽 단추로 클릭하여 다음 추가 작업을 수행합니다.  
 
      - **복사**: 셀의 텍스트를 클립보드에 복사합니다.  
 

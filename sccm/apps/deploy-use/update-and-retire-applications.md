@@ -33,6 +33,6 @@ ms.locfileid: "56132819"
 
   자세한 내용은 [애플리케이션 대체](revise-and-supersede-applications.md#application-supersedence)를 참조하세요.  
 
-- **애플리케이션 제거**. Configuration Manager를 사용하면 쉽게 애플리케이션을 제거할 수 있습니다. 이 작업은 애플리케이션 또는 장치 사용자의 개입 없이 자동으로 수행됩니다.  
+- **애플리케이션 제거**. Configuration Manager를 사용하면 쉽게 애플리케이션을 제거할 수 있습니다. 이 작업은 애플리케이션 또는 디바이스 사용자의 개입 없이 자동으로 수행됩니다.  
 
   자세한 내용은 [애플리케이션 제거](uninstall-applications.md)를 참조하세요.  

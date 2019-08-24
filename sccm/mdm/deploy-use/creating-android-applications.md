@@ -1,7 +1,7 @@
 ---
 title: Android 애플리케이션 만들기
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 Android 디바이스용 응용 프로그램을 만들고 배포하는 방법입니다.
+description: Configuration Manager에서 Android 디바이스용 애플리케이션을 만들고 배포하는 방법입니다.
 ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -24,9 +24,9 @@ ms.locfileid: "62277041"
 
 Configuration Manager 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 배포 유형은 디바이스에 소프트웨어를 배포하는 데 필요한 설치 파일 및 정보로 구성됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
 
-Configuration Manager 응용 프로그램 및 배포 유형을 만드는 데 필요한 단계는 [응용 프로그램 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
+Configuration Manager 애플리케이션 및 배포 유형을 만드는 데 필요한 단계는 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications#bkmk_create)를 참조하세요. 
 
-Android 디바이스용 응용 프로그램을 만들고 배포할 때는 다음 사항을 고려하세요.  
+Android 디바이스용 애플리케이션을 만들고 배포할 때는 다음 사항을 고려하세요.  
 
 
 
@@ -49,7 +49,7 @@ Configuration Manager는 Android .apk 패키지를 지원합니다.
 
 Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔과 동기화하고, 관리되는 Android for Work 디바이스에 배포하려면 다음 단계를 따르세요. 앱을 사용자의 작업 프로필에 배포하려면 Play for Work에서 앱을 승인해야 합니다. 그런 다음, Configuration Manager 콘솔을 사용하여 앱을 동기화합니다.
 
-1. 브라우저를 열고 https://play.google.com/work로 이동합니다.  
+1. 브라우저를 열고 https://play.google.com/work 로 이동합니다.  
 
 2. Microsoft Intune 테넌트에 제한된 Google 관리자 계정을 사용하여 로그인합니다.  
 
@@ -61,11 +61,11 @@ Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔�
 
 6. 앱을 동기화하는 데 최대 10분 동안 기다리십시오. 그런 다음, **소프트웨어 라이브러리** 작업 영역으로 이동하고, **애플리케이션 관리**를 확장한 후, **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
 
-7. Play for Work에서 동기화된 앱을 선택한 다음, **응용 프로그램 만들기**를 클릭합니다.  
+7. Play for Work에서 동기화된 앱을 선택한 다음, **애플리케이션 만들기**를 클릭합니다.  
 
 8. 마법사를 완료합니다.  
 
-9. **소프트웨어 라이브러리** 작업 영역으로 이동하고 **응용 프로그램 관리**를 확장한 후, **응용 프로그램** 노드를 선택합니다. Android for Work 앱을 선택하고 평소대로 배포합니다.  
+9. **소프트웨어 라이브러리** 작업 영역으로 이동하고 **애플리케이션 관리**를 확장한 후, **애플리케이션** 노드를 선택합니다. Android for Work 앱을 선택하고 평소대로 배포합니다.  
 
 Play for Work 앱을 Configuration Manager와 동기화하려면 먼저 Play for Work 웹 사이트에서 앱을 하나 이상 승인합니다.
 

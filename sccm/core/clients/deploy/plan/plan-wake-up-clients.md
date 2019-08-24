@@ -59,7 +59,7 @@ ms.locfileid: "64669140"
 > [!IMPORTANT]  
 >  네트워크 인프라 및 네트워크 서비스를 담당하는 별도의 팀이 있는 경우 평가 및 테스트 기간 동안 이 팀에 정보를 알리고 이 팀을 참여시켜야 합니다. 예를 들어 802.1X 네트워크 액세스 제어를 사용하는 네트워크에서 절전 모드 해제 프록시가 작동하지 않아 네트워크 서비스가 중단될 수 있습니다. 또한 절전 모드 해제 프록시로 인해 일부 네트워크 모니터링 도구는 다른 컴퓨터의 절전 모드를 해제하는 트래픽을 검색할 때 경고를 생성할 수 있습니다.  
 
--   [클라이언트 및 장치에서 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 지원되는 클라이언트로 나열된 모든 Windows 운영 체제는 Wake On LAN을 지원합니다.  
+-   [클라이언트 및 디바이스에서 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 지원되는 클라이언트로 나열된 모든 Windows 운영 체제는 Wake On LAN을 지원합니다.  
 
 -   가상 머신에서 실행되는 게스트 운영 체제는 지원되지 않습니다.  
 

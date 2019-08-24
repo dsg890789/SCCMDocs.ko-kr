@@ -38,7 +38,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 
 앱에 제한을 적용하려면 Microsoft Intune 앱 SDK(소프트웨어 개발 키트)를 통합해야 합니다. 이러한 유형의 앱은 두 가지 방법으로 얻을 수 있습니다.  
 
--   **정책 관리 앱을 사용 하 여** (Android 및 iOS): 이러한 앱에는 앱 SDK가 기본 제공 합니다. 이 유형의 앱을 추가하려면 iTunes 스토어, Google Play 등의 앱 스토어에 있는 앱의 링크를 지정합니다. 이러한 앱 유형은 추가로 처리할 필요가 없습니다. iOS 및 Android 디바이스에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 모바일 응용 프로그램 관리 정책용 관리되는 앱](https://technet.microsoft.com/library/dn708489.aspx)을 참조하세요.  
+-   **정책 관리 앱을 사용 하 여** (Android 및 iOS): 이러한 앱에는 앱 SDK가 기본 제공 합니다. 이 유형의 앱을 추가하려면 iTunes 스토어, Google Play 등의 앱 스토어에 있는 앱의 링크를 지정합니다. 이러한 앱 유형은 추가로 처리할 필요가 없습니다. iOS 및 Android 디바이스에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 모바일 애플리케이션 관리 정책용 관리되는 앱](https://technet.microsoft.com/library/dn708489.aspx)을 참조하세요.  
 
 -   **"래핑된" 앱을 사용 하 여** (Android 및 iOS): 이러한 앱은 사용 하 여 앱 SDK를 포함 하도록 다시 패키지 된 **Microsoft Intune 앱 래핑 도구**합니다. 이 도구는 일반적으로 사내에서 작성된 회사 앱을 처리하는 데 사용되며, 앱 스토어에서 다운로드한 앱을 처리하는 데 사용할 수는 없습니다. 자세한 내용은 다음 문서를 참조하세요.
     - [Microsoft Intune 앱 래핑 도구를 사용하여 모바일 애플리케이션 관리용 iOS 앱 준비](https://technet.microsoft.com/library/dn878028.aspx)
@@ -60,7 +60,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 ##  <a name="step-2-create-a-configuration-manager-application-that-contains-an-app"></a>2단계: 앱이 포함 된 Configuration Manager 응용 프로그램 만들기  
  Configuration Manager 애플리케이션을 만드는 절차는 정책 관리 앱(외부 링크)을 사용하는지 아니면 iOS용 Microsoft Intune 앱 래핑 도구(iOS용 앱 패키지)를 사용하여 만든 앱을 사용하는지에 따라 달라집니다. 다음 절차 중 하나에 따라 Configuration Manager 애플리케이션을 만듭니다.  
 
-1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램**을 선택합니다.  
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **애플리케이션**을 선택합니다.  
 
 2. **홈** 탭의 **만들기** 그룹에서 **애플리케이션 만들기**를 선택하여 **애플리케이션 만들기** 마법사를 엽니다.  
 
@@ -78,7 +78,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 
 ### <a name="create-an-application-that-contains-a-link-to-a-policy-managed-app"></a>정책 관리 앱의 링크를 포함하는 애플리케이션 만들기  
 
-1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램**을 선택합니다.  
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **애플리케이션**을 선택합니다.  
 
 2. **홈** 탭의 **만들기** 그룹에서 **애플리케이션 만들기**를 선택하여 **애플리케이션 만들기** 마법사를 엽니다.  
 
@@ -101,7 +101,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 ##  <a name="step-3-create-an-application-management-policy"></a>3단계: 응용 프로그램 관리 정책 만들기  
  다음으로는 애플리케이션과 연결할 애플리케이션 관리 정책을 만듭니다. 일반 정책 또는 관리 브라우저 정책을 만들 수 있습니다.  
 
-1)  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램 관리 정책**을 선택합니다.  
+1)  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **애플리케이션 관리 정책**을 선택합니다.  
 
 2)  **홈** 탭의 **만들기** 그룹에서 **애플리케이션 관리 정책 만들기**를 선택합니다.  
 
@@ -128,7 +128,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 |**액세스 시 회사 자격 증명 필요**|사용자가 앱에 액세스하려면 회사 로그인 정보를 입력해야 합니다.|  
 |**액세스 시 회사 정책을 준수하는 디바이스 필요**|디바이스를 무단 해제하거나 루팅하지 않은 경우에만 앱을 사용할 수 있습니다.|  
 |**액세스 요구 사항을 다시 확인할 시간(분)**|**제한 시간** 필드에 앱 실행 후 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간을 지정합니다.<br /><br /> **오프라인 유예 기간** 필드에서 디바이스가 오프라인 상태인 경우 앱의 액세스 요구 사항을 다시 확인하기 전까지의 기간을 지정합니다.|  
-|**앱 데이터 암호화**|SD 카드에 저장된 데이터 등 외부 위치에 저장된 데이터를 비롯하여 이 앱과 연결된 모든 데이터를 암호화하도록 지정합니다.<br /><br /> **iOS용 암호화**<br /><br /> Configuration Manager 모바일 응용 프로그램 관리 정책과 연결된 앱의 경우 데이터는 OS에서 제공하는 디바이스 수준 암호화를 사용하여 암호화된 상태로 보관됩니다. 이러한 암호화는 IT 관리자가 설정해야 하는 디바이스 PIN 정책을 통해 사용하도록 설정됩니다. PIN이 필요한 경우에는 모바일 애플리케이션 관리 정책의 설정에 따라 데이터가 암호화됩니다. Apple 설명서에 나와 있는 것처럼 [iOS 7에서 사용하는 모듈은 FIPS 140-2의 인증을 받았습니다](http://support.apple.com/en-us/HT202739).<br /><br /> **Android용 암호화**<br /><br /> Configuration Manager 모바일 애플리케이션 관리 정책과 연결된 앱의 경우에는 Microsoft에서 암호화 기능을 제공합니다. 데이터는 모바일 애플리케이션 관리 정책의 설정에 따라 파일 I/O 작업 중에 동기식으로 암호화됩니다. Android의 관리되는 앱은 플랫폼 암호화 라이브러리를 통해 CBC 모드에서 AES-128 암호화를 사용합니다. 이 암호화 방법은 FIPS 140-2의 인증을 받지 않았습니다. 디바이스 저장소의 콘텐츠는 항상 암호화됩니다.|  
+|**앱 데이터 암호화**|SD 카드에 저장된 데이터 등 외부 위치에 저장된 데이터를 비롯하여 이 앱과 연결된 모든 데이터를 암호화하도록 지정합니다.<br /><br /> **iOS용 암호화**<br /><br /> Configuration Manager 모바일 애플리케이션 관리 정책과 연결된 앱의 경우 데이터는 OS에서 제공하는 디바이스 수준 암호화를 사용하여 암호화된 상태로 보관됩니다. 이러한 암호화는 IT 관리자가 설정해야 하는 디바이스 PIN 정책을 통해 사용하도록 설정됩니다. PIN이 필요한 경우에는 모바일 애플리케이션 관리 정책의 설정에 따라 데이터가 암호화됩니다. Apple 설명서에 나와 있는 것처럼 [iOS 7에서 사용하는 모듈은 FIPS 140-2의 인증을 받았습니다](http://support.apple.com/en-us/HT202739).<br /><br /> **Android용 암호화**<br /><br /> Configuration Manager 모바일 애플리케이션 관리 정책과 연결된 앱의 경우에는 Microsoft에서 암호화 기능을 제공합니다. 데이터는 모바일 애플리케이션 관리 정책의 설정에 따라 파일 I/O 작업 중에 동기식으로 암호화됩니다. Android의 관리되는 앱은 플랫폼 암호화 라이브러리를 통해 CBC 모드에서 AES-128 암호화를 사용합니다. 이 암호화 방법은 FIPS 140-2의 인증을 받지 않았습니다. 디바이스 스토리지의 콘텐츠는 항상 암호화됩니다.|  
 |**화면 캡처 차단** (Android 디바이스에만 해당)|이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.|  
 |**연락처 동기화 사용 안 함**| 버전 1710부터 이 옵션은 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장하지 못하도록 방지합니다. 아니요를 선택하면 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장할 수 있습니다.|  
 |**인쇄 사용 안 함**| 버전 1710부터 이 옵션은 앱에서 회사 또는 학교 데이터를 인쇄하지 못하도록 방지합니다. |  
@@ -164,7 +164,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
    애플리케이션 모니터링에 대한 자세한 내용은 [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
 
 ##  <a name="learn-how-policy-conflicts-are-resolved"></a>정책 충돌을 해결하는 방법 알아보기  
- 사용자나 디바이스에 대한 첫 번째 배포에서 모바일 응용 프로그램 관리 정책이 충돌하면 앱에 배포된 정책에서 충돌한 특정 설정 값이 제거되며 앱은 기본 제공 충돌 값을 사용합니다.  
+ 사용자나 디바이스에 대한 첫 번째 배포에서 모바일 애플리케이션 관리 정책이 충돌하면 앱에 배포된 정책에서 충돌한 특정 설정 값이 제거되며 앱은 기본 제공 충돌 값을 사용합니다.  
 
  그 이후의 앱 또는 사용자에 대한 배포에서 모바일 앱 관리 정책이 충돌하는 경우에는 충돌한 특정 설정 값이 앱에 배포된 모바일 앱 관리 정책에 업데이트되지 않으며 앱은 해당 설정의 기본 값을 사용합니다.  
 
@@ -175,4 +175,4 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 -   디바이스에 아직 배포된 정책이 없는 상태에서 충돌하는 두 설정이 배포되면 디바이스에서 기본 제공되는 설정이 사용됩니다.  
 
 ##  <a name="see-a-list-of-available-policy-managed-apps"></a>사용 가능한 정책으로 관리되는 앱 목록 참조  
- iOS 및 Android 디바이스에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 응용 프로그램 파트너](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)를 참조하세요.  
+ iOS 및 Android 디바이스에 대해 사용 가능한 정책 관리 앱의 목록은 [Microsoft Intune 애플리케이션 파트너](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)를 참조하세요.  

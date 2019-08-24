@@ -28,7 +28,7 @@ ms.locfileid: "65500336"
 ## <a name="default-security-permissions-and-considerations"></a>기본 보안 권한 및 고려 사항  
  System Center Configuration Manager에서 사용자 및 디바이스에 대한 인증서를 요청하는 데 사용하는 인증서 템플릿에 필요한 기본 보안 권한은 다음과 같습니다.  
 
-- 네트워크 디바이스 등록 서비스 응용 프로그램에서 사용하는 계정의 읽기 및 등록 권한  
+- 네트워크 디바이스 등록 서비스 애플리케이션에서 사용하는 계정의 읽기 및 등록 권한  
 
 - System Center Configuration Manager 콘솔을 실행하는 계정의 읽기 권한  
 

@@ -311,7 +311,7 @@ Microsoft Intune 지원 계층 TLS (전송 보안) 1.2 이상 Intune를 기본�
 #### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device"></a>iOS 디바이스에서 지문 또는 얼굴 ID를 변경할 때 표시되는 PIN 프롬프트
 
 <!--2637704-->  
-이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.   PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
+이제 iOS 디바이스에서 생체 인식 내용을 변경한 후 PIN을 입력하라는 메시지가 사용자에게 표시됩니다. 여기에는 등록된 지문 또는 얼굴 ID의 변경이 포함됩니다. 프롬프트의 타이밍은 ‘다음 시간 이후에 액세스 요구 사항 다시 확인:’ 시간 제한의 구성 방법에 따라 다릅니다.  PIN이 설정되지 않은 경우에는 설정하라는 메시지가 사용자에게 표시됩니다.  
 
 이 기능은 iOS에만 제공되고 iOS용 Intune 앱 SDK, 버전 8.1.1 이상을 통합하는 애플리케이션의 참여가 필요합니다. 대상 애플리케이션에 동작이 적용될 수 있도록 SDK의 통합이 필요합니다. 이 통합은 롤링 기반으로 특정 애플리케이션 팀에서 수행합니다. 참여하는 일부 앱에는 WXP, Outlook, Managed Browser 및 Yammer가 포함됩니다.
 
@@ -413,7 +413,7 @@ Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메�
 #### <a name="intune-app-protection-policies-and-microsoft-edge"></a>Intune 앱 보호 정책 및 Microsoft Edge
 
 <!--1818968,1818969-->  
-모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge응용 프로그램에서 회사 Azure Active Directory 계정으로 로그인하는 iOS 및 Android 디바이스의 사용자는 Intune에서 보호합니다. IOS 디바이스에서 **웹 콘텐츠에 대해 관리되는 브라우저 요구** 정책은 관리되는 경우 사용자가 Edge에서 링크를 열 수 있게 합니다.
+모바일 디바이스(iOS 및 Android)용 Microsoft Edge 브라우저에서는 이제 Microsoft Intune 앱 보호 정책을 지원합니다. Edge애플리케이션에서 회사 Azure Active Directory 계정으로 로그인하는 iOS 및 Android 디바이스의 사용자는 Intune에서 보호합니다. IOS 디바이스에서 **웹 콘텐츠에 대해 관리되는 브라우저 요구** 정책은 관리되는 경우 사용자가 Edge에서 링크를 열 수 있게 합니다.
 
 
 
@@ -441,7 +441,7 @@ Windows 용 회사 포털 앱은 이제 Windows 작업 표시줄 및 시작 메�
 자세한 내용은 다음 아티클을 참조하세요.
 
 - [Android 하이브리드 장치 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)
-- [장치, 네트워크 및 응용 프로그램 위험에 따라 회사 리소스에 대한 액세스 관리](/sccm/mdm/deploy-use/lookout-mobile-threat-defense-in-configuration-manager)
+- [디바이스, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스 관리](/sccm/mdm/deploy-use/lookout-mobile-threat-defense-in-configuration-manager)
 
 #### <a name="support-for-new-versions-of-cisco-anyconnect-client-for-ios"></a>새 버전의 iOS용 Cisco AnyConnect 클라이언트 지원
 

@@ -28,7 +28,7 @@ ms.locfileid: "56133717"
 
  **애플리케이션 관리**  
 
- 애플리케이션을 만들고, 관리하고, 배포하고, 모니터링할 수 있는 도구 및 리소스 집합을 관리하는 다양한 장치 범위에 제공합니다. 또한 Configuration Manager에서는 사용자의 앱에서 회사 데이터를 보호하는 데 도움이 되는 도구를 제공합니다. [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
+ 애플리케이션을 만들고, 관리하고, 배포하고, 모니터링할 수 있는 도구 및 리소스 집합을 관리하는 다양한 디바이스 범위에 제공합니다. 또한 Configuration Manager에서는 사용자의 앱에서 회사 데이터를 보호하는 데 도움이 되는 도구를 제공합니다. [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.
 
  **회사 리소스 액세스**  
 

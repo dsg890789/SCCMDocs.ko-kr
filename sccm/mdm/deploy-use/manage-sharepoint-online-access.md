@@ -134,7 +134,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
  다음으로 관리되고 규정을 준수하는 디바이스만 SharePoint Online에 액세스할 수 있도록 요구하는 정책을 구성합니다. 이 정책은 Azure AD에 저장됩니다.
 
  >[!NOTE]
- >Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 Intune 디바이스의 조건부 액세스 정책을 만들 수 있습니다. Azure AD는 이러한 정책을 디바이스 기반 조건부 액세스 정책으로 참조합니다. 다단계 인증과 같은 다른 조건부 액세스 정책을 만들 수도 있습니다. 포털에서 Azure AD가 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수 있습니다. 자세한 내용은 [Azure AD 연결 애플리케이션에 대한 액세스 제어를 위해 Azure AD 장치 기반 조건부 액세스 정책을 설정하는 방법](/azure/active-directory/active-directory-conditional-access-policy-connected-applications)을 참조하세요.  
+ >Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 Intune 디바이스의 조건부 액세스 정책을 만들 수 있습니다. Azure AD는 이러한 정책을 디바이스 기반 조건부 액세스 정책으로 참조합니다. 다단계 인증과 같은 다른 조건부 액세스 정책을 만들 수도 있습니다. 포털에서 Azure AD가 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수 있습니다. 자세한 내용은 [Azure AD 연결 애플리케이션에 대한 액세스 제어를 위해 Azure AD 디바이스 기반 조건부 액세스 정책을 설정하는 방법](/azure/active-directory/active-directory-conditional-access-policy-connected-applications)을 참조하세요.  
 
 1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
 
@@ -142,7 +142,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
     ![IntuneSASharePointOnlineCAPolicy](media/IntuneSASharePointOnlineCAPolicy.png)  
 
-3. 최신 인증을 사용하는 앱 및 Outlook용 **애플리케이션 액세스**에서 각 플랫폼에 대한 규정을 준수하는 장치에만 액세스를 제한하도록 선택할 수 있습니다.  
+3. 최신 인증을 사용하는 앱 및 Outlook용 **애플리케이션 액세스**에서 각 플랫폼에 대한 규정을 준수하는 디바이스에만 액세스를 제한하도록 선택할 수 있습니다.  
 
    > [!TIP]
    >  **최신 인증**을 사용하는 경우 Office 클라이언트에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다.  
@@ -154,9 +154,9 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
     Windows PC의 경우 해당 PC가 도메인에 가입되어 있거나 Intune에 등록되어 있고 정책을 준수해야 합니다. 다음 요구 사항을 설정할 수 있습니다.  
 
-   -   **장치가 도메인에 가입 되어 있거나 규정을 준수 해야 합니다.**: Pc는 도메인에 가입 되어 있거나 Intune에 설정 된 정책을 준수 해야 합니다. PC가 이러한 요구 사항을 하나라도 충족하지 않을 경우 Intune에 디바이스를 등록하라는 메시지가 표시됩니다.  
+   -   **장치가 도메인에 가입 되어 있거나 규정을 준수 해야 합니다.** : Pc는 도메인에 가입 되어 있거나 Intune에 설정 된 정책을 준수 해야 합니다. PC가 이러한 요구 사항을 하나라도 충족하지 않을 경우 Intune에 디바이스를 등록하라는 메시지가 표시됩니다.  
 
-   -   **장치가 도메인에 가입 해야 합니다.**: Pc에는 Exchange Online에 액세스 하려면 가입 해야 합니다. PC가 도메인에 가입되지 않은 경우, 이메일 액세스가 차단되고 IT 관리자에게 문의하라는 메시지가 사용자에게 표시됩니다.  
+   -   **장치가 도메인에 가입 해야 합니다.** : Pc에는 Exchange Online에 액세스 하려면 가입 해야 합니다. PC가 도메인에 가입되지 않은 경우, 이메일 액세스가 차단되고 IT 관리자에게 문의하라는 메시지가 사용자에게 표시됩니다.  
 
    -   **장치가 호환 되어야 함**: Intune에서 준수 및 Pc는 등록 해야 합니다. PC가 등록되어 있지 않은 경우 등록 방법에 대한 지침이 포함된 메시지가 표시됩니다.  
 

@@ -256,9 +256,9 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 
 
 
-## <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 응용 프로그램 요청 승인
+## <a name="approve-application-requests-for-users-per-device"></a>디바이스당 사용자에 대한 애플리케이션 요청 승인
 <!-- 1357015 -->
-이 릴리스부터는 사용자가 승인이 필요한 응용 프로그램을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 응용 프로그램을 설치할 수 있습니다. 사용자가 다른 디바이스에 응용 프로그램을 설치하려면 다른 요청을 제출해야 합니다. 
+이 릴리스부터는 사용자가 승인이 필요한 애플리케이션을 요청할 때 특정 디바이스 이름이 요청의 일부로 포함됩니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 애플리케이션을 설치할 수 있습니다. 사용자가 다른 디바이스에 애플리케이션을 설치하려면 다른 요청을 제출해야 합니다. 
 
 > [!NOTE]
 > 이 기능은 선택 사항입니다. 이 릴리스로 업데이트할 때 업데이트 마법사에서 이 기능을 사용하도록 설정합니다. 또는 나중에 콘솔에서 기능을 사용하도록 설정합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
@@ -273,13 +273,13 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 1. 사용자 컬렉션이 사용할 수 있는 애플리케이션으로 배포합니다.
 2. **배포 설정** 페이지에서 다음 옵션을 사용하도록 설정: **관리자가 디바이스에서 이 애플리케이션에 대한 요청을 승인해야 함**.
 3. 대상 사용자로, 소프트웨어 센터를 사용하여 애플리케이션에 대한 요청을 제출합니다. 
-4. Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리** 아래의 **승인 요청**을 확인합니다. 이제 각 요청에 대한 **디바이스** 열이 목록에 있습니다. 요청에 대한 작업을 수행하는 경우 응용 프로그램 요청 대화 상자에 사용자가 요청을 제출한 디바이스 이름도 포함됩니다.
+4. Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리** 아래의 **승인 요청**을 확인합니다. 이제 각 요청에 대한 **디바이스** 열이 목록에 있습니다. 요청에 대한 작업을 수행하는 경우 애플리케이션 요청 대화 상자에 사용자가 요청을 제출한 디바이스 이름도 포함됩니다.
 
 
 
-## <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 디바이스에서 사용자가 사용할 수 있는 응용 프로그램 찾아보기 및 설치
+## <a name="use-software-center-to-browse-and-install-user-available-applications-on-azure-ad-joined-devices"></a>소프트웨어 센터를 사용하여 Azure AD 조인 디바이스에서 사용자가 사용할 수 있는 애플리케이션 찾아보기 및 설치
 <!-- 1322613 -->
-사용자가 사용할 수 있는 응용 프로그램으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 디바이스에서 소프트웨어 센터를 통해 해당 응용 프로그램을 찾아보고 설치할 수 있습니다.  
+사용자가 사용할 수 있는 애플리케이션으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 디바이스에서 소프트웨어 센터를 통해 해당 애플리케이션을 찾아보고 설치할 수 있습니다.  
 
 ### <a name="prerequisites"></a>필수 구성 요소
 - 관리 지점에서 HTTPS 사용

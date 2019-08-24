@@ -140,7 +140,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 
      SharePoint Online의 경우 Microsoft Intune 관리 콘솔에서 **정책 > 조건부 액세스 > SharePoint Online 정책**을 클릭합니다.  
 
-5.  Windows PC 요구 사항을**장치가 호환되어야 함 옵션**으로 설정합니다.  
+5.  Windows PC 요구 사항을 **디바이스가 호환되어야 함 옵션**으로 설정합니다.  
 
 6.  **대상 그룹**에서 **수정**을 클릭하여 정책을 적용할 Azure Active Directory 보안 그룹을 선택합니다.  
 

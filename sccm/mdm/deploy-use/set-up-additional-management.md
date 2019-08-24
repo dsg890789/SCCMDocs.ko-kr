@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d866ce901640b6e7fafb13a6c24318f26c5d5feb
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227801"
 ---
 # <a name="set-up-additional-management-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 추가 관리 설정
 
@@ -30,7 +30,7 @@ ms.locfileid: "56131798"
 - [iOS 및 Mac 디바이스](create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)
 - [Android 및 Samsung KNOX Standard 디바이스](create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)
 
-**애플리케이션**을 관리 장치에 배포할 수 있습니다.
+**애플리케이션**을 관리 디바이스에 배포할 수 있습니다.
 - [iOS 애플리케이션](creating-ios-applications.md)
 - [Mac 애플리케이션](../../apps/get-started/creating-mac-computer-applications.md)
 - [Windows PC 애플리케이션](../../apps/get-started/creating-windows-applications.md)

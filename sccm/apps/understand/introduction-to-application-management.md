@@ -1,7 +1,7 @@
 ---
 title: 앱 관리 소개
 titleSuffix: Configuration Manager
-description: Configuration Manager의 응용 프로그램을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
+description: Configuration Manager의 애플리케이션을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
 ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -32,7 +32,7 @@ ms.locfileid: "68534796"
 
 *애플리케이션* 또는 *앱*은 널리 사용되는 컴퓨팅 용어지만 Configuration Manager에서는 특정한 것을 의미합니다. 애플리케이션을 상자처럼 간주하세요. 이 상자에는 소프트웨어 패키지에 대한 하나 이상의 설치 파일 집합(*배포 유형*이라고 함)과 소프트웨어 배포 방법 지침이 들어 있습니다.  
 
-디바이스에 응용 프로그램을 배포할 때 **요구 사항**에 따라 Configuration Manager가 디바이스에 설치하는 배포 유형이 결정됩니다.  
+디바이스에 애플리케이션을 배포할 때 **요구 사항**에 따라 Configuration Manager가 디바이스에 설치하는 배포 유형이 결정됩니다.  
 
 애플리케이션으로 더 많은 작업을 수행할 수 있습니다. 이 가이드를 읽으면 이러한 기능에 대해 자세히 알아볼 수 있습니다. 다음 섹션에서는 더 깊이 파고들기 전에 알아야 할 몇 가지 개념을 소개합니다.  
 
@@ -52,9 +52,9 @@ Configuration Manager에서 Astoria용 단일 애플리케이션을 만듭니다
 
 ### <a name="requirements"></a>요구 사항
 
-이전 버전의 Configuration Manager에서는 응용 프로그램을 배포할 디바이스 컬렉션을 만들었습니다. 컬렉션을 여전히 만들 수 있지만 *요구 사항*을 사용하여 애플리케이션 배포에 대해 보다 자세한 조건을 지정할 수 있습니다.
+이전 버전의 Configuration Manager에서는 애플리케이션을 배포할 디바이스 컬렉션을 만들었습니다. 컬렉션을 여전히 만들 수 있지만 *요구 사항*을 사용하여 애플리케이션 배포에 대해 보다 자세한 조건을 지정할 수 있습니다.
 
-예를 들어 Windows 10을 실행하는 디바이스에만 응용 프로그램을 설치하도록 지정할 수 있습니다. 모든 디바이스에 응용 프로그램을 배포하면 Windows 10을 실행하는 디바이스에만 설치됩니다.
+예를 들어 Windows 10을 실행하는 디바이스에만 애플리케이션을 설치하도록 지정할 수 있습니다. 모든 디바이스에 애플리케이션을 배포하면 Windows 10을 실행하는 디바이스에만 설치됩니다.
 
 Configuration Manager는 요구 사항을 평가하여 애플리케이션과 해당 배포 유형을 설치할지 여부를 결정합니다. 그런 다음 애플리케이션을 설치할 올바른 배포 유형을 결정합니다. 기본적으로 7일마다 Configuration Manager 클라이언트는 요구 사항 규칙을 재평가하여 클라이언트 설정 **배포의 재평가 일정**에 따라 규정 준수 여부 결정합니다.
 
@@ -101,7 +101,7 @@ Configuration Manager는 요구 사항을 평가하여 애플리케이션과 해
 
 ### <a name="detection-method"></a>검색 방법
 
-검색 방법을 사용하여 디바이스에 응용 프로그램이 이미 설치되었는지 여부를 확인할 수 있습니다.  검색 방법에 애플리케이션이 설치되어 있다고 표시되면 Configuration Manager에서 설치를 다시 시도하지 않습니다.
+검색 방법을 사용하여 디바이스에 애플리케이션이 이미 설치되었는지 여부를 확인할 수 있습니다.  검색 방법에 애플리케이션이 설치되어 있다고 표시되면 Configuration Manager에서 설치를 다시 시도하지 않습니다.
 
 자세한 내용은 [배포 유형 검색 방법 옵션](/sccm/apps/deploy-use/create-applications##bkmk_dt-detect)을 참조하세요.
 
@@ -119,7 +119,7 @@ Configuration Manager에서 대체 관계를 사용하여 기존 애플리케이
 
 ### <a name="user-centric-management"></a>사용자 중심 관리
 
-Configuration Manager 응용 프로그램은 사용자 중심 관리를 지원하므로 특정 사용자를 특정 디바이스와 연결할 수 있습니다.  사용자의 디바이스 이름을 기억할 필요 없이 사용자와 디바이스에 앱을 배포할 수 있습니다. 이러한 기능을 통해 가장 중요한 앱을 각 사용자의 디바이스에서 항상 사용할 수 있도록 유지할 수 있습니다. 사용자가 새 컴퓨터를 구입하면 Configuration Manager는 로그인하기 전에 디바이스에 자동으로 사용자의 앱을 설치합니다.
+Configuration Manager 애플리케이션은 사용자 중심 관리를 지원하므로 특정 사용자를 특정 디바이스와 연결할 수 있습니다.  사용자의 디바이스 이름을 기억할 필요 없이 사용자와 디바이스에 앱을 배포할 수 있습니다. 이러한 기능을 통해 가장 중요한 앱을 각 사용자의 디바이스에서 항상 사용할 수 있도록 유지할 수 있습니다. 사용자가 새 컴퓨터를 구입하면 Configuration Manager는 로그인하기 전에 디바이스에 자동으로 사용자의 앱을 설치합니다.
 
 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.  
 
@@ -168,13 +168,13 @@ Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있�
 
 ## <a name="state-based-applications"></a>상태 기반 애플리케이션  
 
-Configuration Manager 애플리케이션은 상태 기반 모니터링을 사용합니다. 사용자 및 디바이스의 마지막 응용 프로그램 배포 상태를 추적할 수 있습니다. 상태 메시지는 개별 디바이스에 대한 정보를 표시합니다. 예를 들어 애플리케이션을 사용자 컬렉션에 배포하는 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 볼 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역에서 모든 소프트웨어 배포를 모니터링합니다. 자세한 내용은 [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
+Configuration Manager 애플리케이션은 상태 기반 모니터링을 사용합니다. 사용자 및 디바이스의 마지막 애플리케이션 배포 상태를 추적할 수 있습니다. 상태 메시지는 개별 디바이스에 대한 정보를 표시합니다. 예를 들어 애플리케이션을 사용자 컬렉션에 배포하는 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 볼 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역에서 모든 소프트웨어 배포를 모니터링합니다. 자세한 내용은 [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
 
 Configuration Manager 클라이언트는 애플리케이션 배포를 정기적으로 다시 평가합니다. 예:  
 
 - 배포된 애플리케이션을 사용자가 제거합니다. 다음 평가 주기에서 Configuration Manager가 앱이 없는 것을 감지합니다. 그러면 클라이언트가 앱을 자동으로 다시 설치합니다.  
 
-- Configuration Manager가 요구 사항을 충족하지 못하는 디바이스에 응용 프로그램을 설치하지 않았습니다. 나중에 디바이스가 변경되어 이제는 요구 사항이 충족됩니다. Configuration Manager가 변화를 감지하고, 클라이언트가 애플리케이션을 설치합니다.  
+- Configuration Manager가 요구 사항을 충족하지 못하는 디바이스에 애플리케이션을 설치하지 않았습니다. 나중에 디바이스가 변경되어 이제는 요구 사항이 충족됩니다. Configuration Manager가 변화를 감지하고, 클라이언트가 애플리케이션을 설치합니다.  
 
 애플리케이션 배포에 대한 재평가 간격을 설정할 수 있습니다. **소프트웨어 배포** 그룹의 **배포의 재평가 일정** 클라이언트 설정을 사용합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-deployment)를 참조하세요.  
 
@@ -190,7 +190,7 @@ Configuration Manager 클라이언트는 애플리케이션 배포를 정기적�
 
 소프트웨어 센터는 Configuration Manager 클라이언트와 함께 설치되는 Windows 애플리케이션입니다. 이것을 사용하여 다음 작업을 수행할 수 있습니다.  
 
-- 디바이스 또는 사용자에게 배포된 응용 프로그램을 찾아보고 요청합니다.
+- 디바이스 또는 사용자에게 배포된 애플리케이션을 찾아보고 요청합니다.
 - 소프트웨어 설치 프로그램 설치 및 예약
 - 애플리케이션, 소프트웨어 업데이트 및 운영 체제의 설치 상태 보기
 - 원격 제어 설정 구성

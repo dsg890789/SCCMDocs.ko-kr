@@ -55,7 +55,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
      Configuration Manager 클라이언트가 설치될 때 이러한 설정으로 인해 Endpoint Protection 클라이언트가 설치되고 오버레이에만 기록되지 않고 설치의 일부로 운영 체제에 유지됩니다. 회사 보안 정책에 따라 맬웨어 방지 소프트웨어가 항상 설치되어 있어야 하며 관리자는 키오스크가 다시 시작될 경우 잠깐이라도 보호되지 않는 위험에 처하기를 원하지 않습니다.  
 
    > [!NOTE]  
-   >  Endpoint Protection 클라이언트를 설치하는 데 필요한 다시 시작은 방문자 센터가 운영되기 전에 디바이스 설치 기간 동안 한 번만 이루어집니다. 응용 프로그램 또는 소프트웨어 정의 업데이트가 정기적으로 배포되는 것과 달리, 동일한 디바이스에 Endpoint Protection 클라이언트가 설치되는 다음 시기는 회사에서 차기 버전의 Configuration Manager로 업그레이드하는 때가 될 것입니다.  
+   >  Endpoint Protection 클라이언트를 설치하는 데 필요한 다시 시작은 방문자 센터가 운영되기 전에 디바이스 설치 기간 동안 한 번만 이루어집니다. 애플리케이션 또는 소프트웨어 정의 업데이트가 정기적으로 배포되는 것과 달리, 동일한 디바이스에 Endpoint Protection 클라이언트가 설치되는 다음 시기는 회사에서 차기 버전의 Configuration Manager로 업그레이드하는 때가 될 것입니다.  
 
     자세한 내용은 [System Center Configuration Manager의 Endpoint Protection 구성](../../../protect/deploy-use/configure-endpoint-protection.md)을 참조하세요.  
 

@@ -31,7 +31,7 @@ System Center Configuration Manager(Configuration Manager)의 Microsoft Applicat
 
 ## <a name="create-an-app-v-virtual-environment"></a>App-V 가상 환경 만들기  
 
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **App-V 가상 환경**을 선택합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **App-V 가상 환경**을 선택합니다.  
 
 3.  **홈** 탭의 **만들기** 그룹에서 **가상 환경 만들기**를 선택합니다.  
 

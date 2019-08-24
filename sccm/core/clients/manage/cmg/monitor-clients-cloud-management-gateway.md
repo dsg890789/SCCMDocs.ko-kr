@@ -79,7 +79,7 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 
 3. CMG 연결 분석기 창에서 다음 옵션 중 하나를 선택하여 서비스를 인증합니다.  
 
-     1. **Azure AD 사용자**: 이 옵션을 사용하여 Azure AD 조인 Windows 10 장치에 클라우드 기반 사용자 ID가 로그인한 것과 동일하게 통신을 시뮬레이션합니다. **로그인**을 클릭하여 이 Azure AD 사용자 계정에 대한 자격 증명을 안전하게 입력합니다.  
+     1. **Azure AD 사용자**: 이 옵션을 사용하여 Azure AD 조인 Windows 10 디바이스에 클라우드 기반 사용자 ID가 로그인한 것과 동일하게 통신을 시뮬레이션합니다. **로그인**을 클릭하여 이 Azure AD 사용자 계정에 대한 자격 증명을 안전하게 입력합니다.  
 
      2. **클라이언트 인증서**: 이 옵션은 [클라이언트 인증 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_clientauth)를 사용하는 Configuration Manager 클라이언트와 동일하게 통신을 시뮬레이션하는 데 사용합니다.  
 

@@ -79,7 +79,7 @@ ms.locfileid: "67678634"
   Windows 10 회사 포털 앱을 다운로드하고 사이드로드해야 하는 경우 이제 스크립트를 사용하여 조직의 앱 서명 프로세스를 간소화할 수 있습니다. 스크립트와 스크립트 사용 지침을 다운로드하려면 TechNet 갤러리의 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript)(Windows 10 회사 포털용 Microsoft Intune 서명 스크립트)을 참조하세요. 이 알림에 대한 자세한 내용은 Intune 지원 팀 블로그의 [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)(Windows 10 회사 포털 앱 업데이트)을 참조하세요.
 
 - **중국에 있는 Android 사용자에 대한 지원 향상**  
-  중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 이 워크플로를 지원합니다. 중국의 Android 사용자가 로컬 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션합니다. 따라서 모바일 디바이스 관리 및 모바일 응용 프로그램 관리 모두에서 조건부 액세스 정책을 사용하도록 설정하는 경우 사용자 환경이 개선됩니다. 다음과 같은 중국 앱 스토어에서 Android용 회사 포털 및 Outlook 앱을 사용할 수 있습니다.
+  중국에는 Google Play 스토어를 사용할 수 없으므로 Android 디바이스 사용자는 중국 마켓플레이스에서 앱을 다운로드해야 합니다. 회사 포털은 이 워크플로를 지원합니다. 중국의 Android 사용자가 로컬 앱 스토어에서 회사 포털 및 Outlook 앱을 다운로드하도록 리디렉션합니다. 따라서 모바일 디바이스 관리 및 모바일 애플리케이션 관리 모두에서 조건부 액세스 정책을 사용하도록 설정하는 경우 사용자 환경이 개선됩니다. 다음과 같은 중국 앱 스토어에서 Android용 회사 포털 및 Outlook 앱을 사용할 수 있습니다.
 
   - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
   - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -170,7 +170,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **비규격 앱 준수 설정**
 
-  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 디바이스에 지정한 응용 프로그램이 설치되어 있으면 “비준수”로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다. 자세한 내용은 [조건부 액세스 디바이스 준수 정책 개선](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)을 참조하세요.
+  이제 준수 정책에서 Android 및 iOS 앱에 대한 비규격 앱 규칙을 만들 수 있습니다. 디바이스에 지정한 애플리케이션이 설치되어 있으면 “비준수”로 표시되며, 적용된 조건부 액세스 정책에 따라 회사 리소스에 액세스할 수 없게 됩니다. 자세한 내용은 [조건부 액세스 디바이스 준수 정책 개선](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)을 참조하세요.
 
 - **PFX 인증서 만들기 및 배포와 S/MIME 지원**
 
@@ -448,7 +448,7 @@ Configuration Manager(현재 분기) 2016년 8월에 도입된 새로운 하이�
 
 - **테스트용으로 로드된 앱 설치를 등록된 Android 디바이스로 제한**
 
-  디바이스가 Android용 Intune 회사 포털 앱을 사용하여 Intune에 등록되어 있지 않으면 더 이상 Android 디바이스에 회사 포털 웹 사이트를 통해 응용 프로그램을 설치할 수 없습니다.
+  디바이스가 Android용 Intune 회사 포털 앱을 사용하여 Intune에 등록되어 있지 않으면 더 이상 Android 디바이스에 회사 포털 웹 사이트를 통해 애플리케이션을 설치할 수 없습니다.
 
 
 ### <a name="new-in-configuration-manager-technical-preview"></a>Configuration Manager Technical Preview의 새로운 기능
@@ -607,7 +607,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **Outlook 연락처 동기화를 방지하는 MAM 컨트롤(Android)**
 
-  응용 프로그램이 Android 디바이스의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 Android 디바이스의 Outlook 응용 프로그램에서 처음 지원됩니다. 자세한 내용은 Intune 라이브러리에서 [Microsoft Intune으로 모바일 앱 관리 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
+  애플리케이션이 Android 디바이스의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 Android 디바이스의 Outlook 애플리케이션에서 처음 지원됩니다. 자세한 내용은 Intune 라이브러리에서 [Microsoft Intune으로 모바일 앱 관리 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
 
 - **회사 포털 웹 사이트의 향상된 기능**
 
@@ -651,7 +651,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **Outlook 연락처 동기화를 방지하는 MAM 컨트롤(iOS)**
 
-  응용 프로그램이 iOS 디바이스의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 iOS 디바이스의 Outlook 응용 프로그램에서 지원됩니다. 이 설정 및 기타 설정에 대한 자세한 내용은 Intune 라이브러리에서 [MAM 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
+  애플리케이션이 iOS 디바이스의 기본 주소록에 연락처를 동기화할 수 없도록 하는 새로운 설정을 사용할 수 있습니다. 이 새로운 설정은 iOS 디바이스의 Outlook 애플리케이션에서 지원됩니다. 이 설정 및 기타 설정에 대한 자세한 내용은 Intune 라이브러리에서 [MAM 정책 만들기 및 배포](/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)를 참조하세요.  
 
 - **비즈니스용 Skype Online에서 조건부 액세스 지원**
 
@@ -675,15 +675,15 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **MAM을 지원하는 Microsoft 앱**
 
-  Intune 모바일 응용 프로그램 관리 정책과 함께 사용할 수 있는 Microsoft 앱 목록이 최신 앱을 포함하도록 업데이트되었습니다(Intune에 등록된 디바이스에만 해당).  
+  Intune 모바일 애플리케이션 관리 정책과 함께 사용할 수 있는 Microsoft 앱 목록이 최신 앱을 포함하도록 업데이트되었습니다(Intune에 등록된 디바이스에만 해당).  
 
 - **엔터프라이즈의 Intune 관리 iOS 디바이스에 Microsoft Intune용 Adobe Reader 배포**
 
-  이제 Intune 모바일 응용 프로그램 관리 정책을 사용하여 등록된 디바이스에서 iOS용 Adobe Reader 앱을 관리할 수 있습니다.  
+  이제 Intune 모바일 애플리케이션 관리 정책을 사용하여 등록된 디바이스에서 iOS용 Adobe Reader 앱을 관리할 수 있습니다.  
 
 - Android에 대해 Rights Management 공유 앱이 지원됨
 
-  IT에서 Intune을 사용하여 디바이스를 관리하는지 여부에 관계없이 최종 사용자가 이미지, AV 및 PDF 파일을 보다 안전하게 볼 수 있도록 IT 관리자가 모바일 응용 프로그램 관리 정책을 배포할 수 있습니다.  
+  IT에서 Intune을 사용하여 디바이스를 관리하는지 여부에 관계없이 최종 사용자가 이미지, AV 및 PDF 파일을 보다 안전하게 볼 수 있도록 IT 관리자가 모바일 애플리케이션 관리 정책을 배포할 수 있습니다.  
 
 - **Android 및 iOS 회사 포털 앱에 대한 향상된 기능**
 
@@ -735,7 +735,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 ### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 및 System Center 2012 R2 Configuration Manager (RTM): 2017 년 4 월 10 일에 종료 하는 하이브리드 모바일 장치 관리에 대 한 지원
 *2017년 1월 11일*
 
-System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configuration Manager RTM에 대한 지원이 2016년 7월 12일에 종료됩니다. 그 이후 Microsoft Intune 서비스에 연결하는 이러한 릴리스의 하이브리드 MDM에 대한 지원이 2017년 4월 10일에 종료됩니다. 이 날짜 이후에는 이러한 릴리스에서 하이브리드 MDM의 작동이 중지됩니다. Intune 커넥터가 더 이상 Intune 서비스에 연결되지 않으므로 관리되는 디바이스는 기본적으로 관리되지 않습니다. 업그레이드가 발생할 때까지 Configuration Manager 데이터(예: 정책 및 응용 프로그램)가 Intune으로 이동하지 않으며 관리되는 디바이스 데이터가 Configuration Manager로 이동하지 않습니다.
+System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configuration Manager RTM에 대한 지원이 2016년 7월 12일에 종료됩니다. 그 이후 Microsoft Intune 서비스에 연결하는 이러한 릴리스의 하이브리드 MDM에 대한 지원이 2017년 4월 10일에 종료됩니다. 이 날짜 이후에는 이러한 릴리스에서 하이브리드 MDM의 작동이 중지됩니다. Intune 커넥터가 더 이상 Intune 서비스에 연결되지 않으므로 관리되는 디바이스는 기본적으로 관리되지 않습니다. 업그레이드가 발생할 때까지 Configuration Manager 데이터(예: 정책 및 애플리케이션)가 Intune으로 이동하지 않으며 관리되는 디바이스 데이터가 Configuration Manager로 이동하지 않습니다.
 
 Configuration Manager 2012 SP1 또는 R2 RTM과 함께 하이브리드 배포를 실행하는 경우 2017년 4월 10일 이전에 Configuration Manager(현재 분기)로 업그레이드하거나 Configuration Manager 2012의 지원되는 최신 서비스 팩(R2 SP1 또는 SP2)으로 업그레이드하여 서비스 중단을 방지하는 것이 좋습니다.
 

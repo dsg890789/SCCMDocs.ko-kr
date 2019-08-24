@@ -222,7 +222,7 @@ ms.locfileid: "65497221"
 
 ##### <a name="to-configure-client-status-alerts-for-a-collection"></a>컬렉션에 대한 클라이언트 상태 경고를 구성하려면  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수** >   **장치 컬렉션**을 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 준수** >   **디바이스 컬렉션**을 클릭합니다.  
 
 2.  **디바이스 컬렉션** 목록에서 경고를 구성할 컬렉션을 선택하고 **홈** 탭의 **속성** 그룹에서 **속성**을 클릭합니다.  
 

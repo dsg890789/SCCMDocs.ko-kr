@@ -176,7 +176,7 @@ WSUS 및 자동 업데이트에서 Microsoft Update 클라우드 서비스와 �
 
 ## <a name="manage-office-365"></a>Office 365 관리
 
-Configuration Manager를 사용하여 Office 365를 배포 및 업데이트하는 경우 다음 끝점을 허용합니다.
+Configuration Manager를 사용하여 Office 365를 배포 및 업데이트하는 경우 다음 엔드포인트을 허용합니다.
 
 <!-- SCCMDocs#929 -->
 

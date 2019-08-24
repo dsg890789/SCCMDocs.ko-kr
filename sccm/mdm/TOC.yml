@@ -101,7 +101,7 @@
           href: deploy-use/creating-android-applications.md
         - name: Android 앱 구성 정책
           href: deploy-use/configure-android-apps-with-app-configuration-policies.md
-        - name: 모바일 응용 프로그램 관리 정책
+        - name: 모바일 애플리케이션 관리 정책
           href: deploy-use/protect-apps-using-mam-policies.md
         - name: 관리되는 브라우저 정책
           href: deploy-use/manage-internet-access-using-managed-browser-policies.md

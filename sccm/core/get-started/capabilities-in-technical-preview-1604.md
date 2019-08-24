@@ -42,7 +42,7 @@ ms.locfileid: "56128020"
 
 1.  Azure Active Directory에서 Configuration Manager를 "웹 애플리케이션 및/또는 웹 API" 관리 도구로 등록합니다. 이렇게 하면 나중에 필요한 클라이언트 ID가 제공됩니다.  
 
-    1.  [https://manage.windowsazure.com](https://manage.windowsazure.com)의 **Active Directory** 노드에서 Azure Active Directory를 선택한 다음, **응용 프로그램** > **추가**를 클릭합니다.  
+    1.  [https://manage.windowsazure.com](https://manage.windowsazure.com)의 **Active Directory** 노드에서 Azure Active Directory를 선택한 다음, **애플리케이션** > **추가**를 클릭합니다.  
 
     2.  **조직에서 개발 중인 애플리케이션 추가**를 클릭합니다.  
 

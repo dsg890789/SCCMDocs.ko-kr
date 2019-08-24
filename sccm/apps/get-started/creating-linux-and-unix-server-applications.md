@@ -1,7 +1,7 @@
 ---
 title: Linux 및 UNIX 서버 애플리케이션 만들기
 titleSuffix: Configuration Manager
-description: Linux 및 Unix 장치용 애플리케이션을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
+description: Linux 및 Unix 디바이스용 애플리케이션을 만들고 배포할 때 고려해야 할 사항을 확인합니다.
 ms.date: 03/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app

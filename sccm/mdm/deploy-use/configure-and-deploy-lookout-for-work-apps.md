@@ -27,7 +27,7 @@ ms.locfileid: "67194655"
 
 
 ## <a name="android-google-play-store-app"></a>Android(Google Play 스토어 앱)
-1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **응용 프로그램 관리** > **응용 프로그램**을 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **소프트웨어 라이브러리** > **애플리케이션 관리** > **애플리케이션**을 클릭합니다.  
 
 2.  소프트웨어 배포 마법사의 **일반** 페이지에서 다음 정보를 지정합니다.  
     - 유형: **Google Play의 Android용 앱 패키지**를 선택합니다.
@@ -55,7 +55,7 @@ ms.locfileid: "67194655"
 
 3. iOS 사용자에 대해 Azure AD(Azure Active Directory) 인증을 사용하도록 설정합니다.
    1.  [Azure Portal의 Azure AD 블레이드](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에 로그인하고 앱 등록 페이지로 이동합니다.  
-   2.  **Lookout for Work iOS 앱**으로 이름을 지정하고 응용 프로그램 유형으로 **네이티브**를 선택합니다.  
+   2.  **Lookout for Work iOS 앱**으로 이름을 지정하고 애플리케이션 유형으로 **네이티브**를 선택합니다.  
    ![네이티브 클라이언트 앱 옵션을 보여 주는 앱 추가 대화 상자 스크린샷](media/aad-add-app-reg.png)
 
    3.  이 리디렉션 URI의 경우 다음 형식 `lookoutwork://com.lookout.enterprise.<yourcompanyname>`을 사용하여 `<yourcompanyname>`을 회사 이름으로 대체합니다. `lookoutwork://com.lookout.enterprise.contoso`

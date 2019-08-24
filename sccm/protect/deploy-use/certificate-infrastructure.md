@@ -43,7 +43,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
         인증서 프로필 만들기 마법사를 실행할 때 SCEP 설정 프로필을 만드는 데 사용할 인증서 템플릿을 찾아 선택하려면 이 권한이 필요합니다. 인증서 템플릿을 선택하면 마법사의 일부 설정이 자동으로 채워집니다. 따라서 사용자가 구성할 항목이 적어지고 네트워크 디바이스 등록 서비스에 사용되는 인증서 템플릿과 호환되지 않는 설정을 선택할 위험이 줄어듭니다.  
 
-   -   네트워크 디바이스 등록 서비스 응용 프로그램 풀에서 사용하는 SCEP 서비스 계정의 경우: **읽기** 및 **등록** 권한  
+   -   네트워크 디바이스 등록 서비스 애플리케이션 풀에서 사용하는 SCEP 서비스 계정의 경우: **읽기** 및 **등록** 권한  
 
         이 요구 사항은 System Center Configuration Manager에 한정되지 않지만 네트워크 디바이스 등록 서비스를 구성하는 과정에 필요합니다. 자세한 내용은 TechNet의 Active Directory 인증서 서비스 라이브러리에서 [Network Device Enrollment Service Guidance(네트워크 디바이스 등록 서비스 지침)](http://go.microsoft.com/fwlink/p/?LinkId=309016) 를 참조하세요.  
 
@@ -158,7 +158,7 @@ System Center Configuration Manager 계층에 인증서 등록 지점을 하나 
 
     -   사이트 시스템 서버에서 *<Configuration Manager 설치 경로\>* \Logs\crpsetup.log 파일 및 *<Configuration Manager 설치 경로\>* \Logs\crpmsi.log 파일을 사용합니다. 설치가 성공하면 종료 코드 0이 반환됩니다.  
 
-    -   브라우저를 사용하여 https://server1.contoso.com/CMCertificateRegistration과 같은 인증서 등록 지점의 URL에 연결할 수 있는지 확인합니다. HTTP 404 설명과 함께 애플리케이션 이름에 대한 **서버 오류** 페이지가 나타나야 합니다.  
+    -   브라우저를 사용하여 https://server1.contoso.com/CMCertificateRegistration 과 같은 인증서 등록 지점의 URL에 연결할 수 있는지 확인합니다. HTTP 404 설명과 함께 애플리케이션 이름에 대한 **서버 오류** 페이지가 나타나야 합니다.  
 
 11. 인증서 등록 지점에서 기본 사이트 서버 컴퓨터의 *<ConfigMgr 설치 경로\>* \inboxes\certmgr.box 폴더에 자동으로 만든 내보낸 루트 CA용 인증서 파일을 찾습니다. 나중에 네트워크 디바이스 등록 서비스를 실행하는 서버에 System Center Configuration Manager 정책 모듈을 설치할 때 안전하게 액세스할 수 있도록 보안이 유지되는 위치에 이 파일을 저장합니다.  
 
