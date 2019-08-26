@@ -2,7 +2,7 @@
 title: Windows as a Service 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 WaaS(Windows as a Service)의 상태를 보고, 배포 링을 구성할 서비스 계획을 만들고, Windows 10 클라이언트 지원이 끝나갈 때 경고를 볼 수 있습니다.
-ms.date: 07/26/2019
+ms.date: 08/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cf8e70146fa369e11cd26bdd5f982380678655a
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 165574cb85a41cb8acba9efba653ebc7fc4a6fe1
+ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537056"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974698"
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
@@ -36,9 +36,11 @@ ms.locfileid: "68537056"
 
 -   Windows 10 컴퓨터는 소프트웨어 업데이트 관리를 위해 WSUS(Windows Server Update Services)에서 Configuration Manager 소프트웨어 업데이트를 사용해야 합니다. 컴퓨터가 소프트웨어 업데이트 관리를 위해 비즈니스용 Windows 업데이트(또는 Windows 참가자)를 사용할 때 Windows 10 서비스 계획에서 해당 컴퓨터가 평가되지 않습니다. 자세한 내용은 [Windows 10에서 비즈니스용 Windows 업데이트와 통합](../../sum/deploy-use/integrate-windows-update-for-business-windows-10.md)을 참조하십시오.  
 
--   WSUS 4.0, [핫픽스 3095113](https://support.microsoft.com/kb/3095113) 을 소프트웨어 업데이트 지점 및 사이트 서버에 설치해야 합니다. 이 핫픽스는 **업그레이드** 소프트웨어 업데이트 분류를 추가합니다. 자세한 내용은 [소프트웨어 업데이트에 대한 필수 조건](../../sum/plan-design/prerequisites-for-software-updates.md)을 참조하세요.  
-
--   컴퓨터를 Windows 10 1주년 업데이트 및 이후 버전으로 업그레이드하려면 [핫픽스 3159706](https://support.microsoft.com/kb/3159706)을 포함하는 WSUS 4.0이 소프트웨어 업데이트 지점 및 사이트 서버에 설치되어 있어야 합니다. 이 핫픽스를 설치하기 위해 수행해야 하는 수동 단계는 지원 문서에 설명되어 있습니다. 자세한 내용은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/05/update-your-configmgr-1606-sup-servers-to-deploy-the-windows-10-anniversary-update/)(Enterprise Mobility 및 보안 블로그)를 참조하세요.
+- 지원 되는 WSUS 버전 사용: 
+  - WSUS 10.0.14393(Windows Server 2016의 역할)
+  - WSUS 10.0.17763(Windows Server 2019의 역할)(Configuration Manager 1810 이상 필요)
+  - WSUS 6.2 및 6.3(Windows Server 2012 및 Windows Server 2012 R2의 역할)
+    - [Kb 3095113 및 kb 3159706 (또는 이와 동등한 업데이트)](/sccm/sum/plan-design/prerequisites-for-software-updates#BKMK_wsus2012) 는 WSUS 6.2 및 6.3에 설치 해야 합니다.
 
 -   하트비트 검색을 사용합니다. Windows 10 서비스 대시보드에 표시되는 데이터는 검색을 사용하여 찾을 수 있습니다. 자세한 내용은 [Configure Heartbeat Discovery](../../core/servers/deploy/configure/configure-discovery-methods.md#BKMK_ConfigHBDisc)을 참조하십시오.  
 
@@ -84,7 +86,7 @@ ms.locfileid: "68537056"
 <!--4224414-->
 *(1906 버전에서 도입됨)*
 
-규정 준수 통계를 통해 특정 Office 365 소프트웨어 업데이트를 필요로 하는 장치를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
+규정 준수 통계를 드릴스루하여 특정 Office 365 소프트웨어 업데이트가 필요한 디바이스를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
 
 1. **소프트웨어 라이브러리** > **Windows 10 서비스** > **모든 Windows 10 업데이트**로 가기.
 1. 하나 이상의 디바이스에 필요한 업데이트를 선택합니다.
@@ -153,7 +155,7 @@ ms.locfileid: "68537056"
 
    -   **이 서비스 계획을 적용할 Windows 준비 상태 지정**: 다음 옵션 중 하나를 선택합니다.  
 
-       -   **반기 채널(대상 지정)** : 이 서비스 모델에서는 Microsoft가 기능 업데이트를 릴리스하는 즉시 사용할 수 있습니다.
+       -   **반기 채널(대상 지정)**: 이 서비스 모델에서는 Microsoft가 기능 업데이트를 릴리스하는 즉시 사용할 수 있습니다.
 
        -   **반기 채널**: 이 서비스 채널은 일반적으로 광범위한 배포에 사용됩니다. 반기 채널의 Windows 10 클라이언트는 대상 채널의 디바이스와 동일한 Windows 10 빌드를 나중에 수신합니다.
 

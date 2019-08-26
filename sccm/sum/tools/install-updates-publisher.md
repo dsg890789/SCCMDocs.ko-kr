@@ -2,7 +2,7 @@
 title: Updates Publisher 설치
 titleSuffix: Configuration Manager
 description: 환경에 System Center Updates Publisher 설치
-ms.date: 02/19/2019
+ms.date: 08/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb07b154c1da9c7b93f2d8e0f06b825eb52fd561
-ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
+ms.openlocfilehash: 7194d77d7d1fd2c4f9cd143bcf3b69446f394c08
+ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65443189"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974682"
 ---
 # <a name="install-updates-publisher"></a>Updates Publisher 설치
 
@@ -41,7 +41,7 @@ System Center Updates Publisher는 System Center Configuration Manager와 함께
 Updates Publisher를 실행하는 컴퓨터에는 다음이 필요합니다.
 
 -   **64비트 운영 체제**: Updates Publisher를 설치하려면 컴퓨터에서 64비트 운영 체제를 실행해야 합니다.
--   **WSUS 4.0 이상**:
+-   **WSUS 6.2 이상**:
     -   Windows Server에서 이 요구 사항을 충족시키려면 기본 관리 콘솔을 설치합니다.
     -   Windows 10 및 Windows 8.1의 경우 [Windows 운영 체제용 RSAT(원격 서버 관리 도구)](https://support.microsoft.com/help/2693643/remote-server-administration-tools-rsat-for-windows-operating-systems)를 설치합니다. 그러면 Updates Publisher를 사용하는 데 필요한 지원(*API 및 PowerShell cmdlet* 및 *사용자 인터페이스 관리 콘솔*)이 설치됩니다.
 -   **사용 권한**:

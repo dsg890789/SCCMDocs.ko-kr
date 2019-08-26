@@ -2,7 +2,7 @@
 title: 작업 순서 디버그
 titleSuffix: Configuration Manager
 description: 작업 순서 디버깅 도구를 사용 하 여 작업 순서 문제를 해결할 수 있습니다.
-ms.date: 07/26/2019
+ms.date: 08/16/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: 4b60b0e1-ffa4-4fd5-864e-70a0546c8b3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fadcd362f44e5261ae5226ed22b7cff4c4eb261f
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 00c05b7023f90783fbdd741a354cfd6382f632ad
+ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537741"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549567"
 ---
 # <a name="debug-a-task-sequence"></a>작업 순서 디버그
 
@@ -44,7 +44,7 @@ ms.locfileid: "68537741"
 1. 작업 순서를 선택합니다. 리본 메뉴의 배포 그룹에서 **디버그**를 선택합니다.
 
     > [!Tip]  
-    > 또는 작업 순서가 배포되는 컬렉션에서 **TSDebugMode** 변수를 `TRUE`로 설정합니다. 이 변수는 해당 컬렉션의 모든 디바이스에서 모든 작업 순서의 동작을 변경합니다.  
+    > 또는 작업 순서가 배포되는 컬렉션 또는 컴퓨터 개체에서 **TSDebugMode** 변수를 `TRUE`로 설정합니다. 이 변수 집합이 있는 모든 장치는 해당 파일에 배포 된 모든 작업 순서를 디버그 모드로 전환 합니다.
 
 1. 디버그 배포를 만듭니다. 배포 설정은 일반적인 작업 순서 배포와 동일 합니다. 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence#process)항목을 참조하세요.
 
