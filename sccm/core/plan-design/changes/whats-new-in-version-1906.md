@@ -2,7 +2,7 @@
 title: 버전 1906의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기의 버전 1906에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 08/07/2019
+ms.date: 08/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79901ed2922348de06467efbae8d720f9f2d75b5
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: 5ced44684415c60bede26e86a02a47ed555b2b9e
+ms.sourcegitcommit: 7b111cd8a797877031378349898810c3dd0a3750
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68860095"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69632001"
 ---
 # <a name="whats-new-in-version-1906-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1906의 새로운 기능
 
@@ -556,7 +556,8 @@ Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편
 **자산 및 규정 준수** 작업 영역의 **디바이스** 노드로 이동하여 디바이스를 선택합니다. 세부 정보 창에서 새 **컬렉션** 탭으로 전환합니다. 이 탭은 이 디바이스를 포함하는 컬렉션을 나열합니다.
 
 > [!Note]  
-> 이 탭은 현재 **디바이스 컬렉션** 노드의 디바이스 하위 노드에서 사용할 수 없습니다. 예를 들어, 컬렉션에서 **멤버 표시** 옵션을 선택할 때입니다.
+> - 이 탭은 현재 **디바이스 컬렉션** 노드의 디바이스 하위 노드에서 사용할 수 없습니다. 예를 들어, 컬렉션에서 **멤버 표시** 옵션을 선택할 때입니다.
+> - 일부 사용자에게는 이 탭이 예상대로 채워지지 않을 수 있습니다. 디바이스가 속한 컬렉션의 전체 목록을 확인하려면 **전체 관리자** 보안 역할이 있어야 합니다. 이것은 알려진 문제입니다. <!--5107309-->
 
 ### <a name="task-sequences-tab-in-applications-node"></a>애플리케이션 노드의 작업 순서 탭
 
@@ -614,7 +615,7 @@ Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편
 - [SMS 공급자 관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)
 - [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)
 
-<!-- Aside from new features, this release also includes additional changes such as bug fixes. For more information, see [Summary of changes in Configuration Manager current branch, version 1906](https://support.microsoft.com/help/4498910). -->
+ 새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1906의 변경 내용 요약](https://support.microsoft.com/help/4514258)을 참조하세요.
 
 Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1906 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1906-release-notes?view=sccm-ps)를 참조하세요.<!-- link is not live yet; will be published before this release branch -->
 
@@ -636,8 +637,8 @@ The following additional hotfixes are available to address specific issues:
 
 ## <a name="next-steps"></a>다음 단계
 
-현재 버전 1906은 조기 업데이트 링을 위해 릴리스되었습니다. 이 업데이트를 설치하려면 옵트인해야 합니다. 자세한 내용은 [조기 업데이트 링](/sccm/core/servers/manage/checklist-for-installing-update-1906#early-update-ring)을 참조하세요.
-<!-- As of <Date>, version 1906 is globally available for all customers to install. -->
+<!--At this time, version 1906 is released for the early update ring. To install this update, you need to opt in. For more information, see [Early update ring](/sccm/core/servers/manage/checklist-for-installing-update-1906#early-update-ring). -->
+2019년 8월 16일부터는 모든 고객이 설치할 수 있도록 버전 1906이 전 세계적으로 제공됩니다.
 
 이 버전을 설치할 준비가 되었으면 [Configuration Manager에 대한 업데이트 설치](/sccm/core/servers/manage/updates) 및 [업데이트 1906을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1906)을 참조하세요.
 

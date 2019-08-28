@@ -2,7 +2,7 @@
 title: 1906에 대한 검사 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 1906으로 업데이트하기 전에 수행할 작업을 알아봅니다.
-ms.date: 08/09/2019
+ms.date: 08/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a64fc82121535272c0417d1c2dbc6bed65745ce8
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: 37a995305ebfcf5f411c92af5092f9816e89e118
+ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956443"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549531"
 ---
 # <a name="checklist-for-installing-update-1906-for-configuration-manager"></a>Configuration Manager용 업데이트 1906을 설치하기 위한 검사 목록
 
@@ -68,32 +68,32 @@ Configuration Manager의 현재 분기를 사용하는 경우 버전 1906용 콘
 
 <!-- SCCMDocs#1397 -->
 
-<!-- As of <Date>, version 1906 is globally available for all customers to install. If you previously opted in to the early update ring, watch for an update to this current branch version. -->
+2019년 8월 16일부터는 모든 고객이 설치할 수 있도록 버전 1906이 전 세계적으로 제공됩니다. 이전에 초기 업데이트 링에 옵트인한 경우에는 현재 분기 버전에 대한 업데이트를 확인하세요.
 
-현재 버전 1906은 조기 업데이트 링을 위해 릴리스되었습니다. 이 업데이트를 설치하려면 옵트인해야 합니다. 다음의 PowerShell 스크립트는 버전 1906에 대해 조기 업데이트 링에 계층 구조나 독립 실행형 기본 사이트를 추가합니다.
+<!--At this time, version 1906 is released for the early update ring. To install this update, you need to opt-in. The following PowerShell script adds your hierarchy or standalone primary site to the early update ring for version 1906: 
 
-[버전 1906 옵트인 스크립트](https://go.microsoft.com/fwlink/?linkid=2099733) <!-- This fwlink points to the script package on the Download Center, don't change the link here! Make any changes to the fwlink target -->
+[Version 1906 opt-in script](https://go.microsoft.com/fwlink/?linkid=2099733) <!-- This fwlink points to the script package on the Download Center, don't change the link here! Make any changes to the fwlink target -->
 
-Microsoft는 스크립트를 디지털 방식으로 서명하고 이를 서명된 자동 압축 해제 가능 실행 파일 내에 번들로 묶습니다.
+<!--Microsoft digitally signs the script, and bundles it inside a signed self-extracting executable.
 
 > [!Note]  
-> 버전 1906 업데이트는 버전 1802 이상을 실행하는 사이트에만 적용됩니다.
+> The version 1906 update is only applicable to sites running version 1802 or later.
 
-조기 업데이트 링을 옵트인하려면:
+To opt-in to the early update ring:
 
-1. Windows PowerShell을 열고 **관리자 권한으로 실행**을 선택합니다.
-1. 다음 구문을 사용하여 **EnableEarlyUpdateRing1906.ps1** 스크립트를 실행합니다.
+1. Open Windows PowerShell and **Run as administrator**
+1. Run the **EnableEarlyUpdateRing1906.ps1** script, using the following syntax:
 
     `EnableEarlyUpdateRing1906.ps1 <SiteServer_Name> | SiteServer_IP>`
 
-    `SiteServer`에서 중앙 관리 사이트 또는 독립 실행형 기본 사이트 서버를 참조하는 위치입니다. 예를 들면 `EnableEarlyUpdateRing1906.ps1 cmprimary01`
+    Where `SiteServer` refers to the central administration site or standalone primary site server. For example, `EnableEarlyUpdateRing1906.ps1 cmprimary01`
 
-1. 업데이트를 확인합니다. 자세한 내용은 [사용 가능 업데이트 가져오기](/sccm/core/servers/manage/install-in-console-updates#get-available-updates)를 참조하세요.
+1. Check for updates. For more information, see [Get available updates](/sccm/core/servers/manage/install-in-console-updates#get-available-updates).
 
-이제 버전 1906 업데이트를 콘솔에서 사용할 수 있습니다.
+The version 1906 update should now be available in the console.
 
 > [!Important]  
-> 이 스크립트는 버전 1906용 조기 업데이트 링에만 사이트를 추가합니다. 영구적 변경 사항은 아닙니다.
+> This script only adds your site to the early update ring for version 1906. It's not a permanent change. -->
 
 
 ## <a name="checklist"></a>확인 목록

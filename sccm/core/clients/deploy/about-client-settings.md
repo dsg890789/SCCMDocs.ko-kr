@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0074e81aade8ee5e26a4bb0024b91244a3ce4111
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: d48b2f7a842da0a567c4ed1a51e85e0d283603cf
+ms.sourcegitcommit: 7b111cd8a797877031378349898810c3dd0a3750
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956220"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69632029"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -94,6 +94,7 @@ Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-
 버전 1906부터는 Configuration Manager 클라이언트가 캐시된 콘텐츠를 유지하는 최소 시간을 지정할 수 있습니다. 이 클라이언트 설정은 클라이언트가 캐시에 콘텐츠 삭제 전까지 보존하는 기간을 제어합니다.
 
 이 값은 기본적으로 1,440분(24시간)입니다.
+이 설정의 최대값은 10,080분(1주)입니다.
 
 이 설정을 통해 다양한 디바이스 유형에서 클라이언트 캐시를 더 상세히 제어할 수 있습니다. 하드 드라이브 크기가 적은 클라이언트에서는 값을 줄여야 했습니다. 다른 배포가 실행되기 전에 기존 콘텐츠를 유지할 필요가 없습니다.
 

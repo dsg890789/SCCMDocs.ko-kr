@@ -2,7 +2,7 @@
 title: Configuration Manager 콘솔
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔을 통해 이동에 대해 알아봅니다.
-ms.date: 08/05/2019
+ms.date: 08/16/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e99d82a39e1b3c1ef9e52072fc01ab722f3e3e61
-ms.sourcegitcommit: 4241c15a277c57b5480dea70fc30f1ed46ffd4f3
+ms.openlocfilehash: 593a479c713df76d63090749ee45cb89aeb413e4
+ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490097"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549509"
 ---
 # <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
 
@@ -290,7 +290,8 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 **자산 및 규정 준수** 작업 영역의 **디바이스** 노드로 이동하여 디바이스를 선택합니다. 세부 정보 창에서 새 **컬렉션** 탭으로 전환합니다. 이 탭은 이 디바이스를 포함하는 컬렉션을 나열합니다. 
 
 > [!Note]  
-> 이 탭은 현재 **디바이스 컬렉션** 노드의 디바이스 하위 노드에서 사용할 수 없습니다. 예를 들어, 컬렉션에서 **멤버 표시** 옵션을 선택할 때입니다.
+> - 이 탭은 현재 **디바이스 컬렉션** 노드의 디바이스 하위 노드에서 사용할 수 없습니다. 예를 들어, 컬렉션에서 **멤버 표시** 옵션을 선택할 때입니다.
+> - 일부 사용자에게는 이 탭이 예상대로 채워지지 않을 수 있습니다. 디바이스가 속한 컬렉션의 전체 목록을 확인하려면 **전체 관리자** 보안 역할이 있어야 합니다. 이것은 알려진 문제입니다. <!--5107309--> <!--5107309-->
 
 
 #### <a name="add-smbios-guid-column-to-device-and-device-collection-nodes"></a>디바이스 및 디바이스 컬렉션 노드에 SMBIOS GUID 열 추가
