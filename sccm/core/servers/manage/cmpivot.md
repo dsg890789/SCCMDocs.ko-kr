@@ -2,7 +2,7 @@
 title: 실시간 데이터에 대한 CMPivot
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 CMPivot을 사용하여 실시간으로 클라이언트를 쿼리하는 방법을 알아봅니다.
-ms.date: 07/30/2019
+ms.date: 08/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 339c9df44f2647b12936ce8a1077fd0ee0f7ee37
-ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
+ms.openlocfilehash: 4c4b0ed9150988deee3f8484e5c7b10eb919c086
+ms.sourcegitcommit: 9aa852d54670b5bc568a1ca6e57cd9c1349e5724
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68743736"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70053751"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -509,7 +509,7 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 
 - 디바이스, 제조업체, 모델 및 OSVersion 표시:
 
-   ```Kusto
+   ```
    ComputerSystem
    | project Device, Manufacturer, Model
    | join (OperatingSystem | project Device, OSVersion=Caption)
@@ -517,7 +517,7 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 
 - 디바이스의 부팅 시간 그래프 표시:
 
-   ```Kusto
+   ```
    SystemBootData
    | where Device == 'MyDevice'
    | project SystemStartTime, BootDuration, OSStart=EventLogStart, GPDuration, UpdateDuration

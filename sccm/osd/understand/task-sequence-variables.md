@@ -2,7 +2,7 @@
 title: 작업 순서 변수 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서를 제어 및 사용자 지정하는 변수에 대해 알아봅니다.
-ms.date: 08/16/2019
+ms.date: 08/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2283b87f305471f2831042f4b6b66d1c8a735b24
-ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
+ms.openlocfilehash: 8a279602a2e52b47f42f0204e6953801c26454a1
+ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549536"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021986"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
@@ -1524,7 +1524,10 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 
 ### <a name="SMSTSRebootRequested"></a> SMSTSRebootRequested
 
-현재 작업 순서 단계를 완료한 후 다시 시작이 요청됨을 나타냅니다. 다시 시작이 필요한 경우 이 변수를 `true`로 설정하세요. 그러면 이 작업 순서 단계가 수행된 후에 컴퓨터가 다시 시작됩니다. 작업 순서 단계에서 작업을 완료하기 위해 컴퓨터를 다시 시작해야 하는 경우 이 변수를 설정합니다. 컴퓨터가 다시 시작되면 다음 작업 순서 단계에서 작업 순서가 계속 실행됩니다.
+현재 작업 순서 단계를 완료한 후 다시 시작이 요청됨을 나타냅니다. 작업 순서 단계에서 작업을 완료하기 위해 컴퓨터를 다시 시작해야 하는 경우 이 변수를 설정합니다. 컴퓨터가 다시 시작되면 다음 작업 순서 단계에서 작업 순서가 계속 실행됩니다.
+
+- `HD`: 설치 된 OS를 다시 시작 합니다.
+- `WinPE`: 연결 된 부팅 이미지를 다시 시작 합니다.
 
 ### <a name="SMSTSRetryRequested"></a> SMSTSRetryRequested
 
@@ -1578,6 +1581,9 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 컴퓨터가 다시 시작될 때 이 단계에서 작업 순서가 일시 중지되는 시간을 지정하려면 SMSTSWaitForSecondReboot 값을 초 단위로 설정합니다. 두 번째 다시 시작이 있을 경우 충분한 시간을 허용합니다.
 
 예를 들어 SMSTSWaitForSecondReboot를 `600`으로 설정하면 다시 시작된 후 추가 단계가 실행되기 전에 작업 순서가 10분간 일시 중지됩니다. 이 변수는 단일 소프트웨어 업데이트 설치 작업 순서 단계에서 수백 개의 소프트웨어 업데이트를 설치하는 경우에 유용합니다.
+
+> [!Note]
+> 이 변수는 OS를 배포 하는 작업 순서에만 적용 됩니다. 사용자 지정 작업 순서에서는 작동 하지 않습니다. <!-- 2839998 -->
 
 ### <a name="TSDebugMode"></a>TSDebugMode
 

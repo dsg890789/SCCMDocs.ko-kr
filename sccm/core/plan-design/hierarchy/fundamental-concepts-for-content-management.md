@@ -2,7 +2,7 @@
 title: 콘텐츠 관리의 기본 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다.
-ms.date: 07/26/2019
+ms.date: 08/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d9cad46b4ca89ce890c0e9f9b4638107ba5c1ae
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: e53e5fc081be04209312cd3144c38d0ecd944fc1
+ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536708"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021961"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -187,7 +187,7 @@ Configuration Manager로 새로운 OS를 배포하면 작업 순서를 실행하
 <!--1358112-->
 Windows LEDBAT(Low Extra Delay Background Transport)는 백그라운드 네트워크 전송을 관리하는 데 유용한 Windows Server의 네트워크 정체 제어 기능입니다. 지원되는 Windows Server 버전에서 실행되는 배포 지점의 경우 네트워크 트래픽을 조정하는 데 유용한 옵션을 사용할 수 있습니다. 그런 다음, 클라이언트는 사용 가능한 경우에만 네트워크 대역폭을 사용합니다.
 
-전반적인 Windows LEDBAT에 대한 자세한 정보는 [새로운 전송 개선 사항](https://blogs.technet.microsoft.com/networking/2016/07/18/announcing-new-transport-advancements-in-the-anniversary-update-for-windows-10-and-windows-server-2016/) 블로그 게시물을 참조하세요.
+전반적인 Windows LEDBAT에 대한 자세한 정보는 [새로운 전송 개선 사항](https://techcommunity.microsoft.com/t5/Networking-Blog/Announcing-Transport-Features-and-Performance-Advancements-in/ba-p/339726) 블로그 게시물을 참조하세요.
 
 Configuration Manager 배포 지점에 Windows LEDBAT를 사용하는 방법에 대한 자세한 내용은 [배포 지점의 일반 설정을 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-general)하는 경우 **사용하지 않는 네트워크 대역폭을 사용하도록 다운로드 속도 조정(Windows LEDBAT)** 에 대한 설정을 참조하세요.
 

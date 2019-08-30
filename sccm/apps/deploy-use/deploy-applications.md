@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa56c5ec5b6ad3f24255d6b8e37e56c46c94d17f
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 7871e092369a096d8c776d4733e70095ef629a14
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68534916"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110189"
 ---
 # <a name="deploy-applications-with-configuration-manager"></a>Configuration Manager에서 애플리케이션 배포
 
@@ -26,7 +26,7 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 애플리
 
 애플리케이션을 배포하기 전에 애플리케이션에 대한 배포 유형을 하나 이상 만듭니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
 
-1906 버전부터 사용자 또는 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만들 수 있습니다. 자세한 내용은 [응용 프로그램 그룹 만들기](/sccm/apps/deploy-use/create-app-groups)를 참조 하세요.
+1906 버전부터 사용자 또는 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만들 수 있습니다. 자세한 내용은 [애플리케이션 그룹 만들기](/sccm/apps/deploy-use/create-app-groups)를 참조하세요.
 
 또한 애플리케이션 배포도 시뮬레이트할 수 있습니다. 이 시뮬레이션은 애플리케이션을 설치하거나 제거하지 않고 배포의 적용 여부를 테스트합니다. 시뮬레이트된 배포에서는 검색 방법, 배포 유형에 대한 요구 사항 및 종속성을 평가하고 **모니터링** 작업 영역의 **배포** 노드에서 이 결과를 보고합니다. 자세한 내용은 [애플리케이션 배포 시뮬레이트](/sccm/apps/deploy-use/simulate-application-deployments)를 참조하세요.
 
@@ -260,6 +260,8 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 애플리
 
 5. 애플리케이션을 배포할 때 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기** 옵션을 선택합니다. 이 옵션은 배포 속성의 **배포 설정** 탭에 있습니다.  
 
+> [!Note]
+> 실행 중인 실행 파일을 확인 하 고 응용 [프로그램 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallApplication) 작업 순서 단계에 포함 하도록 응용 프로그램을 구성 하는 경우 작업 순서에서 해당 파일을 설치 하지 못합니다. 이 작업 순서 단계를 오류 발생 시 계속 하도록 구성 하지 않으면 전체 작업 순서가 실패 합니다.
 
 ### <a name="client-behaviors-and-user-notifications"></a>클라이언트 동작과 사용자 알림
 

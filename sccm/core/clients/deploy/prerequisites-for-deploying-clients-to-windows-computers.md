@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f9881a8b2cc945b49d79d40777409379aef3fd
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 586083f0de3241adb20bacbf432563681b0370f0
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535631"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110093"
 ---
 # <a name="prerequisites-for-deploying-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건
 
@@ -59,7 +59,7 @@ SHA-1 알고리즘의 약점과 업계 표준에 맞출 필요성 때문에 Micr
 업데이트되지 않았거나 위에 나열된 버전보다 오래된 버전의 Windows에서 클라이언트를 관리해야 할 경우에는 Configuration Manager EIC(확장된 상호 운용성 클라이언트) 버전 1902를 사용합니다. 자세한 내용은 [확장된 상호 운용성 클라이언트](/sccm/core/understand/interoperability-client)를 참조하세요.
 
 > [!Tip]  
-> [자동 클라이언트 업데이트](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#use-automatic-client-upgrade)를 사용하지 않고 다른 메커니즘으로 클라이언트를 업데이트할 경우에는 ccmsetup 버전을 꼭 업데이트해야 합니다. 이전 버전의 ccmsetup은 버전 1906 클라이언트 바이너리에서의 새 SHA-2 코드 서명 인증서 유효성 검사가 올바로 진행되지 않을 수 있습니다. 예를 들어 ccmsetup.exe를 파일 공유로 복사하거나 그룹 정책으로 ccmsetup.msi를 사용할 경우를 가정해 보겠습니다.<!-- 4963362 -->
+> [자동 클라이언트 업데이트](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#bkmk_autoupdate)를 사용하지 않고 다른 메커니즘으로 클라이언트를 업데이트할 경우에는 ccmsetup 버전을 꼭 업데이트해야 합니다. 이전 버전의 ccmsetup은 버전 1906 클라이언트 바이너리에서의 새 SHA-2 코드 서명 인증서 유효성 검사가 올바로 진행되지 않을 수 있습니다. 예를 들어 ccmsetup.exe를 파일 공유로 복사하거나 그룹 정책으로 ccmsetup.msi를 사용할 경우를 가정해 보겠습니다.<!-- 4963362 -->
 >
 > 다음의 클라이언트 업데이트 메커니즘은 영향을 받지 않습니다.
 >

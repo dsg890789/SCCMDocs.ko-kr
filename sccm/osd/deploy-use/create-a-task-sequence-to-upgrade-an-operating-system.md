@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18c66a959e45a465b2e059dfa191708e885ff0c3
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 6054ce9c276c18e578315b92fbe3d100061795fa
+ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536990"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69999414"
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-os-in-configuration-manager"></a>Configuration Manager에서 OS를 업그레이드하는 작업 순서 만들기
 
@@ -177,7 +177,7 @@ Windows 기본 앱과 파일 연결을 설정하려면 이 그룹에 단계를 �
     `dism /online /Export-DefaultAppAssociations:"%UserProfile%\Desktop\DefaultAppAssociations.xml"`  
 1. 패키지에 XML 파일을 추가합니다.
 1. 이 그룹의 [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가합니다. XML 파일이 포함된 패키지를 지정한 후 다음 명령줄을 지정합니다.  
-    `dism /online /Import-DefaultAppAssociations:DefaultAppAssocations.xml`  
+    `dism /online /Import-DefaultAppAssociations:DefaultAppAssociations.xml`  
 
 자세한 내용은 [기본 애플리케이션 연결 내보내기 또는 가져오기](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations)을 참조하세요.
 

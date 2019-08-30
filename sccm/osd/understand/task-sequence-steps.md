@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f5760e26b7a52f31aea0a272c0e76a2eee547bd
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: f4ee01c85cf978b595aa9d6a7948503b34927c31
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537146"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110240"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -915,6 +915,9 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 - 데스크톱과 상호 작용해서는 안 됩니다. 프로그램이 자동으로 실행되거나 무인 모드로 실행되어야 합니다.  
 
 - 자체적으로 다시 시작해서는 안 됩니다. 애플리케이션이 표준 재시작 코드 3010을 사용하여 다시 시작을 요청해야 합니다. 이 동작은 이 단계가 다시 시작을 올바르게 처리하도록 합니다. 애플리케이션에서 3010 종료 코드를 반환하면 작업 순서 엔진이 컴퓨터를 다시 시작합니다. 다시 시작 후 작업 순서가 자동으로 계속됩니다.  
+
+> [!Note]
+> 응용 프로그램에서 [실행 중인 실행 파일을 확인](/sccm/apps/deploy-use/deploy-applications#bkmk_exe-check)하는 경우 작업 순서에서 해당 파일을 설치 하지 못합니다. 이 단계를 오류 발생 시 계속 하도록 구성 하지 않으면 전체 작업 순서가 실패 합니다.
 
 이 단계가 실행되면 애플리케이션에서 해당 배포 유형에 대한 요구 사항 규칙 및 검색 방법의 적용 여부를 확인합니다. 이 확인 결과에 따라 애플리케이션은 적용 가능한 배포 유형을 설치합니다. 배포 유형에 종속성이 포함되어 있으면 종속 배포 유형이 평가되고 이 단계의 일부로 설치됩니다. 독립 실행형 미디어에는 애플리케이션 종속성이 지원되지 않습니다.  
 

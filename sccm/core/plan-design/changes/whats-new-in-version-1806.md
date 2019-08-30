@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e260f26295a27c91a69cad563eaec2395b00a5c
-ms.sourcegitcommit: e0438c191df945305625ae91596c9417d16e8510
+ms.openlocfilehash: ad5034ca7475009f2dcd4b50df96d22b2f9428fa
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491686"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110124"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -167,7 +167,7 @@ Configuration Manager는 피어 캐시 원본이 다른 위치로 로밍되었�
 
 ### <a name="bkmk_ehttp"></a> 향상된 HTTP 사이트 시스템
 <!--1356889,1358228-->
-모든 Configuration Manager 통신 경로에는 HTTPS 통신을 사용하는 것이 좋지만 일부 고객의 경우 PKI 인증서 관리 오버헤드로 인해 어려울 수 있습니다. Azure AD(Azure Active Directory) 통합이 도입되면서 인증서 요구 사항의 일부는 줄었지만 전체가 없어지지는 않았습니다. 
+모든 Configuration Manager 통신 경로에는 HTTPS 통신을 사용하는 것이 좋지만 일부 고객의 경우 PKI 인증서 관리 오버헤드로 인해 어려울 수 있습니다.
 
 이번 릴리스에서는 클라이언트가 사이트 시스템과 통신하는 방법이 개선되었습니다. 사이트 속성의 **클라이언트 컴퓨터 통신** 탭에서 **HTTPS 또는 HTTP**에 대한 옵션을 선택한 다음, 새 옵션 **HTTP 사이트 시스템에 Configuration Manager 생성 인증서 사용**을 사용하도록 설정합니다. 이것은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)입니다.
 
@@ -308,7 +308,7 @@ Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번�
 
 ### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
 <!--1357891-->
-애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 애플리케이션을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정해야 합니다. 
+애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 애플리케이션을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정해야 합니다. 
 
 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
 
