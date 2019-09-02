@@ -1,8 +1,8 @@
 ---
-title: 새 버전의 Windows로 기존 컴퓨터 새로 고침
+title: 기존 컴퓨터의 OS 새로 고침
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 몇 가지 방법을 사용하여 기존 컴퓨터에 파티션을 만들고 포맷(초기화)하고 컴퓨터에 새 운영 체제를 설치할 수 있습니다.
-ms.date: 10/06/2016
+description: Configuration Manager에서 몇 가지 방법을 사용하여 기존 컴퓨터에 파티션을 만들고 포맷하고 컴퓨터에 새 운영 체제를 설치할 수 있습니다.
+ms.date: 08/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,76 +11,84 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8481b0934998a44b6142131d2cff3dbbd0821720
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: e2443f8ddc280e880ffb43a8e82bbc47b49d4395
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124247"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110212"
 ---
-# <a name="refresh-an-existing-computer-with-a-new-version-of-windows-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 새 버전의 Windows로 기존 컴퓨터 새로 고침
+# <a name="refresh-an-existing-computer-with-a-new-version-of-windows"></a>새 버전의 Windows로 기존 컴퓨터 새로 고침
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-이 항목에서는 기존 컴퓨터에 파티션을 만들고 포맷(초기화)하고 컴퓨터에 새 운영 체제를 설치하기 위한 System Center Configuration Manager의 일반 단계를 제공합니다. 이 시나리오에서는 PXE, 부팅 가능한 미디어 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 또한 설정을 저장하기 위한 상태 마이그레이션 지점을 설치하도록 선택한 다음 설치 후에 새 운영 체제로 복원할 수 있습니다. 올바른 운영 체제 배포 시나리오인지 확실하지 않으면 [엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)를 참조하세요.  
+Configuration Manager를 사용 하 여 기존 컴퓨터를 분할 하 고 포맷 한 다음 새 OS를 설치 합니다. 이 프로세스를 *이미지로 다시 설치* 또는 *초기화 및 로드*라고도 합니다. 이 시나리오에서는 PXE, 부팅 가능한 미디어 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 또한 상태 마이그레이션 지점을 사용 하 여 설정을 저장 한 다음 새 OS로 복원할 수 있습니다.
 
- 다음 섹션을 사용하여 새 버전의 Windows로 기존 컴퓨터를 새로 고치세요.  
+올바른 OS 배포 시나리오를 선택 하려면 [엔터프라이즈 운영 체제를 배포 하는 시나리오](/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)를 참조 하세요.  
 
-##  <a name="BKMK_Plan"></a> 계획  
+## <a name="BKMK_Plan"></a> 계획  
 
--   **인프라 요구 사항 계획 및 구현**  
+### <a name="plan-for-and-implement-infrastructure-requirements"></a>인프라 요구 사항 계획 및 구현
 
-     Windows ADK, USMT(사용자 환경 마이그레이션 도구), WDS(Windows 배포 서비스), 지원되는 하드 디스크 구성 등 운영 체제를 배포하기 전에 준비해야 하는 몇 가지 인프라 요구 사항이 있습니다. 자세한 내용은 [운영 체제 배포를 위한 인프라 요구 사항](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)을 참조하세요.  
+OS를 배포 하기 전에 준비 해야 하는 몇 가지 인프라 요구 사항이 있습니다. 이러한 요구 사항 중 일부에는 Windows ADK, USMT (사용자 환경 마이그레이션 도구) 및 WDS (Windows 배포 서비스)가 포함 됩니다. 자세한 내용은 [OS 배포를 위한 인프라 요구 사항](/sccm/osd/plan-design/infrastructure-requirements-for-operating-system-deployment)을 참조하세요.  
 
--   **상태 마이그레이션 지점 설치(설정을 전송하는 경우에만 필요)**  
+### <a name="install-a-state-migration-point"></a>상태 마이그레이션 지점 설치
 
-     기존 컴퓨터에서 설정을 캡처한 다음 설정을 새 운영 체제로 복원하려는 경우 상태 마이그레이션 지점을 설치해야 합니다. 자세한 내용은 [상태 마이그레이션 지점](../get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)을 참조하세요.  
+기존 컴퓨터에서 설정을 캡처한 다음 설정을 새 OS로 복원 하려면 상태 마이그레이션 지점을 사용 하는 것이 좋습니다. 자세한 내용은 [상태 마이그레이션 지점](/sccm/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#BKMK_StateMigrationPoints)을 참조하세요.  
 
-##  <a name="BKMK_Configure"></a> 구성  
+## <a name="BKMK_Configure"></a> 구성  
 
-1.  **부팅 이미지 준비**  
+### <a name="prepare-a-boot-image"></a>부팅 이미지 준비
 
-     부팅 이미지는 Windows PE 환경(제한된 구성 요소 및 서비스를 포함하는 최소 운영 체제)에서 컴퓨터를 시작합니다. 그런 후에 전체 Windows 운영 체제를 컴퓨터에 설치할 수 있습니다.   운영 체제를 배포할 때 사용할 부팅 이미지를 선택하고 이미지를 배포 지점에 배포해야 합니다. 다음에 따라 부팅 이미지를 준비합니다.  
+부팅 이미지는 Windows PE 환경에서 컴퓨터를 시작 합니다. Windows PE는 제한 된 구성 요소 및 서비스를 포함 하는 최소 OS입니다. 그러면 Windows PE에서 컴퓨터에 전체 Windows OS를 설치할 수 Configuration Manager.
 
-    -   부팅 이미지에 대한 자세한 내용은 [부팅 이미지 관리](../get-started/manage-boot-images.md)를 참조하세요.  
+자세한 내용은 다음 아티클을 참조하세요.
 
-    -   부팅 이미지를 사용자 지정하는 방법에 대한 자세한 내용은 [부팅 이미지 사용자 지정](../get-started/customize-boot-images.md)을 참조하세요.  
+- [부팅 이미지 관리](/sccm/osd/get-started/manage-boot-images)
 
-    -   배포 지점에 부팅 이미지를 배포합니다. 자세한 내용은 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)을 참조하십시오.  
+- [부팅 이미지 사용자 지정](/sccm/osd/get-started/customize-boot-images)
 
-2.  **운영 체제 이미지 준비**  
+- [콘텐츠 배포](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_distribute)
 
-     운영 체제 이미지에는 대상 컴퓨터에 운영 체제를 설치하는 데 필요한 파일이 포함되어 있습니다. 다음에 따라 운영 체제 이미지를 준비합니다.  
+### <a name="prepare-an-os-image"></a>OS 이미지 준비
 
-    -   운영 체제 이미지를 만드는 방법에 대한 자세한 내용은 [운영 체제 이미지 관리](../get-started/manage-operating-system-images.md)를 참조하세요.  
+OS 이미지에는 대상 컴퓨터에 OS를 설치 하는 데 필요한 파일이 포함 되어 있습니다.
 
-    -   배포 지점에 운영 체제 이미지 배포 자세한 내용은 [콘텐츠 배포](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)를 참조하세요.  
+자세한 내용은 다음 아티클을 참조하세요.
 
-3.  **네트워크를 통해 운영 체제를 배포하는 작업 순서 만들기**  
+- [OS 이미지 관리](/sccm/osd/get-started/manage-operating-system-images)
 
-     작업 순서를 사용하여 네트워크를 통한 운영 체제 설치를 자동화할 수 있습니다. [운영 체제를 설치하는 작업 순서 만들기](create-a-task-sequence-to-install-an-operating-system.md)의 단계를 수행하여 운영 체제를 배포하는 작업 순서를 만듭니다. 선택한 배포 방법에 따라 작업 순서에 대한 추가적으로 고려해야 할 사항이 있을 수 있습니다.  
+- [콘텐츠 배포](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_distribute)
 
-    > [!NOTE]  
-    >  이 시나리오에서 작업 순서는 컴퓨터의 하드 디스크를 포맷하고 파티션을 만듭니다. 사용자 설정을 캡처하려면 상태 마이그레이션 지점을 사용하고 작업 순서 만들기 마법사의 **상태 마이그레이션** 페이지에서 **상태 마이그레이션 지점에 사용자 설정 및 파일 저장** 을 선택해야 합니다. 사용자 설정 및 파일을 로컬로 저장하면 하드 디스크를 포맷할 때 손실되며 Configuration Manager에서 설정을 복원할 수 없게 됩니다. 자세한 내용은 [사용자 상태 관리](../get-started/manage-user-state.md)를 참조하세요.  
+### <a name="create-a-task-sequence-to-deploy-an-os"></a>OS를 배포하는 작업 순서 만들기
 
-##  <a name="BKMK_Deploy"></a> 배포  
+작업 순서를 사용 하 여 OS 설치를 자동화 합니다. 선택한 배포 방법에 따라 작업 순서에 대한 추가적으로 고려해야 할 사항이 있을 수 있습니다.
 
--   다음 배포 방법 중 하나를 사용하여 운영 체제를 배포합니다.  
+자세한 내용은 다음 아티클을 참조하세요.
 
-    -   [PXE를 사용하여 네트워크를 통해 Windows 배포](use-pxe-to-deploy-windows-over-the-network.md)  
+- [OS를 설치하는 작업 순서 만들기](/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-    -   [멀티캐스트를 사용하여 네트워크를 통해 Windows 배포](use-multicast-to-deploy-windows-over-the-network.md)  
+- [사용자 상태 관리](/sccm/osd/get-started/manage-user-state)
 
-    -   [팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기](create-an-image-for-an-oem-in-factory-or-a-local-depot.md)  
+## <a name="BKMK_Deploy"></a> 배포
 
-    -   [독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포](use-stand-alone-media-to-deploy-windows-without-using-the-network.md)  
+- OS를 배포하려면 다음 배포 방법 중 하나를 사용합니다.  
 
-    -   [부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포](use-bootable-media-to-deploy-windows-over-the-network.md)  
+  - [PXE를 사용하여 네트워크를 통해 Windows 배포](/sccm/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network)  
 
-    -   [소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포](use-software-center-to-deploy-windows-over-the-network.md)  
+  - [멀티캐스트를 사용하여 네트워크를 통해 Windows 배포](/sccm/osd/deploy-use/use-multicast-to-deploy-windows-over-the-network)  
+
+  - [팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기](/sccm/osd/deploy-use/create-an-image-for-an-oem-in-factory-or-a-local-depot)  
+
+  - [독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포](/sccm/osd/deploy-use/use-stand-alone-media-to-deploy-windows-without-using-the-network)  
+
+  - [부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포](/sccm/osd/deploy-use/use-bootable-media-to-deploy-windows-over-the-network)  
+
+  - [소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포](/sccm/osd/deploy-use/use-software-center-to-deploy-windows-over-the-network)  
 
 ## <a name="monitor"></a>모니터  
 
--   **작업 순서 배포 모니터링**  
+자세한 내용은 [OS 배포 모니터링](/sccm/osd/deploy-use/monitor-operating-system-deployments)을 참조하세요.  
 
-     운영 체제를 설치하는 작업 순서 배포를 모니터링하려면 [운영 체제 배포 모니터링](monitor-operating-system-deployments.md)을 참조하세요.  
+> [!Note]
+> UEFI 장치를 이미지로 다시 설치 하면 Windows 부팅 관리자가 부팅 로더에 새 항목을 만듭니다. 이 동작은 테스트 환경 또는 학생 랩에서와 같이 장치를 반복적으로 이미지로 다시 설치 하는 경우에 가장 두드러지게 나타납니다. 일반적으로 장치의 성능 또는 사용에 영향을 주지 않습니다. 목록이 너무 크면 일부 특정 하드웨어 장치에서 기능 문제가 발생할 수 있습니다. 예를 들어 외부 USB 드라이브로 부팅 하거나 목록에서 현재 부팅 항목을 선택할 수 없습니다. Windows **bcdedit** 명령을 사용 하 여 사용 되지 않는 부팅 항목을 지웁니다. 자세한 내용은 [BCDEdit/deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue)를 참조 하세요.<!-- 2841926 -->
