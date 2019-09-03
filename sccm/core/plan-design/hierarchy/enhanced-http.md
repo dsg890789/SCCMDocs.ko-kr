@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 583db1b3ac5682ef6eb65338a3e35d280f46fe38
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: b5634fb611d305fff196b7d6eb0b4ed97ff13d3e
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536739"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110076"
 ---
 # <a name="enhanced-http"></a>고급 HTTP
 
@@ -27,7 +27,7 @@ ms.locfileid: "68536739"
 > [!Tip]  
 > 이 기능은 버전 1806에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1810 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
 
-Microsoft는 모든 Configuration Manager 통신 경로에 HTTPS 통신을 사용할 것을 권장하지만 일부 고객의 경우 PKI 인증서 관리 부담으로 인해 어려울 수 있습니다. Azure AD(Azure Active Directory) 통합이 도입되면서 인증서 요구 사항의 일부는 줄었지만 전체가 없어지지는 않았습니다.
+Microsoft는 모든 Configuration Manager 통신 경로에 HTTPS 통신을 사용할 것을 권장하지만 일부 고객의 경우 PKI 인증서 관리 부담으로 인해 어려울 수 있습니다.
 
 Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스템과 통신하는 방법이 개선되었습니다. 이러한 개선에는 두 가지 기본 목표가 있습니다.  
 
@@ -51,7 +51,7 @@ Configuration Manager 버전 1806에서는 클라이언트가 사이트 시스�
 ### <a name="bkmk_scenario1"></a> 시나리오 1: 관리 지점의 클라이언트
 
 <!--1356889-->
-[Azure AD 조인 디바이스](/azure/active-directory/devices/concept-azure-ad-join)는 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.
+[Azure Active Directory(Azure AD) 가입 디바이스](/azure/active-directory/devices/concept-azure-ad-join)는 HTTP용으로 구성된 관리 지점과 통신할 수 있습니다. 사이트 서버는 관리 지점에 대한 인증서를 생성하여 보안 채널을 통해 통신할 수 있도록 허용합니다.
 
 > [!Note]  
 > 이 동작은 Configuration Manager 현재 분기 버전 1802에서 클라우드 관리 게이트웨이를 통해 통신하는 Azure AD 조인 클라이언트에 대한 HTTPS 지원 관리 지점을 요구하는 것으로 변경됩니다. 자세한 내용은 [HTTPS에 대한 관리 지점 설정](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway#bkmk_mphttps)을 참조하세요.  

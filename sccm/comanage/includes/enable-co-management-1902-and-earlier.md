@@ -3,23 +3,23 @@ author: mestew
 ms.author: mstewart
 ms.prod: configuration-manager
 ms.topic: include
-ms.date: 07/26/2019
+ms.date: 08/23/2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06a138edce2b42bb0f367544eb46bd9120c4fb8c
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 02e8f49972b3cc85dc25ff28c44ed87ea45d61fb
+ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533958"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70036738"
 ---
 <!--Don't apply H2/H3 in this include file since they are context driven by article-->
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **공동 관리** 노드를 선택합니다. 리본 메뉴에서 **공동 관리 구성**을 클릭하여 **공동 관리 구성 마법사**를 엽니다.
 
 2. 마법사의 **구독** 페이지에서 **로그인**을 선택합니다. Intune 테넌트에 로그인한 다음, **다음**을 선택합니다.  
 
-3. **사용 여부** 페이지에서 **Intune에 자동 등록** 설정을 **파일럿** 또는 **모두** 중에서 선택합니다.
+3. **사용 여부** 페이지에서 **Intune에 자동 등록** 설정을 **파일럿** 또는 **모두** 중에서 선택합니다. 사용자가 디바이스를 등록 취소하는 경우, 다음 정책 평가 때 디바이스가 다시 등록됩니다. <!--3330596--> 
 
-    이 작업을 통해 Intune에서 기존 Configuration Manager 클라이언트에 대해 자동 클라이언트 등록을 사용하도록 설정할 수 있습니다. **파일럿**을 선택하는 경우 파일럿 컬렉션의 멤버인 Configuration Manager 클라이언트만이 Intune에 자동으로 등록됩니다. 이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다.  
+    이 작업을 통해 Intune에서 기존 Configuration Manager 클라이언트에 대해 자동 클라이언트 등록을 사용하도록 설정할 수 있습니다. **파일럿**을 선택하는 경우 파일럿 컬렉션의 멤버인 Configuration Manager 클라이언트만이 Intune에 자동으로 등록됩니다. 이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다. 
 
     > [!Note]  
     > 버전 1806부터 자동 등록은 모든 클라이언트에 대해 직접 실행되지 않습니다. 이 동작은 대규모 환경에 대해 등록 확장을 보다 잘 수행하게 합니다. Configuration Manager는 클라이언트 수에 따라 등록을 임의 지정합니다. 예를 들어 사용자 환경에 100,000개의 클라이언트가 있는 경우 이 설정을 사용하도록 설정하면 며칠에 걸쳐 등록이 가능합니다.<!--1358003-->  

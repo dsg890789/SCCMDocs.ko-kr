@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ae4074897359dcebb9b91392bd36893d0276012
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 52259888bdfe343072bfa34e8eb053c0bb082789
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339004"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110133"
 ---
 # <a name="how-to-manage-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 관리하는 방법
 
@@ -189,10 +189,11 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 
 
 ## <a name="restart-clients"></a>클라이언트 다시 시작
-1710 버전부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트를 식별할 수 있습니다. 그런 다음 클라이언트 알림 작업을 사용하여 다시 시작합니다.
+
+Configuration Manager 콘솔을 사용하여 다시 시작이 필요한 클라이언트를 식별합니다. 그런 다음 클라이언트 알림 작업을 사용하여 다시 시작합니다.
 
 > [!Tip]
-> 이 기능이 작동하려면 1710 버전으로 클라이언트를 업그레이드해야 합니다. 관리 부담을 최소화하여 클라이언트를 최신 상태로 유지하도록 자동 클라이언트 업그레이드를 사용하는 것이 좋습니다. 자세한 내용은 [자동 클라이언트 업그레이드 사용](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#use-automatic-client-upgrade)을 참조하세요.
+> 힘을 덜 들이고 클라이언트를 최신 상태로 유지하려면 자동 클라이언트 업그레이드를 사용 설정하세요. 자세한 내용은 [자동 클라이언트 업그레이드 정보](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#bkmk_autoupdate)를 참조하세요.
 
 다시 시작을 보류한 디바이스를 식별하려면 Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하고 **디바이스** 노드를 선택합니다. 세부 정보 창의 **다시 시작 보류 중**이라는 새 열에서 각 디바이스에 대한 상태를 확인할 수 있습니다. 각 디바이스에는 다음 값 중 하나 이상이 있습니다. 
 - **아니요**: 다시 시작을 보류하지 않고 있습니다.

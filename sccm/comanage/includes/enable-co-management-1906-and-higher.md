@@ -3,27 +3,27 @@ author: mestew
 ms.author: mstewart
 ms.prod: configuration-manager
 ms.topic: include
-ms.date: 07/26/2019
+ms.date: 08/23/2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5654ffc17264a1a318d0d070eba3b44f273c1790
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 4960c0b9a6c383a73766083a9e385bcd60d799d3
+ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533898"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70036739"
 ---
 <!--3555750 FKA 1357954 --Don't apply H2/H3 in this include file since they are context driven by article-->
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **공동 관리** 노드를 선택합니다. 리본 메뉴에서 **공동 관리 구성**을 클릭하여 **공동 관리 구성 마법사**를 엽니다.
 
 2. 마법사의 **구독** 페이지에서 다음 설정을 구성합니다.
 
-    - 사용할 **Azure 환경**입니다. 예: Azure 공용 클라우드 또는 Azure 미국 정부 클라우드<!--4075452-->  
+    - 사용할 **Azure 환경**입니다. 예: Azure 퍼블릭 클라우드 또는 Azure 미국 정부 클라우드<!--4075452-->  
 
     - **로그인**을 선택합니다. Intune 테넌트에 로그인한 다음, **다음**을 선택합니다.  
 
 3. **사용 여부** 페이지에서 다음 설정을 선택합니다.
 
-   - **Intune에 자동 등록**: 기존 Configuration Manager 클라이언트에 대해 자동 클라이언트 등록을 사용하도록 설정할 수 있습니다. 이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다.
+   - **Intune에 자동 등록**: 기존 Configuration Manager 클라이언트에 대해 자동 클라이언트 등록을 사용하도록 설정할 수 있습니다. 이 옵션을 사용하면 클라이언트의 하위 집합에서 공동 관리를 사용하여 처음에 공동 관리를 테스트하고 단계적 접근을 사용하여 공동 관리를 롤아웃할 수 있습니다. 사용자가 디바이스를 등록 취소하는 경우, 다음 정책 평가 때 디바이스가 다시 등록됩니다. <!--3330596-->
 
       - **파일럿**: **Intune 자동 등록**의 멤버인 Configuration Manager 클라이언트만이 Intune에 자동으로 등록됩니다.
       - **모두**: 모든 Windows 10 버전 1709 이상 클라이언트에 대해 자동 등록을 사용하도록 설정합니다.

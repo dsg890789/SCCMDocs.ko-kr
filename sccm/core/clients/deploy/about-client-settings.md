@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 08/09/2019
+ms.date: 08/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d48b2f7a842da0a567c4ed1a51e85e0d283603cf
-ms.sourcegitcommit: 7b111cd8a797877031378349898810c3dd0a3750
+ms.openlocfilehash: 123515f7b7b78d3c92f7372adb6aec73ee64443c
+ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69632029"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69999401"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -91,7 +91,7 @@ Configuration Manager 클라이언트에 대한 [피어 캐시](/sccm/core/plan-
 ### <a name="minimum-duration-before-cached-content-can-be-removed-minutes"></a>캐시된 콘텐츠를 제거하기 전까지 최소 기간(분)
 
 <!--4485509-->
-버전 1906부터는 Configuration Manager 클라이언트가 캐시된 콘텐츠를 유지하는 최소 시간을 지정할 수 있습니다. 이 클라이언트 설정은 클라이언트가 캐시에 콘텐츠 삭제 전까지 보존하는 기간을 제어합니다.
+버전 1906부터는 Configuration Manager 클라이언트가 캐시된 콘텐츠를 유지하는 최소 시간을 지정할 수 있습니다. 이 클라이언트 설정은 공간이 더 필요할 경우 캐시에서 콘텐츠를 제거하기 전에 Configuration Manager 에이전트가 대기해야 하는 최소 시간을 정의합니다.
 
 이 값은 기본적으로 1,440분(24시간)입니다.
 이 설정의 최대값은 10,080분(1주)입니다.
@@ -325,8 +325,8 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 
 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.
 
-- **컴퓨터 다시 시작 카운트다운 알림의 다시 알림 기간 지정(시간)** (버전 1906부터 가능)<!--3976435-->
-  - 기본값은 4시간입니다.
+- **컴퓨터 다시 시작 카운트다운 알림의 다시 알림 기간 지정(분)** (버전 1906부터 가능)<!--3976435-->
+  - 기본값은 240분입니다.
   - 다시 알림 기간 값은 임시 알림 값에서 사용자가 놓치면 안 되는 알림의 값을 뺀 값보다 작아야 합니다.
   - 자세한 내용은 [디바이스 다시 시작 알림](/sccm/core/clients/deploy/device-restart-notifications)을 참조하세요.
 

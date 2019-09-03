@@ -2,7 +2,7 @@
 title: 콘솔 내 업데이트
 titleSuffix: Configuration Manager
 description: Microsoft 클라우드에서 Configuration Manager에 업데이트 설치
-ms.date: 07/26/2019
+ms.date: 08/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44430d86dfa017475edfe301f1ce112d6cdd9ab2
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 08cde14b93b5f38aece4ee90f8148f467aab25e3
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536220"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110054"
 ---
 # <a name="install-in-console-updates-for-configuration-manager"></a>Configuration Manager용 콘솔 내 업데이트 설치
 
@@ -180,7 +180,7 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 - 사이트 시스템 역할 또는 Configuration Manager 콘솔과 같은 영향을 받는 모든 구성 요소를 다시 설치합니다.  
 
-- 클라이언트 파일럿에 대한 선택 사항에 따라, 그리고 [자동 클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#use-automatic-client-upgrade)를 위해 클라이언트 업데이트를 관리합니다.  
+- 클라이언트 파일럿에 대한 선택 사항에 따라, 그리고 [자동 클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#bkmk_autoupdate)를 위해 클라이언트 업데이트를 관리합니다.  
 
 - 사이트 시스템 서버는 일반적으로 업데이트의 일부로 다시 시작할 필요가 없습니다. 역할에서 .NET을 사용하고 패키지에서 해당 필수 구성 요소를 업데이트하면 사이트 시스템이 다시 시작될 수 있습니다.  
 
@@ -280,6 +280,9 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
     - 사이트 서버에서 실행되는 중요한 사이트 구성 요소입니다.
     - 사이트 시스템 서버에 역할을 다시 설치해야 합니다. 개별 사이트 시스템 역할 다시 설치에 대한 상태는 표시되지 않습니다.
     - 이 서비스의 다시 설치는 신속하게 완료됩니다.
+
+    > [!Note]
+    > 일부 Configuration Manager 사이트 역할은 클라이언트 프레임워크를 공유합니다. 예를 들어 관리 지점과 풀(pull) 배포 지점이 그렇습니다. 이러한 역할이 업데이트될 때 이러한 서버의 클라이언트 버전도 동시에 업데이트됩니다. 자세한 내용은 [클라이언트 업그레이드 방법](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers)을 참조하세요.
 
 - **SMS_REPLICATION_CONFIGURATION_MONITOR 구성 요소 설치**
 

@@ -2,7 +2,7 @@
 title: 1906에 대한 검사 목록
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 1906으로 업데이트하기 전에 수행할 작업을 알아봅니다.
-ms.date: 08/17/2019
+ms.date: 08/27/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37a995305ebfcf5f411c92af5092f9816e89e118
-ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
+ms.openlocfilehash: 4b2c712a3d5b0948f5069fb84d48e5cbf01d27b1
+ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549531"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70110028"
 ---
 # <a name="checklist-for-installing-update-1906-for-configuration-manager"></a>Configuration Manager용 업데이트 1906을 설치하기 위한 검사 목록
 
@@ -201,6 +201,12 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 사이트를 업데이트하기 전에 CAS 및 기본 사이트에서 사이트 데이터베이스를 백업합니다. 이 백업은 재해 복구에 사용할 성공적인 백업이 있는지 확인합니다.
 
 자세한 내용은  [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
+
+### <a name="back-up-customized-files"></a>사용자 지정 파일 백업
+
+사용자 또는 타사 제품이 Configuration Manager 구성 파일을 사용자 지정하는 경우 사용자 지정의 복사본을 저장합니다.
+
+예를 들어 Configuration Manager 설치 디렉터리의 `bin\X64` 폴더에 있는 **osdinjection.xml** 파일에 사용자 지정 항목을 추가합니다. Configuration Manager를 업데이트한 후에는 이러한 사용자 지정이 유지되지 않습니다. 사용자 지정을 다시 적용해야 합니다.
 
 ### <a name="plan-for-client-piloting"></a>클라이언트 파일럿에 대한 계획
 

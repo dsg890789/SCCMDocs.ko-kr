@@ -2,7 +2,7 @@
 title: 디바이스 다시 시작 알림
 titleSuffix: Configuration Manager
 description: Configuration Manager의 다양한 클라이언트 설정을 위한 다시 시작 알림 동작
-ms.date: 08/07/2019
+ms.date: 08/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e057a7391bbdbe697b7f53c13a90a74efe22635
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: b73d3072883405d1ac2b455f12e1c252244884d1
+ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68859647"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69999460"
 ---
 # <a name="device-restart-notifications-in-configuration-manager"></a>Configuration Manager에서 디바이스 다시 시작 알림
 
@@ -105,7 +105,7 @@ ms.locfileid: "68859647"
 <!--3976435-->
 일부 관리자는 다시 시작 알림이 빈번하고 다시 시작을 연기할 수 있는 시간 프레임이 짧은 것을 선호합니다. 다른 관리자들은 사용자가 더 오랫동안 다시 시작을 연기하는 것을 허용하고 다시 시작 보류 중에 대해 사용자에게 가끔 알리는 것을 선호합니다. Configuration Manager 버전 1906은 다시 시작 알림 시기와 빈도에 대한 추가 제어 기능을 관리자에게 제공합니다. 다음 항목은 관리자에게 향상된 제어를 제공하기 위해 버전 1906에서 도입되었습니다.
 
-- **컴퓨터 다시 시작 카운트다운 알림의 다시 알림 기간 지정(시간)** 이 [컴퓨터 다시 시작 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#computer-restart)에 추가되었습니다.
+- **컴퓨터 다시 시작 카운트다운 알림의 다시 알림 기간 지정(분)** 이 [컴퓨터 다시 시작 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#computer-restart)에 추가되었습니다.
 - **사용자가 로그오프되거나 컴퓨터가 다시 시작되기 전의 간격(분)을 표시하는 임시 알림을 사용자에게 표시**의 최댓값이 1440분(24시간)에서 20160분(2주)으로 늘어났습니다.
 - 보류 중인 다시 시작 시간이 24시간 이내로 줄어들 때까지 다시 시작 알림의 진행률 표시줄이 표시되지 않습니다.
 

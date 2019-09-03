@@ -195,10 +195,12 @@
           href: plan-design/network/prepare-windows-servers.md
         - name: 사이트 시스템 서버용 웹 사이트
           href: plan-design/network/websites-for-site-system-servers.md
-        - name: PKI 인증서 요구 사항
-          href: plan-design/network/pki-certificate-requirements.md
         - name: CNG 인증서 개요
           href: plan-design/network/cng-certificates-overview.md
+        - name: PKI 인증서 요구 사항
+          href: plan-design/network/pki-certificate-requirements.md
+        - name: PKI 인증서 배포 예
+          href: plan-design/network/example-deployment-of-pki-certificates.md
     - name: 진단 및 사용 현황 데이터
       items:
         - name: 진단 및 사용 현황 데이터 개요
@@ -253,6 +255,8 @@
       items:
         - name: 기술 미리 보기 개요
           href: get-started/technical-preview.md
+        - name: 1908.2 기능
+          href: get-started/2019/technical-preview-1908-2.md
         - name: 1908 기능
           href: get-started/2019/technical-preview-1908.md
         - name: 1907 기능
