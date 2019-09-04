@@ -2,7 +2,7 @@
 title: Desktop Analytics 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 분석을 설정 하 고 등록 하는 방법에 대 한 지침입니다.
-ms.date: 06/14/2019
+ms.date: 09/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a098c560305429e4bba65c95a65f3b0d2e8c45
-ms.sourcegitcommit: 315fbb9c44773b3b1796ae398568cb61bd07092e
+ms.openlocfilehash: ad8111b7d49f89b85c2a4f8b0bd9336a13446a91
+ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374425"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243668"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>데스크톱 분석을 설정 하는 방법
 
@@ -35,7 +35,7 @@ ms.locfileid: "68374425"
 
 2. **서비스 계약 수락** 페이지에서 서비스 계약을 검토 하 고 **동의**를 선택 합니다.  
 
-3. **구독 확인** 페이지에서 필요한 적격 라이선스 목록을 검토 합니다. **지원 되는 구독 중 하나 이상이 있습니까?** 옆의 설정을 **예** 로 전환 하 고 다음 **을 선택 합니다**.  
+3. **구독 확인** 페이지에서 필요한 적격 라이선스 목록을 검토 합니다. **지원 되는 구독 중 하나 이상이 있습니까?** 옆의 설정을 **예** 로 전환 하 **고 다음을 선택 합니다**.  
 
 4. 사용자에 게 **액세스 권한 부여** 페이지에서 다음을 수행 합니다.
 
@@ -54,9 +54,11 @@ ms.locfileid: "68374425"
     - 데스크톱 분석에 기존 작업 영역을 사용 하려면 해당 작업 영역을 선택 하 고 다음 단계를 계속 진행 합니다.  
 
         > [!Note]  
-        > Windows Analytics를 이미 사용 중인 경우에는 동일한 작업 영역을 선택 합니다. 이전에 Windows Analytics에 등록 한 데스크톱 분석에 장치를 했다가 해야 합니다.
-        >
         > Azure AD 테 넌 트 당 하나의 데스크톱 분석 작업 영역만 사용할 수 있습니다. 장치는 하나의 작업 영역에만 진단 데이터를 보낼 수 있습니다.  
+
+        Windows Analytics를 이미 사용 중인 경우에는 동일한 작업 영역을 선택 합니다. 이전에 Windows Analytics에 등록 한 데스크톱 분석에 장치를 했다가 해야 합니다.
+
+        선택한 Windows Analytics 작업 영역에서 입력을 마이그레이션하려면 **Windows analytics에서 입력을 확인** 하 시겠습니까?를 **예**로 설정 합니다. 마이그레이션하지 않으려면이 설정을 **아니요**로 전환 합니다. 자세한 내용은 [기존 Windows Analytics 고객](/sccm/desktop-analytics/faq#existing-windows-analytics-customers)에 대 한 FAQ를 참조 하세요.
 
     - 데스크톱 분석의 작업 영역을 만들려면 **작업 영역 추가**를 선택 합니다.  
 
