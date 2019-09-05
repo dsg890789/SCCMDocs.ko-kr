@@ -72,6 +72,8 @@
           href: deploy-use/link-users-and-devices-with-user-device-affinity.md
         - name: 비즈니스용 Microsoft 스토어 대량 구매 앱
           href: deploy-use/manage-apps-from-the-windows-store-for-business.md
+        - name: 비즈니스용 Microsoft 스토어 통합 문제 해
+          href: deploy-use/troubleshoot-microsoft-store-for-business-integration.md
         - name: App-V 가상 환경
           href: deploy-use/create-app-v-virtual-environments.md
         - name: 애플리케이션 가져오기 및 내보내기
