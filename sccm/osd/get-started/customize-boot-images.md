@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08156819af349af0f052cf2b58e8b4a44ef7b74b
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: dad3906732a237cad94ae94f9974d94fd72292c2
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67516204"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380314"
 ---
 # <a name="customize-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 사용자 지정
 
@@ -38,7 +38,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
    Windows PE 3.1<sup>1</sup> 및 Windows PE 5  
 
-   <sup>1</sup> 부팅 이미지가 Windows PE 3.1을 기반으로 하는 경우에만 Configuration Manager에 부팅 이미지를 추가할 수 있습니다. Windows 7 SP1용 Windows AIK 추가 기능을 설치하여 Windows 7 SP1용 Windows AIK 추가 기능(Windows PE 3.1에 기반)이 포함된 Windows 7용 Windows AIK(Windows PE 3에 기반)로 업그레이드하세요. [Microsoft 다운로드 센터](http://www.microsoft.com/download/details.aspx?id=5188)에서 Windows 7 SP1용 Windows AIK 추가 기능을 다운로드할 수 있습니다.  
+   <sup>1</sup> 부팅 이미지가 Windows PE 3.1을 기반으로 하는 경우에만 Configuration Manager에 부팅 이미지를 추가할 수 있습니다. Windows 7 SP1용 Windows AIK 추가 기능을 설치하여 Windows 7 SP1용 Windows AIK 추가 기능(Windows PE 3.1에 기반)이 포함된 Windows 7용 Windows AIK(Windows PE 3에 기반)로 업그레이드하세요. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=5188)에서 Windows 7 SP1용 Windows AIK 추가 기능을 다운로드할 수 있습니다.  
 
    예를 들어 Configuration Manager를 설치한 경우 Configuration Manager 콘솔에서 Windows 10용 Windows ADK(Windows PE 10 기반)의 부팅 이미지를 사용자 지정할 수 있습니다. 그러나 Windows PE 5를 기반으로 하는 부팅 이미지가 지원되지만 여러 컴퓨터의 부팅 이미지를 사용자 지정하고 Windows 8용 Windows ADK와 함께 설치된 DISM 버전을 사용해야 합니다. 그런 다음 부팅 이미지를 Configuration Manager 콘솔에 추가할 수 있습니다.  
 
@@ -66,7 +66,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
 1. 다른 버전의 Windows AIK 또는 Windows ADK와 어떤 Configuration Manager 구성 요소도 설치되어 있지 않은 컴퓨터에 Windows ADK를 설치합니다.  
 
-2. [Microsoft 다운로드 센터](http://www.microsoft.com/download/details.aspx?id=39982)에서 Windows 8.1용 Windows ADK를 다운로드합니다.  
+2. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=39982)에서 Windows 8.1용 Windows ADK를 다운로드합니다.  
 
 3. Windows ADK 설치 폴더(예: <*설치 경로*>\Windows Kits\\<*버전*>\Assessment and Deployment Kit\Windows Preinstallation Environment\\<*x86 또는 amd64*>\\<*로캘*>)에서 부팅 이미지를 사용자 지정할 컴퓨터의 대상 폴더로 부팅 이미지(wimpe.wim)를 복사합니다. 이 절차에서는 C:\WinPEWAIK를 대상 이름으로 사용합니다.  
 
@@ -186,9 +186,9 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
 #### <a name="to-customize-a-boot-image-that-uses-windows-pe-31"></a>Windows PE 3.1을 사용하는 부팅 이미지를 사용자 지정하려면  
 
-1. 다른 버전의 Windows AIK 또는 Windows ADK와 어떤 Configuration Manager 구성 요소도 설치되어 있지 않은 컴퓨터에 Windows AIK를 설치합니다. [Microsoft 다운로드 센터](http://www.microsoft.com/download/details.aspx?id=5753)에서 Windows AIK를 다운로드합니다.  
+1. 다른 버전의 Windows AIK 또는 Windows ADK와 어떤 Configuration Manager 구성 요소도 설치되어 있지 않은 컴퓨터에 Windows AIK를 설치합니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=5753)에서 Windows AIK를 다운로드합니다.  
 
-2. Windows 7 SP1용 Windows AIK 추가 기능을 1단계의 컴퓨터에 설치합니다. [Microsoft 다운로드 센터](http://www.microsoft.com/download/details.aspx?id=5188)에서 Windows 7 SP1용 Windows AIK 추가 기능을 다운로드합니다.  
+2. Windows 7 SP1용 Windows AIK 추가 기능을 1단계의 컴퓨터에 설치합니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=5188)에서 Windows 7 SP1용 Windows AIK 추가 기능을 다운로드합니다.  
 
 3. Windows AIK 설치 폴더(예: <*설치 경로*>\Windows AIK\Tools\PETools\amd64\\)에서 부팅 이미지를 사용자 지정할 컴퓨터의 폴더로 부팅 이미지(wimpe.wim)를 복사합니다. 이 절차에서는 C:\WinPEWAIK를 폴더 이름으로 사용합니다.  
 

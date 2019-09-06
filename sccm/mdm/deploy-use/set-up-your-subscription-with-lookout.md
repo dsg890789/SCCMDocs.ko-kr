@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0946c455732bc13520d3363187b22b118d6e403
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 55279eacbe0cddd62a8776b1ff8321b1168534e9
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678898"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380400"
 ---
 # <a name="set-up-your-subscription-for-lookout-mobile-threat-defense"></a>Lookout 모바일 위협 방어에 대한 구독 설정
 
@@ -62,8 +62,8 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
 
    Lookout 콘솔은 다음 두 가지 수준의 액세스를 지원합니다.  
 
-   - **모든 권한:** Azure AD 관리자 전체 액세스 권한이 있는 사용자 그룹을 만들고 필요에 따라 제한 된 액세스 권한이 있는 사용자 그룹을 만들 수 있습니다. 이러한 그룹의 사용자만 **Lookout 콘솔**에 로그인할 수 있습니다.
-   - **제한 된 액세스:** 이 그룹의 사용자는 아무런에 대 한 읽기 전용 액세스를 있고 여러 구성 및 Lookout 콘솔의 등록 관련 모듈에 대 한 액세스는 **보안 정책** Lookout 콘솔의 모듈입니다.  
+   - **모든 권한:** Azure AD 관리자는 모든 권한이 있는 사용자 그룹을 만들고 필요에 따라 액세스를 제한 하는 사용자에 대 한 그룹을 만들 수 있습니다. 이러한 그룹의 사용자만 **Lookout 콘솔**에 로그인할 수 있습니다.
+   - **제한 된 액세스:** 이 그룹의 사용자는 감시 콘솔의 여러 구성 및 등록 관련 모듈에 액세스할 수 없으며, 감시 콘솔의 **보안 정책** 모듈에 대 한 읽기 전용 액세스 권한이 있습니다.  
 
      > [!TIP]  
      > 사용 권한에 대한 자세한 내용은 [이 Lookout 지원 문서](https://personal.support.lookout.com/hc/articles/114094105653)를 참조하십시오.
@@ -106,7 +106,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
     >![Azure Portal, Azure Active Directory 서비스, 속성 페이지 스크린샷](media/aad-group-display-name.png)
 
     >[!NOTE]  
-    >새 디바이스를 확인할 시간 증분에 기본값 5분을 사용하는 것이 좋습니다. 현재 제한 사항, **Lookout 그룹 표시 이름의 유효성을 검사할 수 없습니다.** 확인 합니다 **표시 이름** Azure portal에서 필드가 Azure AD 보안 그룹과 정확히 일치 합니다. **중첩 그룹 만들기는 지원 되지 않습니다.**  Azure AD 보안 그룹을 Lookout에 사용 되는 사용자만 포함 해야 합니다. 다른 그룹을 포함할 수 없습니다.
+    >새 디바이스를 확인할 시간 증분에 기본값 5분을 사용하는 것이 좋습니다. 현재 제한 사항은 **그룹 표시 이름의 유효성을 검사할 수 없습니다.** Azure Portal의 **표시 이름** 필드가 Azure AD 보안 그룹과 정확히 일치 하는지 확인 합니다. **중첩 그룹 만들기는 지원 되지 않습니다.**  감시에 사용 되는 Azure AD 보안 그룹에는 사용자만 포함 해야 합니다. 다른 그룹을 포함할 수 없습니다.
 
 3.  그룹이 추가된 후 다음번에 사용자가 지원되는 해당 디바이스에서 Lookout for Work 앱을 열면 디바이스가 Lookout에서 활성화됩니다.
 
@@ -141,7 +141,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
 
 
 ## <a name="configure-threat-classification"></a>위협 분류 구성
-Lookout 모바일 위협 방어는 다양한 유형의 모바일 위협을 분류합니다. [Lookout 위협 분류](http://personal.support.lookout.com/hc/articles/114094130693)에는 기본 위험 수준이 연결되어 있습니다. 이러한 설정은 언제든지 회사 요구 사항에 맞게 변경할 수 있습니다.
+Lookout 모바일 위협 방어는 다양한 유형의 모바일 위협을 분류합니다. [Lookout 위협 분류](https://personal.support.lookout.com/hc/articles/114094130693)에는 기본 위험 수준이 연결되어 있습니다. 이러한 설정은 언제든지 회사 요구 사항에 맞게 변경할 수 있습니다.
 
 ![위협 및 분류를 보여 주는 정책 페이지 스크린샷](media/lookout-threat-classification.png)
 

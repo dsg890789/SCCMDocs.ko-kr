@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4ecf757a35556d4b810df47ca50a6c7bac59467
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 6c0880b7ba84ecf2e99c2b0e0e791b1c56802378
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535650"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378175"
 ---
 # <a name="plan-for-internet-based-client-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획
 
@@ -200,4 +200,4 @@ System Center Configuration Manager 클라이언트가 회사 네트워크에 �
 
     이 요구 사항을 지원하기 위한 구성 정보를 보려면 해당 방화벽 또는 프록시 서버 설명서를 참조하세요.  
 
-    인터넷의 클라이언트 연결에 대해 소프트웨어 업데이트 지점을 사용할 경우 이와 비슷한 통신 요구 사항을 보려면 WSUS(Windows Server Update Services) 설명서를 참조하세요. 예를 들어 Windows Server 2003에서 실행되는 WSUS의 경우 보안 설정에 대한 배포 부록 [Appendix D: 보안 설정](http://go.microsoft.com/fwlink/p/?LinkId=143368)을 참조하세요.
+    인터넷의 클라이언트 연결에 대해 소프트웨어 업데이트 지점을 사용할 경우 이와 비슷한 통신 요구 사항을 보려면 WSUS(Windows Server Update Services) 설명서를 참조하세요. 예를 들어 Windows Server 2003에서 실행되는 WSUS의 경우 보안 설정에 대한 배포 부록 [Appendix D: 보안 설정](https://go.microsoft.com/fwlink/p/?LinkId=143368)을 참조하세요.

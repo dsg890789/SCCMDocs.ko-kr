@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a7206c6eeab7b737ea4f0130cdf736a52635fce
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: ab44233756a237513298391a59951919ac4412d5
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68337873"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380117"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
 
@@ -39,7 +39,7 @@ ms.locfileid: "68337873"
 
   - **Visual C++ 재배포 가능 패키지** x86 및 x64 파일 모두.   기본적으로 Configuration Manager는 서비스 연결 지점을 호스트하는 컴퓨터에 x64 버전을 설치합니다.  
 
-    Visual C++ 파일의 복사본을 다운로드하려면 Microsoft 다운로드 센터에서 [Visual Studio 2013용 Visual C++ 재배포 가능 패키지](http://www.microsoft.com/download/details.aspx?id=40784) 를 방문하세요.  
+    Visual C++ 파일의 복사본을 다운로드하려면 Microsoft 다운로드 센터에서 [Visual Studio 2013용 Visual C++ 재배포 가능 패키지](https://www.microsoft.com/download/details.aspx?id=40784) 를 방문하세요.  
 
   - .NET Framework 4.5.2 이상  
 

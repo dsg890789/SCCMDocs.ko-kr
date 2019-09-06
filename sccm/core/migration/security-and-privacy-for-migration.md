@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 277ed98ee4c77acda809affcdc61c56f0eb4c636
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: fdfbd5ae0e72cf258e92e9504a955f39e6ced52b
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126024"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379306"
 ---
 # <a name="security-and-privacy-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로의 마이그레이션에 대한 보안 및 개인 정보
 
@@ -49,7 +49,7 @@ ms.locfileid: "56126024"
 
  보안 및 개인 정보에 대한 자세한 내용은 다음 항목 중 하나를 참조하십시오.  
 
--   Configuration Manager 2007의 개인 정보에 대한 자세한 내용은 Configuration Manager 2007 문서 라이브러리에서 [Configuration Manager 2007의 보안 및 개인 정보](http://go.microsoft.com/fwlink/p/?LinkId=216450)를 참조하세요.  
+-   Configuration Manager 2007의 개인 정보에 대한 자세한 내용은 Configuration Manager 2007 문서 라이브러리에서 [Configuration Manager 2007의 보안 및 개인 정보](https://go.microsoft.com/fwlink/p/?LinkId=216450)를 참조하세요.  
 
 -   System Center 2012 Configuration Manager의 개인 정보에 대한 자세한 내용은 System Center 2012 Configuration Manager 문서 라이브러리에서 [System Center 2012 Configuration Manager의 보안 및 개인 정보](https://technet.microsoft.com/library/gg682033.aspx)를 참조하세요.  
 

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b85c29bb87bb8b05f857198b56ed8ffebf46d964
-ms.sourcegitcommit: ee0d33ef79e1de1f5057a7d7e743f500da977caa
+ms.openlocfilehash: 6d1d6ba76983041c0c6c8d13147cfae481186f23
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70150808"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380075"
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-configuration-manager"></a>Configuration Manager를 사용하여 최신 버전으로 Windows 업그레이드
 
@@ -65,7 +65,7 @@ OS 업그레이드 패키지만 만들어 다음 OS 버전으로 업그레이드
 - 이전 버전의 Windows Server 2016
 - 이전 버전의 Windows Server 2019
 
-Windows Server의 지원 되는 업그레이드 경로에 대 한 자세한 내용은 [Windows server 2016 지원 되는 업그레이드 경로](https://docs.microsoft.com/windows-server/get-started/supported-upgrade-paths#upgrading-previous-retail-versions-of-windows-server-to-windows-server-2016) 및 [Windows server 업그레이드 센터](http://aka.ms/upgradecenter)를 참조 하세요.
+Windows Server의 지원 되는 업그레이드 경로에 대 한 자세한 내용은 [Windows server 2016 지원 되는 업그레이드 경로](https://docs.microsoft.com/windows-server/get-started/supported-upgrade-paths#upgrading-previous-retail-versions-of-windows-server-to-windows-server-2016) 및 [Windows server 업그레이드 센터](https://aka.ms/upgradecenter)를 참조 하세요.
 
 
 ## <a name="BKMK_Plan"></a> 계획  

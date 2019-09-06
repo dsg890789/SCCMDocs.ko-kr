@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4598b89429ec3a9bd3bed31f57a6b681f88063cf
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: 361676d51c83e298ab2e0e57fcc4cfad2d0b2906
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67515815"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378052"
 ---
 # <a name="deploy-app-v-virtual-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 애플리케이션 배포
 
@@ -59,7 +59,7 @@ Microsoft App-V(Application Virtualization)를 사용하여 애플리케이션�
 
 -   **App-V 4.6**: Configuration Manager에서 가상 애플리케이션을 사용하려면 클라이언트 컴퓨터에 App-V 4.6 SP1, App-V 4.6 SP2 또는 App-V 4.6 SP3 클라이언트가 설치되어 있어야 합니다.  
 
-     또한 기술 자료 문서 [2645225](http://go.microsoft.com/fwlink/p/?LinkId=237322)에 설명된 핫픽스를 사용하여 App-V 4.6 SP1 클라이언트를 업데이트해야 가상 애플리케이션을 배포할 수 있습니다.  
+     또한 기술 자료 문서 [2645225](https://go.microsoft.com/fwlink/p/?LinkId=237322)에 설명된 핫픽스를 사용하여 App-V 4.6 SP1 클라이언트를 업데이트해야 가상 애플리케이션을 배포할 수 있습니다.  
 
 -   **App-V 5, App-V 5.0 SP1, App-V 5.0 SP2, App-V 5.0 SP3 및 App-V 5.1**: App-V 5.0 SP2의 경우 [핫픽스 패키지 5](https://support.microsoft.com/en-us/kb/2963211)를 설치하거나 App-V 5.0 SP3을 사용해야 합니다.  
 -   **App-V 5.2**: 이는 Windows 10 Education(1607 이상), Windows 10 Enterprise(1607 이상), Windows Server 2016에 기본 제공됩니다.

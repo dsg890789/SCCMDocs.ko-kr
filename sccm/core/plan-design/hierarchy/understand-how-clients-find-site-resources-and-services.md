@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e5daac58bce2e0aca97e7872ea7b896b16177b5
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: bded5760fb397f0bd2acc676a9f875235d66fae4
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339452"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380167"
 ---
 # <a name="learn-how-clients-find-site-resources-and-services-for-system-center-configuration-manager"></a>클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법
 
@@ -63,7 +63,7 @@ System Center Configuration Manager 클라이언트는 *서비스 위치*라는 
 
 기본 설정 관리 지점을 사용할 수 있습니다. 기본 설정 관리 지점은 클라이언트의 할당된 사이트에 포함된 관리 지점으로, 클라이언트가 사이트 시스템 서버를 찾는 데 사용하는 경계 그룹과 연결됩니다. 기본 설정 관리 지점은 배포 지점 또는 상태 마이그레이션 지점이 경계 그룹에 연결되는 방식과 비슷하게 경계 그룹에 사이트 시스템 서버로 연결됩니다. 계층에 대해 기본 설정 관리 지점을 사용하도록 설정하는 경우 클라이언트는 할당된 사이트의 관리 지점을 사용할 때 할당된 사이트의 다른 관리 지점을 사용하기 전에 기본 설정 관리 지점 사용을 시도합니다.  
 
-TechNet.com의 [관리 지점 선호도](http://blogs.technet.com/b/jchalfant/archive/2014/09/22/management-point-affinity-added-in-configmgr-2012-r2-cu3.aspx) 블로그에 나와 있는 정보를 참조하여 관리 지점 선호도를 구성할 수도 있습니다. 관리 지점 선호도는 할당된 관리 지점의 기본 동작을 재정의하며, 클라이언트가 특정 관리 지점을 하나 이상 사용하도록 합니다.  
+TechNet.com의 [관리 지점 선호도](https://blogs.technet.com/b/jchalfant/archive/2014/09/22/management-point-affinity-added-in-configmgr-2012-r2-cu3.aspx) 블로그에 나와 있는 정보를 참조하여 관리 지점 선호도를 구성할 수도 있습니다. 관리 지점 선호도는 할당된 관리 지점의 기본 동작을 재정의하며, 클라이언트가 특정 관리 지점을 하나 이상 사용하도록 합니다.  
 
 클라이언트는 관리 지점에 연결해야 할 때마다 WMI(Windows Management Instrumentation)에 로컬로 저장되는 MP 목록을 확인합니다. 클라이언트 설치 시 클라이언트에서 초기 MP 목록을 생성합니다. 그런 다음 클라이언트는 계층의 각 관리 지점에 대한 세부 정보를 사용하여 주기적으로 목록을 업데이트합니다.  
 

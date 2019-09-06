@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e95055473cc5d61b10ee06e43456f3f7dfeb428b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: ce8b194ffe0a7efccd112b8f69e60636db5e2721
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65493377"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378659"
 ---
 # <a name="introduction-to-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트 소개
 
@@ -276,7 +276,7 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
  Configuration Manager에서 쓰기 필터를 사용하는 포함된 디바이스를 관리하는 방법에 대한 자세한 내용은 [Windows Embedded 디바이스에 클라이언트 배포 계획](../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 
 ##  <a name="BKMK_ExtendSoftwareUpdates"></a> Configuration Manager에서 소프트웨어 업데이트 확장  
- System Center Updates Publisher를 사용하여 Microsoft 업데이트에서 제공하지 않는 소프트웨어 업데이트를 관리할 수 있습니다. 소프트웨어 업데이트를 업데이트 서버에 게시하고 Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 Configuration Manager 클라이언트에 이 소프트웨어 업데이트를 배포할 수 있습니다. Updates Publisher에 대한 자세한 내용은 [Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkId=252947)을 참조하세요.  
+ System Center Updates Publisher를 사용하여 Microsoft 업데이트에서 제공하지 않는 소프트웨어 업데이트를 관리할 수 있습니다. 소프트웨어 업데이트를 업데이트 서버에 게시하고 Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 Configuration Manager 클라이언트에 이 소프트웨어 업데이트를 배포할 수 있습니다. Updates Publisher에 대한 자세한 내용은 [Updates Publisher 2011](https://go.microsoft.com/fwlink/p/?LinkId=252947)을 참조하세요.  
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 업데이트 계획](../plan-design/plan-for-software-updates.md)

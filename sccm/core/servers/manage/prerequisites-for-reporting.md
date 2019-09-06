@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 612056861b896d8c7c271e60e0bb6b78fcbd106e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 226a2632f8aa827975a764f0d22aea0a05ec6d96
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123266"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379761"
 ---
 # <a name="prerequisites-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고에 대한 필수 조건
 
@@ -29,7 +29,7 @@ System Center Configuration Manager의 보고에는 외부 종속성과 제품 �
 
 |필수 구성 요소|추가 정보|  
 |------------------|----------------------|  
-|SQL Server Reporting Services|Configuration Manager에서 보고를 사용하려면 먼저 SQL Server Reporting Services를 설치하고 구성해야 합니다.<br /><br /> 현재 환경에서 보고 서비스를 계획 및 배포하는 방법에 대한 자세한 내용은 SQL Server 2008 Books Online에서 [SQL Server Reporting Services](http://go.microsoft.com/fwlink/p/?LinkId=212032) 섹션을 참조하십시오.|  
+|SQL Server Reporting Services|Configuration Manager에서 보고를 사용하려면 먼저 SQL Server Reporting Services를 설치하고 구성해야 합니다.<br /><br /> 현재 환경에서 보고 서비스를 계획 및 배포하는 방법에 대한 자세한 내용은 SQL Server 2008 Books Online에서 [SQL Server Reporting Services](https://go.microsoft.com/fwlink/p/?LinkId=212032) 섹션을 참조하십시오.|  
 |보고 서비스 지점을 실행하는 컴퓨터에 대한 사이트 시스템 역할 종속성|[System Center Configuration Manager에서 지원되는 구성](../../../core/plan-design/configs/supported-configurations.md)|  
 
 ## <a name="dependencies-internal-to-configuration-manager"></a>Configuration Manager 내부 종속성  

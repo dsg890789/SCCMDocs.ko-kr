@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 69f234a2-b04b-445a-b81f-6b4acfc00eaf
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf18203d4b6d4c8858e3547671b7bf63a2250db7
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 6e4f843d8984cbf27fed4e309af523855ab14002
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537277"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380232"
 ---
 # <a name="office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드
 
@@ -74,7 +74,7 @@ Office 365 클라이언트 관리 대시보드에는 새 타일인 **Office 365 
 - Excel 매크로 사용 통합 문서(.xlsm) 또는 Word 매크로 사용 문서(.docm)와 같은 매크로 사용 Office 파일 형식  
 - 매크로 콘텐츠가 있는지 여부를 나타내지 않는 이전 Office 형식입니다. 예: Excel 97-2003 통합 문서(.xls).
 
-보다 자세한 평가가 필요한 경우 **Office Readiness Toolkit**을 배포합니다. 이 도구는 매크로 파일 내의 코드를 분석합니다. 잠재적인 호환성 문제가 있는지 여부를 확인합니다. 예를 들어 파일은 최신 버전의 Office에서 변경된 함수를 사용합니다. Office Readiness Toolkit을 실행한 후 Configuration Manager는 해당 결과를 사용할 수 있습니다. 이 추가 데이터는 디바이스 준비 계산을 향상시킵니다. 자세한 내용은 [Readiness Toolkit을 사용하여 Office 365 ProPlus 애플리케이션 호환성 평가](http://aka.ms/readinesstoolkit)를 참조하세요.
+보다 자세한 평가가 필요한 경우 **Office Readiness Toolkit**을 배포합니다. 이 도구는 매크로 파일 내의 코드를 분석합니다. 잠재적인 호환성 문제가 있는지 여부를 확인합니다. 예를 들어 파일은 최신 버전의 Office에서 변경된 함수를 사용합니다. Office Readiness Toolkit을 실행한 후 Configuration Manager는 해당 결과를 사용할 수 있습니다. 이 추가 데이터는 디바이스 준비 계산을 향상시킵니다. 자세한 내용은 [Readiness Toolkit을 사용하여 Office 365 ProPlus 애플리케이션 호환성 평가](https://aka.ms/readinesstoolkit)를 참조하세요.
 
 ## <a name="office-365-proplus-upgrade-readiness-dashboard"></a>Office 365 ProPlus 업그레이드 준비 대시보드
 

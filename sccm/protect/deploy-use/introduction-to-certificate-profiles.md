@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07d6ecefb2cc4cded7ce43bad3f681f8f335ec4e
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: c8e76920dc5f63e3a203d3ec46b4c94c4247d599
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500446"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380002"
 ---
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 인증서 프로필 소개
 
@@ -65,7 +65,7 @@ SCEP를 사용하는 인증서 프로필을 배포하려면 사이트 시스템 
 
 PFX 인증서에 인증서 등록 지점도 필요합니다. 또한 인증서에 대한 CA(인증 기관)를 지정하고 관련 액세스 자격 증명을 지정해야 합니다. 버전 1706부터 Microsoft 또는 Entrust를 인증 기관으로 지정할 수 있습니다.  
 
-Configuration Manager가 인증서를 배포할 수 있도록 네트워크 디바이스 등록 서비스에서 정책 모듈을 지원하는 방법에 대한 자세한 내용은 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](http://go.microsoft.com/fwlink/p/?LinkId=328657)을 참조하세요.  
+Configuration Manager가 인증서를 배포할 수 있도록 네트워크 디바이스 등록 서비스에서 정책 모듈을 지원하는 방법에 대한 자세한 내용은 [네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용](https://go.microsoft.com/fwlink/p/?LinkId=328657)을 참조하세요.  
 
 Configuration Manager에서는 요구 사항에 따라 다양한 디바이스 유형 및 운영 체제의 여러 인증서 저장소에 대한 인증서 배포를 지원합니다. 다음 디바이스 및 운영 체제가 지원됩니다.  
 

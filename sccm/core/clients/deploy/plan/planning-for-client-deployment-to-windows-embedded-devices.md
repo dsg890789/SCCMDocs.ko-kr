@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fd221ecb62a74e9ff3a56815fbdeacdd27ca026
-ms.sourcegitcommit: e3c1eb0b75d79c05a750d49354c851d15d5e26a3
+ms.openlocfilehash: b96e7f77dae283d31ba3d2f0955c2910ea499dd5
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038338"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378665"
 ---
 # <a name="planning-for-client-deployment-to-windows-embedded-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획
 
@@ -47,11 +47,11 @@ ms.locfileid: "67038338"
 
  Configuration Manager에서는 다음 유형의 쓰기 필터를 관리할 수 있습니다.  
 
-- FBWF(파일 기반 쓰기 필터) - 자세한 내용은 [파일 기반 쓰기 필터](http://go.microsoft.com/fwlink/?LinkID=204717)를 참조하세요.  
+- FBWF(파일 기반 쓰기 필터) - 자세한 내용은 [파일 기반 쓰기 필터](https://go.microsoft.com/fwlink/?LinkID=204717)를 참조하세요.  
 
-- EWF(강화된 쓰기 필터) RAM - 자세한 내용은 [강화된 쓰기 필터](http://go.microsoft.com/fwlink/?LinkId=204718)를 참조하세요.  
+- EWF(강화된 쓰기 필터) RAM - 자세한 내용은 [강화된 쓰기 필터](https://go.microsoft.com/fwlink/?LinkId=204718)를 참조하세요.  
 
-- UWF(통합 쓰기 필터) - 자세한 내용은 [통합 쓰기 필터](http://go.microsoft.com/fwlink/?LinkId=309236)를 참조하세요.  
+- UWF(통합 쓰기 필터) - 자세한 내용은 [통합 쓰기 필터](https://go.microsoft.com/fwlink/?LinkId=309236)를 참조하세요.  
 
   Configuration Manager에서는 Windows Embedded 디바이스가 EWF RAM Reg 모드일 때 쓰기 필터 작업을 지원하지 않습니다.  
 

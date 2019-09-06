@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71ea7cf51d2657cea59ae21f7aa120fe11d191c
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 9b42e8f06cfc5dffb04854f2296837f921eb86c5
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494553"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380263"
 ---
 # <a name="create-and-deploy-windows-firewall-policies-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책 만들기 및 배포
 
@@ -41,7 +41,7 @@ System Center Configuration Manager에서 Endpoint Protection에 대한 방화�
 5.  마법사의 **프로필 설정** 페이지에서 각 네트워크 프로필에 대해 다음 설정을 구성합니다.  
 
     > [!IMPORTANT]  
-    >  Windows Server 2008 및 Windows Vista 서비스 팩 1을 실행하는 컴퓨터에 Windows 방화벽 정책을 배포하려면 먼저 해당 컴퓨터에 [핫픽스 KB971800](http://go.microsoft.com/fwlink/p/?LinkId=231239) 을 설치해야 합니다.  
+    >  Windows Server 2008 및 Windows Vista 서비스 팩 1을 실행하는 컴퓨터에 Windows 방화벽 정책을 배포하려면 먼저 해당 컴퓨터에 [핫픽스 KB971800](https://go.microsoft.com/fwlink/p/?LinkId=231239) 을 설치해야 합니다.  
 
     > [!NOTE]  
     >  네트워크 프로필에 대한 자세한 내용은 Windows 설명서를 참조하세요.  

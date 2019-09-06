@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 760b159114796922e2c8707e3b7f14484591f7a2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: c42b8a97c5ceb5bdff64def06f18275585c51dc6
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141496"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379783"
 ---
 # <a name="introduction-to-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고 기능 소개
 
@@ -39,7 +39,7 @@ System Center Configuration Manager의 보고 기능은 SSRS(SQL Server Reportin
 
 - 사용자가 일반적으로 사용되는 다양한 형식을 선택하여 보고서를 내보낼 수 있습니다.  
 
-  Reporting Services에 대한 자세한 내용은 SQL Server 2008 Books Online의 [SQL Server Reporting Services](http://go.microsoft.com/fwlink/p/?LinkID=212032) 를 참조하세요.  
+  Reporting Services에 대한 자세한 내용은 SQL Server 2008 Books Online의 [SQL Server Reporting Services](https://go.microsoft.com/fwlink/p/?LinkID=212032) 를 참조하세요.  
 
 ##  <a name="BKMK_ReportingServicesPoint"></a> 보고 서비스 지점  
  보고 서비스 지점은 Microsoft SQL Server Reporting Services를 실행하는 서버에 설치되는 사이트 시스템 역할입니다. 보고 서비스 지점은 Configuration Manager 보고서 정의를 Reporting Services로 복사하고, 보고서 범주를 기반으로 보고서 폴더를 만들며, Configuration Manager 관리자의 역할 기반 권한에 따라 보고서 폴더와 보고서에 대한 보안 정책을 설정합니다. 보고 서비스 지점은 10분 간격으로 Reporting Services에 연결하여 보안 정책이 변경된 경우 보고서 관리자 등을 사용해서 보안 정책을 다시 적용합니다. 보고 서비스 지점을 계획하고 설치하는 방법에 대한 자세한 내용은 다음 문서를 참조하세요.  

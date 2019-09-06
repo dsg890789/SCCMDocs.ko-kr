@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd9bef65c7b88fa22663174905b33d8977097d31
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: b597773cda5e36ea56a34ff1c6d7e793fc1f1e0b
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500676"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380279"
 ---
 # <a name="configure-certificate-infrastructure"></a>인증서 인프라 구성
 
@@ -35,7 +35,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
 ### <a name="to-install-and-configure-the-network-device-enrollment-service-and-dependencies"></a>네트워크 디바이스 등록 서비스 및 종속 항목을 설치하고 구성하려면  
 
-1. Windows Server 2012 R2를 실행하는 서버에서 Active Directory 인증서 서비스 서버 역할용 네트워크 디바이스 등록 서비스 역할 서비스를 설치하고 구성합니다. 자세한 내용은 TechNet의 Active Directory 인증서 서비스 라이브러리에서 [Network Device Enrollment Service Guidance(네트워크 디바이스 등록 서비스 지침)](http://go.microsoft.com/fwlink/p/?LinkId=309016) 를 참조하세요.  
+1. Windows Server 2012 R2를 실행하는 서버에서 Active Directory 인증서 서비스 서버 역할용 네트워크 디바이스 등록 서비스 역할 서비스를 설치하고 구성합니다. 자세한 내용은 TechNet의 Active Directory 인증서 서비스 라이브러리에서 [Network Device Enrollment Service Guidance(네트워크 디바이스 등록 서비스 지침)](https://go.microsoft.com/fwlink/p/?LinkId=309016) 를 참조하세요.  
 
 2. 다음과 같이 네트워크 디바이스 등록 서비스에 사용되는 인증서 템플릿의 보안 권한을 확인하고 필요한 경우 수정합니다.  
 
@@ -45,7 +45,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
    -   네트워크 디바이스 등록 서비스 애플리케이션 풀에서 사용하는 SCEP 서비스 계정의 경우: **읽기** 및 **등록** 권한  
 
-        이 요구 사항은 System Center Configuration Manager에 한정되지 않지만 네트워크 디바이스 등록 서비스를 구성하는 과정에 필요합니다. 자세한 내용은 TechNet의 Active Directory 인증서 서비스 라이브러리에서 [Network Device Enrollment Service Guidance(네트워크 디바이스 등록 서비스 지침)](http://go.microsoft.com/fwlink/p/?LinkId=309016) 를 참조하세요.  
+        이 요구 사항은 System Center Configuration Manager에 한정되지 않지만 네트워크 디바이스 등록 서비스를 구성하는 과정에 필요합니다. 자세한 내용은 TechNet의 Active Directory 인증서 서비스 라이브러리에서 [Network Device Enrollment Service Guidance(네트워크 디바이스 등록 서비스 지침)](https://go.microsoft.com/fwlink/p/?LinkId=309016) 를 참조하세요.  
 
    > [!TIP]  
    >  네트워크 디바이스 등록 서비스에서 사용하는 인증서 템플릿을 식별하려면 네트워크 디바이스 등록 서비스를 실행하는 서버에서 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP 레지스트리 키를 확인합니다.  
@@ -70,7 +70,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
    - **MaxRequestBytes** 키를 **16777216**으로 설정합니다.  
 
-     자세한 내용은 Microsoft 기술 자료의 [820129: Windows에 대한 Http.sys 레지스트리 설정](http://go.microsoft.com/fwlink/?LinkId=309013) 문서를 참조하세요.  
+     자세한 내용은 Microsoft 기술 자료의 [820129: Windows에 대한 Http.sys 레지스트리 설정](https://go.microsoft.com/fwlink/?LinkId=309013) 문서를 참조하세요.  
 
 6. 동일한 서버의 IIS(인터넷 정보 서비스) 관리자에서 /certsrv/mscep 애플리케이션의 요청 필터링 설정을 수정한 후 서버를 다시 시작합니다. **요청 필터링 설정 편집** 대화 상자에서 **요청 제한** 설정을 다음과 같이 구성해야 합니다.  
 
@@ -80,7 +80,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
    - **최대 쿼리 문자열(바이트)** : **65534**  
 
-     이러한 설정에 대한 자세한 내용과 해당 설정을 구성하는 방법에 대한 자세한 내용은 IIS 참조 라이브러리에서 [Requests Limits(요청 제한)](http://go.microsoft.com/fwlink/?LinkId=309014) 항목을 참조하세요.  
+     이러한 설정에 대한 자세한 내용과 해당 설정을 구성하는 방법에 대한 자세한 내용은 IIS 참조 라이브러리에서 [Requests Limits(요청 제한)](https://go.microsoft.com/fwlink/?LinkId=309014) 항목을 참조하세요.  
 
 7. 사용 중인 인증서 템플릿보다 유효 기간이 짧은 인증서를 요청할 수 있도록 설정하려는 경우 이 구성은 엔터프라이즈 CA에 대해 기본적으로 사용하지 않도록 설정되어 있습니다. 엔터프라이즈 CA에 대해 이 옵션을 사용하도록 설정하려면 Certutil 명령줄 도구에서 다음 명령을 사용하여 인증서 서비스를 중지한 후 다시 시작해야 합니다.  
 
@@ -90,7 +90,7 @@ System Center Configuration Manager에서 인증서 인프라를 구성하는 �
 
    3. **net start certsvc**  
 
-      자세한 내용은 TechNet에서 PKI 기술 라이브러리의 [Certificate Services Tools and Settings(인증서 서비스 도구 및 설정)](http://go.microsoft.com/fwlink/p/?LinkId=309015) 를 참조하세요.  
+      자세한 내용은 TechNet에서 PKI 기술 라이브러리의 [Certificate Services Tools and Settings(인증서 서비스 도구 및 설정)](https://go.microsoft.com/fwlink/p/?LinkId=309015) 를 참조하세요.  
 
 8. 네트워크 디바이스 등록 서비스가 다음 링크를 사용하여 작동 중인지 확인합니다(예: **https://server.contoso.com/certsrv/mscep/mscep.dll** ). 기본 제공되는 네트워크 디바이스 등록 서비스 웹 페이지가 나타납니다. 이 웹 페이지에서는 서비스에 대해 설명하고, 네트워크 디바이스가 인증서 요청을 제출하는 URL을 사용한다는 것을 설명합니다.  
 

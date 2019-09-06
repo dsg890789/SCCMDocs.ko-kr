@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b586fb4eded2143e42887236d1c52b0a8bae275
-ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
+ms.openlocfilehash: 107eb6bfa7f373a0ad13dc687fd373dfcae22d2d
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67726236"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379366"
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
 
@@ -35,7 +35,7 @@ ms.locfileid: "67726236"
 
 -   **랩 환경에서는 SQL Server 2012 SP2**를 사이트 데이터베이스로 사용합니다.  
 
-     SQL Server 2012 평가판은 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=29066)에서 다운로드할 수 있습니다.  
+     SQL Server 2012 평가판은 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=29066)에서 다운로드할 수 있습니다.  
 
      SQL Server에는 System Center Configuration Manager에서 사용하기 위해 충족해야 하는 [지원되는 버전의 SQL Server](../../core/plan-design/configs/support-for-sql-server-versions.md#bkmk_SQLVersions)가 있습니다.  
 
@@ -194,7 +194,7 @@ ms.locfileid: "67726236"
 
 9. **설치** 를 클릭하고 **서버 관리자** 의 **알림**창에서 설치가 제대로 완료되었는지 확인합니다.  
 
-10. .NET의 기본 설치가 완료된 후 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=42643) 로 이동하여 .NET Framework 4.5.2에 대한 웹 설치 관리자를 가져옵니다. **다운로드** 단추를 클릭한 다음 설치 관리자를 **실행** 합니다. 선택한 언어로 필요한 구성 요소를 자동으로 검색하고 설치합니다.  
+10. .NET의 기본 설치가 완료된 후 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=42643) 로 이동하여 .NET Framework 4.5.2에 대한 웹 설치 관리자를 가져옵니다. **다운로드** 단추를 클릭한 다음 설치 관리자를 **실행** 합니다. 선택한 언어로 필요한 구성 요소를 자동으로 검색하고 설치합니다.  
 
 자세한 내용은 이 .NET Framework가 필요한 이유에 대한 다음 문서를 검토하세요.  
 

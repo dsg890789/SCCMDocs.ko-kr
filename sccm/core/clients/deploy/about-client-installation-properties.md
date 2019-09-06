@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5526afcf826c29ff5cf5d55f730092ce3031a0b
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: 3758e7aa996a47b78e1d17864843cf0be70bdd8f
+ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68859812"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70176508"
 ---
 # <a name="about-client-installation-parameters-and-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
 
@@ -394,7 +394,7 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 
 ### <a name="ccmfirstcert"></a>CCMFIRSTCERT
 
- 이 속성이 1로 설정되면 클라이언트에서 유효 기간이 가장 긴 PKI 인증서가 선택됩니다. IPsec을 적용하여 네트워크 액세스 보호를 사용하는 경우 이 설정이 필요할 수 있습니다.  
+ 이 속성이 1로 설정되면 클라이언트에서 유효 기간이 가장 긴 PKI 인증서가 선택됩니다.  
 
  예: `CCMSetup.exe /UsePKICert CCMFIRSTCERT=1`  
 

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a8f1ca1484df0480a7923a8d3de64c1670aec6d
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.openlocfilehash: 1e452d515e586b688001a0cfd1fb9bf0ae837589
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748192"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380178"
 ---
 # <a name="troubleshooting-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -96,7 +96,7 @@ Windows Defender 또는 Endpoint Protection에 문제가 발생하면 보안 관
 
 2.  표시된 오류 메시지에 코드 0x80072f8f가 포함되어 있으면 컴퓨터의 잘못된 날짜 또는 시간 설정으로 인한 문제일 가능성이 큽니다.  
 
-3.  컴퓨터의 날짜 또는 시간 설정을 복원하려면 [잘못된 바탕 화면 바로 가기 및 일반 시스템 유지 관리 작업 수정](http://go.microsoft.com/fwlink/?LinkId=155579)(http://go.microsoft.com/fwlink/?LinkId=155579)의 단계를 따르세요.  
+3.  컴퓨터의 날짜 또는 시간 설정을 복원하려면 [잘못된 바탕 화면 바로 가기 및 일반 시스템 유지 관리 작업 수정](https://go.microsoft.com/fwlink/?LinkId=155579)(https://go.microsoft.com/fwlink/?LinkId=155579) 의 단계를 따르세요.  
 
 ### <a name="step-4-rename-the-software-distribution-folder-on-your-computer"></a>4단계: 컴퓨터의 소프트웨어 배포 폴더 이름 바꾸기  
 

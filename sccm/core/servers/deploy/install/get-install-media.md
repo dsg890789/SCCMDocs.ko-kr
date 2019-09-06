@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e4c37bff6942014761c53a5e2a659b398fbf7d2
-ms.sourcegitcommit: 9670e11316c9ec6e5f78cd70c766bbfdf04ea3f9
+ms.openlocfilehash: 6fd2da0440110706d03e49c34928ed4f6ae98fc3
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67818145"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380091"
 ---
 # <a name="where-to-get-installation-media-for-system-center-configuration-manager"></a>System Center Configuration Manager용 설치 미디어를 다운로드할 수 있는 위치
 
@@ -26,6 +26,6 @@ Software Assurance를 통해 System Center Configuration Manager 볼륨 라이�
 
 EMS, Microsoft 365 또는 CSP(클라우드 솔루션 공급자)의 System Center Configuration Manager 라이선스가 있는 경우 [제품 및 라이선스 FAQ](/sccm/core/understand/product-and-licensing-faq#bkmk_csp)를 참조하세요.
 
-System Center Configuration Manager용 볼륨 라이선스를 구매하려면 가까운 Microsoft 대리점에 문의하거나 [볼륨 라이선스를 통해 구매하는 방법]( https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx)을 참조하세요. [TechNet 평가 센터]( https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) 웹 사이트에서 미디어를 다운로드하여 평가 버전의 System Center Configuration Manager를 설치할 수도 있습니다.
+System Center Configuration Manager용 볼륨 라이선스를 구매하려면 가까운 Microsoft 대리점에 문의하거나 [볼륨 라이선스를 통해 구매하는 방법](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx)을 참조하세요. [TechNet 평가 센터]( https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) 웹 사이트에서 미디어를 다운로드하여 평가 버전의 System Center Configuration Manager를 설치할 수도 있습니다.
 
 Configuration Manager용 기준 미디어에 대한 자세한 내용은 [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.

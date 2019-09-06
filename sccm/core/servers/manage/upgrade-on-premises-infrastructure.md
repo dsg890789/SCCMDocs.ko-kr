@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d456bfa1bf177a721a967a57b51cf513ed5c08c3
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: b8e8273cfd3e99f9085baf6db0590b08c6e0623a
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956417"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379847"
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-configuration-manager"></a>Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
@@ -51,7 +51,7 @@ Configuration Manager는 다음과 같은 상황에서 사이트 서버 및 사�
 
 서버를 업그레이드하려면 업그레이드할 OS에서 제공하는 업그레이드 절차를 따르세요. 다음 문서를 참조하세요.  
 
-- [Windows Server 업그레이드 센터](http://aka.ms/upgradecenter)  
+- [Windows Server 업그레이드 센터](https://aka.ms/upgradecenter)  
 
 - [Windows Server 2016용 업그레이드 및 변환 옵션](https://docs.microsoft.com/windows-server/get-started/supported-upgrade-paths)  
 

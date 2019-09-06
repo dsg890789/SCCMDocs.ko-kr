@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8443430b55ee61e9ad5eeac1e70342dfa6e85851
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: 3e454212b5a70c903471d0bda82611e12b3c8693
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288590"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380338"
 ---
 # <a name="set-up-certificates-for-trusted-communications-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>Set up certificates for trusted communications for On-premises Mobile Device Management in System Center Configuration Manager
 
@@ -31,7 +31,7 @@ System Center Configuration Manager 온\-프레미스 모바일 디바이스 관
  도메인에 가입되지 않은 디바이스에 대한 대안으로, 잘 알려진 공용 CA(예: Verisign 또는 GoDaddy)의 루트를 사용하여 서버 인증서를 발급할 수 있습니다. 그렇게 하면 대부분의 디바이스가 공용 CA의 동일한 루트를 사용하는 서버 연결을 기본적으로 신뢰하기 때문에 디바이스에 인증서를 수동으로 설치하지 않아도 됩니다. 각 디바이스의 CA 사이트를 통해 신뢰할 수 있는 인증서를 설치하는 것이 적합하지 않은 사용자가 등록한 디바이스의 경우 이 방법이 유용합니다.  
 
 > [!IMPORTANT]  
->  디바이스와 온\-프레미스 모바일 디바이스 관리용 사이트 시스템 서버 간의 신뢰할 수 있는 통신을 위해 인증서를 설정하는 방법에는 여러 가지가 있습니다. 이 문서의 내용은 설정을 수행하는 한 가지 방법에 대한 예로서 제공됩니다. 이 방법을 사용하려면 Active Directory 인증서 서비스 역할 및 인증 기관 및 인증 기관 웹 등록 역할 서비스를 설치한 사이트에서 서버를 실행해야 합니다. Windows 서버 역할에 대한 정보 및 지침에 대한 자세한 내용은 [Active Directory 인증서 서비스](http://go.microsoft.com/fwlink/p/?LinkId=115018)를 참조하세요.  
+>  디바이스와 온\-프레미스 모바일 디바이스 관리용 사이트 시스템 서버 간의 신뢰할 수 있는 통신을 위해 인증서를 설정하는 방법에는 여러 가지가 있습니다. 이 문서의 내용은 설정을 수행하는 한 가지 방법에 대한 예로서 제공됩니다. 이 방법을 사용하려면 Active Directory 인증서 서비스 역할 및 인증 기관 및 인증 기관 웹 등록 역할 서비스를 설치한 사이트에서 서버를 실행해야 합니다. Windows 서버 역할에 대한 정보 및 지침에 대한 자세한 내용은 [Active Directory 인증서 서비스](https://go.microsoft.com/fwlink/p/?LinkId=115018)를 참조하세요.  
 
  온\-프레미스 모바일 디바이스 관리에 필요한 SSL 통신을 위해 Configuration Manager 사이트를 설정하려면 다음과 같은 대략적인 단계를 수행합니다.  
 

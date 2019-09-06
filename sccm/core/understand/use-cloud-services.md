@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e58f5cffa201224516e03dd6a1e919f352c297d0
-ms.sourcegitcommit: b59e57ab4cf9f03e8beeb70588f3b9f1a6021e36
+ms.openlocfilehash: 72478590144915075ae224552b6d67f7ad8fd87c
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662639"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70377781"
 ---
 # <a name="use-cloud-services-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라우드 서비스 사용
 
@@ -37,7 +37,7 @@ Configuration Manager를 배포하기 전에 클라우드 리소스를 프로비
 
 -   클라우드 기반 배포 지점에 대한 자세한 내용은 [클라우드 기반 배포 지점 설치](/sccm/core/servers/deploy/configure/install-cloud-based-distribution-points-in-microsoft-azure)를 참조하세요.
 
--   Azure에 대한 자세한 내용은 MSDN 라이브러리에서 [Azure](http://go.microsoft.com/fwlink/p/?LinkId=262965)를 참조하세요.  
+-   Azure에 대한 자세한 내용은 MSDN 라이브러리에서 [Azure](https://go.microsoft.com/fwlink/p/?LinkId=262965)를 참조하세요.  
 
 ### <a name="azure-virtual-machines-for-cloud-based-infrastructure"></a>Azure 가상 컴퓨터(클라우드 기반 인프라의 경우)  
  Configuration Manager에서는 실제 회사 네트워크 내의 온-프레미스에서 실행하는 경우와 마찬가지로 Azure의 가상 컴퓨터에서 실행되는 컴퓨터 사용을 지원합니다. 다음과 같은 시나리오에서 Azure 가상 컴퓨터를 사용할 수 있습니다.  
@@ -81,10 +81,10 @@ Azure를 사용하여 배포 지점을 호스트하려면 Azure 구독이 필요
 
  자세한 내용은 다양한 클라우드 기반 리소스 시나리오의 세부 정보를 참조하세요. Azure 보안과 관련된 다음 항목을 확인할 수도 있습니다.  
 
--   [Azure: Azure의 보안 계정 관리 이해](http://go.microsoft.com/fwlink/p/?LinkId=262968)  
+-   [Azure: Azure의 보안 계정 관리 이해](https://go.microsoft.com/fwlink/p/?LinkId=262968)  
 
--   [Azure 보안 개요](http://go.microsoft.com/fwlink/p/?LinkId=262970)  
+-   [Azure 보안 개요](https://go.microsoft.com/fwlink/p/?LinkId=262970)  
 
--   [Get Past the Security Crossroads in Your Cloud Migration](http://go.microsoft.com/fwlink/p/?LinkId=262971)(클라우드 마이그레이션의 보안 기로 통과)  
+-   [Get Past the Security Crossroads in Your Cloud Migration](https://go.microsoft.com/fwlink/p/?LinkId=262971)(클라우드 마이그레이션의 보안 기로 통과)  
 
--   [Data Security in Azure Part 1 of 2](http://go.microsoft.com/fwlink/p/?LinkId=262974)(Azure 데이터 보안 1/2부)  
+-   [Data Security in Azure Part 1 of 2](https://go.microsoft.com/fwlink/p/?LinkId=262974)(Azure 데이터 보안 1/2부)  

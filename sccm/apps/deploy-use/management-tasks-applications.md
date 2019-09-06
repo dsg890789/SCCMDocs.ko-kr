@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368fd0b4d86b1ee263bbe47619a4387db614b167
-ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
+ms.openlocfilehash: 39548117fb7e03614af32fa330fb86bf6de4151e
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264395"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378060"
 ---
 # <a name="management-tasks-for-system-center-configuration-manager-applications"></a>System Center Configuration Manager 애플리케이션에 대한 관리 작업
 
@@ -41,7 +41,7 @@ ms.locfileid: "66264395"
 |**통계 업데이트**|**모니터링** 작업 영역의 **배포** 노드에 표시되는 이 애플리케이션 배포에 대한 정보를 업데이트합니다.<br /><br /> [System Center Configuration Manager 콘솔에서 애플리케이션 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)을 참조하세요.|  
 |**복구**|**사용 중지** 관리 작업을 사용하여 사용이 중지된 애플리케이션을 복구합니다.|  
 |**사용 중지**|애플리케이션을 사용 중지하면 더 이상 배포에 사용할 수 없지만 이 애플리케이션과 애플리케이션의 모든 배포가 삭제되지 않습니다. 클라이언트 컴퓨터에 설치된 이 애플리케이션의 기존 복사본은 제거되지 않습니다. 애플리케이션에 대한 모든 수정 사항은 60일 후 Configuration Manager에서 삭제됩니다. 그러나 설치된 애플리케이션 복사본은 제거되지 않습니다.<br /><br /> 애플리케이션을 삭제하려면 먼저 애플리케이션을 사용 중지하고 모든 배포를 삭제하고 이 애플리케이션에 대한 다른 배포의 참조를 제거한 후 애플리케이션의 모든 수정 버전을 삭제해야 합니다.<br /><br /> [애플리케이션 수정 및 대체](../../apps/deploy-use/revise-and-supersede-applications.md)를 참조하세요.|  
-|**내보내기**|**애플리케이션 내보내기 마법사**를 엽니다. 여기에서 선택한 애플리케이션을 .zip 파일로 내보낸 후에 다른 사이트에 보관하거나 설치할 수 있습니다. 애플리케이션 콘텐츠를 내보내도록 선택하는 경우 해당 콘텐츠가 포함된 폴더가 만들어집니다.<br /><br /> 또한 애플리케이션 종속성, 교체 관계 및 조건, 애플리케이션 및 해당 종속성 콘텐츠를 내보낼 수 있습니다.<br /><br /> Windows PowerShell cmdlet인 **Export-CMApplication**도 이와 동일한 기능을 수행합니다. 자세한 내용은 Microsoft System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [Export-CMApplication](http://go.microsoft.com/fwlink/p/?LinkID=258880)을 참조하세요.|  
+|**내보내기**|**애플리케이션 내보내기 마법사**를 엽니다. 여기에서 선택한 애플리케이션을 .zip 파일로 내보낸 후에 다른 사이트에 보관하거나 설치할 수 있습니다. 애플리케이션 콘텐츠를 내보내도록 선택하는 경우 해당 콘텐츠가 포함된 폴더가 만들어집니다.<br /><br /> 또한 애플리케이션 종속성, 교체 관계 및 조건, 애플리케이션 및 해당 종속성 콘텐츠를 내보낼 수 있습니다.<br /><br /> Windows PowerShell cmdlet인 **Export-CMApplication**도 이와 동일한 기능을 수행합니다. 자세한 내용은 Microsoft System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [Export-CMApplication](https://go.microsoft.com/fwlink/p/?LinkID=258880)을 참조하세요.|  
 |**삭제**|현재 선택된 애플리케이션을 삭제합니다.<br /><br /> 종속된 다른 애플리케이션이 있거나, 활성 배포가 있거나, 종속된 작업 순서가 있는 경우 애플리케이션을 삭제할 수 없습니다.|  
 |**배포 시뮬레이트**|**애플리케이션 배포 시뮬레이트 마법사** 를 엽니다. 이 마법사를 통해 애플리케이션을 설치하거나 제거하지 않고도 컴퓨터에 대한 애플리케이션 배포 결과를 테스트할 수 있습니다.<br /><br /> [애플리케이션 배포 시뮬레이트](../../apps/deploy-use/simulate-application-deployments.md)를 참조하세요.|  
 |**배포**|**소프트웨어 배포 마법사** 를 엽니다. 여기서 선택한 애플리케이션을 계층의 컴퓨터 컬렉션에 배포할 수 있습니다.<br /><br /> [애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.|  

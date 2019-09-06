@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5499fae986dcd266e0b2a31d2619aa79146f8981
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 98b06429296927ade2dd738fb8df5356668dd89b
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676018"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70377765"
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기에 대해 지원되는 구성
 
@@ -26,7 +26,7 @@ ms.locfileid: "67676018"
 이 항목이나 LTSB 관련 항목에서 달리 명시되지 않은 경우 현재 분기 버전 1606에 적용되는 것과 동일한 구성 및 제한 사항이 LTSB에 적용됩니다.  충돌이 발생하는 경우 사용 중인 버전에 적용되는 정보를 사용합니다. 일반적으로 LTSB가 현재 분기보다 좀 더 제한적입니다.
 
 ## <a name="general-statement-of-support"></a>일반적인 지원 정보
-다음 제품 및 기술은 이 Configuration Manager 분기에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품 또는 버전의 지원이 명시적으로 확장되지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 자세한 내용은 [Microsoft 지원 주기](http://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트 및 [Microsoft 지원 주기 정책 FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976)를 참조하세요.
+다음 제품 및 기술은 이 Configuration Manager 분기에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품 또는 버전의 지원이 명시적으로 확장되지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 자세한 내용은 [Microsoft 지원 주기](https://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트 및 [Microsoft 지원 주기 정책 FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976)를 참조하세요.
 
 또한 다음 항목에 나열되지 않은 제품 및 제품 버전은 [Enterprise Mobility + Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/)(Enterprise Mobility + 보안 블로그)에서 공지되지 않은 경우 지원되지 않습니다.
 
@@ -143,7 +143,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 ### <a name="mac-computers"></a>Mac 컴퓨터  
  LTSB를 사용하여 Mac용 Configuration Manager 클라이언트에서 Mac OS X 컴퓨터를 관리할 수 있습니다.
 
-Mac 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)에서 "추가 운영 체제용 클라이언트" 다운로드의 일부로 다운로드할 수 있습니다.  
+Mac 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkID=525184)에서 "추가 운영 체제용 클라이언트" 다운로드의 일부로 다운로드할 수 있습니다.  
 
 Mac 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 제한됩니다. 현재 분기에 대한 Mac 클라이언트 설치 패키지의 이후 업데이트에서 지원될 수 있는 추가 운영 체제는 지원에 포함되지 않습니다.
 
@@ -157,7 +157,7 @@ Mac 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 �
 ## <a name="linux-and-unix-servers"></a>Linux 및 UNIX 서버
 LTSB를 사용하여 Linux 및 UNIX용 Configuration Manager 클라이언트에서 Linux 및 UNIX 서버를 관리할 수 있습니다.
 
-Linux 및 UNIX 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)에서 "추가 운영 체제용 클라이언트" 다운로드의 일부로 다운로드할 수 있습니다. 클라이언트 설치 패키지 외에도 클라이언트 다운로드에는 각 컴퓨터의 클라이언트 설치를 관리하는 install 스크립트가 들어 있습니다.
+Linux 및 UNIX 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkID=525184)에서 "추가 운영 체제용 클라이언트" 다운로드의 일부로 다운로드할 수 있습니다. 클라이언트 설치 패키지 외에도 클라이언트 다운로드에는 각 컴퓨터의 클라이언트 설치를 관리하는 install 스크립트가 들어 있습니다.
 
 Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 제한됩니다. 현재 분기에 대한 Linux 및 UNIX 클라이언트 패키지의 이후 업데이트에서 지원될 수 있는 추가 운영 체제는 지원에 포함되지 않습니다.
 

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53c0dd242d1274914738173ee1997109cff8411
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: e041c3ef1725f3084f05b084a9a48716a6fac556
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499363"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70377966"
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성
 
@@ -28,10 +28,10 @@ ms.locfileid: "65499363"
 
 Configuration Manager 기능 또는 특징에 보다 구체적인 구성이 필요한 경우 해당 정보는 기능 관련 설명서에 포함되며 이러한 일반적인 구성 세부 정보를 보완합니다.  
 
- 다음 항목에서 설명하는 제품 및 기술은 Configuration Manager에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품의 지원 연장을 의미하지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. Microsoft 지원 주기에 대한 자세한 내용은 [Microsoft 지원 주기](http://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트를 참조하세요.  
+ 다음 항목에서 설명하는 제품 및 기술은 Configuration Manager에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품의 지원 연장을 의미하지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. Microsoft 지원 주기에 대한 자세한 내용은 [Microsoft 지원 주기](https://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트를 참조하세요.  
 
 > [!NOTE]  
->  Microsoft 지원 주기 정책에 대한 자세한 내용은 Microsoft 지원 주기 지원 정책 FAQ 웹 사이트([Microsoft 지원 주기 정책 FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976))를 참조하세요.  
+>  Microsoft 지원 주기 정책에 대한 자세한 내용은 Microsoft 지원 주기 지원 정책 FAQ 웹 사이트([Microsoft 지원 주기 정책 FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976))를 참조하세요.  
 
  또한 다음 항목에 나열되지 않은 제품 및 제품 버전은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/)(Enterprise Mobility 및 보안 블로그)에서 공지되지 않은 경우 System Center Configuration Manager에서 지원되지 않습니다.  이 블로그의 내용이 이 설명서 본문에 대한 업데이트보다 앞서는 경우도 있습니다.
 

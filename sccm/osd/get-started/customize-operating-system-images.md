@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b18c8e780ac5fa43f3fdf6790c80ed6d38e02e28
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: fd7f84e097ddfbc36d3c595a28e0cb31b968ce57
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128741"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380061"
 ---
 # <a name="customize-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 사용자 지정
 
@@ -96,7 +96,7 @@ System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이�
     > [!IMPORTANT]  
     >  [Windows 캡처 준비](../understand/task-sequence-steps.md#BKMK_PrepareWindowsforCapture) 작업 순서 단계는 Sysprep 실행 전에 참조 컴퓨터에서 로컬 관리자 암호를 빈 값으로 다시 설정하려고 시도합니다. **암호는 복잡성을 만족해야 함** 이라는 로컬 보안 정책을 사용하는 경우 이 작업 순서 단계에서 관리자 암호를 다시 설정하지 못합니다. 이 시나리오에서는 작업 순서를 실행하기 전에 이 정책을 사용하지 않도록 설정합니다.  
 
-     Sysprep에 대한 자세한 내용은 [Sysprep(시스템 준비) 기술 참조](http://go.microsoft.com/fwlink/?LinkId=280286)를 참조하세요.  
+     Sysprep에 대한 자세한 내용은 [Sysprep(시스템 준비) 기술 참조](https://go.microsoft.com/fwlink/?LinkId=280286)를 참조하세요.  
 
 -   **설치 시나리오의 문제를 줄이는 데 필요한 적절한 도구 및 스크립트**  
 

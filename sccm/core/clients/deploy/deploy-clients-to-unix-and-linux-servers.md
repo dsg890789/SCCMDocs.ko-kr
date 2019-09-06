@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a634d252a4e5a6637b4dae18dcb57efe929fcf88
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: 013228fc3df9d899d92767ef50a69a4894be07e2
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68859705"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378095"
 ---
 # <a name="how-to-deploy-clients-to-unix-and-linux-servers-in-configuration-manager"></a>Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
 
@@ -37,7 +37,7 @@ Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 관리하려�
  클라이언트를 설치한 후 Configuration Manager 콘솔에서 클라이언트 설정을 지정하여 Windows 기반 클라이언트와 동일한 방식으로 클라이언트 에이전트를 구성합니다. 자세한 내용은 [Linux 및 UNIX 서버에 대한 클라이언트 설정](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ClientSettingsforLnU)을 참조하세요.  
 
 ##  <a name="BKMK_AboutInstallPackages"></a> 클라이언트 설치 패키지 및 유니버설 에이전트에 대하여  
- 특정 플랫폼에 Linux 및 UNIX용 클라이언트를 설치하려면 클라이언트를 설치할 컴퓨터에 해당하는 클라이언트 설치 패키지를 사용해야 합니다. 해당하는 클라이언트 설치 패키지는 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=525184)의 각 클라이언트 다운로드에 포함되어 있습니다. 클라이언트 설치 패키지 외에도 클라이언트 다운로드에는 각 컴퓨터의 클라이언트 설치를 관리하는 **install** 스크립트가 들어 있습니다.  
+ 특정 플랫폼에 Linux 및 UNIX용 클라이언트를 설치하려면 클라이언트를 설치할 컴퓨터에 해당하는 클라이언트 설치 패키지를 사용해야 합니다. 해당하는 클라이언트 설치 패키지는 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkID=525184)의 각 클라이언트 다운로드에 포함되어 있습니다. 클라이언트 설치 패키지 외에도 클라이언트 다운로드에는 각 컴퓨터의 클라이언트 설치를 관리하는 **install** 스크립트가 들어 있습니다.  
 
  클라이언트를 설치할 때 사용 중인 클라이언트 설치 패키지에 관계없이 동일한 프로세스 및 명령줄 속성을 사용할 수 있습니다.  
 

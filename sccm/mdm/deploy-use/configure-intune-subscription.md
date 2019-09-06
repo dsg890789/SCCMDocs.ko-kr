@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ec6756e5c180561bef10bba799e3fdba3dcc303
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.openlocfilehash: fd48ec41114b122d8d00549c1ae8d99d08ba5f1f
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289064"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379699"
 ---
 # <a name="configure-your-intune-subscription-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 Intune 구독 구성
 
@@ -35,7 +35,7 @@ Intune 구독은 다음을 수행합니다.
 
 ## <a name="to-create-the-microsoft-intune-subscription"></a>Microsoft Intune 구독을 만들려면
 
-1.  아직 그렇게 하지 않은 경우 [Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=258216)에서 Microsoft Intune 계정을 등록합니다.  Intune 계정을 만든 후에는 Intune 계정에 사용자를 추가하거나 추가 설정 구성을 수행할 필요가 없습니다.
+1.  아직 그렇게 하지 않은 경우 [Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=258216)에서 Microsoft Intune 계정을 등록합니다.  Intune 계정을 만든 후에는 Intune 계정에 사용자를 추가하거나 추가 설정 구성을 수행할 필요가 없습니다.
 
 2.  Configuration Manager 콘솔에서 **관리**를 클릭합니다.
 
@@ -54,18 +54,18 @@ Intune 구독은 다음을 수행합니다.
 
 7. **일반** 페이지에서 다음 옵션을 지정한 후 **다음**을 클릭합니다.
 
-   - **컬렉션**: 모바일 장치를 등록할 사용자를 포함 하는 사용자 컬렉션을 지정 합니다.
+   - **컬렉션**: 자신의 모바일 장치를 등록 하는 사용자가 포함 된 사용자 컬렉션을 지정 합니다.
 
      > [!NOTE]
      >  사용자가 컬렉션에서 제거될 경우 사용자 데이터베이스에서 사용자 레코드가 제거되면 최대 24시간 동안 사용자 디바이스가 계속 관리됩니다.
 
    - **회사 이름**: 회사 이름을 지정 합니다.
 
-   - **회사 개인 정보 보호 설명서 URL**: 예를 들어 사용자가 회사 포털에서 액세스할 수 있는 링크를 제공 하는 인터넷에서 액세스할 수 있는 링크에 회사 개인 정보를 게시 하는 경우 http://www.contoso.com/CP_privacy.html합니다. 개인 정보 취급 방침 정보에는 사용자가 회사와 공유할 수 있는 정보가 명시될 수 있습니다.
+   - **회사 개인 정보 취급 방침에 대 한 URL**: 인터넷에서 액세스할 수 있는 링크에 회사 개인 정보 취급 방침을 게시 하는 경우 사용자가 회사 포털에서 액세스할 수 있는 링크를 제공 합니다 (예 http://www.contoso.com/CP_privacy.html:). 개인 정보 취급 방침 정보에는 사용자가 회사와 공유할 수 있는 정보가 명시될 수 있습니다.
 
-   - **회사 포털에 대 한 색 구성표**: 필요에 따라 회사 포털에 대 한 파란색의 기본 색을 변경 합니다.
+   - **회사 포털의 색 구성표**: 필요에 따라 회사 포털의 기본 색을 파란색으로 변경 합니다.
 
-   - **Configuration Manager 사이트 코드**: 모바일 장치를 관리할 기본 사이트의 사이트 코드를 지정 합니다.
+   - **Configuration Manager 사이트 코드**: 기본 사이트에 대 한 사이트 코드를 지정 하 여 모바일 장치를 관리 합니다.
 
    > [!NOTE]
    >  사이트 코드를 변경하면 새 등록만 영향을 받으며 기존에 등록된 디바이스는 영향을 받지 않습니다.

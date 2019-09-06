@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0f3e0a20874539b079541f363c6d494a738225f
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: a28b901c731d46fb19140526af6e85825ad43795
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500513"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380021"
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 클라이언트에 대한 질문과 대답
 
@@ -146,7 +146,7 @@ Windows Defender에서 검색된 사용자 동의 없이 설치되거나 컴퓨�
 
 -   바이러스 백신 및 스파이웨어 방지 소프트웨어인 Windows Defender는 잠재적인 위협에 대해 최신 업데이트를 사용합니다(바이러스 및 스파이웨어 정의를 최신 상태로 유지하려면 어떻게 해야 하나요? 참조). 또한 항상 최신 버전의 Windows Defender를 사용해야 합니다.  
 
--   신뢰할 수 있는 원본의 업데이트만 다운로드합니다. Windows 운영 체제의 경우 항상 [Microsoft 업데이트](http://go.microsoft.com/fwlink/?LinkID=96304)(http://go.microsoft.com/fwlink/?LinkID=96304)로 이동하고, 다른 소프트웨어의 경우에는 항상 해당 소프트웨어를 생성한 회사 또는 사람의 합법적인 웹 사이트를 사용하세요.  
+-   신뢰할 수 있는 원본의 업데이트만 다운로드합니다. Windows 운영 체제의 경우 항상 [Microsoft 업데이트](https://go.microsoft.com/fwlink/?LinkID=96304)(https://go.microsoft.com/fwlink/?LinkID=96304) 로 이동하고, 다른 소프트웨어의 경우에는 항상 해당 소프트웨어를 생성한 회사 또는 사람의 합법적인 웹 사이트를 사용하세요.  
 
 -   출처가 불확실한 첨부 파일이 있는 전자 메일을 받는 경우 즉시 삭제해야 합니다. 알 수 없는 원본의 애플리케이션이나 파일을 다운로드하지 말고 다른 사용자와 파일을 주고받는 경우 특히 주의하세요.  
 

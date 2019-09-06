@@ -11,12 +11,12 @@ ms.author: mstewart
 description: 정의 업데이트를 자동 승인하려면 Windows Server Update Services를 구성하는 방법에 대해 알아봅니다.
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f79fd876d19ecfae0872c97a8aabe60c121a90f2
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: e868945cf3d87df17dbe8197ec99497f1478d973
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494538"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380252"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-windows-server-update-services-wsus-for-configuration-manager"></a>Configuration Manager의 WSUS(Windows Server Update Services)에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
@@ -92,7 +92,7 @@ ms.locfileid: "65494538"
 10. **자동 승인** 대화 상자에서 새로 만든 규칙의 확인란을 선택하고 **규칙 실행**을 클릭합니다.
 
 > [!NOTE]
->  WSUS 서버 및 클라이언트 컴퓨터의 성능을 최대화하려면 이전 정의 업데이트를 거부합니다. 이 작업을 수행하기 위해 수정 버전 자동 승인 및 만료된 업데이트 자동 거부를 구성할 수 있습니다. 자세한 내용은 [Microsoft 기술 자료 문서 938947](http://go.microsoft.com/fwlink/p/?LinkId=204078)을 참조하세요.
+>  WSUS 서버 및 클라이언트 컴퓨터의 성능을 최대화하려면 이전 정의 업데이트를 거부합니다. 이 작업을 수행하기 위해 수정 버전 자동 승인 및 만료된 업데이트 자동 거부를 구성할 수 있습니다. 자세한 내용은 [Microsoft 기술 자료 문서 938947](https://go.microsoft.com/fwlink/p/?LinkId=204078)을 참조하세요.
 > 
 > [!div class="button"]
 > [다음 단계 >](endpoint-antimalware-policies.md)

@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f830100bd2d227df0206c40071711d9c7888f88
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 26933c878a7a57b40ade404b8ef205c18a01f7f6
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677481"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378004"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1703의 기능
 
@@ -139,7 +139,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 
 ## <a name="client-settings-to-configure-windows-analytics-for-upgrade-readiness"></a>업그레이드 준비를 위해 Windows Analytics를 구성하기 위한 클라이언트 설정
-이 버전부터 디바이스 클라이언트 설정을 사용하여 Configuration Manager에서 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)와 같은 [Windows Analytics](https://www.microsoft.com/en-us/WindowsForBusiness/windows-analytics) 솔루션을 사용하는 데 필요한 Windows 원격 분석의 구성을 간소화할 수 있습니다. Configuration Manager는 클라이언트 컴퓨터에서 보고한 Windows 원격 분석 데이터를 기준으로 사용자 환경의 현재 상태에 대한 귀중한 정보를 제공할 수 있는 데이터를 Windows Analytics에서 검색할 수 있습니다. 클라이언트 컴퓨터에서 Windows 원격 분석 서비스에 Windows 원격 분석 데이터를 보고하면 관련 데이터가 조직의 OMS 작업 영역 중 하나에서 호스트되는 Windows Analytics 솔루션으로 전송됩니다. 업그레이드 준비는 관리되는 디바이스의 Windows 업그레이드에 대한 결정 우선 순위를 지정하는 데 도움이 될 수 있는 Windows Analytics 솔루션입니다.
+이 버전부터 디바이스 클라이언트 설정을 사용하여 Configuration Manager에서 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)와 같은 [Windows Analytics](https://www.microsoft.com/WindowsForBusiness/windows-analytics) 솔루션을 사용하는 데 필요한 Windows 원격 분석의 구성을 간소화할 수 있습니다. Configuration Manager는 클라이언트 컴퓨터에서 보고한 Windows 원격 분석 데이터를 기준으로 사용자 환경의 현재 상태에 대한 귀중한 정보를 제공할 수 있는 데이터를 Windows Analytics에서 검색할 수 있습니다. 클라이언트 컴퓨터에서 Windows 원격 분석 서비스에 Windows 원격 분석 데이터를 보고하면 관련 데이터가 조직의 OMS 작업 영역 중 하나에서 호스트되는 Windows Analytics 솔루션으로 전송됩니다. 업그레이드 준비는 관리되는 디바이스의 Windows 업그레이드에 대한 결정 우선 순위를 지정하는 데 도움이 될 수 있는 Windows Analytics 솔루션입니다.
 
 Windows 원격 분석 설정에 대한 자세한 내용은 [조직에서 Windows 원격 분석 구성](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)을 참조하세요.
 

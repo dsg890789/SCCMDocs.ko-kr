@@ -5,18 +5,18 @@ description: Configuration Manager 프로덕션 환경에서 소프트웨어 업
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 08/20/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03aa63ccf8fac5c84a1a32e420434b8cefbb6dd6
-ms.sourcegitcommit: 18e88352860dcaf938dbbe1e8694b658e1bfd8ac
+ms.openlocfilehash: f6b2f0e98527ef04a0bdeec8b2efb87f6ff86b23
+ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69584667"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243734"
 ---
 # <a name="plan-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -240,6 +240,9 @@ Windows Server에 WSUS를 설치하는 방법에 대한 자세한 내용은 [WSU
 
 기본 사이트에서 둘 이상의 소프트웨어 업데이트 지점을 설치하는 경우 동일한 Active Directory 포리스트에 있는 각 소프트웨어 업데이트 지점에 같은 WSUS 데이터베이스를 사용합니다. 동일한 데이터베이스를 공유하면 클라이언트가 새 소프트웨어 업데이트 지점으로 전환될 때 성능이 향상됩니다. 자세한 내용은 [소프트웨어 업데이트 지점에 공유 WSUS 데이터베이스 사용](/sccm/sum/plan-design/software-updates-best-practices#bkmk_shared-susdb)을 참조하세요.  
 
+#### <a name="configuring-the-wsus-content-directory-path"></a>WSUS 콘텐츠 디렉터리 경로 구성
+
+WSUS를 설치할 때 콘텐츠 디렉터리 경로를 제공 해야 합니다. WSUS 콘텐츠 디렉터리는 검색 하는 동안 클라이언트에 필요한 Microsoft 소프트웨어 사용 조건 파일을 저장 하는 데 주로 사용 됩니다. WSUS 콘텐츠 디렉터리 Configuration Manager Configuration Manager 소프트웨어 배포 패키지에 대 한 콘텐츠 원본 디렉터리와 겹치면 안 됩니다. WSUS 콘텐츠 디렉터리와 Configuration Manager 패키지 원본을 겹치면 WSUS 콘텐츠 디렉터리에서 잘못 된 파일이 제거 됩니다.
 
 ####  <a name="BKMK_CustomWebSite"></a> 사용자 지정 웹 사이트를 사용하도록 WSUS 구성  
 WSUS를 설치할 때에는 기존 IIS 기본 웹 사이트를 사용하거나 사용자 지정 WSUS 웹 사이트를 만들 수 있습니다. IIS가 전용 가상 웹 사이트에서 WSUS 서비스를 호스팅하도록 WSUS에 대한 사용자 지정 웹 사이트를 만듭니다. 그렇지 않으면 다른 Configuration Manager 사이트 시스템 또는 애플리케이션에서 사용하는 것과 동일한 웹 사이트를 공유합니다. 이 구성은 사이트 서버에 소프트웨어 업데이트 지점 역할을 설치할 때 특히 필요합니다. Windows Server 2012 이상에서 WSUS를 실행하는 경우 WSUS가 기본적으로 HTTP에 포트 8530을 사용하고, HTTPS에 포트 8531을 사용하도록 구성됩니다. 사이트에서 소프트웨어 업데이트 지점을 만드는 경우 이러한 포트를 지정합니다.  

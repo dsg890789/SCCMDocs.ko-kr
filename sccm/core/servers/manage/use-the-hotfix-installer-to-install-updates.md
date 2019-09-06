@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7831b8b818f68b3094ed765eb5e69441ce18d0f6
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: e1d5954527fd644b9dbe0ba4aee88170028d511b
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68337897"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379820"
 ---
 # <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치
 
@@ -208,7 +208,7 @@ Updates Publisher의 카탈로그는 **SCUPCatalog.cab**로 이름이 지정되�
 > [!IMPORTANT]  
 > SCUPCatalog.cab 파일은 업데이트 번들이 설치되는 사이트 서버에 해당하는 경로를 사용하여 만들어지므로 다른 사이트 서버에서는 사용할 수 없습니다.  
 
-마법사가 완료되면 카탈로그를 Updates Publisher로 가져온 후 Configuration Manager 소프트웨어 업데이트를 사용하여 업데이트를 배포할 수 있습니다. Updates Publisher에 대한 자세한 내용은 System Center 2012의 TechNet 라이브러리에서 [Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkID=83449)을 참조하세요.  
+마법사가 완료되면 카탈로그를 Updates Publisher로 가져온 후 Configuration Manager 소프트웨어 업데이트를 사용하여 업데이트를 배포할 수 있습니다. Updates Publisher에 대한 자세한 내용은 System Center 2012의 TechNet 라이브러리에서 [Updates Publisher 2011](https://go.microsoft.com/fwlink/p/?LinkID=83449)을 참조하세요.  
 
 SCUPCatalog.cab 파일을 Updates Publisher로 가져와서 업데이트를 게시하려면 다음 절차를 따르세요.  
 
@@ -237,7 +237,7 @@ SCUPCatalog.cab 파일을 Updates Publisher로 가져와서 업데이트를 게�
 > 서버용 패키지에는 다음 구성 요소에 대한 업데이트가 포함되어 있습니다.  
 >   
 > - 사이트 서버  
-> - 사이트 데이터베이스  
+> - SMS 공급자  
 > - 사이트 데이터베이스  
 
 다음으로, 마법사의 **소프트웨어 업데이트 배포 방법 구성** 페이지에서 **소프트웨어 배포를 사용합니다**옵션을 선택합니다. 이 옵션을 선택하면 마법사가 소프트웨어 배포 패키지를 만듭니다.  

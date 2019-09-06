@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 276c5dd71b62a29a3f68b1eed2cdc814cfd1c804
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 493e9138c5be3bdf396dd7fe0d318e3da71f561d
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537170"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380295"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -47,8 +47,8 @@ Office 365 클라이언트 정보를 검토하고 이러한 Office 365 관리 �
 - Office 365 설치 관리자를 실행하는 컴퓨터에서 인터넷에 액세스할 수 있어야 합니다.  
 - Office 365 설치 관리자를 실행하는 사용자는 마법사에서 제공한 콘텐츠 위치 공유에 대해 **읽기** 및 **쓰기** 권한이 있어야 합니다.
 - 404 다운로드 오류가 표시되면 다음 파일을 사용자 %temp% 폴더로 복사합니다.
-  - [releasehistory.xml](http://officecdn.microsoft.com/pr/wsus/releasehistory.cab)
-  - [o365client_32bit.xml](http://officecdn.microsoft.com/pr/wsus/ofl.cab)  
+  - [releasehistory.xml](https://officecdn.microsoft.com/pr/wsus/releasehistory.cab)
+  - [o365client_32bit.xml](https://officecdn.microsoft.com/pr/wsus/ofl.cab)  
 
 ### <a name="deploy-office-365-apps-using-configuration-manager-version-1806-or-higher"></a>Configuration Manager 버전 1806 이상을 사용하여 Office 365 앱 배포: 
 Configuration Manager 1806부터 Office 사용자 지정 도구가 Configuration Manager 콘솔에서 Office 365 설치 관리자와 통합됩니다. Office 365에 대한 배포를 만들 때 최신 Office 관리 효율성 설정을 동적으로 구성할 수 있습니다. <!--1358149-->
@@ -89,7 +89,7 @@ Office 365 앱을 배포한 후 앱을 유지 관리하기 위한 자동 배포 
 <!--4224414-->
 *(1906 버전에서 도입됨)*
 
-규정 준수 통계를 통해 특정 Office 365 소프트웨어 업데이트를 필요로 하는 장치를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
+규정 준수 통계를 드릴스루하여 특정 Office 365 소프트웨어 업데이트가 필요한 디바이스를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
 
 1. **소프트웨어 라이브러리** > **Office 365 클라이언트 관리** > **Office 365 업데이트**로 가기.
 1. 하나 이상의 디바이스에 필요한 업데이트를 선택합니다.
@@ -244,7 +244,7 @@ Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도
 > [!Note]
 > The Office 365 Installation Wizard was introduced in Configuration Manager version 1702 and provides an easy way to create Office 365 apps.
 
-- [Download the Office 2016 Deployment Tool](http://aka.ms/ODT2016) from the Microsoft Download Center.  
+- [Download the Office 2016 Deployment Tool](https://aka.ms/ODT2016) from the Microsoft Download Center.  
 - Review the [configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx).
 
 You can create an application just as you would with any other application in Configuration Manager from **Software Library** > **Overview** > **Application Management** > **Applications**. For details, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).

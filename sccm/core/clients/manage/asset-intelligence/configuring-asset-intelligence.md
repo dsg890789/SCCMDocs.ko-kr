@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88a127f4dffa42c94f27727801519dfec77c855a
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 3bdf04a0c8454728f15ce26ba295584899997f92
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677793"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378383"
 ---
 # <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 구성
 
@@ -140,7 +140,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
 4.  **가져오기** 페이지에서 MVLS(Microsoft Volume Licensing) 파일(.xml 또는 .csv) 또는 일반 라이선스 계정 파일(.csv)을 가져올지 여부를 지정합니다. 일반 라이선스 계정 파일 만들기에 대한 자세한 내용은 이 항목의 뒷부분에 나오는 [가져오기를 위한 일반 라이선스 계정 정보 파일 만들기](#BKMK_CreateGeneralLicenseStatement) 섹션을 참조하세요.  
 
     > [!WARNING]  
-    >  Asset Intelligence 카탈로그에 가져올 수 있는 .csv 형식의 MVLS 파일을 다운로드하려면 [Microsoft 볼륨 라이선스 서비스 센터](http://go.microsoft.com/fwlink/p/?LinkId=226547)를 참조하세요. 이 정보에 액세스하려면 웹 사이트에 등록된 계정이 있어야 합니다. .xml 형식의 MVLS 파일을 가져오는 방법에 대한 자세한 내용은 Microsoft 계정 담당자에게 문의해야 합니다.  
+    >  Asset Intelligence 카탈로그에 가져올 수 있는 .csv 형식의 MVLS 파일을 다운로드하려면 [Microsoft 볼륨 라이선스 서비스 센터](https://go.microsoft.com/fwlink/p/?LinkId=226547)를 참조하세요. 이 정보에 액세스하려면 웹 사이트에 등록된 계정이 있어야 합니다. .xml 형식의 MVLS 파일을 가져오는 방법에 대한 자세한 내용은 Microsoft 계정 담당자에게 문의해야 합니다.  
 
 5.  라이선스 계정 파일에 대한 UNC 경로를 입력하거나 **찾아보기** 를 선택하여 네트워크 공유 폴더 및 파일을 선택합니다.  
 

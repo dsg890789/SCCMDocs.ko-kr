@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2356547d01df346b8b5db090ea8690377c8d0dc8
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: 862505e7ea1ad1e59b0bbf7ace07bc07d326a83d
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551023"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379870"
 ---
 # <a name="create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리 만들기
 
@@ -50,9 +50,9 @@ ms.locfileid: "67551023"
     > [!TIP]  
     > 사용자 고유의 WQL 쿼리를 작성할 수 있도록 다음 참조 설명서를 사용할 수 있습니다.  
     >   
-    > -   [WQL(WMI의 경우 SQL)](http://go.microsoft.com/fwlink/p/?LinkId=256653)  
-    > -   [WHERE 절](http://go.microsoft.com/fwlink/p/?LinkId=256654)  
-    > -   [WQL 연산자](http://go.microsoft.com/fwlink/p/?LinkId=256655)  
+    > -   [WQL(WMI의 경우 SQL)](https://go.microsoft.com/fwlink/p/?LinkId=256653)  
+    > -   [WHERE 절](https://go.microsoft.com/fwlink/p/?LinkId=256654)  
+    > -   [WQL 연산자](https://go.microsoft.com/fwlink/p/?LinkId=256655)  
 
 8.  &lt;쿼리 이름\> **문 속성** 대화 상자의 **조건** 탭에서 쿼리의 결과를 구체화하는 데 사용되는 조건을 지정합니다. 예를 들어 **XYZ** 사이트 코드를 갖는 리소스만 반환할 수 있습니다. 쿼리에 대한 여러 조건을 구성할 수 있습니다.  
 

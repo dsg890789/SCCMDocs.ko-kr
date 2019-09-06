@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b8d8af88-e8ac-4deb-921b-975e2d2afd80
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 503163fda1cae9802fe4ebdceabb9fd4424a35bb
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 5a7bf171804922399f21551e9c8854883de9cf78
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500181"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379945"
 ---
 # <a name="manage-express-installation-files-for-windows-10-updates"></a>Windows 10 업데이트용 빠른 설치 파일 관리
 
@@ -26,7 +26,7 @@ Configuration Manager로 업데이트 콘텐츠를 관리하여 Windows 10으로
 
 
 > [!IMPORTANT]  
-> OS 클라이언트 지원은 Windows 10 버전 1607에서 Windows 업데이트 에이전트의 업데이트로 사용할 수 있습니다. 이 업데이트는 2017년 4월 11일 릴리스된 업데이트에 포함되어 있습니다. 이러한 업데이트에 대한 자세한 내용은 [지원 문서 4015217](http://support.microsoft.com/kb/4015217)을 참조하세요. 이후 업데이트에서는 다운로드 크기를 줄이기 위한 빠른 설치 파일을 사용합니다. Windows 10 이전 버전과 이 업데이트가 설치되지 않은 Windows 10 버전 1607에서는 빠른 설치 파일이 지원되지 않습니다.  
+> OS 클라이언트 지원은 Windows 10 버전 1607에서 Windows 업데이트 에이전트의 업데이트로 사용할 수 있습니다. 이 업데이트는 2017년 4월 11일 릴리스된 업데이트에 포함되어 있습니다. 이러한 업데이트에 대한 자세한 내용은 [지원 문서 4015217](https://support.microsoft.com/kb/4015217)을 참조하세요. 이후 업데이트에서는 다운로드 크기를 줄이기 위한 빠른 설치 파일을 사용합니다. Windows 10 이전 버전과 이 업데이트가 설치되지 않은 Windows 10 버전 1607에서는 빠른 설치 파일이 지원되지 않습니다.  
 
 
 ### <a name="enable-the-site-to-download-express-installation-files-for-windows-10-updates"></a>사이트에서 Windows 10 업데이트용 빠른 설치 파일을 다운로드하도록 설정
@@ -39,7 +39,7 @@ Windows 10 빠른 설치 파일에 대한 메타데이터 동기화를 시작하
 3. 리본에서 **사이트 구성 요소 구성**을 클릭한 다음, **소프트웨어 업데이트 지점**을 클릭합니다. **업데이트 파일** 탭으로 전환하고 **승인된 모든 업데이트에 대한 전체 파일 및 Windows 10용 빠른 설치 파일 다운로드**를 선택합니다.
 
 > [!NOTE]    
-> 빠른 업데이트‘만’ 다운로드하도록 소프트웨어 업데이트 지점 구성 요소를 구성할 수는 없습니다.  사이트는 전체 파일 외에도 빠른 설치 파일을 다운로드합니다. 그러면 콘텐츠 라이브러리에 저장되는 콘텐츠의 양이 증가하고 배포 지점에 배포 및 저장됩니다.
+> 빠른 업데이트‘만’ 다운로드하도록 소프트웨어 업데이트 지점 구성 요소를 구성할 수는 없습니다.   사이트는 전체 파일 외에도 빠른 설치 파일을 다운로드합니다. 그러면 콘텐츠 라이브러리에 저장되는 콘텐츠의 양이 증가하고 배포 지점에 배포 및 저장됩니다.
 
 > [!Tip]  
 > 디스크에서 파일에 의해 사용되는 실제 공간을 확인하려면 파일의 **디스크 크기** 속성을 확인합니다. 디스크 크기 속성은 크기 값보다 훨씬 더 작아야 합니다. 자세한 내용은 [Windows 10 업데이트 배달 최적화 FAQ](/sccm/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_faq)를 참조하세요.  

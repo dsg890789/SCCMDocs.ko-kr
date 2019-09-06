@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f602bc42d007fa5780f4a8bc3971aa0ad41abfb9
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: f6c8dd4589cd9f1afedc54a3fb45342f6e566b98
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501305"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379889"
 ---
 # <a name="reference-for-system-center-configuration-manager-setup"></a>System Center Configuration Manager 설치에 대한 참조
 
@@ -47,7 +47,7 @@ Microsoft 다운로드 센터에서 다음 운영 체제에 대한 Configuration
 
 사용하는 Configuration Manager 버전용 클라이언트를 다운로드하려면 다음 링크를 사용합니다.  
 
--   [Microsoft System Center Configuration Manager - 추가 운영 체제용 클라이언트](http://www.microsoft.com/download/details.aspx?id=47719)를 참조하세요.  
+-   [Microsoft System Center Configuration Manager - 추가 운영 체제용 클라이언트](https://www.microsoft.com/download/details.aspx?id=47719)를 참조하세요.  
 
 ##  <a name="bkmk_usage"></a> 사용 데이터 수준 및 설정  
 System Center Configuration Manager 사이트를 처음 설치하는 경우 Configuration Manager가 자동으로 설치되고 사이트 서버에 새 사이트 시스템 역할 **서비스 연결 지점**이 구성됩니다. 서비스 연결 지점의 기본 설정은 다음과 같습니다.  
@@ -68,8 +68,8 @@ System Center Configuration Manager 사이트를 처음 설치하는 경우 Conf
 
 -   **확장** - 기본 수준 설정의 데이터와 함께 계층, 각 기능을 사용하는 방법(빈도/기간) 및 확장된 진단 정보(예: 시스템 또는 앱 작동 중단 발생 시의 서버 메모리 상태)에 대한 데이터를 전송합니다. 개인 식별이 가능한 데이터는 전송되지 않습니다.  
 
--   **전체** - 기본 및 확장 수준 설정의 데이터와 함께 시스템 파일, 시스템 스냅숏 등의 고급 진단 정보도 전송됩니다. 이 옵션을 선택하는 경우 개인 식별이 가능한 정보가 포함될 수도 있지만 Microsoft는 해당 정보를 토대로 사용자를 식별하거나 사용자에게 연락을 하지 않으며 사용자를 대상으로 하는 광고를 전송하지도 않습니다.  
+-   **전체** - 기본 및 확장 수준 설정의 데이터와 함께 시스템 파일, 시스템 스냅샷 등의 고급 진단 정보도 전송됩니다. 이 옵션을 선택하는 경우 개인 식별이 가능한 정보가 포함될 수도 있지만 Microsoft는 해당 정보를 토대로 사용자를 식별하거나 사용자에게 연락을 하지 않으며 사용자를 대상으로 하는 광고를 전송하지도 않습니다.  
 
 각 수준별로 수집되는 정보의 공개를 비롯한 자세한 내용은 [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
 
-온라인으로 System Center Configuration Manager 개인정보 취급방침을 보려면 [http://go.microsoft.com/fwlink/?LinkID=626527](http://go.microsoft.com/fwlink/?LinkID=626527)으로 이동하세요.
+온라인으로 System Center Configuration Manager 개인정보 취급방침을 보려면 [https://go.microsoft.com/fwlink/?LinkID=626527](https://go.microsoft.com/fwlink/?LinkID=626527)으로 이동하세요.

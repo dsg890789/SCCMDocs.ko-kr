@@ -12,12 +12,12 @@ ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2b4faed757acb10d7919f76ec8835dd7b8095b9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e41114313a896403368f8b4eb3c4c1fa6f2ebb31
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128020"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379379"
 ---
 # <a name="capabilities-in-technical-preview-1604-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1604의 기능
 
@@ -28,7 +28,7 @@ ms.locfileid: "56128020"
  다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.  
 
 ##  <a name="BKMK_WindowsVPP"></a> 비즈니스용 Windows 스토어에서 대량 구매 앱 관리  
- [비즈니스용 Windows 스토어](https://www.microsoft.com/en-us/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 예를 들어 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다.  
+ [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 예를 들어 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다.  
 
 -   구매한 앱 목록을 Configuration Manager와 동기화할 수 있습니다.  
 

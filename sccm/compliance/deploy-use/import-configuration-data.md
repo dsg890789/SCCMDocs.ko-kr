@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13bf43cb2eb80be6605f6c6a925c641f405732a6
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 1292e2af9a88c1e93252fe080b6b34f2d5702aa3
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130999"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378133"
 ---
 # <a name="import-configuration-data-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 구성 데이터 가져오기
 
@@ -30,7 +30,7 @@ System Center Configuration Manager 콘솔에서 구성 기준 및 구성 항목
 
 - 외부에서 작성되고 SML 스키마를 준수하는 구성 데이터  
 
-  System Center 2012 Configuration Manager 사이트 서버 역할을 준수할 수 있도록 관리하는 데 도움이 되는 구성 팩에 대한 예제를 보려면 [System Center 2012 Configuration Manager 구성 팩](http://www.microsoft.com/en-us/download/details.aspx?id=30710&WT.mc_id=rss_alldownloads_all)을 참조하세요.  
+  System Center 2012 Configuration Manager 사이트 서버 역할을 준수할 수 있도록 관리하는 데 도움이 되는 구성 팩에 대한 예제를 보려면 [System Center 2012 Configuration Manager 구성 팩](https://www.microsoft.com/download/details.aspx?id=30710&WT.mc_id=rss_alldownloads_all)을 참조하세요.  
 
 구성 기준을 가져오는 경우 구성 기준에서 참조되는 일부 또는 모든 구성 항목이 캐비닛 파일에 포함될 수도 있습니다. 가져오기 프로세스 중 Configuration Manager가 구성 기준에서 참조되는 모든 구성 항목이 캐비닛 파일에 포함되어 있는지 또는 이미 Configuration Manager 사이트에 존재하는지 확인합니다. Configuration Manager가 찾을 수 없는 구성 데이터를 참조하는 구성 기준을 가져오려고 하는 경우 가져오기 프로세스가 실패합니다.  
 

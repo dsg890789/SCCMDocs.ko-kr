@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0db0d38a1ed6929659c8c82b5b43f76535b025f9
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 45b330e28e1c6aa3b993e0a29e57fcb72fe09741
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536078"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379814"
 ---
 # <a name="configuration-manager-tools"></a>Configuration Manager 도구
 
@@ -29,7 +29,7 @@ Configuration Manager 버전 1806부터 이러한 도구가 사이트 서버의 
 [클라이언트 및 디바이스에 대해 지원되는 운영 체제](https://docs.microsoft.com/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)에 지원되는 클라이언트로 나열된 모든 Windows 운영 체제는 이러한 도구에서 사용을 지원합니다.
 
 > [!Note]  
-> [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=50012)은 Microsoft 다운로드 센터에서 계속 사용할 수 있습니다. Configuration Manager 버전 1806 이상의 경우 사이트 서버의 CD.Latest 폴더에서 이러한 버전의 도구를 사용합니다. 일부 도구는 이전에 도구 키트에 있었지만 1806 버전에는 포함되지 않았습니다. 이러한 레거시 도구는 더 이상 지원되지 않습니다.
+> [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)은 Microsoft 다운로드 센터에서 계속 사용할 수 있습니다. Configuration Manager 버전 1806 이상의 경우 사이트 서버의 CD.Latest 폴더에서 이러한 버전의 도구를 사용합니다. 일부 도구는 이전에 도구 키트에 있었지만 1806 버전에는 포함되지 않았습니다. 이러한 레거시 도구는 더 이상 지원되지 않습니다.
 
 
 ## <a name="client-tools"></a>클라이언트 도구

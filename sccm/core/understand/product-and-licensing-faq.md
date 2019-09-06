@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c0975c2b8dcf945464273930073ebf370bd4c32
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: acafe2aeefc267446042b12f06763fd0f1737cfb
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340163"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70377839"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
 *적용 대상: System Center Configuration Manager(Current Branch), System Center Configuration Manager(장기 서비스 분기)*
 
-이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. System Center Configuration Manager 라이선스를 다루는 어떤 문서보다 우선하거나 이 문서를 대체하지 않습니다. 자세한 내용은 [System Center 2016](https://www.microsoft.com/en-us/licensing/product-licensing/system-center-2016.aspx)의 제품 라이선스 및<!-- this link doesn't work without some language code --> [Product Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)(제품 사용 약관)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
+이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. System Center Configuration Manager 라이선스를 다루는 어떤 문서보다 우선하거나 이 문서를 대체하지 않습니다. 자세한 내용은 [System Center 2016](https://www.microsoft.com/licensing/product-licensing/system-center-2016.aspx)의 제품 라이선스 및<!-- this link doesn't work without some language code --> [Product Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)(제품 사용 약관)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
 
 Configuration Manager 기능에 대한 자세한 내용은 [제품 페이지](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)를 참조하세요.
 
@@ -44,7 +44,7 @@ SA(**Software Assurance**) 및 L&SA(**라이선스 및 Software Assurance**)는 
 
 - **SA(Software Assurance)** : Configuration Manager의 현재 분기 옵션을 설치하고 사용하려면 고객에게 Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있어야 합니다.    
 
-  - SA가 일부 Microsoft 제품에 대한 선택 사항이지만, Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA(또는 동등한 구독 권한)를 사용하는 것입니다.  자세한 내용은 [Software Assurance FAQ](https://www.microsoft.com/en-us/licensing/licensing-programs/FAQ-Software-Assurance.aspx)를 참조하세요.<!--this link doesn't work without some language code-->
+  - SA가 일부 Microsoft 제품에 대한 선택 사항이지만, Configuration Manager 현재 분기를 사용하는 권한을 얻을 수 있는 유일한 방법은 SA(또는 동등한 구독 권한)를 사용하는 것입니다.  자세한 내용은 [Software Assurance FAQ](https://www.microsoft.com/licensing/licensing-programs/FAQ-Software-Assurance.aspx)를 참조하세요.<!--this link doesn't work without some language code-->
 
 - **Microsoft L&SA(라이선스 및 Software Assurance)** : Configuration Manager에 대한 새 라이선스를 구매하는 고객은 L&SA(라이선스 및 Software Assurance)를 획득해야 합니다.   
 
@@ -52,12 +52,12 @@ SA(**Software Assurance**) 및 L&SA(**라이선스 및 Software Assurance**)는 
 
   - 프로그램 SA가 만료되고 Configuration Manager에 대한 라이선스가 여전히 있는 경우 더 이상 현재 분기를 사용할 수 없습니다. 자세한 내용은 FAQ의 [내 SA가 만료되었지만 L&SA가 있으면 어떻게 되나요?](#bkmk_sa-expires)를 참조하세요.
 
-라이선스 제공에 대한 자세한 내용은 [구입 방법](https://www.microsoft.com/Licensing/licensing-programs/licensing-programs)<!--this link doesn't work without some language code--> 및 [Licensing Product Terms](http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64)(라이선스 제품 사용 약관)를 참조하세요.  
+라이선스 제공에 대한 자세한 내용은 [구입 방법](https://www.microsoft.com/Licensing/licensing-programs/licensing-programs)<!--this link doesn't work without some language code--> 및 [Licensing Product Terms](https://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=64)(라이선스 제품 사용 약관)를 참조하세요.  
 
 
 ### <a name="bkmk_equiv-sub"></a>“동등한 구독”이라는 용어를 봤는데 어떤 프로그램을 의미하는 건가요?   
 
-동등한 구독은 [EMS(Enterprise Mobility + Security)](http://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=51) 또는 [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)와 같은 프로그램을 의미합니다. 다른 프로그램도 있긴 하지만 이런 프로그램이 가장 일반적입니다. Microsoft 볼륨 라이선스 제품 사용 약관에서는 이러한 프로그램을 관리 라이선스 동등 라이선스라고 합니다.
+동등한 구독은 [EMS(Enterprise Mobility + Security)](https://www.microsoftvolumelicensing.com/ProductResults.aspx?doc=Product%20Terms,OST&fid=51) 또는 [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)와 같은 프로그램을 의미합니다. 다른 프로그램도 있긴 하지만 이런 프로그램이 가장 일반적입니다. Microsoft 볼륨 라이선스 제품 사용 약관에서는 이러한 프로그램을 관리 라이선스 동등 라이선스라고 합니다.
 
 
 ### <a name="bkmk_ems-expires"></a> Enterprise Mobility + Security가 있지만 만료되었습니다. 이제 어떻게 해야 하나요?  

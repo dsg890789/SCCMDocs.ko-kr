@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ad3be032a3dd8ea21d7eeb6a4755c32d546f38
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.openlocfilehash: dee1a5a998f6d99678f85e6d5f39e52cb35a2bad
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67158666"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378722"
 ---
 # <a name="system-center-updates-publisher"></a>System Center Updates Publisher
 
@@ -34,7 +34,7 @@ Updates Publisher를 사용하여 다음을 수행할 수 있습니다.
 업데이트 서버에 업데이트를 게시한 후에는 System Center Configuration Manager를 사용하여 해당 업데이트를 검색하고 관리되는 디바이스에 배포할 수 있습니다.
 
 > [!TIP]  
-> 이전 버전인 [System Center Updates Publisher 2011](http://go.microsoft.com/fwlink/?LinkId=848111)은 계속 지원됩니다. 이 업데이트된 버전은 기능은 동일하지만 추가 운영 체제, 일부 작업을 간소화하는 새로운 기능이 지원되고 사용자 인터페이스가 업데이트되었습니다.
+> 이전 버전인 [System Center Updates Publisher 2011](https://go.microsoft.com/fwlink/?LinkId=848111)은 계속 지원됩니다. 이 업데이트된 버전은 기능은 동일하지만 추가 운영 체제, 일부 작업을 간소화하는 새로운 기능이 지원되고 사용자 인터페이스가 업데이트되었습니다.
 
 ## <a name="workspaces"></a>작업 영역
 Updates Publisher를 열면 기본적으로 *업데이트 작업 영역*의 개요 노드가 열립니다.
@@ -61,45 +61,45 @@ Updates Publisher에는 구성에 도움이 되는 4개의 작업 영역이 있�
 ## <a name="whats-new-in-the-system-center-updates-publisher-preview"></a>System Center Updates Publisher 미리 보기의 새로운 기능
 
 >[!NOTE] 
->이 섹션의 정보는 System Center Updates publisher의 미리 보기 버전에만 적용 됩니다. 미리 보기를 설치 하려면에서 다운로드 합니다 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=58390)합니다.
+>이 섹션의 정보는 System Center Updates publisher의 미리 보기 버전에만 적용 됩니다. 미리 보기를 설치 하려면 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=58390)에서 다운로드 합니다.
 
-업데이트를 작성 하는 데 System Center Updates Publisher에 대 한 미리 보기에서 새 제작 모드를 있습니다. 제작 모드를 사용 하는 경우는 **범주 작업 영역** 시작 화면에 추가 됩니다. 새 **되었고** 단추에도 추가 됩니다 합니다 **업데이트 작업 영역** 제작 모드 활성화 된 경우. 
+업데이트를 작성 하는 데 도움이 되는 System Center Updates Publisher 미리 보기에는 새로운 제작 모드가 있습니다. 제작 모드를 사용 하도록 설정 하면 **범주 작업 영역이** 시작 화면에 추가 됩니다. 제작 모드를 사용 하는 경우 새 **Detectoid** 단추도 **업데이트 작업 영역** 에 추가 됩니다. 
 
 ### <a name="to-enable-authoring-mode-in-the-preview"></a>미리 보기에서 제작 모드를 사용 하도록 설정 하려면
 
-1. 콘솔의 왼쪽된 위 모퉁이에서 클릭 하 여 **Updates Publisher** **속성** 탭을 선택한 후 **옵션**합니다.
-1. 로 이동 합니다 **Authoring** 옵션입니다.
-1. 확인란 **제작 모드 사용**합니다.
+1. 콘솔의 왼쪽 위 모서리에서 **Updates Publisher** **속성** 탭을 클릭 한 다음 **옵션**을 선택 합니다.
+1. **제작** 옵션으로 이동 합니다.
+1. **제작 모드 사용**확인란을 선택 합니다.
 
-![Updates Publisher에 대 한 제작 모드를 사용 하도록 설정](media/scup-enable-authoring-mode.png)
+![Updates Publisher에 대 한 제작 모드 사용](media/scup-enable-authoring-mode.png)
 
 ### <a name="about-the-categories-workspace"></a>범주 작업 영역 정보
 
-범주 작업 영역에 속하는 업데이트를 구성 하려면 업데이트 작성자를 수 있습니다. 예를 들어, OEM 라면 하고자 할 수 모델 또는 제품 라인에 따라 업데이트를 구성 합니다. 여러 범주를 정의할 수 있습니다 및 자식 범주 있지만 것 없습니다 총합계 자식 범주는 두 가지 수준으로 제한 합니다.
+범주 작업 영역에서 업데이트 작성자는 함께 포함 된 업데이트를 구성할 수 있습니다. 예를 들어 OEM 인 경우 모델 또는 제품 라인에 따라 업데이트를 구성할 수 있습니다. 두 수준으로 제한 되므로 범주 및 자식 범주를 여러 개 정의할 수 있지만, 그랜드 자식 범주는 정의할 수 없습니다.
 
-![범주 작업 영역 스크린샷](media/scup-categories-workspace.png)
+![범주 작업 영역의 스크린샷](media/scup-categories-workspace.png)
 
-### <a name="assign-an-update-to-a-category"></a>업데이트 범주에 할당
+### <a name="assign-an-update-to-a-category"></a>범주에 업데이트 할당
 
-업데이트에서 작성 한 후 할당할 수 있습니다 범주를 클릭 하 여 업데이트를 선택 하 여 **범주** 단추입니다. 또한 업데이트를 마우스 오른쪽 단추로 클릭 하 고 선택할 수 **범주**합니다.
+업데이트를 작성 한 후에는 업데이트를 선택 하 고 **분류** 단추를 클릭 하 여 범주에 할당할 수 있습니다. 업데이트를 마우스 오른쪽 단추로 클릭 하 고 **범주**를 선택할 수도 있습니다.
 
-![업데이트 분류의 스크린샷](media/scup-categorize-update.png)
-
-
-### <a name="about-detectoids"></a>디 텍 토이 드에 대 한
-
-제작 모드 활성화 되 면 업데이트에 대 한 디 텍 토이 드를 만들 수 있습니다. 디 텍 토이 드 적용 가능성을 확인 하려면 동일한 규칙 (또는 규칙 집합이)를 사용 하는 여러 업데이트 해야 하는 경우에 유용 합니다. 이러한 경우는 되었고 만들고 업데이트에 대 한 필수 조건으로 할당 합니다. 작성 된 업데이트에 여러 디 텍 토이 드를 할당할 수 있습니다.
+![업데이트 분류 스크린샷](media/scup-categorize-update.png)
 
 
-### <a name="create-a-detectoid"></a>되었고 만들기
+### <a name="about-detectoids"></a>Detectoids 정보
+
+제작 모드를 사용 하도록 설정 하면 업데이트에 대 한 detectoids를 만들 수 있습니다. Detectoids는 동일한 규칙 또는 규칙 집합을 사용 하 여 적용 가능성을 결정 하는 여러 업데이트가 있는 경우에 유용 합니다. 이러한 인스턴스에서 detectoid를 만들어 업데이트를 위한 필수 구성 요소로 할당 합니다. 작성 된 업데이트에 여러 detectoids를 할당할 수 있습니다.
+
+
+### <a name="create-a-detectoid"></a>Detectoid 만들기
 
 1. **작업 영역 업데이트**를 엽니다.
-1. 리본 메뉴를 클릭 합니다 **되었고** 단추입니다.
-1. 프로그램 되었고 만들기 마법사의 지시를 따릅니다.
+1. 리본에서 **Detectoid** 단추를 클릭 합니다.
+1. 마법사의 지시에 따라 detectoid을 만듭니다.
 
 
 
-![되었고를 사용 하 여 필수 구성 요소를 업데이트 합니다.](media/scup-detectoid-as-prerequisite.png)
+![Detectoid를 사용 하 여 필수 구성 요소 업데이트](media/scup-detectoid-as-prerequisite.png)
 
 
 ## <a name="next-steps"></a>다음 단계

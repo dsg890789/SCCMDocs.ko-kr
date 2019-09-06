@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c93c7ead83a09bb882c5f0468d936c5188d46b2
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.openlocfilehash: ef901e6bb9c0b28d55d8ffe08accca8f30101583
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66176928"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70377903"
 ---
 # <a name="install-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 설치
 
@@ -56,7 +56,7 @@ System Center Configuration Manager 콘솔에는 사이트 시스템 역할을 �
 7.  마법사를 완료합니다.  
 
 > [!TIP]  
->  Windows PowerShell cmdlet인 New-CMSiteSystemServer는 이 절차와 동일한 기능을 수행합니다. 자세한 내용은 System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [New-CMSiteSystemServer](http://go.microsoft.com/fwlink/p/?LinkID=271414)를 참조하세요.  
+>  Windows PowerShell cmdlet인 New-CMSiteSystemServer는 이 절차와 동일한 기능을 수행합니다. 자세한 내용은 System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [New-CMSiteSystemServer](https://go.microsoft.com/fwlink/p/?LinkID=271414)를 참조하세요.  
 
 ## <a name="to-install-site-system-roles-on-a-new-site-system-server"></a>새 사이트 시스템 서버에 사이트 시스템 역할을 설치하려면  
 
@@ -78,4 +78,4 @@ System Center Configuration Manager 콘솔에는 사이트 시스템 역할을 �
 7.  마법사를 완료합니다.  
 
 > [!TIP]  
->  Windows PowerShell cmdlet인 New-CMSiteSystemServer는 이 절차와 동일한 기능을 수행합니다. 자세한 내용은 System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [New-CMSiteSystemServer](http://go.microsoft.com/fwlink/p/?LinkID=271414)를 참조하세요.  
+>  Windows PowerShell cmdlet인 New-CMSiteSystemServer는 이 절차와 동일한 기능을 수행합니다. 자세한 내용은 System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [New-CMSiteSystemServer](https://go.microsoft.com/fwlink/p/?LinkID=271414)를 참조하세요.  

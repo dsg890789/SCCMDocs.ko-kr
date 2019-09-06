@@ -2,7 +2,7 @@
 title: 스크립트 만들기 및 실행
 titleSuffix: Configuration Manager
 description: Powershell 스크립트를 만들고 클라이언트 디바이스에서 실행합니다.
-ms.date: 06/20/2019
+ms.date: 09/04/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4d4775819efbbb33bdd46e80e857a7d1b2d47ab
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
+ms.openlocfilehash: f2b063fe21a674fc066531b1bd970a330d02d9f9
+ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712482"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243671"
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -210,7 +210,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 
 정규식은 인코딩된 유효성 검사에 대해 문자열을 확인하기 위한 간단한 형식의 프로그래밍입니다. 예를 들어, *RegEx* 필드에 `[^A-Z]`을 지정하여 *FirstName* 필드에 대문자 영문자가 있는지 확인할 수 있습니다.
 
-이 대화 상자의 정규식 처리는 .NET Framework에서 지원합니다. 정규식 사용에 관한 지침은 [.NET Regular Expression](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)(.NET 정규식)을 참조하세요. 
+이 대화 상자의 정규식 처리는 .NET Framework에서 지원합니다. 정규식 사용에 대 한 지침은 [.Net 정규식](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions) 및 [정규식 언어](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)를 참조 하세요.
 
 
 ## <a name="script-examples"></a>스크립트 예제

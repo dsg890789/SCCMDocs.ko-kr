@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7099a31cc9766a3c9904c5ae1013eb1700181102
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 59cd27ac63430a8b9073e7b178b53f9a5cc23da6
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535958"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70377886"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 분석에서 장치를 등록 하는 방법
 
@@ -55,7 +55,7 @@ Windows 10에는 호환성 구성 요소가 포함 되어 있습니다. 최신 �
 
 #### <a name="windows-81"></a>Windows 8.1
 
-업데이트 다운로드: [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978) 
+업데이트 다운로드: [KB 2976978](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978) 
 
 Windows 사용자 환경 개선 프로그램에 참여 하는 Windows 8.1 시스템에서 진단을 실행 합니다. 이러한 진단은 Windows 10으로 업그레이드할 때 호환성 문제가 발생할 수 있는지 여부를 확인 하는 데 도움이 됩니다.
 
@@ -63,7 +63,7 @@ Windows 사용자 환경 개선 프로그램에 참여 하는 Windows 8.1 시스
 
 #### <a name="windows-7-with-service-pack-1"></a>Windows 7 서비스 팩 1
 
-업데이트 다운로드: [KB 2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) 
+업데이트 다운로드: [KB 2952664](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) 
 
 Windows 사용자 환경 개선 프로그램에 참여 하는 Windows 7 SP1 (서비스 팩 1) 시스템에서 진단을 실행 합니다. 이러한 진단은 Windows 10으로 업그레이드할 때 호환성 문제가 발생할 수 있는지 여부를 확인 하는 데 도움이 됩니다.
 
@@ -155,12 +155,12 @@ Configuration Manager 로컬 정책 경로 `HKLM:\SOFTWARE\Microsoft\Windows\Cur
 | 정책   | 값  |
 |----------|--------|
 | **CommercialId** | 데스크톱 분석에서 장치를 표시 하려면 조직의 상용 ID를 사용 하 여 장치를 구성 합니다. |
-| **AllowTelemetry**  | 기본 `1` ,  **고급 또는**전체 진단 데이터에 대해 설정 합니다.  `2` `3` 데스크톱 분석에는 최소 기본 진단 데이터가 필요 합니다. 데스크톱 분석과 함께 향상 된 (제한 된) 수준을 사용 하는 것이 좋습니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)을 참조하세요. |
+| **AllowTelemetry**  | 기본 `1` , **고급 또는**전체 진단 데이터에 대해 설정 합니다. `2` `3` 데스크톱 분석에는 최소 기본 진단 데이터가 필요 합니다. 데스크톱 분석과 함께 향상 된 (제한 된) 수준을 사용 하는 것이 좋습니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)을 참조하세요. |
 | **LimitEnhancedDiagnosticDataWindowsAnalytics** | *Windows 10 버전 1709 이상에 적용 됩니다*. 이 설정은 AllowTelemetry 분석 설정이 인 `2`경우에만 적용 됩니다. Microsoft로 전송 되는 향상 된 진단 데이터 이벤트를 데스크톱 분석에 필요한 이벤트로만 제한 합니다. 자세한 내용은 windows [10, 버전 1709 고급 진단 데이터 이벤트 및 Windows Analytics에서 사용 되는 필드](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.|
 | **AllowDeviceNameInTelemetry** | *Windows 10 버전 1803 이상에 적용 됩니다*. 장치에서 장치 이름을 계속 보낼 수 있도록 하려면 별도 옵트인이 필요 합니다.<br> <br>참고: 장치 이름은 기본적으로 Microsoft에 전송 되지 않습니다. 장치 이름을 보내지 않으면 데스크톱 분석에서 "알 수 없음"으로 표시 됩니다. 이 동작을 통해 장치를 식별 하 고 평가 하기 어려울 수 있습니다. 자세한 내용은 [장치 이름](#device-name)을 참조 하세요. |
 | **CommercialDataOptIn** | *Windows 7 및 Windows 8.1에 적용 됩니다*. 데스크톱 분석에 `1` 는 값이 필요 합니다. 자세한 내용은 [Windows 7의 상용 데이터 옵트인](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee126127\(v=ws.10\))(영문)을 참조 하세요. |
 
-다음 경로의 그룹 정책 편집기에서 이러한 설정을 봅니다.  > **Windows 구성 요소** > 데이터수집및Preview빌드관리템플릿컴퓨터구성 > 
+다음 경로의 그룹 정책 편집기에서 이러한 설정을 봅니다. > **Windows 구성 요소** > 데이터수집및Preview빌드관리템플릿컴퓨터구성 > 
 
 > [!Important]  
 > 대부분의 경우 Configuration Manager만 사용 하 여 이러한 설정을 구성할 수 있습니다. 도메인 그룹 정책 개체에도 이러한 설정을 적용 하지 마십시오. 자세한 내용은 [충돌 해결](#conflict-resolution)을 참조 하세요.<!-- SCCMDocs-pr 3120 -->

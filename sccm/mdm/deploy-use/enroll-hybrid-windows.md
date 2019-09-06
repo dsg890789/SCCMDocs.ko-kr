@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7811e1ab4a323660f16b707076015d9e81bda2bb
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 7ce20ac1917640bd9762bafb37c0e22fe39375fa
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121297"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379577"
 ---
 # <a name="set-up-windows-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 Windows 하이브리드 디바이스 관리 설정
 
@@ -50,7 +50,7 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 - **Azure Active Directory Premium을 사용하나요?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)은 Enterprise Mobility + Security 및 기타 라이선싱 계획에 포함되어 있습니다.
 - **등록할 Windows 클라이언트 버전은 무엇인가요?** <br>Windows 10 디바이스는 회사 또는 학교 계정을 추가하여 자동으로 등록할 수 있습니다. 이전 버전은 회사 포털 앱을 사용하여 등록해야 합니다.
 
-||**Azure AD Premium**|**기타 AD** |
+||**Azure AD Premium**|**기타 AD**|
 |----------|---------------|---------------|  
 |**Windows 10**|[자동 등록](#enable-windows-10-automatic-enrollment) |[사용자 등록](#enable-windows-enrollment-without-azure-ad-premium)|
 |**이전 버전의 Windows**|[사용자 등록](#enable-windows-enrollment-without-azure-ad-premium)|[사용자 등록](#enable-windows-enrollment-without-azure-ad-premium)|
@@ -59,8 +59,8 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 자동 등록을 통해 사용자는 회사 또는 학교 계정을 추가하고 관리에 동의하여 회사 소유 또는 개인 Windows 10 PC 및 Intune의 Windows 10 Mobile 디바이스를 등록할 수 있습니다. 이러기만 하면 됩니다. 사용자 디바이스는 백그라운드에서 등록되어 Azure Active Directory에 가입됩니다. 등록된 디바이스는 Intune을 통해 관리됩니다.
 
-**전제 조건**
-- Azure Active Directory Premium 구독([평가판 구독](http://go.microsoft.com/fwlink/?LinkID=816845))
+**필수 구성 요소**
+- Azure Active Directory Premium 구독([평가판 구독](https://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 구독
 
 
@@ -104,13 +104,13 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 사용하면 사용자가 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.com을 수동으로 입력하라는 메시지가 표시됩니다.
 
-|유형|호스트 이름|지시 대상|TTL|  
+|형식|호스트 이름|지시 대상|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1시간|
 
 UPN 접미사가 두 개 이상 있는 경우 각 도메인 이름에 대해 CNAME을 하나 만들고 EnterpriseEnrollment-s.manage.microsoft.com에 각각을 가리켜야 합니다. 예를 들어 Contoso의 사용자가 name@contoso.com을 사용하지만 메일/UPN으로 name@us.contoso.com 및 name@eu.constoso.com도 사용하는 경우 Contoso DNS 관리자는 다음 CNAME을 만들어야 합니다.
 
-|유형|호스트 이름|지시 대상|TTL|  
+|형식|호스트 이름|지시 대상|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1시간|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1시간|

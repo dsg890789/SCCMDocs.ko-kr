@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: baa5a2219a4eb8c22e8fb5f3db19660c4dca77d1
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 4c6085990cf61ac034d2e28de67965216722dce8
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122528"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379407"
 ---
 # <a name="plan-for-the-migration-of-configuration-manager-objects-to-system-center-configuration-manager"></a>Configuration Manager 개체를 System Center Configuration Manager로 마이그레이션하도록 계획
 
@@ -89,7 +89,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 >  마이그레이션하는 각 패키지에 대해 대상 계층에서 패키지를 업데이트합니다. 이 동작은 패키지를 대상 계층의 배포 지점에 배포할 때 발생할 수 있는 문제를 방지할 수 있습니다. 그러나 대상 계층 구조의 배포 지점에서 패키지를 업데이트하면 해당 계층 구조의 클라이언트가 더 이상 공유 배포 지점에서 해당 패키지를 가져올 수 없습니다. 대상 계층 구조에서 패키지를 업데이트하려면 Configuration Manager 콘솔에서 소프트웨어 라이브러리로 이동하여 패키지를 마우스 오른쪽 단추로 클릭하고 **배포 지점 업데이트**를 선택합니다. 마이그레이션하는 각 패키지에 대해 이 동작을 수행합니다.  
 
 > [!TIP]  
->  Microsoft System Center Configuration Manager Package Conversion Manager를 사용하면 패키지와 프로그램을 System Center Configuration Manager 애플리케이션으로 변환할 수 있습니다. Package Conversion Manager는 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/p/?LinkId=212950) 사이트에서 다운로드할 수 있습니다. 자세한 내용은 [Configuration Manager Package Conversion Manager](http://go.microsoft.com/fwlink/p/?LinkId=247245)를 참조하세요.  
+>  Microsoft System Center Configuration Manager Package Conversion Manager를 사용하면 패키지와 프로그램을 System Center Configuration Manager 애플리케이션으로 변환할 수 있습니다. Package Conversion Manager는 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=212950) 사이트에서 다운로드할 수 있습니다. 자세한 내용은 [Configuration Manager Package Conversion Manager](https://go.microsoft.com/fwlink/p/?LinkId=247245)를 참조하세요.  
 
 ### <a name="virtual-applications"></a>가상 애플리케이션  
 지원되는 Configuration Manager 2007 사이트에서 App-V 패키지를 마이그레이션하면 마이그레이션 프로세스에서 이 패키지를 대상 계층의 애플리케이션으로 변환합니다. 또한, App-V 패키지의 기존 보급 알림에 따라 대상 계층에서 다음 배포 유형이 만들어집니다.  
@@ -144,7 +144,7 @@ System Center 2012 Configuration Manager 또는 System Center Configuration Mana
 구성 항목 및 구성 기준을 마이그레이션할 수 있습니다.  
 
 > [!NOTE]  
->  Configuration Manager 2007 원본 계층에서 해석되지 않는 구성 항목은 마이그레이션할 수 없습니다. 이러한 구성 항목은 대상 계층으로 마이그레이션하거나 가져올 수 없습니다. 해석되지 않은 구성 항목에 대한 자세한 내용은 Configuration Manager 2007 문서 라이브러리에서 [원하는 구성 관리의 구성 항목 정보](http://go.microsoft.com/fwlink/?LinkId=103846) 항목의 해석되지 않은 구성 항목을 참조하세요.  
+>  Configuration Manager 2007 원본 계층에서 해석되지 않는 구성 항목은 마이그레이션할 수 없습니다. 이러한 구성 항목은 대상 계층으로 마이그레이션하거나 가져올 수 없습니다. 해석되지 않은 구성 항목에 대한 자세한 내용은 Configuration Manager 2007 문서 라이브러리에서 [원하는 구성 관리의 구성 항목 정보](https://go.microsoft.com/fwlink/?LinkId=103846) 항목의 해석되지 않은 구성 항목을 참조하세요.  
 
 Configuration Manager 2007 구성 팩을 가져올 수 있습니다. 가져오기 프로세스에서 구성 팩이 System Center Configuration Manager와 호환되도록 자동으로 변환됩니다.  
 

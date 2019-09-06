@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8caed88289af0947bb9924e50f8369412e3c55f2
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 76bf5ffecd21d25d152d74957473571b05f7d2a8
+ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676684"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70176710"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -197,21 +197,17 @@ System Center Configuration Manager는 서명 및 암호화를 사용하여 Conf
 
 - 멀티캐스트 사용 배포 지점  
 
-- 대역 외 서비스 지점  
-
 - 보고 서비스 지점  
 
 - 소프트웨어 업데이트 지점  
 
 - 상태 마이그레이션 지점  
 
-- 시스템 상태 검사기 지점  
-
 - Microsoft Intune 커넥터  
 
-  이 인증서는 Configuration Manager에서 자동으로 관리되며 필요한 경우 자동으로 생성됩니다.  
+이 인증서는 Configuration Manager에서 자동으로 관리되며 필요한 경우 자동으로 생성됩니다.  
 
-  또한 Configuration Manager는 클라이언트 인증 인증서를 사용하여 배포 지점에서 관리 지점으로 상태 메시지를 전송합니다. 관리 지점이 HTTPS 클라이언트 연결 전용으로 구성된 경우 PKI 인증서를 사용해야 합니다. 관리 지점에서 HTTP 연결을 허용할 경우, PKI 인증서를 사용하거나 클라이언트 인증 기능이 있고 SHA-256과 2048비트의 키 길이를 사용하는 자체 서명된 인증서를 사용하는 옵션을 선택할 수도 있습니다.  
+또한 Configuration Manager는 클라이언트 인증 인증서를 사용하여 배포 지점에서 관리 지점으로 상태 메시지를 전송합니다. 관리 지점이 HTTPS 클라이언트 연결 전용으로 구성된 경우 PKI 인증서를 사용해야 합니다. 관리 지점에서 HTTP 연결을 허용할 경우, PKI 인증서를 사용하거나 클라이언트 인증 기능이 있고 SHA-256과 2048비트의 키 길이를 사용하는 자체 서명된 인증서를 사용하는 옵션을 선택할 수도 있습니다.  
 
 ### <a name="server-communication-between-sites"></a>사이트 간 서버 통신  
  Configuration Manager에서는 데이터베이스 복제 및 파일 기반 복제를 사용하여 사이트 간에 데이터를 전송합니다. 자세한 내용은 [엔드포인트 간의 통신](/sccm/core/plan-design/hierarchy/communications-between-endpoints)을 참조하세요.  

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18879c37bf51adda20dd1cf7bb7a52960312951d
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 69b2c89a449cac5cb9e16b059c6de4239bec8c67
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338040"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379515"
 ---
 # <a name="how-to-create-pfx-certificate-profiles-by-importing-certificate-details"></a>인증서 세부 정보를 가져와 PFX 인증서 프로필을 만드는 방법
 
@@ -39,7 +39,7 @@ ms.locfileid: "68338040"
 System Center Configuration Manager를 통해 인증서 자격 증명을 가져온 다음 개인 정보 교환(.pfx) 파일을 사용자 디바이스에 프로비전할 수 있습니다. PFX 파일을 사용하면 암호화된 데이터 교환을 지원하기 위한 사용자별 인증서를 생성할 수 있습니다.
 
 > [!TIP]  
-> 이 프로세스를 설명하는 단계별 연습은 [PFX 인증서 프로필을 Configuration Manager에서 만들고 배포하는 방법](http://blogs.technet.com/b/karanrustagi/archive/2015/09/01/how-to-create-and-deploy-pfx-certificate-profiles-in-configuration-manager.aspx)에서 제공됩니다.  
+> 이 프로세스를 설명하는 단계별 연습은 [PFX 인증서 프로필을 Configuration Manager에서 만들고 배포하는 방법](https://blogs.technet.com/b/karanrustagi/archive/2015/09/01/how-to-create-and-deploy-pfx-certificate-profiles-in-configuration-manager.aspx)에서 제공됩니다.  
 
 ## <a name="create-import-and-deploy-a-personal-information-exchange-pfx-certificate-profile"></a>PFX(개인 정보 교환) 인증서 프로필 만들기, 가져오기 및 배포  
 
@@ -85,7 +85,7 @@ PFX 인증서를 가져오려면 Configuration Manager SDK를 사용하여 PFX �
 
 ### <a name="deploy-a-create-pfx-script"></a>PFX 만들기 스크립트 배포
 
-[Configuration Manager SDK](http://go.microsoft.com/fwlink/?LinkId=613525)를 사용하여 PFX 만들기 스크립트를 배포합니다. 
+[Configuration Manager SDK](https://go.microsoft.com/fwlink/?LinkId=613525)를 사용하여 PFX 만들기 스크립트를 배포합니다. 
 
 Configuration Manager 2012 SP2에 추가된 PFX 만들기 스크립트는 SDK에 SMS_ClientPfxCertificate 클래스를 추가합니다. 이 클래스는 다음 메서드를 포함합니다.  
 

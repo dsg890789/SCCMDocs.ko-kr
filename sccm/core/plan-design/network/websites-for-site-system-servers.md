@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78791648d2ee69dc4eaf0d0869a87cb584f287d7
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 20c701bb5f00b8a109044913291597f27c2a9e29
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499153"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379799"
 ---
 # <a name="websites-for-site-system-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트
 
@@ -48,9 +48,9 @@ ms.locfileid: "65499153"
 
 -   Configuration Manager 클라이언트 통신(클라이언트 요청 포트)에 설정한 포트와 동일한 포트에서 응답하도록 사용자 지정 웹 사이트를 설정합니다.  
 
--   사용자 지정 폴더를 사용하는 각 사용자 지정 또는 기본 웹 사이트에 대해 기본적으로 사용하는 문서 종류의 복사본을 웹 사이트를 호스트하는 루트 폴더에 저장합니다. 예를 들어 기본 구성을 사용하는 Windows Server 2008 R2 컴퓨터에서 **iisstart.htm** 은 사용 가능한 여러 기본 문서 종류 중 하나입니다. 기본 웹 사이트의 루트에서 이 파일을 찾은 다음 이 파일의 복사본(또는 사용하는 기본 문서 종류의 복사본)을 SMSWEB 사용자 지정 웹사이트를 호스트하는 루트 폴더에 둘 수 있습니다. 기본 문서 종류에 대한 자세한 내용은 [Default Document &lt;defaultDocument\> for IIS](http://www.iis.net/configreference/system.webserver/defaultdocument)(IIS에 대한 <defaultDocument>)를 참조하세요.  
+-   사용자 지정 폴더를 사용하는 각 사용자 지정 또는 기본 웹 사이트에 대해 기본적으로 사용하는 문서 종류의 복사본을 웹 사이트를 호스트하는 루트 폴더에 저장합니다. 예를 들어 기본 구성을 사용하는 Windows Server 2008 R2 컴퓨터에서 **iisstart.htm** 은 사용 가능한 여러 기본 문서 종류 중 하나입니다. 기본 웹 사이트의 루트에서 이 파일을 찾은 다음 이 파일의 복사본(또는 사용하는 기본 문서 종류의 복사본)을 SMSWEB 사용자 지정 웹사이트를 호스트하는 루트 폴더에 둘 수 있습니다. 기본 문서 종류에 대한 자세한 내용은 [Default Document &lt;defaultDocument\> for IIS](https://www.iis.net/configreference/system.webserver/defaultdocument)(IIS에 대한 <defaultDocument>)를 참조하세요.  
 
-**IIS 요구 사항 정보:**
+**IIS 요구 사항 정보:** 
 **다음 사이트 시스템 역할의 경우 사이트 시스템 서비스를 호스트할 웹 사이트와 IIS가 필요합니다.**  
 
 -   애플리케이션 카탈로그 웹 서비스 지점  
