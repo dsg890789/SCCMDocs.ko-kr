@@ -11,12 +11,12 @@ manager: dougeby
 author: mestew
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b78d4212201a8ed1a08b7fecdb376cbdfdac7636
-ms.sourcegitcommit: a6a6507e01d819217208cfcea483ce9a2744583d
+ms.openlocfilehash: e96bf2cf8218c16a9862c5777a36aed7515a86d9
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748214"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379922"
 ---
 #  <a name="BKMK_ManageSUSettings"></a> 소프트웨어 업데이트 설정 관리  
 
@@ -41,7 +41,7 @@ Configuration Manager에서 소프트웨어 업데이트를 동기화한 후 다
 사이트에 소프트웨어 업데이트 지점을 만들면 클라이언트가 소프트웨어 업데이트 지점 서버 이름을 제공하는 컴퓨터 정책을 받고 컴퓨터에서 **인트라넷 Microsoft 업데이트 서비스 위치 지정** 로컬 정책을 구성합니다. WUA는 **인트라넷 업데이트 서비스에서 업데이트를 검색하도록 설정** 설정에 지정된 서버 이름을 검색한 다음 소프트웨어 업데이트 호환성을 검사할 때 이 서버에 연결합니다. **인트라넷 Microsoft 업데이트 서비스 위치 지정** 설정에 대한 도메인 정책이 만들어지면 이 도메인 정책이 로컬 정책을 덮어쓰고 WUA가 소프트웨어 업데이트 지점이 아닌 서버에 연결할 수 있습니다. 이렇게 될 경우 클라이언트가 여러 제품, 분류 및 언어에 따라 소프트웨어 업데이트 호환성을 검사할 수 있습니다. 그러므로 클라이언트 컴퓨터에 대한 Active Directory 정책을 구성하면 안 됩니다.  
 
 ### <a name="allow-signed-content-from-intranet-microsoft-update-service-location-group-policy"></a>인트라넷 Microsoft 업데이트 서비스 위치 그룹 정책에서 서명된 콘텐츠 허용  
-컴퓨터의 WUA가 System Center Updates Publisher를 사용하여 만들고 게시한 소프트웨어 업데이트를 검사하기 전에 **인트라넷 Microsoft 업데이트 서비스 위치에서 서명된 콘텐츠 허용** 그룹 정책 설정을 사용하도록 설정해야 합니다. 이 정책 설정을 사용하도록 설정하면 소프트웨어 업데이트가 로컬 컴퓨터의 **신뢰할 수 있는 게시자** 인증서 저장소에서 서명된 경우 WUA가 인트라넷 위치를 통해 받은 소프트웨어 업데이트를 허용합니다. Updates Publisher에 필요한 그룹 정책 설정에 대한 자세한 내용은 [Updates Publisher 2011 Documentation Library(Updates Publisher 2011 문서 라이브러리)](http://go.microsoft.com/fwlink/p/?LinkId=232476)를 참조하세요.  
+컴퓨터의 WUA가 System Center Updates Publisher를 사용하여 만들고 게시한 소프트웨어 업데이트를 검사하기 전에 **인트라넷 Microsoft 업데이트 서비스 위치에서 서명된 콘텐츠 허용** 그룹 정책 설정을 사용하도록 설정해야 합니다. 이 정책 설정을 사용하도록 설정하면 소프트웨어 업데이트가 로컬 컴퓨터의 **신뢰할 수 있는 게시자** 인증서 저장소에서 서명된 경우 WUA가 인트라넷 위치를 통해 받은 소프트웨어 업데이트를 허용합니다. Updates Publisher에 필요한 그룹 정책 설정에 대한 자세한 내용은 [Updates Publisher 2011 Documentation Library(Updates Publisher 2011 문서 라이브러리)](https://go.microsoft.com/fwlink/p/?LinkId=232476)를 참조하세요.  
 
 ### <a name="automatic-updates-configuration"></a>자동 업데이트 구성  
 자동 업데이트를 사용하면 클라이언트 컴퓨터에서 보안 업데이트 및 다른 중요한 다운로드를 받을 수 있습니다. 자동 업데이트는 **자동 업데이트 구성** 그룹 정책 설정이나 로컬 컴퓨터의 제어판을 통해 구성됩니다. 자동 업데이트를 사용하도록 설정하면 클라이언트 컴퓨터에서 업데이트 알림을 받고 구성된 설정에 따라 필수 업데이트를 다운로드하고 설치합니다. 자동 업데이트를 소프트웨어 업데이트와 함께 사용하면 각 클라이언트 컴퓨터에서 동일한 업데이트에 대해 알림 아이콘 및 팝업 표시를 나타낼 수 있습니다. 그리고, 다시 시작해야 하는 경우 각 클라이언트 컴퓨터에서 동일한 업데이트에 대해 다시 시작 대화 상자도 표시할 수 있습니다.  
