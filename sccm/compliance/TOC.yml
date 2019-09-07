@@ -1,7 +1,6 @@
 - name: 디바이스 정책 준수
   href: understand/ensure-device-compliance.md
 - name: 이해 및 탐색
-  expanded: true
   items:
     - name: 디바이스 규정 준수를 확인합니다.
       href: understand/ensure-device-compliance.md

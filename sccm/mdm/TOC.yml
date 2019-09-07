@@ -1,7 +1,6 @@
 - name: 모바일 디바이스 관리
   href: understand/hybrid-mobile-device-management.md
 - name: 개요
-  expanded: true
   items:
     - name: 하이브리드 MDM이란
       href: understand/hybrid-mobile-device-management.md

@@ -1,7 +1,6 @@
 - name: 핵심 인프라
   href: understand/introduction.md
 - name: 이해 및 탐색
-  expanded: true
   items:
     - name: Configuration Manager 소개
       items:

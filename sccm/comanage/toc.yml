@@ -1,7 +1,6 @@
 - name: 공동 관리
   href: overview.md
 - name: 개요
-  expanded: true
   items:
     - name: 공동 관리란?
       href: overview.md
