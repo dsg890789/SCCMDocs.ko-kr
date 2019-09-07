@@ -2,7 +2,7 @@
 title: 데스크톱 분석 FAQ
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에 대 한 질문과 대답입니다.
-ms.date: 09/03/2019
+ms.date: 09/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 884626cd46659917734fa309fa6e84fbdd517ae2
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: 306c6569551e1068c0e682c893e94b8f1a920ade
+ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243641"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70738285"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
@@ -122,6 +122,12 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러
 ### <a name="im-not-ready-yet-can-i-migrate-after-the-initial-onboarding"></a>아직 준비 되지 않았습니다. 초기 온 보 딩 후에 마이그레이션할 수 있나요?
 
 아니요, 지금은 [초기](/sccm/desktop-analytics/set-up#initial-onboarding)등록 중에 마이그레이션을 결정 해야 합니다.
+
+### <a name="can-i-use-update-compliance-together-with-desktop-analytics"></a>데스크톱 분석과 함께 업데이트 준수를 사용할 수 있나요?
+
+예. 현재 Azure Portal에서 [업데이트 준수](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started) 를 사용 하는 경우 2020 년 1 월 이후에도 계속 해 서이 작업을 수행할 수 있습니다.
+
+<!-- For more information, see [blog post]... -->
 
 ## <a name="other"></a>기타
 

@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd86e5bd939ecd356a6cf290958a766266248645
-ms.sourcegitcommit: 75f48834b98ea6a238d39f24e04c127b2959d913
+ms.openlocfilehash: 44a01fa12a93b041e61e3bfc85890821bdf09c29
+ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604480"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70738401"
 ---
-# <a name="what-is-desktop-analytics"></a>데스크톱 분석 이란?
+# <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
 
 > [!Note]  
 > 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
@@ -62,14 +62,14 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 데스크톱 분석을 사용 하려면 사용자 환경이 다음과 같은 필수 구성 요소를 충족 하는지 확인 합니다.
 
 
 ### <a name="technical"></a>기술
 
-- [전역 관리자](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator) 권한이 있는 활성 Azure 구독 [Microsoft 계정은](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) 지원 되지 않습니다.  
+- [전역 관리자](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator-permissions) 권한이 있는 활성 Azure 구독 [Microsoft 계정은](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) 지원 되지 않습니다.  
 
     > [!Important]  
     > 데스크톱 분석은 현재 Office 365 서비스로 제공 되며, Azure AD 테 넌 트에서 Office 365 구독이 필요 합니다. 이는 나중에 필요 하지 않을 수 있습니다.
