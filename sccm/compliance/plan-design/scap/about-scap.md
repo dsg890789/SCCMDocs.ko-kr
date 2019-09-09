@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969bbb28e64c37d8843d634adce99916333540ed
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 2036b3a9981c1a27b24bff1f1f0f543813267dc7
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130363"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378119"
 ---
 # <a name="about-the-security-content-automation-protocol-scap-extensions"></a>SCAP(Security Content Automation Protocol) 확장 정보
 
@@ -76,11 +76,11 @@ Configuration Manager는 이 확장을 통해 SCAP 데이터 스트림을 사용
 
 ## <a name="terms"></a>용어
 
-- **OVAL ID**: OVAL ID의 형식을 따르는 특정 OVAL 정의에 대한 식별자입니다.  
+- **OVAL ID:** OVAL ID의 형식을 따르는 특정 OVAL 정의에 대한 식별자입니다.  
 
-- **SCAP 결과 데이터 스트림**: 출력(결과) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.  
+- **SCAP 결과 데이터 스트림:** 출력(결과) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.  
 
-- **SCAP 원본 데이터 스트림**: 입력(원본) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.
+- **SCAP 원본 데이터 스트림:** 입력(원본) 콘텐츠를 보유하는 SCAP 구성 요소 간의 참조 매핑과 SCAP 구성 요소의 번들입니다.
 
 
 
@@ -153,11 +153,11 @@ Configuration Manager용 SCAP 확장에는 Windows 명령줄 도구가 포함됩
 
 - 각 도구의 명령줄 매개 변수 `-help` 및 `-?`는 사용법을 화면에 인쇄합니다. 이러한 사용 정보는 화면 판독기 및 기타 보조 기술에 사용할 수 있습니다.  
 
-- 자세한 내용은 [Windows 내게 필요한 옵션](http://windows.microsoft.com/windows/help/accessibility)을 참조하세요.
+- 자세한 내용은 [Windows 내게 필요한 옵션](https://windows.microsoft.com/windows/help/accessibility)을 참조하세요.
 
 SCAP 확장은 Configuration Manager의 내게 필요한 옵션 기능도 사용합니다. 자세한 내용은 [Configuration Manager의 내게 필요한 옵션 기능](/sccm/core/understand/accessibility-features)을 참조하세요.
 
-Microsoft의 내게 필요한 옵션 제품 및 서비스에 대한 일반적인 내용은 [Microsoft 내게 필요한 옵션 웹 사이트](http://go.microsoft.com/fwlink/p/?LinkId=9212)를 참조하세요.
+Microsoft의 내게 필요한 옵션 제품 및 서비스에 대한 일반적인 내용은 [Microsoft 내게 필요한 옵션 웹 사이트](https://go.microsoft.com/fwlink/p/?LinkId=9212)를 참조하세요.
 
 
 

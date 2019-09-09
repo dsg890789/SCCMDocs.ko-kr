@@ -11,12 +11,12 @@ ms.assetid: 2e96f847-5b5a-4da9-8e8f-6aa488838508
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6878e36e5bf20774f6eef1ee855dda2f95dabfb4
-ms.sourcegitcommit: f3dd8405018fe1043434386be15c16752c1a4a3c
-ms.translationtype: HT
+ms.openlocfilehash: 4cc806009f9cb02e50a2b023722a2045d4bde655
+ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57558010"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243704"
 ---
 # <a name="windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot
 <!--3607717, fka 1358333-->
@@ -35,7 +35,7 @@ ms.locfileid: "57558010"
 
 - Microsoft Intune에서 Windows Autopilot 프로필을 만듭니다. 자세한 내용은 [Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록](https://docs.microsoft.com/intune/enrollment-autopilot)을 참조하세요.
 
-- 아직 서비스에 등록 된 Windows Autopilot 장치입니다. 장치가 이미 등록 되어 있는 경우 할당 된 프로필이 우선적으로 적용 합니다. 기존 장치 프로필에 대 한 Autopilot 경우에 적용 온라인 프로필 시간이 초과 됩니다.
+- Windows Autopilot 서비스에 아직 등록되지 않은 디바이스입니다. 디바이스가 이미 등록되어 있으면 할당된 프로필이 우선 적용됩니다. 기존 장치에 대 한 Autopilot 프로필은 온라인 프로필의 시간이 초과 되는 경우에만 적용 됩니다.
 
 
 
@@ -96,7 +96,7 @@ ms.locfileid: "57558010"
 
     - **운영 체제를 설치하기 전에 대상 컴퓨터 파티션을 만들고 포맷** 옵션을 사용하도록 설정합니다.  
 
-    - **Bitlocker를 사용 하 여 사용할 작업 순서 구성**: 작업 순서에 Bitlocker를 사용 하도록 설정 하는 데 필요한 단계가 포함 됩니다이 옵션을 사용 하는 경우  
+    - **Bitlocker에 사용할 작업 순서 구성**:이 옵션을 사용 하도록 설정 하는 경우 작업 순서에 bitlocker를 사용 하도록 설정 하는 데 필요한 단계가 포함 됩니다.  
 
     - **제품 키**: Windows 정품 인증을 위한 제품 키를 지정해야 하는 경우 여기에 입력합니다.  
 
@@ -142,3 +142,6 @@ ms.locfileid: "57558010"
 - [Paths to co-management](/sccm/comanage/quickstart-paths)(공동 관리 경로)
 - [Windows Autopilot with co-management](/sccm/comanage/quickstart-autopilot)(공동 관리가 포함된 Windows Autopilot)
 
+## <a name="see-also"></a>참고 항목
+
+- [Windows Autopilot를 사용 하 여 Intune에 Windows 장치 등록](https://docs.microsoft.com/intune/enrollment-autopilot)

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b63894764e45e67ef262e345140e245297a11c87
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: dee4e3a83f0cdba38f07ba0e7bd9bf6f425ca440
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133938"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378142"
 ---
 # <a name="install-and-configure-the-scap-extensions-for-configuration-manager"></a>Configuration Manager용 SCAP 확장 설치 및 구성
 
@@ -51,10 +51,10 @@ SCAP 확장을 실행하기 전에 NVD(National Vulnerability Database) [다운�
 
 ### <a name="install-the-scap-data-streams"></a>SCAP 데이터 스트림 설치
 
-1. [NVD 웹 사이트](http://nvd.nist.gov/) 를 방문하여 조직에 필요한 SCAP 데이터 스트림을 확인합니다.
+1. [NVD 웹 사이트](https://nvd.nist.gov/) 를 방문하여 조직에 필요한 SCAP 데이터 스트림을 확인합니다.
 NIST에서 게시하는 SCAP 데이터 스트림은 _검사 목록_이라고도 하는 여러 번들로 구성되어 있습니다.  
 
-2. [NVD 웹 사이트](http://nvd.nist.gov/home.cfm)에서 SCAP 데이터 스트림을 다운로드합니다. 데이터 스트림은 파일 이름 확장명이 .zip인 압축 파일에 저장되어 있거나 DataStream XML 파일로 표시되어 있습니다.  
+2. [NVD 웹 사이트](https://nvd.nist.gov/home.cfm)에서 SCAP 데이터 스트림을 다운로드합니다. 데이터 스트림은 파일 이름 확장명이 .zip인 압축 파일에 저장되어 있거나 DataStream XML 파일로 표시되어 있습니다.  
 
     > [!IMPORTANT]  
     > NVD에서는 확장명이 .xml인 여러 SCAP 데이터 스트림 파일을 다운로드할 수 있습니다. 그러나 SCAP 확장에서는 XCCDF(SCAP1.0 및 1.1)/DataStream(SCAP1.2) 콘텐츠를 포함하는 .xml 파일만 사용할 수 있습니다.  

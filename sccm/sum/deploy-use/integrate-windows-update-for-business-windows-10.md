@@ -5,18 +5,18 @@ description: 비즈니스용 Windows 업데이트를 사용하면 Windows 업데
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36ab933876b96c0eebe87ba07932757147e334c0
-ms.sourcegitcommit: 9af73f5c1b93f6ccaea3e6a096f75a5fecd65c2f
+ms.openlocfilehash: 12757bed4c674d12f1e0e2b3dc5c6ef72db59778
+ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64669118"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243701"
 ---
 # <a name="integration-with-windows-update-for-business-in-windows-10"></a>Windows 10에서 비즈니스용 Windows 업데이트와 통합
 
@@ -59,12 +59,15 @@ ms.locfileid: "64669118"
 
 #### <a name="to-identify-clients-that-use-wufb"></a>WUfB를 사용하는 클라이언트를 식별하려면 다음을 수행합니다.  
 
-1.  이전에 설정된 경우 Windows 업데이트 에이전트를 사용하지 않도록 설정하여 WSUS에 대한 검사가 이루어지지 않도록 합니다. 다음 레지스트리 키는 컴퓨터가 WSUS 또는 Windows 업데이트에 대해 검사하는지를 나타내도록 설정될 수 있습니다.  값이 2이면 WSUS에 대해 검사하지 않는 것입니다.  
+1.  Windows 업데이트 에이전트가 WSUS에 대해 이전에 사용 하도록 설정 된 경우이를 검사 하지 않는지 확인 합니다. 다음 레지스트리 키는 컴퓨터가 WSUS 또는 Windows 업데이트에 대해 검사하는지를 나타내는데 사용될 수 있습니다. 레지스트리 키가 없는 경우 WSUS에 대해 검사 되지 않습니다.
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer**
 
 2.  Configuration Manager 리소스 탐색기의 **Windows 업데이트** 노드 아래에 새 특성 **UseWUServer**가 있습니다.  
 
-3.  업데이트 및 업그레이드를 위해 WUfB를 통해 연결된 모든 컴퓨터에 대해 **UseWUServer** 특성을 기반으로 컬렉션을 만듭니다.  
+3.  업데이트 및 업그레이드를 위해 WUfB를 통해 연결된 모든 컴퓨터에 대해 **UseWUServer** 특성을 기반으로 컬렉션을 만듭니다. 아래와 유사한 쿼리를 기반으로 컬렉션을 만들 수 있습니다.  
+    ``` 
+    Select sr.* from SMS_R_System as sr join SMS_G_System_WINDOWSUPDATE as su on sr.ResourceID=su.ResourceID where su.UseWUServer is null
+    ```
 
 4.  클라이언트 에이전트 설정을 만들어 소프트웨어 업데이트 워크플로를 사용하지 않도록 설정합니다. 설정을 WUfB에 직접 연결하는 컴퓨터의 컬렉션에 배포합니다.  
 
@@ -87,10 +90,10 @@ Configuration Manager 버전 1706부터 비즈니스용 Windows 업데이트에�
 3. **일반** 페이지에서 정책의 이름 및 설명을 제공합니다.
 4. **지연 정책** 페이지에서 기능 업데이트를 연기할지 또는 일시 중지할지를 구성합니다. 기능 업데이트는 일반적으로 새로운 Windows용 기능입니다. **분기 준비 수준** 설정을 구성한 후에 Microsoft에서 출시한 후에 기능 업데이트 수신을 연기할지 여부 및 연기 기간을 정의할 수 있습니다.
     - **분기 준비 상태 수준**: 디바이스가 Windows 업데이트(현재 분기 또는 비즈니스용 현재 분기)를 받을 분기를 설정합니다.
-    - **지연 기간(일)**: 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 365일 동안 수신을 연기할 수 있습니다.
+    - **지연 기간(일)** : 기능 업데이트를 연기할 일 수를 지정합니다. 이러한 기능 업데이트는 출시되고 365일 동안 수신을 연기할 수 있습니다.
     - **기능 업데이트 시작 일시 중지**: 기능 업데이트를 일시 중지하고 최대 60일 내에 디바이스에서 기능 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 일수가 경과하고 나면 일시 중지 기능은 자동으로 만료되고 디바이스가 Windows 업데이트에서 적용되는 업데이트를 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 기능 업데이트 일시 중지를 해제할 수 있습니다.   
 5. 품질 업데이트를 연기할지 또는 일시 중지할지를 선택합니다. 품질 업데이트는 일반적으로 기존 Windows 기능에 대한 수정 내용 및 향상된 기능이며, 매월 첫째 화요일에 게시되는 것이 보통입니다. 물론 Microsoft는 언제든지 이러한 업데이트를 출시할 수 있습니다. 출시된 후에 품질 업데이트 수신을 연기할지 여부 및 연기할 기간을 정의할 수 있습니다.
-    - **지연 기간(일)**: 품질 업데이트를 연기할 일 수를 지정합니다. 이러한 품질 업데이트는 출시되고 30일 동안 수신을 연기할 수 있습니다.
+    - **지연 기간(일)** : 품질 업데이트를 연기할 일 수를 지정합니다. 이러한 품질 업데이트는 출시되고 30일 동안 수신을 연기할 수 있습니다.
     - **품질 업데이트 시작 일시 중지**: 품질 업데이트를 일시 중지하고 최대 35일 내에 디바이스에서 기능 업데이트를 받지 못하도록 일시 중지할지 여부를 선택합니다. 최대 일수가 경과하고 나면 일시 중지 기능은 자동으로 만료되고 디바이스가 Windows 업데이트에서 적용되는 업데이트를 검색합니다. 이 검색 후에 업데이트를 다시 일시 중지할 수 있습니다. 이 확인란을 선택 취소하여 품질 업데이트 일시 중지를 해제할 수 있습니다.
 6. **다른 Microsoft 제품에 대한 업데이트 설치**를 선택하여 지연 설정이 Windows 업데이트 뿐만 아니라 Microsoft 업데이트에도 적용될 수 있게 하는 그룹 정책 설정을 사용하도록 설정합니다.
 7. Windows 업데이트에서 드라이버를 자동으로 업데이트하려면 **Windows 업데이트에 드라이버 포함**을 선택합니다. 이 설정을 선택 취소하면 드라이버 업데이트가 Windows 업데이트에서 다운로드되지 않습니다.
@@ -105,6 +108,6 @@ Configuration Manager 버전 1706부터 비즈니스용 Windows 업데이트에�
     - **지원되는 경우 비규격 규칙 재구성**: Configuration Manager에서 등록된 모바일 디바이스의 레지스트리, 스크립트 및 모든 설정, WMI(Windows Management Instrumentation)에 대해 규격을 준수하지 않는 규칙을 자동으로 수정하도록 선택합니다.
     - **유지 관리 기간을 벗어나도 수정 허용**: 정책을 배포할 컬렉션에 대해 유지 관리 기간이 구성된 경우 유지 관리 기간 외의 기간에 준수 설정이 값을 수정할 수 있도록 하려면 이 옵션을 사용하도록 설정합니다. 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.
     - **경고 생성**: 지정된 날짜 및 시간을 기준으로 구성 기준 준수가 지정된 비율에 못 미치는 경우에 생성되는 경고를 구성합니다. 경고를 System Center Operations Manager로 전송할지 여부도 지정할 수 있습니다.
-    - **임의 지연(시)**: 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하기 위해 지연 기간을 지정합니다. 기본값은 64시간입니다.
+    - **임의 지연(시)** : 네트워크 디바이스 등록 서비스의 과도한 처리를 방지하기 위해 지연 기간을 지정합니다. 기본값은 64시간입니다.
     - **일정**: 클라이언트 컴퓨터에서 배포된 프로필이 평가되는 준수 평가 일정을 지정합니다. 단순 일정 또는 사용자 지정 일정 중에서 지정할 수 있습니다. 사용자가 로그온해 있을 때 클라이언트 컴퓨터에서 프로필을 평가합니다.
 4.  마법사를 완료하여 프로필을 배포합니다.

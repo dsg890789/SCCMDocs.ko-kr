@@ -2,7 +2,7 @@
 title: 작업 순서 단계
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 09/04/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4ee01c85cf978b595aa9d6a7948503b34927c31
-ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
+ms.openlocfilehash: 273e61024032defd10b3176fb70ac6c3a35125e2
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70110240"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380055"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -1142,7 +1142,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 대부분의 경우에는 기본 설정을 사용하여 캐시된 검색 결과를 사용하세요.
 
-**SMSTSSoftwareUpdateScanTimeout** 변수는 이 단계에서 소프트웨어 업데이트 검색 시간 제한을 제어합니다. 기본값은 30분입니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)\(작업 순서 변수\)를 참조하세요.
+**SMSTSSoftwareUpdateScanTimeout** 변수는 이 단계에서 소프트웨어 업데이트 검색 시간 제한을 제어합니다. 기본값은 60분입니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)\(작업 순서 변수\)를 참조하세요.
 
 ### <a name="options"></a>Options  
 
