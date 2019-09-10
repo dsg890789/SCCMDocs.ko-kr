@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44a01fa12a93b041e61e3bfc85890821bdf09c29
-ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
+ms.openlocfilehash: 5f6461d607401a0d932997d3ef38f02c991a5e2b
+ms.sourcegitcommit: cb169396acf0d50fedd9f2ae62f7894615c3cce5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70738401"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808349"
 ---
 # <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
 
@@ -62,7 +62,7 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 
 
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 데스크톱 분석을 사용 하려면 사용자 환경이 다음과 같은 필수 구성 요소를 충족 하는지 확인 합니다.
 
@@ -72,7 +72,7 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 - [전역 관리자](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator-permissions) 권한이 있는 활성 Azure 구독 [Microsoft 계정은](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) 지원 되지 않습니다.  
 
     > [!Important]  
-    > 데스크톱 분석은 현재 Office 365 서비스로 제공 되며, Azure AD 테 넌 트에서 Office 365 구독이 필요 합니다. 이는 나중에 필요 하지 않을 수 있습니다.
+    > 데스크톱 분석에서는 현재 Azure AD 테 넌 트에 Office 365 서비스를 배포 해야 합니다. 이는 나중에 필요 하지 않습니다.
 
     - 작업 영역 **소유자** 또는 **참가자** 권한으로 **작업 영역을 설정**하 고 다음 역할을 수행 합니다.  
 

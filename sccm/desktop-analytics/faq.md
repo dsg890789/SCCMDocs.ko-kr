@@ -11,19 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 306c6569551e1068c0e682c893e94b8f1a920ade
-ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
+ms.openlocfilehash: e47827c6ad2b52ebb2b9dfabcdc4c61320385bf3
+ms.sourcegitcommit: cb169396acf0d50fedd9f2ae62f7894615c3cce5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70738285"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808387"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
 > [!Note]  
 > 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 ### <a name="can-i-use-desktop-analytics-with-intune-managed-devices"></a>Intune 관리 장치에서 데스크톱 분석을 사용할 수 있나요? 
 
@@ -127,7 +127,7 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러
 
 예. 현재 Azure Portal에서 [업데이트 준수](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started) 를 사용 하는 경우 2020 년 1 월 이후에도 계속 해 서이 작업을 수행할 수 있습니다.
 
-<!-- For more information, see [blog post]... -->
+자세한 내용은 블로그 게시물을 참조 하세요. [사용자 입력 데이터 마이그레이션 "Windows Analytics: "데스크톱 분석](https://techcommunity.microsoft.com/t5/Desktop-Analytics-Blog/Migrate-user-input-data-from-Windows-Analytics-Upgrade-Readiness/ba-p/841744)으로 업그레이드 준비 합니다.
 
 ## <a name="other"></a>기타
 
