@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 08/06/2019
+ms.date: 08/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f208a8bf66748601985434366a30297396254e4
-ms.sourcegitcommit: 159c6c9fe1df03fd2c4633125a593e3050a2f2da
+ms.openlocfilehash: d5c80836ced76bdf1109c9279bf2068efbbd97f5
+ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68833066"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70176757"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -122,9 +122,24 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1908"></a>Technical Preview 버전 1908
+### <a name="technical-preview-version-19082"></a>Technical Preview 버전 1908.2
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
+
+- [콘솔 연결 개선](/sccm/core/get-started/2019/technical-preview-1908-2#improvements-to-console-connections) <!--4923997-->
+- [멀티캐스트 사용 배포 지점 개선](/sccm/core/get-started/2019/technical-preview-1908-2#bkmk_multicast) <!--3785535-->
+- [CMPivot 엔진에 대한 최적화](/sccm/core/get-started/2019/technical-preview-1908-2#optimizations-to-the-cmpivot-engine) <!--3197353-->
+- [OS 배포 중 키보드 레이아웃 설정](/sccm/core/get-started/2019/technical-preview-1908-2#bkmk_osd) <!--5138936-->
+
+> [!Note]  
+> 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
+
+
+## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
+
+현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
+
+### <a name="technical-preview-version-1908"></a>Technical Preview 버전 1908
 
 - [전원 계획의 작업 순서 성능 향상](/sccm/core/get-started/2019/technical-preview-1908#bkmk_tsperf) <!--3555926-->
 - [CMPivot 독립 실행형을 사용하는 로컬 디바이스 쿼리 평가](/sccm/core/get-started/2019/technical-preview-1908#local-device-query-evaluation-using-cmpivot-standalone) <!--3197353-->
@@ -135,13 +150,6 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 - [복사 및 붙여넣기 작업 순서 조건](/sccm/core/get-started/2019/technical-preview-1908#bkmk_tscondition) <!--4621098-->
 - [작업 순서 검색 기능 개선](/sccm/core/get-started/2019/technical-preview-1908#bkmk_tssearch) <!--4621085-->
 - [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1908#bkmk_osd) <!--4910348, 4931110, 4977616-->
-
-> [!Note]  
-> 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
-
-## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
-
-현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
 
 ### <a name="technical-preview-version-1907"></a>Technical Preview 버전 1907
 

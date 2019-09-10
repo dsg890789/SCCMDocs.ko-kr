@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2015d0ac56be97eeb98e81f4d598c70ca8ee1f3
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: f69277c55cec8c6acf9ef6763d63f18f73b38d87
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128486"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70379199"
 ---
 # <a name="online-documentation-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 온라인 설명서
 
@@ -60,7 +60,7 @@ System Center Configuration Manager 문서 라이브러리를 시작합니다.
 
 **릴리스 정보:** 이 기술 미리 보기의 릴리스 정보는 이 릴리스의 핵심 설명서에 포함되어 있으며 각 기능에 대한 정보를 차례대로 제공합니다.  
 
-**접근성:** 이 기술 미리 보기에 대한 접근성 정보는 System Center 2012 Configuration Manager와 동일합니다. 장애가 있는 사용자가 Configuration Manager를 더욱 쉽게 이용할 수 있도록 지원하는 기능, 제품 및 서비스에 대해서는 [Configuration Manager의 내게 필요한 옵션 기능](http://go.microsoft.com/fwlink/p/?LinkId=258586)을 참조하세요.  
+**접근성:** 이 기술 미리 보기에 대한 접근성 정보는 System Center 2012 Configuration Manager와 동일합니다. 장애가 있는 사용자가 Configuration Manager를 더욱 쉽게 이용할 수 있도록 지원하는 기능, 제품 및 서비스에 대해서는 [Configuration Manager의 내게 필요한 옵션 기능](https://go.microsoft.com/fwlink/p/?LinkId=258586)을 참조하세요.  
 
 ## <a name="system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager  
 **온라인 설명서:** 다음 제품용  
@@ -91,10 +91,10 @@ TechNet의 다음 가이드에서 온라인 설명서를 볼 수 있습니다.
 
   **릴리스 정보 및 기술 서적:** 릴리스 정보 및 기술 서적이 Configuration Manager 가이드를 보완합니다. 릴리스 정보에는 제품 문서에서 확인할 수 없지만 Configuration Manager를 설치하는 데 필요한 정보가 들어 있습니다. 기술 서적은 Configuration Manager를 지원하는 추가 정보를 제공합니다.  
 
-- [System Center 2012 Configuration Manager의 릴리스 정보](http://go.microsoft.com/fwlink/?LinkId=529437)  
+- [System Center 2012 Configuration Manager의 릴리스 정보](https://go.microsoft.com/fwlink/?LinkId=529437)  
 
-- [System Center 2012 Configuration Manager의 기술 서적](http://go.microsoft.com/fwlink/p/?LinkId=261032)  
+- [System Center 2012 Configuration Manager의 기술 서적](https://go.microsoft.com/fwlink/p/?LinkId=261032)  
 
-**접근성:** 장애가 있는 사용자가 Configuration Manager를 더욱 쉽게 이용할 수 있도록 지원하는 기능, 제품 및 서비스에 대해서는 온라인 항목 [Configuration Manager의 접근성 기능](http://go.microsoft.com/fwlink/p/?LinkId=258586)을 참조하세요.  
+**접근성:** 장애가 있는 사용자가 Configuration Manager를 더욱 쉽게 이용할 수 있도록 지원하는 기능, 제품 및 서비스에 대해서는 온라인 항목 [Configuration Manager의 접근성 기능](https://go.microsoft.com/fwlink/p/?LinkId=258586)을 참조하세요.  
 
-**다운로드 가능한 설명서:** [Microsoft 다운로드 센터에서 이 기술 문서의 사본](http://go.microsoft.com/fwlink/?LinkId=253643)을 다운로드할 수 있습니다. 최신 정보는 온라인 TechNet 라이브러리에서 확인하세요.
+**다운로드 가능한 설명서:** [Microsoft 다운로드 센터에서 이 기술 문서의 사본](https://go.microsoft.com/fwlink/?LinkId=253643)을 다운로드할 수 있습니다. 최신 정보는 온라인 TechNet 라이브러리에서 확인하세요.

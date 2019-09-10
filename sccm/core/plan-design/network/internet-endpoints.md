@@ -2,7 +2,7 @@
 title: 인터넷 액세스 요구 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager의 기능이 완벽히 작동하는 데 필요한 인터넷 엔드포인트에 대해 알아봅니다.
-ms.date: 08/08/2019
+ms.date: 08/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: b34fe701-5d05-42be-b965-e3dccc9363ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fa7ab85d86a544b3ea0ad22325ddd63e2034982e
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: 11241176abade1233a6fbdbe2ee3bdd0e3219e48
+ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68860052"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243584"
 ---
 # <a name="internet-access-requirements"></a>인터넷 액세스 요구 사항
 
@@ -31,6 +31,8 @@ ms.locfileid: "68860052"
 서비스 연결 지점에서는 웹 프록시(인증을 사용하거나 사용하지 않고)를 사용하여 이러한 위치에 액세스할 수 있습니다. 자세한 내용은 [프록시 서버 지원](/sccm/core/plan-design/network/proxy-server-support)을 참조하세요.
 
 서비스 연결 지점에 대한 자세한 내용은 [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)를 참조하세요.
+
+다른 Configuration Manager 기능에는 서비스 연결 지점의 추가 엔드포인트가 필요할 수 있습니다. 자세한 내용은 이 문서의 다른 섹션을 참조하세요.
 
 > [!TIP]  
 > 서비스 연결 지점이 `go.microsoft.com` 또는 `manage.microsoft.com`에 연결된 경우 Microsoft Intune 서비스를 사용합니다. Baltimore CyberTrust 루트 인증서가 설치되지 않았거나 만료되었거나 서비스 연결 지점에서 손상된 경우, Intune 커넥터에 연결 문제가 발생하는 것으로 알려진 문제가 있습니다. 자세한 내용은 [KB 3187516: Service connection point doesn't download updates](https://support.microsoft.com/help/3187516)(KB 3187516: 서비스 연결 지점에서 업데이트를 다운로드하지 않습니다)를 참조하세요.  
@@ -90,6 +92,11 @@ ms.locfileid: "68860052"
 ## <a name="co-management"></a>공동 관리
 
 공동 관리를 위해 Microsoft Intune에 Windows 10 디바이스를 등록하는 경우 이러한 디바이스에서 Intune에 필요한 엔드포인트에 액세스할 수 있는지 확인하세요. 자세한 내용은 [Microsoft Intune에 대한 네트워크 엔드포인트](https://docs.microsoft.com/intune/intune-endpoints)를 참조하세요.
+
+
+## <a name="microsoft-store-for-business"></a>비즈니스용 Microsoft Store
+
+Configuration Manager를 [비즈니스용 Microsoft Store](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)와 통합하는 경우 서비스 연결 지점 및 대상 장치에서 클라우드 서비스에 액세스할 수 있는지 확인합니다. 자세한 내용은 [비즈니스용 Microsoft Store 프록시 구성](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business#proxy-configuration)을 참조하세요.
 
 
 ## <a name="bkmk_cloud"></a> Cloud Services

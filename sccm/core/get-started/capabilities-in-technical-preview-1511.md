@@ -12,12 +12,12 @@ ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02fc742ddb975c06bc7e919914ad46ae455bf92
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: a24f33e9cef10df9ba329958e4cf93db838b5969
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127969"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70378019"
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1511의 기능
 
@@ -98,7 +98,7 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 
 -   사이트 데이터베이스로 이미 사용 중인 가용성 그룹에는 새 복제본 구성원을 추가할 수 없습니다. 대신 새 복제 구성원을 추가한 후 사이트를 다시 설치해야 합니다.  
 
--   이 시나리오를 수행하려면 관리 지점 서버에 **SQL Server 2012 기능 팩** 의[SQL Server 2012 Native Client](http://www.microsoft.com/download/details.aspx?id=29065)를 설치해야 할 수 있습니다. 이렇게 하면 관리 지점 서버의 **mp_getauth.log** 에 기록되는 SQL 연결 오류를 방지할 수 있습니다.  
+-   이 시나리오를 수행하려면 관리 지점 서버에 **SQL Server 2012 기능 팩** 의[SQL Server 2012 Native Client](https://www.microsoft.com/download/details.aspx?id=29065)를 설치해야 할 수 있습니다. 이렇게 하면 관리 지점 서버의 **mp_getauth.log** 에 기록되는 SQL 연결 오류를 방지할 수 있습니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
 다음 작업을 완료한 후에 이 항목 위쪽의 사용자 의견 정보를 사용하여 기능 작동 상태에 대한 정보를 보내 주세요.  

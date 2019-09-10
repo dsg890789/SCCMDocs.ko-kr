@@ -2,7 +2,7 @@
 title: 가용성 그룹 구성
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 SQL Server Always On 가용성 그룹 설정 및 관리
-ms.date: 7/19/2019
+ms.date: 09/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cc514e37554b8238124255584f59647446baf44
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 9677c49dfd577e5dc5e02450821ec73bdfb7f3b4
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536551"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380137"
 ---
 # <a name="configure-sql-server-always-on-availability-groups-for-configuration-manager"></a>Configuration Manager용 SQL Server Always On 가용성 그룹 구성
 
@@ -120,13 +120,9 @@ ms.locfileid: "68536551"
 <!--3127336-->
 버전 1906부터 Configuration Manager 설치 프로그램을 실행하여 새 동기 복제본 구성원을 추가합니다.
 
-1. [계층 구조 유지 관리 도구](/sccm/core/servers/manage/hierarchy-maintenance-tool-preinst.exe)를 사용하여 사이트 중지: `preinst.exe /stopsite`
+1. SQL Server 프로시저를 사용하여 보조 복제본을 추가합니다.
 
-1. SQL Server 프로시저를 사용하여 가용성 그룹 수정:
-
-    1. 주 복제본에서 사이트 데이터베이스의 [백업 복사본을 만듭니다](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
-
-    1. [해당 백업](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)을 새 보조 복제본 서버에 복원합니다.
+    1. [AlwaysOn 가용성 그룹에 보조 복제본을 추가](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/add-a-secondary-replica-to-an-availability-group-sql-server)합니다.
 
     1. SQL Management Studio의 상태를 확인합니다. 가용성 그룹이 정상 상태로 돌아올 때까지 기다립니다.
 

@@ -2,7 +2,7 @@
 title: Asset Intelligence 사용
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 일반적인 Asset Intelligence 작업을 수행합니다.
-ms.date: 2/22/2017
+ms.date: 08/30/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b200594c4769fb4528c3adc7b846b2345ffeda39
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: fde63b3400441815b227fe8fae78c354bc156c2a
+ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499860"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70176552"
 ---
 # <a name="how-to-use-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence를 사용하는 방법
 
@@ -193,13 +193,13 @@ ms.locfileid: "65499860"
 
    2. **유효성 검사 상태**: 하드웨어 요구 사항에 대해 유효성 검사 상태를 **사용자 정의됨** 으로 나열합니다. 이 설정은 수정할 수 없습니다.  
 
-   3. **최소 CPU(MHz)**: 소프트웨어 타이틀에 필요한 최소 프로세서 속도(MHz)를 지정합니다.  
+   3. **최소 CPU(MHz)** : 소프트웨어 타이틀에 필요한 최소 프로세서 속도(MHz)를 지정합니다.  
 
-   4. **최소 RAM(KB)**: 소프트웨어 타이틀에 필요한 최소 RAM(KB)을 지정합니다.  
+   4. **최소 RAM(KB)** : 소프트웨어 타이틀에 필요한 최소 RAM(KB)을 지정합니다.  
 
-   5. **최소 디스크 공간(KB)**: 소프트웨어 타이틀에 필요한 최소 디스크 사용 가능한 공간(KB)을 지정합니다.  
+   5. **최소 디스크 공간(KB)** : 소프트웨어 타이틀에 필요한 최소 디스크 사용 가능한 공간(KB)을 지정합니다.  
 
-   6. **최소 디스크 크기(KB)**: 소프트웨어 타이틀에 필요한 최소 하드 디스크 크기(KB)를 지정합니다.  
+   6. **최소 디스크 크기(KB)** : 소프트웨어 타이틀에 필요한 최소 하드 디스크 크기(KB)를 지정합니다.  
 
       **다음**을 클릭합니다.  
 
@@ -288,7 +288,7 @@ ms.locfileid: "65499860"
 3.  분류를 위해 System Center Online에 제출할 제품 이름을 하나 또는 여러 개 선택합니다. 범주화되지 않은 인벤토리에 포함된 소프트웨어 타이틀만 분류를 위해 System Center Online에 제출할 수 있습니다. 인벤토리에 포함된 소프트웨어 타이틀이 관리자에 의해 분류되어 사용자 정의 상태가 된 경우 인벤토리에 포함된 소프트웨어 타이틀을 마우스 오른쪽 단추로 클릭한 다음 **되돌리기** 를 클릭하여 소프트웨어 타이틀을 **범주화되지 않음** 상태로 되돌려야 분류를 위해 System Center Online에 제출할 수 있습니다.  
 
     > [!NOTE]  
-    >  Configuration Manager는 한 번에 분류를 위해 최대 100개의 소프트웨어 타이틀을 처리할 수 있습니다. 100개가 넘는 소프트웨어 타이틀을 선택한 경우 처음 100개의 소프트웨어 타이틀만 처리됩니다. 나머지 소프트웨어 타이틀을 분류하려면 100개 미만의 일괄 처리로 선택해야 합니다.  
+    >  Configuration Manager는 한 번에 분류를 위해 최대 2000개의 소프트웨어 타이틀을 처리할 수 있습니다. 2000개가 넘는 소프트웨어 타이틀을 선택한 경우 처음 2000개의 소프트웨어 타이틀만 처리됩니다. 나머지 소프트웨어 타이틀을 분류하려면 2000개 미만의 일괄 처리로 선택해야 합니다.  
 
     > [!TIP]  
     >  유효성 검사 상태별로 정렬하려면 **상태** 열을 클릭합니다. 그러면 범주화되지 않은 모든 제품 이름을 보고 분류를 위해 제출할 여러 항목을 빠르게 선택할 수 있습니다.  

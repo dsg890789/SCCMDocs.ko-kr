@@ -2,7 +2,7 @@
 title: 로그 파일 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 클라이언트, 서버, 종속 구성 요소에 대한 모든 로그 파일의 참조입니다.
-ms.date: 08/08/2019
+ms.date: 08/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44ed3f61914cf62a9eceb189be933330cf04124e
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: c82cd6cb25763de9c470148c91f80b79e31d981b
+ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68860069"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243550"
 ---
 # <a name="log-file-reference"></a>로그 파일 참조
 
@@ -273,6 +273,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |adsgdis.log|Active Directory 그룹 검색 작업을 기록합니다.|사이트 서버|  
 |adsysdis.log|Active Directory 시스템 검색 작업을 기록합니다.|사이트 서버|  
 |adusrdis.log|Active Directory 사용자 검색 작업을 기록합니다.|사이트 서버|  
+|BusinessAppProcessWorker.log|비즈니스용 Microsoft Store 앱 처리를 기록합니다.|사이트 서버|
 |ccm.log|클라이언트 강제 설치 작업을 기록합니다.|사이트 서버|  
 |CertMgr.log|사이트 간 통신을 위한 인증서 활동을 기록합니다.|사이트 시스템 서버|  
 |chmgr.log|클라이언트 상태 관리자의 작업을 기록합니다.|사이트 서버|  
@@ -323,6 +324,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |sitectrl.log|데이터베이스의 사이트 제어 개체에 적용된 사이트 설정 변경 내용을 기록합니다.|사이트 서버|  
 |sitestat.log|모든 사이트 시스템의 가용성 및 디스크 공간 모니터링 프로세스를 기록합니다.|사이트 서버|
 |SMS_AZUREAD_DISCOVERY_AGENT.log| Azure Active Directory에의 컬렉션 멤버 자격 결과 동기화에 대한 로그 파일입니다. 이 기능은 Configuration Manager 버전 1906부터 시험판으로 처음 도입되었습니다.| 사이트 서버|
+|SMS_BUSINESS_APP_PROCESS_MANAGER.log|비즈니스용 Microsoft Store에서 앱을 동기화하는 구성 요소에 대한 로그 파일입니다.|사이트 서버|
 |SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|
 |SMS_PhasedDeployment.log| 단계적 배포에 대한 로그 파일|Configuration Manager 계층 구조의 최상위 사이트|   
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
@@ -415,11 +417,13 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |Dmpdownloader.log|Microsoft Intune의 다운로드에 대한 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|  
 |Dmpuploader.log|데이터베이스 변경 내용을 Microsoft Intune에 업로드하는 작업과 관련된 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|  
 |hman.log|메시지 전달에 대한 정보를 기록합니다.|사이트 서버|  
+|MSfBSyncWorker.log|비즈니스용 Microsoft Store와의 통신에 대한 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|
 |objreplmgr.log|정책 및 할당 처리 작업을 기록합니다.|기본 사이트 서버|  
 |policypv.log|모든 정책의 정책 생성을 기록합니다.|사이트 서버|  
 |outgoingcontentmanager.log|Microsoft Intune에 업로드된 콘텐츠를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|  
 |Sitecomp.log|서비스 연결 지점 설치 세부 정보를 기록합니다.|사이트 서버|  
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
+|SMS_CLOUDCONNECTION.log|클라우드 서비스에 대한 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|
 |Smsprov.log|SMS 공급자가 수행한 작업을 기록합니다. Configuration Manager 콘솔 작업은 SMS 공급자를 사용합니다.|SMS 공급자가 설치된 컴퓨터|  
 |SrvBoot.log|서비스 연결 지점 설치 관리자 서비스 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|  
 |statesys.log|모바일 디바이스 관리 메시지의 처리를 기록합니다.|기본 사이트 및 중앙 관리 사이트|  
@@ -457,9 +461,11 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |AppGroupHandler.log|애플리케이션 그룹의 검색 및 적용 정보입니다(버전 1906부터).|클라이언트|
 |awebsctl.log|애플리케이션 카탈로그 웹 서비스 지점 사이트 시스템 역할에 대한 모니터링 활동을 기록합니다.|사이트 시스템 서버|  
 |awebsvcMSI.log|애플리케이션 카탈로그 웹 서비스 지점 사이트 시스템 역할에 대한 자세한 설치 정보를 기록합니다.|사이트 시스템 서버|  
+|BusinessAppProcessWorker.log|비즈니스용 Microsoft Store 앱 처리를 기록합니다.|사이트 서버|
 |CCMSDKProvider.log|애플리케이션 관리 SDK의 활동을 기록합니다.|클라이언트|  
 |colleval.log|컬렉션 평가기에서 컬렉션을 만들고 변경하고 삭제한 경우 관련 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |ConfigMgrSoftwareCatalog.log|Silverlight 사용을 포함한 애플리케이션 카탈로그의 활동을 기록합니다.|클라이언트|  
+|MSfBSyncWorker.log|비즈니스용 Microsoft Store와의 통신에 대한 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|
 |NotiCtrl.log|애플리케이션 요청 알림입니다.|사이트 서버|  
 |portlctl.log|애플리케이션 카탈로그 웹 사이트 지점 사이트 시스템 역할에 대한 모니터링 활동을 기록합니다.|사이트 시스템 서버|  
 |portlwebMSI.log|애플리케이션 카탈로그 웹 사이트 역할에 대한 MSI 설치 활동을 기록합니다.|사이트 시스템 서버|  
@@ -467,6 +473,8 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |ServicePortalWebService.log|애플리케이션 카탈로그 웹 서비스의 활동을 기록합니다.|사이트 시스템 서버|  
 |ServicePortalWebSite.log|애플리케이션 카탈로그 웹 사이트의 활동을 기록합니다.|사이트 시스템 서버|  
 |SettingsAgent.log|특정 애플리케이션, 애플리케이션 그룹 평가의 기록 오케스트레이션, 공동 관리 정책의 세부 정보 적용 정보입니다.|클라이언트|
+|SMS_BUSINESS_APP_PROCESS_MANAGER.log|비즈니스용 Microsoft Store에서 앱을 동기화하는 구성 요소에 대한 로그 파일입니다.|사이트 서버|
+|SMS_CLOUDCONNECTION.log|클라우드 서비스에 대한 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|
 |SMSdpmon.log|배포 지점에 구성된 배포 지점 상태 모니터링 예약 작업에 대한 세부 정보를 기록합니다.|사이트 서버|  
 |SoftwareCatalogUpdateEndpoint.log|소프트웨어 센터에 표시된 애플리케이션 카탈로그의 URL을 관리하는 활동을 기록합니다.|클라이언트|  
 |SoftwareCenterSystemTasks.log|소프트웨어 센터 필수 구성 요소 유효성 검사와 관련된 활동을 기록합니다.|클라이언트|  
@@ -754,7 +762,6 @@ Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등�
 |CAS.log|참조된 콘텐츠의 배포 지점이 발견된 경우 세부 정보를 기록합니다.|클라이언트|  
 |ccmsetup.log|클라이언트 설정, 클라이언트 업그레이드 및 클라이언트 제거에 대한 ccmsetup 작업을 기록합니다. 클라이언트 설치 문제를 해결하는 데 사용할 수 있습니다.|클라이언트|  
 |CreateTSMedia.log|작업 순서 미디어 작성에 대한 세부 정보를 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
-|DeployToVhd.log|VHD(가상 하드 디스크) 만들기 및 수정 프로세스에 대한 세부 정보를 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |Dism.log|오프라인 서비스를 위한 드라이버 설치 작업 또는 애플리케이션 업데이트 작업을 기록합니다.|사이트 시스템 서버|  
 |distmgr.log|PXE(Preboot Execution Environment)에 대해 배포 지점을 사용하도록 설정하는 구성에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |DriverCatalog.log|드라이버 카탈로그로 가져온 디바이스 드라이버에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  

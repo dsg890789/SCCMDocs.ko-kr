@@ -2,7 +2,7 @@
 title: 실시간 데이터에 대한 CMPivot
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 CMPivot을 사용하여 실시간으로 클라이언트를 쿼리하는 방법을 알아봅니다.
-ms.date: 08/28/2019
+ms.date: 09/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b0ed9150988deee3f8484e5c7b10eb919c086
-ms.sourcegitcommit: 9aa852d54670b5bc568a1ca6e57cd9c1349e5724
+ms.openlocfilehash: 5e0be6129306e37ba1721923efe1b7533875784e
+ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70053751"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70380036"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -167,7 +167,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 
      - **다음 없이 디바이스 표시**: 이 속성의 값 없이 디바이스에 대해 쿼리합니다. 예를 들어 `OS` 쿼리의 결과에서, 버전 행의 셀에서 이 옵션을 선택합니다. `OS | summarize countif( (Version == '10.0.17134') ) by Device | where (countif_ == 0) | project Device`  
 
-     - **Bing으로 검색**: 쿼리 문자열로 이 값을 사용하여 www.bing.com 에 대한 기본 웹 브라우저를 시작합니다.  
+     - **Bing으로 검색**: 쿼리 문자열로 이 값을 사용하여 https://www.bing.com 에 대한 기본 웹 브라우저를 시작합니다.  
 
    - 하이퍼링크 텍스트를 클릭하여 해당 특정 정보에서 보기를 피벗합니다.  
 
@@ -261,6 +261,14 @@ Configuration Manager 버전 1810부터 CMPivot에는 다음과 같은 개선 �
   - 이러한 변경으로 인해 스크립트 또는 쿼리 출력 표시 성능이 개선됩니다.
   - 스크립트 또는 쿼리 출력이 80KB보다 큰 경우 클라이언트는 상태 메시지를 통해 데이터를 보냅니다.
   - 클라이언트를 1810 버전으로 업데이트하지 않으면 계속해서 상태 메시지를 표시합니다.
+
+- CMPivot을 시작할 때 다음과 같은 오류가 표시될 수 있습니다.  **호환되지 않는 스크립트 버전 때문에 현재 CMPivot을 사용할 수 없습니다. 계층 구조가 사이트를 업그레이드 하는 중이므로 이 문제가 발생할 수 있습니다. 업그레이드가 완료될 때까지 기다렸다가 다시 시도합니다.**
+
+  - 이 메시지가 표시되면 다음과 같은 의미일 수 있습니다.
+    - 보안 범위가 제대로 설정되지 않았습니다.
+    - 프로세스에서 업그레이드에 대한 문제가 발생했습니다.
+    - 기본 CMPivot 스크립트가 호환되지 않습니다.
+
 
 ### <a name="bkmk_cmpivot-functions"></a> 스칼라 함수
 CMPivot에서는 다음 스칼라 함수를 지원합니다.

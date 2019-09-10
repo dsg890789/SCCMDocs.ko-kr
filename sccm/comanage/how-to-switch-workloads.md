@@ -7,16 +7,16 @@ ms.technology: configmgr-client
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 09/05/2019
 ms.topic: conceptual
 ms.assetid: 60e2022f-a4f9-40dd-af01-9ecb37b43878
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 050242e331796c04d05b8b751203b8d6be4f7e2d
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.openlocfilehash: 5c1cdd3358c1d9bf41584658ee25c7210808a8f4
+ms.sourcegitcommit: 1d16ccc20bb00bf2e21f923d7f9dde3c9783dab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68859833"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70272689"
 ---
 # <a name="how-to-switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환하는 방법
 
@@ -54,7 +54,8 @@ ms.locfileid: "68859833"
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **공동 관리** 노드를 선택합니다.  
 
-2. 공동 관리 개체를 선택한 다음 리본에서 **속성**을 선택합니다.  
+2. 공동 관리 개체를 선택한 다음 리본에서 **속성**을 선택합니다.
+   - Azure AD에 로그인하라는 메시지가 표시됩니다. 해당 프롬프트는 온보딩 업데이트를 차단하지 않습니다. 하지만 로그인할 때까지 **속성** 페이지를 열 때마다 메시지가 표시됩니다.
 
 3. **워크로드** 탭으로 전환합니다. 기본적으로 모든 워크로드는 **Configuration Manager** 설정으로 설정됩니다. 워크로드를 전환하려면 해당 워크로드의 슬라이더 컨트롤을 원하는 설정으로 이동합니다.  
 
