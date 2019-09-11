@@ -659,13 +659,13 @@
               href: clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md
         - name: 클라이언트를 절전 모드에서 해제하는 방식 계획
           href: clients/deploy/plan/plan-wake-up-clients.md
-        - name: VDI(가상 데스크톱 인프라)에서 클라이언트를 관리할 때의 고려 사항
+        - name: VDI 클라이언트 관리
           href: clients/deploy/plan/considerations-for-managing-clients-in-a-vdi.md
     - name: 클라이언트 배포 작업
       items:
         - name: 클라이언트 통신 포트를 구성하는 방법
           href: clients/deploy/configure-client-communication-ports.md
-        - name: DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 구성하는 방법
+        - name: DNS 게시를 사용하도록 클라이언트 구성
           href: clients/deploy/configure-client-computers-to-find-management-points-by-using-dns-publishing.md
         - name: 클라이언트 설정 구성
           items:
@@ -723,8 +723,8 @@
           href: clients/manage/client-notification.md
         - name: Linux 및 UNIX 클라이언트를 관리하는 방법
           href: clients/manage/manage-clients-for-linux-and-unix-servers.md
-        - name: Log Analytics와 데이터 동기화
-          href: clients/manage/sync-data-log-analytics.md
+        - name: Azure Monitor에 데이터 동기화
+          href: 'https://docs.microsoft.com/azure/azure-monitor/platform/collect-sccm?context=sccm/core/context/core-context'
         - name: Mac 클라이언트 유지 관리
           href: clients/manage/maintain-mac-clients.md
         - name: Surface 디바이스 대시보드
@@ -795,19 +795,19 @@
           href: clients/manage/inventory/security-and-privacy-for-software-inventory.md
     - name: Asset Intelligence
       items:
-        - name: Asset Intelligence 소개
+        - name: 소개
           href: clients/manage/asset-intelligence/introduction-to-asset-intelligence.md
-        - name: Asset Intelligence에 대한 필수 조건
+        - name: 필수 구성 요소
           href: clients/manage/asset-intelligence/prerequisites-for-asset-intelligence.md
         - name: Asset Intelligence 구성
           href: clients/manage/asset-intelligence/configuring-asset-intelligence.md
         - name: Asset Intelligence 사용
           href: clients/manage/asset-intelligence/operations-for-asset-intelligence.md
-        - name: Asset Intelligence에 대한 보안 및 개인 정보
+        - name: 보안 및 개인 정보
           href: clients/manage/asset-intelligence/security-and-privacy-for-asset-intelligence.md
-        - name: Asset Intelligence에 대한 유효성 검사 상태 전환 예제
+        - name: 유효성 검사 상태 전환 예제
           href: clients/manage/asset-intelligence/example-validation-state-transitions-for-asset-intelligence.md
-        - name: Asset Intelligence 일반 라이선스 가져오기 파일 예제
+        - name: 일반 라이선스 가져오기 파일 예제
           href: clients/manage/asset-intelligence/example-asset-intelligence-general-license-import.md
         - name: 제품 수명 주기 대시보드 사용
           href: clients/manage/asset-intelligence/product-lifecycle-dashboard.md
