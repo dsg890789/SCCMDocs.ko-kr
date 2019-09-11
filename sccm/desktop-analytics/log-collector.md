@@ -11,16 +11,16 @@ ms.assetid: 349b2a69-af46-481f-afb2-24d98774e852
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e99899ba9b12416e9549f88c7bc3b72fc09c6c28
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 24f8b723a82f2adb4eb160b0e3edab1efbca1e95
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537641"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891745"
 ---
 # <a name="desktop-analytics-log-collector"></a>데스크톱 분석 로그 수집기
 
-Configuration Manager 버전 1906부터 Configuration Manager 설치 디렉터리의 **DesktopAnalyticsLogsCollector** 도구를 사용 하 여 데스크톱 분석 장치 등록 문제를 해결할 수 있습니다. 몇 가지 기본적인 문제 해결 단계를 실행 하 고 관련 로그를 단일 작업 디렉터리로 수집 합니다. Microsoft 지원과 함께이 콘텐츠를 공유할 수 있습니다.
+Configuration Manager 버전 1906부터 Configuration Manager 설치 디렉터리의 **DesktopAnalyticsLogsCollector** 도구를 사용 하 여 데스크톱 분석 장치 등록 문제를 해결할 수 있습니다. 이 도구는 몇 가지 기본적인 문제 해결 단계를 실행하고 관련 로그를 단일 작업 디렉터리로 수집합니다. Microsoft 지원과 함께이 콘텐츠를 공유할 수 있습니다.
 
 
 ## <a name="prerequisites"></a>필수 구성 요소
@@ -40,7 +40,7 @@ Configuration Manager 버전 1906부터 Configuration Manager 설치 디렉터�
 
 Configuration Manager 설치 콘텐츠에서 스크립트를 가져옵니다.`SMSSETUP\TOOLS\DesktopAnalyticsLogsCollector\DesktopAnalyticsLogsCollector.ps1`
 
-```
+``` Syntax
 DesktopAnalyticsLogsCollector.ps1
     [-LogPath] <String>
     [-LogMode] <Int16>
@@ -123,7 +123,7 @@ DesktopAnalyticsLogsCollector.ps1
 
 스크립트가 *로그 파일*에 쓸 수 있도록 설정 하면 작업 폴더에 스크립트가 생성 됩니다. 예를 들면 **M365AnalyticsLogs_ yy_MM_dd_HH_mm_ss**입니다.
 
-또한 스크립트는 작업 폴더에 다른 *진단 파일* 을 생성 합니다. 예:
+또한 스크립트는 작업 폴더에 다른 *진단 파일* 을 생성 합니다. 예를 들어:
 
 - `installedKBs.txt`: 장치에 설치 된 Windows 업데이트의 목록
 - `appcompat`: 응용 프로그램 호환성 데이터

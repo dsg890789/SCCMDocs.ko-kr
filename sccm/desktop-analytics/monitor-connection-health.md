@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a58992c01f59080edd74051329b82a0f760938
-ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
+ms.openlocfilehash: 7139175a564ffff50d325daf808e32efb7d3436b
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69974806"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891774"
 ---
 # <a name="monitor-connection-health"></a>연결 상태 모니터링
 
@@ -229,7 +229,8 @@ Configuration Manager는 장치 등록을 방해 하는 하나 이상의 차단 
 다음 파일 `%windir%\System32\CompatTelRunner.exe`을 확인 합니다. 존재 하지 않는 경우 필요한 [호환성 업데이트](/sccm/desktop-analytics/enroll-devices#bkmk_appraiser)를 다시 설치 합니다. 이 파일을 제거 하는 다른 시스템 구성 요소 (예: 그룹 정책 또는 맬웨어 방지 서비스)가 없는지 확인 합니다.
 
 클라이언트의 M365AHandler 파일에 다음 오류 중 하나가 포함 된 경우:
-```
+
+``` Log
 RunAppraiser failed. CompatTelRunner.exe exited with last error code: 0x800703F1
 RunAppraiser failed. CompatTelRunner.exe exited with last error code: 0x80070005
 RunAppraiser failed. CompatTelRunner.exe exited with last error code: 0x80080005

@@ -2,7 +2,7 @@
 title: 데스크톱 분석의 새로운 기능
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 클라우드 서비스의 최신 월간 릴리스에 대 한 새로운 기능을 요약 한 것입니다.
-ms.date: 09/03/2019
+ms.date: 09/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: fa300181-86cb-4afe-8fbf-895a7572378d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5b6afa437dd37603bef668d4bc6ba39ad05aec2d
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: 6c25aaba8c93204283723521ac157c62e62343d7
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243535"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891705"
 ---
 # <a name="whats-new-in-desktop-analytics"></a>데스크톱 분석의 새로운 기능
 
@@ -38,6 +38,12 @@ ms.locfileid: "70243535"
 <!-- 4252663 -->
 
 온 보 딩 중에는 이제 기존 Windows Analytics 작업 영역에서 입력을 마이그레이션할 수 있습니다. 자세한 내용은 [기존 Windows Analytics 고객](/sccm/desktop-analytics/faq#existing-windows-analytics-customers)에 대 한 FAQ를 참조 하세요.
+
+### <a name="offboard-from-desktop-analytics"></a>데스크톱 분석의 offboard
+
+<!-- 4972396 -->
+
+사용자 환경에서 데스크톱 분석을 설정 했지만 서비스 사용을 중지 하려는 경우 이제 계정을 종료할 수 있습니다. 90 일 동안 마음이 바뀌면 계정을 다시 활성화할 수 있습니다. 자세한 내용은 [계정을 종료 하는 방법](/sccm/desktop-analytics/account-close)을 참조 하세요.
 
 
 ## <a name="august-2019"></a>8 월 2019
