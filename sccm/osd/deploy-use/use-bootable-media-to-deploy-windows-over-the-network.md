@@ -2,7 +2,7 @@
 title: 부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 부팅 가능한 미디어 배포를 사용하면 대상 컴퓨터가 시작될 때 운영 체제를 배포할 수 있습니다.
-ms.date: 6/16/2017
+ms.date: 06/16/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ebe239687489ce14cd77c23b59ec5f01c2e6609
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 98aa69cc0a80b12ca5caabb2c5b7167310ea2c83
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128122"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892541"
 ---
 # <a name="use-bootable-media-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포
 
