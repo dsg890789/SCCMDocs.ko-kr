@@ -2,7 +2,7 @@
 title: 소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포
 titleSuffix: Configuration Manager
 description: 소프트웨어 센터에 운영 체제를 배포하여 기존 컴퓨터를 새 버전의 Windows로 새로 고치거나 Windows를 최신 버전으로 업그레이드할 수 있습니다.
-ms.date: 6/16/2017
+ms.date: 06/16/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa86d335b94db796f37955462abddeb9451ccf4e
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 2c8f360d864c0ff8c17e4833a7cb6384a06f373c
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083133"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888525"
 ---
 # <a name="use-software-center-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포
 

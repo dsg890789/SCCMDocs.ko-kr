@@ -2,7 +2,7 @@
 title: Updates Publisher
 titleSuffix: Configuration Manager
 description: System Center Updates Publisher를 사용하여 사용자 지정 업데이트 관리
-ms.date: 6/17/2019
+ms.date: 06/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dee1a5a998f6d99678f85e6d5f39e52cb35a2bad
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 25a1003fe6f2c61f089e1e2223d2b6f9fbd9b73f
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70378722"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888614"
 ---
 # <a name="system-center-updates-publisher"></a>System Center Updates Publisher
 

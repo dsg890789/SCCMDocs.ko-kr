@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bb6d974a46f2a2a3a3c826ee7239b552b14fd6c
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 2dc054ffd18953e1f0b21b6e3ea0d56baf637db6
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494483"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892440"
 ---
 # <a name="configure-endpoint-protection"></a>Endpoint Protection 구성
 

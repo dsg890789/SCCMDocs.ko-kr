@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05278353f12f9d443b3e162f1a362244afd8afc6
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 546cf0178993a364a4e1121e8236372162ab8481
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70380209"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892307"
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn"></a>앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
 
@@ -31,7 +31,7 @@ ms.locfileid: "70380209"
 
 Get-AppxPackage 구문은 다음과 같습니다.
 
-```
+``` Syntax
 Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]
 ```
 
@@ -78,10 +78,11 @@ OneNote에 대해 검색된 정보는 다음과 같습니다.
 
 Edge에서 원하는 정보가 표시됩니다. Internet Explorer에서 **열기**를 클릭하여 정보를 확인합니다. PFN 값은 첫 번째 줄에 지정됩니다. 예제의 경우 결과가 표시되는 방법은 다음과 같습니다.
 
-```json
+``` JSON
 {
   "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
   "packageIdentityName": "Microsoft.Office.OneNote",
   "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
   "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 }
+```

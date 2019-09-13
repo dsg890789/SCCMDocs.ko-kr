@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d472f10b5ffdaaeb29d56a704436d0833eb989fc
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 8519d0e93116115dcd6ca223b62af67b4d7a89a4
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123232"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892495"
 ---
 # <a name="prestart-commands-for-task-sequence-media-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 미디어에 대한 시작 전 명령
 
@@ -27,7 +27,7 @@ ms.locfileid: "56123232"
 ## <a name="create-a-script-file-to-use-for-the-prestart-command"></a>시작 전 명령에 사용할 스크립트 파일 만들기  
  작업 순서 변수는 작업 순서가 실행되는 동안 Microsoft.SMS.TSEnvironment COM 개체를 사용하여 읽고 쓸 수 있습니다. 다음 예제는 _SMSTSLogPath 작업 순서 변수를 쿼리하여 현재 로그 위치를 가져오는 Visual Basic 스크립트 파일을 보여 줍니다. 또한 스크립트는 사용자 지정 변수를 설정합니다.  
 
-```  
+``` VBScript
 dim osd: set env = CreateObject("Microsoft.SMS.TSEnvironment")  
 dim logPath  
 ' You can query the environment to get an existing variable.  

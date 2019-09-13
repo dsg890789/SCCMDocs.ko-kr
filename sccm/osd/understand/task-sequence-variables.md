@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a279602a2e52b47f42f0204e6953801c26454a1
-ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
+ms.openlocfilehash: 6a8c13d450acdd268996e1e7c760f12510549a38
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021986"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892373"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
@@ -256,17 +256,13 @@ Configuration Manager 사이트의 사이트 코드를 저장합니다.
 
 이 변수는 표준 시간대 정보를 다음 형식으로 저장합니다.
 
-```
-Bias,StandardBias,DaylightBias,StandardDate.wYear,wMonth,wDayOfWeek,wDay,wHour,wMinute,wSecond,wMilliseconds,DaylightDate.wYear,wMonth,wDayOfWeek,wDay,wHour,wMinute,wSecond,wMilliseconds,StandardName,DaylightName
-```
+`Bias,StandardBias,DaylightBias,StandardDate.wYear,wMonth,wDayOfWeek,wDay,wHour,wMinute,wSecond,wMilliseconds,DaylightDate.wYear,wMonth,wDayOfWeek,wDay,wHour,wMinute,wSecond,wMilliseconds,StandardName,DaylightName`
 
 #### <a name="example"></a>예
 
 **동부 표준시(미국과 캐나다)** 표준 시간대의 경우:
 
-```
-300,0,-60,0,11,0,1,2,0,0,0,0,3,0,2,2,0,0,0,Eastern Standard Time,Eastern Daylight Time
-```
+`300,0,-60,0,11,0,1,2,0,0,0,0,3,0,2,2,0,0,0,Eastern Standard Time,Eastern Daylight Time`
 
 ### <a name="SMSTSType"></a> _SMSTSType
 

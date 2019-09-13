@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 273e61024032defd10b3176fb70ac6c3a35125e2
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 7132bbbc0746af04e4af952b2fcf7d8de46b3c9b
+ms.sourcegitcommit: cb169396acf0d50fedd9f2ae62f7894615c3cce5
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70380055"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808368"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -868,6 +868,13 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **디스크**, **디스크 포맷 및 파티션 만들기**를 차례로 선택합니다.
 
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get-CMTSStepPartitionDisk](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtssteppartitiondisk?view=sccm-ps)
+- [새로운 기능-CMTSStepPartitionDisk](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtssteppartitiondisk?view=sccm-ps)
+- [제거-CMTSStepPartitionDisk](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtssteppartitiondisk?view=sccm-ps)
+- [Set-CMTSStepPartitionDisk](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtssteppartitiondisk?view=sccm-ps)
+
 ### <a name="properties"></a>속성  
 
 이 단계에 대한 **속성** 탭에서 이 섹션에서 설명하는 설정을 구성합니다.  
@@ -1049,6 +1056,12 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 - [OSDDoNotLogCommand](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)(버전 1806부터 적용)<!--1358493-->  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **패키지 설치**를 차례로 선택합니다.
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get-CMTSStepInstallSoftware](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepinstallsoftware?view=sccm-ps)
+- [신규-CMTSStepInstallSoftware](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepinstallsoftware?view=sccm-ps)
+- [제거-CMTSStepInstallSoftware](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepinstallsoftware?view=sccm-ps)
+- [Set-CMTSStepInstallSoftware](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepinstallsoftware?view=sccm-ps)
 
 ### <a name="properties"></a>속성  
 
@@ -1119,6 +1132,13 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 > 클라이언트가 위치 서비스에서 관리 지점 목록을 검색하지 못하면, **SMSTSMPListRequestTimeoutEnabled** 및 **SMSTSMPListRequestTimeout** 변수를 사용합니다. 이 변수는 애플리케이션이나 소프트웨어 업데이트 설치를 다시 시도하기 전까지 작업 순서에서 기다리는 시간(밀리초)을 지정합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **소프트웨어 업데이트 설치**를 차례로 선택합니다.
+
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get-CMTSStepInstallUpdate](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepinstallupdate?view=sccm-ps)
+- [신규-CMTSStepInstallUpdate](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepinstallupdate?view=sccm-ps)
+- [제거-CMTSStepInstallUpdate](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepinstallupdate?view=sccm-ps)
+- [Set-CMTSStepInstallUpdate](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepinstallupdate?view=sccm-ps)
 
 이 단계에 대한 더 많은 권장 사항과 기술 순서도 다이어그램은 [소프트웨어 업데이트 설치](/sccm/osd/understand/install-software-updates)를 참조하세요.
 
@@ -1374,6 +1394,13 @@ Configuration Manager 사이트에 여러 활성 상태 마이그레이션 지�
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **컴퓨터 다시 시작**을 차례로 선택합니다.
 
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [CMTSStepReboot](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepreboot?view=sccm-ps)
+- [CMTSStepReboot](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepreboot?view=sccm-ps)
+- [CMTSStepReboot](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepreboot?view=sccm-ps)
+- [CMTSStepReboot](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepreboot?view=sccm-ps)
+
 ### <a name="properties"></a>속성  
 
 이 단계에 대한 **속성** 탭에서 이 섹션에서 설명하는 설정을 구성합니다.  
@@ -1473,6 +1500,13 @@ USMT에서 일부 파일을 복원할 수 없는 경우에도 사용자 상태 �
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **명령줄 실행**을 차례로 선택합니다.
 
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get-CMTSStepRunCommandLine](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepruncommandline?view=sccm-ps)
+- [새-CMTSStepRunCommandLine](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepruncommandline?view=sccm-ps)
+- [Remove-Cmtsststff](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepruncommandline?view=sccm-ps)
+- [Set-CMTSStepRunCommandLine](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepruncommandline?view=sccm-ps)
+
 ### <a name="properties"></a>속성  
 
 이 단계에 대한 **속성** 탭에서 이 섹션에서 설명하는 설정을 구성합니다.  
@@ -1558,6 +1592,13 @@ Configuration Manager에서 명령줄을 실행할 수 있는 기간을 나타�
 - [OSDLogPowerShellParameters](/sccm/osd/understand/task-sequence-variables#OSDLogPowerShellParameters)(버전 1902부터 적용)<!--3556028-->  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **PowerShell 스크립트 실행**을 차례로 선택합니다.
+
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtssteprunpowershellscript?view=sccm-ps)
+- [신규-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtssteprunpowershellscript?view=sccm-ps)
+- [제거-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtssteprunpowershellscript?view=sccm-ps)
+- [Set-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtssteprunpowershellscript?view=sccm-ps)
 
 > [!Note]  
 > 유니코드 형식으로 서명된 PowerShell 스크립트를 사용합니다. 기본값인 ANSI 형식은 이 단계에서 작동하지 않습니다.
@@ -1678,10 +1719,14 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **작업 순서 실행**을 차례로 선택합니다.
 
-버전 1906부터 다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- 2839943, SCCMDocs #1118 -->
+버전 1906부터 다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- 2839943, SCCMDocs#1118 -->
 
+- **Get-CMTSStepRunTaskSequence**
 - **New-CMTSStepRunTaskSequence**
+- **Remove-CMTSStepRunTaskSequence**
 - **Set-CMTSStepRunTaskSequence**
+
+자세한 내용은 [1906 릴리스 정보-새 cmdlet](https://docs.microsoft.com/powershell/sccm/1906-release-notes?view=sccm-ps#new-cmdlets)을 참조 하세요.
 
 ### <a name="specifications-and-limitations"></a>사양 및 제한 사항
 
@@ -1737,6 +1782,13 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **동적 변수 설정**을 차례로 선택합니다.
 
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get-CMTSStepSetDynamicVariable](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepsetdynamicvariable?view=sccm-ps)
+- [새-CMTSStepSetDynamicVariable](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepsetdynamicvariable?view=sccm-ps)
+- [Remove-CMTSStepSetDynamicVariable](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepsetdynamicvariable?view=sccm-ps)
+- [Set-CMTSStepSetDynamicVariable](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepsetdynamicvariable?view=sccm-ps)
+
 ### <a name="properties"></a>속성  
 
 이 단계에 대한 **속성** 탭에서 이 섹션에서 설명하는 설정을 구성합니다.  
@@ -1783,6 +1835,13 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **작업 순서 변수 설정**을 차례로 선택합니다.
 
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [Get-CMTSStepSetVariable](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepsetvariable?view=sccm-ps)
+- [새-CMTSStepSetVariable](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepsetvariable?view=sccm-ps)
+- [Remove-CMTSStepSetVariable](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepsetvariable?view=sccm-ps)
+- [Set-CMTSStepSetVariable](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepsetvariable?view=sccm-ps)
+
 ### <a name="properties"></a>속성  
 
 이 단계에 대한 **속성** 탭에서 이 섹션에서 설명하는 설정을 구성합니다.  
@@ -1818,6 +1877,13 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 이 단계는 sysprep.inf 또는 unattend.xml 디렉터리 변수(예: `%WINDIR%` 및 `%ProgramFiles%`)를 Windows PE 설치 디렉터리인 `X:\Windows`로 바꿉니다. 작업 순서는 이러한 환경 변수를 사용하여 지정된 변수를 무시합니다.  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **이미지**, **Windows 및 ConfigMgr 설치**를 차례로 선택합니다.
+
+다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
+
+- [CMTSStepSetupWindowsAndConfigMgr](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtsstepsetupwindowsandconfigmgr?view=sccm-ps)
+- [CMTSStepSetupWindowsAndConfigMgr](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtsstepsetupwindowsandconfigmgr?view=sccm-ps)
+- [CMTSStepSetupWindowsAndConfigMgr](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepsetupwindowsandconfigmgr?view=sccm-ps)
+- [CMTSStepSetupWindowsAndConfigMgr](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepsetupwindowsandconfigmgr?view=sccm-ps)
 
 ### <a name="step-actions"></a>단계 작업
 

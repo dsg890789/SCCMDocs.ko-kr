@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6699b73bd9a3a911fef788f25cbf2140e90cbe92
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.openlocfilehash: 48cb5d13dc3683a11731937d94d1f84414c3d923
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355040"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892420"
 ---
 # <a name="install-software-updates"></a>소프트웨어 업데이트 설치
 
@@ -52,7 +52,7 @@ Configuration Manager를 사용하여 정기적으로 이미지 파일에 적용
 
 이미지에 소프트웨어 업데이트를 적용하는 경우 모든 대체된 업데이트를 제거하여 출력을 최적화할 수 있습니다. 다음과 같이 DISM 명령줄 도구를 사용하세요.
 
-```
+``` Command
 dism /Mount-Image /ImageFile:C:\Data\install.wim /MountDir:C:\Mountdir
 dism /Image:C:\Mountdir /Cleanup-Image /StartComponentCleanup /ResetBase
 dism /Unmount-Image /MountDir:C:\Mountdir /Commit  

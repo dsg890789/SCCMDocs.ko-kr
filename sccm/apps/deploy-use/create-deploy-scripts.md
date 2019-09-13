@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2b063fe21a674fc066531b1bd970a330d02d9f9
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: 4702f29f9c321c4361aea2f2f75c7c7e30e284b7
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243671"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888616"
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
@@ -221,7 +221,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 
 이 스크립트는 사용자의 명명 입력에 따라 새 폴더와 폴더 내의 파일을 만듭니다.
 
-``` powershell
+``` PowerShell
 Param(
 [Parameter(Mandatory=$True)]
 [string]$FolderName,
@@ -237,7 +237,7 @@ New-Item $FileName -type file
 
 이 스크립트는 WMI를 사용하여 컴퓨터에 OS 버전을 쿼리합니다.
 
-``` powershell
+``` PowerShell
 Write-Output (Get-WmiObject -Class Win32_operatingSystem).Caption
 ```
 
@@ -304,8 +304,7 @@ Write-Output (Get-WmiObject -Class Win32_operatingSystem).Caption
 ### <a name="example-script-output-is-valid-json"></a>예제: 스크립트 출력이 유효한 JSON인 경우
 명령: `$PSVersionTable.PSVersion`  
 
-출력:  
-```
+``` Output
 Major  Minor  Build  Revision
 -----  -----  -----  --------
 5      1      16299  551
@@ -314,8 +313,7 @@ Major  Minor  Build  Revision
 ### <a name="example-script-output-isnt-valid-json"></a>예제: 스크립트 출력이 유효한 JSON이 아닌 경우
 명령: `Write-Output (Get-WmiObject -Class Win32_OperatingSystem).Caption`  
 
-출력:  
-```
+``` Output
 Microsoft Windows 10 Enterprise
 ```
 

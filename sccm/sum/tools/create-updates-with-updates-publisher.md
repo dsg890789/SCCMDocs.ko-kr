@@ -2,7 +2,7 @@
 title: 업데이트 만들기
 titleSuffix: Configuration Manager
 description: System Center Updates Publisher를 사용하여 소프트웨어 업데이트 만들기 및 번들
-ms.date: 4/29/2017
+ms.date: 04/29/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e60ce54c5f792f7ea9c7a6c6d05b32c79c1e9b8d
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 74165357238f6ba37b2eef28c2e946448df0d957
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678788"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888591"
 ---
 # <a name="create--software-updates-and-update-bundles-with-updates-publisher"></a>Updates Publisher를 사용하여 소프트웨어 업데이트 및 업데이트 번들 만들기
 

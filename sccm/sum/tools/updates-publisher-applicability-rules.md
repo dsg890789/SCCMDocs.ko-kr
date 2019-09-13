@@ -2,7 +2,7 @@
 title: 적용 가능성 규칙
 titleSuffix: Configuration Manager
 description: System Center Updates Publisher의 적용 가능성 규칙 관리
-ms.date: 4/29/2017
+ms.date: 04/29/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30200c9da2ea37ef0868db680d04fe6aae9fd314
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 3b1f638bccb35ac10ea37956405c023a6ab0f184
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678080"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892239"
 ---
 # <a name="manage-applicability-rules-in-updates-publisher"></a>Updates Publisher의 적용 가능성 규칙 관리
 
@@ -31,11 +31,11 @@ Updates Publisher에서 적용 가능성 규칙은 디바이스에 업데이트�
 
 예를 들어 다음은 세 가지 규칙을 포함하는 규칙 집합입니다. 첫 번째 규칙은 *MyFile* 파일이 있는지 확인하고, 두 번째와 세 번째 규칙은 Windows 운영 체제의 언어가 영어인지 일본어인지 확인합니다.
 
-```
+``` Example
 And  
   File ‘\[PROGRAM\_FILES\] \\Microsoft\\MyFile’ exists  
   Or  
-    Windows Language is English   
+    Windows Language is English
     Windows Language is Japanese
 ```
 

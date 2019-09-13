@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 841d9f6d7878d7784d22c41bb35720a0e87e662b
-ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
+ms.openlocfilehash: 334854072e5c724f2c76432e7a7372c02cab3d54
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69974728"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892260"
 ---
 # <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
 
@@ -103,14 +103,14 @@ WSUS 6.2 및 6.3에서 **업그레이드** 분류를 동기화 하려면 두 가
 
 소프트웨어 업데이트 다운로드 마법사의 완료 페이지에 다음과 유사한 오류가 표시 됩니다.
 
-```
+``` Output
 Error: Upgrade to Windows 10 Pro, version 1511, 10586
 Failed to download content id {content_id}. Error: Invalid certificate signature
 ```
 
 또한 다음과 유사한 오류가 PatchDownloader 파일에 기록 됩니다.
 
-```
+``` Log
 Download http://wsus.ds.b1.download.windowsupdate.com/d/upgr/2015/12/10586.0.151029-1700.th2_release_...esd...
 Authentication of file C:\Users\{username}\AppData\Local\Temp\2\{temporary_filename}.tmp failed, error 0x800b0004
 ERROR: DownloadContentFiles() failed with hr=0x80073633
