@@ -2,7 +2,7 @@
 title: 마이그레이션 완료
 titleSuffix: Configuration Manager
 description: 원본 계층 구조에 더 이상 데이터가 없게 된 후 System Center Configuration Manager 대상 계층 구조로의 마이그레이션을 완료하는 방법을 알아봅니다.
-ms.date: 1/12/2017
+ms.date: 01/12/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b93672c951668a4ea3b9970c0fd22132ec5aa8b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 25cf1473da6bf44792e4037821000b110dc09c37
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128330"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891505"
 ---
 # <a name="plan-to-complete-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 완료 계획
 

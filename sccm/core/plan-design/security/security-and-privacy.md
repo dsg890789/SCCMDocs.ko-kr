@@ -2,7 +2,7 @@
 title: 보안 및 개인 정보 리소스
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 보안 및 개인 정보에 대한 리소스를 찾습니다.
-ms.date: 1/3/2017
+ms.date: 01/3/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bfc608fd9180f690269597a03fa35d15faa1b57
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: b5918758b9894920047c89ac0c96d3c4c96c7742
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56142479"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891217"
 ---
 # <a name="security-and-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager의 보안 및 개인 정보
 

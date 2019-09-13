@@ -2,7 +2,7 @@
 title: '지원되는 LTSB 구성 '
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 장기 서비스 분기에서 작동하는 운영 체제 및 종속 제품을 이해합니다.
-ms.date: 5/10/2017
+ms.date: 05/10/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98b06429296927ade2dd738fb8df5356668dd89b
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 4b71530cbde931c14810ba0e0960e530b56ece04
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70377765"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891894"
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기에 대해 지원되는 구성
 

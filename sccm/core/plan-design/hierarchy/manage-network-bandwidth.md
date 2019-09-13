@@ -2,7 +2,7 @@
 title: 콘텐츠의 네트워크 대역폭 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 대한 일정, 제한 및 사전 준비된 콘텐츠를 구성합니다.
-ms.date: 2/6/2017
+ms.date: 02/6/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03d85a55e51125e40e1df766382b0a074d865a51
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 15dfd5d1ba7f19832f3a25faf4a8bd0bb6c9fd34
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141622"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891172"
 ---
 # <a name="manage-network-bandwidth-for-content"></a>콘텐츠의 네트워크 대역폭 관리
 System Center Configuration Manager의 콘텐츠 관리 프로세스에 사용되는 네트워크 대역폭을 관리하려는 경우 일정 및 제한용 기본 제공 컨트롤을 사용할 수 있습니다. 사전 준비된 콘텐츠를 사용할 수도 있습니다. 다음 섹션에서는 이러한 옵션을 더 자세히 설명합니다.

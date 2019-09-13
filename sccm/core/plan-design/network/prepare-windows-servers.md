@@ -2,7 +2,7 @@
 title: Windows 서버 준비
 titleSuffix: Configuration Manager
 description: 컴퓨터가 Configuration Manager의 사이트 서버 또는 사이트 시스템 서버를 사용하기 위한 필수 구성 요소를 충족하는지 확인합니다.
-ms.date: 2/14/2017
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbe2608058f7364ba2b78a7ed31a01dbec5ef65f
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: ce183f33a022259a5f706a6ec32aab409e0493a0
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499178"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891262"
 ---
 # <a name="prepare-windows-servers-to-support-configuration-manager"></a>Configuration Manager를 지원할 Windows 서버 준비
 
@@ -47,20 +47,20 @@ Windows 컴퓨터를 Configuration Manager용 사이트 시스템 서버로 사�
 
     .NET Framework 4.0 이상 버전은 이전 버전과 호환되지 않아 3.5 이하 버전 대신 사용할 수 없으므로 다른 버전이 필수 버전으로 표시되면 같은 컴퓨터에서 각 버전을 사용할 수 있도록 계획합니다.  
 
-- **BITS(Background Intelligent Transfer Service)**: 관리 지점에서는 관리형 디바이스와의 통신을 지원하기 위해 BITS 및 자동으로 선택되는 옵션을 사용해야 합니다.  
+- **BITS(Background Intelligent Transfer Service)** : 관리 지점에서는 관리형 디바이스와의 통신을 지원하기 위해 BITS 및 자동으로 선택되는 옵션을 사용해야 합니다.  
 
 - **BranchCache**: BranchCache를 사용하는 클라이언트를 지원하기 위해 BranchCache를 사용하여 배포 지점을 설정할 수 있습니다.  
 
 - **데이터 중복 제거**: 데이터 중복 제거를 사용하여 배포 지점을 설정할 수 있으며, 그러면 해당 배포 지점에서 데이터 중복 제거 기능을 활용할 수 있습니다.  
 
-- **RDC(원격 차등 압축)**: 사이트 서버 또는 배포 지점을 호스트하는 각 컴퓨터에는 RDC가 필요합니다. RDC는 패키지 서명을 생성하고 서명을 비교하는 데 사용됩니다.  
+- **RDC(원격 차등 압축)** : 사이트 서버 또는 배포 지점을 호스트하는 각 컴퓨터에는 RDC가 필요합니다. RDC는 패키지 서명을 생성하고 서명을 비교하는 데 사용됩니다.  
 
 ### <a name="roles"></a>역할  
 소프트웨어 업데이트 및 OS 배포와 같은 특정 기능을 지원하려면 다음과 같은 Windows 역할이 필요합니다. 반면, 대부분의 일반 사이트 시스템 역할에는 IIS가 필요합니다.  
 
 - Active Directory 인증서 서비스 라이브러리의 **네트워크 디바이스 등록 서비스 지침**: 이 Windows 역할은 Configuration Manager에서 인증서 프로필을 사용하기 위한 필수 구성 요소입니다.  
 
-- **웹 서버(IIS)**: 포함하는 항목  
+- **웹 서버(IIS)** : 포함하는 항목  
     - 일반 HTTP 기능  
           - HTTP 리디렉션  
     - 애플리케이션 개발  

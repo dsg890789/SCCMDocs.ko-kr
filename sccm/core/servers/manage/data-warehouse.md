@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95641ed36bb3847a3f7d39c4ad8d7296ecd11e77
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: 6a2ac3c1a8941807544700a9e5224808cceea8ba
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956298"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892103"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
@@ -224,7 +224,7 @@ SQL Server 라이선스에 대한 자세한 내용은 [제품 및 라이선스 F
 
 데이터 웨어하우스 보고서를 열 때 다음 오류가 반환됩니다.
 
-```
+``` Output
 An error has occurred during report processing. (rsProcessingAborted)
 Cannot create a connection to data source 'AutoGen__39B693BB_524B_47DF_9FDB_9000C3118E82_'. (rsErrorOpeningConnection)
 A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)

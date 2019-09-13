@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1614327bbea6ecb92d37e1ca89d9ee430b74f2f
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 7a8c3147b4ba7df547b07947ee47d4084591f52f
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338130"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892154"
 ---
 # <a name="troubleshooting-cmpivot"></a>CMPivot 문제 해결
 
@@ -28,7 +28,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 
 이 줄에서 **smsprov.log**를 확인합니다.
 
-```
+``` Log
 Auditing: User <username> initiated client operation 135 to collection <CollectionId>.
 ```
 
@@ -38,7 +38,7 @@ CMPivot 창에서 ID를 찾습니다. 이 ID는 **ClientOperationID**입니다.
 
 ClientAction 테이블에서 **TaskID**를 찾습니다. **TaskID**는 ClientAction 표에서 **UniqueID**에 해당합니다. 
 
-```SQL
+``` SQL
 select * from ClientAction where ClientOperationId=<id>
 ```
 
@@ -57,14 +57,14 @@ select * from ClientAction where ClientOperationId=<id>
 
 **TaskID**에 대한 **Scripts.log**를 확인합니다. 다음 예제에서는 **Task ID {F8C7C37F-B42B-4C0A-B050-2BB44DF1098A}** 가 표시됩니다.
 
-```
+``` Log
 Sending script state message: 7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14 Scripts 7/3/2018 11:44:47 AM 5036 (0x13AC)
 State message: Task Id {F8C7C37F-B42B-4C0A-B050-2BB44DF1098A} Scripts 7/3/2018 11:44:47 AM 5036 (0x13AC)
 ```
 
 **StateMessage.log**를 확인합니다. 이 예제에서 **TaskID**는 &lt;Param> 옆에 있는 메시지의 아래쪽에 있습니다. 아래와 유사한 줄이 표시됩니다.
 
-```xml
+``` XML
 StateMessage body: <?xml version="1.0" encoding="UTF-16"?>
 <Report><ReportHeader><Identification><Machine><ClientInstalled>1</ClientInstalled><ClientType>1
 </ClientType><ClientID>GUID:DBAC52C9-57E6-47D7-A8D6-E0A5A64B57E6</ClientID><ClientVersion>5.00.8670.1000</ClientVersion>
@@ -86,7 +86,7 @@ Successfully forwarded State Messages to the MP StateMessage 7/3/2018 11:44:47 A
 
 **statesys.log**를 열어 메시지가 수신되고 처리되는지 확인합니다. 이 예제에서 **TaskID**는 &lt;Param> 옆에 있는 메시지의 아래쪽에 있습니다.
 
-```xml
+``` XML
 CMessageProcessor - the cmdline to DB exec dbo.spProcessStateReport N'?<?xml version="1.0" encoding="UTF-
 16"?>~~<Report><ReportHeader><Identification><Machine><ClientInstalled>1</ClientInstalled><ClientType>1
 </ClientType><ClientID>GUID:DBAC52C9-57E6-47D7-A8D6-E0A5A64B57E6</ClientID><ClientVersion>5.00.8670.1000</ClientVersion>
@@ -107,7 +107,7 @@ CMessageProcessor - the cmdline to DB exec dbo.spProcessStateReport N'?<?xml ver
 
 **TaskID**를 사용하여 SQL에서 CMPivot에 대한 모니터링 보기를 확인합니다.
 
-```SQL
+``` SQL
 select * from vSMS_CMPivotStatus where TaskID='{F8C7C37F-B42B-4C0A-B050-2BB44DF1098A}'
 ```
 

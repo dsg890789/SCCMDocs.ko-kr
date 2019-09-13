@@ -2,7 +2,7 @@
 title: 마이그레이션 계획
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 대상 계층 구조로 데이터를 마이그레이션하기 전에 사이트 및 계층에 알아봅니다.
-ms.date: 1/12/2017
+ms.date: 01/12/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d3a54b7fabbd36b3c622c75622002d509540581
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 286378fd354375fcf52030b0b27ed41802524bfa
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141911"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891512"
 ---
 # <a name="plan-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션 계획
 

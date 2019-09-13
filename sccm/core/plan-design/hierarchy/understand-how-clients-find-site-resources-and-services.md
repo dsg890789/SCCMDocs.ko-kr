@@ -2,7 +2,7 @@
 title: 사이트 리소스 찾기
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager 클라이언트가 서비스 위치를 사용하여 사이트 리소스를 찾는 방법과 시기를 알아봅니다.
-ms.date: 2/7/2017
+ms.date: 02/7/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bded5760fb397f0bd2acc676a9f875235d66fae4
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: e24460cb7acaaa715d21d49bd1e1f37fe270253c
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70380167"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891205"
 ---
 # <a name="learn-how-clients-find-site-resources-and-services-for-system-center-configuration-manager"></a>클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법
 

@@ -2,7 +2,7 @@
 title: Asset Intelligence 일반 라이선스 가져오기 파일 예제
 titleSuffix: Configuration Manager
 description: 샘플 Asset Intelligence 일반 라이선스 파일을 사용하여 System Center Configuration Manager의 소프트웨어 라이선스를 가져올 수 있도록 합니다.
-ms.date: 2/22/2017
+ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ab8e241f9a1bacba7f8bcfbe0674fbfb513db2e
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 3cd873f7db312b84ef7591bbd82993e3ebc7a891
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65500023"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890300"
 ---
 # <a name="example-asset-intelligence-general-license-import-file-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 일반 라이선스 가져오기 파일 예제
 

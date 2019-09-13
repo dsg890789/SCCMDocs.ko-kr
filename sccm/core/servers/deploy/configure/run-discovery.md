@@ -2,7 +2,7 @@
 title: 디바이스 및 사용자 리소스 검색
 titleSuffix: Configuration Manager
 description: 검색 프로세스 및 검색 데이터 기록 개요를 읽습니다.
-ms.date: 2/8/2017
+ms.date: 02/8/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51d96ef84832785e8d01bad447883dbe4761c2b0
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 760ea21d2badc6e58acf10c78aec4a3437ed3c1a
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65498390"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890691"
 ---
 # <a name="run-discovery-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 실행
 

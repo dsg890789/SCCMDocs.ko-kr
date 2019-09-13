@@ -2,7 +2,7 @@
 title: 지원되는 Active Directory 도메인
 titleSuffix: Configuration Manager
 description: Active Directory 도메인에서 System Center Configuration Manager 사이트 시스템의 멤버 자격에 대한 요구 사항을 가져옵니다.
-ms.date: 9/18/2017
+ms.date: 09/18/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02353e516e7af45afe273bc0deff5b227a7c7f2c
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 9d3d9b471b5a9cb69204dfb39f8d7a0d3295ee6f
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499434"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891402"
 ---
 # <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 Active Directory 도메인
 

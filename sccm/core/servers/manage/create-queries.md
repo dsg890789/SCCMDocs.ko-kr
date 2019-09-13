@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 862505e7ea1ad1e59b0bbf7ace07bc07d326a83d
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: e6c5d99860d8897e34038319c5c16417985132cf
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70379870"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892078"
 ---
 # <a name="create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리 만들기
 
@@ -101,10 +101,10 @@ Windows 7을 실행하는 모든 컴퓨터의 NetBIOS 이름 및 운영 체제 �
 > [!TIP]  
 > Windows Server 2008 R2를 실행하는 컴퓨터를 반환하려면 `%Workstation 6.1%`를 `%Server 6.1%`로 변경합니다.  
 
-```  
+``` WQL
 select SMS_R_System.NetbiosName,  
-SMS_R_System.OperatingSystemNameandVersion from    
-SMS_R_System where   
+SMS_R_System.OperatingSystemNameandVersion from
+SMS_R_System where
 SMS_R_System.OperatingSystemNameandVersion like "%Workstation 6.1%"  
 ```  
 
@@ -115,12 +115,12 @@ SMS_R_System.OperatingSystemNameandVersion like "%Workstation 6.1%"
 > [!TIP]  
 > 이 쿼리는 Windows 제어판의 프로그램 목록에 표시되는 이름을 사용하여 소프트웨어 패키지를 검색합니다.  
 
-```  
-select SMS_R_System.NetbiosName,   
-SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName from    
-SMS_R_System inner join SMS_G_System_ADD_REMOVE_PROGRAMS on   
-SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceId =   
-SMS_R_System.ResourceId where   
+``` WQL
+select SMS_R_System.NetbiosName,
+SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName from
+SMS_R_System inner join SMS_G_System_ADD_REMOVE_PROGRAMS on
+SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceId =
+SMS_R_System.ResourceId where
 SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Microsoft%Visio%"  
 ```  
 
@@ -128,10 +128,10 @@ SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Microsoft%Visio%"
 
 지정된 OU(조직 구성 단위)에 있는 모든 컴퓨터의 NetBIOS 이름 및 OU 이름을 반환하려면 다음 쿼리를 사용합니다. `OU Name` 텍스트를 쿼리하려는 OU의 이름으로 바꿉니다.  
 
-```  
-select SMS_R_System.NetbiosName,   
-SMS_R_System.SystemOUName from    
-SMS_R_System where   
+``` WQL
+select SMS_R_System.NetbiosName,
+SMS_R_System.SystemOUName from
+SMS_R_System where
 SMS_R_System.SystemOUName = "OU Name"  
 ```  
 
@@ -139,8 +139,8 @@ SMS_R_System.SystemOUName = "OU Name"
 
 특정 문자열로 시작하는 모든 컴퓨터의 NetBIOS 이름을 반환하려면 다음 쿼리를 사용합니다. 이 예제에서 쿼리는 `ABC`로 시작하는 NetBIOS 이름이 있는 모든 컴퓨터를 반환합니다.  
 
-```  
-select SMS_R_System.NetbiosName from    
+``` WQL
+select SMS_R_System.NetbiosName from
 SMS_R_System where SMS_R_System.NetbiosName like "ABC%"  
 ```  
 
@@ -148,7 +148,7 @@ SMS_R_System where SMS_R_System.NetbiosName like "ABC%"
 
 디바이스 유형은 리소스 클래스 **sms_r_system** 및 특성 이름 **AgentEdition**의 Configuration Manager 데이터베이스에 저장됩니다. 지정하는 디바이스 유형의 에이전트 버전과 일치하는 디바이스만 검색하려면 이 쿼리를 사용합니다.  
 
-```  
+``` WQL
 Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdition = <Device ID>  
 ```  
 
@@ -177,7 +177,7 @@ Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdi
 
  예를 들어 Mac 컴퓨터만 반환하려면 다음 쿼리를 사용합니다.  
 
-```  
+``` WQL
 Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdition = 5  
 ```  
 

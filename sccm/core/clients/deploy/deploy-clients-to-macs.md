@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e686f9cdbece2ceb652ecd2e0f3c6d5eca420caf
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 066a4095fa5714df3243cc729a1dacccd613fd39
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677830"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890350"
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>Mac에 클라이언트를 배포하는 방
 
@@ -234,7 +234,7 @@ Configuration Manager와 별도로 인증서 요청 및 설치 방법을 사용�
 
 7. **검색 스크립트 편집** 창에서 다음 셸 스크립트를 입력합니다.  
 
-    ```  
+    ``` Shell
     defaults read com.microsoft.ccmclient SMSID  
     ```  
 
@@ -244,7 +244,7 @@ Configuration Manager와 별도로 인증서 요청 및 설치 방법을 사용�
 
 10. **재구성 스크립트 만들기** 창에서 다음 셸 스크립트를 입력합니다.  
 
-    ```  
+    ``` Shell
     defaults delete com.microsoft.ccmclient SMSID  
     ```  
 
@@ -268,7 +268,7 @@ Configuration Manager와 별도로 인증서 요청 및 설치 방법을 사용�
 
 15. SMSID가 제거된 Mac 컴퓨터에 새 인증서를 설치한 후에 다음 명령을 실행하여 클라이언트에서 새 인증서를 사용하도록 구성합니다.  
 
-    ```  
+    ``` Shell
     sudo defaults write com.microsoft.ccmclient SubjectName -string <subject_name_of_new_certificate>  
     ```  
 
