@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acafe2aeefc267446042b12f06763fd0f1737cfb
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: f4f4d10d7ae21ac209fc7cdc85f54bd8dbf604b8
+ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70377839"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70738322"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
@@ -35,7 +35,7 @@ Configuration Manager 기능에 대한 자세한 내용은 [제품 페이지](ht
 
 ### <a name="bkmk_ltsb"></a> LTSB(장기 서비스 분기)란?  
 
-LTSB는 Configuration Manager의 프로덕션 준비 빌드입니다. Software Assurance 또는 이와 동등한 구독 권한의 만료를 허용하는 고객을 위한 것입니다. 현재 분기에 비해 LTSB는 [축소된 기능](/sccm/core/understand/introduction-to-the-ltsb#features-that-are-not-available-in-the-ltsb-of-configuration-manager)을 갖습니다. Software Assurance 또는 동등한 구독 권한의 만료를 허용하는 고객은 Configuration Manager의 현재 분기를 제거해야 합니다. Configuration Manager에 대한 영구 라이선스 권한이 있는 고객은 만료 시점에 최신 Configuration Manager 버전의 LTSB 빌드를 설치하고 사용할 수 있습니다.
+LTSB는 Configuration Manager의 프로덕션 준비 빌드입니다. Software Assurance 또는 이와 동등한 구독 권한의 만료를 허용하는 고객을 위한 것입니다. 현재 분기에 비해 LTSB는 [축소된 기능](/sccm/core/understand/introduction-to-the-ltsb#features-that-arent-available)을 갖습니다. Software Assurance 또는 동등한 구독 권한의 만료를 허용하는 고객은 Configuration Manager의 현재 분기를 제거해야 합니다. Configuration Manager에 대한 영구 라이선스 권한이 있는 고객은 만료 시점에 최신 Configuration Manager 버전의 LTSB 빌드를 설치하고 사용할 수 있습니다.
 
 
 ### <a name="bkmk_licensing-acronyms"></a> 라이선스 콘텐츠에 사용된 *SA* 및 *L&SA*가 표시되었습니다. 이러한 머리글자어는 Configuration Manager와 관련하여 어떤 의미가 있나요?    

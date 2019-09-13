@@ -2,7 +2,7 @@
 title: 사이트 설치 리소스
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager를 설치하거나 계층 구조에 사이트를 추가하는 데 도움이 되는 항목 목록을 검토합니다.
-ms.date: 1/3/2017
+ms.date: 01/3/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ebd90b994e3e6103282e3796be180bfd021128
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 54f79af62780cd29705a84ab4b42275a9226e469
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501376"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888862"
 ---
 # <a name="resources-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치용 리소스
 

@@ -2,7 +2,7 @@
 title: 명령줄 설치
 titleSuffix: Configuration Manager
 description: 명령 프롬프트에서 여러 사이트 설치에 대해 System Center Configuration Manager 설치 프로그램을 실행하는 방법을 알아봅니다.
-ms.date: 3/27/2017
+ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63fb00eb446c8e91f8bc741c0375b314ad0ef9a7
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 3e24fb163d144d69b11e7ae1aae4a5ebc5e0c38f
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497660"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888703"
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>명령줄을 사용하여 System Center Configuration Manager 사이트 설치
 

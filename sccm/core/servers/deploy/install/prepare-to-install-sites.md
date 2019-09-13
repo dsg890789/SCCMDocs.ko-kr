@@ -2,7 +2,7 @@
 title: 사이트를 설치할 준비
 titleSuffix: Configuration Manager
 description: 여러 Configuration Manager 사이트를 설치할 계획인 경우 이 정보를 읽으면 시간을 절약하고 오류를 방지할 수 있습니다.
-ms.date: 3/1/2017
+ms.date: 03/1/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29e0f58404df2cadf2a1e28939ebcec2647b3e6d
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: aaac8972d6fbe3c8d99acf0a37fab2a748f2ce20
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339418"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888945"
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
 

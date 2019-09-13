@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ff2de897d274caf85539a3338fc7d45d8393f6
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 74905b9c681b98716447ac40683f4a09f024826b
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536440"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888955"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
@@ -94,7 +94,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 - **CLR 통합**을 사용합니다.
 
-    ```sql
+    ``` SQL
     sp_configure 'show advanced options', 1;  
     GO  
     RECONFIGURE;  
@@ -109,7 +109,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 - **최대 텍스트 복제 크기**는 `2147483647`로 설정합니다.  
 
-    ```sql
+    ``` SQL
     EXECUTE sp_configure 'max text repl size (B)', 2147483647
     ```
 
@@ -117,7 +117,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 - **TRUSTWORTHY** 설정을 **ON**으로 지정합니다.
 
-    ```sql
+    ``` SQL
     ALTER DATABASE [CM_xxx] SET TRUSTWORTHY ON;
     ```
 
@@ -125,7 +125,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 - **Service Broker**를 사용합니다.  
 
-    ```sql
+    ``` SQL
     ALTER DATABASE [CM_xxx] SET ENABLE_BROKER
     ```
 
@@ -134,7 +134,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 - 새 Service Broker 우선 순위를 구성합니다.
 
-    ```sql
+    ``` SQL
     ALTER DATABASE [CM_xxx] SET HONOR_BROKER_PRIORITY ON;
     ALTER DATABASE [CM_xxx] SET ENABLE_BROKER WITH ROLLBACK IMMEDIATE
 
@@ -146,7 +146,7 @@ SQL Server의 각 인스턴스는 도메인 사용자 계정(**서비스 계정*
 
 다음 SQL 스크립트를 실행하여 주 및 보조 복제본에 대한 데이터베이스 구성을 확인하세요. 보조 복제본에서 문제를 해결하려면 먼저 해당 보조 복제본을 주 복제본으로 변경합니다.
 
-```SQL
+``` SQL
     SET NOCOUNT ON
 
     DECLARE @dbname NVARCHAR(128)
@@ -296,7 +296,7 @@ Configuration Manager 설치 프로그램을 사용하여 가용성 그룹에서
 <!-- SCCMDocs-pr#3734 -->
 버전 1906부터는 SQL Server에서 [MultiSubnetFailover 연결 문자열 키워드](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server#MultiSubnetFailover)를 사용할 수 있습니다. 또한 사이트 서버의 Windows 레지스트리에 다음 값을 수동으로 추가해야 합니다.
 
-```
+``` Registry
 HKLM:\SOFTWARE\Microsoft\SMS\Identification
 
 MSF Enabled : 1 (DWORD)

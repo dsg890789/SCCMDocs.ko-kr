@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a48dd82b1f4c79953ce88c5e156abe47b891ac14
-ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
+ms.openlocfilehash: 0930e2f02d2a99073944c61cfead6767530accbc
+ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65973944"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70738223"
 ---
 # <a name="conditional-access-with-co-management"></a>공동 관리를 사용하는 조건부 액세스
 
@@ -34,7 +34,7 @@ ms.locfileid: "65973944"
 
     - 공동 관리하는 디바이스의 경우 Configuration Manager도 구성 기반 평가를 수행합니다. 예를 들어 필수 업데이트 또는 앱을 준수하는지 평가합니다. Intune은 이 평가를 자체 평가와 결합합니다.  
 
-2. Intune은 디바이스에서 활성 보안 인시던트를 검색합니다. [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/get-started)(이전 Windows Defender ATP) 및 기타 [모바일 위협 방어 공급자](https://www.lookout.com/about/partners/microsoft)의 인텔리전트 보안을 사용합니다. 이러한 파트너는 디바이스에서 지속적인 동작 분석을 실행합니다. 이 분석에서는 활성 인시던트를 검색한 다음 이 정보를 실시간 준수 평가를 위해 Intune에 전달합니다.  
+2. Intune은 디바이스에서 활성 보안 인시던트를 검색합니다. [Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)(이전 Windows Defender ATP) 및 기타 [모바일 위협 방어 공급자](https://www.lookout.com/about/partners/microsoft)의 인텔리전트 보안을 사용합니다. 이러한 파트너는 디바이스에서 지속적인 동작 분석을 실행합니다. 이 분석에서는 활성 인시던트를 검색한 다음 이 정보를 실시간 준수 평가를 위해 Intune에 전달합니다.  
 
     - 이 평가는 사전 보안 위반 및 인시던트 기반입니다.  
 

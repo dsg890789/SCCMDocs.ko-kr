@@ -11,12 +11,12 @@ ms.assetid: 31de47c9-891b-4de7-8d5e-fbbc1bff7c60
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b58f6d1441d338c121b67754989128944adcc923
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: ec0d298b6adea38c6b4104f2006b77eba650ac66
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536563"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889258"
 ---
 # <a name="how-to-enable-tls-12"></a>TLS 1.2를 사용하도록 설정하는 방법
 
@@ -90,7 +90,7 @@ Configuration Manager가 보안 통신을 위해 사용하는 구성 요소에 �
 
 32비트 시스템에서 실행되는 32비트 애플리케이션 또는 64비트 시스템에서 실행되는 64비트 애플리케이션의 경우 다음 하위 키 값을 업데이트합니다.
 
-```Registry
+``` Registry
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
       "SystemDefaultTlsVersions" = dword:00000001
       "SchUseStrongCrypto" = dword:00000001
@@ -101,7 +101,7 @@ Configuration Manager가 보안 통신을 위해 사용하는 구성 요소에 �
 
 64비트 시스템에서 실행되는 32비트 애플리케이션의 경우 다음 하위 키 값을 업데이트합니다.
 
-```Registry
+``` Registry
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727]
       "SystemDefaultTlsVersions" = dword:00000001
       "SchUseStrongCrypto" = dword:00000001
@@ -158,7 +158,7 @@ Windows 8.1, Windows Server 2012 R2, Windows 10, Windows Server 2016 및 후속 
 
 다음과 같이 `DefaultSecureProtocols` 레지스트리 설정 값을 확인합니다.
 
-```Registry
+``` Registry
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp\
       DefaultSecureProtocols = (DWORD): 0xAA0
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp\
@@ -244,7 +244,7 @@ SQL Server 통신이 실패하고 **SslSecurityError** 오류를 반환하는 �
 
 1. 애플리케이션 카탈로그 서버의 `%WinDir%\System32\InetSrv` 폴더에서 다음 내용을 사용하여 **W2SP.exe.config** 파일을 만듭니다.
 
-    ```xml
+    ``` XML
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <runtime>
@@ -296,7 +296,7 @@ Azure AD(Azure Active Directory)에서 애플리케이션을 만들려고 할 �
 
 **SMSAdminui.log**에는 다음 예제와 비슷한 오류가 포함될 수 있습니다.
 
-```
+``` Log
 Microsoft.ConfigurationManager.CloudBase.AAD.AADAuthenticationException
 Service returned error. Check InnerException for more details
 at Microsoft.ConfigurationManager.CloudBase.AAD.AADAuthenticationContext.GetAADAuthResultObject

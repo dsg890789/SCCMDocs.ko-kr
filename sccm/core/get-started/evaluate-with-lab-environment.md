@@ -2,7 +2,7 @@
 title: 랩 환경에서 평가
 titleSuffix: Configuration Manager
 description: 조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만듭니다.
-ms.date: 2/28/2017
+ms.date: 02/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78fdf0a07d1a299f7d10a0325b48f0c1fcfde2e3
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.openlocfilehash: a5e06d0afc32535e3459cad6da07ce4964055f0b
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67516004"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889665"
 ---
 # <a name="evaluate-system-center-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 System Center Configuration Manager 평가
 

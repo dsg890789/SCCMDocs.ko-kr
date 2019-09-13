@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d27baa691c3adca6dd859b79fc92bdd4fe539ab
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 8499ff11cc7ba53760e541eefb690c69b2f20fcf
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339899"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889719"
 ---
 # <a name="capabilities-in-technical-preview-1806-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1806의 기능
 
@@ -43,7 +43,8 @@ Steps to workaround, if any.
 ### <a name="ki_contentlib"></a> 사이트는 원격 콘텐츠 라이브러리로 업그레이드 실패
 <!--514642-->
 사이트는 **cmupdate.log**에서 다음 오류로 업그레이드에 실패합니다.  
-```  
+
+``` Log
 Failed to find any valid drives  
 GetContentLibraryParameters failed; 0x80070057  
 ERROR: Failed to process configuration manager update.  
@@ -172,7 +173,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 ## <a name="sync-mdm-policy-from-microsoft-intune-for-a-co-managed-device"></a>Microsoft Intune에서 공동 관리하는 디바이스에 대한 MDM 정책 동기화
 <!--1357377-->
-[공동 관리 워크로드를 전환](/sccm/core/clients/manage/co-management-switch-workloads)할 경우 이 릴리스부터 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients#initiate-client-policy-retrieval-using-client-notification)을 참조합니다.
+[공동 관리 워크로드를 전환](/sccm/core/clients/manage/co-management-switch-workloads)할 경우 이 릴리스부터 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients##BKMK_PolicyRetrieval)을 참조합니다.
 
 
 

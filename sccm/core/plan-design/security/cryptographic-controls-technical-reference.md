@@ -2,7 +2,7 @@
 title: 암호화 컨트롤 기술 참조
 titleSuffix: Configuration Manager
 description: 공격을 방지하여 System Center Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다.
-ms.date: 12/8/2017
+ms.date: 12/08/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76bf5ffecd21d25d152d74957473571b05f7d2a8
-ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
+ms.openlocfilehash: da9ec9265d8929860fa6d15d2ba3efb3eb215343
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70176710"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889279"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 

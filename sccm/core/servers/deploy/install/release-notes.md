@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 858ba3b39ea2290e1d5ca39d9d804e3f46be3002
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
+ms.openlocfilehash: a21fcce7d5e8db66a7e85c14c0ef4ad1050b342c
+ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712721"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70738427"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -170,7 +170,7 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 <!-- 4950335 -->
 *적용 대상: Configuration Manager 버전 1902(업데이트 롤업 포함) 및 버전 1906*
 
-계층 구조가 있고 사이트 복제 링크에서 [분산 보기](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_distviews)에 **하드웨어 인벤토리** 사이트 데이터를 사용하도록 설정한 경우 Configuration Manager에서 Desktop Analytics 연결을 구성한 후 M365UploadWorker.log에 다음과 같은 오류가 표시됩니다.
+계층 구조가 있고 사이트 복제 링크에서 [분산 보기](/sccm/core/plan-design/hierarchy/database-replication#bkmk_distviews)에 **하드웨어 인벤토리** 사이트 데이터를 사용하도록 설정한 경우 Configuration Manager에서 Desktop Analytics 연결을 구성한 후 M365UploadWorker.log에 다음과 같은 오류가 표시됩니다.
 
 `Unexpected exception 'System.Data.SqlClient.SqlException' Remote access is not supported for transaction isolation level "SNAPSHOT".:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction)`
 

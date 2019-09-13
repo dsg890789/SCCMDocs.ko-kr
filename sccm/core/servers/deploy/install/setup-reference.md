@@ -2,7 +2,7 @@
 title: 설치 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 사이트 또는 계층 구조의 설치를 준비하려면 이 참조를 검토합니다.
-ms.date: 4/18/2017
+ms.date: 04/18/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6c8dd4589cd9f1afedc54a3fb45342f6e566b98
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: c1b3e1506114cf931fb61d8c2c4c05eb8942ea49
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70379889"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888827"
 ---
 # <a name="reference-for-system-center-configuration-manager-setup"></a>System Center Configuration Manager 설치에 대한 참조
 

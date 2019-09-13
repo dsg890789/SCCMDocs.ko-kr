@@ -2,7 +2,7 @@
 title: 평가판 설치 업그레이드
 titleSuffix: Configuration Manager
 description: 평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드하는 방법을 알아봅니다.
-ms.date: 2/7/2017
+ms.date: 02/7/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b5e527fbed544447052556041db3de3c5b06ffd
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 29c1aee34669ac65ae3175895bc1061e851182d1
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497672"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888872"
 ---
 # <a name="upgrade-an-evaluation-installation-of-system-center-configuration-manager-to-a-full-installation"></a>평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드
 
@@ -41,7 +41,7 @@ System Center Configuration Manager를 평가판으로 설치하는 경우 180�
 
 ### <a name="to-upgrade-an-evaluation-version-of-configuration-manager-to-a-licensed-version"></a>Configuration Manager의 평가판을 라이선스 버전으로 업그레이드하려면  
 
-1.  사이트 서버의 Configuration Manager 설치 폴더(**%path%\BIN\X64**)에서 **Setup.exe**(Configuration Manager 설치 프로그램)를 찾아서 실행합니다. 설치 미디어에서 설치 프로그램을 실행하면 사이트 유지 관리 옵션이 제공되지 않으므로 사이트 서버에 있는 설치 프로그램의 복사본은 Configuration Manager 폴더에서 실행해야 합니다.  
+1.  사이트 서버의 Configuration Manager 설치 폴더( **%path%\BIN\X64**)에서 **Setup.exe**(Configuration Manager 설치 프로그램)를 찾아서 실행합니다. 설치 미디어에서 설치 프로그램을 실행하면 사이트 유지 관리 옵션이 제공되지 않으므로 사이트 서버에 있는 설치 프로그램의 복사본은 Configuration Manager 폴더에서 실행해야 합니다.  
 2.  **시작하기 전에** 페이지에서 **다음**을 선택합니다.  
 3.  **시작** 페이지에서 **사이트 유지 관리 수행 또는 이 사이트 다시 설정**을 선택하고 **다음**을 선택합니다.  
 4.  **사이트 유지 관리** 페이지에서 **평가판을 라이선스 버전으로 업그레이드합니다.** 를 선택하고 유효한 제품 키를 입력한 후 **다음**을 선택합니다.  

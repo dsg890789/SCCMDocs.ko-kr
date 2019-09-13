@@ -2,7 +2,7 @@
 title: 컬렉션 필수 조건
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 컬렉션 사용에 대한 필수 조건을 확인합니다.
-ms.date: 2/22/2017
+ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c05bbd53880e61687c76c1b8caee9f7c541092c3
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: d8beff2eb0d77d0dbed30b12a68a7882fc7eb320
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130210"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890178"
 ---
 # <a name="prerequisites-for-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션에 대한 필수 조건
 

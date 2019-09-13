@@ -2,7 +2,7 @@
 title: 사이트 시스템 역할 추가
 titleSuffix: Configuration Manager
 description: Configuration Manager 사이트 시스템 역할과 사이트의 기능 및 용량을 확장하기 위해 역할을 추가하는 방법을 이해합니다.
-ms.date: 2/7/2017
+ms.date: 02/7/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96710897dd518832a221717b7fdbec0a73eed01e
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 654334e7e2e8a3cf939f51d85cb5ade67f0ff711
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499095"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889213"
 ---
 # <a name="add-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 추가
 

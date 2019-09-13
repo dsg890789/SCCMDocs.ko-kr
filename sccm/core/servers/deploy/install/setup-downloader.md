@@ -2,7 +2,7 @@
 title: 설치 다운로더
 titleSuffix: Configuration Manager
 description: 사이트 설치 시 주요 설치 파일의 최신 버전을 사용하도록 하기 위한 이 독립 실행형 애플리케이션에 대해 알아봅니다.
-ms.date: 3/1/2017
+ms.date: 03/1/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23fbe5ecb6b69f9832ca34659cd35f5ad25b29b9
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: fcf41ada4d8fd2d6e4c185a485d94c64cd55b541
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65501326"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888821"
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
 
@@ -66,7 +66,7 @@ ms.locfileid: "65501326"
 
     -   **/NOUI**: 사용자 인터페이스를 표시하지 않고 설치 다운로더를 시작하려면 이 옵션을 사용합니다. 이 옵션을 사용하는 경우 명령 프롬프트에서 명령의 일부로 **다운로드 경로**를 지정해야 합니다.  
 
-    -   **&lt;DownloadPath\>**: 다운로드 폴더 경로를 지정하여 확인 또는 다운로드 프로세스를 자동으로 시작할 수 있습니다. **/NOUI** 옵션을 사용하는 경우 다운로드 경로를 지정해야 합니다. 다운로드 경로를 지정하지 않는 경우 설치 다운로더가 열릴 때 경로를 지정해야 합니다. 폴더가 없는 경우 설치 다운로더에서 폴더를 만듭니다.  
+    -   **&lt;DownloadPath\>** : 다운로드 폴더 경로를 지정하여 확인 또는 다운로드 프로세스를 자동으로 시작할 수 있습니다. **/NOUI** 옵션을 사용하는 경우 다운로드 경로를 지정해야 합니다. 다운로드 경로를 지정하지 않는 경우 설치 다운로더가 열릴 때 경로를 지정해야 합니다. 폴더가 없는 경우 설치 다운로더에서 폴더를 만듭니다.  
 
     예제 명령:
 

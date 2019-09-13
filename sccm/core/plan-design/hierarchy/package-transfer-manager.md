@@ -2,7 +2,7 @@
 title: 패키지 전송 관리자
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager의 패키지 전송 관리자가 사이트 서버에서 원격 배포 지점으로 콘텐츠를 전송하는 방법을 알아봅니다.
-ms.date: 2/8/2017
+ms.date: 02/8/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a465317334879e048ef9fe628a0efbdd5dbad78
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e5994ba2689ba276412012b6bd1c18b65d27c3df
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56139571"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889467"
 ---
 # <a name="package-transfer-manager-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 전송 관리자
 

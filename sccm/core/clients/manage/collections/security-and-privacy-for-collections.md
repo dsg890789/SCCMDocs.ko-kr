@@ -2,7 +2,7 @@
 title: 컬렉션 보안 및 개인 정보
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 컬렉션의 보안 및 개인 정보에 대한 모범 사례를 확인합니다.
-ms.date: 2/22/2017
+ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1de6835b3096d8747258461b5e0013bc6e87028
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: c71df04bab25a07d854ccc582fc92e4da8d1ad40
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138792"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890148"
 ---
 # <a name="security-and-privacy-for-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션에 대한 보안 및 개인 정보
 

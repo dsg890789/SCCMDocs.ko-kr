@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7c2951ad07c3ac0d2ac0658fecf47f7231c62a7
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: a3520217cde80b080676d23dc49a16974c11823a
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70377919"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889137"
 ---
 # <a name="database-replicas-for-management-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 관리 지점용 데이터베이스 복제본
 
@@ -245,7 +245,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
     > [!IMPORTANT]  
     >  단일 SQL Server에서 둘 이상의 데이터베이스 복제본을 구성하는 경우에는 구성하는 각각의 후속 복제본에 대해 이 절차용으로 이 스크립트의 수정된 버전을 사용해야 합니다. [단일 SQL Server의 추가 데이터베이스 복제본용 보충 스크립트](#bkmk_supscript)항목을 참조하세요.  
 
-    ```  
+    ``` PowerShell
     # Script for creating a self-signed certificate for the local machine and configuring SQL Server to use it.  
 
     Param($SQLInstance)  

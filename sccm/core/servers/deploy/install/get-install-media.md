@@ -2,7 +2,7 @@
 title: 설치 미디어 받기
 titleSuffix: Configuration Manager
 description: 새 System Center Configuration Manager 설치를 위한 설치 미디어를 찾을 수 있는 위치를 알아봅니다.
-ms.date: 1/11/2017
+ms.date: 01/11/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fd2da0440110706d03e49c34928ed4f6ae98fc3
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: f73293620df5315eda6380ae2146860543616baa
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70380091"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888914"
 ---
 # <a name="where-to-get-installation-media-for-system-center-configuration-manager"></a>System Center Configuration Manager용 설치 미디어를 다운로드할 수 있는 위치
 

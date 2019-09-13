@@ -2,7 +2,7 @@
 title: Asset Intelligence 구성
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 Asset Intelligence를 설정합니다.
-ms.date: 2/22/2017
+ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bdf04a0c8454728f15ce26ba295584899997f92
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 7b808535542a5757a9e8b1f6e4d14fc34cc33c3e
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70378383"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890239"
 ---
 # <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 구성
 

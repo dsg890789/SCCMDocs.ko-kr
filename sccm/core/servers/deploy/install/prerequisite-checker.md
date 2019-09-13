@@ -2,7 +2,7 @@
 title: 필수 구성 요소 검사기
 titleSuffix: Configuration Manager
 description: 필수 조건 검사기를 사용하여 사이트 또는 사이트 시스템 역할 설치를 차단하는 문제를 확인하고 해결하는 방법을 알아봅니다.
-ms.date: 3/1/2017
+ms.date: 03/1/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 303092686611d08d8b05a5dafd9ee669ea2271a6
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 19167ee3b25d838ad6d2268d2b67230968394ef5
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65497736"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888796"
 ---
 # <a name="prerequisite-checker-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 필수 조건 검사기
 

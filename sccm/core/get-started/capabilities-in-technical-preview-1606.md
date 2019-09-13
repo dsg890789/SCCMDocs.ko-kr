@@ -12,12 +12,12 @@ manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4527a67b7a08d7f5b9fd38d2edb223a9de823436
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 135589a924e62cf4eed592fe339780cf138c410d
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677631"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889703"
 ---
 # <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1606의 기능
 
@@ -28,8 +28,8 @@ ms.locfileid: "67677631"
 **이 Technical Preview의 알려진 문제:**  
 *  Technical Preview 1604에서 1605로 업데이트 후 1606으로 업데이트하는 경우 업데이트가 실패하고 다음과 유사한 오류가 **cmupdate.log**에 기록됩니다.
 
-    ```
-    ERROR: Failed to execute SQL Server command:  ~ ~-- Create site boundary group ~IF  dbo.fnIsCasOrStandalonePrimary() = 1 ~BEGIN ~   PRINT N'Create site boundary group during upgrade' ~   EXEC dbo.spBuildDefaultBoundaryGroups @UserName = N'SYSTEM' ~END          
+    ``` Log
+    ERROR: Failed to execute SQL Server command:  ~ ~-- Create site boundary group ~IF  dbo.fnIsCasOrStandalonePrimary() = 1 ~BEGIN ~   PRINT N'Create site boundary group during upgrade' ~   EXEC dbo.spBuildDefaultBoundaryGroups @UserName = N'SYSTEM' ~END
     ```
 
     이 경우 **업데이트 및 서비스** 노드에서 **업데이트 확인**을 클릭한 다음 업데이트 설치를 **다시 시도**합니다.
