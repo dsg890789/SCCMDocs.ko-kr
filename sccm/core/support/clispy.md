@@ -48,7 +48,7 @@ ms.locfileid: "65495793"
 
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 
 ### <a name="tools-menu"></a>도구 메뉴

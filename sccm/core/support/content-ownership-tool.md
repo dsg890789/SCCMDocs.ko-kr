@@ -49,7 +49,7 @@ Configuration Manager 계층 구조의 모든 사이트 서버에 대해 콘텐�
 
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 **ContentOwnershipTool.exe**를 실행하여 도구를 시작합니다. 도구 실행에는 컴퓨터에 대한 로컬 관리자 권한이 필요하지 않습니다.
 

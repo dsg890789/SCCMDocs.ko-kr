@@ -1,7 +1,7 @@
 ---
 title: 1710에 대한 진단 데이터 | System Center Configuration Manager
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1710에서 수집하는 진단 및 사용 현황 데이터를 알아봅니다.
+description: System Center Configuration Manager 버전 1710에서 수집하는 진단 및 사용량 현황 데이터를 알아봅니다.
 ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -19,7 +19,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/26/2019
 ms.locfileid: "68536744"
 ---
-# <a name="levels-of-diagnostic-usage-data-collection-for-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710에 대한 진단 및 사용 현황 데이터 수집 수준
+# <a name="levels-of-diagnostic-usage-data-collection-for-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710에 대한 진단 및 사용량 현황 데이터 수집 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -74,7 +74,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 - 분기 및 빌드별 Windows 10 디바이스 개수
 
-- 데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
+- 데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용량 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
 
 - 배포 지점, 관리 지점 유형 및 기본 구성 정보(보호됨, 미리 구성됨, PXE, 멀티캐스트, SSL 상태, 풀/피어 배포 지점, MDM 사용, SSL 사용 등)
 

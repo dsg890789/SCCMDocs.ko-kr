@@ -30,7 +30,7 @@ ms.locfileid: "65500809"
 
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 ### <a name="command-line"></a>명령줄
 

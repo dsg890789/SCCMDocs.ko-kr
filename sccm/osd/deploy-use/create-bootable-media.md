@@ -29,7 +29,7 @@ Configuration Manager의 부팅 가능한 미디어에는 부팅 이미지, 선�
 - [기존 컴퓨터 바꾸기 및 설정 전송](/sccm/osd/deploy-use/replace-an-existing-computer-and-transfer-settings)  
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 부팅 가능한 미디어로 부팅하면 다음 프로세스가 발생합니다.
 

@@ -28,7 +28,7 @@ ms.locfileid: "70176791"
 
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 관리자 권한으로 **SendSchedule.exe**를 실행합니다. 
 

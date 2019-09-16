@@ -36,11 +36,11 @@ ms.locfileid: "67285559"
 
     - 사용하는 버전의 Configuration Manager에 적용되는 Configuration Manager 업데이트 식별  
 
-    역할이 설치된 후 각 수준에서 수집하는 데이터 및 수집 수준을 변경하는 방법에 대한 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요. 그런 다음, 사용되는 Configuration Manager 버전의 링크를 따릅니다.  
+    역할이 설치된 후 각 수준에서 수집하는 데이터 및 수집 수준을 변경하는 방법에 대한 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요. 그런 다음, 사용되는 Configuration Manager 버전의 링크를 따릅니다.  
 
-    자세한 내용은 [사용 데이터 수준 및 설정](/sccm/core/servers/deploy/install/setup-reference#bkmk_usage)을 참조하세요.  
+    자세한 내용은 [사용량 현황 데이터 수준 및 설정](/sccm/core/servers/deploy/install/setup-reference#bkmk_usage)을 참조하세요.  
 
-- **Configuration Manager 인프라에 적용되는 업데이트 다운로드**: 업로드하는 사용 현황 데이터에 따라 인프라에 대한 관련 업데이트만 사용할 수 있습니다.  
+- **Configuration Manager 인프라에 적용되는 업데이트 다운로드**: 업로드하는 사용량 현황 데이터에 따라 인프라에 대한 관련 업데이트만 사용할 수 있습니다.  
 
 - **각 계층 구조에서 이 역할의 단일 인스턴스 지원**:  
 

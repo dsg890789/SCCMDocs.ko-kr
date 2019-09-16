@@ -70,6 +70,6 @@ System Center Configuration Manager 사이트를 처음 설치하는 경우 Conf
 
 -   **전체** - 기본 및 확장 수준 설정의 데이터와 함께 시스템 파일, 시스템 스냅샷 등의 고급 진단 정보도 전송됩니다. 이 옵션을 선택하는 경우 개인 식별이 가능한 정보가 포함될 수도 있지만 Microsoft는 해당 정보를 토대로 사용자를 식별하거나 사용자에게 연락을 하지 않으며 사용자를 대상으로 하는 광고를 전송하지도 않습니다.  
 
-각 수준별로 수집되는 정보의 공개를 비롯한 자세한 내용은 [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
+각 수준별로 수집되는 정보의 공개를 비롯한 자세한 내용은 [System Center Configuration Manager의 진단 및 사용량 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
 
 온라인으로 System Center Configuration Manager 개인정보 취급방침을 보려면 [https://go.microsoft.com/fwlink/?LinkID=626527](https://go.microsoft.com/fwlink/?LinkID=626527)으로 이동하세요.

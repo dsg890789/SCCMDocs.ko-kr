@@ -33,7 +33,7 @@ Configuration Manager의 독립 실행형 미디어에는 네트워크에 연결
 - [최신 버전으로 Windows 업그레이드](/sccm/osd/deploy-use/upgrade-windows-to-the-latest-version)  
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 독립 실행형 미디어에는 OS와 기타 모든 필수 콘텐츠를 설치하는 단계를 자동화하는 작업 순서가 포함됩니다. 이 콘텐츠에는 부팅 이미지, OS 이미지 및 디바이스 드라이버가 포함됩니다. 독립 실행형 미디어에는 OS 배포에 필요한 모든 항목이 저장되기 때문에 다른 미디어 유형에 필요한 것보다 더 많은 디스크 공간이 필요합니다.
 

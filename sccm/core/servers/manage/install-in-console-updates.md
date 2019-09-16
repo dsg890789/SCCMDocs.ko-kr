@@ -46,7 +46,7 @@ Configuration Manager는 Microsoft 클라우드 서비스와 동기화하여 업
 
 서비스 연결 지점을 구성하기 전에 추가적인 사용을 이해하고 계획하세요. 다음 사용은 이 사이트 시스템 역할을 구성하는 방법에 영향을 줄 수 있습니다.  
 
-- 사이트에서 서비스 연결 지점을 사용하여 사이트에 대한 사용 정보를 업로드합니다. 이 정보는 Microsoft 클라우드 서비스에서 현재 인프라 버전에 사용할 수 있는 업데이트를 식별하는 데 도움이 됩니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
+- 사이트에서 서비스 연결 지점을 사용하여 사이트에 대한 사용 정보를 업로드합니다. 이 정보는 Microsoft 클라우드 서비스에서 현재 인프라 버전에 사용할 수 있는 업데이트를 식별하는 데 도움이 됩니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
 
 - 사이트에서 서비스 연결 지점을 사용하여 Microsoft Intune을 사용하는 디바이스를 관리하고, Configuration Manager 온-프레미스 모바일 디바이스 관리를 사용합니다. 자세한 내용은 [하이브리드 MDM(모바일 디바이스 관리)](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.  
 

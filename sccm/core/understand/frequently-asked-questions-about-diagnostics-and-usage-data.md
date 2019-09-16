@@ -1,7 +1,7 @@
 ---
 title: 진단 및 사용량 데이터 FAQ
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답을 찾습니다.
+description: System Center Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대한 질문과 대답을 찾습니다.
 ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 02/12/2019
 ms.locfileid: "56127102"
 ---
-# <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 진단 및 사용 현황 데이터에 대한 질문과 대답
+# <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대한 질문과 대답
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -32,10 +32,10 @@ ms.locfileid: "56127102"
 현재 분기의 Configuration Manager는 새 버전의 Windows 10 및 Microsoft Intune을 지원하도록 정기적으로 업데이트해야 합니다. Microsoft에서는 기본 수준 이상의 진단 및 사용량 데이터를 필요로 합니다. 이 데이터는 제품을 최신 상태로 유지하고, 업데이트 환경을 개선하고, 제품의 품질 및 보안을 개선하는 데 사용됩니다.
 
 ###  <a name="bkmk_retention"></a> 데이터 보존 기간이란 무엇인가요?  
- 진단 및 사용 현황 데이터는 1년 동안 저장됩니다.  
+ 진단 및 사용량 현황 데이터는 1년 동안 저장됩니다.  
 
 ###  <a name="bkmk_update"></a> 제품을 설치하거나 업데이트할 때 진단 및 사용 현황 데이터가 전송되나요?  
- 아니요. 진단 및 사용 현황 데이터는 사이트가 설치되고 작동하는 후에만 전송됩니다.  
+ 아니요. 진단 및 사용량 현황 데이터는 사이트가 설치되고 작동하는 후에만 전송됩니다.  
 
 ###  <a name="bkmk_frequency"></a> 데이터는 얼마나 자주 전송되나요?  
  SQL 저장 프로시저는 사이트가 설치된 날짜로부터 7일마다 실행됩니다. 온라인 모드에서 서비스 연결 지점은 쿼리가 실행된 후 데이터를 업로드하도록 구성됩니다. 오프라인 모드에서 관리자는 서비스 연결 도구를 사용하여 데이터를 업로드합니다. (사이트를 설치한 후 7일이 될 때까지는 데이터를 오프라인에서 사용할 수 없습니다.)  
@@ -45,13 +45,13 @@ ms.locfileid: "56127102"
 
 
 ###  <a name="bkmk_tables"></a> 사용자 지정 테이블의 데이터를 볼 수 있나요?  
- 아니요. Configuration Manager는 SQL 저장 프로시저를 통해 진단 및 사용 현황 데이터를 수집합니다. 이러한 저장 프로시저는 데이터베이스의 기본 제품 테이블에 대해 실행됩니다. 이러한 모든 SQL 테이블의 이름은 **TEL_** 로 시작합니다. SQL 스키마 검색 쿼리의 일부로, 알려진 기본값과 비교할 수 있도록 모든 테이블 이름이 해시됩니다. 이 동작은 데이터베이스에 사용자 지정 테이블이 존재하는지 확인합니다. 사용자 지정 테이블이 있다는 것은 데이터베이스 스키마가 기본값에서 확장되었다는 의미입니다. 해당 테이블 내에 저장된 데이터는 여기에 포함되지 않습니다.  
+ 아니요. Configuration Manager는 SQL 저장 프로시저를 통해 진단 및 사용량 현황 데이터를 수집합니다. 이러한 저장 프로시저는 데이터베이스의 기본 제품 테이블에 대해 실행됩니다. 이러한 모든 SQL 테이블의 이름은 **TEL_** 로 시작합니다. SQL 스키마 검색 쿼리의 일부로, 알려진 기본값과 비교할 수 있도록 모든 테이블 이름이 해시됩니다. 이 동작은 데이터베이스에 사용자 지정 테이블이 존재하는지 확인합니다. 사용자 지정 테이블이 있다는 것은 데이터베이스 스키마가 기본값에서 확장되었다는 의미입니다. 해당 테이블 내에 저장된 데이터는 여기에 포함되지 않습니다.  
 
 ###  <a name="bkmk_databases"></a> 다른 데이터베이스의 이름 또는 다른 데이터베이스의 데이터를 볼 수 있나요? 
  아니요. 데이터를 수집하는 저장 프로시저는 사이트 데이터베이스로 제한됩니다.  
 
 ### <a name="bkmk_gdpr"></a> Configuration Manager에 GDPR(General Data Protection Regulation)이 적용되나요?
- 아니요. Configuration Manager는 GDPR 단속 대상이 아닙니다. 사용자가 직접 배포, 관리 및 운영하는 온-프레미스 제품입니다. Microsoft에서 수집하는 진단 및 사용량 데이터는 향후 버전의 설치 환경, 품질 및 보안을 개선하는 데 사용됩니다. 이 진단 및 사용 현황 데이터는 GDPR 감독의 적용을 받습니다. 그러나 EUII(최종 사용자 식별 정보) 또는 EUPI(최종 사용자 가명 식별자)는 수집되어 Microsoft에 전송되지 않습니다. GDPR에 대한 자세한 내용은 [GDPR에 대한 Microsoft 보안 센터](https://microsoft.com/gdpr)를 참조하세요. Configuration Manager 데이터에 대한 자세한 내용은 [진단 및 사용량 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요.
+ 아니요. Configuration Manager는 GDPR 단속 대상이 아닙니다. 사용자가 직접 배포, 관리 및 운영하는 온-프레미스 제품입니다. Microsoft에서 수집하는 진단 및 사용량 데이터는 향후 버전의 설치 환경, 품질 및 보안을 개선하는 데 사용됩니다. 이 진단 및 사용량 현황 데이터는 GDPR 감독의 적용을 받습니다. 그러나 EUII(최종 사용자 식별 정보) 또는 EUPI(최종 사용자 가명 식별자)는 수집되어 Microsoft에 전송되지 않습니다. GDPR에 대한 자세한 내용은 [GDPR에 대한 Microsoft 보안 센터](https://microsoft.com/gdpr)를 참조하세요. Configuration Manager 데이터에 대한 자세한 내용은 [진단 및 사용량 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요.
 
 
 ## <a name="see-also"></a>참고 항목  

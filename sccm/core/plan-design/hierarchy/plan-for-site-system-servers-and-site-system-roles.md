@@ -163,7 +163,7 @@ SQL Server Reporting Services와 통합되어 Configuration Manager용 보고서
 
 ### <a name="service-connection-point"></a>서비스 연결 지점
 
-사이트에서 사용 현황 데이터를 업로드하는 사이트 시스템 역할로, 콘솔에서 Configuration Manager에 대한 업데이트를 사용하도록 하는 데 필요합니다. 이 역할을 또한 Microsoft Intune 및 온-프레미스 MDM에서 모바일 디바이스를 관리하는 데 유용합니다. 계층 구조는 이 역할의 단일 인스턴스만 지원하며, 계층 구조의 최상위 계층 사이트에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음, 중앙 관리 사이트에서 설치합니다. 자세한 내용은 [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)를 참조하세요.  
+사이트에서 사용량 현황 데이터를 업로드하는 사이트 시스템 역할로, 콘솔에서 Configuration Manager에 대한 업데이트를 사용하도록 하는 데 필요합니다. 이 역할을 또한 Microsoft Intune 및 온-프레미스 MDM에서 모바일 디바이스를 관리하는 데 유용합니다. 계층 구조는 이 역할의 단일 인스턴스만 지원하며, 계층 구조의 최상위 계층 사이트에 있어야 합니다. 독립 실행형 기본 사이트를 더 큰 계층 구조로 확장하는 경우 기본 사이트에서 이 역할을 제거한 다음, 중앙 관리 사이트에서 설치합니다. 자세한 내용은 [서비스 연결 지점 정보](/sccm/core/servers/deploy/configure/about-the-service-connection-point)를 참조하세요.  
 
 ### <a name="software-update-point"></a>소프트웨어 업데이트 지점
 

@@ -64,7 +64,7 @@ ms.locfileid: "65500896"
 
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 **CEViewer.exe**를 실행합니다. 도구의 주 메뉴에는 다음 탭이 포함됩니다. 
 

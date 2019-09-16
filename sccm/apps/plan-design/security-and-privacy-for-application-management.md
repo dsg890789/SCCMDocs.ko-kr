@@ -198,7 +198,7 @@ Configuration Manager에는 소프트웨어 배포 프로세스에 대한 상태
 
 Configuration Manager 애플리케이션 설치를 사용하여 클라이언트에 소프트웨어를 원격으로, 대화형으로 또는 자동으로 설치하는 경우 해당 소프트웨어의 소프트웨어 사용 조건이 적용될 수 있습니다. 이 소프트웨어 사용 시에는 System Center Configuration Manager의 소프트웨어 사용 조건과는 별도의 사용 조건이 적용됩니다. Configuration Manager를 사용하여 소프트웨어를 배포하기 전에는 항상 소프트웨어 사용 조건을 검토하고 동의해야 합니다.  
 
-Configuration Manager에서는 진단 및 사용량 데이터를 수집하며, 이러한 데이터는 Microsoft에서 향후 버전을 개선하기 위해 사용됩니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
+Configuration Manager에서는 진단 및 사용량 데이터를 수집하며, 이러한 데이터는 Microsoft에서 향후 버전을 개선하기 위해 사용됩니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
 
 애플리케이션 배포는 기본적으로 이루어지지 않으며 여러 구성 단계가 필요합니다.  
 

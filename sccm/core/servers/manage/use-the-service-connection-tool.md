@@ -24,7 +24,7 @@ ms.locfileid: "70380117"
 
 서비스 연결 지점이 오프라인 모드일 때 또는 Configuration Manager 사이트 시스템 서버가 인터넷에 연결되어 있지 않을 때 **서비스 연결 도구**를 사용합니다. 이 도구를 통해 Configuration Manager에 대한 최신 업데이트를 사용하여 사이트를 최신 상태로 유지할 수 있습니다.  
 
-도구를 실행하면 Configuration Manager 클라우드 서비스에 연결하여 계층 구조에 대한 사용 정보를 수동으로 업로드하고 업데이트를 다운로드할 수 있습니다. 클라우드 서비스에서 배포에 올바른 업데이트를 제공할 수 있으려면 사용 데이터를 업로드해야 합니다.  
+도구를 실행하면 Configuration Manager 클라우드 서비스에 연결하여 계층 구조에 대한 사용 정보를 수동으로 업로드하고 업데이트를 다운로드할 수 있습니다. 클라우드 서비스에서 배포에 올바른 업데이트를 제공할 수 있으려면 사용량 현황 데이터를 업로드해야 합니다.  
 
 ## <a name="prerequisites-for-using-the-service-connection-tool"></a>서비스 연결 도구를 사용하기 위한 필수 조건
 필수 조건 및 알려진 문제는 다음과 같습니다.
@@ -72,7 +72,7 @@ ms.locfileid: "70380117"
 
   기본적으로 이 도구는 Configuration Manager 설치 미디어의 **%path%\smssetup\tools\ServiceConnectionTool** 폴더에 있습니다. 서비스 연결 도구가 작동하려면 이 폴더의 모든 파일이 동일한 폴더에 있어야 합니다.  
 
-다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사합니다. .cab 파일의 데이터는 사이트가 수집하도록 구성된 진단 사용 현황 데이터의 수준을 기반으로 합니다. [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  다음 명령을 실행하여 .cab 파일을 만듭니다.  
+다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사합니다. .cab 파일의 데이터는 사이트가 수집하도록 구성된 진단 사용량 현황 데이터의 수준을 기반으로 합니다. [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  다음 명령을 실행하여 .cab 파일을 만듭니다.  
 
 - **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
 
@@ -81,9 +81,9 @@ ms.locfileid: "70380117"
 ### <a name="overview"></a>개요
 #### <a name="there-are-three-primary-steps-to-using-the-service-connection-tool"></a>서비스 연결 도구를 사용하는 세 가지 기본 단계는 다음과 같습니다.  
 
-1.  **준비**:  이 단계는 서비스 연결점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 사용 데이터를 .cab 파일에 넣고 USB 드라이브(또는 지정한 대체 전송 위치)에 저장합니다.  
+1.  **준비**:  이 단계는 서비스 연결점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 사용량 현황 데이터를 .cab 파일에 넣고 USB 드라이브(또는 지정한 대체 전송 위치)에 저장합니다.  
 
-2.  **연결**: 이 단계에서는 사용 데이터를 업로드하고 업데이트를 다운로드할 수 있도록 인터넷에 연결하는 원격 컴퓨터에서 도구를 실행합니다.  
+2.  **연결**: 이 단계에서는 사용량 현황 데이터를 업로드하고 업데이트를 다운로드할 수 있도록 인터넷에 연결하는 원격 컴퓨터에서 도구를 실행합니다.  
 
 3.  **가져오기**: 이 단계는 서비스 연결점을 호스트하는 컴퓨터에서 실행합니다. 도구를 실행하면 다운로드한 업데이트를 가져와서 사이트에 추가하므로 Configuration Manager 콘솔에서 해당 업데이트를 보고 설치할 수 있습니다.  
 
@@ -184,7 +184,7 @@ ms.locfileid: "70380117"
 
 |명령줄 옵션|세부 정보|  
 |---------------------------|-------------|  
-|**-prepare -usagedatadest [drive:][path][filename.cab]**|이 명령은 현재 사용 데이터를 .cab 파일에 저장합니다.<br /><br /> 서비스 연결 지점을 호스트하는 서버에서 **로컬 관리자** 권한으로 이 명령을 실행합니다.<br /><br /> 예:   **-prepare -usagedatadest D:\USB\Usagedata.cab**|    
-|**-connect -usagedatasrc [드라이브:][경로] -updatepackdest [드라이브:][경로] -proxyserveruri [프록시 서버의 FQDN] -proxyusername [사용자 이름]** <br /> <br /> 1606 이전의 Configuration Manager 버전을 사용하는 경우 .cab 파일의 이름을 지정해야 하며 프록시 서버에 대한 옵션을 사용할 수 없습니다.  지원되는 명령 매개 변수는 다음과 같습니다. <br /> **-connect -usagedatasrc [드라이브:][경로][파일 이름] -updatepackdest [드라이브:][경로]** |이 명령은 Configuration Manager 클라우드 서비스에 연결하여 지정된 위치에서 사용 현황 데이터.cab 파일을 업로드하고 사용 가능한 업데이트 팩 및 콘솔 콘텐츠를 다운로드합니다. 프록시 서버에 대한 옵션은 선택 사항입니다.<br /><br /> 이 명령은 인터넷에 연결할 수 있는 컴퓨터에 대한 **로컬 관리자** 권한으로 실행합니다.<br /><br /> 프록시 서버를 사용하지 않고 연결하는 예: **-connect -usagedatasrc D:\USB\ -updatepackdest D:\USB\UpdatePacks** <br /><br /> 프록시 서버를 사용하는 경우 연결하는 예: **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks -proxyserveruri itgproxy.redmond.corp.microsoft.com -proxyusername Meg** <br /><br /> 1606 이전 버전을 사용하는 경우 .cab 파일의 파일 이름을 지정해야 하며 프록시 서버를 지정할 수 없습니다. 다음과 같은 예제 명령줄을 사용하세요. **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks**|      
+|**-prepare -usagedatadest [drive:][path][filename.cab]**|이 명령은 현재 사용량 현황 데이터를 .cab 파일에 저장합니다.<br /><br /> 서비스 연결 지점을 호스트하는 서버에서 **로컬 관리자** 권한으로 이 명령을 실행합니다.<br /><br /> 예:   **-prepare -usagedatadest D:\USB\Usagedata.cab**|    
+|**-connect -usagedatasrc [드라이브:][경로] -updatepackdest [드라이브:][경로] -proxyserveruri [프록시 서버의 FQDN] -proxyusername [사용자 이름]** <br /> <br /> 1606 이전의 Configuration Manager 버전을 사용하는 경우 .cab 파일의 이름을 지정해야 하며 프록시 서버에 대한 옵션을 사용할 수 없습니다.  지원되는 명령 매개 변수는 다음과 같습니다. <br /> **-connect -usagedatasrc [드라이브:][경로][파일 이름] -updatepackdest [드라이브:][경로]** |이 명령은 Configuration Manager 클라우드 서비스에 연결하여 지정된 위치에서 사용량 현황 데이터.cab 파일을 업로드하고 사용 가능한 업데이트 팩 및 콘솔 콘텐츠를 다운로드합니다. 프록시 서버에 대한 옵션은 선택 사항입니다.<br /><br /> 이 명령은 인터넷에 연결할 수 있는 컴퓨터에 대한 **로컬 관리자** 권한으로 실행합니다.<br /><br /> 프록시 서버를 사용하지 않고 연결하는 예: **-connect -usagedatasrc D:\USB\ -updatepackdest D:\USB\UpdatePacks** <br /><br /> 프록시 서버를 사용하는 경우 연결하는 예: **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks -proxyserveruri itgproxy.redmond.corp.microsoft.com -proxyusername Meg** <br /><br /> 1606 이전 버전을 사용하는 경우 .cab 파일의 파일 이름을 지정해야 하며 프록시 서버를 지정할 수 없습니다. 다음과 같은 예제 명령줄을 사용하세요. **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks**|      
 |**-import -updatepacksrc [drive:][path]**|이 명령은 이전에 다운로드한 업데이트 팩과 콘솔 콘텐츠를 Configuration Manager 콘솔로 가져옵니다.<br /><br /> 서비스 연결 지점을 호스트하는 서버에서 **로컬 관리자** 권한으로 이 명령을 실행합니다.<br /><br /> 예:  **-import -updatepacksrc D:\USB\UpdatePacks**|  
-|**-export -dest [drive:][path][filename.csv]**|이 명령은 사용 데이터를 .csv 파일로 내보내며, 그런 후에 파일을 볼 수 있습니다.<br /><br /> 서비스 연결 지점을 호스트하는 서버에서 **로컬 관리자** 권한으로 이 명령을 실행합니다.<br /><br /> 예: **-export -dest D:\USB\usagedata.csv**|  
+|**-export -dest [drive:][path][filename.csv]**|이 명령은 사용량 현황 데이터를 .csv 파일로 내보내며, 그런 후에 파일을 볼 수 있습니다.<br /><br /> 서비스 연결 지점을 호스트하는 서버에서 **로컬 관리자** 권한으로 이 명령을 실행합니다.<br /><br /> 예: **-export -dest D:\USB\usagedata.csv**|  

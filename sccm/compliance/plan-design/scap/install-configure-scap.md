@@ -141,7 +141,7 @@ SCAP 데이터 스트림을 가져온 후, **Microsoft.Sces.ScapToDcm.exe** 도�
 
 #### <a name="microsoftscesscaptodcmexe-command-line-parameters"></a>Microsoft.Sces.ScapToDcm.exe 명령줄 매개 변수
 
-| 매개 변수 | 용도 | 필수 |
+| 매개 변수 | 사용 | 필수 |
 | --- | --- | --- |
 | `-scap [scap data stream file]` | SCAP 데이터 스트림 파일을 지정합니다. | 예(SCAP 1.2 데이터 스트림의 경우 -xccdf 및 -oval/-variable과 함께 사용할 수 없음) |
 | `-xccdf [xccdf file]` | XCCDF 파일을 지정합니다. | 예(SCAP 1.0/1.1 XCCDF의 경우 -scap 및 -oval/-variable과 함께 사용할 수 없음) |

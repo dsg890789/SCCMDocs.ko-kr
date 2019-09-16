@@ -37,7 +37,7 @@ CMTrace는 [Configuration Manager 도구](/sccm/core/support/tools) 중 하나�
 
 버전 1906부터는 **OneTrace**가 지원 센터의 새 로그 뷰어입니다. CMTrace와 작동이 비슷하며 기능이 향상되었습니다. 자세한 내용은 [지원 센터 OneTrace](/sccm/core/support/support-center-onetrace)를 참조하세요.
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 **CMTrace.exe**를 실행합니다. 처음 도구를 실행하면 파일 연결을 위한 프롬프트가 표시됩니다. 자세한 내용은 [파일 연결](#file-associations)을 참조하세요.
 

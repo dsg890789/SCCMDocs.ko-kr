@@ -27,7 +27,7 @@ ms.locfileid: "67286471"
 Windows Analytics에서 사용되는 데이터는 Configuration Manager 사이트 서버로 직접 전송되지 않습니다. 클라이언트 컴퓨터에서 Windows 클라우드 서비스로 데이터를 보냅니다. 그러면 이 서비스는 관련 데이터를 조직의 작업 영역 중 하나에 호스트되는 Windows Analytics 솔루션으로 전송합니다. 이제 Configuration Manager는 컨텍스트 내 링크를 통해 웹 포털의 관련 데이터로 안내합니다. Configuration Manager에 연결하는 솔루션의 일부인 데이터를 직접 표시할 수도 있습니다.
 
 > [!Important]  
-> Configuration Manager가 진단 및 사용량 데이터를 Microsoft에 보고합니다. 이 데이터는 Windows Analytics 데이터와 구분됩니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
+> Configuration Manager가 진단 및 사용량 데이터를 Microsoft에 보고합니다. 이 데이터는 Windows Analytics 데이터와 구분됩니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
 
 
 

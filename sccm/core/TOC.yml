@@ -64,7 +64,7 @@
       href: understand/product-and-licensing-faq.md
     - name: 사이트 크기 조정 및 성능에 대한 FAQ
       href: understand/site-size-performance-faq.md
-    - name: 진단 및 사용 현황 데이터에 대한 FAQ
+    - name: 진단 및 사용량 현황 데이터에 대한 FAQ
       href: understand/frequently-asked-questions-about-diagnostics-and-usage-data.md
 - name: 계획 및 디자인
   items:
@@ -198,11 +198,11 @@
           href: plan-design/network/pki-certificate-requirements.md
         - name: PKI 인증서 배포 예
           href: plan-design/network/example-deployment-of-pki-certificates.md
-    - name: 진단 및 사용 현황 데이터
+    - name: 진단 및 사용량 현황 데이터
       items:
-        - name: 진단 및 사용 현황 데이터 개요
+        - name: 진단 및 사용량 현황 데이터 개요
           href: plan-design/diagnostics/diagnostics-and-usage-data.md
-        - name: 진단 및 사용 현황 데이터 사용 방법
+        - name: 진단 및 사용량 현황 데이터 사용 방법
           href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md
         - name: 1906에 대한 진단 데이터
           href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1906.md
@@ -214,9 +214,9 @@
           href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806.md
         - name: 1802에 대한 진단 데이터
           href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1802.md
-        - name: 진단 및 사용 현황 데이터 수집 방법
+        - name: 진단 및 사용량 현황 데이터 수집 방법
           href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md
-        - name: 진단 및 사용 현황 데이터를 보는 방법
+        - name: 진단 및 사용량 현황 데이터를 보는 방법
           href: plan-design/diagnostics/view-diagnostics-and-usage-data.md
         - name: CEIP(사용자 환경 개선 프로그램)
           href: plan-design/diagnostics/customer-experience-improvement-program-ceip.md

@@ -26,7 +26,7 @@ SCAP 데이터 스트림 파일을 [변환하고 가져온 후에는](/sccm/comp
 
 - 구성 기준을 컬렉션에 [배포](#bkmk_deploy)하여 디바이스에서 SCAP 준수 평가  
 
-- 대상 클라이언트에서 반환한 준수 데이터 [모니터](#bkmk_monitor)   
+- 대상 클라이언트에서 반환한 준수 데이터 [모니터](#bkmk_monitor)  
 
 - 준수 결과를 SCAP 형식으로 [내보내기](#bkmk_export)  
 
@@ -135,7 +135,7 @@ Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이
 
 #### <a name="microsoftscesdcmtoscapexe-command-line-parameters"></a>Microsoft.Sces.DcmToScap.exe 명령줄 매개 변수
 
-| 매개 변수 | 용도 | 필수 |
+| 매개 변수 | 사용 | 필수 |
 | --- | --- | --- |
 | `-baseline [Baseline CI ID]` | 구성 기준 지정 | 예 |
 | `-assignment [Assignment ID]` | 구성 기준 배포 지정 | 예 |

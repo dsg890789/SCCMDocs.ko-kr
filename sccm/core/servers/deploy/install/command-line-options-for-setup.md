@@ -57,7 +57,7 @@ ms.locfileid: "69974719"
 > [!IMPORTANT]  
 > 프로덕션 사이트 데이터베이스에서는 이 명령줄 옵션을 실행하지 마세요. 프로덕션 사이트 데이터베이스에서 이 명령줄 옵션을 실행하면 사이트 데이터베이스가 업그레이드되어 사이트가 작동하지 않을 수 있습니다.
 
-#### <a name="usage"></a>용도
+#### <a name="usage"></a>사용
 
 사이트 데이터베이스의 인스턴스 이름과 데이터베이스 이름을 입력합니다. 데이터베이스 이름만 지정하면 설치 프로그램이 기본 인스턴스 이름을 사용합니다.  
 
@@ -73,7 +73,7 @@ ms.locfileid: "69974719"
 
 설치 필수 구성 요소 파일에 대한 자세한 내용은 [설치 다운로더](/sccm/core/servers/deploy/install/setup-downloader)를 참조하세요.  
 
-#### <a name="usage"></a>용도
+#### <a name="usage"></a>사용
 
 `setupwpf.exe /UPGRADE xxxxx-xxxxx-xxxxx-xxxxx-xxxxx <path to external component files>`  
 
@@ -81,7 +81,7 @@ ms.locfileid: "69974719"
 
 무인 설치를 실행합니다. 이 옵션이 있는 설치 초기화 파일을 사용합니다. 무인 설치를 실행하는 방법에 대한 자세한 내용은 [명령줄을 사용하여 System Center Configuration Manager 사이트 설치](/sccm/core/servers/deploy/install/use-a-command-line-to-install-sites)를 참조하세요.  
 
-#### <a name="usage"></a>용도
+#### <a name="usage"></a>사용
 
 `/SCRIPT <setup script path>`
 
@@ -89,7 +89,7 @@ ms.locfileid: "69974719"
 
 지정된 컴퓨터에서 SMS 공급자를 설치합니다. SMS 공급자 컴퓨터의 FQDN(정규화된 도메인 이름)을 입력합니다. SMS 공급자에 대한 자세한 내용은 [SMS 공급자에 대한 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider)을 참조하세요.  
 
-#### <a name="usage"></a>용도
+#### <a name="usage"></a>사용
 
 `/SDKINST <SMS Provider FQDN>`
 
@@ -97,7 +97,7 @@ ms.locfileid: "69974719"
 
 지정된 컴퓨터에서 SMS 공급자를 제거합니다. SMS 공급자 컴퓨터의 FQDN을 입력합니다.  
 
-#### <a name="usage"></a>용도
+#### <a name="usage"></a>사용
 
 `/SDKDEINST <SMS Provider FQDN>`
 
@@ -105,7 +105,7 @@ ms.locfileid: "69974719"
 
 이전에 설치한 사이트에 설치된 언어를 관리합니다. 언어 설정이 포함된 언어 스크립트 파일의 위치를 입력합니다. 자세한 내용은 [언어를 관리하는 명령줄 옵션](#bkmk_Lang) 섹션을 참조하세요.  
 
-#### <a name="usage"></a>용도
+#### <a name="usage"></a>사용
 
 `/MANAGELANGS <Language script path>`
 

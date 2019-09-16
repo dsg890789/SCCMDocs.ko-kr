@@ -1,7 +1,7 @@
 ---
 title: 1602에 대한 진단 데이터
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1602에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다.
+description: System Center Configuration Manager 버전 1602에서 수집하는 진단 및 사용량 현황 데이터에 대해 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -19,11 +19,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/09/2019
 ms.locfileid: "67677170"
 ---
-# <a name="levels-of-diagnostic-usage-data-collection-for-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602에 대한 진단 사용 현황 데이터 수집의 수준
+# <a name="levels-of-diagnostic-usage-data-collection-for-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602에 대한 진단 사용량 현황 데이터 수집의 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1602에서는 다음과 같은 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+System Center Configuration Manager 버전 1602에서는 다음과 같은 세 가지 수준의 진단 및 사용량 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]*** 또는 ***[업데이트된 기능]*** 으로 표시됩니다.
 
@@ -34,7 +34,7 @@ System Center Configuration Manager 버전 1602에서는 다음과 같은 세 �
  **사이트** 개체 클래스에 대한 **수정** 권한이 포함된 역할 기반 관리 범위를 가진 관리자는 Configuration Manager 콘솔의 진단 및 사용 현황 데이터 설정에서 수집된 데이터의 수준을 변경할 수 있습니다.
 
 
-  이렇게 하려면 콘솔에서 Backstage 탭(드롭다운 화살표가 있는 왼쪽 위 탭)으로 이동하고 **사용 현황 데이터**를 선택한 다음 사용할 데이터 수준을 선택합니다.  
+  이렇게 하려면 콘솔에서 Backstage 탭(드롭다운 화살표가 있는 왼쪽 위 탭)으로 이동하고 **사용량 현황 데이터**를 선택한 다음 사용할 데이터 수준을 선택합니다.  
 
 ##  <a name="bkmk_level1"></a> 수준 1 - 기본
  기본 수준에는 계층 구조에 대한 데이터, 설치 환경이나 업그레이드 환경을 개선하는 데 필요한 데이터 및 계층 구조에 적용할 수 있는 Configuration Manager 업데이트를 확인할 수 있는 데이터가 포함됩니다.
@@ -51,7 +51,7 @@ System Center Configuration Manager 버전 1602에서는 다음과 같은 세 �
 
   - ***[새로운 기능]*** 업데이트 빠른 링 사용
 
--   데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
+-   데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용량 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
 
 -   기본 데이터베이스 구성(프로세서, 클러스터 구성, 분산 보기 구성)
 

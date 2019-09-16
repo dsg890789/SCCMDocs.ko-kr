@@ -122,7 +122,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 - 콘솔에서 웃는 얼굴을 클릭한 정확한 위치  
 
-이 데이터는 진단 및 사용 데이터 컬렉션과 일치합니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
+이 데이터는 진단 및 사용량 현황 데이터 컬렉션과 일치합니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
 
 ### <a name="known-issues"></a>알려진 문제
 

@@ -33,7 +33,7 @@ Configuration Manager의 사전 준비된 Windows 이미지(WIM) 파일입니다
 - [Windows to Go 배포](/sccm/osd/deploy-use/deploy-windows-to-go)  
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 사전 준비된 미디어를 적용한 후에 컴퓨터를 처음으로 시작하면 Windows PE에서 시작합니다. 또한 OS 배포 프로세스를 완료하는 작업 순서를 찾기 위해 관리 지점에 연결합니다. 사전 준비된 미디어를 사용하는 작업 순서를 배포할 때 클라이언트는 먼저 로컬 작업 순서 캐시에서 유효한 콘텐츠를 확인합니다. 콘텐츠를 찾을 수 없거나 콘텐츠가 수정된 경우 클라이언트는 배포 지점 또는 피어에서 콘텐츠를 다운로드합니다.  
 

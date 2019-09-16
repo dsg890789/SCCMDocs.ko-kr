@@ -348,7 +348,7 @@ Configuration Manager 클라이언트를 배포할 때 Configuration Manager 기
 
 클라이언트 정보는 SQL Server의 Configuration Manager 데이터베이스에 저장되며, Microsoft로 전송되지 않습니다. 정보는 90일마다 반복되는 **오래된 검색 데이터 삭제** 사이트 유지 관리 작업으로 삭제될 때까지 데이터베이스에서 유지됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다. 
 
-요약되거나 집계된 진단 및 사용 데이터 중 일부는 Microsoft로 전송됩니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
+요약되거나 집계된 진단 및 사용량 현황 데이터 중 일부는 Microsoft로 전송됩니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
 
 Configuration Manager 클라이언트를 구성하기 전에 개인 정보 요구 사항을 고려해야 합니다.  
 

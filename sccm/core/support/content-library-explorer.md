@@ -64,7 +64,7 @@ ms.locfileid: "65495773"
 
 
 
-## <a name="usage"></a>용도 
+## <a name="usage"></a>사용 
 
 **ContentLibraryExplorer.exe**를 시작할 때 대상 배포 지점의 FQDN(정규화된 도메인 이름)을 입력합니다. 그런 다음, 배포 지점에 연결합니다. 배포 지점이 보조 사이트의 일부인 경우 기본 사이트 서버의 FQDN 및 기본 사이트 코드를 묻는 메시지를 표시합니다.
 

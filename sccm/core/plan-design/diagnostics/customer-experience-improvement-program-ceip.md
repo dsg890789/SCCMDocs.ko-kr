@@ -27,7 +27,7 @@ ms.locfileid: "56136629"
 
 Configuration Manager 콘솔을 설치하는 동안 **CEIP**(사용자 환경 개선 프로그램)에 참여하도록 선택할 수 있습니다. CEIP는 기본적으로 꺼져 있습니다. 이전에 사용하도록 설정한 경우에는 사용 가능한 상태로 유지됩니다.  
 
--   CEIP는 [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)와는 별개입니다.  
+-   CEIP는 [System Center Configuration Manager의 진단 및 사용량 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)와는 별개입니다.  
 
 -   CEIP는 콘솔별로 있으며, 각 요소가 사용자 인터페이스에서 선택되는 횟수 등의 데이터를 수집합니다.  
 

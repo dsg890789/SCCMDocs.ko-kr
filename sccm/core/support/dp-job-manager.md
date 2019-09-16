@@ -30,7 +30,7 @@ DP(배포 지점) 작업 큐 관리자는 [Configuration Manager 도구](/sccm/c
 
 
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용
 
 **DPJobMgr.exe**를 실행합니다. 도구의 주 메뉴에는 다음 탭이 포함됩니다. 
 

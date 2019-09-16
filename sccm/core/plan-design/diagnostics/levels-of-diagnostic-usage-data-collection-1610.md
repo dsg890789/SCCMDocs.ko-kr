@@ -1,7 +1,7 @@
 ---
 title: 1610에 대한 진단 데이터
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1610에서 수집하는 진단 및 사용 현황 데이터에 대해 알아봅니다.
+description: System Center Configuration Manager 버전 1610에서 수집하는 진단 및 사용량 현황 데이터에 대해 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -19,11 +19,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/09/2019
 ms.locfileid: "67677120"
 ---
-# <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610에 대한 진단 사용 현황 데이터 수집의 수준
+# <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610에 대한 진단 사용량 현황 데이터 수집의 수준
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1610에서는 다음과 같은 세 가지 수준의 진단 및 사용 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+System Center Configuration Manager 버전 1610에서는 다음과 같은 세 가지 수준의 진단 및 사용량 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -55,7 +55,7 @@ System Center Configuration Manager 버전 1610에서는 다음과 같은 세 �
 
   - ***[새로운 기능]*** Software Assurance 만료 날짜
 
-- 데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
+- 데이터베이스 성능 메트릭(복제 처리 정보, 디스크 사용량 현황 및 프로세서에 따른 상위 SQL Server 저장 프로시저)
 
 - 기본 데이터베이스 구성(프로세서, 클러스터 구성, 분산 보기 구성)
 
