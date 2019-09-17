@@ -1,5 +1,5 @@
 ---
-title: 네트워크 공유를 위한 Endpoint Protection 맬웨어 정의
+title: Microsoft에서 정의 다운로드
 titleSuffix: Configuration Manager
 description: Configuration Manager의 Microsoft 업데이트에서 Endpoint Protection 맬웨어 정의 다운로드를 사용하도록 설정하는 방법을 알아봅니다.
 ms.date: 02/14/2017
@@ -11,19 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ed7ea945a3454b2c647fec07ebcf3301fc6c708
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 3f5d72fc7dba8fea11c0c51aabac546e1966aa25
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494575"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892355"
 ---
-# <a name="enable-endpoint-protection-malware-definitions-to-download-from-microsoft-updates-for-configuration-manager"></a>Configuration Manager의 Microsoft 업데이트에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
+# <a name="enable-endpoint-protection-malware-definitions-to-download-from-microsoft-updates"></a>Microsoft 업데이트에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-
- Microsoft 업데이트에서 정의 업데이트를 다운로드하도록 선택하면 클라이언트는 맬웨어 방지 정책 대화 상자의 **정의 업데이트** 섹션에서 정의된 간격마다 Microsoft 업데이트 사이트를 확인합니다.
+Microsoft 업데이트에서 정의 업데이트를 다운로드하도록 선택하면 클라이언트는 맬웨어 방지 정책 대화 상자의 **정의 업데이트** 섹션에서 정의된 간격마다 Microsoft 업데이트 사이트를 확인합니다.
 
  이 방법은 클라이언트에서 Configuration Manager 사이트에 연결할 수 없는 경우 또는 사용자가 정의 업데이트를 시작할 수 있도록 하려는 경우에 유용할 수 있습니다.
 

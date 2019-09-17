@@ -1,6 +1,7 @@
 ---
-title: 네트워크 공유를 위한 Endpoint Protection 맬웨어 정의
+title: MMPC에서 정의 다운로드
 titleSuffix: Configuration Manager
+description: Configuration Manager 클라이언트를 구성 하 여 MMPC (Microsoft 맬웨어 보호 센터)에서 Endpoint Protection 정의 업데이트를 다운로드 합니다.
 ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -10,14 +11,14 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a04ee2264d45124664acbad01b397e1849be4508
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 30f7fc9e92d382eb222691fe21474e654bc44d47
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494589"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892366"
 ---
-# <a name="using-the-microsoft-malware-protection-center-to-download-definitions"></a>Microsoft 맬웨어 보호 센터를 사용하여 정의 다운로드
+# <a name="use-the-microsoft-malware-protection-center-to-download-definitions"></a>Microsoft 맬웨어 보호 센터를 사용하여 정의 다운로드
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

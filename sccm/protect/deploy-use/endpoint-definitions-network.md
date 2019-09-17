@@ -1,5 +1,5 @@
 ---
-title: 네트워크 공유를 위한 Endpoint Protection 맬웨어 정의
+title: 네트워크 공유에서 정의 다운로드
 titleSuffix: Configuration Manager
 description: Microsoft에서 최신 정의 업데이트를 수동으로 다운로드한 다음 이러한 정의를 다운로드하도록 클라이언트를 구성하는 방법을 알아봅니다.
 ms.date: 02/14/2017
@@ -11,14 +11,14 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68ed19c9baebd079d10bda024b9f6457ccb58cab
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: d003ca61a649de3835766adede0869edb4393b20
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65494604"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892446"
 ---
-# <a name="enable-endpoint-protection-malware-definitions-to-download-from-a-network-share-for-configuration-manager"></a>Configuration Manager의 네트워크 공유에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
+# <a name="enable-endpoint-protection-malware-definitions-to-download-from-a-network-share"></a>네트워크 공유에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

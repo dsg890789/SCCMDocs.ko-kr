@@ -1,7 +1,7 @@
 ---
-title: Windows 10에서 비즈니스용 Windows 업데이트와 통합
+title: 비즈니스용 Windows 업데이트 통합
 titleSuffix: Configuration Manager
-description: 비즈니스용 Windows 업데이트를 사용하면 Windows 업데이트 서비스에 연결된 디바이스에 대해 조직의 Windows 10 기반 디바이스를 최신 상태로 유지할 수 있습니다.
+description: WUfB (비즈니스 Windows 업데이트)를 사용 하 여 Windows 업데이트 서비스에 연결 된 장치에 대 한 Windows 10을 최신 상태로 유지 합니다.
 author: mestew
 ms.author: mstewart
 manager: dougeby
@@ -11,14 +11,14 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12757bed4c674d12f1e0e2b3dc5c6ef72db59778
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: 504ace282988ef8b52863184f0685ea5a6958a27
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243701"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892287"
 ---
-# <a name="integration-with-windows-update-for-business-in-windows-10"></a>Windows 10에서 비즈니스용 Windows 업데이트와 통합
+# <a name="integrate-with-windows-update-for-business"></a>비즈니스용 Windows 업데이트와 통합
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -65,7 +65,8 @@ ms.locfileid: "70243701"
 2.  Configuration Manager 리소스 탐색기의 **Windows 업데이트** 노드 아래에 새 특성 **UseWUServer**가 있습니다.  
 
 3.  업데이트 및 업그레이드를 위해 WUfB를 통해 연결된 모든 컴퓨터에 대해 **UseWUServer** 특성을 기반으로 컬렉션을 만듭니다. 아래와 유사한 쿼리를 기반으로 컬렉션을 만들 수 있습니다.  
-    ``` 
+
+    ``` WQL
     Select sr.* from SMS_R_System as sr join SMS_G_System_WINDOWSUPDATE as su on sr.ResourceID=su.ResourceID where su.UseWUServer is null
     ```
 

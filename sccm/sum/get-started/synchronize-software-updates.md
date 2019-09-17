@@ -11,12 +11,12 @@ manager: dougeby
 author: mestew
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ef815287321bf6c5554ff424da58276af0cc655
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: e89fd9422b6bf6c5abb61e154f38a1f479c7ff7e
+ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65493928"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70902972"
 ---
 #  <a name="BKMK_SUMSync"></a> 소프트웨어 업데이트 동기화
 
@@ -79,7 +79,7 @@ Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영�
 
 ### <a name="to-import-an-update-from-the-microsoft-update-catalog"></a>Microsoft 업데이트 카탈로그에서 업데이트를 가져오려면
 
-1. WSUS 관리 콘솔을 열고 SCCM 계층 구조의 최상위 WSUS 서버에 연결합니다. 
+1. WSUS 관리 콘솔을 열고 계층 구조의 최상위 WSUS 서버에 연결합니다.
    - Internet Explorer가 컴퓨터의 기본 웹 브라우저가 아닌 경우 일시적으로 기본값으로 설정합니다.
 2. **업데이트**를 클릭하거나 WSUS 서버의 이름을 클릭합니다. 
 3. **작업** 창에서 [Microsoft 업데이트 카탈로그](https://catalog.update.microsoft.com)에 대한 브라우저 창을 여는 **업데이트 가져오기...** 를 선택합니다.

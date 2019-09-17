@@ -1,7 +1,7 @@
 ---
-title: Windows Defender Application Guard 정책 만들기 및 배포
+title: Application Guard 정책 관리
 titleSuffix: Configuration Manager
-description: Windows Defender Application Guard 정책을 만들고 배포합니다.
+description: Windows Defender Application Guard 정책 만들기 및 배포에 대한 자세한 정보
 ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21ef053cbd5f0a57d7688d69f29bc6f8871484a
-ms.sourcegitcommit: b5c7496ca408803046acc8403858aafd5dca8808
+ms.openlocfilehash: a9567dc53a204d639b3da5920cf1fc452426a11f
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68794726"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892477"
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포
 

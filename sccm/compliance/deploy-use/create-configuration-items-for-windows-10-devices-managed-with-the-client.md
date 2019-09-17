@@ -1,7 +1,7 @@
 ---
-title: '클라이언트 관리 Windows 10의 구성 항목 만들기 '
+title: Windows 10에 대 한 구성 항목 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager Windows 10 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다.
+description: Windows 10 구성 항목을 사용하여 구성 관리자 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리합니다.
 ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -11,15 +11,16 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cfb8209343581f8d6b9dc7949032d6399669f95
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 3f49820ed0436fe38ce774bf24268fa2ebb363cc
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68339148"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890668"
 ---
 # <a name="create-configuration-items-for-windows-10-devices"></a>Windows 10 장치에 대 한 구성 항목 만들기
-System Center Configuration Manager **Windows 10** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다.  
+
+System Center Configuration Manager **Windows 10** 구성 항목을 사용하여 구성 관리자 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리할 수 있습니다.  
   
 > [!IMPORTANT]  
 >  이 릴리스에서는 **Windows 10** 형식의 구성 항목의 일부로 **암호** 설정을 만든 경우 (Configuration Manager 클라이언트를 사용 하 여 관리 되는 장치의 경우) 다음 문제에 주의 해야 합니다. 이 설정이 아직 존재 하지 않거나 Windows 10 장치에서 구성 되지 않은 경우 호환 되는 것으로 잘못 평가 됩니다.  

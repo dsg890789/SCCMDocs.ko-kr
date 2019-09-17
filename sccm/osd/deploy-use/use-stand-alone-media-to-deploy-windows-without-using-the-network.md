@@ -1,7 +1,7 @@
 ---
-title: 독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포
+title: 독립 실행형 미디어를 사용 하 여 Windows 배포
 titleSuffix: Configuration Manager
-description: Configuration Manager의 독립 실행형 미디어를 사용하여 대역폭이 제한된 운영 체제를 배포하거나 컴퓨터를 새로 고치거나 설치 또는 업그레이드하는 옵션으로 사용할 수 있습니다.
+description: Configuration Manager의 독립 실행형 미디어를 사용하여 대역폭이 제한된 Windows를 배포하거나 컴퓨터를 새로 고치거나 설치 또는 업그레이드하는 옵션으로 사용할 수 있습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87d86ba571e998431fe198d4b4c18d8dd91dc06f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: 408f8c17150aa6b6ee9330b40d8b8fef09b7eae5
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56124192"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892519"
 ---
-# <a name="use-stand-alone-media-to-deploy-windows-without-using-the-network-in-system-center-configuration-manager"></a>독립 실행형 미디어를 사용하여 System Center Configuration Manager에서 네트워크를 사용하지 않고 Windows 배포
+# <a name="use-stand-alone-media-to-deploy-windows-without-using-the-network"></a>독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 독립 실행형 미디어에는 컴퓨터에서 운영 체제를 배포하는 데 필요한 모든 항목이 포함되어 있습니다. 여기에는 부팅 이미지 및 운영 체제 이미지와, 애플리케이션, 드라이버 등을 비롯한 운영 체제를 설치하는 작업 순서가 포함됩니다. 독립 실행형 미디어 배포를 사용하면 다음 상태에서 운영 체제를 배포할 수 있습니다.  
+Configuration Manager의 독립 실행형 미디어에는 컴퓨터에서 운영 체제를 배포하는 데 필요한 모든 항목이 포함되어 있습니다. 여기에는 부팅 이미지 및 운영 체제 이미지와, 애플리케이션, 드라이버 등을 비롯한 운영 체제를 설치하는 작업 순서가 포함됩니다. 독립 실행형 미디어 배포를 사용하면 다음 상태에서 운영 체제를 배포할 수 있습니다.  
 
 -   운영 체제 이미지 또는 기타 대규모 패키지를 네트워크를 통해 복사하는 것이 불가능한 환경  
 

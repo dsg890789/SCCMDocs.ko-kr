@@ -1,8 +1,7 @@
 ---
-title: 보안 소프트웨어 업데이트를 배포하고 모니터링하는 예제 시나리오
+title: 업데이트를 배포 하 고 모니터링 하는 예제 시나리오
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 소프트웨어 업데이트를 사용하는 방법에 대한 이 예제 시나리오를 사용하여 Microsoft 월별 릴리스에 대한 보안 소프트웨어 업데이트를 배포하고 모니터링합니다.
-manager: dougeby
+description: Configuration Manager에서 소프트웨어 업데이트를 사용 하 여 월별 소프트웨어 업데이트를 배포 하 고 모니터링 하는 방법입니다.
 ms.date: 10/06/2016
 ms.topic: conceptual
 ms.prod: configuration-manager
@@ -10,15 +9,16 @@ ms.technology: configmgr-sum
 ms.assetid: c32f757a-02da-43f2-b055-5cfd097d8c43
 author: mestew
 ms.author: mstewart
+manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02c1f1cbc80bacf35306d2e4d5367a41ec5d8c1c
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: 42c53f88d727a0024f2d5b99f86b4d39a3ba6f6a
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65496336"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888432"
 ---
-# <a name="example-scenario-for-using-system-center-configuration-manager-to-deploy-and-monitor-the-security-software-updates-released-monthly-by-microsoft"></a>System Center Configuration Manager를 사용하여 Microsoft에서 매월 릴리스하는 보안 소프트웨어 업데이트를 배포하고 모니터링하는 예제 시나리오
+# <a name="example-scenario-to-deploy-and-monitor-monthly-software-updates"></a>월간 소프트웨어 업데이트를 배포하고 모니터링하는 예제 시나리오
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
