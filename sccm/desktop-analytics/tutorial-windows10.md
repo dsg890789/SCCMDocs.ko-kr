@@ -302,7 +302,7 @@ Configuration Manager는 연결을 만들 때 60 분 이내에 컬렉션을 동�
 
 2. 리본 메뉴의 **홈** 탭에 있는 **만들기** 그룹에서 **운영 체제 업그레이드 패키지 추가**를 선택합니다. 그러면 운영 체제 업그레이드 추가 마법사가 시작됩니다.  
 
-3. **데이터 원본** 페이지에서 OS 업그레이드 패키지의 설치 원본 파일에 대 한 네트워크 **경로** 를 지정 합니다. [http://amstest.streaming.mediaservices.windows.net/61b3da1d-96c7-489e-bd21-c5f8a7494b03/scott.ism/manifest](`\\server\share\path`)을 입력합니다.  
+3. **데이터 원본** 페이지에서 OS 업그레이드 패키지의 설치 원본 파일에 대 한 네트워크 **경로** 를 지정 합니다. `\\server\share\path`을 입력합니다.  
 
     > [!NOTE]  
     > 설치 원본 파일에는 OS를 설치하는 setup.exe와 다른 파일 및 폴더가 포함되어 있습니다.  

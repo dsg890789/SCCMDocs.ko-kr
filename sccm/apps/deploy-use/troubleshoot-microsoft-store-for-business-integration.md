@@ -267,13 +267,13 @@ SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 MSfBSyncWorker 스레드를 �
 
 1. 서비스 연결 지점을 실행 하는 서버에서 Windows 레지스트리를 엽니다.
 
-1. [https://www.microsoft.com/en-us/store/apps](`HKLM\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_EXECUTIVE\Threads\SMS_CLOUDCONNECTION`) 로 이동
+1. `HKLM\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_EXECUTIVE\Threads\SMS_CLOUDCONNECTION` 로 이동
 
     1. 요청 된 작업을 **중지**하도록 설정 합니다.
 
     1. 현재 상태 = **중지 됨**을 확인 하기 위해 새로 고칩니다.
 
-1. [https://www.microsoft.com/en-us/store/apps](`HKLM\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_EXECUTIVE\Threads\SMS_BUSINESS_APP_PROCESS_MANAGER`) 로 이동
+1. `HKLM\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_EXECUTIVE\Threads\SMS_BUSINESS_APP_PROCESS_MANAGER` 로 이동
 
     1. 요청 된 작업을 **중지**하도록 설정 합니다.
 
