@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58c25da6418e2fd3997cd1b5ba40e6c4585c997c
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 41abaa02759a2f49b04f56963e6285b972a61cfc
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123470"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891666"
 ---
 # <a name="capabilities-in-configuration-manager-technical-preview-version-1807"></a>Configuration Manager Technical Preview 버전 1807의 기능 
 
@@ -44,7 +44,8 @@ Steps to workaround, if any.
 ## <a name="known-issues"></a>알려진 문제 
 
 ### <a name="ki_o365"></a> Office 365 소프트웨어 업데이트 관련 문제
-<!--521365--> Technical Preview 분기 버전 1806 및 1806.2를 사용하여 Office 365 업데이트를 관리하는 경우 업데이트가 클라이언트에 설치되지 않을 수 있습니다. 
+<!--521365-->
+기술 미리 보기 분기 버전 1806 및 1806.2를 사용하여 Office 365 업데이트를 관리하는 경우 업데이트가 클라이언트에 설치되지 않을 수 있습니다. 
 
 #### <a name="workaround"></a>해결 방법
 - Office 365용 기존 배포 패키지 및 소프트웨어 업데이트 그룹을 삭제합니다.  
@@ -172,7 +173,7 @@ Steps to workaround, if any.
 ### <a name="prerequisites"></a>필수 구성 요소
 
 #### <a name="to-send-email-notifications"></a>메일 알림을 보내려면
-- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정합니다.  
+- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정합니다.  
 
 - [경고에 대한 메일 알림](/sccm/core/servers/manage/use-alerts-and-the-status-system#to-configure-email-notification-for-alerts)을 구성합니다.  
 
@@ -224,8 +225,7 @@ Steps to workaround, if any.
 #### <a name="example-script-output-is-valid-json"></a>예제: 스크립트 출력이 유효한 JSON인 경우
 명령: `$PSVersionTable.PSVersion`  
 
-출력:  
-```
+``` Output
 Major  Minor  Build  Revision
 -----  -----  -----  --------
 5      1      16299  551
@@ -234,8 +234,7 @@ Major  Minor  Build  Revision
 #### <a name="example-script-output-isnt-valid-json"></a>예제: 스크립트 출력이 유효한 JSON이 아닌 경우
 명령: `Write-Output (Get-WmiObject -Class Win32_OperatingSystem).Caption`  
 
-출력:  
-```
+``` Output
 Microsoft Windows 10 Enterprise
 ```
 

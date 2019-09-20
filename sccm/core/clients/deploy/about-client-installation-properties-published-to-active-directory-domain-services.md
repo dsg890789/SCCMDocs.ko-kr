@@ -1,7 +1,7 @@
 ---
-title: Active Directory Domain Services의 클라이언트 설치 속성
+title: Active Directory의 클라이언트 설치 속성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Active Directory Domain Services에 게시된 클라이언트 설치 속성을 사용합니다.
+description: Active Directory 도메인 서비스에 구성 관리자 클라이언트 설치 속성 게시
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 203de632cea1dbe7c5fa70177f3a111a4e487911
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 39208f0ff2265e2ca9b89647e082224c01cbd731
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123814"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890343"
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager용으로 Active Directory 스키마를 확장하고 Active Directory Domain Services에 사이트를 게시하면 많은 클라이언트 설치 속성이 Active Directory Domain Services에 게시됩니다. 컴퓨터에서 이러한 클라이언트 설치 속성을 찾을 수 있는 경우 Configuration Manager 클라이언트 배포 시 이러한 속성을 사용할 수 있습니다.  
+Configuration Manager를 위해 Active Directory 스키마를 확장하고 Active Directory 도메인 서비스에 사이트를 게시하면 많은 클라이언트 설치 속성이 Active Directory 도메인 서비스에 게시됩니다. 컴퓨터에서 이러한 클라이언트 설치 속성을 찾을 수 있는 경우 Configuration Manager 클라이언트 배포 시 이러한 속성을 사용할 수 있습니다.  
 
  Active Directory 도메인 서비스를 사용하여 클라이언트 설치 속성을 게시하는 것의 이점은 다음과 같습니다.  
 

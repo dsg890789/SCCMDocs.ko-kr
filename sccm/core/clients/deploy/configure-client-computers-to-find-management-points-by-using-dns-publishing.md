@@ -1,7 +1,7 @@
 ---
-title: 관리 지점 DNS 게시를 찾도록 클라이언트 구성
+title: DNS 게시를 사용하도록 클라이언트 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 설정합니다.
+description: DNS 게시를 사용하여 관리 지점을 찾도록 구성 관리자 클라이언트 컴퓨터를 구성합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cebb56324af3993458da5317983697b3304ccf7
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 5305b557eb3db83125e0f259e804a8eba0384290
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56128139"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890257"
 ---
-# <a name="how-to-configure-client-computers-to-find-management-points-by-using-dns-publishing-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터를 구성하는 방법
+# <a name="configure-client-computers-to-find-management-points-by-using-dns-publishing"></a>DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

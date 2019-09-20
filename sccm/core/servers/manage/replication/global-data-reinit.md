@@ -11,14 +11,14 @@ ms.assetid: d36622c0-776c-493b-971a-4a586fc394d4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2c57ab69a16e6edb1a6459c89da8920f74d4d845
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: 646a8c93b3bc5f90d711e6985983a41d87c38826
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957643"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892098"
 ---
-# <a name="sql-replication"></a>SQL 복제
+# <a name="troubleshoot-global-data-reinit"></a>글로벌 데이터 다시 초기화 문제 해결
 
 다중 사이트 계층에서 Configuration Manager는 SQL 복제를 사용하여 사이트 간에 데이터를 전송합니다. 자세한 내용은 [데이터베이스 복제](/sccm/core/plan-design/hierarchy/database-replication)를 참조하세요.
 

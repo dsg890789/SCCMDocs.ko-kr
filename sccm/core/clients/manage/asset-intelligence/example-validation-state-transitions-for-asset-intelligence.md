@@ -1,8 +1,8 @@
 ---
-title: Asset Intelligence에 대한 유효성 검사 상태 전환 예제
+title: 유효성 검사 상태 전환 예제
 titleSuffix: Configuration Manager
-description: Asset Intelligence System Center Configuration Manager에서 Asset Intelligence에 대한 유효성 검사 상태 전환 예제를 참조하세요.
-ms.date: 2/22/2017
+description: Configuration Manager에서 Asset Intelligence에 관한 유효성 검사 상태 전환 예제를 참조하세요.
+ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b266848d0a15ac26dc6002a6553583f560cb44e
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.openlocfilehash: f2fb577fc4799dfb1e9c1d6585df4ed244ebfab5
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65499924"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890297"
 ---
-# <a name="example-validation-state-transitions-for-asset-intelligence-in-system-center-configuration-manager"></a>Asset Intelligence System Center Configuration Manager에서 Asset Intelligence에 대한 유효성 검사 상태 전환 예제
+# <a name="example-validation-state-transitions-for-asset-intelligence"></a>Asset Intelligence에 대한 유효성 검사 상태 전환 예제
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 Asset Intelligence 유효성 검사 상태는 고정된 것이 아니며 수행하는 관리 작업에서 변경하면 Asset Intelligence 카탈로그에 저장된 데이터에 영향을 줄 수 있습니다. 이 항목에서는 가능한 유효성 검사 상태 전환에 대한 예제를 제공합니다.
+Configuration Manager의 Asset Intelligence 유효성 검사 상태는 고정된 것이 아니며 수행하는 관리 작업에서 변경하면 Asset Intelligence 카탈로그에 저장된 데이터에 영향을 줄 수 있습니다. 이 항목에서는 가능한 유효성 검사 상태 전환에 대한 예제를 제공합니다.
 
 ##  <a name="BKMK_UncategorizedIsCategorized"></a> 분류되지 않은 카탈로그 항목이 관리자에 의해 분류되었습니다.  
 

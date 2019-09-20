@@ -2,7 +2,7 @@
 title: 클라이언트 알림
 titleSuffix: Configuration Manager
 description: 중앙 Configuration Manager 콘솔에서 즉각적인 작업을 수행하여 클라이언트를 관리합니다.
-ms.date: 03/22/2019
+ms.date: 04/15/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db68a55136d708ad9276f8b1319dde33fcde35ac
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.openlocfilehash: a2835ac13f9ffc2aa7a36ebc9669fb62cccc1257
+ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58477469"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70738185"
 ---
 # <a name="client-notification-in-configuration-manager"></a>Configuration Manager의 클라이언트 알림
 
@@ -141,12 +141,14 @@ DDR(검색 데이터 레코드)을 전송하도록 클라이언트를 트리거�
 
 ### <a name="wake-up"></a>절전 모드 해제
 
-버전 1810부터 Wake On LAN 패키지를 보내기 위해 동일한 서브넷에 있는 다른 디바이스를 사용하여 절전 모드를 해제하는 Wake On LAN을 지원하도록 구성된 디바이스를 트리거합니다.
+버전 1810부터 Wake On LAN 패키지를 보내기 위해 동일한 서브넷에 있는 다른 디바이스를 사용하여 절전 모드를 해제하는 Wake On LAN을 지원하도록 구성된 디바이스를 트리거합니다. 자세한 내용은 [Wake On LAN을 구성하는 방법](/sccm/core/clients/deploy/configure-wake-on-lan)을 참조하세요.
 
+### <a name="permissions"></a>사용 권한
+이 작업에는 **Collection** 개체에 관한 **리소스 알림** 권한이 필요합니다.
 
 ### <a name="restart"></a>다시 시작
 
-선택한 디바이스를 다시 시작하도록 트리거합니다. 
+선택한 디바이스를 다시 시작하도록 트리거합니다. 자세한 내용은 [클라이언트 다시 시작](/sccm/core/clients/manage/manage-clients#restart-clients)을 참조하세요.
 
 
 

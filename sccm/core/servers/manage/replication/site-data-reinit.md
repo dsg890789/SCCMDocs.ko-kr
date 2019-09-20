@@ -1,5 +1,5 @@
 ---
-title: 글로벌 데이터 다시 초기화
+title: 사이트 데이터 다시 초기화
 titleSuffix: Configuration Manager
 description: 이 다이어그램을 사용하여 Configuration Manager 계층의 사이트 데이터에 대한 SQL 복제 다시 초기화 문제 해결을 시작합니다.
 ms.date: 08/09/2019
@@ -11,14 +11,14 @@ ms.assetid: 19741d45-2d42-438e-a9f3-15bb365d63ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b40a38f928351315fe1d0bd9dabc4f187e082a96
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.openlocfilehash: ed35f296b888d9e13d42114aa2bef2932c715a38
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957763"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70892054"
 ---
-# <a name="sql-replication"></a>SQL 복제
+# <a name="troubleshoot-site-data-reinit"></a>사이트 데이터 다시 초기화 문제 해결
 
 다중 사이트 계층에서 Configuration Manager는 SQL 복제를 사용하여 사이트 간에 데이터를 전송합니다. 자세한 내용은 [데이터베이스 복제](/sccm/core/plan-design/hierarchy/database-replication)를 참조하세요.
 

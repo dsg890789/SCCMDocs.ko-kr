@@ -1,7 +1,7 @@
 ---
-title: 'VDI(가상 데스크톱 인프라) 클라이언트 관리 '
+title: VDI 클라이언트 관리
 titleSuffix: Configuration Manager
-description: VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리합니다.
+description: VDI(가상 데스크톱 인프라)에서 구성 관리자 클라이언트를 관리합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9352d6e5a26afd4cee36f70a19d0566e26643f50
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 07df750daf0af7aa82a13c1eef421678d7df8202
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130574"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890329"
 ---
-# <a name="considerations-for-managing-system-center-configuration-manager-clients--in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 System Center Configuration Manager 클라이언트를 관리할 때의 고려 사항
+# <a name="manage-configuration-manager-clients-in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 구성 관리자 클라이언트 관리
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

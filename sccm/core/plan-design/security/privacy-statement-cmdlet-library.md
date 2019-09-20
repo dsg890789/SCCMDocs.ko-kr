@@ -1,7 +1,8 @@
 ---
-title: Configuration Manager cmdletl라이브러리에 대한 개인정보처리방침
-description: Microsoft에서 System Center Configuration Manager cmdlet 라이브러리와 관련된 데이터를 수집하고 사용하는 방법을 알아봅니다.
-ms.date: 1/3/2017
+title: cmdlet의 개인정보처리방침
+titleSuffix: Configuration Manager
+description: Microsoft에서 Configuration Manager cmdlet과 관련된 데이터를 수집하고 사용하는 방법을 알아봅니다.
+ms.date: 01/3/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58b5a2eec6df6ecd6b96c18178cc116bc2b6965a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: e777c509ae0461120ae195712aaecf7f44813261
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135673"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889228"
 ---
-# <a name="system-center-configuration-manager-privacy-statement---configuration-manager-cmdlet-library"></a>System Center Configuration Manager 개인정보취급방침 – Configuration Manager cmdlet 라이브러리
+# <a name="configuration-manager-cmdlet-library-privacy-statement"></a>Configuration Manager cmdlet 라이브러리 개인정보처리방침
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -25,7 +26,7 @@ ms.locfileid: "56135673"
 
 ## <a name="usage-data"></a>사용 현황 데이터  
 
-#### <a name="what-this-feature-does"></a>이 기능의 용도   
+#### <a name="what-this-feature-does"></a>이 기능의 용도
 
 System Center Configuration Manager cmdlet 라이브러리를 사용하면 Windows PowerShell cmdlet 및 스크립트를 사용하여 Configuration Manager 계층 구조를 관리할 수 있습니다. Cmdlet 라이브러리는 경향과 사용 패턴을 식별하기 위해 라이브러리에 포함된 cmdlet의 사용 방법에 대한 정보를 수집합니다. 또한 cmdlet 라이브러리는 cmdlet을 사용할 때 나타나는 오류의 유형과 개수를 수집합니다.  
 

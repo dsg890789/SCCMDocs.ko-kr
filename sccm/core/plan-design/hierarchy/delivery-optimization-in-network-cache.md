@@ -2,7 +2,7 @@
 title: 네트워크 캐시의 배달 최적화
 titleSuffix: Configuration Manager
 description: 배달 최적화를 위해 Configuration Manager 배포 지점을 로컬 캐시 서버로 사용
-ms.date: 07/30/2019
+ms.date: 09/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,14 +11,16 @@ ms.assetid: c5cb5753-5728-4f81-b830-a6fd1a3e105c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cacc27b95328d5abd43e477762ebe4d55562bfef
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
+ms.openlocfilehash: 070f7ec6f99a9de89c155e756989fb3b5fa4a594
+ms.sourcegitcommit: 05a984cf94ea43c392701a389c4eb20bd692847c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712546"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70922731"
 ---
 # <a name="delivery-optimization-in-network-cache-in-configuration-manager"></a>Configuration Manager의 배달 최적화 네트워크 내 캐시
+
+*적용 대상: System Center Configuration Manager(현재 분기)*
 
 <!--3555764-->
 
@@ -29,7 +31,7 @@ ms.locfileid: "68712546"
 이 캐시는 Configuration Manager의 배포 지점 콘텐츠와 분리됩니다. 배포 지점 역할과 동일한 드라이브를 선택하면 콘텐츠를 개별적으로 저장합니다.
 
 > [!Note]  
-> 전송 최적화 네트워크 내 캐시 서버는 아직 개발 중인 Windows Server 기능입니다. 이 기능은 Configuration Manager 콘솔에서 *베타* 레이블로 태그가 지정됩니다.  
+> 전송 최적화 네트워크 내 캐시 서버는 아직 개발 중인 Windows Server에 설치된 애플리케이션입니다. 이 기능은 Configuration Manager 콘솔에서 *베타* 레이블로 태그가 지정됩니다.  
 
 
 ## <a name="how-it-works"></a>작동 방식
@@ -44,7 +46,7 @@ ms.locfileid: "68712546"
 
 3. 클라이언트 A는 DO 캐시 서버에서 콘텐츠를 요청합니다.
 
-4. 캐시에 콘텐츠가 포함되어 있지 않으면 클라이언트 A는 CDN에서 해당 콘텐츠를 가져옵니다.
+4. 캐시에 콘텐츠가 포함되어 있지 않으면 DO 캐시 서버는 CDN에서 해당 콘텐츠를 가져옵니다.
 
 5. 캐시 서버가 응답하지 않는 경우 클라이언트는 CDN에서 콘텐츠를 다운로드합니다.
 
@@ -78,7 +80,7 @@ ms.locfileid: "68712546"
 
         사용 조건을 읽고 동의합니다.
 
-    2. **사용할 로컬 드라이브**: 캐시에 사용할 디스크를 선택합니다. **자동**은 기본값이며, 여유 공간이 가장 많은 디스크를 사용합니다.  
+    2. **사용할 로컬 드라이브**: 캐시에 사용할 디스크를 선택합니다. **자동**은 기본값이며, 여유 공간이 가장 많은 디스크를 사용합니다.<sup>[참고 1](#bkmk_note1)</sup>  
 
         > [!Note]  
         > 이 드라이브는 나중에 변경할 수 있습니다. 캐시된 콘텐츠는 새 드라이브에 복사하지 않는 한 손실됩니다.
@@ -92,6 +94,17 @@ ms.locfileid: "68712546"
 
 1. 클라이언트 설정의 **배달 최적화** 그룹에서 **콘텐츠 다운로드를 위해 배달 최적화 네트워크 내 캐시 서버(베타)를 사용하도록 Configuration Manager에서 관리되는 디바이스를 사용** 설정을 구성합니다.  
 
+### <a name="bkmk_note1"></a> 참고 1: 드라이브 선택 정보
+
+**자동**을 선택하면 Configuration Manager에서는 DOINC 구성 요소를 설치할 때 **no_sms_on_drive.sms** 파일을 사용합니다. 예를 들어 배포 지점에 `C:\no_sms_on_drive.sms` 파일이 있습니다. C: 드라이브에 가장 많은 여유 공간이 있는 경우에도 Configuration Manager는 해당 캐시에 다른 드라이브를 사용하도록 DOINC를 구성합니다.
+
+**no_sms_on_drive.sms** 파일이 이미 있는 특정 드라이브를 선택하면 Configuration Manager는 해당 파일을 무시합니다. 해당 드라이브를 사용하도록 DOINC를 구성하는 것은 명시적 의도입니다. 예를 들어 배포 지점에 `F:\no_sms_on_drive.sms` 파일이 있습니다. **F:** 드라이브를 사용하도록 배포 지점 속성을 명시적으로 구성하면 Configuration Manager는 해당 캐시에 F: 드라이브를 사용하도록 DOINC를 구성합니다.
+
+DOINC가 설치된 후 드라이브를 변경하려면:
+
+- 특정 드라이브 문자를 사용하도록 배포 지점 속성을 수동으로 구성합니다.
+
+- 자동으로 설정된 경우 먼저 **no_sms_on_drive.sms** 파일을 만듭니다. 그런 다음, 구성 변경을 트리거하기 위해 배포 지점 속성을 약간 변경합니다.
 
 ## <a name="verify"></a>확인
 
@@ -110,7 +123,10 @@ Windows 10 버전 1809 이상에서는 **Get-DeliveryOptimizationStatus** Window
 
 캐시 서버가 HTTP 오류를 반환하면 전송 최적화 클라이언트는 원본 클라우드로 대체됩니다.
 
+자세한 내용은 [Configuration Manager의 전송 최적화 네트워크 내 캐시 문제 해결](/sccm/core/servers/deploy/configure/troubleshoot-delivery-optimization-in-network-cache)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [배달 최적화를 사용하여 Windows 10 업데이트 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)
+
+[Configuration Manager의 전송 최적화 네트워크 내 캐시 문제 해결](/sccm/core/servers/deploy/configure/troubleshoot-delivery-optimization-in-network-cache)

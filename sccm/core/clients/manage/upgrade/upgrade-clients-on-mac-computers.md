@@ -1,8 +1,8 @@
 ---
-title: 'macOS 클라이언트 업그레이드 '
+title: macOS 클라이언트 업그레이드
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Mac 컴퓨터용 클라이언트를 업그레이드합니다.
-ms.date: 04/23/2017
+description: Mac 컴퓨터에서 구성 관리자 클라이언트 업그레이드
+ms.date: 09/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,66 +11,67 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d465589c0763e0893bfe863ccfe41f82b40265
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: b887a82afce8cf446494e7b9348a0b8c0718e389
+ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70378169"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70902564"
 ---
-# <a name="how-to-upgrade-clients-on-mac-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
+# <a name="how-to-upgrade-clients-on-mac-computers-in-configuration-manager"></a>Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 애플리케이션을 사용하여 Mac 컴퓨터용 클라이언트를 업그레이드하려면 아래에 설명된 개략적인 단계를 따르세요. 또는, Mac 클라이언트 설치 파일을 다운로드하고 공유 네트워크 위치나 Mac 컴퓨터의 로컬 폴더에 복사한 후 사용자에게 수동으로 설치하도록 지시할 수 있습니다.  
+이 문서의 개략적인 단계를 따라 Configuration Manager 애플리케이션을 사용하여 Mac 컴퓨터용 클라이언트를 업그레이드하세요. Mac 클라이언트 설치 파일을 다운로드하고 공유 네트워크 위치나 Mac 컴퓨터의 로컬 폴더에 복사한 후 사용자에게 수동으로 설치하도록 지시할 수 있습니다.  
 
 > [!NOTE]  
->  이러한 단계를 수행하기 전에 Mac 컴퓨터가 필수 조건을 충족해야 합니다. [Mac 컴퓨터에 대해 지원되는 운영 체제](../../../plan-design/configs/supported-operating-systems-for-clients-and-devices.md#mac-computers)를 참조하세요.  
+> 이 단계를 수행하기 전에 Mac 컴퓨터가 필수 조건을 충족해야 합니다. [Mac 컴퓨터에 대해 지원되는 운영 체제](/sccm/plan-design/configs/supported-operating-systems-for-clients-and-devices#mac-computers)를 참조하세요.  
 
-## <a name="step-1-download-the-latest-mac-client-installation-file-from-the-microsoft-download-center"></a>1단계: Microsoft 다운로드 센터에서 최신 Mac 클라이언트 설치 파일 다운로드  
- Configuration Manager용 Mac 클라이언트는 Configuration Manager 설치 미디어에 제공되지 않으므로 Microsoft 다운로드 센터에서 다운로드해야 합니다. Mac 클라이언트 설치 파일은 ConfigmgrMacClient.msi라는 Windows Installer 파일에 포함되어 있습니다.  
+## <a name="download-the-latest-mac-client"></a>최신 Mac 클라이언트 다운로드
 
- [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=525184)에서 다운로드할 수 있습니다.  
+Configuration Manager용 Mac 클라이언트는 Configuration Manager 설치 미디어에 제공되지 않습니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=47719)에서 다운로드합니다. Mac 클라이언트 설치 파일은 **ConfigmgrMacClient.msi**라는 Windows Installer 파일에 포함되어 있습니다.  
 
-## <a name="step-2-run-the-downloaded-installation-file-to-create-the-mac-client-installation-file"></a>2단계: 다운로드한 설치 파일을 실행하여 Mac 클라이언트 설치 파일 만들기  
- Windows를 실행하는 컴퓨터에서, 다운로드한 **ConfigmgrMacClient.msi** 를 실행하여 **Macclient.dmg**라는 Mac 클라이언트 설치 파일의 압축을 풉니다. 기본적으로 이 파일의 압축을 풀면 Windows 컴퓨터의 **C:\Program Files (x86)\Microsoft\System Center 2012 Configuration Manager Mac Client** 폴더에 위치합니다.  
+## <a name="create-the-mac-client-installation-file"></a>Mac 클라이언트 설치 파일 만들기
 
-## <a name="step-3-extract-the-client-installation-files"></a>3단계: 클라이언트 설치 파일 추출  
- Macclient.dmg 파일을 네트워크 공유 위치나 Mac 컴퓨터의 로컬 폴더에 복사합니다. 그런 다음 Mac 컴퓨터에서 Macclient.dmg 파일을 탑재하고 연 후 파일을 Mac 컴퓨터의 폴더에 복사합니다.  
+Windows를 실행하는 컴퓨터에서 **ConfigmgrMacClient.msi**를 실행합니다. 이 설치 관리자는 **Macclient.dmg**라는 Mac 클라이언트 설치 파일의 압축을 풉니다. 기본적으로 다음 폴더에서 이 파일을 찾을 수 있습니다. **C:\Program Files(x86)\Microsoft\System Center 2012 Configuration Manager Mac Client**.  
 
-## <a name="step-4-create-a-cmmac-file-that-can-be-used-to-create-an-application"></a>4단계: 애플리케이션을 만드는 데 사용할 수 있는 .cmmac 파일 만들기  
+## <a name="extract-the-client-installation-files"></a>클라이언트 설치 파일 추출
 
-1. Mac 클라이언트 설치 파일의 **Tools** 폴더에 있는 **CMAppUtil** 도구를 사용하여 클라이언트 설치 패키지로부터 .cmmac 파일을 만듭니다. 이 파일은 Configuration Manager 애플리케이션을 만드는 데 사용됩니다.  
+**Macclient.dmg**를 Mac 컴퓨터에 복사합니다. Macclient.dmg 파일을 macOS에 탑재한 후 콘텐츠를 Mac 컴퓨터의 폴더에 복사합니다.  
 
-2. Configuration Manager 콘솔을 실행하는 컴퓨터에서 사용할 수 있는 위치로 새 **CMClient.pkg.cmmac** 파일을 복사합니다.  
+## <a name="create-a-cmmac-file"></a>.cmmac 파일 만들기
 
-   자세한 내용은 [Mac 컴퓨터용 애플리케이션을 만들어 배포하기 위한 보충 절차](/sccm/apps/get-started/creating-mac-computer-applications#supplemental-procedures-to-create-and-deploy-applications-for-mac-computers)를 참조하세요.  
+1. Mac 클라이언트 설치 파일의 **Tools** 폴더를 엽니다. **CMAppUtil** 도구를 사용하여 클라이언트 설치 패키지에서 .cmmac 파일을 만듭니다. 이 파일을 사용하여 Configuration Manager 애플리케이션을 만듭니다.  
 
-## <a name="step-5-create-and-deploy-an-application-containing-the-mac-client-files"></a>**5단계:** Mac 클라이언트 파일을 포함하는 애플리케이션을 만들어 배포  
+2. Configuration Manager 콘솔을 실행하는 컴퓨터에서 사용할 수 있는 네트워크 위치로 새 **CMClient.pkg.cmmac** 파일을 복사합니다.  
 
-1. Configuration Manager 콘솔에서 클라이언트 설치 파일이 포함된 **CMClient.pkg.cmmac** 파일에서 애플리케이션을 만듭니다.  
+    자세한 내용은 [Mac 컴퓨터용 애플리케이션을 만들어 배포하기 위한 보충 절차](/sccm/apps/get-started/creating-mac-computer-applications#supplemental-procedures-to-create-and-deploy-applications-for-mac-computers)를 참조하세요.  
 
-2. 이 애플리케이션을 계층 내의 Mac 컴퓨터에 배포합니다.  
+## <a name="create-and-deploy-the-app"></a>앱 만들기 및 배포
 
-   자세한 내용은 [System Center Configuration Manager에서 Mac 컴퓨터 애플리케이션 만들기](../../../../apps/get-started/creating-mac-computer-applications.md)를 참조하세요.  
+1. Configuration Manager 콘솔에서 **CMClient.pkg.cmmac** 파일에서 [애플리케이션을 만듭니다](/sccm/apps/get-started/creating-mac-computer-applications).  
 
-## <a name="step-6-users-install-the-latest-client"></a>6단계: 사용자가 최신 클라이언트 설치  
- Mac 클라이언트 사용자에게 Configuration Manager 클라이언트의 업데이트를 사용할 수 있으며 설치해야 한다는 메시지가 표시됩니다. 클라이언트를 설치한 사용자는 Mac 컴퓨터를 다시 시작해야 합니다.  
+2. 계층 구조의 Mac 컴퓨터에 [이 애플리케이션을 배포](/sccm/apps/deploy-use/deploy-applications)합니다.  
 
- 컴퓨터를 다시 시작한 후 컴퓨터 등록 마법사가 자동으로 실행되어 새 사용자 인증서를 요청합니다. 컴퓨터 등록 마법사는 처음으로 SCCM 클라이언트를 설치할 때만 자동으로 실행됩니다. 이미 유효한 사용자 인증서가 있기 때문에 나중에 새 설치 관리자를 사용하여 클라이언트를 업데이트하려고 해도 다시 실행되지 않습니다. 
+## <a name="install-the-updated-client"></a>업데이트된 클라이언트 설치
 
- Configuration Manager 등록을 사용하지 않고 Configuration Manager와 독립적으로 클라이언트 인증서를 설치하는 경우에는 [업그레이드된 클라이언트가 기존 인증서를 사용하도록 구성](#BKMK_UpgradingClient_MachineEnrollment)을 참조하세요.  
+Mac 컴퓨터의 기존 구성 관리자 클라이언트는 업데이트를 설치할 수 있음을 알리는 메시지를 사용자에게 표시합니다. 클라이언트를 설치한 사용자는 Mac 컴퓨터를 다시 시작해야 합니다.  
 
-##  <a name="BKMK_UpgradingClient_MachineEnrollment"></a> 업그레이드된 클라이언트가 기존 인증서를 사용하도록 구성  
- 다음 절차를 실행하여 컴퓨터 등록 마법사가 실행되는 것을 방지하고 업그레이드된 클라이언트가 기존 클라이언트 인증서를 사용하도록 구성합니다.  
+컴퓨터를 다시 시작한 후 **컴퓨터 등록** 마법사가 자동으로 실행되어 새 사용자 인증서를 요청합니다.
 
-- Configuration Manager 콘솔에서 **Mac OS X** 형식의 구성 항목을 만듭니다.  
+Configuration Manager 등록을 사용하지 않고 Configuration Manager와 독립적으로 클라이언트 인증서를 설치하는 경우에는 [기존 인증서를 사용하도록 클라이언트 구성](#BKMK_UpgradingClient_MachineEnrollment)을 참조하세요.  
 
-- 설정 유형이 **스크립트**인 설정을 이 구성 항목에 추가합니다.  
+## <a name="BKMK_UpgradingClient_MachineEnrollment"></a> 기존 인증서를 사용하도록 클라이언트 구성
 
-- 설정에 다음 스크립트를 추가합니다.  
+이 절차를 사용하여 컴퓨터 등록 마법사가 실행되는 것을 방지하고 업그레이드된 클라이언트가 기존 클라이언트 인증서를 사용하도록 구성합니다.  
 
-  ```  
+1. Configuration Manager 콘솔에서 **Mac OS X** 형식의 [구성 항목을 만듭니다](/sccm/compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client).  
+
+1. 설정 유형이 **스크립트**인 설정을 이 구성 항목에 추가합니다.  
+
+1. 설정에 다음 스크립트를 추가합니다.  
+
+  ``` Shell
   #!/bin/sh  
   echo "Starting script\n"  
   echo "Changing directory to MAC Client\n"  
@@ -93,9 +94,6 @@ System Center Configuration Manager 애플리케이션을 사용하여 Mac 컴�
   sudo open ./CCMClient  
   echo "Ending Script\n"  
   exit  
-
   ```  
 
-- 구성 기준에 구성 항목을 추가한 후 Configuration Manager와 별도로 인증서를 설치할 모든 Mac 컴퓨터에 해당 구성 기준을 배포합니다.  
-
-  Mac 컴퓨터에 대한 구성 항목을 만들고 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트로 관리되는 Mac OS X 디바이스에 대한 구성 항목을 만드는 방법](../../../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md) 및 [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../../compliance/deploy-use/deploy-configuration-baselines.md)을 참조하세요.  
+1. [구성 기준](/sccm/compliance/deploy-use/create-configuration-baselines)에 구성 항목을 추가합니다. 그런 다음, Configuration Manager와 별도로 인증서를 설치할 모든 Mac 컴퓨터에 [해당 구성 기준을 배포](/sccm/compliance/deploy-use/deploy-configuration-baselines)합니다.  

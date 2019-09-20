@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fdf140b998b4d6d64ade232503b64b14a11416f
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: b92f099a3a64cb6b1943d3d4b1306cbbd4131d6c
+ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338659"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70902930"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -139,7 +139,7 @@ CMG([클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-m
 
  ### <a name="deprecation-announcement-for-linux-and-unix-client-support"></a>Linux 및 Unix 클라이언트 지원에 대한 사용 중단 알림
  <!--510139-->
-Microsoft는 약 1년 후에 System Center Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에 SCCM 1902 릴리스에는 이러한 클라이언트가 포함되지 않습니다. 2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다. Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+Microsoft는 약 1년 후에 System Center Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에 버전 1902에는 이 클라이언트가 포함되지 않습니다. 2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다. Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 ### <a name="surface-device-dashboard"></a>Surface 디바이스 대시보드
 <!--1355788-->

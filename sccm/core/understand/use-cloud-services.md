@@ -1,7 +1,7 @@
 ---
-title: 클라우드 서비스를 사용하여 온-프레미스 인프라 보충
+title: 클라우드 서비스 사용
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 대한 클라우드 리소스를 프로비전하여 온-프레미스 인프라를 보완합니다.
+description: Configuration Manager에 관한 클라우드 리소스를 프로비저닝하여 온-프레미스 인프라를 보완합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72478590144915075ae224552b6d67f7ad8fd87c
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 2828443de3833f2b98665fc4d87dcb63eb795b4d
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70377781"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891839"
 ---
-# <a name="use-cloud-services-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라우드 서비스 사용
+# <a name="use-cloud-services-with-configuration-manager"></a>Configuration Manager에서 클라우드 서비스 사용
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager는 몇 가지 클라우드 기반 옵션을 지원합니다. 이러한 옵션은 온-프레미스 인프라를 보완하며 다음과 같은 비즈니스 문제를 해결하는 데 도움이 됩니다.  
+Configuration Manager는 몇 가지 클라우드 기반 옵션을 지원합니다. 이러한 옵션은 온-프레미스 인프라를 보완하며 다음과 같은 비즈니스 문제를 해결하는 데 도움이 됩니다.  
 
 -   모바일 디바이스 관리용 Intune을 사용하여 BYOD를 관리하는 방법  
 

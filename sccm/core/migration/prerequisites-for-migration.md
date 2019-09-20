@@ -2,7 +2,7 @@
 title: 마이그레이션 필수 조건
 titleSuffix: Configuration Manager
 description: 지원되는 Configuration Manager 버전, 지원되는 원본 사이트 언어 및 마이그레이션을 위한 필수 조건을 이해합니다.
-ms.date: 5/7/2018
+ms.date: 05/7/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fd2bfda86e7c96f2393c0ca0ea6d1d8ea9f86b4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 81073cc22d7bb59188cf881590d07deb0c20158c
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56135456"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891462"
 ---
 # <a name="prerequisites-for-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건
 

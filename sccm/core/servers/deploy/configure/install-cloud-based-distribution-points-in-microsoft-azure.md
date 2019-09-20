@@ -2,7 +2,7 @@
 title: 클라우드 배포 지점 설치
 titleSuffix: Configuration Manager
 description: 이러한 단계를 사용하여 Configuration Manager에서 클라우드 배포 지점을 설정합니다.
-ms.date: 06/17/2019
+ms.date: 09/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 436392eabf545241141fe8eebe6f351cb85eb78e
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 564e24f3c753af3a757001e5c3c6e420d369915f
+ms.sourcegitcommit: 05a984cf94ea43c392701a389c4eb20bd692847c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194054"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70922760"
 ---
 # <a name="install-a-cloud-distribution-point-for-configuration-manager"></a>Configuration Manager의 클라우드 배포 지점 설치
 
@@ -86,6 +86,18 @@ ms.locfileid: "67194054"
 
     - .CER 및 .PFX 파일 둘 다로 내보낸 Azure **관리 인증서**. Azure 구독 관리자는 .CER 관리 인증서를 [Azure Portal](https://portal.azure.com)의 구독에 추가해야 합니다.  
 
+### <a name="branchcache"></a>BranchCache
+
+클라우드 배포 지점에서 Windows BranchCache를 사용할 수 있게 설정하려면 사이트 서버에 BranchCache 기능을 설치합니다.<!-- SCCMDocs-pr#4054 -->
+
+- 사이트 서버에 온-프레미스 배포 지점 사이트 시스템 역할이 있는 경우 해당 역할의 속성에서 **BranchCache를 사용 및 구성**하는 옵션을 구성합니다. 자세한 내용은 [배포 지점 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-general)을 참조하세요.
+
+- 사이트 서버에 배포 지점 역할이 없는 경우 Windows에서 BranchCache 기능을 설치합니다. 자세한 내용은 [BranchCache 기능 설치](https://docs.microsoft.com/windows-server/networking/branchcache/deploy/install-the-branchcache-feature)를 참조하세요.
+
+클라우드 배포 지점에 이미 콘텐츠를 배포한 후 BranchCache를 사용하도록 설정한 경우에는 먼저 기능을 설치합니다. 그런 다음, 클라우드 배포 지점에 콘텐츠를 다시 배포합니다.
+
+> [!NOTE]  
+> Configuration Manager 버전 1810 이하에서 클라우드 배포 지점이 두 개 이상 있는 경우 BranchCache 키 암호를 수동으로 설정해야 합니다. 자세한 내용은 [Microsoft 지원 KB 4458143](https://support.microsoft.com/help/4458143)을 참조하세요.
 
 ## <a name="bkmk_setup"></a> 설치  
 

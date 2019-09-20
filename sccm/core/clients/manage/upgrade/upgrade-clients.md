@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 업그레이드
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 클라이언트를 업그레이드하는 방법에 대한 정보를 가져옵니다.
+description: Configuration Manager에서 클라이언트를 업그레이드하는 방법에 관한 정보를 가져옵니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0531c50792b6617eeb5e294bfad3626a0089c1f2
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 50212a84185396e53c92bff46dd3b369ad811928
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131492"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890205"
 ---
-# <a name="upgrade-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 업그레이드
+# <a name="upgrade-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트 업그레이드
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 

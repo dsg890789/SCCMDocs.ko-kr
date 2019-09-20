@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c8eef0ad8164ce6545264e0a1c229a647383661
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: dbc0800b78023e3813a31d2482a64a913008e306
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56138928"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889970"
 ---
 # <a name="maintain-mac-clients"></a>Mac 클라이언트 유지 관리
 *적용 대상: System Center Configuration Manager(현재 분기)*
@@ -29,7 +29,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 2.  Tools 폴더로 이동하여 다음 명령줄을 입력합니다.  
 
-     **./CMUninstall -c**  
+     `./CMUninstall -c`
 
     > [!NOTE]  
     >  **–c** 속성을 지정하면 클라이언트 제거 시 클라이언트 충돌 로그 및 로그 파일도 제거됩니다. 클라이언트를 나중에 다시 설치하는 경우 혼동을 방지하려면 이 속성을 지정하는 것이 좋습니다.  
@@ -101,7 +101,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 7.  **검색 스크립트 편집** 대화 상자에서 다음 셸 스크립트를 입력합니다.  
 
-    ```  
+    ``` Shell
     defaults read com.microsoft.ccmclient SMSID  
     ```  
 
@@ -111,7 +111,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 10. **재구성 스크립트 만들기** 대화 상자에서 다음 셸 스크립트를 입력합니다.  
 
-    ```  
+    ``` Shell
     defaults delete com.microsoft.ccmclient SMSID  
     ```  
 
@@ -135,7 +135,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 15. SMSID가 제거된 Mac 컴퓨터에서 다음 명령을 실행하여 새 인증서를 설치합니다.  
 
-    ```  
+    ``` Shell
     sudo ./CMEnroll -s <enrollment_proxy_server_name> -ignorecertchainvalidation -u <'user name'>  
     ```  
 
@@ -143,7 +143,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 16. 등록된 인증서를 Configuration Manager로 제한하려면 Mac 컴퓨터에서 터미널 창을 열고 다음과 같이 변경합니다.  
 
-    a.  **sudo /Applications/Utilities/Keychain\ Access.app/Contents/MacOS/Keychain\ Access**명령을 입력합니다.  
+    a.  `sudo /Applications/Utilities/Keychain\ Access.app/Contents/MacOS/Keychain\ Access` 명령 입력
 
     b.  **Keychain Access**(키 집합 접근) 대화 상자의 **Keychains**(키 집합) 섹션에서 **System**(시스템)을 선택한 다음 **Category**(범주) 섹션에서 **Keys**(키)를 선택합니다.  
 

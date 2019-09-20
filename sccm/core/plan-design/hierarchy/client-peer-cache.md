@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4754077f1a91cd11ce16e17dd3d2ea2f1704ee08
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 575a011271026e5b617a334476d3c4e8fa401014
+ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338885"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70902968"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
@@ -55,7 +55,10 @@ Configuration Manager 클라이언트는 피어 캐시를 사용하여 캐시의
 
 피어 캐시를 사용하도록 설정하려면 [클라이언트 설정](#bkmk_settings)을 컬렉션에 배포합니다. 그런 다음, 컬렉션의 멤버는 동일한 경계 그룹에 있는 다른 클라이언트에 대한 피어 캐시 원본 역할을 합니다.  
 
-- 피어 콘텐츠 원본으로 작동하는 클라이언트는 사용할 수 있는 캐시된 콘텐츠 목록을 해당 관리 지점에 제출합니다.  
+- 피어 콘텐츠 원본으로 작동하는 클라이언트는 상태 메시지를 사용하여 사용할 수 있는 캐시된 콘텐츠 목록을 해당 관리 지점에 제출합니다.
+
+   > [!NOTE]
+   > 7200, 7201, 7202 및 7203의 상태 메시지 ID를 사용하는 적용할 수 있는 피어 콘텐츠 원본 상태 메시지 목록을 보려면 [Configuration Manager의 상태 메시지](/sccm/core/plan-design/hierarchy/state-messaging-system-center-configuration-manager#7200-state_topictype_super_peer_update_cache_map)를 참조하세요.
 
 - 동일한 경계 그룹의 다른 클라이언트는 관리 지점에 콘텐츠 위치 요청을 수행합니다. 서버는 잠재적 콘텐츠 원본의 목록을 반환합니다. 이 목록에는 콘텐츠가 있고 온라인 상태인 각 피어 캐시 원본이 포함됩니다. 또한 해당 경계 그룹의 배포 지점 및 다른 콘텐츠 원본 위치도 포함됩니다. 자세한 내용은 [콘텐츠 원본 우선 순위](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority)를 참조하세요.  
 

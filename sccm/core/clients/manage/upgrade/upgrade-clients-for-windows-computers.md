@@ -1,5 +1,5 @@
 ---
-title: 클라이언트 업그레이드
+title: Windows에서 클라이언트 업그레이드
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 Windows 컴퓨터의 클라이언트를 업그레이드합니다.
 ms.date: 08/27/2019
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 547eb9844ace451a13b01113633796d711bea7c8
-ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
+ms.openlocfilehash: 0b811d6bb974dce7e71d986f81d3255d61382737
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70110099"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889920"
 ---
 # <a name="how-to-upgrade-clients-for-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터의 클라이언트를 업그레이드하는 방법
 

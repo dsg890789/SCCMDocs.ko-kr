@@ -1,23 +1,21 @@
 ---
-title: 자습서&#58; 최신 인터넷 기반 Windows 10 디바이스에 대한 공동 관리 사용
+title: 자습서&#58; 인터넷 디바이스의 공동 관리 사용
 titleSuffix: Configuration Manager
-description: Configuration Manager 및 Intune용 Windows 10 디바이스에 대한 공동 관리를 구성합니다.
-keywords: ''
+description: Configuration Manager 및 Microsoft Intune을 사용하여 새로운 인터넷 기반 Windows 10 디바이스의 공동 관리를 구성하는 방법에 대해 알아봅니다.
 author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.date: 07/26/2019
 ms.topic: tutorial
 ms.prod: configuration-manager
-ms.service: ''
-ms.technology: ''
-ms.assetid: ''
-ms.openlocfilehash: 446068324ab8840600fb1d0e8f7789520a6468d1
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.technology: configmgr-client
+ms.assetid: 7fb02a5c-e286-46b1-a972-6335c858429a
+ms.openlocfilehash: 6215842691aece6eb13bc1969640e4d9c19d9fae
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533889"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890791"
 ---
 # <a name="tutorial-enable-co-management-for-new-internet-based-devices"></a>자습서: 최신 인터넷 기반 디바이스의 공동 관리 사용
 
@@ -97,7 +95,7 @@ Azure AD(Active Directory)로 온-프레미스 AD를 조인하는 하이브리�
 
 ### <a name="identify-a-unique-name-for-your-cloud-management-gateway-in-azure"></a>Azure에서 클라우드 관리 게이트웨이의 고유한 이름 식별
 
-CMG 서버 인증 인증서를 요청하는 경우 Azure에서 ‘클라우드 서비스(클래식)’를 식별할 고유한 이름을 지정해야 합니다.  기본적으로 Azure 공용 클라우드는 *cloudapp.net*을 사용하며 CMG는 cloudapp.net 도메인 내에서 *\<YourUniqueDnsName>.cloudapp.net*으로 호스트됩니다.  
+CMG 서버 인증 인증서를 요청하는 경우 Azure에서 ‘클라우드 서비스(클래식)’를 식별할 고유한 이름을 지정해야 합니다.  기본적으로 Azure 퍼블릭 클라우드는 *cloudapp.net*을 사용하며 CMG는 cloudapp.net 도메인 내에서 *\<YourUniqueDnsName&gt;.cloudapp.net*으로 호스트됩니다.  
 
 > [!TIP]  
 > 이 자습서에서 **CMG 서버 인증 인증서**는 *contoso.com*으로 끝나는 FQDN을 사용합니다.  CMG를 만든 후에는 조직의 공용 DNS에 CNAME(정식 이름 레코드)을 구성합니다. 이 레코드는 공용 인증서에서 사용하는 이름으로 매핑하는 CMG에 대한 별칭을 만듭니다.  
@@ -400,7 +398,7 @@ Configuration Manager 버전 1902 이하의 공동 관리를 사용하려면 아
 
      명령줄 구조는 CCMSETUPCMD 및 SMSSiteCode 매개 변수만 사용하는 이 예제와 유사해야 합니다.  
 
-     ```
+     ``` Command
      CCMSETUPCMD="CCMHOSTNAME=<ServiceName.CLOUDAPP.NET/CCM_Proxy_MutualAuth/<GUID>" SMSSiteCode="<YourSiteCode>"  
      ```
 

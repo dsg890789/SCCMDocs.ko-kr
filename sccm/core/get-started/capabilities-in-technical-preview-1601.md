@@ -12,12 +12,12 @@ ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be84e7bfae54cf3099b588cce35b01a424c45b8f
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.openlocfilehash: 605a95aa96191fab63f7c4a0e0ce2f8b7c6a8778
+ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66716010"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70902554"
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
 
@@ -35,7 +35,7 @@ ms.locfileid: "66716010"
 
     -   기본 사이트의 데이터베이스에서 다음 SQL 스크립트를 실행합니다.  
 
-        ```  
+        ``` SQL
         DECLARE @PilotingPkgID NVARCHAR(8)  
 
         SELECT @PilotingPkgID = PilotingPackageID FROM ClientDeploymentSettings  
@@ -89,7 +89,7 @@ ms.locfileid: "66716010"
     -   **맬웨어 방지 프로그램 필요:** 맬웨어 방지 소프트웨어(System Center Endpoint Protection 또는 Windows Defender만)를 사용하도록 설정하고 실행 중인지 확인합니다.  
          사용되도록 설정되지 않았으면 메일 및 SharePoint 서비스에 대한 액세스가 차단됩니다.  
 
-    비준수로 인해 차단된 최종 사용자는 SCCM 소프트웨어 센터에서 호환성 정보를 확인하고 호환성 문제가 해결되면 새로운 정책 평가를 시작합니다.  
+    비준수로 인해 차단된 최종 사용자는 소프트웨어 센터에서 호환성 정보를 확인하고 호환성 문제가 해결되면 새로운 정책 평가를 시작합니다.  
 
 -   **상태 증명 서비스를 사용하는 조건부 액세스** 이제 상태 증명 서비스에서 보고되는 디바이스의 상태를 기준으로, 메일 및 0365 서비스에 대한 액세스를 제한할 수 있습니다.  또한 Intune에서 관리되는 디바이스는 디바이스 상태 보고서에 포함됩니다.  
 

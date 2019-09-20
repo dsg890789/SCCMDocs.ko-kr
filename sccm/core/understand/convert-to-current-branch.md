@@ -1,8 +1,8 @@
 ---
-title: '장기 서비스 분기를 현재 분기로 업그레이드 '
+title: 현재 분기로 LTSB 업그레이드
 titleSuffix: Configuration Manager
-description: 장기 서비스 분기 사이트를 현재 분기 사이트로 변환하는 방법을 알아봅니다.
-ms.date: 2/8/2017
+description: LTSB(장기 서비스 분기) 사이트를 현재 분기 사이트로 변환하는 방법을 알아봅니다.
+ms.date: 02/8/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20b50fcd54513ccd780a7da173766fb177bf5da7
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 56a85a86b047ffe0769fc175a79207c781e2cf23
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67676125"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70891913"
 ---
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>장기 서비스 분기를 현재 분기로 업그레이드
 

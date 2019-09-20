@@ -1,5 +1,5 @@
 ---
-title: 자습서&#58; 기존 Configuration Manager 클라이언트의 공동 관리 사용
+title: 자습서&#58; 기존 클라이언트의 공동 관리 사용
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용하여 Windows 10 디바이스를 이미 관리하는 경우 Microsoft Intune으로 공동 관리를 구성하세요.
 ms.date: 07/26/2019
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec46fb91e862c8d835b88a7ca859fcbfd8e4d339
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 947f23f4dd6890326860cd9e499819f6c7c9f546
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535341"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890807"
 ---
 # <a name="tutorial-enable-co-management-for-existing-configuration-manager-clients"></a>자습서: 기존 Configuration Manager 클라이언트에 대해 공동 관리 사용
 

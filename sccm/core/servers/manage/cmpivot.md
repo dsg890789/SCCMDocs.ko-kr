@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e0be6129306e37ba1721923efe1b7533875784e
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 8ed24e1f7089b7b8078c4cfcfed021bc1bac9346
+ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70380036"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70902989"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -297,33 +297,36 @@ CMPivot에는 이제 KQL [렌더링 연산자](https://docs.microsoft.com/azure/
 #### <a name="example-bar-chart"></a>예제: 가로 막대형 차트
 다음 쿼리에서는 가장 최근에 사용된 애플리케이션을 가로 막대형 차트로 렌더링합니다.
 
-```
+``` Kusto
 CCMRecentlyUsedApplications
 | summarize dcount( Device ) by ProductName
 | top 10 by dcount_
 | render barchart
 ```
+
 ![CMPivot 가로 막대형 차트 시각화 예제](media/1359068-cmpivot-barchart.png)
 
 #### <a name="example-time-chart"></a>예제: 시간 차트
 시간 차트를 렌더링하려면 새 **bin()** 연산자를 사용하여 시간에서 이벤트를 그룹화합니다. 다음 쿼리에서는 최근 7일 동안 디바이스가 시작된 시기를 보여줍니다.
 
-``` 
-OperatingSystem 
+``` Kusto
+OperatingSystem
 | where LastBootUpTime <= ago(7d)
 | summarize count() by bin(LastBootUpTime,1d)
 | render timechart
 ```
+
 ![CMPivot 시간 차트 시각화 예제](media/1359068-cmpivot-timechart.png)
 
 #### <a name="example-pie-chart"></a>예제: 원형 차트
 다음 쿼리에서는 원형 차트의 모든 OS 버전을 보여줍니다.
 
-```
-OperatingSystem 
+``` Kusto
+OperatingSystem
 | summarize count() by Caption
 | render piechart
 ```
+
 ![CMPivot 원형 차트 시각화 예제](media/1359068-cmpivot-piechart.png)
 
 
@@ -333,12 +336,14 @@ CMPivot을 사용하여 모든 하드웨어 인벤토리 클래스를 쿼리합�
 결과 테이블 또는 차트의 데이터 색 채도는 라이브 데이터인지 캐시된 데이터인지를 나타냅니다. 예를 들어, 진한 파랑은 온라인 클라이언트의 실시간 데이터입니다. 연한 파랑은 캐시된 데이터입니다.
 
 #### <a name="example"></a>예
-```
+
+``` Kusto
 LogicalDisk
 | summarize sum( FreeSpace ) by Device
 | order by sum_ desc
 | render columnchart
 ```
+
 ![세로 막대형 차트 시각화를 사용한 CMPivot 인벤토리 쿼리 예제](media/1359068-cmpivot-inventory.png)
 
 #### <a name="limitations"></a>제한 사항
@@ -400,7 +405,7 @@ Configuration Manager 버전 1902부터는 계층 구조의 CAS(중앙 관리 �
 
 CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에 있지 않거나 SQL Always On 구성인 경우 추가 사용 권한이 필요합니다. 이러한 원격 구성을 사용하면 CMPivot에 대해 "더블 홉 시나리오"가 있습니다.
 
-이러한 "더블 홉 시나리오"의 경우 CMPivot를 CAS에서 작동하도록 하기 위해 제한된 위임을 정의할 수 있습니다. 이 구성의 보안 의미를 이해하려면 [Kerberos 제한 위임](https://docs.microsoft.com/windows-server/security/kerberos/kerberos-constrained-delegation-overview) 문서를 참고하세요. CAS와 함께 배치된 SQL 또는 SCCM 공급자와 같은 원격 구성이 둘 이상 있는 경우 조합된 사용 권한 설정이 필요합니다. 수행해야 하는 단계는 다음과 같습니다.
+이러한 "더블 홉 시나리오"의 경우 CMPivot를 CAS에서 작동하도록 하기 위해 제한된 위임을 정의할 수 있습니다. 이 구성의 보안 의미를 이해하려면 [Kerberos 제한 위임](https://docs.microsoft.com/windows-server/security/kerberos/kerberos-constrained-delegation-overview) 문서를 참고하세요. CAS와 함께 배치된 SQL 또는 SMS 공급자와 같은 원격 구성이 둘 이상 있는 경우 조합된 권한 설정이 필요합니다. 수행해야 하는 단계는 다음과 같습니다.
 
 ### <a name="cas-has-a-remote-sql-server"></a>CAS에 원격 SQL Server 포함
 
@@ -517,7 +522,7 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 
 - 디바이스, 제조업체, 모델 및 OSVersion 표시:
 
-   ```
+   ``` Kusto
    ComputerSystem
    | project Device, Manufacturer, Model
    | join (OperatingSystem | project Device, OSVersion=Caption)
@@ -525,7 +530,7 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 
 - 디바이스의 부팅 시간 그래프 표시:
 
-   ```
+   ``` Kusto
    SystemBootData
    | where Device == 'MyDevice'
    | project SystemStartTime, BootDuration, OSStart=EventLogStart, GPDuration, UpdateDuration

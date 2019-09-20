@@ -1,5 +1,6 @@
 ---
-title: Configuration Manager 2012에서 변경된 내용
+title: 버전 2012의 변경 내용
+titleSuffix: Configuration Manager
 description: System Center Configuration Manger 및 System Center 2012 Configuration Manager의 변경 내용과 새로운 기능을 확인합니다.
 ms.date: 03/27/2019
 ms.prod: configuration-manager
@@ -10,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 241b8787548c12dff509078df3b9130d21dbfa10
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: d40a612fc1b8953662209f591b3ad5b2694abd73
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70377985"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70889533"
 ---
 # <a name="whats-changed-in-system-center-configuration-manager-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager에서 변경된 System Center Configuration Manager의 기능
 

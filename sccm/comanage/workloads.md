@@ -5,22 +5,24 @@ description: Configuration Manager에서 Microsoft Intune으로 전환할 수 �
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 08/01/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c90befe-9c4e-4c27-a947-625887e15052
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef39c354e384f130b5c585e8aeb099d083fe0418
-ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
+ms.openlocfilehash: 766d1f0c258dd25fc4aa51ef20b2d3921ac8cc74
+ms.sourcegitcommit: ba68f10d2ca7997057a01af911a2e7cf7e010cf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68743641"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70863128"
 ---
 # <a name="co-management-workloads"></a>공동 관리 워크로드
 
 워크로드를 전환할 필요가 없거나 준비될 때 개별적으로 전환할 수 있습니다. Intune으로 전환하지 않은 워크로드를 포함한 다른 모든 워크로드와 공동 관리에서 지원하지 않는 Configuration Manager의 다른 모든 기능은 계속 Configuration Manager에서 관리합니다.
+
+워크로드를 Intune으로 변경하지만, 나중에 마음을 바꾸는 경우 다시 Configuration Manager로 전환할 수 있습니다.
 
 공동 관리에서는 다음 워크로드를 지원합니다.
 

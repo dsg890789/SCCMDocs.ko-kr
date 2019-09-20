@@ -7,20 +7,22 @@ ms.technology: configmgr-client
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.assetid: 60e2022f-a4f9-40dd-af01-9ecb37b43878
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c1cdd3358c1d9bf41584658ee25c7210808a8f4
-ms.sourcegitcommit: 1d16ccc20bb00bf2e21f923d7f9dde3c9783dab5
+ms.openlocfilehash: 4ff8597442902b70e626d0655cf0afb247366440
+ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70272689"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70890745"
 ---
 # <a name="how-to-switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환하는 방법
 
 공동 관리의 이점 중 하나는 워크로드를 Configuration Manager에서 Microsoft Intune으로 전환하는 것입니다. Windows 10 디바이스에 Configuration Manager 클라이언트가 있고 디바이스가 Intune에 등록된 경우 두 서비스의 이점을 모두 활용할 수 있습니다. 어느 워크로드를 제어하든 기관을 Configuration Manager에서 Intune으로 전환할 수 있습니다. Intune으로 전환하지 않은 워크로드를 포함한 다른 모든 워크로드와 공동 관리에서 지원하지 않는 Configuration Manager의 다른 모든 기능은 계속 Configuration Manager에서 관리합니다.
+
+워크로드를 Intune으로 변경하지만, 나중에 마음을 바꾸는 경우 다시 Configuration Manager로 전환할 수 있습니다.
 
 지원되는 워크로드에 대한 자세한 내용은 [Workloads](/sccm/comanage/workloads)(워크로드)를 참조하세요.
 
@@ -46,7 +48,7 @@ ms.locfileid: "70272689"
 
 > [!Important]  
 > - 워크로드를 전환하기 전에 Intune에서 해당 워크로드를 올바로 구성하고 배포해야 합니다. 워크로드가 항상 디바이스에 대한 관리 도구 중 하나에서 관리되어야 합니다.
-> - Configuration Manager 버전 1806부터 공동 관리 워크로드를 전환하면 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업을 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients#initiate-client-policy-retrieval-using-client-notification)을 참조합니다. <!--1357377-->
+> - Configuration Manager 버전 1806부터 공동 관리 워크로드를 전환하면 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업을 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients##BKMK_PolicyRetrieval)을 참조합니다. <!--1357377-->
 
 ## <a name="switch-workloads-in-version-1902-and-earlier"></a>버전 1902 및 이전 버전에서 워크로드 전환
 
@@ -73,7 +75,7 @@ ms.locfileid: "70272689"
 
 > [!Important]  
 > - 워크로드를 전환하기 전에 Intune에서 해당 워크로드를 올바로 구성하고 배포해야 합니다. 워크로드가 항상 디바이스에 대한 관리 도구 중 하나에서 관리되어야 합니다. 
-> - Configuration Manager 버전 1806부터 공동 관리 워크로드를 전환하면 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업을 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients#initiate-client-policy-retrieval-using-client-notification)을 참조합니다. <!--1357377-->
+> - Configuration Manager 버전 1806부터 공동 관리 워크로드를 전환하면 공동 관리되는 디바이스는 Microsoft Intune에서 자동으로 MDM 정책을 동기화합니다. 이 동기화는 Configuration Manager 콘솔의 클라이언트 알림에서 **컴퓨터 정책 다운로드** 작업을 시작할 때 발생합니다. 자세한 내용은 [클라이언트 알림을 사용하여 클라이언트 정책 검색 시작](/sccm/core/clients/manage/manage-clients##BKMK_PolicyRetrieval)을 참조합니다. <!--1357377-->
 
 ## <a name="next-steps"></a>다음 단계
 
