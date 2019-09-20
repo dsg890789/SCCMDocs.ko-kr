@@ -1,7 +1,7 @@
 ---
 title: 진단 데이터 보기
 titleSuffix: Configuration Manager
-description: 진단 및 사용 현황 데이터를 보고 System Center Configuration Manager 계층 구조에 중요한 정보가 포함되어 있지 않은지 확인합니다.
+description: 진단 및 사용량 현황 데이터를 보고 System Center Configuration Manager 계층 구조에 중요한 정보가 포함되어 있지 않은지 확인합니다.
 ms.date: 09/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
