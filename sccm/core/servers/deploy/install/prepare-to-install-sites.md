@@ -2,7 +2,7 @@
 title: 사이트를 설치할 준비
 titleSuffix: Configuration Manager
 description: 여러 Configuration Manager 사이트를 설치할 계획인 경우 이 정보를 읽으면 시간을 절약하고 오류를 방지할 수 있습니다.
-ms.date: 03/1/2017
+ms.date: 09/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aaac8972d6fbe3c8d99acf0a37fab2a748f2ce20
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 5d530540ba83fbe03752aab6943b8bf4fa02404b
+ms.sourcegitcommit: 2ef7e69f3db54a90ed4ae2a3f59a75e6329a1584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888945"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062125"
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
 
@@ -90,6 +90,7 @@ Configuration Manager 설치 프로그램을 실행하는 경우 중앙 관리 �
 - NUL
 - PRN
 - SMS
+- ENV <!--SCCMDocs-1871 and 5399453-->
 
 > [!NOTE]
 > Configuration Manager 설치 프로그램은 사이트 코드를 이미 사용 중인지 여부를 확인하지 않습니다.

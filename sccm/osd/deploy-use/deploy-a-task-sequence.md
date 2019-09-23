@@ -11,12 +11,12 @@ ms.assetid: b2abcdb0-72e0-4c70-a4b8-7827480ba5b2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e21a1eb9f6d97571c47906e04f030294b875ae17
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: c3aca04273c25326c64d696a44089b6c8d1222bf
+ms.sourcegitcommit: 2ef7e69f3db54a90ed4ae2a3f59a75e6329a1584
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537083"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062116"
 ---
 # <a name="deploy-a-task-sequence"></a>작업 순서 배포
 
@@ -146,7 +146,7 @@ ms.locfileid: "68537083"
 
     - **Windows Embedded 디바이스에 대한 쓰기 필터 처리**: 이 설정은 쓰기 필터를 사용하는 Windows Embedded 디바이스의 설치 동작을 제어합니다. 설치 최종 기한에 또는 유지 관리 기간 동안 변경 내용을 커밋하는 옵션을 선택합니다. 이 옵션을 선택하면 다시 시작이 필요하며 디바이스에서 변경 내용이 유지됩니다. 그렇지 않으면 애플리케이션이 임시 오버레이에 설치되고 나중에 커밋됩니다. 작업 순서를 Windows Embedded 디바이스에 배포할 경우 해당 디바이스가 유지 관리 기간이 구성된 컬렉션의 구성원인지 확인하세요.  
 
-    - **작업 순서가 인터넷을 통해 클라이언트에 대해 실행되도록 허용**: 작업 순서가 인터넷 기반 클라이언트에서 실행될 수 있는지 여부를 지정합니다. 운영 체제와 같은 소프트웨어를 설치하는 작업은 이 설정으로 지원되지 않습니다. 이 옵션은 표준 운영 체제에서 작업을 수행하는 일반 스크립트 기반 작업 순서에만 사용할 수 있습니다.  
+    - **작업 순서가 인터넷을 통해 클라이언트에 대해 실행되도록 허용**: 작업 순서가 인터넷 기반 클라이언트에서 실행될 수 있는지 여부를 지정합니다. OS 설치와 같이 부팅 미디어를 필요로 하는 작업은이 설정으로 지원 되지 않습니다. 이 옵션은 일반 소프트웨어 설치 또는 표준 OS에서 작업을 수행하는 스크립트 기반 작업 순서에만 사용하세요.  
 
         - 버전 1802부터 이 설정은 Windows 10 현재 위치 업그레이드 작업 순서가 클라우드 관리 게이트웨이를 통해 인터넷 기반 클라이언트에 배포되는 것을 지원합니다. 자세한 내용은 [CMG를 통한 Windows 10 현재 위치 업그레이드 배포](#deploy-windows-10-in-place-upgrade-via-cmg)를 참조하세요.  
 

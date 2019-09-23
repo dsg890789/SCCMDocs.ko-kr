@@ -2,7 +2,7 @@
 title: 경계 그룹 구성
 titleSuffix: Configuration Manager
 description: 클라이언트가 사이트 시스템을 쉽게 찾을 수 있도록 경계 그룹을 사용하여 관련 네트워크 위치(경계)를 논리적으로 구성합니다.
-ms.date: 06/18/2019
+ms.date: 09/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 716b36060f4fdc768f98e4cc22be1653a967246c
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.openlocfilehash: 22645b08e3cb5f8b1200ab5c4e77b418ea74c8d8
+ms.sourcegitcommit: 55f68b5adc9bb84e324ead9f0429e41108d5b515
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194255"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71010845"
 ---
 # <a name="configure-boundary-groups-for-configuration-manager"></a>Configuration Manager의 경계 그룹 구성
 
@@ -223,8 +223,10 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 
 더 빠른 인터넷 링크가 있는 지점이 있는 경우 이제 클라우드 콘텐츠의 우선 순위를 지정할 수 있습니다.  
 
-1902 버전에서 이 설정의 제목은 **Prefer cloud based sources over on-premise sources**(온-프레미스 원본보다 클라우드 기반 원본 선호)입니다. 동작을 그대로 유지됩니다.<!-- SCCMDocs#1529 -->
+1902 버전에서 이 설정의 제목은 **Prefer cloud based sources over on-premise sources**(온-프레미스 원본보다 클라우드 기반 원본 선호)입니다. 클라우드 기반 원본은 다음을 포함합니다.<!-- SCCMDocs#1529 -->
 
+- 클라우드 배포 지점
+- Microsoft 업데이트(버전 1902에 추가됨)
 
 ## <a name="software-update-points"></a>소프트웨어 업데이트 지점
 
