@@ -2,7 +2,7 @@
 title: 사전 캐시 콘텐츠 구성
 titleSuffix: Configuration Manager
 description: 사용자가 작업 순서를 설치 하기 전에 클라이언트에서 OS 배포 콘텐츠를 다운로드 하는 방법을 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 09/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ba7380d35742f01c620d95bfb9351180d56f7df
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: fc212104dc69e4ba4cc7d82e0b8c4813094bea2d
+ms.sourcegitcommit: 2dbe49e3ef1133d49e58d82cefdeba69f9ba3ce2
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537721"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127306"
 ---
 # <a name="configure-pre-cache-content-for-task-sequences"></a>작업 순서에 대해 사전 캐시 콘텐츠 구성
 
@@ -51,7 +51,7 @@ Configuration Manager 버전 1902 및 이전 버전에서이 동작은 *OS 업�
 3. [작업 순서를 배포 하 고 미리 캐싱을 사용 하도록 설정](#bkmk_deploy)
 
 
-### <a name="bkmk_createpkg"></a>-1 패키지 만들기 및 구성
+### -1 패키지 만들기 및 구성
 
 클라이언트는 패키지의 특성을 평가 하 여 사전 캐싱을 수행 하는 동안 다운로드 하는 콘텐츠를 결정 합니다.  
 
@@ -67,11 +67,11 @@ Configuration Manager 버전 1902 및 이전 버전에서이 동작은 *OS 업�
 
 특정 하드웨어 모델용 [드라이버 패키지](/sccm/osd/get-started/manage-drivers#BKMK_ManagingDriverPackages)를 만듭니다. 속성의 **일반** 탭에서 **모델** 을 지정 합니다.
 
-사전 캐시하는 동안 다운로드할 드라이버 패키지를 결정하기 위해 클라이언트는 모델의 **Win32_ComputerSystemProduct** WMI 속성을 평가합니다.  
+사전 캐싱 중 다운로드할 드라이버 패키지를 결정하기 위해 클라이언트는 **Win32_ComputerSystemProduct** WMI 클래스의 **이름** 속성으로 모델을 평가합니다.  
 
 #### <a name="package"></a>패키지
 
-특정 아키텍처 및 언어에 대한 [패키지](/sccm/apps/deploy-use/packages-and-programs)를 만듭니다. 속성의 **일반** 탭에서 **아키텍처** 및 **언어** 를 지정 합니다.
+특정 아키텍처 및 언어에 대한 [패키지](/sccm/apps/deploy-use/packages-and-programs)를 만듭니다. 속성의 **일반** 탭에서 **아키텍처** 및 **언어**를 지정합니다.
 
 
 ### <a name="bkmk_createts"></a> 2. 작업 순서 만들기
