@@ -2,7 +2,7 @@
 title: 게시 및 Active Directory 스키마
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에 대한 Active Directory 스키마를 확장하여 클라이언트 배포 및 구성 프로세스를 간소화합니다.
-ms.date: 02/6/2017
+ms.date: 09/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68be076cd166867ae3a1b181c14e3c888110b029
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 094cef520a2c5f1f4da06b8eefdafb4d3d58f3ac
+ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70889456"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71311600"
 ---
 # <a name="prepare-active-directory-for-site-publishing"></a>사이트 게시를 위해 Active Directory 준비
 
