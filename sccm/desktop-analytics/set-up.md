@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad8111b7d49f89b85c2a4f8b0bd9336a13446a91
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: ae1bbbd6a8482ea5008eeb87c30a4e35a26e06d0
+ms.sourcegitcommit: 84a6f31797490eeda73bd4f3656ba27741df3030
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243668"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71343807"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>데스크톱 분석을 설정 하는 방법
 
@@ -35,7 +35,7 @@ ms.locfileid: "70243668"
 
 2. **서비스 계약 수락** 페이지에서 서비스 계약을 검토 하 고 **동의**를 선택 합니다.  
 
-3. **구독 확인** 페이지에서 필요한 적격 라이선스 목록을 검토 합니다. **지원 되는 구독 중 하나 이상이 있습니까?** 옆의 설정을 **예** 로 전환 하 **고 다음을 선택 합니다**.  
+3. **구독 확인** 페이지에서 필요한 적격 라이선스 목록을 검토 합니다. **지원 되는 구독 중 하나 이상이 있습니까?** 옆의 설정을 **예** 로 전환 하 고 다음 **을 선택 합니다**.  
 
 4. 사용자에 게 **액세스 권한 부여** 페이지에서 다음을 수행 합니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "70243668"
 
     - 데스크톱 분석의 작업 영역을 만들려면 **작업 영역 추가**를 선택 합니다.  
 
-        1. **작업 영역 이름을**입력 합니다.<!--do we have any guidance for this name?-->  
+        1. 전역적으로 고유한 **작업 영역 이름을**입력 합니다.<!--do we have any guidance for this name?-->  
 
         2. 드롭다운 목록을 선택 하 여 **이 작업 영역에 대 한 azure 구독 이름을 선택**하 고이 작업 영역에 대 한 azure 구독을 선택 합니다.  
 

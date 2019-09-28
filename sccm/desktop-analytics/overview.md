@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f6461d607401a0d932997d3ef38f02c991a5e2b
-ms.sourcegitcommit: cb169396acf0d50fedd9f2ae62f7894615c3cce5
+ms.openlocfilehash: 5ee4075926f5c6f01dddcf41a2c329e88a4ee591
+ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808349"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401503"
 ---
 # <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
 
@@ -62,7 +62,7 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 데스크톱 분석을 사용 하려면 사용자 환경이 다음과 같은 필수 구성 요소를 충족 하는지 확인 합니다.
 
@@ -108,6 +108,11 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 
 - 장치에서 Microsoft 공용 클라우드로의 네트워크 연결. 자세한 내용은 [데이터 공유를 사용 하도록 설정 하는 방법](/sccm/desktop-analytics/enable-data-sharing) 을 참조 하세요.  
 
+> [!Important]   
+> Microsoft는 사용자의 개인 정보에 대 한 제어를 제공 하는 도구와 리소스를 제공 하기 위해 노력 하 고 있습니다. 따라서 Microsoft는 유럽 국가 (EEA 및 스위스)에 있는 장치에서 다음 데이터를 수집 하지 않습니다.
+>
+> - Windows 8.1 장치의 Windows 진단 데이터
+> - Windows 7 용 앱 사용 현황 데이터
 
 ### <a name="licensing-and-costs"></a>라이선스 및 비용
 
