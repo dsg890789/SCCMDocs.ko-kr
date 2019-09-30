@@ -2,7 +2,7 @@
 title: CMPivot 문제 해결
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 CMPivot 문제를 해결하는 방법을 알아봅니다.
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,26 +11,124 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a8c3147b4ba7df547b07947ee47d4084591f52f
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 09c748e563ea6410b7f2ebc842c77707cf29494a
+ms.sourcegitcommit: 013596de802ac0eb416118169ad049733b5a63e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70892154"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71198212"
 ---
 # <a name="troubleshooting-cmpivot"></a>CMPivot 문제 해결
 
-CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 경우에 따라 CMPivot 문제를 해결해야 할 수 있습니다. 예를 들어 클라이언트가 CMPivot에서 상태 메시지를 보냈음을 확인할 수 있습니다. 그러나 사이트 서버가 손상되었기 때문에 메시지를 처리하지 않았습니다. 이 문서에서는 CMPivot에 대한 정보의 흐름을 이해하도록 도와줍니다.
+CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 경우에 따라 CMPivot 문제를 해결해야 할 수 있습니다. 예를 들어 클라이언트가 CMPivot에서 상태 메시지를 보냈음을 확인할 수 있습니다. 그러나 사이트 서버가 손상되었기 때문에 메시지를 처리하지 않았습니다. 이 문서에서는 CMPivot에 대한 정보의 흐름을 이해하도록 도와줍니다.
 
-## <a name="get-information-from-the-site-server"></a>사이트 서버에서 정보 가져오기
+## <a name="bkmk_CMPivot-1902"></a> CMPivot 버전 1902 이상 문제 해결
+
+Configuration Manager 버전 1902부터는 계층 구조의 CAS(중앙 관리 사이트)에서 CMPivot을 실행할 수 있습니다. 기본 사이트는 계속 클라이언트 통신을 처리합니다. 중앙 관리 사이트에서 CMPivot을 실행하는 경우 고속 메시지 구독 채널을 통해 기본 사이트와 통신합니다. 이 통신은 사이트 간 표준 SQL 복제를 따르지 않습니다. SQL Server 또는 공급자가 원격이거나 SQL Always On을 사용하는 경우 CMPivot에 대해 “이중 홉 시나리오”가 제공됩니다. “이중 홉 시나리오”의 제한된 위임을 정의하는 방법에 대한 자세한 내용은 [CMPivot 버전 1902부터 가능](/sccm/core/servers/manage/cmpivot#bkmk_cmpivot1902)을 참조하세요.
+
+>[!IMPORTANT]
+> CMPivot의 문제를 해결할 때 자세한 정보를 확인하려면 MP 및 사이트 서버의 SMS_MESSAGE_PROCESSING_ENGINE에서 자세한 정보 로깅을 사용하도록 설정합니다. 클라이언트의 출력이 80KB보다 큰 경우 MP 및 사이트 서버의 SMS_STATE_SYSTEM 구성 요소에서 자세한 정보 로깅을 사용하도록 설정합니다. 자세한 정보 로깅을 사용하도록 설정하는 방법에 대한 자세한 정보는 [사이트 서버 로깅 옵션](/sccm/core/plan-design/hierarchy/about-log-files#bkmk_reg-site)을 참조하세요.
+
+### <a name="get-information-from-the-site-server"></a>사이트 서버에서 정보 가져오기
+
+기본적으로 사이트 서버 로그 파일은 C:\Program Files\Microsoft Configuration Manager\logs에 있습니다. 이 위치는 설치 디렉터리에 대해 지정된 항목 또는 다른 서버에 SMS 공급자와 같은 항목을 오프로드했는지에 따라 변경될 수 있습니다. 실행 중인 경우 CAS의 CMPivot 로그가 기본 사이트 서버에 표시됩니다.
+
+이 라인에 대해 **smsprov.log**를 확인하세요.
+
+- Configuration Manager 버전 1906:
+  <pre><code lang="Log">Auditing: User &ltusername> initiated client operation 145 to collection &ltCollectionId>. </code></pre>
+
+- Configuration Manager 버전 1902:
+  <pre><code lang="Log">Type parameter is 135.
+  Auditing: User &ltusername> ran script 7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14 with hash dc6c2ad05f1bfda88d880c54121c8b5cea6a394282425a88dd4d8714547dc4a2 on collection &ltCollectionId>. </code></pre>
+
+
+
+**7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14**는 CMPivot에 대한 Script-Guid입니다. [CMPivot 감사 상태 메시지](/sccm/core/servers/manage/cmpivot#cmpivot-audit-status-messages)에서 GUID를 확인할 수도 있습니다.
+
+다음으로 CMPivot 창에서 ID를 찾습니다. 이 ID는 **ClientOperationID**입니다.
+
+![ClientOperationID를 강조 표시한 CMPivot 창](media/cmpivot-client-operationid-1902.png)
+
+ClientAction 테이블에서 **TaskID**를 찾습니다. **TaskID**는 ClientAction 표에서 **UniqueID**에 해당합니다.
+
+``` SQL
+select * from ClientAction where ClientOperationId=<id>
+```
+
+**BgbServer.log**에서 SQL에서 수집한 **TaskID**를 찾고 **PushID**를 메모합니다. Bgvsever.log에서는 **TaskID**에 **TaskGUID** 레이블이 지정됩니다. 예:
+
+<pre><code lang="Log">Starting to send push task (<b>PushID: 9</b> TaskID: 12 <b>TaskGUID: 9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0</b> TaskType: 15 TaskParam: PFNjcmlwdENvbnRlbnQgU2NyaXB0R3VpZD0nN0RDNkI2RjEtRTdGNi00M0MxL (truncated log entry)
+Finished sending push task (<b>PushID: 9</b> TaskID: 12) to 2 clients
+</code></pre>
+
+### <a name="client-logs"></a>클라이언트 로그
+
+사이트 서버의 정보가 있으면 클라이언트 로그를 확인합니다. 기본적으로 클라이언트 로그는 C:\Windows\CCM\Logs에 있습니다.
+
+**CcmNotificationAgent.log**를 확인합니다. 다음 줄과 같은 로그 항목을 찾을 수 있습니다.  
+
+<pre><code lang="Log">Receive task from server with <b>pushid=9</b>, taskid=12, <b>taskguid=9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0</b>, tasktype=15 and taskParam=PFNjcmlwdEhhc2ggU2NyaXB0SGF (truncated log entry)
+Send Task response message &ltBgbResponseMessage TimeStamp="2019-09-13T17:29:09Z"><b>&ltPushID>5</b>&lt/PushID>&ltTaskID>4&lt/TaskID>&ltReturnCode>1&lt/ReturnCode>&lt/BgbResponseMessage> successfuly.
+ </code></pre>
+
+**TaskID**에 대한 **Scripts.log**를 확인합니다. 다음 예에서 **Task ID {9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}** 을 확인할 수 있습니다.
+
+<pre><code lang="Log">Sending script state message (fast): <b>{9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}</b>
+Result are sent for ScriptGuid: 7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14 and <b>TaskID: {9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}</b>
+</code></pre>
+
+> [!NOTE]
+> **Scripts.log**에 "(fast)"가 표시되지 않는 경우 데이터가 80KB를 초과하기 때문일 수 있습니다. 이 경우 정보가 상태 메시지로 사이트 서버에 전송됩니다. 클라이언트의 **StateMessage.log** 및 사이트 서버의 **Statesys.log**를 사용합니다.
+
+### <a name="review-messages-on-the-site-server"></a>사이트 서버에서 메시지 검토
+
+관리 지점에서 [자세한 정보 로깅](/sccm/core/plan-design/hierarchy/about-log-files#bkmk_reg-client)을 사용하도록 설정한 경우 수신 클라이언트 메시지가 처리되는 방법을 확인할 수 있습니다. **MP_RelayMsgMgr.log**에서 **TaskID**를 찾습니다.
+
+**MP_RelayMsgMgr.log** 예에서 클라이언트의 ID(GUID:83F67728-2E6D-4E4F-8075-ED035C31B783) 및 **Task ID {9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}** 를 확인할 수 있습니다. 메시지 ID는 메시지 처리 엔진으로 전송되기 전에 클라이언트의 응답에 할당됩니다.
+
+<pre><code lang="Log">MessageKey: GUID:83F67728-2E6D-4E4F-8075-ED035C31B783<b>{9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}</b>
+Create message succeeded for <b>message id 22f00adf-181e-4bad-b35e-d18912f39f89</b>
+Add message payload succeeded for message id 22f00adf-181e-4bad-b35e-d18912f39f89
+Put message succeeded for message id 22f00adf-181e-4bad-b35e-d18912f39f89
+CRelayMsgMgrHandler::HandleMessage(): ExecuteTask() succeeded
+</code></pre>
+
+**SMS_MESSAGE_PROCESSING_ENGINE.log**에서 [자세한 정보 로깅](/sccm/core/plan-design/hierarchy/about-log-files#bkmk_logoptions)을 사용하도록 설정한 경우 클라이언트 결과가 처리되는 과정을 확인할 수 있습니다. **MP_RelayMsgMgr**에서 찾은 메시지 ID를 사용합니다. 다음 항목 예와 비슷한 처리 로그 항목:
+
+<pre><code lang="Log">Processing 2 messages with type Instant and IDs <b>22f00adf-181e-4bad-b35e-d18912f39f89[19]</b>, 434d80ae-09d4-4d84-aebf-28a4a29a9852[20]...
+Processed 2 messages with type Instant. Failed to process 0 messages. All message IDs <b>22f00adf-181e-4bad-b35e-d18912f39f89[19]</b>, 434d80ae-09d4-4d84-aebf-28a4a29a9852[20]
+</code></pre>
+
+  - 처리 중 예외가 발생하는 경우 다음 SQL 쿼리를 실행하고 예외 열에서 확인하여 검토할 수 있습니다. 메시지가 처리되면 더 이상 MPE_RequestMessages_Instant 테이블에 표시되지 않습니다.
+
+    ```SQL
+    select * from MPE_RequestMessages_Instant where MessageID=<ID from SMS_MESSAGE_PROCESSING_ENGINE.log>
+    ```
+
+**BgbServer.log**에서 **PushID**를 찾아 보고되거나 실패한 클라이언트 수를 확인합니다.
+
+<pre><code lang="Log">Generated BGB task status report c:\ConfigMgr\inboxes\bgb.box\Bgb5c1db.BTS at 09/16/2019 16:46:39. (<b>PushID: 9</b> ReportedClients: 2 FailedClients: 0)
+</code></pre>
+
+**TaskID**를 사용하여 SQL에서 CMPivot에 대한 모니터링 보기를 확인합니다.
+
+``` SQL
+select * from vSMS_CMPivotStatus where TaskID='{9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}'
+```
+
+![버전 1902의 문제 해결을 위한 CMPivot SQL 쿼리](media/cmpivot-sql-queries-1902.png)
+
+## <a name="bkmk_CMPivot-1810"></a> 1810 및 이전 버전의 CMPivot 문제 해결
+
+### <a name="get-information-from-the-site-server"></a>사이트 서버에서 정보 가져오기
 
 기본적으로 사이트 서버 로그 파일은 C:\Program Files\Microsoft Configuration Manager\logs에 있습니다. 이 위치는 설치 디렉터리에 대해 지정된 항목 또는 다른 서버에 SMS 공급자와 같은 항목을 오프로드했는지에 따라 변경될 수 있습니다.
 
 이 줄에서 **smsprov.log**를 확인합니다.
 
-``` Log
-Auditing: User <username> initiated client operation 135 to collection <CollectionId>.
-```
+<pre><code lang="Log">Auditing: User <username> initiated client operation 135 to collection &ltCollectionId>.
+</code></pre>
 
 CMPivot 창에서 ID를 찾습니다. 이 ID는 **ClientOperationID**입니다.
 
@@ -42,27 +140,30 @@ ClientAction 테이블에서 **TaskID**를 찾습니다. **TaskID**는 ClientAct
 select * from ClientAction where ClientOperationId=<id>
 ```
 
-**BgbServer.log**에서는 SQL에서 수집한 **TaskID**를 검색합니다. Bgbserver.log에서는 **TaskGUID**라는 레이블이 지정됩니다. 예: 
+**BgbServer.log**에서는 SQL에서 수집한 **TaskID**를 검색합니다. Bgbserver.log에서는 **TaskGUID**라는 레이블이 지정됩니다. 예:
 
+<pre><code lang="Log">Starting to send push task (PushID: 260 TaskID: 258 TaskGUID: <b>F8C7C37F-B42B-4C0A-B050-2BB44DF1098A</b> TaskType: 15
+TaskParam: PFNjcmlwdEhhc2ggU2NyaXB0SGF...truncated...to 5 clients with throttling (strategy: 1 param: 42)
+Finished sending push task (PushID: 260 TaskID: 258) to 5 clients
+</code></pre>
 
-- 푸시 작업의 전송하기 시작(PushID: 260 TaskID: 258 TaskGUID: **F8C7C37F-B42B-4C0A-B050-2BB44DF1098A** TaskType: 15 TaskParam:   PFNjcmlwdEhhc2ggU2NyaXB0SGFzaEFsZz0nU0hBMjU2Jz42YzZmNDY0OGYzZjU3M2MyNTQyNWZiNT   g2ZDVjYTIwNzRjNmViZmQ1NTg5MDZlMWI5NDRmYTEzNmFiMDE0ZGNjPC9TY3JpcHRIYXNoPjxTY3Jp   cHRQYXJhbWV0ZXJzPjxTY3JpcHRQYXJhbWV0ZXIgUGFyYW1ldGVyR3JvdXBHdWlkPSIiIFBhcmFtZX   Rlckdyb3VwTmFtZT0iUEdfIiBQYXJhbWV0ZXJOYW1lPSJzZWxlY3QiIFBhcmFtZXRlckRhdGFUeXBlP   SJTeXN0ZW0uU3RyaW5nIiBQYXJhbWV0ZXJWaXNpYmlsaXR5PSIwIiBQYXJhbWV0ZXJUeXBlPSIwIiBQ   YXJhbWV0ZXJWYWx1ZT0iRGV2aWNlI2tEZXZpY2UjY05hbWUja1N0cmluZyNjTWFudWZhY3R1cmVyI2tTd   HJpbmcjY1ZlcnNpb24ja1N0cmluZyNjUmVsZWFzZURhdGUja1N0cmluZyNjU2VyaWFsTnVtYmVyI2tTdH   JpbmcjY0J1aWxkTnVtYmVyI2tTdHJpbmcjY1NNQklPU0JJT1NWZXJzaW9uI2tTdHJpbmciLz48U2NyaXB0   UGFyYW1ldGVyIFBhcmFtZXRlckdyb3VwR3VpZD0iIiBQYXJhbWV0ZXJHcm91cE5hbWU9IlBHXyIgUGFyYW   1ldGVyTmFtZT0id21pcXVlcnkiIFBhcmFtZXRlckRhdGFUeXBlPSJTeXN0ZW0uU3RyaW5nIiBQYXJhbWV0ZX   JWaXNpYmlsaXR5PSIwIiBQYXJhbWV0ZXJUeXBlPSIwIiBQYXJhbWV0ZXJWYWx1ZT0iU0VMRUNUI3NOYW1lI2N   NYW51ZmFjdHVyZXIjY1ZlcnNpb24jY1JlbGVhc2VEYXRlI2NTZXJpYWxOdW1iZXIjY0J1aWxkTnVtYmVyI2   NTTUJJT1NCSU9TVmVyc2lvbiNzRlJPTSNzV2luMzJfQmlvcyIvPjwvU2NyaXB0UGFyYW1ldGVycz48UGFyYW   1ldGVyR3JvdXBIYXNoIFBhcmFtZXRlckhhc2hBbGc9J1NIQTI1NicOTE5NmEwNzNlOTljY2U4MzEyMWE3ZmFi   ODE5N2M4M2QxMjhjNDRmNTdlMWI0NGU1NWQwNmU4YTA5NGI5ZGRkNTwvUGFyYW1ldGVyR3JvdXBIYXNoPjwvU   2NyaXB0Q29udGVudD4=-)부터 제한이 있는 5개 클라이언트(strategy: 1 param: 42)  푸시 작업 보내기 완료(PushID: 260 TaskID: 258)부터 5개 클라이언트
-
-## <a name="client-logs"></a>클라이언트 로그
+### <a name="client-logs"></a>클라이언트 로그
 
 사이트 서버의 정보가 있으면 클라이언트 로그를 확인합니다. 기본적으로 클라이언트 로그는 C:\Windows\CCM\Logs에 있습니다.
 
 **CcmNotificationAgent.log**를 확인합니다. 다음 항목과 같은 로그를 찾을 수 있습니다.  
 
-- **오류! 책갈피가 정의되지 않음**+PFNjcmlwdEhhc2ggU2NyaXB0SGFzaEFsZz0nU0hBMjU2Jz42YzZmNDY0OGYzZjU3M2MyNTQyNWZiNT   g2ZDVjYTIwNzRjNmViZmQ1NTg5MDZlMWI5NDRmYTEzNmFiMDE0ZGNjPC9TY3JpcHRIYXNoPjxTY3Jp   cHRQYXJhbWV0ZXJzPjxTY3JpcHRQYXJhbWV0ZXIgUGFyYW1ldGVyR3JvdXBHdWlkPSIiIFBhcmFtZX   Rlckdyb3VwTmFtZT0iUEdfIiBQYXJhbWV0ZXJOYW1lPSJzZWxlY3QiIFBhcmFtZXRlckRhdGFUeXBlP   SJTeXN0ZW0uU3RyaW5nIiBQYXJhbWV0ZXJWaXNpYmlsaXR5PSIwIiBQYXJhbWV0ZXJUeXBlPSIwIiBQ   YXJhbWV0ZXJWYWx1ZT0iRGV2aWNlI2tEZXZpY2UjY05hbWUja1N0cmluZyNjTWFudWZhY3R1cmVyI2tTd   HJpbmcjY1ZlcnNpb24ja1N0cmluZyNjUmVsZWFzZURhdGUja1N0cmluZyNjU2VyaWFsTnVtYmVyI2tTdH   JpbmcjY0J1aWxkTnVtYmVyI2tTdHJpbmcjY1NNQklPU0JJT1NWZXJzaW9uI2tTdHJpbmciLz48U2NyaXB0   UGFyYW1ldGVyIFBhcmFtZXRlckdyb3VwR3VpZD0iIiBQYXJhbWV0ZXJHcm91cE5hbWU9IlBHXyIgUGFyYW   1ldGVyTmFtZT0id21pcXVlcnkiIFBhcmFtZXRlckRhdGFUeXBlPSJTeXN0ZW0uU3RyaW5nIiBQYXJhbWV0ZX   JWaXNpYmlsaXR5PSIwIiBQYXJhbWV0ZXJUeXBlPSIwIiBQYXJhbWV0ZXJWYWx1ZT0iU0VMRUNUI3NOYW1lI2N   NYW51ZmFjdHVyZXIjY1ZlcnNpb24jY1JlbGVhc2VEYXRlI2NTZXJpYWxOdW1iZXIjY0J1aWxkTnVtYmVyI2   NTTUJJT1NCSU9TVmVyc2lvbiNzRlJPTSNzV2luMzJfQmlvcyIvPjwvU2NyaXB0UGFyYW1ldGVycz48UGFyYW   1ldGVyR3JvdXBIYXNoIFBhcmFtZXRlckhhc2hBbGc9J1NIQTI1NicOTE5NmEwNzNlOTljY2U4MzEyMWE3ZmFi   ODE5N2M4M2QxMjhjNDRmNTdlMWI0NGU1NWQwNmU4YTA5NGI5ZGRkNTwvUGFyYW1ldGVyR3JvdXBIYXNoPjwvU   2NyaXB0Q29udGVudD4=-
+<pre><code lang="Log"><b>Error! Bookmark not defined.</b>+PFNjcmlwdEhhc2ggU2NyaXB0SGFzaEFsZz0nU0hBMjU2Jz42YzZmNDY0OGYzZjU3M2MyNTQyNWZiNT
+g2ZDVjYTIwNzRjNmViZmQ1NTg5MDZlMWI5NDRmYTEzNmFiMDE0ZGNjPC9TY3JpcHRIYXNoPjxTY3Jp (truncated log entry)
+</code></pre>
 
 **TaskID**에 대한 **Scripts.log**를 확인합니다. 다음 예제에서는 **Task ID {F8C7C37F-B42B-4C0A-B050-2BB44DF1098A}** 가 표시됩니다.
 
-``` Log
-Sending script state message: 7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14 Scripts 7/3/2018 11:44:47 AM 5036 (0x13AC)
-State message: Task Id {F8C7C37F-B42B-4C0A-B050-2BB44DF1098A} Scripts 7/3/2018 11:44:47 AM 5036 (0x13AC)
-```
+<pre><code lang="Log">Sending script state message: 7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14
+State message: Task Id <b>{F8C7C37F-B42B-4C0A-B050-2BB44DF1098A}</b>
+</code></pre>
 
-**StateMessage.log**를 확인합니다. 이 예제에서 **TaskID**는 &lt;Param> 옆에 있는 메시지의 아래쪽에 있습니다. 아래와 유사한 줄이 표시됩니다.
+**StateMessage.log**를 확인합니다. 이 예제에서 **TaskID**는 \<Param> 옆에 있는 메시지의 아래쪽에 있습니다. 아래와 유사한 줄이 표시됩니다.
 
 ``` XML
 StateMessage body: <?xml version="1.0" encoding="UTF-16"?>
@@ -75,16 +176,13 @@ StateMessage body: <?xml version="1.0" encoding="UTF-16"?>
 </ReportDetails></ReportHeader><ReportBody><StateMessage MessageTime="20180703184447.517000+000"><Topic ID="7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14" Type="9003" IDType="0" User="" UserSID=""/><State ID="1" Criticality="0"/>
 <StateDetails Type="1"><![CDATA["PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAdQB0AGYALQAxADYAIgA/AD4APAByAGUAcwB1AGwAdAAgAFIAZQBzAHUAbAB0AEMAbwBkAGUAPQAiADAAIgA+ADwAZQAgAE4AYQBtAGUAPQAiAEkAbgB0AGUAbAAoAFIAKQAgAFgAZQBvAG4AKABSACkAIABDAFAAVQAgAEUANQAtADIANgA3ADMAIAB2ADQAIABAACAAMgAuADMAMABHAEgAegAiACAATQBhAG4AdQBmAGEAYwB0AHUAcgBlAHIAPQAiAEEAbQBlAHIAaQBjAGEAbgAgAE0AZQBnAGEAdAByAGUAbgBkAHMAIABJAG4AYwAuACIAIABWAGUAcgBzAGkAbwBuAD0AIgBWAFIAVABVAEEATAAgAC0AIAA2ADAAMAAxADcAMAAyACIAIABSAGUAbABlAGEAcwBlAEQAYQB0AGUAPQAiADIAMAAxADcALQAwADYALQAwADIAIAAwADAAOgAwADAAOgAwADAAIgAgAFMAZQByAGkAYQBsAE4AdQBtAGIAZQByAD0AIgAwADAAMAAwAC0AMAAwADEAOAAtADMANgA4ADIALQA0ADcAMAA4AC0ANwA2ADQAMAAtADcANgAwADAALQAzADMAIgAgAFMATQBCAEkATwBTAEIASQBPAFMAVgBlAHIAcwBpAG8AbgA9ACIAMAA5ADAAMAAwADcAIAAiACAALwA+ADwALwByAGUAcwB1AGwAdAA+AA=="~~]]></StateDetails><UserParameters Flags="0" Count="2">
 <Param>{F8C7C37F-B42B-4C0A-B050-2BB44DF1098A}</Param><Param>0</Param></UserParameters></StateMessage></ReportBody></Report>
-StateMessage 7/3/2018 11:44:47 AM 5036 (0x13AC)
+
 Successfully forwarded State Messages to the MP StateMessage 7/3/2018 11:44:47 AM 5036 (0x13AC)
 ```
 
-> [!NOTE]
-> StateSys.log에 포함된 위의 로그 항목은 이 레지스트리 키를 수정하여 수행할 수 있는 SMS_STATE_SYSTEM 구성 요소에 대해 자세한 정보 로깅을 사용하도록 설정하는 경우에만 표시됩니다. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_STATE_SYSTEM\Verbose logging = 1(기본값 0)
+### <a name="review-messages-on-the-site-server"></a>사이트 서버에서 메시지 검토
 
-## <a name="review-messages-on-the-site-server"></a>사이트 서버에서 메시지 검토
-
-**statesys.log**를 열어 메시지가 수신되고 처리되는지 확인합니다. 이 예제에서 **TaskID**는 &lt;Param> 옆에 있는 메시지의 아래쪽에 있습니다.
+**statesys.log**를 열어 메시지가 수신되고 처리되는지 확인합니다. 이 예제에서 **TaskID**는 \<Param> 옆에 있는 메시지의 아래쪽에 있습니다. 이 로그 항목을 확인하려면 SMS_STATE_SYSTEM 구성 요소에서 [자세한 정보 로깅](/sccm/core/plan-design/hierarchy/about-log-files#bkmk_logoptions)을 사용하도록 설정해야 합니다.  
 
 ``` XML
 CMessageProcessor - the cmdline to DB exec dbo.spProcessStateReport N'?<?xml version="1.0" encoding="UTF-
@@ -110,6 +208,13 @@ CMessageProcessor - the cmdline to DB exec dbo.spProcessStateReport N'?<?xml ver
 ``` SQL
 select * from vSMS_CMPivotStatus where TaskID='{F8C7C37F-B42B-4C0A-B050-2BB44DF1098A}'
 ```
+
+>[!NOTE]
+>버전 1810 이상을 사용하는 클라이언트의 경우, 출력이 80KB보다 크지 않는 한 상태 메시지가 사용되지 않습니다. 이 사례에서 CMPivot의 문제를 해결할 때 자세한 정보를 확인하려면 MP 및 사이트 서버의 SMS_MESSAGE_PROCESSING_ENGINE에서 자세한 정보 로깅을 사용하도록 설정하세요. 자세한 정보 로깅을 사용하도록 설정하는 방법에 대한 자세한 정보는 [사이트 서버 로깅 옵션](/sccm/core/plan-design/hierarchy/about-log-files#bkmk_reg-site)을 참조하세요.
+> 
+> 문제를 해결하려면 다음 로그를 사용하세요.
+> - MP_Relay.log
+> - SMS_MESSAGE_PROCESSING_ENGINE.log
 
 ## <a name="next-steps"></a>다음 단계
 

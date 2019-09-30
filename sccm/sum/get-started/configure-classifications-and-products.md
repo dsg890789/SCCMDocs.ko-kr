@@ -5,18 +5,18 @@ description: 다음 단계에 따라 Configuration Manager 콘솔에서 동기�
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 09/25/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0aba3ab65ffe35c4d303f5f957507c43a4523b9
-ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
+ms.openlocfilehash: 2edf117f27eda3ee3c9e587edb9f69c8d84bf5dc
+ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69974761"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71311583"
 ---
 # <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -72,6 +72,58 @@ ms.locfileid: "69974761"
     > - **Windows 10 버전 1903 이상** 제품이 동기화에 추가됩니다.
     > - **Windows 10** 제품을 포함하고 있는 [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates#bkmk_adr-process)은 **Windows 10 버전 1903 이상**을 포함하도록 업데이트됩니다.
     > - [서비스 플랜](/sccm/osd/deploy-use/manage-windows-as-a-service#servicing-plan-workflow)은 **Windows 10 버전 1903 이상** 제품을 포함하도록 업데이트됩니다.
+
+## <a name="bkmk_WIfB"></a>Windows 참가자 프로그램
+<!--3556023-->
+9 월 2019 부터는 Configuration Manager를 사용 하 여 Windows Insider Preview 빌드를 실행 하는 장치를 서비스 하 고 업데이트할 수 있습니다. 이러한 변화는 일반적인 프로세스를 변경 하거나 비즈니스 Windows 업데이트를 사용 하도록 설정 하지 않고도 이러한 장치를 관리할 수 있음을 의미 합니다. Windows Insider Preview 빌드의 기능 업데이트 및 누적 업데이트는 다른 Windows 10 업데이트 또는 업그레이드와 마찬가지로 Configuration Manager에 다운로드할 수 있습니다. 자세한 내용은 [WSUS에 시험판 Windows 10 기능 업데이트 게시](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054) 블로그 게시물을 참조 하세요.
+
+Configuration Manager의 Windows 참가자 지원에 대 한 자세한 내용은 [windows 10 지원](/sccm/core/plan-design/configs/support-for-windows-10bkmk_WIfB-support)을 참조 하세요.
+
+### <a name="prerequisites"></a>필수 구성 요소
+
+- [소프트웨어 업데이트 관리](/sccm/sum/plan-design/plan-for-software-updates)를 위해 구성 된 Configuration Manager 버전 1906 이상
+- [Windows Insider preview 빌드](https://insider.windows.com/en-us/how-to-pc/)를 실행 하는 windows 10 장치입니다.<!--the direct page link doesn't work without a locale :(-->
+- Windows 참가자 장치를 포함 하는 컬렉션입니다.
+
+
+### <a name="enable-windows-insider-upgrades-and-updates"></a>Windows 참가자 업그레이드 및 업데이트 사용
+
+Windows 참가자 업그레이드 및 업데이트에 대해 제품 및 분류를 사용 하도록 설정 해야 합니다. Windows 참가자의 기능 업데이트는 **Windows 참가자 시험판** 제품 아래에 있습니다. 그러나 Windows 참가자에 대 한 누적 업데이트 및 기타 업데이트는 **windows 10 버전 1903 이상의**제품 아래에 있습니다.
+
+1. **Configuration Manager** 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동합니다.
+2. 중앙 관리 사이트나 독립 실행형 기본 사이트를 선택합니다.  
+3. **홈** 탭의 **설정** 그룹에서 **사이트 구성 요소 구성**과 **소프트웨어 업데이트 지점**을 차례로 클릭합니다.
+4. **제품** 탭에서 동기화를 위해 다음 제품을 선택 했는지 확인 합니다.
+    - Windows 참가자 시험판
+    - Windows 10 버전 1903 이상​
+5. **분류** 탭에서 동기화를 위해 다음 분류가 선택 되어 있는지 확인 합니다.
+    - 업그레이드
+    - 보안 업데이트
+    - 업데이트 (옵션)
+6. **확인**을 클릭하여 **소프트웨어 업데이트 지점 구성 요소 속성**을 닫습니다.
+
+### <a name="upgrading-windows-insider-devices"></a>Windows 참가자 장치 업그레이드
+
+Windows 참가자에 대 한 업그레이드가 동기화 되 면 **소프트웨어 라이브러리** > **windows 10 서비스** > **모든 windows 10 업데이트**에서 볼 수 있습니다.
+
+![Windows 10 서비스에 대 한 windows 참가자 기능 업데이트](media/3556023-windows-insiders-pre-release-feature-update.png)
+
+다른 업그레이드와 마찬가지로 Windows 참가자 용 기능 업데이트를 대상 컬렉션에 배포 합니다. 그러나 이러한 기능 업데이트를 배포 하는 경우 다음 항목을 염두에 두어야 합니다.
+
+- 이러한 업그레이드는 아키텍처, 버전 및 언어가 일치 하는 모든 Windows 10 클라이언트 1903 이전 버전에 적용할 수 있습니다.
+- 사용 조건이 있으므로 배포에서 설치를 위해 약관에 동의 해야 합니다.
+- [클라이언트 설정에서 스레드 우선 순위](/sccm/core/clients/deploy/about-client-settings#bkmk_thread-priority)를 사용 하는 것이 좋습니다.
+- 동적 업데이트는 최신 누적 업데이트를 포함 하 여 Microsoft 업데이트에서 직접 중요 업데이트를 자동으로 설치 합니다. 이 동작은 Windows 10 버전 1903에 대 한 기능 업데이트에서 시작 되었습니다. 
+  - 클라이언트 설정 또는 [setupconfig 파일](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options)을 사용 하 여 [동적 업데이트를 명시적으로 사용 하지 않도록 설정할](/sccm/core/clients/deploy/about-client-settings#bkmk_du) 수 있습니다. 
+  - 자세한 내용은 [Windows 10 동적 업데이트](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847) 블로그 게시물을 참조 하세요.
+
+업그레이드를 배포 하는 방법에 대 한 자세한 내용은 [Windows as a Service 관리](/sccm/osd/deploy-use/manage-windows-as-a-service)를 참조 하세요.
+
+
+### <a name="keeping-insider-devices-up-to-date"></a>Insider 장치를 최신 상태로 유지
+
+Windows 참가자에 대 한 누적 업데이트는 WSUS 및 Configuration Manager 확장에 사용할 수 있습니다. 이러한 누적 업데이트는 Windows 10 버전 1903 누적 업데이트와 유사한 빈도로 릴리스됩니다. Windows 참가자 누적 업데이트는 **windows 10 버전 1903 이상** 제품 범주에 있으며 **보안 업데이트** 또는 **업데이트로**분류 됩니다. [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates) 또는 [단계적 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)를 사용 하는 등의 일반 소프트웨어 업데이트 프로세스를 사용 하 여 Windows 참가자에 대 한 누적 업데이트를 배포할 수 있습니다.
+
 
 ## <a name="next-steps"></a>다음 단계
 

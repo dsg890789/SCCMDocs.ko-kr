@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ed24e1f7089b7b8078c4cfcfed021bc1bac9346
-ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
+ms.openlocfilehash: 450b8a930fa04e88db5d6bf9ff2516cb31dff92a
+ms.sourcegitcommit: 013596de802ac0eb416118169ad049733b5a63e5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70902989"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71198253"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -393,7 +393,7 @@ MessageId 40805: &lt;UserName> 사용자는 &lt;Collection-ID> 컬렉션에서 &
 
 - 7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14는 CMPivot에 대한 Script-Guid입니다.
 - Script-Hash는 클라이언트의 scripts.log 파일에서 확인할 수 있습니다.
-- 클라이언트의 스크립트 점수에 저장된 해시를 확인할 수도 있습니다. 클라이언트의 파일 이름은 &lt;Script-Guid>_&lt;Script-Hash>입니다.
+- 클라이언트의 스크립트 저장소에 저장된 해시를 확인할 수도 있습니다. 클라이언트의 파일 이름은 &lt;Script-Guid>_&lt;Script-Hash>입니다.
     - 예제 파일 이름: C:\Windows\CCM\ScriptStore\7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14_abc1d23e45678901fabc123d456ce789fa1b2cd3e456789123fab4c56789d0123.ps
    
 

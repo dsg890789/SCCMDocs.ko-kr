@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b3c3f52f15ba4d61a589833e43144ce5ecb6de0
-ms.sourcegitcommit: b62de6c9cb1bc3e4c9ea5ab5ed3355d83e3a59bc
+ms.openlocfilehash: c5dadb6400ad76947ce7ace3228b6f7d95cedc17
+ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894203"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71311562"
 ---
 # <a name="how-to-monitor-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 모니터링하는 방법
 
@@ -31,7 +31,7 @@ Configuration Manager에서는 다음과 같은 정보 유형을 클라이언트
 
 - **클라이언트 온라인 상태**: 사이트는 디바이스가 할당된 관리 지점에 연결된 경우 **온라인** 상태로 간주합니다. 클라이언트가 온라인 상태인지 여부를 나타내기 위해 관리 지점에 ping과 유사한 메시지를 보냅니다. 관리 지점에서 5분 이내에 메시지를 받지 못하면 사이트는 클라이언트를 **오프라인** 상태로 간주합니다.  
 
-- **클라이언트 활동**: 사이트는 클라이언트가 지난 7일 동안 Configuration Manager와 통신한 경우 **활성** 상태로 간주합니다. 사이트는 클라이언트가 지난 7일 동안 다음 작업의 완료를 요청하지 않은 경우 **비활성** 상태로 간주합니다.  
+- **클라이언트 활동**: 사이트는 클라이언트가 지난 7일 동안 Configuration Manager와 통신한 경우 **활성** 상태로 간주합니다. 사이트는 클라이언트가 지난 7일 동안 다음 작업이 완료되지 않은 경우 **비활성** 상태로 간주합니다.  
 
     - 정책 업데이트를 요청함  
     - 하트비트 메시지를 전송함  

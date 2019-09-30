@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2835ac13f9ffc2aa7a36ebc9669fb62cccc1257
-ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
+ms.openlocfilehash: 790fc7d0d9df0d88983671be7cba290393016de0
+ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70738185"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71311523"
 ---
 # <a name="client-notification-in-configuration-manager"></a>Configuration Manager의 클라이언트 알림
 
@@ -70,6 +70,7 @@ ms.locfileid: "70738185"
 #### <a name="permissions"></a>사용 권한
 이 작업에는 [스크립트 실행](#run-script) 작업과 동일한 권한이 필요합니다. 
 
+버전 1906부터 **컬렉션** 개체에서 **CMPivot 실행** 권한을 사용할 수 있습니다.
 
 
 ## <a name="client-notification"></a>클라이언트 알림

@@ -2,7 +2,7 @@
 title: 랩 설정
 titleSuffix: Configuration Manager
 description: 시뮬레이트된 실제 작업을 사용하여 Configuration Manager를 평가하기 위한 랩을 설정합니다.
-ms.date: 09/21/2017
+ms.date: 09/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,18 +11,21 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 107eb6bfa7f373a0ad13dc687fd373dfcae22d2d
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: cb1a527a96bcf068253f7832d67a4ee650330e49
+ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70379366"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71311580"
 ---
-# <a name="set-up-your-system-center-configuration-manager-lab"></a>System Center Configuration Manager 랩 설정
+# <a name="set-up-a-configuration-manager-lab"></a>Configuration Manager 랩 설정
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 이 항목의 지침을 따라 시뮬레이트된 실제 작업을 사용하여 Configuration Manager 평가를 위해 랩을 설정할 수 있습니다.  
+
+> [!NOTE]
+> Microsoft는 Configuration Manager 평가 버전을 사용하여 이 랩의 미리 구성된 버전을 제공합니다. 자세한 정보는 [Windows 및 Office 배포 및 관리 랩 키트](https://docs.microsoft.com/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab)를 참조하세요. 
 
 ##  <a name="BKMK_LabCore"></a> 핵심 구성 요소  
  System Center Configuration Manager에 대해 환경을 설정하려면 일부 핵심 구성 요소가 Configuration Manager 설치를 지원해야 합니다.    
