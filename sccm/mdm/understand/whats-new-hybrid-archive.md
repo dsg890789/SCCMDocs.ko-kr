@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21dc3376212505b15078daddbe9dfb0716486c64
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 006580a7ae4965ab4662ae02bee13ed9796697f8
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70379023"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826252"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
 
@@ -69,7 +69,7 @@ ms.locfileid: "70379023"
 
   - 분판 회사 포털 탭 헤더는 IT에서 정의한 브랜딩으로 색이 지정 됩니다.
   - App **앱** 탭에서 **추천 앱** 및 **모든 앱** 단추가 업데이트 됩니다.
-  - 검색: **앱** 탭에서 **검색** 단추는 부동 작업 단추입니다.
+  - 조건을 **앱** 탭에서 **검색** 단추는 부동 작업 단추입니다.
   - 앱 탐색: **모든 앱** 보기에는 쉽게 탐색할 수 있도록 **추천**, **전체**및 **범주의** 탭 보기가 표시 됩니다.
   - 지원은 가독성 향상을 위해 **내 장치** 및 **IT 담당자** 탭이 업데이트 됩니다.
 
@@ -537,7 +537,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능  
  2016년 5월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
-- **MAM SDK: PIN 길이 구성 지원**
+- **MAM SDK: 지원 PIN 길이 구성 @ no__t-0
 
   이제 디바이스 PIN과 유사한 PIN 길이를 MAM 앱에 지정할 수 있습니다. 이 경우 최종 사용자가 설정된 새로운 제한 사항을 준수해야 합니다. PIN 화면이 더 긴 입력을 수용하기 위해 약간 수정되었습니다. 자세한 내용은 [Android에 대한 MAM 정책 설정](https://docs.microsoft.com/intune/deploy-use/android-mam-policy-settings) 및 [iOS에 대한 MAM 정책 설정](https://docs.microsoft.com/intune/deploy-use/ios-mam-policy-settings)을 참조하세요.  
 
@@ -547,13 +547,13 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **MAM 정책을 사용한 관리를 위해 제공되는 새 앱**
 
-  이제 Intune에 등록하지 않은 디바이스에서 Android용 Microsoft Word, Excel 및 PowerPoint 앱을 MAM 정책과 연결할 수 있습니다. 지원되는 앱의 전체 목록을 보려면 [Microsoft Intune 애플리케이션 파트너](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) 페이지의 Microsoft Intune 모바일 애플리케이션 갤러리로 이동합니다.  
+  이제 Intune에 등록하지 않은 디바이스에서 Android용 Microsoft Word, Excel 및 PowerPoint 앱을 MAM 정책과 연결할 수 있습니다. 지원되는 앱의 전체 목록을 보려면 [Microsoft Intune 애플리케이션 파트너](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) 페이지의 Microsoft Intune 모바일 애플리케이션 갤러리로 이동합니다.  
 
-- **Android 회사 포털 앱: 최종 사용자 알림 메시지**
+- **Android 회사 포털 앱: 최종 사용자 알림 메시지 @ no__t-0
 
   최종 사용자가 디바이스를 등록하거나 회사 포털에서 제거하면 Android 회사 포털 앱의 알림 메시지가 나타납니다.  
 
-- **웹 사이트 회사 포털: 최종 사용자에 게 자세한 정보를 제공 하는 장치 식별 배너**
+- **Company 포털 웹 사이트: 최종 사용자에 게 더 많은 정보를 제공 하는 장치 식별 배너 @ no__t-0
 
   이제 최종 사용자가 회사 포털 웹 사이트를 사용할 때 자신이 선택한 디바이스를 더 쉽게 식별할 수 있습니다. 잘못된 디바이스를 선택한 경우 홈페이지 배너의 **여기를 탭하세요.** 링크를 탭하여 올바른 디바이스를 선택할 수 있습니다.  
 
