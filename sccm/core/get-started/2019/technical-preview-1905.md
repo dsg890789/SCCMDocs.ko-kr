@@ -11,12 +11,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e2a0770e65f7e888fbee1fa1a90dd9d6fd4926
-ms.sourcegitcommit: d1df13fc95a1f1540177c294555d9be26161b9cb
+ROBOTS: NOINDEX
+ms.openlocfilehash: 58121c7b1307c15e638f5ab44bd8929f476d2b24
+ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975278"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401628"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1905"></a>Configuration Manager 기술 미리 보기 버전 1905의 기능
 

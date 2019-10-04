@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfb37b5e3f84feb70eea7120ab503a5c8e76b00d
-ms.sourcegitcommit: 05a984cf94ea43c392701a389c4eb20bd692847c
+ms.openlocfilehash: 3fa15a3bcd98c39f2b103793d9cc24ccdd2efd90
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70922723"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826136"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -56,7 +56,7 @@ ms.locfileid: "70922723"
 |이전 버전의 Software Center입니다.<br><br>새 소프트웨어 센터에 대한 자세한 내용은 [애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management##bkmk_userex)을 참조하세요.|2016년 12월 13일|1802 버전|
 |Configuration Manager를 사용한 VHD(가상 하드 디스크) 관리 <br><br>이 사용 중단에은 새 VHD를 만들거나 작업 순서를 사용하여 VHD를 관리하는 옵션의 제거 및 Configuration Manager 콘솔에서 가상 하드 디스크 노드의 제거가 포함됩니다. <br><br>기존 VHD는 삭제되지는 않지만 Configuration Manager 콘솔 내에서 더 이상 액세스할 수 없습니다.  |2017년 1월 6일 |버전 1710|
 |작업 순서: <br /> - 동적 디스크로 변환 <br /> - 배포 도구 설치 |2016년 11월 18일|버전 1710|
-|System Center Configuration Manager 업그레이드 평가 도구. <br><br>업그레이드 평가 도구를 사용하려면 System Center Configuration Manager 및 ACT(Application Compatibility Toolkit) 6.x가 둘 다 필요합니다. ACT의 최종 버전은 Windows 10 v1511 ADK에 함께 제공되었습니다. ACT에 대한 추가 업데이트는 없으므로 업그레이드 평가 도구에 대한 지원은 중단됩니다. <br><br>업그레이드 평가 도구는 [Upgrade Readiness](/sccm/core/clients/manage/upgrade/upgrade-analytics) 기능으로 대체됩니다. 2016년 9월 12일에 사용 고지 사항이 [UAT에 대한 다운로드 페이지](https://www.microsoft.com/download/details.aspx?id=37145)에 추가되었습니다. | 2016년 9월 12일  | 2017년 7월 11일 |
+|System Center Configuration Manager 업그레이드 평가 도구. <br><br>업그레이드 평가 도구를 사용하려면 System Center Configuration Manager 및 ACT(Application Compatibility Toolkit) 6.x가 둘 다 필요합니다. ACT의 최종 버전은 Windows 10 v1511 ADK에 함께 제공되었습니다. ACT에 대한 추가 업데이트는 없으므로 업그레이드 평가 도구에 대한 지원은 중단됩니다. <br><br>업그레이드 평가 도구는 [Upgrade Readiness](/sccm/core/clients/manage/upgrade/upgrade-analytics) 기능으로 대체됩니다. 2016년 9월 12일에 사용 고지 사항이 [UAT에 대한 다운로드 페이지](https://www.microsoft.com/en-us/software-download/windows10)에 추가되었습니다. | 2016년 9월 12일  | 2017년 7월 11일 |
 |NLB(네트워크 부하 분산) 클러스터 사용 소프트웨어 업데이트 지점 | 2016년 2월 27일 | 버전 1702 |
 |작업 순서: <br /> - OSDPreserveDriveLetter  <br /><br /> 기본적으로 운영 체제 배포 시 Windows 설치 프로그램이 이제 사용하기에 가장 적합한 드라이브 문자(일반적으로 C:)를 결정합니다. 다른 드라이브를 사용하도록 지정하려면 운영 체제 적용 작업 순서 단계에서 위치를 변경할 수 있습니다. **이 운영 체제를 적용할 위치를 선택하십시오** 설정으로 이동합니다. **특정 논리적 드라이브 문자**를 선택하고 사용하려는 드라이브를 선택합니다. |2016년 6월 20일 |버전 1606 |
 |NAP(네트워크 액세스 보호) - System Center 2012 Configuration Manager에 있음|2015년 7월 10일|버전 1511|  

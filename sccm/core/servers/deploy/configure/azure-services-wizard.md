@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30e1804ea1d2e02f5c2d6fbc4b1243c8dccaa775
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
+ms.openlocfilehash: 5da81e4208e1659ce927b0a55066599d9670ad37
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712627"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826200"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -225,7 +225,7 @@ Azure 서비스 마법사의 앱 페이지에서 **네이티브 클라이언트 
 
 - **클라우드 관리** 서비스, **검색** 페이지: [Azure AD 사용자 검색 구성](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)  
 
-- **Log Analytics 커넥터** 서비스, **구성** 페이지: [Log Analytics에 연결 구성](/sccm/core/clients/manage/sync-data-log-analytics#configure-the-connection-to-log-analytics)  
+- **Log Analytics 커넥터** 서비스, **구성** 페이지: [Log Analytics에 연결 구성](/sccm/core/clients/manage/sync-data-log-analytics#grant-configuration-manager-with-permissions-to-log-analytics)  
 
 - **업그레이드 준비 커넥터** 서비스, **구성** 페이지: [Azure 마법사를 사용하여 연결 만들기](/sccm/core/clients/manage/upgrade/upgrade-analytics#use-the-azure-wizard-to-create-the-connection)  
 

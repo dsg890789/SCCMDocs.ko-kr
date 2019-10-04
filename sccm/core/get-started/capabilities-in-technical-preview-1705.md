@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50a85f9639cb2f284a431081caea10e71f92b9f3
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.openlocfilehash: e61489373c7e5c739485f1a5162f203d883a4835
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67551136"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826098"
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
 
@@ -266,7 +266,7 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 -   Configuration Manager는 [Log Analytics](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 또는 [업그레이드 준비](/sccm/core/clients/manage/upgrade/upgrade-analytics)와 같은 기능을 위해 OMS에 연결합니다.
 
 ### <a name="prerequisites-for-the-oms-connector"></a>OMS 커넥터에 대한 필수 구성 요소
-OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분기 버전 1702에 대해 문서화](/sccm/core/clients/manage/sync-data-log-analytics#prerequisites-for-the-log-analytics-connector)된 내용에서 달라졌습니다. 이 정보는 여기에도 설명되어 있습니다.  
+OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분기 버전 1702에 대해 문서화](/sccm/core/clients/manage/sync-data-log-analytics)된 내용에서 달라졌습니다. 이 정보는 여기에도 설명되어 있습니다.  
 
 -   OMS에 대한 Configuration Manager 사용 권한 제공
 
@@ -281,7 +281,7 @@ OMS에 대한 연결을 구성하기 위한 필수 구성 요소는 [혀냊 분�
 
 2.  **Azure 서비스** 페이지에서 Operation Management Suite 클라우드 서비스를 선택합니다. **Azure 서비스 이름**에 이름을 입력하고 원하는 경우 선택적 설명을 입력한 후 **다음**을 클릭합니다.
 
-3.  **앱** 페이지에서 Azure 환경(기술 미리 보기는 공용 클라우드만 지원함)을 지정합니다. 그런 후 **찾아보기**를 클릭하여 서버 앱 창을 엽니다.
+3.  **앱** 페이지에서 Azure 환경(기술 미리 보기는 퍼블릭 클라우드만 지원함)을 지정합니다. 그런 후 **찾아보기**를 클릭하여 서버 앱 창을 엽니다.
 
 4.  웹앱을 선택합니다.
 

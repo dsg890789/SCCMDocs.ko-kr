@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2edf117f27eda3ee3c9e587edb9f69c8d84bf5dc
-ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
+ms.openlocfilehash: 7127229ceef948f4e88365255737fbe3844aa428
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71311583"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826195"
 ---
 # <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -77,14 +77,13 @@ ms.locfileid: "71311583"
 <!--3556023-->
 9 월 2019 부터는 Configuration Manager를 사용 하 여 Windows Insider Preview 빌드를 실행 하는 장치를 서비스 하 고 업데이트할 수 있습니다. 이러한 변화는 일반적인 프로세스를 변경 하거나 비즈니스 Windows 업데이트를 사용 하도록 설정 하지 않고도 이러한 장치를 관리할 수 있음을 의미 합니다. Windows Insider Preview 빌드의 기능 업데이트 및 누적 업데이트는 다른 Windows 10 업데이트 또는 업그레이드와 마찬가지로 Configuration Manager에 다운로드할 수 있습니다. 자세한 내용은 [WSUS에 시험판 Windows 10 기능 업데이트 게시](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054) 블로그 게시물을 참조 하세요.
 
-Configuration Manager의 Windows 참가자 지원에 대 한 자세한 내용은 [windows 10 지원](/sccm/core/plan-design/configs/support-for-windows-10bkmk_WIfB-support)을 참조 하세요.
+Configuration Manager의 Windows 참가자 지원에 대 한 자세한 내용은 [windows 10 지원](/sccm/core/plan-design/configs/support-for-windows-10#bkmk_WIfB-support)을 참조 하세요.
 
 ### <a name="prerequisites"></a>필수 구성 요소
 
 - [소프트웨어 업데이트 관리](/sccm/sum/plan-design/plan-for-software-updates)를 위해 구성 된 Configuration Manager 버전 1906 이상
-- [Windows Insider preview 빌드](https://insider.windows.com/en-us/how-to-pc/)를 실행 하는 windows 10 장치입니다.<!--the direct page link doesn't work without a locale :(-->
+- [Windows Insider preview 빌드](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started)를 실행 하는 windows 10 장치입니다.
 - Windows 참가자 장치를 포함 하는 컬렉션입니다.
-
 
 ### <a name="enable-windows-insider-upgrades-and-updates"></a>Windows 참가자 업그레이드 및 업데이트 사용
 

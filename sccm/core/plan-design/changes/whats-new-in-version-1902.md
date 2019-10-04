@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f3100e9580566b072bed6c8813018876f720eb3
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: af59b3ea1dfefcf0ae0e4919229b77b633819657
+ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338805"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401662"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
@@ -230,11 +230,6 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
 #### <a name="add-a-label-to-the-media"></a>미디어에 레이블 추가
 
 이제 작업 순서 미디어에 레이블을 추가할 수 있습니다. 이 레이블을 통해 미디어를 만든 후 미디어를 보다 잘 식별할 수 있습니다. **작업 순서 미디어 만들기 마법사**에서 **미디어 레이블**을 지정합니다.
-
-#### <a name="include-autoruninf-file-on-media"></a>미디어에 autorun.inf 파일 포함
-
-<!-- 4090666 -->
-작업 순서 미디어를 만들 때 Configuration Manager는 autorun.inf 파일을 추가하지 않습니다. 이 파일은 일반적으로 맬웨어 방지 제품에서 차단됩니다. 시나리오에 필요한 경우 파일이 포함될 수 있습니다.
 
 ### <a name="import-a-single-index-of-an-os-image"></a>OS 이미지의 단일 인덱스 가져오기
 

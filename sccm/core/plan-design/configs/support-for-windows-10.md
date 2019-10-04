@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf8c57a6322c36e0bfe28f76fafb6f3e58640397
-ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
+ms.openlocfilehash: 51b234070f92135444e00a8eee672bdc4aa70bf1
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71311633"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826219"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
@@ -80,11 +80,11 @@ Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩�
 > [!NOTE]  
 > Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 -->
 
-### Windows 참가자를 위한 <a name="bkmk_WIfB-support"></a> 지원 
+### Windows 참가자를 위한 <a name="bkmk_WIfB-support"></a> 지원
 
 Configuration Manager 버전 1906부터는 [Windows 참가자](/sccm/sum/get-started/configure-classifications-and-products#bkmk_WIfB) 빌드를 업데이트하고 서비스할 수 있습니다. 이 기능은 고객의 편의를 위해 제공됩니다. 이 기능이 작동하는 동안 최선을 다해 적합한 지원을 제공합니다. 기능이 작동 중단된 경우 Configuration Manager가 이 기능에 대한 핫픽스를 발급하지 못할 수 있습니다.  
-- Windows 참가자 미리 보기 빌드 지원에 대한 자세한 정보는 [지원을 받는 방법](https://insider.windows.com/en-us/how-to-overview/#how-to-get-support)을 참조하세요. <!--the direct page/anchor doesn't work without a locale :(-->
-- Windows 참가자에 대한 피드백을 제공하려면 [피드백 허브](https://insider.windows.com/en-us/how-to-feedback/)를 사용하세요. <!--the direct page link doesn't work without a locale :(-->
+
+Windows 참가자에 대한 피드백을 제공하려면 [피드백 허브](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-feedback)를 사용하세요.
 
 ## <a name="windows-10-adk"></a>Windows 10 ADK
 

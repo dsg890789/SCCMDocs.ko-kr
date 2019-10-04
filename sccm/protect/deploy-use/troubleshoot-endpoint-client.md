@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f50562f6390b302f619bbeef273ad1998f316737
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 2d55335eb8e55381cfa5481edf027a54a18f6bda
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70892301"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826164"
 ---
 # <a name="troubleshoot-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
@@ -126,7 +126,7 @@ Windows Defender 또는 Endpoint Protection은 자동으로 Microsoft 업데이�
 
 #### <a name="step-5-manually-install-the-definition-updates"></a>5 단계: 정의 업데이트 수동 설치  
 
-[최신 업데이트를 수동으로 다운로드](https://www.microsoft.com/wdsi/defenderupdates)합니다.  
+[최신 업데이트를 수동으로 다운로드](https://www.microsoft.com/en-us/wdsi/defenderupdates)합니다.  
 
 #### <a name="step-6-contact-microsoft-support"></a>6단계: Microsoft 지원에 문의합니다.  
 

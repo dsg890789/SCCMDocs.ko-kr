@@ -11,12 +11,12 @@ ms.assetid: c5cb5753-5728-4f81-b830-a6fd1a3e105c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 070f7ec6f99a9de89c155e756989fb3b5fa4a594
-ms.sourcegitcommit: 05a984cf94ea43c392701a389c4eb20bd692847c
+ms.openlocfilehash: 55daf45df3216b205dd1242017eb1ddefb128530
+ms.sourcegitcommit: 84a6f31797490eeda73bd4f3656ba27741df3030
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70922731"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71343810"
 ---
 # <a name="delivery-optimization-in-network-cache-in-configuration-manager"></a>Configuration Manager의 배달 최적화 네트워크 내 캐시
 
@@ -31,7 +31,7 @@ ms.locfileid: "70922731"
 이 캐시는 Configuration Manager의 배포 지점 콘텐츠와 분리됩니다. 배포 지점 역할과 동일한 드라이브를 선택하면 콘텐츠를 개별적으로 저장합니다.
 
 > [!Note]  
-> 전송 최적화 네트워크 내 캐시 서버는 아직 개발 중인 Windows Server에 설치된 애플리케이션입니다. 이 기능은 Configuration Manager 콘솔에서 *베타* 레이블로 태그가 지정됩니다.  
+> 전송 최적화 네트워크 내 캐시 서버는 아직 개발 중인 Windows Server에 설치된 애플리케이션입니다.  
 
 
 ## <a name="how-it-works"></a>작동 방식

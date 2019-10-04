@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b887a82afce8cf446494e7b9348a0b8c0718e389
-ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
+ms.openlocfilehash: 33a956bf19a1b14a2190467b2148a3ef4b65e908
+ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70902564"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71826117"
 ---
 # <a name="how-to-upgrade-clients-on-mac-computers-in-configuration-manager"></a>Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
 
@@ -25,7 +25,7 @@ ms.locfileid: "70902564"
 이 문서의 개략적인 단계를 따라 Configuration Manager 애플리케이션을 사용하여 Mac 컴퓨터용 클라이언트를 업그레이드하세요. Mac 클라이언트 설치 파일을 다운로드하고 공유 네트워크 위치나 Mac 컴퓨터의 로컬 폴더에 복사한 후 사용자에게 수동으로 설치하도록 지시할 수 있습니다.  
 
 > [!NOTE]  
-> 이 단계를 수행하기 전에 Mac 컴퓨터가 필수 조건을 충족해야 합니다. [Mac 컴퓨터에 대해 지원되는 운영 체제](/sccm/plan-design/configs/supported-operating-systems-for-clients-and-devices#mac-computers)를 참조하세요.  
+> 이 단계를 수행하기 전에 Mac 컴퓨터가 필수 조건을 충족해야 합니다. [Mac 컴퓨터에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#mac-computers)를 참조하세요.  
 
 ## <a name="download-the-latest-mac-client"></a>최신 Mac 클라이언트 다운로드
 
