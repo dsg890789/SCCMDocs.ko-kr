@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a00da1511c6410088f318fc619bbddc537e20708
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.openlocfilehash: 37143372acdadb6a340c2ee556901f5133683c5f
+ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083260"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401570"
 ---
 # <a name="create-stand-alone-media"></a>독립 실행형 미디어 만들기
 
@@ -141,7 +141,7 @@ Configuration Manager의 독립 실행형 미디어에는 네트워크에 연결
 
         - Configuration Manager는 미디어의 루트에 `MediaLabel.txt`라는 텍스트 파일을 작성합니다. 기본적으로 파일은 텍스트: `label=Configuration Manager`의 한 줄을 포함합니다. 미디어에 대한 레이블을 사용자 지정하는 경우 이 줄은 기본값 대신 사용자 지정 레이블을 사용합니다.  
 
-    - **미디어에 autorun.inf 파일 포함**<!-- 4090666 -->: 버전 1902부터 Configuration Manager는 기본적으로 autorun.inf 파일을 추가하지 않습니다. 이 파일은 일반적으로 맬웨어 방지 제품에서 차단됩니다. Windows의 자동 실행 기능에 대한 자세한 내용은 [자동 실행 가능한 CD-ROM 애플리케이션 만들기](https://docs.microsoft.com/windows/desktop/shell/autoplay)를 참조하세요. 시나리오에 여전히 필요한 경우 이 옵션을 선택하여 해당 파일을 포함합니다.  
+    - **미디어에 autorun.inf 파일 포함**<!-- 4090666 -->: 버전 1906부터 Configuration Manager는 기본적으로 autorun.inf 파일을 추가하지 않습니다. 이 파일은 일반적으로 맬웨어 방지 제품에서 차단됩니다. Windows의 자동 실행 기능에 대한 자세한 내용은 [자동 실행 가능한 CD-ROM 애플리케이션 만들기](https://docs.microsoft.com/windows/desktop/shell/autoplay)를 참조하세요. 시나리오에 여전히 필요한 경우 이 옵션을 선택하여 해당 파일을 포함합니다.  
 
 5. **보안** 페이지에서 다음 옵션을 지정합니다.
 
