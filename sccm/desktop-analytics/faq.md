@@ -2,7 +2,7 @@
 title: 데스크톱 분석 FAQ
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에 대 한 질문과 대답입니다.
-ms.date: 09/05/2019
+ms.date: 10/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,21 +11,21 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e47827c6ad2b52ebb2b9dfabcdc4c61320385bf3
-ms.sourcegitcommit: cb169396acf0d50fedd9f2ae62f7894615c3cce5
+ms.openlocfilehash: 17791a695d2413d867bf5ee212b9e3cfd0837f83
+ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808387"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998986"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
 > [!Note]  
 > 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
-### <a name="can-i-use-desktop-analytics-with-intune-managed-devices"></a>Intune 관리 장치에서 데스크톱 분석을 사용할 수 있나요? 
+### <a name="bkmk_intune"></a>Intune 관리 장치에서 데스크톱 분석을 사용할 수 있나요? 
 
 데스크톱 분석 워크플로에서 이점을 누릴 수 있는 대다수의 고객은 Configuration Manager를 사용 하 여 Windows를 배포할 수 있습니다. Intune 고객은 분석 데이터의 추가 정보를 선호 하며,이를 통해 정보를 공유 하는 방법에 대해 노력 하 고 있습니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "70808387"
 
 요청 시 데이터 새로 고침을 요청 하지 않더라도 매일 한 번 자동으로 모든 데이터가 업데이트 됩니다. 진단 데이터의 요청 시 새로 고침을 트리거할 수 있는 방법은 없습니다. 데스크톱 분석의 다양 한 데이터 형식에 대 한 자세한 내용은 [데이터 대기 시간](/sccm/desktop-analytics/troubleshooting#data-latency)을 참조 하세요.
 
-## <a name="privacy"></a>개인 정보 취급 방침
+## <a name="privacy"></a>개인 정보 보호
 
 ### <a name="can-desktop-analytics-be-used-without-a-direct-client-connection-to-the-microsoft-data-management-service"></a>Microsoft 데이터 관리 서비스에 대 한 직접 클라이언트 연결 없이 데스크톱 분석을 사용할 수 있나요?
 
@@ -127,13 +127,52 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러
 
 예. 현재 Azure Portal에서 [업데이트 준수](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started) 를 사용 하는 경우 2020 년 1 월 이후에도 계속 해 서이 작업을 수행할 수 있습니다.
 
-자세한 내용은 블로그 게시물을 참조 하세요. [사용자 입력 데이터 마이그레이션 "Windows Analytics: "데스크톱 분석](https://techcommunity.microsoft.com/t5/Desktop-Analytics-Blog/Migrate-user-input-data-from-Windows-Analytics-Upgrade-Readiness/ba-p/841744)으로 업그레이드 준비 합니다.
+자세한 내용은 블로그 게시물을 참조 하세요. @no__t--"Windows Analytics에서 사용자 입력 데이터 마이그레이션: 업그레이드 준비 "to Desktop Analytics @ no__t-0입니다.
+
+### <a name="are-there-any-windows-analytics-features-that-arent-available-in-desktop-analytics"></a>데스크톱 분석에서 사용할 수 없는 Windows Analytics 기능이 있나요?
+
+<!-- 3616924 -->
+예, 다음 Windows Analytics 기능이 사용 중지 되거나 데스크톱 분석에서 아직 사용 되지 않습니다.
+
+#### <a name="general"></a>일반
+
+- Configuration Manager 필요 하지 않은 시나리오에 대 한 지원. 예: [Intune 지원](#bkmk_intune).
+- 모든 유효한 Windows 라이선스 및 E3, E5의 라이선스 전제 조건
+- Azure AD 테 넌 트 당 여러 작업 영역에 대 한 지원
+- 사용자 지정 쿼리를 실행 하 고 원시 솔루션 데이터를 내보낼 수 있습니다.
+- 사용자 지정 보고서에 대 한 데이터 모델 설명서
+
+#### <a name="upgrade-readiness"></a>업그레이드 준비
+
+- Internet Explorer 사이트 검색 데이터
+- Office 추가 기능 정보 (현재 [Configuration Manager에서 사용 가능](#bkmk_office))
+- 피드백 허브 정보
+
+#### <a name="update-compliance"></a>업데이트 준수
+
+- 비즈니스에 대 한 Windows 업데이트 지원
+- 배달 최적화 정보
+- Windows 10 장기 서비스 채널 (LTSC)에 대 한 지원
+- Windows Insider reports
+- Windows Defender 상태
+
+> [!Note]
+> 데스크톱 분석에서 사용할 수 없는 기능을 포함 하 여 기존의 모든 업데이트 준수 기능을 Azure Portal의 [업데이트 준수](/windows/deployment/update/update-compliance-get-started) 솔루션에서 계속 사용할 수 있습니다.
+
+#### <a name="device-health"></a>장치 상태
+
+- 드라이버 상태
+- 앱 상태 (배포 계획 외부)
+- 자주 충돌 하는 장치 또는 드라이버에 의해 발생 한 크래시
+- Windows 로그인 상태
+- Windows Information Protection
+- Windows Server에 대 한 지원
 
 ## <a name="other"></a>기타
 
-### <a name="can-i-use-desktop-analytics-for-my-office-365-proplus-upgrades"></a>Office 365 ProPlus 업그레이드에 데스크톱 분석을 사용할 수 있나요?
+### <a name="bkmk_office"></a>Office 365 ProPlus 업그레이드에 데스크톱 분석을 사용할 수 있나요?
 
-아니요, 데스크톱 분석은 Windows에 집중 됩니다. Microsoft는 여러 고객과의 긴밀 한 공동 작업에서 데스크톱 분석을 개발 했습니다. 미리 보기 프로그램을 통해 고객 의견은 데스크톱 분석이 Windows 배포를 안전 하 게 관리 하는 기능을 개선 하는 방법에 대 한 것 이었습니다. 또한 [office 365 ProPlus 준비](/sccm/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) 를 Configuration Manager 및 Intune의 office 관리 도구와 더욱 긴밀 하 게 통합 하고자 했습니다. Microsoft는 데스크톱 분석의 Windows 시나리오에 중점을 두는 동시에 이러한 영역에 대 한 투자를 계속 합니다.
+아니요, 데스크톱 분석은 Windows에 집중 됩니다. Microsoft는 여러 고객과의 긴밀 한 공동 작업에서 데스크톱 분석을 개발 했습니다. 사용자 의견은 데스크톱 분석이 Windows 배포를 안전 하 게 관리 하는 기능을 향상 시키는 방법에 대 한 것입니다. 또한 [office 365 ProPlus의 준비 상태](/sccm/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) 를 Configuration Manager 및 Intune의 office 관리 도구와 긴밀 하 게 통합 하도록 알려 줍니다. Microsoft는 데스크톱 분석의 Windows 시나리오에 중점을 두는 동시에 이러한 영역에 대 한 투자를 계속 합니다.
 
 ### <a name="how-can-i-provide-feedback-about-desktop-analytics"></a>데스크톱 분석에 대 한 피드백을 제공 하려면 어떻게 해야 하나요?
 
