@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 08/30/2019
+ms.date: 09/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5c80836ced76bdf1109c9279bf2068efbbd97f5
-ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
+ms.openlocfilehash: b52a152f24b641d0debfdf39ee6a78cfa2352d66
+ms.sourcegitcommit: 3ecba0573e7b1c99de3291dbeb29a5de432ce647
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70176757"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715879"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -77,11 +77,7 @@ Configuration Manager의 기술 미리 보기 분기는 다음 제품 및 기술
     - SQL Server 2014(서비스 팩 1 이상)
     - SQL Server 2012(서비스 팩 3 이상)  
 
-- 사이트는 최대 10개 클라이언트를 지원하며, 이러한 클라이언트는 다음 버전의 Windows 중 하나를 실행해야 합니다.  
-
-    - Windows 10  
-    - Windows 8.1  
-    - Windows 7  
+- 사이트는 [지원되는 클라이언트 OS 버전](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)을 실행할 수 있는 최대 10개의 클라이언트를 지원합니다.<!-- SCCMDocs#1656 -->
 
 > [!Note]  
 > 이러한 제품이 이 내용에 포함되었다고 해서 해당 지원 주기가 끝난 버전의 지원 연장을 의미하지는 않습니다. Configuration Manager는 지원 주기가 끝난 제품은 지원하지 않습니다. 자세한 내용은 [Microsoft Lifecycle 정책](https://go.microsoft.com/fwlink/p/?LinkId=208270)을 참조하세요.  
@@ -122,14 +118,19 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-19082"></a>Technical Preview 버전 1908.2
+### <a name="technical-preview-version-1909"></a>Technical Preview 버전 1909
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
 
-- [콘솔 연결 개선](/sccm/core/get-started/2019/technical-preview-1908-2#improvements-to-console-connections) <!--4923997-->
-- [멀티캐스트 사용 배포 지점 개선](/sccm/core/get-started/2019/technical-preview-1908-2#bkmk_multicast) <!--3785535-->
-- [CMPivot 엔진에 대한 최적화](/sccm/core/get-started/2019/technical-preview-1908-2#optimizations-to-the-cmpivot-engine) <!--3197353-->
-- [OS 배포 중 키보드 레이아웃 설정](/sccm/core/get-started/2019/technical-preview-1908-2#bkmk_osd) <!--5138936-->
+- [오케스트레이션 그룹](/sccm/core/get-started/2019/technical-preview-1909#bkmk_OGs) <!--3098816-->
+- [BitLocker 관리의 향상된 기능](/sccm/core/get-started/2019/technical-preview-1909#bkmk_bitlocker) <!--3601034-->
+- [온-프레미스 사이트를 확장하고 Microsoft Azure로 마이그레이션](/sccm/core/get-started/2019/technical-preview-1909#bkmk_Azure-migration) <!--3556022-->
+- [추가 CMPivot 엔터티 및 향상된 기능](/sccm/core/get-started/2019/technical-preview-1909#bkmk_CMPivot) <!--5410930-->
+- [인터넷을 통해 주문형으로 작업 순서 다운로드](/sccm/core/get-started/2019/technical-preview-1909#bkmk_dodcmg) <!--3601238-->
+- [Windows 참가자를 위한 지원](/sccm/core/get-started/2019/technical-preview-1909#bkmk_wifb) <!--3556023-->
+- [작업 순서에서 향상된 언어 지원](/sccm/core/get-started/2019/technical-preview-1909#bkmk_osd) <!--5411057-->
+- [Office 365 ProPlus 상태 대시보드](/sccm/core/get-started/2019/technical-preview-1909#bkmk_o365health) <!--4488301-->
+- [작업 순서 디버거의 향상된 기능](/sccm/core/get-started/2019/technical-preview-1909#bkmk_tsdebug) <!-- 5012536, 5012509 -->
 
 > [!Note]  
 > 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
@@ -138,6 +139,13 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 ## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
 
 현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
+
+### <a name="technical-preview-version-19082"></a>Technical Preview 버전 1908.2
+
+- [콘솔 연결 개선](/sccm/core/get-started/2019/technical-preview-1908-2#improvements-to-console-connections) <!--4923997-->
+- [멀티캐스트 사용 배포 지점 개선](/sccm/core/get-started/2019/technical-preview-1908-2#bkmk_multicast) <!--3785535-->
+- [CMPivot 엔진에 대한 최적화](/sccm/core/get-started/2019/technical-preview-1908-2#optimizations-to-the-cmpivot-engine) <!--3197353-->
+- [OS 배포 중 키보드 레이아웃 설정](/sccm/core/get-started/2019/technical-preview-1908-2#bkmk_osd) <!--5138936-->
 
 ### <a name="technical-preview-version-1908"></a>Technical Preview 버전 1908
 

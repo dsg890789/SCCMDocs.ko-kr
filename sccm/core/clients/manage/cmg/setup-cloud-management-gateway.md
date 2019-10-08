@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d9f3d922093319c3bfc9341f8fe5472a198a083
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: b57a4c63da20cefb7b247f99a97dbba0ec91d9e8
+ms.sourcegitcommit: 84a6f31797490eeda73bd4f3656ba27741df3030
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535462"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71343834"
 ---
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
@@ -34,7 +34,7 @@ ms.locfileid: "68535462"
 
 다음 검사 목록을 사용하여 CMG를 만드는 데 필요한 정보 및 필수 구성 요소가 있는지 확인합니다.  
 
-- 사용할 Azure 환경입니다. 예: Azure 공용 클라우드 또는 Azure 미국 정부 클라우드  
+- 사용할 Azure 환경입니다. 예: Azure 퍼블릭 클라우드 또는 Azure 미국 정부 클라우드  
 
 - 디자인에 따라 CMG에 하나 이상의 인증서가 필요합니다. 자세한 내용은 [클라우드 관리 게이트웨이에 대한 인증서](/sccm/core/clients/manage/cmg/certificates-for-cloud-management-gateway)를 참조하세요.  
 
@@ -184,11 +184,14 @@ CMG 및 사이트 시스템 역할을 실행하면 클라이언트는 다음 위
 Configuration Manager 클라이언트는 인트라넷 또는 인터넷에 배치할지를 자동으로 결정합니다. 클라이언트가 도메인 컨트롤러 또는 온-프레미스 관리 지점에 연결할 수 있는 경우 해당 연결 형식을 **현재 인트라넷**으로 설정합니다. 그렇지 않으면, **현재 인터넷**로 전환하고 CMG 서비스의 위치를 사용하여 사이트와 통신합니다.
 
 >[!NOTE]
-> 인트라넷 또는 인터넷에 있는지와 관계없이 클라이언트가 항상 CMG를 사용하도록 강제할 수 있습니다. 이 구성은 테스트 목적 또는 CMG를 적용하려는 원격 사무실의 클라이언트에 유용합니다. 클라이언트에 다음과 같은 레지스트리 키를 설정합니다.
+> 인트라넷 또는 인터넷에 있는지와 관계없이 클라이언트가 항상 CMG를 사용하도록 강제할 수 있습니다. 이 구성은 테스트 목적 또는 항상 CMG를 사용하도록 하려는 클라이언트에 유용합니다. 클라이언트에 다음과 같은 레지스트리 키를 설정합니다.
 >
 > `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCM\Security, ClientAlwaysOnInternet = 1`
 >
 > [CCMALWAYSINF](/sccm/core/clients/deploy/about-client-installation-properties#ccmalwaysinf) 속성을 사용하여 클라이언트 설치 중에 이 설정을 지정할 수도 있습니다.
+>
+> 이 설정은 클라이언트가 경계 그룹 구성이 로컬 리소스를 활용하는 위치로 로밍하는 경우에도 항상 적용됩니다.
+
 
 클라이언트에 CMG를 지정하는 정책이 있는지를 확인하려면 클라이언트 컴퓨터에서 관리자 권한으로 Windows PowerShell 명령 프롬프트를 열고 `Get-WmiObject -Namespace Root\Ccm\LocationServices -Class SMS_ActiveMPCandidate | Where-Object {$_.Type -eq "Internet"}` 명령을 실행합니다.
 

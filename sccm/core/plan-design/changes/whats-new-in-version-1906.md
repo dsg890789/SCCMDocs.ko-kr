@@ -2,7 +2,7 @@
 title: 버전 1906의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기의 버전 1906에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 08/23/2019
+ms.date: 10/01/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13c9f2e6f6b279aeea13ce2ede66b6d11f2c12a2
-ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
+ms.openlocfilehash: 05b2a01c66cba7119bc8752dc3ed6f4a4a9ab7da
+ms.sourcegitcommit: 3ecba0573e7b1c99de3291dbeb29a5de432ce647
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69999441"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715912"
 ---
 # <a name="whats-new-in-version-1906-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1906의 새로운 기능
 
@@ -371,6 +371,8 @@ Configuration Manager 콘솔이 응답하지 않는 경우 잠금으로 인해 �
 
 - 작업 순서는 새로운 읽기 전용 변수 **_SMSTSLastContentDownloadLocation**을 설정합니다. 이 변수는 작업 순서에서 콘텐츠를 다운로드했거나 다운로드하려고 시도한 마지막 위치를 포함하고 있습니다. 클라이언트 로그를 구문 분석하는 대신 이 변수를 검사하세요.<!-- 2840337 -->
 
+- 작업 순서 미디어를 만들 때 Configuration Manager가 autorun.inf 파일을 추가하지 않습니다. 이 파일은 일반적으로 맬웨어 방지 제품에서 차단됩니다. 시나리오에 필요한 경우 파일이 포함될 수 있습니다.<!-- 4090666 -->
+
 
 ## <a name="bkmk_userxp"></a> 소프트웨어 센터
 
@@ -615,13 +617,13 @@ Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편
 - [SMS 공급자 관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)
 - [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)
 
- 새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1906의 변경 내용 요약](https://support.microsoft.com/help/4514258)을 참조하세요.
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1906의 변경 내용 요약](https://support.microsoft.com/help/4514258)을 참조하세요.
 
-Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1906 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1906-release-notes?view=sccm-ps)를 참조하세요.<!-- link is not live yet; will be published before this release branch -->
+Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1906 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1906-release-notes?view=sccm-ps)를 참조하세요.
+
+다음 업데이트 롤업(4517869)은 2019년 10월 1일부터 콘솔에서 사용할 수 있습니다. [Configuration Manager 현재 분기, 버전 1906용 업데이트 롤업](https://support.microsoft.com/help/4517869).
 
 <!--
-The following update rollup (4486457) is available in the console starting on 25 January 2019: [Update rollup for Configuration Manager current branch, version 1902](https://support.microsoft.com/help/4486457).
-
 ### Hotfixes
 
 The following additional hotfixes are available to address specific issues:
