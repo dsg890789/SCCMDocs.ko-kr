@@ -2,7 +2,7 @@
 title: 데스크톱 분석의 새로운 기능
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 클라우드 서비스의 최신 월간 릴리스에 대 한 새로운 기능을 요약 한 것입니다.
-ms.date: 09/10/2019
+ms.date: 10/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: fa300181-86cb-4afe-8fbf-895a7572378d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6c25aaba8c93204283723521ac157c62e62343d7
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: ce51ddc7a6c46dfc8b131ed6bc573b5b501f8598
+ms.sourcegitcommit: 9c76ed76ead1125b712cef574d832803dbf2c5a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70891705"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72162872"
 ---
 # <a name="whats-new-in-desktop-analytics"></a>데스크톱 분석의 새로운 기능
 
@@ -30,6 +30,14 @@ ms.locfileid: "70891705"
 
 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22what%27s+new+in+desktop+analytics+-+Configuration+Manager%22&locale=en-us`
 <!-- a locale is required for the RSS search string -->
+
+## <a name="october-2019"></a>10 월 2019
+
+### <a name="migrate-from-windows-analytics-to-existing-tenant"></a>Windows Analytics에서 기존 테 넌 트로 마이그레이션
+
+<!-- 5202803 -->
+
+이제 데스크톱 분석에 온 보 딩 한 후 기존 Windows Analytics 작업 영역에서 입력을 마이그레이션할 수 있습니다. 자세한 내용은 [기존 Windows Analytics 고객](/sccm/desktop-analytics/faq#existing-windows-analytics-customers)에 대 한 FAQ를 참조 하세요.
 
 ## <a name="september-2019"></a>9 월 2019
 

@@ -2,7 +2,7 @@
 title: 데스크톱 분석 FAQ
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에 대 한 질문과 대답입니다.
-ms.date: 10/07/2019
+ms.date: 10/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17791a695d2413d867bf5ee212b9e3cfd0837f83
-ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
+ms.openlocfilehash: 13bdb5348e9fc58ca0ba194dd8cf4d509c16b081
+ms.sourcegitcommit: 9c76ed76ead1125b712cef574d832803dbf2c5a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71998986"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163143"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
@@ -121,7 +121,7 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러
 
 ### <a name="im-not-ready-yet-can-i-migrate-after-the-initial-onboarding"></a>아직 준비 되지 않았습니다. 초기 온 보 딩 후에 마이그레이션할 수 있나요?
 
-아니요, 지금은 [초기](/sccm/desktop-analytics/set-up#initial-onboarding)등록 중에 마이그레이션을 결정 해야 합니다.
+예.<!-- 5202803 --> 이제 기존 Windows 분석 고객이 초기 등록 후 데이터를 마이그레이션할 수 있습니다. 데스크톱 분석 포털에서 **연결 된 서비스** 로 이동 하 여 Windows Analytics에서 데이터를 마이그레이션하는 옵션을 선택 합니다.
 
 ### <a name="can-i-use-update-compliance-together-with-desktop-analytics"></a>데스크톱 분석과 함께 업데이트 준수를 사용할 수 있나요?
 

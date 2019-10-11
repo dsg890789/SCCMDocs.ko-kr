@@ -2,7 +2,7 @@
 title: 새 버전 1802
 titleSuffix: Configuration Manager
 description: Configuration Manager 1802 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 04/05/2019
+ms.date: 10/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b92f099a3a64cb6b1943d3d4b1306cbbd4131d6c
-ms.sourcegitcommit: cdf2827fb3f44d7522a9b533c115f910aa9c382a
+ms.openlocfilehash: 64be14a4029258489a6dfda5e344efd803c85adb
+ms.sourcegitcommit: 9c76ed76ead1125b712cef574d832803dbf2c5a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70902930"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72162998"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 
@@ -287,7 +287,7 @@ Windows Autopilot은 새로운 Windows 10 디바이스를 최신 방법으로 �
 
 ### <a name="improvements-to-configuration-manager-policies-for-windows-defender-exploit-guard"></a>Windows Defender Exploit Guard에 대한 Configuration Manager 정책 개선 사항
 <!-- 1356220 -->
-[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)에 대한 Configuration Manager에 [공격 노출 영역 축소](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_ASR) 및 [제어된 폴더 액세스](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) 구성 요소에 대한 추가 정책 설정이 추가되었습니다.
+[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction)에 대한 Configuration Manager에 [공격 노출 영역 축소](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_ASR) 및 [제어된 폴더 액세스](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) 구성 요소에 대한 추가 정책 설정이 추가되었습니다.
 
 ### <a name="new-host-interaction-settings-for-windows-defender-application-guard"></a>Windows Defender Application Guard에 대한 새 호스트 상호 작용 설정
 <!-- 1356256 -->
