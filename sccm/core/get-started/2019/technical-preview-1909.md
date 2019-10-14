@@ -2,7 +2,7 @@
 title: Technical Preview 1909
 titleSuffix: Configuration Manager
 description: Configuration Manager Technical Preview 분기 버전 1909에서 사용할 수 있는 새로운 기능에 대해 알아봅니다.
-ms.date: 09/30/2019
+ms.date: 10/04/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d969b8b112e3e738047b05a57b4244a651e9375
-ms.sourcegitcommit: 3ecba0573e7b1c99de3291dbeb29a5de432ce647
+ms.openlocfilehash: 025c3b32c8115eab82514cd9fb9e602c52a882ae
+ms.sourcegitcommit: b631fcb2669ac2a5801e70620b0c3e81431bea8f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715900"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975513"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1909"></a>Configuration Manager Technical Preview 버전 1909의 기능
 
@@ -42,9 +42,9 @@ ms.locfileid: "71715900"
 [!INCLUDE [Improvements to task sequence debugger](includes/1909/5012536.md)]
 <!-- 5012536, 5012509 -->
 
-<!-- ## Known issues -->
+## <a name="general-known-issues"></a>일반적으로 알려진 문제점
 
-<!-- [!INCLUDE [Client health dashboard](includes/1903/known-issue-health.md)] -->
+[!INCLUDE [Hardware inventory reports](includes/1909/known-issue-hinv.md)]
 
 ## <a name="next-steps"></a>다음 단계
 

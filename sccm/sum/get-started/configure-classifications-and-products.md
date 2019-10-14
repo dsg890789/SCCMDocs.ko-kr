@@ -5,18 +5,18 @@ description: 다음 단계에 따라 Configuration Manager 콘솔에서 동기�
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7127229ceef948f4e88365255737fbe3844aa428
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.openlocfilehash: 10ec464f9689f2a4bf7f0c6176cf52bbf7033d0d
+ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71826195"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999025"
 ---
 # <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -75,7 +75,7 @@ ms.locfileid: "71826195"
 
 ## <a name="bkmk_WIfB"></a>Windows 참가자 프로그램
 <!--3556023-->
-9 월 2019 부터는 Configuration Manager를 사용 하 여 Windows Insider Preview 빌드를 실행 하는 장치를 서비스 하 고 업데이트할 수 있습니다. 이러한 변화는 일반적인 프로세스를 변경 하거나 비즈니스 Windows 업데이트를 사용 하도록 설정 하지 않고도 이러한 장치를 관리할 수 있음을 의미 합니다. Windows Insider Preview 빌드의 기능 업데이트 및 누적 업데이트는 다른 Windows 10 업데이트 또는 업그레이드와 마찬가지로 Configuration Manager에 다운로드할 수 있습니다. 자세한 내용은 [WSUS에 시험판 Windows 10 기능 업데이트 게시](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054) 블로그 게시물을 참조 하세요.
+2019년 9월부터 Configuration Manager를 사용하여 Windows Insider Preview 빌드를 실행하는 장치를 서비스하고 업데이트할 수 있습니다. 이러한 변화를 통해, 일반적인 프로세스를 변경하거나 비즈니스용 Windows 업데이트를 사용 하도록 설정하지 않고도 이러한 장치를 관리할 수 있음을 알 수 있습니다. Windows Insider Preview 빌드의 기능 업데이트 및 누적 업데이트는 다른 Windows 10 업데이트 또는 업그레이드와 마찬가지로 Configuration Manager에 다운로드할 수 있습니다. 자세한 내용은 [WSUS에 시험판 Windows 10 기능 업데이트 게시](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054) 블로그 게시물을 참조 하세요.
 
 Configuration Manager의 Windows 참가자 지원에 대 한 자세한 내용은 [windows 10 지원](/sccm/core/plan-design/configs/support-for-windows-10#bkmk_WIfB-support)을 참조 하세요.
 
@@ -122,6 +122,14 @@ Windows 참가자에 대 한 업그레이드가 동기화 되 면 **소프트웨
 ### <a name="keeping-insider-devices-up-to-date"></a>Insider 장치를 최신 상태로 유지
 
 Windows 참가자에 대 한 누적 업데이트는 WSUS 및 Configuration Manager 확장에 사용할 수 있습니다. 이러한 누적 업데이트는 Windows 10 버전 1903 누적 업데이트와 유사한 빈도로 릴리스됩니다. Windows 참가자 누적 업데이트는 **windows 10 버전 1903 이상** 제품 범주에 있으며 **보안 업데이트** 또는 **업데이트로**분류 됩니다. [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates) 또는 [단계적 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)를 사용 하는 등의 일반 소프트웨어 업데이트 프로세스를 사용 하 여 Windows 참가자에 대 한 누적 업데이트를 배포할 수 있습니다.
+
+## <a name="bkmk_ESU"></a>확장 된 보안 업데이트 및 Configuration Manager
+
+[ESU (확장 보안 업데이트)](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates) 프로그램은 지원의 끝을 지나서 특정 레거시 Microsoft 제품을 실행 해야 하는 고객을 위한 최후의 수단 옵션입니다. Microsoft 보안 대응 센터 (MSRC)에서 제공 하는 중요 한 보안 업데이트 또는 중요 한 보안 업데이트 ( [Microsoft 보안 대응 센터 (MSRC)](https://www.microsoft.com/msrc)가 제품의 연장 된 지원 날짜 종료 이후 최대 3 년)를 포함 합니다.
+
+즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 여기에는 ESU 프로그램에서 설명 하는 모든 제품이 포함 됩니다. ESU 프로그램에서 릴리스된 보안 업데이트는 WSUS (Windows Server Update Services)에 게시 됩니다. 이러한 업데이트는 Configuration Manager 콘솔에 표시 됩니다. ESU 프로그램에서 설명 하는 제품은 더 이상 Configuration Manager에서 사용할 수 없지만 출시 된 [최신 버전의 Configuration Manager 현재 분기](/sccm/core/servers/manage/updates#version-details) 를 사용 하 여 출시 된 Windows 보안 업데이트를 배포 하 고 설치할 수 있습니다. 프로그램에서 최신 릴리스 버전은 OSD (운영 체제 배포)를 통해 지원 되는 Os를 배포 하는 데도 사용할 수 있습니다.
+
+Windows 소프트웨어 업데이트 관리와 관련 되지 않은 클라이언트 관리 기능 또는 OSD는 ESU 프로그램에서 다루는 운영 체제에서 더 이상 테스트 되지 않으며 계속 작동 한다는 보장이 없습니다. 클라이언트 관리 지원을 받으려면 가능한 한 빨리 최신 버전의 운영 체제로 업그레이드 하거나 마이그레이션하는 것이 좋습니다.
 
 
 ## <a name="next-steps"></a>다음 단계

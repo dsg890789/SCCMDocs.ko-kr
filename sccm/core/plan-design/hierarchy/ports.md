@@ -2,7 +2,7 @@
 title: 연결에 사용되는 포트
 titleSuffix: Configuration Manager
 description: Configuration Manager가 연결에 사용하는 필수 및 사용자 지정 네트워크 포트에 대해 알아봅니다.
-ms.date: 04/11/2019
+ms.date: 10/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8818f858900db76192df1503d9043e6435a4999
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 5461fd365322cdcfa51084335f375099cb1449e4
+ms.sourcegitcommit: b100e2068d429b0901b54e4a9d405349207fba3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338692"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72037370"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -159,7 +159,7 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 자세한 내용은 [CMG 포트 및 데이터 흐름](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#ports-and-data-flow)을 참조하세요.
 
 
-###  <a name="BKMK_PortsClient-DP"></a> 클라이언트 -- &gt; 배포 지점  
+###  <a name="BKMK_PortsClient-DP"></a> 클라이언트 --> 배포 지점, 표준 및 풀(pull) 모두  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -167,14 +167,14 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 |HTTPS|--|443 <sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsClient-DP2"></a> 클라이언트 -- &gt; 멀티캐스트에 구성된 배포 지점  
+###  <a name="BKMK_PortsClient-DP2"></a> 클라이언트 -- > 멀티캐스트에 구성된 배포 지점, 표준 및 풀(pull) 모두  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
 |SMB(서버 메시지 블록)|--|445|  
 |멀티캐스트 프로토콜|63000-64000|--|  
 
-###  <a name="BKMK_PortsClient-DP3"></a> 클라이언트 -- &gt; PXE에 구성된 배포 지점  
+###  <a name="BKMK_PortsClient-DP3"></a> 클라이언트 -- > PXE에 구성된 배포 지점, 표준 및 풀(pull) 모두  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -315,7 +315,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |RPC|--|동적 <sup>[참고 6](#bkmk_note6)</sup>|  
 
 
-###  <a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager NDES(네트워크 장치 등록 서비스) -- > 인증서 등록 지점  
+###  <a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager NDES(네트워크 디바이스 등록 서비스) -- &gt; 인증서 등록 지점  
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -329,7 +329,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |SQL over TCP|--|1433<sup>[참고 2](#bkmk_note2) 대체 포트 사용 가능</sup>|  
 
 
-###  <a name="BKMK_PortsDist_MP"></a> 배포 지점 -- &gt; 관리 지점  
+###  <a name="BKMK_PortsDist_MP"></a> 배포 지점, 표준 및 풀(pull) 모두 --> 관리 지점 모두  
 배포 지점은 다음과 같은 시나리오에서 관리 지점과 통신합니다.  
 
 - 사전 준비된 콘텐츠의 상태를 보고하려면  
@@ -338,7 +338,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 
 - 콘텐츠 유효성 검사 보고  
 
-- 패키지 다운로드(풀(pull) 배포 지점)의 상태를 보고하려면
+- 패키지 다운로드(풀(pull) 배포 지점만 해당)의 상태를 보고하려면
 
 |설명|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -504,7 +504,7 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 자세한 내용은 [포트 및 데이터 흐름](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_dataflow)을 참조하세요.
 
 
-###  <a name="BKMK_PortsSite-DP"></a> 사이트 서버 -- &gt; 배포 지점  
+###  <a name="BKMK_PortsSite-DP"></a> 사이트 서버 --> 배포 지점, 표준 및 풀(pull) 모두  
  <sup>[참고 5](#bkmk_note5)</sup>  
 
 |설명|UDP|TCP|  
@@ -799,7 +799,7 @@ Azure를 사용하고 사이트 데이터베이스가 내부 또는 외부 부�
 
 - 보고 서비스 지점  
 
-- 사이트 데이터베이스  
+- SMS 공급자  
 
 - SQL Server-- > SQL Server  
 
@@ -872,7 +872,7 @@ Configuration Manager는 사이트 정보의 검색 및 게시에 다음 포트�
 IPsec을 사용하여 사이트 서버 및 사이트 시스템 간 트래픽을 보호할 수 있습니다. RPC에 사용된 동적 포트를 제한해야 하는 경우 Microsoft RPC 구성 도구(rpccfg.exe)를 사용하여 이러한 RPC 패킷에 제한된 포트 범위를 구성할 수 있습니다. RPC 구성 도구에 대한 자세한 내용은 [RPC에서 특정 포트를 사용하도록 구성하는 방법과 IPsec을 사용하여 이러한 포트를 보호하는 방법](https://support.microsoft.com/help/908472/how-to-configure-rpc-to-use-certain-ports-and-how-to-help-secure-those)을 참조하세요.  
 
 > [!IMPORTANT]  
->  이러한 사이트 시스템을 설치하기 전에 원격 레지스트리 서비스를 사이트 시스템 서버에서 실행해야 하며 트러스트 관계가 없는 다른 Active Directory 포리스트에 사이트 시스템이 있는 경우 사이트 시스템 설치 계정을 지정했어야 합니다.  
+>  이러한 사이트 시스템을 설치하기 전에 원격 레지스트리 서비스를 사이트 시스템 서버에서 실행해야 하며 트러스트 관계가 없는 다른 Active Directory 포리스트에 사이트 시스템이 있는 경우 사이트 시스템 설치 계정을 지정했어야 합니다. 예를 들어 원격 레지스트리 서비스는 배포 지점(풀(pull) 및 표준 모두)과 같은 사이트 시스템을 실행하는 서버, 원격 SQL 서버 및 애플리케이션 카탈로그에 사용됩니다.
 
 
 ###  <a name="BKMK_PortsClientInstall"></a> Configuration Manager 클라이언트 설치에 사용되는 포트  

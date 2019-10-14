@@ -2,7 +2,7 @@
 title: 지원되는 클라이언트 및 디바이스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라이언트 및 디바이스에 대해 지원하는 OS 버전을 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 10/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 862f579069f117af13ecd0720c5e9e92ab7a356d
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 48568f962f412342e005f18b790ed1478b359163
+ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70377936"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998999"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
@@ -188,6 +188,13 @@ Configuration Manager와 함께 제공되는 Configuration Manager 모바일 디
 
 - 스페인어(스페인)  
 
+## <a name="bkmk_ESU"></a> 확장 보안 업데이트 및 Configuration Manager
+
+[확장 보안 업데이트(ESU)](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates) 프로그램은 지원 종료 이후 특정 레거시 Microsoft 제품을 실행해야 하는 고객이 최후의 수단으로 쓸 수 있는 옵션입니다. 여기에는 제품의 확장 지원 종료 날짜 이후 최대 3년간 ([Microsoft 보안 대응 센터(MSRC)](https://www.microsoft.com/msrc)에서 정의한) 긴급 및/또는 중요 보안 업데이트가 포함되어 있습니다.
+
+즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 여기에는 ESU 프로그램에서 설명하는 모든 제품이 포함됩니다. ESU 프로그램에서 릴리스된 보안 업데이트는 WSUS(Windows Server Update Services)에 게시됩니다. 이러한 업데이트는 Configuration Manager 콘솔에 표시됩니다. ESU 프로그램에서 설명하는 제품은 더 이상 Configuration Manager에서 사용할 수 없지만 프로그램에서 릴리스된 Windows 보안 업데이트를 배포하고 설치하는 데는 [Configuration Manager 현재 분기의 최신 릴리스 버전](/sccm/core/servers/manage/updates#version-details)을 사용할 수 있습니다. 최신 릴리스 버전은 OSD(운영 체제 배포)를 통해 지원되는 OS를 배포할 때도 사용할 수 있습니다.
+
+Windows 소프트웨어 업데이트 관리와 관련되지 않은 클라이언트 관리 기능 또는 OSD는 ESU 프로그램에서 다루는 운영 체제에서 더 이상 테스트되지 않으며 계속 작동한다는 보장이 없습니다. 클라이언트 관리 지원을 받으려면 가능한 한 빨리 최신 버전의 운영 체제로 업그레이드하거나 마이그레이션하는 것이 좋습니다.
 
 ## <a name="mac-computers"></a>Mac 컴퓨터  
 
@@ -367,7 +374,7 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 설치�
 
 ### <a name="supported-versions-of-exchange-server"></a>Exchange Server의 지원되는 버전
 
-- **Exchange Online(Office 365)** : 이 버전에는 Business Productivity Online Standard Suite가 포함되어 있습니다.  
+- **Exchange Online(Office 365)**: 이 버전에는 Business Productivity Online Standard Suite가 포함되어 있습니다.  
 
 - **Exchange Server 2016**  
 

@@ -2,7 +2,7 @@
 title: 지원되는 구성
 titleSuffix: Configuration Manager
 description: 작동하는 System Center Configuration Manager 배포를 계획, 배포 및 유지 관리할 수 있도록 주요 구성 및 요구 사항을 식별합니다.
-ms.date: 10/06/2016
+ms.date: 10/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e041c3ef1725f3084f05b084a9a48716a6fac556
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 7fd2805ad886bd0e2f8d6dbcadc8953ae20be24c
+ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70377966"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999023"
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성
 
@@ -28,7 +28,7 @@ ms.locfileid: "70377966"
 
 Configuration Manager 기능 또는 특징에 보다 구체적인 구성이 필요한 경우 해당 정보는 기능 관련 설명서에 포함되며 이러한 일반적인 구성 세부 정보를 보완합니다.  
 
- 다음 항목에서 설명하는 제품 및 기술은 Configuration Manager에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품의 지원 연장을 의미하지는 않습니다. 즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. Microsoft 지원 주기에 대한 자세한 내용은 [Microsoft 지원 주기](https://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트를 참조하세요.  
+ 다음 항목에서 설명하는 제품 및 기술은 Configuration Manager에서 지원됩니다. 그러나 이 내용에 포함되었다고 해서 개별 지원 주기가 끝난 제품의 지원 연장을 의미하지는 않습니다. [ESU(확장 보안 업데이트) ](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates) 프로그램에서 적용되는 모든 제품을 포함하여 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. Microsoft 지원 주기에 대한 자세한 내용은 [Microsoft 지원 주기](https://go.microsoft.com/fwlink/p/?LinkId=208270) 웹 사이트를 참조하세요. Configuration Manager의 확장 보안 업데이트에 대한 자세한 내용은 [Configuration Manager의 클라이언트 및 장치에 대해 지원되는 OS 버전](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#bkmk_ESU)을 참조하세요.
 
 > [!NOTE]  
 >  Microsoft 지원 주기 정책에 대한 자세한 내용은 Microsoft 지원 주기 지원 정책 FAQ 웹 사이트([Microsoft 지원 주기 정책 FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976))를 참조하세요.  

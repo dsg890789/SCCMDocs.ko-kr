@@ -11,12 +11,12 @@ ms.assetid: 4cde43d1-9b09-4601-b389-0776de451b4e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a015277f9a2fb05c4fbecc4d702d63a5a97777ca
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 0e90a06b956c39cb7a473af87cdfca0f722122ff
+ms.sourcegitcommit: cb813496467a5191237d853a6126ea534c12d2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537979"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172636"
 ---
 # <a name="support-center-onetrace-preview"></a>지원 센터 OneTrace(미리 보기)
 
@@ -48,6 +48,8 @@ OneTrace는 다음과 같은 여러 로그 파일 형식에 사용할 수 있습
 ## <a name="install"></a>설치
 
 OneTrace는 지원 센터와 설치됩니다. `cd.latest\SMSSETUP\Tools\SupportCenter\SupportCenterInstaller.msi` 경로에서 사이트 서버의 지원 센터 설치 관리자를 찾습니다.
+
+기본적으로 OneTrace 애플리케이션은 `"C:\Program Files (x86)\Configuration Manager Support Center\CMPowerLogViewer.exe`에 설치됩니다.
 
 > [!Note]  
 > 지원 센터 및 OneTrace는 WPF(Windows Presentation Foundation)를 사용합니다. 이 구성 요소는 Windows PE에서 사용할 수 없습니다. 계속 작업 순서 배포를 통해 부트 이미지에서 CMTrace를 사용합니다.  
