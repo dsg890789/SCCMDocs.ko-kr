@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc212104dc69e4ba4cc7d82e0b8c4813094bea2d
-ms.sourcegitcommit: 2dbe49e3ef1133d49e58d82cefdeba69f9ba3ce2
+ms.openlocfilehash: 1a71a35781a2c1586636dc32cbc12b67e97f8471
+ms.sourcegitcommit: 44c48e2cb00e60d6ccb1ddde62a6159663917e2d
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71127306"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71923956"
 ---
 # <a name="configure-pre-cache-content-for-task-sequences"></a>작업 순서에 대해 사전 캐시 콘텐츠 구성
 
@@ -95,7 +95,7 @@ Configuration Manager 버전 1902 및 이전 버전에서이 동작은 *OS 업�
 > 다음 WMI 쿼리는 영어 (미국) OS 및 64 비트 아키텍처에 권장 됩니다.
 >
 > ```WMI
-> SELECT * FROM Win32_OperatingSystem WHERE OSArchitecture LIKE '%64%' AND OSLanguage=1033`
+> SELECT * FROM Win32_OperatingSystem WHERE OSArchitecture LIKE '%64%' AND OSLanguage='1033'
 > ```
 >
 > 먼저 **운영 체제 언어** 조건을 선택 하 여 언어를 추가 합니다. 그런 다음, WMI 쿼리를 편집 하 여 architecture 절을 포함 합니다.
