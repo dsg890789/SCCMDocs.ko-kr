@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3e759ef44170c460118d3629d8a7b9648ed8528
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.openlocfilehash: e658874c9ff5c7bfbf0305b937779d101fefeeb2
+ms.sourcegitcommit: 262b0796cf270684ad09c2b296d490f076dfa235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251640"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448003"
 ---
 # <a name="use-a-pull-distribution-point-with-configuration-manager"></a>Configuration Manager에서 풀(pull) 배포 지점 사용
 
@@ -38,9 +38,6 @@ Configuration Manager 콘솔에서 표준 배포 지점에 콘텐츠를 배포�
 - 클라이언트의 HTTP 또는 HTTPS 통신
 - 다른 배포 지점과 동일한 인증서 옵션
 - 개별적으로 또는 배포 지점 그룹의 멤버로 관리  
-
-> [!IMPORTANT]  
-> 풀(pull) 배포 지점이 HTTP 및 HTTPS를 통한 통신을 지원하더라도 Configuration Manager 콘솔을 사용하는 경우 HTTP용으로 구성된 원본 배포 지점만 지정할 수 있습니다. Configuration Manager SDK를 사용하면 HTTPS용으로 구성된 원본 배포 지점을 지정할 수 있습니다.  
 
 풀(pull) 배포 지점은 배포 지점을 설치할 때 구성합니다. 배포 지점을 만든 후에는 역할 속성을 편집하여 풀(pull) 배포 지점으로 구성합니다. 배포 지점을 풀(pull) 배포 지점으로 사용하도록 설정하는 방법은 [풀(pull) 배포 지점](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pull)을 참조하세요.  
 
