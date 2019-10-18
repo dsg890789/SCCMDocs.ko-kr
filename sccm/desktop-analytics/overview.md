@@ -2,7 +2,7 @@
 title: Desktop Analytics
 titleSuffix: Configuration Manager
 description: Configuration Manager와 통합 된 데스크톱 분석 서비스에 대 한 개요입니다.
-ms.date: 07/29/2019
+ms.date: 10/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: overview
@@ -11,17 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee4075926f5c6f01dddcf41a2c329e88a4ee591
-ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
+ms.openlocfilehash: 76fa92c93a290c49c286be3bb1368dfdf8347ef3
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71401503"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72384981"
 ---
 # <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
-
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
 데스크톱 분석은 Configuration Manager와 통합 되는 클라우드 기반 서비스입니다. 이 서비스는 Windows 클라이언트의 업데이트 준비에 대 한 더 많은 의사 결정을 내릴 수 있는 통찰력 및 인텔리전스를 제공 합니다. Microsoft 클라우드 서비스에 연결 된 수백만 대의 장치에서 집계 된 데이터를 조직의 데이터와 결합 합니다.
 
@@ -52,17 +49,17 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 
 데스크톱 분석은 다음과 같은 이점을 제공 합니다.
 
-- **장치 및 소프트웨어 인벤토리**: 앱 및 Windows 버전 등의 주요 요소에 대 한 인벤토리  
+- **장치 및 소프트웨어 인벤토리**: 앱 및 Windows 버전 등의 주요 요소에 대 한 인벤토리를 작성 합니다.  
 
 - **파일럿 식별**: 가장 광범위 한 요소를 제공 하는 가장 작은 장치 집합의 id입니다. Windows 업그레이드 및 업데이트의 파일럿에 가장 중요 한 요소를 중점적으로 설명 합니다. 파일럿이 더 성공 하도록 하면 프로덕션 환경에서 광범위 하 게 배포할 수 있습니다.  
 
-- **문제 식별**: 서비스는 사용자 환경의 데이터와 함께 집계 된 시장 데이터를 사용 하 여 Windows에 대 한 최신 상태를 유지 하 고 유지 하는 잠재적인 문제를 예측 합니다. 그런 다음 잠재적 완화를 제안 합니다.  
+- **문제 식별**: 사용자 환경의 데이터와 함께 집계 된 시장 데이터를 사용 하 여 서비스에서 Windows를 사용 하 여 최신 상태를 유지 하 고 유지 하는 잠재적인 문제를 예측 합니다. 그런 다음 잠재적 완화를 제안 합니다.  
 
 - **Configuration Manager 통합**: 서비스 클라우드-기존 온-프레미스 인프라를 사용 하도록 설정 합니다. 이 데이터 및 분석을 사용 하 여 장치에서 Windows를 배포 하 고 관리 합니다.  
 
 
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>Prerequisites
 
 데스크톱 분석을 사용 하려면 사용자 환경이 다음과 같은 필수 구성 요소를 충족 하는지 확인 합니다.
 
@@ -100,7 +97,7 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
     >
     > 데스크톱 분석은 현재 위치의 업그레이드 시나리오를 가장 잘 지원 하도록 설계 되었습니다. 32 비트에서 64 비트 아키텍처로와 같이 주요 변경 작업을 수행 해야 하는 경우에는 이미징 시나리오를 사용 합니다. 데스크톱 분석 정보는 이러한 클래식 OS 배포 시나리오에서 여전히 중요 하지만 현재 위치의 업그레이드 관련 지침을 무시할 수 있습니다. 자세한 내용은 [Configuration Manager를 사용 하 여 엔터프라이즈 운영 체제를 배포 하는 시나리오](/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)를 참조 하십시오.
 
-- Windows 진단 데이터입니다. 자세한 내용은 다음 문서를 참조하세요.  
+- Windows 진단 데이터입니다. 자세한 내용은 다음 아티클을 참조하세요.  
 
     - [진단 데이터 수준](/sccm/desktop-analytics/enable-data-sharing#diagnostic-data-levels)  
 
@@ -116,13 +113,13 @@ Configuration Manager에서 데스크톱 분석을 사용 하 여 다음을 수�
 
 ### <a name="licensing-and-costs"></a>라이선스 및 비용
 
-데스크톱 분석에는 다음 라이선스 구독 중 하나가 필요 합니다.
+데스크톱 분석에 등록 된 장치는 사용이 허가 된 사용자만 사용할 수 있습니다.
 
-- Windows 10 Enterprise E3 또는 E5; 또는 Microsoft 365 F1, E3 또는 E5  
+- Windows 10 Enterprise E3 또는 E5 (Microsoft 365 F1, E3 또는 E5에 포함 됨)
 
-- Windows 10 교육 A3 또는 A5 또는 Microsoft 365 A3 또는 A5  
+- Windows 10 교육용 A3 또는 A5 (Microsoft 365 A3 또는 A5에 포함 됨)
 
-- Windows VDA E3 또는 E5  
+- Windows 가상 데스크톱 액세스 E3 또는 E5  
 
 라이선스 구독 비용 외에도 데스크톱 분석 사용에 대 한 추가 비용은 없습니다. Azure Log Analytics 내에서 데스크톱 분석은 "등급 0"입니다. 이 등급은 선택한 Azure Log Analytics 가격 책정 계층에 관계 없이 데이터 제한과 비용에서 제외 된 것을 의미 합니다. Azure Log Analytics 가격 책정 계층에 대 한 자세한 내용은 [가격 책정-Log Analytics](https://azure.microsoft.com/pricing/details/monitor/)을 참조 하세요.
 

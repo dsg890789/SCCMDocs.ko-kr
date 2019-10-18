@@ -2,7 +2,7 @@
 title: 데스크톱 분석 FAQ
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에 대 한 질문과 대답입니다.
-ms.date: 10/08/2019
+ms.date: 10/15/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,19 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13bdb5348e9fc58ca0ba194dd8cf4d509c16b081
-ms.sourcegitcommit: 9c76ed76ead1125b712cef574d832803dbf2c5a9
+ms.openlocfilehash: 96f84adcacdf298840a981360478bf828a22716a
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163143"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72385475"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
-
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>Prerequisites
 
 ### <a name="bkmk_intune"></a>Intune 관리 장치에서 데스크톱 분석을 사용할 수 있나요? 
 
@@ -39,6 +36,19 @@ ms.locfileid: "72163143"
 - 지난 7 일간 조직에 연결 된 장치를 확인 합니다. [데스크톱 분석 포털](https://aka.ms/desktopanalytics)에서 **연결 된 서비스** 창으로 이동 합니다. **장치 등록**을 선택 하 고 **최근 데이터 보기**
 
 장치가 제대로 구성 되어 있고 작업 영역에 아직 데이터가 표시 되지 않는 경우 [Microsoft 지원에 문의 하세요](https://support.microsoft.com/hub/4343728/support-for-business).
+
+## <a name="connect-configuration-manager"></a>Configuration Manager 연결
+
+### <a name="can-i-change-the-target-or-additional-collections"></a>대상 또는 추가 컬렉션을 변경할 수 있나요?
+
+예, 다음 프로세스를 사용 합니다.
+
+- Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. 데스크톱 분석 서비스와 연결 된 항목의 속성을 엽니다.
+
+- **Desktop 분석 연결** 탭에서 **대상 컬렉션** 을 변경 하거나 추가 컬렉션을 관리 합니다.
+
+> [!IMPORTANT]  
+> Configuration Manager는 설정 정책을 사용 하 여 대상 컬렉션에서 장치를 구성 합니다. 이 정책에는 장치에서 Microsoft로 데이터를 보낼 수 있도록 진단 데이터 설정이 포함 되어 있습니다. 대상 컬렉션을 변경 해도 대상 컬렉션에 더 이상 없는 장치에 대 한 설정 정책은 실행 취소 되지 않습니다. 장치에서 진단 데이터를 계속 전송 하지 않도록 하려면 장치를 [다시 구성](/sccm/desktop-analytics/account-close#reconfigure-clients)합니다.
 
 ## <a name="windows-upgrade"></a>Windows 업그레이드
 
@@ -58,7 +68,7 @@ ms.locfileid: "72163143"
 
 ### <a name="can-i-reduce-the-amount-of-time-it-takes-for-data-to-refresh-in-my-desktop-analytics-portal"></a>내 데스크톱 분석 포털에서 데이터를 새로 고치는 데 걸리는 시간을 줄일 수 있나요?
 
-데스크톱 분석 포털에는 다음과 같은 두 가지 유형의 데이터가 있습니다. 관리자 데이터 및 진단 데이터입니다. 요청 시 관리자 데이터를 새로 고치려면 데이터 통화 플라이 아웃을 열고 **변경 내용 적용**을 선택 합니다. 이 작업을 수행 하면 작업 영역에서 보류 중인 관리자 변경 내용에 대 한 일회성 새로 고침이 즉시 트리거됩니다. 변경 내용은 전파 되며 일반적으로 15-60 분 이내에 사용할 수 있습니다. 타이밍은 작업 영역의 크기 및 보류 중인 변경 내용의 범위에 따라 달라 집니다. 24 시간 내에 최대 6 회까지 요청 시 데이터 새로 고침을 요청할 수 있습니다.
+데스크톱 분석 포털에는 두 가지 유형의 데이터 즉, 관리자 데이터와 진단 데이터가 있습니다. 요청 시 관리자 데이터를 새로 고치려면 데이터 통화 플라이 아웃을 열고 **변경 내용 적용**을 선택 합니다. 이 작업을 수행 하면 작업 영역에서 보류 중인 관리자 변경 내용에 대 한 일회성 새로 고침이 즉시 트리거됩니다. 변경 내용은 전파 되며 일반적으로 15-60 분 이내에 사용할 수 있습니다. 타이밍은 작업 영역의 크기 및 보류 중인 변경 내용의 범위에 따라 달라 집니다. 24 시간 내에 최대 6 회까지 요청 시 데이터 새로 고침을 요청할 수 있습니다.
 
 요청 시 데이터 새로 고침을 요청 하지 않더라도 매일 한 번 자동으로 모든 데이터가 업데이트 됩니다. 진단 데이터의 요청 시 새로 고침을 트리거할 수 있는 방법은 없습니다. 데스크톱 분석의 다양 한 데이터 형식에 대 한 자세한 내용은 [데이터 대기 시간](/sccm/desktop-analytics/troubleshooting#data-latency)을 참조 하세요.
 
@@ -70,9 +80,9 @@ ms.locfileid: "72163143"
 
 ### <a name="can-i-choose-the-data-center-location"></a>데이터 센터 위치를 선택할 수 있나요?
 
-Azure Log Analytics: 예, 데스크톱 분석을 설정 하 고 Log Analytics 작업 영역을 만들 때
+Azure Log Analytics의 경우: 예, 데스크톱 분석을 설정 하 고 Log Analytics 작업 영역을 만들 수 있습니다.
 
-Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러한 두 서비스는 미국에서 호스팅됩니다.
+Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요, 이러한 두 서비스는 미국에서 호스팅됩니다.
 
 ### <a name="where-is-my-organizations-data-stored"></a>내 조직의 데이터는 어디에 저장 되나요?
 
@@ -98,11 +108,11 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러
 
 | Windows Analytics | Desktop Analytics |
 |-------------------| ------------------|
-| 낮은 설치 수 | (해당 사항 없음) <br> 참고: 데스크톱 분석은 자신의 추론을 실행 하 여 설치 수를 낮게 결정 합니다. |
+| 낮은 설치 수 | (해당 사항 없음) <br> 참고: 데스크톱 분석은 자신의 추론을 실행 하 여 설치 수가 낮은 경우를 확인 합니다. |
 | 검토 되지 않음 | 검토 되지 않음 |
 | 검토 진행 중 | 검토 되지 않음 |
-| 중요 업무용 | 심각 |
-| 업무상 중요 | 심각 |
+| 중요 업무용 | 중요 |
+| 업무상 중요 | 중요 |
 | 중요 | 중요 |
 | 최상의 노력 | 중요 |
 | 무시 | 중요 하지 않음 |
@@ -127,7 +137,7 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요. 이러
 
 예. 현재 Azure Portal에서 [업데이트 준수](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started) 를 사용 하는 경우 2020 년 1 월 이후에도 계속 해 서이 작업을 수행할 수 있습니다.
 
-자세한 내용은 블로그 게시물을 참조 하세요. @no__t--"Windows Analytics에서 사용자 입력 데이터 마이그레이션: 업그레이드 준비 "to Desktop Analytics @ no__t-0입니다.
+자세한 내용은 [KB 4521815:2020 년 1 월 31 일에 Windows Analytics](https://support.microsoft.com/help/4521815/windows-analytics-retirement)사용 중지를 참조 하세요.
 
 ### <a name="are-there-any-windows-analytics-features-that-arent-available-in-desktop-analytics"></a>데스크톱 분석에서 사용할 수 없는 Windows Analytics 기능이 있나요?
 

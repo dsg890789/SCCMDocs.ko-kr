@@ -2,7 +2,7 @@
 title: 데스크톱 분석 데이터 개인 정보
 titleSuffix: Configuration Manager
 description: 데스크톱 분석이 고객 데이터 개인 정보 보호에 커밋 됨
-ms.date: 06/13/2019
+ms.date: 10/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,26 +11,26 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef08fb2d4c404ea66ded3d1a49d30af68fe4a95
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: ca2b94b19c4e95da103799e7357063e7253eaa72
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70379749"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72384921"
 ---
 # <a name="desktop-analytics-data-privacy"></a>데스크톱 분석 데이터 개인 정보
 
 데스크톱 분석은 이러한 개념를 중심으로 고객 데이터 개인 정보 보호에 완전히 커밋됩니다.
 
-- **투명도** Windows 진단 이벤트를 완전히 문서화 합니다. 회사의 보안 및 규정 준수 팀에서 검토 합니다. Windows 진단 데이터 뷰어를 사용 하 여 지정 된 장치에서 전송 된 진단 데이터를 볼 수 있습니다. 자세한 내용은 [진단 데이터 뷰어 개요](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)를 참조 하세요.  
+- **투명도:** Windows 진단 이벤트를 완전히 문서화 합니다. 회사의 보안 및 규정 준수 팀에서 검토 합니다. Windows 진단 데이터 뷰어를 사용 하 여 지정 된 장치에서 전송 된 진단 데이터를 볼 수 있습니다. 자세한 내용은 [진단 데이터 뷰어 개요](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)를 참조 하세요.  
 
-- **조절** Microsoft와 공유할 진단 데이터의 수준을 제어 합니다. Windows 10, 버전 1709, 향상 된 진단 데이터를 데스크톱 분석에서 요구 하는 최소 수로 제한 하는 새 정책을 추가 합니다.  
+- **제어:** Microsoft와 공유할 진단 데이터의 수준을 제어 합니다. Windows 10, 버전 1709, 향상 된 진단 데이터를 데스크톱 분석에서 요구 하는 최소 수로 제한 하는 새 정책을 추가 합니다.  
 
-- **보안** Microsoft는 강력한 보안 및 암호화를 통해 데이터를 보호 합니다.  
+- **보안:** Microsoft는 강력한 보안 및 암호화를 통해 데이터를 보호 합니다.  
 
-- **트러스트할** 데스크톱 분석은 Microsoft [개인 정보 취급 방침](https://privacy.microsoft.com/privacystatement) 및 [온라인 서비스 약관](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)을 지원 합니다.  
+- **신뢰:** 데스크톱 분석은 Microsoft [개인 정보 취급 방침](https://privacy.microsoft.com/privacystatement) 및 [온라인 서비스 약관](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)을 지원 합니다.  
 
-
+자세한 내용은 Windows 서비스를 참조 하세요. [여기서 Microsoft는 GDPR 아래](https://docs.microsoft.com/windows/privacy/gdpr-it-guidance#windows-services-where-microsoft-is-the-processor-under-the-gdpr)에 있는 프로세서입니다.<!-- 5353168 -->
 
 ## <a name="diagnostic-data-flow"></a>진단 데이터 흐름
 
@@ -58,9 +58,7 @@ ms.locfileid: "70379749"
 
 6. 데스크톱 분석은 Azure Log Analytics 저장소에 입력을 저장 합니다. 이러한 구성에는 배포 계획과 업그레이드 및 중요도에 대 한 자산 결정이 포함 됩니다.  
 
-
-
-## <a name="other-resources"></a>다른 리소스
+## <a name="other-resources"></a>관련 자료
 
 데스크톱 분석에 대 한 개인 정보 관련 질문과 대답은 [개인 정보 FAQ](/sccm/desktop-analytics/faq#privacy)를 참조 하세요.
 

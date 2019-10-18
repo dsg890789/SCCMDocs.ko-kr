@@ -12,25 +12,22 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6181f0e1a502d701ca7337641013a18b03251f9
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: f565128b13d99daf041d56762994b1e2b35e793e
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535996"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72386731"
 ---
 # <a name="compatibility-assessment-in-desktop-analytics"></a>데스크톱 분석의 호환성 평가
 
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
-
-Windows Analytics의 업그레이드 평가가 일반적입니다. 예를 들면 다음과 같습니다. 주의가 필요 하거나 수정할 수 있습니다. 문제 또는 업그레이드 정보를 사용 하 여 앱 또는 드라이버의 우선 순위를 지정 하는 방법에 대 한 시각적 표시기는 제공 하지 않습니다. 데스크톱 분석은 **호환성 위험**으로이 기능을 대체 합니다. 데스크톱 분석은 업그레이드 전 시나리오에 대 한 배포 보기의 앱에 대 한 평가만 보여 줍니다. Microsoft는 현재 배포 계획에 포함 된 컴퓨터에서 Microsoft가 제공 하는 정보를 기반으로 앱을 분류 합니다.
+Windows Analytics의 업그레이드 평가가 일반적입니다. 예를 들어 주의가 필요 하거나 수정이 가능 합니다. 문제 또는 업그레이드 정보를 사용 하 여 앱 또는 드라이버의 우선 순위를 지정 하는 방법에 대 한 시각적 표시기는 제공 하지 않습니다. 데스크톱 분석은 **호환성 위험**으로이 기능을 대체 합니다. 데스크톱 분석은 업그레이드 전 시나리오에 대 한 배포 보기의 앱에 대 한 평가만 보여 줍니다. Microsoft는 현재 배포 계획에 포함 된 컴퓨터에서 Microsoft가 제공 하는 정보를 기반으로 앱을 분류 합니다.
 
 데스크톱 분석에서 사용 하는 호환성 평가 범주는 다음과 같습니다.
 
-- **낮음**: 서비스가 Windows 업그레이드에 대 한 위험에이 앱을 배치할 신호를 찾지 못했습니다. 대상 OS에서 있는 그대로 작업할 가능성이 높습니다.  
+- **낮음**: 서비스에서 Windows 업그레이드에 대 한 위험에이 앱을 배치할 신호를 찾지 못했습니다. 대상 OS에서 있는 그대로 작업할 가능성이 높습니다.  
 
-- **보통**: 분석은 재구성이 가능 하더라도 응용 프로그램에 기능이 손상 되었을 수 있음을 나타냅니다.  
+- **Medium**: Analytics는 응용 프로그램의 기능이 손상 될 수 있지만 재구성이 가능 하다는 것을 나타냅니다.  
 
 - **높음**: 응용 프로그램은 업그레이드 도중 이나 업그레이드 후에 거의 실패 합니다. 수정이 필요할 수 있습니다.  
 
@@ -112,15 +109,15 @@ Windows 응용 프로그램 카탈로그 [준비](https://www.readyforwindows.co
 
 가능한 범주는 다음과 같습니다.
 
-- **매우 채택**: 최소 10만 상용 Windows 10 장치에서이 앱을 설치 했습니다.  
+- **매우 채택**됨: 최소 10만 상용 Windows 10 장치에서이 앱을 설치 했습니다.  
 
-- **채택**: 최소 1만 상용 Windows 10 장치에서이 앱을 설치 했습니다.  
+- **채택**됨: 최소 1만 상용 Windows 10 장치에서이 앱을 설치 했습니다.  
 
-- **데이터 부족**: 상용 Windows 10 장치가 너무 적으면 Microsoft에서 채택 하는 앱의 정보를 공유 하 고 있습니다.
+- **데이터가 부족**합니다. 상용 Windows 10 장치는이 앱의 채택을 범주화 하기 위해이 앱에 대 한 정보를 공유 하 고 있습니다.
 
-- **개발자에 게 문의**: 이 버전의 앱과 호환성 문제가 있을 수 있습니다. 자세한 내용은 소프트웨어 공급자에 게 문의 하는 것이 좋습니다. 자세한 내용은 [Windows 준비](https://www.readyforwindows.com/)를 참조 하세요.  
+- **개발자에 게 문의**:이 버전의 앱과 호환성 문제가 있을 수 있습니다. 자세한 내용은 소프트웨어 공급자에 게 문의 하는 것이 좋습니다. 자세한 내용은 [Windows 준비](https://www.readyforwindows.com/)를 참조 하세요.  
 
-- **알 수 없음**: 이 응용 프로그램의이 버전에 사용할 수 있는 Windows 정보는 준비 되어 있지 않습니다. [Windows 준비](https://www.readyforwindows.com/)에서 다른 버전의 응용 프로그램에 대 한 정보를 사용할 수 있습니다.  
+- **알 수**없음:이 응용 프로그램의이 버전에 사용할 수 있는 Windows 정보를 사용할 준비가 되지 않았습니다. [Windows 준비](https://www.readyforwindows.com/)에서 다른 버전의 응용 프로그램에 대 한 정보를 사용할 수 있습니다.  
 
 ### <a name="support-statement"></a>지원 문
 
@@ -150,7 +147,7 @@ Configuration Manager 사이트와 클라이언트를 버전 1906으로 업데�
 
 #### <a name="16-bit-apps"></a>16 비트 앱
 
-응용 프로그램에서 16 비트 구성 요소를 모두 제거 하 고를 32 비트 또는 64 비트 동등한 것으로 바꿉니다. 자세한 내용은 windows Vista 및 [windows Server 2008 개발자 사례를 참조 하세요. 응용 프로그램 호환성](https://docs.microsoft.com/previous-versions/aa480152\(v=msdn.10\))Cookbook.
+응용 프로그램에서 16 비트 구성 요소를 모두 제거 하 고를 32 비트 또는 64 비트 동등한 것으로 바꿉니다. 자세한 내용은 [Windows Vista 및 Windows Server 2008 개발자 스토리: 응용 프로그램 호환성 Cookbook](https://docs.microsoft.com/previous-versions/aa480152\(v=msdn.10\))을 참조 하세요.
 
 다른 옵션은 Windows 10에서 지원 하기 위해 NT NTVDM (가상 DOS 컴퓨터)를 사용 하도록 설정 하는 것입니다.
 
@@ -179,7 +176,7 @@ Configuration Manager 사이트와 클라이언트를 버전 1906으로 업데�
 | 브라우저 | Support(지원) |
 |---------|---------|
 | Google Chrome | 지원 종료: 9 월 2015 |
-| Firefox | 지원 종료: 2017년 3월 |
+| Firefox | 지원 종료: 3 월 2017 |
 | Microsoft Edge | 플러그 인을 사용할 수 없음 |
 
 데스크톱 분석에서는 재발을 검색 하기 위한 파일럿 테스트를 위한 앱을 권장 합니다.
@@ -215,6 +212,6 @@ UI 액세스를 사용 하는 응용 프로그램은 사용자 인터페이스 �
 | 공급 업체에 문의 | 예 | 드라이버가 새 OS 버전으로 마이그레이션되지 않으며 데스크톱 분석에서 호환 되는 버전을 찾을 수 없습니다. | 솔루션의 경우 드라이버를 제조 하는 IHV (독립 하드웨어 공급 업체) 또는 장치를 제공한 OEM (원본 장비 제조업체)으로 확인 합니다. |
 
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 Windows 10 용 FastTrack 센터 혜택은 **데스크톱 앱**에 대 한 액세스를 제공 합니다. 이 혜택은 Windows 10 및 Office 365 ProPlus 앱 호환성 문제를 해결 하기 위해 설계 된 새로운 서비스입니다. 자세한 내용은 [데스크톱 앱](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)확인을 참조 하세요.

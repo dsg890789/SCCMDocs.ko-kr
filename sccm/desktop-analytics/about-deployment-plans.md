@@ -11,17 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65dff1dbf8e8154bc2d481e274dd47d352aa9d6e
-ms.sourcegitcommit: fe8934487158ed3bd15c7a6a456c3cafe58aed64
+ms.openlocfilehash: a36093b88887b6722d07c666dead67a9aa974b8a
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995387"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72387093"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>데스크톱 분석의 배포 계획 정보
-
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
 데스크톱 분석은 조직에서 장치, 응용 프로그램 및 드라이버 데이터를 수집 하 고 분석 합니다. 이 분석과 사용자의 입력에 따라 서비스를 사용 하 여 Windows 10 용 배포 계획을 만들 수 있습니다. 배포 계획에는 다음과 같은 기능이 있습니다.  
 
@@ -68,7 +65,7 @@ ms.locfileid: "68995387"
 
 [자산](/sccm/desktop-analytics/about-assets) 영역에는 장치 및 앱도 표시 되지만 특정 배포 계획의 **계획 자산** 영역에는 추가 정보가 포함 됩니다.
 
-### <a name="devices"></a>장치
+### <a name="devices"></a>디바이스가
 
 배포 계획의 각 장치에 대 한 **Windows 업그레이드 결정** 을 참조 하세요.
 
@@ -87,11 +84,11 @@ ms.locfileid: "68995387"
 - XP 에뮬레이션 드라이버를 사용 하는 무선 구성 요소가 있습니다.
 - 활성 연결을 사용 하는 네트워크 구성 요소는 드라이버를 손실 합니다. 즉, 업그레이드 후 네트워크 연결이 끊어질 수 있습니다.
 
-### <a name="apps"></a>앱
+### <a name="apps"></a>App
 
 이 배포 계획에서이 앱에 대 한 **업그레이드 결정** 및 **중요도** 를 설정 합니다. 자세한 내용은 [배포 계획을 만드는 방법](/sccm/desktop-analytics/create-deployment-plans)을 참조 하세요.
 
-앱의 세부 정보에서 다음 정보를 확인할 수도 있습니다. 권장 사항, 호환성 위험 요소 및 Microsoft의 알려진 문제입니다. 이 정보를 사용 하 여 **업그레이드 결정**을 쉽게 설정할 수 있습니다. 자세한 내용은 [호환성 평가](/sccm/desktop-analytics/compat-assessment)를 참조 하세요.
+응용 프로그램의 세부 정보에서 권장 사항, 호환성 위험 요소 및 Microsoft의 알려진 문제를 확인할 수도 있습니다. 이 정보를 사용 하 여 **업그레이드 결정**을 쉽게 설정할 수 있습니다. 자세한 내용은 [호환성 평가](/sccm/desktop-analytics/compat-assessment)를 참조 하세요.
 
 데스크톱 분석에서 *주목할 만한* 것으로 표시 되는 앱은 배포 계획의 준비 규칙에 대 한 낮은 설치 수 임계값을 기반으로 합니다. 자세한 내용은 [준비 규칙](/sccm/desktop-analytics/create-deployment-plans#readiness-rules)을 참조 하세요.
 
@@ -110,7 +107,7 @@ ms.locfileid: "68995387"
 
 앱이 대상 장치의 2% 미만으로 설치 된 경우 **설치 수가 낮음**으로 표시 됩니다. 기본값은 2%입니다. 준비 설정에서 임계값을 0%에서 10%로 조정할 수 있습니다. Desktop Analytics는 이러한 앱을 **업그레이드 준비**로 자동으로 표시 합니다.  
 
-앱의 경우 중요, **중요**또는 **중요 하지 않음**의 중요도를 선택 합니다. 하나를 중요 하거나 중요 한 것으로 표시 하는 경우 데스크톱 분석에는 해당 앱을 포함 하는 일부 장치가 파일럿 배포에 포함 됩니다. 이 서비스에는 중요 한 앱의 파일럿 추가 인스턴스가 포함 됩니다. 앱을 중요 하지 않은 것으로 표시 하면 데스크톱 분석에서 자동으로 **업그레이드 준비**로 설정 됩니다.
+앱의 **경우 중요,** **중요**또는 **중요 하지 않음**의 중요도를 선택 합니다. 하나를 중요 하거나 중요 한 것으로 표시 하는 경우 데스크톱 분석에는 해당 앱을 포함 하는 일부 장치가 파일럿 배포에 포함 됩니다. 이 서비스에는 중요 한 앱의 파일럿 추가 인스턴스가 포함 됩니다. 앱을 중요 하지 않은 것으로 표시 하면 데스크톱 분석에서 자동으로 **업그레이드 준비**로 설정 됩니다.
 
 
 

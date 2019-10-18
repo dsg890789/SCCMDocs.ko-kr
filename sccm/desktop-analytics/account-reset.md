@@ -11,33 +11,30 @@ ms.assetid: 884d4864-950b-4139-b778-d5368e1f6ef2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3eb3f08c7c1358343b4bf06aef80ba84a5fb8d8c
-ms.sourcegitcommit: 2b07fb7e2a17b5624429e81f9b6b9b3223b6f16d
+ms.openlocfilehash: 34bb53bf9819149c989996a950f3b13329e4eef3
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69536782"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72386796"
 ---
 # <a name="how-to-reset-your-account"></a>계정을 다시 설정 하는 방법
 
 <!-- 3733897 -->
 
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
-
 사용자 환경에서 데스크톱 분석을 설정 했지만 온 보 딩 및 등록으로 시작 하려는 경우이 프로세스를 사용 하 여 계정을 다시 설정 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>Prerequisites
 
 **전역 관리자** 만 Azure Portal의 계정을 다시 설정할 수 있습니다.
 
-## <a name="behaviors"></a>동작
+## <a name="behaviors"></a>동작이
 
 - 이 프로세스는 기존 Azure AD 사용자, 앱 또는 사용 권한을 변경 하지 않습니다.
 
 - 새 작업 영역을 추가 하도록 선택 하는 경우 자산에 대 한 다음 사용자 입력은 유지 되지 않습니다.
     - 중요도
-    - 소유자
+    - Owner
     - 업그레이드 결정
     - 재구성 정보
 

@@ -11,17 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cceaf6f4475a024b8f3375ef962a6dfc2dddc4d
-ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
+ms.openlocfilehash: f090c80f70ef8d286a36236c48503817adb93591
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69974777"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72387025"
 ---
 # <a name="updates-in-desktop-analytics"></a>데스크톱 분석의 업데이트
-
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
 데스크톱 분석 포털에서 보안 및 기능 업데이트의 상태를 확인 합니다. 데스크톱 분석 주 메뉴의 모니터 그룹에서 이러한 노드를 선택 합니다. 이러한 노드는 사용자 환경에서 이러한 업데이트의 상태에 대 한 정보를 제공 합니다.
 
@@ -34,7 +31,7 @@ ms.locfileid: "69974777"
 
 이 보기에는 Windows 10을 실행 하는 장치에 대 한 *보안* 업데이트가 요약 되어 있습니다. 가로 막대형 차트의 장치는 다음 레이블로 분류 됩니다.
 
-#### <a name="latest"></a>최신 버전
+#### <a name="latest"></a>마지막
 
 장치에서 해당 버전 및 채널에 대 한 최신 보안 업데이트를 실행 하 고 있습니다.
 

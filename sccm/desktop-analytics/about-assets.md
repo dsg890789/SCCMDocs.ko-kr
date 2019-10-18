@@ -11,27 +11,24 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 225cc93d38607c90332c1bc56ea12b2c344ab4ea
-ms.sourcegitcommit: fe8934487158ed3bd15c7a6a456c3cafe58aed64
+ms.openlocfilehash: 8b60326a746768e7045104a571d05a085ac0bd2a
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995380"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72387112"
 ---
 # <a name="assets-in-desktop-analytics"></a>데스크톱 분석의 자산
 
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
-
 장치에서 데스크톱 분석에 데이터를 보고 한 후에는 다음과 같은 자산에 대 한 인벤토리를 제공 합니다.
 
-- 장치
+- 디바이스가
 - 설치 된 앱  
 
 서비스 포털의 데스크톱 분석 메뉴에서 **자산** 을 선택 합니다.
 
 
-## <a name="devices"></a>장치
+## <a name="devices"></a>디바이스가
 
 **장치** 탭은 데스크톱 분석에 등록 하는 조직의 모든 장치에 대 한 주요 정보를 표시 합니다. 특정 값에 대해 열 또는 필터를 기준으로 정렬할 수 있습니다.
 
@@ -40,7 +37,7 @@ ms.locfileid: "68995380"
 
 배포 계획에는 장치에 대 한 자세한 정보가 있습니다. 자세한 내용은 [자산 계획](/sccm/desktop-analytics/about-deployment-plans#plan-assets) 을 참조 하세요.
 
-## <a name="apps"></a>앱
+## <a name="apps"></a>App
 
 **앱** 탭에는 서비스가 Windows 장치에서 검색 하는 설치 된 모든 앱이 표시 됩니다.
 
@@ -48,7 +45,7 @@ ms.locfileid: "68995380"
 
 다음 범주 중 하나를 설정 하 여 앱의 **중요도** 를 구성 합니다.
 
-- 심각
+- 중요
 - 중요
 - 무시 
 - 검토 되지 않음
@@ -57,7 +54,7 @@ ms.locfileid: "68995380"
 
 목록에서 앱을 선택 하 고 **편집**을 선택 합니다. 이 작업을 수행 하면 앱에 대 한 세부 정보가 표시 됩니다. **중요도** 드롭다운 메뉴를 선택 하 고 값을 설정 합니다. 또한 **소유자**를 할당할 수 있습니다. 변경을 수행 하는 경우 **저장**을 선택 합니다.
 
-### <a name="a-namebkmk_plan-autoapp--automatic-upgrade-decision-of-system-and-store-apps"></a><a name="bkmk_plan-autoapp" />시스템 및 스토어 앱의 자동 업그레이드 결정
+### <a name="a-namebkmk_plan-autoapp--automatic-upgrade-decision-of-system-and-store-apps"></a>시스템 및 스토어 앱의 자동 업그레이드 결정 <a name="bkmk_plan-autoapp" />
 
 <!-- 3587232 -->
 데스크톱 분석 워크플로에서 중요 한 모든 앱에 대해 **중요도** 와 **업그레이드 결정** 을 확인 하는 것이 중요 합니다. 이러한 앱에 주석을 추가 하는 데 도움을 줄 수 있도록 특정 유형의 앱은 자동으로 *중요 하지 않은*것으로 표시 됩니다. 이러한 앱에 대 한 배포 계획 업그레이드 결정도 *준비*로 표시 됩니다. 다음 앱은 호환 되며 Windows를 업그레이드 한 후에도 계속 작동 해야 합니다.

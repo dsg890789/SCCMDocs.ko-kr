@@ -11,17 +11,14 @@ ms.assetid: fa300181-86cb-4afe-8fbf-895a7572378d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ce51ddc7a6c46dfc8b131ed6bc573b5b501f8598
-ms.sourcegitcommit: 9c76ed76ead1125b712cef574d832803dbf2c5a9
+ms.openlocfilehash: cf4ec11bbf5595a8e6475d448f7e1d5532b4dd3c
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72162872"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72384711"
 ---
 # <a name="whats-new-in-desktop-analytics"></a>데스크톱 분석의 새로운 기능
-
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
 데스크톱 분석에서 매달 새로운 기능에 대해 알아봅니다.
 

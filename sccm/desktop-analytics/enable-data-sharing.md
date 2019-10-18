@@ -2,7 +2,7 @@
 title: 데이터 공유를 사용하도록 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 분석과 진단 데이터를 공유 하는 방법에 대 한 참조 가이드입니다.
-ms.date: 07/03/2019
+ms.date: 10/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,17 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0128a802916958c69b07dffe86d04f31698fd028
-ms.sourcegitcommit: 974b20f5faa0e0bbf9e43391280fdebeb657ac47
+ms.openlocfilehash: 91be1fbb03c49b28d689aff974a43ba8434fc194
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237017"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72385681"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데스크톱 분석에 데이터 공유 사용
-
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
 
 데스크톱 분석에 장치를 등록 하려면 Microsoft에 진단 데이터를 전송 해야 합니다. 환경에서 프록시 서버를 사용 하는 경우이 정보를 참조 하 여 프록시를 구성 합니다.
 
@@ -64,7 +61,7 @@ ms.locfileid: "72237017"
 > [!Important]  
 > 개인 정보 및 데이터 무결성을 위해 Windows는 진단 데이터 끝점과 통신할 때 Microsoft SSL 인증서를 확인 합니다. SSL 가로채기 및 검사는 불가능 합니다. 데스크톱 분석을 사용 하려면 이러한 끝점을 SSL 검사에서 제외 합니다.<!-- BUG 4647542 -->
 
-| 엔드포인트  | 기능  |
+| 끝점만  | 기능  |
 |-----------|-----------|
 | `https://aka.ms` | 서비스를 찾는 데 사용 됩니다. |
 | `https://v10c.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. 2018-09 누적 업데이트 이상을 설치한 Windows 10 버전 1703 이상을 실행 하는 장치에서 사용 됩니다. |
@@ -79,15 +76,17 @@ ms.locfileid: "72237017"
 | `https://kmwatsonc.events.data.microsoft.com` | 온라인 충돌 분석. Windows 10 버전 1809 이상에서 장치 상태 보고서에 필요 합니다. |
 | `https://oca.telemetry.microsoft.com`  | 온라인 충돌 분석 (OCA). Windows 10 버전 1803 이전 버전에서 배포 상태를 모니터링 하는 데 필요 합니다. |
 | `https://login.live.com` | 데스크톱 분석에 보다 안정적인 장치 id를 제공 하는 데 필요 합니다. <br> <br>최종 사용자 Microsoft 계정 액세스를 사용 하지 않도록 설정 하려면이 끝점을 차단 하는 대신 정책 설정을 사용 합니다. 자세한 내용은 [엔터프라이즈의 Microsoft 계정](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication)을 참조 하세요. |
-| `https://graph.windows.net` | 계층을 데스크톱 분석에 연결할 때 CommercialId 같은 설정을 자동으로 검색 하는 데 사용 됩니다 (Configuration Manager 서버 역할에만 해당). |
-| `https://*.manage.microsoft.com` | 데스크톱 분석 (Configuration Manager 서버 역할의 경우에만)을 사용 하 여 장치 컬렉션 멤버 자격, 배포 계획 및 장치 준비 상태를 동기화 하는 데 사용 됩니다. |
+| `https://graph.windows.net` | Configuration Manager 서버 역할의 데스크톱 분석에 계층을 연결할 때 CommercialId 같은 설정을 자동으로 검색 하는 데 사용 됩니다. 자세한 내용은 [사이트 시스템 서버에 대 한 프록시 구성]을 참조 하세요.
+] (/sccm/core/plan-design/network/proxy-server-support)을 (를) 사용할 때 사용할 것입니다. |
+| `https://*.manage.microsoft.com` | 데스크톱 분석 (Configuration Manager 서버 역할의 경우에만)을 사용 하 여 장치 컬렉션 멤버 자격, 배포 계획 및 장치 준비 상태를 동기화 하는 데 사용 됩니다. 자세한 내용은 [사이트 시스템 서버에 대 한 프록시 구성]을 참조 하세요.
+] (/sccm/core/plan-design/network/proxy-server-support)을 (를) 사용할 때 사용할 것입니다. |
 
 
 ## <a name="proxy-server-authentication"></a>프록시 서버 인증
 
 인증으로 인해 프록시에서 진단 데이터를 차단 하지 않는지 확인 합니다. 조직에서 아웃 바운드 트래픽에 대해 프록시 서버 인증을 사용 하는 경우 다음 방법 중 하나 이상을 사용 합니다.
 
-- **바이패스** (권장): 프록시 서버에서 진단 데이터 끝점에 대 한 트래픽에 대해 프록시 인증을 요구 하지 않도록 구성 합니다. 이 옵션은 가장 포괄적인 솔루션입니다. 모든 버전의 Windows 10에서 작동 합니다.  
+- **바이패스** (권장): 진단 데이터 끝점에 대 한 트래픽에 대해 프록시 인증을 요구 하지 않도록 프록시 서버를 구성 합니다. 이 옵션은 가장 포괄적인 솔루션입니다. 모든 버전의 Windows 10에서 작동 합니다.  
 
 - **사용자 프록시 인증**: 프록시 인증을 위해 로그인 한 사용자의 컨텍스트를 사용 하도록 장치를 구성 합니다. 이 방법을 사용 하려면 장치에서 Windows 10 버전 1703 이상을 실행 해야 합니다. 사용자에 게 진단 데이터 끝점에 연결할 수 있는 프록시 권한이 있는지 확인 합니다. 이 옵션을 사용 하려면 장치에 프록시 권한이 있는 콘솔 사용자가 있어야 하므로 헤드리스 장치에서이 방법을 사용할 수 없습니다.  
 

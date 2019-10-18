@@ -2,7 +2,7 @@
 title: 계정을 종료 하는 방법
 titleSuffix: Configuration Manager
 description: Azure 계정에서 데스크톱 분석을 제거 하는 방법
-ms.date: 09/10/2019
+ms.date: 10/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,21 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 387d16b75c688640eba0ed6658b281badd3c7c54
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 0a37062bc945a69bfb6679186954146a337f8aed
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70891740"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72386773"
 ---
 # <a name="how-to-close-your-account"></a>계정을 종료 하는 방법
 
-> [!Note]  
-> 이 정보는 미리 보기 서비스와 관련이 있으며,이 서비스는 상업적으로 출시 되기 전에 대폭 수정 될 수 있습니다. Microsoft는 여기에 제공된 정보와 관련하여 명시적이거나 묵시적인 어떤 보증도 하지 않습니다.  
-
 사용자 환경에서 데스크톱 분석을 설정 하 고이를 제거 해야 한다고 결정 한 경우이 프로세스를 사용 하 여 계정을 닫습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>Prerequisites
 
 **전역 관리자** 만 Azure Portal의 계정을 닫거나 다시 활성화할 수 있습니다.
 
@@ -57,7 +54,7 @@ ms.locfileid: "70891740"
 
 1. **모든 리소스** 에서 데스크톱 분석 작업 영역 이름을 검색 합니다. 이 이름은 서비스에 등록할 때 생성 됩니다.
 
-1. 형식 `Microsoft365Analytics(YourWorkspaceName)` **솔루션**을 삭제 합니다.
+1. **솔루션**형식 `Microsoft365Analytics(YourWorkspaceName)`를 삭제 합니다.
 
 데스크톱 분석 데이터는 작업 영역에 대 한 데이터 보존 정책에 따라 에이징됩니다. 동일한 작업 영역에서 다른 솔루션을 계속 사용할 수 있습니다.
 
@@ -92,6 +89,12 @@ ms.locfileid: "70891740"
 
 1. 데스크톱 분석 서비스를 삭제 합니다.
 
+### <a name="delete-collections-for-the-pilot-and-production-deployments"></a>파일럿 및 프로덕션 배포에 대 한 컬렉션 삭제
+
+1. Configuration Manager 콘솔의 **자산 및 호환성** 작업 영역에서 **장치 컬렉션** 을 선택 합니다.
+
+1. 더 이상 사용 하지 않는 모든 컬렉션을 삭제 합니다. 기본적으로 컬렉션은 **배포 계획** 폴더 아래에 있습니다.  
+
 ## <a name="reconfigure-clients"></a>클라이언트 다시 구성
 
 ### <a name="unenroll-devices"></a>등록 취소 장치
@@ -110,7 +113,7 @@ ms.locfileid: "70891740"
 
 다음 방법 중 하나를 사용 하 여 이러한 값을 설정 합니다.
 
-- 그룹 정책, **컴퓨터 구성** > **관리 템플릿** > **Windows 구성 요소** > **데이터 수집 및 Preview 빌드**
+- 그룹 정책, **컴퓨터 구성**  > **관리 템플릿**  > **Windows 구성 요소**  > **데이터 수집 및 Preview 빌드**
 - [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#reporting-and-telemetry) 와 같은 MDM (모바일 장치 관리)
 
 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization)을 참조하세요.
