@@ -2,7 +2,7 @@
 title: 사용되지 않는 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 더 이상 지원하지 않는 기능에 대해 알아보세요.
-ms.date: 09/06/2019
+ms.date: 10/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa15a3bcd98c39f2b103793d9cc24ccdd2efd90
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.openlocfilehash: 2979adb3965db23579271893f741a0479a22195f
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71826136"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72387152"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 
@@ -32,6 +32,7 @@ ms.locfileid: "71826136"
 
 |기능|처음 중단 발표|제거된&nbsp;지원|  
 |-----------|---|--------------|  
+| [Windows Analytics](/sccm/core/clients/manage/monitor-windows-analytics) 및 [업그레이드 준비](/sccm/core/clients/manage/upgrade-readiness) 통합. 자세한 내용은 [KB 4521815: 2020년 1월 31일 Windows Analytics 사용 중지](https://support.microsoft.com/help/4521815/windows-analytics-retirement)를 참조하세요. | 2019년 10월 14일 | 2020년 1월 31일 |
 | 조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가 <!--1235616 aka 3608202--> 자세한 내용은 [Configuration Manager에서 관리되는 PC용 Office 365 서비스에 대한 액세스 관리](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm#step-1-configure-compliance-policy)를 참조하세요.| 2019년 7월 3일 | 2019년 11월 1일 이후 릴리스된 첫 번째 버전 |
 | Configuration Manager 회사 포털 앱 | 2019년 5월 21일 | 2019년 11월 1일 이후 릴리스된 첫 번째 버전|
 | 애플리케이션 카탈로그 웹 사이트 지점과 웹 서비스 지점 등, 두 사이트 서비스 역할을 포함한 애플리케이션 카탈로그. 자세한 정보는 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요. | 2019년 5월 21일 | 2019년 11월 1일 이후 릴리스된 첫 번째 버전|

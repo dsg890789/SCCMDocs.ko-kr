@@ -2,7 +2,7 @@
 title: Windows Analytics로 클라이언트 모니터링
 titleSuffix: Configuration Manager
 description: Windows Analytics는 사용자 환경의 현재 상태에 대한 소중한 인사이트를 얻을 수 있는 솔루션 집합입니다.
-ms.date: 09/04/2018
+ms.date: 10/14/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,16 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7836e1779acbfdfbb66d6eac57bc7797abd52563
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: c2530b20d065b3b2bd15c0dc38232687d286b6b0
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286471"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72384749"
 ---
 # <a name="use-windows-analytics-with-configuration-manager"></a>Configuration Manager에서 Windows Analytics 사용
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
+
+> [!Important]  
+> 2019년 10월 현재 Configuration Manager의 Windows Analytics 통합은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)입니다. Windows Analytics 서비스는 2020년 1월 31일에 사용 중지됩니다.
+>
+> [Desktop Analytics](/sccm/desktop-analytics/overview)는 Windows Analytics의 진화입니다. 기존 Windows Analytics 고객은 [Desktop Analytics로 데이터를 마이그레이션](/sccm/desktop-analytics/faq#existing-windows-analytics-customers)할 수 있습니다.
+>
+> 자세한 내용은 [KB 4521815: 2020년 1월 31일 Windows Analytics 사용 중지](https://support.microsoft.com/help/4521815/windows-analytics-retirement)를 참조하세요.
 
 [Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview)는 사용자 환경의 현재 상태에 대한 인사이트를 얻을 수 있는 솔루션 집합입니다. 사용자 환경의 Windows 디바이스가 데이터를 Microsoft에 보고하며, 이때 이러한 솔루션에 액세스하여 분석할 수 있습니다. 예를 들어, [업그레이드 준비](/sccm/core/clients/manage/upgrade-readiness)를 Configuration Manager에 연결하여 Configuration Manager 콘솔의 **모니터링** 작업 영역에서 직접 데이터에 액세스할 수 있습니다.
 

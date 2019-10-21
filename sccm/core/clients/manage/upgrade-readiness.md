@@ -5,22 +5,29 @@ description: 업그레이드 준비를 Configuration Manager와 통합하면 Win
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4340f21ad257bfe311915edaa918e704832e3e77
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 11cb935eef2d214cf541142aea81fbe8e12bd06b
+ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286431"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72384592"
 ---
 # <a name="integrate-upgrade-readiness-with-configuration-manager"></a>업그레이드 준비와 Configuration Manager 통합
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
+
+> [!Important]  
+> 2019년 10월 현재 Configuration Manager의 업그레이드 준비 통합은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)입니다. Windows Analytics 서비스는 2020년 1월 31일에 사용 중지됩니다.
+>
+> [Desktop Analytics](/sccm/desktop-analytics/overview)는 Windows Analytics의 진화입니다. 기존 Windows Analytics 고객은 [Desktop Analytics로 데이터를 마이그레이션](/sccm/desktop-analytics/faq#existing-windows-analytics-customers)할 수 있습니다.
+>
+> 자세한 내용은 [KB 4521815: 2020년 1월 31일 Windows Analytics 사용 중지](https://support.microsoft.com/help/4521815/windows-analytics-retirement)를 참조하세요.
 
 업그레이드 준비는 [Windows Analytics](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)의 일부로, Windows 10으로 업그레이드하기 위해 사용자 환경에서 디바이스의 준비 상태를 평가하고 분석할 수 있습니다. 업그레이드 준비를 Configuration Manager와 통합하면 Configuration Manager 콘솔에서 클라이언트 업그레이드 호환성 데이터에 액세스할 수 있습니다. 이 데이터를 사용하여 컬렉션을 생성하거나 업그레이드나 수정을 할 디바이스를 정합니다.
 
