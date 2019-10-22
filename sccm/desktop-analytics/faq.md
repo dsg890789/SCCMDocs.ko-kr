@@ -2,7 +2,7 @@
 title: 데스크톱 분석 FAQ
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에 대 한 질문과 대답입니다.
-ms.date: 10/15/2019
+ms.date: 10/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96f84adcacdf298840a981360478bf828a22716a
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: bc8b770ff99fbf9c45815e2516639726d47be7a9
+ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72385475"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684766"
 ---
 # <a name="desktop-analytics-faq"></a>데스크톱 분석 FAQ
 
@@ -129,9 +129,13 @@ Microsoft 데이터 관리 서비스 및 분석 Azure Storage: 아니요, 이러
 
 마이그레이션 프로세스가 트랜잭션입니다. 모든 입력이 손상 없이 마이그레이션 되었거나 마이그레이션되지 않은 입력이 모두 표시 됩니다. 24 시간 동안 마이그레이션된 입력이 표시 되지 않으면 Microsoft 지원에 문의 하세요. 마이그레이션된 입력이 표시 되 면 앱 태깅을 시작 합니다. 일부 앱에 이미 태그가 지정 된 경우, 데스크톱 분석은 Windows Analytics의 입력과 충돌 하는 경우 이러한 입력을 유지 합니다.
 
-### <a name="im-not-ready-yet-can-i-migrate-after-the-initial-onboarding"></a>아직 준비 되지 않았습니다. 초기 온 보 딩 후에 마이그레이션할 수 있나요?
+### <a name="how-long-do-i-have-to-migrate-my-data"></a>데이터를 마이그레이션해야 하는 기간
 
-예.<!-- 5202803 --> 이제 기존 Windows 분석 고객이 초기 등록 후 데이터를 마이그레이션할 수 있습니다. 데스크톱 분석 포털에서 **연결 된 서비스** 로 이동 하 여 Windows Analytics에서 데이터를 마이그레이션하는 옵션을 선택 합니다.
+Windows Analytics 업그레이드 준비 솔루션은 [2020 년 1 월 31 일에 사용 중지](https://aka.ms/waretirement)됩니다. 사용이 중지 된 후 Log Analytics 작업 영역 보존 정책에 따라 시간이 지남에 따라 데이터가 사라집니다. 데이터를 보관 해야 하는 고객은이를 수행 하기 전에 마이그레이션해야 합니다.
+
+### <a name="can-i-migrate-after-the-initial-onboarding"></a>초기 온 보 딩 후에 마이그레이션할 수 있나요?
+
+예.<!-- 5202803 --> [초기 온 보 딩](/sccm/desktop-analytics/set-up#initial-onboarding)중에 기존 windows analytics 작업 영역을 데스크톱 분석 작업 영역으로 설정 하면 기존 windows 분석 고객이 초기 등록 후에 데이터를 마이그레이션할 수 있습니다. 데스크톱 분석 포털에서 **연결 된 서비스** 로 이동 하 여 Windows Analytics에서 데이터를 마이그레이션하는 옵션을 선택 합니다.
 
 ### <a name="can-i-use-update-compliance-together-with-desktop-analytics"></a>데스크톱 분석과 함께 업데이트 준수를 사용할 수 있나요?
 

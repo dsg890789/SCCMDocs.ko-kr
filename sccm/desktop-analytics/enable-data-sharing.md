@@ -2,7 +2,7 @@
 title: 데이터 공유를 사용하도록 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 분석과 진단 데이터를 공유 하는 방법에 대 한 참조 가이드입니다.
-ms.date: 10/17/2019
+ms.date: 10/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91be1fbb03c49b28d689aff974a43ba8434fc194
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: edf0922d4aab8dc5a9c37ae54bbb7e91759e59de
+ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72385681"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684838"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데스크톱 분석에 데이터 공유 사용
 
@@ -29,7 +29,14 @@ ms.locfileid: "72385681"
 
 데스크톱 분석과 Configuration Manager를 통합 하는 경우이를 사용 하 여 장치에서 진단 데이터 수준을 관리할 수도 있습니다. 최상의 환경을 위해 Configuration Manager를 사용 합니다.
 
-데스크톱 분석의 기본 기능은 **기본** 진단 데이터 수준에서 작동 합니다. **향상 된 (제한 된)** 수준을 사용 하지 않으면 업데이트 된 장치에 대 한 사용량 또는 상태 데이터를 얻지 못합니다. **향상 된 (제한 된)** 진단 데이터 수준을 사용 하도록 설정 하는 것이 좋습니다. 자세한 내용은 windows [10 고급 진단 데이터 이벤트 및 Windows Analytics에서 사용 되는 필드](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.
+데스크톱 분석의 기본 기능은 **기본** [진단 데이터 수준](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels)에서 작동 합니다. Configuration Manager에서 **향상 된 (제한 된)** 수준을 구성 하지 않고 업데이트 된 장치에 대 한 사용 현황 또는 상태 데이터를 가져오지 않습니다. 
+
+> [!TIP]
+> Configuration Manager의 **향상 된 (제한 된)** 설정은 windows 10 버전 1709 이상을 실행 하는 장치에서 windows Analytics 정책에 **필요한 최소 수준으로 향상 된 진단 데이터를 제한 하** 는 것입니다. 데스크톱 분석으로 **향상 된 (제한 된)** 진단 데이터 수준을 사용 하도록 설정 하는 것이 좋습니다.
+>
+> Windows 10, 버전 1703 및 이전 버전을 실행 하는 장치에는이 정책 설정이 없습니다. Configuration Manager에서 향상 된 **(제한 된)** 설정을 구성 하는 경우 이러한 장치는 **기본** 수준으로 대체 됩니다.
+
+자세한 내용은 [Windows 10 고급 진단 데이터 이벤트 및 필드](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.
 
 > [!Important]   
 > Microsoft는 사용자의 개인 정보에 대 한 제어를 제공 하는 도구와 리소스를 제공 하기 위해 노력 하 고 있습니다. 따라서 Microsoft는 유럽 국가 (EEA 및 스위스)에 있는 장치에서 다음 데이터를 수집 하지 않습니다.
@@ -46,7 +53,7 @@ ms.locfileid: "72385681"
 - [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization)  
 
 > [!Note]  
-> 향상 된 (제한 된) 수준에서 각 클라이언트는 초기 전체 검색을 수행 하는 경우 약 2mb의 데이터를 Microsoft 클라우드에 보냅니다. 일별 델타는 하루에 250-400 k b 마다 다릅니다.
+> 고급 진단 데이터를 제한 하도록 구성 된 클라이언트는 초기 전체 검색에서 약 2mb의 데이터를 Microsoft 클라우드에 보냅니다. 일별 델타는 하루에 250-400 k b 마다 다릅니다.
 >
 > 매일 델타 검색은 오전 3:00 시 (장치 현지 시간)에 발생 합니다. 일부 이벤트는 하루 내내 처음 사용 가능한 시간에 전송 됩니다. 이러한 시간은 구성할 수 없습니다.
 >
