@@ -252,6 +252,8 @@
       items:
         - name: 기술 미리 보기 개요
           href: get-started/technical-preview.md
+        - name: 1910 기능
+          href: get-started/2019/technical-preview-1910.md
         - name: 1909 기능
           href: get-started/2019/technical-preview-1909.md
         - name: 1908.2 기능
@@ -260,8 +262,6 @@
           href: get-started/2019/technical-preview-1908.md
         - name: 1907 기능
           href: get-started/2019/technical-preview-1907.md
-        - name: 1906 기능
-          href: get-started/2019/technical-preview-1906.md
     - name: 계층 구조 간에 데이터 마이그레이션
       items:
         - name: 마이그레이션 개요
