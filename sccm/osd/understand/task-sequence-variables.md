@@ -2,7 +2,7 @@
 title: 작업 순서 변수 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서를 제어 및 사용자 지정하는 변수에 대해 알아봅니다.
-ms.date: 08/23/2019
+ms.date: 10/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a8c13d450acdd268996e1e7c760f12510549a38
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 5c2977d9e99c2a4c4273966f1ce11ce7c93900c0
+ms.sourcegitcommit: 89d6956f8dd9a73e18bf77990ab23cf9255068ad
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70892373"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587727"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
@@ -491,7 +491,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 #### <a name="valid-values"></a>유효한 값
 
-에서 사이의 `1` `15`정수입니다.
+`1`에서 `15`까지의 정수입니다.
 
 ### <a name="OSDBitLockerRebootCountOverride"></a>OSDBitLockerRebootCountOverride
 
@@ -502,7 +502,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 #### <a name="valid-values"></a>유효한 값
 
-에서 사이의 `0` `15`정수입니다.
+`0`에서 `15`까지의 정수입니다.
 
 ### <a name="OSDBitLockerRecoveryPassword"></a> OSDBitLockerRecoveryPassword
 
@@ -1529,24 +1529,6 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 
 현재 작업 순서 단계를 완료한 후 다시 시도를 요청합니다. 이 작업 순서 변수를 설정한 경우에는 [SMSTSRebootRequested](#SMSTSRebootRequested)도 `true`로 설정하세요. 컴퓨터가 다시 시작되면 작업 순서 관리자가 동일한 작업 순서 단계를 다시 실행합니다.
 
-### <a name="SMSTSRunCommandLineUserName"></a> SMSTSRunCommandLineUserName
-
-‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
-
-(입력)
-
-명령줄을 실행할 계정을 지정합니다. 값은 양식 사용자 이름 또는 도메인\사용자 이름의 문자열입니다. [SMSTSRunCommandLinePassword](#SMSTSRunCommandLinePassword) 변수를 사용하여 계정 암호를 지정하세요.
-
-작업 순서 실행 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
-
-### <a name="SMSTSRunCommandLinePassword"></a> SMSTSRunCommandLinePassword
-
-‘[명령줄 실행](task-sequence-steps.md#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
-
-(입력)
-
-[SMSTSRunCommandLineUserName](#SMSTSRunCommandLineUserName) 변수에서 지정한 계정의 암호를 지정합니다.
-
 ### <a name="SMSTSSoftwareUpdateScanTimeout"></a> SMSTSSoftwareUpdateScanTimeout
 
 ‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’ 
@@ -1584,7 +1566,7 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 ### <a name="TSDebugMode"></a>TSDebugMode
 
 <!--3612274-->
-버전 1906부터 작업 순서가 배포 되는 컬렉션 `TRUE` 또는 컴퓨터 개체에 대해이 변수를로 설정 합니다. 이 변수 집합이 있는 모든 장치는 해당 파일에 배포 된 모든 작업 순서를 디버그 모드로 전환 합니다.
+버전 1906부터이 변수를 작업 순서가 배포 되는 컬렉션 또는 컴퓨터 개체에 `TRUE` 설정 합니다. 이 변수 집합이 있는 모든 장치는 해당 파일에 배포 된 모든 작업 순서를 디버그 모드로 전환 합니다.
 
 자세한 내용은 [작업 순서 디버그](/sccm/osd/deploy-use/debug-task-sequence)를 참조하세요.
 

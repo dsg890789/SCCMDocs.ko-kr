@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10ec464f9689f2a4bf7f0c6176cf52bbf7033d0d
-ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
+ms.openlocfilehash: 45770da884b74f8f6a166490f5c7f604e8deacaf
+ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999025"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684817"
 ---
 # <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -87,7 +87,7 @@ Configuration Manager의 Windows 참가자 지원에 대 한 자세한 내용은
 
 ### <a name="enable-windows-insider-upgrades-and-updates"></a>Windows 참가자 업그레이드 및 업데이트 사용
 
-Windows 참가자 업그레이드 및 업데이트에 대해 제품 및 분류를 사용 하도록 설정 해야 합니다. Windows 참가자의 기능 업데이트는 **Windows 참가자 시험판** 제품 아래에 있습니다. 그러나 Windows 참가자에 대 한 누적 업데이트 및 기타 업데이트는 **windows 10 버전 1903 이상의**제품 아래에 있습니다.
+Windows 참가자 업그레이드 및 업데이트에 대해 제품 및 분류를 사용 하도록 설정 해야 합니다. Windows 참가자에 대 한 기능 업데이트, 누적 업데이트 및 기타 업데이트는 **Windows 참가자 시험판** 제품 범주에 있습니다.
 
 1. **Configuration Manager** 콘솔에서 **관리** > **사이트 구성** > **사이트**로 이동합니다.
 2. 중앙 관리 사이트나 독립 실행형 기본 사이트를 선택합니다.  
@@ -121,15 +121,15 @@ Windows 참가자에 대 한 업그레이드가 동기화 되 면 **소프트웨
 
 ### <a name="keeping-insider-devices-up-to-date"></a>Insider 장치를 최신 상태로 유지
 
-Windows 참가자에 대 한 누적 업데이트는 WSUS 및 Configuration Manager 확장에 사용할 수 있습니다. 이러한 누적 업데이트는 Windows 10 버전 1903 누적 업데이트와 유사한 빈도로 릴리스됩니다. Windows 참가자 누적 업데이트는 **windows 10 버전 1903 이상** 제품 범주에 있으며 **보안 업데이트** 또는 **업데이트로**분류 됩니다. [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates) 또는 [단계적 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)를 사용 하는 등의 일반 소프트웨어 업데이트 프로세스를 사용 하 여 Windows 참가자에 대 한 누적 업데이트를 배포할 수 있습니다.
+Windows 참가자에 대 한 누적 업데이트는 WSUS 및 Configuration Manager 확장에 사용할 수 있습니다. 이러한 누적 업데이트는 Windows 10 버전 1903 누적 업데이트와 유사한 빈도로 릴리스됩니다. Windows 참가자 누적 업데이트는 **Windows 참가자 시험판** 제품 범주에 있으며 **보안 업데이트** 또는 **업데이트로**분류 됩니다. [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates) 또는 [단계적 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence?toc=/sccm/sum/toc.json&bc=/sccm/sum/breadcrumb/toc.json)를 사용 하는 등의 일반 소프트웨어 업데이트 프로세스를 사용 하 여 Windows 참가자에 대 한 누적 업데이트를 배포할 수 있습니다.
 
-## <a name="bkmk_ESU"></a>확장 된 보안 업데이트 및 Configuration Manager
+## <a name="bkmk_ESU"></a> 확장 보안 업데이트 및 Configuration Manager
 
-[ESU (확장 보안 업데이트)](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates) 프로그램은 지원의 끝을 지나서 특정 레거시 Microsoft 제품을 실행 해야 하는 고객을 위한 최후의 수단 옵션입니다. Microsoft 보안 대응 센터 (MSRC)에서 제공 하는 중요 한 보안 업데이트 또는 중요 한 보안 업데이트 ( [Microsoft 보안 대응 센터 (MSRC)](https://www.microsoft.com/msrc)가 제품의 연장 된 지원 날짜 종료 이후 최대 3 년)를 포함 합니다.
+[확장 보안 업데이트(ESU)](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates) 프로그램은 지원 종료 이후 특정 레거시 Microsoft 제품을 실행해야 하는 고객이 최후의 수단으로 쓸 수 있는 옵션입니다. 여기에는 제품의 확장 지원 종료 날짜 이후 최대 3년간 ([Microsoft 보안 대응 센터(MSRC)](https://www.microsoft.com/msrc)에서 정의한) 긴급 및/또는 중요 보안 업데이트가 포함되어 있습니다.
 
-즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 여기에는 ESU 프로그램에서 설명 하는 모든 제품이 포함 됩니다. ESU 프로그램에서 릴리스된 보안 업데이트는 WSUS (Windows Server Update Services)에 게시 됩니다. 이러한 업데이트는 Configuration Manager 콘솔에 표시 됩니다. ESU 프로그램에서 설명 하는 제품은 더 이상 Configuration Manager에서 사용할 수 없지만 출시 된 [최신 버전의 Configuration Manager 현재 분기](/sccm/core/servers/manage/updates#version-details) 를 사용 하 여 출시 된 Windows 보안 업데이트를 배포 하 고 설치할 수 있습니다. 프로그램에서 최신 릴리스 버전은 OSD (운영 체제 배포)를 통해 지원 되는 Os를 배포 하는 데도 사용할 수 있습니다.
+즉, 지원 주기가 끝난 제품은 Configuration Manager에서 사용할 수 없습니다. 여기에는 ESU 프로그램에서 설명하는 모든 제품이 포함됩니다. ESU 프로그램에서 릴리스된 보안 업데이트는 WSUS(Windows Server Update Services)에 게시됩니다. 이러한 업데이트는 Configuration Manager 콘솔에 표시됩니다. ESU 프로그램에서 설명하는 제품은 더 이상 Configuration Manager에서 사용할 수 없지만 프로그램에서 릴리스된 Windows 보안 업데이트를 배포하고 설치하는 데는 [Configuration Manager 현재 분기의 최신 릴리스 버전](/sccm/core/servers/manage/updates#version-details)을 사용할 수 있습니다. 최신 릴리스 버전은 OSD(운영 체제 배포)를 통해 지원되는 OS를 배포할 때도 사용할 수 있습니다.
 
-Windows 소프트웨어 업데이트 관리와 관련 되지 않은 클라이언트 관리 기능 또는 OSD는 ESU 프로그램에서 다루는 운영 체제에서 더 이상 테스트 되지 않으며 계속 작동 한다는 보장이 없습니다. 클라이언트 관리 지원을 받으려면 가능한 한 빨리 최신 버전의 운영 체제로 업그레이드 하거나 마이그레이션하는 것이 좋습니다.
+Windows 소프트웨어 업데이트 관리와 관련되지 않은 클라이언트 관리 기능 또는 OSD는 ESU 프로그램에서 다루는 운영 체제에서 더 이상 테스트되지 않으며 계속 작동한다는 보장이 없습니다. 클라이언트 관리 지원을 받으려면 가능한 한 빨리 최신 버전의 운영 체제로 업그레이드하거나 마이그레이션하는 것이 좋습니다.
 
 
 ## <a name="next-steps"></a>다음 단계
