@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edf0922d4aab8dc5a9c37ae54bbb7e91759e59de
-ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
+ms.openlocfilehash: 0126045f737fe6b8eb9e372f590d6c4a241d8024
+ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684838"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810760"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데스크톱 분석에 데이터 공유 사용
 
@@ -66,7 +66,7 @@ ms.locfileid: "72684838"
 데이터 공유를 사용 하도록 설정 하려면 다음 끝점을 허용 하도록 프록시 서버를 구성 합니다.
 
 > [!Important]  
-> 개인 정보 및 데이터 무결성을 위해 Windows는 진단 데이터 끝점과 통신할 때 Microsoft SSL 인증서를 확인 합니다. SSL 가로채기 및 검사는 불가능 합니다. 데스크톱 분석을 사용 하려면 이러한 끝점을 SSL 검사에서 제외 합니다.<!-- BUG 4647542 -->
+> 개인 정보 및 데이터 무결성을 위해 Windows는 진단 데이터 끝점과 통신할 때 Microsoft SSL 인증서 (인증서 고정)를 확인 합니다. SSL 가로채기 및 검사는 불가능 합니다. 데스크톱 분석을 사용 하려면 이러한 끝점을 SSL 검사에서 제외 합니다.<!-- BUG 4647542 -->
 
 | 끝점만  | 기능  |
 |-----------|-----------|
@@ -77,11 +77,11 @@ ms.locfileid: "72684838"
 | `https://vortex-win.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. Windows 7 및 Windows 8.1를 실행 하는 장치에서 사용 |
 | `https://settings-win.data.microsoft.com` | 호환성 업데이트를 사용 하 여 데이터를 Microsoft로 보냅니다. |
 | `http://adl.windows.com` | 호환성 업데이트가 Microsoft에서 제공 하는 최신 호환성 데이터를 받을 수 있도록 허용 합니다. |
-| `https://watson.telemetry.microsoft.com` | WER (Windows 오류 보고). Windows 10 버전 1803 이전 버전에서 배포 상태를 모니터링 하는 데 필요 합니다. |
-| `https://umwatsonc.events.data.microsoft.com` | WER (Windows 오류 보고). Windows 10 버전 1809 이상에서 장치 상태 보고서에 필요 합니다. |
-| `https://ceuswatcab01.blob.core.windows.net`<br> `https://ceuswatcab02.blob.core.windows.net`<br> `https://eaus2watcab01.blob.core.windows.net`<br> `https://eaus2watcab02.blob.core.windows.net`<br> `https://weus2watcab01.blob.core.windows.net`<br> `https://weus2watcab02.blob.core.windows.net` | WER (Windows 오류 보고). Windows 10 버전 1809 이상에서 배포 상태를 모니터링 하는 데 필요 합니다. |
-| `https://kmwatsonc.events.data.microsoft.com` | 온라인 충돌 분석. Windows 10 버전 1809 이상에서 장치 상태 보고서에 필요 합니다. |
-| `https://oca.telemetry.microsoft.com`  | 온라인 충돌 분석 (OCA). Windows 10 버전 1803 이전 버전에서 배포 상태를 모니터링 하는 데 필요 합니다. |
+| `https://watson.telemetry.microsoft.com` | [WER (Windows 오류 보고)](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting). Windows 10 버전 1803 이전 버전에서 배포 상태를 모니터링 하는 데 필요 합니다. |
+| `https://umwatsonc.events.data.microsoft.com` | [WER (Windows 오류 보고)](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting). Windows 10 버전 1809 이상에서 장치 상태 보고서에 필요 합니다. |
+| `https://ceuswatcab01.blob.core.windows.net`<br> `https://ceuswatcab02.blob.core.windows.net`<br> `https://eaus2watcab01.blob.core.windows.net`<br> `https://eaus2watcab02.blob.core.windows.net`<br> `https://weus2watcab01.blob.core.windows.net`<br> `https://weus2watcab02.blob.core.windows.net` | [WER (Windows 오류 보고)](https://docs.microsoft.com/windows/win32/wer/windows-error-reporting). Windows 10 버전 1809 이상에서 배포 상태를 모니터링 하는 데 필요 합니다. |
+| `https://kmwatsonc.events.data.microsoft.com` | [온라인 충돌 분석 (OCA)](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis). Windows 10 버전 1809 이상에서 장치 상태 보고서에 필요 합니다. |
+| `https://oca.telemetry.microsoft.com`  | [온라인 충돌 분석 (OCA)](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis). Windows 10 버전 1803 이전 버전에서 배포 상태를 모니터링 하는 데 필요 합니다. |
 | `https://login.live.com` | 데스크톱 분석에 보다 안정적인 장치 id를 제공 하는 데 필요 합니다. <br> <br>최종 사용자 Microsoft 계정 액세스를 사용 하지 않도록 설정 하려면이 끝점을 차단 하는 대신 정책 설정을 사용 합니다. 자세한 내용은 [엔터프라이즈의 Microsoft 계정](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication)을 참조 하세요. |
 | `https://graph.windows.net` | Configuration Manager 서버 역할의 데스크톱 분석에 계층을 연결할 때 CommercialId 같은 설정을 자동으로 검색 하는 데 사용 됩니다. 자세한 내용은 [사이트 시스템 서버에 대 한 프록시 구성]을 참조 하세요.
 ] (/sccm/core/plan-design/network/proxy-server-support)을 (를) 사용할 때 사용할 것입니다. |

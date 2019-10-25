@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d4719fb17ed9eef67a73d97ab74caf667a865a0
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: cc0784744affab309697dfec8c7018d50bcc2934
+ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72385590"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810734"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 분석에서 장치를 등록 하는 방법
 
@@ -151,8 +151,8 @@ Configuration Manager 로컬 정책 경로 `HKLM:\SOFTWARE\Microsoft\Windows\Cur
 
 | 정책   | 값  |
 |----------|--------|
-| **CommercialId** | 데스크톱 분석에서 장치를 표시 하려면 조직의 상용 ID를 사용 하 여 장치를 구성 합니다. |
-| **AllowTelemetry 분석**  | **전체** 진단 데이터의 **기본**, `2` **고급**또는 `3`에 대 한 `1`를 설정 합니다. 데스크톱 분석에는 최소 기본 진단 데이터가 필요 합니다. 데스크톱 분석과 함께 향상 된 (제한 된) 수준을 사용 하는 것이 좋습니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)을 참조하세요. |
+| **CommercialId** | *Windows 7, Windows 8.1 및 windows 10에 적용 됩니다*. 데스크톱 분석에서 장치를 표시 하려면 조직의 상용 ID를 사용 하 여 구성 합니다. |
+| **AllowTelemetry 분석**  | *Windows 10에 적용 됩니다*. **전체** 진단 데이터에 대해 **Basic**, `2` **고급**또는 `3`에 대 한 `1` 설정 합니다. 데스크톱 분석에는 최소 기본 진단 데이터가 필요 합니다. 데스크톱 분석과 함께 향상 된 (제한 된) 수준을 사용 하는 것이 좋습니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)을 참조하세요. |
 | **LimitEnhancedDiagnosticDataWindowsAnalytics** | *Windows 10 버전 1709 이상에 적용*됩니다 .이 설정은 allowtelemetry 분석 설정이 `2` 경우에만 적용 됩니다. Microsoft로 전송 되는 향상 된 진단 데이터 이벤트를 데스크톱 분석에 필요한 이벤트로만 제한 합니다. 자세한 내용은 windows [10, 버전 1709 고급 진단 데이터 이벤트 및 Windows Analytics에서 사용 되는 필드](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.|
 | **AllowDeviceNameInTelemetry** | *Windows 10 버전 1803 이상에 적용*됩니다. 장치에서 장치 이름을 계속 보낼 수 있도록 하려면 별도의 옵트인이 필요 합니다.<br> <br>참고: 장치 이름은 기본적으로 Microsoft에 전송 되지 않습니다. 장치 이름을 보내지 않으면 데스크톱 분석에서 "알 수 없음"으로 표시 됩니다. 이 동작을 통해 장치를 식별 하 고 평가 하기 어려울 수 있습니다. 자세한 내용은 [장치 이름](#device-name)을 참조 하세요. |
 | **CommercialDataOptIn** | *Windows 7 및 Windows 8.1에 적용*됩니다. 데스크톱 분석에는 `1` 값이 필요 합니다. 자세한 내용은 [Windows 7의 상용 데이터 옵트인](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee126127\(v=ws.10\))(영문)을 참조 하세요. |
