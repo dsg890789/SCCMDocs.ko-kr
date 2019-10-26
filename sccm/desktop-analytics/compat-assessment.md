@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f565128b13d99daf041d56762994b1e2b35e793e
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: d7ba8c29b9b917a8497d44ebcc3bf4264cf991ff
+ms.sourcegitcommit: 21a4a87d5e137b1cbd2ecd8ea34b5f0bfd2af357
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72386731"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889727"
 ---
 # <a name="compatibility-assessment-in-desktop-analytics"></a>데스크톱 분석의 호환성 평가
 
@@ -57,7 +57,7 @@ Windows Analytics의 업그레이드 평가가 일반적입니다. 예를 들어
 
 ### <a name="application-is-removed-during-upgrade"></a>업그레이드 하는 동안 응용 프로그램이 제거 됨
 
-Windows에서 호환성 문제를 발견 했습니다. 응용 프로그램이 새 OS 버전으로 마이그레이션되지 않습니다. 업그레이드를 계속 하려면 아무 작업도 수행 하지 않아도 됩니다.
+Windows에서 호환성 문제를 발견 했습니다. 응용 프로그램이 새 OS 버전으로 마이그레이션되지 않습니다. 업그레이드를 계속 하려면 아무 작업도 수행 하지 않아도 됩니다. 새 OS 버전에 호환 되는 버전의 응용 프로그램을 설치 합니다.
 
 ### <a name="blocking-upgrade"></a>업그레이드 차단
 
