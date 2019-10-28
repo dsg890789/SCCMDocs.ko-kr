@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165574cb85a41cb8acba9efba653ebc7fc4a6fe1
-ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
+ms.openlocfilehash: c03daa588b0ddbdf94cba6df4f3fe7c4adcdbf71
+ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69974698"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810818"
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
@@ -84,9 +84,9 @@ ms.locfileid: "69974698"
 
 ## <a name="drill-through-required-updates"></a>필수 업데이트 드릴스루
 <!--4224414-->
-*(1906 버전에서 도입됨)*
+*(버전 1906에서 도입됨)*
 
-규정 준수 통계를 드릴스루하여 특정 Office 365 소프트웨어 업데이트가 필요한 디바이스를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
+준수 통계를 드릴스루하여 특정 Windows 10 기능 업데이트가 필요한 디바이스를 확인할 수 있습니다. 디바이스 목록을 보려면 디바이스가 속한 업데이트 및 컬렉션을 볼 수 있는 사용 권한이 필요합니다. 장치 목록으로 드릴 다운 합니다.
 
 1. **소프트웨어 라이브러리** > **Windows 10 서비스** > **모든 Windows 10 업데이트**로 가기.
 1. 하나 이상의 디바이스에 필요한 업데이트를 선택합니다.
@@ -155,7 +155,7 @@ ms.locfileid: "69974698"
 
    -   **이 서비스 계획을 적용할 Windows 준비 상태 지정**: 다음 옵션 중 하나를 선택합니다.  
 
-       -   **반기 채널(대상 지정)**: 이 서비스 모델에서는 Microsoft가 기능 업데이트를 릴리스하는 즉시 사용할 수 있습니다.
+       -   **반기 채널(대상 지정)** : 이 서비스 모델에서는 Microsoft가 기능 업데이트를 릴리스하는 즉시 사용할 수 있습니다.
 
        -   **반기 채널**: 이 서비스 채널은 일반적으로 광범위한 배포에 사용됩니다. 반기 채널의 Windows 10 클라이언트는 대상 채널의 디바이스와 동일한 Windows 10 빌드를 나중에 수신합니다.
 

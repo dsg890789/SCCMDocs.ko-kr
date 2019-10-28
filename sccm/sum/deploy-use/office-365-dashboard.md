@@ -5,18 +5,18 @@ description: Office 365 클라이언트 관리 대시보드에서 Office 365 클
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 69f234a2-b04b-445a-b81f-6b4acfc00eaf
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e4f843d8984cbf27fed4e309af523855ab14002
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 4bb08f123e0cf1321ff6eb891e0dca46c712c3f6
+ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70380232"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810847"
 ---
 # <a name="office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드
 
@@ -84,13 +84,15 @@ Office 365 클라이언트 관리 대시보드에는 새 타일인 **Office 365 
 1906 버전부터는 Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편리하게 확인할 수 있도록 하기 위해 준비 대시보드가 제공됩니다. 여기에는 Configuration Manager 현재 분기 버전 1902에 릴리스된 **Office 365 ProPlus 업그레이드 준비** 타일이 포함되어 있습니다. 이 대시보드의 다음 새 타일에서 Office 추가 기능 및 매크로 준비 상태를 평가할 수 있습니다.
 
 - 배포
-- 장치 준비
+- 디바이스 준비 상태
 - 추가 기능 준비 상태
 - 추가 기능 지원 설명
 - 버전별 상위 추가 기능
 - 매크로가 있는 디바이스 수
 - 매크로 준비 상태
 - 매크로 권고 사항
+
+매크로에 대 한 보다 자세한 평가를 수행 해야 하는 경우 **Office 준비 도구 키트**를 사용 합니다. 자세한 내용은 [Readiness Toolkit을 사용하여 Office 365 ProPlus 애플리케이션 호환성 평가](https://aka.ms/readinesstoolkit)를 참조하세요.
 
 ### <a name="using-the-office-365-proplus-upgrade-readiness-dashboard"></a>Office 365 ProPlus 업그레이드 준비 대시보드 사용
  
@@ -103,6 +105,8 @@ Office 365 클라이언트 관리 대시보드에는 새 타일인 **Office 365 
 ![Office 365 ProPlus 업그레이드 준비 대시보드](./media/4021125-office-365-to-add-ins.png)
 
 ![Office 365 ProPlus 업그레이드 준비 대시보드](./media/4021125-office-365-macro-advisories.png)
+
+
 
 ## <a name="next-steps"></a>다음 단계
 

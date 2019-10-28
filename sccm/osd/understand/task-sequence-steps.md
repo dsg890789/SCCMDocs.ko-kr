@@ -2,7 +2,7 @@
 title: 작업 순서 단계
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
-ms.date: 09/04/2019
+ms.date: 10/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7132bbbc0746af04e4af952b2fcf7d8de46b3c9b
-ms.sourcegitcommit: cb169396acf0d50fedd9f2ae62f7894615c3cce5
+ms.openlocfilehash: ec745842fb03a422f3d08be3de261537f23a0a19
+ms.sourcegitcommit: 89d6956f8dd9a73e18bf77990ab23cf9255068ad
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808368"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587755"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -1005,7 +1005,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 이 설정은 개별 애플리케이션 설치가 실패할 때 단계가 계속되도록 지정합니다. 이 설정을 지정하면 설치 오류에 관계없이 작업 순서가 계속됩니다. 이 설정을 지정하지 않고 설치가 실패하면 이 단계는 즉시 종료됩니다.  
 
-#### <a name="clear-application-content-from-cache-after-installing"></a>설치한 후 캐시에서 응용 프로그램 콘텐츠 지우기
+#### <a name="clear-application-content-from-cache-after-installing"></a>설치한 후 캐시에서 애플리케이션 콘텐츠 지우기
 
 <!--4485675-->
 버전 1906부터 단계가 실행 된 후 클라이언트 캐시에서 앱 콘텐츠를 삭제 합니다. 이 동작은 디바이스의 하드 드라이브 용량이 작을 때 또는 다수의 큰 앱을 연속으로 설치할 때 유용합니다.
@@ -1494,8 +1494,6 @@ USMT에서 일부 파일을 복원할 수 없는 경우에도 사용자 상태 �
 
 - [OSDDoNotLogCommand](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)(버전 1902부터 적용)<!--3654172-->  
 - [SMSTSDisableWow64Redirection](/sccm/osd/understand/task-sequence-variables#SMSTSDisableWow64Redirection)  
-- [SMSTSRunCommandLineUserName](/sccm/osd/understand/task-sequence-variables#SMSTSRunCommandLineUserName)  
-- [SMSTSRunCommandLinePassword](/sccm/osd/understand/task-sequence-variables#SMSTSRunCommandLinePassword)  
 - [WorkingDirectory](/sccm/osd/understand/task-sequence-variables#WorkingDirectory)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **명령줄 실행**을 차례로 선택합니다.

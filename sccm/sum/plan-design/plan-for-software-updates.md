@@ -5,18 +5,18 @@ description: Configuration Manager 프로덕션 환경에서 소프트웨어 업
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6b2f0e98527ef04a0bdeec8b2efb87f6ff86b23
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: b6699ccfb2b987c7b454d364547698dc58c9cf7c
+ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243734"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684739"
 ---
 # <a name="plan-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트 계획
 
@@ -449,7 +449,7 @@ Configuration Manager는 다음과 같은 업데이트 분류의 동기화를 �
 
 소프트웨어 업데이트 설치 전용 유지 관리 기간을 추가합니다. 이 작업을 통해 소프트웨어 업데이트를 위한 일반 유지 관리 기간과 다른 유지 관리 기간을 구성할 수 있습니다. 일반 유지 관리 기간과 소프트웨어 업데이트 유지 관리 기간을 모두 구성하는 경우 클라이언트는 소프트웨어 업데이트 유지 관리 기간 동안에만 소프트웨어 업데이트를 설치합니다. 
 
-Configuration Manager 버전 1810부터이 동작을 변경 하 고 일반 유지 관리 기간 동안 소프트웨어 업데이트를 설치할 수 있습니다. 이 클라이언트 설정에 대 한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#bkmk_SUMMaint)을 참조 하세요.
+Configuration Manager 버전 1810부터이 동작을 변경 하 고 일반 유지 관리 기간 동안 소프트웨어 업데이트를 설치할 수 있습니다. 이 클라이언트 설정에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#bkmk_SUMMaint)을 참조하세요.
 
 유지 관리 기간에 대한 자세한 내용은 [유지 관리 기간을 사용하는 방법](../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
@@ -458,7 +458,7 @@ Configuration Manager 버전 1810부터이 동작을 변경 하 고 일반 유�
 
 다시 시작이 필요한 소프트웨어 업데이트가 Configuration Manager를 사용하여 배포 및 설치되면 클라이언트는 보류 중인 다시 시작을 예약하고 다시 시작 대화 상자를 표시합니다.
 
-Configuration Manager 소프트웨어 업데이트에 대해 보류 중인 다시 시작이 있으면 Windows 전원 옵션의 Windows 10 컴퓨터에서 **업데이트 및 다시 시작**과 **업데이트 및 종료** 옵션을 사용할 수 있습니다. 이러한 옵션 중 하나를 사용한 후 컴퓨터를 다시 시작하면 다시 시작 대화 상자가 표시되지 않습니다.
+Configuration Manager 소프트웨어 업데이트에 대해 보류 중인 다시 시작이 있으면 Windows 전원 옵션의 Windows 10 컴퓨터에서 **업데이트 및 다시 시작**과 **업데이트 및 종료** 옵션을 사용할 수 있습니다. 이러한 옵션 중 하나를 사용한 후 컴퓨터를 다시 시작하면 다시 시작 대화 상자가 표시되지 않습니다. 특정 상황에서는 운영 체제가 보류 중인 다시 시작 옵션을 제거할 수 있습니다. 이 문제는 Windows 10의 빠른 시작 기능을 사용 하도록 설정한 경우에 발생할 수 있습니다. 자세한 내용은 [Windows 10에서 빠른 시작을 사용 하 여 업데이트를 설치 하지 못할 수 있습니다](https://support.microsoft.com/help/4011287/windows-updates-not-install-with-fast-startup).를 참조 하세요.
 
 
 
