@@ -2,7 +2,7 @@
 title: 콘솔 내 설명서
 titleSuffix: Configuration Manager
 description: 이 문서는 Configuration Manager 콘솔에만 표시됩니다.
-ms.date: 09/09/2019
+ms.date: 10/22/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b24f5cc928265cf79eeebe2d9beb4c9f8d9d759
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 143aa617484bb45a2d20eb4db3d41733863052ac
+ms.sourcegitcommit: 21a4a87d5e137b1cbd2ecd8ea34b5f0bfd2af357
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70889609"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889706"
 ---
 <!-- 
 - Feature 1357546
@@ -28,7 +28,7 @@ ms.locfileid: "70889609"
 
 # <a name="configuration-manager-documentation"></a>Configuration Manager 설명서
 
-*마지막 업데이트:* 2019년 9월 9일
+*마지막 업데이트: 2019년 10월 22일*
 
 이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다.
 
@@ -56,22 +56,22 @@ ms.locfileid: "70889609"
 
 ## <a name="trending"></a>인기
 
-2019년 8월 1일에서 8월 31일 사이의 문서가 가장 인기 있는 문서입니다.
+2019년 9월 1일부터 0월 30일 사이의 가장 인기 있는 문서입니다.
 
 | 페이지 보기 | 제목 |
 |------------|-------|
-| 18594 | [로그 파일 참조](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
-| 18045 | [버전 1906의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1906) |
-| 16244 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/sccm/core/plan-design/security/enable-tls-1-2) |
-| 11902 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
-| 11233 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
-| 8663 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
-| 8399 | [Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/overview) |
-| 8391 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
-| 8229 | [클라이언트 설정](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings) |
-| 8069 | [작업 순서 단계](https://docs.microsoft.com/sccm/osd/understand/task-sequence-steps) |
+| 19123 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/sccm/core/plan-design/security/enable-tls-1-2) |
+| 18310 | [로그 파일 참조](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files) |
+| 16614 | [버전 1906의 새로운 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1906) |
+| 12623 | [연결에 사용되는 포트](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports) |
+| 12293 | [Windows에 클라이언트 배포](https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 9371 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 8894 | [클라이언트 설정](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings) |
+| 8803 | [업데이트 및 서비스](https://docs.microsoft.com/sccm/core/servers/manage/updates) |
+| 8692 | [Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/overview) |
+| 8558 | [소프트웨어 센터 사용자 가이드](https://docs.microsoft.com/sccm/core/understand/software-center) |
 
-[Configuration Manager 허브 페이지](https://docs.microsoft.com/sccm/)에서 이 기간에 22,991번의 페이지 보기가 있었습니다.
+[Configuration Manager 허브 페이지](https://docs.microsoft.com/sccm/)에서 이 기간에 22,293번의 페이지 보기가 있었습니다.
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
 
@@ -79,16 +79,16 @@ ms.locfileid: "70889609"
 
 | 마지막 검토 | 제목 |
 |---------------|-------|
-| 8/30/2019 | [기술 미리 보기 1908.2](https://docs.microsoft.com/sccm/core/get-started/2019/technical-preview-1908-2) |
-| 8/30/2019 | [MSfB 통합 문제 해결](https://docs.microsoft.com/sccm/apps/deploy-use/troubleshoot-microsoft-store-for-business-integration) |
-| 8/23/2019 | [Desktop Analytics FAQ](https://docs.microsoft.com/sccm/desktop-analytics/faq) |
-| 8/23/2019 | [디바이스 다시 시작 알림](https://docs.microsoft.com/sccm/core/clients/deploy/device-restart-notifications) |
-| 8/22/2019 | [소프트웨어 업데이트에 대한 필수 조건](https://docs.microsoft.com/sccm/sum/plan-design/prerequisites-for-software-updates) |
-| 8/21/2019 | [설치 명령줄 옵션](https://docs.microsoft.com/sccm/core/servers/deploy/install/command-line-options-for-setup) |
-| 8/15/2019 | [Desktop Analytics의 새로운 기능](https://docs.microsoft.com/sccm/desktop-analytics/whats-new) |
-| 8/9/2019 | [SQL 복제 모니터링](https://docs.microsoft.com/sccm/core/servers/manage/replication/overview) |
-| 8/9/2019 | [Database replication](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/database-replication) |
-| 8/8/2019 | [인터넷 액세스 요구 사항](https://docs.microsoft.com/sccm/core/plan-design/network/internet-endpoints) |
+| 2019/9/30 | [기술 미리 보기 릴리스](https://docs.microsoft.com/sccm/core/get-started/technical-preview) |
+| 2019/9/25 | [Windows 10에 대한 지원](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10) |
+| 2019/9/25 | [동기화할 분류 및 제품 구성](https://docs.microsoft.com/sccm/sum/get-started/configure-classifications-and-products) |
+| 2019/9/19 | [CMPivot 문제 해결](https://docs.microsoft.com/sccm/core/servers/manage/cmpivot-tsg) |
+| 2019/9/10 | [계정을 종료하는 방법](https://docs.microsoft.com/sccm/desktop-analytics/account-close) |
+| 2019/9/10 | [네트워크 캐시의 배달 최적화](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/delivery-optimization-in-network-cache) |
+| 2019/9/6 | [DOINC 문제 해결](https://docs.microsoft.com/sccm/core/servers/deploy/configure/troubleshoot-delivery-optimization-in-network-cache) |
+| 2019/9/6 | [사용되지 않는 기능](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) |
+| 2019/9/6 | [공동 관리 워크로드](https://docs.microsoft.com/sccm/comanage/workloads) |
+| 2019/9/3 | [유지 관리 작업에 대한 참조](https://docs.microsoft.com/sccm/core/servers/manage/reference-for-maintenance-tasks) |
 
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
 

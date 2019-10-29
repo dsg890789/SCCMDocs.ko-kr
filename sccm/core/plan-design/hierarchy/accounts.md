@@ -2,7 +2,7 @@
 title: 사용된 계정
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 사용되는 Windows 그룹, 계정 및 SQL 개체를 식별하고 관리합니다.
-ms.date: 05/01/2019
+ms.date: 10/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ab260e140c3f031a3a29b4639fd26f451bb55db
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.openlocfilehash: 5e76aabecf9777cc93d4df9d4094f9f6fc0d94ff
+ms.sourcegitcommit: fb5f1df6222b6861e296c3b673789df9c2721114
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338734"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778156"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -61,10 +61,33 @@ ms.locfileid: "68338734"
   - [작업 순서 네트워크 폴더 연결 계정](#task-sequence-network-folder-connection-account)  
   - [작업 순서 실행 계정](#task-sequence-run-as-account)  
 
-- [Configuration Manager가 SQL에서 사용하는 사용자 개체](#bkmk_sqlobjects)
+- [Configuration Manager가 SQL에서 사용하는 사용자 개체](#bkmk_sqlusers)
   - [smsdbuser_ReadOnly](#smsdbuser_readonly)
   - [smsdbuser_ReadWrite](#smsdbuser_readwrite)
   - [smsdbuser_ReportSchema](#smsdbuser_reportschema)
+
+- [Configuration Manager가 SQL에서 사용하는 데이터베이스 역할](#bkmk_sqlroles)
+  - [smsdbrole_AITool](#smsdbrole_aitool)
+  - [smsdbrole_AIUS](#smsdbrole_aius)
+  - [smsdbrole_AMTSP](#smsdbrole_amtsp)
+  - [smsdbrole_CRP](#smsdbrole_crp)
+  - [smsdbrole_CRPPfx](#smsdbrole_crppfx)
+  - [smsdbrole_DMP](#smsdbrole_dmp)
+  - [smsdbrole_DmpConnector](#smsdbrole_dmpconnector)
+  - [smsdbrole_DViewAccess](#smsdbrole_dviewaccess)
+  - [smsdbrole_DWSS](#smsdbrole_dwss)
+  - [smsdbrole_EnrollSvr](#smsdbrole_enrollsvr)
+  - [smsdbrole_extract](#smsdbrole_extract)
+  - [smsdbrole_HMSUser](#smsdbrole_hmsuser)
+  - [smsdbrole_MCS](#smsdbrole_mcs)
+  - [smsdbrole_MP](#smsdbrole_mp)
+  - [smsdbrole_MPMBAM](#smsdbrole_mpmbam)
+  - [smsdbrole_MPUserSvc](#smsdbrole_mpusersvc)
+  - [smsdbrole_siteprovider](#smsdbrole_siteprovider)
+  - [smsdbrole_siteserver](#smsdbrole_siteserver)
+  - [smsdbrole_SUP](#smsdbrole_sup)
+  - [smsdbrole_WebPortal](#smsdbrole_webportal)
+  - [smsschm_users](#smsschm_users)
 
 ## <a name="bkmk_groups"></a> Configuration Manager에서 만들고 사용하는 Windows 그룹  
 
@@ -593,7 +616,7 @@ Windows 설치 프로그램은 **작업 순서 도메인 조인 계정**을 사�
 > 명령줄에 컴퓨터에 대한 관리 액세스 권한이 필요한 경우 작업 순서를 실행하는 모든 컴퓨터에서 이 계정에 대해서만 로컬 관리자 계정을 만드는 것이 좋습니다. 더 이상 필요하지 않으면 계정을 삭제합니다.  
 
 
-## <a name="bkmk_sqlobjects"></a> Configuration Manager가 SQL에서 사용하는 사용자 개체 
+## <a name="bkmk_sqlusers"></a> Configuration Manager가 SQL에서 사용하는 사용자 개체 
 <!--SCCMDocs issue #1160-->
 Configuration Manager는 다음과 같은 사용자 개체를 SQL에서 자동으로 만들고 유지 관리합니다.  이러한 개체는 Configuration Manager 데이터베이스 내의 보안/사용자 아래에 있습니다.  
 
@@ -601,7 +624,7 @@ Configuration Manager는 다음과 같은 사용자 개체를 SQL에서 자동�
 >  이러한 개체를 수정하거나 제거하면 Configuration Manager 환경 내에서 급격한 문제가 발생할 수 있습니다.  이러한 개체는 변경하지 않는 것이 좋습니다.
 
 
-### ### <a name="smsdbuser_readonly"></a>smsdbuser_ReadOnly
+### <a name="smsdbuser_readonly"></a>smsdbuser_ReadOnly
 
 이 개체는 읽기 전용 컨텍스트에서 쿼리를 실행하는 데 사용됩니다.  이 개체는 여러 저장 프로시저에서 사용됩니다.
 
@@ -614,3 +637,101 @@ Configuration Manager는 다음과 같은 사용자 개체를 SQL에서 자동�
 ### <a name="smsdbuser_reportschema"></a>smsdbuser_ReportSchema
 
 이 개체는 SQL Reporting 실행에 사용됩니다.  이 함수에는 저장 프로시저 spSRExecQuery가 함께 사용됩니다.
+
+
+## <a name="bkmk_sqlroles"></a> Configuration Manager가 SQL에서 사용하는 데이터베이스 역할
+<!--SCCMDocs issue #1160-->
+Configuration Manager는 다음과 같은 역할 개체를 SQL에서 자동으로 만들고 유지 관리합니다. 이러한 역할을 통해 특정 저장 프로시저, 테이블, 보기 및 기능에 액세스하여 각 역할에 필요한 작업을 수행하여 ConfigMgr 데이터베이스에 데이터를 검색하거나 삽입할 수 있습니다. 이러한 개체는 Configuration Manager 데이터베이스 내의 보안/역할/데이터베이스 역할 아래에 있습니다.
+
+> [!IMPORTANT]  
+> 이러한 개체를 수정하거나 제거하면 Configuration Manager 환경 내에서 급격한 문제가 발생할 수 있습니다.  이러한 개체는 변경하지 않는 것이 좋습니다.
+
+### <a name="smsdbrole_aitool"></a>smsdbrole_AITool
+
+볼륨 라이선스 가져오기를 Asset Intelligence합니다. ConfigMgr은 Asset Intelligence와 함께 사용할 볼륨 라이선스를 가져올 수 있도록 RBA 액세스를 기반으로한 사용자 계정에 이 권한을 부여합니다.  이 계정은 전체 관리자 역할 또는 자산 관리자 역할로 추가할 수 있습니다.
+
+### <a name="smsdbrole_aius"></a>smsdbrole_AIUS
+
+업데이트 동기화를 Asset Intelligence합니다. ConfigMgr은 Asset Intelligence 동기화 지점 계정 액세스를 호스팅하는 컴퓨터 계정에 액세스 인텔리전스 프록시 데이터를 가져오고 업로드를 위해 보류 중인 AI 데이터를 볼 수 있도록 허용합니다.
+
+### <a name="smsdbrole_amtsp"></a>smsdbrole_AMTSP
+
+대역 외 관리. 이 역할은 Configuration Manager AMT 역할에서 Intel AMT를 지원하는 디바이스에서 데이터를 검색하는 데 사용됩니다.
+
+> [!NOTE]  
+> 이 역할은 ConfigMgr의 최신 릴리스에서 더 이상 사용되지 않습니다.
+
+### <a name="smsdbrole_crp"></a>smsdbrole_CRP
+
+인증서 등록 지점 System Center Endpoint Protection (SCEP) 지원. ConfigMgr은 인증서 서명 및 갱신을 위한 SCEP 인증서 등록 지점을 지원하는 사이트 시스템의 컴퓨터 계정에 권한을 부여합니다.
+
+### <a name="smsdbrole_crppfx"></a>smsdbrole_CRPPfx
+
+인증서 등록 지점 PFX 지원. ConfigMgr은 서명 및 갱신을 위해 PFX 지원을 위해 구성된 인증서 등록 지점을 지원하는 사이트 시스템의 컴퓨터 계정에 권한을 부여합니다.
+
+### <a name="smsdbrole_dmp"></a>smsdbrole_DMP
+
+디바이스 관리 지점. ConfigMgr은 MDM 등록 디바이스에 대한 지원을 제공하는 "모바일 디바이스와 Mac 컴퓨터가 이 관리 지점을 사용하도록 허용" 옵션이 있는 관리 지점에 대해 이 권한을 컴퓨터 계정에 부여합니다.
+
+### <a name="smsdbrole_dmpconnector"></a>smsdbrole_DmpConnector
+
+서비스 연결점. ConfigMgr은 서비스 연결점을 호스팅하는 컴퓨터 계정에 이 권한을 부여하여 원격 분석 데이터를 검색 및 제공하고 클라우드 서비스를 관리하며 서비스 업데이트를 검색합니다.
+
+### <a name="smsdbrole_dviewaccess"></a>smsdbrole_DViewAccess
+
+분산 보기. 복제 링크 속성에서 SQL Server 분산 보기 옵션을 선택하면 Configuration Manager는 이 권한을 CAS에 있는 기본 사이트 서버의 시스템 계정에 부여합니다.
+
+### <a name="smsdbrole_dwss"></a>smsdbrole_DWSS
+
+데이터 웨어하우스. ConfigMgr은 데이터 웨어하우스 역할을 호스팅하는 컴퓨터 계정에 이 권한을 부여합니다.
+
+### <a name="smsdbrole_enrollsvr"></a>smsdbrole_EnrollSvr
+
+ 등록 지점. ConfigMgr은 MDM을 통해 디바이스를 등록할 수 있도록 등록 지점을 호스팅하는 컴퓨터 계정에 이 권한을 부여합니다.
+
+### <a name="smsdbrole_extract"></a>smsdbrole_extract
+
+모든 확장된 스키마 보기에 대해 액세스를 제공합니다.
+
+### <a name="smsdbrole_hmsuser"></a>smsdbrole_HMSUser
+
+계층 구조 관리자 서비스. ConfigMgr은 계층 내 사이트 간의 장애 조치 상태 메시지 및 SQL Server Broker 트랜잭션을 관리할 수 있는 권한을 이 계정에 부여합니다.
+
+> [!NOTE]  
+> smdbrole_WebPortal 역할은 기본적으로 이 역할의 멤버입니다.
+
+### <a name="smsdbrole_mcs"></a>smsdbrole_MCS
+
+멀티 캐스트 서비스. ConfigMgr은 멀티캐스트를 지원하는 배포 지점의 컴퓨터 계정에 이 권한을 부여합니다.
+
+### <a name="smsdbrole_mp"></a>smsdbrole_MP
+
+관리 지점. ConfigMgr은 이 권한을 관리 지점 역할을 호스팅하는 시스템 계정에 부여하여 ConfigMgr 클라이언트에 대한 지원을 제공합니다.
+
+### <a name="smsdbrole_mpmbam"></a>smsdbrole_MPMBAM
+
+관리 지점 Microsoft BitLocker Administration And Monitoring. ConfigMgr은 환경의 MBAM을 관리하는 관리 지점을 호스팅하는 시스템 계정에 이 권한을 부여합니다.
+
+### <a name="smsdbrole_mpusersvc"></a>smsdbrole_MPUserSvc
+
+관리 지점 애플리케이션 요청. ConfigMgr은 사용자 기반 애플리케이션 요청을 지원하기 위해 관리 지점을 호스팅하는 시스템 계정에 이 권한을 부여합니다.
+
+### <a name="smsdbrole_siteprovider"></a>smsdbrole_siteprovider
+
+SMS 공급자. Configuration Manager는 SMS 공급자 역할을 호스팅하는 컴퓨터 계정에 이 권한을 부여합니다.  
+
+### <a name="smsdbrole_siteserver"></a>smsdbrole_siteserver
+
+사이트 서버. ConfigMgr은 기본 또는 CAS 사이트를 호스트하는 시스템 계정에 이 권한을 부여합니다.
+
+### <a name="smsdbrole_sup"></a>smsdbrole_SUP
+
+소프트웨어 업데이트 지점. ConfigMgr은 타사 업데이트 작업을 위해 소프트웨어 업데이트 지점을 호스팅하는 컴퓨터 계정에 이 권한을 부여합니다.
+
+### <a name="smsdbrole_webportal"></a>smsdbrole_WebPortal
+
+애플리케이션 카탈로그 웹 사이트 지점. ConfigMgr은 애플리케이션 카탈로그 웹 사이트 지점을 호스팅하는 컴퓨터 계정에 사용자 기반 애플리케이션 배포를 제공할 수 있는 권한을 부여합니다.
+
+### <a name="smsschm_users"></a>smsschm_users
+
+사용자 보고 액세스. ConfigMgr은 SMS 보고 보기에 액세스하여 Configuration Manager 보고 데이터를 표시할 수 있도록 보고 서비스 지점 계정에 대한 액세스 권한을 부여합니다.  RBA를 사용하면 데이터가 더욱 제한됩니다.

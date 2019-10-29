@@ -2,7 +2,7 @@
 title: 데이터 공유를 사용하도록 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 분석과 진단 데이터를 공유 하는 방법에 대 한 참조 가이드입니다.
-ms.date: 10/18/2019
+ms.date: 10/25/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0126045f737fe6b8eb9e372f590d6c4a241d8024
-ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
+ms.openlocfilehash: db7f9e63de719c3f6c9f63c476b0b7c4ab919764
+ms.sourcegitcommit: 9ed9551c15abc36f38c92aaeef60dbb699ae7cd8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810760"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984379"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데스크톱 분석에 데이터 공유 사용
 
@@ -83,10 +83,8 @@ ms.locfileid: "72810760"
 | `https://kmwatsonc.events.data.microsoft.com` | [온라인 충돌 분석 (OCA)](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis). Windows 10 버전 1809 이상에서 장치 상태 보고서에 필요 합니다. |
 | `https://oca.telemetry.microsoft.com`  | [온라인 충돌 분석 (OCA)](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis). Windows 10 버전 1803 이전 버전에서 배포 상태를 모니터링 하는 데 필요 합니다. |
 | `https://login.live.com` | 데스크톱 분석에 보다 안정적인 장치 id를 제공 하는 데 필요 합니다. <br> <br>최종 사용자 Microsoft 계정 액세스를 사용 하지 않도록 설정 하려면이 끝점을 차단 하는 대신 정책 설정을 사용 합니다. 자세한 내용은 [엔터프라이즈의 Microsoft 계정](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication)을 참조 하세요. |
-| `https://graph.windows.net` | Configuration Manager 서버 역할의 데스크톱 분석에 계층을 연결할 때 CommercialId 같은 설정을 자동으로 검색 하는 데 사용 됩니다. 자세한 내용은 [사이트 시스템 서버에 대 한 프록시 구성]을 참조 하세요.
-] (/sccm/core/plan-design/network/proxy-server-support)을 (를) 사용할 때 사용할 것입니다. |
-| `https://*.manage.microsoft.com` | 데스크톱 분석 (Configuration Manager 서버 역할의 경우에만)을 사용 하 여 장치 컬렉션 멤버 자격, 배포 계획 및 장치 준비 상태를 동기화 하는 데 사용 됩니다. 자세한 내용은 [사이트 시스템 서버에 대 한 프록시 구성]을 참조 하세요.
-] (/sccm/core/plan-design/network/proxy-server-support)을 (를) 사용할 때 사용할 것입니다. |
+| `https://graph.windows.net` | Configuration Manager 서버 역할의 데스크톱 분석에 계층을 연결할 때 CommercialId 같은 설정을 자동으로 검색 하는 데 사용 됩니다. 자세한 내용은 [사이트 시스템 서버에 대 한 프록시 구성](/sccm/core/plan-design/network/proxy-server-support#configure-the-proxy-for-a-site-system-server)을 참조 하세요. |
+| `https://*.manage.microsoft.com` | 데스크톱 분석 (Configuration Manager 서버 역할의 경우에만)을 사용 하 여 장치 컬렉션 멤버 자격, 배포 계획 및 장치 준비 상태를 동기화 하는 데 사용 됩니다. 자세한 내용은 [사이트 시스템 서버에 대 한 프록시 구성](/sccm/core/plan-design/network/proxy-server-support#configure-the-proxy-for-a-site-system-server)을 참조 하세요. |
 
 
 ## <a name="proxy-server-authentication"></a>프록시 서버 인증

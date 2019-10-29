@@ -2,7 +2,7 @@
 title: Windows 10에 대한 지원
 titleSuffix: Configuration Manager
 description: Configuration Manager가 OSD나 클라이언트로 지원되는 Windows 10 버전에 대해 알아보세요.
-ms.date: 09/25/2019
+ms.date: 10/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51b234070f92135444e00a8eee672bdc4aa70bf1
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.openlocfilehash: b7c8620c3ec4b7434afcb8176b4720857071757c
+ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71826219"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684885"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
@@ -57,11 +57,11 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 | Enterprise 2015 LTSB <!--10/14/2025-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | Enterprise 2016 LTSB <!--10/13/2026-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | Enterprise LTSC 2019 <!--01/09/2029-->   | ![지원되지 않음](media/Red_X.png)   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1703   <!--10/08/2019-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1709   <!--04/14/2020-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1803   <!--11/10/2020-->   | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 | 1809   <!--05/11/2021-->   | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
-| 1903   <!--TBD-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1903   <!--12/08/2020-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
+| 1909   <!--TBD-->   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) |
 
 <!-- lifecycle reference: https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet -->
 
@@ -98,7 +98,6 @@ Configuration Manager로 운영 체제를 배포할 때 Windows ADK는 필요한
 
 | Windows 10 ADK 버전  | Configuration Manager 1802 | Configuration Manager 1806 | Configuration Manager 1810 | Configuration Manager 1902 | Configuration Manager 1906 |
 |--------------------|-----|-----|-----|-----|-----|
-| **1703**<br>(10.1.15063) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) |
 | **1709**<br>(10.1.16299) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png)   | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) |
 | **1803**<br>(10.1.17134) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) | ![지원되지 않음](media/Red_X.png) |
 | **1809**<br>(10.1.17763) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) |

@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 09/30/2019
+ms.date: 10/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b52a152f24b641d0debfdf39ee6a78cfa2352d66
-ms.sourcegitcommit: 3ecba0573e7b1c99de3291dbeb29a5de432ce647
+ms.openlocfilehash: 330a1a1b92a111836b49dcb0127b772d2c0cc636
+ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715879"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684803"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -118,9 +118,30 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1909"></a>Technical Preview 버전 1909
+### <a name="technical-preview-version-1910"></a>Technical preview 버전 1910
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
+
+- [Microsoft Edge, 버전 77 이상 배포](/sccm/core/get-started/2019/technical-preview-1910#bkmk_Microsoft_Edge) <!--4561024-->
+- [규정 준수 정책 평가의 일환으로 사용자 지정 구성 기준 포함](/sccm/core/get-started/2019/technical-preview-1910#bkmk_CAbaselines) <!--3608345-->
+- [애플리케이션 그룹 개선 사항](/sccm/core/get-started/2019/technical-preview-1910#bkmk_appgrp) <!--4760058-->
+- [SEDO 잠금 회수](/sccm/core/get-started/2019/technical-preview-1910#bkmk_sedo) <!--4786915-->
+- [피드백에 파일 첨부](/sccm/core/get-started/2019/technical-preview-1910#attach-files-to-feedback) <!--3556011-->
+- [클라이언트 진단 작업](/sccm/core/get-started/2019/technical-preview-1910#bkmk_diag) <!--4433455-->
+- [Office 365 ProPlus 파일럿 및 상태 대시보드](/sccm/core/get-started/2019/technical-preview-1910#office-365-proplus-pilot-and-health-dashboard) <!--4488272-->
+- [콘솔 검색 개선 사항](/sccm/core/get-started/2019/technical-preview-1910#bkmk_search) <!--4640570-->
+- [Windows 10 전체 업그레이드에에 대한 새 변수](/sccm/core/get-started/2019/technical-preview-1910#bkmk_osdvar) <!--4680263-->
+- [Windows Virtual Desktop 지원에 대한 개선 사항](/sccm/core/get-started/2019/technical-preview-1910#bkmk_wvd) <!--4737447-->
+
+> [!Note]  
+> 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
+
+
+## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
+
+현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
+
+### <a name="technical-preview-version-1909"></a>Technical Preview 버전 1909
 
 - [오케스트레이션 그룹](/sccm/core/get-started/2019/technical-preview-1909#bkmk_OGs) <!--3098816-->
 - [BitLocker 관리의 향상된 기능](/sccm/core/get-started/2019/technical-preview-1909#bkmk_bitlocker) <!--3601034-->
@@ -131,14 +152,6 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 - [작업 순서에서 향상된 언어 지원](/sccm/core/get-started/2019/technical-preview-1909#bkmk_osd) <!--5411057-->
 - [Office 365 ProPlus 상태 대시보드](/sccm/core/get-started/2019/technical-preview-1909#bkmk_o365health) <!--4488301-->
 - [작업 순서 디버거의 향상된 기능](/sccm/core/get-started/2019/technical-preview-1909#bkmk_tsdebug) <!-- 5012536, 5012509 -->
-
-> [!Note]  
-> 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
-
-
-## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
-
-현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
 
 ### <a name="technical-preview-version-19082"></a>Technical Preview 버전 1908.2
 

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85d868793f876d2b749eb5cfc1376278699e2a7d
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: b5b2904f7cd6945b6aa447f0404bf67a4caf4279
+ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536418"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810802"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
@@ -542,7 +542,7 @@ Windows ADK의 Windows PE(사전 설치 환경) 구성 요소가 설치됩니다
 
 *적용 대상: 중앙 관리 사이트, 주 사이트*
 
-Active Directory 도메인 기능 수준은 Windows Server 2008 R2 이상입니다.
+Active Directory 도메인 및 포리스트 기능 수준은 최소 Windows Server 2008 R2 이상입니다. 자세한 내용은 [Active Directory 도메인 지원](/sccm/core/plan-design/configs/support-for-active-directory-domains)을 참조하세요.
 
 ### <a name="administrative-rights-on-distribution-point"></a>배포 지점에 대한 관리 권한
 
@@ -769,7 +769,7 @@ Configuration Manager는 다음 사이트 시스템 역할에서 SQL Server Nati
 - 관리 지점
 - 디바이스 관리 지점
 - 상태 마이그레이션 지점
-- 사이트 데이터베이스
+- SMS 공급자
 - 소프트웨어 업데이트 지점
 - 멀티캐스트 사용 배포 지점
 - Asset Intelligence 업데이트 서비스 지점
