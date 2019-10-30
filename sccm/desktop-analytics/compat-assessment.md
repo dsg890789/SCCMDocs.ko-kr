@@ -2,7 +2,7 @@
 title: 호환성 평가
 titleSuffix: Configuration Manager
 description: 데스크톱 분석의 Windows 앱 및 드라이버에 대 한 호환성 평가에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 10/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ba8c29b9b917a8497d44ebcc3bf4264cf991ff
-ms.sourcegitcommit: 21a4a87d5e137b1cbd2ecd8ea34b5f0bfd2af357
+ms.openlocfilehash: 4f0832dc96a5b03e0ed603b76c794444eff7d967
+ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889727"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73049435"
 ---
 # <a name="compatibility-assessment-in-desktop-analytics"></a>데스크톱 분석의 호환성 평가
 
@@ -55,9 +55,25 @@ Windows Analytics의 업그레이드 평가가 일반적입니다. 예를 들어
 
 응용 프로그램 속성 창에서 다음과 같은 문제를 **알려진 MS 문제로**표시 합니다.
 
-### <a name="application-is-removed-during-upgrade"></a>업그레이드 하는 동안 응용 프로그램이 제거 됨
+### <a name="asset-is-removed-during-upgrade"></a>업그레이드 하는 동안 자산이 제거 됨
 
-Windows에서 호환성 문제를 발견 했습니다. 응용 프로그램이 새 OS 버전으로 마이그레이션되지 않습니다. 업그레이드를 계속 하려면 아무 작업도 수행 하지 않아도 됩니다. 새 OS 버전에 호환 되는 버전의 응용 프로그램을 설치 합니다.
+Windows에서 응용 프로그램 또는 드라이버와의 호환성 문제를 감지 했습니다. 자산은 새 OS 버전으로 마이그레이션되지 않습니다. 업그레이드를 계속 하려면 아무 작업도 수행 하지 않아도 됩니다. 새 OS 버전에 호환 되는 버전의 응용 프로그램 또는 드라이버를 설치 합니다.
+
+<!-- 3594545 -->
+Windows는 이러한 자산을 부분적으로 또는 완전히 제거할 수 있습니다.
+
+- 전체 제거: Windows 설치 프로그램은 업그레이드 하는 동안 장치에서 앱 또는 드라이버를 완전히 제거 합니다.
+- 부분 제거: Windows 설치 프로그램은 장치에서 앱 또는 드라이버를 부분적으로 제거 합니다. Windows를 업그레이드 한 후 수동으로 제거 해야 합니다.
+
+두 경우 모두 Windows를 업그레이드 한 후에는 사용자가 앱 또는 드라이버와 연결 된 하드웨어를 사용할 수 없습니다.
+
+데스크톱 분석 포털에서이 권장 사항을 확인 하려면 다음을 수행 합니다.
+
+1. 배포 계획에서 **파일럿 준비**를 선택 합니다.
+1. 목록에서 자산을 선택 합니다.
+1. 측면 창에서 호환성 위험 요소 및 권장 사항을 확인 합니다.
+
+![데스크톱 분석 포털의 자산 권장 스크린샷](media/3594545-app-removed.png)
 
 ### <a name="blocking-upgrade"></a>업그레이드 차단
 
@@ -140,7 +156,7 @@ Windows 응용 프로그램 카탈로그 [준비](https://www.readyforwindows.co
 ### <a name="additional-insights"></a>추가 정보
 
 <!-- 4021225 -->
-Configuration Manager 사이트와 클라이언트를 버전 1906으로 업데이트 하면 클라이언트는 다음과 같은 추가 정보를 보고 합니다.
+Configuration Manager 사이트와 클라이언트를 버전 1906으로 업데이트 하면 클라이언트는 진단 데이터 수준이 향상 된 제한으로 설정 된 경우에도 이러한 추가 정보를 보고 합니다.
 
 > [!Important]  
 > 새 Configuration Manager 기능을 모두 활용하려면 사용자를 업데이트한 후 클라이언트를 최신 버전으로 업데이트합니다. 이 시나리오는 클라이언트 버전이 최신 버전 이기도 해질 때까지 작동 하지 않습니다.

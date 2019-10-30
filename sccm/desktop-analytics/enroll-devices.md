@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc0784744affab309697dfec8c7018d50bcc2934
-ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
+ms.openlocfilehash: 5fc36829944b2366a05ce2c87e27ac97bfd9e764
+ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810734"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73049397"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 분석에서 장치를 등록 하는 방법
 
@@ -156,6 +156,7 @@ Configuration Manager 로컬 정책 경로 `HKLM:\SOFTWARE\Microsoft\Windows\Cur
 | **LimitEnhancedDiagnosticDataWindowsAnalytics** | *Windows 10 버전 1709 이상에 적용*됩니다 .이 설정은 allowtelemetry 분석 설정이 `2` 경우에만 적용 됩니다. Microsoft로 전송 되는 향상 된 진단 데이터 이벤트를 데스크톱 분석에 필요한 이벤트로만 제한 합니다. 자세한 내용은 windows [10, 버전 1709 고급 진단 데이터 이벤트 및 Windows Analytics에서 사용 되는 필드](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.|
 | **AllowDeviceNameInTelemetry** | *Windows 10 버전 1803 이상에 적용*됩니다. 장치에서 장치 이름을 계속 보낼 수 있도록 하려면 별도의 옵트인이 필요 합니다.<br> <br>참고: 장치 이름은 기본적으로 Microsoft에 전송 되지 않습니다. 장치 이름을 보내지 않으면 데스크톱 분석에서 "알 수 없음"으로 표시 됩니다. 이 동작을 통해 장치를 식별 하 고 평가 하기 어려울 수 있습니다. 자세한 내용은 [장치 이름](#device-name)을 참조 하세요. |
 | **CommercialDataOptIn** | *Windows 7 및 Windows 8.1에 적용*됩니다. 데스크톱 분석에는 `1` 값이 필요 합니다. 자세한 내용은 [Windows 7의 상용 데이터 옵트인](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee126127\(v=ws.10\))(영문)을 참조 하세요. |
+| **RequestAllAppraiserVersions** | *모든 Windows 버전에 적용 됩니다*. 데이터 수집이 제대로 작동 하려면 데스크톱 분석에 `1` 값이 필요 합니다. |
 
 그룹 정책 편집기에서 **컴퓨터 구성**  > **관리 템플릿**  > **Windows 구성 요소**  > **데이터 수집 및 미리 보기 빌드**에서 이러한 설정을 봅니다.
 

@@ -2,7 +2,7 @@
 title: 데스크톱 분석의 새로운 기능
 titleSuffix: Configuration Manager
 description: 데스크톱 분석 클라우드 서비스의 최신 월간 릴리스에 대 한 새로운 기능을 요약 한 것입니다.
-ms.date: 10/08/2019
+ms.date: 10/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: fa300181-86cb-4afe-8fbf-895a7572378d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cf4ec11bbf5595a8e6475d448f7e1d5532b4dd3c
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: 9e72ffc07d1c1e833b96131095b88a6fb3d269c3
+ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72384711"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73049457"
 ---
 # <a name="whats-new-in-desktop-analytics"></a>데스크톱 분석의 새로운 기능
 
@@ -29,6 +29,12 @@ ms.locfileid: "72384711"
 <!-- a locale is required for the RSS search string -->
 
 ## <a name="october-2019"></a>10 월 2019
+
+### <a name="improvements-to-compatibility-recommendations"></a>호환성 권장 사항에 대 한 향상 된 기능
+
+<!-- 3594545 -->
+
+이제 데스크톱 분석에서는 Windows 업그레이드가 응용 프로그램 또는 드라이버를 완전히 또는 부분적으로 제거 하는 것을 감지 하면 추가 세부 정보를 제공 합니다. 자세한 내용은 [호환성 평가](/sccm/desktop-analytics/compat-assessment#asset-is-removed-during-upgrade)를 참조 하세요.
 
 ### <a name="migrate-from-windows-analytics-to-existing-tenant"></a>Windows Analytics에서 기존 테 넌 트로 마이그레이션
 

@@ -2,7 +2,7 @@
 title: 데이터 공유를 사용하도록 설정
 titleSuffix: Configuration Manager
 description: 데스크톱 분석과 진단 데이터를 공유 하는 방법에 대 한 참조 가이드입니다.
-ms.date: 10/25/2019
+ms.date: 10/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db7f9e63de719c3f6c9f63c476b0b7c4ab919764
-ms.sourcegitcommit: 9ed9551c15abc36f38c92aaeef60dbb699ae7cd8
+ms.openlocfilehash: 8bc8a8c36e3b778f23241d16c1f31f821ab8b900
+ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984379"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73049387"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>데스크톱 분석에 데이터 공유 사용
 
@@ -29,20 +29,26 @@ ms.locfileid: "72984379"
 
 데스크톱 분석과 Configuration Manager를 통합 하는 경우이를 사용 하 여 장치에서 진단 데이터 수준을 관리할 수도 있습니다. 최상의 환경을 위해 Configuration Manager를 사용 합니다.
 
-데스크톱 분석의 기본 기능은 **기본** [진단 데이터 수준](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels)에서 작동 합니다. Configuration Manager에서 **향상 된 (제한 된)** 수준을 구성 하지 않고 업데이트 된 장치에 대 한 사용 현황 또는 상태 데이터를 가져오지 않습니다. 
+데스크톱 분석의 기본 기능은 **기본** [진단 데이터 수준](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels)에서 작동 합니다. Configuration Manager에서 **향상 된 (제한 된)** 수준을 구성 하지 않으면 데스크톱 분석의 다음 기능이 제공 되지 않습니다.
 
-> [!TIP]
-> Configuration Manager의 **향상 된 (제한 된)** 설정은 windows 10 버전 1709 이상을 실행 하는 장치에서 windows Analytics 정책에 **필요한 최소 수준으로 향상 된 진단 데이터를 제한 하** 는 것입니다. 데스크톱 분석으로 **향상 된 (제한 된)** 진단 데이터 수준을 사용 하도록 설정 하는 것이 좋습니다.
+- 앱 사용
+- [추가 앱 정보](https://docs.microsoft.com/sccm/desktop-analytics/compat-assessment#additional-insights)
+- 배포 상태 데이터
+- 상태 모니터링 데이터
+
+**향상 된 (제한 된)** 진단 데이터 수준을 데스크톱 분석으로 사용 하 여 얻을 수 있는 이점을 최대화 하는 것이 좋습니다. 
+
+> [!Tip]
+> Configuration Manager의 **향상 된 (제한 된)** 설정은 windows 10 버전 1709 이상을 실행 하는 장치에서 windows Analytics 정책에 **필요한 최소 수준으로 고급 진단 데이터를 제한 하** 는 설정과 동일 합니다. 
 >
-> Windows 10, 버전 1703 및 이전 버전을 실행 하는 장치에는이 정책 설정이 없습니다. Configuration Manager에서 향상 된 **(제한 된)** 설정을 구성 하는 경우 이러한 장치는 **기본** 수준으로 대체 됩니다.
+> Windows 10, 1703 버전 및 이전 버전, Windows 8.1 또는 Windows 7을 실행 하는 장치에는이 정책 설정이 없습니다. Configuration Manager에서 향상 된 **(제한 된)** 설정을 구성 하는 경우 이러한 장치는 **기본** 수준으로 대체 됩니다.
+>
+> Windows 10, 버전 1709을 실행 하는 장치에는이 정책 설정이 있습니다. 그러나 Configuration Manager에서 **향상 된 (제한 된)** 설정을 구성 하면 이러한 장치도 **기본** 수준으로 대체 됩니다.
 
-자세한 내용은 [Windows 10 고급 진단 데이터 이벤트 및 필드](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.
+**향상 된 (제한 됨)** 과 함께 Microsoft와 공유 되는 진단 데이터에 대 한 자세한 내용은 [Windows 10 고급 진단 데이터 이벤트 및 필드](https://docs.microsoft.com/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.
 
 > [!Important]   
-> Microsoft는 사용자의 개인 정보에 대 한 제어를 제공 하는 도구와 리소스를 제공 하기 위해 노력 하 고 있습니다. 따라서 Microsoft는 유럽 국가 (EEA 및 스위스)에 있는 장치에서 다음 데이터를 수집 하지 않습니다.
->
-> - Windows 8.1 장치의 Windows 진단 데이터
-> - Windows 7 용 앱 사용 현황 데이터
+> Microsoft는 사용자의 개인 정보에 대 한 제어를 제공 하는 도구와 리소스를 제공 하기 위해 노력 하 고 있습니다. 따라서 데스크톱 분석에서 Windows 8.1 장치를 지원 하는 동안 Microsoft는 유럽 국가 (EEA 및 스위스)에 있는 Windows 8.1 장치에서 Windows 진단 데이터를 수집 하지 않습니다.
 
 자세한 내용은 [데스크톱 분석 개인 정보](/sccm/desktop-analytics/privacy)를 참조 하세요.
 
@@ -71,8 +77,8 @@ ms.locfileid: "72984379"
 | 끝점만  | 기능  |
 |-----------|-----------|
 | `https://aka.ms` | 서비스를 찾는 데 사용 됩니다. |
-| `https://v10c.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. 2018-09 누적 업데이트 이상을 설치한 Windows 10 버전 1703 이상을 실행 하는 장치에서 사용 됩니다. |
-| `https://v10.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. 2018-09 누적 업데이트가 설치 _되지 않은_ Windows 10 버전 1803 이상을 실행 하는 장치에서 사용 됩니다. |
+| `https://v10c.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. 2018-09 누적 업데이트가 설치 된 Windows 10, 버전 1809 이상 또는 1803 버전을 실행 하는 장치에서 사용 됩니다. |
+| `https://v10.events.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. 2018-09 누적 업데이트가 설치 _되지 않은_ Windows 10 버전 1803을 실행 하는 장치에서 사용 됩니다. |
 | `https://v10.vortex-win.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. Windows 10, 버전 1709 이전 버전을 실행 하는 장치에서 사용 됩니다. |
 | `https://vortex-win.data.microsoft.com` | 연결 된 사용자 환경 및 진단 구성 요소 끝점입니다. Windows 7 및 Windows 8.1를 실행 하는 장치에서 사용 |
 | `https://settings-win.data.microsoft.com` | 호환성 업데이트를 사용 하 여 데이터를 Microsoft로 보냅니다. |
@@ -91,12 +97,29 @@ ms.locfileid: "72984379"
 
 인증으로 인해 프록시에서 진단 데이터를 차단 하지 않는지 확인 합니다. 조직에서 아웃 바운드 트래픽에 대해 프록시 서버 인증을 사용 하는 경우 다음 방법 중 하나 이상을 사용 합니다.
 
-- **바이패스** (권장): 진단 데이터 끝점에 대 한 트래픽에 대해 프록시 인증을 요구 하지 않도록 프록시 서버를 구성 합니다. 이 옵션은 가장 포괄적인 솔루션입니다. 모든 버전의 Windows 10에서 작동 합니다.  
+### <a name="bypass-recommended"></a>바이패스 (권장)
 
-- **사용자 프록시 인증**: 프록시 인증을 위해 로그인 한 사용자의 컨텍스트를 사용 하도록 장치를 구성 합니다. 이 방법을 사용 하려면 장치에서 Windows 10 버전 1703 이상을 실행 해야 합니다. 사용자에 게 진단 데이터 끝점에 연결할 수 있는 프록시 권한이 있는지 확인 합니다. 이 옵션을 사용 하려면 장치에 프록시 권한이 있는 콘솔 사용자가 있어야 하므로 헤드리스 장치에서이 방법을 사용할 수 없습니다.  
+프록시 서버에서 진단 데이터 끝점에 대 한 트래픽에 대해 프록시 인증을 요구 하지 않도록 구성 합니다. 이 옵션은 가장 포괄적인 솔루션입니다. 모든 버전의 Windows 10에서 작동 합니다.  
 
-- **장치 프록시 인증**:
+### <a name="user-proxy-authentication"></a>사용자 프록시 인증
 
-    - 장치에서 시스템 수준 프록시 서버를 구성 합니다.  
-    - 장치 기반 아웃 바운드 프록시 인증을 사용 하도록 장치를 구성 합니다.  
-    - 컴퓨터 계정에서 진단 데이터 끝점에 액세스할 수 있도록 프록시 서버를 구성 합니다.  
+프록시 인증을 위해 로그인 한 사용자의 컨텍스트를 사용 하도록 장치를 구성 합니다. 이 메서드에는 다음과 같은 구성이 필요 합니다.
+
+- 장치에는 Windows 7, Windows 8.1 또는 Windows 10 버전 1703 이상에 대 한 현재 품질 업데이트가 있습니다.
+- Windows의 네트워크 & 인터넷 그룹 설정에서 **프록시 설정** 의 사용자 수준 프록시 (WinINET 프록시)를 구성 합니다. 레거시 인터넷 옵션 제어판을 사용할 수도 있습니다. 
+- 사용자에 게 진단 데이터 끝점에 연결할 수 있는 프록시 권한이 있는지 확인 합니다. 이 옵션을 사용 하려면 장치에 프록시 권한이 있는 콘솔 사용자가 있어야 하므로 헤드리스 장치에서이 방법을 사용할 수 없습니다.
+
+> [!IMPORTANT]
+> 사용자 프록시 인증 방법은 Microsoft Defender Advanced Threat Protection을 사용 하는 것과 호환 되지 않습니다. 이 동작은 `0`로 설정 된 **Disableenterpriseauthproxy** 레지스트리 키를 사용 하는 반면 MICROSOFT Defender ATP는 `1`으로 설정 되어야 하기 때문입니다. 자세한 내용은 [컴퓨터 프록시 및 인터넷 연결 설정 구성](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection)을 참조 하세요.
+
+### <a name="device-proxy-authentication"></a>장치 프록시 인증
+
+이 방법은 다음과 같은 구성이 필요 하기 때문에 가장 복잡 합니다.
+
+- 장치가 로컬 시스템 컨텍스트에서 WinHTTP를 통해 프록시 서버에 연결할 수 있는지 확인 합니다. 이 동작을 구성 하려면 다음 옵션 중 하나를 사용 합니다.
+  - 명령줄 ' netsh winhttp set proxy '
+  - WPAD (웹 프록시 자동 검색 프로토콜)
+  - 투명 프록시
+  - NAT (network address translation)를 사용 하는 라우팅된 연결
+
+- Active Directory의 컴퓨터 계정에서 진단 데이터 끝점에 액세스할 수 있도록 프록시 서버를 구성 합니다. 이 구성에서는 Windows 통합 인증을 지원 하기 위해 프록시 서버가 필요 합니다.  
