@@ -2,7 +2,7 @@
 title: 데스크톱 분석에 장치 등록
 titleSuffix: Configuration Manager
 description: 데스크톱 분석에서 장치를 등록 하는 방법을 알아봅니다.
-ms.date: 04/22/2019
+ms.date: 10/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5fc36829944b2366a05ce2c87e27ac97bfd9e764
-ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
+ms.openlocfilehash: ab19d24e62f8454a2fc7f4366b8a4cf2fc510481
+ms.sourcegitcommit: c25a91db838805eca5dbb421a3de401928968bf0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049397"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73142966"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>데스크톱 분석에서 장치를 등록 하는 방법
 
@@ -147,18 +147,21 @@ Configuration Manager는 이러한 설정을 관리 하 고 클라이언트에 �
 
 ### <a name="windows-settings"></a>Windows 설정
 
-Configuration Manager 로컬 정책 경로 `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection` 아래에 다음 Windows 설정을 설정 합니다.
+Configuration Manager는 다음 레지스트리 키 중 하나 또는 둘 모두에서 Windows 정책을 설정 합니다.
 
-| 정책   | 값  |
-|----------|--------|
-| **CommercialId** | *Windows 7, Windows 8.1 및 windows 10에 적용 됩니다*. 데스크톱 분석에서 장치를 표시 하려면 조직의 상용 ID를 사용 하 여 구성 합니다. |
-| **AllowTelemetry 분석**  | *Windows 10에 적용 됩니다*. **전체** 진단 데이터에 대해 **Basic**, `2` **고급**또는 `3`에 대 한 `1` 설정 합니다. 데스크톱 분석에는 최소 기본 진단 데이터가 필요 합니다. 데스크톱 분석과 함께 향상 된 (제한 된) 수준을 사용 하는 것이 좋습니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)을 참조하세요. |
-| **LimitEnhancedDiagnosticDataWindowsAnalytics** | *Windows 10 버전 1709 이상에 적용*됩니다 .이 설정은 allowtelemetry 분석 설정이 `2` 경우에만 적용 됩니다. Microsoft로 전송 되는 향상 된 진단 데이터 이벤트를 데스크톱 분석에 필요한 이벤트로만 제한 합니다. 자세한 내용은 windows [10, 버전 1709 고급 진단 데이터 이벤트 및 Windows Analytics에서 사용 되는 필드](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.|
-| **AllowDeviceNameInTelemetry** | *Windows 10 버전 1803 이상에 적용*됩니다. 장치에서 장치 이름을 계속 보낼 수 있도록 하려면 별도의 옵트인이 필요 합니다.<br> <br>참고: 장치 이름은 기본적으로 Microsoft에 전송 되지 않습니다. 장치 이름을 보내지 않으면 데스크톱 분석에서 "알 수 없음"으로 표시 됩니다. 이 동작을 통해 장치를 식별 하 고 평가 하기 어려울 수 있습니다. 자세한 내용은 [장치 이름](#device-name)을 참조 하세요. |
-| **CommercialDataOptIn** | *Windows 7 및 Windows 8.1에 적용*됩니다. 데스크톱 분석에는 `1` 값이 필요 합니다. 자세한 내용은 [Windows 7의 상용 데이터 옵트인](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee126127\(v=ws.10\))(영문)을 참조 하세요. |
-| **RequestAllAppraiserVersions** | *모든 Windows 버전에 적용 됩니다*. 데이터 수집이 제대로 작동 하려면 데스크톱 분석에 `1` 값이 필요 합니다. |
+- **IT 정책**: `HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection`
 
-그룹 정책 편집기에서 **컴퓨터 구성**  > **관리 템플릿**  > **Windows 구성 요소**  > **데이터 수집 및 미리 보기 빌드**에서 이러한 설정을 봅니다.
+- **사용자** 기본 설정: `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection`
+
+| 정책   | 경로 | 값  | 
+|----------|------|--------|
+| **CommercialId** | 사용자 | *Windows 7, Windows 8.1 및 windows 10에 적용 됩니다*. 데스크톱 분석에서 장치를 표시 하려면 조직의 상용 ID를 사용 하 여 구성 합니다. | 
+| **AllowTelemetry 분석**  | IT 정책 | *Windows 10에 적용 됩니다*. **전체** 진단 데이터에 대해 **Basic**, `2` **고급**또는 `3`에 대 한 `1` 설정 합니다. 데스크톱 분석에는 최소 기본 진단 데이터가 필요 합니다. 데스크톱 분석과 함께 향상 된 (제한 된) 수준을 사용 하는 것이 좋습니다. 자세한 내용은 [조직에서 Windows 진단 데이터 구성](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)을 참조하세요. |
+| **LimitEnhancedDiagnosticDataWindowsAnalytics** | IT 정책 | *Windows 10 버전 1803 이상에 적용*됩니다 .이 설정은 allowtelemetry 분석 설정이 `2`경우에만 적용 됩니다. Microsoft로 전송 되는 향상 된 진단 데이터 이벤트를 데스크톱 분석에 필요한 이벤트로만 제한 합니다. 자세한 내용은 [고급 진단 데이터 제한 정책을 통해 수집 된 Windows 10 진단 데이터 이벤트 및 필드](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)를 참조 하세요.|
+| **AllowDeviceNameInTelemetry** | IT 정책 | *Windows 10 버전 1803 이상에 적용*됩니다. 장치에서 장치 이름을 계속 보낼 수 있도록 하려면 별도의 옵트인이 필요 합니다.<br> <br>참고: 장치 이름은 기본적으로 Microsoft에 전송 되지 않습니다. 장치 이름을 보내지 않으면 데스크톱 분석에서 "알 수 없음"으로 표시 됩니다. 이 동작을 통해 장치를 식별 하 고 평가 하기 어려울 수 있습니다. 자세한 내용은 [장치 이름](#device-name)을 참조 하세요. | 
+| **CommercialDataOptIn** | 사용자 |*Windows 7 및 Windows 8.1에 적용*됩니다. 데스크톱 분석에는 `1` 값이 필요 합니다. 자세한 내용은 [Windows 7의 상용 데이터 옵트인](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee126127\(v=ws.10\))(영문)을 참조 하세요. |
+| **RequestAllAppraiserVersions** | 모두 |*모든 Windows 버전에 적용 됩니다*. 데이터 수집이 제대로 작동 하려면 데스크톱 분석에 `1` 값이 필요 합니다. | 
+| **DisableEnterpriseAuthProxy** | IT 정책 |*모든 Windows 버전에 적용 됩니다*. 데이터 수집이 제대로 작동 하려면 데스크톱 분석에 `0` 값이 필요 합니다. | 
 
 > [!Important]  
 > 대부분의 경우 Configuration Manager만 사용 하 여 이러한 설정을 구성할 수 있습니다. 도메인 그룹 정책 개체에도 이러한 설정을 적용 하지 마십시오. 자세한 내용은 [충돌 해결](#conflict-resolution)을 참조 하세요.<!-- SCCMDocs-pr 3120 -->
@@ -178,7 +181,9 @@ Windows 10 버전 1803부터 장치 이름은 더 이상 기본적으로 수집 
 
 일반적으로 Configuration Manager 컬렉션을 사용 하 여 데스크톱 분석 설정 및 등록을 대상으로 합니다. 직접 멤버 자격 또는 쿼리를 사용 하 여 컬렉션에서 장치를 포함 하거나 제외 합니다. 자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections)을 참조하세요.
 
-Configuration Manager 값이 없는 경우에만 Windows 설정을 구성 합니다. 고유한 장치 그룹에 대해 서로 다른 설정을 구성 해야 하는 경우 [그룹 정책을](#windows-settings)사용할 수 있습니다. 그룹 정책에서 대상으로 지정 된 설정은 Configuration Manager 설정 보다 우선 적용 됩니다.
+Configuration Manager 값이 없는 경우에만 Windows 설정을 구성 합니다. 고유한 장치 그룹에 대해 서로 다른 설정을 구성 해야 하는 경우 [그룹 정책을](#windows-settings)사용할 수 있습니다. 
+
+그룹 정책 편집기에서 **컴퓨터 구성**  > **관리 템플릿**  > **Windows 구성 요소**  > **데이터 수집 및 미리 보기 빌드**에서 이러한 설정을 봅니다. 그룹 정책에서 대상으로 지정 된 설정은 Configuration Manager 설정 보다 우선 적용 됩니다.
 
 Windows Analytics 및 데스크톱 분석 설정을 사용 하 여 Configuration Manager 클라이언트를 대상으로 하는 경우 데스크톱 분석 설정이 우선 적용 됩니다.
 
