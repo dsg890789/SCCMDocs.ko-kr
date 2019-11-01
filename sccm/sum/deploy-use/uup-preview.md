@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 10/02/2019
+ms.date: 10/25/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab35b96431fccf86e8bce09059f33c6a82d9ff10
-ms.sourcegitcommit: 44c48e2cb00e60d6ccb1ddde62a6159663917e2d
+ms.openlocfilehash: c3000710cf90d9f2d0482bcc2faa37174f8f8190
+ms.sourcegitcommit: 9ed9551c15abc36f38c92aaeef60dbb699ae7cd8
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71923902"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984332"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 프라이빗 미리 보기 지침
 
@@ -26,7 +26,7 @@ ms.locfileid: "71923902"
 
 ## <a name="introduction"></a>소개
 
-통합 업데이트 플랫폼 (UUP)은 소비자 및 엔터프라이즈 장치가 비즈니스용 Windows 업데이트에서 업데이트를 수신 하는 데 사용 하는 패키징 및 게시 플랫폼입니다. UUP 비공개 미리 보기 프로그램은 Microsoft가 Configuration Manager에서 UUP 업데이트 사용의 유효성을 검사 하는 데 동의한 고객을 위한 것입니다. 이러한 업데이트는 현재 공개적으로 사용할 수 없습니다.
+통합 업데이트 플랫폼 (UUP)은 소비자 및 엔터프라이즈 장치가 비즈니스용 Windows 업데이트에서 업데이트를 수신 하는 데 사용 하는 패키징 및 게시 플랫폼입니다. UUP 비공개 미리 보기 프로그램은 Microsoft Configuration Manager에서 제공 하는 최신 업데이트 사용의 유효성을 확인 하는 데 도움이 되는 고객을 위한 것으로, 고객이 현재 Windows 서비스에 보고 하는 문제를 해결 하는 데 도움이 됩니다. 이러한 업데이트는 현재 공개적으로 사용할 수 없습니다.
 
 UUP에 대한 자세한 내용은 다음 Windows 블로그 게시물을 참조하세요. [통합 업데이트 플랫폼(UUP)의 업데이트](https://blogs.windows.com/windowsexperience/2017/03/02/an-update-on-our-unified-update-platform-uup/)
 
@@ -171,19 +171,19 @@ Microsoft에서 릴리스된 모든 Windows 10 업데이트에 대 한 자세한
 - Windows 10 버전 1809 x64 2019-09B로 기능 업데이트
 - Windows 10 버전 1803 x64 2019-09B로 기능 업데이트
 
-### <a name="scenarios-to-test"></a>테스트할 시나리오
+## <a name="scenarios-to-test"></a>테스트할 시나리오
 
-#### <a name="test-feature-updates"></a>테스트 기능 업데이트
+### <a name="test-feature-updates"></a>테스트 기능 업데이트
 
 - 선택한 보안 준수 수준으로 직접 업데이트  
 
 - 업데이트 전에 Ods 및 언어 팩을 설치 합니다. 업데이트가 이러한 구성 요소를 유지 하는지 확인 합니다.  
 
-#### <a name="test-cumulative-updates"></a>누적 업데이트 테스트
+### <a name="test-cumulative-updates"></a>누적 업데이트 테스트
 
 미리 보기 중에는 연속 되는 여러 업데이트에 대해 UUP 유형 업데이트를 사용 하 여 클라이언트의 호환성을 유지 합니다. 이 테스트는 진행 중인 동작을 이해 하는 데 도움이 됩니다.
 
-#### <a name="test-content"></a>테스트 콘텐츠
+### <a name="test-content"></a>테스트 콘텐츠
 
 각 주 버전 (1809, 1803, 1709), 아키텍처 및 언어 조합에 대 한 첫 번째 업데이트는 큰 것으로 나타납니다. 이 크기는 더 이상 사용 되지 않는 업데이트를 사용 하 여 이전에 표시 한 것과 비교 하 여 파일 수 및 디스크 공간입니다. 이 추가 콘텐츠는 주로 누적 업데이트에 대한 모든 FOD 및 언어 팩에 사용됩니다. 기능 업데이트의 경우 첫 번째 업데이트에 대 한 추가 내용이 더 많이 있습니다.
 
@@ -191,7 +191,7 @@ Microsoft에서 릴리스된 모든 Windows 10 업데이트에 대 한 자세한
 
 *비표준*를 위해 12 개월 동안 다운로드 하 여 배포 된 전체 콘텐츠를 확인 하는 경우 Windows 10 버전 1803은 uup의 버전 1809과 동일 해야 합니다. 릴리스 전체 수명 동안 다운로드 되 고 배포 되는 전체 콘텐츠는 버전 1809에서 더 작습니다.
 
-#### <a name="supported-content-channels"></a>지원되는 콘텐츠 채널
+### <a name="supported-content-channels"></a>지원되는 콘텐츠 채널
 
 미리 보기의 경우 일반적인 실제 시나리오를 테스트 합니다. UUP은 다음을 비롯 한 모든 콘텐츠 채널을 지원 합니다.
 
