@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48568f962f412342e005f18b790ed1478b359163
-ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
+ms.openlocfilehash: 59f43fca8c493da8684671dce7b2e61b8d67cb64
+ms.sourcegitcommit: 0bad3167dc8349d0da0a5f47c29a0614a9bac467
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71998999"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72916983"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
@@ -57,7 +57,7 @@ Configuration Manager는 Windows 및 macOS 컴퓨터에서 클라이언트 소�
 이 시나리오의 사용자 정책이 필요하고 잠재적인 성능 악영향을 수용할 수 있는 경우 [SMS_PolicyAgentConfig 서버 WMI 클래스](/sccm/develop/reference/core/clients/config/sms_policyagentconfig-server-wmi-class)에 Configuration Manager SDK를 사용합니다. 새 `PolicyEnableUserPolicyOnTS` 속성을 `true`로 설정합니다.
 
 > [!Note]  
-> 공동 관리는 Windows Virtual Desktop과 함께 사용할 수 없습니다. Windows 10 Enterprise for Virtual Desktop(EVD)은 실제로 MDM 구성 요소가 없는 Windows Server 버전입니다.<!-- SCCMDocs-pr#3950 -->
+> Windows 10 Enterprise 다중 세션을 실행하는 클라이언트에서는 공동 관리를 사용할 수 없습니다. <!-- SCCMDocs-pr#3950 -->
 
 ### <a name="supported-server-os-versions"></a>지원되는 서버 OS 버전
 
@@ -374,7 +374,7 @@ Configuration Manager에서는 Configuration Manager 클라이언트를 설치�
 
 ### <a name="supported-versions-of-exchange-server"></a>Exchange Server의 지원되는 버전
 
-- **Exchange Online(Office 365)**: 이 버전에는 Business Productivity Online Standard Suite가 포함되어 있습니다.  
+- **Exchange Online(Office 365)** : 이 버전에는 Business Productivity Online Standard Suite가 포함되어 있습니다.  
 
 - **Exchange Server 2016**  
 

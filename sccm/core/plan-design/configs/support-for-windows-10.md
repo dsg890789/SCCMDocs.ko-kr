@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c8620c3ec4b7434afcb8176b4720857071757c
-ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
+ms.openlocfilehash: 24b50ca50f2273161faeb79d20e23d32dc2706c2
+ms.sourcegitcommit: 9ed9551c15abc36f38c92aaeef60dbb699ae7cd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684885"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984371"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
@@ -77,8 +77,9 @@ Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩�
 | ![지원됨](media/green_check.png) = **지원됨**  |
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
 
-> [!NOTE]  
-> Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 -->
+### <a name="bkmk_arm64"></a> ARM64에서의 Windows 10
+
+Configuration Manager는 Windows 10 ARM64 디바이스의 클라이언트를 지원합니다. 기존 클라이언트 관리 기능도 이러한 새 디바이스에서 작동합니다. 예를 들어 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션 관리 등입니다. OS 배포는 현재 지원되지 않습니다. <!-- 1353704 -->
 
 ### Windows 참가자를 위한 <a name="bkmk_WIfB-support"></a> 지원
 

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51a8bd605fae4aea1cb290a19a06b811a7c80382
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 86c99fc79f89d94f4a32e34949b91d8633b23a65
+ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70378211"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73049473"
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
@@ -184,7 +184,7 @@ Active Directory Domain Services에서 그룹 정책을 사용하여 구성 관�
 > [!IMPORTANT]  
 > 클라이언트 설치 파일에 액세스하려면 관리자 권한이 있어야 합니다.  
 
-- Configuration Manager에 대한 Active Directory 스키마를 확장하고 **사이트 속성** 대화 상자의 **고급** 탭에서 **Active Directory Domain Services에 이 사이트 게시**를 선택한 경우, 클라이언트 컴퓨터는 Active Directory Domain Services에서 설치 속성을 자동으로 검색합니다. 자세한 내용은 [Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보](/sccm/core/clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services)를 참조하세요.  
+- Configuration Manager에 대한 Active Directory 스키마를 확장하고 **사이트 속성** 대화 상자의 **게시** 탭에서 해당 도메인을 선택한 경우, 클라이언트 컴퓨터는 Active Directory Domain Services에서 설치 속성을 자동으로 검색합니다. 자세한 내용은 [Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보](/sccm/core/clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services)를 참조하세요.  
 
 - Active Directory 스키마를 확장하지 않은 경우 [클라이언트 설치 속성을 프로비저닝하는 방법](#BKMK_Provision) 섹션에서 컴퓨터의 Windows 레지스트리에 설치 속성을 저장하는 방법에 대한 내용을 참조하세요. 클라이언트는 설치 시 이러한 설치 속성을 사용합니다.  
 

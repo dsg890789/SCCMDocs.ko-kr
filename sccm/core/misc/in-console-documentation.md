@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 143aa617484bb45a2d20eb4db3d41733863052ac
-ms.sourcegitcommit: 21a4a87d5e137b1cbd2ecd8ea34b5f0bfd2af357
+ms.openlocfilehash: 0e4cfdfb6ac2df0279136006b8191aaa76b84667
+ms.sourcegitcommit: 9ed9551c15abc36f38c92aaeef60dbb699ae7cd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889706"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984340"
 ---
 <!-- 
 - Feature 1357546
@@ -104,10 +104,11 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
 
-2019년 7월 11일부터 8월 12일 사이에 새로 제공되었거나 업데이트된 지원 문서입니다.
+2019년 8월 13일부터 10월 24일 사이에 새로 제공되거나 업데이트된 지원 문서입니다.
 
-- [KB 4511621: Configuration Manager에서 독립 실행형 또는 사전 준비된 미디어를 만들 때 "메모리 리소스가 부족함" 오류 발생](https://support.microsoft.com/help/4511621)
-- [KB 4511618: PXE 사용 DP에서 인증서가 업데이트되지 않으며 여러 로그 오류 항목이 표시됨](https://support.microsoft.com/help/4511618)
-- [KB 4509382: Configuration Manager에서 애플리케이션 배포 문제 해결](https://support.microsoft.com/help/4509382)
-
-새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **System Center Configuration Manager**를 선택하세요.  
+- [KB 4517137: Configuration Manager 작업 순서를 위한 디버그 배포에서 “잠시 기다려 주세요” 상태로 컴퓨터가 멈춤](https://support.microsoft.com/help/4517137)
+- [KB 4517138: 작업 순서를 위한 디버그 배포가 Configuration Manager에서 표시되지 않음](https://support.microsoft.com/help/4517138)
+- [KB 4517870: Configuration Manager SMS 공급자 서버가 Windows Server 2012 R2 또는 Windows Server 2012에 있는 경우 예약된 업데이트가 실패함](https://support.microsoft.com/help/4517870)
+- [KB 4458143: 클라이언트가 여러 기본 사이트에 할당되는 클라우드 DP에서 Contentinfo.tar을 다운로드할 때 해시 불일치 오류가 발생](https://support.microsoft.com/help/4458143)
+- [KB 4517482: 2019년 8월 .NET 4.7.2 업데이트가 System Center Configuration Manager에서 동기화 실패](https://support.microsoft.com/help/4517482)
+- [KB 4517869: 현재 분기의 System Center Configuration Manager에 대한 업데이트 롤업, 버전 1906](https://support.microsoft.com/help/4517869) 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)에서 **System Center Configuration Manager**를 선택하세요.  
