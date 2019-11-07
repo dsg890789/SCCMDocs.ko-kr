@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4870bf56175636fede1ecfa38728ac6c1192fc67
-ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
+ms.openlocfilehash: c63d25e8e75bc0216d2a4cb12a9312e921214938
+ms.sourcegitcommit: b0f1c2fe1e034f0fe8676f1528249a4b26f54bd3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73623058"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73704687"
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 애플리케이션 관리 정책을 사용하여 앱 보호
 
@@ -53,7 +53,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 
      예를 들어 iPad용 Microsoft Word 앱의 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**  
 
--   **래핑된 앱을 만들려면**: [Microsoft Intune 앱 래핑 도구를 사용한 모바일 애플리케이션 관리를 위해 iOS 앱 준비](https://technet.microsoft.com/library/dn878028.aspx) 및 [Microsoft Intune 앱 래핑 도구를 사용한 모바일 애플리케이션 관리를 위해 Android 앱 준비](https://technet.microsoft.com/library/mt147413.aspx) 항목의 정보에 따라 래핑된 앱을 만듭니다.  
+-   **래핑된 앱을 만들려면**: [Microsoft Intune 앱 래핑 도구를 사용한 모바일 애플리케이션 관리를 위해 iOS 앱 준비](https://technet.microsoft.com/library/dn878028.aspx) 및 [Microsoft Intune 앱 래핑 도구를 사용한 모바일 애플리케이션 관리를 위해 Android 앱 준비](https://docs.microsoft.com/intune/developer/app-wrapper-prepare-android) 항목의 정보에 따라 래핑된 앱을 만듭니다.  
 
      이 도구는 처리된 앱 및 연결된 매니페스트 파일을 만듭니다. 앱을 포함하는 Configuration Manager 애플리케이션을 만들 때 이러한 파일을 사용합니다.  
 
