@@ -1,181 +1,181 @@
 ### YamlMime:Hub
-title: System Center Configuration Manager
-summary: Configuration Manager에 공식 제품 설명서
+title: Microsoft Endpoint Configuration Manager
+summary: Microsoft Endpoint Manager의 Configuration Manager 구성 요소 공식 제품 설명서
 metadata:
   ms.topic: hub-page
-  ms.openlocfilehash: 3c0f4f04b4fc28f96a1749013c393e33e4fea3f8
-  ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
+  ms.openlocfilehash: deb88891b3783a3b168fea11ba48e8fb0a01e1a4
+  ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/06/2019
-  ms.locfileid: "70738114"
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73623328"
 highlightedContent:
   items:
   - title: 새로운 기능
     itemType: learn
-    url: https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-incremental-versions
+    url: https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-incremental-versions
   - title: 지원되는 구성
     itemType: architecture
-    url: https://docs.microsoft.com/sccm/core/plan-design/configs/supported-configurations
+    url: https://docs.microsoft.com/configmgr/core/plan-design/configs/supported-configurations
   - title: 업데이트 및 서비스
     itemType: deploy
-    url: https://docs.microsoft.com/sccm/core/servers/manage/updates
+    url: https://docs.microsoft.com/configmgr/core/servers/manage/updates
   - title: 로그 파일
     itemType: learn
-    url: https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files
+    url: https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/log-files
   - title: 포트
     itemType: learn
-    url: https://docs.microsoft.com/sccm/core/plan-design/hierarchy/ports
+    url: https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/ports
   - title: 기술 미리 보기
     itemType: get-started
-    url: https://docs.microsoft.com/sccm/core/get-started/technical-preview
+    url: https://docs.microsoft.com/configmgr/core/get-started/technical-preview
 conceptualContent:
   items:
   - title: Cloud-attached 관리
     links:
     - text: 인터넷에서 클라이언트 관리
-      url: https://docs.microsoft.com/sccm/core/clients/manage/manage-clients-internet
+      url: https://docs.microsoft.com/configmgr/core/clients/manage/manage-clients-internet
       itemType: overview
     - text: Azure AD에 대한 플랜
-      url: https://docs.microsoft.com/sccm/core/plan-design/security/plan-for-security#bkmk_planazuread
+      url: https://docs.microsoft.com/configmgr/core/plan-design/security/plan-for-security#bkmk_planazuread
       itemType: architecture
     - text: Azure 서비스
-      url: https://docs.microsoft.com/sccm/core/servers/deploy/configure/azure-services-wizard
+      url: https://docs.microsoft.com/configmgr/core/servers/deploy/configure/azure-services-wizard
       itemType: how-to-guide
   - title: 공동 관리
     links:
     - text: 빠른 시작
-      url: https://docs.microsoft.com/sccm/comanage/quickstarts
+      url: https://docs.microsoft.com/configmgr/comanage/quickstarts
       itemType: quickstart
     - text: 자습서
-      url: https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients
+      url: https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients
       itemType: tutorial
     - text: 워크로드
-      url: https://docs.microsoft.com/sccm/comanage/workloads
+      url: https://docs.microsoft.com/configmgr/comanage/workloads
       itemType: overview
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/comanage/overview
+      url: https://docs.microsoft.com/configmgr/comanage/overview
   - title: 실시간 관리
     links:
     - text: CMPivot
-      url: https://docs.microsoft.com/sccm/core/servers/manage/cmpivot
+      url: https://docs.microsoft.com/configmgr/core/servers/manage/cmpivot
       itemType: get-started
     - text: PowerShell 스크립트 실행
-      url: https://docs.microsoft.com/sccm/apps/deploy-use/create-deploy-scripts
+      url: https://docs.microsoft.com/configmgr/apps/deploy-use/create-deploy-scripts
       itemType: how-to-guide
   - title: Desktop Analytics
     links:
     - text: 개요
-      url: https://docs.microsoft.com/sccm/desktop-analytics/overview
+      url: https://docs.microsoft.com/configmgr/desktop-analytics/overview
       itemType: overview
     - text: 파일럿에 Windows 10 배포
-      url: https://docs.microsoft.com/sccm/desktop-analytics/tutorial-windows10
+      url: https://docs.microsoft.com/configmgr/desktop-analytics/tutorial-windows10
       itemType: tutorial
     - text: Desktop Analytics 설정
-      url: https://docs.microsoft.com/sccm/desktop-analytics/set-up
+      url: https://docs.microsoft.com/configmgr/desktop-analytics/set-up
       itemType: how-to-guide
     - text: Office 365 대시보드
-      url: https://docs.microsoft.com/sccm/sum/deploy-use/office-365-dashboard
+      url: https://docs.microsoft.com/configmgr/sum/deploy-use/office-365-dashboard
       itemType: learn
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/desktop-analytics/overview
+      url: https://docs.microsoft.com/configmgr/desktop-analytics/overview
   - title: 인프라 간소화
     links:
     - text: 사이트 서버 고가용성
-      url: https://docs.microsoft.com/sccm/core/servers/deploy/configure/site-server-high-availability
+      url: https://docs.microsoft.com/configmgr/core/servers/deploy/configure/site-server-high-availability
       itemType: deploy
     - text: 배포 지점 다시 할당
-      url: https://docs.microsoft.com/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_reassign
+      url: https://docs.microsoft.com/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_reassign
       itemType: how-to-guide
     - text: Azure의 Configuration Manager
-      url: https://docs.microsoft.com/sccm/core/understand/configuration-manager-on-azure
+      url: https://docs.microsoft.com/configmgr/core/understand/configuration-manager-on-azure
       itemType: learn
   - title: 핵심 인프라
     links:
     - text: 콘솔 사용
-      url: https://docs.microsoft.com/sccm/core/servers/manage/admin-console
+      url: https://docs.microsoft.com/configmgr/core/servers/manage/admin-console
       itemType: how-to-guide
     - text: 클라이언트 배포
-      url: https://docs.microsoft.com/sccm/core/clients/deploy/deploy-clients-to-windows-computers
+      url: https://docs.microsoft.com/configmgr/core/clients/deploy/deploy-clients-to-windows-computers
       itemType: deploy
     - text: ConfigMgr 및 Windows 10을 사용하여 최신 상태로 유지
-      url: https://docs.microsoft.com/sccm/core/understand/configuration-manager-and-windows-as-service
+      url: https://docs.microsoft.com/configmgr/core/understand/configuration-manager-and-windows-as-service
       itemType: learn
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/core/understand/introduction
+      url: https://docs.microsoft.com/configmgr/core/understand/introduction
   - title: 앱 관리
     links:
     - text: 앱 만들기
-      url: https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application
+      url: https://docs.microsoft.com/configmgr/apps/get-started/create-and-deploy-an-application
       itemType: how-to-guide
     - text: 앱 배포
-      url: https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications
+      url: https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications
       itemType: deploy
     - text: 소프트웨어 센터 계획
-      url: https://docs.microsoft.com/sccm/apps/plan-design/plan-for-software-center
+      url: https://docs.microsoft.com/configmgr/apps/plan-design/plan-for-software-center
       itemType: architecture
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/apps/understand/introduction-to-application-management
+      url: https://docs.microsoft.com/configmgr/apps/understand/introduction-to-application-management
   - title: OS 배포
     links:
     - text: Windows 10으로 업그레이드
-      url: https://docs.microsoft.com/sccm/osd/deploy-use/upgrade-windows-to-the-latest-version
+      url: https://docs.microsoft.com/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version
       itemType: overview
     - text: 단계별 배포
-      url: https://docs.microsoft.com/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence
+      url: https://docs.microsoft.com/configmgr/osd/deploy-use/create-phased-deployment-for-task-sequence
       itemType: how-to-guide
     - text: 작업 순서 단계
-      url: https://docs.microsoft.com/sccm/osd/understand/task-sequence-steps
+      url: https://docs.microsoft.com/configmgr/osd/understand/task-sequence-steps
       itemType: learn
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment
+      url: https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment
   - title: 소프트웨어 업데이트
     links:
     - text: 소프트웨어 업데이트 계획
-      url: https://docs.microsoft.com/sccm/sum/plan-design/plan-for-software-updates
+      url: https://docs.microsoft.com/configmgr/sum/plan-design/plan-for-software-updates
       itemType: architecture
     - text: 소프트웨어 업데이트 배포
-      url: https://docs.microsoft.com/sccm/sum/deploy-use/deploy-software-updates
+      url: https://docs.microsoft.com/configmgr/sum/deploy-use/deploy-software-updates
       itemType: deploy
     - text: Windows 10 업데이트 최적화
-      url: https://docs.microsoft.com/sccm/sum/deploy-use/optimize-windows-10-update-delivery
+      url: https://docs.microsoft.com/configmgr/sum/deploy-use/optimize-windows-10-update-delivery
       itemType: learn
     - text: Office 365 업데이트
-      url: https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates
+      url: https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates
       itemType: how-to-guide
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction
+      url: https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction
   - title: 디바이스 정책 준수
     links:
     - text: 구성 항목 만들기
-      url: https://docs.microsoft.com/sccm/compliance/deploy-use/create-configuration-items
+      url: https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items
       itemType: how-to-guide
     - text: Microsoft Edge 설정
-      url: https://docs.microsoft.com/sccm/compliance/deploy-use/browser-profiles
+      url: https://docs.microsoft.com/configmgr/compliance/deploy-use/browser-profiles
       itemType: how-to-guide
     - text: Windows 버전 업그레이드
-      url: https://docs.microsoft.com/sccm/compliance/deploy-use/upgrade-windows-version
+      url: https://docs.microsoft.com/configmgr/compliance/deploy-use/upgrade-windows-version
       itemType: how-to-guide
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/compliance/understand/ensure-device-compliance
+      url: https://docs.microsoft.com/configmgr/compliance/understand/ensure-device-compliance
   - title: 보호
     links:
     - text: Windows Defender
-      url: https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-protection
+      url: https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-protection
       itemType: overview
     - text: WDATP
-      url: https://docs.microsoft.com/sccm/protect/deploy-use/windows-defender-advanced-threat-protection
+      url: https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection
       itemType: overview
     footerLink:
       text: 자세히 보기
-      url: https://docs.microsoft.com/sccm/protect/understand/protect-data-and-site-infrastructure
+      url: https://docs.microsoft.com/configmgr/protect/understand/protect-data-and-site-infrastructure
 additionalContent:
   sections:
   - title: Configuration Manager 커뮤니티 및 지원
@@ -201,21 +201,21 @@ additionalContent:
       links:
       - url: https://docs.microsoft.com/powershell/sccm/overview?view=sccm-ps
         text: PowerShell
-      - url: https://docs.microsoft.com/sccm/develop/core/misc/system-center-configuration-manager-sdk
+      - url: https://docs.microsoft.com/configmgr/develop/core/misc/system-center-configuration-manager-sdk
         text: SDK 개념
-      - url: https://docs.microsoft.com/sccm/develop/reference/configuration-manager-reference
+      - url: https://docs.microsoft.com/configmgr/develop/reference/configuration-manager-reference
         text: SDK 참조
-      - url: https://docs.microsoft.com/sccm/develop/core/understand/sqlviews/create-custom-reports-using-sql-server-views
+      - url: https://docs.microsoft.com/configmgr/develop/core/understand/sqlviews/create-custom-reports-using-sql-server-views
         text: SQL 보기
     - title: 도구
       links:
-      - url: https://docs.microsoft.com/sccm/core/support/support-center
+      - url: https://docs.microsoft.com/configmgr/core/support/support-center
         text: 지원 센터
-      - url: https://docs.microsoft.com/sccm/mdt/
+      - url: https://docs.microsoft.com/configmgr/mdt/
         text: MDT
-      - url: https://docs.microsoft.com/sccm/apps/pcm/package-conversion-manager
+      - url: https://docs.microsoft.com/configmgr/apps/pcm/package-conversion-manager
         text: Package Conversion Manager
-      - url: https://docs.microsoft.com/sccm/core/support/tools
+      - url: https://docs.microsoft.com/configmgr/core/support/tools
         text: 자세히 보기 >
     - title: 다른 커뮤니티 사이트
       links:
@@ -223,4 +223,4 @@ additionalContent:
         text: Reddit의 ConfigMgr
       - url: https://www.facebook.com/groups/ConfigMgr2012
         text: Facebook의 ConfigMgr Professionals 그룹
-  footer: 사이트에 문제가 있습니까? [알려주세요](https://docs.microsoft.com/sccm/core/understand/use-docs#bkmk_docfeedback)!
+  footer: 사이트에 문제가 있습니까? [알려주세요](https://docs.microsoft.com/configmgr/core/understand/use-docs#bkmk_docfeedback)!
