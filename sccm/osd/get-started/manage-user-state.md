@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7f2e1521f6746d821258ef301a4df959c3cb559
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.openlocfilehash: ef5cfc38ea6c91653964e057396c47c11eab97b3
+ms.sourcegitcommit: c25a91db838805eca5dbb421a3de401928968bf0
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140064"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73142943"
 ---
 # <a name="manage-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사용자 상태 관리
 
@@ -53,7 +53,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 ###  <a name="BKMK_UserDataSMP"></a> 상태 마이그레이션 지점에 사용자 데이터 저장  
  상태 마이그레이션 지점에 사용자 상태 데이터를 저장하려면 다음을 수행해야 합니다.  
 
-1.  사용자 상태 데이터를 저장하는[Configure a state migration point](#BKMK_StateMigrationPoint)   
+1.  사용자 상태 데이터를 저장하는[Configure a state migration point](#BKMK_StateMigrationPoint)  
 
 2.  원본 컴퓨터와 대상 컴퓨터 사이의[Create a computer association](#BKMK_ComputerAssociation) . 원본 컴퓨터에서 사용자 상태를 캡처하기 전에 이 연결을 만들어야 합니다.  
 
