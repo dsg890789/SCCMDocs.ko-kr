@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5da81e4208e1659ce927b0a55066599d9670ad37
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.openlocfilehash: deabd60243f1911993c344e995ac0da848adae62
+ms.sourcegitcommit: b0f1c2fe1e034f0fe8676f1528249a4b26f54bd3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71826200"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73704943"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
@@ -85,7 +85,7 @@ Azure 앱에 대한 자세한 내용은 다음 문서부터 참조하세요.
 
 - [Azure App Service의 인증 및 권한 부여](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview)
 - [Web Apps 개요](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)
-- [Azure AD에서 애플리케이션 등록의 기본 사항](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios#authentication-basics-in-microsoft-identity-platform)  
+- [Azure AD에서 애플리케이션 등록의 기본 사항](/azure/active-directory/develop/authentication-scenarios)  
 - [Azure Active Directory 테넌트에 애플리케이션 등록](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)
 
 
@@ -274,6 +274,6 @@ Configuration Manager에서 Azure 앱을 가져온 경우 Azure Portal를 사용
 
 3. 사이트에서 사용자 개체에 대한 데이터를 저장합니다. 자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.  
 
-4. Configuration Manager 클라이언트가 Azure AD 사용자 토큰을 요청합니다. 클라이언트에서 Azure AD 클라이언트 앱의 애플리케이션 ID를 사용하여, 그리고 서버 앱을 대상 그룹으로 사용하여 클레임을 만듭니다. 자세한 내용은 [Azure AD 보안 토큰의 클레임](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios#claims-in-microsoft-identity-platform-security-tokens)을 참조하세요.  
+4. Configuration Manager 클라이언트가 Azure AD 사용자 토큰을 요청합니다. 클라이언트에서 Azure AD 클라이언트 앱의 애플리케이션 ID를 사용하여, 그리고 서버 앱을 대상 그룹으로 사용하여 클레임을 만듭니다. 자세한 내용은 [Azure AD 보안 토큰의 클레임](/azure/active-directory/develop/authentication-scenarios#security-tokens)을 참조하세요.  
 
 5. 클라이언트는 클라우드 관리 게이트웨이 및 온-프레미스 HTTPS 사용 관리 지점에 Azure AD 토큰을 제공하여 사이트에 인증합니다.  

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 790fc7d0d9df0d88983671be7cba290393016de0
-ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
+ms.openlocfilehash: 4550518db4b2a274ec3bdb1188a52f11489932ec
+ms.sourcegitcommit: 15b2ef81a19b4883d15823ee4c3a19fdb5288a54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71311523"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73761478"
 ---
 # <a name="client-notification-in-configuration-manager"></a>Configuration Manager의 클라이언트 알림
 
@@ -85,7 +85,7 @@ ms.locfileid: "71311523"
 
 다음 기본 제공 역할은 기본적으로 이 권한을 갖습니다.
 - 전체 관리자  
-- 인프라 관리자  
+- 운영 관리자  
 
 클라이언트 알림 작업이 필요한 모든 사용자 지정 역할에 이 권한을 추가합니다.
 

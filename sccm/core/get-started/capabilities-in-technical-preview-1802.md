@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085bf3a7b14582da0fc46568f9f5f61006b2dde5
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.openlocfilehash: 49f125ab40b44c9a70f7e53a0c7a8b34d3bc65ed
+ms.sourcegitcommit: b0f1c2fe1e034f0fe8676f1528249a4b26f54bd3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67286126"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73704742"
 ---
 # <a name="capabilities-in-technical-preview-1802-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1802의 기능
 
@@ -318,7 +318,7 @@ Windows AutoPilot은 새로운 Windows 10 디바이스를 최신 방법으로 �
 
 ## <a name="improvements-to-configuration-manager-policies-for-windows-defender-exploit-guard"></a>Windows Defender Exploit Guard에 대한 Configuration Manager 정책 개선 사항
 <!-- 1356220 -->
-[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)에 대한 Configuration Manager에서 공격 노출 영역 축소 및 제어된 폴더 액세스 구성 요소에 대한 정책 설정이 추가되었습니다.
+[Windows Defender Exploit Guard](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)에 대한 Configuration Manager에서 공격 노출 영역 축소 및 제어된 폴더 액세스 구성 요소에 대한 정책 설정이 추가되었습니다.
 
 **제어된 폴더 액세스에 대한 새 설정**<br/>
 제어된 폴더 액세스를 구성하는 경우 다음 두 가지 추가 옵션이 있습니다. **디스크 섹터만 차단** 및 **디스크 섹터만 감사**. 이 두 가지 설정을 사용하면 제어된 폴더 액세스를 부트 섹터에만 사용할 수 있으며, 특정 폴더 또는 기본 보호된 폴더의 보호는 사용되지 않습니다. 

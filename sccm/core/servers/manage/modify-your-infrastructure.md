@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 001b083318771f00e7122c7f63a40aea95a815a4
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 5c228132fe36c516b428cee47417fcc66e0dd221
+ms.sourcegitcommit: b0f1c2fe1e034f0fe8676f1528249a4b26f54bd3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70379862"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73704771"
 ---
 # <a name="modify-your-system-center-configuration-manager-infrastructure"></a>System Center Configuration Manager 인프라 수정
 
@@ -192,7 +192,7 @@ SQL Server 설명서는 [수동으로 SPN을 등록](https://technet.microsoft.c
 다음 절차는 Windows Server 2008 R2에서 Setspn 도구를 사용하여 SQL Server 서비스 계정에 대한 SPN을 관리하는 방법을 보여 주는 예제입니다. Setspn에 대한 특정 지침은 [Setspn Overview(Setspn 개요)](https://go.microsoft.com/fwlink/p/?LinkId=226343)또는 이에 해당하는 운영 체제별 설명서를 참조하십시오.  
 
 > [!NOTE]  
-> 다음 절차는 Setspn 명령줄 도구를 참조합니다. Setspn 명령줄 도구는 제품 CD 또는 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=100114)에서 Windows Server 2003 지원 도구를 설치할 때 포함됩니다. 제품 CD에서 Windows 지원 도구를 설치하는 방법에 대한 자세한 내용은 [Windows 지원 도구 설치](https://go.microsoft.com/fwlink/p/?LinkId=62270)를 참조하십시오.  
+> 다음 절차는 Setspn 명령줄 도구를 참조합니다. Setspn 명령줄 도구는 제품 CD 또는 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=15326)에서 Windows Server 2003 지원 도구를 설치할 때 포함됩니다. 제품 CD에서 Windows 지원 도구를 설치하는 방법에 대한 자세한 내용은 [Windows 지원 도구 설치](https://go.microsoft.com/fwlink/p/?LinkId=62270)를 참조하십시오.  
 
 #### <a name="to-manually-create-a-domain-user-service-principal-name-spn-for-the-sql-server-service-account"></a>수동으로 SQL Server 서비스 계정에 대한 도메인 사용자 SPN을 만들려면  
 

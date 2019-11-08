@@ -2,7 +2,7 @@
 title: 작업 순서 단계
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
-ms.date: 10/17/2019
+ms.date: 10/31/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec745842fb03a422f3d08be3de261537f23a0a19
-ms.sourcegitcommit: 89d6956f8dd9a73e18bf77990ab23cf9255068ad
+ms.openlocfilehash: c31aa8e72917a50d186a797f091b233c655c54d3
+ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587755"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623237"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
@@ -1915,7 +1915,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 #### <a name="set-up-the-configuration-manager-client"></a>Configuration Manager 클라이언트 설정  
 
-1. Windows 최소 설치가 완료되면 setupcomplete.cmd를 사용하여 작업 순서가 다시 시작됩니다.  
+1. Windows 최소 설치가 완료되면 setupcomplete.cmd를 사용하여 작업 순서가 다시 시작됩니다. 자세한 내용은 [설치 프로그램을 완료 한 후 스크립트 실행 (setupcomplete.cmd)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup#run-a-script-after-setup-is-complete-setupcompletecmd)을 참조 하세요.  
 
 2. **Windows 설정 적용** 단계에서 선택한 옵션에 따라 로컬 관리자 계정을 사용하거나 사용하지 않도록 설정합니다.  
 
@@ -1928,7 +1928,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 작업 순서는 다음 단계를 계속 실행합니다.  
 
 > [!Note]  
-> Windows 그룹 정책은 작업 순서가 완료될 때까지 정상적으로 처리되지 않습니다. 이 동작은 여러 Windows 버전 간에 일관되게 나타납니다. 작업 순서 동안 다른 사용자 지정 작업이 그룹 정책 평가를 트리거할 수 있습니다.<!-- 2841304 -->
+> Windows 그룹 정책은 작업 순서가 완료될 때까지 정상적으로 처리되지 않습니다. 이 동작은 여러 Windows 버전 간에 일관되게 나타납니다. 작업 순서 동안 다른 사용자 지정 작업이 그룹 정책 평가를 트리거할 수 있습니다. 작업 순서에 대 한 자세한 내용은 [설치가 완료 된 후 스크립트 실행 (setupcomplete.cmd)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup#run-a-script-after-setup-is-complete-setupcompletecmd)을 참조 하세요. <!-- 2841304 -->
 
 
 ### <a name="properties"></a>속성  
