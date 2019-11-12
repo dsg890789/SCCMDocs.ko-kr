@@ -2,7 +2,7 @@
 title: Updates Publisher
 titleSuffix: Configuration Manager
 description: System Center Updates Publisher를 사용하여 사용자 지정 업데이트 관리
-ms.date: 06/17/2019
+ms.date: 11/07/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a1003fe6f2c61f089e1e2223d2b6f9fbd9b73f
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 878e69ffb3f4b5a1c823b1b98a1e53305382ac7b
+ms.sourcegitcommit: 54f56bd30a161e8847f8bfd00ede586a1cf97d33
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888614"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73710528"
 ---
 # <a name="system-center-updates-publisher"></a>System Center Updates Publisher
 
@@ -33,13 +33,10 @@ Updates Publisher를 사용하여 다음을 수행할 수 있습니다.
 
 업데이트 서버에 업데이트를 게시한 후에는 System Center Configuration Manager를 사용하여 해당 업데이트를 검색하고 관리되는 디바이스에 배포할 수 있습니다.
 
-> [!TIP]  
-> 이전 버전인 [System Center Updates Publisher 2011](https://go.microsoft.com/fwlink/?LinkId=848111)은 계속 지원됩니다. 이 업데이트된 버전은 기능은 동일하지만 추가 운영 체제, 일부 작업을 간소화하는 새로운 기능이 지원되고 사용자 인터페이스가 업데이트되었습니다.
-
 ## <a name="workspaces"></a>작업 영역
 Updates Publisher를 열면 기본적으로 *업데이트 작업 영역*의 개요 노드가 열립니다.
 
-![Updates Publisher 콘솔](media/console1.png)   
+![Updates Publisher 콘솔](media/console1.png)
 
 
 Updates Publisher에는 구성에 도움이 되는 4개의 작업 영역이 있습니다.
@@ -58,14 +55,14 @@ Updates Publisher에는 구성에 도움이 되는 4개의 작업 영역이 있�
 
 **카탈로그 작업 영역**: 이 작업 영역을 사용하여 [소프트웨어 업데이트 카탈로그 관리](/sccm/sum/tools/updates-publisher-catalogs) 및 추가를 수행합니다. 이 작업 영역에는 해당 카탈로그에서 Updates Publisher 리포지토리로 소프트웨어 업데이트 가져오기가 포함됩니다.
 
-## <a name="whats-new-in-the-system-center-updates-publisher-preview"></a>System Center Updates Publisher 미리 보기의 새로운 기능
+## <a name="whats-new-in-system-center-updates-publisher"></a>System Center Updates Publisher의 새로운 기능
 
 >[!NOTE] 
->이 섹션의 정보는 System Center Updates publisher의 미리 보기 버전에만 적용 됩니다. 미리 보기를 설치 하려면 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=58390)에서 다운로드 합니다.
+> 최신 버전의 System Center Updates Publisher는 2019 년 11 월 6 일에 출시 되었습니다. 자세한 내용은 [릴리스 기록](#release-history) 섹션을 참조 하세요.
 
-업데이트를 작성 하는 데 도움이 되는 System Center Updates Publisher 미리 보기에는 새로운 제작 모드가 있습니다. 제작 모드를 사용 하도록 설정 하면 **범주 작업 영역이** 시작 화면에 추가 됩니다. 제작 모드를 사용 하는 경우 새 **Detectoid** 단추도 **업데이트 작업 영역** 에 추가 됩니다. 
+업데이트를 작성 하는 데 도움이 되는 새로운 제작 모드 System Center Updates Publisher 있습니다. 제작 모드를 사용 하도록 설정 하면 **범주 작업 영역이** 시작 화면에 추가 됩니다. 제작 모드를 사용 하는 경우 새 **Detectoid** 단추도 **업데이트 작업 영역** 에 추가 됩니다.
 
-### <a name="to-enable-authoring-mode-in-the-preview"></a>미리 보기에서 제작 모드를 사용 하도록 설정 하려면
+### <a name="to-enable-authoring-mode"></a>제작 모드를 사용 하도록 설정 하려면
 
 1. 콘솔의 왼쪽 위 모서리에서 **Updates Publisher** **속성** 탭을 클릭 한 다음 **옵션**을 선택 합니다.
 1. **제작** 옵션으로 이동 합니다.
@@ -85,7 +82,6 @@ Updates Publisher에는 구성에 도움이 되는 4개의 작업 영역이 있�
 
 ![업데이트 분류 스크린샷](media/scup-categorize-update.png)
 
-
 ### <a name="about-detectoids"></a>Detectoids 정보
 
 제작 모드를 사용 하도록 설정 하면 업데이트에 대 한 detectoids를 만들 수 있습니다. Detectoids는 동일한 규칙 또는 규칙 집합을 사용 하 여 적용 가능성을 결정 하는 여러 업데이트가 있는 경우에 유용 합니다. 이러한 인스턴스에서 detectoid를 만들어 업데이트를 위한 필수 구성 요소로 할당 합니다. 작성 된 업데이트에 여러 detectoids를 할당할 수 있습니다.
@@ -100,6 +96,12 @@ Updates Publisher에는 구성에 도움이 되는 4개의 작업 영역이 있�
 
 
 ![Detectoid를 사용 하 여 필수 구성 요소 업데이트](media/scup-detectoid-as-prerequisite.png)
+
+## <a name="release-history"></a>릴리스 기록
+
+- [2019 RTW 버전 6.0.394.0](https://techcommunity.microsoft.com/t5/Configuration-Manager-Blog/SCUP-adds-support-for-update-categories/ba-p/990111). 릴리스 날짜: 2019년 11월 6일
+- [KB4462765에서 롤업 버전 6.0.283.0을 업데이트](https://support.microsoft.com/help/4462765/update-rollup-for-system-center-updates-publisher)합니다. 릴리스 날짜: 2018년 9월 7일
+- [2017 RTW 버전 6.0.276.0](https://techcommunity.microsoft.com/t5/Configuration-Manager-Blog/System-Center-Updates-Publisher-adds-support-for-new-OSes/ba-p/274986). 릴리스 날짜: 2018년 3월 26일
 
 
 ## <a name="next-steps"></a>다음 단계
