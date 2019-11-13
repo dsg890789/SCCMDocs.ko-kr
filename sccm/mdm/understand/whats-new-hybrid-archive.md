@@ -67,11 +67,11 @@ ms.locfileid: "71826252"
 - **Android용 회사 포털 앱의 새 사용자 환경**  
   Android용 회사 포털 앱의 사용자 인터페이스의 모양과 느낌이 더욱 세련되어집니다. 중요한 업데이트는 다음과 같습니다.
 
-  - 분판 회사 포털 탭 헤더는 IT에서 정의한 브랜딩으로 색이 지정 됩니다.
-  - App **앱** 탭에서 **추천 앱** 및 **모든 앱** 단추가 업데이트 됩니다.
-  - 조건을 **앱** 탭에서 **검색** 단추는 부동 작업 단추입니다.
-  - 앱 탐색: **모든 앱** 보기에는 쉽게 탐색할 수 있도록 **추천**, **전체**및 **범주의** 탭 보기가 표시 됩니다.
-  - 지원은 가독성 향상을 위해 **내 장치** 및 **IT 담당자** 탭이 업데이트 됩니다.
+  - 색: 회사 포털 탭 헤더의 색을 IT에서 정의하는 브랜딩에서 지정합니다.
+  - 앱: **앱** 탭에서 **추천 앱** 및 **모든 앱** 단추가 업데이트되었습니다.
+  - 검색: **앱** 탭에서 **검색** 단추는 부동 작업 단추입니다.
+  - 앱 탐색: **모든 앱** 뷰는 쉽게 탐색할 수 있도록 **추천**, **전체** 및 **범주** 탭으로 구분된 뷰를 표시합니다.
+  - 지원: 가독성 향상을 위해 **내 디바이스** 및 **IT 담당자** 탭이 업데이트됩니다.
 
   이러한 변경 사항에 자세한 내용은 [Intune 최종 사용자 앱 UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui)를 참조하세요.
 
@@ -160,7 +160,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **Windows 디바이스의 새 MDM 서버 주소**
 
-  Windows 및 Windows Phone 디바이스 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 디바이스를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 추가 정보는 https://aka.ms/intuneenrollsvrchange 에서 찾을 수 있습니다.
+  Windows 및 Windows Phone 디바이스 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 디바이스를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 추가 정보는 https://aka.ms/intuneenrollsvrchange에서 찾을 수 있습니다.
 
 ### <a name="new-in-configuration-manager-technical-preview-1702"></a>Configuration Manager Technical Preview 1702의 새로운 기능
 
@@ -524,7 +524,7 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 
 - **컬렉션으로 디바이스 자동 분류**
 
-  Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1606의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1606)에서 [컬렉션으로 디바이스 자동 분류](/sccm/core/get-started/capabilities-in-technical-preview-1606#dmp_category)를 참조하세요.
+  Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1606의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1606#dmp_category)에서 [컬렉션으로 디바이스 자동 분류](/sccm/core/get-started/capabilities-in-technical-preview-1606)를 참조하세요.
 
   > [!IMPORTANT]
   > 이 기능은 Microsoft Intune의 2016년 6월 릴리스에 작동합니다. 이러한 절차를 시도하기 전에 이 릴리스로 업데이트했는지 확인합니다.
@@ -537,7 +537,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune의 새로운 기능  
  2016년 5월에 도입된 다음 Intune 기능은 하이브리드 배포에서 사용할 수 있습니다.
 
-- **MAM SDK: 지원 PIN 길이 구성 @ no__t-0
+- **MAM SDK: PIN 길이 구성 지원**
 
   이제 디바이스 PIN과 유사한 PIN 길이를 MAM 앱에 지정할 수 있습니다. 이 경우 최종 사용자가 설정된 새로운 제한 사항을 준수해야 합니다. PIN 화면이 더 긴 입력을 수용하기 위해 약간 수정되었습니다. 자세한 내용은 [Android에 대한 MAM 정책 설정](https://docs.microsoft.com/intune/deploy-use/android-mam-policy-settings) 및 [iOS에 대한 MAM 정책 설정](https://docs.microsoft.com/intune/deploy-use/ios-mam-policy-settings)을 참조하세요.  
 
@@ -549,11 +549,11 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   이제 Intune에 등록하지 않은 디바이스에서 Android용 Microsoft Word, Excel 및 PowerPoint 앱을 MAM 정책과 연결할 수 있습니다. 지원되는 앱의 전체 목록을 보려면 [Microsoft Intune 애플리케이션 파트너](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) 페이지의 Microsoft Intune 모바일 애플리케이션 갤러리로 이동합니다.  
 
-- **Android 회사 포털 앱: 최종 사용자 알림 메시지 @ no__t-0
+- **Android 회사 포털 앱: 최종 사용자 알림 메시지**
 
   최종 사용자가 디바이스를 등록하거나 회사 포털에서 제거하면 Android 회사 포털 앱의 알림 메시지가 나타납니다.  
 
-- **Company 포털 웹 사이트: 최종 사용자에 게 더 많은 정보를 제공 하는 장치 식별 배너 @ no__t-0
+- **회사 포털 웹 사이트: 디바이스 식별 배너에서 최종 사용자에게 자세한 정보를 제공함**
 
   이제 최종 사용자가 회사 포털 웹 사이트를 사용할 때 자신이 선택한 디바이스를 더 쉽게 식별할 수 있습니다. 잘못된 디바이스를 선택한 경우 홈페이지 배너의 **여기를 탭하세요.** 링크를 탭하여 올바른 디바이스를 선택할 수 있습니다.  
 
@@ -571,19 +571,19 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   이제 **자산 및 준수** 작업 영역에서 액세스되는 **원격 디바이스 작업** 메뉴에서 **사용 중지/초기화**, **암호 다시 설정**, **원격 잠금** 및 **활성화 잠금 무시** 등의 일반 작업을 찾을 수 있습니다.
 
-  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [원격 디바이스 작업을 위한 새로운 환경](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_Remote)을 참조하세요.  
+  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_Remote)에서 [원격 디바이스 작업을 위한 새로운 환경](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
 
 - **비즈니스용 Windows 스토어 앱**
 
-  [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [비즈니스용 Windows 스토어 앱](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_WSFB)을 참조하세요.  
+  [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_WSFB)에서 [비즈니스용 Windows 스토어 앱](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
 
 - **대량 구매 앱의 일반적인 향상 기능**
 
-  비즈니스용 Windows 스토어와 iOS App Store의 대량 구매 앱이 동일한 보기, **스토어 앱에 대한 라이선스 정보**로 통합되었습니다. 또한 iOS용 대량 구매 앱을 만드는 방식으로 향상되었습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [대량 구매 앱에 대한 일반적인 향상 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_VPP2)을 참조하세요.  
+  비즈니스용 Windows 스토어와 iOS App Store의 대량 구매 앱이 동일한 보기, **스토어 앱에 대한 라이선스 정보**로 통합되었습니다. 또한 iOS용 대량 구매 앱을 만드는 방식으로 향상되었습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_VPP2)에서 [대량 구매 앱에 대한 일반적인 향상 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
 
 - **IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언**
 
-  이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  또한 iOS 디바이스의 일련 번호를 가져올 수 있습니다.  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언](../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_IMEI)을 참조하세요.  
+  이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  또한 iOS 디바이스의 일련 번호를 가져올 수 있습니다.  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_IMEI)에서 [IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
 
 - **WIP(Windows Information Protection)**
 
@@ -635,11 +635,11 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 - **Configuration Manager 콘솔에서 Windows 10 디바이스에 대한 비즈니스용 Windows 스토어 앱 찾기, 관리 및 배포**
 
 
-  Configuration Manager Technical Preview 1604에서는 관리하는 Windows 10 디바이스에 대한 앱을 찾고 관리 및 배포할 수 있도록 도와주는 비즈니스용 Windows 스토어에 대한 지원을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604)에서 [비즈니스용 Windows 스토어에서 대량 구매 앱 관리](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_WindowsVPP)를 참조하세요.  
+  Configuration Manager Technical Preview 1604에서는 관리하는 Windows 10 디바이스에 대한 앱을 찾고 관리 및 배포할 수 있도록 도와주는 비즈니스용 Windows 스토어에 대한 지원을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_WindowsVPP)에서 [비즈니스용 Windows 스토어에서 대량 구매 앱 관리](/sccm/core/get-started/capabilities-in-technical-preview-1604)를 참조하세요.  
 
 - **Android 디바이스에 대한 SmartLock 설정**
 
-  새 설정이 Android 및 Samsung KNOX Standard 구성 항목에 추가되었습니다. 이를 통해 호환되는 Android 디바이스에서 SmartLock 기능을 제어할 수 있습니다.  이 설정을 사용하면 최종 사용자가 SmartLock을 구성하지 않도록 방지할 수 있습니다. [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604)에서 [Android 디바이스에 대한 SmartLock 설정](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_Smart)을 참조하세요.  
+  새 설정이 Android 및 Samsung KNOX Standard 구성 항목에 추가되었습니다. 이를 통해 호환되는 Android 디바이스에서 SmartLock 기능을 제어할 수 있습니다.  이 설정을 사용하면 최종 사용자가 SmartLock을 구성하지 않도록 방지할 수 있습니다. [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_Smart)에서 [Android 디바이스에 대한 SmartLock 설정](/sccm/core/get-started/capabilities-in-technical-preview-1604)을 참조하세요.  
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능  
  Configuration Manager(현재 분기) 2016년 4월에 도입된 새로운 하이브리드 기능은 없습니다.  
@@ -671,7 +671,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 - **타사 MDM 솔루션에 등록된 디바이스에 대해 iOS "다음에서 열기" 관리 활용**
 
-  타사 MDM(모바일 디바이스 관리) 공급업체를 사용하여 IOS "다음에서 열기" 관리를 활용할 수 있습니다. 구성 프로필 설정에서 제한을 설정하고 MDM 소프트웨어를 사용하여 앱을 배포할 수 있습니다. 사용자가 관리되는 앱을 설치하면 제한 사항이 적용됩니다. 자세한 내용은 다음을 참조 하세요. [Microsoft Intune 모바일 앱 관리 정책 및 iOS](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) 는 Intune 라이브러리의에서 열립니다.  
+  타사 MDM(모바일 디바이스 관리) 공급업체를 사용하여 IOS "다음에서 열기" 관리를 활용할 수 있습니다. 구성 프로필 설정에서 제한을 설정하고 MDM 소프트웨어를 사용하여 앱을 배포할 수 있습니다. 사용자가 관리되는 앱을 설치하면 제한 사항이 적용됩니다. 자세한 내용은 Intune 라이브러리에서 [Microsoft Intune 모바일 앱 관리 정책 및 iOS 다음에서 열기](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)를 참조하세요.  
 
 - **MAM을 지원하는 Microsoft 앱**
 
@@ -732,7 +732,7 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
 ## <a name="notices"></a>알림
 
-### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 및 System Center 2012 R2 Configuration Manager (RTM): 2017 년 4 월 10 일에 종료 되는 하이브리드 모바일 장치 관리에 대 한 지원
+### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 및 System Center 2012 R2 Configuration Manager(RTM): 하이브리드 모바일 디바이스 관리에 대한 지원이 2017년 4월 10일에 종료됩니다.
 *2017년 1월 11일*
 
 System Center 2012 Configuration Manager SP1 및 System Center 2012 R2 Configuration Manager RTM에 대한 지원이 2016년 7월 12일에 종료됩니다. 그 이후 Microsoft Intune 서비스에 연결하는 이러한 릴리스의 하이브리드 MDM에 대한 지원이 2017년 4월 10일에 종료됩니다. 이 날짜 이후에는 이러한 릴리스에서 하이브리드 MDM의 작동이 중지됩니다. Intune 커넥터가 더 이상 Intune 서비스에 연결되지 않으므로 관리되는 디바이스는 기본적으로 관리되지 않습니다. 업그레이드가 발생할 때까지 Configuration Manager 데이터(예: 정책 및 애플리케이션)가 Intune으로 이동하지 않으며 관리되는 디바이스 데이터가 Configuration Manager로 이동하지 않습니다.
