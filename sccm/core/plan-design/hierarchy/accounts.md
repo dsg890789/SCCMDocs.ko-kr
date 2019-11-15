@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e76aabecf9777cc93d4df9d4094f9f6fc0d94ff
-ms.sourcegitcommit: fb5f1df6222b6861e296c3b673789df9c2721114
+ms.openlocfilehash: b8f403f1798f3bbb80ed75844e2a272d9d8268e4
+ms.sourcegitcommit: b0f1c2fe1e034f0fe8676f1528249a4b26f54bd3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778156"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73704728"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -652,7 +652,7 @@ Configuration Manager는 다음과 같은 역할 개체를 SQL에서 자동으�
 
 ### <a name="smsdbrole_aius"></a>smsdbrole_AIUS
 
-업데이트 동기화를 Asset Intelligence합니다. ConfigMgr은 Asset Intelligence 동기화 지점 계정 액세스를 호스팅하는 컴퓨터 계정에 액세스 인텔리전스 프록시 데이터를 가져오고 업로드를 위해 보류 중인 AI 데이터를 볼 수 있도록 허용합니다.
+업데이트 동기화를 Asset Intelligence합니다. ConfigMgr은 Asset Intelligence 동기화 지점 계정 액세스를 호스팅하는 컴퓨터 계정에 자산 인텔리전스 프록시 데이터를 가져오고 업로드를 위해 보류 중인 AI 데이터를 볼 수 있도록 허용합니다.
 
 ### <a name="smsdbrole_amtsp"></a>smsdbrole_AMTSP
 

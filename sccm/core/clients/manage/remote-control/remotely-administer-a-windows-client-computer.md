@@ -2,7 +2,7 @@
 title: Windows 컴퓨터 원격 관리
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager를 사용하여 원격 Windows 클라이언트 컴퓨터를 관리합니다.
-ms.date: 04/17/2019
+ms.date: 11/02/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,20 +11,20 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a18371a7f75935b3d72262b35385f8f4e81923
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 8223577eb5ca5daf70a1eaefe815b386ea2934cf
+ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67677664"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623450"
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)* Configuration Manager에서는 **Configuration Manager 원격 제어**를 사용하여 클라이언트 컴퓨터에 연결할 수 있습니다. 원격 제어를 사용하기 전에 다음 문서의 정보를 검토해야 합니다.  
 
--   [System Center Configuration Manager에서 원격 제어에 대한 필수 조건](../../../../core/clients/manage/remote-control/prerequisites-for-remote-control.md)  
+-   [System Center Configuration Manager에서 원격 제어에 대한 필수 조건](/sccm/core/clients/manage/remote-control/prerequisites-for-remote-control)  
 
--   [System Center Configuration Manager에서 원격 제어 구성](../../../../core/clients/manage/remote-control/configuring-remote-control.md)  
+-   [System Center Configuration Manager에서 원격 제어 구성](/sccm/core/clients/manage/remote-control/configuring-remote-control)  
 
 원격 제어 뷰어를 시작하는 세 가지 방법은 다음과 같습니다.  
 
@@ -41,7 +41,7 @@ ms.locfileid: "67677664"
 3.  원격으로 관리할 컴퓨터를 선택한 다음 **홈** 탭의 **디바이스** 그룹에서 **시작** > **원격 제어**를 선택합니다.  
 
     > [!IMPORTANT]  
-    >  클라이언트 설정 **원격 제어 권한을 묻는 메시지를 사용자에게 표시** 가 **True**로 설정되어 있는 경우 원격 컴퓨터의 사용자가 원격 제어 프롬프트에 동의할 때까지 연결을 시작하지 않습니다. 자세한 내용은 [System Center Configuration Manager에서 원격 제어 구성](../../../../core/clients/manage/remote-control/configuring-remote-control.md)을 참조하세요.  
+    >  클라이언트 설정 **원격 제어 권한을 묻는 메시지를 사용자에게 표시** 가 **True**로 설정되어 있는 경우 원격 컴퓨터의 사용자가 원격 제어 프롬프트에 동의할 때까지 연결을 시작하지 않습니다. 자세한 내용은 [System Center Configuration Manager에서 원격 제어 구성](/sccm/core/clients/manage/remote-control/configuring-remote-control)을 참조하세요.  
 
 4.  **Configuration Manager 원격 제어** 창이 열린 후 클라이언트 컴퓨터를 원격으로 관리할 수 있습니다. 연결을 구성하려면 다음 옵션을 사용합니다.  
 
@@ -84,7 +84,7 @@ ms.locfileid: "67677664"
 
 ## <a name="to-start-the-remote-control-viewer-from-the-windows-command-line"></a>Windows 명령줄에서 원격 제어 뷰어를 시작하려면  
 
--   Windows 명령 프롬프트에 _<Configuration Manager 설치 폴더\>_ **\AdminConsole\Bin\x64\CmRcViewer.exe**를 입력합니다.  
+-   Windows 명령 프롬프트에 _<Configuration Manager Installation Folder\>_ **\AdminConsole\Bin\i386\CmRcViewer.exe**를 입력합니다.  
 
 CmRcViewer.exe에서 다음 명령줄 옵션을 지원합니다.  
 
@@ -92,4 +92,11 @@ CmRcViewer.exe에서 다음 명령줄 옵션을 지원합니다.
 - *사이트 서버 이름* - 원격 제어 세션과 관련된 상태 메시지를 보낼 System Center Configuration Manager 사이트 서버의 이름을 지정합니다.
 - **/?** – 원격 제어 뷰어에 대한 명령줄 옵션을 표시합니다.  
      
-**예:CmRcViewer.exe** *<주소\>* *<\\\사이트 서버 이름 >*  
+**예: CmRcViewer.exe** *<주소\>* *<\\\사이트 서버 이름>* 
+
+> [!NOTE]  
+> Configuration Manager 콘솔에 지원되는 모든 운영 체제에서 원격 제어 뷰어를 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager 콘솔의 지원되는 구성](/sccm/core/plan-design/configs/supported-operating-systems-consoles) 및 [System Center Configuration Manager에서 원격 제어에 대한 필수 구성 요소](/sccm/core/clients/manage/remote-control/prerequisites-for-remote-control)를 참조하세요.
+
+## <a name="next-steps"></a>다음 단계
+
+[원격 제어 사용 감사](/sccm/core/clients/manage/remote-control/audit-remote-control-usage)

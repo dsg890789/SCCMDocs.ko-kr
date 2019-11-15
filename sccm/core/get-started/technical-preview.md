@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 10/18/2019
+ms.date: 11/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 330a1a1b92a111836b49dcb0127b772d2c0cc636
-ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
+ms.openlocfilehash: 78b7e88436a0a3031603545a9104d7a5b1d85fd4
+ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684803"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623441"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
-*적용 대상: System Center Configuration Manager(기술 미리 보기)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager의 월간 기술 미리 보기 분기를 자세히 설명합니다. 기술 미리 보기에서는 Microsoft가 작업하고 있는 새로운 기능을 소개합니다. Configuration Manager의 현재 분기에 아직 포함되지 않은 새로운 기능을 소개합니다. 이러한 기능은 최종적으로 현재 분기에 대한 업데이트에 포함될 수 있습니다. 기능을 마무리하기 전에 기능을 사용해 보고 피드백을 보내 주시기 바랍니다.  
 
@@ -97,10 +97,11 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 ### <a name="active-baseline-versions"></a>활성 기준 버전
 
-릴리스 후 최대 1년 동안 기준 버전을 설치합니다. 새 기술 미리 보기 사이트를 설치할 때 현재 둘 이상의 기준 버전을 사용할 수 있는 경우 최신 기준 버전을 사용합니다.
+릴리스 후 최대 1년 동안 기준 버전을 설치합니다. 새 기술 미리 보기 사이트를 설치할 때는 최신 기준 버전을 사용합니다.
 
-- **기술 미리 보기 버전 1907**: Configuration Manager 기술 미리 보기 버전 1907은 콘솔 내 업데이트와 새 기준 버전으로 모두 사용할 수 있습니다. [TechNet 평가 센터에서](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 기준 버전을 다운로드합니다.
+- **기술 미리 보기 버전 1911**: Configuration Manager 기술 미리 보기 분기 버전 1911은 콘솔 내 업데이트와 새 기준 버전으로 모두 사용할 수 있습니다.
 
+[TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview)에서 기준 버전을 다운로드합니다.
 
 ## <a name="BKMK_TPFeedback"></a> 사용자 의견 제공  
 
@@ -118,9 +119,21 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 
 <!-- This is the full list of new features in the latest TP release -->
 
-### <a name="technical-preview-version-1910"></a>Technical preview 버전 1910
+### <a name="technical-preview-version-1911"></a>기술 미리 보기 버전 1911
 
 <!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
+
+- [Microsoft Endpoint Configuration Manager](/sccm/core/get-started/2019/technical-preview-1911#bkmk_mem) <!--4960084-->
+- [Intune Win32 앱에 대한 Microsoft Connected Cache 지원](/sccm/core/get-started/2019/technical-preview-1911#bkmk_cache) <!--5032900-->
+
+> [!Note]  
+> 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
+
+## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
+
+현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
+
+### <a name="technical-preview-version-1910"></a>Technical preview 버전 1910
 
 - [Microsoft Edge, 버전 77 이상 배포](/sccm/core/get-started/2019/technical-preview-1910#bkmk_Microsoft_Edge) <!--4561024-->
 - [규정 준수 정책 평가의 일환으로 사용자 지정 구성 기준 포함](/sccm/core/get-started/2019/technical-preview-1910#bkmk_CAbaselines) <!--3608345-->
@@ -132,14 +145,6 @@ Microsoft는 세 개의 연속 버전을 사용할 수 있을 때까지 각 기�
 - [콘솔 검색 개선 사항](/sccm/core/get-started/2019/technical-preview-1910#bkmk_search) <!--4640570-->
 - [Windows 10 전체 업그레이드에에 대한 새 변수](/sccm/core/get-started/2019/technical-preview-1910#bkmk_osdvar) <!--4680263-->
 - [Windows Virtual Desktop 지원에 대한 개선 사항](/sccm/core/get-started/2019/technical-preview-1910#bkmk_wvd) <!--4737447-->
-
-> [!Note]  
-> 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  
-
-
-## <a name="features-in-recent-technical-previews"></a>최신 기술 미리 보기의 기능
-
-현재 분기 버전 1906 이후 Configuration Manager 기술 미리 보기 분기와 함께 다음 기능이 릴리스되었습니다.
 
 ### <a name="technical-preview-version-1909"></a>Technical Preview 버전 1909
 
