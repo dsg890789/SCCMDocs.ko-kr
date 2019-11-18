@@ -7,12 +7,12 @@ ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: conceptual
 ms.date: 04/19/2019
-ms.openlocfilehash: 8157ee2212e18d4938beabd40f16e66a319d0b8c
-ms.sourcegitcommit: cab3dba5ebfe90f28cedee03c1840c9a395160cc
+ms.openlocfilehash: 93ddf18f78667058b137368a4948ac3d4dc38288
+ms.sourcegitcommit: 9e80902f586342e5eea48febb6da7594f2cc9c34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849297"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912980"
 ---
 # <a name="system-center-configuration-manager-site-sizing-and-performance-faq"></a>System Center Configuration Manager 사이트 크기 조정 및 성능 FAQ
 
@@ -34,7 +34,7 @@ SQL 데이터베이스 파일이 포함된 디스크에 대해서는 64K 할당 
 
 SSD(반도체 드라이브) 및 Azure Premium Storage의 최신 배열은 소수의 디스크를 사용하여 단일 볼륨에서 높은 IOPS를 제공할 수 있습니다. 일반적으로 추가 처리량이 아닌 추가 스토리지를 위해 배열에 더 많은 드라이브를 추가합니다. 실제 스핀들 기반 디스크를 사용하는 경우 단일 볼륨에 생성할 수 있는 것보다 더 많은 IOPS가 필요할 수도 있습니다. 총 권장 IOPS와 *.mdf* 파일의 디스크 공간에 60%, *.ldf* 파일에 20% 및 로그와 데이터 임시 파일에 20%를 할당하는 것이 좋습니다. *.ldf* 및 임시 파일은 모두 할당된IOPS의 40%(20% + 20%)가 있는 단일 볼륨에 상주할 수 있습니다.
 
-기본적으로 SQL은 임시 데이터 파일 한 개를 만듭니다. SQL 잠금을 방지하고 단일 파일에 액세스할 때까지 기다리려면 더 많은 파일을 만들어야 합니다. 만들어야 할 최선의 임시 데이터 파일 수는 커뮤니티 의견에 따라 4개에서 8개까지 달라집니다. 테스트해 보니 4개에서 8개 간의 차이가 크지 않은 것으로 나타났으므로 *동일한 크기*의 임시 데이터 파일 4개를 만들 수 있습니다. tempdb 데이터 파일은 전체 데이터베이스 크기의 20 ~ 25%가 되어야 합니다.
+SQL Server 2016 이전의 SQL Server는 기본적으로 하나의 1개의 임시 데이터 파일을 만듭니다. SQL 잠금을 방지하고 단일 파일에 액세스할 때까지 기다리려면 더 많은 파일을 만들어야 합니다. 만들어야 할 최선의 임시 데이터 파일 수는 커뮤니티 의견에 따라 4개에서 8개까지 달라집니다. 테스트해 보니 4개에서 8개 간의 차이가 크지 않은 것으로 나타났으므로 *동일한 크기*의 임시 데이터 파일 4개를 만들 수 있습니다. tempdb 데이터 파일은 전체 데이터베이스 크기의 20 ~ 25%가 되어야 합니다.
 
 ### <a name="are-there-any-other-recommendations-for-disk-setup"></a>디스크 설정에 대한 다른 권장 사항이 있습니까?
 

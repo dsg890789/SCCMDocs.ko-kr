@@ -1,7 +1,7 @@
 ---
 title: 역할 기반 관리 구성
 titleSuffix: Configuration Manager
-ms.date: 07/26/2019
+ms.date: 11/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc01d39e7aecf14df4ae5733786108bc16296bc1
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: d4d99f53f1883bf5a488e5e6a08276a4f96d8743
+ms.sourcegitcommit: 4d789c7e83ae13e22c1c9f6a33dce72d4ff5009d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536390"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73842268"
 ---
 # <a name="configure-role-based-administration-for-configuration-manager"></a>Configuration Manager에 대한 역할 기반 관리 구성
 
@@ -119,7 +119,9 @@ Configuration Manager의 역할 기반 관리에서는 각 관리자의 관리 �
 1. **확인**을 선택하여 할당된 보안 범위를 저장합니다.  
 
     > [!IMPORTANT]  
-    > 기존의 보안 역할은 Configuration Manager 버전 1906 설치 시 추가되는 **폴더 클래스** 권한을 자동으로 받습니다. 새 보안 역할의 **폴더 클래스** 권한을 추가하고 기존의 역할에 적절한 환경 관련 권한이 있는지 확인해야 합니다.
+    > - 기존의 보안 역할은 Configuration Manager 버전 1906 설치 시 추가되는 **폴더 클래스** 권한을 자동으로 받습니다. 새 보안 역할의 **폴더 클래스** 권한을 추가하고 기존의 역할에 적절한 환경 관련 권한이 있는지 확인해야 합니다.
+    > 
+    > - 사용자가 개체를 만든 사용자와 보안 범위를 공유하는 경우 항목은 사용자의 보안 범위를 벗어난 폴더에서 검색할 수 있습니다. <!--5602690-->
 
 ## <a name="BKMK_ConfigColl"></a> 보안을 관리할 컬렉션 구성
 

@@ -5,18 +5,18 @@ description: 다음 단계에 따라 Configuration Manager 콘솔에서 동기�
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 11/02/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f70abe333b0f20316d8206629fe30773c52a9e80
-ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
+ms.openlocfilehash: 6fbc7b5394d8b2871cd879de9b10a5d20be95b5b
+ms.sourcegitcommit: 4b131d023b50796af3fa96a2ac50e2e2c2a45a24
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73623086"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74097420"
 ---
 # <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -50,14 +50,7 @@ ms.locfileid: "73623086"
      - **업그레이드**: Windows 10 기능에 대한 업그레이드를 지정합니다. **업그레이드** 분류를 가져오려면 소프트웨어 업데이트 지점 및 사이트에서 [핫픽스 3095113](https://support.microsoft.com/kb/3095113)이 있는 최소 WSUS 6.2를 실행해야 합니다. 이 업데이트 및 **업그레이드**를 위한 기타 업데이트를 설치 하는 방법에 대 한 자세한 내용은 [소프트웨어 업데이트에 대 한 필수 조건](/sccm/sum/plan-design/prerequisites-for-software-updates#BKMK_wsus2012)을 참조 하세요.
 
     > [!NOTE]
-    > 
-    > Microsoft surface **드라이버 및 펌웨어 업데이트 포함** 확인란을 선택 하 여 microsoft surface 드라이버를 동기화 할 수 있습니다.<!--1098490--> Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다. Surface 드라이버를 사용하도록 설정한 후 Windows Server 2012를 실행하는 컴퓨터에서 소프트웨어 업데이트 지점을 사용하도록 설정하면 드라이버 업데이트에 대한 검색 결과가 정확하지 않습니다. 이에 따라 Configuration Manager 콘솔 및 Configuration Manager 보고서에서 잘못된 준수 데이터가 표시됩니다.  
-    >  
-    > - 이 기능은 버전 1706에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1710 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
-    >  
-    > - Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
-    >
-    > - ARM 장치용 드라이버는 동기화를 지원 하지 않습니다.
+    > Microsoft surface **드라이버 및 펌웨어 업데이트 포함** 확인란을 선택 하 여 microsoft surface 드라이버를 동기화 할 수 있습니다.<!--1098490--> 자세한 내용은 [Microsoft Surface 드라이버 및 펌웨어 업데이트 포함](#bkmk_Surface) 섹션을 참조 하세요.
 
 5. **제품** 탭에서 소프트웨어 업데이트를 동기화할 제품을 지정한 다음 **닫기**를 클릭합니다.  
 
@@ -74,6 +67,59 @@ ms.locfileid: "73623086"
     > - **Windows 10 버전 1903 이상** 제품이 동기화에 추가됩니다.
     > - **Windows 10** 제품을 포함하고 있는 [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates#bkmk_adr-process)은 **Windows 10 버전 1903 이상**을 포함하도록 업데이트됩니다.
     > - [서비스 플랜](/sccm/osd/deploy-use/manage-windows-as-a-service#servicing-plan-workflow)은 **Windows 10 버전 1903 이상** 제품을 포함하도록 업데이트됩니다.
+
+## <a name="bkmk_Surface"></a>Microsoft Surface 드라이버 및 펌웨어 업데이트 포함
+
+Microsoft surface **드라이버 및 펌웨어 업데이트 포함** 확인란을 선택 하 여 microsoft surface 드라이버를 동기화 할 수 있습니다.<!--1098490--> Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다. Surface 드라이버를 사용하도록 설정한 후 Windows Server 2012를 실행하는 컴퓨터에서 소프트웨어 업데이트 지점을 사용하도록 설정하면 드라이버 업데이트에 대한 검색 결과가 정확하지 않습니다. 이에 따라 Configuration Manager 콘솔 및 Configuration Manager 보고서에서 잘못된 준수 데이터가 표시됩니다.  
+
+- 이 기능은 버전 1706에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1710 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
+- Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
+- ARM 장치용 드라이버는 동기화를 지원 하지 않습니다.
+
+## <a name="configuring-products-for-versions-of-windows-10"></a>Windows 10 버전에 대 한 제품 구성
+
+### <a name="windows-10-version-1909"></a>Windows 10, 버전 1909
+
+Windows 10, 버전 1909은 Windows 10 버전 1903과 공통 핵심 운영 체제를 공유 합니다. 이러한 두 버전은 모두 동일한 누적 업데이트를 사용 하 여 처리 됩니다. Windows 10, 버전 1909에 대 한 자세한 내용은 [windows 10, 버전 1909 배달 옵션](https://aka.ms/1909mechanics) 블로그 게시물을 참조 하세요.
+
+Windows 10 버전 1909 및 Windows 10 버전 1903 클라이언트 모두 Configuration Manager의 업데이트를 설치 하려면 다음을 수행 합니다.
+
+- 1909 및 1903 버전의 Windows 10에 대 한 업데이트를 승인 합니다.
+  - 업데이트에는 각 OS 버전에 대 한 제목 및 적용 가능성 규칙이 다릅니다.
+  - 버전 당 각 업데이트 및 OS 아키텍처를 승인 하면 관리자에 대 한 일반 승인 프로세스가 유지 됩니다.
+- 누적 업데이트 설치 파일은 Windows 10의 1909 및 1903 버전 모두에 대해 동일 합니다.
+  - Configuration Manager 업데이트 원본 파일만 다운로드 됩니다.
+
+#### <a name="feature-updates-for-windows-10-version-1909"></a>Windows 10 버전 1909에 대 한 기능 업데이트
+
+Windows 10 버전 1909에 대 한 기능 업데이트를 승인 하는 경우 다음과 같은 몇 가지 옵션이 표시 됩니다.
+
+- Windows 10, 버전 1903에는 2019 년 11 월 12 일 출시 된 활성화 [패키지가](https://support.microsoft.com/en-us/help/4517245/feature-update-via-windows-10-version-1909-enablement-package)제공 됩니다.
+  - 이 패키지는 Windows 10 버전 1909 기능을 활성화 하 고 장치를 다시 시작 하는 작고 빠른 설치 파일입니다.
+  - 활성화 패키지에 대 한 필수 구성 요소는 다음과 같습니다.
+    - 2019 년 10 월 8 일에 릴리스된 [KB4517389](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4517389)의 최소 누적 업데이트입니다.
+    - 2019 년 9 월 24 일 출시 된 [KB4520390](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4520390)의 최소 서비스 스택 업데이트입니다.
+  - 다른 기능 업데이트와 마찬가지로이 업데이트는 `https:\\catalog.update.microsoft.com`에서 가져올 수 없습니다.
+  - **Windows 10, 버전 1903 이상** 제품 및 동기화를 위해 선택한 **업그레이드** 분류가 있는 경우 업데이트가 WSUS와 자동으로 동기화 됩니다.
+  - Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동 하 여 **windows 10 서비스**를 확장 하 고 **모든 windows 10 업데이트** 노드를 선택 합니다. "사용" 또는 "4517245" 용어를 검색 합니다.
+
+    > [!TIP]
+    > 이러한 기능은 기능 업데이트 이므로 **모든 소프트웨어 업데이트** 노드에는 없습니다.
+
+- Windows 10, 버전 1809 및 이전 버전의 클라이언트는 단일 직접 기능 업데이트를 사용 하 여 업그레이드 됩니다.
+  - 이는 Windows 10에 대해 수행한 기능 업데이트에 대 한 다른 모든 이전 설치와 동일 합니다.
+
+> [!NOTE]
+> 사용 패키지와 Windows 10 용 기존 기능 업데이트 (버전 1909)는 설치에 사용 된 경로에 관계 없이 보고에 "설치 됨"으로 표시 됩니다.
+
+### <a name="windows-10-version-1903-and-later"></a>Windows 10 버전 1903 이상​
+
+**Windows 10 버전 1903 이상**이 이전 버전처럼 **Windows 10** 제품의 일부가 아닌 제품 자체로 Microsoft 업데이트에 추가되었습니다. 이번 변화로 인해 클라이언트가 이러한 업데이트를 확인할 수 있도록 여러 수동 단계를 수행해야 했습니다. Configuration Manager 버전 1906에서 새 제품을 위해 수행 해야 하는 수동 단계의 수를 줄이는 데 도움을 주었습니다. <!--4682946-->
+
+Configuration Manager 버전 1906으로 업데이트할 때 **Windows 10** 제품을 동기화하도록 선택한 경우 다음 작업이 자동으로 수행됩니다.
+- **Windows 10 버전 1903 이상** 제품이 동기화에 추가됩니다.
+- **Windows 10** 제품을 포함하고 있는 [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates#bkmk_adr-process)은 **Windows 10 버전 1903 이상**을 포함하도록 업데이트됩니다.
+- [서비스 플랜](/sccm/osd/deploy-use/manage-windows-as-a-service#servicing-plan-workflow)은 **Windows 10 버전 1903 이상** 제품을 포함하도록 업데이트됩니다.
 
 ## <a name="bkmk_WIfB"></a>Windows 참가자 프로그램
 <!--3556023-->

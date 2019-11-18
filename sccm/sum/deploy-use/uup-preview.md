@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 10/25/2019
+ms.date: 11/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3000710cf90d9f2d0482bcc2faa37174f8f8190
-ms.sourcegitcommit: 9ed9551c15abc36f38c92aaeef60dbb699ae7cd8
+ms.openlocfilehash: 1dbb2ecb6cbac9e8085daafc577e82bc9e9c2b5e
+ms.sourcegitcommit: 3141fa75c410586fcb316ac7b951e28f7cb0f3a7
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984332"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73962158"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 프라이빗 미리 보기 지침
 
@@ -100,9 +100,14 @@ Configuration Manager 사이트에 다음 변경을 수행하여 이 UUP 미리 
 
 | Windows 10 버전 | 최소 준수 수준 | 추가 카탈로그 업데이트 |
 | ------------------ | ------------------------ | ------------------ |
-| **Windows 10, 버전 1809** | 8 월 2019, [KB4511553](https://support.microsoft.com/help/4511553/windows-10-update-kb4511553) | [KB4514987](https://www.catalog.update.microsoft.com/search.aspx?q=4514987) |
-| **Windows 10, 버전 1803** | 4 월 2019 [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464) | [KB4512745](https://www.catalog.update.microsoft.com/search.aspx?q=4512745) |
-| **Windows 10, 버전 1709** | 4 월 2019 [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) | [KB4512744](https://www.catalog.update.microsoft.com/search.aspx?q=4512744) |
+| **Windows 10, 버전 1903** | RTM | 2019 년 11 월 7 일, [KB4529943](https://www.catalog.update.microsoft.com/search.aspx?q=4529943) |
+| **Windows 10, 버전 1809** | 8 월 2019, [KB4511553](https://support.microsoft.com/help/4511553/windows-10-update-kb4511553) | 2019 년 11 월 7 일, [KB4514987](https://www.catalog.update.microsoft.com/search.aspx?q=4514987) |
+| **Windows 10, 버전 1803** | 4 월 2019 [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464) | 2019 년 11 월 7 일, [KB4512745](https://www.catalog.update.microsoft.com/search.aspx?q=4512745) |
+| **Windows 10, 버전 1709** | 4 월 2019 [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) | 2019 년 11 월 7 일, [KB4512744](https://www.catalog.update.microsoft.com/search.aspx?q=4512744) |
+
+> [!IMPORTANT]
+> - 11 월 7 일, 2019 추가 카탈로그 업데이트를 적용 하기 전에 클라이언트에 11 월 12 일 2019 업데이트를 적용 하는 경우 UUP을 지 원하는 데 필요한 Windows 업데이트 에이전트 변경 내용을 덮어쓰게 됩니다. 해당 시나리오에서 클라이언트를 재구성 하려면 2019 업데이트가 설치 된 후에 추가 카탈로그 업데이트를 적용 합니다.
+> - 클라이언트에 기능 업데이트를 적용 하는 경우 업그레이드가 완료 된 후 추가 카탈로그 업데이트를 다시 설치 해야 합니다.
 
 ### <a name="4-allow-clients-to-download-delta-content-when-available"></a>4. 클라이언트가 사용 가능한 경우 델타 콘텐츠를 다운할 수 있도록 허용
 
