@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc8a8c36e3b778f23241d16c1f31f821ab8b900
-ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
+ms.openlocfilehash: e6dd07526da0e4863362a75d2af81e22848cc207
+ms.sourcegitcommit: 2273f8fd61028e8d369d9ffa7ef31ee2efcb63bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049387"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74049481"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>Desktop Analytics에 데이터 공유 사용
 
