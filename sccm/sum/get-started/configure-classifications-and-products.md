@@ -5,18 +5,18 @@ description: 다음 단계에 따라 Configuration Manager 콘솔에서 동기�
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fbc7b5394d8b2871cd879de9b10a5d20be95b5b
-ms.sourcegitcommit: 4b131d023b50796af3fa96a2ac50e2e2c2a45a24
+ms.openlocfilehash: 80d9fcc24cbda5e002e7f4b3ca78979c351ea08c
+ms.sourcegitcommit: bba35def893b2893f6a23f8751bcc5cbf1b87bc3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74097420"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74190537"
 ---
 # <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -94,7 +94,7 @@ Windows 10 버전 1909 및 Windows 10 버전 1903 클라이언트 모두 Configu
 
 Windows 10 버전 1909에 대 한 기능 업데이트를 승인 하는 경우 다음과 같은 몇 가지 옵션이 표시 됩니다.
 
-- Windows 10, 버전 1903에는 2019 년 11 월 12 일 출시 된 활성화 [패키지가](https://support.microsoft.com/en-us/help/4517245/feature-update-via-windows-10-version-1909-enablement-package)제공 됩니다.
+- Windows 10, 버전 1903 클라이언트에는 2019 년 11 월 12 일 출시 된 사용할 수 있는 [패키지가](https://support.microsoft.com/en-us/help/4517245/feature-update-via-windows-10-version-1909-enablement-package)제공 됩니다.
   - 이 패키지는 Windows 10 버전 1909 기능을 활성화 하 고 장치를 다시 시작 하는 작고 빠른 설치 파일입니다.
   - 활성화 패키지에 대 한 필수 구성 요소는 다음과 같습니다.
     - 2019 년 10 월 8 일에 릴리스된 [KB4517389](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4517389)의 최소 누적 업데이트입니다.
@@ -116,12 +116,19 @@ Windows 10 버전 1909에 대 한 기능 업데이트를 승인 하는 경우 �
 
 **Windows 10 버전 1903 이상**이 이전 버전처럼 **Windows 10** 제품의 일부가 아닌 제품 자체로 Microsoft 업데이트에 추가되었습니다. 이번 변화로 인해 클라이언트가 이러한 업데이트를 확인할 수 있도록 여러 수동 단계를 수행해야 했습니다. Configuration Manager 버전 1906에서 새 제품을 위해 수행 해야 하는 수동 단계의 수를 줄이는 데 도움을 주었습니다. <!--4682946-->
 
+#### <a name="windows-10-version-1903-and-later-with-configuration-manager-version-1906"></a>Windows 10 버전 1903 이상 Configuration Manager 버전 1906
 Configuration Manager 버전 1906으로 업데이트할 때 **Windows 10** 제품을 동기화하도록 선택한 경우 다음 작업이 자동으로 수행됩니다.
 - **Windows 10 버전 1903 이상** 제품이 동기화에 추가됩니다.
 - **Windows 10** 제품을 포함하고 있는 [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates#bkmk_adr-process)은 **Windows 10 버전 1903 이상**을 포함하도록 업데이트됩니다.
 - [서비스 플랜](/sccm/osd/deploy-use/manage-windows-as-a-service#servicing-plan-workflow)은 **Windows 10 버전 1903 이상** 제품을 포함하도록 업데이트됩니다.
 
-## <a name="bkmk_WIfB"></a>Windows 참가자 프로그램
+#### <a name="windows-10-version-1903-and-later-with-configuration-manager-version-1902"></a>Windows 10 버전 1903 이상 Configuration Manager 버전 1902
+Windows 10, 버전 1903 클라이언트에서 Configuration Manager 1902를 사용 하는 경우 다음을 수행 해야 합니다.
+- 동기화를 위해 **Windows 10 버전 1903 이상** 제품을 선택합니다.
+- Windows 10 버전 1903 클라이언트에 대 한 [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates#bkmk_adr-process) 을 업데이트 합니다.
+- Windows 10 버전 1903 클라이언트에 대 한 [설치 계획](/sccm/osd/deploy-use/manage-windows-as-a-service#servicing-plan-workflow) 을 업데이트 합니다.
+
+## <a name="bkmk_WIfB"></a> Windows 참가자 프로그램
 <!--3556023-->
 2019년 9월부터 Configuration Manager를 사용하여 Windows Insider Preview 빌드를 실행하는 장치를 서비스하고 업데이트할 수 있습니다. 이러한 변화를 통해, 일반적인 프로세스를 변경하거나 비즈니스용 Windows 업데이트를 사용 하도록 설정하지 않고도 이러한 장치를 관리할 수 있음을 알 수 있습니다. Windows Insider Preview 빌드의 기능 업데이트 및 누적 업데이트는 다른 Windows 10 업데이트 또는 업그레이드와 마찬가지로 Configuration Manager에 다운로드할 수 있습니다. 자세한 내용은 [WSUS에 시험판 Windows 10 기능 업데이트 게시](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054) 블로그 게시물을 참조 하세요.
 

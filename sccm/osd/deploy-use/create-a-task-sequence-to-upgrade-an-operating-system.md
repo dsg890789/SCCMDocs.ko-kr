@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6054ce9c276c18e578315b92fbe3d100061795fa
-ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
+ms.openlocfilehash: 31f253c0a1aaa2e1268d80a79a4960d2c4da3ad7
+ms.sourcegitcommit: 1e8945c5b9d281805380bd1622616a45494b51da
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69999414"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117625"
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-os-in-configuration-manager"></a>Configuration Manager에서 OS를 업그레이드하는 작업 순서 만들기
 
@@ -103,7 +103,7 @@ Windows 10 내부 업그레이드의 기본 작업 순서 템플릿에 업그레
 
 #### <a name="battery-check-example"></a>배터리 검사 예
 
-WbemTest를 사용 하 고 `root\cimv2` 네임 스페이스에 연결 합니다. 연결한 후에는 쿼리를 실행합니다.
+WbemTest를 사용 하 여 `root\cimv2` 네임 스페이스에 연결 합니다. 연결한 후에는 쿼리를 실행합니다.
 
 `Select BatteryStatus From Win32_Battery where BatteryStatus != 2`
 
@@ -115,7 +115,7 @@ WbemTest를 사용 하 고 `root\cimv2` 네임 스페이스에 연결 합니다.
 
 #### <a name="network-check-example"></a>네트워크 검사 예
 
-WbemTest를 사용 하 고 `root\cimv2` 네임 스페이스에 연결 합니다. 연결한 후에는 쿼리를 실행합니다.
+WbemTest를 사용 하 여 `root\cimv2` 네임 스페이스에 연결 합니다. 연결한 후에는 쿼리를 실행합니다.
 
 `Select * From Win32_NetworkAdapter Where NetConnectionStatus = 2 and PhysicalAdapter = 'True' and NetConnectionID = 'Wi-Fi'`
 
@@ -276,4 +276,4 @@ BitLocker 디스크 암호화를 사용하는 경우 기본 Windows 설치 프�
 
 **명령줄 실행** 단계를 **업그레이드 준비** 그룹의 작업 순서에 추가합니다. 다음 예와 유사하게 명령줄을 지정합니다.
 
-`cmd /c reg delete "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe" /f`
+`cmd /c reg add "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe" /f`

@@ -2,7 +2,7 @@
 title: 타사 업데이트 사용
 titleSuffix: Configuration Manager
 description: Configuration Manager의 타사 업데이트 사용
-ms.date: 07/30/2018
+ms.date: 11/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,19 +11,21 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 821f37f7c4b001fdf49d805dcdca2eef40cdce74
-ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
+ms.openlocfilehash: 7828493718dd1436e3421232297bab6a1fc9d548
+ms.sourcegitcommit: bba35def893b2893f6a23f8751bcc5cbf1b87bc3
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67623419"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74190590"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 
-*적용 대상: System Center Configuration Manager 버전 1806*
+*적용 대상: System Center Configuration Manager*
 
 버전 1806부터 Configuration Manager 콘솔에서 **타사 소프트웨어 업데이트 카탈로그** 노드를 사용하면 타사 카탈로그를 구독하고 SUP(소프트웨어 업데이트 지점)에 해당 업데이트를 게시한 다음, 클라이언트에 업데이트를 배포할 수 있습니다.  <!--1357605, 1352101, 1358714-->
 
+> [!Note]  
+> Configuration Manager는 기본적으로 이 기능을 활성화하지 않습니다. 이 기능을 사용 하기 전에 선택적 기능을 사용 하도록 설정 하 여 **클라이언트에서 타사 업데이트 지원을 사용**하도록 설정 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
 
 
 ## <a name="prerequisites"></a>필수 구성 요소 
@@ -34,6 +36,7 @@ ms.locfileid: "67623419"
     - 파트너 카탈로그 목록의 경우 HTTPS 포트 443을 통해 download.microsoft.com이 필요합니다. 
     -  모든 타사 카탈로그에 인터넷으로 액세스하고 콘텐츠 파일을 업데이트합니다. 포트 443 이외의 포트가 추가로 필요할 수 있습니다.
     - 타사 업데이트는 SUP와 동일한 프록시 설정을 사용합니다.
+
 
 ## <a name="additional-requirements-when-the-sup-is-remote-from-the-top-level-site-server"></a>SUP가 최상위 사이트 서버에서 원격일 때 추가 요구 사항 
 
