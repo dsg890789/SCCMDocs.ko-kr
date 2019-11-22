@@ -2,7 +2,7 @@
 title: 정의 업데이트 구성
 titleSuffix: Configuration Manager
 description: 클라이언트 컴퓨터에서 맬웨어 방지 정의를 최신 상태로 유지하도록 Configuration Manager에서 Endpoint protection의 방법을 선택하고 구성하는 방법을 알아봅니다.
-ms.date: 02/14/2017
+ms.date: 11/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76a8317c92886a76c3a6bf8247ada51c87f6b2f4
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: af004cb6a2ed00472abbc784608f897868f45d22
+ms.sourcegitcommit: 5d539522103d0f019797d58aee8c32d3966cd1fa
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70892395"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161621"
 ---
 # <a name="configure-definition-updates-for-endpoint-protection"></a>Endpoint Protection에 대한 정의 업데이트 구성  
 
@@ -50,7 +50,8 @@ ms.locfileid: "70892395"
 
 3.  **기본 맬웨어 방지 정책** 의 속성 페이지를 열거나 새 맬웨어 방지 정책을 만듭니다. 맬웨어 방지 정책을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
 
-4.  맬웨어 방지 속성 대화 상자의 **정의 업데이트** 섹션에서 **원본 설정**을 클릭합니다.
+4.  맬웨어 방지 속성 대화 상자의 **보안 인텔리전스 업데이트** 섹션에서 **원본 설정**을 클릭 합니다.
+    - **정의 업데이트** 섹션의 이름이 Configuration Manager 버전 1902부터 **Security Intelligence 업데이트** 로 바뀌었습니다.
 
 5.  **정의 업데이트 원본 구성** 대화 상자에서 정의 업데이트에 사용할 원본을 선택합니다. **위로** 또는 **아래로** 를 클릭하여 이러한 원본의 사용 순서를 수정할 수 있습니다.
 

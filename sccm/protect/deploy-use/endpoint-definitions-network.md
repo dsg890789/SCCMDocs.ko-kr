@@ -2,7 +2,7 @@
 title: 네트워크 공유에서 정의 다운로드
 titleSuffix: Configuration Manager
 description: Microsoft에서 최신 정의 업데이트를 수동으로 다운로드한 다음 이러한 정의를 다운로드하도록 클라이언트를 구성하는 방법을 알아봅니다.
-ms.date: 02/14/2017
+ms.date: 11/18/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d003ca61a649de3835766adede0869edb4393b20
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: da691b4b9f9fdb34bd0bbba0a9090be9e78aae39
+ms.sourcegitcommit: 5d539522103d0f019797d58aee8c32d3966cd1fa
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70892446"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161672"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-a-network-share"></a>네트워크 공유에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
@@ -37,7 +37,8 @@ ms.locfileid: "70892446"
 
 3.  **기본 맬웨어 방지 정책** 의 속성 페이지를 열거나 새 맬웨어 방지 정책을 만듭니다. 맬웨어 방지 정책을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
 
-4.  맬웨어 방지 속성 대화 상자의 **정의 업데이트** 섹션에서 **원본 설정**을 클릭합니다.
+4.  맬웨어 방지 속성 대화 상자의 **보안 인텔리전스 업데이트** 섹션에서 **원본 설정**을 클릭 합니다.
+    - **정의 업데이트** 섹션의 이름이 Configuration Manager 버전 1902부터 **Security Intelligence 업데이트** 로 바뀌었습니다.
 
 5.  **정의 업데이트 원본 구성** 대화 상자에서 **UNC 파일 공유에서 업데이트**를 선택합니다.
 

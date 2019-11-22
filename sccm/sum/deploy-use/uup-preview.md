@@ -2,7 +2,7 @@
 title: UUP 미리 보기
 titleSuffix: Configuration Manager
 description: UUP 통합 미리 보기 지침
-ms.date: 11/08/2019
+ms.date: 11/15/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dbb2ecb6cbac9e8085daafc577e82bc9e9c2b5e
-ms.sourcegitcommit: 3141fa75c410586fcb316ac7b951e28f7cb0f3a7
+ms.openlocfilehash: a9ab1b811ad67ee1e3d355af11014fc6013c61a5
+ms.sourcegitcommit: 5d539522103d0f019797d58aee8c32d3966cd1fa
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73962158"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161641"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 프라이빗 미리 보기 지침
 
@@ -108,6 +108,7 @@ Configuration Manager 사이트에 다음 변경을 수행하여 이 UUP 미리 
 > [!IMPORTANT]
 > - 11 월 7 일, 2019 추가 카탈로그 업데이트를 적용 하기 전에 클라이언트에 11 월 12 일 2019 업데이트를 적용 하는 경우 UUP을 지 원하는 데 필요한 Windows 업데이트 에이전트 변경 내용을 덮어쓰게 됩니다. 해당 시나리오에서 클라이언트를 재구성 하려면 2019 업데이트가 설치 된 후에 추가 카탈로그 업데이트를 적용 합니다.
 > - 클라이언트에 기능 업데이트를 적용 하는 경우 업그레이드가 완료 된 후 추가 카탈로그 업데이트를 다시 설치 해야 합니다.
+> - 기능 업데이트를 쉽게 테스트 하려면 업데이트를 Configuration Manager으로 가져옵니다. 자세한 내용은 [Microsoft 업데이트 카탈로그에서 업데이트 가져오기](/configmgr/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)를 참조 하세요. 기능 업데이트가 완료 되 면 추가 카탈로그 업데이트는 **필수**로 표시 되며,이를 통해 상위 수준 OS 버전에 자동으로 배포할 수 있습니다.
 
 ### <a name="4-allow-clients-to-download-delta-content-when-available"></a>4. 클라이언트가 사용 가능한 경우 델타 콘텐츠를 다운할 수 있도록 허용
 

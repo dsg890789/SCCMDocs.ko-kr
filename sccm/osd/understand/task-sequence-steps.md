@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c31aa8e72917a50d186a797f091b233c655c54d3
-ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
+ms.openlocfilehash: e338432f9129d2c01fbd3346873e668bf36fc772
+ms.sourcegitcommit: 1e8945c5b9d281805380bd1622616a45494b51da
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73623237"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117642"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
