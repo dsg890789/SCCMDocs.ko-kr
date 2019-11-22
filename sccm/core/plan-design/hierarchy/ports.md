@@ -2,7 +2,7 @@
 title: 연결에 사용되는 포트
 titleSuffix: Configuration Manager
 description: Configuration Manager가 연결에 사용하는 필수 및 사용자 지정 네트워크 포트에 대해 알아봅니다.
-ms.date: 10/09/2019
+ms.date: 11/19/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5461fd365322cdcfa51084335f375099cb1449e4
-ms.sourcegitcommit: b100e2068d429b0901b54e4a9d405349207fba3b
+ms.openlocfilehash: 7fb5a451c460ccc1bf47315c63a523380fc85d2b
+ms.sourcegitcommit: bba35def893b2893f6a23f8751bcc5cbf1b87bc3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72037370"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74190651"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
@@ -45,6 +45,8 @@ Configuration Manager를 사용하여 다음 유형의 통신에 대한 포트�
 - 소프트웨어 업데이트 지점과 WSUS 서버 간의 통신  
 
 - 사이트 서버와 사이트 데이터베이스 서버 간의 통신  
+
+- 사이트 서버와 WSUS 데이터베이스 서버 간의 통신
 
 - 보고 서비스 지점  
 
@@ -625,6 +627,11 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 |RPC 엔드포인트 매퍼|135|135|  
 |RPC|--|동적 <sup>[참고 6](#bkmk_note6)</sup>|  
 
+###  <a name="BKMK_PortsSite-SQL-WSUS"></a> 사이트 서버 -- > WSUS용 SQL Server  
+
+|설명|UDP|TCP|  
+|-----------------|---------|---------|  
+|SQL over TCP|--|1433 <sup>[참고 3](#bkmk_note3) 대체 포트 사용 가능</sup>|  
 
 ###  <a name="BKMK_PortsSite-Provider"></a> 사이트 서버 -- &gt; SMS 공급자  
 
@@ -713,7 +720,13 @@ Configuration Manager 콘솔은 다음 구성에 대해 인터넷 액세스를 �
 - HTTP 포트가 80이 아니면 HTTPS 포트는 HTTP 포트보다 1 이상 커야 합니다. 예를 들어 HTTP 포트는 8530이고 HTTPS 포트는 8531일 수 있습니다.   
 
     > [!NOTE]  
-    >  HTTPS를 사용하도록 소프트웨어 업데이트 지점을 구성할 경우 HTTP 포트도 열려 있어야 합니다. 특정 업데이트에 대한 EULA와 같은 암호화되지 않은 데이터는 HTTP 포트를 사용합니다.  
+    >  HTTPS를 사용하도록 소프트웨어 업데이트 지점을 구성할 경우 HTTP 포트도 열려 있어야 합니다. 특정 업데이트에 대한 EULA와 같은 암호화되지 않은 데이터는 HTTP 포트를 사용합니다. 
+
+- WSUS 정리에 대한 다음 옵션을 사용하도록 설정하면 사이트 서버가 SUSDB를 호스팅하는 SQL 서버에 연결합니다.
+  - 비클러스터형 인덱스를 WSUS 데이터베이스에 추가하여 WSUS 정리 성능 개선
+  - 사용되지 않는 업데이트를 WSUS 데이터베이스에서 제거
+  
+  기본 SQL Server 포트가 SQL Server 구성 관리자를 사용하여 대체 포트로 변경된 경우 사이트 서버가 정의된 포트를 사용하여 연결할 수 있는지 확인합니다. Configuration Manager는 동적 포트를 지원하지 않습니다. 기본적으로 SQL Server로 명명된 인스턴스는 데이터베이스 엔진에 연결하는 데 동적 포트를 사용합니다. 명명된 인스턴스를 사용하는 경우 정적 포트를 수동으로 구성합니다.
 
 #### <a name="bkmk_note4"></a> 참고 4: TFTP(Trivial FTP) 디먼
 TFTP(Trivial FTP) 디먼 시스템 서비스에는 사용자 이름 또는 암호가 필요하지 않으며, 해당 디먼 시스템 서비스는 WDS(Windows 배포 서비스)의 필수적인 부분입니다. Trivial FTP 디먼 서비스는 다음 RFC로 정의된 TFTP 프로토콜을 지원합니다.  

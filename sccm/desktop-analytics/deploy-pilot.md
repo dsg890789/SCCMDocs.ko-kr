@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75cce53f54221c63c0e6b6af3f1276cf51560f3d
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: a8cbae87d0dce391ad8ad160f29a598ac044fece
+ms.sourcegitcommit: bba35def893b2893f6a23f8751bcc5cbf1b87bc3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72386487"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74190599"
 ---
 # <a name="how-to-deploy-to-pilot-with-desktop-analytics"></a>Desktop Analytics를 사용하여 파일럿에 배포하는 방법
 
@@ -43,6 +43,8 @@ Desktop Analytics의 데이터를 보면 최적의 검사를 위해 포함할 �
 - **파일럿에 추가**: 개별 디바이스만 추가합니다.
 - 파일럿에서 특정 디바이스 **바꾸기**
 - 변경 작업이 완료되면 **다시 계산**
+
+## <a name="global-pilot"></a>글로벌 파일럿
 
 또한 파일럿에서 포함하거나 제외할 Configuration Manager 컬렉션에 대해 시스템 차원의 결정을 내릴 수 있습니다. 주 Desktop Analytics 메뉴의 글로벌 설정 그룹에서 **글로벌 파일럿**을 선택합니다.
 
@@ -101,7 +103,7 @@ Configuration Manager는 Desktop Analytics의 데이터를 사용하여 파일�
     - **두 번째 컬렉션**: 이 배포 계획에 대한 **프로덕션** 컬렉션을 찾아 선택합니다. 이 컬렉션에 대한 표준 명명 규칙은 `<deployment plan name> (Production)`입니다.
 
     > [!Note]  
-    > Desktop Analytics 통합을 사용하면 Configuration Manager에서 배포 계획에 대한 파일럿 및 프로덕션 컬렉션을 자동으로 생성합니다. 이러한 컬렉션을 사용하기 위해서는 이러한 컬렉션을 동기화하는 시간이 오래 걸릴 수 있습니다. 자세한 내용은 [문제 해결 - 데이터 대기 시간](/sccm/desktop-analytics/troubleshooting#data-latency)을 참조하세요.<!-- 4984639 -->
+    > Desktop Analytics 통합을 사용하면 Configuration Manager에서 배포 계획에 대한 파일럿 및 프로덕션 컬렉션을 자동으로 생성합니다. 이러한 컬렉션을 동기화하여 사용할 수 있을 때까지 시간이 걸릴 수 있습니다. 자세한 내용은 [문제 해결 - 데이터 대기 시간](/sccm/desktop-analytics/troubleshooting#data-latency)을 참조하세요.<!-- 4984639 -->
     >
     > 이러한 컬렉션은 Desktop Analytics 배포 계획 디바이스용으로 예약되어 있습니다. 이러한 컬렉션에 대한 수동 변경은 지원되지 않습니다.<!-- 3866460, SCCMDocs-pr 3544 -->  
 

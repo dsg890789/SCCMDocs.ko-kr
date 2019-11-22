@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 123515f7b7b78d3c92f7372adb6aec73ee64443c
-ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
+ms.openlocfilehash: e99d97cb512c8f80a576a6de2c033e0f7aa318cf
+ms.sourcegitcommit: 9ac48edc78ef774d1a2bbfaa3c6206ef5b2382f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69999401"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299941"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -594,7 +594,7 @@ Configuration Manager 원격 제어 기능을 사용하도록 설정하려면 **
 이 옵션을 설정하면 소리를 사용하여 클라이언트 컴퓨터에서 원격 제어 세션이 활성화된 경우를 나타냅니다. 다음 옵션 중 하나를 선택합니다.
 
 - **소리 없음**
-- **세션의 시작 및 전송**(기본값)
+- **세션의 시작 및 종료**(기본값)
 - **세션 중 반복적으로**  
 
 ### <a name="manage-unsolicited-remote-assistance-settings"></a>원치 않는 원격 지원 설정 관리

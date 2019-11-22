@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0075aeeabdebb0884a097baf02c3ced2073bbae9
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
+ms.openlocfilehash: 1d585df8daaebc3c421aaf9aef9d58a58cfbf6fe
+ms.sourcegitcommit: 08ba85071b886cccfc023fabb21e59c0035c2752
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712705"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74249864"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -85,6 +85,8 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 - .NET Framework 3.5
 
 - 원격 차등 압축  
+
+- 사이트 서버가 아닌 다른 서버에서 소프트웨어 업데이트 지점을 사용하는 경우 WSUS 관리 콘솔을 사이트 서버에 설치합니다.
 
 ### <a name="net-framework"></a>.NET Framework
 
