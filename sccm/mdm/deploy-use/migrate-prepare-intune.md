@@ -20,7 +20,7 @@ ms.locfileid: "71826169"
 ---
 # <a name="prepare-intune-for-user-migration"></a>사용자 마이그레이션을 위한 Intune 준비 
 
-*적용 대상: System Center Configuration Manager (현재 분기)*  @ no__t-1  
+*적용 대상: System Center Configuration Manager (현재 분기)*     
 하이브리드 MDM에서 Intune 독립 실행형으로 사용자를 마이그레이션하기 전에 Intune을 준비 하는 단계를 수행 합니다. 이러한 단계를 통해 마이그레이션된 사용자와 해당 장치를 계속 관리할 수 있습니다. 이러한 단계를 완료 하 고 Intune으로의 마이그레이션을 시작 하는 경우 사용자에 게는 signifcant 영향이 없습니다.  
 
 ## <a name="fix-issues-found-during-data-collection-and-import"></a>데이터 수집 및 가져오기 중 발견된 문제 해결
@@ -66,7 +66,7 @@ Exchange 디바이스를 사용하면 Configuration Manager Exchange Connector�
 ### <a name="steps-to-make-sure-conditional-access-works-properly-after-user-migration"></a>사용자 마이그레이션 후 조건부 액세스가 제대로 작동 하는지 확인 하는 단계
 사용자를 마이그레이션한 후 조건부 액세스가 제대로 작동 하 고 사용자가 전자 메일 서버에 계속 액세스할 수 있도록 하려면 다음 구성이 설정 되어 있는지 확인 합니다.
 - Exchange ActiveSync 기본 액세스 수준 설정(DefaultAccessLevel)이 차단 또는 격리로 설정된 경우 디바이스에서 전자 메일에 대한 액세스를 손실할 수 있습니다. 
-- Exchange Connector가 Configuration Manager에 설치 되어 있는 경우 **모바일 장치에서 규칙 설정에 의해 관리 되지 않는 액세스 수준** 에 **액세스 허용**값이 있으면 Intune에서 [on-premises Exchange Connector](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access) 를 설치 합니다. 사용자를 마이그레이션합니다. **고급 Exchange ActiveSync 액세스 설정**의 **Exchange 온-프레미스** 페이지에서 Intune의 기본 액세스 수준 설정을 구성 합니다. 자세한 내용은 [Exchange 온-프레미스 액세스 구성](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)을 참조 하세요.
+- Exchange Connector가 Configuration Manager에 설치 되어 있는 경우 **모바일 장치에서 규칙 설정에 의해 관리 되지 않는 액세스 수준** 에 **액세스 허용**값이 있으면 사용자를 마이그레이션하기 전에 Intune에 [on-premises Exchange Connector](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access) 를 설치 합니다. **고급 Exchange ActiveSync 액세스 설정**의 **Exchange 온-프레미스** 페이지에서 Intune의 기본 액세스 수준 설정을 구성 합니다. 자세한 내용은 [Exchange 온-프레미스 액세스 구성](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)을 참조 하세요.
 - 두 커넥터 모두에 대해 동일한 구성을 사용합니다. 마지막으로 구성한 커넥터는 이전에 다른 커넥터에서 쓴 ActiveSync 조직 설정을 덮어씁니다. 커넥터를 다르게 구성하면 조건부 액세스가 예기치 않게 변경될 수 있습니다.
 - 사용자가 Intune 독립 실행형으로 마이그레이션되었으면 Configuration Manager의 조건부 액세스 대상에서 사용자를 제거합니다.
 
