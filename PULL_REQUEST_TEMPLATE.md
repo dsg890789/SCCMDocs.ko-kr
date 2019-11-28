@@ -1,5 +1,3 @@
-### <a name="summarize-the-change-in-the-pull-request-title"></a>끌어오기 요청 제목의 변경 내용 요약
-
-변경 사항을 설명합니다. 특히 그러한 변경이 필요한 *이유*를 구체적으로 명시합니다.
-
-수정 사항 #Issue_Number(필요한 경우)
+제안하는 데 유용한 정보:
+1. [빠른 시작 지역화 스타일 가이드](https://docs.microsoft.com/globalization/localization/styleguides)로 이동하여 Microsoft 스타일 가이드에서 **상위 10개의 가장 중요한 규칙**을 확인합니다.
+2. [Microsoft 언어 포털](https://www.microsoft.com/language)로 이동하여 Microsoft 제품에서 **표준화된 용어 번역**을 확인합니다.
