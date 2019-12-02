@@ -2,70 +2,72 @@
   href: understand/introduction.md
 - name: 이해 및 탐색
   items:
-    - name: Configuration Manager 소개
+    - name: Configuration Manager란?
+      href: understand/introduction.md
+    - name: Microsoft Endpoint Configuration Manager FAQ
+      href: understand/microsoft-endpoint-manager-faq.md
+    - name: SCCM은 어떻게 되었나요?
+      href: understand/what-happened-to-sccm.md
+    - name: 소개
       items:
-        - name: Configuration Manager 개요
-          href: understand/introduction.md
         - name: Configuration Manager에 대한 도움말 찾기
           href: understand/find-help.md
         - name: 문서 사용 방법
           href: understand/use-docs.md
-        - name: 콘솔 사용
+        - name: 콘솔 사용 방법
           href: servers/manage/admin-console.md
         - name: 내게 필요한 옵션 기능
           href: understand/accessibility-features.md
         - name: 소프트웨어 센터 사용자 가이드
           href: understand/software-center.md
-    - name: Configuration Manager의 기본 항목
+    - name: 기본 항목
       items:
         - name: Configuration Manager 기본 사항
           href: understand/fundamentals.md
-        - name: 사이트 및 계층의 기본 사항
-          items:
-            - name: 사이트 및 계층 구조 기본 사항
-              href: understand/fundamentals-of-sites-and-hierarchies.md
-            - name: '사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보'
-              href: understand/upgrade-update-install.md
-            - name: 디바이스 관리의 기본 사항
-              href: understand/fundamentals-of-managing-devices.md
-            - name: 클라이언트 관리의 기본 사항
-              href: understand/fundamentals-of-client-management-tasks.md
-            - name: 보안 기본 사항
-              href: understand/fundamentals-of-security.md
-            - name: 역할 기반 관리의 기본 사항
-              href: understand/fundamentals-of-role-based-administration.md
-    - name: 장기 서비스 분기 소개
-      items:
-        - name: 장기 서비스 분기 개요
-          href: understand/introduction-to-the-ltsb.md
-        - name: 장기 서비스 분기에 대해 지원되는 구성
-          href: understand/supported-configurations-for-ltsb.md
-        - name: 장기 서비스 분기 설치
-          href: understand/install-the-ltsb.md
-        - name: 장기 서비스 분기 관리
-          href: understand/manage-the-ltsb.md
-        - name: 장기 서비스 분기를 현재 분기로 업그레이드
-          href: understand/convert-to-current-branch.md
-    - name: 사용해야 하는 Configuration Manager 분기
-      href: understand/which-branch-should-i-use.md
+        - name: 사이트 및 계층 구조
+          href: understand/fundamentals-of-sites-and-hierarchies.md
+        - name: '업그레이드, 업데이트 및 설치 정보'
+          href: understand/upgrade-update-install.md
+        - name: 디바이스 관리
+          href: understand/fundamentals-of-managing-devices.md
+        - name: 클라이언트 관리
+          href: understand/fundamentals-of-client-management-tasks.md
+        - name: 보안
+          href: understand/fundamentals-of-security.md
+        - name: 역할 기반 관리
+          href: understand/fundamentals-of-role-based-administration.md
     - name: Configuration Manager 및 Windows as a Service
       href: understand/configuration-manager-and-windows-as-service.md
-    - name: 확장된 상호 운용성 클라이언트
-      href: understand/interoperability-client.md
-    - name: 라이선스 및 분기
-      href: understand/learn-more-editions.md
     - name: 클라우드 서비스 사용
       items:
         - name: 클라우드 서비스 개요
           href: understand/use-cloud-services.md
         - name: Azure의 Configuration Manager
           href: understand/configuration-manager-on-azure.md
-    - name: 제품 및 라이선스에 대한 FAQ
-      href: understand/product-and-licensing-faq.md
     - name: 사이트 크기 조정 및 성능에 대한 FAQ
       href: understand/site-size-performance-faq.md
     - name: 진단 및 사용량 현황 데이터에 대한 FAQ
       href: understand/frequently-asked-questions-about-diagnostics-and-usage-data.md
+    - name: 제품 및 라이선스에 대한 FAQ
+      href: understand/product-and-licensing-faq.md
+    - name: 사용해야 하는 Configuration Manager 분기
+      href: understand/which-branch-should-i-use.md
+    - name: 라이선스 및 분기
+      href: understand/learn-more-editions.md
+    - name: 확장된 상호 운용성 클라이언트
+      href: understand/interoperability-client.md
+    - name: 장기 서비스 분기
+      items:
+        - name: 장기 서비스 분기 개요
+          href: understand/introduction-to-the-ltsb.md
+        - name: 지원되는 LTSB 구성
+          href: understand/supported-configurations-for-ltsb.md
+        - name: LTSB 설치
+          href: understand/install-the-ltsb.md
+        - name: LTSB 관리
+          href: understand/manage-the-ltsb.md
+        - name: 현재 분기로 LTSB 업그레이드
+          href: understand/convert-to-current-branch.md
 - name: 계획 및 디자인
   items:
     - name: Configuration Manager 사용 준비
@@ -78,6 +80,8 @@
           href: plan-design/changes/what-has-changed-from-configuration-manager-2012.md
         - name: 증분 버전의 새로운 기능
           href: plan-design/changes/whats-new-incremental-versions.md
+        - name: 버전 1910의 새로운 기능
+          href: plan-design/changes/whats-new-in-version-1910.md
         - name: 버전 1906의 새로운 기능
           href: plan-design/changes/whats-new-in-version-1906.md
         - name: 버전 1902의 새로운 기능
@@ -86,8 +90,6 @@
           href: plan-design/changes/whats-new-in-version-1810.md
         - name: 버전 1806의 새로운 기능
           href: plan-design/changes/whats-new-in-version-1806.md
-        - name: 버전 1802의 새로운 기능
-          href: plan-design/changes/whats-new-in-version-1802.md
         - name: 제거되는 기능과 사용되지 않는 기능
           items:
             - name: 제거된 개요와 사용되지 않는 개요
@@ -204,6 +206,8 @@
           href: plan-design/diagnostics/diagnostics-and-usage-data.md
         - name: 진단 및 사용량 현황 데이터 사용 방법
           href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md
+        - name: 1910에 대한 진단 데이터
+          href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1910.md
         - name: 1906에 대한 진단 데이터
           href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1906.md
         - name: 1902에 대한 진단 데이터
@@ -212,8 +216,6 @@
           href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1810.md
         - name: 1806에 대한 진단 데이터
           href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806.md
-        - name: 1802에 대한 진단 데이터
-          href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1802.md
         - name: 진단 및 사용량 현황 데이터 수집 방법
           href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md
         - name: 진단 및 사용량 현황 데이터를 보는 방법
@@ -334,7 +336,7 @@
               href: servers/deploy/install/install-consoles.md
             - name: 평가판 설치 업그레이드
               href: servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md
-            - name: System Center Configuration Manager 업그레이드
+            - name: "Configuration\_Manager로 업그레이드"
               href: servers/deploy/install/upgrade-to-configuration-manager.md
             - name: 설치를 간소화하는 시나리오
               href: servers/deploy/install/scenarios-to-streamline-your-installation.md
@@ -372,10 +374,10 @@
               href: servers/deploy/configure/deploy-and-manage-content.md
             - name: 콘텐츠 모니터링
               href: servers/deploy/configure/monitor-content-you-have-distributed.md
-            - name: 네트워크 캐시의 배달 최적화
-              href: plan-design/hierarchy/delivery-optimization-in-network-cache.md
-            - name: 네트워크 캐시의 배달 최적화 문제 해결
-              href: servers/deploy/configure/troubleshoot-delivery-optimization-in-network-cache.md
+            - name: Microsoft 연결된 캐시
+              href: plan-design/hierarchy/microsoft-connected-cache.md
+            - name: Microsoft 연결된 캐시 문제 해결
+              href: servers/deploy/configure/troubleshoot-microsoft-connected-cache.md
         - name: 검색 실행
           items:
             - name: 검색 방법 개요
@@ -442,7 +444,7 @@
           href: plan-design/hierarchy/log-files.md
         - name: 릴리스 정보
           href: servers/deploy/install/release-notes.md
-        - name: Configuration Manager의 상태 메시지
+        - name: 상태 메시지
           href: plan-design/hierarchy/state-messaging-system-center-configuration-manager.md
         - name: 유니코드 및 ASCII 지원
           href: plan-design/hierarchy/unicode-and-ascii-support.md
@@ -496,6 +498,8 @@
           href: servers/manage/use-the-update-registration-tool-to-import-hotfixes.md
         - name: 핫픽스 설치 관리자 사용
           href: servers/manage/use-the-hotfix-installer-to-install-updates.md
+        - name: 업데이트 1910을 설치하기 위한 검사 목록
+          href: servers/manage/checklist-for-installing-update-1910.md
         - name: 업데이트 1906을 설치하기 위한 검사 목록
           href: servers/manage/checklist-for-installing-update-1906.md
         - name: 업데이트 1902을 설치하기 위한 검사 목록
@@ -504,8 +508,6 @@
           href: servers/manage/checklist-for-installing-update-1810.md
         - name: 업데이트 1806을 설치하기 위한 검사 목록
           href: servers/manage/checklist-for-installing-update-1806.md
-        - name: 업데이트 1802를 설치하기 위한 검사 목록
-          href: servers/manage/checklist-for-installing-update-1802.md
         - name: 현재 분기 버전 지원
           href: servers/manage/current-branch-versions-supported.md
     - name: 백업 및 복구
@@ -623,6 +625,8 @@
           href: support/content-library-transfer.md
         - name: 콘텐츠 소유권 도구
           href: support/content-ownership-tool.md
+        - name: Microsoft Azure 확장 및 마이그레이션
+          href: support/azure-migration-tool.md
         - name: 역할 기반 관리 및 감사 도구
           href: support/rbaviewer.md
         - name: 측정기 요약 도구 실행
@@ -749,7 +753,7 @@
               href: clients/manage/cmg/setup-cloud-management-gateway.md
             - name: 클라우드 관리 게이트웨이에서 클라이언트 모니터링
               href: clients/manage/cmg/monitor-clients-cloud-management-gateway.md
-        - name: 인터넷 기반 클라이언트 관리에 대한 계획
+        - name: 인터넷 기반 클라이언트 관리에 대한 플랜
           href: clients/manage/plan-internet-based-client-management.md
         - name: Azure AD 인증 워크플로
           href: clients/manage/azure-ccmsetup.md

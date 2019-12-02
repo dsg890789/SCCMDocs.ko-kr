@@ -51,6 +51,8 @@
           href: deploy-use/share-applications.md
         - name: 애플리케이션 배포 시뮬레이트
           href: deploy-use/simulate-application-deployments.md
+        - name: 'Microsoft Edge, 버전 77 이상 배포'
+          href: deploy-use/deploy-edge.md
         - name: App-V 가상 애플리케이션 배포
           href: get-started/deploying-app-v-virtual-applications.md
         - name: 애플리케이션 배포 문제 해결

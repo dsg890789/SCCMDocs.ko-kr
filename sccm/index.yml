@@ -3,12 +3,12 @@ title: Microsoft Endpoint Configuration Manager 설명서
 summary: 'Microsoft Endpoint Manager의 다음 구성 요소에 대한 공식 제품 설명서: Configuration Manager, 공동 관리 및 Desktop Analytics'
 metadata:
   ms.topic: hub-page
-  ms.openlocfilehash: 446c37351a6d883fd0e6fc2b9ecd432141d8e512
-  ms.sourcegitcommit: 15b2ef81a19b4883d15823ee4c3a19fdb5288a54
+  ms.openlocfilehash: b7bb0dccb8930987d79158b705a33bfecca3649e
+  ms.sourcegitcommit: 2f34d9457d95a9bd25603699fcf0e26cac77ad30
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/07/2019
-  ms.locfileid: "73761463"
+  ms.lasthandoff: 11/29/2019
+  ms.locfileid: "74661008"
 highlightedContent:
   items:
   - title: 새로운 기능
@@ -117,6 +117,9 @@ conceptualContent:
     - text: 소프트웨어 센터 계획
       url: ./apps/plan-design/plan-for-software-center.md
       itemType: architecture
+    - text: Microsoft Edge 관리
+      url: ./apps/deploy-use/deploy-edge.md
+      itemType: how-to-guide
     footerLink:
       text: 자세히 보기
       url: ./apps/understand/introduction-to-application-management.md
@@ -172,6 +175,9 @@ conceptualContent:
       itemType: overview
     - text: WDATP
       url: ./protect/deploy-use/windows-defender-advanced-threat-protection.md
+      itemType: how-to-guide
+    - text: BitLocker 관리
+      url: ./protect/plan-design/bitlocker-management.md
       itemType: overview
     footerLink:
       text: 자세히 보기
@@ -183,8 +189,8 @@ additionalContent:
     - title: Configuration Manager 블로그
       summary: 뉴스 및 발표
       url: https://techcommunity.microsoft.com/t5/Configuration-Manager-Blog/bg-p/ConfigurationManagerBlog
-    - title: '#<a name="configmgr-on-twitter"></a>Twitter에서 ConfigMgr'
-      summary: 활성 Twitter 커뮤니티를 사용하여 최신 상태로 유지
+    - title: 'Twitter: #ConfigMgr'
+      summary: Twitter의 활성 커뮤니티로 최신 상태 유지
       url: https://twitter.com/hashtag/configmgr
     - title: Configuration Manager 포럼
       summary: 제품 포럼에서 기술 관련 질문

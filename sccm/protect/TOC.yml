@@ -8,6 +8,8 @@
   items:
     - name: Endpoint Protection 계획
       href: plan-design/planning-for-endpoint-protection.md
+    - name: BitLocker 관리 플랜
+      href: plan-design/bitlocker-management.md
     - name: 인증서 프로필 계획
       items:
         - name: 인증서 프로필 필수 조건
@@ -22,36 +24,14 @@
           href: plan-design/prerequisites-for-wifi-vpn-profiles.md
     - name: 보안 및 개인 정보
       items:
-        - name: Wi-Fi 및 VPN 프로필에 대한 보안 및 개인 정보
+        - name: Wi-FI 및 VPN 프로필
           href: plan-design/security-and-privacy-for-wifi-vpn-profiles.md
-        - name: 메일 프로필에 대한 보안 및 개인 정보
+        - name: 전자 메일 프로필
           href: plan-design/security-and-privacy-for-email-profiles.md
-        - name: 인증서 프로필에 대한 보안 및 개인 정보
+        - name: 인증서 프로필
           href: plan-design/security-and-privacy-for-certificate-profiles.md
 - name: 배포 및 사용
   items:
-    - name: VPN 프로필
-      items:
-        - name: Configuration Manager의 VPN 프로필
-          href: deploy-use/vpn-profiles.md
-        - name: VPN 프로필 만들기
-          href: deploy-use/create-vpn-profiles.md
-        - name: 앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
-          href: deploy-use/find-a-pfn-for-per-app-vpn.md
-    - name: Wi-Fi 프로필
-      items:
-        - name: Wi-Fi 프로필 만들기
-          href: deploy-use/create-wifi-profiles.md
-    - name: 인증서 프로필
-      items:
-        - name: 인증서 프로필 소개
-          href: deploy-use/introduction-to-certificate-profiles.md
-        - name: 인증서 프로필 만들기
-          href: deploy-use/create-certificate-profiles.md
-        - name: 인증서 인프라 구성
-          href: deploy-use/certificate-infrastructure.md
-    - name: 'Wi-Fi, VPN, 메일 및 인증서 프로필 배포'
-      href: deploy-use/deploy-wifi-vpn-email-cert-profiles.md
     - name: "Endpoint\_Protection"
       items:
         - name: Endpoint Protection 개요
@@ -102,15 +82,67 @@
           href: deploy-use/troubleshoot-endpoint-client.md
         - name: Windows Defender FAQ
           href: deploy-use/endpoint-protection-client-faq.md
+    - name: BitLocker 관리
+      items:
+        - name: BitLocker 관리 배포
+          href: deploy-use/bitlocker/deploy-management-agent.md
+        - name: 복구 데이터 암호화
+          href: deploy-use/bitlocker/encrypt-recovery-data.md
+        - name: BitLocker 포털 설정
+          href: deploy-use/bitlocker/setup-websites.md
+        - name: 셀프 서비스 포털 사용자 지정
+          href: deploy-use/bitlocker/customize-self-service-portal.md
+        - name: BitLocker 보고서 보기
+          href: deploy-use/bitlocker/view-reports.md
+        - name: 웹 사이트 관리 및 모니터링
+          href: deploy-use/bitlocker/helpdesk-portal.md
+        - name: 셀프 서비스 포털
+          href: deploy-use/bitlocker/self-service-portal.md
     - name: 비즈니스용 Windows Hello 설정
       href: deploy-use/windows-hello-for-business-settings.md
+    - name: 인증서 프로필
+      items:
+        - name: 인증서 프로필 소개
+          href: deploy-use/introduction-to-certificate-profiles.md
+        - name: 인증서 프로필 만들기
+          href: deploy-use/create-certificate-profiles.md
+        - name: 인증서 인프라 구성
+          href: deploy-use/certificate-infrastructure.md
+    - name: Wi-Fi 프로필
+      items:
+        - name: Wi-Fi 프로필 만들기
+          href: deploy-use/create-wifi-profiles.md
+    - name: VPN 프로필
+      items:
+        - name: VPN 프로필
+          href: deploy-use/vpn-profiles.md
+        - name: VPN 프로필 만들기
+          href: deploy-use/create-vpn-profiles.md
+        - name: 앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
+          href: deploy-use/find-a-pfn-for-per-app-vpn.md
+    - name: 'Wi-Fi, VPN, 메일 및 인증서 프로필 배포'
+      href: deploy-use/deploy-wifi-vpn-email-cert-profiles.md
     - name: 사용 약관 설정
       href: ../mdm/deploy-use/terms-and-conditions.md?toc=/sccm/protect/toc.json&bc=/sccm/protect/breadcrumb/toc.json
     - name: 보호 모니터링
       items:
-        - name: 'Wi-Fi, 이메일 및 VPN 프로필 모니터링'
+        - name: 'Wi-Fi, 메일 및 VPN 프로필 모니터링'
           href: deploy-use/monitor-wifi-email-vpn-profiles.md
         - name: 인증서 프로필 모니터링
           href: deploy-use/monitor-certificate-profiles.md
         - name: Endpoint Protection 모니터링
           href: deploy-use/monitor-endpoint-protection.md
+- name: 기술 참조
+  items:
+    - name: BitLocker 관리
+      items:
+        - name: BitLocker 문제 해결
+          href: tech-ref/bitlocker/troubleshoot.md
+        - name: BitLocker 이벤트 로그
+          href: tech-ref/bitlocker/about-event-logs.md
+        - name: 클라이언트 이벤트 로그
+          href: tech-ref/bitlocker/client-event-logs.md
+        - name: 서버 이벤트 로그
+          href: tech-ref/bitlocker/server-event-logs.md
+        - name: 비호환 코드
+          href: tech-ref/bitlocker/non-compliance-codes.md

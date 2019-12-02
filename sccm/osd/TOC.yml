@@ -1,6 +1,6 @@
 - name: OS 배포
   href: understand/introduction-to-operating-system-deployment.md
-- name: 이해 및 탐색
+- name: 이해
   items:
     - name: OS 배포 소개
       href: understand/introduction-to-operating-system-deployment.md
@@ -130,6 +130,8 @@
           href: deploy-use/create-capture-media.md
 - name: 기술 참조
   items:
+    - name: 작업 순서 편집기 사용
+      href: understand/task-sequence-editor.md
     - name: 작업 순서 단계
       items:
         - name: 작업 순서 단계 정보
