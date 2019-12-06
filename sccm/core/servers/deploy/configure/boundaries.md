@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3853b80c2ba678dfd9b8d03d17a579cdcc82b949
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70889205"
 ---
 # <a name="define-network-locations-as-boundaries-for-system-center-configuration-manager"></a>네트워크 위치를 System Center Configuration Manager의 경계로 정의합니다.

@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f8f881b828ba30d1e38e76c96c71709fb0e744f2
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68536926"
 ---
 # <a name="removed-and-deprecated-items-for-configuration-manager-clients"></a>Configuration Manager 클라이언트에서 제거되는 항목과 사용되지 않는 항목

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0214abdf1dd7ce735542ebace443c8aed297b2c3
-ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70176714"
 ---
 # <a name="unicode-and-ascii-support-in-configuration-manager"></a>Configuration Manager의 유니코드 및 ASCII 지원
