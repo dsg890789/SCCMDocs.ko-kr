@@ -13,10 +13,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e61489373c7e5c739485f1a5162f203d883a4835
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71826098"
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능

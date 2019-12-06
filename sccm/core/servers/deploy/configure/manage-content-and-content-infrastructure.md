@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d579d3cd1e396d30780de964c8671540e28a0061
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70891246"
 ---
 # <a name="manage-content-and-content-infrastructure-for-system-center-configuration-manager"></a>System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리

@@ -13,10 +13,10 @@ manager: dougeby
 ms.collection: M365-identity-device-management
 ROBOTS: NOINDEX
 ms.openlocfilehash: 5f0a89ca9f4307cc042d670263f0c7dc9028d5c7
-ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73623422"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1907"></a>Configuration Manager 기술 미리 보기 버전 1907의 기능

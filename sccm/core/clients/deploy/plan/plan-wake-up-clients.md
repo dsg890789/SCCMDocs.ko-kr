@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a16d598b80dd18802e42cae51aeba3c91a4d707c
-ms.sourcegitcommit: 9af73f5c1b93f6ccaea3e6a096f75a5fecd65c2f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "64669140"
 ---
 # <a name="plan-how-to-wake-up-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트의 절전 모드 해제 계획

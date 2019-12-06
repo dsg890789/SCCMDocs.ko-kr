@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 03befc6758d70acd93f1d884b9f29ca01483fe01
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72386534"
 ---
 # <a name="how-to-create-deployment-plans-in-desktop-analytics"></a>Desktop Analytics에서 배포 계획을 만드는 방법
@@ -26,7 +26,7 @@ ms.locfileid: "72386534"
 
 이 섹션의 단계에 따라 Desktop Analytics를 사용하여 Windows 10 배포 계획을 만듭니다.
 
-1. [Desktop Analytics 포털](https://aka.ms/desktopanalytics)을 엽니다. 적어도 **작업 영역 기여자** 권한이 있는 자격 증명을 사용합니다.  
+1. [Desktop Analytics 포털](https://aka.ms/desktopanalytics)을 엽니다. **작업 영역 기여자** 권한 이상의 자격 증명을 사용합니다.  
 
 2. 관리 그룹에서 **배포 계획**을 선택합니다.  
 
@@ -42,29 +42,29 @@ ms.locfileid: "72386534"
 
     - **준비 규칙**: 이러한 규칙은 업그레이드에 적합한 디바이스를 확인하는 데 도움이 됩니다. 자세한 내용은 [준비 규칙](#readiness-rules)을 참조하세요.  
 
-    - **완료 날짜**: 모든 대상 디바이스에 Windows를 완전히 배포해야 하는 날짜를 선택합니다.  
+    - **완료 날짜**: Windows를 모든 대상 디바이스에 완전히 배포해야 하는 날짜를 선택합니다.  
 
-5. **만들기**를 선택합니다. 새 계획은 처리 중인 배포 계획 목록에 표시됩니다. 신속한 처리를 위해 요청 시 데이터 새로 고침을 요청합니다. 자세한 내용은 [Desktop Analytics FAQ](/sccm/desktop-analytics/faq##can-i-reduce-the-amount-of-time-it-takes-for-data-to-refresh-in-my-desktop-analytics-portal)를 참조하세요.  
+5. **만들기**를 선택합니다. 새 계획이 처리되는 동안 배포 계획 목록에 표시됩니다. 빠른 처리를 위해 요청 시 데이터 새로 고침을 요청합니다. 자세한 내용은 [Desktop Analytics FAQ](/sccm/desktop-analytics/faq##can-i-reduce-the-amount-of-time-it-takes-for-data-to-refresh-in-my-desktop-analytics-portal)를 참조하세요.  
 
 6. 해당 이름을 선택하여 배포 계획을 엽니다.  
 
 7. 배포 계획 메뉴의 **준비** 그룹에서 **중요도 식별**을 선택합니다.  
 
-    1. **앱** 탭에서 **검토되지 않은** 자산만 표시하려면 선택합니다.  
+    1. **앱** 탭에서 **검토되지 않음** 자산만 표시하도록 선택합니다.  
 
-    2. 각 앱을 선택한 다음, **편집**을 선택합니다. 동시에 둘 이상의 앱을 편집하도록 선택할 수 있습니다.  
+    2. 각 앱을 선택한 다음, **편집**을 선택합니다. 둘 이상의 앱을 동시에 편집하도록 선택할 수 있습니다.  
 
-    3. **중요도** 목록에서 중요도 수준을 선택합니다. 파일럿 중에 Desktop Analytics를 통해 앱의 유효성을 검사하려면 **위험** 또는 **중요**를 선택합니다. **중요하지 않음**으로 표시된 앱은 유효성을 검사하지 않습니다. 중요도 수준을 할당할 때 [호환성](/sccm/desktop-analytics/compat-assessment) 및 기타 계획 인사이트를 평가합니다.  
+    3. **중요도** 목록에서 중요도 수준을 선택합니다. 파일럿 중에 Desktop Analytics를 통해 앱의 유효성을 검사하려면 **위험** 또는 **중요**를 선택합니다. **중요하지 않음**으로 표시된 앱의 유효성은 검사하지 않습니다. 중요도 수준을 할당할 때 [호환성](/sccm/desktop-analytics/compat-assessment) 및 기타 계획 인사이트를 평가합니다.  
 
-        중요도 수준을 할당할 때 업그레이드 결정을 선택할 수도 있습니다.  
+        중요도 수준을 할당할 때 [업그레이드] 결정을 선택할 수도 있습니다.  
 
     4. 완료되면 **저장**을 선택합니다.  
 
 8. 배포 계획 메뉴의 **준비** 그룹에서 **파일럿 식별**을 선택합니다.  
 
-    1. 파일럿에 권장되는 디바이스를 검토합니다.  
+    1. 파일럿에 추천되는 디바이스를 검토합니다.  
 
-    2. 각 디바이스를 선택하고, **파일럿에 추가**를 선택합니다. 권장 사항에 동의하지 않는 경우 **바꾸기**를 선택합니다.  
+    2. 각 디바이스를 선택하고, **파일럿에 추가**를 선택합니다. 추천 사항에 동의하지 않으면 **바꾸기**를 선택합니다.  
 
         Desktop Analytics에서 이러한 권장 사항을 적용하는 방법에 대한 자세한 내용은 **파일럿 식별** 창의 오른쪽 위 모퉁이에 있는 정보 아이콘을 선택합니다.
 

@@ -13,10 +13,10 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.openlocfilehash: 338ef88d4fa32767d9e4eb605a4ad800c11dbfce
-ms.sourcegitcommit: c25a91db838805eca5dbb421a3de401928968bf0
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73142961"
 ---
 # <a name="ready-for-modern-desktop-retirement-faq"></a>최신 데스크톱 준비 완료 사용 중지 FAQ

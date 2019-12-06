@@ -785,6 +785,8 @@
           href: clients/manage/inventory/configure-hardware-inventory.md
         - name: 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법
           href: clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md
+        - name: 리소스 탐색기 기본 클래스
+          href: clients/manage/inventory/resource-explorer-classes.md
         - name: Linux 및 UNIX에 대한 하드웨어 인벤토리
           href: clients/manage/inventory/hardware-inventory-for-linux-and-unix.md
         - name: 하드웨어 인벤토리에 대한 보안 및 개인 정보

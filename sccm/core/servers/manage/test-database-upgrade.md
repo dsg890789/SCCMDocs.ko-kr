@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c25e2d2aac1c1763df4282e92114257ee34065ac
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67194147"
 ---
 # <a name="test-the-database-upgrade-when-installing-an-update"></a>업데이트를 설치할 때 데이터베이스의 테스트 업그레이드 수행

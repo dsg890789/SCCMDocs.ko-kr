@@ -12,10 +12,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 0e90a06b956c39cb7a473af87cdfca0f722122ff
-ms.sourcegitcommit: cb813496467a5191237d853a6126ea534c12d2f3
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72172636"
 ---
 # <a name="support-center-onetrace-preview"></a>지원 센터 OneTrace(미리 보기)

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 15359aa414554d0bef9e29c011966caec1c1e6d6
-ms.sourcegitcommit: 417e3834a42b415a8e129327dd3c15cc0c7ec5a2
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65443152"
 ---
 # <a name="introduction-to-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager의 컬렉션 소개

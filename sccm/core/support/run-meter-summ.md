@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b044272663ada4b43536f88c293308c57732e9c4
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65500809"
 ---
 # <a name="run-meter-summarization-tool"></a>측정기 요약 도구 실행

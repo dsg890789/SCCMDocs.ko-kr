@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3d72c9404bc8d928619ca4f262304dabc479f808
-ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70021931"
 ---
 # <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구

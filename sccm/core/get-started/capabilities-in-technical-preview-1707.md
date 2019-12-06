@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7dbd7696821b9c333b556f67e42cdccd086dc2bf
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132577"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62228865"
 ---
 # <a name="capabilities-in-technical-preview-1707-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1707의 기능
 
@@ -56,10 +56,12 @@ ms.locfileid: "56132577"
 -->
 
 ## <a name="client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365"></a>Windows 10 및 Office 365에 대한 고속 설치 파일을 위한 클라이언트 피어 캐시 지원
-<!-- 1352486 --> 이 릴리스부터 피어 캐시가 Windows 10 콘텐츠 빠른 설치 파일과 Office 365 업데이트 파일 배포를 지원합니다. 추가 구성이 필요 없습니다.
+<!-- 1352486 -->
+이 릴리스부터 피어 캐시가 Windows 10 콘텐츠 고속 설치 파일과 Office 365 업데이트 파일 배포를 지원합니다. 추가 구성이 필요 없습니다.
 
 ## <a name="surface-device-dashboard"></a>Surface 디바이스 대시보드
-<!--1355788--> Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바이스에 대한 정보를 제공합니다. 콘솔에서 **Surface 디바이스**  > **모니터링**으로 이동합니다. 다음을 볼 수 있습니다.
+<!--1355788-->
+Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바이스에 대한 정보를 제공합니다. 콘솔에서 **Surface 디바이스**  > **모니터링**으로 이동합니다. 다음을 볼 수 있습니다.
 - Surfaces의 백분율
 - Surface 모델의 백분율
 - 상위 5개 운영 체제 버전

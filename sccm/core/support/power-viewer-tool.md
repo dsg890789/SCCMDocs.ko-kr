@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 09b1cf553aaa5fd75dbf0f7500246263a9bed7a6
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65500825"
 ---
 # <a name="power-viewer-tool"></a>전원 뷰어 도구

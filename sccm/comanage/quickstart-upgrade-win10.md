@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fe3f5e35fcec9bfc9bf0746ecfd118e10487f78c
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68533835"
 ---
 # <a name="upgrade-windows-10-for-co-management"></a>공동 관리를 위해 Windows 10 업그레이드

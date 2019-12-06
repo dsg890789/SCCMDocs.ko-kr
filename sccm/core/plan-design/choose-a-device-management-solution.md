@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c1aec1447207d20393b0b8454851755ec85f5020
-ms.sourcegitcommit: abfc9e1b3945637fa93ca8d3a11519493a5d5391
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66264355"
 ---
 # <a name="choose-a-device-management-solution-for-configuration-manager"></a>Configuration Manager의 디바이스 관리 솔루션 선택

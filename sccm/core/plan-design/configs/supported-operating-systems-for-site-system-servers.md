@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0a83b55726903369677d3daf04f7c879b3660c06
-ms.sourcegitcommit: 86968fc2f129e404ff8e08f91a05fa17b5c47527
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67251671"
 ---
 # <a name="supported-operating-systems-for-configuration-manager-site-system-servers"></a>Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제

@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fe9c5a22f1c3a17737ccfb452b3cd4dd418bf9a9
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56142462"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62213281"
 ---
 # <a name="planning-for-client-deployment-to-mac-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포 계획
 

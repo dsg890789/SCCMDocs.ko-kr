@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af59b3ea1dfefcf0ae0e4919229b77b633819657
-ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71401662"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능

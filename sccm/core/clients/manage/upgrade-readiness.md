@@ -12,10 +12,10 @@ ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 11cb935eef2d214cf541142aea81fbe8e12bd06b
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72384592"
 ---
 # <a name="integrate-upgrade-readiness-with-configuration-manager"></a>업그레이드 준비와 Configuration Manager 통합

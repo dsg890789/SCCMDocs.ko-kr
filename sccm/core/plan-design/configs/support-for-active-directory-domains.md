@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a04928afc64c16cf5d200abc94008ea29fc73197
-ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810773"
 ---
 # <a name="support-for-active-directory-domains-in-configuration-manager"></a>Configuration Manager에서 Active Directory 도메인 지원

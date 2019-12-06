@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f090c80f70ef8d286a36236c48503817adb93591
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72387025"
 ---
 # <a name="updates-in-desktop-analytics"></a>Desktop Analytics의 업데이트

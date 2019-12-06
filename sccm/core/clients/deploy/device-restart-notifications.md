@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b73d3072883405d1ac2b455f12e1c252244884d1
-ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69999460"
 ---
 # <a name="device-restart-notifications-in-configuration-manager"></a>Configuration Manager에서 디바이스 다시 시작 알림

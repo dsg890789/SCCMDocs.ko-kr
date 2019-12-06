@@ -12,10 +12,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: e133adf70f66041da43570503c0e7813a59350d0
-ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810636"
 ---
 # <a name="desktop-analytics-log-collector"></a>Desktop Analytics 로그 수집기

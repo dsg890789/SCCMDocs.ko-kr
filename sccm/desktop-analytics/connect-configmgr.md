@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 776c79afea87523fb6da5c92d0b50f128af2a515
-ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73623395"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>Configuration Manager를 Desktop Analytics와 연결하는 방법
@@ -29,7 +29,7 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
 
 또한 Desktop Analytics와의 통합을 지원하기 위해 버전 1902 업데이트 롤업(4500571)을 설치해야 합니다. 이 업데이트에 대한 자세한 내용은 [Configuration Manager 현재 분기 버전 1902에 대한 업데이트 롤업](https://support.microsoft.com/help/4500571)을 참조하세요.
 
-1. 버전 1902에 대한 업데이트 롤업을 사용하여 사이트를 업데이트합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
+1. 1902 버전용 업데이트 롤업을 사용하여 사이트를 업데이트합니다. 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates)를 참조하세요.  
 
 2. 클라이언트 업데이트 이 프로세스를 간소화하려면 자동 클라이언트 업그레이드를 사용하는 것이 좋습니다. 자세한 내용은 [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 참조하세요.  
 
@@ -54,7 +54,7 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
   
    **다음**을 선택합니다.  
 
-3. **App** 페이지에서 적절한 **Azure 환경**을 선택합니다. 그런 다음, 웹앱에 대한 **찾아보기**를 선택합니다.  
+3. **앱** 페이지에서 적절한 **Azure 환경**을 선택합니다. 그런 다음, 웹앱에 대한 **찾아보기**를 선택합니다.  
 
 4. 이 서비스에 대해 다시 사용하려는 기존 앱이 있는 경우 목록에서 해당 앱을 선택하고 **확인**을 선택합니다.  
 
@@ -65,7 +65,7 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
 
 6. **서버 애플리케이션 만들기** 창에서 다음 설정을 구성합니다.  
 
-    - **애플리케이션 이름**: Azure AD에 있는 앱의 식별 이름입니다.
+    - **애플리케이션 이름**: Azure AD의 앱에 대한 식별 이름입니다.
 
     - **홈페이지 URL**: 이 값은 Configuration Manager에서 사용되지는 않지만, Azure AD에 필요합니다. 이 값은 기본적으로 `https://ConfigMgrService`입니다.  
 
@@ -78,7 +78,7 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
     > [!Note]  
     > **글로벌 관리자**로 이 단계를 완료합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. 이 가상 사용자는 Configuration Manager에서 권한이 필요 없으며, Azure 서비스 마법사를 실행하는 계정과 동일한 계정이 아니어도 상관 없습니다.  
 
-    **확인**을 선택하여 Azure AD에서 웹앱을 만들고 서버 애플리케이션 만들기 대화 상자를 닫습니다. 서버 앱 대화 상자에서 **확인**을 선택합니다. 그런 다음, Azure Services 마법사의 앱 페이지에서 **다음**을 선택합니다.  
+    **확인**을 선택하여 Azure AD에서 웹앱을 만들고 서버 애플리케이션 만들기 대화 상자를 닫습니다. [서버 앱] 대화 상자에서 **확인**을 선택합니다. 그런 다음, Azure 서비스 마법사의 [앱] 페이지에서 **다음**을 선택합니다.  
 
 7. **진단 데이터** 페이지에서 다음 설정을 구성합니다.  
 
@@ -97,13 +97,13 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
 
 8. **컬렉션** 페이지에서 다음 설정을 구성합니다.  
 
-    - **표시 이름**: Desktop Analytics 포털은 이 이름을 사용하여 이 Configuration Manager 연결을 표시합니다. 이를 사용하여 서로 다른 계층을 구분합니다. *테스트 랩* 또는 *프로덕션*이 예입니다.  
+    - **표시 이름**: Desktop Analytics 포털에서 이 이름을 사용하여 이 Configuration Manager 연결을 표시합니다. 이를 사용하여 서로 다른 계층을 구분합니다. 예를 들어 *테스트 랩* 또는 *프로덕션*입니다.  
 
-    - **대상 컬렉션**: 이 컬렉션에는 Configuration Manager가 상업용 ID 및 진단 데이터 설정으로 구성하는 모든 디바이스가 포함됩니다. Configuration Manager가 Desktop Analytics 서비스에 연결하는 전체 디바이스 세트입니다.  
+    - **대상 컬렉션**: 이 컬렉션에는 Configuration Manager에서 상업용 ID 및 진단 데이터 설정으로 구성하는 모든 디바이스가 포함됩니다. 이는 Configuration Manager에서 Desktop Analytics 서비스에 연결하는 전체 디바이스 세트입니다.  
 
-    - **대상 컬렉션의 디바이스는 아웃바운드 통신에 사용자 인증 프록시를 사용합니다**. 기본적으로 이 값은 **아니요**입니다. 사용자 환경에 필요한 경우 **예**로 설정합니다.  
+    - **대상 컬렉션의 디바이스에서 아웃바운드 통신에 사용자 인증 프록시 사용**: 이 값은 기본적으로 **아니요**입니다. 사용자 환경에 필요한 경우 **예**로 설정합니다.  
 
-    - **Desktop Analytics와 동기화할 특정 컬렉션을 선택합니다**. **대상 컬렉션** 계층에서 추가 컬렉션을 포함하려면 **추가**를 선택합니다. 이러한 컬렉션은 Desktop Analytics 포털에서 배포 계획과 그룹화할 수 있습니다. 파일럿 및 파일럿 제외 컬렉션을 포함해야 합니다.  <!-- 4097528 -->  
+    - **Desktop Analytics와 동기화할 특정 컬렉션을 선택합니다**. **대상 컬렉션** 계층 구조에서 추가 컬렉션을 포함하려면 **추가**를 선택합니다. 이러한 컬렉션은 Desktop Analytics 포털에서 배포 계획과 그룹화할 수 있습니다. 파일럿 및 파일럿 제외 컬렉션을 포함해야 합니다.  <!-- 4097528 -->  
 
         > [!Tip]  
         > 컬렉션 선택 창에는 **대상 컬렉션**으로 제한된 컬렉션만 표시됩니다.
@@ -116,12 +116,12 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
         > - CollectionD: **모든 시스템** 컬렉션에 의해 제한됨
 
         > [!Important]  
-        > 이러한 컬렉션은 멤버 자격 변경 내용에 따라 계속 동기화됩니다. 예를 들어 배포 계획에서는 Windows 7 멤버 자격 규칙이 있는 컬렉션을 사용합니다. 이러한 디바이스가 Windows 10으로 업그레이드되고 Configuration Manager가 컬렉션 멤버 자격을 평가하면 해당 디바이스는 컬렉션 및 배포 계획에서 제외됩니다.  
+        > 이러한 컬렉션은 멤버 자격 변경 내용에 따라 계속 동기화됩니다. 예를 들어 배포 계획에서는 Windows 7 멤버 자격 규칙이 있는 컬렉션을 사용합니다. 이러한 디바이스가 Windows 10으로 업그레이드되고 Configuration Manager에서 컬렉션 멤버 자격을 평가하면 해당 디바이스는 컬렉션 및 배포 계획에서 제외됩니다.  
 
 
 9. 마법사를 완료합니다.  
 
-Configuration Manager는 대상 컬렉션에서 디바이스를 구성하는 설정 정책을 만듭니다. 이 정책에는 디바이스가 Microsoft로 데이터를 보낼 수 있도록 하는 진단 데이터 설정이 포함되어 있습니다. 기본적으로 클라이언트는 매 시간마다 정책을 업데이트합니다. 새 설정을 받은 후 Desktop Analytics에서 데이터를 사용할 수 있으려면 몇 시간이 더 걸릴 수 있습니다.
+Configuration Manager는 대상 컬렉션에서 디바이스를 구성하는 설정 정책을 만듭니다. 이 정책에는 디바이스에서 Microsoft로 데이터를 보낼 수 있도록 하는 진단 데이터 설정이 포함되어 있습니다. 클라이언트는 기본적으로 1시간마다 정책을 업데이트합니다. 새 설정을 받은 후 Desktop Analytics에서 데이터를 사용할 수 있으려면 몇 시간이 더 걸릴 수 있습니다.
 
 
 

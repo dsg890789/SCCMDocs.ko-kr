@@ -12,10 +12,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 22edda205cc513119b03210cb416a256ec636a80
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67516057"
 ---
 # <a name="learn-more-about-available-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사용 가능한 업데이트에 대한 자세한 내용을 알아봅니다.

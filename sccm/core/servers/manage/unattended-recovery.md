@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 34072fe18bc2d0d751938ff536f6d4ba8e4c378b
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65500960"
 ---
 # <a name="unattended-site-recovery-for-configuration-manager"></a>Configuration Manager에 대한 무인 사이트 복구   
@@ -192,7 +192,7 @@ ms.locfileid: "65500960"
 -   **키 이름:** DatabaseName
 
     -   **필수:** 예
-    -   **값:** *&lt;SiteDatabaseName\>* 또는 *&lt;InstanceName\>*\\*&lt;SiteDatabaseName\>*
+    -   **값:** *&lt;SiteDatabaseName\>* 또는 *&lt;InstanceName\>* \\ *&lt;SiteDatabaseName\>*
     -   **세부 정보:** 중앙 관리 사이트 데이터베이스를 설치하는 데 사용하거나 만들 SQL Server 데이터베이스의 이름입니다. 실패하기 전에 사용되던 동일한 데이터베이스 이름을 지정합니다.
 
         > [!IMPORTANT]  
@@ -354,7 +354,7 @@ ms.locfileid: "65500960"
 -   **키 이름:** DatabaseName
 
     -   **필수:** 예
-    -   **값:** *&lt;SiteDatabaseName\>* 또는 *&lt;InstanceName\>*\\*&lt;SiteDatabaseName\>*
+    -   **값:** *&lt;SiteDatabaseName\>* 또는 *&lt;InstanceName\>* \\ *&lt;SiteDatabaseName\>*
     -   **세부 정보:** 중앙 관리 사이트 데이터베이스를 설치하는 데 사용하거나 만들 SQL Server 데이터베이스의 이름입니다. 실패하기 전에 사용되던 동일한 데이터베이스 이름을 지정합니다.
 
         > [!IMPORTANT]    

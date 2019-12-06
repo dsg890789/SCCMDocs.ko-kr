@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4c34cf73133086f08cb390f39ab4fe715dfcefd2
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67550677"
 ---
 # <a name="paths-to-co-management"></a>공동 관리 경로

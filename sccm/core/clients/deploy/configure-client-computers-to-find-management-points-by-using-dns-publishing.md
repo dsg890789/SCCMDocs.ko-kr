@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5305b557eb3db83125e0f259e804a8eba0384290
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70890257"
 ---
 # <a name="configure-client-computers-to-find-management-points-by-using-dns-publishing"></a>DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터 구성

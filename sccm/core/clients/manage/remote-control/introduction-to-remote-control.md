@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 272c43f7514c585ea182b9b7e946c89fd13d3ad8
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65500029"
 ---
 # <a name="introduction-to-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager의 원격 제어 소개

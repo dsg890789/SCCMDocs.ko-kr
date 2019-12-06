@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 60532a2692c8e9b25468d6f2cdca32f90aa88a7a
-ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73049494"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획

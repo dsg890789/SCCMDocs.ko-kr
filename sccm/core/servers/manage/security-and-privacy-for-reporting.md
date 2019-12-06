@@ -12,11 +12,11 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6f7f98036745a417e14611231e681b4be114bbce
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130846"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62227308"
 ---
 # <a name="security-and-privacy-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 기능에 대한 보안 및 개인 정보
 

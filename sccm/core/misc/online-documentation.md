@@ -11,10 +11,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8bbfd9ada80c6f886f323f5239de03265c84e59c
-ms.sourcegitcommit: 54f56bd30a161e8847f8bfd00ede586a1cf97d33
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73710497"
 ---
 # <a name="online-documentation-for-configuration-manager"></a>Configuration Manager에 대한 온라인 설명서

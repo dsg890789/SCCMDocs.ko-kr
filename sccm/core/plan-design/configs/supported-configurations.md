@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7fd2805ad886bd0e2f8d6dbcadc8953ae20be24c
-ms.sourcegitcommit: 23e4f4f02b62e5cc284196067a83eaaa67a6f446
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71999023"
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성

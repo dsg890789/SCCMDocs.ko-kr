@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 025c3b32c8115eab82514cd9fb9e602c52a882ae
-ms.sourcegitcommit: b631fcb2669ac2a5801e70620b0c3e81431bea8f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71975513"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1909"></a>Configuration Manager Technical Preview 버전 1909의 기능

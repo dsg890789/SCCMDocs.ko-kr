@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af65085590d8b02d6b3a020668566a334de42f13
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67285559"
 ---
 # <a name="about-the-service-connection-point-in-configuration-manager"></a>Configuration Manager의 서비스 연결 지점 정보
@@ -28,7 +28,7 @@ ms.locfileid: "67285559"
 
 - **온-프레미스 MDM을 사용하여 모바일 디바이스 관리**: 이 역할은 관리하는 온-프레미스 디바이스와 인터넷에 연결하지 않는 온-프레미스 디바이스를 지원합니다. 자세한 내용은 [온-프레미스 인프라로 모바일 디바이스 관리](/sccm/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)를 참조하세요.  
 
-- **Configuration Manager 인프라에서 사용 현황 데이터 업로드**: 업로드하는 세부 정보의 수준 또는 양을 제어할 수 있습니다. 업로드된 데이터로 다음 작업을 수행할 수 있습니다.  
+- **Configuration Manager 인프라에서 사용량 현황 데이터 업로드**: 업로드하는 세부 정보의 수준 또는 양을 제어할 수 있습니다. 업로드된 데이터로 다음 작업을 수행할 수 있습니다.  
 
     - 사전에 문제 식별 및 해결  
 

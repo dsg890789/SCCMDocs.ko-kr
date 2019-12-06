@@ -6,10 +6,10 @@ ms.topic: include
 ms.date: 08/23/2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 02e8f49972b3cc85dc25ff28c44ed87ea45d61fb
-ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70036738"
 ---
 <!--Don't apply H2/H3 in this include file since they are context driven by article-->

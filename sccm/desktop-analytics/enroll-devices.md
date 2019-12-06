@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 10535acc49f047876eafb188569e82db7a2bbea9
-ms.sourcegitcommit: b0f1c2fe1e034f0fe8676f1528249a4b26f54bd3
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73704801"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>Desktop Analytics에서 디바이스를 등록하는 방법
@@ -135,14 +135,14 @@ Desktop Analytics에 Configuration Manager를 연결하는 경우 디바이스�
 
     - **표시 이름**: Desktop Analytics 포털에서 이 이름을 사용하여 이 Configuration Manager 연결을 표시합니다.  
 
-    - **대상 컬렉션**: 이 컬렉션에는 Configuration Manager가 상업용 ID 및 진단 데이터 설정으로 구성하는 모든 디바이스가 포함됩니다. Configuration Manager가 Desktop Analytics 서비스에 연결하는 전체 디바이스 세트입니다.  
+    - **대상 컬렉션**: 이 컬렉션에는 Configuration Manager에서 상업용 ID 및 진단 데이터 설정으로 구성하는 모든 디바이스가 포함됩니다. 이는 Configuration Manager에서 Desktop Analytics 서비스에 연결하는 전체 디바이스 세트입니다.  
 
-    - **대상 컬렉션의 디바이스가 아웃바운드 통신에 사용자 인증 프록시 사용**: 기본적으로 이 값은 **아니요**입니다. 사용자 환경에 필요한 경우 **예**로 설정합니다. 자세한 내용은 [프록시 서버 인증](/sccm/desktop-analytics/enable-data-sharing#proxy-server-authentication)을 참조하세요.  
+    - **대상 컬렉션의 디바이스에서 아웃바운드 통신에 사용자 인증 프록시 사용**: 이 값은 기본적으로 **아니요**입니다. 사용자 환경에 필요한 경우 **예**로 설정합니다. 자세한 내용은 [프록시 서버 인증](/sccm/desktop-analytics/enable-data-sharing#proxy-server-authentication)을 참조하세요.  
 
     - **Desktop Analytics와 동기화할 특정 컬렉션 선택**: **대상 컬렉션** 계층 구조에서 추가 컬렉션을 포함하려면 **추가**를 선택합니다. 이러한 컬렉션은 Desktop Analytics 포털에서 배포 계획과 그룹화할 수 있습니다. 파일럿 및 파일럿 제외 컬렉션을 포함해야 합니다.  <!-- 4097528 -->
 
         > [!Important] 
-        > 이러한 컬렉션은 멤버 자격이 변경됨에 따라 계속 동기화됩니다. 예를 들어 배포 계획에서는 Windows 7 멤버 자격 규칙이 있는 컬렉션을 사용합니다. 이러한 디바이스가 Windows 10으로 업그레이드되고 Configuration Manager가 컬렉션 멤버 자격을 평가하면 해당 디바이스는 컬렉션 및 배포 계획에서 제외됩니다.  
+        > 멤버 자격이 변경됨에 따라 이러한 컬렉션도 계속 동기화됩니다. 예를 들어 배포 계획에서는 Windows 7 멤버 자격 규칙이 있는 컬렉션을 사용합니다. 이러한 디바이스가 Windows 10으로 업그레이드되고 Configuration Manager가 컬렉션 멤버 자격을 평가하면 해당 디바이스는 컬렉션 및 배포 계획에서 제외됩니다.  
 
 
 ### <a name="windows-settings"></a>Windows 설정

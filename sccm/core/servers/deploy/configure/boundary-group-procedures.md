@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fed583e07c59f61f5c06b8355f9d59f18dde47e6
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65499054"
 ---
 # <a name="how-to-configure-boundary-groups-for-configuration-manager"></a>Configuration Manager에 대한 경계 그룹을 구성하는 방법
@@ -92,7 +92,7 @@ ms.locfileid: "65499054"
       > [!Note]  
       > 예를 들어, 지점 경계 그룹에 대한 속성 창을 엽니다. 대체 경계 그룹 창에서 본사 경계 그룹을 선택합니다. 배포 지점 대체 시간을 `20`으로 설정합니다. 이 구성을 저장하면 지점 경계 그룹의 클라이언트가 20분 후 본사 경계 그룹의 배포 지점에서 콘텐츠 검색을 시작합니다.  
 
-  - 특정 경계 그룹으로 대체하지 않도록 하려면 해당 경계 그룹을 선택한 후 사이트 시스템 역할 유형으로 **대체 안 함**을 선택합니다. 이 작업에서는 ‘기본 사이트 경계 그룹’을 포함할 수 있습니다.  
+  - 특정 경계 그룹으로 대체하지 않도록 하려면 해당 경계 그룹을 선택한 후 사이트 시스템 역할 유형으로 **대체 안 함**을 선택합니다. 이 작업에서는 ‘기본 사이트 경계 그룹’을 포함할 수 있습니다.   
 
 - 기존 관계 구성을 수정하려면 목록에서 경계 그룹을 선택하고 **변경**을 선택합니다. 이 작업을 수행하면 이 경계 그룹에만 해당하는 대체 경계 그룹 창이 열립니다.  
  

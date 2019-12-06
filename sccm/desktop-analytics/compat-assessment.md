@@ -13,10 +13,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4f0832dc96a5b03e0ed603b76c794444eff7d967
-ms.sourcegitcommit: 07756e9b4ed7b134e32349acb1eeae93c6de9e28
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73049435"
 ---
 # <a name="compatibility-assessment-in-desktop-analytics"></a>Desktop Analytics의 호환성 평가

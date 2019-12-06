@@ -12,10 +12,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 411752ae345b6af255e8fe1e46d5d5e3a93b8900
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70890369"
 ---
 # <a name="azure-ad-authentication-workflow"></a>Azure AD 인증 워크플로

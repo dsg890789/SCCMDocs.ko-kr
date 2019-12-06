@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 07df750daf0af7aa82a13c1eef421678d7df8202
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70890329"
 ---
 # <a name="manage-configuration-manager-clients-in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 구성 관리자 클라이언트 관리

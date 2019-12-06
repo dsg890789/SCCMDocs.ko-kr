@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 738adae78a4f47ed714462e67c73aa253a3751d5
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70890399"
 ---
 # <a name="prerequisites-for-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Asset Intelligence에 대한 필수 조건

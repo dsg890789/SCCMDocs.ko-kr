@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f6f0b7f67c1b25fc28f82956a43f9a503ad3d190
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123504"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62234549"
 ---
 # <a name="migrate-data-between-hierarchies-in-configuration-manager"></a>Configuration Manager에서 계층 구조 간에 데이터 마이그레이션
 

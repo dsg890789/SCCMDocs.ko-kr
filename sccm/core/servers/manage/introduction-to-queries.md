@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 28fe8d38b03efaa101cfe01d8a8a054f0b26f2ed
-ms.sourcegitcommit: 3a3f40f3d39cbecfb9219a64c0185ea4b2ef9671
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67561951"
 ---
 # <a name="introduction-to-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager의 쿼리 소개

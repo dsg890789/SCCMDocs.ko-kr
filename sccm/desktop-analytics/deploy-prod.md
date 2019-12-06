@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b9030ad805853d1dd607607d80dca2b606e8160c
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72386059"
 ---
 # <a name="how-to-deploy-to-production-with-desktop-analytics"></a>Desktop Analytics를 사용하여 프로덕션에 배포하는 방법

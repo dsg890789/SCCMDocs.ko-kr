@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2e67e9fc63fad6cbfc986203fdec7b92c2aea73c
-ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71401532"
 ---
 # <a name="best-practices-for-collections-in-configuration-manager"></a>Configuration Manager의 컬렉션 모범 사례

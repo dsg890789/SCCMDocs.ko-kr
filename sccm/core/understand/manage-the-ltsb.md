@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 08ab6cebbe44ecad8b8ce15691dd83217ada3ce9
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67194123"
 ---
 # <a name="manage-the-long-term-servicing-branch-of-configuration-manager"></a>Configuration Manager의 장기 서비스 분기 관리

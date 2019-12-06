@@ -12,10 +12,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 5fbb2d4a902c21ac2fa2186bba70f58d66e50c48
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66176844"
 ---
 # <a name="third-party-mdm-coexistence-with-configuration-manager"></a>Configuration Manager와 타사 MDM 공존

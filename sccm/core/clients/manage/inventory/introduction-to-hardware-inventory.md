@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ebe3414ad8db1a76761954579a7668179ee1fd74
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67550717"
 ---
 # <a name="introduction-to-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 하드웨어 인벤토리 소개

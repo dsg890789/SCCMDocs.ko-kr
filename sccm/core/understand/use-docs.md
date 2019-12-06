@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 085f91bfb99bcfabbcdee8083fb3a3089a33057e
-ms.sourcegitcommit: 3936b869d226cea41fa0090e2cbc92bd530db03a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67285672"
 ---
 # <a name="how-to-use-the-configuration-manager-docs"></a>Configuration Manager 문서를 사용하는 방법

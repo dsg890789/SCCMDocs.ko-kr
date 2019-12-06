@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81073cc22d7bb59188cf881590d07deb0c20158c
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70891462"
 ---
 # <a name="prerequisites-for-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건

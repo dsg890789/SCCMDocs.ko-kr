@@ -12,10 +12,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 067c47453f6e4a373bcaa02e7199176f342321e7
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72392170"
 ---
 # <a name="get-support-for-desktop-analytics"></a>Desktop Analytics 지원 받기

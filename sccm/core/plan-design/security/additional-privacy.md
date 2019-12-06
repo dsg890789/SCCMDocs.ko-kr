@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8e5a42249df462be1584a153657a42ae325f1b9a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56125363"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62235669"
 ---
 # <a name="additional-information-about-privacy-for-configuration-manager"></a>Configuration Manager의 개인정보보호 대한 추가 정보
 

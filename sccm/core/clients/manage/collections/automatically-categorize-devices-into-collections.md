@@ -12,10 +12,10 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e0a70d55eb63a51ca980db1fb7089a9490a2803c
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66176707"
 ---
 # <a name="automatically-categorize-devices-into-collections"></a>컬렉션으로 디바이스 자동 분류
