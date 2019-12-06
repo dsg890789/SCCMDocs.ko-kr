@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c5dadb6400ad76947ce7ace3228b6f7d95cedc17
-ms.sourcegitcommit: 670cfed1e47a7a4a73aa4ccb873c6312be3c21ff
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71311562"
 ---
 # <a name="how-to-monitor-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 모니터링하는 방법

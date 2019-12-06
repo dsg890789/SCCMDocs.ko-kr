@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ab44233756a237513298391a59951919ac4412d5
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70380117"
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
@@ -72,7 +72,7 @@ ms.locfileid: "70380117"
 
   기본적으로 이 도구는 Configuration Manager 설치 미디어의 **%path%\smssetup\tools\ServiceConnectionTool** 폴더에 있습니다. 서비스 연결 도구가 작동하려면 이 폴더의 모든 파일이 동일한 폴더에 있어야 합니다.  
 
-다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사합니다. .cab 파일의 데이터는 사이트가 수집하도록 구성된 진단 사용량 현황 데이터의 수준을 기반으로 합니다. [System Center Configuration Manager의 진단 및 사용 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  다음 명령을 실행하여 .cab 파일을 만듭니다.  
+다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사합니다. .cab 파일의 데이터는 사이트가 수집하도록 구성된 진단 사용량 현황 데이터의 수준을 기반으로 합니다. [System Center Configuration Manager의 진단 및 사용량 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  다음 명령을 실행하여 .cab 파일을 만듭니다.  
 
 - **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
 

@@ -13,10 +13,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7abb5e4405727cdbaeb42f5915ff1b29fe1c0911
-ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70738351"
 ---
 # <a name="checklist-for-installing-update-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1706을 설치하기 위한 검사 목록

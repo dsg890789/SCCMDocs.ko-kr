@@ -55,7 +55,7 @@
           href: deploy-use/deploy-edge.md
         - name: App-V 가상 애플리케이션 배포
           href: get-started/deploying-app-v-virtual-applications.md
-        - name: 애플리케이션 배포 문제 해결
+        - name: 앱 배포에 대한 문제 해결 팁
           href: deploy-use/troubleshoot-application-deployment.md
     - name: 애플리케이션 모니터링
       items:
@@ -71,10 +71,8 @@
           href: deploy-use/management-tasks-applications.md
         - name: 사용자 디바이스 선호도
           href: deploy-use/link-users-and-devices-with-user-device-affinity.md
-        - name: 비즈니스용 Microsoft 스토어 대량 구매 앱
+        - name: 비즈니스 및 교육용 Microsoft Store
           href: deploy-use/manage-apps-from-the-windows-store-for-business.md
-        - name: 비즈니스용 Microsoft 스토어 통합 문제 해
-          href: deploy-use/troubleshoot-microsoft-store-for-business-integration.md
         - name: App-V 가상 환경
           href: deploy-use/create-app-v-virtual-environments.md
         - name: 애플리케이션 가져오기 및 내보내기
@@ -93,13 +91,36 @@
         - name: PowerShell 스크립트 보안에 대해 알아보기
           href: deploy-use/learn-script-security.md
     - name: Package Conversion Manager
-      href: pcm/package-conversion-manager.md
       items:
+        - name: Package Conversion Manager 계획
+          href: pcm/package-conversion-manager.md
         - name: 패키지를 분석하고 변환하는 방법
           href: pcm/how-to-analyze-and-convert.md
+- name: 문제 해결
+  items:
+    - name: 애플리케이션 배포 문제 해결
+      items:
+        - name: 시작하기 전에
+          href: understand/app-deployment-technical-reference.md
+        - name: 애플리케이션 배포 정책
+          href: understand/deployment-policy-technical-reference.md
+        - name: 디바이스용 애플리케이션 배포
+          href: understand/device-deployment-technical-reference.md
+        - name: 사용자를 위한 애플리케이션 배포
+          href: understand/user-deployment-technical-reference.md
+        - name: 애플리케이션 배포 클라이언트 구성 요소
+          href: understand/client-components-technical-reference.md
+        - name: 애플리케이션 평가
+          href: understand/deployment-evaluation-technical-reference.md
+        - name: 애플리케이션 다운로드
+          href: understand/deployment-download-technical-reference.md
+        - name: 애플리케이션 설치
+          href: understand/deployment-install-technical-reference.md
+    - name: 비즈니스 및 교육용 Microsoft Store 통합 문제 해결
+      href: deploy-use/troubleshoot-microsoft-store-for-business-integration.md
+    - name: Package Conversion Manager 문제 해결
+      items:
         - name: Package Conversion Manager 문제 해결
           href: pcm/troubleshoot-pcm.md
-        - name: 기술 참조
-          items:
-            - name: 오류 메시지
-              href: pcm/error-messages.md
+        - name: Package Conversion Manager에 대한 오류 메시지
+          href: pcm/error-messages.md

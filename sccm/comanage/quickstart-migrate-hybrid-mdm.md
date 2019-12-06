@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 84625c12c9cac643fe5a895c066632f44ffeacdc
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56755365"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62193833"
 ---
 # <a name="migrate-from-hybrid-mdm-for-co-management"></a>공동 관리를 위해 하이브리드 MDM에서 마이그레이션
 

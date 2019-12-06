@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6b49f05708f824c16dd90cbb9c872f49ab484de8
-ms.sourcegitcommit: e0d303d87c737811c2d3c40d01cd3d260a5c7bde
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69974719"
 ---
 # <a name="command-line-options-for-configuration-manager-setup"></a>Configuration Manager 설치를 위한 명령줄 옵션
@@ -418,7 +418,7 @@ ms.locfileid: "69974719"
 
         - `1` = 설치  
 
-    - **세부 정보:** 이 사이트에 서비스 연결 지점을 설치할지 여부를 지정합니다. 서비스 연결 지점은 계층 구조의 최상위 계층 사이트에만 설치할 수 있으므로 이 값은 자식 기본 사이트에 대해 `1`로 설정합니다.  
+    - **세부 정보:** 이 사이트에 서비스 연결 지점을 설치할지 여부를 지정합니다. 서비스 연결 지점은 계층 구조의 최상위 계층 사이트에만 설치할 수 있으므로 이 값은 자식 기본 사이트에 대해 `1`이어야 합니다.  
 
 - **키 이름:** CloudConnectorServer  
 
@@ -912,7 +912,7 @@ ms.locfileid: "69974719"
 
 - **키 이름:** ReferenceSite  
 
-    - **필수:** **DatabaseRecoveryOptions** 설정 값이 **40**인 경우 이 키는 필수입니다.  
+    - **필수:** DatabaseRecoveryOptions 설정 값이 **40**인 경우 이 키는 필수입니다.  
 
     - **값:**  <*참조 사이트 FQDN*>  
 
@@ -1008,7 +1008,7 @@ ms.locfileid: "69974719"
 
 - **키 이름:** AdminConsole  
 
-    - **필수:** **ServerRecoveryOptions** 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
+    - **필수:** ServerRecoveryOptions 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
 
     - **값:**
 
@@ -1274,7 +1274,7 @@ ms.locfileid: "69974719"
 
 - **키 이름:** AdminConsole  
 
-    - **필수:** **ServerRecoveryOptions** 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
+    - **필수:** ServerRecoveryOptions 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
 
     - **값:**
 

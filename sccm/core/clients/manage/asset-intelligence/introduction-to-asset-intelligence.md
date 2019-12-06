@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d63fa2f25b63e663301fdf9b25d8190b57138e31
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65499991"
 ---
 # <a name="introduction-to-asset-intelligence-in-configuration-manager"></a>Configuration Manager의 Asset Intelligence 소개
@@ -85,13 +85,13 @@ Asset Intelligence 사용자 지정 소프트웨어 레이블을 사용하면 As
 
 - **소프트웨어 타이틀**: 하드웨어 요구 사항과 연결된 소프트웨어 타이틀  
 
-- **최소 CPU(MHz)**: 소프트웨어 타이틀에 필요한 최소 프로세서 속도(MHz)  
+- **최소 CPU(MHz)** : 소프트웨어 타이틀에 필요한 최소 프로세서 속도(MHz)  
 
-- **최소 RAM(KB)**: 소프트웨어 타이틀에 필요한 최소 RAM(KB)  
+- **최소 RAM(KB)** : 소프트웨어 타이틀에 필요한 최소 RAM(KB)  
 
-- **최소 디스크 공간(KB)**: 소프트웨어 타이틀에 필요한 최소 하드 디스크 사용 가능한 공간(KB)  
+- **최소 디스크 공간(KB)** : 소프트웨어 타이틀에 필요한 최소 하드 디스크 사용 가능한 공간(KB)  
 
-- **최소 디스크 크기(KB)**: 소프트웨어 타이틀에 필요한 최소 하드 디스크 크기(KB)  
+- **최소 디스크 크기(KB)** : 소프트웨어 타이틀에 필요한 최소 하드 디스크 크기(KB)  
 
 - **유효성 검사 상태**: 하드웨어 요구 사항에 대한 유효성 검사 상태  
 

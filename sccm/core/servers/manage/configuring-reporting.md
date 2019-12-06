@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bc84435b36fe413f9eab81ebdc0161b7cd64ab53
-ms.sourcegitcommit: e2e07d74779a2f48693ecaa17a5974204949d109
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69999366"
 ---
 # <a name="configure-reporting-in-configuration-manager"></a>Configuration Manager에서 보고 구성

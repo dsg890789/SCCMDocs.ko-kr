@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 586ded5ad185513360c0087601d1966d9333ef48
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137316"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62211528"
 ---
 # <a name="flowchart---promote-site-server-unplanned"></a>순서도 - 사이트 서버 승격(계획되지 않음)
 

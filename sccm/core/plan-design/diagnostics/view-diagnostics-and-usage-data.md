@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68155a31d1d50d1df4c06882416f158f9a71c8d2
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70889433"
 ---
 # <a name="how-to-view-diagnostics-and-usage-data-for-configuration-manager"></a>Configuration Manager의 진단 및 사용량 데이터를 보는 방법

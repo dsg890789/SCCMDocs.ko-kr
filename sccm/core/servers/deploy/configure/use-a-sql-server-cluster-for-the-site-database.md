@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d07005c63f0d69d57d24eac163b67c34529658cf
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58477554"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62215683"
 ---
 # <a name="use-a-sql-server-cluster-for-the-site-database"></a>사이트 데이터베이스에 대해 SQL Server 클러스터 사용
 
@@ -79,7 +79,7 @@ Configuration Manager 설치 중에 Windows 볼륨 섀도 복사본 서비스 �
 - SQL Server 클러스터를 지정할 때는 사이트 데이터베이스에 대해 기본 파일 위치가 아닌 위치를 지정하는 옵션을 사용할 수 없습니다.  
 
 
-### <a name="sms-provider"></a>사이트 데이터베이스
+### <a name="sms-provider"></a>SMS 공급자
 
 SQL Server 클러스터에는 SMS 공급자의 인스턴스를 설치할 수 없습니다. 클러스터된 SQL Server 노드로 실행되는 컴퓨터에서도 지원되지 않습니다.  
 

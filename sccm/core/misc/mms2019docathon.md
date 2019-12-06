@@ -11,10 +11,10 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.openlocfilehash: 76970a024e54067aaa6a3059bb95a6c134a2e999
-ms.sourcegitcommit: 99dfe4fb9e9cfd20c44380ae442b3a5b895a0d9b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65214699"
 ---
 # <a name="mms-2019-docathon"></a>MMS 2019 Docathon
@@ -249,7 +249,7 @@ Microsoft Cloud + AI 개발자 관계 콘텐츠 및 학습 MMS 2019 Docathon 이
 
 12. 수상자 목록
 
-    수상자 목록은 2019년 5월 9일부터 30일 이내에 https://aka.ms/mms2019docathon에 게시됩니다.
+    수상자 목록은 2019년 5월 9일부터 30일 이내에 https://aka.ms/mms2019docathon 에 게시됩니다.
 
 13. 개인 정보
 
