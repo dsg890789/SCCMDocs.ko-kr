@@ -12,10 +12,10 @@ ms.technology: configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 334854072e5c724f2c76432e7a7372c02cab3d54
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70892260"
 ---
 # <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
@@ -145,7 +145,7 @@ WSUS에서 Windows 10 패키지를 업그레이드 하는 데 사용 되는 esd 
       Get-WsusClassification | Where-Object -FilterScript {$_.Classification.Title -Eq “Upgrades”} | Set-WsusClassification -Disable
       ```  
      - 여러 WSUS 서버 간에 WSUS 데이터베이스를 공유 하는 경우 각 데이터베이스에 대해 한 번만 **업그레이드** 를 선택 취소 해야 합니다.  
-1. 각 WSUS 서버에서 관리자 권한 명령 프롬프트를 실행 `"C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall /servicing`합니다. 그런 다음 모든 WSUS 서버에서 WSUS 서비스를 다시 시작 합니다.
+1. 각 WSUS 서버에서 관리자 권한 명령 프롬프트를 실행 합니다. `"C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall /servicing`합니다. 그런 다음 모든 WSUS 서버에서 WSUS 서비스를 다시 시작 합니다.
    -  WSUS는 서비스가 필요한 지 여부를 확인 하기 전에 [단일 사용자 모드로](https://docs.microsoft.com/sql/relational-databases/databases/set-a-database-to-single-user-mode) 데이터베이스를 배치 합니다. 서비스가 실행 되거나 검사 결과에 따라 실행 되지 않습니다. 그런 다음 데이터베이스를 다중 사용자 모드로 다시 전환 합니다. 
    - 여러 WSUS 서버 간에 WSUS 데이터베이스를 공유 하는 경우 각 데이터베이스에 대해이 서비스를 한 번만 수행 하면 됩니다.
 1. 관리자 권한으로 실행 되는 PowerShell ISE를 사용 하 여 각 WSUS 데이터베이스에서 모든 Windows 10 업그레이드를 삭제 합니다.

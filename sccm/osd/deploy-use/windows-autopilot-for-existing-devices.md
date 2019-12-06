@@ -12,10 +12,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: 4cc806009f9cb02e50a2b023722a2045d4bde655
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70243704"
 ---
 # <a name="windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot

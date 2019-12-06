@@ -12,11 +12,11 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 89283226a067ff3e0bd232c33ab1cfe5d9240fb5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130023"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62198787"
 ---
 # <a name="simulate-application-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 배포 시뮬레이트
 

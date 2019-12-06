@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 878e69ffb3f4b5a1c823b1b98a1e53305382ac7b
-ms.sourcegitcommit: 54f56bd30a161e8847f8bfd00ede586a1cf97d33
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73710528"
 ---
 # <a name="system-center-updates-publisher"></a>System Center Updates Publisher

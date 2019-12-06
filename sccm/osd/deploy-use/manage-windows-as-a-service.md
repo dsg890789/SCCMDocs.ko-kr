@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b60b230476bafc3e130c31f1172f5422cfe7d1b8
-ms.sourcegitcommit: edc7a5ad6a2eb72d0448d4689b9534f7e6f4d2b7
+ms.openlocfilehash: 45dd25a64d8c694fd79f7e2359d07c5b646ecd72
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73623043"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74659359"
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows as a Service 관리
 
@@ -106,12 +106,8 @@ ms.locfileid: "73623043"
   업그레이드가 해당 조건에 부합되면 서비스 계획은 배포 패키지에 업그레이드를 추가하고, 패키지를 배포 지점에 배포하고, 서비스 계획에서 사용자가 구성한 설정을 기준으로 컬렉션으로 업그레이드를 배포합니다. Windows 10 서비스 대시보드의 서비스 계획 모니터링 타일에서 배포를 모니터링할 수 있습니다. 자세한 내용은 [소프트웨어 업데이트 모니터링](../../sum/deploy-use/monitor-software-updates.md)을 참조하세요.  
 
 > [!NOTE]  
-> **Windows 10 버전 1903 이상**이 이전 버전처럼 **Windows 10** 제품의 일부가 아닌 제품 자체로 Microsoft 업데이트에 추가되었습니다. 이번 변화로 인해 클라이언트가 이러한 업데이트를 확인할 수 있도록 여러 수동 단계를 수행해야 했습니다. Configuration Manager 버전 1906에서 새 제품을 위해 수행 해야 하는 수동 단계의 수를 줄이는 데 도움을 주었습니다. <!--4682946-->
->
-> Configuration Manager 버전 1906으로 업데이트할 때 **Windows 10** 제품을 동기화하도록 선택한 경우 다음 작업이 자동으로 수행됩니다.
-> - 서비스 플랜은 **Windows 10 버전 1903 이상** 제품을 포함하도록 업데이트됩니다.
-> - **Windows 10 버전 1903 이상** 제품이 동기화에 추가됩니다. 자세한 내용은 [분류 및 제품 구성](/sccm/sum/get-started/configure-classifications-and-products)을 참조하세요
-> - **Windows 10** 제품을 포함하고 있는 [자동 배포 규칙](/sccm/sum/deploy-use/automatically-deploy-software-updates#bkmk_adr-process)은 **Windows 10 버전 1903 이상**을 포함하도록 업데이트됩니다.
+> **Windows 10 버전 1903 이상**이 이전 버전처럼 **Windows 10** 제품의 일부가 아닌 제품 자체로 Microsoft 업데이트에 추가되었습니다. 이번 변화로 인해 클라이언트가 이러한 업데이트를 확인할 수 있도록 여러 수동 단계를 수행해야 했습니다. Configuration Manager 버전 1906에서 새 제품을 위해 수행 해야 하는 수동 단계의 수를 줄이는 데 도움을 주었습니다. 자세한 내용은 [Windows 10 버전에 대 한 제품 구성](/configmgr/sum/get-started/configure-classifications-and-products#windows-10-version-1903-and-later) 을 참조 하세요.<!--4682946-->
+
 
 
 ##  <a name="BKMK_ServicingPlan"></a> Windows 10 서비스 계획  

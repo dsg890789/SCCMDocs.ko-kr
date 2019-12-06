@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a6c6f931271d8cc8f69e3c65de8c4932f5ab5c95
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67159271"
 ---
 # <a name="fundamentals-of-security-for-configuration-manager"></a>Configuration Manager의 보안 기본 사항
@@ -113,7 +113,7 @@ Windows 서버 및 네트워크 인프라에서 제공하는 보안 외에도, C
 
  Configuration Manager를 구현하기 전에 개인 정보 요구 사항을 고려합니다. 엔터프라이즈 관리 제품은 많은 클라이언트를 효과적으로 관리할 수 있기 때문에 다양한 이점을 제공하지만 이 소프트웨어는 조직의 사용자 개인 정보에 영향을 줄 수 있습니다. Configuration Manager에는 데이터를 수집하고 디바이스를 모니터링하는 많은 도구가 포함되어 있습니다. 일부 도구는 조직의 개인 정보 문제를 유발할 수 있습니다.  
 
- 예를 들어 Configuration Manager 클라이언트를 설치하면 기본적으로 여러 관리 설정이 활성화됩니다. 이 구성을 사용하면 클라이언트 소프트웨어가 Configuration Manager 사이트에 정보를 보냅니다. 사이트는 클라이언트 정보를 사이트 데이터베이스에 저장합니다. 클라이언트 정보는 Microsoft로 직접 전송되지 않습니다. 자세한 내용은 [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
+ 예를 들어 Configuration Manager 클라이언트를 설치하면 기본적으로 여러 관리 설정이 활성화됩니다. 이 구성을 사용하면 클라이언트 소프트웨어가 Configuration Manager 사이트에 정보를 보냅니다. 사이트는 클라이언트 정보를 사이트 데이터베이스에 저장합니다. 클라이언트 정보는 Microsoft로 직접 전송되지 않습니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
 
 
 

@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e3280edbe900e96cf97af8e59578ceab5322ee2a
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137299"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62204963"
 ---
 # <a name="deploy-and-monitor-scap-compliance-in-configuration-manager"></a>Configuration Manager에서 SCAP 준수 배포 및 모니터
 

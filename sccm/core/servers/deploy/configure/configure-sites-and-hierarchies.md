@@ -12,11 +12,11 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 975a92d2ef9e93bc5c1c5fc96cd91775a2627530
-ms.sourcegitcommit: 6b5a003256305c1f0cb605e52aeaaf19c23af5a9
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956370"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74840550"
 ---
 # <a name="configure-sites-and-hierarchies-for-configuration-manager"></a>Configuration Manager에 대한 사이트 및 계층 구조 구성
 

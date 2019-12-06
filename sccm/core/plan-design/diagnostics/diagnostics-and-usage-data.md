@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68a5787b4c4fa2caf05c1a8c9c6e64bbdd437279
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68536764"
 ---
 # <a name="diagnostics-and-usage-data-for-configuration-manager"></a>Configuration Manager의 진단 및 사용량 현황 데이터
@@ -35,7 +35,7 @@ Configuration Manager에서는 진단 및 사용 현황 데이터를 수집하�
 
 다음 문서의 Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대해 자세히 알아봅니다.  
 
-- [진단 및 사용 현황 데이터 사용 방법](/sccm/core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-used)  
+- [진단 및 사용량 현황 데이터 사용 방법](/sccm/core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-used)  
 
 - 진단 사용량 현황 데이터 수집의 수준:
 
@@ -47,11 +47,11 @@ Configuration Manager에서는 진단 및 사용 현황 데이터를 수집하�
 
     - [1806에 대한 진단 데이터](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806)  
 
-- [진단 및 사용 현황 데이터 수집 방법](/sccm/core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected)  
+- [진단 및 사용량 현황 데이터 수집 방법](/sccm/core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected)  
 
-- [진단 및 사용 현황 데이터를 보는 방법](/sccm/core/plan-design/diagnostics/view-diagnostics-and-usage-data)  
+- [진단 및 사용량 현황 데이터를 보는 방법](/sccm/core/plan-design/diagnostics/view-diagnostics-and-usage-data)  
 
-- [진단 및 사용 현황 데이터에 대한 질문과 대답](/sccm/core/understand/frequently-asked-questions-about-diagnostics-and-usage-data)  
+- [진단 및 사용량 현황 데이터에 대한 질문과 대답](/sccm/core/understand/frequently-asked-questions-about-diagnostics-and-usage-data)  
 
 
 ## <a name="see-also"></a>참고 항목

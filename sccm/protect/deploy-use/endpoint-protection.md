@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ce48f468154357a0032d737c6d77a6b6b29d9565
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67678830"
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
@@ -79,7 +79,7 @@ Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 �
 
 ## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 
-Endpoint Protection 관리 하며 Microsoft Defender ATP Advanced Threat Protection (), Windows Defender ATP 이전의 모니터링 합니다. Microsoft Defender ATP 서비스는 엔터프라이즈에서 회사 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있게 해줍니다. 자세한 내용은 [Microsoft Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)을 참조하세요.
+Endpoint Protection Microsoft Defender ATP (Advanced Threat Protection)를 관리 하 고 모니터링 합니다 (이전에는 Windows Defender ATP 라고 함). Microsoft Defender ATP 서비스는 엔터프라이즈에서 회사 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있게 해줍니다. 자세한 내용은 [Microsoft Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)을 참조하세요.
 
 ## <a name="endpoint-protection-workflow"></a>Endpoint Protection 워크플로  
  다음 다이어그램을 사용하여 Configuration Manager 계층 구조에서 Endpoint Protection을 구현하는 워크플로를 이해합니다.  

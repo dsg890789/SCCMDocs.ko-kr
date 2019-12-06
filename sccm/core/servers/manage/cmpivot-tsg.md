@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7ea58a234c6de90b57bee0de6ad04b92b32e6263
-ms.sourcegitcommit: 81f3b358e707a6ad67e64c53cbe70d48395a78fc
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72303876"
 ---
 # <a name="troubleshoot-cmpivot"></a>CMPivot 문제 해결

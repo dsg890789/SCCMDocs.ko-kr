@@ -5,10 +5,10 @@ ms.prod: configuration-manager
 ms.topic: include
 ms.date: 05/28/2019
 ms.openlocfilehash: 1f809ca6499b502520a7662d9947f0799369bef2
-ms.sourcegitcommit: 4981a796e7886befb7bdeeb346dba32be82aefd6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67534680"
 ---
 ## <a name="BKMK_OSImagesApplyUpdates"></a> 이미지에 소프트웨어 업데이트 적용

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a8cbae87d0dce391ad8ad160f29a598ac044fece
-ms.sourcegitcommit: bba35def893b2893f6a23f8751bcc5cbf1b87bc3
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74190599"
 ---
 # <a name="how-to-deploy-to-pilot-with-desktop-analytics"></a>Desktop Analytics를 사용하여 파일럿에 배포하는 방법

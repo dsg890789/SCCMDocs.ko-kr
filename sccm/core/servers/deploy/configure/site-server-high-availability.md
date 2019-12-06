@@ -12,13 +12,13 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5738be3bd84d7698e7b67128e3aff178d2460e52
-ms.sourcegitcommit: 18ad7686d194d8cc9136a761b8153a1ead1cdc6b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66176918"
 ---
-# <a name="site-server-high-availability-in-configuration-manager"></a>Configuration Manager의 사이트 서버 고가용성 
+# <a name="site-server-high-availability-in-configuration-manager"></a>Configuration Manager의 사이트 서버 고가용성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -169,7 +169,7 @@ Microsoft Core Services 엔지니어링 및 운영 팀은 이 기능을 사용�
 
          - (*권장*) **다음 네트워크 위치의 원본 파일 사용**: 활성 모드의 사이트 서버에서 **CD.Latest** 폴더의 콘텐츠 경로를 직접 지정합니다. 예를 들어 `\\Server\SMS_ABC\CD.Latest`입니다. 여기서 "*Server*"는 활성 모드의 사이트 서버 이름, "*ABC*"는 사이트 이름입니다.  
 
-     - 새 사이트 서버에서 Configuration Manager 설치의 로컬 경로를 지정합니다.  `C:\Program Files\Configuration Manager`  
+     - 새 사이트 서버에서 Configuration Manager 설치의 로컬 경로를 지정합니다. `C:\Program Files\Configuration Manager`  
 
 5. 마법사를 완료합니다. 그러면 Configuration Manager는 수동 모드에서 사이트 서버를 지정된 서버에 설치합니다.
 

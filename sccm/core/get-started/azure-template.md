@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0c4c565d3c1754ce60ec8f9b7d5dcd2d487f8db1
-ms.sourcegitcommit: cdad3ca82018f1755e5186f8949a898cd201b565
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68411487"
 ---
 # <a name="create-a-configuration-manager-lab-in-azure"></a>Azure에서 Configuration Manager 랩 만들기

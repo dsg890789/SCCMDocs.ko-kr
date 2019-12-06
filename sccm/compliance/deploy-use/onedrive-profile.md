@@ -12,11 +12,11 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 22fcc8704651d75b4123e7942d14b861b3f6c099
-ms.sourcegitcommit: 6f4c2987debfba5d02ee67f6b461c1a988a3e201
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59802465"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62215195"
 ---
 # <a name="onedrive-for-business-profiles"></a>비즈니스용 OneDrive 프로필
 
@@ -74,7 +74,7 @@ Configuration Manager를 사용하여 알려진 Windows 폴더를 비즈니스�
    1. **컬렉션**: **찾아보기**를 클릭하여 프로필을 배포할 컬렉션을 선택합니다.  
    1. **경고 생성**:
 
-      -  **규정 준수가 낮은 경우**: 알림을 생성할 클라이언트 규정 준수의 최소 백분율입니다.
+      - **규정 준수가 낮은 경우**: 알림을 생성할 클라이언트 규정 준수의 최소 백분율입니다.
       -  **날짜 및 시간**: 프로파일 규정 준수에 따라 먼저 날짜 경고가 생성되기 시작합니다.
       - **System Center Operations Manager 경고 생성**: System Center Operations Manager로 규정 준수 경고를 보냅니다.
    1. **일정**:

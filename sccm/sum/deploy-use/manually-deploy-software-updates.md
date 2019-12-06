@@ -12,10 +12,10 @@ ms.technology: configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 098091c0ed9fa5948e7bc36cf601342bc847be75
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67159482"
 ---
 # <a name="manually-deploy-software-updates"></a>소프트웨어 업데이트 수동 배포  

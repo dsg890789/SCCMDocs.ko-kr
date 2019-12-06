@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 69df6eaa9d7ca164b5d855840eeca2f2c6f72ffc
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56123123"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62243425"
 ---
 # <a name="introduction-to-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 운영 체제 배포 소개
 
@@ -57,7 +57,7 @@ Configuration Manager를 사용하여 다양한 방법으로 운영 체제를 �
 
 - **PXE 시작 배포**: PXE 시작 배포를 사용하면 클라이언트 컴퓨터가 네트워크를 통해 배포를 요청합니다. 이 배포 방법에서는 운영 체제 이미지와 Windows PE 부팅 이미지가 PXE 부팅 요청을 수락하도록 구성된 배포 지점으로 전송됩니다. 자세한 내용은 [System Center Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-pxe-to-deploy-windows-over-the-network.md)를 참조하세요.  
 
-- **소프트웨어 센터에서 운영 체제를 사용할 수 있도록 설정**: 운영 체제를 배포하고 소프트웨어 센터에서 사용하도록 설정할 수 있습니다. Configuration Manager 클라이언트는 소프트웨어 센터에서 운영 체제 설치를 시작할 수 있습니다. 자세한 내용은 [기존 컴퓨터 바꾸기 및 설정 전송](../deploy-use/replace-an-existing-computer-and-transfer-settings.md)을 참조하세요.  
+- **소프트웨어 센터에서 운영 체제를 사용할 수 있도록 지정**: 운영 체제를 배포하고 소프트웨어 센터에서 사용하도록 지정할 수 있습니다. Configuration Manager 클라이언트는 소프트웨어 센터에서 운영 체제 설치를 시작할 수 있습니다. 자세한 내용은 [기존 컴퓨터 바꾸기 및 설정 전송](../deploy-use/replace-an-existing-computer-and-transfer-settings.md)을 참조하세요.  
 
 - **멀티캐스트 배포**: 멀티캐스트 배포는 각 클라이언트에 별도의 연결을 통해 데이터 복사본을 전송하는 대신 여러 클라이언트에 동시에 데이터를 전송하여 네트워크 대역폭을 절감합니다. 이 배포 방법에서는 운영 체제 이미지가 배포 지점으로 전송됩니다. 그런 다음 클라이언트 컴퓨터가 배포를 요청할 때 이미지를 배포합니다. 자세한 내용은 [멀티캐스트를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-multicast-to-deploy-windows-over-the-network.md)를 참조하세요.  
 
@@ -76,7 +76,7 @@ Configuration Manager를 사용하여 다양한 방법으로 운영 체제를 �
    Configuration Manager 환경에서 이후에 미디어에서 제공된 부팅 이미지를 사용하여 컴퓨터가 시작된 다음 사이트 관리 지점에 연결되어 사용 가능한 작업 순서를 통해 다운로드 프로세스를 완료하게 됩니다. 이 배포 방법에서는 부팅 이미지와 운영 체제 이미지가 이미 대상 컴퓨터에 있으므로 네트워크 트래픽을 줄일 수 있습니다. 사전 준비된 미디어에 포함할 애플리케이션, 패키지 및 드라이버 패키지를 지정할 수 있습니다. 자세한 내용은 [사전 준비된 미디어 만들기](../deploy-use/create-prestaged-media.md)를 참조하세요.  
 
 ##  <a name="BKMK_BootImages"></a> 부팅 이미지  
- Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용되는 WinPE(Windows PE) 이미지입니다. 부팅 이미지는 Windows 설치용 대상 컴퓨터를 준비하는 제한된 구성 요소 및 서비스가 포함된 최소 운영 체제인 WinPE에서 컴퓨터를 시작하는 데 사용됩니다. Configuration Manager에서 두 개의 부팅 이미지 제공: x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지의 두 가지 부팅 이미지를 제공합니다. 이러한 이미지는 기본 부팅 이미지로 간주됩니다. 만들어 Configuration Manager에 추가하는 부팅 이미지는 사용자 지정 이미지로 간주됩니다. Configuration Manager 업데이트 시 기본 부팅 이미지가 자동으로 바뀔 수 있습니다. 부팅 이미지에 대한 자세한 내용은 [부팅 이미지 관리](../get-started/manage-boot-images.md)를 참조하세요.  
+ Configuration Manager의 부팅 이미지는 운영 체제 배포 중에 사용되는 WinPE(Windows PE) 이미지입니다. 부팅 이미지는 Windows 설치용 대상 컴퓨터를 준비하는 제한된 구성 요소 및 서비스가 포함된 최소 운영 체제인 WinPE에서 컴퓨터를 시작하는 데 사용됩니다. Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 부팅 이미지를 제공합니다. 이러한 이미지는 기본 부팅 이미지로 간주됩니다. 만들어 Configuration Manager에 추가하는 부팅 이미지는 사용자 지정 이미지로 간주됩니다. Configuration Manager 업데이트 시 기본 부팅 이미지가 자동으로 바뀔 수 있습니다. 부팅 이미지에 대한 자세한 내용은 [부팅 이미지 관리](../get-started/manage-boot-images.md)를 참조하세요.  
 
 ##  <a name="BKMK_OSImages"></a> 운영 체제 이미지  
  Configuration Manager의 운영 체제 이미지는 WIM(Windows Imaging) 형식 파일으로 저장되며 컴퓨터에 운영 체제를 성공적으로 설치하고 구성하는 데 필요한 참조 파일 및 폴더의 압축된 컬렉션을 나타냅니다. 모든 운영 체제 배포 시나리오에서 운영 체제 이미지를 선택해야 합니다. 기본 운영 체제 이미지를 사용하거나 구성한 참조 컴퓨터에서 운영 체제 이미지를 작성할 수 있습니다. 자세한 내용은 [운영 체제 이미지 관리](../get-started/manage-operating-system-images.md)를 참조하세요.  
@@ -88,7 +88,7 @@ Configuration Manager를 사용하여 다양한 방법으로 운영 체제를 �
  여러 종류의 미디어를 만들어서 운영 체제를 배포하는 데 사용할 수 있습니다. 이러한 미디어로는 운영 체제 이미지를 캡처하는 데 사용되는 미디어 캡처와 운영 체제를 배포하는 데 사용되는 독립 실행형, 사전 준비 및 부팅 가능한 미디어 등이 있습니다. 미디어를 사용하면 Configuration Manager 사이트에 대한 네트워크 연결이 없거나 대역폭이 낮은 네트워크 연결을 사용하는 컴퓨터에 운영 체제를 배포할 수 있습니다. 미디어를 사용하는 방법에 대한 자세한 내용은 [작업 순서 미디어 만들기](../deploy-use/create-task-sequence-media.md)를 참조하세요.  
 
 ##  <a name="BKMK_DeviceDrivers"></a> 디바이스 드라이버  
- 디바이스 드라이버를 배포 중인 운영 체제 이미지에 포함하지 않고 대상 컴퓨터에 설치할 수 있습니다. Configuration Manager에서는 Configuration Manager로 가져오는 모든 디바이스 드라이버에 대한 참조를 포함하는 드라이버 카탈로그를 제공합니다. 드라이버 카탈로그는 **소프트웨어 라이브러리** 작업 영역에 있으며 **드라이버** 및 **드라이버 패키지**의 두 노드로 구성되어 있습니다. **드라이버** 노드에는 드라이버 카탈로그로 가져온 모든 드라이버가 나열됩니다. 이 노드를 사용하여, 가져온 각 드라이버에 대한 자세한 정보를 검색하고, 드라이버가 속한 드라이버 패키지 또는 부팅 이미지를 변경하고, 드라이버를 사용하거나 사용하지 않도록 설정하는 등 다양한 작업을 수행할 수 있습니다. 자세한 내용은 [드라이버 관리](../get-started/manage-drivers.md)를 참조하세요.  
+ 디바이스 드라이버를 배포 중인 운영 체제 이미지에 포함하지 않고 대상 컴퓨터에 설치할 수 있습니다. Configuration Manager에서는 Configuration Manager로 가져오는 모든 디바이스 드라이버에 대한 참조를 포함하는 드라이버 카탈로그를 제공합니다. 드라이버 카탈로그는 **소프트웨어 라이브러리** 작업 영역에 있으며 **드라이버** 와 **드라이버 패키지**의 두 노드로 구성되어 있습니다. **드라이버** 노드에는 드라이버 카탈로그로 가져온 모든 드라이버가 나열됩니다. 이 노드를 사용하여, 가져온 각 드라이버에 대한 자세한 정보를 검색하고, 드라이버가 속한 드라이버 패키지 또는 부팅 이미지를 변경하고, 드라이버를 사용하거나 사용하지 않도록 설정하는 등 다양한 작업을 수행할 수 있습니다. 자세한 내용은 [드라이버 관리](../get-started/manage-drivers.md)를 참조하세요.  
 
 ##  <a name="BKMK_OSDUserState"></a> 사용자 상태 저장 및 복원  
  운영 체제를 배포할 때 대상 컴퓨터에서 사용자 상태를 저장하고 운영 체제를 배포한 후에 사용자 상태를 복원할 수 있습니다. 이 프로세스는 일반적으로 Configuration Manager 클라이언트 컴퓨터에 운영 체제를 설치할 때 사용됩니다.  

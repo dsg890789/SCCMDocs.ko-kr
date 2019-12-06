@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1d98e89770eb59a83400896d4cd52b46e2470a36
-ms.sourcegitcommit: 90f51008deeabf2a434bd12f81bb25669045029c
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72684787"
 ---
 # <a name="example-scenario-to-deploy-and-monitor-monthly-software-updates"></a>월간 소프트웨어 업데이트를 배포하고 모니터링하는 예제 시나리오

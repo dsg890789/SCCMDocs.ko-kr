@@ -11,10 +11,10 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c28e0ab445199233842d4dfcbaed5041203174a
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67676777"
 ---
 # <a name="get-ready-for-system-center-configuration-manager"></a>System Center Configuration Manager 준비

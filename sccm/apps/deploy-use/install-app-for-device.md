@@ -12,10 +12,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.openlocfilehash: ba68dc78f289b779a157398e9487b637318788c6
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68537691"
 ---
 # <a name="install-applications-for-a-device"></a>디바이스용 애플리케이션 설치
@@ -26,7 +26,7 @@ ms.locfileid: "68537691"
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정합니다.  
+- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정합니다.  
 
 - 장치 컬렉션에 *사용할 수 있는* [응용 프로그램을 배포](/sccm/apps/deploy-use/deploy-applications) 합니다.  
 

@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 313f49804bb526d3a1e8d208b8efdc849d674e2e
-ms.sourcegitcommit: 20bbb870baf624c7809d3972f2d09a8d2df79cda
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67623374"
 ---
 # <a name="support-for-virtualization-environments-with-configuration-manager"></a>Configuration Manager를 사용하여 가상화 환경 지원

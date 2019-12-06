@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 475f80dc4d5841eb014b8f1ecb4d23ffdb699944
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68339189"
 ---
 # <a name="troubleshoot-package-conversion-manager"></a>Package Conversion Manager 문제 해결
@@ -28,7 +28,7 @@ ms.locfileid: "68339189"
 
 
 
-## <a name="sms-provider"></a>사이트 데이터베이스
+## <a name="sms-provider"></a>SMS 공급자
 
 Package Conversion Manager는 SMS 공급자를 사용합니다. 자세한 내용은 [SMS 공급자 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider)을 참조하세요.
 

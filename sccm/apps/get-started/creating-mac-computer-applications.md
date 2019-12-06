@@ -12,11 +12,11 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 41ec97899d8f959298b3f62ff4a86837b04af461
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56140918"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62198665"
 ---
 # <a name="create-mac-computer-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터 애플리케이션 만들기
 
@@ -52,9 +52,9 @@ Mac 컴퓨터용 애플리케이션을 만들고 배포할 때는 다음 사항�
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            **1단계**: Configuration Manager에서 사용할 수 있도록 Mac 애플리케이션 준비             | Mac 소프트웨어 패키지에서 Configuration Manager 애플리케이션을 만들려면 먼저 Mac 컴퓨터에서 **CMAppUtil** 도구를 사용하여 Mac 소프트웨어를 Configuration Manager<strong>.cmmac</strong> 파일로 변환해야 합니다. |
 | **2단계**: Mac 소프트웨어가 포함된 Configuration Manager 애플리케이션 만들기 |                                                                       **애플리케이션 만들기 마법사**를 사용하여 Mac 소프트웨어용 애플리케이션을 만듭니다.                                                                       |
-|             **3단계**: Mac 응용 프로그램에 대한 배포 유형 만들기              |                                                              이 단계는 애플리케이션에서 이 정보를 자동으로 가져오지 않은 경우에만 필요합니다.                                                               |
+|             **3단계**: Mac 애플리케이션에 대한 배포 유형 만들기              |                                                              이 단계는 애플리케이션에서 이 정보를 자동으로 가져오지 않은 경우에만 필요합니다.                                                               |
 |                        **4단계**: Mac 애플리케이션 배포                         |                                                                          **소프트웨어 배포 마법사**를 사용하여 Mac 컴퓨터에 애플리케이션을 배포합니다.                                                                          |
-|               **5단계**: Mac 응용 프로그램 배포 모니터링               |                                                                                 Mac 컴퓨터에 대한 애플리케이션 배포의 성공 여부를 모니터링합니다.                                                                                 |
+|               **5단계**: Mac 애플리케이션 배포 모니터링               |                                                                                 Mac 컴퓨터에 대한 애플리케이션 배포의 성공 여부를 모니터링합니다.                                                                                 |
 
 ## <a name="supplemental-procedures-to-create-and-deploy-applications-for-mac-computers"></a>Mac 컴퓨터용 애플리케이션을 만들어 배포하기 위한 보충 절차  
  Configuration Manager로 관리되는 Mac 컴퓨터용 애플리케이션을 만들어 배포하려면 다음 절차를 따르세요.  
@@ -134,7 +134,7 @@ Configuration Manager로 관리되는 Mac 컴퓨터용 애플리케이션을 만
 
 11. Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리케이션이 표시됩니다.  
 
-###  <a name="step-3-create-a-deployment-type-for-the-mac-application"></a>3단계: Mac 응용 프로그램에 대한 배포 유형 만들기  
+###  <a name="step-3-create-a-deployment-type-for-the-mac-application"></a>단계: Mac 애플리케이션에 대한 배포 유형 만들기  
  Configuration Manager로 관리되는 Mac 컴퓨터에 대한 배포 유형을 만들려면 다음 절차를 따르세요.  
 
 > [!NOTE]  
@@ -208,7 +208,7 @@ Configuration Manager로 관리되는 Mac 컴퓨터용 애플리케이션을 만
 
  자세한 내용은 [애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.  
 
-###  <a name="step-5-monitor-the-deployment-of-the-mac-application"></a>5단계: Mac 응용 프로그램 배포 모니터링  
+###  <a name="step-5-monitor-the-deployment-of-the-mac-application"></a>5단계: Mac 애플리케이션 배포 모니터링  
  Windows 컴퓨터에 대한 애플리케이션 배포를 모니터링하는 것과 동일한 프로세스를 사용하여 Mac 컴퓨터에 대한 애플리케이션 배포를 모니터링할 수 있습니다.  
 
  자세한 내용은 [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  

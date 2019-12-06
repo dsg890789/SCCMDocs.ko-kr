@@ -12,11 +12,11 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 22645b08e3cb5f8b1200ab5c4e77b418ea74c8d8
-ms.sourcegitcommit: 55f68b5adc9bb84e324ead9f0429e41108d5b515
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71010845"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74840594"
 ---
 # <a name="configure-boundary-groups-for-configuration-manager"></a>Configuration Manager의 경계 그룹 구성
 

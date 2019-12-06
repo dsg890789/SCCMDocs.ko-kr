@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c1b3e1506114cf931fb61d8c2c4c05eb8942ea49
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70888827"
 ---
 # <a name="reference-for-system-center-configuration-manager-setup"></a>System Center Configuration Manager 설치에 대한 참조
@@ -49,7 +49,7 @@ Microsoft 다운로드 센터에서 다음 운영 체제에 대한 Configuration
 
 -   [Microsoft System Center Configuration Manager - 추가 운영 체제용 클라이언트](https://www.microsoft.com/download/details.aspx?id=47719)를 참조하세요.  
 
-##  <a name="bkmk_usage"></a> 사용 데이터 수준 및 설정  
+##  <a name="bkmk_usage"></a> 사용량 현황 데이터 수준 및 설정  
 System Center Configuration Manager 사이트를 처음 설치하는 경우 Configuration Manager가 자동으로 설치되고 사이트 서버에 새 사이트 시스템 역할 **서비스 연결 지점**이 구성됩니다. 서비스 연결 지점의 기본 설정은 다음과 같습니다.  
 
 -   **온라인** 모드(오프라인 모드도 사용 가능)  

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8cba7fff1ec7144abfa5f92c25c73d36d5d7c749
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65082800"
 ---
 # <a name="create-prestaged-media"></a>사전 준비된 미디어 만들기

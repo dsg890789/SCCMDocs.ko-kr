@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6dd07526da0e4863362a75d2af81e22848cc207
-ms.sourcegitcommit: 2273f8fd61028e8d369d9ffa7ef31ee2efcb63bd
+ms.openlocfilehash: f8b21f1fcc702190322c97ed36333bd612ae3984
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74049481"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74734616"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>Desktop Analytics에 데이터 공유 사용
 
@@ -28,6 +28,9 @@ Desktop Analytics에 디바이스를 등록하려면 Microsoft에 진단 데이�
 ![Desktop Analytics의 진단 데이터 수준 다이어그램](media/diagnostic-data-levels.png)
 
 Desktop Analytics와 Configuration Manager를 통합하는 경우 이를 사용하여 디바이스에서 진단 데이터 수준을 관리할 수도 있습니다. 최상의 환경을 위해 Configuration Manager를 사용합니다.
+
+> [!Important]  
+> 대부분의 경우 Configuration Manager만 사용하여 이러한 설정을 구성합니다. 도메인 그룹 정책 개체에도 이러한 설정을 적용하지 마십시오. 자세한 내용은 [충돌 해결](/configmgr/desktop-analytics/enroll-devices#conflict-resolution)을 참조하세요.
 
 Desktop Analytics의 기본 기능은 **기본** [진단 데이터 수준](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels)에서 작동합니다. Configuration Manager에서 **강화(제한됨)** 수준을 구성하지 않으면 Desktop Analytics의 다음 기능이 제공되지 않습니다.
 

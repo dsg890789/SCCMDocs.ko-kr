@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e7a700482dad9f1ab2e41456596423fa23c15434
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131050"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62198752"
 ---
 # <a name="share-an-application-from-software-center"></a>소프트웨어 센터에서 애플리케이션 공유
 

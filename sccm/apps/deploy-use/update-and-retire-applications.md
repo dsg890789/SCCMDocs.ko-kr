@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 767d6b54d19158a33b582dc3ab605d780914b18e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132819"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62198312"
 ---
 # <a name="update-and-retire-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 업데이트 및 사용 중지
 

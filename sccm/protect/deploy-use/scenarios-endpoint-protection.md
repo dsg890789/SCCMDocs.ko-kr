@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: doubeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e1ab204a8b04b1e19b419a6bb3ca677fab660148
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66355090"
 ---
 # <a name="example-scenario-use-endpoint-protection-to-protect-computers-from-malware"></a>예제 시나리오: Endpoint Protection을 사용하여 맬웨어로부터 컴퓨터 보호

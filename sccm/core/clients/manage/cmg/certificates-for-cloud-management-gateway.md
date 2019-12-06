@@ -12,10 +12,10 @@ ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 05031bbec72f5540e7f44d7f232b9527dce7789a
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68535587"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
@@ -124,7 +124,7 @@ Configuration Manager에서 CMG 인스턴스를 만들면 인증서에 GraniteFa
 
 - CMG 웹 서버 인증서에 대해 cloudapp.net 공용 도메인을 사용하는 경우:  
 
-    - Azure 공용 클라우드에서 **cloudapp.net**으로 끝나는 이름을 사용합니다.  
+    - Azure 퍼블릭 클라우드에서 **cloudapp.net**으로 끝나는 이름을 사용합니다.  
 
     - Azure US Government 클라우드에 대해 **usgovcloudapp.net**으로 끝나는 이름을 사용합니다.  
 

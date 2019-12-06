@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4b37bcf8fc1079ff1eaaa3d70cb3c1c8297a2685
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68340373"
 ---
 # <a name="security-and-privacy-for-os-deployment-in-configuration-manager"></a>Configuration Manager에서 OS 배포의 보안 및 개인 정보 보호
@@ -259,6 +259,6 @@ OS 배포를 구성하려면 먼저 개인 정보 보호 요구 사항을 검토
 
 ## <a name="see-also"></a>참고 항목
 
-[진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)
+[진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)
 
 [Configuration Manager에 대한 보안 및 개인 정보](/sccm/core/plan-design/security/security-and-privacy)

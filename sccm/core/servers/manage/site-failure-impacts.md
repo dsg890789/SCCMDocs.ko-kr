@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: eebd1aaf72cbd7932a919c0a8ffdef6d6af8389f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56132019"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62217468"
 ---
 # <a name="site-failure-impacts-in-configuration-manager"></a>Configuration Manager에서 사이트 오류 영향
 

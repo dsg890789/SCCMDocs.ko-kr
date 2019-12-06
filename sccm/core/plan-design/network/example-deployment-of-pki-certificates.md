@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5561d0ee10eb425e582108f032d769195750a6d4
-ms.sourcegitcommit: f679fc1e46c191a1780ae961d155c927fc353dce
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70176748"
 ---
 # <a name="step-by-step-example-deployment-of-the-pki-certificates-for-configuration-manager-windows-server-2008-certification-authority"></a>Configuration Manager를 위한 PKI 인증서 배포의 단계별 예: Windows Server 2008 인증 기관

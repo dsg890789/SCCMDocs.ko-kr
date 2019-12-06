@@ -12,10 +12,10 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3c76e8e55f53303d2284eced04b9d5c4857be259
-ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67726120"
 ---
 # <a name="create-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 항목 만들기
@@ -34,7 +34,7 @@ System Center Configuration Manager의 준수 설정을 사용하면 Configurati
 
 ## <a name="configuration-items-for-devices-managed-with-intune"></a>Intune으로 관리되는 디바이스에 대한 구성 항목
 
-시작하기 전에 [규정 준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)을 읽어보세요. 준수 설정에 대한 일부 기본 지식을 익히려면 [준수 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 읽어 필수 전제 조건을 구현합니다. Intune을 사용 하 여 관리 되는 장치에 대 한 구성 항목에 대 한 정보를 검토 하려면 참조 [Intune을 사용 하 여 관리 되는 장치에 대 한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)합니다.
+시작하기 전에 [규정 준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)을 읽어보세요. 준수 설정에 대한 일부 기본 지식을 익히려면 [준수 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 읽어 필수 전제 조건을 구현합니다. Intune으로 관리 되는 장치의 구성 항목에 대 한 정보를 검토 하려면 [intune으로 관리 되는 장치의 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)을 참조 하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

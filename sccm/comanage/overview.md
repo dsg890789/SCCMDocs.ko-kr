@@ -12,10 +12,10 @@ ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3710cc7178020af1d03bfd02953e2a2f3ed64f26
-ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68743608"
 ---
 # <a name="what-is-co-management"></a>공동 관리란?

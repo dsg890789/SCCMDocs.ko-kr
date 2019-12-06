@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7662ccba7b6f672888ab8d98954fb8cb70631fe4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134625"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62237457"
 ---
 # <a name="content-library-cleanup-tool"></a>콘텐츠 라이브러리 정리 도구
 

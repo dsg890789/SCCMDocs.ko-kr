@@ -2,7 +2,7 @@
 title: 애플리케이션 관리 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 애플리케이션 배포에 필요한 종속성을 구현하고 구성합니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aed5c94057dbc564c5275660c488ac82339927f6
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 978e8e68a1f9ee64596ad4e40ca43281dce0dd3d
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68535288"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74659699"
 ---
 # <a name="plan-for-and-configure-application-management-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 관리 계획 및 구성
 
@@ -39,7 +39,7 @@ ms.locfileid: "68535288"
 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)을 참조하세요.  
 
 > [!Note]  
-> 응용 프로그램 카탈로그에는 IIS도 필요 합니다. 하지만, 현재 분기 버전 1806을 기준으로 Silverlight 사용자 환경은 지원되지 않습니다. 버전 1906부터 업데이트 된 클라이언트에서 사용자가 사용할 수 있는 응용 프로그램 배포에 대 한 관리 지점을 자동으로 사용 합니다. 또한 새 응용 프로그램 카탈로그 역할을 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 응용 프로그램 카탈로그에는 IIS도 필요 합니다. 하지만, 현재 분기 버전 1806을 기준으로 Silverlight 사용자 환경은 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
@@ -76,14 +76,14 @@ ms.locfileid: "68535288"
 
 클라이언트는 관리 지점에 연결 하 여 클라이언트 정책을 다운로드 하 고 콘텐츠를 찾습니다.
 
-버전 1906부터 업데이트 된 클라이언트에서 사용자가 사용할 수 있는 응용 프로그램 배포에 대 한 관리 지점을 자동으로 사용 합니다.
+버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다.
 
 1902 이전 버전에서는 클라이언트에서 관리 지점을 사용 하 여 응용 프로그램 카탈로그에 연결 합니다. 클라이언트는 관리 지점에 액세스할 수 없는 경우 애플리케이션 카탈로그를 사용할 수 없습니다.
 
 > [!Note]  
 > 버전 1806부터 소프트웨어 센터에 사용자가 사용할 수 있는 애플리케이션을 표시하는 데 더 이상 애플리케이션 카탈로그 역할이 필요하지 않습니다. 자세한 내용은 [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)을 참조하세요.<!--1358309-->  
 >
-> 버전 1906부터 새 응용 프로그램 카탈로그 역할을 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 버전 1906부터 새 응용 프로그램 카탈로그 역할을 설치할 수 없습니다. 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다.  
   
 
 ### <a name="distribution-point"></a>배포 지점
@@ -137,7 +137,7 @@ Configuration Manager에서 가상 애플리케이션을 만들려면 디바이�
 ### <a name="application-catalog"></a>애플리케이션 카탈로그
 
 > [!Important]  
-> 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [애플리케이션 카탈로그 제거](#bkmk_remove-appcat)를 참조하세요.  
+> 1910 버전의 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](#bkmk_remove-appcat)를 참조하세요.  
 
 #### <a name="application-catalog-web-service-point"></a>애플리케이션 카탈로그 웹 서비스 지점
 
@@ -166,13 +166,13 @@ Configuration Manager에서 가상 애플리케이션을 만들려면 디바이�
 
 <!-- SCCMDocs-pr issue 3051 -->
 
-애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요. 다음 목록에 변경 내용이 요약되어 있습니다.
+버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요. 다음 목록에 변경 내용이 요약되어 있습니다.
 
 - 버전 1806부터 애플리케이션 카탈로그 웹 사이트 지점에 대한 **Silverlight 사용자 환경**은 더 이상 지원되지 않습니다.<!--1358309--> 버전 1806부터 애플리케이션 카탈로그 웹 서비스 지점 역할은 더 이상 *필요하지 않지만*, *지원은 계속됩니다*.
 
-- 버전 1906부터 업데이트 된 클라이언트에서 사용자가 사용할 수 있는 응용 프로그램 배포에 대 한 관리 지점을 자동으로 사용 합니다. 또한 새 응용 프로그램 카탈로그 역할을 설치할 수 없습니다.
+- 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다.
 
-- 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+- 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다.  
 
 이러한 소프트웨어 센터 및 관리 지점의 반복적인 성능 향상은 인프라를 단순화하고 사용자가 사용할 수 있는 배포용 애플리케이션 카탈로그의 필요성을 제거하는 것입니다. 소프트웨어 센터에서 애플리케이션 카탈로그 없이 모든 앱 배포를 제공할 수 있습니다. 또한 TLS 1.2를 실행하고 애플리케이션 카탈로그로 HTTP를 사용하는 경우,사용자는 사용 가능한 사용자 대상 배포를 볼 수 없습니다. 이러한 향상 기능을 활용 하려면 1906 이상 버전으로 Configuration Manager를 업데이트 합니다.
 
@@ -194,7 +194,7 @@ Configuration Manager에서 가상 애플리케이션을 만들려면 디바이�
 ## <a name="bkmk_appcat"></a> 애플리케이션 카탈로그 설치 및 구성  
 
 > [!Important]  
-> 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [애플리케이션 카탈로그 제거](#bkmk_remove-appcat)를 참조하세요.  
+> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](#bkmk_remove-appcat)를 참조하세요.  
 
 ### <a name="step-1-web-server-certificate-for-https"></a>1단계: HTTPS에 대한 웹 서버 인증서
 

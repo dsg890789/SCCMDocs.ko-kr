@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7a16bc859006b0253459259d354a68e2ff1dec83
-ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70110147"
 ---
 # <a name="how-to-exclude-clients-from-upgrade-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 업그레이드에서 제외하는 방법

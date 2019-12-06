@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2e27ddccf966041fd8efe71668db29c799676467
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122137"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62238843"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1511-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1511에 대한 진단 사용량 현황 데이터 수집의 수준
 
@@ -29,7 +29,7 @@ System Center Configuration Manager 버전 1511에서는 다음과 같은 세 �
 >  Configuration Manager에서는 기본 또는 고급 수준에서 사이트 코드 또는 사이트 이름, IP 주소, 사용자 이름, 컴퓨터 이름, 실제 주소 또는 메일 주소를 수집하지 않습니다. 전체 수준에서 이 정보가 수집되는 경우가 있어도 이는 특별한 목적이 있는 것은 아닙니다(잠재적으로 로그 파일 또는 메모리 스냅샷과 같은 고급 진단 정보에 포함됨). Microsoft에서는 이러한 정보를 사용자 식별, 연락 또는 광고 목적으로 사용하지 않습니다.  
 
 ##  <a name="bkmk_change"></a> 수준을 변경하는 방법  
- **사이트** 개체 클래스에 대한 **수정** 권한이 포함된 역할 기반 관리 범위를 가진 관리자는 Configuration Manager 콘솔의 진단 및 사용 현황 데이터 설정에서 수집된 데이터의 수준을 변경할 수 있습니다.
+ **사이트** 개체 클래스에 대한 **수정** 권한이 포함된 역할 기반 관리 범위를 가진 관리자는 Configuration Manager 콘솔의 진단 및 사용량 현황 데이터 설정에서 수집된 데이터의 수준을 변경할 수 있습니다.
 
  이렇게 하려면 콘솔에서 Backstage 탭(드롭다운 화살표가 있는 왼쪽 위 탭)으로 이동하고 **사용량 현황 데이터**를 선택한 다음 사용할 데이터 수준을 선택합니다.  
 

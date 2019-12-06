@@ -13,10 +13,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a26c03d14b13143e7529c0b9124d2b1e6c196b8a
-ms.sourcegitcommit: de3c86077bbf91b793e94e1f60814df18da11bab
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67726171"
 ---
 # <a name="product-end-of-support"></a>지원 종료 제품

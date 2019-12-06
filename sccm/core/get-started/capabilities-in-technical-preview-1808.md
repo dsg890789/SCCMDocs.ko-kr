@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8c738b72c2cf97825a94d5e1db3b2641cc054eaa
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137333"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62228993"
 ---
 # <a name="capabilities-in-configuration-manager-technical-preview-version-1808"></a>Configuration Manager Technical Preview 버전 1808의 기능 
 

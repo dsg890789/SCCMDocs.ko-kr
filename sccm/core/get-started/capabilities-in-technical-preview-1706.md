@@ -13,10 +13,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3e7a13e53e4054593310378b5f667fd91c597448
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67677442"
 ---
 # <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
@@ -276,7 +276,7 @@ ms.locfileid: "67677442"
 
 2. **Azure 서비스** 페이지에서 **업그레이드 준비 커넥터**를 선택한 후 **다음**을 클릭합니다.
 
-3. **앱** 페이지에서 **Azure 환경**(기술 미리 보기는 공용 클라우드만 지원함)을 지정합니다. 그런 후 **가져오기**를 클릭하여 **앱 가져오기** 창을 엽니다.
+3. **앱** 페이지에서 **Azure 환경**(기술 미리 보기는 퍼블릭 클라우드만 지원함)을 지정합니다. 그런 후 **가져오기**를 클릭하여 **앱 가져오기** 창을 엽니다.
 
 4. **앱 가져오기** 창에서 Azure AD에 이미 존재하는 웹앱에 대한 세부 정보를 지정합니다.
     - Azure AD 테넌트 이름을 입력합니다. 그런 다음 테넌트 ID, 애플리케이션 이름, 클라이언트 ID, Azure Web App의 비밀 키, 앱 ID URI를 지정합니다.

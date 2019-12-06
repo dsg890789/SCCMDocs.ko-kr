@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 17e9ee2b969a9cc6e9258fa698be91fa15f4c2e3
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127102"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62252593"
 ---
 # <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대한 질문과 대답
 
@@ -34,7 +34,7 @@ ms.locfileid: "56127102"
 ###  <a name="bkmk_retention"></a> 데이터 보존 기간이란 무엇인가요?  
  진단 및 사용량 현황 데이터는 1년 동안 저장됩니다.  
 
-###  <a name="bkmk_update"></a> 제품을 설치하거나 업데이트할 때 진단 및 사용 현황 데이터가 전송되나요?  
+###  <a name="bkmk_update"></a> 제품을 설치하거나 업데이트할 때 진단 및 사용량 현황 데이터가 전송되나요?  
  아니요. 진단 및 사용량 현황 데이터는 사이트가 설치되고 작동하는 후에만 전송됩니다.  
 
 ###  <a name="bkmk_frequency"></a> 데이터는 얼마나 자주 전송되나요?  
@@ -55,4 +55,4 @@ ms.locfileid: "56127102"
 
 
 ## <a name="see-also"></a>참고 항목  
- [진단 및 사용 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)
+ [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)

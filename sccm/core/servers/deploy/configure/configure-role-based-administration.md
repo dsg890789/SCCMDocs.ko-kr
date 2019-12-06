@@ -11,11 +11,11 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d4d99f53f1883bf5a488e5e6a08276a4f96d8743
-ms.sourcegitcommit: 4d789c7e83ae13e22c1c9f6a33dce72d4ff5009d
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73842268"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74840618"
 ---
 # <a name="configure-role-based-administration-for-configuration-manager"></a>Configuration Manager에 대한 역할 기반 관리 구성
 

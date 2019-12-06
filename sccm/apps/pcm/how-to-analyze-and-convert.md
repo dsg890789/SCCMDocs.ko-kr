@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 50ec232c9f5b007ef7a139cbe7894c333b6eed63
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56137884"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62199259"
 ---
 # <a name="how-to-analyze-and-convert-packages-with-package-conversion-manager"></a>Package Conversion Manager를 사용하여 패키지를 분석하고 변환하는 방법
 
@@ -50,7 +50,7 @@ ms.locfileid: "56137884"
 
     - **수동**: [패키지를 수정하고 변환하는 방법](#bkmk_fix)
 
-    - **해당 없음**: 이 패키지에는 필요한 콘텐츠 또는 프로그램이 누락되어 있습니다. 누락된 콘텐츠나 프로그램을 추가하고 분석을 다시 시도합니다. 또는 변환되지 않은 상태 그대로 두고 계속 패키지로 배포합니다.  
+    - **적용할 수 없음**: 이 패키지에는 필요한 콘텐츠 또는 프로그램이 누락되어 있습니다. 누락된 콘텐츠나 프로그램을 추가하고 분석을 다시 시도합니다. 또는 변환되지 않은 상태 그대로 두고 계속 패키지로 배포합니다.  
 
 
 

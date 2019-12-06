@@ -12,10 +12,10 @@ ms.technology: configmgr-client
 ms.assetid: 7304730b-b517-4c76-aadd-4cbd157dc971
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a26ed933e94b3d5e4d66ce8006bcf3c4c2936dd8
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68535576"
 ---
 # <a name="security-and-privacy-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 보안 및 개인 정보

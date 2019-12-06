@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5f665ea8315266e89e5ed94918823fc1b97becea
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136435"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62241710"
 ---
 # <a name="security-and-privacy-for-content-management-in-configuration-manager"></a>Configuration Manager의 콘텐츠 관리를 위한 보안 및 개인 정보
 

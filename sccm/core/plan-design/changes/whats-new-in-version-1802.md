@@ -11,12 +11,13 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64be14a4029258489a6dfda5e344efd803c85adb
-ms.sourcegitcommit: 9c76ed76ead1125b712cef574d832803dbf2c5a9
+ROBOTS: NOINDEX
+ms.openlocfilehash: 98a3443963ce14d2b0a4593bda541b1971a06bc1
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72162998"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660685"
 ---
 # <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
 

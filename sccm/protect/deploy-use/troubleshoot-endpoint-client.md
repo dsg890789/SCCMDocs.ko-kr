@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2d55335eb8e55381cfa5481edf027a54a18f6bda
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71826164"
 ---
 # <a name="troubleshoot-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
@@ -58,7 +58,7 @@ Windows Defender 또는 Endpoint Protection은 자동으로 Microsoft 업데이�
     > [!NOTE]  
     > 이러한 인터넷 설정을 다시 설정 하는 경우 브라우저 임시 파일, 쿠키, 검색 기록 및 온라인 암호가 삭제 될 수 있습니다. 즐겨찾기를 삭제 하지 않습니다.  
 
-2. **시작** 메뉴로 이동 하 여를 엽니다 `inetcpl.cpl`.  
+2. **시작** 메뉴로 이동 하 여 `inetcpl.cpl`을 엽니다.  
 
 3. **고급** 탭으로 전환 합니다.  
 

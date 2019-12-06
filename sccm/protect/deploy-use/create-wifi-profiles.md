@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0e6a5d3b83bbf98bab8f36616622d376caa2266
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65500596"
 ---
 # <a name="create-wi-fi-profiles"></a>Wi-Fi 프로필 만들기
@@ -70,7 +70,7 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 5. **Wi-Fi 프로필** 페이지에서 디바이스에서 네트워크 이름으로 표시할 이름을 입력합니다.  
 
    > [!IMPORTANT]  
-   >  Configuration Manager에서는 네트워크 이름에 아포스트로피(**â€˜**) 또는 쉼표(**,**) 문자를 사용할 수 없습니다.  
+   >  Configuration Manager에서는 네트워크 이름에 아포스트로피(**â€˜**) 또는 쉼표( **,** ) 문자를 사용할 수 없습니다.  
 
 6. 대/소문자를 구분하는 **SSID**를 지정합니다.
 7. 기타 적절한 연결 옵션을 선택합니다.   예를 들어 SSID가 숨겨질 가능성이 있는 경우 **네트워크에서 이름(SSID)을 브로드캐스팅하지 않는 경우 연결**을 선택합니다.  

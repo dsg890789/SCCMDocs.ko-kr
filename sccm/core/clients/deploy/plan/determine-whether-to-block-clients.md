@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a90e100c242514eb2526e16bb68e379a2326572f
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56136918"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62201025"
 ---
 # <a name="determine-whether-to-block-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트를 차단할지 여부 결정
 

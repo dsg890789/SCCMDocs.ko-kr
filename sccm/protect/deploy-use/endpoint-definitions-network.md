@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: da691b4b9f9fdb34bd0bbba0a9090be9e78aae39
-ms.sourcegitcommit: 5d539522103d0f019797d58aee8c32d3966cd1fa
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74161672"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-a-network-share"></a>네트워크 공유에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정

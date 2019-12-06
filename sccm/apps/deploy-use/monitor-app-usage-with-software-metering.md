@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 652c10cfcb4d53b32409dd5af83e7d55f2676463
-ms.sourcegitcommit: f531d0a622f220739710b2fe6644ea58d024064a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65933473"
 ---
 # <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 계량
@@ -167,7 +167,7 @@ ms.locfileid: "65933473"
 
 - 소프트웨어 계량에 대한 필수 구성 요소를 검사하고 보고 서비스 지점이 설치되어 작동하는지 확인합니다.
 - 소프트웨어 계량에 대한 기본 클라이언트 설정을 구성합니다.<br>관리자는 소프트웨어 계량을 사용하도록 설정하고 기본 데이터 수집 일정인 7일마다 한 번 사용합니다.<br>관리자는 소프트웨어 인벤토리 클라이언트 설정인 **이러한 파일 형식 인벤토리**를 구성하여 소프트웨어 인벤토리를 확장명이 .exe인 인벤토리 파일로 구성합니다.<br>관리자는 레거시 애플리케이션을 모니터링하기 위해 **woodgrove.exe**라는 새 소프트웨어 계량 규칙을 추가합니다.
-- 7일 후에 클라이언트 컴퓨터에서 **woodgrove.exe** 실행 파일에 대한 사용량 현황 데이터 보고를 시작합니다.
+- 7일 후에 클라이언트 컴퓨터에서 **woodgrove.exe** 실행 파일에 대한 사용 데이터 보고를 시작합니다.
 - 관리자는 Configuration Manager 보고서를 사용해 **계량된 모든 소프트웨어 프로그램을** 설치하여 **woodgrove.exe** 애플리케이션이 로드되어 있는 컴퓨터를 확인합니다.
 - 6개월 후 관리자는 소프트웨어 계량 규칙과 6개월 전의 날짜를 지정하여 **계량된 프로그램이 설치되어 있지만 지정된 날짜 이후 프로그램을 실행하지 않은 컴퓨터**보고서를 실행합니다. 이 보고서는 지난 6개월 동안 프로그램을 실행하지 않은 컴퓨터 120대를 식별합니다.
 - 관리자는 몇 가지 추가 검사를 통해 식별된 컴퓨터에서 레거시 애플리케이션이 필요하지 않은 것을 확인합니다. 관리자는 해당 컴퓨터에서 레거시 애플리케이션과 Word 2003 복사본을 제거합니다.<br>관리자는 **계량된 특정 소프트웨어 프로그램을 실행하는 사용자** 보고서를 실행하여 레거시 애플리케이션을 계속 사용하는 사용자 목록을 지원 센터에 제공합니다.

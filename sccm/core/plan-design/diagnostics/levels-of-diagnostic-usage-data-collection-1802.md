@@ -11,12 +11,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6004e75c6efee7c2c55a40696407131dd7f02af
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ROBOTS: NOINDEX
+ms.openlocfilehash: 730c44ff71816b8fe99ccfac61d2efafad2c1650
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68338745"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660464"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1802에 대한 진단 및 사용량 데이터 수집 수준
 
@@ -33,7 +34,7 @@ Configuration Manager 버전 1802는 다음과 같은 세 가지 수준의 진�
 
 
 ##  <a name="bkmk_change"></a> 수준을 변경하는 방법
- **사이트** 개체 클래스에 대한 **수정** 권한이 포함된 역할 기반 관리 범위를 가진 관리자는 Configuration Manager 콘솔의 진단 및 사용 현황 데이터 설정에서 수집된 데이터의 수준을 변경할 수 있습니다.
+ **사이트** 개체 클래스에 대한 **수정** 권한이 포함된 역할 기반 관리 범위를 가진 관리자는 Configuration Manager 콘솔의 진단 및 사용량 현황 데이터 설정에서 수집된 데이터의 수준을 변경할 수 있습니다.
 
 **관리** > **개요** > **사이트 구성** > **사이트**로 이동하여 콘솔 내에서 데이터 수집 수준을 변경합니다. **계층 구조 설정**을 열고 사용할 데이터 수준을 선택합니다.  
 

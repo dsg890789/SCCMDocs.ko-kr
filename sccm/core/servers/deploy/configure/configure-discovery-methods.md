@@ -12,11 +12,11 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4b23c5607cbbf008d7c9e18a2a0ee21146240bae
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712633"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74840635"
 ---
 # <a name="configure-discovery-methods-for-configuration-manager"></a>Configuration Manager 검색 방법 구성
 

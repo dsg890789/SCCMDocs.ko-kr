@@ -12,11 +12,11 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e6ae7f6b14da4f5959e336e08bec0e71896425ff
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56129921"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62206000"
 ---
 # <a name="create-user-data-and-profiles-configuration-items-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용자 데이터 및 프로필 구성 항목 만들기
 
@@ -58,13 +58,13 @@ System Center Configuration Manager의 사용자 데이터 및 프로필 구성 
 
    -   **이름:** 구성 항목에 고유한 이름을 입력합니다. 최대 256자까지 사용할 수 있습니다.  
 
-   -   **설명:** Configuration Manager 콘솔에서 식별하는데 도움이 되는 기타 관련 정보 및 구성 항목의 개요에 대해 설명합니다. 최대 256자까지 사용할 수 있습니다.  
+   -   **설명:** Configuration Manager 콘솔에서이 식별 하는데 도움이 되는 기타 관련 정보 및 구성 항목의 개요를 제공 하는 설명을 제공 합니다. 최대 256자까지 사용할 수 있습니다.  
 
    -   **폴더 리디렉션:** 이 구성 항목에 대한 폴더 리디렉션의 설정을 구성하려면 이 상자를 선택합니다.  
 
    -   **오프라인 파일:** 이 구성 항목에 대한 오프라인 파일의 설정을 구성하려면 이 상자를 선택합니다.  
 
-   -   **로밍 사용자 프로필:** 이 구성 항목에 대한 오프라인 파일의 설정을 구성하려면 이 상자를 선택합니다.  
+   -   **로밍 사용자 프로필:** 이 구성 항목에 대한 로밍 사용자 프로필의 설정을 구성하려면 이 상자를 선택합니다.  
 
 4. **사용자 데이터 및 프로필 구성 항목 만들기 마법사** 의 **폴더 리디렉션**페이지에서 이 구성 항목을 수신하는 사용자의 클라이언트 컴퓨터가 폴더 리디렉션을 관리하도록 하는 방법을 지정합니다. 사용자가 로그온하는 디바이스에 대해 설정을 구성하거나 사용자의 기본 디바이스에 대해서만 설정을 구성할 수 있습니다. 폴더 리디렉션에 대한 자세한 내용은 Windows Server 설명서를 참조하세요.  
 

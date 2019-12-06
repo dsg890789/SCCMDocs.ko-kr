@@ -12,10 +12,10 @@ ms.technology: configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68e4ed043e4a3c0efb77ef69d8bf294d63a0b7fa
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65500063"
 ---
 # <a name="service-a-server-group"></a>서버 그룹 제공

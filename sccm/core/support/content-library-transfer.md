@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ee63a4eb7b3f0d575586b2e672f9440060c7f6f6
-ms.sourcegitcommit: 80cbc122937e1add82310b956f7b24296b9c8081
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65495807"
 ---
 # <a name="content-library-transfer-tool"></a>콘텐츠 라이브러리 전송 도구
@@ -30,7 +30,7 @@ ms.locfileid: "65495807"
 
 
 
-## <a name="usage"></a>용도 
+## <a name="usage"></a>사용 
 
 배포 지점에 대한 관리 권한이 있는 사용자로 **ContentLibraryTransfer.exe**를 실행합니다. 
 

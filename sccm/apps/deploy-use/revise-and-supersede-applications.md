@@ -12,11 +12,11 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1330eafb50d7a855d60b86e427f9cf4f3cb8790e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126105"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62198376"
 ---
 # <a name="revise-and-supersede-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 수정 및 교체
 
@@ -99,7 +99,7 @@ ms.locfileid: "56126105"
 
 3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택하여 애플리케이션 이름 **속성** 대화 상자를 엽니다.  
 
-4.  *<응용 프로그램 이름\>* **속성** 대화 상자의 **교체** 탭에서 **추가**를 선택합니다.  
+4.  *&lt;애플리케이션 이름\>* **속성** 대화 상자의 **교체** 탭에서 **추가**를 선택합니다.  
 
 5.  **교체 관계 지정** 대화 상자에서 **찾아보기**를 클릭합니다.  
 
@@ -112,7 +112,7 @@ ms.locfileid: "56126105"
 
 8.  **확인**을 선택하여 **교체 관계 지정** 대화 상자를 닫습니다.  
 
-9. **확인**을 선택하여 *<응용 프로그램 이름\>* **속성** 대화 상자를 닫습니다.  
+9. **확인**을 선택하여 *&lt;애플리케이션 이름\>* **속성** 대화 상자를 닫습니다.  
 
 ### <a name="to-display-applications-that-supersede-the-current-application"></a>현재 애플리케이션을 교체하는 애플리케이션을 표시하려면  
 
@@ -120,7 +120,7 @@ ms.locfileid: "56126105"
 
 2.  **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택한 다음 원하는 애플리케이션을 선택합니다.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택하여 *<응용 프로그램 이름\>* **속성** 대화 상자를 엽니다.  
+3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택하여 *&lt;애플리케이션 이름\>* **속성** 대화 상자를 엽니다.  
 
 4.  *&lt;애플리케이션 이름\>* **속성** 대화 상자의 **참조** 탭에 있는 **관계 유형** 드롭다운 목록에서 **이 애플리케이션을 교체하는 애플리케이션**을 선택합니다.  
 

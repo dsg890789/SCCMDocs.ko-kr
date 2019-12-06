@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0a650fd5517fb86108d230cc997c8586520826e7
-ms.sourcegitcommit: 16dd488c51b5cf01a7dd4204f7d40ee9ae0abe85
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68743589"
 ---
 # <a name="approve-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 승인
@@ -111,7 +111,7 @@ Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영�
 
 이 필수 구성 요소에 따라 받는 사람은 요청 알림이 담긴 이메일을 받게 됩니다. 내부 네트워크에 있는 경우 이메일에서 요청을 승인하거나 거부할 수도 있습니다.
 
-- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 응용 프로그램 요청 승인**을 사용하도록 설정합니다.  
+- [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정합니다.  
 
 - [경고에 대한 메일 알림](/sccm/core/servers/manage/use-alerts-and-the-status-system#to-configure-email-notification-for-alerts)을 구성합니다.  
 

@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 28710b925444d681a161eff184b845a1cdd430b1
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56838755"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62194278"
 ---
 # <a name="windows-autopilot-with-co-management"></a>공동 관리를 사용하는 Windows Autopilot
 

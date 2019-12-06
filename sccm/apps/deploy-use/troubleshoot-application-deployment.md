@@ -1,5 +1,5 @@
 ---
-title: 앱 배포 문제 해결
+title: 앱 배포에 대 한 문제 해결 팁
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 애플리케이션 배포 문제 해결을 위한 팁
 ms.date: 05/29/2019
@@ -11,14 +11,14 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75dcf2d4ae69c2181fecde0c04359faa46753e88
-ms.sourcegitcommit: 3f43fa8462bf39b2c18b90a11a384d199c2822d8
+ms.openlocfilehash: 1eb1c19f7001ac144551e8f63b8273fe1db1df8c
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66411022"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74814191"
 ---
-# <a name="troubleshoot-application-deployments"></a>애플리케이션 배포 문제 해결
+# <a name="troubleshooting-tips-for-application-deployments"></a>응용 프로그램 배포에 대 한 문제 해결 팁
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
@@ -28,7 +28,7 @@ ms.locfileid: "66411022"
 
 - 애플리케이션 배포 규정 준수가 0%에 고정됨
 
-이러한 문제 중 하나가 발생하는 경우 이 문서에서는 문제를 해결하는 데 사용할 수 있는 몇 가지 단계를 제공합니다.
+이러한 문제 중 하나가 발생하는 경우 이 문서에서는 문제를 해결하는 데 사용할 수 있는 몇 가지 단계를 제공합니다. 심층 문제 해결에 대 한 자세한 내용은 [응용 프로그램 배포 기술 참조 문제 해결](/sccm/apps/understand/app-deployment-technical-reference)을 참조 하세요.
 
 
 ## <a name="download-failures"></a>다운로드 실패
@@ -72,3 +72,4 @@ ms.locfileid: "66411022"
 - [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
 - [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)
 - [애플리케이션에 대한 관리 작업](/sccm/apps/deploy-use/management-tasks-applications)
+- [응용 프로그램 배포 기술 참조 문제 해결](/sccm/apps/understand/app-deployment-technical-reference)

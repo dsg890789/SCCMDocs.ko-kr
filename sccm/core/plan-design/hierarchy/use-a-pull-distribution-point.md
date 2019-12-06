@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e658874c9ff5c7bfbf0305b937779d101fefeeb2
-ms.sourcegitcommit: 262b0796cf270684ad09c2b296d490f076dfa235
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72448003"
 ---
 # <a name="use-a-pull-distribution-point-with-configuration-manager"></a>Configuration Manager에서 풀(pull) 배포 지점 사용

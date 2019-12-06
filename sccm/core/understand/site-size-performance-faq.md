@@ -8,10 +8,10 @@ ms.prod: configuration-manager
 ms.topic: conceptual
 ms.date: 04/19/2019
 ms.openlocfilehash: 93ddf18f78667058b137368a4948ac3d4dc38288
-ms.sourcegitcommit: 9e80902f586342e5eea48febb6da7594f2cc9c34
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73912980"
 ---
 # <a name="system-center-configuration-manager-site-sizing-and-performance-faq"></a>System Center Configuration Manager 사이트 크기 조정 및 성능 FAQ

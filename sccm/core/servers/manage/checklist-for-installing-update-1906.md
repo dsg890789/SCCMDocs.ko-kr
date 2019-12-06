@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4b2c712a3d5b0948f5069fb84d48e5cbf01d27b1
-ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70110028"
 ---
 # <a name="checklist-for-installing-update-1906-for-configuration-manager"></a>Configuration Manager용 업데이트 1906을 설치하기 위한 검사 목록

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1ecb1657903fd3d1dfe43f2ad46258b4643c2f55
-ms.sourcegitcommit: ef7800a294e5db5d751921c34f60296c1642fc1f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68712597"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>Desktop Analytics 문제 해결
@@ -120,7 +120,7 @@ Azure 서비스 구성 마법사에서 Configuration Manager 용 Azure AD 앱을
 
 #### <a name="import-app-in-configuration-manager"></a>Configuration Manager에서 앱 가져오기
 
-1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. 리본에서 **Azure Services 구성**을 선택합니다.  
+1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. 리본 메뉴에서 **Azure 서비스 구성**을 선택합니다.  
 
 2. Azure Services 마법사의 **Azure Services** 페이지에서 다음 설정을 구성합니다.  
 

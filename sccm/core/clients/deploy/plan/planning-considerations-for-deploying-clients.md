@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 63a3025411f8c355b4070937f4f29814346f16f4
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156664"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62213349"
 ---
 # <a name="planning-considerations-for-deploying-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 배포에 대한 계획 고려 사항
 

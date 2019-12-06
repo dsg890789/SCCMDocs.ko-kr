@@ -11,10 +11,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81130d513ff4f0a412c1774e50d3ac7058504c99
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70377875"
 ---
 # <a name="use-the-setup-wizard-to-install-configuration-manager-sites"></a>설치 마법사를 사용하여 Configuration Manager 사이트 설치
@@ -206,7 +206,7 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
     > [!NOTE]  
     > 사이트 시스템 역할을 설치하는 경우 설치 프로그램은 **사이트 시스템 설치 계정**을 사용합니다. 기본적으로는 기본 사이트의 컴퓨터 계정이 사용됩니다. 이 계정은 사이트 시스템 역할을 설치할 원격 컴퓨터의 로컬 관리자여야 합니다. 이 계정에 필요한 권한이 없는 경우 사이트 시스템 역할 선택을 취소하고 사이트 시스템 설치 계정으로 사용할 추가 계정을 구성한 후 Configuration Manager 콘솔 내에서 나중에 해당 사이트 시스템 역할을 설치합니다. 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#site-system-installation-account)을 참조하세요.  
 
-17. **사용 현황 데이터** 페이지에서 Microsoft가 수집하는 데이터에 대한 정보를 검토하고 **다음**을 선택합니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
+17. **사용량 현황 데이터** 페이지에서 Microsoft가 수집하는 데이터에 대한 정보를 검토하고 **다음**을 선택합니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
 
 18. **서비스 연결 지점 설치** 페이지는 다음과 같은 시나리오 중에만 제공됩니다.  
 

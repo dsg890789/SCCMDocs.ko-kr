@@ -12,10 +12,10 @@ ms.technology: configmgr-client
 ms.assetid: 101de2ba-9b4d-4890-b087-5d518a4aa624
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 263901c8fa022fcaa8bfa37c579fcdb174712597
-ms.sourcegitcommit: b59e57ab4cf9f03e8beeb70588f3b9f1a6021e36
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68662587"
 ---
 # <a name="how-to-prepare-internet-based-devices-for-co-management"></a>공동 관리를 위해 인터넷 기반 디바이스를 준비하는 방법

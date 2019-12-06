@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9ab1b811ad67ee1e3d355af11014fc6013c61a5
-ms.sourcegitcommit: 5d539522103d0f019797d58aee8c32d3966cd1fa
+ms.openlocfilehash: 6a83dde537a847f562422a1a972ebc65244435b9
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161641"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660787"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 프라이빗 미리 보기 지침
 
@@ -202,11 +202,12 @@ Microsoft에서 릴리스된 모든 Windows 10 업데이트에 대 한 자세한
 미리 보기의 경우 일반적인 실제 시나리오를 테스트 합니다. UUP은 다음을 비롯 한 모든 콘텐츠 채널을 지원 합니다.
 
 - Windows 배달 최적화(DO)
+  - DO를 사용 하는 경우 올바르게 구성 되었는지 확인 합니다. 자세한 내용은 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)를 참조하세요.
 - Configuration Manager 피어 캐시
 - Windows BranchCache
 - **배포 패키지 없음** 옵션을 사용 하 고 클라이언트는 Microsoft 업데이트에서 바로 다운로드 합니다. 배달 최적화와 함께이 옵션을 사용 합니다.
 - 타사 대체 콘텐츠 공급자
 
-자세한 내용은 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)를 참조하세요.
+콘텐츠 채널에 대 한 자세한 내용은 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)를 참조 하세요.
 
 <!-- TODO: Addlink to WSUS Perf documentation-->

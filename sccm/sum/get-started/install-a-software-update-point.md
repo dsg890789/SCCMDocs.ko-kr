@@ -12,10 +12,10 @@ ms.technology: configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 618dd44a32e624a67f03bb18ea01169dd80daeb7
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67194676"
 ---
 # <a name="install-and-configure-a-software-update-point"></a>소프트웨어 업데이트 지점 설치 및 구성  
@@ -115,7 +115,7 @@ ms.locfileid: "67194676"
 >  소프트웨어 업데이트 동기화 일정을 사용하도록 설정하지 않는 경우 소프트웨어 라이브러리 작업 영역의 **모든 소프트웨어 업데이트** 또는 **소프트웨어 업데이트 그룹** 노드에서 수동으로 소프트웨어 업데이트를 동기화할 수 있습니다. 자세한 내용은 [소프트웨어 업데이트 동기화](synchronize-software-updates.md)를 참조하세요.  
 
 ## <a name="supersedence-rules"></a>교체 규칙  
- 교체 설정은 마법사의 **교체 규칙** 페이지 또는 소프트웨어 업데이트 지점 구성 요소 속성의 **교체 규칙** 탭에서 구성합니다. 교체 규칙은 최상위 사이트에서만 구성할 수 있습니다. Configuration Manager 버전 1810부터의 대체 규칙 동작을 지정할 수 있습니다 **기능 업데이트** 별도로 **비 기능 업데이트**합니다. <!--3098809, 2977644-->
+ 교체 설정은 마법사의 **교체 규칙** 페이지 또는 소프트웨어 업데이트 지점 구성 요소 속성의 **교체 규칙** 탭에서 구성합니다. 교체 규칙은 최상위 사이트에서만 구성할 수 있습니다. Configuration Manager 버전 1810부터 기능 **업데이트** 에 대 한 대체 규칙 동작을 **기능 이외의 업데이트**와 별도로 지정할 수 있습니다. <!--3098809, 2977644-->
 
  이 페이지에서, 교체된 소프트웨어 업데이트의 즉시 만료를 지정할 수 있습니다. 이렇게 하면 교체된 소프트웨어 업데이트가 새 배포에 포함되지 않으며 교체된 소프트웨어 업데이트에 하나 이상의 만료된 소프트웨어 업데이트가 포함되어 있음을 나타내도록 기존 배포에 플래그를 설정할 수 있습니다. 또는 교체된 소프트웨어 업데이트가 만료되기 전까지의 기간을 지정할 수 있습니다. 이 기간 동안에는 해당 업데이트를 계속 배포할 수 있습니다. 자세한 내용은 [교체 규칙](../plan-design/plan-for-software-updates.md#BKMK_SupersedenceRules)을 참조하세요.  
 

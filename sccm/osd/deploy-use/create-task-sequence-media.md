@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 101cee8ed63cacfc41481b2df69b42e1760d8837
-ms.sourcegitcommit: 2db6863c6740380478a4a8beb74f03b8178280ba
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65082811"
 ---
 # <a name="create-task-sequence-media"></a>작업 순서 미디어 만들기
