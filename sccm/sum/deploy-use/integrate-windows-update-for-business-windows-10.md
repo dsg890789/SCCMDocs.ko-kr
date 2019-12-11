@@ -12,10 +12,10 @@ ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 504ace282988ef8b52863184f0685ea5a6958a27
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70892287"
 ---
 # <a name="integrate-with-windows-update-for-business"></a>비즈니스용 Windows 업데이트와 통합

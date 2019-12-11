@@ -12,10 +12,10 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c754486bd1026ccea3dc3b85f8412420c3c66a40
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68535391"
 ---
 # <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 애플리케이션 만들기 및 배포
@@ -205,7 +205,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
 Configuration Manager를 통해 관리되며 Windows 10을 실행하는 PC의 사용자에게는 Contoso 애플리케이션을 설치해야 한다는 메시지가 표시됩니다. 사용자가 설치에 동의하면 애플리케이션이 설치됩니다.  
 
-Configuration Manager 버전 1906부터 **새 소프트웨어를 사용할 수** 있습니다. 알림은 지정 된 응용 프로그램 및 수정 버전의 사용자에 대해 한 번만 표시 됩니다. 이후에는 사용자가 로그인할 때 알림이 표시되지 않습니다. 응용 프로그램을 변경 하거나 다시 배포 하는 경우 응용 프로그램에 대 한 다른 알림만 표시 됩니다.
+Configuration Manager 버전 1906부터 **새 소프트웨어를 사용할 수** 있습니다. 알림은 지정 된 응용 프로그램 및 수정 버전의 사용자에 대해 한 번만 표시 됩니다. 이후에는 사용자가 로그인할 때 알림이 표시되지 않습니다. 애플리케이션이 변경되거나 다시 배포된 경우 애플리케이션에 대한 다른 알림만 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

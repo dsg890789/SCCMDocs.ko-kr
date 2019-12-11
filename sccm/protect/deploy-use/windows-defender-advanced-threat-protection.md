@@ -12,10 +12,10 @@ ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 72ad06228a7ae0dd0fa375ff1152771790b10bbe
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70379979"
 ---
 # <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
@@ -47,7 +47,7 @@ Microsoft Defender ATP는 [Windows Defender Security Center](https://securitycen
 
 ## <a name="onboard-devices-for-microsoft-defender-atp"></a>Microsoft Defender ATP 용 장치 등록  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Microsoft Defender ATP 정책 마법사가 열립니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Microsoft Defender ATP 정책 마법사가 표시됩니다.  
 
 2. Windows Defender ATP 정책의 **이름** 및 **설명**을 입력하고 **온보딩**을 선택합니다. **다음**을 클릭합니다.  
 
@@ -94,7 +94,7 @@ Microsoft Defender ATP는 [Windows Defender Security Center](https://securitycen
 
 4.  압축된 보관 파일(.zip)을 다운로드하고 압축을 풉니다. 오프보딩 파일은 30일 동안 유효합니다.
 
-5.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Microsoft Defender ATP 정책 마법사가 열립니다.  
+5.  Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Microsoft Defender ATP 정책 마법사가 표시됩니다.  
 
 6.  Microsoft Defender ATP 정책의 **이름** 및 **설명**을 입력하고 **오프보딩**을 선택합니다. **다음**을 클릭합니다.  
 

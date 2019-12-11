@@ -12,10 +12,10 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ba927286e79d88a6e034fd7eb14f5190cb1f34d6
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68537681"
 ---
 # <a name="package-definition-files"></a>패키지 정의 파일
@@ -84,7 +84,7 @@ ms.locfileid: "68537681"
 
 - **AfterRunning**: 프로그램이 성공적으로 완료된 후 발생하는 특별한 동작을 지정합니다. 사용 가능한 옵션은 **SMSRestart**, **ProgramRestart**, 또는 **SMSLogoff**. 이 항목을 포함 하지 않으면 프로그램에서 특수 한 작업을 실행 하지 않습니다.  
 
-- **EstimatedDiskSpace**: 컴퓨터에서 소프트웨어 프로그램을 실행하는 데 필요한 디스크 공간의 크기를 지정합니다. 기본값은 **알 수**없습니다. 0 보다 크거나 같은 정수 값을 설정할 수 있습니다. 값을 지정 하는 경우 값의 단위도 포함 합니다.  
+- **EstimatedDiskSpace**: 컴퓨터에서 소프트웨어 프로그램을 실행하는 데 필요한 디스크 공간의 크기를 지정합니다. 기본값은 **알 수 없음**입니다. 0 보다 크거나 같은 정수 값을 설정할 수 있습니다. 값을 지정 하는 경우 값의 단위도 포함 합니다.  
 
     예제:  
 
@@ -142,7 +142,7 @@ ms.locfileid: "68537681"
 
 - **ReconnectDriveAtLogon**: 사용자가 로그온할 때 컴퓨터가 배포 지점에 다시 연결할지 여부를 지정합니다. 사용 가능한 값은 **True** 또는 **False**. 기본값은 **False**입니다.  
 
-- **DependentProgram**: 현재 프로그램 전에 실행해야 하는 이 패키지의 프로그램을 지정합니다. 이 항목은 형식을 `DependentProgram=<ProgramName>`사용 합니다. 여기서 `<ProgramName>` 은 패키지 정의 파일에서 해당 프로그램에 대 한 **이름** 항목입니다. 종속 프로그램 없는 경우에이 항목을 빈 둡니다.  
+- **DependentProgram**: 현재 프로그램 전에 실행해야 하는 이 패키지의 프로그램을 지정합니다. 이 항목에서는 `DependentProgram=<ProgramName>`형식을 사용 합니다. 여기서 `<ProgramName>`는 패키지 정의 파일에서 해당 프로그램에 대 한 **이름** 항목입니다. 종속 프로그램 없는 경우에이 항목을 빈 둡니다.  
 
     예제:  
 

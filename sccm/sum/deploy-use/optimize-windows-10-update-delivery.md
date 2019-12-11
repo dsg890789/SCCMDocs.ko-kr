@@ -2,7 +2,7 @@
 title: Windows 10 업데이트 배달 최적화
 titleSuffix: Configuration Manager
 description: Configuration Manager로 업데이트 콘텐츠를 관리하여 Windows 10으로 최신 상태를 유지하는 방법을 알아봅니다.
-ms.date: 07/09/2019
+ms.date: 12/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f3f5eb1b25021adee5feecd3119776180250496
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.openlocfilehash: 5a9885535e0a6ef6b047b55a6b11eeb3bc225340
+ms.sourcegitcommit: 4d3999de1e13d579dd128578cb5dcee46fe3b0d6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67678661"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856043"
 ---
 # <a name="optimize-windows-10-update-delivery-with-configuration-manager"></a>Configuration Manager로 Windows 10 업데이트 배달 최적화
 
@@ -35,7 +35,6 @@ Configuration Manager는 버전 1702에서 Windows 10 품질 업데이트의 [�
 
 > [!NOTE]  
 > Express 버전 콘텐츠는 전체 파일 버전보다 훨씬 더 큽니다. 빠른 설치 파일에는 업데이트하려는 각 파일에 가능한 모든 변형이 포함되어 있습니다. 따라서 Configuration Manager에서 빠른 지원을 사용하도록 설정하면 업데이트 패키지 원본 및 배포 지점에서 업데이트에 필요한 디스크 공간의 크기가 증가합니다. 배포 지점의 디스크 공간 요구 사항이 증가하더라도 이러한 배포 지점에서 클라이언트가 다운로드하는 콘텐츠 크기는 감소합니다. 클라이언트는 전체 업데이트가 아니라 필요한 비트(델타)만 다운로드합니다.
-
 
 
 ## <a name="peer-to-peer-content-distribution"></a>피어 투 피어 콘텐츠 배포
@@ -61,6 +60,19 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 
 클라이언트가 여러 네트워크에서 로밍되는 경우에는 이러한 그룹 ID를 수동으로 구성하기가 어렵습니다. Configuration Manager 버전 1802에서는 [경계 그룹을 배달 최적화와 통합](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization)하여 이 프로세스의 관리를 간소화하는 새 기능을 추가했습니다. 클라이언트가 절전 모드에서 해제되면 관리 지점과 통신하여 정책을 가져오고 네트워크 및 경계 그룹 정보를 제공합니다. Configuration Manager는 모든 경계 그룹에 대해 고유한 ID를 만듭니다. 사이트에서는 클라이언트의 위치 정보를 사용하여 Configuration Manager 경계 ID로 클라이언트의 배달 최적화 그룹 ID를 자동으로 구성합니다. 클라이언트가 다른 경계 그룹으로 로밍되면 해당 관리 지점과 통신하고 새 경계 그룹 ID로 자동으로 다시 구성됩니다. 이 통합을 통해 배달 최적화는 Configuration Manager 경계 그룹 정보를 활용하여 업데이트를 다운로드할 피어를 찾을 수 있습니다.
 
+### <a name="bkmk_DO-1910"></a> 배달 최적화(버전 1910부터)
+<!--4699118-->
+Configuration Manager 버전 1910부터 빠른 설치 파일만이 아닌 Windows 10 버전 1709 이상을 실행 하는 클라이언트에 대해 모든 Windows 업데이트 콘텐츠를 배포 하기 위해 배달 최적화를 사용할 수 있습니다.
+
+모든 Windows 업데이트 설치 파일에 대 한 배달 최적화를 사용 하려면 다음 [소프트웨어 업데이트 클라이언트 설정을](/sccm/core/clients/deploy/about-client-settings#software-updates)사용 하도록 설정 합니다.
+
+- **클라이언트가 사용 가능한 경우 델타 콘텐츠를 다운할 수 있도록 허용**을 **예**로 설정합니다.
+- **델타 콘텐츠에 대한 요청을 받기 위해 클라이언트가 사용하는 포트**를 8005(기본값) 또는 사용자 지정 포트 번호로 설정합니다.
+
+> [!IMPORTANT]
+> - 배달 최적화를 사용하도록 설정(기본값)하고 무시하지 않아야 합니다. 자세한 내용은 [Windows 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization)를 참조하세요.
+
+
 
 ### <a name="configuration-manager-peer-cache"></a>Configuration Manager 피어 캐시
 
@@ -71,7 +83,7 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 
 
 ### <a name="windows-branchcache"></a>Windows BranchCache
-[BranchCache](https://docs.microsoft.com/windows-server/networking/branchcache/branchcache)는 Windows의 대역폭 최적화 기술입니다. 각 클라이언트에는 캐시가 있으며 콘텐츠의 대체 원본 역할을 합니다. 동일한 네트워크에 있는 디바이스에서 이 콘텐츠를 요청할 수 있습니다. [Configuration Manager는 BranchCache를 사용](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)하여 피어가 서로의 원본 콘텐츠를 허용하도록 하고 항상 배포 지점을 연결하도록 할 수 있습니다. BranchCache를 사용하면 파일이 각 개별 클라이언트에서 캐시되며 다른 클라이언트에서 필요에 따라 검색할 수 있습니다. 이 방법은 단일 검색 지점을 사용하지 않고 캐시를 배포합니다. 이 동작은 상당한 양의 대역폭을 절약하는 동시에 클라이언트가 요청한 콘텐츠를 수신하는 시간을 단축합니다. 
+[BranchCache](https://docs.microsoft.com/windows-server/networking/branchcache/branchcache)는 Windows의 대역폭 최적화 기술입니다. 각 클라이언트에는 캐시가 있으며 콘텐츠의 대체 원본 역할을 합니다. 동일한 네트워크에 있는 디바이스에서 이 콘텐츠를 요청할 수 있습니다. [Configuration Manager는 BranchCache를 사용](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)하여 피어가 서로의 원본 콘텐츠를 허용하도록 하고 항상 배포 지점을 연결하도록 할 수 있습니다. BranchCache를 사용하면 파일이 각 개별 클라이언트에서 캐시되며 다른 클라이언트에서 필요에 따라 검색할 수 있습니다. 이 방법은 단일 검색 지점을 사용하지 않고 캐시를 배포합니다. 이 동작은 상당한 양의 대역폭을 절약하는 동시에 클라이언트가 요청한 콘텐츠를 수신하는 시간을 단축합니다.
 
 
 
@@ -86,13 +98,13 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 |---------|---------|---------|---------|
 | 서브넷에서 지원됨 | 예 | 예 | 아니요 |
 | 대역폭 제한 | 예(기본) | 예(BITS 사용) | 예(BITS 사용) |
-| 일부 콘텐츠 지원 | 예 | Office 365 및 Express 업데이트에만 해당 | 예 |
+| 일부 콘텐츠 지원 | 예,이 열의 다음 행에 나열 된 모든 지원 되는 콘텐츠 형식에 대해 지원 됩니다. | Office 365 및 Express 업데이트에만 해당 | 예,이 열의 다음 행에 나열 된 모든 지원 되는 콘텐츠 형식에 대해 지원 됩니다. |
+| 지원되는 콘텐츠 유형 | **ConfigMgr:** </br> -Express 업데이트 </br> -모든 Windows 업데이트 (버전 1910부터) 여기에는 Office 업데이트가 포함 되지 않습니다.</br> </br> **Microsoft 클라우드를 통해:**</br> - Windows 및 보안 업데이트</br> - 드라이버</br> - Windows 스토어 앱</br> - 비즈니스용 Windows 스토어 앱 | 모든 ConfigMgr 콘텐츠 유형([Windows PE](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic)에서 다운로드한 이미지 포함) | 모든 ConfigMgr 콘텐츠 유형(이미지 제외) |
 | 디스크의 캐시 크기 제어 | 예 | 예 | 예 |
 | 피어 원본의 검색 | 자동 | 수동(클라이언트 에이전트 설정) | 자동 |
 | 피어 검색 | 배달 최적화 클라우드 서비스 사용(인터넷 액세스 필요) | 관리 지점 사용(클라이언트 경계 그룹 기반) | 멀티캐스트 |
 | 보고 | 예(Windows Analytics 사용) | ConfigMgr 클라이언트 데이터 원본 대시보드 | ConfigMgr 클라이언트 데이터 원본 대시보드 |
 | WAN 사용량 제어 | 예(기본, 그룹 정책 설정을 통해 제어할 수 있음) | 경계 그룹 | 서브넷 지원만 |
-| 지원되는 콘텐츠 유형 | **ConfigMgr 통해:** </br> 빠른 업데이트 </br> </br> **통해 Microsoft 클라우드:**</br> Windows 및 보안 업데이트</br> 드라이버</br> Windows 스토어 앱</br> 비즈니스용 Windows 스토어 앱 | 모든 ConfigMgr 콘텐츠 유형([Windows PE](/sccm/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic)에서 다운로드한 이미지 포함) | 모든 ConfigMgr 콘텐츠 유형(이미지 제외) |
 | ConfigMgr를 통한 관리 | 일부(클라이언트 에이전트 설정) | 예(클라이언트 에이전트 설정) | 예(클라이언트 에이전트 설정) |
 
 
@@ -101,7 +113,7 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 
 Microsoft는 필요에 따라 빠른 설치 파일 및 피어 캐싱 기술과 함께 Configuration Manager를 사용하여 Windows 10 품질 업데이트 배달을 최적화할 것을 권장합니다. 이 방법을 사용하면 품질 업데이트를 설치하기 위해 많은 콘텐츠를 다운로드하는 Windows 10 디바이스와 관련된 문제가 완화됩니다. 또한 매달 품질 업데이트를 배포하여 Windows 10 디바이스를 최신 상태로 유지하는 것이 좋습니다. 이 방법을 사용하면 매월 디바이스에 필요한 품질 업데이트 콘텐츠의 델타가 줄어듭니다. 이 콘텐츠 델타를 줄이면 배포 지점이나 피어 원본에서 다운로드 크기가 더 작아집니다. 
 
-빠른 설치 파일의 특성으로 인해 해당 콘텐츠 크기가 기존의 전체 파일 콘텐츠보다 훨씬 더 큽니다. 이 크기로 인해 Windows 업데이트 서비스에서 Configuration Manager 사이트 서버로의 업데이트 다운로드 시간이 더 길어집니다. 사이트 서버와 배포 지점에 필요한 디스크 공간의 크기도 증가합니다. 품질 업데이트를 다운로드하고 배포하는 데 필요한 총 시간이 더 길어질 수 있습니다. 그러나 Windows 10 디바이스에 의한 품질 업데이트의 다운로드 및 설치 중 디바이스 쪽 혜택은 주목할 만합니다.
+빠른 설치 파일의 특성으로 인해 해당 콘텐츠 크기가 기존의 자체 포함 파일보다 훨씬 더 큽니다. 이 크기로 인해 Windows 업데이트 서비스에서 Configuration Manager 사이트 서버로의 업데이트 다운로드 시간이 더 길어집니다. 사이트 서버와 배포 지점에 필요한 디스크 공간의 크기도 증가합니다. 품질 업데이트를 다운로드하고 배포하는 데 필요한 총 시간이 더 길어질 수 있습니다. 그러나 Windows 10 디바이스에 의한 품질 업데이트의 다운로드 및 설치 중 디바이스 쪽 혜택은 주목할 만합니다. 자세한 내용은 [빠른 설치 파일 사용](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc708456(v=ws.10)?#using-express-installation-files)을 참조 하세요.
 
 업데이트 크기가 더 큰 서버 쪽 단점으로 인해 빠른 지원 채택은 차단되지만 디바이스 쪽 혜택이 비즈니스 및 환경에 중요한 경우, Microsoft는 Configuration Manager와 함께 [비즈니스용 Windows 업데이트](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10)를 사용할 것을 권장합니다. 비즈니스용 Windows 업데이트는 환경 전체에서 빠른 설치 파일을 다운로드, 저장 및 배포할 필요 없이 Express의 모든 혜택을 제공합니다. 클라이언트는 Windows 업데이트 서비스에서 직접 콘텐츠를 다운로드하므로 배달 최적화를 계속 사용할 수 있습니다.
 
@@ -150,9 +162,20 @@ WUA(Windows 업데이트 에이전트)에서 먼저 빠른 콘텐츠를 요청�
 
 
 #### <a name="is-there-any-way-to-see-how-much-content-is-downloaded-from-peers-using-delivery-optimization"></a>배달 최적화를 사용하여 피어에서 다운로드되는 콘텐츠의 양을 확인할 방법이 있나요?
-Windows 10 버전 1703 이상에는 **Get-DeliveryOptimizationPerfSnap** 및 **Get-DeliveryOptimizationStatus**의 새 PowerShell cmdlet 두 개가 포함됩니다. 이러한 cmdlet은 배달 최적화 및 캐시 사용에 대한 더 많은 인사이트를 제공합니다. 자세한 내용은 참조 하세요. [Windows 10에 대 한 배달 최적화 업데이트](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#the-cloud-service-doesnt-see-other-peers-on-the-network)
+Windows 10 버전 1703 이상에는 **Get-DeliveryOptimizationPerfSnap** 및 **Get-DeliveryOptimizationStatus**의 새 PowerShell cmdlet 두 개가 포함됩니다. 이러한 cmdlet은 배달 최적화 및 캐시 사용에 대한 더 많은 인사이트를 제공합니다. 자세한 내용은 [Windows 10 업데이트에 대 한 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#the-cloud-service-doesnt-see-other-peers-on-the-network) 를 참조 하세요.
 
 
 #### <a name="how-do-clients-communicate-with-delivery-optimization-over-the-network"></a>클라이언트는 네트워크를 통해 배달 최적화와 어떻게 통신하나요?
 방화벽의 네트워크 포트, 프록시 요구 사항 및 호스트 이름에 대한 자세한 내용은 [배달 최적화 FAQ](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#frequently-asked-questions)를 참조하세요.
 
+## <a name="log-files"></a>로그 파일
+
+델타 다운로드를 모니터링 하려면 다음 로그 파일을 사용 합니다.
+
+- WUAHandler.log
+- DeltaDownload.log
+
+## <a name="next-steps"></a>다음 단계
+
+- [소프트웨어 업데이트 배포](/sccm/sum/deploy-use/deploy-software-updates)
+- [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)

@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ec958701b81c70677f65815d4fa053004c09c2b
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 68a495d63a43fe40d4c4479d03b7d4c6ed4e3ba1
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70378072"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74474420"
 ---
 # <a name="learn-more-about-powershell-script-security"></a>PowerShell 스크립트 보안에 대해 자세히 알아보기
 
@@ -70,5 +70,5 @@ PowerShell 관리자에 대한 일반 권장 사항입니다.
 1. Windows 10에 기본 제공된 버전 5 이상인 최신 버전의 PowerShell을 배포합니다. 또는 Windows 7 및 Windows Server 2008 R2에 지원되고 해당 기능을 포함하는 [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616)를 배포할 수 있습니다. 
 2. 경우에 따라 보호된 이벤트 로깅을 비롯한 PowerShell 로그를 사용하고 수집합니다. 서명, 사냥 및 인시던트 대응 워크플로에 이러한 로그를 통합합니다.
 3. 중요 시스템에 적당한 관리를 구현하여 해당 시스템에 대해 제한되지 않는 관리 액세스를 제거하거나 권한을 축소합니다.
-4. PowerShell 언어의 제한된 하위 집합에 승인되지 않은 대화형 사용을 제한하는 동안 사전 승인된 관리 작업이 PowerShell 언어의 전체 기능을 사용하도록 허용하는 Device Guard/Application Control 정책을 배포합니다.
+4. PowerShell 언어의 제한된 하위 집합에 승인되지 않은 대화형 사용을 제한하는 동안 사전 승인된 관리 작업이 PowerShell 언어의 전체 기능을 사용하도록 허용하는 Windows Defender Application Control 정책을 배포합니다.
 5. Windows 10을 배포하여 바이러스 백신 공급자에게 PowerShell을 비롯한 Windows 스크립팅 호스트에서 처리되는 모든 콘텐츠(런타임 시 생성되거나 난독 처리가 취소된 콘텐츠 포함)에 대한 전체 액세스 권한을 허용합니다.

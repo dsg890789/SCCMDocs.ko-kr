@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f6d34c3d8dfa753934f03337d68e989a8bf8fcd7
-ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838704"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62270505"
 ---
 # <a name="scenarios-to-deploy-enterprise-operating-systems-with-configuration-manager"></a>Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 시나리오
 
@@ -31,7 +31,8 @@ ms.locfileid: "56838704"
 
 
 #### <a name="windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot
-<!--3607717, fka 1358333--> 버전 1810부터 기존 디바이스에 대한 Windows Autopilot은 Windows 10 버전 1809 이상에서 사용할 수 있습니다. 이 기능을 사용하면 단일 Configuration Manager 작업 순서를 사용하여 Windows Autopilot 사용자 기반 모드용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전할 수 있습니다.
+<!--3607717, fka 1358333-->
+버전 1810부터 기존 디바이스에 대한 Windows Autopilot은 Windows 10 버전 1809 이상에서 사용할 수 있습니다. 이 기능을 사용하면 단일 Configuration Manager 작업 순서를 사용하여 Windows Autopilot 사용자 기반 모드용으로 Windows 7 디바이스를 이미지로 다시 설치하고 프로비전할 수 있습니다.
 
 자세한 내용은 [기존 디바이스에 대한 Windows Autopilot](/sccm/osd/deploy-use/windows-autopilot-for-existing-devices)을 참조하세요.
 

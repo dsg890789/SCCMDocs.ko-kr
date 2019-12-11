@@ -1,7 +1,7 @@
 ---
 title: OS를 설치하는 작업 순서 만들기
 titleSuffix: Configuration Manager
-description: Configuration Manager의 작업 순서를 사용 하 여 대상 컴퓨터에 OS 이미지 및 기타 콘텐츠를 자동으로 설치 합니다.
+description: Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS 이미지 및 기타 콘텐츠를 자동으로 설치합니다.
 ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 96a99759d67f01253117356a2d293020379cca5e
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68536953"
 ---
 # <a name="create-a-task-sequence-to-install-an-os"></a>OS를 설치하는 작업 순서 만들기

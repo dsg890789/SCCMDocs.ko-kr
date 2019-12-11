@@ -2,7 +2,7 @@
 title: 작업 순서 디버그
 titleSuffix: Configuration Manager
 description: 작업 순서 디버깅 도구를 사용 하 여 작업 순서 문제를 해결할 수 있습니다.
-ms.date: 08/16/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,21 +11,23 @@ ms.assetid: 4b60b0e1-ffa4-4fd5-864e-70a0546c8b3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 00c05b7023f90783fbdd741a354cfd6382f632ad
-ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
+ms.openlocfilehash: 75b6a22bf19db09e3070e7cd7cea0f685484359f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549567"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74661042"
 ---
 # <a name="debug-a-task-sequence"></a>작업 순서 디버그
+
+*적용 대상: Configuration Manager (현재 분기)*
 
 <!--3612274-->
 
 버전 1906부터 작업 순서 디버거는 새로운 문제 해결 도구입니다. 디버그 모드에서 작은 컬렉션에 작업 순서를 배포 합니다. 이렇게 하면 제어되는 방식으로 작업 순서에 따라 문제 해결 및 조사를 지원할 수 있습니다. 디버거는 현재 작업 순서 엔진과 동일한 장치에서 실행 되며 원격 디버거가 아닙니다.
 
 > [!Note]  
-> 이 버전의 Configuration Manager에서 작업 순서 디버거는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+> 이 버전의 Configuration Manager에서 작업 순서 디버거는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/configmgr/core/servers/manage/pre-release-features)을 참조하세요.  
 
 
 ## <a name="prerequisites"></a>필수 구성 요소
@@ -46,11 +48,12 @@ ms.locfileid: "69549567"
     > [!Tip]  
     > 또는 작업 순서가 배포되는 컬렉션 또는 컴퓨터 개체에서 **TSDebugMode** 변수를 `TRUE`로 설정합니다. 이 변수 집합이 있는 모든 장치는 해당 파일에 배포 된 모든 작업 순서를 디버그 모드로 전환 합니다.
 
-1. 디버그 배포를 만듭니다. 배포 설정은 일반적인 작업 순서 배포와 동일 합니다. 자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence#process)항목을 참조하세요.
+1. 디버그 배포를 만듭니다. 배포 설정은 일반적인 작업 순서 배포와 동일 합니다. 자세한 내용은 [Deploy a task sequence](/configmgr/osd/deploy-use/deploy-a-task-sequence#process)항목을 참조하세요.
 
     > [!Note]  
     > 디버그 배포에 대 한 작은 컬렉션을 선택할 수 있습니다. 구성원이 10 개 이하인 장치 컬렉션만 표시 됩니다.
 
+1910 버전부터, 새 작업 순서 변수 **TSDebugOnError**를 사용하여, 작업 순서에서 오류를 반환할 때 자동으로 디버거를 시작합니다.<!-- 5012536 --> 자세한 내용은 [작업 순서 변수 - TSDebugOnError](/configmgr/osd/understand/task-sequence-variables#TSDebugOnError)를 참조하세요.
 
 ## <a name="use-the-tool"></a>도구 사용
 
@@ -76,11 +79,13 @@ ms.locfileid: "69549567"
 
     - **실행** 작업을 사용 하기 전에 중단점을 설정 합니다.
 
-    - 컴퓨터 [다시 시작](/sccm/osd/understand/task-sequence-steps#BKMK_RestartComputer) 단계와 같이 컴퓨터를 다시 시작한 후에는 중단 지점이 저장 되지 않습니다. 예를 들어 이미징 작업 순서에 대해 소프트웨어 센터에서 디버거를 시작 하는 경우 Windows PE 단계에서 중단을 설정 하지 마세요. 컴퓨터가 Windows PE로 다시 시작 되 면 디버거는 중단을 설정할 수 있도록 작업 순서를 일시 중지 합니다.
+    - 버전 1910부터 디버거에서 중단점을 만든 다음 작업 순서가 컴퓨터를 다시 시작 하는 경우 디버거는 다시 시작 된 후 중단점을 유지 합니다.<!-- 5012509 -->
+
+    - 버전 1906에서 컴퓨터를 [다시 시작](/configmgr/osd/understand/task-sequence-steps#BKMK_RestartComputer) 하는 단계와 마찬가지로 중단 지점은 저장 되지 않습니다. 예를 들어 이미징 작업 순서에 대해 소프트웨어 센터에서 디버거를 시작 하는 경우 Windows PE 단계에서 중단을 설정 하지 마세요. 컴퓨터가 Windows PE로 다시 시작 되 면 디버거는 중단을 설정할 수 있도록 작업 순서를 일시 중지 합니다.
 
 - **모든 중단 지우기**: 모든 중단점을 제거 합니다.
 
-- **로그 파일**: [cmtrace](/sccm/core/support/cmtrace)를 사용 하 여 현재 작업 순서 로그 파일인 **smsts .log**를 엽니다. 작업 순서 엔진이 "디버거를 기다리는 중" 인 경우 로그 항목을 볼 수 있습니다.
+- **로그 파일**: [cmtrace](/configmgr/core/support/cmtrace)를 사용 하 여 현재 작업 순서 로그 파일인 **smsts .log**를 엽니다. 작업 순서 엔진이 "디버거를 기다리는 중" 인 경우 로그 항목을 볼 수 있습니다.
 
 - **Cmd prompt**: Windows PE에서 명령 프롬프트를 엽니다.
 
@@ -88,14 +93,14 @@ ms.locfileid: "69549567"
 
 - **끝내기**: 디버거를 분리 하 고 닫아도 작업 순서는 정상적으로 계속 실행 됩니다.
 
-작업 **순서 변수** 창에는 작업 순서 환경의 모든 변수에 대 한 현재 값이 표시 됩니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요. **이 값을 표시 하지**않는 옵션을 사용 하 여 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 사용 하는 경우 디버거에 변수 값이 표시 되지 않습니다. 디버거에서 변수 값을 편집할 수 없습니다.
+작업 **순서 변수** 창에는 작업 순서 환경의 모든 변수에 대 한 현재 값이 표시 됩니다. 자세한 내용은 [Task sequence variables](/configmgr/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요. **이 값을 표시 하지**않는 옵션을 사용 하 여 [작업 순서 변수 설정](/configmgr/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 사용 하는 경우 디버거에 변수 값이 표시 되지 않습니다. 디버거에서 변수 값을 편집할 수 없습니다.
 
 > [!Note]
 > 일부 작업 순서 변수는 내부 에서만 사용 되며 참조 설명서에는 나와 있지 않습니다.
 
-작업 순서 디버거는 [컴퓨터를 다시 시작한](/sccm/osd/understand/task-sequence-steps#BKMK_RestartComputer) 후에도 계속 실행 되지만 중단점을 다시 만들어야 합니다. 작업 순서에는이 작업이 필요 하지 않을 수 있지만 디버거에서 사용자 조작이 필요 하므로 계속 하려면 Windows에 로그인 해야 합니다. 한 시간 후에 로그인 하지 않고 디버깅을 계속 진행 하면 작업 순서가 실패 합니다.
+작업 순서 디버거는 [컴퓨터를 다시 시작한](/configmgr/osd/understand/task-sequence-steps#BKMK_RestartComputer) 후에도 계속 실행 되지만 중단점을 다시 만들어야 합니다. 작업 순서에는이 작업이 필요 하지 않을 수 있지만 디버거에서 사용자 조작이 필요 하므로 계속 하려면 Windows에 로그인 해야 합니다. 한 시간 후에 로그인 하지 않고 디버깅을 계속 진행 하면 작업 순서가 실패 합니다.
 
-또한 [작업 순서 실행](/sccm/osd/understand/task-sequence-steps#child-task-sequence) 단계를 사용 하 여 자식 작업 순서를 한 단계씩 실행 합니다. 디버거 창에는 주 작업 순서와 함께 자식 작업 순서의 단계가 표시 됩니다.
+또한 [작업 순서 실행](/configmgr/osd/understand/task-sequence-steps#child-task-sequence) 단계를 사용 하 여 자식 작업 순서를 한 단계씩 실행 합니다. 디버거 창에는 주 작업 순서와 함께 자식 작업 순서의 단계가 표시 됩니다.
 
 
 ## <a name="known-issues"></a>알려진 문제
@@ -105,7 +110,7 @@ ms.locfileid: "69549567"
 
 ## <a name="see-also"></a>참고 항목
 
-- [작업 순서 단계 정보](/sccm/osd/understand/task-sequence-steps)
-- [작업 순서 변수](/sccm/osd/understand/task-sequence-variables)
-- [작업 순서 변수 사용 방법](/sccm/osd/understand/using-task-sequence-variables)
-- [작업 순서 배포](/sccm/osd/deploy-use/deploy-a-task-sequence)
+- [작업 순서 단계 정보](/configmgr/osd/understand/task-sequence-steps)
+- [작업 순서 변수](/configmgr/osd/understand/task-sequence-variables)
+- [작업 순서 변수 사용 방법](/configmgr/osd/understand/using-task-sequence-variables)
+- [작업 순서 배포](/configmgr/osd/deploy-use/deploy-a-task-sequence)

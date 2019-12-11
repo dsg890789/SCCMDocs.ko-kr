@@ -2,7 +2,7 @@
 title: 애플리케이션 만들기
 titleSuffix: Configuration Manager
 description: 배포 유형, 검색 방법 및 소프트웨어를 설치할 요구 사항으로 애플리케이션을 만듭니다.
-ms.date: 07/26/2019
+ms.date: 12/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae4e88d63ae1bffd56bf6ed151d8d28997bdce23
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: c34dcc2e72f4e1cea79d7df5543887f0f9a7a689
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68534706"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74813777"
 ---
 # <a name="create-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 만들기
 
@@ -131,7 +131,7 @@ Configuration Manager 콘솔의 **애플리케이션** 노드에 새 애플리�
         > [!Note]  
         > 버전 1902 및 이전 버전에서는 사용자 범주만 사용자 컬렉션에 대 한 사용 가능한 배포에만 적용 됩니다. 애플리케이션이 컴퓨터 컬렉션에 배포되면 사용자 범주는 무시됩니다.
         >
-        > 버전 1906부터 장치 대상 응용 프로그램 배포에 대 한 사용자 범주는 소프트웨어 센터에서 필터로 표시 됩니다. 이러한 배포는 사용할 수 있거나 필수입니다.
+        > 1906 버전부터, 디바이스를 대상으로 하는 애플리케이션 배포의 사용자 범주가 소프트웨어 센터에 필터로 표시됩니다. 이러한 배포는 사용할 수 있거나 필수입니다.
         >
         > <!-- 4726793 -->범주 이름 바꾸기 또는 삭제는이 범주를 사용 하는 앱에 자동으로 적용 되지 않습니다. 이러한 변경 내용은 앱의 다음 수정 버전에 적용 됩니다. 이름 바꾸기 또는 삭제에 대해이 문제를 해결 하려면 다음을 수행 합니다.
         >
@@ -712,6 +712,9 @@ Windows 스토어에 대한 링크로 앱을 배포하려면 **스토어 애플�
 
 Windows 클라이언트는 스토어에 대한 링크를 사용하는 배포 유형을 다른 배포 유형 전에 항상 먼저 평가합니다. 그런 다음, 클라이언트는 우선 순위에 따라 배포 유형을 평가합니다.
 
+> [!TIP]
+> 응용 프로그램 만들기 마법사에서 "잘못 된 응용 프로그램 링크"와 같은 일부 저장소 링크를 통해 다음과 같은 오류가 발생할 수 있습니다. 예를 들어 일부 스토어 *추천 앱* 은이 오류를 일으킬 수 있습니다. 마법사의 **일반** 페이지에서 계속 **다음** 을 선택할 수 있습니다. Configuration Manager 성공적으로 앱을 만들고 성공적으로 배포할 수 있습니다.<!-- SCCMDocs-pr #4716 -->
+
 ### <a name="bkmk_note2"></a> 참고 2: 웹 애플리케이션
 
 iOS 또는 Android 디바이스에서 Microsoft Intune 관리 브라우저를 설치한 경우 사용자가 앱을 여는 데 관리되는 브라우저만을 사용할 수 있도록 해야 합니다. 웹 사이트 주소에서 **http**를 **http-intunemam**으로, 또는 **https**를 **https-intunemam**으로 바꿉니다. 예:
@@ -728,7 +731,7 @@ Intune Managed Browser에 대한 자세한 내용은 [Managed Browser 정책을 
 
 Configuration Manager에서 애플리케이션을 만든 후 다음 단계는 [애플리케이션을 배포](/sccm/apps/deploy-use/deploy-applications)하는 것입니다.
 
-1906 버전부터는 사용자 또는 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만듭니다. 자세한 내용은 [응용 프로그램 그룹 만들기](/sccm/apps/deploy-use/create-app-groups)를 참조 하세요.
+1906 버전부터는 사용자 또는 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만듭니다. 자세한 내용은 [애플리케이션 그룹 만들기](/sccm/apps/deploy-use/create-app-groups)를 참조하세요.
 
 다른 OS 플랫폼에서 애플리케이션을 만드는 방법에 대한 자세한 내용은 다음 문서를 참조하세요.  
 

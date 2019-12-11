@@ -1,21 +1,21 @@
 ---
 title: Endpoint Protection 계획
 titleSuffix: Configuration Manager
-ms.date: 03/07/2017
+ms.date: 05/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
 ms.assetid: 7610bbd3-a67f-4a09-8115-e35d40d43b42
-author: aczechowski
+author: mestew
+ms.author: mstewart
 manager: dougeby
-ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94b1da6564c4b23c3db45b7b8851d795b97b061e
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 77c87a06a76b6084f499e613dd97077dbf34fe9e
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56133643"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "65612843"
 ---
 # <a name="planning-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection 계획
 
@@ -29,7 +29,7 @@ System Center Configuration Manager의 Endpoint Protection을 사용하면 Confi
 
 Configuration Manager에서 Endpoint Protection을 사용하면 다음과 같은 이점이 있습니다.  
 
--   선택한 컴퓨터 그룹에 대해 맬웨어 방지 정책 및 Windows 방화벽 설정을 구성하고 Windows Defender Advanced Threat Protection을 관리합니다.  
+-   선택한 컴퓨터 그룹에 대해 맬웨어 방지 정책 및 Windows 방화벽 설정을 구성하고 Microsoft Defender Advanced Threat Protection을 관리합니다.  
 
 -   Configuration Manager 소프트웨어 업데이트를 통해 최신 맬웨어 방지 정의 파일을 다운로드하여 클라이언트 컴퓨터를 최신 상태로 유지  
 
@@ -80,12 +80,12 @@ Configuration Manager의 Endpoint Protection을 사용하면 Endpoint Protection
 
   Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](../deploy-use/create-windows-firewall-policies.md)을 참조하세요.  
 
-## <a name="windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection
+## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 
-Configuration Manager의 1606 버전부터(현재 분기) Endpoint Protection은 Windows Defender ATP(Advanced Threat Protection)를 관리하고 모니터링할 수 있습니다. Windows Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 검색하고 조사하고 대응할 수 있도록 하는 새로운 서비스입니다. [Windows Defender Advanced Threat Protection](../deploy-use/windows-defender-advanced-threat-protection.md)을 참조하세요.
+Configuration Manager의 1606버전부터(현재 분기) Endpoint Protection은 Microsoft Defender ATP(Advanced Threat Protection)를 관리하고 모니터링할 수 있습니다(이전에는 Windows Defender ATP였음). Microsoft Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 탐지하고 조사하고 대응할 수 있도록 하는 서비스입니다. [Microsoft Defender Advanced Threat Protection](../deploy-use/windows-defender-advanced-threat-protection.md)을 참조하세요.
 
 ## <a name="endpoint-protection-workflow"></a>Endpoint Protection 워크플로  
- 다음 다이어그램을 사용하여 Configuration Manager 계층 구조에서 Endpoint Protection을 구현하는 워크플로를 이해합니다.   
+ 다음 다이어그램을 사용하여 Configuration Manager 계층 구조에서 Endpoint Protection을 구현하는 워크플로를 이해합니다.  
 
  ![Endpoint Protection 워크플로](../media/Endpoint-Protection-Workflow.gif)
 

@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a10ebaad901181e80a449c5c64274a0d68b53100
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126459"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62198804"
 ---
 # <a name="technical-reference-for-package-conversion-manager-error-messages"></a>Package Conversion Manager 오류 메시지에 대한 기술 참조
 
@@ -42,7 +42,7 @@ Configuration Manager에서 권한을 확인하고 연결 유효성을 검사한
 
 
 #### <a name="did-not-find-a-converted-package-and-its-resultant-application-in-the-workflow-outputs"></a>변환된 패키지 및 변환 결과로 생성된 애플리케이션을 워크플로 출력에서 찾을 수 없습니다.
-응용 프로그램(변환된 패키지/프로그램)이 삭제되었습니다.
+애플리케이션(변환된 패키지/프로그램)이 삭제되었습니다.
 
 종속 패키지/프로그램이 존재하도록 종속 패키지/프로그램을 수정합니다.
 

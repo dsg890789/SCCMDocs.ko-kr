@@ -2,7 +2,7 @@
 title: 작업 순서 관리
 titleSuffix: Configuration Manager
 description: 사용자 환경에서 작업을 자동화하고 작업 순서를 관리하려면 작업 순서를 만들고 편집하고 배포하고 가져오기 및 내보내기 합니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,71 +11,38 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 041654b3ba1a25c832232fb26fa09f7ea12e8f97
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 1d1b7a629d8976fa961acaeb5bc2860cb6f4769b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537077"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660974"
 ---
 # <a name="manage-task-sequences-to-automate-tasks"></a>작업 순서를 관리하여 작업 자동화
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자동화할 수 있습니다. 이러한 단계는 대상 컴퓨터에 운영 체제 이미지를 배포하고, 운영 체제 설치 파일 집합에서 운영 체제 이미지를 만들고 캡처하며, 사용자 상태 정보를 캡처하고 복원할 수 있습니다. 작업 순서는 Configuration Manager 콘솔에 위치해 있습니다. **소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 확장하고 **작업 순서**를 선택합니다. **작업 순서** 노드는 사용자가 만든 하위 폴더를 포함하여 Configuration Manager 계층 구조 전체에 복제됩니다. 계획 정보는 [작업 자동화에 대한 계획 고려 사항](/sccm/osd/plan-design/planning-considerations-for-automating-tasks)을 참조하세요.  
+Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자동화할 수 있습니다. 이러한 단계는 대상 컴퓨터에 운영 체제 이미지를 배포하고, 운영 체제 설치 파일 집합에서 운영 체제 이미지를 만들고 캡처하며, 사용자 상태 정보를 캡처하고 복원할 수 있습니다. 작업 순서는 Configuration Manager 콘솔에 위치해 있습니다. **소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 확장하고 **작업 순서**를 선택합니다. **작업 순서** 노드는 사용자가 만든 하위 폴더를 포함하여 Configuration Manager 계층 구조 전체에 복제됩니다. 계획 정보는 [작업 자동화에 대한 계획 고려 사항](/configmgr/osd/plan-design/planning-considerations-for-automating-tasks)을 참조하세요.  
 
-
-
-## <a name="BKMK_CreateTaskSequence"></a> 작업 순서 만들기  
+## <a name="BKMK_CreateTaskSequence"></a> 만들기
 
 작업 순서 만들기 마법사를 사용하여 작업 순서를 만듭니다. 이 마법사는 다음 유형의 작업 순서를 만들 수 있습니다.  
 
-|작업 순서 유형|추가 정보|  
-|------------------------|----------------------|  
-|[OS를 설치하는 작업 순서](create-a-task-sequence-to-install-an-operating-system.md)|이 작업 순서 유형은 OS를 설치하는 단계를 만듭니다. 이 유형에는 사용자 데이터를 마이그레이션하고, 소프트웨어 업데이트를 포함하고, 애플리케이션을 설치하는 옵션도 포함되어 있습니다.|  
-|[OS를 업그레이드하는 작업 순서](create-a-task-sequence-to-upgrade-an-operating-system.md)|이 작업 순서 유형은 OS를 업그레이드하는 단계를 만듭니다. 이 유형에는 소프트웨어 업데이트를 포함하고, 애플리케이션을 설치하는 옵션도 포함되어 있습니다.|  
-|[OS를 캡처하는 작업 순서](create-a-task-sequence-to-capture-an-operating-system.md)|이 작업 순서 유형은 참조 컴퓨터에서 운영 체제를 빌드하고 캡처하는 단계를 만듭니다. 이미지를 캡처하기 전에 참조 컴퓨터에서 소프트웨어 업데이트를 포함하고 애플리케이션을 설치할 수 있습니다.|  
-|[사용자 상태를 캡처 및 복원하는 작업 순서](create-a-task-sequence-to-capture-and-restore-user-state.md)|이 작업 순서는 사용자 상태 데이터를 캡처 및 복원하기 위해 기존 작업 순서에 추가할 단계를 제공합니다.|  
-|[사용자 지정 작업 순서](create-a-custom-task-sequence.md)|이 작업 순서 유형은 작업 순서에 단계를 추가하지 않습니다. 이 작업 순서를 만든 후 편집하고 단계를 추가합니다.|  
+- [Os를 설치 하는 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system): os를 설치 하는 단계를 만듭니다. 이 유형에는 사용자 데이터를 마이그레이션하고, 소프트웨어 업데이트를 포함하고, 애플리케이션을 설치하는 옵션도 포함되어 있습니다.
 
+- [Os를 업그레이드 하는 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system): os를 업그레이드 하는 단계를 만듭니다. 이 유형에는 소프트웨어 업데이트를 포함하고, 애플리케이션을 설치하는 옵션도 포함되어 있습니다.
 
+- [OS를 캡처하기 위한 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-capture-an-operating-system): 참조 컴퓨터에서 운영 체제를 빌드하고 캡처하는 단계를 만듭니다. 이미지를 캡처하기 전에 참조 컴퓨터에서 소프트웨어 업데이트를 포함하고 애플리케이션을 설치할 수 있습니다.
+
+- [사용자 상태를 캡처 및 복원 하는 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-capture-and-restore-user-state): 사용자 상태 데이터를 캡처 및 복원 하기 위해 기존 작업 순서에 단계를 추가 합니다.
+
+- [사용자 지정 작업 순서](/configmgr/osd/deploy-use/create-a-custom-task-sequence): 이 작업 순서 유형은 작업 순서에 단계를 추가하지 않습니다. 이 작업 순서를 만든 후 편집하고 단계를 추가합니다.
 
 ## <a name="BKMK_ModifyTaskSequence"></a> 편집  
 
-단계를 추가 또는 제거하거나, 그룹을 추가 또는 제거하거나, 단계의 순서를 변경하여 작업 순서를 수정합니다. 기존 작업 순서를 수정하려면 다음 절차를 수행하세요.  
+단계를 추가 또는 제거하거나, 그룹을 추가 또는 제거하거나, 단계의 순서를 변경하여 작업 순서를 수정합니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)을 참조 하세요.
 
-> [!IMPORTANT]  
-> 작업 순서 만들기 마법사를 사용하여 만든 작업 순서를 편집하면 단계의 작업 또는 단계의 유형이 단계 이름이 될 수 있습니다. 예를 들어 "파티션 디스크 0"이라는 단계가 표시되는 경우, 이는 [디스크 포맷 및 파티션 만들기](/sccm/osd/understand/task-sequence-steps#BKMK_FormatandPartitionDisk) 유형의 단계에 대한 작업입니다. 모든 작업 순서 단계는 편집기에 표시되는 단계의 이름이 아니라 단계의 유형별로 설명되어 있습니다.  
-
-### <a name="process-to-edit-a-task-sequence"></a>작업 순서 편집 프로세스  
-
-1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하고 **운영 체제**를 확장하고 **작업 순서** 노드를 선택합니다.  
-
-2. **작업 순서** 목록에서 편집할 작업 순서를 선택합니다.  
-
-3. 리본의 **홈** 탭에 있는 **작업 순서** 그룹에서 **편집**을 선택합니다. 그런 후 다음 작업 중 하나를 수행합니다.  
-
-    - 작업 순서 단계를 추가하려면 **추가**를 선택하고 단계의 유형을 선택한 다음, 추가하려는 단계를 선택합니다. 예를 들어, [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가하려면 **추가**를 선택하고, **일반**을 선택한 후 **명령줄 실행**을 선택합니다.  
-
-    - 작업 순서에 그룹을 추가하려면 **추가**를 선택하고 **새 그룹**을 선택합니다. 그룹을 추가한 후에는 그룹에 단계를 추가할 수 있습니다.  
-
-    - 작업 순서에서 단계 및 그룹의 순서를 변경하려면 순서를 바꿀 단계나 그룹을 선택한 다음, **위로 항목 이동** 또는 **아래로 항목 이동** 아이콘을 사용합니다. 단계나 그룹은 한 번에 하나만 이동할 수 있습니다.  
-
-    - 단계 또는 그룹을 제거하려면 단계 또는 그룹을 선택하고 **제거**를 선택합니다.  
-
-4. **확인**을 선택하여 변경 내용을 저장하고 창을 닫습니다. **적용**을 선택하여 변경 내용을 저장하고 작업 순서 편집기를 열어 둡니다.  
-
-사용 가능한 작업 순서 단계 목록을 보려면 [작업 순서 단계](/sccm/osd/understand/task-sequence-steps)를 참조하세요.  
-
-### <a name="bkmk_sedo"></a> 작업 순서를 편집하기 위해 잠금 확보
-
-<!--3699337-->
-Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금상태가 끝날 때까지 어떤 변경 도 할 수 없습니다. 이 잠금은 Configuration Manager SEDO(erialized Editing of Distributed Objects) 시스템의 일부입니다. 자세한 내용은 [Configuration Manager SEDO](/sccm/develop/core/understand/sedo)를 참조하세요.
-
-버전 1906부터 작업 순서에 대 한 잠금을 해제할 수 있습니다. 이 작업은 잠금에 대한 권한이 있는 사용자 계정 및 사이트에서 잠금을 허가한 동일한 디바이스에만 적용됩니다. 잠긴 작업 순서에 액세스하려고 하면 이제 **변경 내용을 취소**하고, 계속 개체를 편집할 수 있습니다. 이러한 변경 내용은 잠금이 만료된 경우에도 손실됩니다.
-
-
-## <a name="bkmk_prop-general"></a> 소프트웨어 센터 속성 구성
+## <a name="bkmk_prop-general"></a>소프트웨어 센터 속성
 
 소프트웨어 센터에 표시된 작업 순서에 대한 세부 정보를 구성하려면 다음 절차를 따르세요. 이러한 세부 정보는 정보 제공용입니다.  
 
@@ -91,9 +58,7 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
 
     - **예상 실행 시간(분)** : 작업 순서에 대해 소프트웨어 센터에 표시되는 예상 실행 시간(분)을 지정합니다.  
 
-
-
-## <a name="bkmk_prop-advanced"></a> 고급 작업 순서 설정 구성
+## <a name="bkmk_prop-advanced"></a> 고급 설정
 
 구성 관리자 클라이언트에서 작업 순서의 동작을 구성하려면 다음 절차를 따르세요.  
 
@@ -122,7 +87,7 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
     - **최대 허용 실행 시간**: 대상 컴퓨터에서 작업 순서가 실행될 것으로 예상되는 최대 시간(분)을 지정합니다. 0보다 크거나 같은 정수를 사용합니다. 이 값은 기본적으로 120분입니다.  
 
         > [!IMPORTANT]  
-        > 이 작업 순서를 배포하는 컬렉션에 대해 유지 관리 기간을 사용하는 경우 **최대 허용 실행 시간**이 예약된 유지 관리 기간보다 길면 충돌이 발생할 수 있습니다. 최대 실행 시간을 **0**으로 설정하면 유지 관리 기간 동안 작업 순서가 시작됩니다. 유지 관리 기간이 만료된 후 완료하거나 실패할 때까지 계속 실행됩니다. 결과적으로 최대 실행 시간이 **0**으로 설정된 작업 순서는 유지 관리 기간이 끝난 후에 실행될 수 있습니다. 최대 실행 시간을 사용 가능한 유지 관리 기간보다 긴 지정 기간(0이 아님)으로 설정할 경우 작업 순서가 실행되지 않습니다. 자세한 내용은 [유지 관리 기간을 사용하는 방법](/sccm/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.  
+        > 이 작업 순서를 배포하는 컬렉션에 대해 유지 관리 기간을 사용하는 경우 **최대 허용 실행 시간**이 예약된 유지 관리 기간보다 길면 충돌이 발생할 수 있습니다. 최대 실행 시간을 **0**으로 설정하면 유지 관리 기간 동안 작업 순서가 시작됩니다. 유지 관리 기간이 만료된 후 완료하거나 실패할 때까지 계속 실행됩니다. 결과적으로 최대 실행 시간이 **0**으로 설정된 작업 순서는 유지 관리 기간이 끝난 후에 실행될 수 있습니다. 최대 실행 시간을 사용 가능한 유지 관리 기간보다 긴 지정 기간(0이 아님)으로 설정할 경우 작업 순서가 실행되지 않습니다. 자세한 내용은 [유지 관리 기간을 사용하는 방법](/configmgr/core/clients/manage/collections/use-maintenance-windows)을 참조하세요.  
 
         이 값을 **0**으로 설정하는 경우 Configuration Manager에서 최대 허용 실행 시간이 **12**시간(720분)으로 설정됩니다. 그러나 작업 순서는 카운트다운 기간이 유지 관리 기간 값을 초과하지 않으면 시작됩니다.  
 
@@ -138,26 +103,22 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
         > [!NOTE]  
         > 부팅 미디어 또는 PXE에서 작업 순서를 실행하는 경우 Configuration Manager에서는 이 옵션을 무시합니다. 작업 순서는 마치 **모든 플랫폼에서 이 프로그램 실행** 옵션이 선택된 것처럼 실행됩니다.  
 
-
-
-## <a name="configure-high-impact-task-sequence-settings"></a>강력한 작업 순서 설정 구성
+## <a name="high-impact-settings"></a>높은 영향 설정
 
 강력한 작업 순서를 구성하고 사용자가 작업 순서를 실행할 때 표시되는 메시지를 사용자 지정하세요.
-
 
 ### <a name="set-a-task-sequence-as-a-high-impact-task-sequence"></a>작업 순서를 강력한 작업 순서로 설정
 
 작업 순서를 강력한 작업 순서로 설정하려면 다음 절차를 따르세요.
 
 > [!NOTE]  
-> 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [높은 위험 수준의 배포 관리](/sccm/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
+> 특정 조건을 충족하는 작업 순서는 자동으로 모두 강력한 작업 순서로 정의됩니다. 자세한 내용은 [높은 위험 수준의 배포 관리](/configmgr/protect/understand/settings-to-manage-high-risk-deployments)를 참조하세요.
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하고 **운영 체제**를 확장하고 **작업 순서**를 선택합니다.  
 
 2. 편집할 작업 순서를 선택하고 **속성**을 선택합니다.  
 
 3. **사용자 알림** 탭에서 **강력한 작업 순서임**을 선택합니다.  
-
 
 ### <a name="create-a-custom-notification-for-high-risk-deployments"></a>위험 수준이 높은 배포에 대한 사용자 지정 알림 만들기
 
@@ -197,7 +158,37 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
 
 ![소프트웨어 센터에서 최종 사용자에게 사용자 지정된 작업 순서 알림](../media/user-notification-enduser.png)
 
+## <a name="bkmk_perf"></a>전원 계획에 대 한 성능 향상
 
+<!--3555926-->
+
+버전 1910부터 이제 고성능 전원 계획을 사용 하 여 작업 순서를 실행할 수 있습니다. 이 옵션은 작업 순서의 전체 속도를 향상시킵니다. 이 옵션은 기본 제공 고성능 전원 계획을 사용하도록 Windows를 구성하여 더 높은 전력을 소비하면서 최대 성능을 제공합니다. 이 옵션은 새 작업 순서에 대해 기본적으로 설정 되어 있습니다.
+
+작업 순서가 시작되면 대부분의 시나리오에서 현재 사용하도록 설정된 전원 계획을 기록합니다. 그런 다음, 활성 전원 계획을 Windows 기본 **고성능** 계획으로 전환합니다. 작업 순서가 컴퓨터를 다시 시작하면 이 프로세스를 반복합니다. 작업 순서가 끝나면 전원 계획을 저장된 값으로 다시 설정합니다. 이 기능은 Windows 및 Windows PE에서 둘 다에서 작동하지만 가상 머신에는 영향을 주지 않습니다.
+
+- 작업 순서가 Windows PE에서 시작 되는 경우 작업 순서는 나중에 다시 사용 하기 위해 현재 사용 하도록 설정 된 전원 계획을 기록 하지 않습니다.
+
+- 컴퓨터를 이미지로 다시 설치 (초기화 및 로드) 하는 OS 배포 작업 순서는 이전 운영 체제의 전원 계획 설정을 유지 하지 않습니다. 작업 순서의 끝에서 기본 **균형이 조정** 된 전원 계획을 복원 합니다.
+
+> [!Important]
+> 이 새로운 Configuration Manager 기능을 활용하려면 사용자를 업데이트한 후 클라이언트를 최신 버전으로 업데이트하세요. 또한 최신 클라이언트 구성 요소를 포함하도록 부팅 이미지를 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
+
+1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동합니다. **운영 체제**를 펼치고 **작업 순서** 노드를 선택합니다.
+
+1. 기존 작업 순서를 만들거나 선택하고 **속성**을 선택합니다.
+
+1. **성능** 탭으로 전환합니다.
+
+1. **고성능 전원 계획으로 실행** 옵션을 사용하도록 설정합니다.
+
+> [!Warning]
+> 낮은 성능 하드웨어에서는 이 설정을 사용할 때 주의해야 합니다. 장시간 동안 강력한 시스템 작업을 실행하면 저사양 하드웨어에 압력을 줄 수 있습니다. 특정 지침은 하드웨어 제조업체에 문의하세요.
+
+### <a name="known-issue"></a>알려진 문제
+
+<!-- 5554928 -->
+
+고성능을 위해 구성 하는 작업 순서를 배포 합니다. 고성능 옵션을 사용 하지 않도록 설정한 경우에도 배포 된 작업 순서는 항상 높은 성능으로 실행 됩니다. 이 설정을 변경 하려면 작업 순서에 대 한 새 배포를 만듭니다.
 
 ## <a name="BKMK_DistributeTS"></a> 참조되는 콘텐츠 배포  
 
@@ -222,13 +213,11 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
 
 7. 마법사를 완료합니다.  
 
-작업 순서에서 참조되는 콘텐츠를 사전 준비할 수도 있습니다. Configuration Manager에서는 선택한 콘텐츠의 파일, 관련 종속성 및 관련 메타데이터가 포함된 사전 준비된 압축 콘텐츠 파일을 만듭니다. 그런 다음 사이트 서버, 보조 사이트 또는 배포 지점에서 콘텐츠를 수동으로 가져옵니다. 콘텐츠 파일을 사전 준비하는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_prestage)를 참조하세요.  
-
-
+작업 순서에서 참조되는 콘텐츠를 사전 준비할 수도 있습니다. Configuration Manager에서는 선택한 콘텐츠의 파일, 관련 종속성 및 관련 메타데이터가 포함된 사전 준비된 압축 콘텐츠 파일을 만듭니다. 그런 다음 사이트 서버, 보조 사이트 또는 배포 지점에서 콘텐츠를 수동으로 가져옵니다. 콘텐츠 파일을 사전 준비하는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](/configmgr/core/servers/deploy/configure/deploy-and-manage-content#bkmk_prestage)를 참조하세요.  
 
 ## <a name="BKMK_DeployTS"></a> 배포  
 
-자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
+자세한 내용은 [Deploy a task sequence](/configmgr/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
 
 ## <a name="BKMK_ExportImport"></a> 내보내기 및 가져오기  
 
@@ -244,14 +233,13 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
 
 - Configuration Manager는 작업 순서에 있는 암호를 내보내지 않습니다. 암호가 포함된 작업 순서를 내보내고 가져올 경우 가져온 작업 순서를 편집하여 암호를 다시 입력합니다. 다음 단계는 암호를 포함할 수 있으므로 검토하세요.  
 
-    - [도메인 또는 작업 그룹 가입](/sccm/osd/understand/task-sequence-steps#BKMK_JoinDomainorWorkgroup)  
-    - [네트워크 폴더에 연결](/sccm/osd/understand/task-sequence-steps#BKMK_ConnectToNetworkFolder)  
-    - [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine)  
+  - [도메인 또는 작업 그룹 가입](/configmgr/osd/understand/task-sequence-steps#BKMK_JoinDomainorWorkgroup)  
+  - [네트워크 폴더에 연결](/configmgr/osd/understand/task-sequence-steps#BKMK_ConnectToNetworkFolder)  
+  - [명령줄 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunCommandLine)  
 
 - **동적 변수 설정** 단계를 사용하여 작업 순서를 내보낼 때 Configuration Manager는 **비밀 값** 설정으로 구성하는 변수의 값을 내보내지 않습니다. 작업 순서를 가져온 후 이러한 변수의 값을 다시 입력해야 합니다.  
 
 - 기본 사이트가 여러 개인 경우 중앙 관리 사이트의 작업 순서를 가져오세요.  
-
 
 ### <a name="process-to-export-task-sequences"></a>작업 순서를 내보내는 프로세스  
 
@@ -281,7 +269,6 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
 
 작업 순서를 내보낼 때 콘텐츠를 포함하는 경우 .zip 파일 및 *export*_files 폴더를 복사해야 하며 그렇지 않으면 가져오기가 실패합니다.  
 
-
 ### <a name="process-to-import-task-sequences"></a>작업 순서를 가져오는 프로세스  
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하고 **운영 체제**를 확장하고 **작업 순서** 노드를 선택합니다.  
@@ -304,136 +291,95 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
 
 작업 순서를 가져온 후 작업 순서를 편집하여 원래 작업 순서에 있던 암호를 지정할 수 있습니다. 보안상의 이유로 암호는 내보내지지 않습니다.  
 
+## <a name="return-to-previous-page-on-failure"></a>오류가 발생 한 경우 이전 페이지로 돌아가기
 
-
-## <a name="return-to-previous-page-when-a-task-sequence-fails"></a>작업 순서가 실패할 경우 이전 페이지로 돌아가기
-
-작업 순서를 실행하고 오류가 발생할 때 이전 페이지로 돌아갈 수 있습니다. 이전 버전의 Configuration Manager에서 오류가 발생할 경우 작업 순서를 다시 시작해야 했습니다. 다음 시나리오에서 **이전** 단추를 사용합니다.
+작업 순서를 실행할 때 오류가 발생 하는 경우 작업 순서 마법사의 이전 페이지로 돌아갈 수 있습니다. 이전 버전의 Configuration Manager에서 오류가 발생할 경우 작업 순서를 다시 시작해야 했습니다. 다음 시나리오에서 **이전** 단추를 사용합니다.
 
 - Windows PE에서 컴퓨터를 시작할 경우 작업 순서가 제공되기 전에 작업 순서 부트스트랩 대화 상자가 표시될 수 있습니다. 이 시나리오에서 다음을 선택하면 사용 가능한 작업 순서가 없다는 메시지와 함께 작업 순서의 최종 페이지가 표시됩니다. 이제 **이전**을 선택하여 사용 가능한 작업 순서를 다시 검색할 수 있습니다. 작업 순서를 사용할 수 있을 때까지 이 프로세스를 반복할 수 있습니다.  
 
 - 작업 순서를 실행하지만 배포 지점에서 종속 콘텐츠 패키지를 아직 사용할 수 없는 경우 작업 순서가 실패합니다. 누락된 콘텐츠가 아직 배포되지 않은 경우 이제 배포합니다. 또는 배포 지점에서 사용할 수 있는 콘텐츠를 대기합니다. 그런 후 **이전**을 선택하여 작업 순서가 콘텐츠를 다시 검색하도록 합니다.
 
+## <a name="BKMK_CreateTSVariables"></a> 컬렉션 및 디바이스 변수
 
+컴퓨터 및 컬렉션에 대해 사용자 지정 작업 순서 변수를 정의할 수 있습니다. 컴퓨터에 대해 정의하는 변수는 컴퓨터별 작업 순서 변수라고도 하고, 컬렉션에 정의된 변수는 컬렉션별 작업 순서 변수라고도 합니다. 자세한 내용은 [컬렉션 및 장치 변수](/configmgr/osd/understand/using-task-sequence-variables#bkmk_set-coll-var)를 참조 하세요.
 
-## <a name="BKMK_CreateTSVariables"></a> 컴퓨터 및 컬렉션에 대한 작업 순서 변수 만들기  
-
-컴퓨터 및 컬렉션에 대해 사용자 지정 작업 순서 변수를 정의할 수 있습니다. 컴퓨터에 대해 정의하는 변수는 컴퓨터별 작업 순서 변수라고도 하고, 컬렉션에 정의된 변수는 컬렉션별 작업 순서 변수라고도 합니다. 충돌이 발생하는 경우 컴퓨터별 변수가 컬렉션별 변수보다 우선 적용됩니다. 이 동작은 특정 컴퓨터에 할당된 작업 순서 변수가 자동으로 컴퓨터가 속한 컬렉션에 할당된 변수보다 높은 우선 순위를 보유합니다.  
-
-예를 들어 컴퓨터 XYZ가 컬렉션 ABC의 구성원이고, MyVariable을 값이 1인 컬렉션 ABC에 할당하고, MyVariable을 값이 2인 컴퓨터 XYZ에도 할당하는 경우, 컴퓨터 XYZ에 할당된 변수가 컬렉션 ABC에 할당된 변수보다 우선 순위가 높습니다. 이 변수를 사용하는 작업 순서가 컴퓨터 XYZ에서 실행되면 MyVariable의 값은 2입니다.
-
-컴퓨터별 변수 및 컬렉션별 변수를 숨겨 Configuration Manager 콘솔에 표시하지 않을 수 있습니다. **Configuration Manager 콘솔에 이 값 표시 안 함** 옵션을 사용하면 콘솔에 변수 값이 표시되지 않습니다. 실행될 때 여전히 작업 순서에서 변수를 사용할 수 있습니다. 이러한 변수가 표시되게 하려면 먼저 삭제한 다음, 숨기는 옵션을 선택하지 않고 변수를 다시 정의합니다.  
-
-> [!WARNING]  
-> **Configuration Manager 콘솔에서 이 값을 표시하지 않기** 설정은 Configuration Manager 콘솔에만 적용됩니다. 변수에 대한 값은 작업 순서 로그 파일(SMSTS.LOG)에 여전히 표시됩니다.
-
-기본 사이트 또는 중앙 관리 사이트에서 컴퓨터별 변수를 관리할 수 있습니다. Configuration Manager에서는 컴퓨터당 할당되는 변수를 1,000개까지만 지원합니다.  
-
-> [!IMPORTANT]  
-> 작업 순서에 컬렉션별 변수를 사용하는 경우 다음 동작을 고려합니다.  
->
-> - 컬렉션에 대한 변경은 항상 계층 구조 전체에 복제됩니다. 컬렉션 변수에 대한 모든 변경은 현재 사이트의 구성원에게 뿐 아니라 계층 구조 전체의 모든 컬렉션 구성원에게도 적용됩니다.  
->  
-> - 컬렉션을 삭제하는 경우 컬렉션에 대해 구성한 작업 순서 변수도 삭제됩니다.  
-
-
-### <a name="process-to-create-task-sequence-variables-for-a-computer"></a>컴퓨터에 대한 작업 순서 변수를 만들기 위한 프로세스  
-
-1. Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하고 **디바이스** 노드를 선택합니다.  
-
-2. 대상 컴퓨터를 선택하고 **속성**을 선택합니다.  
-
-3. **속성** 대화 상자에서 **변수** 탭으로 전환합니다.  
-
-4. 만들려는 각 변수에 대해 **새로 만들기** 아이콘을 선택합니다. 작업 순서 변수의 **이름**과 **값**을 지정합니다. Configuration Manager 콘솔에 표시되지 않도록 변수를 숨기려면 **Configuration Manager 콘솔에 이 값 표시 안 함** 옵션을 선택합니다.  
-
-5. 모든 변수를 컴퓨터 속성에 추가한 후 **확인**을 선택합니다.  
-
-
-### <a name="process-to-create-task-sequence-variables-for-a-collection"></a>컬렉션에 대한 작업 순서 변수를 만드는 프로세스  
-
-1. Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이동하여 **디바이스 컬렉션** 노드를 선택합니다. 대상 컬렉션을 선택하고 **속성**을 선택합니다.  
-
-2. **속성** 대화 상자에서 **컬렉션 변수** 탭으로 전환합니다.  
-
-3. 만들려는 각 변수에 대해 **새로 만들기** 아이콘을 선택합니다. 작업 순서 변수의 **이름**과 **값**을 지정합니다. Configuration Manager 콘솔에 표시되지 않도록 변수를 숨기려면 **Configuration Manager 콘솔에 이 값 표시 안 함** 옵션을 선택합니다.  
-
-4. 선택적으로, 작업 순서 변수가 평가되는 경우 Configuration Manager에서 사용할 우선 순위를 지정합니다.  
-
-5. 모든 변수를 컬렉션 속성에 추가한 후 **확인**을 선택합니다.  
-
-
-
-## <a name="BKMK_AdditionalActionsTS"></a> 작업 순서를 관리하기 위한 추가 작업  
+## <a name="BKMK_AdditionalActionsTS"></a> 추가 작업  
 
 작업 순서를 선택할 때 추가 작업을 사용하여 작업 순서를 관리할 수 있습니다.  
 
-### <a name="available-options"></a>사용 가능한 옵션
+### <a name="edit"></a>편집
 
-#### <a name="edit"></a>편집
+자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor#bkmk_edit)을 참조 하세요.
 
-자세한 내용은 [작업 순서 편집](#BKMK_ModifyTaskSequence)을 참조하세요.
-
-#### <a name="enable"></a>사용 하도록 설정
+### <a name="enable"></a>사용 하도록 설정
 
 클라이언트가 실행할 수 있도록 작업 순서를 사용하도록 설정합니다. 사용하도록 설정된 후 작업 순서를 다시 배포할 필요는 없습니다.  
 
-#### <a name="disable"></a>사용 안 함
+### <a name="disable"></a>사용 안 함
 
 컴퓨터에서 실행되지 않도록 작업 순서를 사용하지 않도록 설정합니다. 사용하지 않는 작업 순서를 배포할 수는 있지만 사용하도록 설정하기 전까지는 컴퓨터가 작업 순서를 실행하지 않습니다.  
 
-#### <a name="export"></a>내보내기
+### <a name="export"></a>내보내기
 
 자세한 내용은 [작업 순서 내보내기 및 가져오기](#BKMK_ExportImport)를 참조하세요.
 
-#### <a name="copy"></a>복사
+### <a name="copy"></a>복사
 
 선택한 작업 순서의 복사본을 만듭니다. 기존 작업 순서를 기반으로 하는 새 작업 순서를 만들려는 경우에 이 작업이 유용합니다.
 
 폴더에서 작업 순서의 복사본을 만들면 복사본은 작업 순서 노드를 새로 고칠 때까지 해당 폴더에만 나열됩니다. 새로 고친 후 복사본이 루트 폴더에 나타납니다.  
 
-#### <a name="refresh"></a>새로 고침
+### <a name="refresh"></a>새로 고침
 
 선택한 작업 순서에 대한 세부 정보를 새로 고칩니다.
 
-#### <a name="delete"></a>삭제
+### <a name="delete"></a>삭제
 
 선택한 작업 순서를 삭제합니다.
 
-#### <a name="create-phased-deployment"></a>단계적 배포 만들기
+### <a name="create-phased-deployment"></a>단계적 배포 만들기
 
-자세한 내용은 [단계적 배포 만들기](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.
+자세한 내용은 [단계적 배포 만들기](/configmgr/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.
 
-#### <a name="deploy"></a>배포:
+### <a name="deploy"></a>배포:
 
-자세한 내용은 [Deploy a task sequence](/sccm/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
+자세한 내용은 [Deploy a task sequence](/configmgr/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
 
-#### <a name="distribute-content"></a>콘텐츠 배포
+### <a name="distribute-content"></a>콘텐츠 배포
 
 콘텐츠 배포 마법사를 시작하여 참조된 콘텐츠를 배포 지점에 보냅니다.
 
-#### <a name="create-prestaged-content-file"></a>사전 준비된 콘텐츠 파일 만들기
+### <a name="create-prestaged-content-file"></a>사전 준비된 콘텐츠 파일 만들기
 
-사전 준비된 콘텐츠 파일 만들기 마법사를 시작하여 작업 순서 콘텐츠를 사전 준비합니다. 사전 준비된 콘텐츠 파일을 만드는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_prestage)를 참조하세요.
+사전 준비된 콘텐츠 파일 만들기 마법사를 시작하여 작업 순서 콘텐츠를 사전 준비합니다. 사전 준비된 콘텐츠 파일을 만드는 방법에 대한 자세한 내용은 [콘텐츠 사전 준비](/configmgr/core/servers/deploy/configure/deploy-and-manage-content#bkmk_prestage)를 참조하세요.
 
-#### <a name="move"></a>이동
+### <a name="move"></a>이동
 
 선택한 작업 순서를 **작업 순서** 노드의 다른 폴더로 이동합니다.
 
-#### <a name="set-security-scopes"></a>보안 범위 설정
+### <a name="set-security-scopes"></a>보안 범위 설정
 
-선택한 작업 순서에 대한 보안 범위를 선택합니다. 자세한 내용은 [보안 범위](/sccm/core/understand/fundamentals-of-role-based-administration#bkmk_PlanScope)를 참조하세요.
+선택한 작업 순서에 대한 보안 범위를 선택합니다. 자세한 내용은 [보안 범위](/configmgr/core/understand/fundamentals-of-role-based-administration#bkmk_PlanScope)를 참조하세요.
 
-#### <a name="properties"></a>속성
+### <a name="properties"></a>속성
 
 자세한 내용은 [소프트웨어 센터 속성 구성](#bkmk_prop-general) 및 [고급 작업 순서 설정 구성](#bkmk_prop-advanced)을 참조하세요.
 
-#### <a name="view"></a>보기
+### <a name="view"></a>보기
 
 <!--3633146-->
-버전 1902부터 작업 순서에 대한 **보기** 작업이 기본 작업입니다. 이 작업을 사용하면 편집을 위해 작업 순서를 잠그지 않고 작업 순서의 단계를 볼 수 있습니다.  
-
+버전 1902부터 작업 순서에 대한 **보기** 작업이 기본 작업입니다. 이 작업을 사용하면 편집을 위해 작업 순서를 잠그지 않고 작업 순서의 단계를 볼 수 있습니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor#bkmk_view)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)
+- [엔터프라이즈 운영 체제를 배포하는 시나리오](/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)
+
+- [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)
+
+- [작업 순서 배포](/configmgr/osd/deploy-use/deploy-a-task-sequence)
+
+- [작업 순서 단계](/configmgr/osd/understand/task-sequence-steps)
+
+- [컬렉션 및 디바이스 변수](/configmgr/osd/understand/using-task-sequence-variables#bkmk_set-coll-var)
+
+- [단계별 배포 만들기](/configmgr/osd/deploy-use/create-phased-deployment-for-task-sequence)

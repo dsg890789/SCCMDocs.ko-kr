@@ -2,7 +2,7 @@
 title: 작업 순서 변수 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서를 제어 및 사용자 지정하는 변수에 대해 알아봅니다.
-ms.date: 10/17/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,20 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c2977d9e99c2a4c4273966f1ce11ce7c93900c0
-ms.sourcegitcommit: 89d6956f8dd9a73e18bf77990ab23cf9255068ad
+ms.openlocfilehash: 0ff08588390e42705596cb0be40e7640a42d7989
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587727"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74659547"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-이 문서는 사전순의 사용 가능한 모든 변수에 대한 참조입니다. 브라우저의 **찾기** 기능(일반적으로 **CTRL** + **F**)을 사용하면 특정 변수를 찾을 수 있습니다. 이렇게 찾은 변수는 특정 단계와 관련이 있는지를 알려줍니다. [작업 순서 단계](/sccm/osd/understand/task-sequence-steps)에 대한 문서에는 각 단계에 사용되는 변수 목록이 포함되어 있습니다.
+이 문서는 사전순의 사용 가능한 모든 변수에 대한 참조입니다. 브라우저의 **찾기** 기능(일반적으로 **CTRL** + **F**)을 사용하면 특정 변수를 찾을 수 있습니다. 이렇게 찾은 변수는 특정 단계와 관련이 있는지를 알려줍니다. [작업 순서 단계](/configmgr/osd/understand/task-sequence-steps)에 대한 문서에는 각 단계에 사용되는 변수 목록이 포함되어 있습니다.
 
-자세한 내용은 [Using task sequence variables](/sccm/osd/understand/using-task-sequence-variables)\(작업 순서 변수 사용\)를 참조하세요.
+자세한 내용은 [Using task sequence variables](/configmgr/osd/understand/using-task-sequence-variables)\(작업 순서 변수 사용\)를 참조하세요.
 
 ## <a name="bkmk_tsvar"></a> 작업 순서 변수 참조
 
@@ -528,7 +528,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 네트워크 공유에서 캡처된 이미지를 저장([OSDCaptureDestination](#OSDCaptureDestination))할 권한이 있는 Windows 계정 이름을 지정합니다. [OSDCaptureAccountPassword](#OSDCaptureAccountPassword)도 지정합니다.
 
-OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#capture-os-image-account)을 참조하세요.
+OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#capture-os-image-account)을 참조하세요.
 
 ### <a name="OSDCaptureAccountPassword"></a> OSDCaptureAccountPassword
 
@@ -626,10 +626,10 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 <!--1358493-->
 *버전 1806부터 가능*  
-*[패키지 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallPackage) 단계에 적용됩니다.*
+*[패키지 설치](/configmgr/osd/understand/task-sequence-steps#BKMK_InstallPackage) 단계에 적용됩니다.*
 
 *버전 1902부터 가능*  
-‘[명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
+‘[명령줄 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -699,7 +699,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 <!--516679/2840016-->
 *버전 1806부터 가능*  
-‘[드라이버 패키지 적용](/sccm/osd/understand/task-sequence-steps#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’ 
+‘[드라이버 패키지 적용](/configmgr/osd/understand/task-sequence-steps#BKMK_ApplyDriverPackage) 단계에 적용됩니다.’ 
 
 (입력)
 
@@ -720,7 +720,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 도메인에 대상 컴퓨터를 추가하는 데 사용되는 도메인 사용자 계정을 지정합니다. 도메인에 가입하는 경우 이 변수가 필요합니다.
 
-작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.
+작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.
 
 ### <a name="OSDJoinDomainName"></a> OSDJoinDomainName
 
@@ -812,7 +812,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 <!--3556028-->
 *버전 1902부터 가능*  
-*[PowerShell 스크립트 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript) 단계에 적용됩니다.*
+*[PowerShell 스크립트 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript) 단계에 적용됩니다.*
 
 (입력)
 
@@ -1160,7 +1160,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 컴퓨터 계정이 상태 마이그레이션 지점에 연결하지 못한 경우 작업 순서에서 NAA(네트워크 액세스 계정)를 대체로 사용해야 하는지 여부를 지정합니다.
 
-네트워크 액세스 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#network-access-account)을 참조하세요.
+네트워크 액세스 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#network-access-account)을 참조하세요.
 
 #### <a name="valid-values"></a>유효한 값
 
@@ -1222,11 +1222,53 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 새 OS에서 사용되는 기본 표준 시간대 설정을 지정합니다.
 
+이 변수의 값을 표준 시간대의 언어 고정 이름으로 설정 합니다. 예를 들어 다음 레지스트리 키에서 표준 시간대에 대 한 `Std` 값의 문자열을 사용 합니다. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones`.
+
 ### <a name="OSDTimeZone-output"></a> OSDTimeZone(출력)
 
 ‘[Windows 설정 캡처](task-sequence-steps.md#BKMK_CaptureWindowsSettings) 단계에 적용됩니다.’ 
 
 컴퓨터의 표준 시간대로 설정됩니다. [OSDMigrateTimeZone](#OSDMigrateTimeZone) 변수가 `true`로 설정된 경우에만 이 값이 설정됩니다.
+
+### <a name="OSDWindowsSettingsInputLocale"></a>OSDWindowsSettingsInputLocale
+
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
+
+새 OS에서 사용되는 기본 입력 로캘 설정을 지정합니다.
+
+이러한 Windows 설치 응답 파일 값에 대한 자세한 내용은 [Microsoft-Windows-International-Core - InputLocale](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-inputlocale)을 참조하세요.
+
+### <a name="OSDWindowsSettingsSystemLocale"></a>OSDWindowsSettingsSystemLocale
+
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
+
+새 OS에서 사용 되는 기본 시스템 로캘 설정을 지정 합니다.
+
+이러한 Windows 설치 응답 파일 값에 대한 자세한 내용은 [Microsoft-Windows-International-Core - SystemLocale](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-systemlocale)을 참조하세요.
+
+### <a name="OSDWindowsSettingsUILanguage"></a>OSDWindowsSettingsUILanguage
+
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
+
+새 OS에서 사용 되는 기본 사용자 인터페이스 언어 설정을 지정 합니다.
+
+이러한 Windows 설치 응답 파일 값에 대한 자세한 내용은 [Microsoft-Windows-International-Core - UILanguage](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-uilanguage)를 참조하세요.
+
+### <a name="OSDWindowsSettingsUILanguageFallback"></a>OSDWindowsSettingsUILanguageFallback
+
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
+
+새 OS에서 사용 되는 대체 사용자 인터페이스 언어 설정을 지정 합니다.
+
+이러한 Windows 설치 응답 파일 값에 대한 자세한 내용은 [Microsoft-Windows-International-Core - UILanguageFallback](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-uilanguagefallback)을 참조하세요.
+
+### <a name="OSDWindowsSettingsUserLocale"></a>OSDWindowsSettingsUserLocale
+
+‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
+
+새 OS에서 사용되는 기본 사용자 로캘 설정을 지정합니다.
+
+이러한 Windows 설치 응답 파일 값에 대한 자세한 내용은 [Microsoft-Windows-International-Core - UserLocale](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-userlocale)을 참조하세요.
 
 ### <a name="OSDWipeDestinationPartition"></a> OSDWipeDestinationPartition
 
@@ -1251,6 +1293,33 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 이 변수 또는 [OSDDomainName](#OSDDomainName) 변수 중 하나를 지정합니다. 작업 그룹 이름은 최대 32자까지 가능합니다.
 
+### <a name="SetupCompletePause"></a>SetupCompletePause
+
+‘[운영 체제 업그레이드](/configmgr/osd/understand/task-sequence-steps#BKMK_UpgradeOS) 단계에 적용됩니다.’ 
+
+<!-- 4680263 -->
+
+버전 1910부터이 변수를 사용 하 여 Windows 설치가 완료 되 면 고성능 장치에서 Windows 전체 업그레이드 작업 순서와 관련 된 타이밍 문제를 해결할 수 있습니다. 이 변수에 초 단위로 값을 할당하면, Windows 설치 프로세스에서 작업 순서를 시작하기 전까지 걸리는 시간을 지연시킵니다. 이 시간 제한을 통해 구성 관리자 클라이언트를 초기화할 수 있는 추가 시간이 제공됩니다.
+
+다음 로그 항목은이 변수를 사용 하 여 수정할 수 있는이 문제의 일반적인 예입니다.
+
+- TSManager 구성 요소는 **smsts.log**에서 다음 오류와 유사한 항목을 기록합니다.
+
+    ``` log
+    Failed to initate policy evaluation for namespace 'root\ccm\policy\machine', hr=0x80041010
+    Error compiling client config policies. code 80041010
+    Task Sequence Manager could not initialize Task Sequence Environment. code 80041010
+    ```
+
+- Windows 설치 프로그램은 **setupcomplete.cmd**에서 다음 오류와 유사한 항목을 기록합니다.
+
+    ``` log
+    Running C:\windows\CCM\\TSMBootstrap.exe to resume task sequence
+    ERRORLEVEL = -1073741701
+    TSMBootstrap did not request reboot, resetting registry
+    Exiting setupcomplete.cmd
+    ```
+
 ### <a name="SMSClientInstallProperties"></a> SMSClientInstallProperties
 
 ‘[Windows 및 ConfigMgr 설치](task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 단계에 적용됩니다.’ 
@@ -1259,7 +1328,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 구성 관리자 클라이언트를 설치할 때 작업 순서에서 사용하는 클라이언트 설치 속성을 지정합니다.
 
-자세한 내용은 [클라이언트 설치 매개 변수 및 속성 정보](/sccm/core/clients/deploy/about-client-installation-properties)를 참조하세요.
+자세한 내용은 [클라이언트 설치 매개 변수 및 속성 정보](/configmgr/core/clients/deploy/about-client-installation-properties)를 참조하세요.
 
 ### <a name="SMSConnectNetworkFolderAccount"></a> SMSConnectNetworkFolderAccount
 
@@ -1269,7 +1338,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 [SMSConnectNetworkFolderPath](#SMSConnectNetworkFolderPath)에서 네트워크 공유에 연결하는 데 사용되는 사용자 계정을 지정합니다. [SMSConnectNetworkFolderPassword](#SMSConnectNetworkFolderPassword) 값을 사용하여 계정 암호를 지정합니다.
 
-작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-network-folder-connection-account)을 참조하세요.
+작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-network-folder-connection-account)을 참조하세요.
 
 ### <a name="SMSConnectNetworkFolderDriveLetter"></a> SMSConnectNetworkFolderDriveLetter
 
@@ -1369,12 +1438,12 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 <!--512358-->
 연결이 끊긴 시나리오에서 작업 순서 엔진은 관리 지점으로 상태 메시지를 전송하려고 반복적으로 시도합니다. 이 시나리오에서는 이 동작으로 인해 작업 순서 처리가 지연될 수 있습니다.
 
-버전 1802부터 이 변수를 `true`로 설정하면 작업 순서 엔진이 첫 번째 메시지 전송 실패 후 상태 메시지를 다시 전송하려고 시도하지 않습니다. 이 첫 번째 시도에 여러 번의 재시도가 포함합니다.
+이 변수를 `true`로 설정하면 작업 순서 엔진이 첫 번째 메시지 전송 실패 후 상태 메시지를 다시 전송하려고 시도하지 않습니다. 이 첫 번째 시도에 여러 번의 재시도가 포함합니다.
 
 작업 순서가 다시 시작되면 이 변수 값이 유지됩니다. 그러나 작업 순서는 초기 상태 메시지를 보내려고 시도합니다. 이 첫 번째 시도에 여러 번의 재시도가 포함합니다. 시도가 성공하면 이 변수 값에 관계없이 작업 순서에서 계속해서 상태를 보냅니다. 상태 전송이 실패하면 작업 순서에서 이 변수 값을 사용합니다.
 
 > [!NOTE]  
-> [작업 순서 상태 보고](/sccm/core/servers/manage/list-of-reports#task-sequence---deployment-status)에서는 이러한 상태 메시지를 사용하여 각 단계의 진행률, 기록 및 세부 정보를 표시합니다. 상태 메시지가 전송 되지 않으면 큐에 대기 하지 않습니다. 관리 지점으로 연결을 복원 하는 경우 나중에 전송 되지 않습니다. 이 동작으로 인해 작업 순서 상태 보고가 불완전 하 고 누락 된 항목이 됩니다.
+> [작업 순서 상태 보고](/configmgr/core/servers/manage/list-of-reports#task-sequence---deployment-status)에서는 이러한 상태 메시지를 사용하여 각 단계의 진행률, 기록 및 세부 정보를 표시합니다. 상태 메시지가 전송 되지 않으면 큐에 대기 하지 않습니다. 관리 지점으로 연결을 복원 하는 경우 나중에 전송 되지 않습니다. 이 동작으로 인해 작업 순서 상태 보고가 불완전 하 고 누락 된 항목이 됩니다.
 
 ### <a name="SMSTSDisableWow64Redirection"></a> SMSTSDisableWow64Redirection
 
@@ -1503,7 +1572,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 ### <a name="SMSTSRebootDelayNext"></a>SMSTSRebootDelayNext
 
 <!--4447680-->
-1906 버전부터 기존 [SMSTSRebootDelay](/sccm/osd/understand/task-sequence-variables#SMSTSRebootDelay) 변수를 사용 하 여이 변수를 사용 합니다. 이후에 수행되는 다시 부팅은 첫 번째 다시 부팅보다 다른 시간 제한에 따라 수행되도록 하려면 SMSTSRebootDelayNext를 다른 값(초)으로 설정합니다.
+1906 버전부터 기존 [SMSTSRebootDelay](/configmgr/osd/understand/task-sequence-variables#SMSTSRebootDelay) 변수를 사용 하 여이 변수를 사용 합니다. 이후에 수행되는 다시 부팅은 첫 번째 다시 부팅보다 다른 시간 제한에 따라 수행되도록 하려면 SMSTSRebootDelayNext를 다른 값(초)으로 설정합니다.
 
 #### <a name="example"></a>예
 
@@ -1529,20 +1598,59 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 
 현재 작업 순서 단계를 완료한 후 다시 시도를 요청합니다. 이 작업 순서 변수를 설정한 경우에는 [SMSTSRebootRequested](#SMSTSRebootRequested)도 `true`로 설정하세요. 컴퓨터가 다시 시작되면 작업 순서 관리자가 동일한 작업 순서 단계를 다시 실행합니다.
 
+### <a name="SMSTSRunCommandLineUserName"></a> SMSTSRunCommandLineUserName
+
+‘[명령줄 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
+
+(입력)
+
+명령줄을 실행할 계정을 지정합니다. 값은 양식 사용자 이름 또는 도메인\사용자 이름의 문자열입니다. [SMSTSRunCommandLineUserPassword](#SMSTSRunCommandLineUserPassword) 변수를 사용하여 계정 암호를 지정하세요.
+
+> [!NOTE]
+> 이러한 변수를 사용 하려면 **이 단계를 다음 계정으로 실행**하는 설정으로 **명령줄 실행** 단계를 구성 합니다. 이 옵션을 사용 하도록 설정 하는 경우 변수를 사용 하 여 사용자 이름과 암호를 설정 하는 경우 계정에 대 한 값을 지정 합니다.
+
+작업 순서 실행 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
+
+### <a name="SMSTSRunCommandLineUserPassword"></a>SMSTSRunCommandLineUserPassword
+
+‘[명령줄 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계에 적용됩니다.’ 
+
+(입력)
+
+[SMSTSRunCommandLineUserName](#SMSTSRunCommandLineUserName) 변수에서 지정한 계정의 암호를 지정합니다.
+
+### <a name="SMSTSRunPowerShellUserName"></a>SMSTSRunPowerShellUserName
+
+*[PowerShell 스크립트 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript) 단계에 적용됩니다.*
+
+(입력)
+
+PowerShell 스크립트를 실행 하는 데 사용할 계정을 지정 합니다. 값은 양식 사용자 이름 또는 도메인\사용자 이름의 문자열입니다. [SMSTSRunPowerShellUserPassword](#SMSTSRunPowerShellUserPassword) 변수를 사용 하 여 계정 암호를 지정 합니다.
+
+> [!NOTE]
+> 이러한 변수를 사용 하려면 **이 단계를 다음 계정으로 실행**하는 설정을 사용 하 여 **PowerShell 스크립트 실행** 단계를 구성 합니다. 이 옵션을 사용 하도록 설정 하는 경우 변수를 사용 하 여 사용자 이름과 암호를 설정 하는 경우 계정에 대 한 값을 지정 합니다.
+
+작업 순서 실행 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
+
+### <a name="SMSTSRunPowerShellUserPassword"></a>SMSTSRunPowerShellUserPassword
+
+*[PowerShell 스크립트 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunPowerShellScript) 단계에 적용됩니다.*
+
+(입력)
+
+[SMSTSRunPowerShellUserName](#SMSTSRunPowerShellUserName) 변수에서 지정한 계정의 암호를 지정합니다.
+
 ### <a name="SMSTSSoftwareUpdateScanTimeout"></a> SMSTSSoftwareUpdateScanTimeout
 
 ‘[소프트웨어 업데이트 설치](task-sequence-steps.md#BKMK_InstallSoftwareUpdates) 단계에 적용됩니다.’ 
 
 (입력)
 
-이 단계에서 소프트웨어 업데이트 검사에 대한 제한 시간을 제어합니다. 예를 들어 검사 중에 여러 업데이트가 예상되는 경우 값을 높이세요. 기본값은 `1800`초(30분)입니다. 변수 값은 초 단위로 설정됩니다.
-
-> [!NOTE]  
-> 버전 1802부터 기본값은 `3600`초(60분)입니다.  
+이 단계에서 소프트웨어 업데이트 검사에 대한 제한 시간을 제어합니다. 예를 들어 검사 중에 여러 업데이트가 예상되는 경우 값을 높이세요. 기본값은 `3600`초(60분)입니다. 변수 값은 초 단위로 설정됩니다.
 
 ### <a name="SMSTSUDAUsers"></a> SMSTSUDAUsers
 
-`<DomainName>\<UserName>` 형식을 사용하여 대상 컴퓨터의 기본 사용자를 지정합니다. 여러 사용자를 구분하려면 쉼표(`,`)를 사용합니다. 자세한 내용은 [사용자를 대상 컴퓨터에 연결](/sccm/osd/get-started/associate-users-with-a-destination-computer)을 참조하세요.
+`<DomainName>\<UserName>` 형식을 사용하여 대상 컴퓨터의 기본 사용자를 지정합니다. 여러 사용자를 구분하려면 쉼표(`,`)를 사용합니다. 자세한 내용은 [사용자를 대상 컴퓨터에 연결](/configmgr/osd/get-started/associate-users-with-a-destination-computer)을 참조하세요.
 
 #### <a name="example"></a>예
 
@@ -1568,7 +1676,18 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 <!--3612274-->
 버전 1906부터이 변수를 작업 순서가 배포 되는 컬렉션 또는 컴퓨터 개체에 `TRUE` 설정 합니다. 이 변수 집합이 있는 모든 장치는 해당 파일에 배포 된 모든 작업 순서를 디버그 모드로 전환 합니다.
 
-자세한 내용은 [작업 순서 디버그](/sccm/osd/deploy-use/debug-task-sequence)를 참조하세요.
+자세한 내용은 [작업 순서 디버그](/configmgr/osd/deploy-use/debug-task-sequence)를 참조하세요.
+
+### <a name="TSDebugOnError"></a>TSDebugOnError
+
+<!-- 5012536 -->
+1910 버전부터 작업 순서에서 오류를 반환 하는 경우이 변수를 `TRUE`으로 설정 하 여 [작업 순서 디버거](/configmgr/osd/deploy-use/debug-task-sequence) 를 자동으로 시작 합니다.
+
+다음을 사용 하 여이 변수를 설정 합니다.
+
+- [작업 순서 변수 설정](/configmgr/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계
+
+- 컬렉션 변수입니다. 자세한 내용은 [변수 설정 방법](/configmgr/osd/understand/using-task-sequence-variables#bkmk_set)을 참조하세요.
 
 ### <a name="TSDisableProgressUI"></a> TSDisableProgressUI
 
@@ -1623,6 +1742,6 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 
 ## <a name="see-also"></a>참고 항목
 
-- [작업 순서 단계](/sccm/osd/understand/task-sequence-steps)
-- [Using task sequence variables](/sccm/osd/understand/using-task-sequence-variables)\(작업 순서 변수 사용\)
-- [작업 자동화에 대한 계획 고려 사항](/sccm/osd/plan-design/planning-considerations-for-automating-tasks)
+- [작업 순서 단계](/configmgr/osd/understand/task-sequence-steps)
+- [Using task sequence variables](/configmgr/osd/understand/using-task-sequence-variables)\(작업 순서 변수 사용\)
+- [작업 자동화에 대한 계획 고려 사항](/configmgr/osd/plan-design/planning-considerations-for-automating-tasks)

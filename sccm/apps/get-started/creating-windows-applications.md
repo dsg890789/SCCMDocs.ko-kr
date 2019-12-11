@@ -12,11 +12,11 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c70212962342bd254a5024c17bb292783b760233
-ms.sourcegitcommit: ef2960bd91655c741450774e512dd0a9be610625
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838874"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62199153"
 ---
 # <a name="create-windows-applications-in-configuration-manager"></a>Configuration Manager에서 Windows 애플리케이션 만들기
 
@@ -38,16 +38,17 @@ Configuration Manager 콘솔에서 애플리케이션을 만들 때 애플리케
 
 
 ## <a name="bkmk_provision"></a> 디바이스의 모든 사용자에 대해 Windows 앱 패키지 프로비전
-<!--1358310--> 버전 1806부터 디바이스에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 애플리케이션을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store의 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
+<!--1358310-->
+버전 1806부터 디바이스에서 모든 사용자에 대해 Windows 앱 패키지를 사용하여 애플리케이션을 프로비전합니다. 이 시나리오의 일반적인 한 예는 Minecraft 교육용 버전처럼 비즈니스 및 교육용 Microsoft Store에서 앱을 학교에서 학생들이 사용하는 모든 디바이스에 프로비전하는 것입니다. 전에 Configuration Manager는 사용자 당 이러한 애플리케이션 설치만 지원했습니다. 새 디바이스에 로그인한 후 학생은 앱에 액세스하기를 기다려야 합니다. 앱이 모든 사용자용 디바이스에 프로비전되는 경우 더 신속하게 생산적이 될 수 있습니다.
 
 > [!Important]  
 > 디바이스에 다른 버전의 동일한 Windows 앱 패키지의 설치, 프로비저닝 및 업데이트 시 예기치 않은 결과가 발생할 수 있으니 주의하십시오. 이 동작은 앱을 프로비전하기 위해 Configuration Manager를 사용하는 경우에 발생할 수 있지만 사용자는 Microsoft 스토어에서 앱을 업데이트할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#next-steps)할 때 다음 단계 지침을 참조하세요.  
 
 오프라인 라이선스 앱을 프로비전하면 Configuration Manager는 Windows가 Microsoft Store에서 자동으로 업데이트하도록 허용하지 않습니다.  
 
-Configuration Manager는 Windows의 <!--SCCMDocs-pr issue 2762--> 버전에서 앱 프로비저닝을 지원합니다.
-- 설치 작업: Windows 10 버전 1607 이상​
-- 제거 작업: Windows 10 버전 1703 이상​
+Configuration Manager는 다음 버전의 Windows에서 앱 프로비저닝을 지원합니다.<!--SCCMDocs-pr issue 2762-->
+- 설치 작업: Windows 10, 버전 1607 이상
+- 제거 작업: Windows 10, 버전 1703 이상
 
 이 기능에 대한 Windows 앱 배포 유형을 구성하려면 **디바이스의 모든 사용자에 대해 이 애플리케이션 프로비전** 옵션을 사용하도록 설정합니다. 자세한 내용은 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)를 참조하세요.
 
@@ -83,7 +84,7 @@ Configuration Manager는 Windows의 <!--SCCMDocs-pr issue 2762--> 버전에서 �
 
     - Microsoft Store에서 [MSIX 패키징 도구](https://www.microsoft.com/store/productId/9N5LW3JBCXKF)를 설치합니다.  
 
-    - [MSIX 패키징 도구 드라이버](https://docs.microsoft.com/windows/msix/packaging-tool/mpt-known-issues#msix-packaging-tool-driver-considerations)<!--SCCMDocs-pr issue #3091-->를 설치합니다.  
+    - [MSIX 패키징 도구 드라이버](https://docs.microsoft.com/windows/msix/packaging-tool/mpt-known-issues#msix-packaging-tool-driver-considerations)를 설치합니다.<!--SCCMDocs-pr issue #3091-->  
 
 이 디바이스에 다른 앱이나 서비스를 설치하지 마세요. 이 디바이스는 참조 시스템입니다. 
 

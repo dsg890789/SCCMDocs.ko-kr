@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6d1d6ba76983041c0c6c8d13147cfae481186f23
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70380075"
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-configuration-manager"></a>Configuration Manager를 사용하여 최신 버전으로 Windows 업그레이드
@@ -46,7 +46,7 @@ OS 업그레이드 패키지만 만들어 다음 OS 버전으로 업그레이드
 - Windows Server 2016
 - Windows Server 2019
 
-### <a name="original-version"></a>원본 버전
+### <a name="original-version"></a>원래 버전
 
 장치는 OS 업그레이드 작업 순서를 대상으로 하려면 다음 OS 버전 중 하나를 실행 해야 합니다.
 

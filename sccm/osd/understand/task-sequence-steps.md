@@ -2,7 +2,7 @@
 title: 작업 순서 단계
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에 추가할 수 있는 단계를 알아봅니다.
-ms.date: 10/31/2019
+ms.date: 12/02/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e338432f9129d2c01fbd3346873e668bf36fc772
-ms.sourcegitcommit: 1e8945c5b9d281805380bd1622616a45494b51da
+ms.openlocfilehash: 0d2763586f7f42ed98a78be277b1fcf702913c55
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117642"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74734684"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계는 다음과 같습니다. 작업 순서를 편집하는 방법에 대한 자세한 내용은 [작업 순서 편집](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_ModifyTaskSequence)을 참조하세요.  
+Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계는 다음과 같습니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)을 참조 하세요.  
 
 다음 설정은 모든 작업 순서 단계에 공통적으로 적용됩니다.
 
@@ -38,9 +38,9 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 - **이 단계 사용 안 함**: 작업 순서가 컴퓨터에서 실행되면 이 단계를 건너뜁니다. 작업 순서 편집기에서 이 단계의 아이콘은 회색으로 표시됩니다.  
 
-- **오류 발생 시 계속**: 단계를 실행하는 동안 오류가 발생하더라도 작업 순서가 계속됩니다. 자세한 내용은 [작업 자동화에 대한 계획 고려 사항](/sccm/osd/plan-design/planning-considerations-for-automating-tasks#BKMK_TSGroups)을 참조하세요.  
+- **오류 발생 시 계속**: 단계를 실행하는 동안 오류가 발생하더라도 작업 순서가 계속됩니다. 자세한 내용은 [작업 자동화에 대한 계획 고려 사항](/configmgr/osd/plan-design/planning-considerations-for-automating-tasks#BKMK_TSGroups)을 참조하세요.  
 
-- **조건 추가**: 작업 순서에서 이러한 조건부 명령문을 평가하여 단계가 실행되는지 확인합니다. 작업 순서 변수를 조건으로 사용하는 예를 알려면 [How to use task sequence variables](/sccm/osd/understand/using-task-sequence-variables#bkmk_access-condition)(작업 순서 변수 사용 방법)를 참조하세요.  
+- **조건 추가**: 작업 순서에서 이러한 조건부 명령문을 평가하여 단계가 실행되는지 확인합니다. 작업 순서 변수를 조건으로 사용하는 예를 알려면 [How to use task sequence variables](/configmgr/osd/understand/using-task-sequence-variables#bkmk_access-condition)(작업 순서 변수 사용 방법)를 참조하세요. 조건에 대 한 자세한 내용은 [작업 순서 편집기-상태](/configmgr/osd/understand/task-sequence-editor#bkmk_conditions)를 참조 하세요.
 
 특정 작업 순서 단계에 대한 아래 섹션에서는 **옵션** 탭의 다른 가능한 설정에 대해 설명합니다.
 
@@ -54,8 +54,8 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDDataImageIndex](/sccm/osd/understand/task-sequence-variables#OSDDataImageIndex)  
-- [OSDWipeDestinationPartition](/sccm/osd/understand/task-sequence-variables#OSDWipeDestinationPartition)  
+- [OSDDataImageIndex](/configmgr/osd/understand/task-sequence-variables#OSDDataImageIndex)  
+- [OSDWipeDestinationPartition](/configmgr/osd/understand/task-sequence-variables#OSDWipeDestinationPartition)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **이미지**, **데이터 이미지 적용**을 차례로 선택합니다.
 
@@ -102,11 +102,11 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDApplyDriverBootCriticalContentUniqueID](/sccm/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalContentUniqueID)  
-- [OSDApplyDriverBootCriticalHardwareComponent](/sccm/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalHardwareComponent)  
-- [OSDApplyDriverBootCriticalID](/sccm/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalID)  
-- [OSDApplyDriverBootCriticalINFFile](/sccm/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalINFFile)  
-- [OSDInstallDriversAdditionalOptions](/sccm/osd/understand/task-sequence-variables#OSDInstallDriversAdditionalOptions)<!--516679/2840016--> (버전 1806부터 적용)  
+- [OSDApplyDriverBootCriticalContentUniqueID](/configmgr/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalContentUniqueID)  
+- [OSDApplyDriverBootCriticalHardwareComponent](/configmgr/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalHardwareComponent)  
+- [OSDApplyDriverBootCriticalID](/configmgr/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalID)  
+- [OSDApplyDriverBootCriticalINFFile](/configmgr/osd/understand/task-sequence-variables#OSDApplyDriverBootCriticalINFFile)  
+- [OSDInstallDriversAdditionalOptions](/configmgr/osd/understand/task-sequence-variables#OSDInstallDriversAdditionalOptions)<!--516679/2840016-->
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **드라이버**, **드라이버 패키지 적용**을 차례로 선택합니다.
 
@@ -144,16 +144,16 @@ Windows Vista 이전 OS 배포에 필요한 부팅 필수 디바이스를 지정
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDAdapter](/sccm/osd/understand/task-sequence-variables#OSDAdapter)  
-- [OSDAdapterCount](/sccm/osd/understand/task-sequence-variables#OSDAdapterCount)  
-- [OSDDNSDomain](/sccm/osd/understand/task-sequence-variables#OSDDNSDomain)  
-- [OSDDNSSuffixSearchOrder](/sccm/osd/understand/task-sequence-variables#OSDDNSSuffixSearchOrder)  
-- [OSDDomainName](/sccm/osd/understand/task-sequence-variables#OSDDomainName)  
-- [OSDDomainOUName](/sccm/osd/understand/task-sequence-variables#OSDDomainOUName)  
-- [OSDEnableTCPIPFiltering](/sccm/osd/understand/task-sequence-variables#OSDEnableTCPIPFiltering)  
-- [OSDJoinAccount](/sccm/osd/understand/task-sequence-variables#OSDJoinAccount)  
-- [OSDJoinPassword](/sccm/osd/understand/task-sequence-variables#OSDJoinPassword)  
-- [OSDWorkgroupName](/sccm/osd/understand/task-sequence-variables#OSDWorkgroupName)  
+- [OSDAdapter](/configmgr/osd/understand/task-sequence-variables#OSDAdapter)  
+- [OSDAdapterCount](/configmgr/osd/understand/task-sequence-variables#OSDAdapterCount)  
+- [OSDDNSDomain](/configmgr/osd/understand/task-sequence-variables#OSDDNSDomain)  
+- [OSDDNSSuffixSearchOrder](/configmgr/osd/understand/task-sequence-variables#OSDDNSSuffixSearchOrder)  
+- [OSDDomainName](/configmgr/osd/understand/task-sequence-variables#OSDDomainName)  
+- [OSDDomainOUName](/configmgr/osd/understand/task-sequence-variables#OSDDomainOUName)  
+- [OSDEnableTCPIPFiltering](/configmgr/osd/understand/task-sequence-variables#OSDEnableTCPIPFiltering)  
+- [OSDJoinAccount](/configmgr/osd/understand/task-sequence-variables#OSDJoinAccount)  
+- [OSDJoinPassword](/configmgr/osd/understand/task-sequence-variables#OSDJoinPassword)  
+- [OSDWorkgroupName](/configmgr/osd/understand/task-sequence-variables#OSDWorkgroupName)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **설정**, **네트워크 설정 적용**을 차례로 선택합니다.
 
@@ -171,7 +171,7 @@ Windows Vista 이전 OS 배포에 필요한 부팅 필수 디바이스를 지정
 
 #### <a name="account"></a>계정
 
-**설정**을 선택하여 컴퓨터를 도메인에 가입시키는 데 필요한 권한이 있는 계정을 지정합니다. **Windows 사용자 계정** 대화 상자에서 사용자 이름을 `Domain\User` 형식으로 입력합니다. 자세한 내용은 [도메인 가입 계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.
+**설정**을 선택하여 컴퓨터를 도메인에 가입시키는 데 필요한 권한이 있는 계정을 지정합니다. **Windows 사용자 계정** 대화 상자에서 사용자 이름을 `Domain\User` 형식으로 입력합니다. 자세한 내용은 [도메인 가입 계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.
 
 #### <a name="adapter-settings"></a>어댑터 설정
 
@@ -187,7 +187,7 @@ Windows Vista 이전 OS 배포에 필요한 부팅 필수 디바이스를 지정
 ## <a name="BKMK_ApplyOperatingSystemImage"></a> 운영 체제 이미지 적용  
 
 > [!TIP]  
-> Windows 10 버전 1709부터 미디어에는 여러 버전이 포함되어 있습니다. OS 업그레이드 패키지 또는 OS 이미지를 사용하도록 작업 순서를 구성하는 경우 [지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.  
+> Windows 10 버전 1709부터 미디어에는 여러 버전이 포함되어 있습니다. OS 업그레이드 패키지 또는 OS 이미지를 사용하도록 작업 순서를 구성하는 경우 [지원되는 버전](/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.  
 
 이 단계를 사용하여 대상 컴퓨터에 OS를 설치합니다.
 
@@ -200,9 +200,9 @@ Windows Vista 이전 OS 배포에 필요한 부팅 필수 디바이스를 지정
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDConfigFileName](/sccm/osd/understand/task-sequence-variables#OSDConfigFileName)  
-- [OSDImageIndex](/sccm/osd/understand/task-sequence-variables#OSDImageIndex)  
-- [OSDTargetSystemDrive](/sccm/osd/understand/task-sequence-variables#OSDTargetSystemDrive)  
+- [OSDConfigFileName](/configmgr/osd/understand/task-sequence-variables#OSDConfigFileName)  
+- [OSDImageIndex](/configmgr/osd/understand/task-sequence-variables#OSDImageIndex)  
+- [OSDTargetSystemDrive](/configmgr/osd/understand/task-sequence-variables#OSDTargetSystemDrive)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **이미지**, **운영 체제 이미지 적용**을 차례로 선택합니다.
 
@@ -302,15 +302,20 @@ Windows 설치 응답 파일을 제공하지 않으면 작업 순서에서 응�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDComputerName](/sccm/osd/understand/task-sequence-variables#OSDComputerName-input)  
-- [OSDLocalAdminPassword](/sccm/osd/understand/task-sequence-variables#OSDLocalAdminPassword)  
-- [OSDProductKey](/sccm/osd/understand/task-sequence-variables#OSDProductKey)  
-- [OSDRandomAdminPassword](/sccm/osd/understand/task-sequence-variables#OSDRandomAdminPassword)  
-- [OSDRegisteredOrgName](/sccm/osd/understand/task-sequence-variables#OSDRegisteredOrgName-input)  
-- [OSDRegisteredUserName](/sccm/osd/understand/task-sequence-variables#OSDRegisteredUserName)  
-- [OSDServerLicenseConnectionLimit](/sccm/osd/understand/task-sequence-variables#OSDServerLicenseConnectionLimit)  
-- [OSDServerLicenseMode](/sccm/osd/understand/task-sequence-variables#OSDServerLicenseMode)  
-- [OSDTimeZone](/sccm/osd/understand/task-sequence-variables#OSDTimeZone-input)  
+- [OSDComputerName](/configmgr/osd/understand/task-sequence-variables#OSDComputerName-input)  
+- [OSDLocalAdminPassword](/configmgr/osd/understand/task-sequence-variables#OSDLocalAdminPassword)  
+- [OSDProductKey](/configmgr/osd/understand/task-sequence-variables#OSDProductKey)  
+- [OSDRandomAdminPassword](/configmgr/osd/understand/task-sequence-variables#OSDRandomAdminPassword)  
+- [OSDRegisteredOrgName](/configmgr/osd/understand/task-sequence-variables#OSDRegisteredOrgName-input)  
+- [OSDRegisteredUserName](/configmgr/osd/understand/task-sequence-variables#OSDRegisteredUserName)  
+- [OSDServerLicenseConnectionLimit](/configmgr/osd/understand/task-sequence-variables#OSDServerLicenseConnectionLimit)  
+- [OSDServerLicenseMode](/configmgr/osd/understand/task-sequence-variables#OSDServerLicenseMode)  
+- [OSDTimeZone](/configmgr/osd/understand/task-sequence-variables#OSDTimeZone-input)  
+- [OSDWindowsSettingsInputLocale](/configmgr/osd/understand/task-sequence-variables#OSDWindowsSettingsInputLocale)
+- [OSDWindowsSettingsSystemLocale](/configmgr/osd/understand/task-sequence-variables#OSDWindowsSettingsSystemLocale)
+- [OSDWindowsSettingsUILanguage](/configmgr/osd/understand/task-sequence-variables#OSDWindowsSettingsUILanguage)
+- [OSDWindowsSettingsUILanguageFallback](/configmgr/osd/understand/task-sequence-variables#OSDWindowsSettingsUILanguageFallback)
+- [OSDWindowsSettingsUserLocale](/configmgr/osd/understand/task-sequence-variables#OSDWindowsSettingsUserLocale)
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **설정**, **Windows 설정 적용**을 차례로 선택합니다.
 
@@ -354,7 +359,24 @@ Windows 설치 응답 파일을 제공하지 않으면 작업 순서에서 응�
 
 대상 컴퓨터에서 구성할 표준 시간대를 지정합니다. **Windows 설정 캡처** 작업 순서 단계에서 캡처하는 값이 이 값을 재정의할 수 있습니다.  
 
+#### <a name="language-settings"></a>언어 설정
 
+<!--5411057, 5138936-->
+
+버전 1910부터 OS 배포 중에 언어 구성을 제어 합니다. 이러한 언어 설정을 이미 적용하고 있다면 이 변경으로 OS 배포 작업 순서를 간소화할 수 있습니다. 언어 또는 개별 스크립트별로 여러 단계를 사용하는 대신, 이 단계의 언어별 인스턴스를 해당 언어에 대한 조건과 함께 사용합니다.
+
+다음 설정을 구성합니다.
+
+- 입력 로캘 (기본 키보드 레이아웃)
+- 시스템 로캘
+- UI 언어
+- UI 언어 대체
+- 사용자 로캘
+
+이러한 Windows 설치 응답 파일 값에 대한 자세한 내용은 [Microsoft-Windows-International-Core](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core)를 참조하세요.
+
+> [!NOTE]
+> 사용자 지정 Windows 설치 응답 파일 (unattend.xml)을 만들면이 단계에서 기존 값을 덮어씁니다. 이러한 설정에 대 한 동적 프로세스를 자동화 하려면 관련 작업 순서 변수를 사용 합니다. 예를 들어 [Osdwindowssettingsinputlocale](/configmgr/osd/understand/task-sequence-variables#OSDWindowsSettingsInputLocale)이 있습니다. 
 
 ## <a name="BKMK_AutoApplyDrivers"></a> 드라이버 자동 적용  
 
@@ -383,12 +405,12 @@ Windows 설치 응답 파일을 제공하지 않으면 작업 순서에서 응�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDAutoApplyDriverBestMatch](/sccm/osd/understand/task-sequence-variables#OSDAutoApplyDriverBestMatch)  
-- [OSDAutoApplyDriverCategoryList](/sccm/osd/understand/task-sequence-variables#OSDAutoApplyDriverCategoryList)  
-- [SMSTSDriverRequestConnectTimeOut](/sccm/osd/understand/task-sequence-variables#SMSTSDriverRequestConnectTimeOut)  
-- [SMSTSDriverRequestReceiveTimeOut](/sccm/osd/understand/task-sequence-variables#SMSTSDriverRequestReceiveTimeOut)  
-- [SMSTSDriverRequestResolveTimeOut](/sccm/osd/understand/task-sequence-variables#SMSTSDriverRequestResolveTimeOut)  
-- [SMSTSDriverRequestSendTimeOut](/sccm/osd/understand/task-sequence-variables#SMSTSDriverRequestSendTimeOut)  
+- [OSDAutoApplyDriverBestMatch](/configmgr/osd/understand/task-sequence-variables#OSDAutoApplyDriverBestMatch)  
+- [OSDAutoApplyDriverCategoryList](/configmgr/osd/understand/task-sequence-variables#OSDAutoApplyDriverCategoryList)  
+- [SMSTSDriverRequestConnectTimeOut](/configmgr/osd/understand/task-sequence-variables#SMSTSDriverRequestConnectTimeOut)  
+- [SMSTSDriverRequestReceiveTimeOut](/configmgr/osd/understand/task-sequence-variables#SMSTSDriverRequestReceiveTimeOut)  
+- [SMSTSDriverRequestResolveTimeOut](/configmgr/osd/understand/task-sequence-variables#SMSTSDriverRequestResolveTimeOut)  
+- [SMSTSDriverRequestSendTimeOut](/configmgr/osd/understand/task-sequence-variables#SMSTSDriverRequestSendTimeOut)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **드라이버**, **드라이버 자동 적용**을 차례로 선택합니다.
 
@@ -431,8 +453,8 @@ Windows 설치 응답 파일을 제공하지 않으면 작업 순서에서 응�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDMigrateAdapterSettings](/sccm/osd/understand/task-sequence-variables#OSDMigrateAdapterSettings)  
-- [OSDMigrateNetworkMembership](/sccm/osd/understand/task-sequence-variables#OSDMigrateNetworkMembership)  
+- [OSDMigrateAdapterSettings](/configmgr/osd/understand/task-sequence-variables#OSDMigrateAdapterSettings)  
+- [OSDMigrateNetworkMembership](/configmgr/osd/understand/task-sequence-variables#OSDMigrateNetworkMembership)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **설정**, **네트워크 설정 캡처**를 차례로 선택합니다.
 
@@ -462,19 +484,19 @@ Configuration Manager는 참조 컴퓨터에서 .wim 파일 내의 별도 이미
 
 참조 컴퓨터에 설치된 OS는 Configuration Manager에서 지원되는 Windows 버전이어야 합니다. SysPrep 도구를 사용하여 참조 컴퓨터에서 OS를 준비합니다. 설치된 OS 볼륨과 부팅 볼륨은 동일한 볼륨이어야 합니다.  
 
-선택한 네트워크 공유에 대한 쓰기 권한이 있는 계정을 지정합니다. OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#capture-os-image-account)을 참조하세요.
+선택한 네트워크 공유에 대한 쓰기 권한이 있는 계정을 지정합니다. OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#capture-os-image-account)을 참조하세요.
 
 이 작업 순서 단계는 Windows PE에서만 실행됩니다. 전체 OS에서는 실행되지 않습니다.
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDCaptureAccount](/sccm/osd/understand/task-sequence-variables#OSDCaptureAccount)  
-- [OSDCaptureAccountPassword](/sccm/osd/understand/task-sequence-variables#OSDCaptureAccountPassword)  
-- [OSDCaptureDestination](/sccm/osd/understand/task-sequence-variables#OSDCaptureDestination)  
-- [OSDImageCreator](/sccm/osd/understand/task-sequence-variables#OSDImageCreator)  
-- [OSDImageDescription](/sccm/osd/understand/task-sequence-variables#OSDImageDescription)  
-- [OSDImageVersion](/sccm/osd/understand/task-sequence-variables#OSDImageVersion)  
-- [OSDTargetSystemRoot](/sccm/osd/understand/task-sequence-variables#OSDTargetSystemRoot-input)  
+- [OSDCaptureAccount](/configmgr/osd/understand/task-sequence-variables#OSDCaptureAccount)  
+- [OSDCaptureAccountPassword](/configmgr/osd/understand/task-sequence-variables#OSDCaptureAccountPassword)  
+- [OSDCaptureDestination](/configmgr/osd/understand/task-sequence-variables#OSDCaptureDestination)  
+- [OSDImageCreator](/configmgr/osd/understand/task-sequence-variables#OSDImageCreator)  
+- [OSDImageDescription](/configmgr/osd/understand/task-sequence-variables#OSDImageDescription)  
+- [OSDImageVersion](/configmgr/osd/understand/task-sequence-variables#OSDImageVersion)  
+- [OSDTargetSystemRoot](/configmgr/osd/understand/task-sequence-variables#OSDTargetSystemRoot-input)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **이미지**, **운영 체제 이미지 캡처**를 차례로 선택합니다.
 
@@ -508,7 +530,7 @@ OS 이미지를 만든 사용자의 선택적 이름입니다. 이미지 파일�
 
 이 단계에서는 USMT(사용자 환경 마이그레이션 도구)를 사용하여 작업 순서를 실행하는 컴퓨터에서 사용자 상태 및 설정을 캡처합니다. 이 작업 순서 단계는 **사용자 상태 복원** 작업 순서 단계와 함께 사용됩니다. 이 단계에서는 항상 Configuration Manager에서 생성 및 관리되는 암호화 키를 사용하여 USMT 상태 저장소를 암호화합니다.  
 
-운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/sccm/osd/get-started/manage-user-state)를 참조하세요.  
+운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/configmgr/osd/get-started/manage-user-state)를 참조하세요.  
 
 상태 마이그레이션 지점에서 사용자 상태 설정을 저장하거나 복원하려는 경우, **상태 저장소 요청** 및 **상태 저장소 해제** 단계와 함께 이 단계를 사용합니다.  
 
@@ -518,14 +540,14 @@ OS 이미지를 만든 사용자의 선택적 이름입니다. 이미지 파일�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [_OSDMigrateUsmtPackageID](/sccm/osd/understand/task-sequence-variables#OSDMigrateUsmtPackageID)  
-- [OSDMigrateAdditionalCaptureOptions](/sccm/osd/understand/task-sequence-variables#OSDMigrateAdditionalCaptureOptions)  
-- [OSDMigrateConfigFiles](/sccm/osd/understand/task-sequence-variables#OSDMigrateConfigFiles)  
-- [OSDMigrateContinueOnLockedFiles](/sccm/osd/understand/task-sequence-variables#OSDMigrateContinueOnLockedFiles)  
-- [OSDMigrateEnableVerboseLogging](/sccm/osd/understand/task-sequence-variables#OSDMigrateEnableVerboseLogging)  
-- [OSDMigrateMode](/sccm/osd/understand/task-sequence-variables#OSDMigrateMode)  
-- [OSDMigrateSkipEncryptedFiles](/sccm/osd/understand/task-sequence-variables#OSDMigrateSkipEncryptedFiles)  
-- [OSDStateStorePath](/sccm/osd/understand/task-sequence-variables#OSDStateStorePath)  
+- [_OSDMigrateUsmtPackageID](/configmgr/osd/understand/task-sequence-variables#OSDMigrateUsmtPackageID)  
+- [OSDMigrateAdditionalCaptureOptions](/configmgr/osd/understand/task-sequence-variables#OSDMigrateAdditionalCaptureOptions)  
+- [OSDMigrateConfigFiles](/configmgr/osd/understand/task-sequence-variables#OSDMigrateConfigFiles)  
+- [OSDMigrateContinueOnLockedFiles](/configmgr/osd/understand/task-sequence-variables#OSDMigrateContinueOnLockedFiles)  
+- [OSDMigrateEnableVerboseLogging](/configmgr/osd/understand/task-sequence-variables#OSDMigrateEnableVerboseLogging)  
+- [OSDMigrateMode](/configmgr/osd/understand/task-sequence-variables#OSDMigrateMode)  
+- [OSDMigrateSkipEncryptedFiles](/configmgr/osd/understand/task-sequence-variables#OSDMigrateSkipEncryptedFiles)  
+- [OSDStateStorePath](/configmgr/osd/understand/task-sequence-variables#OSDStateStorePath)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **사용자 상태**, **사용자 상태 캡처**를 차례로 선택합니다.
 
@@ -591,12 +613,12 @@ EFS(암호화된 파일 시스템)로 암호화된 파일의 캡처를 건너뛰
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDComputerName](/sccm/osd/understand/task-sequence-variables#OSDComputerName-output)  
-- [OSDMigrateComputerName](/sccm/osd/understand/task-sequence-variables#OSDMigrateComputerName)  
-- [OSDMigrateRegistrationInfo](/sccm/osd/understand/task-sequence-variables#OSDMigrateRegistrationInfo)  
-- [OSDMigrateTimeZone](/sccm/osd/understand/task-sequence-variables#OSDMigrateTimeZone)  
-- [OSDRegisteredOrgName](/sccm/osd/understand/task-sequence-variables#OSDRegisteredOrgName-output)  
-- [OSDTimeZone](/sccm/osd/understand/task-sequence-variables#OSDTimeZone-output)  
+- [OSDComputerName](/configmgr/osd/understand/task-sequence-variables#OSDComputerName-output)  
+- [OSDMigrateComputerName](/configmgr/osd/understand/task-sequence-variables#OSDMigrateComputerName)  
+- [OSDMigrateRegistrationInfo](/configmgr/osd/understand/task-sequence-variables#OSDMigrateRegistrationInfo)  
+- [OSDMigrateTimeZone](/configmgr/osd/understand/task-sequence-variables#OSDMigrateTimeZone)  
+- [OSDRegisteredOrgName](/configmgr/osd/understand/task-sequence-variables#OSDRegisteredOrgName-output)  
+- [OSDTimeZone](/configmgr/osd/understand/task-sequence-variables#OSDTimeZone-output)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **설정**, **Windows 설정 캡처**를 차례로 선택합니다.
 
@@ -659,10 +681,10 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [SMSConnectNetworkFolderAccount](/sccm/osd/understand/task-sequence-variables#SMSConnectNetworkFolderAccount)  
-- [SMSConnectNetworkFolderDriveLetter](/sccm/osd/understand/task-sequence-variables#SMSConnectNetworkFolderDriveLetter)  
-- [SMSConnectNetworkFolderPassword](/sccm/osd/understand/task-sequence-variables#SMSConnectNetworkFolderPassword)  
-- [SMSConnectNetworkFolderPath](/sccm/osd/understand/task-sequence-variables#SMSConnectNetworkFolderPath)  
+- [SMSConnectNetworkFolderAccount](/configmgr/osd/understand/task-sequence-variables#SMSConnectNetworkFolderAccount)  
+- [SMSConnectNetworkFolderDriveLetter](/configmgr/osd/understand/task-sequence-variables#SMSConnectNetworkFolderDriveLetter)  
+- [SMSConnectNetworkFolderPassword](/configmgr/osd/understand/task-sequence-variables#SMSConnectNetworkFolderPassword)  
+- [SMSConnectNetworkFolderPath](/configmgr/osd/understand/task-sequence-variables#SMSConnectNetworkFolderPath)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **네트워크 폴더에 연결**을 차례로 선택합니다.
 
@@ -680,7 +702,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 #### <a name="account"></a>계정
 
-**설정**을 선택하여 이 네트워크 폴더에 연결할 수 있는 권한이 있는 사용자 계정을 지정합니다. 작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-network-folder-connection-account)을 참조하세요.
+**설정**을 선택하여 이 네트워크 폴더에 연결할 수 있는 권한이 있는 사용자 계정을 지정합니다. 작업 순서 네트워크 폴더 연결 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-network-folder-connection-account)을 참조하세요.
 
 
 
@@ -697,8 +719,8 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 버전 1906부터이 단계에서 다음 작업 순서 변수를 사용 합니다.  
 
-- [OSDBitLockerRebootCount](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCount)  
-- [OSDBitLockerRebootCountOverride](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCountOverride)  
+- [OSDBitLockerRebootCount](/configmgr/osd/understand/task-sequence-variables#OSDBitLockerRebootCount)  
+- [OSDBitLockerRebootCountOverride](/configmgr/osd/understand/task-sequence-variables#OSDBitLockerRebootCountOverride)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **디스크**, **BitLocker 사용 안 함**을 차례로 선택합니다.
 
@@ -719,7 +741,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 <!-- 4512937 -->
 1906 버전부터 이 옵션을 사용하여 BitLocker를 사용하지 않는 상태로 유지하는 다시 시작 횟수를 지정합니다. 이 단계에 여러 인스턴스를 추가하는 대신 1(기본값)에서 15 사이의 값을 설정합니다.
 
-작업 순서 변수 [OSDBitLockerRebootCount](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCount) 및 [OSDBitLockerRebootCountOverride](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRebootCountOverride)를 사용 하 여이 동작을 설정 하 고 수정할 수 있습니다.
+작업 순서 변수 [OSDBitLockerRebootCount](/configmgr/osd/understand/task-sequence-variables#OSDBitLockerRebootCount) 및 [OSDBitLockerRebootCountOverride](/configmgr/osd/understand/task-sequence-variables#OSDBitLockerRebootCountOverride)를 사용 하 여이 동작을 설정 하 고 수정할 수 있습니다.
 
 
 ## <a name="BKMK_DownloadPackageContent"></a> 패키지 콘텐츠 다운로드  
@@ -730,7 +752,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 - OS 업그레이드 패키지  
 - 드라이버 패키지  
 - 패키지  
-- 부팅 이미지 (버전 1810 및 이전 버전)  
+- 부팅 이미지 <sup> [참고 1](#bkmk_note1)</sup>  
 
 다음 단계는 다음과 같은 시나리오에서 OS를 업그레이드하는 작업 순서에서 잘 작동합니다.  
 
@@ -744,7 +766,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 이 단계는 전체 OS 또는 Windows PE에서 실행됩니다. 구성 관리자 클라이언트 캐시에 패키지를 저장하는 옵션은 Windows PE에서 지원되지 않습니다.
 
 > [!NOTE]  
-> **패키지 콘텐츠 다운로드** 작업은 독립 실행형 미디어에서 사용할 지원 되지 않습니다. 자세한 내용은 [독립 실행형 미디어에 대해 지원 되지 않는 작업](/sccm/osd/deploy-use/create-stand-alone-media#unsupported-actions-for-stand-alone-media)을 참조 하세요.  
+> **패키지 콘텐츠 다운로드** 작업은 독립 실행형 미디어에서 사용할 지원 되지 않습니다. 자세한 내용은 [독립 실행형 미디어에 대해 지원 되지 않는 작업](/configmgr/osd/deploy-use/create-stand-alone-media#unsupported-actions-for-stand-alone-media)을 참조 하세요.  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **패키지 콘텐츠 다운로드**를 차례로 선택합니다.
 
@@ -776,7 +798,24 @@ Configuration Manager에서 변수 이름에 숫자 접미사를 추가합니다
 
 작업 순서가 패키지 다운로드에 실패하면 목록에 있는 다음 패키지를 다운로드하기 시작합니다.  
 
+### <a name="bkmk_note1"></a>참고 1: 패키지 콘텐츠 다운로드 단계에서 부팅 이미지 사용
 
+*버전 1910 이상에 적용*<!-- SCCMDocs-pr #4202 -->
+
+**부팅 이미지를 사용**하도록 [작업 순서 속성](/configmgr/osd/deploy-use/manage-task-sequences-to-automate-tasks#bkmk_prop-advanced) 을 구성 하는 경우이 단계에 부팅 이미지를 추가 하는 것은 중복 됩니다. 작업 순서의 속성에 지정 되지 않은 경우에만이 단계에 부팅 이미지를 추가 합니다.
+
+#### <a name="example-use-case"></a>사용 사례 예제
+
+- 콘텐츠를 미리 다운로드 하는 단일 작업 순서:
+  - 연결 된 부팅 이미지가 없습니다.
+  - 사용자가 개입할 필요 없이 전체 OS 에서만 실행 됩니다.
+  - 조건에 대 한 여러 가지 **패키지 콘텐츠 다운로드** 단계를 사용 합니다. 특정 언어 및 아키텍처에 따라 OS 배포 작업 순서를 준비 하기 위해 콘텐츠를 클라이언트 캐시에 다운로드 합니다.
+  - 이 작업 순서의 인스턴스는 하나 뿐 이며 가능한 모든 콘텐츠 옵션이 있습니다.
+
+- 여러 OS 배포 작업 순서:
+  - 일반적인 OS 배포 작업 순서
+  - 해당 속성에서 부팅 이미지를 참조 합니다.
+  - 아키텍처 및 언어에서 요구 하는 여러 부팅 이미지를 사용 하 여이 작업 순서의 여러 인스턴스가 있습니다.
 
 ## <a name="BKMK_EnableBitLocker"></a> BitLocker 사용  
 
@@ -791,8 +830,8 @@ Configuration Manager에서 변수 이름에 숫자 접미사를 추가합니다
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDBitLockerRecoveryPassword](/sccm/osd/understand/task-sequence-variables#OSDBitLockerRecoveryPassword)  
-- [OSDBitLockerStartupKey](/sccm/osd/understand/task-sequence-variables#OSDBitLockerStartupKey)  
+- [OSDBitLockerRecoveryPassword](/configmgr/osd/understand/task-sequence-variables#OSDBitLockerRecoveryPassword)  
+- [OSDBitLockerStartupKey](/configmgr/osd/understand/task-sequence-variables#OSDBitLockerStartupKey)  
 
 **TPM만** , **TPM과 USB의 시작 키**또는 **TPM 및 PIN**을 지정하는 경우, **BitLocker 사용** 단계를 실행하기 전에 TPM(신뢰할 수 있는 플랫폼 모듈)이 다음과 같은 상태여야 합니다.  
 
@@ -836,7 +875,10 @@ OS 이외의 특정 데이터 드라이브를 암호화하려면 **특정 드라
 #### <a name="use-full-disk-encryption"></a>전체 디스크 암호화 사용
 
 <!--SCCMDocs-pr issue 2671-->
-기본적으로 이 단계는 드라이브에서 사용된 공간만 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 버전 1806부터는 조직에 설치 중에 전체 드라이브 암호화가 필요한 경우 이 옵션을 사용하도록 설정합니다. Windows 설치는 전체 드라이브가 암호화될 때까지 대기하는데, 특히 드라이브가 크면 긴 시간이 소요됩니다.
+기본적으로 이 단계는 드라이브에서 사용된 공간만 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 조직에 설치 중에 전체 드라이브 암호화가 필요한 경우 이 옵션을 사용하도록 설정합니다. Windows 설치는 전체 드라이브가 암호화될 때까지 대기하는데, 특히 드라이브가 크면 긴 시간이 소요됩니다.
+
+> [!TIP]
+> 버전 1910부터 *전체 디스크* 암호화를 사용 하는 BitLocker 관리 정책을 만들고 배포할 수 있습니다. 작업 순서에서 OS를 배포한 후 장치에서 BitLocker를 관리 하려면이 옵션을 사용 하도록 설정 합니다. 자세한 내용은 [BitLocker 관리 계획](/configmgr/protect/plan-design/bitlocker-management)을 참조 하세요.
 
 #### <a name="choose-where-to-create-the-recovery-key"></a>복구 키를 만들 위치 선택
 
@@ -861,10 +903,10 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDDiskIndex](/sccm/osd/understand/task-sequence-variables#OSDDiskIndex)  
-- [OSDGPTBootDisk](/sccm/osd/understand/task-sequence-variables#OSDGPTBootDisk)  
-- [OSDPartitions](/sccm/osd/understand/task-sequence-variables#OSDPartitions)  
-- [OSDPartitionStyle](/sccm/osd/understand/task-sequence-variables#OSDPartitionStyle)  
+- [OSDDiskIndex](/configmgr/osd/understand/task-sequence-variables#OSDDiskIndex)  
+- [OSDGPTBootDisk](/configmgr/osd/understand/task-sequence-variables#OSDGPTBootDisk)  
+- [OSDPartitions](/configmgr/osd/understand/task-sequence-variables#OSDPartitions)  
+- [OSDPartitionStyle](/configmgr/osd/understand/task-sequence-variables#OSDPartitionStyle)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **디스크**, **디스크 포맷 및 파티션 만들기**를 차례로 선택합니다.
 
@@ -924,7 +966,7 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 - 자체적으로 다시 시작해서는 안 됩니다. 애플리케이션이 표준 재시작 코드 3010을 사용하여 다시 시작을 요청해야 합니다. 이 동작은 이 단계가 다시 시작을 올바르게 처리하도록 합니다. 애플리케이션에서 3010 종료 코드를 반환하면 작업 순서 엔진이 컴퓨터를 다시 시작합니다. 다시 시작 후 작업 순서가 자동으로 계속됩니다.  
 
 > [!Note]
-> 응용 프로그램에서 [실행 중인 실행 파일을 확인](/sccm/apps/deploy-use/deploy-applications#bkmk_exe-check)하는 경우 작업 순서에서 해당 파일을 설치 하지 못합니다. 이 단계를 오류 발생 시 계속 하도록 구성 하지 않으면 전체 작업 순서가 실패 합니다.
+> 응용 프로그램에서 [실행 중인 실행 파일을 확인](/configmgr/apps/deploy-use/deploy-applications#bkmk_exe-check)하는 경우 작업 순서에서 해당 파일을 설치 하지 못합니다. 이 단계를 오류 발생 시 계속 하도록 구성 하지 않으면 전체 작업 순서가 실패 합니다.
 
 이 단계가 실행되면 애플리케이션에서 해당 배포 유형에 대한 요구 사항 규칙 및 검색 방법의 적용 여부를 확인합니다. 이 확인 결과에 따라 애플리케이션은 적용 가능한 배포 유형을 설치합니다. 배포 유형에 종속성이 포함되어 있으면 종속 배포 유형이 평가되고 이 단계의 일부로 설치됩니다. 독립 실행형 미디어에는 애플리케이션 종속성이 지원되지 않습니다.  
 
@@ -938,13 +980,13 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [_TSAppInstallStatus](/sccm/osd/understand/task-sequence-variables#TSAppInstallStatus)  
-- [SMSTSMPListRequestTimeoutEnabled](/sccm/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeoutEnabled)  
-- [SMSTSMPListRequestTimeout](/sccm/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeout)  
-- [TSErrorOnWarning](/sccm/osd/understand/task-sequence-variables#TSErrorOnWarning)  
+- [_TSAppInstallStatus](/configmgr/osd/understand/task-sequence-variables#TSAppInstallStatus)  
+- [SMSTSMPListRequestTimeoutEnabled](/configmgr/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeoutEnabled)  
+- [SMSTSMPListRequestTimeout](/configmgr/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeout)  
+- [TSErrorOnWarning](/configmgr/osd/understand/task-sequence-variables#TSErrorOnWarning)  
 
 > [!NOTE]  
-> 클라이언트가 위치 서비스에서 관리 지점 목록을 검색하지 못하면, **SMSTSMPListRequestTimeoutEnabled** 및 **SMSTSMPListRequestTimeout** 작업 순서 변수를 사용합니다. 이 변수는 애플리케이션 설치를 다시 시도하기 전까지 작업 순서에서 기다리는 시간(밀리초)을 지정합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.
+> 클라이언트가 위치 서비스에서 관리 지점 목록을 검색하지 못하면, **SMSTSMPListRequestTimeoutEnabled** 및 **SMSTSMPListRequestTimeout** 작업 순서 변수를 사용합니다. 이 변수는 애플리케이션 설치를 다시 시도하기 전까지 작업 순서에서 기다리는 시간(밀리초)을 지정합니다. 자세한 내용은 [Task sequence variables](/configmgr/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **애플리케이션 설치**를 차례로 선택합니다.
 
@@ -1047,13 +1089,13 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 >
 > `WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE`  
 >
-> 독립 실행형 미디어를 만드는 방법은 [독립 실행형 미디어 만들기](/sccm/osd/deploy-use/create-stand-alone-media)를 참조하세요.  
+> 독립 실행형 미디어를 만드는 방법은 [독립 실행형 미디어 만들기](/configmgr/osd/deploy-use/create-stand-alone-media)를 참조하세요.  
 
 이 작업 순서 단계는 전체 OS에서만 실행되고, Windows PE에서는 실행되지 않습니다.  
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDDoNotLogCommand](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)(버전 1806부터 적용)<!--1358493-->  
+- [OSDDoNotLogCommand](/configmgr/osd/understand/task-sequence-variables#OSDDoNotLogCommand) <!--1358493-->  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **패키지 설치**를 차례로 선택합니다.
 다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
@@ -1122,14 +1164,14 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [SMSInstallUpdateTarget](/sccm/osd/understand/task-sequence-variables#SMSInstallUpdateTarget)  
-- [SMSTSMPListRequestTimeoutEnabled](/sccm/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeoutEnabled)  
-- [SMSTSMPListRequestTimeout](/sccm/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeout)  
-- [SMSTSSoftwareUpdateScanTimeout](/sccm/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)  
-- [SMSTSWaitForSecondReboot](/sccm/osd/understand/task-sequence-variables#SMSTSWaitForSecondReboot)  
+- [SMSInstallUpdateTarget](/configmgr/osd/understand/task-sequence-variables#SMSInstallUpdateTarget)  
+- [SMSTSMPListRequestTimeoutEnabled](/configmgr/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeoutEnabled)  
+- [SMSTSMPListRequestTimeout](/configmgr/osd/understand/task-sequence-variables#SMSTSMPListRequestTimeout)  
+- [SMSTSSoftwareUpdateScanTimeout](/configmgr/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)  
+- [SMSTSWaitForSecondReboot](/configmgr/osd/understand/task-sequence-variables#SMSTSWaitForSecondReboot)  
 
 > [!NOTE]  
-> 클라이언트가 위치 서비스에서 관리 지점 목록을 검색하지 못하면, **SMSTSMPListRequestTimeoutEnabled** 및 **SMSTSMPListRequestTimeout** 변수를 사용합니다. 이 변수는 애플리케이션이나 소프트웨어 업데이트 설치를 다시 시도하기 전까지 작업 순서에서 기다리는 시간(밀리초)을 지정합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.  
+> 클라이언트가 위치 서비스에서 관리 지점 목록을 검색하지 못하면, **SMSTSMPListRequestTimeoutEnabled** 및 **SMSTSMPListRequestTimeout** 변수를 사용합니다. 이 변수는 애플리케이션이나 소프트웨어 업데이트 설치를 다시 시도하기 전까지 작업 순서에서 기다리는 시간(밀리초)을 지정합니다. 자세한 내용은 [Task sequence variables](/configmgr/osd/understand/task-sequence-variables)\(작업 순서 변수\)를 참조하세요.  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **소프트웨어**, **소프트웨어 업데이트 설치**를 차례로 선택합니다.
 
@@ -1140,7 +1182,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 - [제거-CMTSStepInstallUpdate](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtsstepinstallupdate?view=sccm-ps)
 - [Set-CMTSStepInstallUpdate](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtsstepinstallupdate?view=sccm-ps)
 
-이 단계에 대한 더 많은 권장 사항과 기술 순서도 다이어그램은 [소프트웨어 업데이트 설치](/sccm/osd/understand/install-software-updates)를 참조하세요.
+이 단계에 대한 더 많은 권장 사항과 기술 순서도 다이어그램은 [소프트웨어 업데이트 설치](/configmgr/osd/understand/install-software-updates)를 참조하세요.
 
 ### <a name="properties"></a>속성  
 
@@ -1156,13 +1198,13 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 #### <a name="evaluate-software-updates-from-cached-scan-results"></a>캐시된 검사 결과에서 소프트웨어 업데이트 평가
 
-기본적으로 이 단계는 Windows 업데이트 에이전트에서 캐시된 검색 결과를 사용합니다. Windows 업데이트 에이전트가 소프트웨어 업데이트 지점에서 최신 카탈로그를 다운로드하도록 지시하려면 이 옵션을 사용하지 않도록 설정하세요. 작업 순서를 사용하여 [OS 이미지를 캡처하고 만들](/sccm/osd/deploy-use/create-a-task-sequence-to-capture-an-operating-system) 때에는 이 옵션을 사용하도록 설정합니다. 이 시나리오에는 많은 수의 소프트웨어 업데이트가 있을 수 있습니다.
+기본적으로 이 단계는 Windows 업데이트 에이전트에서 캐시된 검색 결과를 사용합니다. Windows 업데이트 에이전트가 소프트웨어 업데이트 지점에서 최신 카탈로그를 다운로드하도록 지시하려면 이 옵션을 사용하지 않도록 설정하세요. 작업 순서를 사용하여 [OS 이미지를 캡처하고 만들](/configmgr/osd/deploy-use/create-a-task-sequence-to-capture-an-operating-system) 때에는 이 옵션을 사용하도록 설정합니다. 이 시나리오에는 많은 수의 소프트웨어 업데이트가 있을 수 있습니다.
 
 이러한 업데이트 중 다수에는 종속성이 있습니다. 예를 들어 업데이트 ABC를 먼저 설치해야 업데이트 XYZ가 적절하게 나타납니다. 이 설정을 사용하지 않도록 설정하고 많은 클라이언트에 작업 순서를 배포하면 이러한 클라이언트 모두가 소프트웨어 업데이트 지점에 동시에 연결됩니다. 이 동작으로 인해 업데이트 카탈로그 프로세스 및 다운로드 중에 성능 문제가 발생합니다.
 
 대부분의 경우에는 기본 설정을 사용하여 캐시된 검색 결과를 사용하세요.
 
-**SMSTSSoftwareUpdateScanTimeout** 변수는 이 단계에서 소프트웨어 업데이트 검색 시간 제한을 제어합니다. 기본값은 60분입니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)\(작업 순서 변수\)를 참조하세요.
+**SMSTSSoftwareUpdateScanTimeout** 변수는 이 단계에서 소프트웨어 업데이트 검색 시간 제한을 제어합니다. 기본값은 60분입니다. 자세한 내용은 [Task sequence variables](/configmgr/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)\(작업 순서 변수\)를 참조하세요.
 
 ### <a name="options"></a>Options  
 
@@ -1173,7 +1215,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 업데이트 중 하나가 예기치 않게 컴퓨터를 다시 시작하면 이 단계를 다시 시도합니다. 이 단계는 기본적으로 두 번의 다시 시도가 있는 설정을 사용하도록 설정합니다. 1-5번의 다시 시도를 지정할 수 있습니다.  
 
 > [!NOTE]  
-> 이 시나리오에서 컴퓨터가 다시 시작된 후 작업 순서가 일시 중지되는 시간(초)을 지정하려면 **SMSTSWaitForSecondReboot** 변수를 구성합니다. 자세한 내용은 [Task sequence variables](/sccm/osd/understand/task-sequence-variables#SMSTSWaitForSecondReboot)\(작업 순서 변수\)를 참조하세요.  
+> 이 시나리오에서 컴퓨터가 다시 시작된 후 작업 순서가 일시 중지되는 시간(초)을 지정하려면 **SMSTSWaitForSecondReboot** 변수를 구성합니다. 자세한 내용은 [Task sequence variables](/configmgr/osd/understand/task-sequence-variables#SMSTSWaitForSecondReboot)\(작업 순서 변수\)를 참조하세요.  
 
 
 
@@ -1185,13 +1227,13 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDJoinAccount](/sccm/osd/understand/task-sequence-variables#OSDJoinAccount)  
-- [OSDJoinDomainName](/sccm/osd/understand/task-sequence-variables#OSDJoinDomainName)  
-- [OSDJoinDomainOUName](/sccm/osd/understand/task-sequence-variables#OSDJoinDomainOUName)  
-- [OSDJoinPassword](/sccm/osd/understand/task-sequence-variables#OSDJoinPassword)  
-- [OSDJoinSkipReboot](/sccm/osd/understand/task-sequence-variables#OSDJoinSkipReboot)  
-- [OSDJoinType](/sccm/osd/understand/task-sequence-variables#OSDJoinType)  
-- [OSDJoinWorkgroupName](/sccm/osd/understand/task-sequence-variables#OSDJoinWorkgroupName)  
+- [OSDJoinAccount](/configmgr/osd/understand/task-sequence-variables#OSDJoinAccount)  
+- [OSDJoinDomainName](/configmgr/osd/understand/task-sequence-variables#OSDJoinDomainName)  
+- [OSDJoinDomainOUName](/configmgr/osd/understand/task-sequence-variables#OSDJoinDomainOUName)  
+- [OSDJoinPassword](/configmgr/osd/understand/task-sequence-variables#OSDJoinPassword)  
+- [OSDJoinSkipReboot](/configmgr/osd/understand/task-sequence-variables#OSDJoinSkipReboot)  
+- [OSDJoinType](/configmgr/osd/understand/task-sequence-variables#OSDJoinType)  
+- [OSDJoinWorkgroupName](/configmgr/osd/understand/task-sequence-variables#OSDJoinWorkgroupName)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **도메인 또는 작업 그룹 가입**을 차례로 선택합니다.
 
@@ -1211,7 +1253,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 #### <a name="enter-the-account-which-has-permission-to-join-the-domain"></a>도메인에 가입할 수 있는 권한이 있는 계정을 입력하세요.
 
-**설정**을 선택하여 도메인에 가입할 권한이 있는 계정의 사용자 이름 및 암호를 입력합니다. 계정을 `Domain\account` 형식으로 입력합니다. 작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.  
+**설정**을 선택하여 도메인에 가입할 권한이 있는 계정의 사용자 이름 및 암호를 입력합니다. 계정을 `Domain\account` 형식으로 입력합니다. 작업 순서 도메인 가입 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-domain-join-account)을 참조하세요.  
 
 
 
@@ -1242,8 +1284,8 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDKeepActivation](/sccm/osd/understand/task-sequence-variables#OSDKeepActivation)  
-- [OSDTargetSystemRoot](/sccm/osd/understand/task-sequence-variables#OSDTargetSystemRoot-output)  
+- [OSDKeepActivation](/configmgr/osd/understand/task-sequence-variables#OSDKeepActivation)  
+- [OSDTargetSystemRoot](/configmgr/osd/understand/task-sequence-variables#OSDTargetSystemRoot-output)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **이미지**, **Windows 캡처 준비**를 차례로 선택합니다.
 
@@ -1262,9 +1304,9 @@ Sysprep에서 제품 활성화 플래그를 다시 설정하지 못하도록 하
 #### <a name="shutdown-the-computer-after-running-this-action"></a>이 작업을 실행한 후 컴퓨터 종료
 
 <!--SCCMDocs-pr issue 2695-->
-버전 1806부터는 이 옵션이 기본값인 다시 시작을 수행하는 대신 컴퓨터를 종료하도록 Sysprep에 지시합니다.
+이 옵션이 기본값인 다시 시작을 수행하는 대신 컴퓨터를 종료하도록 Sysprep에 지시합니다.
 
-버전 1810부터는 [기존 디바이스에 대한 Windows Autopilot](/sccm/osd/deploy-use/windows-autopilot-for-existing-devices) 작업 순서에 이 단계가 사용됩니다.
+버전 1810부터는 [기존 디바이스에 대한 Windows Autopilot](/configmgr/osd/deploy-use/windows-autopilot-for-existing-devices) 작업 순서에 이 단계가 사용됩니다.
 
 - 작업 순서에서 디바이스를 새로 고치고 Autopilot OOBE를 바로 시작하려면 이 옵션을 해제된 상태로 둡니다.  
 
@@ -1294,7 +1336,7 @@ BitLocker를 사용하도록 설정할 드라이브를 지정합니다. BitLocke
 #### <a name="use-full-disk-encryption"></a>전체 디스크 암호화 사용
 
 <!--SCCMDocs-pr issue 2671-->
-기본적으로 이 단계는 드라이브에서 사용된 공간만 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 버전 1806부터는 조직에 설치 중에 전체 드라이브 암호화가 필요한 경우 이 옵션을 사용하도록 설정합니다. Windows 설치는 전체 드라이브가 암호화될 때까지 대기하는데, 특히 드라이브가 크면 긴 시간이 소요됩니다.
+기본적으로 이 단계는 드라이브에서 사용된 공간만 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 조직에 설치 중에 전체 드라이브 암호화가 필요한 경우 이 옵션을 사용하도록 설정합니다. Windows 설치는 전체 드라이브가 암호화될 때까지 대기하는데, 특히 드라이브가 크면 긴 시간이 소요됩니다.
 
 #### <a name="skip-this-step-for-computers-that-do-not-have-a-tpm-or-when-tpm-is-not-enabled"></a>컴퓨터에 TPM이 없거나 TPM이 사용되지 않는 경우 이 단계 건너뛰기
 
@@ -1306,7 +1348,7 @@ BitLocker를 사용하도록 설정할 드라이브를 지정합니다. BitLocke
 
 이 단계를 사용하여 상태 마이그레이션 지점에 캡처 또는 복원 작업이 완료되었음을 알립니다. **상태 저장소 요청**, **사용자 상태 캡처** 및 **사용자 상태 복원** 단계와 함께 이 단계를 사용합니다. 이러한 단계를 사용하여 상태 마이그레이션 지점과 USMT(사용자 상태 마이그레이션 도구)를 사용하여 사용자 상태 데이터를 마이그레이션합니다.  
 
-운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/sccm/osd/get-started/manage-user-state)를 참조하세요.  
+운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/configmgr/osd/get-started/manage-user-state)를 참조하세요.  
 
 **상태 저장소 요청** 단계를 사용하여 사용자 상태를 *캡처*하기 위해 상태 마이그레이션 지점에 대한 액세스를 요청하는 경우, 이 단계는 상태 마이그레이션 지점에 캡처 프로세스가 완료되었음을 알립니다. 그런 다음 상태 마이그레이션 지점은 사용자 상태 데이터를 복원에 사용할 수 있는 것으로 표시합니다. 상태 마이그레이션 지점은 복원 컴퓨터에서 읽기 전용으로만 액세스할 수 있도록 사용자 상태 데이터에 대한 액세스 제어 권한을 설정합니다.  
 
@@ -1319,7 +1361,7 @@ BitLocker를 사용하도록 설정할 드라이브를 지정합니다. BitLocke
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDStateStorePath](/sccm/osd/understand/task-sequence-variables#OSDStateStorePath)  
+- [OSDStateStorePath](/configmgr/osd/understand/task-sequence-variables#OSDStateStorePath)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **사용자 상태**, **사용자 상태 해제**를 차례로 선택합니다.
 
@@ -1333,7 +1375,7 @@ BitLocker를 사용하도록 설정할 드라이브를 지정합니다. BitLocke
 
 이 단계를 사용하여 상태를 캡처 또는 복원할 때 상태 마이그레이션 지점에 대한 액세스를 요청합니다.  
 
-운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/sccm/osd/get-started/manage-user-state)를 참조하세요.  
+운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/configmgr/osd/get-started/manage-user-state)를 참조하세요.  
 
 **상태 저장소 해제**, **사용자 상태 캡처** 및 **사용자 상태 복원** 단계와 함께 이 단계를 사용합니다. 이러한 단계를 사용하여 상태 마이그레이션 지점과 USMT(사용자 상태 마이그레이션 도구)를 사용하여 컴퓨터 상태를 마이그레이션합니다.  
 
@@ -1344,10 +1386,10 @@ BitLocker를 사용하도록 설정할 드라이브를 지정합니다. BitLocke
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDStateFallbackToNAA](/sccm/osd/understand/task-sequence-variables#OSDStateFallbackToNAA)  
-- [OSDStateSMPRetryCount](/sccm/osd/understand/task-sequence-variables#OSDStateSMPRetryCount)  
-- [OSDStateSMPRetryTime](/sccm/osd/understand/task-sequence-variables#OSDStateSMPRetryTime)  
-- [OSDStateStorePath](/sccm/osd/understand/task-sequence-variables#OSDStateStorePath)  
+- [OSDStateFallbackToNAA](/configmgr/osd/understand/task-sequence-variables#OSDStateFallbackToNAA)  
+- [OSDStateSMPRetryCount](/configmgr/osd/understand/task-sequence-variables#OSDStateSMPRetryCount)  
+- [OSDStateSMPRetryTime](/configmgr/osd/understand/task-sequence-variables#OSDStateSMPRetryTime)  
+- [OSDStateStorePath](/configmgr/osd/understand/task-sequence-variables#OSDStateStorePath)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **사용자 상태**, **상태 저장소 요청**을 차례로 선택합니다.
 
@@ -1389,8 +1431,8 @@ Configuration Manager 사이트에 여러 활성 상태 마이그레이션 지�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [SMSRebootMessage](/sccm/osd/understand/task-sequence-variables#SMSRebootMessage)  
-- [SMSRebootTimeout](/sccm/osd/understand/task-sequence-variables#SMSRebootTimeout)  
+- [SMSRebootMessage](/configmgr/osd/understand/task-sequence-variables#SMSRebootMessage)  
+- [SMSRebootTimeout](/configmgr/osd/understand/task-sequence-variables#SMSRebootTimeout)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **컴퓨터 다시 시작**을 차례로 선택합니다.
 
@@ -1431,7 +1473,7 @@ Configuration Manager 사이트에 여러 활성 상태 마이그레이션 지�
 
 이 단계를 사용하여 사용자 상태 및 설정을 대상 컴퓨터에 복원하기 위해 USMT(사용자 상태 마이그레이션 도구)를 시작합니다. 이 단계는 **사용자 상태 캡처** 단계와 함께 사용합니다.  
 
-운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/sccm/osd/get-started/manage-user-state)를 참조하세요.  
+운영 체제를 배포할 때 사용자 상태를 관리하는 방법에 대한 자세한 내용은 [사용자 상태 관리](/configmgr/osd/get-started/manage-user-state)를 참조하세요.  
 
 **상태 저장소 요청** 및 **상태 저장소 해제** 단계와 함께 이 단계를 사용하여 상태 마이그레이션 지점이 있는 상태 설정을 저장하거나 복원합니다. 이 옵션은 항상 Configuration Manager에서 생성 및 관리되는 암호화 키를 사용하여 USMT 상태 저장소의 암호를 해독합니다.  
 
@@ -1444,13 +1486,13 @@ Configuration Manager 사이트에 여러 활성 상태 마이그레이션 지�
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [_OSDMigrateUsmtRestorePackageID](/sccm/osd/understand/task-sequence-variables#OSDMigrateUsmtRestorePackageID)  
-- [OSDMigrateAdditionalRestoreOptions](/sccm/osd/understand/task-sequence-variables#OSDMigrateAdditionalRestoreOptions)  
-- [OSDMigrateContinueOnRestore](/sccm/osd/understand/task-sequence-variables#OSDMigrateContinueOnRestore)  
-- [OSDMigrateEnableVerboseLogging](/sccm/osd/understand/task-sequence-variables#OSDMigrateEnableVerboseLogging)  
-- [OSDMigrateLocalAccounts](/sccm/osd/understand/task-sequence-variables#OSDMigrateLocalAccounts)  
-- [OSDMigrateLocalAccountPassword](/sccm/osd/understand/task-sequence-variables#OSDMigrateLocalAccountPassword)  
-- [OSDStateStorePath](/sccm/osd/understand/task-sequence-variables#OSDStateStorePath)  
+- [_OSDMigrateUsmtRestorePackageID](/configmgr/osd/understand/task-sequence-variables#OSDMigrateUsmtRestorePackageID)  
+- [OSDMigrateAdditionalRestoreOptions](/configmgr/osd/understand/task-sequence-variables#OSDMigrateAdditionalRestoreOptions)  
+- [OSDMigrateContinueOnRestore](/configmgr/osd/understand/task-sequence-variables#OSDMigrateContinueOnRestore)  
+- [OSDMigrateEnableVerboseLogging](/configmgr/osd/understand/task-sequence-variables#OSDMigrateEnableVerboseLogging)  
+- [OSDMigrateLocalAccounts](/configmgr/osd/understand/task-sequence-variables#OSDMigrateLocalAccounts)  
+- [OSDMigrateLocalAccountPassword](/configmgr/osd/understand/task-sequence-variables#OSDMigrateLocalAccountPassword)  
+- [OSDStateStorePath](/configmgr/osd/understand/task-sequence-variables#OSDStateStorePath)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **사용자 상태**, **사용자 상태 복원**을 차례로 선택합니다.
 
@@ -1492,9 +1534,11 @@ USMT에서 일부 파일을 복원할 수 없는 경우에도 사용자 상태 �
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDDoNotLogCommand](/sccm/osd/understand/task-sequence-variables#OSDDoNotLogCommand)(버전 1902부터 적용)<!--3654172-->  
-- [SMSTSDisableWow64Redirection](/sccm/osd/understand/task-sequence-variables#SMSTSDisableWow64Redirection)  
-- [WorkingDirectory](/sccm/osd/understand/task-sequence-variables#WorkingDirectory)  
+- [OSDDoNotLogCommand](/configmgr/osd/understand/task-sequence-variables#OSDDoNotLogCommand)(버전 1902부터 적용)<!--3654172-->  
+- [SMSTSDisableWow64Redirection](/configmgr/osd/understand/task-sequence-variables#SMSTSDisableWow64Redirection)  
+- [SMSTSRunCommandLineUserName](/sccm/osd/understand/task-sequence-variables#SMSTSRunCommandLineUserName)  
+- [SMSTSRunCommandLineUserPassword](/sccm/osd/understand/task-sequence-variables#SMSTSRunCommandLineUserPassword)  
+- [WorkingDirectory](/configmgr/osd/understand/task-sequence-variables#WorkingDirectory)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **명령줄 실행**을 차례로 선택합니다.
 
@@ -1523,6 +1567,15 @@ USMT에서 일부 파일을 복원할 수 없는 경우에도 사용자 상태 �
 
 > [!NOTE]  
 > 성공적으로 실행하려면 명령줄 동작 앞에 **cmd.exe /c** 명령을 사용합니다. 이러한 동작의 예로, 출력 리디렉션, 파이핑 및 복사 명령이 있습니다.  
+
+#### <a name="output-to-task-sequence-variable"></a>작업 순서 변수 출력
+
+<!--user story 4977616/bug 4798352-->
+
+버전 1910부터 사용자 지정 작업 순서 변수에 명령 출력을 저장합니다.
+
+> [!Note]  
+> Configuration Manager는 이 출력을 마지막 1,000자로 제한합니다.
 
 #### <a name="disable-64-bit-file-system-redirection"></a>64비트 파일 시스템 리디렉션 사용 안 함
 
@@ -1561,7 +1614,7 @@ Configuration Manager에서 명령줄을 실행할 수 있는 기간을 나타�
 
 #### <a name="account"></a>계정
 
-이 단계에서 명령줄을 실행하는 데 사용하는 Windows 사용자 계정을 지정합니다. 명령줄은 지정된 계정의 권한으로 실행됩니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
+이 단계에서 명령줄을 실행하는 데 사용하는 Windows 사용자 계정을 지정합니다. 명령줄은 지정된 계정의 권한으로 실행됩니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
 
 > [!IMPORTANT]  
 > 이 단계에서 사용자 계정을 지정하고 Windows PE에서 실행하면 동작이 실패합니다. Windows PE는 도메인에 조인할 수 없습니다. **smsts.log** 파일은 이 실패를 기록합니다.  
@@ -1580,14 +1633,16 @@ Configuration Manager에서 명령줄을 실행할 수 있는 기간을 나타�
 
 이 단계를 사용하여 지정된 Windows PowerShell 스크립트를 실행합니다.  
 
-이 단계는 전체 OS 또는 Windows PE에서 실행할 수 있습니다. Windows PE에서 이 단계를 실행하려면 부팅 이미지에서 PowerShell을 사용하도록 설정합니다. 부팅 이미지에 대한 속성의 **선택적 구성 요소** 탭에서 WinPE-PowerShell 구성 요소를 사용하도록 설정하세요. 부팅 이미지를 수정하는 방법에 대한 자세한 내용은 [부팅 이미지 관리](/sccm/osd/get-started/manage-boot-images)를 참조하세요.  
+이 단계는 전체 OS 또는 Windows PE에서 실행할 수 있습니다. Windows PE에서 이 단계를 실행하려면 부팅 이미지에서 PowerShell을 사용하도록 설정합니다. 부팅 이미지에 대한 속성의 **선택적 구성 요소** 탭에서 WinPE-PowerShell 구성 요소를 사용하도록 설정하세요. 부팅 이미지를 수정하는 방법에 대한 자세한 내용은 [부팅 이미지 관리](/configmgr/osd/get-started/manage-boot-images)를 참조하세요.  
 
 > [!NOTE]  
 > PowerShell은 Windows Embedded 운영 체제에서는 기본적으로 사용되지 않습니다.  
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [OSDLogPowerShellParameters](/sccm/osd/understand/task-sequence-variables#OSDLogPowerShellParameters)(버전 1902부터 적용)<!--3556028-->  
+- [OSDLogPowerShellParameters](/configmgr/osd/understand/task-sequence-variables#OSDLogPowerShellParameters)(버전 1902부터 적용)<!--3556028-->  
+- [SMSTSRunPowerShellUserName](/sccm/osd/understand/task-sequence-variables#SMSTSRunPowerShellUserName)  
+- [SMSTSRunPowerShellUserPassword](/sccm/osd/understand/task-sequence-variables#SMSTSRunPowerShellUserPassword)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **PowerShell 스크립트 실행**을 차례로 선택합니다.
 
@@ -1624,7 +1679,7 @@ Configuration Manager PowerShell 스크립트가 포함된 패키지를 지정�
 
 - 파일에서 기존 스크립트 열기  
 
-- Configuration Manager에서 승인된 기존 [스크립트](/sccm/apps/deploy-use/create-deploy-scripts)로 이동
+- Configuration Manager에서 승인된 기존 [스크립트](/configmgr/apps/deploy-use/create-deploy-scripts)로 이동
 
 > [!Important]  
 > 이 새로운 Configuration Manager 기능을 활용하려면 사용자를 업데이트한 후 클라이언트를 최신 버전으로 업데이트하세요. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
@@ -1665,6 +1720,9 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 <!-- 3556028 -->
 버전 1902부터 사용자 지정 작업 순서 변수에 스크립트 출력을 저장합니다.
 
+> [!Note]  
+> 1910 버전부터, Configuration Manager이 출력을 지난 1000 자로 제한 합니다.
+
 #### <a name="start-in"></a>시작 위치
 
 <!-- 3556028 -->
@@ -1692,7 +1750,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 #### <a name="account"></a>계정
 
 <!-- 3556028 -->
-버전 1902부터, 이 단계에서 PowerShell 스크립트를 실행하기 위해 사용하는 Windows 사용자 계정을 지정합니다. 지정 된 계정은 시스템의 로컬 관리자 여야 하며 스크립트는이 계정의 사용 권한으로 실행 됩니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/sccm/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
+버전 1902부터, 이 단계에서 PowerShell 스크립트를 실행하기 위해 사용하는 Windows 사용자 계정을 지정합니다. 지정 된 계정은 시스템의 로컬 관리자 여야 하며 스크립트는이 계정의 사용 권한으로 실행 됩니다. **설정**을 선택하여 로컬 사용자 또는 도메인 계정을 지정합니다. 작업 순서 실행 계정에 대한 자세한 내용은 [계정](/configmgr/core/plan-design/hierarchy/accounts#task-sequence-run-as-account)을 참조하세요.
 
 > [!IMPORTANT]  
 > 이 단계에서 사용자 계정을 지정하고 Windows PE에서 실행하면 동작이 실패합니다. Windows PE는 도메인에 조인할 수 없습니다. **smsts.log** 파일은 이 실패를 기록합니다.  
@@ -1711,7 +1769,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 ## <a name="child-task-sequence"></a> 작업 순서 실행
 
 > [!Note]  
-> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능을 사용하려면 먼저 활성화합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
+> 버전 1910에서는이 기능이 기본적으로 사용 하도록 설정 Configuration Manager. 1906 이전 버전에서 Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능을 사용하려면 먼저 활성화합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/configmgr/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
 
 이 단계는 다른 작업 순서를 실행합니다. 이렇게 하면 작업 순서 간에 부모-자식 관계가 만들어집니다. 자식 작업 순서를 사용하면 재사용 가능한 모듈식 작업 순서를 만들 수 있습니다.
 
@@ -1724,7 +1782,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 - **Remove-CMTSStepRunTaskSequence**
 - **Set-CMTSStepRunTaskSequence**
 
-자세한 내용은 [1906 릴리스 정보-새 cmdlet](https://docs.microsoft.com/powershell/sccm/1906-release-notes?view=sccm-ps#new-cmdlets)을 참조 하세요.
+자세한 내용은 [1906 릴리스 정보-새 cmdlet](https://docs.microsoft.com/powershell/configmgr/1906-release-notes?view=sccm-ps#new-cmdlets)을 참조 하세요.
 
 ### <a name="specifications-and-limitations"></a>사양 및 제한 사항
 
@@ -1768,13 +1826,13 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 작업 순서에서는 다음 읽기 전용 작업 순서 변수를 자동으로 설정합니다.  
 
-- [\_SMSTSMake](/sccm/osd/understand/task-sequence-variables#SMSTSMake)  
-- [\_SMSTSModel](/sccm/osd/understand/task-sequence-variables#SMSTSModel)  
-- [\_SMSTSMacAddresses](/sccm/osd/understand/task-sequence-variables#SMSTSMacAddresses)  
-- [\_SMSTSIPAddresses](/sccm/osd/understand/task-sequence-variables#SMSTSIPAddresses)  
-- [\_SMSTSSerialNumber](/sccm/osd/understand/task-sequence-variables#SMSTSSerialNumber)  
-- [\_SMSTSAssetTag](/sccm/osd/understand/task-sequence-variables#SMSTSAssetTag)  
-- [\_SMSTSUUID](/sccm/osd/understand/task-sequence-variables#SMSTSUUID)  
+- [\_SMSTSMake](/configmgr/osd/understand/task-sequence-variables#SMSTSMake)  
+- [\_SMSTSModel](/configmgr/osd/understand/task-sequence-variables#SMSTSModel)  
+- [\_SMSTSMacAddresses](/configmgr/osd/understand/task-sequence-variables#SMSTSMacAddresses)  
+- [\_SMSTSIPAddresses](/configmgr/osd/understand/task-sequence-variables#SMSTSIPAddresses)  
+- [\_SMSTSSerialNumber](/configmgr/osd/understand/task-sequence-variables#SMSTSSerialNumber)  
+- [\_SMSTSAssetTag](/configmgr/osd/understand/task-sequence-variables#SMSTSAssetTag)  
+- [\_SMSTSUUID](/configmgr/osd/understand/task-sequence-variables#SMSTSUUID)  
 
 이 단계는 전체 OS 또는 Windows PE에서 실행할 수 있습니다.  
 
@@ -1828,8 +1886,8 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 작업 순서 변수는 작업 순서 동작에서 읽으며, 이러한 동작을 지정합니다. 특정 작업 순서 변수 및 사용 방법에 대한 자세한 내용은 다음 문서를 참조하세요.  
 
-- [작업 순서 변수 사용 방법](/sccm/osd/understand/using-task-sequence-variables)  
-- [작업 순서 변수](/sccm/osd/understand/task-sequence-variables)  
+- [작업 순서 변수 사용 방법](/configmgr/osd/understand/using-task-sequence-variables)  
+- [작업 순서 변수](/configmgr/osd/understand/task-sequence-variables)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **일반**, **작업 순서 변수 설정**을 차례로 선택합니다.
 
@@ -1851,7 +1909,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 #### <a name="do-not-display-this-value"></a>이 값 표시 안 함
 
 <!--1358330-->
-버전 1806부터 작업 순서 변수에 저장된 중요한 데이터를 마스킹하려면 이 옵션을 사용하도록 설정하세요. 예를 들어 암호를 지정하는 경우입니다.
+작업 순서 변수에 저장된 중요한 데이터를 마스킹하려면 이 옵션을 사용하도록 설정하세요. 예를 들어 암호를 지정하는 경우입니다.
 
 > [!Note]  
 > 이 옵션을 사용하도록 설정한 후 작업 순서 변수 값을 설정하세요. 그러지 않으면 변수 값이 의도대로 설정되지 않아 작업 순서를 실행할 때 예기치 않은 동작이 발생할 수 있습니다.<!--SCCMdocs issue #800-->
@@ -1870,7 +1928,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [SMSClientInstallProperties](/sccm/osd/understand/task-sequence-variables#SMSClientInstallProperties)  
+- [SMSClientInstallProperties](/configmgr/osd/understand/task-sequence-variables#SMSClientInstallProperties)  
 
 이 단계는 sysprep.inf 또는 unattend.xml 디렉터리 변수(예: `%WINDIR%` 및 `%ProgramFiles%`)를 Windows PE 설치 디렉터리인 `X:\Windows`로 바꿉니다. 작업 순서는 이러한 환경 변수를 사용하여 지정된 변수를 무시합니다.  
 
@@ -1919,7 +1977,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 2. **Windows 설정 적용** 단계에서 선택한 옵션에 따라 로컬 관리자 계정을 사용하거나 사용하지 않도록 설정합니다.  
 
-3. 이전에 다운로드한 패키지 및 이 단계에서 지정한 설치 속성을 사용하여 구성 관리자 클라이언트를 설치합니다. 클라이언트는 "프로비전 모드"로 설치됩니다. 이 모드는 클라이언트가 작업 순서가 완료되기 전까지 새 정책 요청을 처리하지 않도록 합니다. 자세한 내용은 [프로비저닝 모드](/sccm/osd/understand/provisioning-mode)를 참조하세요.  
+3. 이전에 다운로드한 패키지 및 이 단계에서 지정한 설치 속성을 사용하여 구성 관리자 클라이언트를 설치합니다. 클라이언트는 "프로비전 모드"로 설치됩니다. 이 모드는 클라이언트가 작업 순서가 완료되기 전까지 새 정책 요청을 처리하지 않도록 합니다. 자세한 내용은 [프로비저닝 모드](/configmgr/osd/understand/provisioning-mode)를 참조하세요.  
 
 4. 클라이언트가 정상적으로 작동할 때까지 기다립니다.  
 
@@ -1947,7 +2005,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 작업 순서 단계에서 사이트 할당 및 기본 구성을 자동으로 지정합니다. 클라이언트를 설치할 때 사용할 모든 추가 설치 속성을 지정하려면 이 필드를 사용하세요. 여러 설치 속성을 입력하려면 공백으로 구분합니다.  
 
-클라이언트 설치 중에 사용할 명령줄 옵션을 지정하세요. 예를 들어 Microsoft Silverlight 필수 조건을 설치하지 않도록 CCMSetup.exe에 알리려면 `/skipprereq: silverlight.exe`를 입력합니다. CCMSetup.exe의 사용 가능한 명령줄 옵션에 대한 자세한 내용은 [클라이언트 설치 속성 정보](/sccm/core/clients/deploy/about-client-installation-properties)를 참조하세요.  
+클라이언트 설치 중에 사용할 명령줄 옵션을 지정하세요. 예를 들어 Microsoft Silverlight 필수 조건을 설치하지 않도록 CCMSetup.exe에 알리려면 `/skipprereq: silverlight.exe`를 입력합니다. CCMSetup.exe의 사용 가능한 명령줄 옵션에 대한 자세한 내용은 [클라이언트 설치 속성 정보](/configmgr/core/clients/deploy/about-client-installation-properties)를 참조하세요.  
 
 ### <a name="options"></a>Options
 
@@ -1959,7 +2017,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 ## <a name="BKMK_UpgradeOS"></a> 운영 체제 업그레이드  
 
 > [!TIP]  
-> Windows 10 버전 1709부터 미디어에는 여러 버전이 포함되어 있습니다. OS 업그레이드 패키지 또는 OS 이미지를 사용하도록 작업 순서를 구성하는 경우 [지원되는 버전](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.  
+> Windows 10 버전 1709부터 미디어에는 여러 버전이 포함되어 있습니다. OS 업그레이드 패키지 또는 OS 이미지를 사용하도록 작업 순서를 구성하는 경우 [지원되는 버전](/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client)을 선택해야 합니다.  
 
 이 단계를 사용하여 이전 버전의 Windows를 최신 버전의 Windows 10으로 업그레이드합니다.  
 
@@ -1967,8 +2025,9 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 이 단계에 다음 작업 순서 변수를 사용하세요.  
 
-- [_SMSTSOSUpgradeActionReturnCode](/sccm/osd/understand/task-sequence-variables#SMSTSOSUpgradeActionReturnCode)  
-- [OSDSetupAdditionalUpgradeOptions](/sccm/osd/understand/task-sequence-variables#OSDSetupAdditionalUpgradeOptions)  
+- [_SMSTSOSUpgradeActionReturnCode](/configmgr/osd/understand/task-sequence-variables#SMSTSOSUpgradeActionReturnCode)  
+- [SetupCompletePause](/configmgr/osd/understand/task-sequence-variables#SetupCompletePause)
+- [OSDSetupAdditionalUpgradeOptions](/configmgr/osd/understand/task-sequence-variables#OSDSetupAdditionalUpgradeOptions)  
 
 작업 순서 편집기에서 이 단계를 추가하려면 **추가**, **이미지**, **운영 체제 업그레이드**를 차례로 선택합니다.
 
@@ -2000,7 +2059,7 @@ Windows 설치 프로그램에서 사용하는 Windows 10 미디어에 대한 �
 
 - **드라이버 패키지**: **찾아보기**를 선택하고, 목록에서 기존 드라이버 패키지를 선택합니다.  
 
-- **준비된 콘텐츠**: 드라이버 패키지의 위치를 지정하려면 이 옵션을 선택합니다. 로컬 폴더, 네트워크 경로 또는 작업 순서 변수를 지정할 수 있습니다. 원본 경로에 대한 변수를 사용하는 경우 작업 순서의 앞 부분에서 해당 값을 설정하세요. 예를 들어 [패키지 콘텐츠 다운로드](/sccm/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent) 단계를 사용합니다.  
+- **준비된 콘텐츠**: 드라이버 패키지의 위치를 지정하려면 이 옵션을 선택합니다. 로컬 폴더, 네트워크 경로 또는 작업 순서 변수를 지정할 수 있습니다. 원본 경로에 대한 변수를 사용하는 경우 작업 순서의 앞 부분에서 해당 값을 설정하세요. 예를 들어 [패키지 콘텐츠 다운로드](/configmgr/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent) 단계를 사용합니다.  
 
 #### <a name="time-out-minutes"></a>시간 제한(분)
 
@@ -2011,7 +2070,7 @@ Configuration Manager가 이 단계를 실패하기 전까지의 시간(분)을 
 업그레이드 프로세스를 시작하지 않고 Windows 설치 프로그램 호환성 검사를 수행합니다. 이 설정은 Windows 설치 프로그램의 `/Compat ScanOnly` 명령줄 옵션에 해당합니다. 이 옵션을 사용하여 전체 OS 업그레이드 패키지를 배포하세요.
 
 <!--SCCMDocs-pr issue 2812-->
-버전 1806부터는 이 옵션을 사용하도록 설정하는 경우 이 단계에서 구성 관리자 클라이언트가 프로비전 모드에 들어가지 않습니다. Windows 설치 프로그램은 백그라운드에서 자동으로 실행되며 클라이언트는 계속 정상적으로 작동합니다. 자세한 내용은 [프로비저닝 모드](/sccm/osd/understand/provisioning-mode)를 참조하세요.
+이 옵션을 사용하도록 설정하는 경우 이 단계에서 구성 관리자 클라이언트가 프로비전 모드에 들어가지 않습니다. Windows 설치 프로그램은 백그라운드에서 자동으로 실행되며 클라이언트는 계속 정상적으로 작동합니다. 자세한 내용은 [프로비저닝 모드](/configmgr/osd/understand/provisioning-mode)를 참조하세요.
 
 설치에서 검색 결과로 종료 코드를 반환합니다. 다음 표에서 보다 일반적인 종료 코드 중 일부를 제공합니다.  
 

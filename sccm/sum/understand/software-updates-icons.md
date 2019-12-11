@@ -12,10 +12,10 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7f096f9ff9baaff2411289c27282ab53eb697b0b
-ms.sourcegitcommit: 18a94eb78043cb565b05cd0e9469b939b29cccf0
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66354972"
 ---
 # <a name="icons-used-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 사용되는 아이콘
@@ -39,7 +39,7 @@ ms.locfileid: "66354972"
  작동 문제가 없습니다.  
 
 ### <a name="expired-icon"></a>만료됨 아이콘  
- ![아이콘](../media/Expired.jpg "만료됨 아이콘") 검은색 X가 있는 아이콘은 만료된 소프트웨어 업데이트를 나타냅니다. 만료된 소프트웨어 업데이트는 Configuration Manager 콘솔에 표시될 때 소프트웨어 업데이트의 **만료됨** 열을 통해서도 확인할 수 있습니다.  
+ ![아이콘](../media/Expired.jpg "만료됨 아이콘") 검정색 X가 있는 아이콘은 만료된 소프트웨어 업데이트를 나타냅니다. 만료된 소프트웨어 업데이트는 Configuration Manager 콘솔에 표시될 때 소프트웨어 업데이트의 **만료됨** 열을 통해서도 확인할 수 있습니다.  
 
  **설명:**  
 

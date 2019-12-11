@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dffa07009c253401c2ef15bdd2d3b37722deb450
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126272"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62198329"
 ---
 # <a name="technical-reference-for-the-package-conversion-manager-plug-in-configuration-xml"></a>Package Conversion Manager 플러그 인 구성 XML에 대한 기술 참조
 

@@ -2,7 +2,7 @@
 title: 애플리케이션 그룹 만들기
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 사용자 또는 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만듭니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,21 +11,23 @@ ms.assetid: e67c691e-62ef-4f43-9cfb-0e957d1e7a5f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2698105d125abbbf1354cb045753586899e003ba
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 4427e406ec2d96499276c49db1d9775b9e1f5e24
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537661"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74658730"
 ---
 # <a name="create-application-groups"></a>애플리케이션 그룹 만들기
+
+*적용 대상: Configuration Manager (현재 분기)*
 
 <!--3555907-->
 
 1906 버전부터는 사용자 또는 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만듭니다. 앱 그룹에 대해 지정한 메타데이터는 소프트웨서 센터에 단일 항목으로 표시됩니다. 클라이언트가 특정 순서대로 앱을 설치하도록 그룹에서 순서를 지정할 수 있습니다.
 
 > [!Note]  
-> 이 버전의 Configuration Manager에서 앱 그룹은 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+> 이 버전의 Configuration Manager에서 앱 그룹은 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/configmgr/core/servers/manage/pre-release-features)을 참조하세요.  
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동합니다. **애플리케이션 관리**를 펼치고 **애플리케이션 그룹** 노드를 선택합니다.  
 
@@ -39,20 +41,28 @@ ms.locfileid: "68537661"
 
 1. 마법사를 완료합니다.  
 
-애플리케이션에서와 같은 프로세스를 사용하여 앱 그룹을 배포합니다. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.
+애플리케이션에서와 같은 프로세스를 사용하여 앱 그룹을 배포합니다. 자세한 내용은 [애플리케이션 배포](/configmgr/apps/deploy-use/deploy-applications)를 참조하세요. 버전 1910부터 장치 또는 사용자 컬렉션에 앱 그룹을 배포할 수 있습니다.
 
-그룹을 배포한 후 그룹에 새 앱을 추가 하는 경우 배포 지점의 새 앱 콘텐츠를 별도로 배포 해야 합니다.
+그룹을 배포한 후:
+
+- 그룹에 새 앱을 추가 하는 경우 배포 지점의 새 앱 콘텐츠를 별도로 배포 해야 합니다.
+
+- 앱 그룹에서 응용 프로그램을 수정 하는 경우 콘텐츠를 다시 배포 합니다.
 
 앱 그룹 배포 문제를 해결 하려면 클라이언트에서 다음 로그 파일을 사용 합니다.
 
-- **AppGroupHandler .log**
+- **AppGroupHandler.log**
 - **AppEnforce.log**
-- **SettingsAgent .log**
+- **SettingsAgent.log**
 
 > [!Important]  
 > 전체 계층 및 대상 클라이언트를 버전 1906 이상으로 업데이트할 때까지 앱 그룹을 만들거나 배포 하지 마십시오.
 
 ### <a name="known-issues"></a>알려진 문제
 
-- 그룹의 앱은 **Windows Installer** 또는 **스크립트** 배포 유형만 포함할 수 있습니다. **시스템의 설치에 대 한**배포 유형 설치 동작을 설정 합니다.
-- 앱 그룹만 장치 컬렉션에 배포할 수 있습니다.
+- 그룹의 앱은 **Windows Installer** 또는 **스크립트** 배포 유형만 포함할 수 있습니다.
+  - *버전 1906*: 배포 유형 설치 동작을 **시스템에 대해 설치**로 설정 합니다.
+- 다음 배포 옵션은 작동 하지 않을 수 있습니다. 경고, 승인, 단계적 배포, 복구.
+- 앱 그룹을 내보내거나 가져올 수 없습니다.
+- *버전 1906*: 사용자 컬렉션에 앱 그룹을 배포할 수 없습니다.
+- *버전 1906*: 사용자는 소프트웨어 센터에서 앱 그룹을 **제거**할 수 없습니다.

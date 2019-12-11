@@ -2,7 +2,7 @@
 title: 작업 순서 변수 사용 방법
 titleSuffix: Configuration Manager
 description: Configuration Manager 작업 순서에서 변수를 사용하는 방법에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea21450a5065cc2572e84fd52d39c76c9f82c519
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: bad851316d0922a62c2c06a718ef879678e67f9b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537106"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660923"
 ---
 # <a name="how-to-use-task-sequence-variables-in-configuration-manager"></a>Configuration Manager에서 작업 순서 변수를 사용하는 방법
 
@@ -29,7 +29,6 @@ ms.locfileid: "68537106"
 - 더 복잡한 작업을 위한 스크립트에서 사용  
 
 모든 사용 가능한 작업 순서 변수들을 참조하려면 [작업 순서 변수](/sccm/osd/understand/task-sequence-variables)를 참조하세요.
-
 
 ## <a name="bkmk_types"></a> 변수 유형
 
@@ -45,17 +44,17 @@ ms.locfileid: "68537106"
 
 기본 제공 변수는 작업 순서가 실행되는 환경에 대한 정보를 제공합니다. 해당 값은 전체 작업 순서 동안 사용할 수 있습니다. 일반적으로 작업 순서 엔진에서는 단계를 실행하기 전에 기본 제공 변수를 초기화합니다.
 
-예를 들어 **\_SMSTSLogPath**는 Configuration Manager 구성 요소에서 로그 파일을 작성하는 경로를 지정하는 환경 변수입니다. 모든 작업 순서 단계에서 이 환경 변수에 액세스할 수 있습니다.
+예를 들어 `_SMSTSLogPath`는 Configuration Manager 구성 요소에서 로그 파일을 작성하는 경로를 지정하는 환경 변수입니다. 모든 작업 순서 단계에서 이 환경 변수에 액세스할 수 있습니다.
 
-작업 순서에서는 각 단계 전에 일부 변수를 평가합니다. 예를 들어 **\_SMSTSCurrentActionName**은 현재 단계의 이름을 나열합니다.
+작업 순서에서는 각 단계 전에 일부 변수를 평가합니다. 예를 들어 `_SMSTSCurrentActionName`에는 현재 단계의 이름이 나열 됩니다.
 
 ### <a name="bkmk_action"></a> 동작 변수
 
 작업 순서 동작 변수는 하나의 작업 순서 단계에서 사용하는 구성 설정을 지정합니다. 기본적으로 단계는 실행되기 전에 설정을 초기화합니다. 이러한 설정은 연결된 작업 순서 단계가 실행되는 동안에만 사용할 수 있습니다. 작업 순서는 단계를 실행하기 전에 환경에 동작 변수 값을 추가합니다. 그런 다음 단계가 실행된 후 환경에서 값을 제거합니다.
 
-예를 들어 작업 순서에 **명령줄 실행** 단계를 추가하는 경우, 이 단계는 **시작 위치** 속성을 포함합니다. 작업 순서는 이 속성에 대한 기본값을 **WorkingDirectory** 변수로 저장합니다. 작업 순서는 **명령줄 실행** 단계를 실행하기 전에 이 값을 초기화합니다. 이 단계가 실행되는 동안 **WorkingDirectory** 값에서 **시작 위치** 속성 값에 액세스합니다. 단계가 완료되면 작업 순서가 환경에서 **WorkingDirectory** 변수의 값을 제거합니다. 작업 순서에 또 다른 **명령줄 실행** 단계가 포함되어 있는 경우 작업 순서는 새 **WorkingDirectory** 변수를 초기화합니다. 이때 작업 순서는 변수를 현재 단계에 대한 시작 값으로 설정합니다. 자세한 내용은 [WorkingDirectory](/sccm/osd/understand/task-sequence-variables#WorkingDirectory)를 참조하세요.  
+예를 들어 작업 순서에 **명령줄 실행** 단계를 추가하는 경우, 이 단계는 **시작 위치** 속성을 포함합니다. 작업 순서는 이 속성에 대한 기본값을 `WorkingDirectory` 변수로 저장합니다. 작업 순서는 **명령줄 실행** 단계를 실행하기 전에 이 값을 초기화합니다. 이 단계가 실행되는 동안 `WorkingDirectory` 값에서 **시작 위치** 속성 값에 액세스합니다. 단계가 완료되면 작업 순서가 환경에서 `WorkingDirectory` 변수의 값을 제거합니다. 작업 순서에 또 다른 **명령줄 실행** 단계가 포함되어 있는 경우 작업 순서는 새 `WorkingDirectory` 변수를 초기화합니다. 이때 작업 순서는 변수를 현재 단계에 대한 시작 값으로 설정합니다. 자세한 내용은 [WorkingDirectory](/sccm/osd/understand/task-sequence-variables#WorkingDirectory)를 참조하세요.  
 
-단계가 실행될 때에는 동작 변수의 *기본* 값이 있습니다. *새* 값을 설정하면 작업 순서의 여러 단계에 사용할 수 있습니다. 기본값을 재정의하면 새 값은 환경에 유지되고, 이 새 값은 작업 순서에 있는 다른 단계에 대한 기본값을 재정의합니다. 예를 들어 작업 순서의 첫 번째 단계로서 **작업 순서 변수 설정** 단계를 추가하는 경우, 이 단계는 **WorkingDirectory** 변수를 `C:\`로 설정합니다. 작업 순서의 모든 **명령줄 실행** 단계에서는 새 시작 디렉터리 값을 사용합니다.  
+단계가 실행될 때에는 동작 변수의 *기본* 값이 있습니다. *새* 값을 설정하면 작업 순서의 여러 단계에 사용할 수 있습니다. 기본값을 재정의하면 새 값은 환경에 유지되고, 이 새 값은 작업 순서에 있는 다른 단계에 대한 기본값을 재정의합니다. 예를 들어 작업 순서의 첫 번째 단계로서 **작업 순서 변수 설정** 단계를 추가하는 경우, 이 단계에서는 `WorkingDirectory` 변수를 `C:\`로 설정 합니다. 작업 순서의 모든 **명령줄 실행** 단계에서는 새 시작 디렉터리 값을 사용합니다.  
 
 일부 작업 순서 단계는 특정 동작 변수를 *출력*으로 표시합니다. 작업 순서에서 나중에 발생하는 단계에서는 이러한 출력 변수를 읽습니다.
 
@@ -86,7 +85,7 @@ ms.locfileid: "68537106"
 
 일부 변수의 값은 읽기 전용이어서 변경할 수 없습니다. 일반적으로 이러한 변수의 이름은 밑줄 문자(`_`)로 시작합니다. 작업 순서는 작업 순서 운영에 이 변수를 사용합니다. 읽기 전용 변수는 작업 순서 환경에 표시됩니다.
 
-이러한 변수는 스크립트나 명령줄에서 유용합니다. 예를 들어, 명령줄을 실행하고 출력을 다른 로그 파일과 함께 **\_SMSTSLogPath**의 로그 파일에 전송합니다.
+이러한 변수는 스크립트나 명령줄에서 유용합니다. 예를 들어, 명령줄을 실행하고 출력을 다른 로그 파일과 함께 `_SMSTSLogPath`의 로그 파일에 전송합니다.
 
 > [!NOTE]  
 > 읽기 전용 작업 순서 변수는 작업 순서의 단계에서 읽을 수는 있지만 설정할 수는 없습니다. 예를 들어, 읽기 전용 변수를 **명령줄 실행** 단계를 위한 명령줄의 일부로 사용할 수 있지만, **작업 순서 변수 설정** 단계를 사용하여 읽기 전용 변수를 설정할 수는 없습니다.  
@@ -98,7 +97,6 @@ ms.locfileid: "68537106"
 - [네트워크 설정 적용](task-sequence-steps.md#BKMK_ApplyNetworkSettings)  
 
 - [디스크 포맷 및 파티션 만들기](task-sequence-steps.md#BKMK_FormatandPartitionDisk)  
-
 
 ## <a name="bkmk_set"></a> 변수 설정 방법
 
@@ -146,9 +144,47 @@ ms.locfileid: "68537106"
 
 ### <a name="bkmk_set-coll-var"></a> 컬렉션 및 디바이스 변수
 
-컬렉션 또는 특정 디바이스의 속성에 대한 변수를 설정합니다.
+디바이스 및 컬렉션에 대해 사용자 지정 작업 순서 변수를 정의할 수 있습니다. 장치에 대해 정의 하는 변수를 장치당 작업 순서 변수 라고 합니다. 컬렉션에 정의된 변수는 컬렉션별 작업 순서 변수라고도 합니다. 충돌이 발생하는 경우 디바이스별 변수가 컬렉션별 변수보다 우선 적용됩니다. 이 동작은 특정 디바이스에 할당된 작업 순서 변수가 자동으로 디바이스가 속한 컬렉션에 할당된 변수보다 높은 우선 순위를 보유합니다.  
 
-자세한 내용은 [Create task sequence variables for computers and collections](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_CreateTSVariables)\(컴퓨터 및 컬렉션에 대한 작업 순서 변수 만들기\)를 참조하세요.
+예를 들어 디바이스 XYZ가 컬렉션 ABC의 구성원이고, MyVariable을 값이 1인 컬렉션 ABC에 할당하고, MyVariable을 값이 2인 디바이스 XYZ에도 할당하는 경우, XYZ에 할당된 변수가 컬렉션 ABC에 할당된 변수보다 우선 순위가 높습니다. 이 변수를 사용하는 작업 순서가 XYZ에서 실행되면 MyVariable의 값은 2입니다.
+
+디바이스별 변수 및 컬렉션별 변수를 숨겨 Configuration Manager 콘솔에 표시하지 않을 수 있습니다. **Configuration Manager 콘솔에 이 값 표시 안 함** 옵션을 사용하면 콘솔에 변수 값이 표시되지 않습니다. 실행될 때 여전히 작업 순서에서 변수를 사용할 수 있습니다. 이러한 변수가 표시되게 하려면 먼저 삭제한 다음, 숨기는 옵션을 선택하지 않고 변수를 다시 정의합니다.  
+
+> [!WARNING]  
+> **Configuration Manager 콘솔에서 이 값을 표시하지 않기** 설정은 Configuration Manager 콘솔에만 적용됩니다. 변수에 대한 값은 작업 순서 로그 파일(**smsts.log**)에 여전히 표시됩니다.
+
+기본 사이트 또는 중앙 관리 사이트에서 디바이스별 변수를 관리할 수 있습니다. Configuration Manager에서는 디바이스당 할당되는 변수를 1,000개까지만 지원합니다.  
+
+> [!IMPORTANT]  
+> 작업 순서에 컬렉션별 변수를 사용하는 경우 다음 동작을 고려합니다.  
+>
+> - 컬렉션에 대한 변경은 항상 계층 구조 전체에 복제됩니다. 컬렉션 변수에 대한 모든 변경은 현재 사이트의 구성원에게 뿐 아니라 계층 구조 전체의 모든 컬렉션 구성원에게도 적용됩니다.  
+>  
+> - 컬렉션을 삭제하는 경우 컬렉션에 대해 구성한 작업 순서 변수도 삭제됩니다.  
+
+#### <a name="create-task-sequence-variables-for-a-device"></a>*디바이스*에 대한 작업 순서 변수 만들기
+
+1. Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하고 **디바이스** 노드를 선택합니다.  
+
+2. 대상 장치를 선택 하 고 **속성**을 선택 합니다.  
+
+3. **속성** 대화 상자에서 **변수** 탭으로 전환합니다.  
+
+4. 만들려는 각 변수에 대해 **새로 만들기** 아이콘을 선택합니다. 작업 순서 변수의 **이름**과 **값**을 지정합니다. Configuration Manager 콘솔에 표시되지 않도록 변수를 숨기려면 **Configuration Manager 콘솔에 이 값 표시 안 함** 옵션을 선택합니다.  
+
+5. 모든 변수를 디바이스 속성에 추가한 후 **확인**을 선택합니다.  
+
+#### <a name="create-task-sequence-variables-for-a-collection"></a>*컬렉션*에 대한 작업 순서 변수 만들기
+
+1. Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이동하여 **디바이스 컬렉션** 노드를 선택합니다. 대상 컬렉션을 선택하고 **속성**을 선택합니다.  
+
+2. **속성** 대화 상자에서 **컬렉션 변수** 탭으로 전환합니다.  
+
+3. 만들려는 각 변수에 대해 **새로 만들기** 아이콘을 선택합니다. 작업 순서 변수의 **이름**과 **값**을 지정합니다. Configuration Manager 콘솔에 표시되지 않도록 변수를 숨기려면 **Configuration Manager 콘솔에 이 값 표시 안 함** 옵션을 선택합니다.  
+
+4. 선택적으로, 작업 순서 변수가 평가되는 경우 Configuration Manager에서 사용할 우선 순위를 지정합니다.  
+
+5. 모든 변수를 컬렉션 속성에 추가한 후 **확인**을 선택합니다.  
 
 ### <a name="bkmk_set-com"></a> TSEnvironment COM 개체
 
@@ -181,7 +217,6 @@ ms.locfileid: "68537106"
 > 작업 순서는 Configuration Manager 콘솔을 실행하는 컴퓨터의 **CreateTSMedia.log** 파일에 패키지 ID 및 시작 전 명령줄을 기록합니다. 이 로그 파일에는 작업 순서 변수의 값이 포함됩니다. 이 로그 파일을 검토하여 작업 순서 변수의 값을 확인합니다.  
 
 자세한 내용은 [작업 순서 미디어 만들기](/sccm/osd/deploy-use/create-task-sequence-media)를 참조하세요.
-
 
 ## <a name="bkmk_access"></a> 변수에 액세스하는 방법
 
@@ -226,6 +261,8 @@ ms.locfileid: "68537106"
 
 기존 OS 이미지를 설치하려면 기본 작업 순서 템플릿의 **파일 및 설정 캡처** 그룹에서 이 조건을 확인하세요.
 
+조건에 대 한 자세한 내용은 [작업 순서 편집기-상태](/sccm/osd/understand/task-sequence-editor#bkmk_conditions)를 참조 하세요.
+
 ### <a name="bkmk_access-script"></a> 사용자 지정 스크립트
 
 작업 순서가 실행되는 동안 **Microsoft.SMS.TSEnvironment** COM 개체를 사용하여 변수를 읽고 씁니다.
@@ -256,9 +293,12 @@ $tsenv.Value("startTime") = (Get-Date -Format HH:mm:ss) + ".000+000"
 
 자세한 내용은 [Windows 및 ConfigMgr 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetupWindowsandConfigMgr)을 참조하세요.
 
-
 ## <a name="see-also"></a>참고 항목
 
 - [작업 순서 단계](/sccm/osd/understand/task-sequence-steps)
+
 - [작업 순서 변수](/sccm/osd/understand/task-sequence-variables)
+
 - [작업 자동화에 대한 계획 고려 사항](/sccm/osd/plan-design/planning-considerations-for-automating-tasks)
+
+- [작업 순서 편집기](/sccm/osd/understand/task-sequence-editor)

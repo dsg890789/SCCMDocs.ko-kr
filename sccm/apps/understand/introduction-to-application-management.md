@@ -2,7 +2,7 @@
 title: 앱 관리 소개
 titleSuffix: Configuration Manager
 description: Configuration Manager의 애플리케이션을 관리 및 배포하는 데 필요한 기본 정보를 검색합니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f00455a8dc2585ab8812e23ae789ef6cb45f53c7
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: ee7527492851a89b013c6f59464c06e73c72b247
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68534796"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74661331"
 ---
 # <a name="introduction-to-application-management-in-configuration-manager"></a>Configuration Manager의 애플리케이션 관리 소개
 
@@ -26,7 +26,6 @@ ms.locfileid: "68534796"
 
 > [!TIP]  
 > Configuration Manager로 애플리케이션을 관리하는 방법에 이미 익숙한 경우에는 이 문서를 건너뛰어도 됩니다. [애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)의 샘플 애플리케이션 만들기로 이동하세요.  
-
 
 ## <a name="what-is-an-application"></a>애플리케이션이란?
 
@@ -127,8 +126,7 @@ Configuration Manager 애플리케이션은 사용자 중심 관리를 지원하
 
 1906 버전부터는 사용자 또는 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만듭니다. 앱 그룹에 대해 지정한 메타데이터는 소프트웨서 센터에 단일 항목으로 표시됩니다. 클라이언트가 특정 순서대로 앱을 설치하도록 그룹에서 순서를 지정할 수 있습니다.
 
-자세한 내용은 [응용 프로그램 그룹 만들기](/sccm/apps/deploy-use/create-app-groups)를 참조 하세요.
-
+자세한 내용은 [애플리케이션 그룹 만들기](/sccm/apps/deploy-use/create-app-groups)를 참조하세요.
 
 ## <a name="what-application-types-can-you-deploy"></a>배포할 수 있는 애플리케이션 유형
 
@@ -139,7 +137,7 @@ Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있�
 - Windows 앱 패키지(appx 또는 appxbundle)  
 
     > [!Note]  
-    > 버전 1806부터 이 유형에는 새로운 Windows 10 앱 패키지(msix) 및 앱 번들(msixbundle) 형식이 포함됩니다.<!--1357427-->  
+    > 이 유형에는 새로운 Windows 10 앱 패키지(msix) 및 앱 번들(msixbundle) 형식이 포함됩니다.<!--1357427-->  
 
 - Microsoft Store의 Windows 앱 패키지  
 
@@ -165,7 +163,6 @@ Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있�
 
 - 웹 애플리케이션
 
-
 ## <a name="state-based-applications"></a>상태 기반 애플리케이션  
 
 Configuration Manager 애플리케이션은 상태 기반 모니터링을 사용합니다. 사용자 및 디바이스의 마지막 애플리케이션 배포 상태를 추적할 수 있습니다. 상태 메시지는 개별 디바이스에 대한 정보를 표시합니다. 예를 들어 애플리케이션을 사용자 컬렉션에 배포하는 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 볼 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역에서 모든 소프트웨어 배포를 모니터링합니다. 자세한 내용은 [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
@@ -178,13 +175,11 @@ Configuration Manager 클라이언트는 애플리케이션 배포를 정기적�
 
 애플리케이션 배포에 대한 재평가 간격을 설정할 수 있습니다. **소프트웨어 배포** 그룹의 **배포의 재평가 일정** 클라이언트 설정을 사용합니다. 자세한 내용은 [클라이언트 설정 정보](/sccm/core/clients/deploy/about-client-settings#software-deployment)를 참조하세요.  
 
-
 ## <a name="get-started-creating-an-application"></a>애플리케이션을 만들기 시작  
 
 바로 애플리케이션을 만들기 시작하려는 경우에는 [애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application) 문서에서 연습을 찾을 수 있습니다.  
 
 기본 사항에 익숙하고 사용 가능한 모든 옵션에 대한 자세한 참조 정보가 필요하면 [애플리케이션 만들기](/sccm/apps/deploy-use/create-applications)부터 시작하세요.  
-
 
 ## <a name="software-center"></a>소프트웨어 센터  
 
@@ -203,15 +198,13 @@ Configuration Manager 클라이언트는 애플리케이션 배포를 정기적�
 - [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)
 
 > [!Note]  
-> 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
-
+> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 ## <a name="packages-and-programs"></a>패키지 및 프로그램  
 
 Configuration Manager에서는 이전 버전의 제품에서 사용된 패키지와 프로그램을 계속 지원합니다.
 
 자세한 내용은 [패키지 및 프로그램](/sccm/apps/deploy-use/packages-and-programs)을 참조하세요.  
-
 
 ## <a name="next-steps"></a>다음 단계
 

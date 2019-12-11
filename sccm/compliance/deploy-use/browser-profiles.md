@@ -12,17 +12,18 @@ ms.technology: configmgr-compliance
 ms.assetid: 76477b4d-df41-4b25-8318-7d18d46ca2c6
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d97a67dd65dd79ba8b47541d0c7a7cad239dca28
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
-ms.translationtype: HT
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56126031"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62204425"
 ---
 # <a name="configure-microsoft-edge-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Microsoft Edge 설정 구성
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-<!-- 1357310 --> 1802 버전부터 Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/microsoft-edge/bb265256) 웹 브라우저를 사용하는 고객은 이제 Configuration Manager 준수 설정 정책을 만들어 여러 Microsoft Edge 설정을 구성합니다. 
+<!-- 1357310 -->
+1802 버전부터 Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/microsoft-edge/bb265256) 웹 브라우저를 사용하는 고객은 이제 Configuration Manager 준수 설정 정책을 만들어 여러 Microsoft Edge 설정을 구성합니다. 
 
 이 정책은 Windows 10, 버전 1703 이상의 클라이언트에만 적용됩니다. <!--511552-->
 
@@ -45,11 +46,12 @@ ms.locfileid: "56126031"
 
 
 ### <a name="configure-windows-defender-smartscreen-settings-for-microsoft-edge"></a>Microsoft Edge용 Windows Defender SmartScreen 설정 구성
-<!--1353701--> 버전 1806부터 이 정책은 [Windows Defender SmartScreen](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)에 대한 세 가지 설정을 추가합니다. 해당 정책에는 **SmartScreen 설정** 페이지에 다음과 같은 추가 정책이 포함됩니다.
+<!--1353701-->
+버전 1806부터, 이 정책은 [Windows Defender SmartScreen](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)에 대한 세 가지 설정을 추가합니다. 해당 정책에는 **SmartScreen 설정** 페이지에 다음과 같은 추가 정책이 포함됩니다.
 
 - **SmartScreen 허용**: Windows Defender SmartScreen 허용되는지 여부를 지정합니다. 자세한 내용은 참조는 [AllowSmartScreen 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)을 참조합니다.
-- **사용자는 사이트에서 SmartScreen 프롬프트를 재정의할 수 있음**: 사용자가 잠재적으로 악성인 웹 사이트에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverride 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)을 참조합니다.
-- **사용자는 파일에서 SmartScreen 프롬프트를 재정의할 수 있음**: 사용자가 확인되지 않은 파일 다운로드에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverrideForFiles 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)을 참조합니다.
+- **사용자는 사이트에 대한 SmartScreen 프롬프트를 재정의할 수 있습니다**: 사용자는 잠재적 악성 웹 사이트에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverride 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)을 참조합니다.
+- **사용자는 파일에 대한 SmartScreen 프롬프트를 재정의할 수 있습니다**: 사용자는 확인되지 않은 파일 다운로드에 대한 Windows Defender SmartScreen 필터 경고를 재정의할 수 있는지 여부를 지정합니다. 자세한 내용은 [PreventSmartScreenPromptOverrideForFiles 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)을 참조합니다.
 
 
 

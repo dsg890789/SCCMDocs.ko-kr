@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1a6b104d35e037c3e63b07b29c80c9709a9e9fe
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: c91aeb94067a6b61c5a96bc9176a0825634225f8
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68534749"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74658713"
 ---
 # <a name="link-users-and-devices-with-user-device-affinity-in-configuration-manager"></a>Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결
 
@@ -97,7 +97,7 @@ Configuration Manager에서 자동 사용자 디바이스 선호도가 만들어
 
 1. 사용자 디바이스 선호도 가져오기 마법사의 **매핑 선택** 페이지에서 다음 정보를 설정합니다.  
 
-    - **파일 이름**. 선호도를 만들 사용자와 디바이스 목록이 포함된 쉼표로 구분된 값(CSV) 파일을 지정합니다. 이 파일에는 각 사용자-디바이스 쌍이 쉼표로 구분되어 한 행에 하나씩 있어야 합니다. 다음 형식을 사용 합니다.`<domain>\<username>,<device NetBIOS name>`  
+    - **파일 이름**. 선호도를 만들 사용자와 디바이스 목록이 포함된 쉼표로 구분된 값(CSV) 파일을 지정합니다. 이 파일에는 각 사용자-디바이스 쌍이 쉼표로 구분되어 한 행에 하나씩 있어야 합니다. 이 형식 사용: `<domain>\<username>,<device NetBIOS name>`  
 
     - **참조용으로 이 파일에 열 머리글 포함**. .Csv 파일에 상위 행 머리글이 있는 경우이 옵션을 선택 합니다. 가져오는 동안 사이트에서 머리글 행을 무시 합니다.  
 
@@ -134,7 +134,7 @@ Configuration Manager에서 자동 사용자 디바이스 선호도가 만들어
 ### <a name="set-up-a-user-device-affinity-in-the-application-catalog"></a>응용 프로그램 카탈로그에서 사용자 장치 선호도 설정
 
 > [!Important]
-> 응용 프로그램 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806에서 지원 되지 않습니다. 버전 1906부터 업데이트 된 클라이언트에서 사용자가 사용할 수 있는 응용 프로그램 배포에 대 한 관리 지점을 자동으로 사용 합니다. 또한 새 응용 프로그램 카탈로그 역할을 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
