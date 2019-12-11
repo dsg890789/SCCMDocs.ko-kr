@@ -1,8 +1,8 @@
 ---
 title: MSfB 통합 문제 해결
 titleSuffix: Configuration Manager
-description: 비즈니스 통합을 위한 Microsoft Store의 가장 일반적인 문제 중 일부를 해결 하기 위한 제안 사항 및 해결 방법을 제공 합니다.
-ms.date: 08/30/2019
+description: 비즈니스 및 교육 통합을 위한 Microsoft Store의 가장 일반적인 문제 중 일부를 해결 하기 위한 제안과 해결 방법을 제공 합니다.
+ms.date: 12/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5c77e743e34cd731dec5803e0e5c1a23064f62e
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: 6e8f59e874d89bcb64d3331d40ef044c4c8beb01
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243758"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74814279"
 ---
-# <a name="troubleshoot-the-microsoft-store-for-business-integration-with-configuration-manager"></a>Configuration Manager와의 비즈니스 통합 Microsoft Store 문제 해결
+# <a name="troubleshoot-the-microsoft-store-for-business-and-education-integration-with-configuration-manager"></a>Configuration Manager와의 비즈니스 및 교육 통합을 위한 Microsoft Store 문제 해결
 
-이 문서에서는 MSfB (비즈니스에 대 한 Microsoft Store)와 Configuration Manager를 통합 했을 때 발생할 수 있는 주요 문제 해결 팁과 픽스를 제공 합니다.
+이 문서에서는 MSfB (비즈니스 및 교육)를 Configuration Manager와 통합 하는 데 Microsoft Store 사용할 수 있는 주요 문제 중 일부에 대 한 주요 문제 해결 팁과 픽스를 제공 합니다.
 
-Configuration Manager를 사용 하 여 비즈니스 Microsoft Store를 사용 하는 방법에 대 한 자세한 내용은 Configuration Manager를 사용 하 여 [비즈니스용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조 하세요.
+Configuration Manager에서 비즈니스 및 교육용 Microsoft Store를 사용 하는 방법에 대 한 자세한 내용은 Configuration Manager를 사용 하 여 [비즈니스 및 교육용 Microsoft Store에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조 하세요.
 
 ## <a name="monitor"></a>모니터
 
@@ -44,38 +44,38 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 �
 
 ## <a name="log-files"></a>로그 파일
 
-### <a name="msfbsyncworkerlog"></a>MSfBSyncWorker
+### <a name="msfbsyncworkerlog"></a>MSfBSyncWorker.log
 
-이 로그 파일은 서비스 연결 지점 `\Logs` 에서 Configuration Manager 설치 디렉터리에 있습니다. 클라우드 서비스와의 통신에 대 한 정보를 기록 합니다. 이 정보에는 메타 데이터, 아이콘, 패키지 및 라이선스 파일 검색이 포함 됩니다.
+이 로그 파일은 서비스 연결 지점에서 Configuration Manager 설치 디렉터리의 `\Logs`에 있습니다. 클라우드 서비스와의 통신에 대 한 정보를 기록 합니다. 이 정보에는 메타 데이터, 아이콘, 패키지 및 라이선스 파일 검색이 포함 됩니다.
 
-로그 수준을 변경 하려면 `LoggingLevel` `HKLM\SOFTWARE\Microsoft\SMS\Tracing\SMS_CLOUDCONNECTION` 레지스트리 키에서 값을로 `0` 변경 합니다. 자세한 내용은 [로깅 옵션 구성](/sccm/core/plan-design/hierarchy/about-log-files#bkmk_reg-site)을 참조 하세요.
+로그 수준을 변경 하려면 `HKLM\SOFTWARE\Microsoft\SMS\Tracing\SMS_CLOUDCONNECTION` 레지스트리 키에서 `LoggingLevel` 값을 `0`로 변경 합니다. 자세한 내용은 [로깅 옵션 구성](/sccm/core/plan-design/hierarchy/about-log-files#bkmk_reg-site)을 참조 하세요.
 
-### <a name="sms_cloudconnectionlog"></a>SMS_CLOUDCONNECTION
+### <a name="sms_cloudconnectionlog"></a>SMS_CLOUDCONNECTION.log
 
-이 로그 파일은 서비스 연결 지점 `\Logs` 에서 Configuration Manager 설치 디렉터리에 있습니다. MSfBSyncWorker 서비스가 시작 되지 않았거나 반복적으로 시작 및 중지 되는 경우이 로그 파일의 항목을 검토 합니다.
+이 로그 파일은 서비스 연결 지점에서 Configuration Manager 설치 디렉터리의 `\Logs`에 있습니다. MSfBSyncWorker 서비스가 시작 되지 않았거나 반복적으로 시작 및 중지 되는 경우이 로그 파일의 항목을 검토 합니다.
 
 > [!NOTE]
 > 이 로그 파일은 다른 기능과 공유 됩니다.
 
-### <a name="businessappprocessworkerlog"></a>BusinessAppProcessWorker
+### <a name="businessappprocessworkerlog"></a>BusinessAppProcessWorker.log
 
-이 로그 파일은 계층 내 최상위 사이트의 사이트 서버에 있습니다. Configuration Manager 설치 디렉터리에 있습니다. `\Logs` 다음 프로세스에 대 한 정보를 기록 합니다.
+이 로그 파일은 계층 내 최상위 사이트의 사이트 서버에 있습니다. Configuration Manager 설치 디렉터리의 `\Logs` 아래에 있습니다. 다음 프로세스에 대 한 정보를 기록 합니다.
 
 - BusinessAppProcessWorker 구성 요소에 의해 동기화 된 메타 데이터 정보를 데이터베이스에 삽입 합니다.
-- 파일 처리`\InstallDir\inboxes\businessappprocess.box`
+- `\InstallDir\inboxes\businessappprocess.box`에서 파일 처리
 
-### <a name="sms_business_app_process_managerlog"></a>SMS_BUSINESS_APP_PROCESS_MANAGER
+### <a name="sms_business_app_process_managerlog"></a>SMS_BUSINESS_APP_PROCESS_MANAGER.log
 
-이 로그 파일은 계층 내 최상위 사이트의 사이트 서버에 있습니다. Configuration Manager 설치 디렉터리에 있습니다. `\Logs` BusinessAppProcessWorker 서비스가 시작 되지 않았거나 반복적으로 시작 및 중지 되는 경우이 로그 파일의 항목을 검토 합니다.
+이 로그 파일은 계층 내 최상위 사이트의 사이트 서버에 있습니다. Configuration Manager 설치 디렉터리의 `\Logs` 아래에 있습니다. BusinessAppProcessWorker 서비스가 시작 되지 않았거나 반복적으로 시작 및 중지 되는 경우이 로그 파일의 항목을 검토 합니다.
 
 
 
-## <a name="last-sync-failed"></a>마지막 동기화 실패
+## <a name="last-sync-failed"></a>마지막 동기화에 실패했습니다.
 
 마지막 동기화 상태가 *실패*인 경우 다음 [로그 파일](#log-files) 을 검토 하 여 증상을 파악 합니다.
 
-- MSfBSyncWorker
-- SMS_CLOUDCONNECTION
+- MSfBSyncWorker.log
+- SMS_CLOUDCONNECTION.log
 
 그리고 일반적인 문제에 대해서는 다음 섹션 중 하나를 살펴보세요.
 
@@ -90,11 +90,11 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 �
 
 #### <a name="cause"></a>원인
 
-이 문제는 구성 된 Azure Active Directory (Azure AD) 응용 프로그램에이 테 넌 트에 대해 비즈니스용 Microsoft Store를 관리할 수 있는 권한이 없는 경우에 발생할 수 있습니다.
+구성 된 Azure Active Directory (Azure AD) 응용 프로그램에이 테 넌 트의 비즈니스 및 교육용 Microsoft Store를 관리할 수 있는 권한이 없는 경우이 문제가 발생할 수 있습니다.
 
 #### <a name="workaround"></a>해결 방법
 
-1. [비즈니스 포털에 대 한 Microsoft Store](https://www.microsoft.com/business-store)를 열고 관리자 권한으로 로그인 합니다.
+1. 비즈니스 또는 교육 포털에 대 한 Microsoft Store 관리자로 로그인 합니다.
 1. **설정**으로 이동 하 고 **관리 도구**를 선택 합니다.
 1. 응용 프로그램이 나열 되지 않은 경우 **관리 도구 추가**를 선택 합니다. 그런 다음 이름으로 검색 하 고 Configuration Manager와 동일한 ClientID와 연결 된 Azure AD 응용 프로그램을 선택 합니다.
 1. 상태가 **활성**으로 표시 되지 않으면 **작업** 섹션에서 **활성화** 를 선택 합니다.
@@ -104,14 +104,14 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 �
 > Configuration Manager에서 ClientID를 찾으려면 다음을 수행 합니다.
 >
 > 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고 **Cloud Services**를 확장하고 **Azure Active Directory 테넌트** 노드를 선택합니다.
-> 1. Microsoft Store for Business 통합에 사용할 테 넌 트를 선택 합니다.
+> 1. 비즈니스 및 교육 통합을 위해 Microsoft Store 사용 하는 테 넌 트를 선택 합니다.
 > 1. 결과 창에서 일치 하는 응용 프로그램을 찾고 **클라이언트 ID** 열을 확인 합니다.
 
 ### <a name="bkmk_fail-symptom2"></a>비밀 키가 잘못 되었습니다.
 
 #### <a name="cause"></a>원인
 
-이 문제는 Azure AD 앱에 대 한 비밀 키가 비즈니스 구성 Microsoft Store에 대해 만료 된 경우에 발생할 수 있습니다.
+이 문제는 Azure AD 앱에서 비즈니스 및 교육 구성에 대 한 Microsoft Store에 대해 비밀 키가 만료 된 경우에 발생할 수 있습니다.
 
 #### <a name="resolution"></a>해결 방법
 
@@ -125,7 +125,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 #### <a name="resolution"></a>해결 방법
 
-비즈니스에 대 한 Microsoft Store에 대 한 연결을 삭제 하 고 다시 만듭니다.
+비즈니스 및 교육용 Microsoft Store에 대 한 연결을 삭제 하 고 다시 만듭니다.
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고 **Cloud Services**를 확장한 후, **비즈니스용 Microsoft Store** 노드를 선택합니다.
 1. 기존 연결을 선택 합니다.
@@ -134,13 +134,13 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 그런 다음 연결을 다시 만듭니다. 자세한 내용은 다음 아티클을 참조하세요.
 
 - [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)
-- [비즈니스용 Microsoft Store 동기화 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#bkmk_setup)
+- [비즈니스 및 교육 동기화를 위한 Microsoft Store 설정](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#bkmk_setup)
 
 ### <a name="bkmk_fail-symptom4"></a>콘텐츠 위치가 존재 하지 않습니다.
 
 #### <a name="cause"></a>원인
 
-비즈니스 연결에 대 한 Microsoft Store를 설정 하는 경우 동기화 된 콘텐츠를 저장할 네트워크 공유를 지정 합니다. 이 문제가 발생 하는 이유는이 공유가 없거나 권한이 잘못 된 경우에 발생할 수 있습니다.
+비즈니스 및 교육 연결에 대 한 Microsoft Store를 설정 하는 경우 동기화 된 콘텐츠를 저장할 네트워크 공유를 지정 합니다. 이 문제가 발생 하는 이유는이 공유가 없거나 권한이 잘못 된 경우에 발생할 수 있습니다.
 
 구성 된 위치를 보려면 다음을 수행 합니다.
 
@@ -148,7 +148,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 1. 계정을 선택 하 고 해당 **속성**을 엽니다.
 
-1. **구성** 탭으로 전환 합니다. **위치** 설정은 비즈니스용 Microsoft Store에서 다운로드 한 응용 프로그램 콘텐츠를 저장할 네트워크 경로를 표시 합니다.
+1. 구성 탭으로 전환합니다. **위치** 설정은 비즈니스 및 교육용 Microsoft Store에서 다운로드 한 응용 프로그램 콘텐츠를 저장할 네트워크 경로를 표시 합니다 **** .
 
 #### <a name="workaround"></a>해결 방법
 
@@ -193,10 +193,10 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
     `Error(s) syncing or downloading application <ApplicationID> from the Microsoft Store for Business.`
 
-1. [비즈니스 포털로 Microsoft Store](https://www.microsoft.com/business-store)로 이동 하 여 스토어 관리자로 로그인 합니다. 이 응용 프로그램에 대 한 페이지를 찾습니다.
+1. 비즈니스 또는 교육 포털에 대 한 Microsoft Store 관리자로 로그인 합니다. 이 응용 프로그램에 대 한 페이지를 찾습니다.
 
     > [!Tip]
-    > 페이지의 URL은 다음과 유사 합니다.`https://businessstore.microsoft.com/en-us/store/p/app/ApplicationID`
+    > 페이지의 URL은 다음과 비슷합니다 `https://businessstore.microsoft.com/en-us/store/p/app/ApplicationID`
 
     1. 아직 선택 하지 않은 경우 **오프 라인**을 선택 합니다. 그런 다음 **관리**를 선택 합니다.
 
@@ -204,7 +204,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
     1. 패키지 폴더에 패키지를 다운로드 합니다.
 
-    1. 인코딩된 라이선스 파일 `.bin` 을 패키지 폴더에 파일로 다운로드 합니다.
+    1. 인코딩된 라이선스 파일을 패키지 폴더에 `.bin` 파일로 다운로드 합니다.
 
     1. 모든 필수 프레임 워크를 패키지 폴더에 다운로드 합니다.
 
@@ -220,7 +220,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 최종 **정보 가져오기** 페이지에서 다음 세부 정보를 확인 합니다.
 
-- **라이선스 파일:** 파일을 `.bin` 지정 합니다. 이 라이선스 파일은 오프 라인 앱에 필요 합니다.
+- **라이선스 파일:** `.bin` 파일을 지정 합니다. 이 라이선스 파일은 오프 라인 앱에 필요 합니다.
 - **Windows 앱 종속성:** 이 패키지에 대해 필요한 모든 종속성이 다운로드 되었는지 확인 합니다.
 
 
@@ -233,15 +233,15 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 다음 [로그 파일](#log-files) 을 검토 하 여 증상을 파악 합니다.
 
-- BusinessAppProcessWorker
-- SMS_BUSINESS_APP_PROCESS_MANAGER
-- MSfBSyncWorker
-- SMS_CLOUDCONNECTION
+- BusinessAppProcessWorker.log
+- SMS_BUSINESS_APP_PROCESS_MANAGER.log
+- MSfBSyncWorker.log
+- SMS_CLOUDCONNECTION.log
 
 그리고 일반적인 문제에 대해서는 다음 섹션 중 하나를 살펴보세요.
 
 - [수동 동기화가 시작 되지 않음](#bkmk_sync-symptom1)
-- [자동 매일 동기화가 실행 되지 않고 SMS_BUSINESS_APP_PROCESS_MANAGER에서 "작업자를 종료 합니다." 오류가 발생 합니다.](#bkmk_sync-symptom2)
+- [자동 매일 동기화가 실행 되지 않고 SMS_BUSINESS_APP_PROCESS_MANAGER에서 "작업자 종료" 오류가 발생 합니다.](#bkmk_sync-symptom2)
 
 ### <a name="bkmk_sync-symptom1"></a>수동 동기화가 시작 되지 않음
 
@@ -253,11 +253,11 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 다른 동기화를 시작 하기 전에 10 분 이상 기다립니다.
 
-### <a name="bkmk_sync-symptom2"></a>자동 매일 동기화가 실행 되지 않고 SMS_BUSINESS_APP_PROCESS_MANAGER에서 "작업자를 종료 합니다." 오류가 발생 합니다.
+### <a name="bkmk_sync-symptom2"></a>자동 매일 동기화가 실행 되지 않고 SMS_BUSINESS_APP_PROCESS_MANAGER에서 "작업자 종료" 오류가 발생 합니다.
 
 #### <a name="cause"></a>원인
 
-SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 MSfBSyncWorker 스레드를 중지 하는 경우이 문제가 발생할 수 있습니다. 이 오류는 또는 `2` `4` 작업자 중 하나를 지정할 수 있습니다.
+SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 MSfBSyncWorker 스레드를 중지 하는 경우이 문제가 발생할 수 있습니다. 이 오류는 `2` 또는 `4` 작업자를 지정할 수 있습니다.
 
 #### <a name="workaround"></a>해결 방법
 
@@ -305,14 +305,14 @@ SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 MSfBSyncWorker 스레드를 �
 
 #### <a name="cause"></a>원인
 
-이 문제 Microsoft Store는 비즈니스 응용 프로그램의 라이선스 정보에 지정 된 언어에 대 한 지역화 된 데이터가 포함 되어 있지 않은 경우에 발생할 수 있습니다.
+이 문제 Microsoft Store는 비즈니스 및 교육 응용 프로그램의 라이선스 정보에 지정 된 언어에 대 한 지역화 된 데이터가 포함 되지 않은 경우에 발생할 수 있습니다.
 
 #### <a name="workaround"></a>해결 방법
 
 만든 응용 프로그램에 대해 누락 된 언어를 수동으로 추가 합니다.
 
 
-## <a name="offline-applications"></a>오프 라인 응용 프로그램
+## <a name="offline-applications"></a>오프라인 애플리케이션
 
 이 섹션에서는 다음과 같은 일반적인 문제를 다룹니다.
 
@@ -333,7 +333,7 @@ SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 MSfBSyncWorker 스레드를 �
 
 #### <a name="cause"></a>원인
 
-버전 1511 이전 버전의 Windows 10을 실행 하는 클라이언트에 응용 프로그램을 배포 하는 경우이 문제가 발생할 수 있습니다. 비즈니스용 Microsoft Store의 오프 라인 사용이 허가 된 앱은 Windows 10 버전 1511 이상 에서만 지원 됩니다.
+버전 1511 이전 버전의 Windows 10을 실행 하는 클라이언트에 응용 프로그램을 배포 하는 경우이 문제가 발생할 수 있습니다. 비즈니스 및 교육용 Microsoft Store의 오프 라인 사용이 허가 된 앱은 Windows 10 버전 1511 이상 에서만 지원 됩니다.
 
 #### <a name="resolution"></a>해결 방법
 
@@ -343,10 +343,3 @@ SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 MSfBSyncWorker 스레드를 �
 ## <a name="next-steps"></a>다음 단계
 
 추가 도움말을 찾으려면 [Configuration Manager 사용에 대 한 도움말 찾기](/sccm/core/understand/find-help)를 참조 하십시오.
-
-<!-- these videos are old...1604/1605, is there still benefit in linking to them?
-- Here are also some videos to learn more about it:
-
-  - [How to set up the required prerequisites in AAD and the Microsoft Store for Business portal](https://www.youtube.com/watch?v=fC1AQY42flQ)
-  - [Choose languages to sync and create apps from app metadata for each Microsoft Store for Business, and how to create apps from app metadata](https://www.youtube.com/watch?v=VJs-475rfaI)
- -->
