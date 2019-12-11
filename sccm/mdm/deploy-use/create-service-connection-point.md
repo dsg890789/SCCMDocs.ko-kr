@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d0ce47e9ade73d76e99aa5c0d4e5581c713a847a
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62224846"
 ---
 # <a name="create-a-service-connection-point-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 서비스 연결 지점 만들기
@@ -38,14 +38,14 @@ ms.locfileid: "62224846"
 
 3.  다음 중 해당 단계를 사용하여 새 또는 기존 사이트 시스템 서버에 **서비스 연결 지점** 역할을 추가합니다.
 
-    -   새 사이트 시스템 서버: 에 **홈** 탭의 **만들기** 그룹에서 클릭 **사이트 시스템 서버 만들기** 사이트 시스템 서버 만들기 마법사를 시작 하려면.
+    -   새 사이트 시스템 서버: **홈** 탭의 **만들기** 그룹에서 **사이트 시스템 서버 만들기** 를 클릭하여 사이트 시스템 서버 만들기 마법사를 시작합니다.
 
-    -   기존 사이트 시스템 서버: 서비스 연결 지점 역할을 설치 하려는 서버를 클릭 합니다. 그런 다음 **홈** 탭의 **서버** 그룹에서 **사이트 시스템 역할 추가** 를 클릭하여 사이트 시스템 역할 추가 마법사를 시작합니다.
+    -   기존 사이트 시스템 서버: 서비스 연결 지점 역할을 설치할 서버를 클릭합니다. 그런 다음 **홈** 탭의 **서버** 그룹에서 **사이트 시스템 역할 추가** 를 클릭하여 사이트 시스템 역할 추가 마법사를 시작합니다.
 
 4.  **시스템 역할 선택** 페이지에서 **서비스 연결 지점**을 선택하고 **다음**을 클릭합니다.
 ![서비스 연결 지점 만들기](../media/mdm-service-connection-point.png)
 
-* 마법사를 완료합니다.
+* 마법사 완료
 
 ## <a name="how-does-the-service-connection-point-authenticate-with-the-microsoft-intune-service"></a>서비스 연결 지점이 Microsoft Intune 서비스를 인증하는 방법
  서비스 연결 지점은 인터넷을 통해 모바일 디바이스를 관리하는 클라우드 기반 Intune 서비스에 대한 연결을 설정하여 Configuration Manager를 확장합니다. 서비스 연결 지점은 Intune 서비스를 다음과 같이 인증합니다.

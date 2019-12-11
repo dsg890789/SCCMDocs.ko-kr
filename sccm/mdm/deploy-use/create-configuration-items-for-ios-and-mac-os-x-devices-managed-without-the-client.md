@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5d1b15f441015ebea7ca00e9fa8bee7e02f168b8
-ms.sourcegitcommit: c60fdfb9df107c430389b69b08f9670ce5f526c3
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68859994"
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-macos-devices-managed-with-intune"></a>Intune으로 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목을 만드는 방법
@@ -28,7 +28,7 @@ ms.locfileid: "68859994"
   
 2. **자산 및 준수** 작업 영역에서 **준수 설정**을 확장하고 **구성 항목**을 클릭합니다.  
   
-3. **홈** 탭의 **만들기** 그룹에서 **구성 항목 만들기**를 클릭합니다.  
+3. 에 **홈** 탭에 **만들기** 그룹에서 클릭 하 여 **구성 항목 만들기**.  
   
 4. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
   
@@ -62,7 +62,7 @@ ms.locfileid: "68859994"
     > [!TIP]  
     >  지원되지 않는 설정은 준수 여부에 대해 평가되지 않습니다.  
   
-12. 마법사를 완료합니다.  
+12. 마법사 완료  
   
     **자산 및 준수** 작업 영역의 **구성 항목** 노드에서 새 구성 항목을 볼 수 있습니다.  
   
@@ -240,7 +240,7 @@ ms.locfileid: "68859994"
   
         앱 페이지를 열고 클립보드에 URL을 복사합니다. 이제 규격 또는 비규격 앱 목록의 URL로 사용할 수 있습니다.  
   
-        **예제:** 스토어에서 **iPad 용 Microsoft Word** 앱을 검색 합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
+        **예:** 스토어에서 **iPad용 Microsoft Word** 앱을 검색합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    -   **편집** - 선택한 앱의 이름, 게시자 및 URL을 편집할 수 있습니다.  
   
@@ -248,7 +248,7 @@ ms.locfileid: "68859994"
   
    -   **가져오기** - 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.  
   
-2. 작업이 완료되면 **다음**을 클릭합니다.  
+2. 작업을 완료한 경우 **다음**을 클릭합니다.  
   
    다음 보고서 모니터 규격 및 비규격 앱 중 하나를 사용할 수 있습니다.  
   
@@ -289,7 +289,7 @@ ms.locfileid: "68859994"
   
    - **가져오기** - 지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 앱 이름, 게시자, 앱 번들 ID를 사용합니다.  
   
-2. 작업이 완료되면 **다음**을 클릭합니다.  
+2. 작업을 완료한 경우 **다음**을 클릭합니다.  
   
    다음 보고서 모니터 규격 및 비규격 앱 중 하나를 사용할 수 있습니다.  
   
@@ -360,7 +360,7 @@ ms.locfileid: "68859994"
   
      - 페이지의 URL을 복사한 다음 키오스크 모드에서 실행할 앱을 지정하는 URL로 사용합니다.  
   
-     - **예제:** **IPad 용 Microsoft Word**를 검색 합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
+     - **예:** **iPad용 Microsoft Word**를 검색합니다. 사용할 URL은 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** 입니다.  
   
    - **터치** - 디바이스에서 터치 스크린을 사용하거나 사용하지 않도록 설정합니다.  
   
@@ -396,7 +396,7 @@ ms.locfileid: "68859994"
   
    - **비호환 설정 재구성** - 지원되는 경우 비호환 설정을 재구성할지 여부를 선택합니다.  
   
-   - **보고할 비호환성 심각도** - 이 준수 정책이 비호환으로 평가되는 경우 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
+   - **보고할 비준수 심각도** - 이 준수 정책이 비준수로 평가되는 경우 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
   
      -   **없음** 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   
@@ -408,5 +408,5 @@ ms.locfileid: "68859994"
   
      -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
   
-## <a name="see-also"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

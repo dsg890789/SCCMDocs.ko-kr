@@ -12,10 +12,10 @@ ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0420113feaaf9c9485b8d1e3d488b07878c61b5
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62233992"
 ---
 # <a name="change-your-mdm-authority"></a>MDM 기관 변경
@@ -124,9 +124,9 @@ MDM 기관 변경이 완료되면 다음 단계를 검토합니다.
     
 - 특정 디바이스에 문제가 있는 경우 등록을 취소하고 디바이스를 다시 등록합니다. 이 작업은 가능한 한 빨리 새 기관에 연결하여 관리를 받도록 합니다.  
 
-- [Android for Work](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)를 하이브리드 테넌트로 활성화한 후 Intune 독립 실행형으로 테넌트를 마이그레이션하면 등록 제한이 적용되는 Android for Work 설정이 허용이 아닌 차단됨으로 표시될 수 있습니다. 수동으로 **허용** 다시 Android for Work 등록 사용 하도록 설정 합니다.<!--512117-->  
+- [Android for Work](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)를 하이브리드 테넌트로 활성화한 후 Intune 독립 실행형으로 테넌트를 마이그레이션하면 등록 제한이 적용되는 Android for Work 설정이 허용이 아닌 차단됨으로 표시될 수 있습니다. Android for Work 등록을 다시 사용 하도록 **허용** 하려면 수동으로 설정 합니다.<!--512117-->  
 
-- MDM 기관 변경 후에는 Apple VPP 토큰 및 연결된 [대량 구매한 iOS 앱](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)이 자동으로 제거되지 않습니다. 이 정보를 정리하려면 [Apple VPP 토큰 삭제](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps#delete-an-apple-vpp-token)의 절차를 따르세요. 작업이 완료되면 사이트에 의해 토큰이 제거됩니다. 또한 제거 사용이 허가 된 스토어 응용 프로그램 노드에서 해당 토큰에 대 한 모든 응용 프로그램 메타 데이터입니다.<!--SCCMDocs issue 579-->  
+- MDM 기관 변경 후에는 Apple VPP 토큰 및 연결된 [대량 구매한 iOS 앱](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)이 자동으로 제거되지 않습니다. 이 정보를 정리하려면 [Apple VPP 토큰 삭제](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps#delete-an-apple-vpp-token)의 절차를 따르세요. 작업이 완료되면 사이트에 의해 토큰이 제거됩니다. 또한 사용이 허가 된 스토어 앱 노드에서 해당 토큰에 대 한 모든 응용 프로그램 메타 데이터를 제거 합니다.<!--SCCMDocs issue 579-->  
 
     드물지만, 사이트가 관리 개체를 삭제할 수 없다는 오류가 표시 될 수도 있습니다.  
 

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 50d79da3ab4e7ace9a682baaa5cfd8d2bdbdce10
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67678880"
 ---
 # <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>디바이스, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스 관리
@@ -54,7 +54,7 @@ Lookout에서 지원하는 플랫폼 및 언어에 대한 자세한 내용은 �
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>Prerequisites
 
 - [하이브리드 MDM](/sccm/mdm/understand/hybrid-mobile-device-management)  
 

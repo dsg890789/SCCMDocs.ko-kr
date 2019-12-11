@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 69a160a3c7833f196d50185e551f619d68dc0925
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62255597"
 ---
 # <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SharePoint Online 액세스 관리
@@ -40,7 +40,7 @@ ms.locfileid: "62255597"
 
 Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Online에 액세스할 수 있습니다.  
 
--   [최신 인증](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) 이 사용되는 Office 데스크톱 2013 이상  
+-   [최신 인증](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) 이 지원되는 Office 데스크톱 2013 이상 버전  
 
 -   Windows 7.0 또는 Windows 8.1  
 
@@ -106,17 +106,17 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 ## <a name="configure-conditional-access-for-sharepoint-online"></a>SharePoint Online에 대한 조건부 액세스 구성  
 
 ### <a name="step-1-configure-active-directory-security-groups"></a>1단계: Active Directory 보안 그룹 구성  
- 시작하기 전에 조건부 액세스 정책에 대한 Azure AD 보안 그룹을 구성합니다. 이러한 그룹을 구성할 수 있습니다 합니다 **Microsoft 365 관리 센터**, 또는 **Intune 계정 포털**합니다. 이러한 그룹에는 정책의 대상이 되거나 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 사용자가 사용하는 각 디바이스가 정책을 준수해야 리소스에 액세스할 수 있습니다.  
+ 시작하기 전에 조건부 액세스 정책에 대한 Azure AD 보안 그룹을 구성합니다. **Microsoft 365 관리 센터**또는 **Intune 계정 포털**에서 이러한 그룹을 구성할 수 있습니다. 이러한 그룹에는 정책의 대상이 되거나 정책에서 제외된 사용자가 포함됩니다. 사용자가 정책의 대상인 경우 사용자가 사용하는 각 디바이스가 정책을 준수해야 리소스에 액세스할 수 있습니다.  
 
  SharePoint Online 정책에 두 그룹 유형을 지정할 수 있습니다.  
 
-- **대상 그룹**: 사용자는 정책이 적용 되는 그룹 포함  
+- **대상 그룹**: 정책이 적용되는 사용자 그룹을 포함합니다.  
 
-- **제외 된 그룹**: (선택 사항) 정책에서 제외 되는 사용자 그룹을 포함  
+- **제외된 그룹**: 정책에서 제외되는 사용자 그룹을 포함합니다(선택 사항).  
 
   사용자가 두 그룹에 모두 속한 경우에는 정책에서 제외됩니다.  
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 준수 정책 구성 및 배포  
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 규정 준수 정책 구성 및 배포  
  SharePoint Online 정책의 대상이 되는 모든 디바이스에 대한 준수 정책을 만들고 배포합니다.  
 
 > [!NOTE]   
@@ -136,7 +136,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
  >[!NOTE]
  >Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 Intune 디바이스의 조건부 액세스 정책을 만들 수 있습니다. Azure AD는 이러한 정책을 디바이스 기반 조건부 액세스 정책으로 참조합니다. 다단계 인증과 같은 다른 조건부 액세스 정책을 만들 수도 있습니다. 포털에서 Azure AD가 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수 있습니다. 자세한 내용은 [Azure AD 연결 애플리케이션에 대한 액세스 제어를 위해 Azure AD 디바이스 기반 조건부 액세스 정책을 설정하는 방법](/azure/active-directory/active-directory-conditional-access-policy-connected-applications)을 참조하세요.  
 
-1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
 
 2. **SharePoint Online에 대한 조건부 액세스 정책 사용**을 선택합니다.  
 
@@ -154,13 +154,13 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
     Windows PC의 경우 해당 PC가 도메인에 가입되어 있거나 Intune에 등록되어 있고 정책을 준수해야 합니다. 다음 요구 사항을 설정할 수 있습니다.  
 
-   -   **장치가 도메인에 가입 되어 있거나 규정을 준수 해야 합니다.** : Pc는 도메인에 가입 되어 있거나 Intune에 설정 된 정책을 준수 해야 합니다. PC가 이러한 요구 사항을 하나라도 충족하지 않을 경우 Intune에 디바이스를 등록하라는 메시지가 표시됩니다.  
+   -   **디바이스가 도메인에 가입되거나 규정을 준수해야 함**: PC가 도메인에 가입되어 있거나 Intune에 설정된 정책을 준수해야 합니다. PC가 이러한 요구 사항을 하나라도 충족하지 않을 경우 Intune에 디바이스를 등록하라는 메시지가 표시됩니다.  
 
-   -   **장치가 도메인에 가입 해야 합니다.** : Pc에는 Exchange Online에 액세스 하려면 가입 해야 합니다. PC가 도메인에 가입되지 않은 경우, 이메일 액세스가 차단되고 IT 관리자에게 문의하라는 메시지가 사용자에게 표시됩니다.  
+   -   **디바이스가 도메인에 가입되어 있어야 함**: PC가 도메인에 가입되어 있어야 Exchange Online에 액세스할 수 있습니다. PC가 도메인에 가입되지 않은 경우, 이메일 액세스가 차단되고 IT 관리자에게 문의하라는 메시지가 사용자에게 표시됩니다.  
 
-   -   **장치가 호환 되어야 함**: Intune에서 준수 및 Pc는 등록 해야 합니다. PC가 등록되어 있지 않은 경우 등록 방법에 대한 지침이 포함된 메시지가 표시됩니다.  
+   -   **디바이스가 규정을 준수해야 함**: PC가 Intune에 등록되어 있고 규정을 준수해야 합니다. PC가 등록되어 있지 않은 경우 등록 방법에 대한 지침이 포함된 메시지가 표시됩니다.  
 
-4. 아래 **브라우저 액세스** SharePoint Online 및 비즈니스용 OneDrive, 지원 되는 브라우저를 통해서만 Exchange Online에 대 한 액세스를 허용 하도록 선택할 수 있습니다. Safari (iOS) 및 Chrome (Android). 다른 브라우저에서의 액세스는 차단됩니다. OneDrive에 대한 애플리케이션 액세스에 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
+4. SharePoint Online 및 비즈니스용 OneDrive에 대한 **브라우저 액세스**에서, 지원되는 브라우저인 Safari(iOS) 및 Chrome(Android)을 통해서만 Exchange Online에 대한 액세스를 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. OneDrive에 대한 애플리케이션 액세스에 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
 
    **Android** 디바이스에서 사용자는 다음과 같이 등록된 디바이스에서 **브라우저 액세스 사용** 옵션을 사용해야 합니다.
    1.  **회사 포털 앱**을 시작합니다.
@@ -168,7 +168,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
    3.  **브라우저 액세스 사용** 단추를 누릅니다.
    4.  Chrome 브라우저에서, Office 365에서 로그아웃하고 Chrome을 다시 시작합니다.
 
-   **iOS 및 Android** 플랫폼에서는 Azure AD가 서비스에 액세스하는 데 사용되는 디바이스를 식별하기 위해 TLS 인증서를 디바이스에 발급합니다. 장치는 인증서를 다음 스크린샷에서 볼 수 있듯이 최종 사용자에 게 프롬프트를 사용 하 여 인증서를 표시 합니다. 최종 사용자 브라우저를 사용 하는 동안 계속 수행할 수 있습니다이 인증서를 선택 해야 합니다.
+   **iOS 및 Android** 플랫폼에서는 Azure AD가 서비스에 액세스하는 데 사용되는 디바이스를 식별하기 위해 TLS 인증서를 디바이스에 발급합니다. 이 디바이스는 다음 스크린샷과 같이 인증서를 표시하면서 최종 사용자에게 해당 인증서를 선택하라는 메시지를 표시합니다. 최종 사용자는 이 인증서를 선택해야 브라우저를 계속 사용할 수 있습니다.
 
     **Android**
 

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7290ca74e792a9e7bd17c6ff976e81c6586977f3
-ms.sourcegitcommit: 2f34d9457d95a9bd25603699fcf0e26cac77ad30
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74659751"
 ---
 # <a name="create-pfx-certificate-profiles-using-a-certificate-authority"></a>인증 기관을 사용하여 PFX 인증서 프로필 만들기

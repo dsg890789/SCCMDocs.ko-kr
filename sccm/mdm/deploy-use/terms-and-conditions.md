@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a836ec8c15e89a7959db9f10d1329c9182f3998c
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62227603"
 ---
 # <a name="add-terms-and-conditions-with-system-center-configuration-manager"></a>System Center Configuration Manager 사용 약관 추가
@@ -47,7 +47,7 @@ ms.locfileid: "62227603"
 
    - **약관에 사용할 텍스트** - 회사 포털에서 사용자에게 표시되는 사용 약관  
 
-   - **사용자가 동의하는 경우 그 의미를 설명하는 텍스트** - 사용 약관 동의와 관련하여 사용자에게 표시되는 레이블입니다. **예제**: "동의" 계약 조건에 조건입니다.  
+   - **사용자가 동의하는 경우 그 의미를 설명하는 텍스트** - 사용 약관 동의와 관련하여 사용자에게 표시되는 레이블입니다. **예**: "계약조건에 동의함"  
 
      그리고 **다음**을 클릭합니다.  
 

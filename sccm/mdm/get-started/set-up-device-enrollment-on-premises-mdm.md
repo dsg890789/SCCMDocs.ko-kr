@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d3b761eac32daf591789a790209e25e62f1ea81d
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56121485"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62216032"
 ---
 # <a name="set-up-device-enrollment-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 위한 디바이스 등록 설정
 
@@ -46,7 +46,7 @@ ms.locfileid: "56121485"
 5.  등록 프로필 만들기에서 등록 프로필의 이름을 입력하고 등록 프로필이 있는 사용자가 사용하게 하려는 관리 사이트 코드를 선택합니다. **확인** 을 여러 번 클릭하여 기본 설정 페이지를 종료합니다.  
 
 > [!NOTE]  
->  검색된 사용자의 하위 집합에 등록 프로필을 배포하려는 경우 사용자 컬렉션을 사용한 다음 해당 컬렉션에 배포할 사용자 지정 클라이언트 설정을 만듭니다. 사용자 지정 클라이언트 설정을 만드는 방법에 대한 자세한 내용은 [How to configure client settings in System Center Configuration Manager](../../core/clients/deploy/configure-client-settings.md)(영문)을 참조하세요.  
+>  검색된 사용자의 하위 집합에 등록 프로필을 배포하려는 경우 사용자 컬렉션을 사용한 다음 해당 컬렉션에 배포할 사용자 지정 클라이언트 설정을 만듭니다. 사용자 지정 클라이언트 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
 ##  <a name="bkmk_addClient"></a> 등록된 디바이스에 대한 추가 클라이언트 설정 지정  
  최신 디바이스에 대한 등록 프로필을 설정할 뿐만 아니라, 등록된 디바이스를 구성하도록 추가 클라이언트 설정을 지정할 수도 있습니다.  클라이언트 설정을 지정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
@@ -63,7 +63,7 @@ ms.locfileid: "56121485"
     >  온\-프레미스 모바일 디바이스 관리의 경우 소프트웨어 배포 설정만 기본 클라이언트 설정으로 사용할 수 있습니다. Configuration Manager의 현재 분기에서는 소프트웨어 배포 설정을 사용자 지정 클라이언트 설정과 함께 사용할 수 없습니다.  
 
 ##  <a name="bkmk_enableUsers"></a> 사용자가 최신 디바이스 등록 프로필을 받을 수 있도록 설정  
- 사용자가 온\-프레미스 모바일 디바이스 관리에 대한 등록 프로필이 있는 수정된 클라이언트 설정을 받으려면 Active Directory 검색 방법을 통해 검색되어야 합니다. 등록 프로필이 필요한 모든 사람이 프로필을 받도록 하려면 Active Directory 사용자에 대해 검색을 실행합니다. 사용자를 검색하는 방법에 대한 자세한 내용은 [Run discovery for System Center Configuration Manager](../../core/servers/deploy/configure/run-discovery.md)을 참조하세요.  
+ 사용자가 온\-프레미스 모바일 디바이스 관리에 대한 등록 프로필이 있는 수정된 클라이언트 설정을 받으려면 Active Directory 검색 방법을 통해 검색되어야 합니다. 등록 프로필이 필요한 모든 사람이 프로필을 받도록 하려면 Active Directory 사용자에 대해 검색을 실행합니다. 사용자를 검색하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 검색 실행](../../core/servers/deploy/configure/run-discovery.md)을 참조하세요.  
 
 ##  <a name="bkmk_storeCert"></a> 등록할 디바이스에 루트 인증서 저장  
  루트 인증서가 Active Directory와의 도메인 연결 프로세스의 일부로 발급되었으므로 도메인 연결 디바이스가 있는 사용자에게 사이트 시스템 역할을 호스트하는 서버와의 신뢰할 수 있는 통신에 필요한 루트 인증서가 이미 있을 것입니다. 도메인에 연결되지 않은 컴퓨터 및 모바일 디바이스의 경우 등록이 수행되려면 루트 인증서가 디바이스에 수동으로 설치되어 있어야 합니다. 이러한 디바이스는 필요한 루트 인증서를 자동으로 보유하게 되지 않습니다.  

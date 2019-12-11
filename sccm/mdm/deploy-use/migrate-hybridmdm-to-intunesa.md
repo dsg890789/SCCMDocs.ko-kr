@@ -12,10 +12,10 @@ ms.technology: configmgr-hybrid
 ms.assetid: 1dd696ce-3e46-4dfa-a76d-592fe0f0320e
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e3adbb2f7bd75921f45c9c6d5462bdf04deb8c26
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67678224"
 ---
 # <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션
@@ -56,7 +56,7 @@ ms.locfileid: "67678224"
 
     - NDES 및 Exchange 커넥터를 설치합니다.  
 
-    단계를 완료 하 고 Intune 독립 실행형으로의 마이그레이션을 시작 하는 경우에 사용자에 게 중요 한 영향이 있습니다.   
+    단계를 완료 하 고 Intune 독립 실행형으로의 마이그레이션을 시작 하는 경우 사용자에 게 상당한 영향을 주지 않습니다.   
 
 3. [특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)](migrate-mixed-authority.md)    
 
@@ -70,7 +70,7 @@ ms.locfileid: "67678224"
 
 ## <a name="request-assistance"></a>지원 요청
 <!--Intune bug 2339232-->
-Microsoft FastTrack 프로그램에서 지원을 요청 하려면로 이동 하 여 시작 [Microsoft 365 용 FastTrack](https://fasttrack.microsoft.com/microsoft365/capabilities?view=security)합니다.
+Microsoft FastTrack 프로그램에서 지원을 요청 하려면 [Fasttrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365/capabilities?view=security)로 이동 하 여 시작 하세요.
 
 1. “로그인”을 클릭하고 조직 ID를 입력합니다.  
 

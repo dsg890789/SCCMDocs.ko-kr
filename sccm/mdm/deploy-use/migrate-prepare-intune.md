@@ -12,10 +12,10 @@ ms.technology: configmgr-hybrid
 ms.assetid: db97ae9e-34f4-4e10-a282-cd211f612bb4
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68cf60bd5ebcb38e08dd3de6d7cc144752de848c
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71826169"
 ---
 # <a name="prepare-intune-for-user-migration"></a>사용자 마이그레이션을 위한 Intune 준비 
@@ -26,7 +26,7 @@ ms.locfileid: "71826169"
 ## <a name="fix-issues-found-during-data-collection-and-import"></a>데이터 수집 및 가져오기 중 발견된 문제 해결
 Intune Data Importer 도구를 사용 하 여 [Microsoft Intune Configuration Manager 데이터를 가져오는](migrate-import-data.md)경우 가져올 수 없는 개체를 요약 합니다. 몇 가지 일반적인 문제 및 Intune에서 이러한 문제를 해결 하는 단계는 다음 표에 나와 있습니다. 
 
-|문제점  |방법을  |
+|문제  |Fix  |
 |---------|---------|
 |직접 멤버 자격 또는 복잡 한 컬렉션을 기반으로 하는 컬렉션은 자동으로 마이그레이션되지 않습니다.|가져오지 않은 컬렉션을 대체 하려면 Azure에서 Azure Active Directory (Azure AD) 그룹을 만듭니다. 그런 다음 개체를 그룹에 할당 합니다.|
 |정책을 가져올 때 |Intune에서 정책을 다시 만듭니다.|
@@ -44,7 +44,7 @@ Intune 독립 실행형에서 각 사용자에 대 한 Intune 라이선스를 �
 디렉터리 동기화를 구성 했으므로 사용자 및 그룹이 이미 Azure AD에 있을 수 있습니다. 사용자가 올바른 사용자 그룹의 멤버인지 확인하려면 Intune 사용자 그룹을 검토하는 것이 좋습니다. 이러한 그룹에 정책, 프로필 및 앱을 대상으로 합니다. Intune 독립 실행형으로 마이그레이션한 사용자가 올바른 그룹의 멤버인지 확인합니다. 
 
 ## <a name="configure-role-based-administration-control-rbac"></a>RBAC(역할 기반 관리 제어) 구성
-마이그레이션의 일부로 Intune에서 필요한 모든 RBAC 역할을 구성하고 해당 역할에 사용자를 할당합니다. 리소스 범위 지정과 같이 Configuration Manager와 Intune의 RBAC 간에 차이가 있습니다. 자세한 내용은 [Intune을 사용 하는 RBAC (역할 기반 관리 제어)](https://docs.microsoft.com/intune/role-based-access-control)를 참조 하세요.
+마이그레이션의 일부로 Intune에서 필요한 모든 RBAC 역할을 구성하고 해당 역할에 사용자를 할당합니다. 리소스 범위 지정과 같이 Configuration Manager와 Intune의 RBAC 간에 차이가 있습니다. 자세한 내용은 [Intune을 통한 RBAC(역할 기반 관리 제어)](https://docs.microsoft.com/intune/role-based-access-control)를 참조하세요.
 
 ## <a name="assign-apps-and-policies-to-aad-groups"></a>AAD 그룹에 앱 및 정책 할당
 [Microsoft Intune Configuration Manager 데이터를 가져온](migrate-import-data.md)경우 많은 개체가 Azure AD 그룹에 이미 할당 되어 있을 수 있습니다. 모든 개체 (앱, 정책 및 프로필)가 올바른 Azure AD 그룹에 할당 되었는지 확인 합니다. 개체를 올바르게 할당 하는 경우 사용자의 장치는 사용자를 마이그레이션한 후 자동으로 구성 되며 마이그레이션에는 사용자에 게 signifcant 영향이 없어야 합니다. Azure AD 그룹에 개체를 할당 하는 방법에 대 한 자세한 내용은 다음 문서를 참조 하세요. 

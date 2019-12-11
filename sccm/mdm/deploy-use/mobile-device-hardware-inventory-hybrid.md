@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d1a208b3bac5d0b12a9fd395506f02d283a0b55f
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62228249"
 ---
 # <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-system-center-configuration-manager"></a>Microsoft Intune 및 System Center Configuration Manager에서 등록한 모바일 디바이스의 하드웨어 인벤토리 구성 방법
@@ -57,7 +57,7 @@ Configuration Manager에서 Microsoft Intune 커넥터를 사용하여 iOS, Andr
  **OWA(Outlook Web Access)**  
 
 > [!NOTE]  
->  **참고:** Android 회사 포털 앱을 사용 하는 경우 android 인벤토리 클래스를 사용할 수 있습니다.  
+>  **참고:** Android 회사 포털 앱을 사용하는 경우 Android 인벤토리 클래스를 사용할 수 있습니다.  
 
 |하드웨어 인벤토리 클래스|Android|  
 |------------------------------|-------------|  

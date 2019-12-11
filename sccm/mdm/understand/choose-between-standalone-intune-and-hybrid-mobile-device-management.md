@@ -1,7 +1,7 @@
 ---
-title: Intune 독립 실행형을 선택 합니다.
+title: Intune 독립 실행형 선택
 titleSuffix: Configuration Manager
-description: Intune 독립 실행형을 선택 합니다.
+description: Intune 독립 실행형 선택
 ms.date: 08/14/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -13,10 +13,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9dfbec94ac584442f65826d08c6b7abefc16d375
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62286720"
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mdm-with-configuration-manager"></a>Configuration Manager를 사용하여 Microsoft Intune 독립 실행형 및 하이브리드 MDM 중에서 선택
@@ -24,7 +24,7 @@ ms.locfileid: "62286720"
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
 
-하이브리드 모바일 장치 관리 (MDM)은 2018 년 8 월 14 일부 터는 [사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)합니다. Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다.  
+2018 년 8 월 14 일부 터 하이브리드 MDM (모바일 장치 관리)은 [더 이상 사용 되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)입니다. Azure의 Intune은 Microsoft에서 권장하는 MDM 솔루션입니다.  
 
 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
 
@@ -83,5 +83,5 @@ You may choose hybrid MDM for the following reasons:
 
 #### <a name="change-the-mdm-authority"></a>MDM 기관 변경
 
-MDM 기관 설정을 변경해야 하는 경우 Microsoft 지원에 문의하지 않고 기존의 관리 디바이스를 등록 취소했다가 다시 등록하지 않고도 변경할 수 있습니다. 자세한 내용은 [MDM 기관을 변경](/sccm/mdm/deploy-use/change-mdm-authority)합니다.
+MDM 기관 설정을 변경해야 하는 경우 Microsoft 지원에 문의하지 않고 기존의 관리 디바이스를 등록 취소했다가 다시 등록하지 않고도 변경할 수 있습니다. 자세한 내용은 [MDM 기관 변경](/sccm/mdm/deploy-use/change-mdm-authority)을 참조 하세요.
 

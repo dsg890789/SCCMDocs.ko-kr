@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4e225b7ab54a1061387d1c8ee369641f68bd7889
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62227152"
 ---
 # <a name="device-compliance-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 디바이스 준수 정책 관리
@@ -26,7 +26,7 @@ Configuration Manager의 준수 정책은 디바이스가 조건부 액세스 �
 
 
 > [!IMPORTANT]  
->  이 문서에서는 Microsoft Intune으로 관리되는 디바이스에 대한 규정 준수 정책을 설명합니다. Configuration Manager 클라이언트에서 관리 되는 장치에 대 한 준수 정책에 설명 되어 [Configuration Manager에서 관리 하는 장치에 대 한 Office 365 서비스에 대 한 액세스 관리](/sccm/protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)합니다.  
+>  이 문서에서는 Microsoft Intune으로 관리되는 디바이스에 대한 규정 준수 정책을 설명합니다. Configuration Manager 클라이언트에서 관리 하는 장치에 대 한 준수 정책은 [Configuration Manager에서 관리 하는 장치에 대 한 Office 365 서비스에 대 한 액세스 관리](/sccm/protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)에 설명 되어 있습니다.  
 
  이러한 규칙에는 다음과 같은 요구 사항이 있습니다.  
 
@@ -57,7 +57,7 @@ Configuration Manager의 준수 정책은 디바이스가 조건부 액세스 �
 |**전자 메일 프로필**|해당 없음|해당 없음|격리됨|해당 없음|  
 |**최소 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
 |**최대 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
-|**디바이스 상태 증명(1602 업데이트)**|설정은 Windows 8.1에 적용되지 않음<br /><br /> Windows 10 및 Windows 10 Mobile이 격리됩니다.|해당 없음|해당 사항 없음|해당 없음|  
+|**디바이스 상태 증명(1602 업데이트)**|설정은 Windows 8.1에 적용되지 않음<br /><br /> Windows 10 및 Windows 10 Mobile이 격리됩니다.|해당 없음|해당 없음|해당 없음|  
 |**설치할 수 없는 앱**|해당 없음|해당 없음|격리됨|격리됨|
 
  **재구성** = 디바이스 OS에서 준수를 적용합니다. 예를 들어 사용자에게 PIN을 설정하도록 강제합니다. 설정이 비준수인 경우는 없습니다.  
@@ -72,7 +72,7 @@ Configuration Manager의 준수 정책은 디바이스가 조건부 액세스 �
 
 ## <a name="devices-without-any-assigned-compliance-policy"></a>모든 할당된 준수 정책이 없는 디바이스
 <!--2520152-->
-2018 년 7 월부터, 할당 된 준수 정책이 없는 모든 장치 준수 또는 비준수 것으로 간주 하는지 여부를 구성 합니다. 기본적으로 할당된 준수 정책이 없는 디바이스는 준수로 간주됩니다. 다음 단계에 따라 Azure Portal에서 이 설정을 변경합니다.
+7 월 2018부터, 할당 된 준수 정책이 없는 모든 장치를 규격 또는 비규격으로 간주 하는지 여부를 구성 합니다. 기본적으로 할당된 준수 정책이 없는 디바이스는 준수로 간주됩니다. 다음 단계에 따라 Azure Portal에서 이 설정을 변경합니다.
 
 1. [Azure Portal의 Intune](https://aka.ms/intuneportal)에 로그인합니다.  
 

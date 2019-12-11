@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 170725e28d821b8e0df83ecb9b503bdb0227ecbc
-ms.sourcegitcommit: 2f34d9457d95a9bd25603699fcf0e26cac77ad30
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74660991"
 ---
 # <a name="create-and-deploy-a-device-compliance-policy"></a>디바이스 준수 정책 만들기 및 배포
@@ -316,7 +316,7 @@ ms.locfileid: "74660991"
 
 ### <a name="find-an-app-id"></a>앱 ID 찾기
 
-앱 ID는 Apple 및 Google 애플리케이션 서비스 내에서 앱을 고유하게 식별하는 식별자입니다. 예를 `com.contoso.myapp`합니다. 앱 ID를 찾으려면 다음을 수행합니다.
+앱 ID는 Apple 및 Google 애플리케이션 서비스 내에서 앱을 고유하게 식별하는 식별자입니다. 예제입니다. `com.contoso.myapp` 앱 ID를 찾으려면 다음을 수행합니다.
 
 - **Android**: 앱을 만드는 데 사용 된 GOOGLE PLAY 스토어 URL에서 앱 ID를 찾습니다. 예제 앱 ID는 다음과 같습니다. `...?id=com.companyname.appname&hl=en`  
 

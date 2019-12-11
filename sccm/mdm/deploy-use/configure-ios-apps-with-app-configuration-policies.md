@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8a259e81831c00ad585a0177ac75473eb6d62860
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67678597"
 ---
 # <a name="apply-settings-to-ios-apps-with-app-configuration-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 앱 구성 정책을 사용하여 iOS 앱에 설정 적용
@@ -35,7 +35,7 @@ System Center Configuration Manager(Configuration Manager)에서 앱 구성 정�
 
 현재 앱 구성 정책은 iOS 8 이상을 실행하는 디바이스에서 다음과 같은 애플리케이션 유형에만 사용할 수 있습니다.
 
-- **iOS 용 앱 패키지 (\*.ipa 파일)**
+- **iOS 용 앱 패키지 (\*ipa 파일)**
 - **App Store의 iOS용 앱 패키지**
 
 앱 설치 유형에 대한 자세한 내용은 [애플리케이션 관리 소개](/sccm/apps/understand/introduction-to-application-management)를 참조하세요.

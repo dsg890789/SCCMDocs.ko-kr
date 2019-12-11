@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e884b7c5d7ceca7fcb241a5bfef1832e66562d38
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70378909"
 ---
 # <a name="ios-hybrid-enrollment-using-apple-configurator-with-configuration-manager"></a>Configuration Manager에서 Apple Configurator를 사용한 iOS 하이브리드 등록
@@ -26,7 +26,7 @@ ms.locfileid: "70378909"
 
 디바이스를 사용하여 회사 메일과 앱, 데이터 등의 회사 리소스에 액세스하는 단일 사용자가 있는 전용 iOS 디바이스에는 다음 절차를 사용하는 것이 좋습니다.  
 
-## <a name="prerequisites"></a>필수 구성 요소  
+## <a name="prerequisites"></a>Prerequisites  
 
 -   IOS 디바이스에 대한 실제 액세스  
 
@@ -48,11 +48,11 @@ ms.locfileid: "70378909"
 
     -   **사용자 선호도** – 디바이스의 등록 방식을 지정합니다. 대부분의 설치 도우미 시나리오의 경우 **사용자 선호도 확인**을 사용합니다.  
 
-        -   **사용자 선호도 확인**: 초기 설치 중에는 사용자에 게 장치를 등록 해야 하며, 그런 다음 해당 사용자로 회사 데이터와 전자 메일에 액세스 하도록 허용할 수 있습니다.  
+        -   **사용자 선호도 확인**: 초기 설치 작업을 진행할 때 디바이스에 사용자 정보를 등록해야 합니다. 그러면 디바이스가 해당 사용자 자격으로 회사 데이터와 메일에 액세스할 수 있게 됩니다.  
 
-        -   **사용자 선호도 없음**: 장치는 사용자와 관련이 없습니다. 로컬 사용자 데이터에 액세스하지 않고도 작업을 수행하는 디바이스에 대해 이 정보를 사용합니다. 사용자 정보를 필요로 하는 앱이 작동하지 않습니다.
+        -   **사용자 선호도 없음**: 디바이스에 사용자 정보를 등록하지 않습니다. 로컬 사용자 데이터에 액세스하지 않고도 작업을 수행하는 디바이스에 대해 이 정보를 사용합니다. 사용자 정보를 필요로 하는 앱이 작동하지 않습니다.
 
-    계속하려면 **다음** 을 클릭합니다.  
+    **다음** 을 클릭하여 계속합니다.  
 
 3.  **디바이스 등록 프로그램** 페이지에서 **이 프로필에 대한 디바이스 등록 프로그램 설정을 구성합니다.** 확인란을 선택 취소하고 **다음**을 클릭합니다.  
 
@@ -79,7 +79,7 @@ ms.locfileid: "70378909"
 
     ```  
 
-     다음 문자열로 바꾸세요.  
+     다음으로 바꿉니다.  
 
     ```  
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=  

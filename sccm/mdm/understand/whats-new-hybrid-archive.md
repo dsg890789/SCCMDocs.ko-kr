@@ -13,10 +13,10 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 006580a7ae4965ab4662ae02bee13ed9796697f8
-ms.sourcegitcommit: b9cc8e723c5d8c3be44edad24ad29d75c0cdd2b0
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71826252"
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하는 이전 하이브리드 기능
@@ -160,7 +160,7 @@ Configuration Manager(현재 분기)의 버전 1702에는 다음과 같은 추�
 
 - **Windows 디바이스의 새 MDM 서버 주소**
 
-  Windows 및 Windows Phone 디바이스 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 디바이스를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 추가 정보는 https://aka.ms/intuneenrollsvrchange에서 찾을 수 있습니다.
+  Windows 및 Windows Phone 디바이스 등록을 위한 MDM 서버 주소가 manage.microsoft.com에서 enrollment.manage.microsoft.com으로 변경되었습니다. 사용자에게 Windows 또는 Windows Phone 디바이스를 등록하는 동안 MDM 서버 주소를 입력하라는 메시지가 표시되면 enrollment.manage.microsoft.com을 사용하라고 알리세요. 이 업데이트에는 또한 EnterpriseEnrollment.contoso.com을 manage.microsoft.com으로 리디렉션하는 DNS의 CNAME이 필요하며, 이 manage.microsoft.com은 EnterpriseEnrollment.contoso.com을 EnterpriseEnrollment-s.manage.microsoft.com으로 리디렉션하는 DNS의 CNAME으로 대체됩니다. 이 변경에 대한 추가 정보는 https://aka.ms/intuneenrollsvrchange 에서 찾을 수 있습니다.
 
 ### <a name="new-in-configuration-manager-technical-preview-1702"></a>Configuration Manager Technical Preview 1702의 새로운 기능
 
@@ -493,7 +493,7 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 
 - **브라우저에 대한 조건부 액세스**
 
-  관리되는 규격 iOS 및 Android 디바이스의 지원되는 웹 브라우저에서만 액세스할 수 있도록 Exchange Online 및 SharePoint Online에 대한 조건부 액세스 정책을 설정할 수 있습니다. iOS 및 Android 디바이스를 사용하여 Outlook Web Access(OWA) 및 SharePoint 사이트에 로그인하려는 최종 사용자에게는 Intune을 사용하여 디바이스를 등록하라는 메시지는 물론 로그인을 완료하기 전에 비호환 문제가 있으면 수정하라는 메시지를 표시하게 됩니다. 자세한 내용은 다음을 참조하세요.
+  관리되는 규격 iOS 및 Android 디바이스의 지원되는 웹 브라우저에서만 액세스할 수 있도록 Exchange Online 및 SharePoint Online에 대한 조건부 액세스 정책을 설정할 수 있습니다. iOS 및 Android 디바이스를 사용하여 Outlook Web Access(OWA) 및 SharePoint 사이트에 로그인하려는 최종 사용자에게는 Intune을 사용하여 디바이스를 등록하라는 메시지는 물론 로그인을 완료하기 전에 비호환 문제가 있으면 수정하라는 메시지를 표시하게 됩니다. 자세한 내용은
 
   * [Intune을 사용하여 Exchange Online 및 새 Exchange Online Dedicated에 대한 메일 액세스 제한](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
   * [Microsoft Intune을 사용하여 SharePoint Online에 대한 액세스 제한](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
@@ -524,7 +524,7 @@ Configuration Manager Technical Preview 2016년 7월에 새로 도입된 하이�
 
 - **컬렉션으로 디바이스 자동 분류**
 
-  Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1606의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1606#dmp_category)에서 [컬렉션으로 디바이스 자동 분류](/sccm/core/get-started/capabilities-in-technical-preview-1606)를 참조하세요.
+  Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. 또한 Configuration Manager 콘솔에서 디바이스의 범주를 변경할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1606의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1606)에서 [컬렉션으로 디바이스 자동 분류](/sccm/core/get-started/capabilities-in-technical-preview-1606#dmp_category)를 참조하세요.
 
   > [!IMPORTANT]
   > 이 기능은 Microsoft Intune의 2016년 6월 릴리스에 작동합니다. 이러한 절차를 시도하기 전에 이 릴리스로 업데이트했는지 확인합니다.
@@ -571,19 +571,19 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 
   이제 **자산 및 준수** 작업 영역에서 액세스되는 **원격 디바이스 작업** 메뉴에서 **사용 중지/초기화**, **암호 다시 설정**, **원격 잠금** 및 **활성화 잠금 무시** 등의 일반 작업을 찾을 수 있습니다.
 
-  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_Remote)에서 [원격 디바이스 작업을 위한 새로운 환경](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
+  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [원격 디바이스 작업을 위한 새로운 환경](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_Remote)을 참조하세요.  
 
 - **비즈니스용 Windows 스토어 앱**
 
-  [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_WSFB)에서 [비즈니스용 Windows 스토어 앱](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
+  [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [비즈니스용 Windows 스토어 앱](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_WSFB)을 참조하세요.  
 
 - **대량 구매 앱의 일반적인 향상 기능**
 
-  비즈니스용 Windows 스토어와 iOS App Store의 대량 구매 앱이 동일한 보기, **스토어 앱에 대한 라이선스 정보**로 통합되었습니다. 또한 iOS용 대량 구매 앱을 만드는 방식으로 향상되었습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_VPP2)에서 [대량 구매 앱에 대한 일반적인 향상 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
+  비즈니스용 Windows 스토어와 iOS App Store의 대량 구매 앱이 동일한 보기, **스토어 앱에 대한 라이선스 정보**로 통합되었습니다. 또한 iOS용 대량 구매 앱을 만드는 방식으로 향상되었습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [대량 구매 앱에 대한 일반적인 향상 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605#BKMK_VPP2)을 참조하세요.  
 
 - **IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언**
 
-  이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  또한 iOS 디바이스의 일련 번호를 가져올 수 있습니다.  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_IMEI)에서 [IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언](/sccm/core/get-started/capabilities-in-technical-preview-1605)을 참조하세요.  
+  이제 IMEI(International station Mobile Equipment Identity) 번호를 가져와서 회사 소유 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  또한 iOS 디바이스의 일련 번호를 가져올 수 있습니다.  자세한 내용은 [System Center Configuration Manager용 Technical Preview 1605의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1605)에서 [IMEI 또는 iOS 일련 번호로 회사 소유 디바이스 미리 선언](../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_IMEI)을 참조하세요.  
 
 - **WIP(Windows Information Protection)**
 
@@ -635,11 +635,11 @@ Configuration Manager(현재 분기) 2016년 6월에 도입된 새로운 하이�
 - **Configuration Manager 콘솔에서 Windows 10 디바이스에 대한 비즈니스용 Windows 스토어 앱 찾기, 관리 및 배포**
 
 
-  Configuration Manager Technical Preview 1604에서는 관리하는 Windows 10 디바이스에 대한 앱을 찾고 관리 및 배포할 수 있도록 도와주는 비즈니스용 Windows 스토어에 대한 지원을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_WindowsVPP)에서 [비즈니스용 Windows 스토어에서 대량 구매 앱 관리](/sccm/core/get-started/capabilities-in-technical-preview-1604)를 참조하세요.  
+  Configuration Manager Technical Preview 1604에서는 관리하는 Windows 10 디바이스에 대한 앱을 찾고 관리 및 배포할 수 있도록 도와주는 비즈니스용 Windows 스토어에 대한 지원을 사용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604)에서 [비즈니스용 Windows 스토어에서 대량 구매 앱 관리](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_WindowsVPP)를 참조하세요.  
 
 - **Android 디바이스에 대한 SmartLock 설정**
 
-  새 설정이 Android 및 Samsung KNOX Standard 구성 항목에 추가되었습니다. 이를 통해 호환되는 Android 디바이스에서 SmartLock 기능을 제어할 수 있습니다.  이 설정을 사용하면 최종 사용자가 SmartLock을 구성하지 않도록 방지할 수 있습니다. [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_Smart)에서 [Android 디바이스에 대한 SmartLock 설정](/sccm/core/get-started/capabilities-in-technical-preview-1604)을 참조하세요.  
+  새 설정이 Android 및 Samsung KNOX Standard 구성 항목에 추가되었습니다. 이를 통해 호환되는 Android 디바이스에서 SmartLock 기능을 제어할 수 있습니다.  이 설정을 사용하면 최종 사용자가 SmartLock을 구성하지 않도록 방지할 수 있습니다. [System Center Configuration Manager용 Technical Preview 1604의 기능](/sccm/core/get-started/capabilities-in-technical-preview-1604)에서 [Android 디바이스에 대한 SmartLock 설정](/sccm/core/get-started/capabilities-in-technical-preview-1604#BKMK_Smart)을 참조하세요.  
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager(현재 분기)의 새로운 기능  
  Configuration Manager(현재 분기) 2016년 4월에 도입된 새로운 하이브리드 기능은 없습니다.  

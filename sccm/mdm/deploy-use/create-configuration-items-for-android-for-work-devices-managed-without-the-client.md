@@ -10,10 +10,10 @@ author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1ebae22b8536c67fc5c912009b836185be3b17b6
-ms.sourcegitcommit: 7dd42b5a280e64feb69a947dae082fdaf1571272
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66716249"
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
@@ -26,7 +26,7 @@ ms.locfileid: "66716249"
 
 2. **자산 및 준수** 작업 영역에서 **준수 설정**을 확장하고 **구성 항목**을 클릭합니다.  
 
-3. **홈** 탭의 **만들기** 그룹에서 **구성 항목 만들기**를 클릭합니다.  
+3. 에 **홈** 탭에 **만들기** 그룹에서 클릭 하 여 **구성 항목 만들기**.  
 
 4. **구성 항목 만들기 마법사** 의 **일반**페이지에서 구성 항목에 대한 이름 및 선택적 설명을 지정합니다.  
 
@@ -60,7 +60,7 @@ ms.locfileid: "66716249"
     > [!TIP]  
     >  지원되지 않는 설정은 준수 여부에 대해 평가되지 않습니다.  
 
-11. 마법사를 완료합니다.  
+11. 마법사 완료  
 
     **자산 및 준수** 작업 영역의 **구성 항목** 노드에서 새 구성 항목을 볼 수 있습니다.  
 
@@ -97,5 +97,5 @@ ms.locfileid: "66716249"
 
 DisallowCrossProfileCopyPaste을 true로 설정하면 Android for Work 개인 및 회사 프로필 간에 복사-붙여넣기 동작이 방지됩니다.
 
-## <a name="see-also"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
  [System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e0c007a2414a68701584967ee21e3cf046e42be3
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62217063"
 ---
 # <a name="how-to-bulk-enroll-devices-with-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 사용하여 디바이스를 대량 등록하는 방법
@@ -66,7 +66,7 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 >
 > - 현재 분기의 Configuration Manager에서는 온\-프레미스 모바일 디바이스 관리에 대한 다음 Wi-Fi 보안 구성만 지원합니다.  
 >   
->   - 보안 유형: **WPA2 엔터프라이즈** 또는 **WPA2 개인**  
+>   - 보안 유형: **WPA2-엔터프라이즈** 또는 **WPA2 개인**  
 >   - 암호화 유형: **AES** 또는 **TKIP**  
 >   - EAP 유형: **스마트 카드 또는 기타 인증서** 또는 **PEAP**  
 >
@@ -160,4 +160,4 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 -   Configuration Manager 콘솔을 시작합니다.  
 
--   마법사를 종료하려면 자산 및 준수개요디바이스에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 등록된 디바이스가 목록에 표시됩니다.  
+-   마법사를 종료하려면 **자산 및 준수** > **개요** > **디바이스**에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 등록된 디바이스가 목록에 표시됩니다.  

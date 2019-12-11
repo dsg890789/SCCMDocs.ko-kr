@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: da2c809c4aaf95de450570814a5b967ca563a2c2
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68340286"
 ---
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 서비스 액세스 관리
@@ -89,7 +89,7 @@ Exchange Online에 대한 조건부 액세스에서는 다음을 실행하는 �
 
   PC에 대해 조건부 액세스를 사용하도록 설정하기 위한 모든 요구 사항은 이 문서의 **PC에 대한 조건부 액세스** 섹션에 설명되어 있습니다.<br />     
   Microsoft Intune 및 Office 365 고객의 경우 AAD DRS가 자동으로 활성화됩니다. ADFS 디바이스 등록 서비스를 이미 배포한 고객의 온-프레미스 Active Directory에는 등록된 디바이스가 표시되지 않습니다.
-- E3 등의 Exchange Online을 포함하는 Office 365 구독을 사용합니다. 사용자는 Exchange Online의 라이선스를 취득 해야 합니다.
+- E3 등의 Exchange Online을 포함하는 Office 365 구독을 사용합니다. 사용자에게 Exchange Online 라이선스가 있어야 합니다.
 - Exchange Server 커넥터는 선택 사항이며 Configuration Manager를 Microsoft Exchange Online에 연결합니다. 이 커넥터를 사용하면 Configuration Manager 콘솔을 통해 디바이스 정보를 모니터링할 수 있습니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.
   커넥터가 준수 정책 또는 조건부 액세스 정책을 사용하지 않아도 됩니다. 조건부 액세스의 영향 보고서를 실행하려면 커넥터가 필요합니다.
 
@@ -102,10 +102,10 @@ Exchange Online Dedicated에 대한 조건부 액세스는 다음을 실행하�
 - Windows Phone 8 이상
 - EAS(Exchange ActiveSync) 전자 메일 클라이언트를 사용하는 모든 iOS 디바이스
 - Android 4 이상
-- 레거시 Exchange Online 전용 환경의 테 넌 트:    
+- 레거시 Exchange Online Dedicated 환경의 테넌트:    
 
   Configuration Manager를 Microsoft Exchange 온-프레미스에 연결하는 Exchange Server 커넥터를 사용합니다. 커넥터를 통해 모바일 디바이스를 관리하고 조건부 액세스를 사용하도록 설정할 수 있습니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요.
-- 새 Exchange Online 전용 환경의 테 넌 트:     
+- 새 Exchange Online Dedicated 환경의 테넌트:     
   Exchange Server 커넥터는 선택 사항이며 Configuration Manager를 Microsoft Exchange Online에 연결하고 디바이스 정보를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)를 참조하세요. 커넥터가 준수 정책 또는 조건부 액세스 정책을 사용하지 않아도 됩니다. 조건부 액세스의 영향 보고서를 실행하려면 커넥터가 필요합니다.  
 
 ## <a name="requirements-for-exchange-on-premises"></a>Exchange 온-프레미스에 대한 요구 사항
@@ -179,6 +179,6 @@ SharePoint Online에 대한 조건부 액세스에서는 다음을 실행하는 
 
 - [비즈니스용 Skype Online 액세스 관리](../../protect/deploy-use/manage-skype-for-business-online-access.md)  
 
-### <a name="see-also"></a>참고자료  
+### <a name="see-also"></a>참고 항목  
 
  [System Center Configuration Manager에서 준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)

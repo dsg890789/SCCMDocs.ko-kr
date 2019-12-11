@@ -12,17 +12,17 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dcf12937009a91bb8cc5a8c1c191861fec06ac13
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62227457"
 ---
 # <a name="how-users-enroll-devices-with-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 사용하여 디바이스를 등록하는 방법
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 온-프레미스 모바일 디바이스 관리에서, 등록 권한이 부여된 사용자가 디바이스를 등록할 수 있으며(업데이트된 클라이언트 설정을 통해) 디바이스에는 필요한 사이트 시스템 역할을 호스트하는 서버와 신뢰할 수 있는 통신을 설정하기 위해 필요한 루트 인증서가 설치됩니다. 등록을 설정하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 위해 디바이스 등록 설정](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)를 참조하세요.  
+System Center Configuration Manager 온-프레미스 모바일 디바이스 관리에서, 등록 권한이 부여된 사용자가 디바이스를 등록할 수 있으며(업데이트된 클라이언트 설정을 통해) 디바이스에는 필요한 사이트 시스템 역할을 호스트하는 서버와 신뢰할 수 있는 통신을 설정하기 위해 필요한 루트 인증서가 설치됩니다. 등록을 설정하는 방법에 대한 자세한 내용은 [Set up device enrollment for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)(System Center Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 위해 디바이스 등록 설정)를 참조하세요.  
 
 > [!NOTE]  
 >  현재 분기의 Configuration Manager는 다음 운영 체제를 실행하는 디바이스에 대한 온-프레미스 모바일 디바이스 관리에서의 등록을 지원합니다.  
@@ -73,4 +73,4 @@ System Center Configuration Manager 온-프레미스 모바일 디바이스 관�
 
 1.  Configuration Manager 콘솔을 시작합니다.  
 
-2.  마법사를 종료하려면 자산 및 준수개요디바이스에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 등록된 디바이스가 목록에 표시됩니다.  
+2.  마법사를 종료하려면 **자산 및 준수** > **개요** > **디바이스**에 필요한 사이트 시스템 역할 간의 신뢰할 수 있는 통신에 필요합니다. 등록된 디바이스가 목록에 표시됩니다.  

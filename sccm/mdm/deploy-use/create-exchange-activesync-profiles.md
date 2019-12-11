@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a9d1b5e96dc8d2a43dfc39b9d1b2cd9678c083c9
-ms.sourcegitcommit: 659976b943226c5124057429ac7444989f98433f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67159430"
 ---
 # <a name="exchange-activesync-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Exchange ActiveSync 메일 프로필
@@ -130,7 +130,7 @@ Exchange ActiveSync 전자 메일 프로필 만들기 마법사의 **동기화 �
 
     -   **수동**. 디바이스 사용자가 수동으로 동기화를 시작해야 합니다.  
 
--   **동기화할 메일의 일 수**. 드롭다운 목록에서 동기화할 메일의 일 수를 선택합니다. 다음 값 중 하나를 선택합니다.  
+-   **동기화할 메일의 일 수**. 드롭다운 목록에서 동기화 할 전자 메일의 일 수를 선택 합니다. 다음 값 중 하나를 선택 합니다.  
 
     -   **구성되지 않음**. 설정이 적용되지 않습니다. 이 경우 사용자는 디바이스에 다운로드할 메일 수를 구성할 수 있습니다.  
 

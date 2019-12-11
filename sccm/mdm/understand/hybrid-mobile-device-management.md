@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0f6c25817973dcfacefe8aae31f0db02dcbd5807
-ms.sourcegitcommit: 160bcdaf783f3946ad5c7869b2566cbfc4da545c
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71401523"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
@@ -33,7 +33,7 @@ Configuration Manager 사이트에 Microsoft Intune 구독이 있는 경우 제�
 
 1. **Microsoft Intune 구독 제거 마법사**에서 **Configuration Manager에서 Microsoft Intune 구독을 제거**하는 옵션을 선택 하 고 **다음**을 클릭 합니다.
 
-1. 마법사를 완료합니다.
+1. 마법사 완료
 
 ## <a name="deprecation-announcement"></a>사용 중단 알림
 

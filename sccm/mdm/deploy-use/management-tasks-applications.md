@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a57beb79bf7e4dc51e72d7254ff0f190c6ca32c4
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62228002"
 ---
 # <a name="manage-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 관리
@@ -46,7 +46,7 @@ System Center Configuration Manager에서 애플리케이션을 배포하고 모
 
 - MDM에 등록된 디바이스는 시뮬레이트된 배포, 사용자 환경 또는 일정 설정을 지원하지 않습니다.
 
-- 100 개 이상의 로캘 단일 앱에 추가 하지 마세요. 100 개 이상의 로캘을 추가 합니다. 앱을에서 Intune과 동기화 하지 않습니다. 또한이 작업에서 설치 되거나 장치에 설치할 수 있는 앱을 방지 합니다.
+- 단일 앱에 100 개 이상의 로캘을 추가 하지 마세요. 100 개를 초과 하는 로캘을 추가 하면 앱이 Intune과 동기화 되지 않습니다. 이 작업을 수행 하면 앱이 장치에 설치 되거나 설치 되는 것을 방지할 수도 있습니다.
 
 - iOS 응용 프로그램 구성 정책을 이미 구성한 경우 이 정책에 배포를 연결할 수 있습니다. [앱 구성 정책을 사용하여 iOS 앱 구성](configure-ios-apps-with-app-configuration-policies.md)을 참조하세요.
 

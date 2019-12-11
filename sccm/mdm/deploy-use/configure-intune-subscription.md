@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fd48ec41114b122d8d00549c1ae8d99d08ba5f1f
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70379699"
 ---
 # <a name="configure-your-intune-subscription-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 Intune 구독 구성
@@ -54,18 +54,18 @@ Intune 구독은 다음을 수행합니다.
 
 7. **일반** 페이지에서 다음 옵션을 지정한 후 **다음**을 클릭합니다.
 
-   - **컬렉션**: 자신의 모바일 장치를 등록 하는 사용자가 포함 된 사용자 컬렉션을 지정 합니다.
+   - **컬렉션**: 모바일 디바이스를 등록할 사용자가 포함된 사용자 컬렉션을 지정합니다.
 
      > [!NOTE]
      >  사용자가 컬렉션에서 제거될 경우 사용자 데이터베이스에서 사용자 레코드가 제거되면 최대 24시간 동안 사용자 디바이스가 계속 관리됩니다.
 
-   - **회사 이름**: 회사 이름을 지정 합니다.
+   - **회사 이름**: 회사 이름을 지정합니다.
 
-   - **회사 개인 정보 취급 방침에 대 한 URL**: 인터넷에서 액세스할 수 있는 링크에 회사 개인 정보 취급 방침을 게시 하는 경우 사용자가 회사 포털에서 액세스할 수 있는 링크를 제공 합니다 (예 http://www.contoso.com/CP_privacy.html:). 개인 정보 취급 방침 정보에는 사용자가 회사와 공유할 수 있는 정보가 명시될 수 있습니다.
+   - **회사 개인 정보 취급 방침 문서의 URL**: 인터넷에서 액세스할 수 있는 링크에 회사 개인 정보 취급 방침을 게시하는 경우 사용자가 회사 포털에서 이 방침에 액세스할 수 있는 링크를 제공합니다(예: http://www.contoso.com/CP_privacy.html ). 개인 정보 취급 방침 정보에는 사용자가 회사와 공유할 수 있는 정보가 명시될 수 있습니다.
 
-   - **회사 포털의 색 구성표**: 필요에 따라 회사 포털의 기본 색을 파란색으로 변경 합니다.
+   - **회사 포털의 색 구성표**: 선택적으로 회사 포털의 기본 색상인 파란색을 변경합니다.
 
-   - **Configuration Manager 사이트 코드**: 기본 사이트에 대 한 사이트 코드를 지정 하 여 모바일 장치를 관리 합니다.
+   - **Configuration Manager 사이트 코드**: 모바일 디바이스를 관리할 기본 사이트의 사이트 코드를 지정합니다.
 
    > [!NOTE]
    >  사이트 코드를 변경하면 새 등록만 영향을 받으며 기존에 등록된 디바이스는 영향을 받지 않습니다.
@@ -74,7 +74,7 @@ Intune 구독은 다음을 수행합니다.
 
 9. **회사 로고** 페이지에서 회사 포털에 로고를 표시할지 여부를 선택하고 **다음**을 클릭할 수 있습니다.
 
-10. 마법사를 완료합니다.
+10. 마법사 완료
 
 > [!div class="button"]
 > [< 이전 단계](confirm-dns.md)  [다음 단계 >](terms-and-conditions.md)

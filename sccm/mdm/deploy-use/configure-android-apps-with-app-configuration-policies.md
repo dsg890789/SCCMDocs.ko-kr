@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7d6f8c25902be857e0eec3cd4b969d1fb5bda136
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62288771"
 ---
 # <a name="apply-settings-to-android-for-work-apps-with-app-configuration-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 앱 구성 정책을 사용하여 Android for Work 앱에 설정 적용
@@ -42,7 +42,7 @@ Android 앱 구성 정책은 Android for Work를 실행 중인 디바이스에�
 3. 앱 구성 정책 만들기 마법사의 **일반** 페이지에서 다음 정책 정보를 설정합니다.
    - **이름**. 정책의 고유 이름을 입력합니다.
    - **설명**. (선택 사항) 정책을 식별하기 쉽도록 설명을 추가할 수 있습니다.
-   -  **구성 정책 유형을 선택합니다**. 앱 구성 정책에서 대상이 지정된 플랫폼을 지정합니다. **Android for Work 앱에 대한 구성 정책**.
+   -  **구성 정책 유형을 선택합니다**. 앱 구성 정책인 **Android for Work 앱용 구성 정책**에 따른 대상 플랫폼을 지정합니다.
    -  **검색 및 필터링 향상을 위해 할당된 범주입니다**. (선택 사항) 범주를 만들고 정책에 할당하려면 **범주**를 선택합니다. 범주를 사용하면 Configuration Manager 콘솔에서 항목을 쉽게 정렬하고 찾을 수 있습니다.
 4. **Android for Work 정책** 페이지에서 구성 정책 정보를 설정하는 방법을 선택합니다.
    - **이름 및 값 쌍 지정**. 중첩을 사용하지 않는 속성 목록 파일에 이 옵션을 사용할 수 있습니다. 이름 및 값 쌍을 지정하려면:

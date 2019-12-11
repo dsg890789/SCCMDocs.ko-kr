@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 78ff2181c3ae4bc7069998bf4a6db526da835037
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68337882"
 ---
 # <a name="managing-compliance-on-devices-managed-with-intune"></a>Intune으로 관리되는 디바이스에 대한 준수 관리
@@ -33,7 +33,7 @@ ms.locfileid: "68337882"
 
 1.  Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **구성 항목**을 클릭합니다.  
 
-3.  **홈** 탭의 **만들기** 그룹에서 **구성 항목 만들기**를 클릭합니다.  
+3.  에 **홈** 탭에 **만들기** 그룹에서 클릭 하 여 **구성 항목 만들기**.  
 
 4.  아래와 같은 구성 항목 만들기 마법사의 **일반** 탭에서, 구성 항목에 대한 이름 및 설명을 지정한 다음 이 항목의 각 시나리오에 대한 적절한 구성 항목 유형을 선택합니다.  
 
@@ -41,7 +41,7 @@ ms.locfileid: "68337882"
 
 ## <a name="scenarios-for-windows-81-and-windows-10-devices-managed-with-intune"></a>Intune으로 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 시나리오  
 
-### <a name="scenario-restrict-access-to-the-app-store-on-all-windows-pcs"></a>시나리오: 모든 Windows Pc에서 앱 스토어에 대 한 액세스 제한  
+### <a name="scenario-restrict-access-to-the-app-store-on-all-windows-pcs"></a>시나리오: 모든 Windows PC에서 앱 스토어에 대한 액세스 제한  
  이 시나리오에서는 매우 중요한 정보를 처리하는 회사 IT 관리자를 예로 듭니다. 매우 중요한 정보를 처리하기 때문에 사용자가 설치할 수 있는 앱을 제한합니다. 다음 작업을 수행하기 위해 모든 Windows 10 PC의 사용자가 Windows 스토어에서 앱을 다운로드하는 것을 중지할 수 있습니다.  
 
 1. 구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows 8.1 및 Windows 10** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "68337882"
 
 ## <a name="scenarios-for-windows-phone-devices-managed-with-intune"></a>Intune으로 관리되는 Windows Phone 디바이스에 대한 시나리오  
 
-### <a name="scenario-disable-the-use-of-screen-capture-on-a-windows-phone"></a>시나리오: Windows Phone에서 화면 캡처를 사용 하지 않도록 설정  
+### <a name="scenario-disable-the-use-of-screen-capture-on-a-windows-phone"></a>시나리오: Windows Phone에서 화면 캡처를 사용하지 않도록 설정  
  이 시나리오에서는, 회사에서 Windows Phone 8.1 디바이스를 사용합니다. 이러한 디바이스는 중요한 정보를 포함하는 판매 앱을 실행합니다. 회사를 보호하기 위해 회사 외부에서 중요한 정보를 전송하는 데 사용할 수 있는 디바이스에서 화면 캡처를 사용하지 않도록 설정할 수 있습니다.  
 
 1. 구성 항목 만들기 마법사의 **일반** 페이지에서 **Windows Phone** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
@@ -79,7 +79,7 @@ ms.locfileid: "68337882"
 
 ## <a name="scenarios-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 시나리오  
 
-### <a name="scenario-disable-the-camera-on-ios-devices"></a>시나리오: IOS 장치에서 카메라 사용 안 함  
+### <a name="scenario-disable-the-camera-on-ios-devices"></a>시나리오: iOS 디바이스에서 카메라 사용 안 함  
  이 시나리오에서 회사는 새로운 제품 설계에 대한 청사진을 생성합니다. 여기에는 누출되어서는 안 되는 중요한 정보가 포함되어 있습니다. 회사에서 모든 직원에게 iPhone 또는 iPad를 발급하므로, 이러한 디바이스의 카메라를 사용하여 청사진을 촬영하는 것을 방지하기 위해 카메라 사용을 비활성화할 수 있습니다.  
 
 1. 구성 항목 만들기 마법사의 **일반** 페이지에서 **iOS 및 Mac OS X** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  
@@ -98,7 +98,7 @@ ms.locfileid: "68337882"
 
 ## <a name="scenarios-for-android-and-samsung-knox-standard-devices-managed-with-intune"></a>Intune으로 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 시나리오  
 
-### <a name="scenario-require-a-password-on-all-android-5-devices"></a>시나리오: 모든 Android 5 장치에서 암호 필요  
+### <a name="scenario-require-a-password-on-all-android-5-devices"></a>시나리오: 모든 Android 5 디바이스에서 암호 필요  
  이 시나리오에서는 사용자가 자신의 디바이스에서 6자 이상의 암호를 구성하도록 요구하는 Android 5 디바이스에 대한 구성 항목을 만듭니다. 또한 사용자가 잘못된 암호를 5회 입력하면 디바이스가 초기화됩니다.  
 
 1. 구성 항목 만들기 마법사의 **일반** 페이지에서 **Android 및 삼성 KNOX** 구성 항목 유형을 선택하고 **다음**을 클릭합니다.  

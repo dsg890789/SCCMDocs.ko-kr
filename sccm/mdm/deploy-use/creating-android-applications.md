@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ef070186112642d204aade24039da87c0e3a22f0
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62277041"
 ---
 # <a name="create-android-applications-in-configuration-manager"></a>Configuration Manager에서 Android 애플리케이션 만들기
@@ -38,7 +38,7 @@ Configuration Manager는 Android .apk 패키지를 지원합니다.
 
 |디바이스 유형|지원되는 작업|
 |-|-|
-|Android|**사용 가능한**하십시오 **필요한**: 사용자가 설치 및 제거에 모두 동의해야 합니다.|
+|Android|**사용 가능**, **필수**: 사용자가 설치 및 제거에 모두 동의해야 합니다.|
 |Android for Work |**사용 가능**, **필수** |
 
 
@@ -59,11 +59,11 @@ Play for Work 스토어에서 앱을 승인하고, Configuration Manager 콘솔�
 
 5. 리본에서 **동기화**를 클릭합니다.  
 
-6. 앱을 동기화하는 데 최대 10분 동안 기다리십시오. 그런 다음, **소프트웨어 라이브러리** 작업 영역으로 이동하고, **애플리케이션 관리**를 확장한 후, **스토어 앱에 대한 라이선스 정보**를 선택합니다.  
+6. 앱이 동기화 될 때까지 최대 10 분 정도 기다립니다. 그런 다음 **소프트웨어 라이브러리** 작업 영역으로 이동 하 고 **응용 프로그램 관리**를 확장 한 다음 **스토어 앱에 대 한 라이선스 정보** 노드를 선택 합니다.  
 
 7. Play for Work에서 동기화된 앱을 선택한 다음, **애플리케이션 만들기**를 클릭합니다.  
 
-8. 마법사를 완료합니다.  
+8. 마법사 완료  
 
 9. **소프트웨어 라이브러리** 작업 영역으로 이동하고 **애플리케이션 관리**를 확장한 후, **애플리케이션** 노드를 선택합니다. Android for Work 앱을 선택하고 평소대로 배포합니다.  
 

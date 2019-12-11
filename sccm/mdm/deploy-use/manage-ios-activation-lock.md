@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 780abd0702e34dff7a8026fb54e29ccea6f67170
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67678751"
 ---
 # <a name="manage-ios-activation-lock-with-system-center-configuration-manager"></a>System Center Configuration Manager로 iOS 활성화 잠금 관리
@@ -36,7 +36,7 @@ System Center Configuration Manager를 사용하면 iOS 7.1 이상 디바이스�
 > [!TIP]
 > iOS 디바이스에 대해 감독 모드를 사용하면 Apple Configurator Tool을 통해 디바이스를 잠가 특정 업무용으로 기능을 제한할 수 있습니다. 감독 모드는 대개 회사가 소유한 디바이스에서만 사용됩니다.
 
-활성화 잠금 기능을 사용하면 iOS 디바이스를 보호하고, 디바이스 손실 및 도난 시 복구 가능성을 높일 수는 있지만 IT 관리자의 경우에는 여러 가지 문제를 해결해야 할 수도 있습니다. 예:
+활성화 잠금 기능을 사용하면 iOS 디바이스를 보호하고, 디바이스 손실 및 도난 시 복구 가능성을 높일 수는 있지만 IT 관리자의 경우에는 여러 가지 문제를 해결해야 할 수도 있습니다. 예를 들면
 
 - 사용자 중 한 명이 디바이스에서 활성화 잠금을 설정합니다. 해당 사용자가 퇴사하게 되어 디바이스를 반납합니다. 이 경우 해당 사용자의 Apple ID와 암호가 없으면 디바이스를 초기화해도 다시 활성화할 수 없습니다.
 - 활성화 잠금을 사용하도록 설정한 모든 디바이스의 보고서를 작성해야 합니다.
@@ -83,7 +83,7 @@ Configuration Manager 준수 설정을 사용해 **iOS 및 Mac OS X** 형식의 
 
 ## <a name="view-the-activation-lock-bypass-code"></a>활성화 잠금 무시 코드 보기
 
-1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
+1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.
 2. **자산 및 호환성** 작업 영역에서 **디바이스**를 클릭합니다.
 3. 활성화 잠금을 사용할 수 있는 감독 모드에 있는 등록된 디바이스를 선택합니다.
 4. **홈** 탭의 **디바이스** 그룹에서 **원격 디바이스 작업** > **활성화 잠금 무시 코드 보기**를 클릭합니다.
@@ -91,7 +91,7 @@ Configuration Manager 준수 설정을 사용해 **iOS 및 Mac OS X** 형식의 
 
 ## <a name="bypass-activation-lock"></a>활성화 잠금 무시
 
-1. Configuration Manager 콘솔에서 **자산 및 호환성**을 클릭합니다.
+1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.
 2. **자산 및 호환성** 작업 영역에서 **디바이스**를 클릭합니다.
 3. 활성화 잠금을 사용할 수 있는 감독 모드에 있는 등록된 디바이스를 선택합니다.
 3. **홈** 탭의 **디바이스** 그룹에서 **원격 디바이스 작업** > **활성화 잠금 무시**를 클릭합니다.

@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 601b58b2f955170e5ab2f038cb49306efe3b499c
-ms.sourcegitcommit: 4e47f63a449f5cc2d90f9d68500dfcacab1f4dac
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "62255293"
 ---
 # <a name="manage-skype-for-business-online-access"></a>비즈니스용 Skype Online 액세스 관리
@@ -28,7 +28,7 @@ ms.locfileid: "62255293"
 
  대상 사용자가 디바이스에서 비즈니스용 Skype Online을 사용하는 경우 다음과 같은 평가 작업이 수행됩니다.![ConditionalAccess&#95;SFBFlow](media/ConditionalAccess_SFBFlow.png)  
 
-## <a name="prerequisites"></a>필수 구성 요소  
+## <a name="prerequisites"></a>Prerequisites  
 
 - 비즈니스용 Skype Online에 대한 [최신 인증](https://aka.ms/SkypeModernAuth)을 사용하도록 설정합니다.   
 
@@ -61,7 +61,7 @@ ms.locfileid: "62255293"
 -   **제외된 그룹**에는 정책에서 제외된 사용자가 포함됩니다.  
     사용자가 두 그룹에 모두 있으면 제외됩니다.  
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 준수 정책 구성 및 배포  
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 규정 준수 정책 구성 및 배포  
  준수 정책을 만들고 비즈니스용 Skype Online 정책의 대상이 되는 모든 디바이스에 배포합니다.  
 
  준수 정책을 구성하는 방법에 대한 자세한 내용은 [디바이스 규정 준수 정책 관리](../../protect/deploy-use/device-compliance-policies.md)를 참조하세요.  
@@ -70,7 +70,7 @@ ms.locfileid: "62255293"
 >  준수 정책을 배포하지 않은 상태에서 비즈니스용 Skype Online 정책을 사용하도록 설정하면 Microsoft Intune에 등록되어 있는 경우 대상으로 지정된 모든 디바이스에 대한 액세스가 허용됩니다.  
 
 
-### <a name="step-3-configure-the-skype-for-business-online-policy"></a>3단계: Skype Online 정책 구성  
+### <a name="step-3-configure-the-skype-for-business-online-policy"></a>3 단계: 비즈니스용 Skype Online 정책 구성  
  규정을 준수하는 관리 디바이스만 비즈니스용 Skype Online에 액세스할 수 있도록 요구하는 정책을 구성합니다. 이 정책은 Azure Active Directory에 저장됩니다.  
 
 1. [Microsoft Intune 관리 콘솔](https://manage.microsoft.com)에서 **정책** > **조건부 액세스** > **Skype for Business Online 정책**를 참조하세요.  

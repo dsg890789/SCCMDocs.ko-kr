@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 18edb5a18baa7c009638580d9b338d297fb42e76
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70380376"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
@@ -32,7 +32,7 @@ Lookout MTP는 구성된 Azure AD 그룹의 사용자만 액세스할 수 있도
 
 * 메일: enterprisesupport@lookout.com
 * [MTP 콘솔](https://aad.lookout.com)에 로그인한 다음 **지원** 모듈로 이동합니다.
-* [https://enterprise.support.lookout.com/hc/requests](https://enterprise.support.lookout.com/hc/requests )로 이동하여 지원 요청을 합니다.
+* https://enterprise.support.lookout.com/hc/requests 로 이동하여 지원 요청을 합니다.
 
 ### <a name="unable-to-sign-in"></a>로그인할 수 없음
 Azure AD 전역 관리자가 초기 Lookout 설치에 동의하지 않은 경우 다음 오류가 나타날 수 있습니다.

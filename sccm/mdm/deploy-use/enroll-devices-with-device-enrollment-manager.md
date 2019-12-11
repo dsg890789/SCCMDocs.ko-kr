@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 00d6ccd54e7be4021c6dc31d30aedac50b41e3dd
-ms.sourcegitcommit: 7b111cd8a797877031378349898810c3dd0a3750
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "69632483"
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>Configuration Manager와 디바이스 등록 관리자를 사용하여 디바이스 등록

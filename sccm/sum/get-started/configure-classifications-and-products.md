@@ -11,12 +11,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d9fcc24cbda5e002e7f4b3ca78979c351ea08c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4250f4286c042176d6700eecbe6a65fcc60656af
+ms.sourcegitcommit: a02a4e1a3c034bca00aaf05924a63b08b92201fb
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74190537"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946498"
 ---
 # <a name="configure-classifications-and-products-to-synchronize"></a>동기화할 분류 및 제품 구성  
 
@@ -70,7 +70,7 @@ ms.locfileid: "74190537"
 
 ## <a name="bkmk_Surface"></a>Microsoft Surface 드라이버 및 펌웨어 업데이트 포함
 
-Microsoft surface **드라이버 및 펌웨어 업데이트 포함** 확인란을 선택 하 여 microsoft surface 드라이버를 동기화 할 수 있습니다.<!--1098490--> Surface 드라이버를 성공적으로 동기화하려면 모든 소프트웨어 업데이트 지점에서 Windows Server 2016을 실행해야 합니다. Surface 드라이버를 사용하도록 설정한 후 Windows Server 2012를 실행하는 컴퓨터에서 소프트웨어 업데이트 지점을 사용하도록 설정하면 드라이버 업데이트에 대한 검색 결과가 정확하지 않습니다. 이에 따라 Configuration Manager 콘솔 및 Configuration Manager 보고서에서 잘못된 준수 데이터가 표시됩니다.  
+Microsoft surface **드라이버 및 펌웨어 업데이트 포함** 확인란을 선택 하 여 microsoft surface 드라이버를 동기화 할 수 있습니다.<!--1098490--> Surface 드라이버를 성공적으로 동기화 하려면 모든 소프트웨어 업데이트 지점이 누적 업데이트 [KB4025339](https://support.microsoft.com/help/4025339) 이상 설치 된 Windows Server 2016를 실행 해야 합니다. Surface 드라이버를 사용하도록 설정한 후 Windows Server 2012를 실행하는 컴퓨터에서 소프트웨어 업데이트 지점을 사용하도록 설정하면 드라이버 업데이트에 대한 검색 결과가 정확하지 않습니다. 이에 따라 Configuration Manager 콘솔 및 Configuration Manager 보고서에서 잘못된 준수 데이터가 표시됩니다.  
 
 - 이 기능은 버전 1706에서 [시험판 기능](/sccm/core/servers/manage/pre-release-features)으로 처음 소개되었습니다. 버전 1710 버전부터 이 기능은 더 이상 시험판 기능이 아닙니다.  
 - Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  

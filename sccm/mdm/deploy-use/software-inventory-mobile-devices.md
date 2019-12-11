@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ac2d841cc7b87baf209443310577cb4a9f90b372
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67551276"
 ---
 # <a name="software-inventory-for-mobile-devices-enrolled-with-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 디바이스를 위한 소프트웨어 인벤토리
@@ -38,4 +38,4 @@ ms.locfileid: "67551276"
 |iOS|관리되는 앱만|디바이스에 설치되는 모든 앱|  
 |Android|관리되는 앱만|디바이스에 설치되는 모든 앱|  
 
-참조 [소프트웨어 인벤토리 소개](../../core/clients/manage/inventory/introduction-to-software-inventory.md) 하 고 [소프트웨어 인벤토리를 구성 하는 방법](../../core/clients/manage/inventory/configure-software-inventory.md) 클라이언트 장치에서 파일 정보를 수집 하도록 소프트웨어 인벤토리를 사용 하는 방법에 대 한 자세한 내용은 합니다.
+소프트웨어 인벤토리를 사용 하 여 클라이언트 장치에서 파일 정보를 수집 하는 방법에 대 한 자세한 내용은 소프트웨어 [인벤토리 소개](../../core/clients/manage/inventory/introduction-to-software-inventory.md) 및 [소프트웨어 인벤토리 구성 방법](../../core/clients/manage/inventory/configure-software-inventory.md) 을 참조 하세요.

@@ -11,10 +11,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0be485bd9b77613be9a647106e96c4e41bede064
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67678120"
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-admin-console"></a>Intune 관리 콘솔에서 Lookout MTD 연결 사용
@@ -47,11 +47,11 @@ ms.locfileid: "67678120"
 
 조직의 요구 사항에 따라 사용 하도록 설정해야 하는 MTD 설정/해제 옵션을 결정할 수 있습니다. 다음은 자세한 내용입니다.
 
-- **연결 Android 4.1 + 장치를 Lookout for Work MTD**: 이 옵션을 사용 하도록 설정 하면 있습니다 Android 4.1 이상 장치가 Intune을 다시 보안 위험을 보고 합니다.  
-    - **수신 된 데이터가 없는 경우 비규격으로 표시**: Intune에서 Lookout이이 플랫폼에서 장치에 대 한 데이터를 받지 못하면, 장치를 비규격으로 간주 합니다.  
+- **Android 4.1+ 디바이스를 Lookout for Work MTD에 연결**: 이 옵션을 사용하도록 설정하는 경우 Android 4.1 이상 디바이스가 보안 위험을 Intune에 다시 보고하도록 지정할 수 있습니다.  
+    - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 Lookout에서 이 플랫폼의 디바이스에 대한 데이터를 수신하지 못하면 디바이스를 비규격으로 간주합니다.  
 
-- **IOS 8.0 이상 장치에 Lookout for Work MTD 연결**: 이 옵션을 사용 하도록 설정 하면 보안 위험을 Intune에 다시 보고 하는 iOS 8.0 + 장치 할 수 있습니다.
-    - **수신 된 데이터가 없는 경우 비규격으로 표시**: Intune에서 Lookout이이 플랫폼에서 장치에 대 한 데이터를 받지 못하면, 장치를 비규격으로 간주 합니다.  
+- **iOS 8.0+ 디바이스를 Lookout for Work MTD에 연결**: 이 옵션을 사용하도록 설정하면 iOS 8.0+ 디바이스가 보안 위험을 Intune에 보고하게 할 수 있습니다.
+    - **수신된 데이터가 없는 경우 비규격으로 표시**: Intune이 Lookout에서 이 플랫폼의 디바이스에 대한 데이터를 수신하지 못하면 디바이스를 비규격으로 간주합니다.  
 
 > [!TIP]  
 > Mobile Threat Defense 창에서 Intune 및 Lookout 간의 **연결 상태** 및 **마지막 동기화** 시간을 확인할 수 있습니다.

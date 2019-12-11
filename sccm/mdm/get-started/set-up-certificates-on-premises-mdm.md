@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3e454212b5a70c903471d0bda82611e12b3c8693
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70380338"
 ---
 # <a name="set-up-certificates-for-trusted-communications-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>Set up certificates for trusted communications for On-premises Mobile Device Management in System Center Configuration Manager
@@ -58,7 +58,7 @@ System Center Configuration Manager 온\-프레미스 모바일 디바이스 관
 
 4.  **http://<ServerDNSName\>/CertEnroll/<CAName\><CRLNameSuffix\><DeltaCRLAllowed\>.crl**을 선택합니다. 아래의 세 가지 옵션을 지정합니다.  
 
-    -   **CRL에 포함. 클라이언트에서 델타 CRL 위치를 찾도록 해줍니다.**  
+    -   **Crl에를 포함 합니다. 클라이언트는이를 사용 하 여 델타 CRL 위치를 찾습니다.**  
 
     -   **발급된 인증서의 CDP 확장에 포함**  
 

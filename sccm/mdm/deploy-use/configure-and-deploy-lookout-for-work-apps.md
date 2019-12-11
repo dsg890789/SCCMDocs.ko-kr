@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8762282c6a5007642e2cc174b9d2496b2d705c24
-ms.sourcegitcommit: 60d45a5df135b84146f6cfea2bac7fd4921d0469
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67194655"
 ---
 # <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work 앱 구성 및 배포
@@ -32,9 +32,9 @@ ms.locfileid: "67194655"
 2.  소프트웨어 배포 마법사의 **일반** 페이지에서 다음 정보를 지정합니다.  
     - 유형: **Google Play의 Android용 앱 패키지**를 선택합니다.
     - 위치: Google Play 스토어에서 Lookout for Work 앱 링크를 복사하여 여기에 붙여넣습니다.
-    - Publisher: Lookout Mobile Security
+    - 게시자: Lookout Mobile Security
     - 이름: Lookout for Work
-    - 설명: Lookout에서는 장치를 안전 하 게 유지 하도록 모바일 위협에 대 한 최상의 보호를 제공 합니다. Lookout 앱이 설치되면 앱이 위협으로부터 디바이스를 보호합니다. 위협이 발견되면 사용자와 IT 관리자에게 경고합니다.
+    - 설명: Lookout에서는 디바이스를 안전하게 유지하도록 모바일 위협에 대한 최상의 보호를 제공합니다. Lookout 앱이 설치되면 앱이 위협으로부터 디바이스를 보호합니다. 위협이 발견되면 사용자와 IT 관리자에게 경고합니다.
     - 관리 범주: 컴퓨터 관리  
 
     성공적으로 완료되면 애플리케이션 목록에 Lookout for Work 앱이 표시됩니다.  

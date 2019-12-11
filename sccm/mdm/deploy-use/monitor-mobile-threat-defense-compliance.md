@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9b77fabc6ea4f5823777e932011313c5e2de1acf
-ms.sourcegitcommit: f42b9e802331273291ed498ec88f710110fea85a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67551338"
 ---
 # <a name="monitor-mobile-threat-defense-compliance"></a>**Mobile Threat Defense 준수 모니터링**
@@ -55,15 +55,15 @@ Mobile Threat Defense 상태를 모니터링하려면:
 > [!IMPORTANT] 
 > [디바이스 위협 방지] 탭은 선택한 디바이스가 모바일 디바이스인 경우에만 표시됩니다.
 
-|열 이름|기본적으로 표시|Description| 
+|열 이름|기본적으로 표시|설명| 
 |-|-|-|
 |**설명**| 예 | Mobile Threat Defense 파트너가 제공하는 위협에 대한 세부 정보입니다. |
 |**마지막 업데이트 시간**| 예 | Threat Defense 파트너가 위협에 대한 업데이트된 세부 정보를 Intune에 보낸 마지막 시간입니다. |
-|**위협 심각도**| 예 | 위협 심각도는 Mobile Threat Defense 파트너 콘솔의 관리 구성에 따른 개별 위협에 대한 정의입니다. 세 값 중 하나 있습니다. **낮은**하십시오 **Medium** 또는 **높은** |
-|**위협 상태**| 예 | 디바이스에 대한 위협의 현재 상태입니다. 가능한 상태: **Active**하십시오 **확인할** 또는 **무시:** 사용자가 장치에 대 한 위협을 무시 했지만 위협이 남아 있는지를 나타냅니다. |
-|**위협 유형**| 예 | 위협의 Mobile Threat Defense 파트너 유형입니다. 가능한 값: **앱**하십시오 **파일** 또는 **OS** |
+|**위협 심각도**| 예 | 위협 심각도는 Mobile Threat Defense 파트너 콘솔의 관리 구성에 따른 개별 위협에 대한 정의입니다. 세 가지 값 **낮음**, **보통** 또는 **높음** 중 하나를 사용합니다. |
+|**위협 상태**| 예 | 디바이스에 대한 위협의 현재 상태입니다. 가능한 상태: **활성**, **해결됨** 또는 **무시됨:** 사용자가 디바이스에 대한 위협을 무시했지만 위협이 계속 존재함을 나타냅니다. |
+|**위협 유형**| 예 | 위협의 Mobile Threat Defense 파트너 유형입니다. 가능한 값: **앱**, **파일** 또는 **OS** |
 |**AAD 계정 ID**| 아니요 | Azure Active Directory 고유 식별자입니다. |
-|**분류**| 예 | Mobile Threat Defense 파트너가 제공한 위협 분류입니다. 가능한 값: **루트 인에 블러, 리스크 웨어, 애드웨어, 체인 지 웨어, 데이터 누수, 트로이 목마, 웜, 바이러스, 악용, 백도어, 봇, 앱 드로 퍼, 클릭 사기, 스팸, 스파이웨어, 감시 웨어, 취약성, 알 수 없음, 루트 탈 옥, 연결성, 사기, 전화** |
+|**분류**| 예 | Mobile Threat Defense 파트너가 제공한 위협 분류입니다. 가능한 값: **루트 인에이블러, 리스크웨어, 애드웨어, 체인지웨어, 데이터 누수, 트로이 목마, 웜, 바이러스, 익스플로잇, 백도어, 봇, 앱 드로퍼, 클릭 사기, 스팸, 스파이웨어, 감시 웨어, 취약성, 알 수 없음, 루트 탈옥, 연결성, 전화 사기, 사이드로드된 앱** |
 |**디바이스 ID**| 아니요 | 위협 정보가 포함된 Workplace 조인 디바이스를 나타내는 Azure Active Directory 개체 ID입니다. |
 |**위협 ID**| 아니요 | 위협에 대한 Mobile Threat Defense 파트너에서 생성된 고유 식별자입니다. 위협 ID는 해결 방법 추적에 사용됩니다. |
 |**위협 URL**| 아니요 | 제공될 경우 위협 URL은 다시 이 특정 위협에 대한 Mobile Threat Defense 파트너의 관리 콘솔 보기로 연결됩니다. |
