@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 571334f94d1fcd3f53219b406185af3015356e3a
-ms.sourcegitcommit: 79c51028f90b6966d6669588f25e8233cf06eb61
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68338060"
 ---
 # <a name="overview-of-device-enrollment-methods"></a>디바이스 등록 방법 개요
@@ -31,12 +31,12 @@ Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 �
 
 **iOS 등록 방법**
 
-| **메서드** | **초기화** | **선호도** | **잠금** | **세부 정보** |
+| **방법** | **초기화** | **선호도** | **잠금** | **세부 정보** |
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | 아니요| 예 | 아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
 |**[DEM](#dem)**| 아니요 |아니요 |아니요 | [자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
-|**[DEP](#dep)**| 예 | Optional | Optional|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
-|**[USB-SA](#usb-sa)**| 예 | Optional | 아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
+|**[DEP](#dep)**| 예 | 선택 사항 | 선택 사항|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
+|**[USB-SA](#usb-sa)**| 예 | 선택 사항 | 아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
 
 **Windows 및 Android 등록 방법**
 
