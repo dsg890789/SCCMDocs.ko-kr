@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6c6573ce4faf893e30eac070efd963dc7465e20e
-ms.sourcegitcommit: f9654cd1a3af6d67de52fedaccceb2e22dafc159
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67678843"
 ---
 # <a name="set-up-ios-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 iOS 하이브리드 디바이스 관리 설정
@@ -26,7 +26,7 @@ Configuration Manager 및 Intune에서는 iPhone, iPad 및 Mac 사용자가 회�
 
  회사 소유의 iOS 디바이스도 등록할 수 있습니다.  [회사 소유 디바이스 등록](enroll-company-owned-devices.md)을 참조하세요.  
 
-**전제 조건**<br>
+**필수 구성 요소**<br>
 플랫폼에 대한 등록을 설정하려면 먼저 [하이브리드 MDM 설정](setup-hybrid-mdm.md)에서 필수 조건 및 절차를 완료합니다.
 
 iOS 디바이스 등록을 지원하려면 다음 단계를 수행해야 합니다.  

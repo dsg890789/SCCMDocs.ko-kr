@@ -12,10 +12,10 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7ce20ac1917640bd9762bafb37c0e22fe39375fa
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70379577"
 ---
 # <a name="set-up-windows-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 Windows 하이브리드 디바이스 관리 설정
@@ -80,7 +80,7 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 4. **MDM 사용자 범위**를 구성합니다. Microsoft Intune에서 관리해야 하는 사용자의 디바이스를 지정합니다. 이러한 사용자의 Windows 10 디바이스는 Microsoft Intune에서 관리되도록 자동으로 등록됩니다.
 
-    - **없음**
+    - **None**
     - **일부**
     - **모두**
 
@@ -104,13 +104,13 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 사용하면 사용자가 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.com을 수동으로 입력하라는 메시지가 표시됩니다.
 
-|형식|호스트 이름|지시 대상|TTL|  
+|type|호스트 이름|지시 대상|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1시간|
 
 UPN 접미사가 두 개 이상 있는 경우 각 도메인 이름에 대해 CNAME을 하나 만들고 EnterpriseEnrollment-s.manage.microsoft.com에 각각을 가리켜야 합니다. 예를 들어 Contoso의 사용자가 name@contoso.com을 사용하지만 메일/UPN으로 name@us.contoso.com 및 name@eu.constoso.com도 사용하는 경우 Contoso DNS 관리자는 다음 CNAME을 만들어야 합니다.
 
-|형식|호스트 이름|지시 대상|TTL|  
+|type|호스트 이름|지시 대상|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1시간|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1시간|
