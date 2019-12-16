@@ -13,11 +13,11 @@ manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0ce9a88e66e441749034dff3a6e0dc1dd6bc745
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56134006"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62226383"
 ---
 # <a name="capabilities-in-technical-preview-1801-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1801의 기능
 
@@ -60,7 +60,8 @@ ms.locfileid: "56134006"
 
 
 ## <a name="create-phased-deployments"></a>단계별 배포 만들기
-<!-- 1357405 --> 단계별 배포는 여러 배포를 만들지 않고도 자동으로 소프트웨어를 조정하고 순차적으로 출시합니다. 이 Technical Preview 버전에서는 관리 콘솔의 작업 순서에 대해 단계별 배포 마법사를 완료할 수 있습니다. 그러나 배포는 만들어지지 않습니다. 
+<!-- 1357405 -->
+단계별 배포는 여러 배포를 만들지 않고도 자동으로 소프트웨어를 조정하고 순차적으로 출시합니다. 이 Technical Preview 버전에서는 관리 콘솔의 작업 순서에 대해 단계별 배포 마법사를 완료할 수 있습니다. 그러나 배포는 만들어지지 않습니다. 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
   작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다.
@@ -75,7 +76,8 @@ ms.locfileid: "56134006"
 7. **요약** 탭에서 선택을 확인한 후 **다음**을 클릭하여 진행합니다.
 
 ## <a name="co-management-reporting"></a>공동 관리 보고
-<!-- 1356648 --> [공동 관리](/sccm/core/clients/manage/co-management-overview) 기능을 사용하면 사용자 환경의 공동 관리에 대한 정보가 포함된 대시보드를 볼 수 있습니다. Configuration Manager 콘솔에서 **모니터링** 작업 공간으로 이동하고 **업그레이드 준비**를 확장하고 **공동 관리** 대시보드를 선택합니다. 이 대시보드에는 다음과 같은 타일이 있습니다.
+<!-- 1356648 -->
+[공동 관리](/sccm/core/clients/manage/co-management-overview) 기능을 사용하면 사용자 환경의 공동 관리에 대한 정보가 포함된 대시보드를 볼 수 있습니다. Configuration Manager 콘솔에서 **모니터링** 작업 공간으로 이동하고 **업그레이드 준비**를 확장하고 **공동 관리** 대시보드를 선택합니다. 이 대시보드에는 다음과 같은 타일이 있습니다.
 - **공동 관리 디바이스**: 환경 내에서 공동 관리에 사용했던 디바이스의 비율
 - **운영 체제 배포**: 버전별 운영 체제(OS)의 분류. 이 차트에서는 아래와 같은 그룹화를 사용합니다.
   - Windows 7 & 8.x
@@ -88,7 +90,7 @@ ms.locfileid: "56134006"
    - 성공, Azure AD 조인됨
    - 실패: 자동 등록 실패
 - **워크로드 전환**: 사용 가능한 세 가지 작업 부하에 대해 Microsoft Intune으로 전환한 디바이스 수를 나타내는 가로 막대형 차트 
-   - 규정 준수 정책
+   - 준수 정책
    - 리소스 액세스
    - Windows Update for Business
 
@@ -98,7 +100,8 @@ ms.locfileid: "56134006"
 
 
 ## <a name="improvements-to-automatic-deployment-rule-evaluation-schedule"></a>자동 배포 규칙 평가 일정의 향상된 기능
-<!-- 1357133 --> [사용자 음성 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8819518-software-update-patch-tuesday-scheduling)에 따라 ADR(자동 배포 규칙) 평가가 기준일로부터 오프셋되도록 예약할 수 있습니다. 예를 들어, 매월 두 번째 화요일 후 2일째 오프셋은 목요일에 규칙을 평가합니다. 
+<!-- 1357133 -->
+[사용자 음성 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8819518-software-update-patch-tuesday-scheduling)에 따라 ADR(자동 배포 규칙) 평가가 기준일로부터 오프셋되도록 예약할 수 있습니다. 예를 들어, 매월 두 번째 화요일 후 2일째 오프셋은 목요일에 규칙을 평가합니다. 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다. <br/>
@@ -109,13 +112,14 @@ ms.locfileid: "56134006"
 3. 프롬프트에 따라 **일반**, **배포 설정** 및 **소프트웨어 업데이트** 탭을 완료합니다. 
 4. **평가 일정** 탭에서 **일정에 따라 규칙 실행** 및 **사용자 정의**을 선택합니다.
 5. 사용자 정의 일정의 경우 **월별**을 선택하고 두 번째 화요일처럼 기본 요일을 입력합니다. 
-6. **오프셋(일)**, 오프셋에 대한 일 수를 확인한 다음, 완료되면 **확인**을 선택합니다.  
+6. **오프셋(일)** , 오프셋에 대한 일 수를 확인한 다음, 완료되면 **확인**을 선택합니다.  
 7. **자동 배포 규칙 만들기 마법사**의 나머지 부분을 완료합니다. 
 
 
 
 ## <a name="reassign-distribution-point"></a>배포 지점 재할당
-<!-- 1306937 --> 많은 고객들이 대형 Configuration Manager 인프라를 보유하고 있으며 환경을 단순화하기 위해 기본 또는 보조 사이트를 줄이고 있습니다. 하지만 관리 대상 고객에게 콘텐츠를 제공하기 위해 각 지사에서 배포 지점을 유지해야 합니다. 이러한 배포 지점에는 종종 여러 테라바이트 이상의 콘텐츠가 포함됩니다. 이 컨텐츠는 이러한 원격 서버에 배포하는 데 상당한 시간과 네트워크 대역폭을 소비합니다. 
+<!-- 1306937 -->
+많은 고객들이 대형 Configuration Manager 인프라를 보유하고 있으며 환경을 단순화하기 위해 기본 또는 보조 사이트를 줄이고 있습니다. 하지만 관리 대상 고객에게 콘텐츠를 제공하기 위해 각 지사에서 배포 지점을 유지해야 합니다. 이러한 배포 지점에는 종종 여러 테라바이트 이상의 콘텐츠가 포함됩니다. 이 컨텐츠는 이러한 원격 서버에 배포하는 데 상당한 시간과 네트워크 대역폭을 소비합니다. 
 
 이 기능을 사용하면 콘텐츠를 재배포하지 않고 다른 기본 사이트에 배포 지점을 재할당할 수 있습니다. 이 작업은 서버의 모든 콘텐츠를 유지하면서 사이트 시스템 할당을 업데이트합니다. 여러 배포 지점을 재할당해야 하는 경우 먼저 단일 배포 지점에서 이 작업을 수행한 다음 한 번에 하나씩 서버를 추가합니다.
 
@@ -132,7 +136,8 @@ ms.locfileid: "56134006"
 
 
 ## <a name="improvements-to-hardware-inventory"></a>하드웨어 인벤토리의 향상된 기능
-<!-- 1357389 --> 새로 추가된 클래스의 경우 키가 아닌 하드웨어 인벤토리 속성에 대해 255자를 초과하는 문자열 길이를 지정할 수 있습니다.
+<!-- 1357389 -->
+새로 추가된 클래스의 경우 키가 아닌 하드웨어 인벤토리 속성에 대해 255자 이상의 문자열 길이를 지정할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
 작업을 완료합니다. 그런 다음 어떻게 작동하는지 알 수 있도록 리본의 **홈** 탭에서 **피드백**을 보냅니다.<br/>
@@ -149,10 +154,11 @@ ms.locfileid: "56134006"
 
 
 ## <a name="improvements-to-client-settings-for-software-center"></a>소프트웨어 센터에 대한 클라이언트 설정의 향상된 기능
-<!-- 1351224 & 1355146 --> 이 Technical Preview 버전에서는 클라이언트 설정에서 소프트웨어 센터 사용자 지정이 향상되었습니다. 
+<!-- 1351224 & 1355146 -->
+이 Technical Preview 버전에서는 클라이언트 설정의 소프트웨어 센터 사용자 지정이 향상되었습니다. 
 
 1. 소프트웨어 센터에 대한 클라이언트 설정에는 이제 **사용자 정의** 단추가 있습니다.
-2. 미리보기가 추가되어 소프트웨어 센터 배너의 모양을 보여줍니다.<!--1351224-->
+2. 소프트웨어 센터 배너의 모양을 보여 주는 미리 보기가 추가되었습니다.<!--1351224-->
     - 로고를 선택하지 않으면 미리보기에 회사 이름 텍스트와 색상이 표시됩니다.
     - 로고를 선택하면 미리보기에 로고와 회사 이름 텍스트가 표시됩니다.  
 3.  **소프트웨어 센터에서 승인되지 않은 애플리케이션 숨기기**는 소프트웨어 센터의 새로운 설정입니다. 이 옵션을 사용하면 소프트웨어 센터에서 승인이 필요한 사용자 사용 가능 애플리케이션이 숨겨집니다.<!--1355146-->
@@ -167,14 +173,16 @@ ms.locfileid: "56134006"
 
 
 ## <a name="new-settings-for-windows-defender-application-guard"></a>Windows Defender Application Guard의 새로운 설정
-<!-- 1356256 --> Windows 10 1709 버전 이상이 설치된 디바이스에는 [Windows Defender Application Guard](/sccm/protect/deploy-use/create-deploy-application-guard-policy)에 대한 새로운 두 가지 호스트 상호 작용 설정이 있습니다. 
+<!-- 1356256 -->
+Windows 10 버전 1709 이상이 설치된 디바이스에는 [Windows Defender Application Guard](/sccm/protect/deploy-use/create-deploy-application-guard-policy)에 대한 두 가지 새로운 호스트 상호 작용 설정이 있습니다. 
 1. 호스트의 가상 그래픽 프로세서에 대한 액세스 권한을 웹 사이트에 부여할 수 있습니다. 
 2. 컨테이너 내부에 다운로드한 파일을 호스트에 유지할 수 있습니다. </br>
 
 
 
 ## <a name="improvements-to-run-scripts"></a>스크립트 실행의 향상된 기능
-<!-- 1236459 --> 이제 [**스크립트 실행** 기능](/sccm/apps/deploy-use/create-deploy-scripts)을 사용하면 서명된 PowerShell 스크립트를 가져오고 실행할 수 있습니다. 
+<!-- 1236459 -->
+이제 [**스크립트 실행** 기능](/sccm/apps/deploy-use/create-deploy-scripts)을 사용하여 서명된 PowerShell 스크립트를 가져오고 실행할 수 있습니다. 
 - 스크립트 무결성을 유지하려면 복사/붙여넣기 대신 서명된 스크립트를 가져와야 합니다. 
 - 서명된 스크립트를 가져온 후에는 편집할 수 없습니다.
     

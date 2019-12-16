@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cfa2a2412744046ca1a16aad2721fcb9efcff38e
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58524152"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62202299"
 ---
 # <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 

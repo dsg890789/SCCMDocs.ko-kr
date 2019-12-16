@@ -2,7 +2,7 @@
 title: 지원되는 클라이언트 및 디바이스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라이언트 및 디바이스에 대해 지원하는 OS 버전을 알아봅니다.
-ms.date: 10/08/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,16 +11,16 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59f43fca8c493da8684671dce7b2e61b8d67cb64
-ms.sourcegitcommit: 0bad3167dc8349d0da0a5f47c29a0614a9bac467
+ms.openlocfilehash: 278c8df83940f982e2daff6d4f5cd15fe923e03b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72916983"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660499"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 Windows 및 macOS 컴퓨터에서 클라이언트 소프트웨어 설치를 지원합니다.  
 
@@ -50,11 +50,15 @@ Configuration Manager는 Windows 및 macOS 컴퓨터에서 클라이언트 소�
 <!--3556025-->
 [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/)은 Microsoft Azure 및 Microsoft 365의 미리 보기 기능입니다. 버전 1906부터 Configuration Manager를 사용하여 Azure에서 Windows를 실행하는 이러한 가상 디바이스를 관리할 수 있습니다.
 
-터미널 서버와 마찬가지로, 이러한 가상 디바이스는 여러 동시 활성 사용자 세션을 허용합니다. 클라이언트 성능에 도움이 되도록 Configuration Manager는 이제 이러한 여러 사용자 세션을 허용하는 모든 디바이스에서 사용자 정책을 해제합니다. 사용자 정책을 사용하도록 설정하더라도 클라이언트가 기본적으로 이러한 디바이스서 정책을 사용하지 않도록 설정하며, 여기에는 Windows Virtual Desktop과 터미널 서버가 포함됩니다.
+터미널 서버와 마찬가지로, 이러한 가상 디바이스 중 일부는 여러 동시 활성 사용자 세션을 허용합니다. 클라이언트 성능에 도움이 되도록 Configuration Manager는 이제 이러한 여러 사용자 세션을 허용하는 모든 디바이스에서 사용자 정책을 해제합니다. 사용자 정책을 사용하도록 설정하더라도 클라이언트가 기본적으로 이러한 디바이스에서 정책을 사용하지 않도록 설정하며, 여기에는 Windows 10 Enterprise 다중 세션과 터미널 서버가 포함됩니다.
 
 클라이언트는 새로 설치하는 동안 이러한 종류의 디바이스를 감지하면 사용자 정책만 해제합니다. 이 버전으로 업데이트하는 이 형식의 기존 클라이언트는 이전 동작을 유지합니다. 기존 디바이스에서, 이 클라이언트는 디바이스가 여러 사용자 세션을 허용하는 것을 발견하더라도 사용자 정책 설정을 구성합니다.
 
-이 시나리오의 사용자 정책이 필요하고 잠재적인 성능 악영향을 수용할 수 있는 경우 [SMS_PolicyAgentConfig 서버 WMI 클래스](/sccm/develop/reference/core/clients/config/sms_policyagentconfig-server-wmi-class)에 Configuration Manager SDK를 사용합니다. 새 `PolicyEnableUserPolicyOnTS` 속성을 `true`로 설정합니다.
+이 시나리오에서 사용자 정책이 필요하고 잠재적인 성능 영향이 허용되는 경우 다음 방법 중 하나를 사용하여 사용자 정책을 사용하도록 설정할 수 있습니다.
+
+- 버전 1910 이상에서는 [클라이언트 설정](/configmgr/core/clients/deploy/configure-client-settings)을 사용합니다. **클라이언트 정책** 그룹에서 다음 설정을 구성합니다. **다중 사용자 세션에 대한 사용자 정책 사용**.<!-- 4737447 -->
+
+- 버전 1906에서는 Configuration Manager SDK에서 [SMS_PolicyAgentConfig 서버 WMI 클래스](/sccm/develop/reference/core/clients/config/sms_policyagentconfig-server-wmi-class)를 사용합니다. 새 `PolicyEnableUserPolicyOnTS` 속성을 `true`로 설정합니다.
 
 > [!Note]  
 > Windows 10 Enterprise 다중 세션을 실행하는 클라이언트에서는 공동 관리를 사용할 수 없습니다. <!-- SCCMDocs-pr#3950 -->

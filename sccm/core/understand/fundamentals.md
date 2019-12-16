@@ -1,8 +1,8 @@
 ---
 title: 기본 항목
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 대한 기본 개념에 대해 알아봅니다.
-ms.date: 12/30/2016
+description: Configuration Manager의 기본 개념을 알아봅니다.
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,36 +11,33 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bb48ebf1bcf5be503505efd2b84d364e655a6e5
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 04b64768227f6db87d8d8da1e0f83d6864a57121
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56131186"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74661161"
 ---
-# <a name="fundamentals-of-system-center-configuration-manager"></a>System Center Configuration Manager의 기본 사항
+# <a name="fundamentals-of-configuration-manager"></a>Configuration Manager의 기본 항목
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager를 처음 사용하는 경우 설치 프로그램을 실행하여 첫 번째 사이트를 설치하기 전에 기본 항목을 읽어서 Configuration Manager의 기본 개념을 알아봅니다. Configuration Manager에 대해 잘 알고 있다면 자세한 내용을 적절히 알아볼 수 있습니다. [System Center Configuration Manager의 새로운 기능](/sccm/core/plan-design/changes/what-has-changed-from-configuration-manager-2012)에서 시작하는 것이 좋습니다.  
+Configuration Manager 현재 분기를 처름 사용하는 경우 기본 사항부터 살펴보세요. 첫 번째 사이트를 설치하기 위해 설치 프로그램을 실행하기 전에, 먼저 Configuration Manager의 기본 개념을 알아보세요. 이미 System Center 2012 Configuration Manager에 대해 잘 알고 있다면 [System Center 2012 Configuration Manager에서 변경된 System Center Configuration Manager의 기능](/sccm/core/plan-design/changes/what-has-changed-from-configuration-manager-2012)부터 시작하세요.
 
- 지원되는 운영 체제와 지원되는 환경, 하드웨어 요구 사항 및 용량 정보에 대한 자세한 내용은 [Supported configurations for System Center Configuration Manager](../../core/plan-design/configs/supported-configurations.md)섹션을 참조하세요.  
+지원되는 운영 체제와 지원되는 환경, 하드웨어 요구 사항 및 용량 정보에 대한 자세한 내용은 [Configuration Manager에서 지원되는 구성](/configmgr/core/plan-design/configs/supported-configurations)을 참조하세요.  
 
- Configuration Manager를 배포하는 경우 하나 이상의 사이트를 배포합니다.  
+다음 문서에서 Configuration Manager의 기본 개념을 알아보세요.
 
-- **여러 사이트를 배포하는 경우**사이트는 총체적으로 계층 구조라는 자식-부모 관계를 형성합니다. 계층 구조를 사용하여 다수의 사이트와 디바이스를 중앙에서 관리합니다.  데이터 및 정보는 계층 구조 아래로 진행되어 관리하는 디바이스에 도달합니다. 디바이스 정보와 구성 작업 및 요청의 결과는 계층 구조 위로 진행됩니다.  
+- [사이트 및 계층 구조의 기본 사항](/configmgr/core/understand/fundamentals-of-sites-and-hierarchies)  
 
-- **단일 사이트를 배포하는 경우** 계층 구조라고도 합니다.  
+- [업그레이드, 업데이트 및 설치 정보](/configmgr/core/understand/upgrade-update-install)
 
-  일부 구성 작업과 설정은 계층 구조의 모든 사이트에 적용되는 반면 개별 사이트에 적용되는 구성 작업과 설정도 있습니다.  
+- [디바이스 관리의 기본 사항](/configmgr/core/understand/fundamentals-of-managing-devices)  
 
-## <a name="fundamental-concepts-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 기본 개념
-다음 항목을 확인하여 System Center Configuration Manager에 대한 기본 개념을 알아봅니다.  
+- [클라이언트 관리 작업의 기본 사항](/configmgr/core/understand/fundamentals-of-client-management-tasks)  
 
--   [System Center Configuration Manager의 사이트 및 계층 구조에 대한 기본 사항](../../core/understand/fundamentals-of-sites-and-hierarchies.md)  
+- [보안 기본 사항](/configmgr/core/understand/fundamentals-of-security)  
 
--   [System Center Configuration Manager에서 디바이스 관리의 기본 사항](../../core/understand/fundamentals-of-managing-devices.md)  
+- [역할 기반 관리의 기본 사항](/configmgr/core/understand/fundamentals-of-role-based-administration)
 
--   [System Center Configuration Manager에 대한 클라이언트 관리 작업의 기본 사항](../../core/understand/fundamentals-of-client-management-tasks.md)  
-
--   [System Center Configuration Manager의 보안 기본 사항](../../core/understand/fundamentals-of-security.md)  
+- [콘텐츠 관리의 기본 사항](/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management)

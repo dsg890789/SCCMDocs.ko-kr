@@ -2,7 +2,7 @@
 title: 로그 파일 참조
 titleSuffix: Configuration Manager
 description: Configuration Manager 클라이언트, 서버, 종속 구성 요소에 대한 모든 로그 파일의 참조입니다.
-ms.date: 08/30/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,20 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82cd6cb25763de9c470148c91f80b79e31d981b
-ms.sourcegitcommit: b28a97e22a9a56c5ce3367c750ea2bb4d50449c3
+ms.openlocfilehash: 4925cfdb7e6da832dc4292b1b7106a90974da5cb
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70243550"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660107"
 ---
 # <a name="log-file-reference"></a>로그 파일 참조
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요소가 개별 로그 파일에 프로세스 정보를 기록합니다. 이러한 로그 파일의 정보를 사용하면 발생할 수 있는 문제를 해결할 수 있습니다. Configuration Manager에서는 기본적으로 클라이언트 및 서버 구성 요소 로깅을 사용하도록 설정됩니다.
 
-Configuration Manager의 로그 파일에 대한 자세한 내용은 [로그 파일 정보](/sccm/core/plan-design/hierarchy/about-log-files)를 참조하세요. 해당 문서에는 사용할 도구, 로그 구성 방법, 로그를 찾을 위치에 대한 정보가 포함됩니다.
+Configuration Manager의 로그 파일에 대한 자세한 내용은 [로그 파일 정보](/configmgr/core/plan-design/hierarchy/about-log-files)를 참조하세요. 해당 문서에는 사용할 도구, 로그 구성 방법, 로그를 찾을 위치에 대한 정보가 포함됩니다.
 
 다음 섹션에는 제공되는 여러 가지 로그 파일에 대한 자세한 정보가 나와 있습니다. 작업 정보에 대한 Configuration Manager 클라이언트 및 서버 로그를 모니터링하고, 오류 정보를 보고 문제를 해결할 수 있습니다.  
 
@@ -123,6 +123,7 @@ Configuration Manager의 로그 파일에 대한 자세한 내용은 [로그 파
 
 |로그 이름|설명|  
 |--------------|-----------------|  
+|BitLockerManagementHandler.log|BitLocker 관리 정책에 대한 정보를 기록합니다.|
 |CAS.log|콘텐츠 액세스 서비스입니다. 클라이언트의 로컬 패키지 캐시를 유지 관리합니다.|  
 |Ccm32BitLauncher.log|*32비트로 실행*으로 표시된 클라이언트에서 애플리케이션을 시작하는 작업을 기록합니다.|  
 |CcmEval.log|Configuration Manager 클라이언트 상태 평가 활동 및 Configuration Manager 클라이언트에 필요한 구성 요소에 관한 세부 정보를 기록합니다.|  
@@ -145,6 +146,7 @@ Configuration Manager의 로그 파일에 대한 자세한 내용은 [로그 파
 |ContentTransferManager.log|BITS(Background Intelligent Transfer Service) 또는 SMB(서버 메시지 블록)에서 패키지를 다운로드하거나 액세스할 일정을 예약합니다.|  
 |DataTransferService.log|정책 또는 패키지 액세스에 대한 모든 BITS 통신을 기록합니다.|  
 |DeltaDownload.log|배달 최적화를 사용하여 다운로드한 빠른 업데이트 및 업데이트 다운로드에 대한 정보를 기록합니다.|  
+|진단 로그|클라이언트 진단 작업의 상태를 기록합니다.|
 |EndpointProtectionAgent|System Center Endpoint Protection 클라이언트의 설치 및 해당 클라이언트에 대한 맬웨어 방지 정책 적용에 대한 정보를 기록합니다.|  
 |execmgr.log|클라이언트에서 실행하는 패키지 및 작업 순서에 대한 세부 정보를 기록합니다.|  
 |ExpressionSolver.log|자세한 정보 또는 디버그 로깅을 켤 때 사용되는 향상된 검색 방법에 대한 세부 정보를 기록합니다.|  
@@ -325,7 +327,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |sitestat.log|모든 사이트 시스템의 가용성 및 디스크 공간 모니터링 프로세스를 기록합니다.|사이트 서버|
 |SMS_AZUREAD_DISCOVERY_AGENT.log| Azure Active Directory에의 컬렉션 멤버 자격 결과 동기화에 대한 로그 파일입니다. 이 기능은 Configuration Manager 버전 1906부터 시험판으로 처음 도입되었습니다.| 사이트 서버|
 |SMS_BUSINESS_APP_PROCESS_MANAGER.log|비즈니스용 Microsoft Store에서 앱을 동기화하는 구성 요소에 대한 로그 파일입니다.|사이트 서버|
-|SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|
+|SMS_ISVUPDATES_SYNCAGENT.log| 타사 소프트웨어 업데이트의 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|
 |SMS_PhasedDeployment.log| 단계적 배포에 대한 로그 파일|Configuration Manager 계층 구조의 최상위 사이트|   
 |SmsAdminUI.log|Configuration Manager 콘솔 작업을 기록합니다.|Configuration Manager 콘솔을 실행하는 컴퓨터|  
 |SMSAWEBSVCSetup.log|애플리케이션 카탈로그 웹 서비스의 설치 작업을 기록합니다.|사이트 시스템 서버|  
@@ -436,8 +438,8 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |objreplmgr.log|부모 사이트에서 자식 사이트로 소프트웨어 업데이트 알림 파일을 복제하는 작업과 관련된 세부 정보를 기록합니다.|사이트 서버|  
 |PatchDownloader.log|소프트웨어 업데이트를 업데이트 원본에서 사이트 서버의 다운로드 대상으로 다운로드하는 프로세스에 대한 세부 정보를 기록합니다.|업데이트를 수동으로 다운로드하면 이 파일이 콘솔을 사용하는 컴퓨터의 `%temp%` 디렉터리에 있습니다. 자동 배포 규칙의 경우 Configuration Manager 클라이언트가 사이트 서버에 설치되었다면 이 파일이 `%windir%\CCM\Logs`의 사이트 서버에 있습니다.|  
-|ruleengine.log|식별, 콘텐츠 다운로드, 소프트웨어 업데이트 그룹, 배포 만들기 등 자동 배포 규칙에 대한 세부 정보를 기록합니다.|사이트 서버| 
-|SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.| 
+|ruleengine.log|식별, 콘텐츠 다운로드, 소프트웨어 업데이트 그룹, 배포 만들기 등 자동 배포 규칙에 대한 세부 정보를 기록합니다.|사이트 서버|
+|SMS_ISVUPDATES_SYNCAGENT.log| 타사 소프트웨어 업데이트의 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|
 |SUPSetup.log|소프트웨어 업데이트 지점 설치에 대한 세부 정보를 기록합니다. 소프트웨어 업데이트 지점 설치가 완료되면 이 로그 파일에 **Installation was successful** 이 기록됩니다.|사이트 시스템 서버|  
 |WCM.log|소프트웨어 업데이트 지점 구성과 구독된 업데이트 범주, 분류 및 언어를 위한 WSUS 서버 연결에 대한 세부 정보를 기록합니다.|WSUS 서버에 연결하는 사이트 서버|  
 |WSUSCtrl.log|사이트에 대한 WSUS 서버의 구성, 데이터베이스 연결 및 상태에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
@@ -496,7 +498,7 @@ Mac 컴퓨터용 Configuration Manager 클라이언트는 다음 로그 파일�
 |--------------|-----------------|----------------------------|  
 |AssetAdvisor.log|Asset Intelligence 인벤토리 작업의 활동을 기록합니다.|클라이언트|  
 |aikbmgr.log|Asset Intelligence 카탈로그 업데이트를 위해 수신함에서 XML 파일을 처리하는 데 대한 세부 정보를 기록합니다.|사이트 서버|  
-|AIUpdateSvc.log|온라인 웹 서비스인 SCO(System Center Online)와 Asset Intelligence 동기화 지점의 상호 작용을 기록합니다.|사이트 시스템 서버|  
+|AIUpdateSvc.log|Asset Intelligence 동기화 지점과 클라우드 서비스 간의 상호 작용을 기록합니다.|사이트 시스템 서버|  
 |AIUSMSI.log|Asset Intelligence 동기화 지점 사이트 시스템 역할의 설치에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |AIUSSetup.log|Asset Intelligence 동기화 지점 사이트 시스템 역할의 설치에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|  
 |ManagedProvider.log|연결된 소프트웨어 ID 태그로 소프트웨어를 검색하는 데 대한 세부 정보를 기록합니다. 또한 하드웨어 인벤토리와 관련된 활동을 기록합니다.|사이트 시스템 서버|  
@@ -562,7 +564,7 @@ Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등�
 |CMGHttpHandler.log<sup>[참고 1](#bkmk_note1)</sup>|Azure에서 인터넷 정보 서비스와 바인딩하는 클라우드 관리 게이트웨이 HTTP 처리기에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.<br>버전 1806부터 이 로그가 없습니다. 구성 요소 기능이 CMG 서비스 구성 요소에 병합됩니다. 대신 CMGService.log를 참조하세요.<!--SCCMDocs-pr issue #2822-->|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |CMGService.log<sup>[참고 1](#bkmk_note1)</sup>|Azure의 클라우드 관리 게이트웨이 핵심 구성 요소에 대한 세부 정보를 기록합니다.<br>**Azure 포털\클라우드 서비스 구성** 탭에서 설정 **추적 수준**(**정보**(기본값), **자세한 정보**, **오류**)을 사용하여 로깅 수준을 구성할 수 있습니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 |SMS_Cloud_<br>ProxyConnector.log|클라우드 관리 게이트웨이 서비스와 클라우드 관리 게이트웨이 연결 지점 간에 연결을 설정하는 방법에 대한 세부 정보를 기록합니다.|사이트 시스템 서버|
-|CMGContentService.log<sup>[참고 1](#bkmk_note1)</sup>|<!--SCCMDocs-pr issue #2822-->버전 1806부터 Azure 스토리지에서 콘텐츠를 제공하기 위해 CMG를 사용하도록 설정하는 경우 이 로그는 해당 서비스의 세부 정보를 기록합니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
+|CMGContentService.log<sup>[참고 1](#bkmk_note1)</sup>|<!--SCCMDocs-pr issue #2822-->Azure Storage에서 콘텐츠를 제공하기 위해 CMG를 사용하도록 설정할 경우 이 로그가 해당 서비스의 세부 정보를 기록합니다.|Azure 서버의 **%approot%\logs** 또는 사이트 시스템 서버의 SMS/Logs 폴더|
 
 - 배포 문제 해결에는 **CloudMgr.log** 및 **CMGSetup.log**를 사용합니다.
 - 서비스 상태 문제 해결에는 **CMGService.log** 및 **SMS_Cloud_ProxyConnector.log**를 사용합니다.
@@ -849,7 +851,7 @@ Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등�
 |ScanAgent.log|소프트웨어 업데이트, WSUS 위치 및 관련 작업에 대한 검사 요청과 관련된 세부 정보를 기록합니다.|클라이언트|  
 |SdmAgent.log|재구성 및 준수 추적에 대한 세부 정보를 기록합니다. 그러나 소프트웨어 업데이트 로그 파일인 Updateshandler.log는 준수에 필요한 소프트웨어 업데이트를 설치하는 작업에 대한 자세한 세부 정보를 제공합니다.<br /><br /> 이 로그 파일은 호환성 설정과 공유됩니다.|클라이언트|  
 |ServiceWindowManager.log|유지 관리 기간의 평가에 대한 세부 정보를 기록합니다.|클라이언트|
-|SMS_ISVUPDATES_SYNCAGENT.log| Configuration Manager 버전 1806부터 시작되는 타사 소프트웨어 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|  
+|SMS_ISVUPDATES_SYNCAGENT.log| 타사 소프트웨어 업데이트의 동기화에 대한 로그 파일입니다.| Configuration Manager 계층 구조의 최상위 수준 소프트웨어 업데이트 지점입니다.|  
 |SmsWusHandler.log|Microsoft 업데이트용 인벤토리 도구의 검사 프로세스에 대한 세부 정보를 기록합니다.|클라이언트|  
 |StateMessage.log|생성된 후 관리 지점으로 전송되는 소프트웨어 업데이트 상태 메시지에 대한 세부 정보를 기록합니다.|클라이언트|  
 |SUPSetup.log|소프트웨어 업데이트 지점 설치에 대한 세부 정보를 기록합니다. 소프트웨어 업데이트 지점 설치가 완료되면 이 로그 파일에 **Installation was successful** 이 기록됩니다.|사이트 시스템 서버|  
@@ -910,10 +912,10 @@ Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등�
 
 ## <a name="see-also"></a>참고 항목
 
-- [로그 파일 정보](/sccm/core/plan-design/hierarchy/about-log-files)
+- [로그 파일 정보](/configmgr/core/plan-design/hierarchy/about-log-files)
 
-- [지원 센터 OneTrace](/sccm/core/support/support-center-onetrace)
+- [지원 센터 OneTrace](/configmgr/core/support/support-center-onetrace)
 
-- [지원 센터 로그 파일 뷰어](/sccm/core/support/support-center#support-center-log-file-viewer)
+- [지원 센터 로그 파일 뷰어](/configmgr/core/support/support-center#support-center-log-file-viewer)
 
-- [CMTrace](/sccm/core/support/cmtrace)
+- [CMTrace](/configmgr/core/support/cmtrace)

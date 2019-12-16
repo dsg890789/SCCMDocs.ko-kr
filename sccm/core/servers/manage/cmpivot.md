@@ -2,7 +2,7 @@
 title: 실시간 데이터에 대한 CMPivot
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 CMPivot을 사용하여 실시간으로 클라이언트를 쿼리하는 방법을 알아봅니다.
-ms.date: 09/05/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 450b8a930fa04e88db5d6bf9ff2516cb31dff92a
-ms.sourcegitcommit: 013596de802ac0eb416118169ad049733b5a63e5
+ms.openlocfilehash: 002bb488501bc3ec152f58aa22b08fec61216a9f
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71198253"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74659954"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -571,8 +571,165 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
    ![쿼리를 실행하려는 컬렉션 찾기](./media/3555890-cmpivot-standalone-browse-collection.png)
 
 > [!NOTE]
-> **스크립트 실행** 및 **리소스 탐색기** 같은 마우스 오른쪽 버튼 동작은 CMPivot 독립 실행형에서 사용할 수 없습니다.
+> 독립 실행형 CMPivot에서는 **스크립트 실행**, **리소스 탐색기**, 웹 검색과 같은 마우스 오른쪽 단추 동작을 사용할 수 없습니다. 독립 실행형 CMPivot의 주된 용도는 Configuration Manager 인프라에 대해 독립적으로 쿼리하는 것입니다. 보안 관리자에게 도움이 되도록, 독립 실행형 CMpivot에는 Microsoft Defender Security Center에 연결하는 기능이 포함되어 있습니다. <!--5605358-->
 
+## <a name="bkmk_cmpivot1910"></a> 버전 1910부터 CMPivot
+<!--5410930, 3197353-->
+버전 1910부터, CMPivot이 서버의 네트워크 트래픽과 부하를 줄이도록 크게 최적화되었습니다. 이에 더해, 문제 해결 및 헌팅을 지원하기 위해 여러 가지 새로운 엔터티 및 향상된 엔터티 기능이 추가되었습니다. 버전 1910에서 CMPivot에 적용된 변경 사항은 다음과 같습니다.
+
+- [CMPivot 엔진에 대한 최적화](#bkmk_optimization)
+- 추가 엔터티 및 향상된 엔터티 기능:
+  - Windows 이벤트 로그([WinEvent](#bkmk_WinEvent))
+  - 파일 콘텐츠([FileContent](#bkmk_File))
+  - 프로세스에 의해 로드된 dll([ProcessModule](#bkmk_ProcessModule))
+  - Azure Active Directory 정보([AADStatus](#bkmk_AadStatus))
+  - Endpoint Protection 상태([EPStatus](#bkmk_EPStatus))
+- [CMPivot 독립 실행형을 사용하는 로컬 디바이스 쿼리 평가](#bkmk_local-eval)
+- [그 밖의 향상된 CMPivot 기능](#bkmk_Other)
+
+
+### <a name="bkmk_optimization"></a> CMPivot 엔진 최적화
+<!--3197353-->
+1910에서는 서버의 네트워크 트래픽과 부하를 줄이도록 CMPivot이 최적화되었습니다. 이제 다수의 쿼리 작업이 서버가 아닌 클라이언트에서 직접 실행됩니다. 이로 인해 일부 CMPivot 작업은 첫 번째 쿼리로부터 적은 양의 데이터를 반환하게 될 수 있습니다. 자세히 알아보기 위해 데이터를 드릴다운할 경우 클라이언트에서 데이터를 가져오기 위한 새 쿼리가 실행될 수 있습니다. 예를 들어, 이전에는 “summarized count”(개수 요약) 쿼리를 실행할 때 서버에서 다량의 데이터 세트가 반환되었습니다.  다량의 데이터 세트가 반환되면 즉각적인 드릴다운이 가능하긴 했으나, 단지 개수 요약만 필요한 경우가 많았습니다. 1910에서는, 특정 클라이언트를 드릴다운할 경우 사용자가 요청한 추가 데이터를 반환하기 위해 또 다른 데이터 모음이 발생합니다. 이번 변경 사항으로 인해 다수의 클라이언트에 대한 쿼리의 성능과 확장성이 향상됩니다. <!--3197353, 5458337-->
+
+#### <a name="examples"></a>예
+
+CMPivot 최적화는 CMPivot 쿼리를 실행하는 데 필요한 네트워크 및 서버 CPU 부하를 크게 줄여 줍니다. 이러한 최적화를 통해 이제 클라이언트 데이터(기가바이트)를 실시간으로 자세히 살펴볼 수 있습니다. 다음은 이러한 최적화를 보여 주는 쿼리입니다.
+
+- 엔터프라이즈의 모든 클라이언트에서 모든 이벤트 로그를 검색하여 인증 실패를 찾습니다.
+
+   ``` Kusto
+   EventLog('Security')
+   | where  EventID == 4673
+   | summarize count() by Device
+   | order by count_ desc
+   ```
+
+- 해시로 파일을 검색합니다.
+
+   ``` Kusto
+   Device
+   | join kind=leftouter ( File('%windir%\\system32\\*.exe')
+   | where SHA256Hash == 'A92056D772260B39A876D01552496B2F8B4610A0B1E084952FE1176784E2CE77')
+   | project Device, MalwareFound = iif( isnull(FileName), 'No', 'Yes')
+   ```
+
+### <a name="bkmk_WinEvent"></a> WinEvent(\<logname>,[\<timespan>])
+
+이 엔터티는 이벤트 로그 및 이벤트 추적 로그 파일에서 이벤트를 가져오는 데 사용됩니다. 엔터티는 Windows 이벤트 로그 기술에 의해 생성되는 이벤트 로그에서 데이터를 가져옵니다. 또한 엔터티는 ETW(Windows용 이벤트 추적)에 의해 생성된 로그 파일에서 이벤트를 가져옵니다. WinEvent는 기본적으로 지난 24시간 이내에 발생한 이벤트를 확인합니다. 그러나 24시간 기본값은 시간 범위을 포함하는 방식으로 재정의할 수 있습니다.
+
+``` Kusto
+WinEvent('Microsoft-Windows-HelloForBusiness/Operational', 1d)
+| where LevelDisplayName =='Error'
+| summarize count() by Device
+```
+
+### <a name="bkmk_File"></a> FileContent(\<filename>)
+
+FileContent는 텍스트 파일의 내용을 가져오는 데 사용됩니다.
+
+``` Kusto
+FileContent('c:\\windows\\SMSCFG.ini')
+| where Content startswith  'SMS Unique Identifier='
+| project Device, SMSId= substring(Content,22)
+```
+
+### <a name="bkmk_ProcessModule"></a> ProcessModule(\<processname>)  
+
+이 엔터티는 지정된 프로세스에 의해 로드된 모듈(dll)을 열거하는 데 사용됩니다. ProcessModule은 합법적인 프로세스에서 숨겨진 맬웨어를 헌팅할 때 유용합니다.  
+
+``` Kusto
+ProcessModule('powershell')
+| summarize count() by ModuleName
+| order by count_ desc
+```
+
+### <a name="bkmk_AadStatus"></a> AadStatus
+
+이 엔터티를 사용하여 장치에서 현재 Azure Active Directory ID 정보를 가져올 수 있습니다.
+
+``` Kusto
+AadStatus
+| project Device, IsAADJoined=iif( isnull(DeviceId),'No','Yes')
+| summarize DeviceCount=count() by IsAADJoined
+| render piechart
+```
+
+### <a name="bkmk_EPStatus"></a> EPStatus
+
+EPStatus는 컴퓨터에 설치된 맬웨어 방지 소프트웨어의 상태를 가져오는 데 사용됩니다.
+
+``` Kusto
+EPStatus
+| project Device, QuickScanAge=datetime_diff('day',now(),QuickScanEndTime)
+| summarize DeviceCount=count() by QuickScanAge
+| order by QuickScanAge
+| render barchart
+```
+
+### <a name="bkmk_local-eval"></a> 독립 실행형 CMPivot을 사용하는 로컬 디바이스 쿼리 평가
+<!--3197353-->
+Configuration Manager 콘솔 외부에서 CMPivot을 사용하는 경우 Configuration Manager 인프라를 요구 하지 않고 로컬 디바이스만 쿼리할 수 있습니다. 이제 CMPivot Azure Log Analytics 쿼리를 활용하여 로컬 디바이스에서 WMI 정보를 빠르게 확인할 수 있습니다. 이를 통해 더 큰 환경에서 실행하기 전에 CMPivot 쿼리의 유효성을 검사하고 구체화할 수 있습니다. CMPivot 독립 실행형은 [시험판 기능](/sccm/core/servers/manage/pre-release-features#bkmk_table)이며 영어로만 제공됩니다. CMPivot 독립 실행형을 설치하는 방법에 대한 자세한 내용은 [CMPivot 독립 실행형 설치](#install-cmpivot-standalone)를 참조하세요.
+
+#### <a name="known-issues-for-local-device-query-evaluation"></a>로컬 디바이스 쿼리 평가의 알려진 문제
+
+ - **이 PC**에서 사용자에게 액세스 권한이 없는 WMI 엔터티(예: 잠긴 WMI 클래스)에 대해 쿼리를 실행할 경우 CMPivot에서 크래시가 발생할 수 있습니다. 이러한 엔터티를 쿼리하려면 상승된 권한이 있는 계정을 사용하여 CMPivot을 실행하세요. <!--5753242-->
+- **이 PC**에서 WMI가 아닌 엔터티를 쿼리할 경우 **잘못된 네임스페이스** 또는 모호한 예외가 발생합니다.
+- 독립 실행형 CMPivot을 실행 파일 경로에서 직접 실행하는 대신 시작 메뉴 바로 가기에서 실행하세요. <!--5787962-->
+
+### <a name="bkmk_Other"></a> 기타 향상된 기능
+
+- 새로운 `like` 연산자를 사용하여 정규식 형식 쿼리를 실행할 수 있습니다. 예:<!--3056858-->
+  
+   ```kusto
+   //Find BIOS manufacture that contains any word like Micro, such as Microsoft
+   Bios
+   | where Manufacturer like ‘%Micro%’
+   ```
+
+- 기본적으로 최근 24시간 동안의 메시지만 확인하도록 **CcmLog()** 및 **EventLog()** 엔터티를 업데이트했습니다. 선택적 시간 범위를 전달하여 이 동작을 재정의할 수 있습니다. 예를 들어 다음 쿼리는 지난 1시간 동안의 이벤트를 확인합니다.
+
+   ```kusto
+   CcmLog('Scripts',1h)
+   ```
+
+- **File()** 엔터티가 숨겨진 파일 및 시스템 파일에 대한 정보를 수집하도록 업데이트되었으며 MD5 해시를 포함합니다. MD5 해시는 SHA256 해시만큼 정확한 것은 아니지만 대부분의 맬웨어 공지에서 일반적으로 보고되는 해시입니다.  
+
+- 쿼리에 주석을 추가할 수 있습니다.<!-- 5431463 --> 이 동작은 쿼리를 공유하는 경우에 유용합니다. 예:
+
+    ``` Kusto
+    //Get the top ten devices sorted by user
+    Device
+    | top 10 by UserName
+    ```
+
+- CMPivot은 마지막 사이트에 자동으로 연결합니다.<!-- 5420395 --> CMPivot을 시작한 후 필요한 경우 새 사이트에 연결할 수 있습니다.
+
+- **내보내기** 메뉴에서 **클립보드에 대한 쿼리 링크**로 새로운 옵션을 선택합니다.<!-- 5431577 --> 이 작업을 수행하면 링크가 다른 사용자와 공유할 수 있는 클립보드에 복사됩니다. 예:
+
+    `cmpivot:Ly8gU2FtcGxlIHF1ZXJ5DQpPcGVyYXRpbmdTeXN0ZW0NCnwgc3VtbWFyaXplIGNvdW50KCkgYnkgQ2FwdGlvbg0KfCBvcmRlciBieSBjb3VudF8gYXNjDQp8IHJlbmRlciBiYXJjaGFydA==`
+
+    이 링크는 다음 쿼리를 사용하여 CMPivot 독립 실행형을 엽니다.
+
+    ``` Kusto
+    // Sample query
+    OperatingSystem
+    | summarize count() by Caption
+    | order by count_ asc
+    | render barchart
+    ```
+
+    > [!TIP]
+    > 이 링크를 작동하려면 [CMPivot 독립 실행형을 설치합니다](#install-cmpivot-standalone).
+
+- 장치를 Microsoft Defender ATP(Advanced Threat Protection)에 등록한 경우, 쿼리 결과에서 장치를 마우스 오른쪽 단추로 클릭하여 **Microsoft Defender 보안 센터** 온라인 포털을 시작합니다.
+
+### <a name="known-issues-for-cmpivot-in-version-1910"></a>버전 1910 CMPivot의 알려진 문제
+
+- 제한에 도달한 경우 최대 결과 배너가 표시되지 않을 수 있습니다. <!--5431427-->
+  - 각 클라이언트는 쿼리당 128KB의 데이터로 제한됩니다.
+  - 쿼리 결과가 128KB를 초과할 경우 결과가 잘릴 수 있습니다.
+ 
 ## <a name="inside-cmpivot"></a>내부 CMPivot
 
 CMPivot은 Configuration Manager "빠른 채널"을 사용하여 클라이언트에게 쿼리를 보냅니다. 서버에서 클라이언트로의 이 통신 채널은 클라이언트 알림 작업, 클라이언트 상태 및 엔드포인트 보호와 같은 다른 기능에서도 사용됩니다. 클라이언트는 마찬가지로 빠른 상태 메시지 시스템을 통해 결과를 반환합니다. 상태 메시지는 데이터베이스에 임시로 저장됩니다. 클라이언트 알림에 사용된 포트에 대한 자세한 내용은 [포트](/sccm/core/plan-design/hierarchy/ports#BKMK_PortsClient-MP) 문서를 참조하세요.

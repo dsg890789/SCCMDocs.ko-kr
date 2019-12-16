@@ -2,7 +2,7 @@
 title: 크기 조정 및 규모
 titleSuffix: Configuration Manager
 description: 환경에서 디바이스를 지원하는 데 필요한 사이트 시스템 역할 및 사이트 수를 확인합니다.
-ms.date: 08/20/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17809842c780577db6088bb57de2330e4af09612
-ms.sourcegitcommit: 18e88352860dcaf938dbbe1e8694b658e1bfd8ac
+ms.openlocfilehash: 28ab58becbd3fb96dc1fba927ac5517926b5e108
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69584673"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660566"
 ---
 # <a name="size-and-scale-numbers-for-configuration-manager"></a>Configuration Manager의 크기 및 비율 값
 
@@ -58,7 +58,7 @@ ms.locfileid: "69584673"
 ### <a name="application-catalog-web-service-point"></a>애플리케이션 카탈로그 웹 서비스 지점  
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
@@ -70,7 +70,7 @@ ms.locfileid: "69584673"
 ### <a name="application-catalog-website-point"></a>애플리케이션 카탈로그 웹 사이트 지점  
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >

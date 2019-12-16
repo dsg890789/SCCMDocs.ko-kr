@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b773c0bfe8cd0f8253a67ac96f5a0113b7206c0
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56755413"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62193670"
 ---
 # <a name="use-azure-ad-for-co-management"></a>공동 관리를 위해 Azure AD 사용
 
@@ -38,7 +38,7 @@ Azure AD에서는 조직의 요구에 맞게 회사 소유 디바이스에 대�
 
     - Azure AD에서 몇 가지 설정을 사용하면 사용자가 Windows 설치 환경(OOBE)을 통해 Azure AD에 디바이스를 연결하도록 지원할 수 있음  
 
-    - 자세한 내용은 [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)(방법: Azure AD 연결 구현 계획)을 참조하세요.  
+    - 자세한 내용은 [방법: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)(방법: Azure AD 연결 구현 계획)을 참조하세요.  
 
 - **하이브리드 Azure AD 연결된 디바이스**: 기존 도메인 연결 디바이스를 Azure AD에 연결  
 
@@ -107,6 +107,6 @@ Azure AD는 작업 로드를 줄이는 다음과 같은 여러 옵션을 제공�
 Configuration Manager에는 [Azure AD에 새 Windows 10 도메인 연결 디바이스를 자동으로 등록](/sccm/core/clients/deploy/about-client-settings#automatically-register-new-windows-10-domain-joined-devices-with-azure-active-directory)하는 클라이언트 설정이 있습니다. 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
 
 디바이스를 온-프레미스 도메인에는 연결하지 않고 디바이스의 Azure AD 연결을 구성하려면 자신의 환경에서 Azure AD 연결을 위한 고려 사항을 검토합니다. Azure AD 연결을 진행하기로 했으면 조직의 요구에 맞게 배포하는 여러 옵션이 있습니다. 자세한 내용은 다음 아티클을 참조하세요.
-- [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)(방법: Azure AD 연결 구현 계획)을 참조하세요.  
+- [방법: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)(방법: Azure AD 연결 구현 계획)을 참조하세요.  
 - [Understand your provisioning options](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-your-provisioning-options)(프로비저닝 옵션 이해)  
 

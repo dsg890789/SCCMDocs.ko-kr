@@ -2,7 +2,7 @@
 title: Configuration Manager 도구
 titleSuffix: Configuration Manager
 description: Configuration Manager 인프라 문제를 해결하고 관리하는 도구에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45b330e28e1c6aa3b993e0a29e57fcb72fe09741
-ms.sourcegitcommit: 9648ce8a8b5c82518e7c8b6a7668e0e9b076cae6
+ms.openlocfilehash: 80a51140ed356390aeae809912f46c3c512063b3
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70379814"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74659682"
 ---
 # <a name="configuration-manager-tools"></a>Configuration Manager 도구
 
@@ -60,7 +60,7 @@ Configuration Manager 버전 1806부터 이러한 도구가 사이트 서버의 
 
 - [콘텐츠 라이브러리 전송](/sccm/core/support/content-library-transfer): 드라이브 간에 콘텐츠 라이브러리를 전송합니다.  
 
-- [콘텐츠 소유권 도구](/sccm/core/support/content-ownership-tool): 분리된 패키지의 소유권을 변경합니다. 이러한 패키지는 소유하는 사이트 서버가 없는 사이트에 존재합니다.  
+- [콘텐츠 소유권 도구](/sccm/core/support/content-ownership-tool): 분리된 패키지의 소유권을 변경합니다. 이러한 패키지는 소유하는 사이트 서버가 없는 사이트에 존재합니다.
 
 - [역할 기반 관리 및 감사 도구](/sccm/core/support/rbaviewer): 관리자가 역할 구성을 감사하도록 지원합니다.  
 
@@ -81,6 +81,8 @@ Configuration Manager 버전 1806부터 이러한 도구가 사이트 서버의 
 - [지원 센터](/sccm/core/support/support-center): 문제를 해결할 때 더 쉽게 분석할 수 있도록 클라이언트에서 정보를 수집합니다.
 
     버전 1906부터는 **OneTrace**가 지원 센터의 새 로그 뷰어입니다. CMTrace와 작동이 비슷하며 기능이 향상되었습니다. 자세한 내용은 [지원 센터 OneTrace](/sccm/core/support/support-center-onetrace)를 참조하세요.
+
+- [온-프레미스 사이트를 Microsoft Azure로 확장 및 마이그레이션](/sccm/core/support/azure-migration-tool): Configuration Manager를 위한 Azure VM(가상 머신)을 프로그래밍 방식으로 만들 수 있습니다. <!--3556022--> 
 
 - [콘텐츠 라이브러리 정리 도구](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool): `CD.Latest\SMSSETUP\TOOLS\ContentLibraryCleanup`에서 **ContentLibraryCleanup.exe**를 사용하여 배포 지점에서 분리된 콘텐츠를 제거합니다.  
 

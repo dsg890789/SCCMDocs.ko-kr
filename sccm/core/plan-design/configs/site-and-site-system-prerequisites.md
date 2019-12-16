@@ -2,7 +2,7 @@
 title: 사이트 필수 조건
 titleSuffix: Configuration Manager
 description: Windows 컴퓨터를 Configuration Manager 사이트 시스템 서버로 구성하는 방법을 알아봅니다.
-ms.date: 07/31/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d585df8daaebc3c421aaf9aef9d58a58cfbf6fe
-ms.sourcegitcommit: 08ba85071b886cccfc023fabb21e59c0035c2752
+ms.openlocfilehash: 201441b4fd00199d5c8730b10dbb8631b69c1ee6
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74249864"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660583"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
@@ -194,7 +194,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 ## <a name="bkmk_2012acwspreq"></a> 애플리케이션 카탈로그 웹 사이트 지점  
 
 > [!Important]  
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
@@ -248,7 +248,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 ## <a name="bkmk_2012ACwsitepreq"></a> 애플리케이션 카탈로그 웹 서비스 지점  
 
 > [!Important]  
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
@@ -395,12 +395,12 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="to-support-pxe-or-multicast"></a>PXE 또는 멀티캐스트를 지원하려면  
 
+- Windows 배포 서비스가 없는 배포 지점에서 PXE 응답기를 사용하도록 설정합니다.  
+
 - WDS(Windows 배포 서비스) Windows Server 역할을 설치 및 구성합니다.  
 
     > [!NOTE]  
     > Windows Server 2012 이상을 실행하는 서버에서는 PXE 또는 멀티캐스트를 지원하도록 배포 지점을 구성할 때 WDS가 자동으로 설치되고 구성됩니다.  
-
-- 버전 1806부터 Windows 배포 서비스가 없는 배포 지점에서 PXE 응답기를 사용하도록 설정합니다.  
 
 - 멀티캐스트 지원 배포 지점의 경우 SQL Server Native Client가 설치되어 있고 최신 버전인지 확인합니다. 자세한 내용은 [필수 구성 요소 확인: SQL Server Native Client](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)를 참조하세요.
 
@@ -765,12 +765,12 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="to-support-pxe-or-multicast"></a>PXE 또는 멀티캐스트를 지원하려면  
 
+- Windows 배포 서비스가 없는 배포 지점에서 PXE 응답기를 사용하도록 설정합니다.  
+
 - WDS(Windows 배포 서비스) Windows Server 역할을 설치 및 구성합니다.  
 
     > [!NOTE]  
     > Windows Server 2012 이상을 실행하는 서버에서는 PXE 또는 멀티캐스트를 지원하도록 배포 지점을 구성할 때 WDS가 자동으로 설치되고 구성됩니다.  
-
-- 버전 1806부터 Windows 배포 서비스가 없는 배포 지점에서 PXE 응답기를 사용하도록 설정합니다.  
 
 자세한 내용은 [배포 지점 설치 및 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe)을 참조하세요.
 

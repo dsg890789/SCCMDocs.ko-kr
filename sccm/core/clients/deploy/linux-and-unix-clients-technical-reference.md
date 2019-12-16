@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0f3538265bdd7de801acf3d8f04c5561364989cf
-ms.sourcegitcommit: d8d142044586a53709b4478ad945f714737c8d6e
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58523982"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62214401"
 ---
 # <a name="linux-and-unix-clients-component-services-and-commands-for-configuration-manager"></a>Configuration Manager의 Linux 및 UNIX 클라이언트 구성 요소 서비스 및 명령
 

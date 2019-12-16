@@ -2,7 +2,7 @@
 title: TLS 1.2를 사용하도록 설정하는 방법
 titleSuffix: Configuration Manager
 description: Configuration Manager용 TLS 1.2를 사용하도록 설정하는 방법에 대한 정보입니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.assetid: 31de47c9-891b-4de7-8d5e-fbbc1bff7c60
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ec0d298b6adea38c6b4104f2006b77eba650ac66
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 5717d983ac6aa2c095ca056a5764e2b0feb6c18e
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70889258"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660090"
 ---
 # <a name="how-to-enable-tls-12"></a>TLS 1.2를 사용하도록 설정하는 방법
 
@@ -232,7 +232,7 @@ SQL Server 통신이 실패하고 **SslSecurityError** 오류를 반환하는 �
 ### <a name="application-catalog-doesnt-initialize"></a>애플리케이션 카탈로그가 초기화되지 않음
 
 > [!Important]  
-> 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
 
 애플리케이션 카탈로그가 초기화되지 않으면 **ServicePortalWebSite.svclog** 파일에서 다름 오류 항목을 확인하세요.
 
@@ -266,7 +266,7 @@ SQL Server 통신이 실패하고 **SslSecurityError** 오류를 반환하는 �
 ### <a name="software-center-or-browser-doesnt-communicate-with-the-application-catalog"></a>소프트웨어 센터 또는 브라우저는 애플리케이션 카탈로그와 통신하지 않습니다.
 
 > [!Important]  
-> 애플리케이션 카탈로그는 사용되지 않습니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)을 참조하세요.
 
 TLS 1.2 지원 사이트에서 사용자가 사용할 수 있는 앱에 소프트웨어 센터가 작동하도록 하는 최상의 방법은 애플리케이션 카탈로그 역할을 제거하는 것입니다. 그런 다음, 소프트웨어 센터가 관리 지점과 직접 통신하도록 합니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.
 
@@ -292,7 +292,7 @@ Azure AD(Azure Active Directory)에서 애플리케이션을 만들려고 할 �
 
 ### <a name="configuration-manager-cloud-services-and-tls-12"></a>Configuration Manager 클라우드 서비스 및 TLS 1.2
 
-버전 1802부터 클라우드 관리 게이트웨이 및 클라우드 배포 지점에서 사용하는 Azure 가상 머신은 TLS 1.2를 지원합니다. 버전 1802 이상에서 지원되는 클라이언트는 자동으로 TLS 1.2를 사용합니다.
+클라우드 관리 게이트웨이 및 클라우드 배포 지점에서 사용하는 Azure 가상 머신이 TLS 1.2를 지원합니다. 지원되는 클라이언트 버전은 자동으로 TLS 1.2를 사용합니다.
 
 **SMSAdminui.log**에는 다음 예제와 비슷한 오류가 포함될 수 있습니다.
 

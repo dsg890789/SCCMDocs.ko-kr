@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1ea9e2ef8da09d0ab344d56fe0ad4f1b3fb9d94b
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56130506"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62250702"
 ---
 # <a name="configuration-manager-and-windows-as-a-service"></a>Configuration Manager 및 Windows as a Service
 
@@ -26,7 +26,7 @@ System Center Configuration Manager는 Windows 10의 기능 업데이트를 포�
 
 ## <a name="key-articles-about-adopting-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 채택에 관한 주요 문서
 
-| 문서        | 설명          | 
+| 아티클        | 설명          | 
 | ------------- |-------------|
 |[Configuration Manager 현재 분기의 개요](/sccm/core/plan-design/changes/whats-new-incremental-versions)|Configuration Manager(현재 분기)에 대한 새로운 서비스 모델의 주요 사항을 간략하게 요약합니다.|
 |[제품 지원 기간](/sccm/core/servers/manage/current-branch-versions-supported)|새로운 지원 및 서비스 모델에 대해 설명합니다.|
@@ -41,7 +41,7 @@ System Center Configuration Manager는 Windows 10의 기능 업데이트를 포�
 
 ## <a name="key-articles-about-adopting-windows-as-a-service"></a>Windows as a service 채택에 관한 주요 문서
 
-| 문서        | 설명          | 
+| 아티클        | 설명          | 
 | ------------- |-------------|
 |[Windows as a Service 관리](/sccm/osd/deploy-use/manage-windows-as-a-service)|서비스 계획을 사용하여 Windows 10 기능 업데이트를 배포하는 방법을 설명합니다.|
 |[작업 순서를 통한 Windows 10 업그레이드](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)|추가 권장 사항으로 Windows 10을 업그레이드하기 위한 작업 순서 만드는 세부 정보입니다.|

@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 07/31/2019
+ms.date: 12/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,16 +11,16 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21fcce7d5e8db66a7e85c14c0ef4ad1050b342c
-ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
+ms.openlocfilehash: 48decd20e6a77657e4ba6ac1e074e3068b69ef12
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70738427"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74813483"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 제한됩니다. 이러한 문제는 제품에서 아직 해결되지 않았거나 Microsoft 지원 기술 자료 문서에서 자세히 설명되지 않은 문제입니다.  
 
@@ -30,16 +30,26 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 
 다른 버전에서 도입된 새 기능에 대한 자세한 내용은 다음 문서를 참조하세요.
 
+- [버전 1910의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1910)
 - [버전 1906의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1906)  
 - [버전 1902의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1902)
 - [버전 1810의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1810)
-- [버전 1806의 새로운 기능](/sccm/core/plan-design/changes/whats-new-in-version-1806)  
 
 > [!Tip]  
 > 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22release+notes+-+Configuration+Manager%22&locale=en-us`
 
 
 ## <a name="set-up-and-upgrade"></a>설치 및 업그레이드  
+
+### <a name="site-server-in-passive-mode-doesnt-update-configurationmof"></a>수동 모드의 사이트 서버가 configuration.mof를 업데이트하지 않음
+
+<!-- 5787848 -->
+
+*버전 1910에 적용*
+
+사이트에 [수동 모드의 사이트 서버](/configmgr/core/servers/deploy/configure/site-server-high-availability)가 포함된 경우 사이트를 업데이트하면 인벤토리 사용자 지정이 손실될 수 있습니다. 현재 사이트 서버를 장애 조치(failover)하는 경우 사이트가 configuration.mof를 동기화하지 않습니다.
+
+이 문제를 해결하려면 사이트의 configuration.mof를 수동으로 백업 및 복원하세요.
 
 ### <a name="setup-prerequisite-warning-on-domain-functional-level-on-server-2019"></a>Server 2019에서 도메인 기능 수준에 대한 필수 구성 요소 경고 설정
 
@@ -74,20 +84,6 @@ Windows Server 2019를 실행하는 도메인 컨트롤러가 있는 환경에�
 Azure AD에서 앱 등록에 연결된 키를 갱신합니다. 자세한 내용은 [비밀 키 갱신](/sccm/core/servers/deploy/configure/azure-services-wizard#bkmk_renew)을 참조하세요.
 
 
-### <a name="setup-command-line-option-joinceip-must-be-specified"></a>설치 명령줄 옵션 JoinCEIP를 지정해야 함
-
-<!--510806-->
-*적용 대상: Configuration Manager 버전 1802*
-
-Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그램) 기능은 제품에서 제거됩니다. 명령줄 또는 무인 스크립트에서 새 사이트의 [설치를 자동화하는](/sccm/core/servers/deploy/install/command-line-options-for-setup) 경우 설치 프로그램은 필요한 매개 변수가 누락되었다는 오류를 반환합니다.
-
-#### <a name="workaround"></a>해결 방법
-
-설치 프로세스의 결과에 영향을 주지 않지만 설치 명령줄에 **JoinCEIP** 매개 변수를 포함합니다.
-
-> [!Note]  
-> [콘솔 설치 프로그램](/sccm/core/servers/deploy/install/install-consoles)에 대한 EnableSQM 매개 변수가 필요하지 않습니다.
-
 ### <a name="cloud-service-manager-component-stopped-on-site-server-in-passive-mode"></a>클라우드 서비스 관리자 구성 요소가 수동 모드의 사이트 서버에서 정지
 
 <!--VSO 2858826, SCCMDocs issue 772-->
@@ -103,6 +99,21 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 <!-- ## Backup and recovery  -->
 
 <!--## Client deployment and upgrade-->
+## <a name="application-management"></a>애플리케이션 관리
+
+### <a name="unable-to-get-certificate-for-powershell-error-when-deploying-microsoft-edge-version-77-and-later"></a>Microsoft Edge 버전 77 이후를 배포할 때 Powershell 오류에 대한 인증서를 가져올 수 없음
+<!--5769384-->
+*적용 대상: Configuration Manager 버전 1910*
+
+언어가 스웨덴어, 헝가리어 또는 일본어로 설정된 OS에서 Configuration Manager 콘솔을 실행할 경우 Microsoft Edge 버전 77 이상을 배포할 때 다음과 같은 오류가 발생합니다.
+
+- Powershell에 대한 인증서를 가져올 수 없습니다.
+
+이 오류는 `AdminConsole\bin` 디렉터리에 스웨덴어, 헝가리어 또는 일본어에 대한 `scripts` 폴더가 없기 때문에 발생합니다. 스크립트 폴더는 해당 언어에 대해 현지화되어 있습니다.
+
+#### <a name="workaround"></a>해결 방법
+
+`AdminConsole\bin` 디렉터리에 `scripts`라는 폴더를 만듭니다. 현지화된 폴더에서 새로 만든 `scripts` 폴더로 파일을 복사합니다. 파일을 복사한 후에 Microsoft Edge 버전 77 이상을 배포합니다.
 
 
 ## <a name="os-deployment"></a>OS 배포
@@ -147,22 +158,6 @@ Configuration Manager 버전 1802부터 CEIP(사용자 환경 개선 프로그�
 
 자세한 내용은 [사용자 지정 보안 역할 만들기](/sccm/core/servers/deploy/configure/configure-role-based-administration#BKMK_CreateSecRole)를 참조하세요.
 
-### <a name="changing-office-365-client-setting-doesnt-apply"></a>Office 365 클라이언트 설정 변경이 적용되지 않음
-
-<!--511551-->
-*적용 대상: Configuration Manager 버전 1802*  
-
-**Office 365 클라이언트 에이전트 관리 사용**이 `Yes`로 구성된 [클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#enable-management-of-the-office-365-client-agent)을 배포합니다. 그런 다음, 설정을 `No` 또는 `Not Configured`로 변경합니다. 대상 클라이언트에서 정책을 업데이트하면 Office 365 업데이트가 Configuration Manager에서 계속 관리됩니다.
-
-#### <a name="workaround"></a>해결 방법
-
-다음 레지스트리 값을 `0`으로 변경하고 **Microsoft Office 간편 실행 서비스**(ClickToRunSvc)를 다시 시작합니다.
-
-```Registry
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate]
-"OfficeMgmtCOM"=dword:00000000
-```
-
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
 ### <a name="if-you-use-hardware-inventory-for-distributed-views-you-cant-onboard-to-desktop-analytics"></a>분산 보기에 하드웨어 인벤토리를 사용하는 경우 Desktop Analytics에 등록할 수 없습니다.
@@ -199,31 +194,30 @@ Configuration Manager 콘솔을 사용하여 파일럿 배포 상태를 모니�
 
 이러한 **정의되지 않음** 디바이스는 해당 배포 계획의 OS 대상 버전에서 **최신 상태**입니다. 추가 작업은 필요하지 않습니다.
 
+## <a name="cloud-services"></a>Cloud Services
 
-## <a name="mobile-device-management"></a>모바일 디바이스 관리  
+### <a name="cant-download-content-from-a-cloud-management-gateway-enabled-for-tls-12"></a>TLS 1.2를 사용하도록 설정된 클라우드 관리 게이트웨이에서 콘텐츠를 다운로드할 수 없음
 
-### <a name="validation-for-ios-app-link-sometimes-fails-on-valid-link"></a>iOS 앱 연결에 대한 유효성 검사가 유효한 링크에서 실패하는 경우가 있음
+<!-- 5771680 -->
 
-*적용 대상: Configuration Manager 1810 및 이전 버전*
+*버전 1906, 1910에 적용*
 
-<!-- LSI 106004348 -->
-**App Store에서 iOS용 앱 패키지** 유형의 새 애플리케이션을 만드는 경우 유효성 검사기는 **위치**에 대한 일부 유효한 URL을 수락하지 않습니다. 특히 iOS App Store에는 URL의 앱 이름 섹션에 값이 필요하지 않습니다. 예를 들어 다음 링크는 모두 유효하며 동일한 앱을 가리킵니다. 그러나 **애플리케이션 생성 마법사**는 첫 번째 항목만 수락합니다.
+CMG(클라우드 관리 게이트웨이)에서 **클라우드 배포 지점으로 작동하고 Azure Storage에서 콘텐츠를 제공할 수 있도록 허용** 및 **TLS 1.2 적용**을 설정한 경우 콘텐츠 다운로드에 실패할 수 있습니다.
 
-- `https://itunes.apple.com/us/app/app-name/id123456789?mt=8`
-- `https://itunes.apple.com/us/app//id123456789?mt=8`
+클라이언트의 DataTransferService.log에 다음과 같은 오류가 표시됩니다.
 
-#### <a name="workaround"></a>해결 방법
+``` log
+Request to https://cmg1.contoso.com:443/downloadrestservice.svc/getcontentxmlsecure?pid=CMG00013&cid=CMG00013&tid=GUID:3fb5cf5d-28a5-4460-ab39-9184ca214369&iss=CMDP.IAAS2.CONTOSO.COM&alg=1.2.840.113549.1.1.11&st=2019-11-19T01:44:04&et=2019-11-19T09:44:04 failed with 400
+Successfully queued event on HTTP/HTTPS failure for server 'cmg1.contoso.com'.
+Error sending DAV request. HTTP code 400, status 'Bad Request'
+GetDirectoryList_HTTP('https://cmg1.contoso.com:443/downloadrestservice.svc/getcontentxmlsecure?pid=CMG00013&cid=CMG00013&tid=GUID:3fb5cf5d-28a5-4460-ab39-9184ca214369&iss=CMDP.IAAS2.CONTOSO.COM&alg=1.2.840.113549.1.1.11&st=2019-11-19T01:44:04&et=2019-11-19T09:44:04') failed with code 0x87d0027e.
+Error retrieving manifest (0x87d0027e).
+```
 
-URL에서 앱 이름이 누락된 iOS 앱을 만들 때 URL에 앱 이름인 것처럼 값을 추가하세요. 예:
+서버의 CMGContentService.log에 다음과 같은 오류가 표시됩니다.
 
-- `https://itunes.apple.com/us/app/any-string/id123456789?mt=8`
+``` log
+ERROR: Exception processing request. Microsoft.WindowsAzure.Storage.StorageException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.ComponentModel.Win32Exception: The client and server cannot communicate, because they do not possess a common algorithm...
+```
 
-이 작업을 수행하여 마법사를 완료할 수 있습니다. 앱이 계속해서 iOS 디바이스에 성공적으로 배포됩니다. URL에 추가하는 문자열은 마법사의 **일반 정보** 탭에 있는 **이름**으로 나타납니다. 회사 포털에서 앱의 레이블이기도 합니다.
-
-
-
-
-<!-- ## Reports and monitoring    -->
-<!-- ## Conditional access   -->
-
-<!-- ## Endpoint Protection -->
+이 문제를 해결하려면 기존 방식의 [클라우드 배포 지점](/configmgr/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 사용하세요. 이 역할은 TLS 1.2를 적용하지는 않지만 TLS 1.2가 필요한 클라이언트와 호환됩니다.

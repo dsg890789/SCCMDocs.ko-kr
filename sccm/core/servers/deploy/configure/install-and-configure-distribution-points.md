@@ -2,7 +2,7 @@
 title: 배포 지점 관리
 titleSuffix: Configuration Manager
 description: 배포 지점을 사용하여 디바이스 및 사용자에게 배포하는 콘텐츠를 호스팅합니다.
-ms.date: 07/26/2019
+ms.date: 12/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49be9ccc0f44656752de18f4814b91c0c0d25f66
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: d739737db498a59743f98a114eefaa1ffed3217e
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536475"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74814929"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 디바이스 및 사용자에게 배포하는 콘텐츠 파일을 호스트할 Configuration Manager 배포 지점을 설치합니다. 배포 지점을 관리하는 방법 및 배포 지점에 콘텐츠를 배포하는 방법을 간소화하는 배포 지점 그룹을 만듭니다.  
 
@@ -230,6 +230,14 @@ ms.locfileid: "68536475"
 
 하나를 초과하는 배포 지점에서 유지 관리 모드를 사용하도록 설정하는 경우 주의하십시오. 이 작업은 다른 배포 지점의 성능에 영향을 미칠 수 있습니다. 경계 그룹 구성에 따라 클라이언트는 다운로드 횟수를 늘렸을 수 있거나 콘텐츠를 다운로드할 수 없습니다.
 
+유지 관리 모드는 어떤 배포 지점에서도 장기 상태로 유지되어서는 안 됩니다. 장기간 지속되는 작업을 수행하려면 먼저 배포 지점 역할을 제거하세요.
+
+> [!NOTE]
+> 배포 지점이 유지 관리 모드에 있는 동안에는 다음 작업을 수행하지 마시기 바랍니다.<!-- SCCMDocs-pr #4699 -->
+>
+> - 역할 제거
+> - 배포 지점 재할당
+
 ### <a name="enable-maintenance-mode"></a>유지 관리 모드 사용
 
 배포 지점을 유지 관리 모드로 전환하려면 사용자 계정은 **Site** 클래스에 대해 **수정** 권한이 있어야 합니다. 예를 들어, **인프라 관리자** 및 **전체 관리자** 기본 제공 역할에 이 권한이 있습니다.<!-- SCCMDocs-pr issue #3407 -->
@@ -310,7 +318,7 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
 
 - **사전 준비된 콘텐츠에 이 배포 지점 사용**: 이 설정을 사용하면 소프트웨어를 배포하기 전에 서버에 콘텐츠를 추가할 수 있습니다. 콘텐츠 파일은 콘텐츠 라이브러리에 이미 있으므로 소프트웨어를 배포할 때 네트워크를 통해 전송되지 않습니다. 자세한 내용은 [사전 준비된 콘텐츠](/sccm/core/plan-design/hierarchy/manage-network-bandwidth#BKMK_PrestagingContent)를 참조하세요.  
 
-- **이 배포 지점을 배달 최적화 네트워크 내 캐시 서버로 사용하도록 설정**: 버전 1906부터 배포 지점에 배달 최적화 네트워크 내 캐시(DOINC) 서버를 설치할 수 있습니다. 이 온-프레미스 콘텐츠를 캐시하면 클라이언트들이 전송 최적화 기능을 활용하는 동시에 WAN 링크도 보호할 수 있습니다. 추가 설정에 대한 설명을 비롯한 자세한 내용은 [Configuration Manager의 배달 최적화 네트워크 내 캐시](/sccm/core/plan-design/hierarchy/delivery-optimization-in-network-cache)를 참조하세요.
+- **이 배포 지점을 Microsoft Connected Cache 서버로 사용**: 버전 1906부터, 배포 지점에 Microsoft Connected Cache 서버를 설치할 수 있습니다. 이 온-프레미스 콘텐츠를 캐시하면 클라이언트들이 전송 최적화 기능을 활용하는 동시에 WAN 링크도 보호할 수 있습니다. 추가 설정에 대한 설명을 비롯한 자세한 내용은 [Configuration Manager의 Microsoft Connected Cache](/sccm/core/plan-design/hierarchy/microsoft-connected-cache)를 참조하세요.
 
 
 ### <a name="bkmk_config-comm"></a> 통신

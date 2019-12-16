@@ -2,7 +2,7 @@
 title: Windows 클라이언트 배포 필수 조건
 titleSuffix: Configuration Manager
 description: Windows 컴퓨터에 구성 관리자 클라이언트를 배포하기 위한 필수 조건을 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 586083f0de3241adb20bacbf432563681b0370f0
-ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
+ms.openlocfilehash: 433ccd79363f53304bf9822846de19723397eaa2
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70110093"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74658458"
 ---
 # <a name="prerequisites-for-deploying-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건
 
@@ -86,14 +86,14 @@ Configuration Manager 클라이언트에는 외부 종속성이 있습니다. �
 |Microsoft SQL Server Compact 4.0 SP1 구성 요소|클라이언트 작업과 관련된 정보를 저장하는 데 필요합니다.|  
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
 > - [소프트웨어 센터 구성](/sccm/apps/plan-design/plan-for-software-center#bkmk_userex)
 > - [제거되는 기능과 사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)  
 >
-> 아직 애플리케이션 카탈로그 웹 사이트 사용자 경험을 사용 중이라면 클라이언트에 Microsoft Silverlight 5.1.41212.0이 필요합니다. Configuration Manager 1802부터 클라이언트는 Silverlight를 자동으로 설치하지 않습니다. 애플리케이션 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다.<!--1356195-->
+> 아직 애플리케이션 카탈로그 웹 사이트 사용자 경험을 사용 중이라면 클라이언트에 Microsoft Silverlight 5.1.41212.0이 필요합니다. 클라이언트는 Silverlight를 자동으로 설치하지 않습니다. 애플리케이션 카탈로그의 기본 기능이 이제는 소프트웨어 센터에 포함됩니다.<!--1356195-->
 
 #### <a name="dotNet"></a> Microsoft .NET Framework 버전 4.5.2에 대한 추가 세부 정보  
 
@@ -139,7 +139,7 @@ Microsoft.NET Framework 버전 4.5.2의 설치를 완료하려면 다시 시작�
 
 - 클라이언트 컴퓨터가 원본 파일을 다운로드하려면 배포 지점이나 관리 지점과 통신해야 합니다.  
 
-- 버전 1806부터, Kerberos 상호 인증이 필요한 경우에는 클라이언트가 신뢰할 수 있는 Active Directory 포리스트에 있어야 합니다. Windows의 Kerberos는 상호 인증을 위해 Active Directory를 사용합니다.<!--1358204-->  
+- Kerberos 상호 인증이 필요한 경우에는 클라이언트가 신뢰할 수 있는 Active Directory 포리스트에 있어야 합니다. Windows의 Kerberos는 상호 인증을 위해 Active Directory를 사용합니다.<!--1358204-->  
 
 클라이언트 강제를 사용하려면 다음 보안 권한이 필요합니다.  
 

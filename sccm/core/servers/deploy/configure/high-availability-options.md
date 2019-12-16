@@ -2,7 +2,7 @@
 title: 고가용성
 titleSuffix: Configuration Manager
 description: 사용 가능한 서비스를 높은 수준으로 유지하는 옵션을 사용하여 Configuration Manager를 배포하는 방법을 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ecfde816d4060c58bd1266aaff2c1b22b100576
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 58e0eb1327786d79fd8b9126dbd4a4691d565f62
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536465"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660066"
 ---
 # <a name="high-availability-options-for-configuration-manager"></a>Configuration Manager의 고가용성 옵션
 
@@ -26,7 +26,7 @@ ms.locfileid: "68536465"
 
 고가용성을 지원하는 Configuration Manager 옵션은 다음과 같습니다.
 
-- 버전 1806부터 수동 모드로 추가 사이트 서버를 사용하여 모든 독립 실행형 기본 사이트를 구성합니다.  
+- 수동 모드로 추가 사이트 서버를 사용하여 독립 실행형 기본 사이트를 구성할 수 있습니다.  
 
 - 기본 사이트 및 중앙 관리 사이트에서 사이트 데이터베이스에 대한 SQL Server Always On 가용성 그룹을 구성합니다.
 
@@ -48,9 +48,9 @@ Configuration Manager에는 거의 실시간 서비스를 제공하는 여러 �
 
 - 소프트웨어 업데이트 및 엔드포인트 보호 등의 기능을 모니터링하는 상태 기반 메시지입니다.
 
-- [스크립트](/sccm/apps/deploy-use/create-deploy-scripts): 버전 1706부터  
+- [스크립트](/sccm/apps/deploy-use/create-deploy-scripts)
 
-- [CMPivot](/sccm/core/servers/manage/cmpivot): 버전 1806부터  
+- [CMPivot](/sccm/core/servers/manage/cmpivot)
 
 Configuration Manager의 다른 기능은 실시간 서비스를 제공하지 않습니다. 이러한 기능에는 클라이언트 설정, 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 배포 및 규정 준수 설정이 포함되지만 이에 국한되지 않습니다. 일부 데이터 대기 시간으로 이러한 기능이 작동하기를 기대합니다. 대부분의 시나리오에서 일시적인 서비스 중단이 중대한 문제가 되는 경우는 드뭅니다. 가동 중지 시간을 최소화하려면 작업의 자치성을 유지하며, 높은 서비스 수준을 제공하고, 고가용성을 염두에 두고 사이트와 계층을 구성합니다.  
 
@@ -69,11 +69,11 @@ Configuration Manager의 다른 기능은 실시간 서비스를 제공하지 �
 
 ### <a name="use-a-site-server-in-passive-mode"></a>수동 모드로 사이트 서버 사용
 
-버전 1806부터 독립 실행형 기본 사이트에 대해 *수동* 모드로 추가 사이트 서버를 설치합니다. 수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.  
+독립 실행형 기본 사이트에 대해 *수동* 모드로 추가 사이트 서버를 설치할 수 있습니다. 수동 모드의 사이트 서버는 *활성* 모드의 기존의 사이트 서버 외의 추가 서버입니다. 수동 모드의 사이트 서버는 필요할 때 즉시 사용할 수 있습니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.  
 
 ### <a name="use-a-remote-content-library"></a>원격 콘텐츠 라이브러리 사용
 
-버전 1806부터 사이트의 콘텐츠 라이브러리를 항상 사용 가능한 스토리지를 제공하는 원격 위치로 이동합니다. 이 기능은 사이트 서버 고가용성을 위한 요구 사항입니다. 자세한 내용은 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)를 참조하세요.
+사이트의 콘텐츠 라이브러리를 고가용성 스토리지를 제공하는 원격 위치로 이동할 수 있습니다. 이 기능은 사이트 서버 고가용성을 위한 요구 사항입니다. 자세한 내용은 [콘텐츠 라이브러리](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)를 참조하세요.
 
 ### <a name="centralize-content-sources"></a>콘텐츠 소스 중앙 집중화
 
@@ -168,7 +168,7 @@ Configuration Manager 콘솔은 사이트에 연결할 때 해당 사이트의 S
 ### <a name="application-catalog-web-service-point-and-application-catalog-website-point"></a>애플리케이션 카탈로그 웹 서비스 지점 및 애플리케이션 카탈로그 웹 사이트 지점
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터는 업데이트된 클라이언트가 사용자 이용 가능 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
@@ -232,25 +232,6 @@ Configuration Manager 클라이언트 자치성에는 다음 동작이 포함됩
 ## <a name="bkmk_nonHAoptions"></a> 항상 사용 가능하지 않은 사이트 및 사이트 시스템 역할에 대한 옵션
 
 여러 사이트 시스템이 사이트 또는 계층 구조에서 여러 인스턴스를 지원하지 않습니다. 이 정보는 이러한 사이트 시스템의 오프라인 전환을 준비하는 데 유용합니다.  
-
-### <a name="site-server-site"></a>사이트 서버(사이트)
-
-> [!Note]  
-> 이 섹션은 Configuration Manager 1802 이전 버전에만 적용됩니다. 버전 1806부터 Configuration Manager는 사이트 서버에 대해 고가용성 옵션을 제공합니다. 자세한 내용은 [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)을 참조하세요.  
-
-Configuration Manager는 Windows Server 클러스터 또는 NLB 클러스터의 각 사이트에 사이트 서버 설치를 지원하지 않습니다.  
-
-1810 버전부터 Configuration Manager 설치 프로세스는 더 이상 장애 조치 클러스터링을 위한 Windows 역할이 있는 컴퓨터에 사이트 서버 역할의 설치를 차단하지 않습니다. SQL Always On에는 이 역할이 필요하므로 이전에는 사이트 서버에 사이트 데이터베이스를 공동 배치할 수 없었습니다. 이 변경을 사용하면 SQL Always On 및 사이트 서버를 수동 모드에서 사용하여 더 적은 수의 서버로 고가용성 사이트를 만들 수 있습니다. <!--3607761, fka 1359132-->  
-
-다음 정보를 참조하면 사이트 서버에 장애가 발생하거나 작동하지 않는 경우에 대비할 수 있습니다.  
-
-- 기본 제공 백업 작업을 사용하여 사이트 백업을 정기적으로 만듭니다. 백업을 정기적으로 테스트 환경에 복원하는 것이 좋습니다.  
-
-- 중앙 관리 사이트가 있는 계층 구조에 여러 Configuration Manager 기본 사이트를 배포하여 중복을 만듭니다. 사이트 장애가 발생하는 경우 클라이언트를 작동 중인 사이트로 다시 할당하는 Windows 그룹 정책이나 로그온 스크립트를 사용하는 것이 좋습니다.  
-
-- 계층에 중앙 관리 사이트가 있는 경우 계층 내 다른 사이트의 사이트 데이터베이스를 복구하는 옵션을 사용하여 중앙 관리 사이트나 자식 기본 사이트를 복구할 수 있습니다.  
-
-- 보조 사이트는 복원할 수 없으므로 다시 설치해야 합니다.  
 
 ### <a name="asset-intelligence-synchronization-point-hierarchy"></a>Asset Intelligence 동기화 지점(계층 구조)
 

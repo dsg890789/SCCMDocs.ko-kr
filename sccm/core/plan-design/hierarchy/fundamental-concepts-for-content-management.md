@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53e5fc081be04209312cd3144c38d0ecd944fc1
-ms.sourcegitcommit: 04dd0c17e47763a3e2b6c44c005428ea7d67f4bd
+ms.openlocfilehash: 1d91dd8045bc95ea69c4f60e981f4e74af6da141
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021961"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660039"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 소프트웨어 콘텐츠를 관리하는 도구 및 옵션의 강력한 시스템을 지원합니다. 애플리케이션, 패키지, 소프트웨어 업데이트 및 OS 배포와 같은 소프트웨어 배포에는 모두 콘텐츠가 필요합니다. Configuration Manager는 사이트 서버와 배포 지점 모두에 콘텐츠를 저장합니다. 이 콘텐츠는 위치 간에 전송할 때는 네트워크 대역폭이 많이 필요합니다. 콘텐츠 관리 인프라를 효과적으로 계획하고 사용하기 위해서 먼저 사용 가능한 옵션 및 구성을 파악해야 합니다. 그런 다음, 네트워킹 환경 및 콘텐츠 배포 요구 사항에 가장 적합하게 사용하는 방법을 고려합니다.  
 
@@ -152,16 +152,19 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 배달 최적화는 Windows 10 품질 업데이트용 빠른 설치 파일의 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)에 권장되는 기술입니다.
 
 
-## <a name="delivery-optimization-in-network-cache"></a>네트워크 캐시의 배달 최적화
+## <a name="microsoft-connected-cache"></a>Microsoft 연결된 캐시
 
 <!--3555764-->
-버전 1906부터 배포 지점에 배달 최적화 네트워크 내 캐시(DOINC) 서버를 설치할 수 있습니다. 이 온-프레미스 콘텐츠를 캐시하면 클라이언트들이 전송 최적화 기능을 활용하는 동시에 WAN 링크도 보호할 수 있습니다.
+버전 1906부터, 배포 지점에 Microsoft Connected Cache 서버를 설치할 수 있습니다. 이 온-프레미스 콘텐츠를 캐시하면 클라이언트들이 전송 최적화 기능을 활용하는 동시에 WAN 링크도 보호할 수 있습니다.
+
+> [!NOTE]
+> 버전 1910부터 이 기능을 **Microsoft Connected Cache**라고 합니다. 이전 명칭은 DOINC(전송 최적화 네트워크 내 캐시)였습니다.
 
 이 캐시 서버는 전송 최적화에 의해 다운로드된 콘텐츠에서 주문형 투명 캐시로 작동합니다. 클라이언트 설정을 사용하여 이 서버가 로컬 Configuration Manager 경계 그룹의 멤버에게만 제공되도록 합니다.
 
 이 캐시는 Configuration Manager의 배포 지점 콘텐츠와 분리됩니다. 배포 지점 역할과 동일한 드라이브를 선택하면 콘텐츠를 개별적으로 저장합니다.
 
-자세한 내용은 [Configuration Manager의 배달 최적화 네트워크 내 캐시](/sccm/core/plan-design/hierarchy/delivery-optimization-in-network-cache)를 참조하세요.
+자세한 내용은 [Configuration Manager의 Microsoft Connected Cache](/sccm/core/plan-design/hierarchy/microsoft-connected-cache)를 참조하세요.
 
 
 ## <a name="peer-cache"></a>피어 캐시

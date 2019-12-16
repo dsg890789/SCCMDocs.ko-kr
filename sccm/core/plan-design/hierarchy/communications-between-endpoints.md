@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ebe37bb97c4a1e231bfaf94f420f7f0471f30f6
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56141962"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62237732"
 ---
 # <a name="communications-between-endpoints-in-configuration-manager"></a>Configuration Manager의 엔드포인트 간 통신
 
@@ -153,12 +153,12 @@ IIS(인터넷 정보 서비스)를 사용하고 클라이언트의 통신을 지
 
 이전 예제에서 볼 수 있듯이 인터넷 기반 사이트 시스템을 웹 프록시 서버를 통해 인터넷에 게시하면 인트라넷에 배치할 수 있습니다. 이러한 사이트 시스템은 인터넷의 클라이언트 연결에만 구성하거나 인터넷 및 인트라넷의 클라이언트 연결에 구성할 수 있습니다. 웹 프록시 서버를 사용할 경우 해당 웹 프록시 서버에서 보안 수준이 더 높은 SSL(Secure Sockets Layer) 또는 SSL 터널링에 대한 SSL 브리징을 다음과 같이 구성할 수 있습니다.  
 
--   **SSL에 대한 SSL 브리징:**   
+-   **SSL에 대한 SSL 브리징:**    
     인터넷 기반 클라이언트 관리에 프록시 웹 서버를 사용할 경우 권장되는 구성은 SSL에 대한 SSL 브리징입니다. 이 구성에서는 인증과 함께 SSL 종료를 사용합니다. 클라이언트 컴퓨터는 컴퓨터 인증으로 인증되어야 하며 모바일 디바이스 기존 클라이언트는 사용자 인증으로 인증됩니다. Configuration Manager에서 등록한 모바일 디바이스는 SSL 브리징을 지원하지 않습니다.  
 
      프록시 웹 서버에서 SSL 종료의 이점은 인터넷의 패킷이 내부 네트워크에 전달되기 전에 검사를 받아야 한다는 것입니다. 프록시 웹 서버는 클라이언트에서의 연결을 인증하고 종료한 다음, 인터넷 기반 사이트 시스템에 대한 새로운 인증 연결을 엽니다. Configuration Manager 클라이언트에서 프록시 웹 서버를 사용하면 클라이언트 ID(클라이언트 GUID)가 패킷 페이로드에 안전하게 보관되므로 관리 지점은 프록시 웹 서버를 클라이언트로 간주하지 않습니다. Configuration Manager에서는(HTTP에서 HTTPS로 또는 HTTPS에서 HTTP로) 브리징이 지원되지 않습니다.  
 
--   **터널링:**:   
+-   **터널링:** :   
     프록시 웹 서버가 SSL 브리징에 대한 요구 사항을 지원할 수 없는 경우 또는 Configuration Manager에서 등록된 모바일 디바이스에 대해 인터넷 지원을 구성하려는 경우를 위해 SSL 터널링도 지원됩니다. 인터넷의 SSL 패킷이 SSL 종료 없이 사이트 시스템으로 전달되어 악성 콘텐츠를 검사할 수 없기 때문에 보안 수준이 낮은 옵션입니다. SSL 터널링을 사용할 경우 프록시 웹 서버에 대한 인증서 요구 사항은 없습니다.  
 
 

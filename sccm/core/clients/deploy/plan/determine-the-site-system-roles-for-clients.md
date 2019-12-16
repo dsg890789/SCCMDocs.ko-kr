@@ -2,7 +2,7 @@
 title: 클라이언트의 사이트 시스템 역할
 titleSuffix: Configuration Manager
 description: System Center Configuration Manager에서 클라이언트에 대한 사이트 시스템 역할을 결정합니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c13385a4c0f7b36cac1f67b1a8ceacbec6819631
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 40328e2156ea238bca29eff4a89c6d32efa2124d
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533788"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74658492"
 ---
 # <a name="determine-the-site-system-roles-for-configuration-manager-clients"></a>Configuration Manager 클라이언트를 위한 사이트 시스템 역할 결정
 
@@ -87,7 +87,7 @@ Configuration Manager를 사용하려면 모바일 디바이스를 등록하고 
 ## <a name="application-catalog"></a>애플리케이션 카탈로그
 
 > [!Important]  
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >

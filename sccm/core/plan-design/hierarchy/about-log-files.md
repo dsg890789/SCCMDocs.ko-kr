@@ -2,7 +2,7 @@
 title: 로그 파일 정보
 titleSuffix: Configuration Manager
 description: 로그 파일을 사용하여 Configuration Manager 클라이언트 및 사이트 시스템 문제를 해결할 수 있습니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,14 +11,16 @@ ms.assetid: b1751e3c-a60c-4ab7-a943-2595df1eb612
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3885e4323e8c41bcf644de7c62fd1dcb22c684c8
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 6f0febe5dcfda5f95c695ad347e2d4408a901b25
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68538049"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660260"
 ---
 # <a name="about-log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일 정보
+
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 클라이언트 및 사이트 서버 구성 요소가 개별 로그 파일에 프로세스 정보를 기록합니다. 이러한 로그 파일의 정보를 사용하면 발생할 수 있는 문제를 해결할 수 있습니다. Configuration Manager에서는 기본적으로 클라이언트 및 서버 구성 요소 로깅을 사용하도록 설정됩니다.
 
@@ -40,7 +42,7 @@ Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 �
 
 ### <a name="cmtrace"></a>CMTrace
 
-로그를 보려면 Configuration Manager 로그 뷰어 도구인 **CMTrace**를 사용합니다. 이 도구는 Configuration Manager 원본 미디어의 \\SMSSetup\\Tools 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다. 1806 버전부터 이제 CMTrace 로그 보기 도구가 Configuration Manager 클라이언트와 함께 자동으로 설치됩니다.<!--1357971--> 자세한 내용은 [CMTrace](/sccm/core/support/cmtrace)를 참조하세요.
+로그를 보려면 Configuration Manager 로그 뷰어 도구인 **CMTrace**를 사용합니다. 이 도구는 Configuration Manager 원본 미디어의 `\SMSSetup\Tools` 폴더에 있습니다. CMTrace 도구는 소프트웨어 라이브러리에 추가된 모든 부팅 이미지에 추가됩니다. CMTrace 로그 보기 도구가 Configuration Manager 클라이언트와 함께 자동으로 설치됩니다.<!--1357971--> 자세한 내용은 [CMTrace](/sccm/core/support/cmtrace)를 참조하세요.
 
 ### <a name="onetrace"></a>OneTrace
 
@@ -61,6 +63,7 @@ Configuration Manager의 프로세스 대부분은 해당 프로세스 전용 �
 - [클라이언트 설치 도중](#bkmk_logoptions-clientprop)
 - [Configuration Manager Service Manager 사용](#bkmk_logoptions-sm)
 - [Windows 레지스트리 사용](#bkmk_logoptions-registry)
+- [Configuration Manager 콘솔에서](#bkmk_logoptions-console)
 
 ### <a name="bkmk_logoptions-clientprop"></a> 클라이언트 설치 도중 로깅 옵션 구성
 
@@ -217,6 +220,17 @@ Configuration Manager 콘솔의 AdminUI.log의 자세한 정보 표시 수준을
 
 1. 파일을 저장하고 콘솔을 다시 시작하세요.
 
+### <a name="bkmk_logoptions-console"></a> Configuration Manager 콘솔에서 로깅 옵션 구성
+
+<!-- 4433455 -->
+
+버전 1910부터, 콘솔에서 클라이언트 또는 컬렉션의 자세한 로깅을 사용하도록 또는 사용하지 않도록 설정할 수 있습니다.
+
+1. Configuration Manager 콘솔에서 **자산 및 규정 준수** 작업 영역으로 이동하고 **디바이스** 노드를 선택하고, 대상 디바이스를 선택합니다.
+
+1. 리본 메뉴의 **홈** 탭에 있는 **디바이스** 그룹에서 **클라이언트 진단**을 선택 합니다. 사용 가능한 작업 중 하나를 선택합니다.
+
+자세한 내용은 [클라이언트 진단](/sccm/core/clients/manage/client-notification#client-diagnostics)을 참조하세요.
 
 ## <a name="BKMK_LogLocation"></a> 로그 파일 찾기
 

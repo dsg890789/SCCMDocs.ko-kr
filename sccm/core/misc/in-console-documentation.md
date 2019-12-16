@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec203fec08394a0df9d979b0a32f15741397947e
-ms.sourcegitcommit: 4d789c7e83ae13e22c1c9f6a33dce72d4ff5009d
+ms.openlocfilehash: f0bf382fc9b6dd5cb176755354bec0445b356306
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73842287"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660770"
 ---
 <!-- 
 - Feature 1357546
@@ -105,13 +105,11 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
 
-2019년 8월 13일부터 10월 24일 사이에 새로 제공되거나 업데이트된 지원 문서입니다.
+2019년 10월 25일부터 11월 27일 사이에 새로 제공되거나 업데이트된 지원 문서입니다.
 
-- [KB 4517137: Configuration Manager 작업 순서를 위한 디버그 배포에서 “잠시 기다려 주세요” 상태로 컴퓨터가 멈춤](https://support.microsoft.com/help/4517137)
-- [KB 4517138: 작업 순서를 위한 디버그 배포가 Configuration Manager에서 표시되지 않음](https://support.microsoft.com/help/4517138)
-- [KB 4517870: Configuration Manager SMS 공급자 서버가 Windows Server 2012 R2 또는 Windows Server 2012에 있는 경우 예약된 업데이트가 실패함](https://support.microsoft.com/help/4517870)
-- [KB 4458143: 클라이언트가 여러 기본 사이트에 할당되는 클라우드 DP에서 Contentinfo.tar을 다운로드할 때 해시 불일치 오류가 발생](https://support.microsoft.com/help/4458143)
-- [KB 4517482: 2019년 8월 .NET 4.7.2 업데이트가 Configuration Manager에서 동기화 실패](https://support.microsoft.com/help/4517482)
-- [KB 4517869: Configuration Manager 현재 분기, 버전 1906용 업데이트 롤업](https://support.microsoft.com/help/4517869)
+- [KB 4528414: Configuration Manager가 만료된 Endpoint Protection 정의 버전 및 마지막 업데이트 시간 표시함](https://support.microsoft.com/help/4528414/)
+- [KB 4529905: Configuration Manager 현재 분기 버전 1906의 콘텐츠 배포 지연](https://support.microsoft.com/help/4529905)
+- [KB 4529827: 구성 관리자 클라이언트가 공동 관리 상태를 잘못 감지함](https://support.microsoft.com/help/4529827)
+
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **Microsoft Endpoint Configuration Manager**를 선택하세요.  

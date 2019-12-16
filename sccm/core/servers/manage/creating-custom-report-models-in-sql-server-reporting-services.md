@@ -12,11 +12,11 @@ manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ab6cb2816096697d4ccff6db17f03e4aac1d4f14
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56127221"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62245275"
 ---
 # <a name="creating-custom-report-models-for-system-center-configuration-manager-in-sql-server-reporting-services"></a>SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기
 
@@ -137,7 +137,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 ###  <a name="BKMK_DeployReportModel"></a> To deploy the custom report model to Configuration Manager  
 
-1. 보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;프로젝트 이름\>.*  
+1. 보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\ *&lt;프로젝트 이름\>.*  
 
 2. 보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
 
@@ -147,7 +147,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 3. 텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
 
-4. _&lt;모델 이름\>_**.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
+4. _&lt;모델 이름\>_ **.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
 
     **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
 
@@ -157,9 +157,9 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 5. 파일 내용 전체를 Windows 클립보드에 복사합니다.  
 
-6. _&lt;모델 이름\>_**.dsv** 파일을 닫습니다.  
+6. _&lt;모델 이름\>_ **.dsv** 파일을 닫습니다.  
 
-7. _&lt;모델 이름\>_**.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
+7. _&lt;모델 이름\>_ **.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
 
     `</Entity>`  
 
@@ -167,11 +167,11 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
     `</SemanticModel>`  
 
-8. _&lt;모델 이름\>_**.dsv** 파일의 내용을 파일의 마지막 줄(**&lt;SemanticModel\>**) 바로 앞에 붙여넣습니다.  
+8. _&lt;모델 이름\>_ **.dsv** 파일의 내용을 파일의 마지막 줄( **&lt;SemanticModel\>** ) 바로 앞에 붙여넣습니다.  
 
-9. _&lt;모델 이름\>_**.smdl** 파일을 저장하고 닫습니다.  
+9. _&lt;모델 이름\>_ **.smdl** 파일을 저장하고 닫습니다.  
 
-10. _&lt;모델 이름\>_**.smdl** 파일을 Configuration Manager 사이트 서버의 *%programfiles%* \Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
+10. _&lt;모델 이름\>_ **.smdl** 파일을 Configuration Manager 사이트 서버의 *%programfiles%* \Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
 
     > [!IMPORTANT]  
     >  보고서 모델 파일을 Configuration Manager 사이트 서버로 복사한 후 Configuration Manager 콘솔을 끝내고 다시 시작해야 **보고서 만들기 마법사**에서 보고서 모델을 사용할 수 있습니다.  
@@ -380,7 +380,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 #### <a name="to-deploy-the-custom-report-model-to-configuration-manager"></a>To deploy the custom report model to Configuration Manager  
 
-1. 보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;프로젝트 이름\>.*  
+1. 보고서 모델 프로젝트를 만든 폴더로 이동합니다. 예: %*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\ *&lt;프로젝트 이름\>.*  
 
 2. 보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
 
@@ -390,7 +390,7 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 3. 텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
 
-4. _&lt;모델 이름\>_**.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
+4. _&lt;모델 이름\>_ **.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
 
     **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
 
@@ -400,9 +400,9 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 5. 파일 내용 전체를 Windows 클립보드에 복사합니다.  
 
-6. _&lt;모델 이름\>_**.dsv** 파일을 닫습니다.  
+6. _&lt;모델 이름\>_ **.dsv** 파일을 닫습니다.  
 
-7. _&lt;모델 이름\>_**.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
+7. _&lt;모델 이름\>_ **.smdl** 파일에서 다음과 같이 표시된 파일의 마지막 세 줄을 찾습니다.  
 
     `</Entity>`  
 
@@ -410,11 +410,11 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
     `</SemanticModel>`  
 
-8. _&lt;모델 이름\>_**.dsv** 파일의 내용을 파일의 마지막 줄(**&lt;SemanticModel\>**) 바로 앞에 붙여넣습니다.  
+8. _&lt;모델 이름\>_ **.dsv** 파일의 내용을 파일의 마지막 줄( **&lt;SemanticModel\>** ) 바로 앞에 붙여넣습니다.  
 
-9. _&lt;모델 이름\>_**.smdl** 파일을 저장하고 닫습니다.  
+9. _&lt;모델 이름\>_ **.smdl** 파일을 저장하고 닫습니다.  
 
-10. _&lt;모델 이름\>_**.smdl** 파일을 Configuration Manager 사이트 서버의 *%programfiles%* \Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
+10. _&lt;모델 이름\>_ **.smdl** 파일을 Configuration Manager 사이트 서버의 *%programfiles%* \Microsoft Configuration Manager\AdminConsole\XmlStorage\Other 폴더에 복사합니다.  
 
     > [!IMPORTANT]  
     >  보고서 모델 파일을 Configuration Manager 사이트 서버로 복사한 후 Configuration Manager 콘솔을 끝내고 다시 시작해야 **보고서 만들기 마법사**에서 보고서 모델을 사용할 수 있습니다.  

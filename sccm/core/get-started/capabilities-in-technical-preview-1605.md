@@ -12,12 +12,12 @@ manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa84ade15cb3054385442e599e99c63fd10e9fd3
-ms.sourcegitcommit: 874d78f08714a509f61c52b154387268f5b73242
+ms.openlocfilehash: 0726f08d5c0e0e31e8a49cb792ac36954e47ae46
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56122256"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "65612614"
 ---
 # <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1605의 기능
 
@@ -338,19 +338,19 @@ ms.locfileid: "56122256"
 
 2.  **홈** 탭의 **배포** 그룹에서 **서버 그룹 배포 잠금 제거**를 클릭합니다. 클라이언트가 소프트웨어 업데이트를 설치하지 못한 경우와 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 못하도록 하는 경우 배포 잠금을 수동으로 제거할 수 있습니다.  
 
-##  <a name="BKMK_ATP"></a> Windows Defender Advanced Threat Protection 서비스에 대한 지원  
- Windows Defender ATP(Advanced Threat Protection)는 엔터프라이즈의 검색, 조사 및 네트워크에 대한 고급 공격에 대응하는 데 도움이 되는 새로운 서비스입니다. [Windows Defender ATP](https://blogs.windows.com/windowsexperience/2016/03/01/announcing-windows-defender-advanced-threat-protection)에 대해 자세히 알아봅니다. Configuration Manager는 관리되는 Windows 10 Anniversary Edition 클라이언트 디바이스를 등록하고 모니터링하는 데 도움이 될 수 있습니다.  
+##  <a name="BKMK_ATP"></a> Microsoft Defender Advanced Threat Protection 서비스에 대한 지원  
+ Microsoft Defender ATP(Advanced Threat Protection)는 엔터프라이즈의 검색, 조사 및 네트워크에 대한 고급 공격에 대응하는 데 도움이 되는 새로운 서비스입니다. Microsoft Defender ATP의 이전 명칭은 Windows Defender ATP입니다. [Microsoft Defender ATP](https://blogs.windows.com/windowsexperience/2016/03/01/announcing-windows-defender-advanced-threat-protection)에 대해 자세히 알아보세요. Configuration Manager는 관리되는 Windows 10 Anniversary Edition 클라이언트 디바이스를 등록하고 모니터링하는 데 도움이 될 수 있습니다.  
 
 ### <a name="try-it-now"></a>지금 직접 사용해 보세요!  
  다음 작업을 완료해 보고 어떻게 작동하는지 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/ConfigMgr%20Customer%20Feedback) 페이지에서 사용자 의견 양식을 사용하여 알려주세요.  
 
-- Windows Defender ATP(Advanced Threat Protection) 온라인 서비스에 디바이스 온보딩  
+- Microsoft Defender ATP(Advanced Threat Protection) 온라인 서비스에 디바이스 온보딩  
 
-- 관리되는 디바이스에 Windows Defender ATP 배포 모니터링  
+- 관리형 디바이스에 대한 Microsoft Defender ATP 배포 모니터링  
 
   **전제 조건**  
 
-- Windows Defender Advanced Threat Protection 온라인 서비스에 대한 구독  
+- Microsoft Defender Advanced Threat Protection 온라인 서비스에 대한 구독  
 
 - Windows 10 Anniversary Edition(빌드 14328 이상)을 실행하는 클라이언트  
 
@@ -358,7 +358,7 @@ ms.locfileid: "56122256"
 
   ##### <a name="how-to-create-an-onboarding-configuration-file"></a>온보딩 구성 파일을 만드는 방법  
 
-  1.  Windows Defender ATP 온라인 서비스에 로그온합니다.  
+  1.  Microsoft Defender ATP 온라인 서비스에 로그온합니다.  
 
   2.  **클라이언트 온보딩** 메뉴 항목을 클릭합니다.  
 
@@ -367,13 +367,13 @@ ms.locfileid: "56122256"
   4.  압축된 보관 파일(.zip)을 다운로드하고 압축을 풉니다.  
 
 
-##### <a name="onboard-devices-for-windows-defender-atp"></a>Windows Defender ATP 디바이스 온보딩  
+##### <a name="onboard-devices-for-microsoft-defender-atp"></a>Microsoft Defender ATP에 대한 디바이스 온보딩  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Windows Defender ATP 정책 마법사가 열립니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Microsoft Defender ATP 정책 마법사가 열립니다.  
 
 2. Windows Defender ATP 정책의 **이름** 및 **설명**을 입력하고 **온보딩**을 선택합니다. 다음을 클릭합니다.  
 
-3. 조직의 Windows Defender ATP 클라우드 서비스 테넌트에서 제공하는 구성 파일을 **찾습니다**. **다음**을 클릭합니다.  
+3. 조직의 Microsoft Defender ATP 클라우드 서비스 테넌트에서 제공하는 구성 파일을 **찾습니다**. **다음**을 클릭합니다.  
 
 4. 분석을 위해 관리되는 디바이스에서 수집 및 공유되는 파일 샘플을 지정합니다.  
 
@@ -385,17 +385,17 @@ ms.locfileid: "56122256"
 
 5. 요약을 검토하고 마법사를 완료합니다.  
 
-6. 이제 **배포**를 클릭하면 관리되는 클라이언트 컴퓨터에 Windows Defender ATP 정책을 배포할 수 있습니다.  
+6. 이제 **배포**를 클릭하면 관리되는 클라이언트 컴퓨터에 Microsoft Defender ATP 정책을 배포할 수 있습니다.  
 
-##### <a name="monitor-windows-defender-atp"></a>Windows Defender ATP 모니터링  
+##### <a name="monitor-microsoft-defender-atp"></a>Microsoft Defender ATP 모니터링  
 
 1.  Configuration Manager 콘솔에서 **모니터링** > **개요** > **보안**으로 이동한 다음 **Windows Defender ATP**를 클릭합니다.  
 
-2.  Windows Defender Advanced Threat Protection 대시보드를 검토합니다.  
+2.  Microsoft Defender Advanced Threat Protection 대시보드를 검토합니다.  
 
-    -   **Windows Defender 에이전트 배포 상태** – 활성 Windows Defender ATP 정책이 온보딩된 적합한 관리되는 클라이언트 컴퓨터 수 및 백분율  
+    -   **Windows Defender 에이전트 배포 상태** – 활성 Windows Defender ATP 정책이 온보딩된 적합한 관리형 클라이언트 컴퓨터 수 및 백분율  
 
-    -   **Windows Defender ATP 에이전트 상태** – Windows Defender ATP 에이전트에 대한 상태를 보고하는 컴퓨터 클라이언트의 백분율  
+    -   **Windows Defender ATP 에이전트 상태** – Microsoft Defender ATP 에이전트에 대한 상태를 보고하는 컴퓨터 클라이언트의 백분율  
 
         -   **정상** - 정상적으로 작동  
 

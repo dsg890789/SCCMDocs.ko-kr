@@ -2,7 +2,7 @@
 title: 클라이언트 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라이언트를 관리하는 방법을 알아봅니다.
-ms.date: 09/05/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e49d91f3d01d598cb60d99debb52557432bcb2cc
-ms.sourcegitcommit: 4316bff400ffbde8404f8a2092ec17e3601b8d29
+ms.openlocfilehash: 690d37d2ce48851ab964011dcc41d94677ea7493
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70738188"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74658407"
 ---
 # <a name="how-to-manage-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 관리하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 클라이언트를 디바이스에 설치하고 사이트에 성공적으로 할당하면 **디바이스** 노드의 **자산 및 호환성** 작업 영역과 **디바이스 컬렉션** 노드의 컬렉션 하나 이상에 디바이스가 표시됩니다. 디바이스 또는 컬렉션을 선택한 후 관리 작업을 실행합니다. 그러나 다른 방법으로도 클라이언트를 관리할 수 있습니다. 이 경우 콘솔의 다른 작업 영역을 포함하거나 콘솔의 외부에서 작업을 수행할 수도 있습니다.  
 
@@ -29,7 +29,7 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 >
 > 구성 관리자 클라이언트가 설치되지 않은 경우에도 콘솔에 디바이스가 표시될 수 있습니다. 사이트에서 디바이스를 검색하지만, 클라이언트가 설치 및 할당되지 않은 경우에 이 동작이 발생합니다.
 >
-> [Exchange Server 커넥터](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync) 또는 [온-프레미스 MDM](/sccm/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)을 사용하여 관리되는 모바일 디바이스는 구성 관리자 클라이언트를 설치하지 않습니다.  
+> [Exchange Server 커넥터](/configmgr/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync) 또는 [온-프레미스 MDM](/configmgr/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)을 사용하여 관리되는 모바일 디바이스는 구성 관리자 클라이언트를 설치하지 않습니다.  
 >
 > 콘솔에서 디바이스를 관리하려면 **디바이스** 노드의 **클라이언트** 열을 사용하여 클라이언트가 설치되어 있는지 확인합니다.  
 
@@ -45,7 +45,7 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 
 사용자에게 소프트웨어를 효율적으로 배포할 수 있도록 사용자와 디바이스 간의 연결을 구성합니다.  
 
-자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
+자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/configmgr/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
 
 ### <a name="import-computer-information"></a>컴퓨터 정보 가져오기
 
@@ -59,28 +59,28 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 
 - **선택한 항목을 새 디바이스 컬렉션에 추가**: 새 컬렉션을 만들 수 있는 **디바이스 컬렉션 만들기 마법사**를 엽니다. 선택한 컬렉션은 **직접** 멤버 자격 규칙을 사용하여 이 컬렉션에 포함됩니다.  
 
-자세한 내용은 [컬렉션을 만드는 방법](/sccm/core/clients/manage/collections/create-collections)을 참조하세요.
+자세한 내용은 [컬렉션을 만드는 방법](/configmgr/core/clients/manage/collections/create-collections)을 참조하세요.
 
 ### <a name="install-client"></a>클라이언트 설치
 
 **클라이언트 설치 마법사**를 엽니다. 이 마법사는 클라이언트 강제 설치를 사용하여 선택한 디바이스에서 구성 관리자 클라이언트를 설치하거나 다시 설치합니다.
 
 > [!TIP]  
-> 구성 관리자 클라이언트를 설치하는 다른 여러 가지 방법이 있습니다. 클라이언트 강제 설치 마법사는 콘솔에서 편리한 클라이언트 설치 방법을 제공하지만, 이 방법은 여러 가지 종속성이 있어 일부 환경에서는 적합하지 않습니다. 종속성에 관한 자세한 내용은 [Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건](/sccm/core/clients/deploy/prerequisites-for-deploying-clients-to-windows-computers#client-push-installation)을 참조하세요. 다른 클라이언트 설치 방법에 관한 자세한 내용은 [클라이언트 설치 방법](/sccm/core/clients/deploy/plan/client-installation-methods)을 참조하세요.
+> 구성 관리자 클라이언트를 설치하는 다른 여러 가지 방법이 있습니다. 클라이언트 강제 설치 마법사는 콘솔에서 편리한 클라이언트 설치 방법을 제공하지만, 이 방법은 여러 가지 종속성이 있어 일부 환경에서는 적합하지 않습니다. 종속성에 관한 자세한 내용은 [Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건](/configmgr/core/clients/deploy/prerequisites-for-deploying-clients-to-windows-computers#client-push-installation)을 참조하세요. 다른 클라이언트 설치 방법에 관한 자세한 내용은 [클라이언트 설치 방법](/configmgr/core/clients/deploy/plan/client-installation-methods)을 참조하세요.
 
-자세한 내용은 [클라이언트 강제 설치를 사용하여 구성 관리자 클라이언트를 설치하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_ClientPush)을 참조하세요.
+자세한 내용은 [클라이언트 강제 설치를 사용하여 구성 관리자 클라이언트를 설치하는 방법](/configmgr/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_ClientPush)을 참조하세요.
 
 ### <a name="run-script"></a>스크립트 실행
 
 **스크립트 실행** 마법사를 열고 선택한 디바이스에서 PowerShell 스크립트를 실행합니다.
 
-자세한 내용은 [PowerShell 스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts)을 참조하세요.
+자세한 내용은 [PowerShell 스크립트 만들기 및 실행](/configmgr/apps/deploy-use/create-deploy-scripts)을 참조하세요.
 
 ### <a name="install-application"></a>애플리케이션 설치
 
 실시간으로 디바이스에 애플리케이션을 설치합니다. 이 기능을 사용하면 애플리케이션마다 별도의 컬렉션이 필요하지 않습니다.
 
-자세한 내용은 [디바이스용 애플리케이션 설치](/sccm/apps/deploy-use/install-app-for-device)를 참조하세요.
+자세한 내용은 [디바이스용 애플리케이션 설치](/configmgr/apps/deploy-use/install-app-for-device)를 참조하세요.
 
 ### <a name="reassign-site"></a>사이트 재할당
 
@@ -90,17 +90,17 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 
 같은 디바이스에 여러 클라이언트 설정을 배포한 경우 설정의 우선 순위 및 조합이 복잡합니다. 이 디바이스에 배포된 클라이언트 설정의 결과 세트를 보려면 이 옵션을 사용합니다.
 
-자세한 내용은 [클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
+자세한 내용은 [클라이언트 설정을 구성하는 방법](/configmgr/core/clients/deploy/configure-client-settings)을 참조하세요.
 
 ### <a name="start"></a>시작
 
 - **리소스 탐색기**를 실행하여 Windows 클라이언트에서 하드웨어 및 소프트웨어 인벤토리 정보를 확인합니다. 자세한 내용은 다음 아티클을 참조하세요.
 
-  - [하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](/sccm/core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory)
+  - [하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](/configmgr/core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory)
 
-  - [소프트웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](/sccm/core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory)
+  - [소프트웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](/configmgr/core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory)
 
-- **원격 제어**, **원격 지원** 또는 **원격 데스크톱 클라이언트**를 사용하여 디바이스를 원격으로 관리합니다. 자세한 내용은 [Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법](/sccm/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer)을 참조하세요.
+- **원격 제어**, **원격 지원** 또는 **원격 데스크톱 클라이언트**를 사용하여 디바이스를 원격으로 관리합니다. 자세한 내용은 [Windows 클라이언트 컴퓨터를 원격으로 관리하는 방법](/configmgr/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer)을 참조하세요.
 
 ### <a name="approve"></a>승인
 
@@ -120,7 +120,7 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 
 차단된 클라이언트를 차단 해제할 수도 있습니다.
 
-자세한 내용은 [클라이언트 차단 여부 결정](/sccm/core/clients/deploy/plan/determine-whether-to-block-clients)을 참조하세요.
+자세한 내용은 [클라이언트 차단 여부 결정](/configmgr/core/clients/deploy/plan/determine-whether-to-block-clients)을 참조하세요.
 
 <!-- Change Category is a hybrid action -->
 
@@ -128,21 +128,21 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 
 Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배포의 상태를 지우면 필수 PXE 배포를 재배포할 수 있습니다. 이 작업은 해당 배포의 상태를 다시 설정하고 가장 최근의 필수 배포를 다시 설치합니다.
 
-자세한 내용은 [PXE를 사용하여 네트워크를 통해 Windows 배포](/sccm/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network)를 참조하세요.
+자세한 내용은 [PXE를 사용하여 네트워크를 통해 Windows 배포](/configmgr/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network)를 참조하세요.
 
 ### <a name="client-notification"></a>클라이언트 알림
 
-자세한 내용은 [클라이언트 알림](/sccm/core/clients/manage/client-notification#client-notification)을 참조하세요.
+자세한 내용은 [클라이언트 알림](/configmgr/core/clients/manage/client-notification#client-notification)을 참조하세요.
 
 ### <a name="endpoint-protection"></a>Endpoint Protection
 
-자세한 내용은 [클라이언트 알림](/sccm/core/clients/manage/client-notification#endpoint-protection)을 참조하세요.
+자세한 내용은 [클라이언트 알림](/configmgr/core/clients/manage/client-notification#endpoint-protection)을 참조하세요.
 
 ### <a name="edit-primary-users"></a>기본 사용자 편집
 
 최근 90일 동안 이 디바이스의 사용자를 보거나 이 디바이스의 기본 사용자를 지정합니다.
 
-자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
+자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/configmgr/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
 
 ### <a name="wipe-a-mobile-device"></a>모바일 디바이스 초기화
 
@@ -163,7 +163,7 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 
 **사용 중지** 옵션은 온-프레미스 MDM에서 등록한 모바일 디바이스에서만 지원됩니다.  
 
-자세한 내용은 [원격 초기화, 원격 잠금 또는 암호 재설정으로 데이터 보호 지원](/sccm/mdm/deploy-use/wipe-lock-reset-devices)을 참조하세요.
+자세한 내용은 [원격 초기화, 원격 잠금 또는 암호 재설정으로 데이터 보호 지원](/configmgr/mdm/deploy-use/wipe-lock-reset-devices)을 참조하세요.
 
 ### <a name="change-ownership"></a>소유권 변경
 
@@ -173,7 +173,7 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 
 열 머리글을 마우스 오른쪽 단추로 클릭하고 선택하여 보려는 **Device Owner**(디바이스 소유자) 열을 추가해야 할 수 있습니다.
 
-자세한 내용은 [Hybrid MDM with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)(Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM)을 참조하세요.
+자세한 내용은 [Hybrid MDM with Configuration Manager and Microsoft Intune](/configmgr/mdm/understand/hybrid-mobile-device-management)(Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM)을 참조하세요.
 
 ### <a name="delete"></a>삭제
 
@@ -188,9 +188,9 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 
 클라이언트를 제거하려면 [구성 관리자 클라이언트 제거](#BKMK_UninstalClient)를 참조하세요.  
 
-새 기본 사이트에 클라이언트를 할당하려면 [사이트에 클라이언트를 할당하는 방법](/sccm/core/clients/deploy/assign-clients-to-a-site)을 참조하세요.
+새 기본 사이트에 클라이언트를 할당하려면 [사이트에 클라이언트를 할당하는 방법](/configmgr/core/clients/deploy/assign-clients-to-a-site)을 참조하세요.
 
-컬렉션에서 클라이언트를 제거하려면 컬렉션 속성을 다시 구성하세요. 자세한 내용은 [컬렉션을 관리하는 방법](/sccm/core/clients/manage/collections/manage-collections)을 참조하세요.
+컬렉션에서 클라이언트를 제거하려면 컬렉션 속성을 다시 구성하세요. 자세한 내용은 [컬렉션을 관리하는 방법](/configmgr/core/clients/manage/collections/manage-collections)을 참조하세요.
 
 ### <a name="refresh"></a>새로 고침
 
@@ -200,7 +200,7 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 
 클라이언트를 대상으로 하는 검색 데이터 및 배포를 볼 수 있습니다.
 
-작업 순서에서 디바이스에 OS를 배포하는 데 사용하는 변수를 구성할 수도 있습니다. 자세한 내용은 [컴퓨터 및 컬렉션에 관한 순서 변수 만들기](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#BKMK_CreateTSVariables)를 참조하세요.
+작업 순서에서 디바이스에 OS를 배포하는 데 사용하는 변수를 구성할 수도 있습니다. 자세한 내용은 [디바이스 및 컬렉션에 대한 작업 순서 변수 만들기](/configmgr/osd/understand/using-task-sequence-variables#bkmk_set-coll-var)를 참조하세요.
 
 
 ## <a name="BKMK_ManagingClients_DeviceCollectionsNode"></a> **디바이스 컬렉션** 노드에서 클라이언트 관리
@@ -213,7 +213,7 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 - 디바이스가 낮은 대역폭 네트워크 연결로 연결되나요?
 - 모든 디바이스에서 이 작업을 완료하는 데 시간이 얼마나 걸리나요?
 
-자세한 내용은 [컬렉션을 관리하는 방법](/sccm/core/clients/manage/collections/manage-collections)을 참조하세요.
+자세한 내용은 [컬렉션을 관리하는 방법](/configmgr/core/clients/manage/collections/manage-collections)을 참조하세요.
 
 
 ## <a name="restart-clients"></a>클라이언트 다시 시작
@@ -221,7 +221,7 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 Configuration Manager 콘솔을 사용하여 다시 시작이 필요한 클라이언트를 식별합니다. 그런 다음 클라이언트 알림 작업을 사용하여 다시 시작합니다.
 
 > [!Tip]
-> 힘을 덜 들이고 클라이언트를 최신 상태로 유지하려면 자동 클라이언트 업그레이드를 사용 설정하세요. 자세한 내용은 [자동 클라이언트 업그레이드 정보](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#bkmk_autoupdate)를 참조하세요.
+> 힘을 덜 들이고 클라이언트를 최신 상태로 유지하려면 자동 클라이언트 업그레이드를 사용 설정하세요. 자세한 내용은 [자동 클라이언트 업그레이드 정보](/configmgr/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#bkmk_autoupdate)를 참조하세요.
 
 다시 시작을 보류한 디바이스를 식별하려면 Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동하고 **디바이스** 노드를 선택합니다. 세부 정보 창의 **다시 시작 보류 중**이라는 새 열에서 각 디바이스에 대한 상태를 확인할 수 있습니다. 각 디바이스에는 다음 값 중 하나 이상이 있습니다.
 
@@ -236,14 +236,14 @@ Configuration Manager 콘솔을 사용하여 다시 시작이 필요한 클라�
 1. 콘솔의 **디바이스 컬렉션** 노드의 컬렉션 내에서 다시 시작하려는 디바이스를 선택합니다.
 2. 리본에서 **클라이언트 알림**을 선택한 후 **다시 시작**을 선택합니다. 다시 시작에 대한 정보 창이 열립니다. **확인**을 선택하여 다시 시작 요청을 확인합니다.
 
-클라이언트에서 알림을 받으면 **소프트웨어 센터** 알림 창이 열려 사용자에게 다시 시작을 알려줍니다. 기본적으로 90분 후에 다시 시작됩니다. [클라이언트 설정](/sccm/core/clients/deploy/configure-client-settings)을 구성하여 다시 시작 시간을 수정할 수 있습니다. 다시 시작 동작에 대한 설정은 기본 설정의 [컴퓨터 다시 시작](/sccm/core/clients/deploy/about-client-settings#computer-restart) 탭에 있습니다.
+클라이언트에서 알림을 받으면 **소프트웨어 센터** 알림 창이 열려 사용자에게 다시 시작을 알려줍니다. 기본적으로 90분 후에 다시 시작됩니다. [클라이언트 설정](/configmgr/core/clients/deploy/configure-client-settings)을 구성하여 다시 시작 시간을 수정할 수 있습니다. 다시 시작 동작에 대한 설정은 기본 설정의 [컴퓨터 다시 시작](/configmgr/core/clients/deploy/about-client-settings#computer-restart) 탭에 있습니다.
 
 
 ## <a name="BKMK_ClientCache"></a> 클라이언트 캐시 구성
 
 클라이언트에서 애플리케이션 및 프로그램을 설치할 때 클라이언트 캐시에는 임시 파일이 저장됩니다. 소프트웨어 업데이트도 클라이언트 캐시를 사용하지만 크기 설정에 관계 없이 항상 캐시에 다운로드하려고 시도합니다. 클라이언트를 수동으로 설치하거나, 클라이언트 강제 설치를 사용할 때 또는 클라이언트를 설치한 후에 크기 및 위치와 같은 캐시 설정을 구성합니다.
 
-Configuration Manager 콘솔에서 클라이언트 설정을 사용하여 캐시 폴더 크기를 지정할 수 있습니다. 자세한 내용은 [클라이언트 캐시 설정](/sccm/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
+Configuration Manager 콘솔에서 클라이언트 설정을 사용하여 캐시 폴더 크기를 지정할 수 있습니다. 자세한 내용은 [클라이언트 캐시 설정](/configmgr/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
 
 구성 관리자 클라이언트 캐시의 기본 위치는 `%windir%\ccmcache`이고 기본 디스크 공간은 5120MB입니다.  
 
@@ -284,9 +284,9 @@ Configuration Manager 클라이언트는 배포를 받자마자 필수 소프트
   - SMSCACHESIZE  
 
     > [!NOTE]
-    > SMSCACHESIZE 대신 Configuration Manager 콘솔의 **클라이언트 설정**에서 사용할 수 있는 캐시 크기 설정을 사용합니다. 자세한 내용은 [클라이언트 캐시 설정](/sccm/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
+    > SMSCACHESIZE 대신 Configuration Manager 콘솔의 **클라이언트 설정**에서 사용할 수 있는 캐시 크기 설정을 사용합니다. 자세한 내용은 [클라이언트 캐시 설정](/configmgr/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
 
-CCMSetup.exe에 이러한 명령줄 속성을 사용하는 방법에 대한 자세한 내용은 [클라이언트 설치 속성 정보](/sccm/core/clients/deploy/about-client-installation-properties)를 참조하세요.
+CCMSetup.exe에 이러한 명령줄 속성을 사용하는 방법에 대한 자세한 내용은 [클라이언트 설치 속성 정보](/configmgr/core/clients/deploy/about-client-installation-properties)를 참조하세요.
 
 ### <a name="configure-the-cache-during-client-push-installation"></a>클라이언트를 강제 설치하는 동안 캐시 구성  
 
@@ -305,9 +305,9 @@ CCMSetup.exe에 이러한 명령줄 속성을 사용하는 방법에 대한 자�
    - SMSCACHESIZE  
 
      > [!NOTE]
-     > SMSCACHESIZE 대신 Configuration Manager 콘솔의 **클라이언트 설정**에서 사용할 수 있는 캐시 크기 설정을 사용합니다. 자세한 내용은 [클라이언트 캐시 설정](/sccm/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
+     > SMSCACHESIZE 대신 Configuration Manager 콘솔의 **클라이언트 설정**에서 사용할 수 있는 캐시 크기 설정을 사용합니다. 자세한 내용은 [클라이언트 캐시 설정](/configmgr/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
 
-     CCMSetup.exe에 이러한 명령줄 속성을 사용하는 방법에 대한 자세한 내용은 [클라이언트 설치 속성 정보](/sccm/core/clients/deploy/about-client-installation-properties)를 참조하세요.  
+     CCMSetup.exe에 이러한 명령줄 속성을 사용하는 방법에 대한 자세한 내용은 [클라이언트 설치 속성 정보](/configmgr/core/clients/deploy/about-client-installation-properties)를 참조하세요.  
 
 ### <a name="configure-the-cache-on-the-client-computer"></a>클라이언트 컴퓨터에서 캐시 구성  
 
@@ -319,7 +319,7 @@ CCMSetup.exe에 이러한 명령줄 속성을 사용하는 방법에 대한 자�
 
 ### <a name="configure-client-cache-size-in-client-settings"></a>클라이언트 설정에서 클라이언트 캐시 크기 구성
 
-클라이언트를 다시 설치하지 않고 클라이언트 캐시의 크기를 조정합니다. Configuration Manager 콘솔의 **클라이언트 설정**에서 사용할 수 있는 캐시 크기 설정을 사용합니다. 자세한 내용은 [클라이언트 캐시 설정](/sccm/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
+클라이언트를 다시 설치하지 않고 클라이언트 캐시의 크기를 조정합니다. Configuration Manager 콘솔의 **클라이언트 설정**에서 사용할 수 있는 캐시 크기 설정을 사용합니다. 자세한 내용은 [클라이언트 캐시 설정](/configmgr/core/clients/deploy/about-client-settings#client-cache-settings)을 참조하세요.
 
 
 ## <a name="BKMK_UninstalClient"></a> 클라이언트 제거
@@ -387,6 +387,14 @@ Configuration Manager에서 PXE 부팅 및 클라이언트 등록을 위해 무�
 
 3. **클라이언트 승인 및 충돌 레코드** 탭으로 전환합니다. 새 하드웨어 식별자를 추가하려면 **중복 하드웨어 식별자** 섹션에서 **추가**를 선택합니다.
 
+> [!TIP]
+> 버전 1910부터, 다음 PowerShell cmdlet을 사용하여 중복 하드웨어 식별자 관리를 자동화합니다.<!-- 4852819 -->
+>
+> - New-CMDuplicateHardwareIdGuid
+> - Remove-CMDuplicateHardwareIdGuid
+> - New-CMDuplicateHardwareIdMacAddress
+> - Remove-CMDuplicateHardwareIdMacAddress
+
 
 ## <a name="BKMK_PolicyRetrieval"></a> 정책 검색 시작
 
@@ -418,7 +426,7 @@ Configuration Manager에서 PXE 부팅 및 클라이언트 등록을 위해 무�
 
 ### <a name="bkmk_policy-support"></a> 지원 센터를 사용하여 클라이언트 정책 검색 시작
 
-지원 센터를 사용하여 클라이언트 정책을 요청하고 확인합니다. 자세한 내용은 [지원 센터 참조](/sccm/core/support/support-center-ui-reference#bkmk_support-policy)를 참조하세요.
+지원 센터를 사용하여 클라이언트 정책을 요청하고 확인합니다. 자세한 내용은 [지원 센터 참조](/configmgr/core/support/support-center-ui-reference#bkmk_support-policy)를 참조하세요.
 
 ### <a name="bkmk_policy-script"></a> 스크립트를 사용하여 클라이언트 정책 검색 시작  
 
@@ -432,7 +440,7 @@ Configuration Manager에서 PXE 부팅 및 클라이언트 등록을 위해 무�
     ```  
 
     > [!TIP]
-    > 일정 ID에 관한 자세한 내용은 [메시지 ID](/sccm/core/support/send-schedule-tool#bkmk_sendschedule-guids)를 참조하세요.
+    > 일정 ID에 관한 자세한 내용은 [메시지 ID](/configmgr/core/support/send-schedule-tool#bkmk_sendschedule-guids)를 참조하세요.
 
 3. .ps1 확장명으로 파일을 저장합니다.  
 

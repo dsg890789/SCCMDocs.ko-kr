@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05b2a01c66cba7119bc8752dc3ed6f4a4a9ab7da
-ms.sourcegitcommit: 3ecba0573e7b1c99de3291dbeb29a5de432ce647
+ms.openlocfilehash: 09357d591bde8c2585291b7de12d1f1f7388a94b
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715912"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660702"
 ---
 # <a name="whats-new-in-version-1906-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1906의 새로운 기능
 
@@ -340,7 +340,7 @@ OneTrace는 지원 센터의 새 로그 뷰어입니다. CMTrace와 비슷하게
 <!--3699337-->
 Configuration Manager 콘솔이 응답하지 않는 경우 잠금으로 인해 작업 순서를 더 이상 변경하지 못할 수 있습니다. 이제는 잠긴 작업 순서에 액세스하려고 할 때 **변경 내용을 취소**하고 계속 개체를 편집할 수 있습니다.
 
-자세한 내용은 [작업 순서 관리](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#bkmk_sedo)를 참조하세요.
+자세한 내용은 [작업 순서 편집기 사용](/sccm/osd/understand/task-sequence-editor#bkmk_sedo)을 참조하세요.
 
 ### <a name="pre-cache-driver-packages-and-os-images"></a>드라이버 패키지 및 OS 이미지 사전 캐시
 
@@ -398,7 +398,7 @@ Configuration Manager 콘솔이 응답하지 않는 경우 잠금으로 인해 �
 >
 > - 현재 분기 버전 1806을 기준으로 Silverlight 사용자 환경은 지원되지 않습니다.
 > - 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다.
-> - 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> - 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 
 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat) 및 [소프트웨어 센터 계획](/sccm/apps/plan-design/plan-for-software-center)을 참조하세요.
 
@@ -615,7 +615,7 @@ Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편
 이 버전부터 다음 기능은 더 이상 시험판 기능이 아닙니다.
 
 - [SMS 공급자 관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)
-- [Device Guard 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)
+- [Windows Defender Application Control 관리](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)
 
 새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1906의 변경 내용 요약](https://support.microsoft.com/help/4514258)을 참조하세요.
 

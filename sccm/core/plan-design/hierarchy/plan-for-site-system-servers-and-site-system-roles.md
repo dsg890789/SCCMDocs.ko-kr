@@ -2,7 +2,7 @@
 title: 사이트 시스템 역할 계획
 titleSuffix: Configuration Manager
 description: Configuration Manager 계층 구조를 계획할 때 사이트 시스템 서버 및 사이트 시스템 역할을 고려하세요.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1af17ad6ac9350c6fb78644b0cc2592f6a529595
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: 13353f6798196b6f096297b8eb016eceda8df70e
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536672"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74660067"
 ---
 # <a name="plan-for-site-system-servers-and-site-system-roles-in-configuration-manager"></a>Configuration Manager에서 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획
 
@@ -61,7 +61,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 
 사이트는 이 역할을 사이트 데이터베이스의 인스턴스를 보유하는 사이트 시스템 서버에 할당합니다. 이 역할은 사이트 데이터베이스를 호스트하는 데 SQL Server의 다른 인스턴스를 사용하도록 사이트를 수정하는 설치 프로그램을 실행하여 새 서버로만 옮길 수 있습니다.  
 
-### <a name="sms-provider"></a>사이트 데이터베이스
+### <a name="sms-provider"></a>SMS 공급자
 
 사이트가 SMS 공급자의 인스턴스를 호스트하는 각 컴퓨터에 이 역할을 할당합니다. 공급자는 Configuration Manager 콘솔과 사이트 데이터베이스 사이의 인터페이스입니다. 기본적으로 이 역할은 중앙 관리 사이트 및 기본 사이트의 사이트 서버에 자동으로 설치됩니다. 추가 관리자가 액세스할 수 있도록 또는 중복성을 위해 각 사이트에서 추가 인스턴스를 설치할 수 있습니다.  
 
@@ -70,7 +70,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 ### <a name="application-catalog-web-service-point"></a>애플리케이션 카탈로그 웹 서비스 지점
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터는 업데이트된 클라이언트가 사용자 이용 가능 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >
@@ -82,7 +82,7 @@ Configuration Manager 사이트마다 다른 사이트 시스템 역할을 지�
 ### <a name="application-catalog-website-point"></a>애플리케이션 카탈로그 웹 사이트 지점
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터는 업데이트된 클라이언트가 사용자 이용 가능 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 2019년 10월 31일 이후 첫 번째 현재 분기 릴리스에서는 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >

@@ -12,11 +12,11 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4439aa280edaffbb59f8d49ece58e067a729ec91
-ms.sourcegitcommit: 9aebc20b25cdef0af908918ccfd791f3264a5d94
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "56755429"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "62199457"
 ---
 # <a name="remote-actions-with-co-management"></a>공동 관리를 사용하는 원격 작업
 
@@ -49,7 +49,7 @@ ms.locfileid: "56755429"
 
 글로벌 컨설팅 회사 Avanade는 정기적으로 원격 작업을 사용하여 30,000여 직원이 사용하는 디바이스를 관리합니다. [최근 블로그 게시물](https://www.microsoft.com/microsoft-365/blog/2018/02/07/the-future-is-on-the-other-side-of-this-bridge/)에서 Avanade의 CIO는 다음과 같이 밝혔습니다.
 
-> *Intune 기능에서 바로 얻을 수 있는 이점은 머신의 Windows를 원격으로 초기화할 수 있다는 것이었습니다. 이 기능은 특히 외근이 잦은 모바일 인력에게 자주 발생하는 머신 분실 또는 도난 사고에 대응하는 데 유용합니다.*
+> *Intune 기능에서 바로 얻을 수 있는 이점은 머신의 Windows를 원격으로 초기화할 수 있다는 것이었습니다. 이 기능은 특히 외근이 잦은 모바일 인력에게 자주 발생하는 머신 분실 또는 도난 사고에 대응하는 데 유용합니다.* 
 > *이 기능이 없었다면 사용자 지정 ConfigMgr 패키지를 빌드하고 유지 관리해야 했을 것입니다.*
 
 이러한 원격 작업을 사용하는 방법에 대한 자세한 내용은 [사용 가능한 디바이스 작업](https://docs.microsoft.com/intune/device-management#available-device-actions)을 참조하세요.
