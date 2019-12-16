@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a2ac3c1a8941807544700a9e5224808cceea8ba
-ms.sourcegitcommit: 13ac4f5e600dc1edf69e8566e00968f40e1d1761
+ms.openlocfilehash: 43ec12b596755a5c57290d9f567f6c070ad8881a
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70892103"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74661280"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
@@ -26,7 +26,7 @@ ms.locfileid: "70892103"
 데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
 
 > [!Note]  
-> Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
+> 버전 1910에서는 Configuration Manager가 기본적으로 이 기능을 사용하도록 설정합니다. 1906 이전 버전에서 Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
 
 데이터 웨어하우스는 최대 2TB의 데이터를 지원하며 변경 내용 추적을 위한 타임스탬프가 있습니다. 데이터 웨어하우스는 Configuration Manager 사이트 데이터베이스의 데이터를 데이터 웨어하우스 데이터베이스에 자동으로 동기화하여 데이터를 저장합니다. 그러면 이 정보를 보고 서비스 지점에서 액세스할 수 있습니다. 데이터 웨어하우스 데이터베이스에 동기화된 데이터는 3년 동안 유지됩니다. 주기적으로 기본 제공 작업은 3년보다 오래된 데이터를 제거합니다.

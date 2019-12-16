@@ -5,22 +5,22 @@ description: 소프트웨어 센터의 기능에 대해 알아봅니다.
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.assetid: 9e68de6e-2b33-442b-b674-a382728d9529
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab07bb40e511b7bd862a4592842f2c1e6d69fff8
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: a662e768cf4657e0b0ef1889d6bd869d62c71efe
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536036"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74825631"
 ---
 # <a name="software-center-user-guide"></a>소프트웨어 센터 사용자 가이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 조직의 IT 관리자는 소프트웨어 센터를 사용하여 애플리케이션, 소프트웨어 업데이트를 설치하고 Windows를 업그레이드합니다. 이 사용자 가이드에서는 컴퓨터의 사용자에 대한 소프트웨어 센터의 기능에 대해 설명합니다.
 
@@ -32,13 +32,16 @@ ms.locfileid: "68536036"
 
 <!-- - Your IT admin may change the color of Software Center, and add your organization's logo. The images in this article show the default experience. -->
 
+## <a name="bkmk_open"></a> 소프트웨어 센터를 여는 방법
 
-## <a name="how-to-open-software-center"></a>소프트웨어 센터를 여는 방법
+Windows 10 컴퓨터에서 소프트웨어 센터를 시작하는 가장 간단한 방법은 **시작**을 누르고 `Software Center`를 입력하는 것입니다. 문자열을 모두 입력하지 않아도 Windows가 일치하는 결과를 찾아 줍니다.
 
-Windows 10 컴퓨터에서 소프트웨어 센터를 시작하는 가장 간단한 방법은 **시작**을 누르고 `Software Center`를 입력하는 것입니다.
+시작 메뉴를 탐색할 때 **Microsoft Endpoint Manager** 그룹 아래에서 **소프트웨어 센터** 아이콘을 찾습니다.
 
-시작 메뉴를 탐색하는 경우 **소프트웨어 센터** 아이콘에 대한 **Microsoft System Center** 그룹 아래에서 찾아봅니다.
+![Microsoft Endpoint Manager 시작 메뉴 아이콘](media/microsoft-endpoint-manager-start-menu.png)
 
+> [!NOTE]
+> 버전 1910에서는 시작 메뉴 경로가 변경되었습니다. 버전 1906 및 이전 버전에서는 폴더 이름이 **Microsoft System Center**였습니다. Configuration Manager를 버전 1910 이상으로 업데이트할 때는 내부 문서를 이 새 위치로 업데이트하시기 바랍니다.
 
 ## <a name="applications"></a>애플리케이션
 

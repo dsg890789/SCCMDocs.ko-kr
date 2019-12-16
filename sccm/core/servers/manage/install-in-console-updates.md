@@ -2,7 +2,7 @@
 title: 콘솔 내 업데이트
 titleSuffix: Configuration Manager
 description: Microsoft 클라우드에서 Configuration Manager에 업데이트 설치
-ms.date: 08/27/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,19 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08cde14b93b5f38aece4ee90f8148f467aab25e3
-ms.sourcegitcommit: 2d38de4846ea47a03cc884cbd3df27db48f64a6a
+ms.openlocfilehash: 944b502c2c4ae258cef693f7bc3f59ed22917fd9
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70110054"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74661246"
 ---
 # <a name="install-in-console-updates-for-configuration-manager"></a>Configuration Manager용 콘솔 내 업데이트 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 Microsoft 클라우드 서비스와 동기화하여 업데이트를 가져옵니다. 그런 다음, Configuration Manager 콘솔 내에서 이러한 업데이트를 설치합니다.
-
 
 ## <a name="get-available-updates"></a>사용 가능 업데이트 가져오기
 
@@ -102,13 +101,13 @@ Configuration Manager 콘솔 내에서 업데이트를 설치하기 전에 다�
 
 업데이트를 시작하기 전에 수행할 작업에 해당하는 업데이트 검사 목록을 검토합니다.
 
+- [업데이트 1910을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1910)  
+
 - [업데이트 1906을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1906)  
 
 - [업데이트 1902를 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1902)
 
 - [업데이트 1810을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1810)  
-
-- [업데이트 1806을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806)  
 
 ### <a name="bkmk_step2"></a> 2단계: 업데이트를 설치하기 전에 필수 조건 검사 실행  
 
@@ -210,11 +209,12 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 - 사이트 서버의 `<ConfigMgr_Installation_Directory>\Logs`에 있는 **CMUpdate.log** 파일을 봅니다.  
 
 >[!NOTE]
-> - 버전 1906부터 **설치**단계 동안 **ConfigMgr 데이터베이스 업그레이드** 작업의 상태를 볼 수 있습니다.
->   - 데이터베이스 업그레이드가 차단된 경우 **진행 중. 주의 필요**라는 경고가 표시됩니다.
->     - cmupdate.log는 데이터베이스 업그레이드를 차단하는 SQL의 프로그램 이름 및 sessionid를 기록합니다.
->   - 데이터베이스 업그레이드가 더 이상 차단되지 않으면 상태가 **진행 중** 또는 **완료**로 다시 설정됩니다.
->     - 데이터베이스 업그레이드가 차단되면 5분마다 업그레이드가 여전히 차단되는지 확인하는 작업이 수행됩니다.
+> 버전 1906부터 **설치**단계 동안 **ConfigMgr 데이터베이스 업그레이드** 작업의 상태를 볼 수 있습니다.
+>
+> - 데이터베이스 업그레이드가 차단된 경우 **진행 중. 주의 필요**라는 경고가 표시됩니다.
+>   - cmupdate.log는 데이터베이스 업그레이드를 차단하는 SQL의 프로그램 이름 및 sessionid를 기록합니다.
+> - 데이터베이스 업그레이드가 더 이상 차단되지 않으면 상태가 **진행 중** 또는 **완료**로 다시 설정됩니다.
+>   - 데이터베이스 업그레이드가 차단되면 5분마다 업그레이드가 여전히 차단되는지 확인하는 작업이 수행됩니다.
 
 #### <a name="4-when-the-update-installation-completes"></a>4. 업데이트 설치가 완료되면
 
@@ -236,7 +236,7 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 사이트가 업데이트되는 즉시 콘솔을 업데이트합니다.  
 
-콘솔 업데이트가 완료되면 콘솔 및 사이트 버전이 올바른지 확인합니다. 콘솔의 왼쪽 위에 있는 **System Center Configuration Manager 정보**로 이동합니다.  
+콘솔 업데이트가 완료되면 콘솔 및 사이트 버전이 올바른지 확인합니다. 콘솔의 왼쪽 위에 있는 **Configuration Manager 정보**로 이동합니다.  
 
 > [!Note]  
 > 콘솔 버전은 사이트 버전과 약간 다릅니다. 콘솔의 부 버전이 Configuration Manager 릴리스 버전에 해당합니다. 예를 들어, Configuration Manager 버전 1802에서 초기 사이트 버전은 5.0.8634.1000이고 초기 콘솔 버전은 5.**1802**.1082.1700입니다. 빌드(1082) 및 수정(1700) 번호는 향후 핫픽스에서 변경될 수 있습니다.
@@ -365,19 +365,17 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 - **필수 구성 요소 경고 무시**: 경고로 인해 업데이트 설치가 중지되면 **필수 구성 요소 경고 무시**를 선택할 수 있습니다. 이 작업을 수행하면 몇 분 후에 업데이트 설치가 계속 진행되며 필수 구성 요소 경고를 무시하는 옵션이 사용됩니다.  
 
-
 ## <a name="bkmk_after"></a> 사이트에서 업데이트를 설치한 후  
 
 사이트 업데이트 후 해당 버전에 대한 업데이트 후 검사 목록을 검토합니다.  
+
+- [버전 1910용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1910#post-update-checklist)  
 
 - [버전 1906용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1906#post-update-checklist)  
 
 - [버전 1902용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1902#post-update-checklist)  
 
 - [버전 1810용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1810#post-update-checklist)  
-
-- [버전 1806용 업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1806#post-update-checklist)  
-
 
 ## <a name="bkmk_options"></a> 업데이트에서 선택적 기능 사용  
 
@@ -403,6 +401,7 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 
 -->
 
+- [BitLocker 관리](/configmgr/protect/plan-design/bitlocker-management) <!-- 3601034,6DD56E46-C3EC-4E38-A16F-E98644BB6434 -->
 - [Azure Active Directory 그룹에 컬렉션 멤버 자격 결과 동기화](/sccm/core/clients/manage/collections/create-collections#bkmk_aadcollsync) <!--3607475,C2127144-C8DE-49F6-9CB3-D4F5B59F9515-->
 - [Azure Active Directory 사용자 그룹 검색](/sccm/core/servers/deploy/configure/configure-discovery-methods#bkmk_azuregroupdisco) <!--3611956,023715E7-BFBA-4E9E-A80F-B5B626464ADD-->
 - [애플리케이션 그룹](/sccm/apps/deploy-use/create-app-groups) <!--3555907,EE16A1D8-EF1B-4094-845F-AC107E7C621D-->
@@ -411,15 +410,10 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 - [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps) <!--1357892,CC3AE625-BF72-49B1-8AB1-AF0DCF2D6F4C-->
 - [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)<!--1357605,1352101,1358714;B5E192AE-C81F-4348-9EF9-07A3C0FBE597-->
 - [디바이스당 사용자에 대한 애플리케이션 요청 승인](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings) <!--1357015,4BA987C9-08FC-48E2-BFFE-C9DCF35B496A-->  
-- [iOS용 Cisco AnyConnect 4.0.07x 이상 지원](/sccm/mdm/deploy-use/create-vpn-profiles)<!--1357393,A421682F-C1A5-4933-A329-3EF35737E52A-->
 - [조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616,0E986DC1-D20A-4386-9EB5-108D9D5118EB-->
 - [스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459,566F8720-F415-4E10-9A51-CDE682BA2B2E-->
-- [작업 순서 실행 단계](/sccm/osd/understand/task-sequence-steps#child-task-sequence) <!--1261338,3CFFE6AC-D46F-47F0-AD25-19F6EEF21F28-->
-- [작업 순서 콘텐츠 사전 캐싱](/sccm/osd/deploy-use/configure-precache-content) <!--1021244,1C6BD2E9-C8DB-4DEE-A937-AA84B38957A7-->
 - [Surface 드라이버 업데이트](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490,82AD973A-7CDF-4B67-A665-72875D6E099A-->
 - [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway) <!--1101764,DD043119-789C-4158-AC79-725E999F385A-->
-- [데이터 웨어하우스 서비스 지점](/sccm/core/servers/manage/data-warehouse) <!--1277922,0EAC8088-6895-440F-B871-11E3C305CFCD-->
-- [클라이언트 피어 캐시](/sccm/core/plan-design/hierarchy/client-peer-cache) <!--1101436,4C5F2976-7999-4E0C-BAF2-DEB793AD540E-->
 - [PFX 만들기](/sccm/protect/deploy-use/introduction-to-certificate-profiles) <!--1321368,CED76B79-929C-4C45-981F-B9BCA6D38A17-->
 - [Azure Log Analytics 커넥터](/sccm/core/clients/manage/sync-data-log-analytics) <!--1258052,73A7EC4D-EF22-4EA4-82A9-419C2A8CFC4D-->
 - [Windows Defender Exploit Guard 정책](/sccm/protect/deploy-use/create-deploy-exploit-guard-policy) <!--1355468,8491D4C8-8484-46B8-BCD6-17DC2CADBAEB-->

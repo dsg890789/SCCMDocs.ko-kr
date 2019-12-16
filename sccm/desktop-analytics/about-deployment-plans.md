@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a36093b88887b6722d07c666dead67a9aa974b8a
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: 1cb1f2f2040a08d81387ecd2ba92c65efbdfb183
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72387093"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74734582"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>Desktop Analytics의 배포 계획에 대한 정보
 
@@ -83,6 +83,8 @@ Desktop Analytics를 Configuration Manager에 연결한 후 배포 계획에서 
 - 업그레이드를 차단하는 시스템에 다른 플러그 앤 플레이 구성 요소가 있음
 - XP 에뮬레이트된 드라이버를 사용하는 무선 구성 요소가 있음
 - 활성 연결이 있는 네트워크 구성 요소는 해당 드라이버를 손실합니다. 즉, 업그레이드 후 네트워크 연결이 끊어질 수 있습니다.
+
+**다시 설치**해야 한다는 Windows 업데이트 결정은 업그레이드에 현재 위치 업그레이드가 아닌 다시 설치가 필요함을 나타냅니다. 
 
 ### <a name="apps"></a>앱
 

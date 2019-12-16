@@ -2,7 +2,7 @@
 title: Desktop Analytics
 titleSuffix: Configuration Manager
 description: Configuration Manager와 통합된 Desktop Analytics 서비스의 개요입니다.
-ms.date: 10/14/2019
+ms.date: 12/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: overview
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76fa92c93a290c49c286be3bb1368dfdf8347ef3
-ms.sourcegitcommit: b64ed4a10a90b93a5bd5454b6efafda90ad45718
+ms.openlocfilehash: 95f39681835a381720de3bddd1b5773893660280
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72384981"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74734599"
 ---
 # <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
 
@@ -73,7 +73,7 @@ Desktop Analytics를 사용하려면 사용자 환경이 다음과 같은 필수
 
     - **작업 영역을 설정**하는 **작업 영역 소유자** 또는 **기여자** 및 다음 역할:  
 
-      - [**Desktop Analytics 관리자**](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 역할
+      - [**Desktop Analytics 관리자**](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#desktop-analytics-administrator-permissions) 역할
 
       - 기존 리소스 그룹에서 기존 작업 영역을 사용하거나 새 작업 영역을 만드는 리소스 그룹의 [**Log Analytics 기여자**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#log-analytics-contributor) 및 [**사용자 액세스 관리자**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator)
 
@@ -114,6 +114,10 @@ Desktop Analytics를 사용하려면 사용자 환경이 다음과 같은 필수
 ### <a name="licensing-and-costs"></a>라이선스 및 비용
 
 Desktop Analytics에 등록된 디바이스는 사용이 허가된 사용자만 사용할 수 있습니다.
+
+- Configuration Manager. 자세한 내용은 [Configuration Manager 라이선싱](/configmgr/core/understand/product-and-licensing-faq)을 참조하세요.
+
+및 
 
 - Windows 10 Enterprise E3 또는 E5(Microsoft 365 F1, E3 또는 E5에 포함됨)
 

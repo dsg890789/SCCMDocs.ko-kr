@@ -2,7 +2,7 @@
 title: Configuration Manager 콘솔
 titleSuffix: Configuration Manager
 description: Configuration Manager 콘솔을 통해 이동에 대해 알아봅니다.
-ms.date: 08/16/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,23 +11,35 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 593a479c713df76d63090749ee45cb89aeb413e4
-ms.sourcegitcommit: f7e4ff38d4b4afb49e3bccafa28514be406a9d7b
+ms.openlocfilehash: 2a76fd3338e8b15587b90b837af04affc691aa46
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549509"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74825669"
 ---
-# <a name="using-the-configuration-manager-console"></a>Configuration Manager 콘솔 사용
+# <a name="how-to-use-the-configuration-manager-console"></a>Configuration Manager 콘솔을 사용하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 관리자는 Configuration Manager 콘솔을 사용하여 Configuration Manager 환경을 관리합니다. 이 문서에서는 콘솔 탐색의 기본적인 사항을 다룹니다.  
 
+## <a name="bkmk_open"></a> 콘솔 열기
+
+Configuration Manager 콘솔은 항상 모든 사이트 서버에 설치됩니다. 다른 컴퓨터에 설치할 수도 있습니다. 자세한 내용은 [Configuration Manager 콘솔 설치](/configmgr/core/servers/deploy/install/install-consoles)를 참조하세요.
+
+Windows 10 컴퓨터에서 콘솔을 여는 가장 간단한 방법은 **시작**을 누르고 `Configuration Manager console`을 입력하는 것입니다. 문자열을 모두 입력하지 않아도 Windows가 일치하는 결과를 찾아 줍니다.
+
+시작 메뉴를 탐색할 때는 **Microsoft Endpoint Manager** 그룹 아래에서 **Configuration Manager 콘솔** 아이콘을 찾습니다.
+
+![Microsoft Endpoint Manager 시작 메뉴 아이콘](media/microsoft-endpoint-manager-start-menu.png)
+
+> [!NOTE]
+> 버전 1910에서는 시작 메뉴 경로가 변경되었습니다. 버전 1906 및 이전 버전에서는 폴더 이름이 **System Center**였습니다. Configuration Manager를 버전 1910 이상으로 업데이트할 때는 내부 문서를 이 새 위치로 업데이트하시기 바랍니다.
 
 ## <a name="connect-to-a-site-server"></a>사이트 서버에 연결
 
-콘솔은 중앙 관리 사이트 서버 또는 기본 사이트 서버에 연결합니다. Configuration Manager 콘솔을 보조 사이트에 연결할 수는 없습니다. [Configuration Manager 콘솔을 설치](/sccm/core/servers/deploy/install/install-consoles)할 수 있습니다. 설치하는 동안 콘솔이 연결하는 사이트 서버의 FQDN(정규화된 도메인 이름)을 지정했습니다.
+콘솔은 중앙 관리 사이트 서버 또는 기본 사이트 서버에 연결합니다. Configuration Manager 콘솔을 보조 사이트에 연결할 수는 없습니다. 설치하는 동안 콘솔이 연결하는 사이트 서버의 FQDN(정규화된 도메인 이름)을 지정했습니다.
 
 다른 사이트 서버에 연결하려면 다음 단계를 사용합니다.
 
@@ -41,12 +53,11 @@ ms.locfileid: "69549509"
 
 3. **연결**을 선택합니다.  
 
-1810 버전부터 관리자가 Configuration Manager 사이트에 액세스하는 데 필요한 최소 인증 수준을 지정할 수 있습니다. 이 기능은 관리자에게 필요한 수준으로 Windows에 로그인하도록 요구합니다. 자세한 내용은 [SMS 공급자 계획](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_auth)을 참조하세요. <!--1357013-->  
-
+1810 버전부터 관리자가 Configuration Manager 사이트에 액세스하는 데 필요한 최소 인증 수준을 지정할 수 있습니다. 이 기능은 관리자에게 필요한 수준으로 Windows에 로그인하도록 요구합니다. 자세한 내용은 [SMS 공급자 계획](/configmgr/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_auth)을 참조하세요. <!--1357013-->  
 
 ## <a name="navigation"></a>탐색
 
-콘솔의 일부 영역은 할당된 보안 역할에 따라 표시되지 않을 수 있습니다. 역할에 대한 자세한 내용은 [역할 기반 관리의 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)을 참조하세요.
+콘솔의 일부 영역은 할당된 보안 역할에 따라 표시되지 않을 수 있습니다. 역할에 대한 자세한 내용은 [역할 기반 관리의 기본 사항](/configmgr/core/understand/fundamentals-of-role-based-administration)을 참조하세요.
 
 ### <a name="workspaces"></a>작업 영역
 
@@ -108,21 +119,30 @@ Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다.
 
 ![Configuration Manager에서 열별 그룹화](media/column-group-by.png)  
 
+## <a name="bkmk_sedo"></a> 개체 편집을 위해 잠금 회수
+
+<!--4786915-->
+
+Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금상태가 끝날 때까지 어떤 변경 도 할 수 없습니다. 이 잠금은 Configuration Manager SEDO(erialized Editing of Distributed Objects) 시스템의 일부입니다. 자세한 내용은 [Configuration Manager SEDO](/configmgr/develop/core/understand/sedo)를 참조하세요.
+
+[현재 분기 버전 1906](/configmgr/core/plan-design/changes/whats-new-in-version-1906#reclaim-sedo-lock-for-task-sequences)부터 작업 순서 잠금을 해제할 수 있습니다. 버전 1910부터, Configuration Manager 콘솔에서 모든 개체에 대한 잠금을 해제할 수 있습니다.
+
+이 작업은 잠금에 대한 권한이 있는 사용자 계정 및 사이트에서 잠금을 허가한 동일한 디바이스에만 적용됩니다. 잠긴 개체에 액세스하려고 하면 이제 **변경 내용을 취소**하고, 계속 개체를 편집할 수 있습니다. 이러한 변경 내용은 잠금이 만료된 경우에도 손실됩니다.
 
 ## <a name="bkmk_viewconnected"></a> 최근에 연결된 콘솔 보기
 
 <!--3699367-->
 1902 버전부터는 Configuration Manager 콘솔에 대한 가장 최근의 연결을 볼 수 있습니다. 보기에는 활성 연결 및 최근에 연결된 연결이 포함되어 있습니다. 항상 목록에 현재 콘솔 연결이 표시되고 Configuration Manager 콘솔로부터의 연결만 표시됩니다. SMS 공급자에 대한 PowerShell 또는 다른 SDK 기반 연결이 표시되지 않습니다. 사이트는 목록에서 30일 이상된 인스턴스를 제거합니다.
 
-### <a name="prerequisites-to-view-connected-consoles"></a>연결된 콘솔을 보기 위한 필수 구성 요소
+### <a name="bkmk_connections-prereq"></a> 연결된 콘솔을 보기 위한 필수 구성 요소
 
 - 계정에 **SMS_Site** 개체에 대한 **읽기** 권한이 필요합니다.
 - SMS 공급자 서버에 IIS 설치 <!---SCCMDocs-pr issue 1326-->
 - SMS 공급자에서 인증서를 사용하도록 설정합니다.<!--SCCMDocs-pr issue 3135--> 다음 옵션 중 하나를 사용합니다.  
 
-    - [향상된 HTTP](/sccm/core/plan-design/hierarchy/enhanced-http) 사용(추천)
+    - [향상된 HTTP](/configmgr/core/plan-design/hierarchy/enhanced-http) 사용(추천)
     - SMS 공급자 역할을 호스팅하는 서버의 IIS에 있는 443 포트에 PKI 기반 인증서를 수동으로 바인딩  
-
+- **마지막 콘솔 하트비트**(버전 1910에서 도입됨)가 작동하려면 [관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)를 사용하도록 설정해야 합니다.
 ### <a name="view-connected-consoles"></a>연결된 콘솔 보기
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동합니다.  
@@ -136,9 +156,41 @@ Configuration Manager 콘솔에는 네 가지 **작업 영역**이 있습니다.
     - 연결된 사이트 코드
     - 콘솔 버전
     - 마지막으로 연결된 시간: 사용자가 마지막으로 콘솔을 *연* 때
+    - 버전 1910부터, **마지막으로 연결된 시간** 열이 **마지막 콘솔 하트비트** 열로 바뀌었습니다. <!--4923997-->
+       - **마지막 콘솔 하트비트**가 작동하려면 [관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)를 사용하도록 설정해야 합니다.
+       - 전경에서 열린 콘솔이 10분마다 하트 비트를 보냅니다.
 
 ![Configuration Manager 콘솔 연결 보기](media/console-connections.png) 
+## <a name="bkmk_message"></a> 콘솔 연결에서 관리자에게 메시지 보내기
+<!--4923997-->
+*(버전 1910에서 도입됨)*
 
+버전 1910부터, **콘솔 연결** 노드에서 다른 Configuration Manager 관리자에게 메시지를 보낼 수 있습니다. 다른 관리자에게 메시지를 보내려고 시도하면 Microsoft Teams가 실행되고 해당 사용자가 포함된 대화가 열립니다.
+
+### <a name="prerequisites-for-messaging-administrators"></a>관리자에게 메시지를 보내기 위한 필수 구성 요소
+
+- 메시지 관리자의 경우 메시지를 표시할 계정이 [Azure AD 또는 AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#bkmk_aboutUser)을 통해 검색되어야 합니다.
+- 콘솔을 실행하는 디바이스에 설치된 Microsoft Teams.
+참고
+- [연결된 콘솔을 보기 위한 필수 구성 요소](#bkmk_connections-prereq) 모두
+
+### <a name="message-administrators"></a>관리자에게 메시지 보내기
+
+1. **관리** > **보안** > **콘솔 연결**로 이동합니다.
+1. 사용자의 콘솔 연결을 마우스 오른쪽 단추로 클릭하고 **메시지 관리자**를 선택합니다.
+    - 선택한 관리자에 대한 사용자 계정 이름을 찾을 수 없는 경우 **메시지 관리자**가 회색으로 표시됩니다.
+    - Microsoft Teams가 콘솔을 실행하는 디바이스에 설치되어 있지 않으면 다운로드 링크를 포함한 오류 메시지가 표시됩니다.
+    - Microsoft Teams가 콘솔을 실행하는 디바이스에 설치되어 있는 경우 사용자와의 채팅이 열립니다.
+
+![Microsoft Teams가 포함된 메시지 관리자 스크린샷](media/4923997-message-administrator.png)
+
+### <a name="known-issues"></a>알려진 문제
+
+다음 레지스트리 키가 없는 경우 Microsoft Teams가 설치되지 않았음을 알리는 오류 메시지가 표시되지 않습니다.
+
+Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+
+이 문제를 해결하려면 수동으로 레지스트리 키를 만듭니다.
 
 ## <a name="bkmk_notify"></a> Configuration Manager 콘솔 알림
 
@@ -263,7 +315,7 @@ Configuration Manager 콘솔에는 다음과 같은 명령줄 옵션이 있습�
 
 - **제안 보내기**: UserVoice로 이동하여 아이디어를 공유합니다.  
 
-자세한 내용은 [제품 피드백](/sccm/core/understand/find-help#BKMK_1806Feedback)을 참조하세요.
+자세한 내용은 [제품 피드백](/configmgr/core/understand/find-help#BKMK_1806Feedback)을 참조하세요.
 
 
 ### <a name="assets-and-compliance-workspace"></a>자산 및 규정 준수 작업 영역
@@ -317,7 +369,7 @@ Configuration Manager 콘솔의 디바이스 보기에서 MAC 주소를 검색�
 - **현재 로그온한 사용자** <!--1358202-->  
 
     > [!NOTE]  
-    > 현재 로그온한 사용자를 보려면 [사용자 검색](/sccm/core/servers/deploy/configure/configure-discovery-methods#bkmk_config-adud) 및 [사용자 디바이스 선호도](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)가 필요합니다.  
+    > 현재 로그온한 사용자를 보려면 [사용자 검색](/configmgr/core/servers/deploy/configure/configure-discovery-methods#bkmk_config-adud) 및 [사용자 디바이스 선호도](/configmgr/apps/deploy-use/link-users-and-devices-with-user-device-affinity)가 필요합니다.  
 
 기본이 아닌 열을 표시하는 방법에 대한 자세한 내용은 [열](#columns)을 참조하세요.
 
@@ -340,7 +392,7 @@ Configuration Manager 콘솔의 디바이스 보기에서 MAC 주소를 검색�
 <!--4616810-->
 *(버전 1906에서 도입됨)*
 
-**소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 펼치고 **작업 순서** 노드를 선택합니다. 작업 순서를 편집하고 [패키지 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallPackage) 단계를 선택하거나 추가합니다. 패키지에 둘 이상의 프로그램이 있는 경우 이제 드롭다운 목록이 프로그램을 사전순으로 정렬합니다.
+**소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 펼치고 **작업 순서** 노드를 선택합니다. 작업 순서를 편집하고 [패키지 설치](/configmgr/osd/understand/task-sequence-steps#BKMK_InstallPackage) 단계를 선택하거나 추가합니다. 패키지에 둘 이상의 프로그램이 있는 경우 이제 드롭다운 목록이 프로그램을 사전순으로 정렬합니다.
 
 #### <a name="task-sequences-tab-in-applications-node"></a>애플리케이션 노드의 작업 순서 탭
 <!--4616810-->
@@ -428,9 +480,11 @@ Configuration Manager 콘솔의 디바이스 보기에서 MAC 주소를 검색�
 ### <a name="administration-workspace"></a>관리 작업 영역
 
 <!--4223683-->
-버전 1906부터 관리 서비스를 사용하도록 **보안** 노드의 일부 노드를 사용하도록 설정할 수 있습니다. 이 변화 덕분에 콘솔이 WMI 대신 HTTPS를 통해 SMS 공급자와 통신할 수 있습니다. 자세한 정보는 [관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)를 참조하세요.
+버전 1906부터 관리 서비스를 사용하도록 **보안** 노드의 일부 노드를 사용하도록 설정할 수 있습니다. 이 변화 덕분에 콘솔이 WMI 대신 HTTPS를 통해 SMS 공급자와 통신할 수 있습니다. 자세한 정보는 [관리 서비스](/configmgr/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)를 참조하세요.
 
 
 ## <a name="next-steps"></a>다음 단계
 
-[접근성 기능](/sccm/core/understand/accessibility-features)
+[접근성 기능](/configmgr/core/understand/accessibility-features)
+
+[작업 순서 편집기](/configmgr/osd/understand/task-sequence-editor#bkmk_conditions)

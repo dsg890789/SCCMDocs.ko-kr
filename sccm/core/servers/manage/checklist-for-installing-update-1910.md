@@ -1,0 +1,314 @@
+---
+title: 1910에 대한 검사 목록
+titleSuffix: Configuration Manager
+description: Configuration Manager 버전 1910으로 업데이트하기 전에 수행할 작업을 알아봅니다.
+ms.date: 11/29/2019
+ms.prod: configuration-manager
+ms.technology: configmgr-other
+ms.topic: conceptual
+ms.assetid: 9afb4452-9e58-40eb-bfd8-cbf9042a2790
+author: mestew
+ms.author: mstewart
+manager: dougeby
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 70f4e3feac8d40981dad16d72d98710bf77630f9
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74662831"
+---
+# <a name="checklist-for-installing-update-1910-for-configuration-manager"></a>Configuration Manager용 업데이트 1910을 설치하기 위한 검사 목록
+
+*적용 대상: Configuration Manager(현재 분기)*
+
+Configuration Manager의 현재 분기를 사용하는 경우 버전 1910용 콘솔 내 업데이트를 설치하여 이전 버전의 계층 구조를 업데이트할 수 있습니다. <!-- baseline only statement:(Because version 1902 is also available as [baseline media](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions), you can use the installation media to install the first site of a new hierarchy.)-->
+
+버전 1910용 업데이트를 가져오려면 계층 구조의 최상위 사이트에서 서비스 연결점을 사용해야 합니다. 이 사이트 시스템 역할은 온라인 또는 오프라인 모드에 있을 수 있습니다. 서비스 연결점이 오프라인인 상태에서 업데이트를 다운로드하려면 [서비스 연결점 도구를 사용](/sccm/core/servers/manage/use-the-service-connection-tool)하세요.<!-- SCCMDocs#1946 -->
+
+계층 구조가 Microsoft에서 업데이트 패키지를 다운로드한 후 콘솔에서 찾습니다. **관리** 작업 영역에서 **업데이트 및 서비스** 노드를 선택합니다.
+
+- 업데이트가 **사용 가능**으로 나열되면 업데이트를 설치할 준비가 된 것입니다. 버전 1910을 설치하기 전에 [업데이트 1910 설치 정보](#about-installing-update-1910) 및 업데이트를 시작하기 전에 수행할 구성에 대한 [검사 목록](#checklist)을 검토합니다.
+
+- 업데이트가 **다운로드 중**으로 표시되고 변경되지 않는 경우 **hman.log** 및 **dmpdownloader.log**에서 오류가 있는지 검토합니다.
+
+    - dmpdownloader.log는 dmpdownloader 프로세스가 업데이트를 확인하기 전에 간격을 기다리고 있음을 나타낼 수 있습니다. 업데이트 재배포 파일의 다운로드를 다시 시작하기 위해 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작합니다.
+
+    - 프록시 서버 설정이 `silverlight.dlservice.microsoft.com`, `download.microsoft.com` 및 `go.microsoft.com`에서의 다운로드를 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
+
+업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#bkmk_inconsole)를 참조하세요.
+
+편재 분기 버전에 대한 자세한 내용은 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
+
+
+## <a name="about-installing-update-1910"></a>업데이트 1910 설치 정보
+
+### <a name="sites"></a>사이트
+
+업데이트 1910을 계층 구조의 최상위 사이트에 설치합니다. CAS(중앙 관리 사이트) 또는 독립 실행형 기본 사이트에서 설치를 시작합니다. 최상위 사이트에 업데이트가 설치되면 자식 사이트에서 다음과 같은 업데이트 동작이 나타납니다.
+
+- CAS에서 업데이트 설치를 완료한 후 하위 기본 사이트가 업데이트를 자동으로 설치합니다. 서비스 창을 사용하여 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다. 자세한 내용은 [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 참조하세요.
+
+- 기본 상위 사이트에서 업데이트 설치를 완료한 후 Configuration Manager 콘솔 내에서 각 보조 사이트를 수동으로 업데이트합니다. 보조 사이트 서버의 자동 업데이트는 지원되지 않습니다.
+
+### <a name="site-system-roles"></a>사이트 시스템 역할
+
+사이트 서버에서 업데이트를 설치할 때 모든 사이트 시스템 역할을 자동으로 업데이트합니다. 이러한 역할은 사이트 서버에 있거나 원격 서버에 설치됩니다. 업데이트를 설치하기 전에 각 사이트 시스템 서버에서 새 업데이트 버전에 대한 현재 필수 구성 요소를 충족하는지 확인해야 합니다.
+
+### <a name="configuration-manager-consoles"></a>Configuration Manager 콘솔
+
+업데이트가 완료된 후 처음으로 Configuration Manager 콘솔을 사용할 때 해당 콘솔을 업데이트하라는 메시지가 표시됩니다. 콘솔을 호스트하는 컴퓨터에서 Configuration Manager 설치를 실행하고, 콘솔을 업데이트하는 옵션을 선택할 수 있습니다. 가능한 빨리 콘솔에 업데이트를 설치합니다. 자세한 내용은 [Configuration Manager 콘솔 설치](/sccm/core/servers/deploy/install/install-consoles)를 참조하세요.
+
+> [!IMPORTANT]  
+> CAS에서 업데이트를 설치할 경우 다음 제한 사항과 모든 하위 기본 사이트가 업데이트 설치를 완료할 때까지 존재하는 지연에 유의하세요.
+>
+> - **클라이언트 업그레이드**가 시작되지 않습니다. 여기에는 클라이언트 및 프로덕션 전 클라이언트의 자동 업데이트가 포함됩니다. 또한 마지막 사이트에서 업데이트 설치가 완료될 때까지 프로덕션 전 클라이언트를 프로덕션으로 수준을 올릴 수 없습니다. 마지막 사이트에서 업데이트 설치가 완료되면 구성 옵션에 따라 클라이언트 업데이트가 시작됩니다.
+> - 업데이트를 통해 제공되는 **새로운 기능**을 사용할 수 없습니다. 이는 CAS에서 해당 기능에 관련된 데이터를 동일한 기능에 대한 지원이 아직 설치되지 않은 사이트로 복제하지 못하도록 차단하는 동작입니다. 모든 기본 사이트에서 업데이트를 설치한 후 기능을 사용할 수 있습니다.
+> - CAS와 하위 기본 사이트 간의 **복제 링크**가 업그레이드되지 않음으로 표시됩니다. 이 상태는 업데이트 설치 상태에 *완료(경고 발생)* 상태로 표시되고 복제 초기화 모니터링에 대한 경고가 나타납니다. 콘솔의 **모니터링** 작업 영역에서 이 상태는 *링크 구성 중*으로 표시됩니다.
+
+### <a name="early-update-ring"></a>조기 업데이트 링
+
+<!-- SCCMDocs#1397 -->
+
+<!--As of August 16, 2019, version 1906 is globally available for all customers to install. If you previously opted in to the early update ring, watch for an update to this current branch version. -->
+
+현재 버전 1910은 조기 업데이트 링을 위해 릴리스되었습니다. 이 업데이트를 설치하려면 옵트인해야 합니다. 다음의 PowerShell 스크립트는 버전 1910에 대해 조기 업데이트 링에 계층 구조나 독립 실행형 기본 사이트를 추가합니다.
+
+[버전 1910 옵트인 스크립트](https://go.microsoft.com/fwlink/?linkid=2099733) <!-- This fwlink points to the script package on the Download Center, don't change the link here! Make any changes to the fwlink target -->
+
+Microsoft는 스크립트를 디지털 방식으로 서명하고 이를 서명된 자동 압축 해제 가능 실행 파일 내에 번들로 묶습니다.
+
+> [!Note]  
+> 버전 1910 업데이트는 버전 1806 이상을 실행하는 사이트에만 적용됩니다.
+
+조기 업데이트 링을 옵트인하려면:
+
+1. Windows PowerShell을 열고 **관리자 권한으로 실행**을 선택합니다.
+1. 다음 구문을 사용하여 **EnableEarlyUpdateRing1910.ps1** 스크립트를 실행합니다.
+
+    `EnableEarlyUpdateRing1910.ps1 <SiteServer_Name> | SiteServer_IP>`
+
+    `SiteServer`에서 중앙 관리 사이트 또는 독립 실행형 기본 사이트 서버를 참조하는 위치입니다. 예를 들면 `EnableEarlyUpdateRing1910.ps1 cmprimary01`
+
+1. 업데이트를 확인합니다. 자세한 내용은 [사용 가능 업데이트 가져오기](/sccm/core/servers/manage/install-in-console-updates#get-available-updates)를 참조하세요.
+
+이제 버전 1910 업데이트를 콘솔에서 사용할 수 있습니다.
+
+> [!Important]  
+> 이 스크립트는 버전 1910용 조기 업데이트 링에만 사이트를 추가합니다. 영구적 변경 사항은 아닙니다.
+
+
+## <a name="checklist"></a>확인 목록
+
+### <a name="all-sites-run-a-supported-version-of-configuration-manager"></a>모든 사이트에서 지원되는 Configuration Manager 버전 실행
+
+업데이트 1910의 설치를 시작하기 전에 계층의 각 사이트 서버에서 동일한 버전의 Configuration Manager를 실행해야 합니다. 1910으로 업데이트하려면 버전 1806 이상을 사용해야 합니다.
+
+### <a name="review-the-status-of-your-product-licensing"></a>제품 라이선스의 상태 검토
+
+이 업데이트를 설치하기 위한 활성 SA(Software Assurance) 규약 또는 동등한 구독 권한이 있어야 합니다. 사이트를 업데이트할 때 **라이선싱** 페이지에서는 **Software Assurance 만료 날짜**를 확인하는 옵션을 제공합니다.
+
+이 값은 선택 사항입니다. 라이선스 만료 날짜의 편리한 미리 알림으로 지정할 수 있습니다. 이 날짜는 미래 업데이트를 설치할 때 표시됩니다. 업데이트 설정 또는 설치 중에 이 값을 이전에 지정했을 수 있습니다. Configuration Manager 콘솔에서 이 값을 지정할 수도 있습니다. **관리** 작업 영역에서 **사이트 구성**을 확장하고, **사이트**를 선택합니다. 리본에서 **계층 구조 설정**을 선택하고, **라이선스** 탭으로 전환합니다.
+
+자세한 내용은 [라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
+
+### <a name="review-microsoft-net-versions"></a>Microsoft .NET 버전 검토
+
+사이트에서 이 업데이트를 설치할 때 최소 요구 사항인 .NET Framework 4.5가 설치되어 있지 않으면 Configuration Manager에서 자동으로 .NET Framework 4.5.2를 설치합니다. 이 필수 구성 요소가 이미 설치되지 않은 경우 사이트는 다음 사이트 시스템 역할 중 하나를 호스트하는 각 서버에 설치합니다.
+
+- 관리 지점
+- 서비스 연결 지점
+- 등록 프록시 지점
+- 등록 지점
+
+이 설치는 사이트 시스템 서버를 다시 부팅 보류 중 상태로 전환하고 Configuration Manager 구성 요소 상태 뷰어에 오류를 보고할 수 있습니다. 또한, 서버 재부팅 시까지 서버의 .NET 애플리케이션에서 임의의 오류가 발생할 수 있습니다.
+
+자세한 내용은  [사이트 및 사이트 시스템 필수 구성 요소](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)를 참조하세요.
+
+### <a name="review-the-version-of-the-windows-adk-for-windows-10"></a>Windows 10용 Windows ADK 버전 검토
+
+Configuration Manager 버전 1910에는 Windows 10 ADK(평가 및 배포 키트) 버전이 지원되어야 합니다. 지원되는 Windows ADK 버전에 대한 자세한 내용은 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)를 참조하세요. Windows ADK를 업데이트해야 할 경우에는 Configuration Manager의 업데이트를 시작하기 전에 업데이트합니다. 이렇게 하면 기본 부팅 이미지가 자동으로 최신 버전의 Windows PE로 업데이트됩니다. 사이트를 업데이트한 후 사용자 지정 부팅 이미지를 수동으로 업데이트합니다.
+
+Windows ADK를 업데이트하기 전에 사이트를 업데이트하는 경우 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)를 참조하세요.
+
+### <a name="review-sql-server-native-client-version"></a>SQL Server Native Client 버전 검토
+
+TLS 1.2에 대한 지원이 포함되는 최소 버전의 SQL Server 2012 Native Client를 설치합니다. 자세한 내용은 [필수 조건 검사 목록](/sccm/core/servers/deploy/install/list-of-prerequisite-checks#sql-server-native-client)을 참조하세요.
+
+### <a name="review-the-site-and-hierarchy-status-for-unresolved-issues"></a>해결되지 않은 문제에 대해 사이트 및 계층 구조 상태 검토
+
+기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다. 사이트를 업데이트하기 전에 다음 시스템에 대한 모든 작동 문제를 해결합니다.  
+
+- 사이트 서버  
+- 사이트 데이터베이스 서버  
+- 다른 서버의 원격 사이트 시스템 역할
+
+자세한 내용은  [경고 및 상태 시스템 사용](/sccm/core/servers/manage/use-alerts-and-the-status-system)을 참조하세요.
+
+### <a name="review-file-and-data-replication-between-sites"></a>사이트 간의 파일 및 데이터 복제 검토
+
+사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 성공적인 업데이트를 방해할 수 있습니다.
+
+#### <a name="database-replication"></a>데이터베이스 복제
+
+[데이터베이스 복제](/sccm/core/plan-design/hierarchy/database-replication)의 경우 업데이트를 시작하기 전에 RLA(**Replication Link Analyzer**)를 사용하여 문제를 해결합니다. 자세한 내용은 [데이터베이스 복제 모니터링](/sccm/core/servers/manage/monitor-replication)을 참조하세요.
+
+RLA를 사용하여 다음 질문에 답변합니다.
+
+- 그룹별 복제가 양호한 상태인가요?
+- 상태가 저하된 링크가 있나요?
+- 오류가 있나요?
+
+백로그가 있는 경우 지워질 때까지 기다립니다. 수백만 개의 레코드를 포함하는 경우처럼 백로그가 큰 경우 링크가 불량 상태입니다. 사이트를 업데이트하기 전에 복제 문제를 해결하세요. 추가 지원이 필요한 경우 Microsoft 지원에 문의하세요.<!-- 2838129 -->
+
+#### <a name="file-based-replication"></a>파일 기반 복제
+
+[파일 기반 복제](/sccm/core/plan-design/hierarchy/file-based-replication)의 경우 송신 및 수신 사이트 둘 다에서 백로그의 모든 사서함을 확인합니다. 지연되었거나 보류 중인 복제 작업이 많은 경우에는 지워질 때까지 기다립니다.<!-- SCCMDocs#1792 -->
+
+- 보내는 사이트에서 **sender.log**를 검토합니다.
+- 받는 사이트에서 **despooler log**를 검토합니다.
+
+### <a name="install-all-applicable-critical-windows-updates"></a>모든 적용 가능한 중요 Windows 업데이트 설치
+
+Configuration Manager에 대한 업데이트를 설치하기 전에 각 해당 사이트 시스템에 대한 중요한 OS 업데이트를 설치합니다. 이러한 서버는 사이트 서버, 사이트 데이터베이스 서버 및 원격 사이트 시스템 역할을 포함합니다. 설치하는 업데이트에서 다시 시작하도록 요구하는 경우 업그레이드를 시작하기 전에 해당 서버를 다시 시작합니다.
+
+### <a name="disable-database-replicas-for-management-points-at-primary-sites"></a>기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정
+
+Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업데이트할 수 없습니다. Configuration Manager용 업데이트를 설치하기 전에 데이터베이스 복제를 사용하지 않도록 설정합니다.
+
+자세한 내용은 [관리 지점에 대한 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요.
+
+### <a name="set-sql-server-alwayson-availability-groups-to-manual-failover"></a>SQL Server AlwaysOn 가용성 그룹을 수동 장애 조치(failover)로 설정
+
+가용성 그룹을 사용할 경우 업데이트 설치를 시작하기 전에 가용성 그룹이 수동 장애 조치(failover)로 설정되어 있는지 확인합니다. 사이트를 업데이트한 후에 장애 조치(failover)를 자동으로 복원할 수 있습니다. 자세한 내용은  [사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요.
+
+### <a name="disable-site-maintenance-tasks-at-each-site"></a>각 사이트에서 사이트 유지 관리 작업을 사용하지 않도록 설정
+
+업데이트를 설치하기 전에 업데이트 프로세스가 활성 상태인 동안 실행될 수 있는 모든 사이트 유지 관리 작업을 사용하지 않도록 설정합니다. 예를 들어 다음이 있지만, 이에 국한되지는 않습니다.
+
+- 백업 사이트 서버
+- 오래된 클라이언트 작업 삭제
+- 오래된 검색 데이터 삭제
+
+업데이트를 설치하는 동안 사이트 데이터베이스 유지 관리 작업이 실행되면 업데이트 설치가 실패할 수 있습니다. 작업을 사용하지 않도록 설정하기 전에 작업 일정을 기록하세요. 그래야 업데이트가 설치된 후에 해당 구성을 복원할 수 있습니다.
+
+자세한 내용은  [유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks) 및 [유지 관리 작업에 대한 참조](/sccm/core/servers/manage/reference-for-maintenance-tasks)를 참조하세요.
+
+### <a name="temporarily-stop-any-antivirus-software"></a>바이러스 백신 소프트웨어를 일시적으로 중지
+
+사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어를 중지합니다. 바이러스 백신 소프트웨어는 업데이트해야 하는 일부 파일을 잠그므로 업데이트가 실패할 수 있습니다. <!--SMS.503481-->
+
+### <a name="create-a-backup-of-the-site-database"></a>사이트 데이터베이스의 백업 만들기
+
+사이트를 업데이트하기 전에 CAS 및 기본 사이트에서 사이트 데이터베이스를 백업합니다. 이 백업은 재해 복구에 사용할 성공적인 백업이 있는지 확인합니다.
+
+자세한 내용은  [백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
+
+### <a name="back-up-customized-files"></a>사용자 지정 파일 백업
+
+사용자 또는 타사 제품이 Configuration Manager 구성 파일을 사용자 지정하는 경우 사용자 지정의 복사본을 저장합니다.
+
+예를 들어 Configuration Manager 설치 디렉터리의 `bin\X64` 폴더에 있는 **osdinjection.xml** 파일에 사용자 지정 항목을 추가합니다. Configuration Manager를 업데이트한 후에는 이러한 사용자 지정이 유지되지 않습니다. 사용자 지정을 다시 적용해야 합니다.
+
+### <a name="plan-for-client-piloting"></a>클라이언트 파일럿에 대한 계획
+
+클라이언트 업데이트 또한 실행하는 사이트 업데이트를 설치할 때는 모든 프로덕션 클라이언트의 업데이트에 앞서 이 새로운 클라이언트 업데이트를 프로덕션 전에 테스트합니다. 이 옵션을 활용하려면 업데이트의 설치를 시작하기 전에 사전 프로덕션에 대한 자동 업그레이드를 지원하도록 사이트를 구성합니다.
+
+자세한 내용은  [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients) 및 [사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](/sccm/core/clients/manage/upgrade/test-client-upgrades)을 참조하세요.
+
+### <a name="plan-to-use-service-windows"></a>서비스 창 사용 계획
+
+사이트 서버에 업데이트를 설치할 수 있는 기간을 정의하려면 서비스 기간을 사용합니다. 이를 통해 계층 구조의 사이트에서 업데이트를 설치하는 시기를 제어할 수 있습니다. 자세한 내용은  [사이트 서버에 대한 서비스 기간](/sccm/core/servers/manage/service-windows)을 참조하세요.
+
+### <a name="review-supported-extensions"></a>지원되는 확장 검토
+
+<!--SCCMdocs#587-->
+Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Manager를 확장하는 경우 해당 제품이 버전 1910을 지원하는지 확인합니다. 이 정보는 제품 공급업체를 통해 확인합니다. 예를 들어 Microsoft Deployment Toolkit [릴리스 정보](/sccm/mdt/release-notes)를 참조합니다.
+
+### <a name="remove-intune-subscription-hybrid-mdm"></a>Intune 구독(하이브리드 MDM) 제거
+
+<!-- SCCMDocs-pr#4253 -->
+하이브리드 MDM 서비스 제품은 2019년 9월 1일부로 종료되었습니다. Configuration Manager 사이트에 Microsoft Intune 구독이 있었다면 이를 제거해야 합니다. 자세한 내용은 [하이브리드 MDM 제거](/configmgr/mdm/understand/hybrid-mobile-device-management#remove-hybrid-mdm)를 참조하세요.
+
+### <a name="run-the-setup-prerequisite-checker"></a>설치 필수 구성 요소 검사기 실행
+
+업데이트가 콘솔에 **사용 가능**으로 표시되는 경우 업데이트를 설치하기 전에 필수 구성 요소 검사기를 실행할 수 있습니다. 사이트에 업데이트를 설치할 때 필수 조건 검사가 다시 실행됩니다.
+
+콘솔에서 필수 구성 요소 검사를 실행하려면 **관리**작업 영역으로 이동하여 **업데이트 및 서비스**를 선택합니다. **Configuration Manager 1910** 업데이트 패키지를 선택하고, 리본 메뉴에서 **필수 구성 요소 검사 실행**을 선택합니다.
+
+자세한 내용은 [콘솔 내 업데이트를 설치하기 전에](/sccm/core/servers/manage/install-in-console-updates#bkmk_beforeinstall)에서  **업데이트를 설치하기 전에 필수 구성 요소 검사기 실행**에 대한 섹션을 참조하세요.
+
+> [!IMPORTANT]  
+> 필수 구성 요소 검사기가 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
+
+### <a name="update-sites"></a>사이트 업데이트
+
+이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다. 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 설치](/sccm/core/servers/manage/install-in-console-updates#bkmk_install)를 참조하세요.
+
+일상적인 업무 시간 외에 업데이트를 설치하도록 계획할 수 있습니다. 프로세스가 비즈니스 작업에 최소한의 영향을 주는 시기를 확인합니다. 업데이트를 설치하면 해당 작업에서 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치합니다.
+
+자세한 내용은  [Configuration Manager에 대한 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
+
+
+## <a name="post-update-checklist"></a>업데이트 후 검사 목록
+
+사이트를 업데이트한 후에 다음 검사 목록을 사용하여 일반 작업 및 구성을 완료하세요.
+
+### <a name="confirm-version-and-restart-if-necessary"></a>버전 확인 및 다시 시작(필요한 경우)
+
+각 사이트 서버 및 사이트 시스템 역할이 버전 1910으로 업데이트되었는지 확인합니다. 콘솔에서 **버전** 열을 **관리** 작업 영역의 **사이트** 및 **배포 지점** 노드에 추가합니다. 필요한 경우 사이트 시스템 역할이 새 버전에 대한 업데이트를 자동으로 다시 설치합니다.
+
+처음에 성공적으로 업데이트되지 않은 원격 사이트 시스템을 다시 시작하는 것이 좋습니다. 사이트 인프라를 검토하고, 적용 가능한 사이트 서버 및 원격 사이트 시스템 서버가 성공적으로 다시 시작되었는지 확인합니다. 일반적으로, Configuration Manager에서 사이트 시스템 역할의 필수 조건으로 .NET을 설치하는 경우에만 사이트 서버가 다시 시작됩니다.
+
+### <a name="confirm-site-to-site-replication-is-active"></a>사이트 간 복제가 활성 상태인지 확인
+
+Configuration Manager 콘솔에서 다음 위치로 이동하여 상태를 보고, 복제가 활성 상태인지 확인합니다.  
+
+- **모니터링** 작업 영역, **사이트 계층** 노드  
+
+- **모니터링** 작업 영역, **데이터베이스 복제** 노드  
+
+자세한 내용은 다음 아티클을 참조하세요.  
+
+- [계층 구조 및 복제 인프라 모니터링](/sccm/core/servers/manage/monitor-hierarchy-and-replication-infrastructure)
+- [Replication Link Analyzer 정보](/sccm/core/servers/manage/monitor-replication#BKMK_RLA)  
+
+### <a name="update-configuration-manager-consoles"></a>Configuration Manager 콘솔 업데이트
+
+모든 원격 Configuration Manager 콘솔을 동일한 버전으로 업데이트합니다. 콘솔을 업데이트하라는 메시지가 표시되는 경우는 다음과 같습니다.  
+
+- 콘솔을 여는 경우  
+
+- 콘솔에서 새 노드로 이동하는 경우  
+
+### <a name="reconfigure-database-replicas-for-management-points"></a>관리 지점에 대한 데이터베이스 복제본 다시 구성
+
+기본 사이트를 업데이트한 후에는 사이트를 업데이트하기 전에 설치한 관리 지점에 대한 데이터베이스 복제본을 다시 구성합니다. 자세한 내용은 [관리 지점에 대한 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요.  
+
+### <a name="reconfigure-sql-server-alwayson-availability-groups"></a>SQL Server Always On 가용성 그룹 재구성
+
+가용성 그룹을 사용하는 경우 장애 조치 구성을 자동으로 다시 설정합니다. 자세한 내용은 [사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요.<!-- SCCMDocs #1366 -->
+
+### <a name="reconfigure-any-disabled-maintenance-tasks"></a>사용하지 않도록 설정된 유지 관리 작업 다시 구성
+
+업데이트를 설치하기 전에 사이트에서 데이터베이스 [유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks)을 사용하지 않도록 설정한 경우 해당 작업을 다시 구성합니다. 업데이트 전에 사용하던 설정과 동일한 설정을 사용합니다.  
+
+### <a name="update-clients"></a>클라이언트 업데이트
+
+특히 업데이트를 설치하기 전에 클라이언트 파일럿을 구성한 경우 직접 만든 계획에 따라 클라이언트를 업데이트하세요. 자세한 내용은 [Windows 컴퓨터에 대한 클라이언트를 업그레이드하는 방법](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers)을 참조하세요.  
+
+### <a name="third-party-extensions"></a>타사 확장
+
+Configuration Manager 확장을 사용하는 경우 Configuration Manager 버전 1910을 지원하는 최신 버전으로 업데이트합니다.
+
+### <a name="update-custom-boot-images-and-media"></a>사용자 지정 부팅 이미지 및 미디어 업데이트
+
+<!--SCCMDocs issue 775-->
+
+기본 부팅 이미지와 사용자 지정 부팅 이미지 중 어느 것을 사용하든 사용하는 부팅 이미지에 대해 **배포 지점 업데이트** 작업을 사용하세요. 이 작업을 사용하면 클라이언트가 최신 버전을 사용할 수 있습니다. Windows ADK의 새 버전이 없더라도 업데이트로 구성 관리자 클라이언트 구성 요소가 변경될 수 있습니다. 부팅 이미지와 미디어를 업데이트하지 않으면, 디바이스에서 작업 순서 배포가 실패할 수 있습니다.
+
+사이트를 업데이트하면 Configuration Manager가 *기본* 부팅 이미지를 자동으로 업데이트합니다. 업데이트된 콘텐츠를 배포 지점에 자동으로 배포하지는 않습니다. 네트워크를 통해 이 콘텐츠를 배포할 준비가 되면 특정 부팅 이미지에 대해 **배포 지점 업데이트** 작업을 사용하세요.
+
+사이트를 업데이트한 후 *사용자 지정* 부팅 이미지를 수동으로 업데이트합니다. 이 작업에서는 필요할 경우 최신 클라이언트 구성 요소를 사용하여 부팅 이미지를 업데이트하고, 경우에 따라 현재 Windows PE 버전을 사용하여 부팅 이미지를 다시 로드하며, 콘텐츠를 배포 지점에 다시 배포합니다.
+
+자세한 내용은 [부팅 이미지를 사용하여 배포 지점 업데이트](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)를 참조하세요.

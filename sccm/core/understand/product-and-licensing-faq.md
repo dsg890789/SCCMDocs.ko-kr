@@ -2,7 +2,7 @@
 title: 제품 및 라이선스 FAQ
 titleSuffix: Configuration Manager
 description: Configuration Manager에 대한 일반적인 제품 및 라이선스 질문의 대답을 알아봅니다.
-ms.date: 10/22/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 630edcb8b71ca9ec0edb61437406df08792463a7
-ms.sourcegitcommit: d3aa20e2d12b5a68c7d672172234c65095fd4ce8
+ms.openlocfilehash: d8a86319168143850c754427651add636ff12ad5
+ms.sourcegitcommit: 4d3999de1e13d579dd128578cb5dcee46fe3b0d6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810747"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74855866"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
-*적용 대상: System Center Configuration Manager(Current Branch), System Center Configuration Manager(장기 서비스 분기)*
+*적용 대상: Configuration Manager(현재 분기), System Center Configuration Manager(장기 서비스 분기)*
 
 이 FAQ에서는 Microsoft 볼륨 라이선스 프로그램을 통해 사용할 수 있는 Configuration Manager 현재 분기 및 LTSB(장기 서비스 분기) 버전에 대한 일반적인 라이선스 관련 질문을 다룹니다. 이 문서는 정보 제공용입니다. Configuration Manager 라이선스를 다루는 어떤 문서보다 우선하거나 이 문서를 대체하지 않습니다. 자세한 내용은 [제품 용어](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=53)를 참조하세요. 제품 용어에서는 볼륨 라이선스의 모든 Microsoft 제품에 대한 사용 조건을 설명합니다.
 
@@ -68,6 +68,21 @@ https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-pla
 
 > [!IMPORTANT]
 > Configuration Manager는 [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) 계획에 포함되지 않습니다.
+
+### <a name="bkmk_mem"></a> Microsoft Endpoint Manager의 리브랜딩으로 인해 변경되는 사항이 있나요?
+
+예. 기존에 Configuration Manager를 사용하도록 라이선스가 부여된 경우 Intune을 사용하여 Windows PC를 [공동 관리](/configmgr/comanage/overview)에 등록할 수 있습니다. 이로 인해 Microsoft Endpoint Manager로 Windows 디바이스를 더욱 쉽게 관리할 수 있게 됩니다.
+
+소프트웨어 보증이 있는 Configuration Manager 고객이 공동 관리를 위해 Intune 라이선스를 추가로 구매하지 않아도 Intune PC 관리 권한을 가질 수 있도록 해 주는 새로운 라이선스가 공개되었습니다. 이제 더 이상 사용자에게 개별 Intune 또는 EMS 라이선스를 할당하지 않아도 됩니다.
+
+- Configuration Manager로 관리되고 공동 관리에 등록된 디바이스는 독립 실행형 Intune으로 관리되는 PC와 거의 동일한 권리를 갖습니다. 단, 다시 설정된 뒤에는 AutopIlot으로 다시 프로비저닝할 수 없습니다.
+
+- 다른 방법을 사용하여 Intune에 등록된 Windows 10 디바이스에는 정식 Intune 라이선스가 필요할 수 있습니다.
+
+- iOS, Android 또는 macOS 디바이스의 관리를 위해 Intune을 사용하려는 경우에는 독립 실행형 Intune 라이선스, EMS(Enterprise Mobility + Security) 또는 Microsoft 365를 통해 적절한 Intune 구독이 필요합니다.
+
+- 이전에 System Center Configuration Manager에서 이용했던 라이선싱도 종전과 같이 Microsoft Endpoint Configuration Manager에 적용됩니다. 새 사이트를 설치할 때는 기존 제품 키를 사용하세요.
+
 
 ### <a name="bkmk_ems-expires"></a> Enterprise Mobility + Security가 있지만 만료되었습니다. 이제 어떻게 해야 하나요?  
 
@@ -117,7 +132,7 @@ System Center Endpoint Protection을 사용하는 경우 SA가 만료되면 제�
 
 ### <a name="bkmk_sql"></a> Configuration Manager와 함께 제공된 SQL 기술과 연관된 사용 권한은 무엇인가요?
 
-모든 System Center 제품에는 SQL Server 기술이 포함되어 있습니다. 이러한 제품에 대한 Microsoft의 사용 약관에 따르면 고객은 System Center 구성 요소를 지원하기 위해서만 SQL Server 기술을 사용할 수 있습니다. 해당 용도로는 SQL Server 클라이언트 액세스 라이선스가 필요하지 않습니다.
+Configuration Manager에는 SQL Server 기술이 포함되어 있습니다. 이 제품에 대한 Microsoft의 사용 약관에 따르면 사용자는 Configuration Manager 구성 요소를 지원하기 위해서만 SQL Server 기술을 사용할 수 있습니다. 해당 용도로는 SQL Server 클라이언트 액세스 라이선스가 필요하지 않습니다.
 
 Configuration Manager와 함께 SQL 기능에 대해 승인된 사용 권한은 다음과 같습니다.
 

@@ -2,7 +2,7 @@
 title: 현재 분기 버전
 titleSuffix: Configuration Manager
 description: Configuration Manager 버전 기록을 검토하고 제공되는 서비스의 단계에 대해 알아봅니다.
-ms.date: 07/26/2019
+ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,18 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1603fb604a4dccb0b61ae69c9c3d54d794c42e40
-ms.sourcegitcommit: 72faa1266b31849ce1a23d661a1620b01e94f517
+ms.openlocfilehash: e98cf178e7c88ec441bd46cb61e8b5c2a33831bb
+ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68536288"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74661307"
 ---
 # <a name="support-for-configuration-manager-current-branch-versions"></a>Configuration Manager 현재 분기 버전에 대한 지원
 
 *적용 대상: System Center Configuration Manager(현재 분기)*
 
-Microsoft는 1년에 몇 차례 Configuration Manager 현재 분기용 업데이트를 출시할 계획입니다. 1710 이전에 릴리스된 Configuration Manager 버전은 12개월 동안 지원됩니다. 버전 1710부터 각 업데이트 버전은 일반 공급 출시 날짜로부터 18개월 동안 지원됩니다. Microsoft는 전체 지원 기간 동안 기술 지원을 제공합니다. 최신 현재 분기 버전의 가용성에 따라 별도의 두 가지 서비스 단계가 있습니다.  
+Microsoft는 1년에 몇 차례 Configuration Manager 현재 분기용 업데이트를 출시할 계획입니다. 각 업데이트 버전은 일반 공급 릴리스 날짜로부터 18개월 동안 지원됩니다. Microsoft는 전체 지원 기간 동안 기술 지원을 제공합니다. 최신 현재 분기 버전의 가용성에 따라 별도의 두 가지 서비스 단계가 있습니다.
 
 - **보안 및 중요 업데이트** 서비스 단계 - 최신 현재 분기 버전의 Configuration Manager를 실행하는 경우 보안 및 중요 업데이트를 모두 받게 됩니다.  
 
