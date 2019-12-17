@@ -296,7 +296,7 @@ Start-Service -Name dps
 |------------|----------|
 | - Windows 10 버전 1809 이상<br/>- Windows 10, 버전 1803(2018-09 누적 업데이트 이상 포함) | `https://v10c.events.data.microsoft.com/health/keepalive` |
 | 2018-09 이상 누적 업데이트 *미포함* Windows 10, 버전 1803 | `https://v10.events.data.microsoft.com/health/keepalive` |
-| Windows 10, 버전 1709 이전 | `https://v10.vortex-win.data.microsoft.com/health/keepalive` |
+| Windows 10 버전 1709 이전 | `https://v10.vortex-win.data.microsoft.com/health/keepalive` |
 | Windows 7 또는 Windows 8.1 | `https://vortex-win.data.microsoft.com/health/keepalive` |
 
 디바이스가 서비스와 통신할 수 있는지 확인합니다. 이 검사는 필요한 엔드포인트 중 일부에 대해서만 유효성을 검사합니다. 자세한 내용은 [엔드포인트](/sccm/desktop-analytics/enable-data-sharing#endpoints)를 참조하세요.  
@@ -346,7 +346,7 @@ Microsoft는 고유한 상업용 ID를 사용하여 디바이스에서 Desktop A
 
 디바이스에 다른 ID가 있습니다. 이 레지스트리 키는 그룹 정책에 의해 사용됩니다. Configuration Manager에서 제공하는 ID보다 우선적으로 적용됩니다.  
 
-<a name="bkmk_ViewCommercialID"></a> Desktop Analytics 포털에서 상업용 ID를 보려면 다음 프로시저를 따르세요.
+<a name="bkmk_ViewCommercialID"></a>Desktop Analytics 포털에서 상업용 ID를 보려면 다음 절차를 따르세요.
 
 1. Desktop Analytics 포털로 이동하고 전역 설정 그룹에서 **연결된 서비스**를 선택합니다.  
 
@@ -355,7 +355,7 @@ Microsoft는 고유한 상업용 ID를 사용하여 디바이스에서 Desktop A
 ![Desktop Analytics 포털의 상업용 ID 스크린샷](media/commercial-id.png)
 
 > [!Important]  
-> 현재 항목을 사용할 수 없는 경우에만 **새 ID 키 가져옵니다**. 상업용 ID를 다시 생성하는 경우 [새 ID를 사용하여 디바이스를 다시 등록하세요](/sccm/desktop-analytics/enroll-devices#device-enrollment). 이 프로세스로 인해 전환하는 동안 진단 데이터가 손실될 수 있습니다.  
+> 현재 항목을 사용할 수 없는 경우에만 **새 ID 키**를 가져옵니다. 상업용 ID를 다시 생성하는 경우 [새 ID를 사용하여 디바이스를 다시 등록하세요](/sccm/desktop-analytics/enroll-devices#device-enrollment). 이 프로세스로 인해 전환하는 동안 진단 데이터가 손실될 수 있습니다.  
 
 ### <a name="windows-commercial-data-opt-in"></a>Windows 상용 데이터 옵트인
 
