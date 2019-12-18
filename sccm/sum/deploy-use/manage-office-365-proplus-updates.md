@@ -5,18 +5,18 @@ description: Configuration Manager는 WSUS 카탈로그의 Office 365 클라이�
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 12/06/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493e9138c5be3bdf396dd7fe0d318e3da71f561d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 083dbbbd14b7364c88abfb6471ea1505657586ae
+ms.sourcegitcommit: 66e7363108e37ea8bb5d36fca0231829d48ac612
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380295"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899524"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
@@ -30,7 +30,7 @@ Configuration Manager를 사용하여 다음과 같은 방법으로 Office 365 P
 
 - [Office 365 업데이트 다운로드 언어 추가](#bkmk_o365_lang): Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다. 즉, Office 365가 언어를 지원하면 Configuration Manager는 언어를 지원할 필요가 없습니다. Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다.
 
-- [업데이트 채널 변경](#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager): 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포하여 업데이트 채널을 변경할 수 있습니다.
+- [업데이트 채널 변경](#bkmk_channel): 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포하여 업데이트 채널을 변경할 수 있습니다.
 
 Office 365 클라이언트 정보를 검토하고 이러한 Office 365 관리 작업 중 일부를 시작하려면 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)를 사용합니다.
 
@@ -219,37 +219,11 @@ Configuration Manager 버전 1902부터 업데이트 워크플로는 **Office 36
     예: `schtasks /run /tn "\Microsoft\Office\Office Automatic Updates 2.0"`
 5. **확인**을 클릭합니다. 
 
-## <a name="change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager"></a>Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널 변경
-Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후 업데이트 채널을 변경하려면 그룹 정책을 사용하여 Office 365 클라이언트에 레지스트리 키 값 변경 내용을 배포합니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** 레지스트리 키를 다음 중 한 값을 사용하도록 변경합니다.
+## <a name="bkmk_channel"></a> Office 365 클라이언트가 Configuration Manager에서 업데이트를 받도록 설정한 후에 업데이트 채널 변경
 
-- 월 단위 채널 <br/>
-<i>(이전의 현재 채널)</i>:  
-  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60
+Office 365 ProPlus를 배포한 후 그룹 정책 또는 ODT (Office 배포 도구)를 사용 하 여 업데이트 채널을 변경할 수 있습니다. 예를 들어 반기 채널에서 반기 채널 (대상 지정)로 장치를 이동할 수 있습니다. 채널을 변경 하는 경우 Office는 전체 버전을 다시 설치 하거나 다운로드 하지 않고도 자동으로 업데이트 됩니다. 자세한 내용은 [조직에서 장치에 대 한 Office 365 ProPlus 업데이트 채널 변경](https://docs.microsoft.com//deployoffice/change-update-channels)을 참조 하세요.
 
-- 반기 채널 <br/>
-<i>(이전의 지연된 채널)</i>:  
-  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114
-
-- 월 단위 채널(대상 지정)<Br/>
- <i>(현재 채널의 이전 첫 번째 릴리스)</i>:  
-  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be
-
-- 반기 채널(대상 지정) <br/>
-<i>(지연된 채널의 이전 첫 번째 릴리스)</i>:  
-  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
-<!--the channel names changed in Sept 2017- https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus?ui=en-US&rs=en-US&ad=US-->
-
-
-<!--- You can create an Office 365 app without using the Office 365 Installation Wizard. To do this, you use the Office 2016 Deployment Tool (ODT) to download Office installation source files to a network share, generate Configure.xml that specifies the correct Office version and channel, and so on. Then, create an app for the files using the normal app management process.
-> [!Note]
-> The Office 365 Installation Wizard was introduced in Configuration Manager version 1702 and provides an easy way to create Office 365 apps.
-
-- [Download the Office 2016 Deployment Tool](https://aka.ms/ODT2016) from the Microsoft Download Center.  
-- Review the [configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx).
-
-You can create an application just as you would with any other application in Configuration Manager from **Software Library** > **Overview** > **Application Management** > **Applications**. For details, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).
---->
 
 ## <a name="next-steps"></a>다음 단계
 
-Configuration Manager의 Office 365 클라이언트 관리 대시보드를 사용하여 Office 365 클라이언트 정보를 검토하고 Office 365 앱을 배포합니다. 자세한 내용은 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)를 참조하세요. --->
+Configuration Manager의 Office 365 클라이언트 관리 대시보드를 사용하여 Office 365 클라이언트 정보를 검토하고 Office 365 앱을 배포합니다. 자세한 내용은 [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)를 참조하세요.
