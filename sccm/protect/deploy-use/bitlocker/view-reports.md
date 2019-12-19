@@ -101,7 +101,7 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 
 - 드라이브 유형별 규정 준수 상태 배포
 
-[BitLocker 엔터프라이즈 준수 대시보드의 ![예제 스크린샷](media/bitlocker-enterprise-compliance-dashboard.png)](media/bitlocker-enterprise-compliance-dashboard.png#lightbox)
+[![BitLocker 엔터프라이즈 준수 대시보드의 예제 스크린샷](media/bitlocker-enterprise-compliance-dashboard.png)](media/bitlocker-enterprise-compliance-dashboard.png#lightbox)
 
 ### <a name="compliance-status-distribution"></a>규정 준수 상태 배포
 

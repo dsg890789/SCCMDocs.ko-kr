@@ -26,7 +26,7 @@ ms.locfileid: "74662541"
 
 Bitlocker [셀프 서비스 포털을 설치한](/configmgr/protect/deploy-use/bitlocker/setup-websites)후 bitlocker가 사용자의 장치를 잠그면 해당 컴퓨터에 독립적으로 액세스할 수 있습니다. 따라서 셀프 서비스 포털을 사용하는 경우 지원 센터 담당자로부터 지원을 받지 않아도 됩니다.
 
-[기본 BitLocker 셀프 서비스 포털의 ![스크린샷](media/bitlocker-self-service-portal.png)](media/bitlocker-self-service-portal.png#lightbox)
+[![기본 BitLocker 셀프 서비스 포털의 스크린샷](media/bitlocker-self-service-portal.png)](media/bitlocker-self-service-portal.png#lightbox)
 
 > [!IMPORTANT]
 > 셀프 서비스 포털에서 복구 키를 가져오려면 사용자가 최소한 한 번 이상 컴퓨터에 로그인 해야 합니다. 이 로그인은 원격 세션이 아니라 장치에 대해 로컬 이어야 합니다. 그렇지 않으면 키 복구를 위해 기술 지원팀에 문의 해야 합니다. 지원 센터 관리자는 [administration and monitoring 웹 사이트](/configmgr/protect/deploy-use/bitlocker/helpdesk-portal) 를 사용 하 여 복구 키를 요청할 수 있습니다.

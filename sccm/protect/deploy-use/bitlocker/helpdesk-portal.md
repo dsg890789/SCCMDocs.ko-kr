@@ -26,7 +26,7 @@ ms.locfileid: "74662631"
 
 BitLocker administration and monitoring 웹 사이트는 BitLocker 드라이브 암호화에 대 한 관리 인터페이스입니다. 이를 지원 센터 포털이 라고도 합니다. 이 웹 사이트를 사용 하 여 보고서를 검토 하 고, 사용자의 드라이브를 복구 하 고, 장치 Tpm을 관리 합니다.
 
-[기본 BitLocker administration and monitoring 웹 사이트의 ![스크린샷](media/bitlocker-helpdesk-website.png)](media/bitlocker-helpdesk-website.png#lightbox)
+[![기본 BitLocker administration and monitoring 웹 사이트의 스크린샷](media/bitlocker-helpdesk-website.png)](media/bitlocker-helpdesk-website.png#lightbox)
 
 이 구성 요소를 사용 하려면 먼저 웹 서버에 설치 해야 합니다. 자세한 내용은 [BitLocker 보고서 및 포털 설정](/configmgr/protect/deploy-use/bitlocker/setup-websites)을 참조 하세요.
 
