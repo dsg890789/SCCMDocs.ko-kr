@@ -12,12 +12,12 @@ ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8499ff11cc7ba53760e541eefb690c69b2f20fcf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 021f52cfa4404476ecf836b3e2bfaaba8907e5f3
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889719"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198560"
 ---
 # <a name="capabilities-in-technical-preview-1806-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1806의 기능
 
@@ -184,7 +184,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 **디바이스에서 Intune으로 Office 365 애플리케이션 관리**라는 새 글로벌 조건이 있습니다. 이 조건은 기본적으로 새 Office 365 애플리케이션에 대한 요구 사항으로 추가됩니다. 이 워크로드를 전환하는 경우 공동 관리되는 클라이언트는 애플리케이션의 요구 사항을 충족하지 못하므로 Configuration Manager를 통해 배포된 Office 365를 설치하지 마십시오.
 
 ### <a name="known-issue"></a>알려진 문제
-- 이 워크로드 전환은 현재 Office 365 배포에만 적용됩니다. Configuration Manager가 Office 365 업데이트를 계속 관리합니다.<!--510876--> 가능한 해결 방법을 포함한 자세한 내용은 Configuration Manager 버전 1802 릴리스 정보, [Office 365 클라이언트 설정 변경이 적용되지 않습니다](/sccm/core/servers/deploy/install/release-notes#changing-office-365-client-setting-doesnt-apply)를 참조합니다.
+- 이 워크로드 전환은 현재 Office 365 배포에만 적용됩니다. Configuration Manager가 Office 365 업데이트를 계속 관리합니다.<!--510876--> 가능한 해결 방법을 포함한 자세한 내용은 Configuration Manager 버전 1802 릴리스 정보, [Office 365 클라이언트 설정 변경이 적용되지 않습니다](/sccm/core/servers/deploy/install/release-notes)를 참조합니다.
 
 
 

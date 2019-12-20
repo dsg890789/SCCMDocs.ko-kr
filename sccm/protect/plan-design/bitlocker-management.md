@@ -11,12 +11,12 @@ ms.assetid: a4d8cda2-bc9b-4fb4-aa0d-23c31b4fc60b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 338f33b80c2405cec6b95c9e6a6cd189f225dbec
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 25f8b13cbf0aa6e505c7fe22980e5bce3a39a2e4
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74814757"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198730"
 ---
 # <a name="plan-for-bitlocker-management"></a>BitLocker 관리 플랜
 
@@ -36,7 +36,7 @@ ms.locfileid: "74814757"
 
 ## <a name="features"></a>기능
 
-Configuration Manager에서는 BitLocker 드라이브 암호화에 대해 다음과 같은 관리 기능을 제공 합니다.
+이제 Configuration Manager가 BitLocker 드라이브 암호화를 위한 다음과 같은 관리 기능을 제공합니다.
 
 ### <a name="client-deployment"></a>클라이언트 배포
 
@@ -97,6 +97,8 @@ Windows 10, Windows 8.1 또는 Windows 7을 실행 하는 관리 되는 Windows 
 > [!TIP]
 > 기본적으로 **BitLocker 사용** 작업 순서 단계는 드라이브의 *사용 된 공간만* 암호화 합니다. BitLocker 관리에서는 *전체 디스크* 암호화를 사용 합니다. 이 작업 순서 단계를 구성 하 여 **전체 디스크 암호화를 사용**하는 옵션을 사용 하도록 설정 합니다. 자세한 내용은 [작업 순서 단계-BitLocker 사용](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker)을 참조 하세요.
 
-## <a name="next-step"></a>다음 단계
+## <a name="next-steps"></a>다음 단계
+
+[복구 데이터 암호화](/configmgr/protect/deploy-use/bitlocker/encrypt-recovery-data) (처음으로 정책을 배포 하기 전에 선택적 필수 구성 요소)
 
 [BitLocker 관리 클라이언트 배포](/configmgr/protect/deploy-use/bitlocker/deploy-management-agent)

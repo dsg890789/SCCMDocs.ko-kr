@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09357d591bde8c2585291b7de12d1f1f7388a94b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6c8955e969771cc5e20505875a53d794e4e7ecdd
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660702"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198509"
 ---
 # <a name="whats-new-in-version-1906-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1906의 새로운 기능
 
@@ -513,7 +513,7 @@ Configuration Manager 버전 1906으로 업데이트하고 **Windows 10** 제품
 
 Office 365 ProPlus로 업그레이드할 준비가 완료된 디바이스를 편리하게 확인할 수 있도록 하기 위해 새로운 준비 대시보드가 제공됩니다. 여기에는 Configuration Manager 현재 분기 버전 1902에 릴리스된 **Office 365 ProPlus 업그레이드 준비** 타일이 포함되어 있습니다. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동한 후 **Office 365 클라이언트 관리**를 확장하고 **Office 365 ProPlus 업그레이드 준비**노드를 선택합니다.
 
-대시보드, 필수 조건 및 이 데이터 사용 방법에 대한 자세한 내용은 [Office 365 ProPlus 준비를 위한 통합](/sccm/sum/deploy-use/office-365-dashboard#office-365-proplus-upgrade-readiness-dashboard)을 참조하세요.
+대시보드, 필수 조건 및 이 데이터 사용 방법에 대한 자세한 내용은 [Office 365 ProPlus 준비를 위한 통합](/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash)을 참조하세요.
 
 
 ## <a name="bkmk_protect"></a> 보호

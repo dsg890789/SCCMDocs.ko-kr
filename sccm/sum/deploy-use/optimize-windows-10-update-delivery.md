@@ -2,7 +2,7 @@
 title: Windows 10 업데이트 배달 최적화
 titleSuffix: Configuration Manager
 description: Configuration Manager로 업데이트 콘텐츠를 관리하여 Windows 10으로 최신 상태를 유지하는 방법을 알아봅니다.
-ms.date: 12/05/2019
+ms.date: 12/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9885535e0a6ef6b047b55a6b11eeb3bc225340
-ms.sourcegitcommit: 4d3999de1e13d579dd128578cb5dcee46fe3b0d6
+ms.openlocfilehash: 9e730a71f7924e0ac55c9dd142f87abe279b82c4
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856043"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198713"
 ---
 # <a name="optimize-windows-10-update-delivery-with-configuration-manager"></a>Configuration Manager로 Windows 10 업데이트 배달 최적화
 
@@ -48,13 +48,12 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 
 다음 섹션에서는 이러한 기술에 대한 추가 정보를 제공합니다.
 
-
 ### <a name="windows-delivery-optimization"></a>Windows 배달 최적화
 
 [배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10에 기본 제공되는 주요 다운로드 기술 및 피어 투 피어 배포 방법입니다. Windows 10 클라이언트는 동일한 업데이트를 다운로드하는 로컬 네트워크의 다른 디바이스에서 콘텐츠를 가져올 수 있습니다. [배달 최적화에 사용 가능한 Windows 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delivery-optimization-options)을 사용하여 클라이언트를 그룹으로 구성할 수 있습니다. 이 그룹화를 통해 조직은 피어 투 피어 요청을 수행하는 최상의 후보가 될 수 있는 디바이스를 식별할 수 있습니다. 배달 최적화를 사용하면 다운로드 시간을 단축하는 동시에 디바이스를 최신 상태로 유지하는 데 사용되는 전체 대역폭을 현저하게 줄일 수 있습니다.
 
 > [!NOTE]  
-> 배달 최적화는 클라우드 관리 솔루션입니다. 피어 투 피어 기능을 활용하려면 배달 최적화 클라우드 서비스에 대한 인터넷 액세스가 필요합니다.  
+> 배달 최적화는 클라우드 관리 솔루션입니다. 피어 투 피어 기능을 활용하려면 배달 최적화 클라우드 서비스에 대한 인터넷 액세스가 필요합니다. 필요한 인터넷 끝점에 대 한 자세한 내용은 [배달 최적화에 대 한 질문과 대답](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#frequently-asked-questions)을 참조 하세요. 
 
 최상의 결과를 얻으려면 배달 최적화 [다운로드 모드](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)를 **그룹(2)** 로 설정하고 *그룹 ID*를 정의해야 합니다. 그룹 모드에서 피어링은 원격 사무실의 디바이스를 포함하여 동일한 그룹에 속한 디바이스 간 내부 서브넷을 교차할 수 있습니다. [그룹 ID 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#select-the-source-of-group-ids)을 사용하여 도메인 및 AD DS 사이트와 별개로 공유한 사용자 지정 그룹을 만듭니다. 그룹 다운로드 모드는 배달 최적화를 사용하여 최상의 대역폭 최적화를 달성하려는 대부분의 조직에 권장되는 옵션입니다.
 
@@ -70,7 +69,8 @@ Configuration Manager 버전 1910부터 빠른 설치 파일만이 아닌 Window
 - **델타 콘텐츠에 대한 요청을 받기 위해 클라이언트가 사용하는 포트**를 8005(기본값) 또는 사용자 지정 포트 번호로 설정합니다.
 
 > [!IMPORTANT]
-> - 배달 최적화를 사용하도록 설정(기본값)하고 무시하지 않아야 합니다. 자세한 내용은 [Windows 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization)를 참조하세요.
+> - 배달 최적화를 사용하도록 설정(기본값)하고 무시하지 않아야 합니다. 자세한 내용은 [Windows 제공 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference)를 참조하세요.
+> - 델타 콘텐츠에 대 한 [소프트웨어 업데이트 클라이언트 설정을](/sccm/core/clients/deploy/about-client-settings#software-updates) 변경할 때 [배달 최적화 클라이언트 설정을](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 확인 합니다.
 
 
 

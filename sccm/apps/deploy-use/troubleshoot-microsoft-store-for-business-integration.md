@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e8f59e874d89bcb64d3331d40ef044c4c8beb01
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1deab2a7dc77f7bb06d847b47a9d7679e78f236b
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74814279"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198679"
 ---
 # <a name="troubleshoot-the-microsoft-store-for-business-and-education-integration-with-configuration-manager"></a>Configuration Manager와의 비즈니스 및 교육 통합을 위한 Microsoft Store 문제 해결
 
@@ -44,7 +44,7 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 �
 
 ## <a name="log-files"></a>로그 파일
 
-### <a name="msfbsyncworkerlog"></a>MSfBSyncWorker.log
+### <a name="wsfbsyncworkerlog"></a>WSfBSyncWorker
 
 이 로그 파일은 서비스 연결 지점에서 Configuration Manager 설치 디렉터리의 `\Logs`에 있습니다. 클라우드 서비스와의 통신에 대 한 정보를 기록 합니다. 이 정보에는 메타 데이터, 아이콘, 패키지 및 라이선스 파일 검색이 포함 됩니다.
 
@@ -52,7 +52,7 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 �
 
 ### <a name="sms_cloudconnectionlog"></a>SMS_CLOUDCONNECTION.log
 
-이 로그 파일은 서비스 연결 지점에서 Configuration Manager 설치 디렉터리의 `\Logs`에 있습니다. MSfBSyncWorker 서비스가 시작 되지 않았거나 반복적으로 시작 및 중지 되는 경우이 로그 파일의 항목을 검토 합니다.
+이 로그 파일은 서비스 연결 지점에서 Configuration Manager 설치 디렉터리의 `\Logs`에 있습니다. WSfBSyncWorker 서비스가 시작 되지 않았거나 반복적으로 시작 및 중지 되는 경우이 로그 파일의 항목을 검토 합니다.
 
 > [!NOTE]
 > 이 로그 파일은 다른 기능과 공유 됩니다.
@@ -74,7 +74,7 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 �
 
 마지막 동기화 상태가 *실패*인 경우 다음 [로그 파일](#log-files) 을 검토 하 여 증상을 파악 합니다.
 
-- MSfBSyncWorker.log
+- WSfBSyncWorker
 - SMS_CLOUDCONNECTION.log
 
 그리고 일반적인 문제에 대해서는 다음 섹션 중 하나를 살펴보세요.
@@ -148,7 +148,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 1. 계정을 선택 하 고 해당 **속성**을 엽니다.
 
-1. 구성 탭으로 전환합니다. **위치** 설정은 비즈니스 및 교육용 Microsoft Store에서 다운로드 한 응용 프로그램 콘텐츠를 저장할 네트워크 경로를 표시 합니다 **** .
+1. 구성 탭으로 전환합니다. **위치** 설정은 비즈니스 및 교육용 Microsoft Store에서 다운로드 한 응용 프로그램 콘텐츠를 저장할 네트워크 경로를 표시 합니다.
 
 #### <a name="workaround"></a>해결 방법
 

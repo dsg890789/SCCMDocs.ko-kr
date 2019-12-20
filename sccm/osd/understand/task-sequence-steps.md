@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d2763586f7f42ed98a78be277b1fcf702913c55
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6d94d348f3cee7d55bbbbf6f4a9f791e7b65c768
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74734684"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198883"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
 *적용 대상: Configuration Manager (현재 분기)*
 
-Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계는 다음과 같습니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)을 참조 하세요.  
+Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계는 다음과 같습니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)을 참조하세요.  
 
 다음 설정은 모든 작업 순서 단계에 공통적으로 적용됩니다.
 
@@ -367,7 +367,7 @@ Windows 설치 응답 파일을 제공하지 않으면 작업 순서에서 응�
 
 다음 설정을 구성합니다.
 
-- 입력 로캘 (기본 키보드 레이아웃)
+- 입력 로캘(기본 키보드 레이아웃)
 - 시스템 로캘
 - UI 언어
 - UI 언어 대체
@@ -597,7 +597,7 @@ EFS(암호화된 파일 시스템)로 암호화된 파일의 캡처를 건너뛰
 
     하드 링크를 사용하여 데이터를 마이그레이션하는 방법에 대한 자세한 내용은 [하드 링크 마이그레이션 저장소](https://docs.microsoft.com/windows/deployment/usmt/usmt-hard-link-migration-store)를 참조하세요.  
 
-- **오프라인 모드 캡처(Windows PE 전용)** : 전체 OS 대신 Windows PE에서 사용자 상태를 캡처하려면 이 설정을 선택합니다.  
+- **오프라인 모드 캡처(Windows PE 전용)**: 전체 OS 대신 Windows PE에서 사용자 상태를 캡처하려면 이 설정을 선택합니다.  
 
 #### <a name="capture-by-using-volume-copy-shadow-services-vss"></a>VSS(Volume Copy Shadow) 서비스를 사용하여 캡처
 
@@ -878,7 +878,7 @@ OS 이외의 특정 데이터 드라이브를 암호화하려면 **특정 드라
 기본적으로 이 단계는 드라이브에서 사용된 공간만 암호화합니다. 이 기본 동작은 더 빠르고 효율적기 때문에 권장됩니다. 조직에 설치 중에 전체 드라이브 암호화가 필요한 경우 이 옵션을 사용하도록 설정합니다. Windows 설치는 전체 드라이브가 암호화될 때까지 대기하는데, 특히 드라이브가 크면 긴 시간이 소요됩니다.
 
 > [!TIP]
-> 버전 1910부터 *전체 디스크* 암호화를 사용 하는 BitLocker 관리 정책을 만들고 배포할 수 있습니다. 작업 순서에서 OS를 배포한 후 장치에서 BitLocker를 관리 하려면이 옵션을 사용 하도록 설정 합니다. 자세한 내용은 [BitLocker 관리 계획](/configmgr/protect/plan-design/bitlocker-management)을 참조 하세요.
+> 버전 1910부터 *전체 디스크* 암호화를 사용 하는 BitLocker 관리 정책을 만들고 배포할 수 있습니다. 작업 순서에서 OS를 배포한 후 장치에서 BitLocker를 관리 하려면이 옵션을 사용 하도록 설정 합니다. 자세한 내용은 [BitLocker 관리 계획](/configmgr/protect/plan-design/bitlocker-management)을 참조하세요.
 
 #### <a name="choose-where-to-create-the-recovery-key"></a>복구 키를 만들 위치 선택
 
@@ -929,7 +929,7 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 
 포맷할 디스크의 유형입니다. 드롭다운 목록에서 선택할 수 있는 두 가지 옵션이 있습니다.
 
-- **표준(MBR)** : 마스터 부트 레코드  
+- **표준(MBR)**: 마스터 부트 레코드  
 - **GPT**: GUID 파티션 테이블  
 
 > [!NOTE]  
@@ -1693,7 +1693,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 `-MyParameter1 MyValue1 -MyParameter2 MyValue2`  
 
-잘못된 매개 변수의 예는 다음과 같습니다. 처음 두 항목은 Windows PowerShell 명령줄 매개 변수( **-NoLogo** 및 **-ExecutionPolicy Unrestricted**)입니다. 스크립트는 이러한 매개 변수를 사용하지 않습니다.  
+잘못된 매개 변수의 예는 다음과 같습니다. 처음 두 항목은 Windows PowerShell 명령줄 매개 변수(**-NoLogo** 및 **-ExecutionPolicy Unrestricted**)입니다. 스크립트는 이러한 매개 변수를 사용하지 않습니다.  
 
 `-NoLogo -ExecutionPolicy Unrestricted -File MyScript.ps1 -MyParameter1 MyValue1 -MyParameter2 MyValue2`
 
@@ -1721,7 +1721,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 버전 1902부터 사용자 지정 작업 순서 변수에 스크립트 출력을 저장합니다.
 
 > [!Note]  
-> 1910 버전부터, Configuration Manager이 출력을 지난 1000 자로 제한 합니다.
+> 1910 버전부터 Configuration Manager는 이 출력을 마지막 1,000자로 제한합니다.
 
 #### <a name="start-in"></a>시작 위치
 
@@ -1769,7 +1769,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 ## <a name="child-task-sequence"></a> 작업 순서 실행
 
 > [!Note]  
-> 버전 1910에서는이 기능이 기본적으로 사용 하도록 설정 Configuration Manager. 1906 이전 버전에서 Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능을 사용하려면 먼저 활성화합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/configmgr/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
+> 버전 1910에서는 Configuration Manager가 기본적으로 이 기능을 사용하도록 설정합니다. 1906 이전 버전에서 Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능을 사용하려면 먼저 활성화합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/configmgr/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
 
 이 단계는 다른 작업 순서를 실행합니다. 이렇게 하면 작업 순서 간에 부모-자식 관계가 만들어집니다. 자식 작업 순서를 사용하면 재사용 가능한 모듈식 작업 순서를 만들 수 있습니다.
 
@@ -1782,7 +1782,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 - **Remove-CMTSStepRunTaskSequence**
 - **Set-CMTSStepRunTaskSequence**
 
-자세한 내용은 [1906 릴리스 정보-새 cmdlet](https://docs.microsoft.com/powershell/configmgr/1906-release-notes?view=sccm-ps#new-cmdlets)을 참조 하세요.
+자세한 내용은 [1906 릴리스 정보-새 cmdlet](https://docs.microsoft.com/powershell/sccm/1906-release-notes?view=sccm-ps#new-cmdlets)을 참조 하세요.
 
 ### <a name="specifications-and-limitations"></a>사양 및 제한 사항
 
@@ -1802,7 +1802,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 - 자식 작업 순서를 사용하지 않도록 설정한 경우 배포에 실패합니다. **오류 발생 시 계속** 옵션으로 이 제한 사항을 해결할 수 없습니다.  
 
-- ‘영향도가 높은’ 것으로 간주되는 단계가 자식 작업 순서에 포함되어 있는 경우 소프트웨어 센터에서 해당 자식 작업 순서를 검색하지 않고 영향도가 높은 작업 순서 알림을 표시하지 않습니다.  사용자 알림 탭에서 부모 작업 순서의 속성을 수정하여 **강력한 작업 순서임**을 지정하세요.  
+- ‘영향도가 높은’ 것으로 간주되는 단계가 자식 작업 순서에 포함되어 있는 경우 소프트웨어 센터에서 해당 자식 작업 순서를 검색하지 않고 영향도가 높은 작업 순서 알림을 표시하지 않습니다. 사용자 알림 탭에서 부모 작업 순서의 속성을 수정하여 **강력한 작업 순서임**을 지정하세요.  
 
 - 자식 작업 순서에 누락된 패키지 참조가 있어도 부모 작업 순서 보기에서 이러한 상태를 검색하지 않습니다. 부모 작업 순서를 편집하는 경우에는 부모를 변경할 때 자식 작업 순서에서 누락된 참조를 검색합니다.  
 

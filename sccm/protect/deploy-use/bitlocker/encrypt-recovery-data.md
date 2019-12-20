@@ -11,12 +11,12 @@ ms.assetid: 1ee6541a-e243-43ea-be16-d0349f7f0c6e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9549186d8e04da2309eae8a5bd4baa8c3bb8042c
-ms.sourcegitcommit: 4d3999de1e13d579dd128578cb5dcee46fe3b0d6
+ms.openlocfilehash: 1a7845db0115f35d5b2fc7472013c9061e270aee
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74855922"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198849"
 ---
 # <a name="encrypt-recovery-data"></a>복구 데이터 암호화
 
@@ -107,6 +107,7 @@ USE CM_ABC
 BACKUP CERTIFICATE BitLockerManagement_CERT TO FILE = 'C:\BitLockerManagement_CERT'
     WITH PRIVATE KEY ( FILE = 'C:\BitLockerManagement_CERT_KEY',
         ENCRYPTION BY PASSWORD = MyExportKeyPassword)
+END
 ```
 
 > [!IMPORTANT]

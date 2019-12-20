@@ -84,10 +84,10 @@
           href: deploy-use/endpoint-protection-client-faq.md
     - name: BitLocker 관리
       items:
-        - name: BitLocker 관리 배포
-          href: deploy-use/bitlocker/deploy-management-agent.md
         - name: 복구 데이터 암호화
           href: deploy-use/bitlocker/encrypt-recovery-data.md
+        - name: BitLocker 관리 배포
+          href: deploy-use/bitlocker/deploy-management-agent.md
         - name: BitLocker 포털 설정
           href: deploy-use/bitlocker/setup-websites.md
         - name: 셀프 서비스 포털 사용자 지정

@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab6cb2816096697d4ccff6db17f03e4aac1d4f14
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2a5ba60644d789d73779828ed1a5437cb1365c5d
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62245275"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198017"
 ---
 # <a name="creating-custom-report-models-for-system-center-configuration-manager-in-sql-server-reporting-services"></a>SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기
 
@@ -149,11 +149,11 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 4. _&lt;모델 이름\>_ **.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
 
-    **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
+    `<DataSourceView xmlns="https://schemas.microsoft.com/analysisservices/2003/engine">`
 
     이 줄을 다음과 같이 편집합니다.  
 
-    **&lt;DataSourceView xmlns="<http://schemas.microsoft.com/analysisservices/2003/engine>" xmlns:xsi="RelationalDataSourceView"\>**  
+    `<DataSourceView xmlns="<https://schemas.microsoft.com/analysisservices/2003/engine>" xmlns:xsi="RelationalDataSourceView">`  
 
 5. 파일 내용 전체를 Windows 클립보드에 복사합니다.  
 
@@ -392,11 +392,11 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 4. _&lt;모델 이름\>_ **.dsv** 파일에서 다음과 같이 표시된 파일의 첫 줄을 찾습니다.  
 
-    **&lt;DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"\>**  
+    `<DataSourceView xmlns="https://schemas.microsoft.com/analysisservices/2003/engine">`
 
     이 줄을 다음과 같이 편집합니다.  
 
-    **&lt;DataSourceView xmlns="<http://schemas.microsoft.com/analysisservices/2003/engine>" xmlns:xsi="RelationalDataSourceView"\>**  
+    `<DataSourceView xmlns="<https://schemas.microsoft.com/analysisservices/2003/engine>" xmlns:xsi="RelationalDataSourceView">`
 
 5. 파일 내용 전체를 Windows 클립보드에 복사합니다.  
 

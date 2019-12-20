@@ -11,12 +11,12 @@ ms.assetid: 39aa0558-742c-4171-81bc-9b1e6707f4ea
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8cb3f8763b0789dcf593c71190e4772ce4b977ac
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f91a1da10584da69dcbdcec2d1afdf2b25e41962
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662641"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198866"
 ---
 # <a name="deploy-bitlocker-management"></a>BitLocker 관리 배포
 
@@ -30,7 +30,11 @@ Configuration Manager의 BitLocker 관리에는 다음 구성 요소가 포함 �
 
 - **복구 서비스**: 클라이언트에서 BitLocker 복구 데이터를 수신 하는 서버 구성 요소입니다. 자세한 내용은 [복구 서비스](#recovery-service)를 참조 하세요.
 
-BitLocker 관리 정책을 만들고 배포 하기 전에 [필수 구성 요소](/configmgr/protect/plan-design/bitlocker-management#prerequisites)를 검토 해야 합니다.
+BitLocker 관리 정책을 만들고 배포 하기 전에 다음을 수행 합니다.
+
+- [필수 구성 요소](/configmgr/protect/plan-design/bitlocker-management#prerequisites) 검토
+
+- 필요한 경우 사이트 데이터베이스에서 [복구 키를 암호화](/configmgr/protect/deploy-use/bitlocker/encrypt-recovery-data) 합니다.
 
 ## <a name="create-a-policy"></a>정책 만들기
 
@@ -181,7 +185,5 @@ Configuration Manager는 이미 BitLocker 드라이브 암호화로 보호 된 �
 이 문제를 해결 하려면 먼저 장치에서 BitLocker를 사용 하지 않도록 설정 합니다. 그런 다음 새 설정을 사용 하 여 새 정책을 배포 합니다.
 
 ## <a name="next-steps"></a>다음 단계
-
-[복구 데이터 암호화](/configmgr/protect/deploy-use/bitlocker/encrypt-recovery-data)
 
 [BitLocker 보고서 및 포털 설정](/configmgr/protect/deploy-use/bitlocker/setup-websites)

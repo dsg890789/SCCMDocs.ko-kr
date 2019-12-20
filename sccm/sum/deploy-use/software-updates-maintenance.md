@@ -3,7 +3,7 @@ title: 소프트웨어 업데이트 유지 관리
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 업데이트를 유지 관리하려면 WSUS 정리 태스크를 예약하거나 수동으로 실행할 수 있습니다.
 author: mestew
-ms.date: 10/17/2019
+ms.date: 12/17/2019
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
@@ -11,12 +11,12 @@ ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: mstewart
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e2edd794d582c4ab875ac53f095eb65fcd26ba8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 72554b62203700a3930cb169a8758308364d7eb1
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72347897"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198696"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -144,6 +144,16 @@ WSUS 데이터베이스가 원격 SQL Server인 경우 사이트 서버의 컴�
 
 - `db_datareader` 및 `db_datawriter` 고정 데이터베이스 역할. 자세한 내용은 [데이터베이스 수준 역할](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/database-level-roles?view=sql-server-2017#fixed-database-roles)을 참조하세요.
 - `CONNECT SQL` 서버 권한을 사이트 서버의 컴퓨터 계정에 부여해야 합니다. 자세한 내용은 [GRANT 서버 권한(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/grant-server-permissions-transact-sql?view=sql-server-2017)을 참조하세요.
+
+#### <a name="wsus-cleanup-wizard"></a>WSUS 정리 마법사
+
+1906 버전부터 다음 **WSUS 서버 정리 마법사** 옵션은 CAS, 기본 및 보조 사이트에서 실행되지 않습니다.
+
+- 서버에 연결되지 않은 컴퓨터
+- 불필요한 업데이트 파일
+
+  자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint/) 블로그 게시물을 참조하세요.
+
 
 ### <a name="known-issues-for-version-1906"></a>1906 버전의 알려진 문제
 

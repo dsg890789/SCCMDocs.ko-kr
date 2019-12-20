@@ -11,12 +11,12 @@ ms.assetid: 1cd8ac9f-b7ba-4cf4-8cd2-d548b0d6b1df
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e2b0c71dfd93fd264e900b6a42952cf3c80374b1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b48dac5f2cb850db104cc06f342fd6e286911d1f
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662351"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198747"
 ---
 # <a name="set-up-bitlocker-portals"></a>BitLocker 포털 설정
 
@@ -42,7 +42,7 @@ IIS를 사용 하 여 기존 사이트 서버에 포털을 설치 하거나 독�
 
 - `-SqlServerName <ServerName>` (필수): 기본 사이트 데이터베이스 서버의 정규화 된 도메인 이름입니다.
 
-- `-SqlInstanceName <InstanceName>`: 기본 사이트 데이터베이스의 SQL Server 인스턴스 이름입니다. SQL에서 기본 인스턴스를 사용하는 경우 이 매개 변수는 선택 사항입니다.
+- `-SqlInstanceName <InstanceName>`: 기본 사이트 데이터베이스의 SQL Server 인스턴스 이름입니다. SQL에서 기본 인스턴스를 사용 하는 경우에는이 매개 변수를 포함 하지 마십시오.
 
 - `-SqlDatabaseName <DatabaseName>` (필수): 기본 사이트 데이터베이스의 이름입니다 (예: `CM_ABC`.
 
@@ -89,6 +89,9 @@ IIS를 사용 하 여 기존 사이트 서버에 포털을 설치 하거나 독�
     ``` PowerShell
     .\MBAMWebSiteInstaller.ps1 -SqlServerName sql.contoso.com -SqlInstanceName instance1 -SqlDatabaseName CM_ABC -ReportWebServiceUrl https://rsp.contoso.com/ReportServer -HelpdeskUsersGroupName "contoso\BitLocker help desk users" -HelpdeskAdminsGroupName "contoso\BitLocker help desk admins" -MbamReportUsersGroupName "contoso\BitLocker report users" -SiteInstall Both
     ```
+
+    > [!IMPORTANT]
+    > 이 예제 명령줄은 사용 가능한 모든 매개 변수를 사용 하 여 사용법을 표시 합니다. 사용자 환경의 요구 사항에 따라 사용을 조정 합니다.
 
 설치 후에 다음 URL을 통해 포털에 액세스합니다.
 

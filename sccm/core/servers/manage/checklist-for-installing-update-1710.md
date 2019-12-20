@@ -12,12 +12,12 @@ ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16d58836052bf4b0e94234dc162dbe276141e5ad
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 33dae7292e4824d7329cb0bd7ba2f65679f03e4d
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70738387"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198356"
 ---
 # <a name="checklist-for-installing-update-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 업데이트 1710을 설치하기 위한 검사 목록
 
@@ -33,7 +33,7 @@ System Center Configuration Manager의 현재 분기를 사용하는 경우 버�
 
     -   dmpdownloader.log에서 dmpdownloader 프로세스가 절전 모드이고 업데이트를 확인하기 전에 일정 시간 대기 중임을 나타내는 경우 사이트 서버에서 **SMS_Executive** 서비스를 다시 시작하여 업데이트 재배포 파일의 다운로드를 다시 시작할 수도 있습니다.
 
-    -   프록시 서버 설정이 <http://silverlight.dlservice.microsoft.com> 및 <http://download.microsoft.com> 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
+    -   프록시 서버 설정이 `silverlight.dlservice.microsoft.com` 및 `download.microsoft.com` 에서 다운로드하지 않도록 방지하는 경우 또 다른 일반적인 다운로드 문제가 발생합니다.
 
 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#bkmk_inconsole)를 참조하세요.
 

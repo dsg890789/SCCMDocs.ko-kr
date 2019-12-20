@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c565d3c1754ce60ec8f9b7d5dcd2d487f8db1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bb64b2f13bd1fe558d90d2c4011f03fb6322b443
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68411487"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198577"
 ---
 # <a name="create-a-configuration-manager-lab-in-azure"></a>Azure에서 Configuration Manager 랩 만들기
 
@@ -80,7 +80,10 @@ ms.locfileid: "68411487"
 
 4. 사용 약관을 참조하세요. 동의하면 **위에 명시된 사용 약관에 동의함**을 선택합니다. 그런 다음, **구매**를 선택하여 계속합니다. 
 
-Azure에서는 설정의 유효성을 검사한 다음, 배포를 시작합니다. Azure Portal에서 배포 상태를 확인합니다. 이 프로세스는 2-4시간이 걸릴 수 있습니다. Azure Portal에서 성공적인 배포를 보여 주는 경우에도 구성 스크립트는 계속 실행됩니다. 프로세스 중 VM을 다시 시작하지 마십시오.
+Azure에서는 설정의 유효성을 검사한 다음, 배포를 시작합니다. Azure Portal에서 배포 상태를 확인합니다. 
+
+> [!NOTE]
+> 이 프로세스는 2-4시간이 걸릴 수 있습니다. Azure Portal에서 성공적인 배포를 보여 주는 경우에도 구성 스크립트는 계속 실행됩니다. 프로세스 중 VM을 다시 시작하지 마십시오.
 
 구성 스크립트의 상태를 보려면 `<prefix>PS1` 서버에 연결하고 `%windir%\TEMP\ProvisionScript\PS1.json` 파일 보기를 확인합니다. 모든 단계가 완료로 표시되면 프로세스가 수행됩니다.
 

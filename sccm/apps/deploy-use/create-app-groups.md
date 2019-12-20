@@ -11,12 +11,12 @@ ms.assetid: e67c691e-62ef-4f43-9cfb-0e957d1e7a5f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4427e406ec2d96499276c49db1d9775b9e1f5e24
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4a07837952e420b9fe70bef26f998232a8f87d2f
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658730"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75197999"
 ---
 # <a name="create-application-groups"></a>애플리케이션 그룹 만들기
 
@@ -64,5 +64,6 @@ ms.locfileid: "74658730"
   - *버전 1906*: 배포 유형 설치 동작을 **시스템에 대해 설치**로 설정 합니다.
 - 다음 배포 옵션은 작동 하지 않을 수 있습니다. 경고, 승인, 단계적 배포, 복구.
 - 앱 그룹을 내보내거나 가져올 수 없습니다.
+- 다시 시작 해야 하는 앱은 그룹에 포함 하지 마세요. 그렇지 않으면 그룹 배포가 실패할 수 있습니다.
 - *버전 1906*: 사용자 컬렉션에 앱 그룹을 배포할 수 없습니다.
 - *버전 1906*: 사용자는 소프트웨어 센터에서 앱 그룹을 **제거**할 수 없습니다.

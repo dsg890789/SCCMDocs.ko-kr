@@ -2,7 +2,7 @@
 title: Microsoft Defender Advanced Threat Protection
 titleSuffix: Configuration Manager
 description: 기업이 고급 공격에 대응하는 데 도움이 되는 새로운 서비스인 Microsoft Defender Advanced Threat Protection을 관리 및 모니터링하는 방법을 알아봅니다.
-ms.date: 05/13/2019
+ms.date: 12/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72ad06228a7ae0dd0fa375ff1152771790b10bbe
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5d9777c2f6d82dd0e2d89437aaa460c65fc37563
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379979"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198815"
 ---
 # <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 
@@ -34,9 +34,9 @@ Microsoft Defender ATP는 [Windows Defender Security Center](https://securitycen
 
 ## <a name="how-to-create-an-onboarding-configuration-file"></a>온보딩 구성 파일을 만드는 방법  
 
- 1.  [Microsoft DEFENDER ATP 온라인 서비스](https://securitycenter.windows.com/) 에 로그온 합니다.   
+ 1. [Microsoft Defender ATP 온라인 서비스](https://securitycenter.windows.com/)로 이동하여 로그인합니다.
 
- 2.  **엔드포인트 관리** 메뉴 항목을 클릭합니다.  
+ 2.  **설정**에서 **컴퓨터 관리** 항목을 클릭 한 다음 **온 보 딩**을 선택 합니다. 
 
  3.  **System Center Configuration Manager(현재 분기) 버전 1606**을 선택하고 **패키지 다운로드**를 클릭합니다.  
 
@@ -45,9 +45,9 @@ Microsoft Defender ATP는 [Windows Defender Security Center](https://securitycen
 > [!IMPORTANT]
 > Microsoft Defender ATP 구성 파일에는 보안을 유지해야 하는 중요한 정보가 포함되어 있습니다.
 
-## <a name="onboard-devices-for-microsoft-defender-atp"></a>Microsoft Defender ATP 용 장치 등록  
+## <a name="onboard-devices-for-microsoft-defender-atp"></a>Microsoft Defender ATP에 대한 디바이스 온보딩  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Microsoft Defender ATP 정책 마법사가 표시됩니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수** > **개요** > **Endpoint Protection** > **Windows Defender ATP 정책**으로 이동하고 **Windows Defender ATP 정책 만들기**를 클릭합니다. Microsoft Defender ATP 정책 마법사가 열립니다.  
 
 2. Windows Defender ATP 정책의 **이름** 및 **설명**을 입력하고 **온보딩**을 선택합니다. **다음**을 클릭합니다.  
 
@@ -86,9 +86,9 @@ Microsoft Defender ATP는 [Windows Defender Security Center](https://securitycen
 
 ## <a name="how-to-create-and-deploy-an-offboarding-configuration-file"></a>오프보딩 구성 파일을 만들고 배포하는 방법  
 
-1.  [Microsoft DEFENDER ATP 온라인 서비스](https://securitycenter.windows.com/) 에 로그온 합니다.   
+1.  [Microsoft Defender ATP 온라인 서비스](https://securitycenter.windows.com/)에 로그온합니다.   
 
-2.  **엔드포인트 관리** 메뉴 항목을 클릭합니다.  
+2.  **설정**에서 **컴퓨터 관리** 항목을 클릭 한 다음 **온 보 딩**을 선택 합니다.  
 
 3.  **System Center Configuration Manager(현재 분기) 버전 1606**을 선택하고 **엔드포인트 오프보딩**을 클릭합니다.  
 

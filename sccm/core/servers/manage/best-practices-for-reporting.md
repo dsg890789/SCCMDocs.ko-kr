@@ -10,12 +10,12 @@ ms.assetid: 64f9d931-33f1-456f-a4e4-0ec077465bd0
 author: mestew
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17f120e61b581680185c038d2fa4289bb58a3f39
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f17e8ede7185892e226d576c532ad460d7cd4f32
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73623379"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198407"
 ---
 # <a name="best-practices-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고에 대한 모범 사례
 
