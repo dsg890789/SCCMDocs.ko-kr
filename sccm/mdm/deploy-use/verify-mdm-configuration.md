@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9107557d21927df1f648c06805f89db449de2e5d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 846c6a45469a3d3fddf3515b3808f2991679d5bf
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227758"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75197625"
 ---
 # <a name="verify-mdm-configuration-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 MDM 구성 확인
 
@@ -28,7 +28,7 @@ ms.locfileid: "62227758"
 
 -   Sitecomp.log에서 서비스 연결 지점이 제대로 만들어졌는지 확인합니다.
 
-이 특정 로그 파일 및 이를 확인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 로그 파일](../../core/plan-design/hierarchy/log-files.md##BKMK_FunctionLogs)을 참조하세요. 
+이 특정 로그 파일 및 이를 확인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요. 
 
 > [!div class="button"]
 > [< 이전 단계](set-up-additional-management.md)

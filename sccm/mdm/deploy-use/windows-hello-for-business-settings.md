@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f853034133e2ec73a4d8e606c2e0c0c94841a4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 68b3e63099fb4043af74cb2be5d049d4a5cefbdc
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227586"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75197574"
 ---
 # <a name="windows-hello-for-business-settings-in-configuration-manager-hybrid"></a>Configuration Manager (하이브리드)의 비즈니스용 Windows Hello 설정
 
@@ -34,7 +34,7 @@ Configuration Manager는 다음 두 가지 방법으로 비즈니스용 Windows 
 
 - 비즈니스용 Windows Hello KSP(키 스토리지 공급자)에 인증 인증서를 저장할 수 있습니다. 자세한 내용은 [인증서 프로필](create-pfx-certificate-profiles.md)을 참조하세요.  
 
-- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 디바이스에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성](/sccm/protect/deploy-use/windows-hello-for-business-settings#configure-windows-hello-for-business-on-domain-joined-windows-10-devices)에서 설명합니다. Intune과 함께 Configuration Manager를 사용하는 경우(하이브리드) Windows 10 및 Windows 10 Mobile 디바이스에서 이러한 설정을 구성할 수 있지만, Configuration Manager 클라이언트를 실행하는 도메인에 가입된 디바이스에서는 구성할 수 없습니다.   
+- Configuration Manager 클라이언트를 실행하는 도메인에 가입된 Windows 10 디바이스에 비즈니스용 Windows Hello 정책을 배포할 수 있습니다. 이 구성은 [도메인에 가입된 Windows 10 디바이스에서 비즈니스용 Windows Hello 구성](/sccm/protect/deploy-use/windows-hello-for-business-settings#configure-permissions)에서 설명합니다. Intune과 함께 Configuration Manager를 사용하는 경우(하이브리드) Windows 10 및 Windows 10 Mobile 디바이스에서 이러한 설정을 구성할 수 있지만, Configuration Manager 클라이언트를 실행하는 도메인에 가입된 디바이스에서는 구성할 수 없습니다.   
 
 비즈니스용 Windows Hello 설정을 구성 하는 방법에 대 한 일반적인 내용은 [Configuration Manager의 비즈니스용 Windows hello 설정](/sccm/protect/deploy-use/windows-hello-for-business-settings)을 참조 하세요.
 
