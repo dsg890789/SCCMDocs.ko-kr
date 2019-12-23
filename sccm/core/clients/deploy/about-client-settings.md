@@ -2,7 +2,7 @@
 title: 클라이언트 설정
 titleSuffix: Configuration Manager
 description: 클라이언트 동작을 제어하기 위한 기본 및 사용자 지정 설정에 대해 알아봅니다.
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 194889939601a30234b0d72cf27f73581ce09aab
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8bf3862235e5b9aa78b46b6e181bd51343a4acaa
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74813820"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198594"
 ---
 # <a name="about-client-settings-in-configuration-manager"></a>Configuration Manager의 클라이언트 설정 정보
 
@@ -346,13 +346,14 @@ VDI(가상 데스크톱 인프라)를 사용하는 경우 이러한 지연 시�
 > Configuration Manager 1902에서 경우에 따라 대화 상자가 알림 메시지를 바꾸지 않습니다. 이 문제를 해결하려면 [Configuration Manager 버전 1902용 업데이트 롤업](https://support.microsoft.com/help/4500571/update-rollup-for-configuration-manager-current-branch-1902)을 설치합니다. <!--4404715-->
 
 
-## <a name="delivery-optimization"></a>배달 최적화
+## <a name="delivery-optimization"></a>배달 최적화 
 
 <!-- 1324696 -->
 Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다.
 
 > [!Note]
-> 배달 최적화는 Windows 10 클라이언트에서만 사용할 수 있습니다.
+> - 배달 최적화는 Windows 10 클라이언트에서만 사용할 수 있습니다.
+> - 피어 투 피어 기능을 활용하려면 배달 최적화 클라우드 서비스에 대한 인터넷 액세스가 필요합니다. 필요한 인터넷 엔드포인트에 대한 자세한 내용은 [배달 최적화에 대한 질문과 대답](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#frequently-asked-questions)을 참조하세요.
 
 ### <a name="use-configuration-manager-boundary-groups-for-delivery-optimization-group-id"></a>배달 최적화 그룹 ID에 Configuration Manager 경계 그룹 사용
 
@@ -880,7 +881,7 @@ Configuration Manager에서 모든 배포에 대한 요구 사항 규칙을 재�
 
 클라이언트에서 델타 콘텐츠 파일을 사용할 수 있도록 허용하려면 이 옵션을 **예**로 설정합니다. 이 설정을 사용하면 디바이스의 Windows 업데이트 에이전트가 필요한 콘텐츠를 확인하고 선택적으로 다운로드할 수 있습니다. 
 
-- 이 클라이언트를 사용하도록 설정하기 전에 전송 최적화가 환경에 맞게 구성되어 있는지 확인하세요. 자세한 내용은 [Windows 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization)를 참조하세요.
+- 이 클라이언트를 사용하도록 설정하기 전에 전송 최적화가 환경에 맞게 구성되어 있는지 확인하세요. 자세한 내용은 [Windows 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization)와 [배달 최적화 클라이언트 설정](#delivery-optimization)을 참조하세요.
  - 이 클라이언트 설정은 클라이언트 **클라이언트에서 빠른 설치 파일의 설치 사용**을 대신합니다. 클라이언트에서 빠른 설치 파일을 사용할 수 있게 하려면 이 옵션을 **예**로 설정합니다. 자세한 내용은 [Windows 10 업데이트에 대한 빠른 설치 파일 관리](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)를 참조하세요.
  - Configuration Manager 버전 1910부터, 이 옵션을 설정하면 빠른 설치 파일뿐 아니라 모든 Windows 업데이트 설치 파일에서도 델타 다운로드가 사용됩니다.
 

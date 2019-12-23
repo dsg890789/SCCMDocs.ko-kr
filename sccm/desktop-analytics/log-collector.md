@@ -11,12 +11,12 @@ ms.assetid: 349b2a69-af46-481f-afb2-24d98774e852
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e133adf70f66041da43570503c0e7813a59350d0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 65e166d599574f1105f983096a50f34571c85047
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810636"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75197982"
 ---
 # <a name="desktop-analytics-log-collector"></a>Desktop Analytics 로그 수집기
 
@@ -35,7 +35,7 @@ Configuration Manager 버전 1906부터 Configuration Manager 설치 디렉터�
 - Windows 7 서비스 팩 1의 경우 PowerShell 버전 4.0 이상
     - [.NET 프레임워크 버전 4.6 이상](https://dotnet.microsoft.com/download/dotnet-framework)
 
-    - [Windows Management Framework 버전 4.0](http://aka.ms/wmf4download) [이상](http://aka.ms/wmf5download)
+    - Windows Management Framework [버전 4.0](https://support.microsoft.com/help/2819745)(aka.ms/wmf4download) 또는 [버전 5.1](https://www.microsoft.com/download/details.aspx?id=54616)(aka.ms/wmf5download)
 
 ## <a name="usage"></a>사용
 

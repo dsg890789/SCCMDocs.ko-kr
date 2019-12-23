@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cab46c3bf8511f4dacb85e700241f623ed84dde
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 545b68cd1628bb9652f1e87da96e5fb6e18787f1
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74825582"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198492"
 ---
 # <a name="whats-new-in-version-1910-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1910의 새로운 기능
 
@@ -276,7 +276,10 @@ Windows 설치가 완료되고 난 후 고성능 디바이스에서 발생하는
 <!--4699118-->
 이전에는 빠른 업데이트에서 전송 최적화만 사용할 수 있었습니다. Configuration Manager version 1910에서는 Windows 10 버전 1709 이상을 실행하는 클라이언트의 모든 Windows 업데이트 콘텐츠 배포에 전송 최적화를 사용할 수 있습니다.
 
-자세한 내용은 [Windows 10 업데이트 전송 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910) 및 [소프트웨어 업데이트를 위한 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#software-updates)을 참조하세요.
+자세한 내용은 다음을 참조하십시오.
+- [Windows 10 업데이트 전송 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910)
+- [소프트웨어 업데이트를 위한 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#software-updates)
+- [배달 최적화를 위한 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#delivery-optimization)
 
 ### <a name="additional-software-update-filter-for-adrs"></a>ADR용 추가 소프트웨어 업데이트 필터
 <!--4852033-->

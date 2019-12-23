@@ -10,12 +10,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 76970a024e54067aaa6a3059bb95a6c134a2e999
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cb17e22f7eb525f10a3494f893928a836c847c9d
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65214699"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198458"
 ---
 # <a name="mms-2019-docathon"></a>MMS 2019 Docathon
 
@@ -43,7 +43,7 @@ MMS(Midwest Management Summit) 2019 기간에 System Center Configuration Manage
 
 #### <a name="additional-considerations"></a>추가 고려 사항
 
-- 오픈 소스 기여에 대한 회사 정책 확인  
+- 회사의 오픈 소스 기여 관련 정책 확인  
 
     > [!Note]  
     > 대규모 기여의 경우 Microsoft 오픈 소스 [CLA(Contributor License Agreement)](https://cla.opensource.microsoft.com/)에 동의해야 합니다. 사전에 이 계약을 검토합니다.  
@@ -89,7 +89,7 @@ MMS(Midwest Management Summit) 2019 기간에 System Center Configuration Manage
 
     - 미리 Aaron/Erik과 논의한 경우가 아니면 문법 또는 스타일을 변경하지 마세요.  
 
-    - 원하는 문서의 날짜가 2019년 2월 6일 전으로 90일을 초과하는 날짜입니다. 문서를 검토할 수 있고, 이후에 편집 내용이 **ms.date** 메타데이터 속성에 적용됩니다. 해당 기여의 의미는 다음과 같습니다. “이 문서를 검토했고 기술적으로 정확하므로 날짜를 새로 고칩니다.” 이슈를 제출하여 이슈 소유권을 주장합니다.  
+    - 원하는 아티클의 날짜가 2019년 2월 6일 전으로 90일을 초과하는 날짜입니다. 문서를 검토할 수 있고, 이후에 편집 내용이 **ms.date** 메타데이터 속성에 적용됩니다. 해당 기여의 의미는 다음과 같습니다. “이 문서를 검토했고 기술적으로 정확하므로 날짜를 새로 고칩니다.” 이슈를 제출하여 이슈 소유권을 주장합니다.  
 
     - 먼저 문서 피드백을 확인하여 이미 이슈 소유권을 주장한 다른 사람의 열린 이슈가 없는지 확인합니다. 엄밀히 말하면 이 작업은 필수는 아닙니다. 이렇게 하지 않고 다른 사용자가 먼저 제출하면 Microsoft는 첫 번째 기여만 받아들입니다.  
 
@@ -114,7 +114,7 @@ MMS(Midwest Management Summit) 2019 기간에 System Center Configuration Manage
 
 대상 수상자는 다음 수상자 혜택을 받습니다.
 
-- MMS 운영 위원회에서 제공하는 $1799 상당의 [MMS Jazz Edition](https://mmsmoa.com/registration/mms-jazz-edition.html) 등록 패스.
+- MMS 운영 위원회에서 제공하는 $1799 상당의 [MMS Jazz Edition](https://mmsmoa.com/sessions/jazz-edition.html) 등록 패스.
 - Yeti Rambler 로고가 있는 30oz 텀블러
 - Popsocket 로고가 있는 자동차 통풍구 거치대
 
@@ -153,7 +153,7 @@ Microsoft Cloud + AI 개발자 관계 콘텐츠 및 학습 MMS 2019 Docathon 이
 
 2. 정의
 
-    이 규칙에서 “Microsoft”, “당사” 및 “우리”는 스폰서를 나타냅니다. "귀하"는 콘테스트 참가자를 나타냅니다. “이벤트”는 미네소타주 미니애폴리스에서 개최되는 MMS 2019 Docathon 이벤트를 나타냅니다. 출품하는 것은 이 규칙이 적용됨에 동의하는 것입니다.
+    이 규칙에서 “Microsoft”, “당사” 및 “우리”는 스폰서를 나타냅니다. "귀하"는 콘테스트 참가자를 나타냅니다. “이벤트”는 미네소타주 미니애폴리스에서 개최되는 MMS 2019 Docathon 이벤트를 나타냅니다. 출품자는 이 규칙의 적용에 동의하는 것으로 간주됩니다.
 
 3. 출품 기간
 
@@ -163,7 +163,7 @@ Microsoft Cloud + AI 개발자 관계 콘텐츠 및 학습 MMS 2019 Docathon 이
 
     미국 50개 주(콜럼비아 특별구 포함)의 법적 거주자인 18세 이상 등록된 이벤트 참석자에게 개방합니다. Microsoft Corporation 및 자회사의 직원과 임원, 이 프로모션의 진행과 관리에 관련된 사람 및 각각의 가족 구성원(부양 가족, 직계 가족 및 동일 세대에 거주하는 개인)은 자격이 없습니다. 금지된 지역에서는 자격이 없습니다.
 
-    비즈니스/박람회 이벤트의 경우: 직원 자격으로 이벤트에 참석하는 경우 고용주의 상품 정책을 준수할 책임은 귀하에게 있습니다. Microsoft는 이 문제에 관련된 모든 분쟁 또는 행위에 관여하지 않습니다. 교육자를 포함한 정부 직원: Microsoft는 정부 상품 및 윤리 규칙을 준수하므로 정부 및 공공 부문 직원은 이 프로모션에 참여할 자격이 없습니다.
+    비즈니스/박람회 이벤트의 경우: 직원 자격의 이벤트 참석자에게는 고용주의 상품 정책을 준수할 단독 책임이 부과됩니다. Microsoft는 이 문제에 관련된 모든 분쟁 또는 행위에 관여하지 않습니다. 교육자를 포함한 정부 직원: Microsoft는 정부 상품 및 윤리 규칙을 준수하므로 정부 및 공공 부문 직원은 이 프로모션에 참여할 자격이 없습니다.
 
 5. 출품 방법
 
@@ -187,11 +187,11 @@ Microsoft Cloud + AI 개발자 관계 콘텐츠 및 학습 MMS 2019 Docathon 이
 
 7. 출품작 사용
 
-    Microsoft는 귀하의 제출작에 대한 소유권을 주장하지 않습니다. 그러나 출품작을 제출하는 것은 이 콘테스트와 관련하여 출품작 및 모든 해당 콘텐츠를 사용, 검토, 평가, 테스트 및 분석하며, 귀하의 추가 허가 없이 Microsoft 제품이나 서비스의 마케팅, 판매 또는 홍보를 포함하되 이에 제한되지 않는 현재 알려지고 향후 비상업적 또는 상업적 목적으로 고안되는 모든 미디어에서 해당 출품작을 사용할 수 있는 변경 불가능하고, 로열티가 없고, 전 세계적인 권리 및 라이선스를 Microsoft에 부여하는 것입니다. 이 공식 규칙에 설명된 내용 이외에는 출품작 사용에 대한 보상이나 크레딧을 받지 못합니다.
+    Microsoft는 귀하의 제출작에 대한 소유권을 주장하지 않습니다. 그러나 귀하는 출품작을 제출함으로써 Microsoft에 이 콘테스트와 관련하여 출품작 및 모든 해당 콘텐츠를 사용, 검토, 평가, 테스트 및 분석하며, 귀하의 추가 허가 없이 Microsoft 제품이나 서비스의 마케팅, 판매 또는 홍보를 포함하되 이에 제한되지 않는 현재 알려지고 향후 비상업적 또는 상업적 목적으로 고안되는 모든 미디어에서 해당 출품작을 사용할 수 있는 변경 불가능하고, 로열티가 없고, 전 세계적인 권리 및 라이선스를 부여하게 됩니다. 이 공식 규칙에 설명된 내용 이외에는 출품작 사용에 대한 보상이나 크레딧을 받지 못합니다.
 
-    출품하는 것은 Microsoft가 해당 출품작과 유사하거나 동일한 자료를 개발하거나 의뢰했을 수 있음을 인정하고 해당 출품작과 유사함으로 인해 발생하는 모든 권리 주장을 포기하는 것입니다. 또한 출품작에 액세스할 수 있었던 담당자의 작업 할당을 제한하지 않을 것을 이해하고, Microsoft 제품 또는 서비스를 개발하거나 배포할 때 해당 담당자의 자발적인 기억에 따른 정보 사용이 이 계약이나 저작권법 또는 영업 비밀 보호법에 따라 Microsoft의 책임을 형성하지 않음에 동의하는 것입니다.
+    귀하는 출품작을 제출함으로써 Microsoft가 해당 출품작과 유사하거나 동일한 자료를 개발하거나 의뢰했을 수 있음을 인정하고 해당 출품작과 유사함으로 인해 발생하는 모든 권리 주장을 포기하는 것으로 간주됩니다. 또한 출품작에 액세스할 수 있었던 담당자의 작업 할당을 제한하지 않을 것을 이해하고, Microsoft 제품 또는 서비스를 개발하거나 배포할 때 해당 담당자의 자발적인 기억에 따른 정보 사용이 이 계약이나 저작권법 또는 영업 비밀 보호법에 따라 Microsoft의 책임을 형성하지 않음에 동의하는 것으로도 간주됩니다.
 
-    출품작은 공용 웹 사이트에 게시될 수 있습니다. Microsoft는 이 웹 사이트 방문자가 해당 출품작을 무단 사용하는 것에 대한 책임을 지지 않습니다. Microsoft는 해당 출품작이 수상 출품작으로 선정된 경우에도 어떤 용도로 사용할 의무는 없습니다.
+    출품작은 공용 웹 사이트에 게시될 수 있습니다. Microsoft는 이 웹 사이트 방문자가 해당 출품작을 무단 사용하는 것에 대한 책임을 지지 않습니다. 해당 출품작이 수상작으로 선정된 경우에도 Microsoft에는 어떤 용도로든 사용할 의무가 없습니다.
 
 8. 수상자 선정 및 알림
 
@@ -212,21 +212,21 @@ Microsoft Cloud + AI 개발자 관계 콘텐츠 및 학습 MMS 2019 Docathon 이
 
     적격 출품작 중에 동률이 있는 경우 추가 판정을 통해 위에 설명된 판정 기준에 따라 수상자를 선정합니다. 판정단의 결정은 최종적이고 구속력이 있습니다. 출품 요구 사항을 충족하는 충분한 수의 출품작을 접수하지 못하면 Microsoft는 재량에 따라 아래 설명된 콘테스트 수상자 혜택 수보다 적은 수상자를 선정할 수 있습니다.
 
-    수상자는 출품하는 동안 제공한 연락처 정보를 통해 알림을 받으며, 수상자 혜택 청구 및 세금 양식(“양식”)을 작성해야 할 수 있습니다. 선정된 수상자가 연락 되지 않거나, 적격하지 않거나, 수상자 혜택을 청구하지 않거나, 양식을 반환하지 않는 경우에는 선정된 수상자는 수상자 혜택을 받지 못하고 허용된 시간에 대체 수상자가 선정됩니다. 청구되지 않은 수상자 혜택이 제공되고 있지 않을 경우 이후 대체 수상자는 세 명만 선정됩니다.  
+    수상자는 출품하는 동안 제공한 연락처 정보를 통해 알림을 받으며, 수상자 혜택 청구 및 세금 양식(“양식”)을 작성해야 할 수 있습니다. 선정된 수상자가 연락되지 않거나, 적격하지 않거나, 수상자 혜택을 청구하지 않거나, 양식을 반환하지 않는 경우에는 선정된 수상자는 수상자 혜택을 받지 못하고 허용된 시간에 대체 수상자가 선정됩니다. 청구되지 않은 수상자 혜택이 제공되고 있지 않을 경우 이후 대체 수상자는 세 명만 선정됩니다.  
 
 9. 수상자 혜택
 
     다음 수상자 혜택이 제공됩니다.
 
     - 대상 한(1) 명. 다음 항목으로 구성된 수상자 혜택 패키지:
-        - [MMS Jazz Edition](https://mmsmoa.com/registration/mms-jazz-edition.html) 등록 패스(MMS 운영 위원회에서 제공). $1799 ARV(Approximate Retail Value)
-        - Yeti Rambler 30oz 텀블러. $35.00 ARV(Approximate Retail Value).
+        - [MMS Jazz Edition](https://mmsmoa.com/sessions/jazz-edition.html) 등록 패스(MMS 운영 위원회에서 제공). $1799 ARV(Approximate Retail Value)
+        - Yeti Rambler 로고가 있는 30oz 텀블러. $35.00 ARV(Approximate Retail Value).
         - Popsocket 자동차 통풍구 거치대. $15.00 ARV(Approximate Retail Value).
 
         이 패키지의 총 ARV(Approximate Retail Value)는 $1849입니다.
 
     - 1등 세(3) 명. 다음 항목으로 구성된 수상자 혜택 패키지:
-        - Yeti Rambler 30oz 텀블러. $35.00 ARV(Approximate Retail Value).
+        - Yeti Rambler 로고가 있는 30oz 텀블러. $35.00 ARV(Approximate Retail Value).
         - Popsocket 자동차 통풍구 거치대. $15.00 ARV(Approximate Retail Value).
 
         이 패키지의 총 ARV(Approximate Retail Value)는 $50입니다.

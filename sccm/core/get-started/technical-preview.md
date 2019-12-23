@@ -2,7 +2,7 @@
 title: 기술 미리 보기 릴리스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 새로운 기능과 기술을 시험 사용할 수 있는 기술 미리 보기 분기를 알아봅니다.
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0705c644c5284040dfb22147257b32b3eec3002b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cdf4a185a60bff7988b028b9ea8ae9f345cb5d78
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658356"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198543"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 
@@ -122,12 +122,18 @@ Enable this section if needed to include any broad change to the tech preview br
 This is the full list of new features in the latest TP release
 -->
 
-<!-- (commented out for 1910 CB since there's nothing to show, 1911tp section is an example for next TP)
-The following features are available with the most recent Configuration Manager technical preview version:
+다음 기능은 최신 Configuration Manager 기술 미리 보기 버전에서 사용할 수 있습니다.
 
-### Technical preview version 1911 -->
+### <a name="technical-preview-version-1912"></a>Technical Preview 버전 1912
 
-<!-- - [title](/sccm/core/get-started/2019/technical-preview-1901#bkmk_anchor) <!--ID-->
+<!-- - [title](/sccm/core/get-started/2019/technical-preview-1912#bkmk_anchor) <!--ID-->
+
+- [클라이언트 등록 직후 작업 순서 부트스트랩](/sccm/core/get-started/2019/technical-preview-1912#bkmk_provisionts) <!--5526972-->
+- [Microsoft Defender ATP(Advanced Threat Protection) 온보딩 확장](/sccm/core/get-started/2019/technical-preview-1912#bkmk_atp) <!--5229962-->
+- [Microsoft 서비스의 새 관리 인사이트 규칙](/sccm/core/get-started/2019/technical-preview-1912#bkmk_rules) <!--3607758-->
+- [클라이언트 로그 수집](/sccm/core/get-started/2019/technical-preview-1912#client-log-collection) <!--4226618-->
+- [향상된 CMPivot 기능](/sccm/core/get-started/2019/technical-preview-1912#improvements-to-cmpivot) <!--5870934-->
+- [향상된 OS 배포 기능](/sccm/core/get-started/2019/technical-preview-1912#bkmk_osd) <!--5842295,5573175,5690481-->
 
 > [!NOTE]  
 > 이전 버전의 기술 미리 보기에서 사용할 수 있는 기능은 이후 버전에서도 계속 사용할 수 있습니다. 마찬가지로 Configuration Manager 현재 분기에 추가된 기능은 기술 미리 보기 분기에서 계속 사용할 수 있습니다.  

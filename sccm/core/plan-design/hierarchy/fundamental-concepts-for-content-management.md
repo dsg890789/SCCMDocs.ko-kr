@@ -2,7 +2,7 @@
 title: 콘텐츠 관리의 기본 사항
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 도구와 옵션을 사용하여 배포하는 콘텐츠를 관리합니다.
-ms.date: 08/27/2019
+ms.date: 12/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d91dd8045bc95ea69c4f60e981f4e74af6da141
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f82ba5349af5d37b2a3d8d91f23b3ee8e7cac308
+ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660039"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75198441"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 
@@ -143,13 +143,12 @@ Configuration Manager에서는 동일 네트워크상의 피어 디바이스 간
 
 자세한 내용은 [Windows BranchCache에 대한 지원](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)을 참조하세요.
 
-
 ## <a name="delivery-optimization"></a>배달 최적화
 
 <!-- 1324696 -->
 Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 피어 간에 콘텐츠를 공유하는 경우 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 콘텐츠가 있는 피어를 찾습니다. 자세한 내용은 [배달 최적화](/sccm/core/clients/deploy/about-client-settings#delivery-optimization) 클라이언트 설정을 참조하세요.
 
-배달 최적화는 Windows 10 품질 업데이트용 빠른 설치 파일의 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)에 권장되는 기술입니다.
+배달 최적화는 Windows 10 품질 업데이트용 빠른 설치 파일의 Windows 10 업데이트 배달 최적화에 권장되는 기술입니다. Configuration Manager 버전 1910부터 피어 투 피어 기능을 활용하려면 배달 최적화 클라우드 서비스에 대한 배달 인터넷 액세스가 필요합니다. 필요한 인터넷 엔드포인트에 대한 자세한 내용은 [배달 최적화에 대한 질문과 대답](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#frequently-asked-questions)을 참조하세요. 최적화는 모든 Windows 업데이트에 대해 사용 가능합니다. 자세한 내용은 [Windows 10 업데이트 배달 최적화](/sccm/sum/deploy-use/optimize-windows-10-update-delivery)를 참조하세요.
 
 
 ## <a name="microsoft-connected-cache"></a>Microsoft 연결된 캐시
