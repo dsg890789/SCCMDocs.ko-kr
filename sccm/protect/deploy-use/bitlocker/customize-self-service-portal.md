@@ -132,7 +132,7 @@ ms.locfileid: "74662411"
     사용할 수 있는 유효한 언어 코드 목록은 [National Language Support (NLS) API Reference(NLS[국가별 언어 지원] API 참조)](https://docs.microsoft.com/windows/win32/intl/locale-identifiers#predefined-locale-identifiers)를 참조하세요.
 
     > [!TIP]
-    > 언어 폴더의 이름은 언어 중립 이름일 수도 있습니다. 예를 들어 스페인어 (스페인 **)의 경우** **와 스페인어** (아르헨티나)의 경우 es 대신 스페인어 **를 사용할 것** 입니다. 사용자가 브라우저를 **es**로 설정 하 고 해당 언어 폴더가 없으면 웹 서버에서 부모 로캘 폴더를 재귀적으로 확인 합니다 **** . 부모 로캘은 .NET에 정의 되어 있습니다. `Self Service Website\es\Notice.txt` 예를 들면 다음과 같습니다. 이 재귀 대체 (fallback)는 .NET 리소스 로드 규칙을 모방 합니다.
+    > 언어 폴더의 이름은 언어 중립 이름일 수도 있습니다. 예를 들어 스페인어 (스페인 **)의 경우** **와 스페인어** (아르헨티나)의 경우 es 대신 스페인어 **를 사용할 것** 입니다. 사용자가 브라우저에서 es**를** 설정 하 고 해당 언어 폴더가 없으면 웹 서버는 부모 로캘 폴더 (**es**)를 재귀적으로 확인 합니다. 부모 로캘은 .NET에 정의 되어 있습니다. `Self Service Website\es\Notice.txt` 예를 들면 다음과 같습니다. 이 재귀 대체 (fallback)는 .NET 리소스 로드 규칙을 모방 합니다.
 
 1. 지역화 된 텍스트를 사용 하 여 기본 알림 파일의 복사본을 만듭니다. 언어 코드의 폴더에 저장 합니다. 예를 들어 스페인어 (스페인)의 경우 기본적으로 전체 경로가 `C:\inetpub\Microsoft BitLocker Management Solution\Self Service Website\es-es\Notice.txt`됩니다.
 
