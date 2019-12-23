@@ -239,7 +239,15 @@
         - name: 암호화 컨트롤 기술 참조
           href: plan-design/security/cryptographic-controls-technical-reference.md
         - name: TLS 1.2 사용
-          href: plan-design/security/enable-tls-1-2.md
+          items:
+            - name: TLS 1.2 사용 설정 정보
+              href: plan-design/security/enable-tls-1-2.md
+            - name: 클라이언트에서의 TLS 1.2 사용 설정
+              href: plan-design/security/enable-tls-1-2-client.md
+            - name: 사이트 서버 및 원격 사이트 시스템에서의 TLS 1.2 사용 설정
+              href: plan-design/security/enable-tls-1-2-server.md
+            - name: TLS 1.2 사용 설정 시의 일반 문제
+              href: plan-design/security/enable-tls-1-2-troubleshoot.md
 - name: 시작
   items:
     - name: 랩에서 Configuration Manager 평가
@@ -254,16 +262,14 @@
       items:
         - name: 기술 미리 보기 개요
           href: get-started/technical-preview.md
+        - name: 1912 기능
+          href: get-started/2019/technical-preview-1912.md
         - name: 1911 기능
           href: get-started/2019/technical-preview-1911.md
         - name: 1910 기능
           href: get-started/2019/technical-preview-1910.md
         - name: 1909 기능
           href: get-started/2019/technical-preview-1909.md
-        - name: 1908.2 기능
-          href: get-started/2019/technical-preview-1908-2.md
-        - name: 1908 기능
-          href: get-started/2019/technical-preview-1908.md
     - name: 계층 구조 간에 데이터 마이그레이션
       items:
         - name: 마이그레이션 개요
