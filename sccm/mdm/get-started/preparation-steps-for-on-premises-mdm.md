@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fad5ce96b84b5a6edfafdead64cff0223009ebf8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: dc67512ac6ec0dc9712402189ac6d02f3552eea3
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62288646"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519558"
 ---
 # <a name="preparation-steps-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 준비 단계
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager 온-프레미스 MDM (모바일 장치 관리)을 사용 하 여 장치를 관리 하려면 먼저 필요한 인프라를 설정 합니다. 필요한 사이트 시스템 역할은 모바일 장치와 신뢰할 수 있는 채널을 통해 통신 해야 합니다. 이러한 역할에는 등록 프록시 지점, 등록 지점, 장치 관리 지점, 배포 지점 등이 포함 됩니다.
 

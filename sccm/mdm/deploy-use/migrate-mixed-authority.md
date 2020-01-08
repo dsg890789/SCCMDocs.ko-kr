@@ -11,16 +11,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 6f0201d7-5714-4ba0-b2bf-d1acd0203e9a
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ca39be68074213e4bb0a3f667ae69d5257f7a3c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d6ba2ff769ed56b0edf75b7d0d0e63028c71b198
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67818064"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520425"
 ---
 # <a name="change-the-mdm-authority-for-specific-users-mixed-mdm-authority"></a>특정 사용자에 대한 MDM 기관 변경(혼합 MDM 기관)
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 동일한 테 넌 트에서 혼합 MDM 기관을 구성할 수 있습니다. 하이브리드 MDM을 사용 하 여 Microsoft Intune 및 기타 사용자의 일부 사용자를 관리 합니다. 이 문서에서는 사용자를 Intune 독립 실행형으로 이동 하기 시작 하는 방법에 대 한 정보를 제공 합니다. 다음 단계를 완료 했다고 가정 합니다.  
 
@@ -70,7 +70,7 @@ Intune에서 마이그레이션된 사용자와 해당 장치를 관리 합니�
 
     - [등록 관리자](/sccm/mdm/plan-design/device-enrollment-methods)  
 
-    - Terms and conditions  
+    - 사용 조건  
 
     - Windows SLK  
 
@@ -182,24 +182,24 @@ Intune 독립 실행형 장치가 예상대로 작동하는지 확인한 후에�
 - 모두
 - 중요
 - 오류
-- 정보
-- 끄기
+- 정보 산업
+- 꺼짐
 - 자세한 정보 표시
 - 경고
 
 #### `-Confirm [<SwitchParameter>]`
 
-명령을 실행하기 전 확인 메시지를 표시합니다.
+명령을 실행하기 전에 확인 메시지를 표시합니다.
 
 #### `-WhatIf [<SwitchParameter>]`
 
-명령을 실행하기 전 명령 실행 시 예상되는 결과에 대해 설명합니다.
+사용자가 명령을 실제로 실행하지 않은 경우 명령이 실행되면 어떻게 되는지를 설명합니다.
 
 #### `<CommonParameters>`
 
 이 cmdlet은 공통 매개 변수인 Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer, PipelineVariable 및 OutVariable을 지원합니다. 자세한 내용은 [about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)를 참조하세요.
 
-### <a name="example-1"></a>예 1
+### <a name="example-1"></a>예제 1
 
 ``` powershell
 C:\PS>Switch-MdmDeviceAuthority -Credential $creds -DeviceIds $deviceIds

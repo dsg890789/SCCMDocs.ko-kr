@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571334f94d1fcd3f53219b406185af3015356e3a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: da653db38c8c4271bd4ac7d0b75329535f1545f2
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68338060"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519519"
 ---
 # <a name="overview-of-device-enrollment-methods"></a>디바이스 등록 방법 개요
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 디바이스를 등록 및 관리하거나 사용자에게 개인 디바이스를 등록할 수 있는 권한을 부여할 수 있습니다. Intune에서 Configuration Manager를 사용하여 회사 소유 디바이스를 관리할 수도 있습니다.
 
@@ -35,8 +35,8 @@ Intune으로 Configuration Manager를 확장하면 관리자가 회사 소유 �
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | 아니요| 예 | 아니요 | [자세히](../deploy-use/enable-platform-enrollment.md)|
 |**[DEM](#dem)**| 아니요 |아니요 |아니요 | [자세히](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
-|**[DEP](#dep)**| 예 | 선택 사항 | 선택 사항|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
-|**[USB-SA](#usb-sa)**| 예 | 선택 사항 | 아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
+|**[DEP](#dep)**| 예 | 선택 사항입니다. | 선택 사항입니다.|[자세히](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
+|**[USB-SA](#usb-sa)**| 예 | 선택 사항입니다. | 아니요| [자세히](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
 
 **Windows 및 Android 등록 방법**
 

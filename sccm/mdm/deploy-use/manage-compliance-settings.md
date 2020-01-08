@@ -1,7 +1,7 @@
 ---
 title: Intune으로 관리되는 디바이스에 대한 준수 관리
 titleSuffix: Configuration Manager
-description: 몇 가지 일반적인 시나리오를 진행하여 System Center Configuration Manager의 준수 설정에 대해 알아봅니다.
+description: 몇 가지 일반적인 시나리오를 진행하여Configuration Manager의 준수 설정에 대해 알아봅니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78ff2181c3ae4bc7069998bf4a6db526da835037
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ac27d5e994462d3f6e138069764ee505855a26f9
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68337882"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520629"
 ---
 # <a name="managing-compliance-on-devices-managed-with-intune"></a>Intune으로 관리되는 디바이스에 대한 준수 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-이 시나리오에서는 일반적으로 발생할 수 있는 몇 가지 시나리오를 살펴보면서 System Center Configuration Manager 준수 설정을 사용하는 방법을 소개합니다.  
+이러한 시나리오는 발생할 수 있는 몇 가지 일반적인 시나리오를 수행 하 여 Configuration Manager 준수 설정 사용에 대 한 소개를 제공 합니다.  
 
  준수 설정에 이미 익숙한 경우 사용할 수 있는 모든 기능에 대한 자세한 설명은 [Intune으로 관리되는 디바이스의 구성 항목](#configuration-items-for-devices-managed-with-intune) 섹션을 참조하세요.  
 
@@ -75,7 +75,7 @@ ms.locfileid: "68337882"
 
 6. 마법사를 완료하여 구성 항목을 만듭니다.  
 
-   이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
+   이제 [Configuration Manager 항목을 사용 하 여 구성 기준을 만들고 배포 하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 의 정보를 사용 하 여 만든 구성을 장치에 배포할 수 있습니다.  
 
 ## <a name="scenarios-for-ios-and-mac-os-x-devices-managed-with-intune"></a>Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 시나리오  
 
@@ -94,7 +94,7 @@ ms.locfileid: "68337882"
 
 6. 마법사를 완료하여 구성 항목을 만듭니다.  
 
-   이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 항목의 내용을 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
+   이제 [Configuration Manager 항목을 사용 하 여 구성 기준을 만들고 배포 하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) 의 정보를 사용 하 여 만든 구성을 장치에 배포할 수 있습니다.  
 
 ## <a name="scenarios-for-android-and-samsung-knox-standard-devices-managed-with-intune"></a>Intune으로 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 시나리오  
 
@@ -121,7 +121,7 @@ ms.locfileid: "68337882"
 
 ## <a name="configuration-items-for-devices-managed-with-intune"></a>Intune으로 관리되는 디바이스에 대한 구성 항목
 
-다음 System Center Configuration Manager 구성 항목은 Configuration Manager 클라이언트로 관리되지 않는 디바이스(예: Microsoft Intune에 등록된 디바이스)에 사용할 수 있습니다.  
+다음 Configuration Manager 구성 항목 유형은 Configuration Manager 클라이언트에서 관리 되지 않는 장치 (예: Microsoft Intune에 등록 된 장치)에 사용할 수 있습니다.  
 
 -   [Intune으로 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)  
 

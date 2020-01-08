@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18edb5a18baa7c009638580d9b338d297fb42e76
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 055b5b0499eddc04ceb73363b288a0096418aa35
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380376"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519626"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 ## <a name="troubleshoot-login-errors"></a>로그인 오류 문제 해결
 ### <a name="403-errors"></a>403 오류
@@ -31,7 +31,7 @@ Lookout MTP는 구성된 Azure AD 그룹의 사용자만 액세스할 수 있도
 다음과 같은 방법으로 Lookout 지원 센터에 문의할 수 있습니다.
 
 * 메일: enterprisesupport@lookout.com
-* [MTP 콘솔](https://aad.lookout.com)에 로그인한 다음 **지원** 모듈로 이동합니다.
+* [MTP 콘솔](https://aad.lookout.com)에 로그인한 후 **지원** 모듈로 이동합니다.
 * https://enterprise.support.lookout.com/hc/requests 로 이동하여 지원 요청을 합니다.
 
 ### <a name="unable-to-sign-in"></a>로그인할 수 없음
@@ -78,7 +78,7 @@ Lookout MTP 콘솔의 **디바이스** 모듈에서 **삭제**를 선택할 수�
 
 새 사용자가 Lookout MTP 콘솔에 지정된 등록 그룹에 속해 있는 동안에는 Azure AD가 디바이스를 새 사용자에 연결하면 디바이스가 나타납니다.
 
-## <a name="compliance-remediation-workflows"></a>준수 수정 워크플로
+## <a name="compliance-remediation-workflows"></a>규정 준수 수정 워크플로
 [Android 디바이스에 Lookout for Work를 설치하라는 메시지가 표시됨]( https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
 [Android 디바이스에서 Lookout for Work가 발견한 위협을 해결해야 함](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)

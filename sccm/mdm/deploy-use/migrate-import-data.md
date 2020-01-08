@@ -11,16 +11,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: b552391d-abc0-48a2-a429-93605a13a66a
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18c8bab6b072a9df2dea9c9f67d844b8481d314e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4874d3ac07f1f8740c6594c28b53cf642be3cceb
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678210"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520442"
 ---
 # <a name="import-configuration-manager-data-to-microsoft-intune"></a>Microsoft Intune으로 Configuration Manager 데이터 가져오기 
 
-*적용 대상: System Center Configuration Manager(현재 분기)*    
+*적용 대상: Configuration Manager (현재 분기)*    
 
 클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스에서 권장되는 첫 번째 단계는 Intune 데이터 가져오기 도구를 사용하는 것입니다. 원하는 경우 이 단계를 건너뛰고 [사용자 마이그레이션을 위한 Intune 준비](migrate-prepare-intune.md) 단계로 이동할 수 있습니다. 그러나 이 도구는 다음 단계에서 많은 시간을 절약할 수 있는 다음 기능을 수행합니다.  
 
@@ -43,7 +43,7 @@ ms.locfileid: "67678210"
 - VPN 프로필  
 - Wi-Fi 프로필  
 - 규정 준수 정책  
-- 앱을 선택하고  
+- Apps  
 - 배포  
 
 > [!Note]  
@@ -74,7 +74,7 @@ ms.locfileid: "67678210"
 - 웹 앱 (웹 클립 이라고 함)이 사용자에 게 할당 된 경우 사용자를 마이그레이션하기 전에 해당 웹 앱을 제거 해야 합니다. 그런 다음 마이그레이션이 완료 되 면 웹 앱을 다시 할당 합니다. 이 작업을 수행 하지 않으면 마이그레이션 후 웹 클립이 관리할 수 없게 됩니다.  
 
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 - 최상위 사이트를 지정 하 고 사이트 계층의 모든 개체에 대 한 액세스 권한이 있는 사용자로 도구를 실행 합니다. 도구를 실행하는 사용자가 액세스할 수 있는 개체만 이 도구에서 검색합니다.  
 

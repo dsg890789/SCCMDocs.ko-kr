@@ -11,16 +11,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: be503ec9-5324-4f7c-bcf5-77204328e99c
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d6a909be4b1817b9a251046d666839e2e351443
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c7d39a8f9dfc6eee2e5600930208fd0202fb434b
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62282170"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520510"
 ---
 # <a name="change-your-mdm-authority-to-intune-standalone"></a>MDM 기관을 Intune 독립 실행형으로 변경
 
-*적용 대상: System Center Configuration Manager(현재 분기)*    
+*적용 대상: Configuration Manager (현재 분기)*    
 
 Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microsoft Intune 테넌트를 Intune 독립 실행형으로 변경할 수 있습니다. 테넌트 수준 MDM 기관을 Intune으로 변경하는 것은 클라우드 전용 구성에서 [하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션](migrate-hybridmdm-to-intunesa.md)하는 프로세스의 최종 단계입니다.    
 
@@ -46,7 +46,7 @@ Configuration Manager 콘솔(하이브리드 MDM)에서 구성된 기존 Microso
 
 
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 다음 정보를 검토하여 MDM 기관 변경을 준비하세요.
 - MDM 기관을 변경하는 옵션을 사용하려면 Configuration Manager 버전 1610 이상이 있어야 합니다.
 - 현재 하이브리드 MDM에서 관리 하는 모든 사용자에 게 Intune/EMS 라이선스를 할당 해야 합니다. 라이선스는 MDM 기관 변경 후에 사용자 및 해당 장치가 Intune 독립 실행형에서 관리 되는지 확인할 수 있습니다. 자세한 내용은 [사용자 계정에 Intune 라이선스 할당](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)을 참조하세요.

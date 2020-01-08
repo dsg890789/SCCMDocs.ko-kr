@@ -1,7 +1,7 @@
 ---
 title: MDM 구성 확인
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 MDM 구성 확인
+description: Configuration Manager를 사용 하 여 MDM 구성을 확인 합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 846c6a45469a3d3fddf3515b3808f2991679d5bf
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 6f33dafbdcb7b1f345403c72ecd54023df08a9f6
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75197625"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519660"
 ---
-# <a name="verify-mdm-configuration-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 MDM 구성 확인
+# <a name="verify-mdm-configuration-with-configuration-manager"></a>Configuration Manager를 사용 하 여 MDM 구성 확인
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 다음 로그 파일을 확인하여 특정 디바이스 관리 구성 요소를 확인할 수 있습니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "75197625"
 
 -   Sitecomp.log에서 서비스 연결 지점이 제대로 만들어졌는지 확인합니다.
 
-이 특정 로그 파일 및 이를 확인하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요. 
+[로그 파일](../../core/plan-design/hierarchy/log-files.md) 에서 이러한 특정 로그 파일 및 이러한 로그 파일을 보는 방법에 대 한 자세한 내용을 검토할 수 있습니다. 
 
 > [!div class="button"]
 > [< 이전 단계](set-up-additional-management.md)

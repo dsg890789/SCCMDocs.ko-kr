@@ -11,22 +11,22 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: db97ae9e-34f4-4e10-a282-cd211f612bb4
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68cf60bd5ebcb38e08dd3de6d7cc144752de848c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0ae9eab3dbf19802e556863182027188977cc04d
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71826169"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520306"
 ---
 # <a name="prepare-intune-for-user-migration"></a>사용자 마이그레이션을 위한 Intune 준비 
 
-*적용 대상: System Center Configuration Manager (현재 분기)*     
+*적용 대상: Configuration Manager (현재 분기)*     
 하이브리드 MDM에서 Intune 독립 실행형으로 사용자를 마이그레이션하기 전에 Intune을 준비 하는 단계를 수행 합니다. 이러한 단계를 통해 마이그레이션된 사용자와 해당 장치를 계속 관리할 수 있습니다. 이러한 단계를 완료 하 고 Intune으로의 마이그레이션을 시작 하는 경우 사용자에 게는 signifcant 영향이 없습니다.  
 
 ## <a name="fix-issues-found-during-data-collection-and-import"></a>데이터 수집 및 가져오기 중 발견된 문제 해결
 Intune Data Importer 도구를 사용 하 여 [Microsoft Intune Configuration Manager 데이터를 가져오는](migrate-import-data.md)경우 가져올 수 없는 개체를 요약 합니다. 몇 가지 일반적인 문제 및 Intune에서 이러한 문제를 해결 하는 단계는 다음 표에 나와 있습니다. 
 
-|문제  |Fix  |
+|문제  |픽스  |
 |---------|---------|
 |직접 멤버 자격 또는 복잡 한 컬렉션을 기반으로 하는 컬렉션은 자동으로 마이그레이션되지 않습니다.|가져오지 않은 컬렉션을 대체 하려면 Azure에서 Azure Active Directory (Azure AD) 그룹을 만듭니다. 그런 다음 개체를 그룹에 할당 합니다.|
 |정책을 가져올 때 |Intune에서 정책을 다시 만듭니다.|

@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 358a69af0290cbe7359e07b165ed7f1e805e4db5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 84e4eceef6dbd6dd06026a290c3a54efb599e6e2
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380349"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519592"
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-configuration-manager"></a>Configuration Manager를 사용하여 원격 초기화, 잠금 또는 암호 재설정으로 데이터 보호
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 및 암호 재설정 기능을 제공합니다. 모바일 디바이스에 회사의 중요한 데이터를 저장하고, 많은 회사 리소스에 대한 액세스를 제공할 수 있습니다. 디바이스를 보호하기 위해 다음 명령을 실행할 수 있습니다.  
 
@@ -47,7 +47,7 @@ Configuration Manager는 선택적 초기화, 전체 초기화, 원격 잠금 �
 > 회사 소유 디바이스에서만 전체 초기화를 수행할 수 있습니다.
 
 > [!NOTE]
-> 버전 1511보다 이전 버전에서 RAM이 4GB 미만인 Windows 10 디바이스를 초기화하면 디바이스가 응답하지 않는 상태가 될 수 있습니다. [자세히 알아봅니다](https://technet.microsoft.com/library/mt592024.aspx#full-wipe-disables-windows-10-devices-with-less-than-4-gb-ram).
+> 버전 1511보다 이전 버전에서 RAM이 4GB 미만인 Windows 10 디바이스를 초기화하면 디바이스가 응답하지 않는 상태가 될 수 있습니다. [자세한 정보](https://technet.microsoft.com/library/mt592024.aspx#full-wipe-disables-windows-10-devices-with-less-than-4-gb-ram).
 
 #### <a name="to-initiate-a-remote-wipe-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 원격 초기화를 시작하려면  
 
@@ -164,7 +164,7 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 - 작업 폴더
 
-- EFS로 암호화된 파일 및 폴더. 자세한 내용은 [파일 시스템 암호화에 대한 모범 사례](https://support.microsoft.com/kb/223316)항목을 참조하세요.  
+- EFS로 암호화된 파일 및 폴더. 자세한 내용은 [파일 시스템 암호화에 대한 모범 사례](https://support.microsoft.com/kb/223316)를 참조하세요.  
 
 
 ### <a name="best-practices-for-selective-wipe"></a>선택 초기화에 대한 모범 사례  
@@ -181,19 +181,19 @@ Windows 8.1 및 Windows RT 8.1에서 파일 시스템 암호화(EFS)-암호화�
 
 ##  <a name="passcode-reset"></a>암호 재설정  
 
-사용자가 암호를 잊은 경우 디바이스에서 암호를 제거하거나 디바이스에 대한 새로운 임시 암호를 적용하여 사용자를 도울 수 있습니다. 아래 표에는 여러 모바일 플랫폼에서 암호 재설정이 작동하는 방법이 정리되어 있습니다.  
+사용자가 암호를 잊은 경우 디바이스에서 암호를 제거하거나 디바이스에 대한 새로운 임시 암호를 적용하여 사용자를 도울 수 있습니다. 다음 표에는 여러 모바일 플랫폼에서 암호 재설정이 작동하는 방법이 정리되어 있습니다.  
 
 | 플랫폼                              | 암호 재설정                                                                               |
 |---------------------------------------|----------------------------------------------------------------------------------------------|
 | iOS                                   | 디바이스에서 암호를 제거하도록 지원됩니다. 새로운 임시 암호를 만들지 않습니다. |
-| macOS                                 | 지원 안 됨                                                                               |
+| macOS                                 | Not supported.                                                                               |
 | Android                               | Android 7.0 이전 버전에서 지원됩니다. 임시 암호를 만듭니다.                |
-| Android for Work                      | 지원 안 됨                                                                               |
-| Windows 10 PC                        | 지원 안 됨                                                                               |
+| Android for Work                      | Not supported.                                                                               |
+| Windows 10 PC                        | Not supported.                                                                               |
 | Windows 10 Mobile                     | Azure AD 결합 디바이스를 제외하고 지원됩니다.  |
 | Windows Phone 8 및 Windows Phone 8.1 | 지원됨.                                                                                   |
-| Windows RT 8.1                        | 지원 안 됨                                                                               |
-| Windows 8.1 PC                       | 지원 안 됨                                                                               |
+| Windows RT 8.1                        | Not supported.                                                                               |
+| Windows 8.1 PC                       | Not supported.                                                                               |
 
 > [!Note]    
 > 환경에서 최상위 사이트의 암호 다시 설정 작업을 수행해야 합니다. 예를 들어 중앙 관리 사이트를 사용하는 경우 해당 사이트에서만 작업을 수행할 수 있습니다. 독립 실행형 기본 사이트를 사용하는 경우 해당 사이트에서만 작업을 수행할 수 있습니다.

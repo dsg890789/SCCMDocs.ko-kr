@@ -11,16 +11,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: 1dd696ce-3e46-4dfa-a76d-592fe0f0320e
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3adbb2f7bd75921f45c9c6d5462bdf04deb8c26
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 15469804702f7ee5c9a37a2a985cf2e93f209127
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678224"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520459"
 ---
 # <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone"></a>하이브리드 MDM 사용자 및 디바이스를 Intune 독립 실행형으로 마이그레이션
 
-*적용 대상: System Center Configuration Manager(현재 분기)*    
+*적용 대상: Configuration Manager (현재 분기)*    
 
 이 문서는 하이브리드 MDM에서 Azure의 Intune을 사용하는 클라우드 전용 환경으로 마이그레이션하는 방법을 다룹니다. 
 

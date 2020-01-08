@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54ca57956db37a26e2edad27c6cf6b92aecd1645
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d673a77c8d0e0abb9cf273f0333acbe31aa87ddd
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227848"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519687"
 ---
 # <a name="user-affinity-for-hybrid-managed-devices-in-configuration-manager"></a>Configuration Manager의 하이브리드 관리 디바이스에 대한 사용자 선호도
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 회사 소유 디바이스의 프로필을 구성할 때 관리자는 디바이스로 특정 사용자를 식별하는 *사용자 선호도*를 관리 디바이스가 포함할 수 있는지 여부를 지정할 수 있습니다.  
 
@@ -47,7 +47,7 @@ ms.locfileid: "62227848"
 
 7.  일련 번호를 확인한 후 회사 포털 앱에서 회사 포털 웹 사이트로 리디렉션하여 등록을 마친 후 앱으로 돌아가라는 메시지를 표시합니다.  
 
-8.  이제 등록이 완료됩니다. 이제 기능의 전체 집합으로 이 디바이스를 사용할 수 있습니다.  
+8.  이제 등록이 완료되었습니다. 이제 기능의 전체 집합으로 이 디바이스를 사용할 수 있습니다.  
 
 ##  <a name="BKMK_noUA"></a> 사용자 선호도가 없는 관리 디바이스  
  **사용자 선호도 없음**으로 구성된 디바이스에서는 회사 포털을 지원하지 않으므로 앱을 설치하지 않아야 합니다. 회사 포털은 회사 자격 증명을 갖고 있으며 개인 설정된 회사 리소스(예: 메일)에 대한 액세스 권한이 필요한 사용자를 위해 설계되었습니다. **사용자 선호도 없음** 으로 등록된 디바이스의 경우에는 전용 사용자가 로그인할 필요가 없습니다. 키오스크, POS(Point of Sale) 또는 공유 유틸리티 디바이스는 사용자 선호도 없음으로 등록된 디바이스에 대한 일반적인 사용 사례입니다. 사용자 선호도가 필요한 경우 디바이스를 등록하기 전에 디바이스의 등록 프로필에서 **사용자 선호도** 가 선택되어 있어야 합니다. 디바이스에 대한 선호도 상태를 변경하려면 디바이스를 사용 중지한 후 다시 등록해야 합니다.

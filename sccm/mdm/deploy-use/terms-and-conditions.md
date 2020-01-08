@@ -1,7 +1,7 @@
 ---
 title: 사용 약관
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 사용자 그룹에 계약조건을 배포합니다.
+description: Configuration Manager에서 사용자 그룹에 사용 약관을 배포 합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,20 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a836ec8c15e89a7959db9f10d1329c9182f3998c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 861bc930a5be0d1d84b9e72cb19d1156b02f55e0
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227603"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519711"
 ---
-# <a name="add-terms-and-conditions-with-system-center-configuration-manager"></a>System Center Configuration Manager 사용 약관 추가
+# <a name="add-terms-and-conditions-with-configuration-manager"></a>Configuration Manager 사용 약관 추가
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-디바이스 등록, 회사 포털의 작업 리소스 액세스 및 회사 포털 사용 시의 디바이스와 사용자에 대한 영향을 설명하기 위해 사용자 그룹에 System Center Configuration Manager 계약조건을 배포할 수 있습니다. 사용자는 먼저 사용 약관에 동의해야 회사 포털을 사용하여 작업 등록 및 액세스를 수행할 수 있습니다.  
+Configuration Manager 사용 약관을 사용자 그룹에 배포 하 여 장치 등록, 회사 리소스에 대 한 액세스 및 회사 포털를 사용 하 여 장치 및 사용자에 미치는 영향을 설명할 수 있습니다. 사용자는 먼저 사용 약관에 동의해야 회사 포털을 사용하여 작업 등록 및 액세스를 수행할 수 있습니다.  
 
- ## <a name="working-with-terms-and-conditions-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사용 약관 정책 사용  
+ ## <a name="working-with-terms-and-conditions-policies-in-configuration-manager"></a>Configuration Manager에서 사용 약관 정책 사용  
  여러 사용 약관을 만들고 배포할 수 있습니다. 또한 같은 버전의 사용 약관을 여러 언어로 생성한 다음 적합한 그룹에 배포할 수도 있습니다.  
 
 ## <a name="to-create-a-terms-and-conditions"></a>사용 약관을 만들려면  
@@ -47,7 +47,7 @@ ms.locfileid: "62227603"
 
    - **약관에 사용할 텍스트** - 회사 포털에서 사용자에게 표시되는 사용 약관  
 
-   - **사용자가 동의하는 경우 그 의미를 설명하는 텍스트** - 사용 약관 동의와 관련하여 사용자에게 표시되는 레이블입니다. **예**: "계약조건에 동의함"  
+   - **사용자가 동의하는 경우 그 의미를 설명하는 텍스트** - 사용 약관 동의와 관련하여 사용자에게 표시되는 레이블. **예**: "계약조건에 동의함"  
 
      그리고 **다음**을 클릭합니다.  
 
@@ -59,7 +59,7 @@ ms.locfileid: "62227603"
 
 2.  **사용 약관** 목록에서 배포할 항목을 선택한 후 **배포**를 클릭합니다.  
 
-3.  사용 약관을 배포할**컬렉션** 을 **찾아보고**  **확인**을 클릭합니다.  
+3.  사용 약관을 배포할**컬렉션** 을 **찾아보고** **확인**을 클릭합니다.  
 
      대상 디바이스에서 회사 포털 앱에 액세스하면 배포된 사용 약관이 표시됩니다. 사용자는 해당 약관에 동의해야 회사 리소스에 액세스할 수 있습니다.  
 
@@ -118,4 +118,4 @@ ms.locfileid: "62227603"
      사용 약관을 크게 변경할 때마다 버전 번호를 높이고 동의를 요구하는 것이 좋습니다. 오타를 수정하거나 서식을 변경하는 등의 경우에는 현재 버전 번호를 유지합니다.
 
 > [!div class="button"]
-> [< 이전 단계](configure-intune-subscription.md)  [다음 단계 >](create-service-connection-point.md)
+> [이전 단계 <](configure-intune-subscription.md)  [다음 단계 >](create-service-connection-point.md)

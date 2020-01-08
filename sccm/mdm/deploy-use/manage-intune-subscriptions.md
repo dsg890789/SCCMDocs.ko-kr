@@ -1,7 +1,7 @@
 ---
 title: Intune 구독 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager와 연결된 Intune 구독 관리
+description: Configuration Manager와 연결 된 Intune 구독을 관리 합니다.
 ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2e63720bf4a5e6b2cf2f7d1a034d916c9ca5338
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9ddd7a35159ab0af1b3faaf0795031a98c201bf1
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62255480"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520595"
 ---
-# <a name="manage-an-intune-subscription-associated-with-system-center-configuration-manager"></a>System Center Configuration Manager와 연결된 Intune 구독 관리
+# <a name="manage-an-intune-subscription-associated-with-configuration-manager"></a>Configuration Manager와 연결 된 Intune 구독 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Microsoft Intune(평가판 구독 또는 유료 구독)을 Configuration Manager에 추가하고 다른 Intune 구독으로 전환해야 하는 경우 새 구독을 추가하려면 먼저 Configuration Manager 콘솔에서 **Microsoft Intune 구독** 및 **서비스 연결 지점**을 모두 삭제해야 합니다.
 

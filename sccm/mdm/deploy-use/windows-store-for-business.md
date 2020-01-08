@@ -1,7 +1,7 @@
 ---
 title: 비즈니스용 Microsoft Store 사용
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 비즈니스용 Microsoft Store
+description: Configuration Manager의 비즈니스에 대 한 Microsoft Store
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,17 +11,17 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69699dc76fa9e0324376a8a4dbb7430b2b2f068d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a993aa88759f136a1f0a9c35d3caf1c6d7ca9c01
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227487"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519609"
 ---
-# <a name="microsoft-store-for-business-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 비즈니스용 Microsoft Store
+# <a name="microsoft-store-for-business-in-configuration-manager"></a>Configuration Manager의 비즈니스에 대 한 Microsoft Store
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager에서는 Configuration Manager 클라이언트를 실행하는 Windows 10 디바이스 외에 Microsoft Intune에 등록된 Windows 10 디바이스(하이브리드 구성)에서 비즈니스용 Microsoft Store 앱을 관리하는 기능도 지원합니다.
 
-Configuration Manager가 온라인 및 오프라인 앱에 대해 제공하는 기능을 확인하고 비즈니스용 Microsoft Store 동기화를 설정하려면 [System Center Configuration Manager를 사용하여 비즈니스용 Microsoft Store에서 앱 관리](../../apps/deploy-use/manage-apps-from-the-windows-store-for-business.md)를 참조하세요.
+온라인 및 오프 라인 앱에 대 한 Configuration Manager 제품의 기능을 확인 하 고 비즈니스 동기화 Microsoft Store을 설정 하려면 [Configuration Manager를 사용 하 여 비즈니스용 Microsoft Store에서 앱 관리](../../apps/deploy-use/manage-apps-from-the-windows-store-for-business.md)를 참조 하세요.

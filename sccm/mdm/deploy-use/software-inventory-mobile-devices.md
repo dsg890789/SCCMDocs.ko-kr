@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac2d841cc7b87baf209443310577cb4a9f90b372
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c4ae28910772a3a615a87f130b4fa5114e2a6117
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67551276"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519745"
 ---
 # <a name="software-inventory-for-mobile-devices-enrolled-with-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 디바이스를 위한 소프트웨어 인벤토리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
  모바일 디바이스에 설치되는 앱에 대한 인벤토리를 수집할 수 있습니다. 인벤토리에 추가되는 앱은 디바이스가 회사 소유인지 또는 개인 소유인지에 따라 달라집니다. 개인 디바이스의 경우 Microsoft Intune에서 관리되는 앱만 인벤토리에 추가됩니다.  
 

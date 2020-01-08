@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ee4ed8f102507b4d62a1ccbfe1cc38240e85df9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7ec7f7c9818e1155b0593b38dc8e39ee899d633a
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62260552"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520646"
 ---
 # <a name="manage-email-access-in-configuration-manager"></a>Configuration Manager에서 전자 메일 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 조건부 액세스 Configuration Manager 사용 하 여 지정한 조건에 따라 Exchange 메일에 대 한 액세스를 관리 합니다.  
 
@@ -28,7 +28,7 @@ ms.locfileid: "62260552"
 
 - Microsoft Exchange 온-프레미스  
 
-- Microsoft Exchange Online  
+- Microsoft  Exchange  Online  
 
 - Exchange Online Dedicated  
 
@@ -161,7 +161,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 조건부 액세스 정책의 대상인 그룹 또는 컬렉션에 대해서만 Exchange 액세스를 평가합니다.  
 
 
-### <a name="step-3-configure-and-deploy-a-compliance-policy"></a>3단계: 준수 정책 구성 및 배포  
+### <a name="step-3-configure-and-deploy-a-compliance-policy"></a>3단계: 규정 준수 정책 구성 및 배포  
 
 규정 준수 정책을 만들고 Exchange 조건부 액세스 정책의 대상이 될 모든 디바이스에 배포해야 합니다.  
 
@@ -237,7 +237,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 6. **응용 프로그램 액세스**에서 최신 인증을 사용 하는 Outlook 및 기타 앱의 경우 각 플랫폼에 대해 호환 되는 장치에만 액세스를 제한 하도록 선택할 수 있습니다. Windows 디바이스가 도메인에 가입되어 있거나, Intune에 등록되어 있고 규격을 준수해야 합니다.  
 
     > [!TIP]  
-    > **최신 인증** 을 사용하는 경우 Office 클라이언트에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다.  
+    > **최신 인증**을 사용하는 경우 Office 클라이언트에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다.  
     > 
     > - ADAL 기반 인증을 사용하면 Office 클라이언트가 브라우저 기반 인증(수동 인증이라고도 함)을 수행할 수 있게 됩니다. 사용자는 인증 시 로그인 웹 페이지로 이동됩니다.  
     > - 이 새로운 로그인 방법을 적용하는 경우 **디바이스 준수** 및 **다단계 인증** 수행 여부에 따라 조건부 액세스 등의 새로운 시나리오를 사용할 수 있습니다.  
@@ -268,7 +268,7 @@ Exchange 온-프레미스에 대한 조건부 액세스 정책은 Configuration 
 
         - **Android**  
 
-        ![iPad에서 인증서 프롬프트에 대한 스크린샷](media/mdm-browser-ca-ios-cert-prompt_v2.png)  
+        ![ipad의 인증서 확인 스크린샷](media/mdm-browser-ca-ios-cert-prompt_v2.png)  
 
         - **OWA(Outlook Web Access)**  
 

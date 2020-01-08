@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aff4fcc67325645387aea1e57354321769a515ca
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8ba45f2f0e031fca5fa41ce735abae8d107c9d62
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62217018"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519516"
 ---
 # <a name="set-up-a-microsoft-intune-subscription-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 Microsoft Intune 구독 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager 온-프레미스 MDM (모바일 장치 관리)을 사용 하려면 라이선스를 추적 하기 위한 Microsoft Intune 구독이 필요 합니다. Intune 서비스는 장치를 관리 하거나 관리 정보를 저장 하는 데 사용 되지 않습니다. 온-프레미스 MDM의 경우 모든 장치 관리가 Configuration Manager 인프라에 의해 처리 됩니다.  
 

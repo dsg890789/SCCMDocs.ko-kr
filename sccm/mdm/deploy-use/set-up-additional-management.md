@@ -1,7 +1,7 @@
 ---
 title: 추가 관리 설정
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 추가 관리 설정
+description: Configuration Manager를 사용 하 여 추가 관리를 설정 합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d866ce901640b6e7fafb13a6c24318f26c5d5feb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d6b361742cb8b7f4dbf2da2d4b582e645bdd7545
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227801"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519881"
 ---
-# <a name="set-up-additional-management-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 추가 관리 설정
+# <a name="set-up-additional-management-with-configuration-manager"></a>Configuration Manager를 사용 하 여 추가 관리 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 (선택 사항) 디바이스가 등록되기 전에 추가 관리를 설정할 수 있습니다. 디바이스가 등록된 후에 이러한 관리 솔루션을 만들고 배포할 수도 있지만 대부분의 조직에서는 디바이스가 관리에 추가될 때 배포하려고 합니다.
 
@@ -47,4 +47,4 @@ ms.locfileid: "62227801"
 이전에는 Intune 등록용으로 MFA를 설정하려면 Intune 콘솔 또는 Configuration Manager 콘솔로 이동해야 했습니다. 이제 [Microsoft Azure Portal](https://manage.windowsazure.com)에 Intune 자격 증명으로 로그인하고 Azure AD를 통해 MFA 설정을 구성합니다. 자세한 내용은 [Microsoft Intune용 다단계 인증](https://aka.ms/mfa_ad)을 참조하세요.
 
 > [!div class="button"]
-> [< 이전 단계](enable-platform-enrollment.md)  [다음 단계 >](verify-mdm-configuration.md)
+> [이전 단계 <](enable-platform-enrollment.md)  [다음 단계 >](verify-mdm-configuration.md)

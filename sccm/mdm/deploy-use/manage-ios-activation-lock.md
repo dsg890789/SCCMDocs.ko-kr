@@ -1,7 +1,7 @@
 ---
 title: iOS 활성화 잠금 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager로 iOS 활성화 잠금을 관리합니다.
+description: Configuration Manager를 사용 하 여 iOS 활성화 잠금 관리
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,19 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 780abd0702e34dff7a8026fb54e29ccea6f67170
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f89a95fc10518abbe5353e5097d5616740166aae
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678751"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520544"
 ---
-# <a name="manage-ios-activation-lock-with-system-center-configuration-manager"></a>System Center Configuration Manager로 iOS 활성화 잠금 관리
+# <a name="manage-ios-activation-lock-with-configuration-manager"></a>Configuration Manager를 사용 하 여 iOS 활성화 잠금 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 
-System Center Configuration Manager를 사용하면 iOS 7.1 이상 디바이스용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금이 설정되면 사용자의 Apple ID와 암호를 입력해야 다음 작업을 수행할 수 있습니다.
+Configuration Manager를 사용하면 iOS 7.1 이상 디바이스용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금이 설정되면 사용자의 Apple ID와 암호를 입력해야 다음 작업을 수행할 수 있습니다.
 
 - 나의 iPhone 찾기 끄기
 - 디바이스의 콘텐츠 지우기
@@ -69,7 +69,7 @@ System Center Configuration Manager를 사용하면 iOS 7.1 이상 디바이스�
 
 Configuration Manager 준수 설정을 사용해 **iOS 및 Mac OS X** 형식의 구성 항목을 만들고 배포하여 다음과 같이 감독된 디바이스에서 활성화 잠금을 사용할 수 있습니다.
 
-1. [System Center Configuration Manager 클라이언트 없이 관리되는 iOS 및 Mac OS X 디바이스에 대해 구성 항목을 만드는 방법](/sccm/compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client) 항목의 정보를 사용하여 **iOS 및 Mac OS X**형식의 구성 항목을 만듭니다.
+1. Ios **및 Mac OS X**형식의 구성 항목을 만들기 위해 [Configuration Manager 클라이언트 없이 관리 되는 ios 및 Mac OS X 장치에 대 한 구성 항목을 만드는 방법](/sccm/compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client) 항목의 정보를 사용 합니다.
 2. 구성 항목 만들기 마법사의 **시스템 보안** 페이지에서 **활성화 잠금 허용(감독자 모드만)** 설정을 **허용됨**으로 구성합니다.
 3. [구성 기준에 구성 항목을 추가합니다](/sccm/compliance/deploy-use/create-configuration-baselines).
 4. 활성화 잠금을 사용하도록 설정하려는 iOS 디바이스를 포함하는 컬렉션에[이 구성 기준을 배포](/sccm/compliance/deploy-use/deploy-configuration-baselines) 합니다.
@@ -83,7 +83,7 @@ Configuration Manager 준수 설정을 사용해 **iOS 및 Mac OS X** 형식의 
 
 ## <a name="view-the-activation-lock-bypass-code"></a>활성화 잠금 무시 코드 보기
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.
 2. **자산 및 호환성** 작업 영역에서 **디바이스**를 클릭합니다.
 3. 활성화 잠금을 사용할 수 있는 감독 모드에 있는 등록된 디바이스를 선택합니다.
 4. **홈** 탭의 **디바이스** 그룹에서 **원격 디바이스 작업** > **활성화 잠금 무시 코드 보기**를 클릭합니다.
@@ -91,7 +91,7 @@ Configuration Manager 준수 설정을 사용해 **iOS 및 Mac OS X** 형식의 
 
 ## <a name="bypass-activation-lock"></a>활성화 잠금 무시
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.
 2. **자산 및 호환성** 작업 영역에서 **디바이스**를 클릭합니다.
 3. 활성화 잠금을 사용할 수 있는 감독 모드에 있는 등록된 디바이스를 선택합니다.
 3. **홈** 탭의 **디바이스** 그룹에서 **원격 디바이스 작업** > **활성화 잠금 무시**를 클릭합니다.

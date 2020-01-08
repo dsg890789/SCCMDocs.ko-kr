@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 743976f35fb2ced98e0685bf51f38374aea5408e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: dc531e36f068c6b297f8b220e822cefad0833e39
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678917"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519966"
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 디바이스 미리 선언
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 해당 IMEI(International station Mobile Equipment Identity) 번호 또는 iOS 일련 번호를 가져와서 회사 소유의 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다.  가져온 정보에 따라 디바이스 목록에 **회사**로 등록된 디바이스의 **소유권**이 설정됩니다. 서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.  
 
@@ -63,12 +63,12 @@ ms.locfileid: "67678917"
 
 IMEI 또는 iOS 일련 번호로 디바이스를 식별하는 데 사용하는 .csv 파일은 다음 형식이어야 합니다(참조용으로만 제공되는 맨 위 행은 제외). 각 행은 ID 번호(IMEI 번호 또는 iOS 일련 번호)를 포함해야 합니다. iOS 디바이스의 경우 둘 다 포함할 수 있습니다. IMEI 번호는 Android, iOS 및 Windows 디바이스에 사용할 수 있습니다. 다음 표에 샘플 데이터가 포함되어 있습니다.
 
-| IMEI 번호  | iOS 일련 번호  | OS | 세부 정보 |
+| IMEI 번호  | iOS 일련 번호  | OS | Details |
 |------------ |---------------|-----|-----|
 | 123456789012345    |   | WINDOWS | 회사 소유 Windows 디바이스|
-|   | A1B2C3D4E5C6 | IOS | 회사 소유 iOS 디바이스|
-| 223456789012345 | E6D5C4B3A210 |   IOS | 다른 iOS 디바이스|
-| 323456789012345 |        |   IOS | 세 번째 iOS 디바이스|
+|   | A1B2C3D4E5C6 | iOS | 회사 소유 iOS 디바이스|
+| 223456789012345 | E6D5C4B3A210 |   iOS | 다른 iOS 디바이스|
+| 323456789012345 |        |   iOS | 세 번째 iOS 디바이스|
 | 123456789012346 |         |   ANDROID | 회사 소유 Android 디바이스|
 
 .csv 파일의 머리글 행을 포함하지 않습니다. 다음 예제에서는 CSV 형식의 동일한 샘플 데이터를 보여 줍니다.

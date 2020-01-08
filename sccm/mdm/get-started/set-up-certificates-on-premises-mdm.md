@@ -1,7 +1,7 @@
 ---
 title: '인증서 설정 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 위해 신뢰할 수 있는 통신에 대한 인증서를 설정합니다.
+description: Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대 한 인증서를 설정 합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e454212b5a70c903471d0bda82611e12b3c8693
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ee9db7fbbe678f6152086c922ea6972824941b99
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380338"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519541"
 ---
-# <a name="set-up-certificates-for-trusted-communications-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>Set up certificates for trusted communications for On-premises Mobile Device Management in System Center Configuration Manager
+# <a name="set-up-certificates-for-trusted-communications-for-on-premises-mobile-device-management-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 모바일 장치 관리를 위해 신뢰할 수 있는 통신에 대 한 인증서 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-System Center Configuration Manager 온\-프레미스 모바일 디바이스 관리에는 관리 디바이스와 신뢰할 수 있는 통신을 설정할 등록 지점, 등록 프록시 지점, 배포 지점 및 디바이스 관리 지점 사이트 시스템 역할이 필요합니다. 이러한 역할 중 하나 이상을 호스트하는 모든 사이트 시스템 서버에는 해당 시스템의 웹 서버에 바인딩된 고유 PKI 인증서가 있어야 합니다. 서버의 인증서와 동일한 루트를 가진 인증서는 대부분 신뢰할 수 있는 통신을 설정하기 위해 관리 디바이스에도 저장됩니다.  
+\-프레미스 모바일 장치 관리를 Configuration Manager 하려면 관리 장치와 신뢰할 수 있는 통신을 위해 설정 해야 하는 등록 지점, 등록 프록시 지점, 배포 지점 및 장치 관리 지점 사이트 시스템 역할이 필요 합니다. 이러한 역할 중 하나 이상을 호스트하는 모든 사이트 시스템 서버에는 해당 시스템의 웹 서버에 바인딩된 고유 PKI 인증서가 있어야 합니다. 서버의 인증서와 동일한 루트를 가진 인증서는 대부분 신뢰할 수 있는 통신을 설정하기 위해 관리 디바이스에도 저장됩니다.  
 
  도메인에 가입된 디바이스의 경우 Active Directory 인증서 서비스에서 신뢰할 수 있는 루트를 가진 필요한 인증서를 모든 디바이스에 자동으로 설치합니다. 도메인에 가입되지 않은 디바이스의 경우 다른 방법으로 신뢰할 수 있는 루트를 가진 유효한 인증서를 가져와야 합니다. 사이트 CA를 신뢰할 수 있는 루트 (도메인에 가입된 디바이스에 대해 Active Directory에서 사용하는 것과 동일한 루트)로 사용하는 경우 등록 지점 및 등록 프록시 지점의 사이트 시스템 서버는 해당 서버에 바인딩된 CA에서 발급한 인증서를 갖고 있어야 합니다.  
 

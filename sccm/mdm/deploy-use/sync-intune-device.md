@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 007674dadd04839c8bba608006166c750b79ad94
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b0f640c12bcf9fb1e1aeb561f09b4098e19e3e8b
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67675842"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519728"
 ---
 # <a name="remotely-synchronize-policy-on-intune-enrolled-devices-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 Intune에 등록된 디바이스의 정책 원격 동기화
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 
 Intune에 등록된 디바이스 자체의 회사 포털 앱에서 동기화를 요청하는 대신 Configuration Manager 콘솔에서 디바이스에 대한 정책 동기화를 요청할 수 있습니다. 

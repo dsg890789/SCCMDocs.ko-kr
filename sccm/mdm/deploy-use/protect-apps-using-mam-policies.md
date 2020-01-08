@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c63d25e8e75bc0216d2a4cb12a9312e921214938
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 547fb4173a0cb30ff9e9b29bdc4efb9095793ef1
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73704687"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519908"
 ---
-# <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 모바일 애플리케이션 관리 정책을 사용하여 앱 보호
+# <a name="protect-apps-using-mobile-application-management-policies-in-configuration-manager"></a>Configuration Manager에서 모바일 응용 프로그램 관리 정책을 사용하여 앱 보호
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-System Center Configuration Manager 애플리케이션 관리 정책을 사용하면 배포하는 앱의 기능을 회사의 규정 준수 및 보안 정책에 맞게 수정할 수 있습니다. 예를 들어 제한된 앱 내에서의 잘라내기/복사/붙여넣기 작업을 제한하거나 모든 URL을 Managed Browser 안에서 열도록 앱을 구성할 수 있습니다. 앱 관리 정책은 다음 장치를 지원합니다.  
+Configuration Manager 응용 프로그램 관리 정책을 사용 하면 배포 하는 앱의 기능을 회사의 규정 준수 및 보안 정책에 맞게 수정할 수 있습니다. 예를 들어 제한된 앱 내에서의 잘라내기/복사/붙여넣기 작업을 제한하거나 모든 URL을 Managed Browser 안에서 열도록 앱을 구성할 수 있습니다. 앱 관리 정책은 다음 장치를 지원합니다.  
 
 -   Android 4 이상을 실행하는 디바이스  
 
@@ -66,7 +66,7 @@ System Center Configuration Manager 애플리케이션 관리 정책을 사용�
 
 3. **일반** 페이지에서 **설치 파일에서 이 애플리케이션에 대한 정보 자동 검색**을 선택합니다.  
 
-4. **유형** 드롭다운 목록에서 **iOS용 앱 패키지(\*.ipa 파일)를 선택합니다.**  
+4. **유형** 드롭다운 목록에서 **iOS용 앱 패키지(*.ipa 파일)\*를 선택합니다.**  
 
 5. **찾아보기**를 선택하여 가져올 앱 패키지를 선택하고 **다음**을 선택합니다.  
 

@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90098dc0243e8513fe78692fe91a8390f7936eba
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b770a8d5a424b5c32fb47a69dc429890a914af7e
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62228365"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520170"
 ---
 # <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>디바이스, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Mobile Threat Defense 커넥터를 사용하면 선택한 모바일 위협 방어 공급업체를 준수 정책 및 조건부 액세스 규칙의 정보 소스로 활용할 수 있습니다. 이 경우 특히 손상된 모바일 디바이스에서 Exchange 및 Sharepoint와 같은 조직 리소스에 보호 계층을 추가할 수 있습니다.
 
@@ -29,7 +29,7 @@ Mobile Threat Defense 커넥터를 사용하면 선택한 모바일 위협 방�
 
 
 
-## <a name="what-problem-does-this-solve"></a>이 기능을 통해 어떤 문제가 해결되나요?
+## <a name="what-problem-does-this-solve"></a>어떤 문제를 해결합니까?
 
 조직은 OS 취약성뿐만 아니라 물리적, 앱 기반 및 네트워크 기반 위협 등 새로운 위협으로부터 중요한 데이터를 보호해야 합니다.
 

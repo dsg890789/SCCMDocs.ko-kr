@@ -1,5 +1,5 @@
 ---
-title: Manage volume-purchased iOS apps
+title: 대량 구매 iOS 앱 관리
 titleSuffix: Configuration Manager
 description: Apple iOS App Store를 통해 구입한 앱의 라이선스를 배포, 관리 및 추적합니다.
 ms.date: 03/30/2018
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d8666f6c05b540891037cc1917b755ed22fdcc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: aa5fc58f078c2a0c64230bf7178e8d33e30b11ba
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62281954"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520476"
 ---
-# <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리
+# <a name="manage-volume-purchased-ios-apps-with-configuration-manager"></a>Configuration Manager를 사용 하 여 대량 구매 iOS 앱 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 
 
@@ -63,8 +63,8 @@ ms.locfileid: "62281954"
 
 |앱이 디바이스 라이선싱을 지원하나요?|배포 컬렉션 유형|청구된 라이선스|
 |---|---|---|
-|예|사용자|사용자 라이선스|
-|아니요|사용자|사용자 라이선스|
+|예|User|사용자 라이선스|
+|아니요|User|사용자 라이선스|
 |예|디바이스|디바이스 라이선스|
 |아니요|디바이스|사용자 라이선스|
 
@@ -123,7 +123,7 @@ ms.locfileid: "62281954"
 
  이 보고서에는 각 애플리케이션의 이름, 구입한 라이선스의 총수, 사용 가능한 라이선스 수 등이 표시됩니다.  
 
- Configuration Manager 보고서를 실행하는 방법에 대한 도움말은 [System Center Configuration Manager에서 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
+ Configuration Manager 보고서를 실행 하는 방법에 대 한 도움말은 [보고](../../core/servers/manage/reporting.md)를 참조 하세요.  
 
 
 

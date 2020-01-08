@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55279eacbe0cddd62a8776b1ff8321b1168534e9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 56b1ed9f22aeab073bb936ae525c3dec3c422837
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380400"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519779"
 ---
 # <a name="set-up-your-subscription-for-lookout-mobile-threat-defense"></a>Lookout 모바일 위협 방어에 대한 구독 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Lookout 모바일 위협 방어 구독을 설정하려면 다음 단계가 필요합니다.
 
@@ -32,7 +32,7 @@ Lookout 모바일 위협 방어 구독을 설정하려면 다음 단계가 필�
 | 4 | [상태 동기화 구성](#configure-state-sync) |
 | 5 | [오류 보고서 이메일 받는 사람 정보 구성](#configure-error-report-email-recipient-information) |
 | 6 | [등록 설정 구성](#configure-enrollment-settings) |
-| 7 | [이메일 알림 구성](#configure-email-notifications) |
+| 7 | [메일 알림 구성](#configure-email-notifications) |
 | 8 | [위협 분류 구성](#configure-threat-classification) |
 | 9 | [등록 감시](#watching-enrollment) |
 
@@ -54,7 +54,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
 
 1. [Azure Portal](https://portal.azure.com)에 로그인하고 구독을 선택합니다. 
 
-2. 구독 이름을 선택하면 결과 URL은 구독 ID를 포함합니다. 구독 ID를 찾는 동안 문제가 발생하는 경우 구독 ID 찾기에 대한 팁을 보려면 [Microsoft 지원 문서](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)를 참조하세요.
+2. 구독 이름을 선택하면 결과로 표시되는 URL에 구독 ID가 포함됩니다. 구독 ID를 찾는 동안 문제가 발생하는 경우 구독 ID 찾기에 대한 팁을 보려면 [Microsoft 지원 문서](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)를 참조하세요.
 
 3. Azure AD 그룹 ID를 찾습니다.  
      > [!NOTE]   
@@ -133,7 +133,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
 
 
 
-## <a name="configure-email-notifications"></a>이메일 알림 구성
+## <a name="configure-email-notifications"></a>메일 알림 구성
 위협에 대한 메일 경고를 받으려면 알림을 받을 사용자 계정으로 [Lookout 콘솔](https://aad.lookout.com)에 로그인합니다. **시스템** 모듈의 **기본 설정** 탭에서 알림을 받아야 하는 위협 수준을 선택하고 **ON**으로 설정합니다. 변경 내용을 저장합니다.
 
 ![사용자 계정이 표시된 기본 설정 페이지 스크린샷](media/lookout-email-notifications.png) 메일 알림을 더 이상 받지 않으려면 알림을 OFF로 설정하고 변경 내용을 저장합니다.

@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 335c3036f4af1f5d6ea339557a70469a130dd012
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 35bdb5e2cfe139c20e2c1796f1fb32a284e5a200
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227959"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520068"
 ---
 # <a name="manage-applications-for-on-premises-mobile-device-management"></a>온-프레미스 모바일 디바이스 관리를 사용하여 애플리케이션 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager에서 온-프레미스 MDM(모바일 디바이스 관리)을 통해 디바이스를 관리하는 경우 추가 애플리케이션 유형을 관리할 수 있습니다. 온-프레미스 MDM에서 애플리케이션을 관리하는 것은 하이브리드 MDM 환경에서 앱을 관리하는 것과 같습니다.
 

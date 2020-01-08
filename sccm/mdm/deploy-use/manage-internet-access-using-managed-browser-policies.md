@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ede2563adbd517dbcda0a408fa5b9b166e8e3c12
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: dad04c2b6dac5cd746214365f4d335330e8a94e3
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62255999"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520612"
 ---
-# <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>System Center Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
+# <a name="manage-internet-access-using-managed-browser-policies-with-configuration-manager"></a>Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-System Center Configuration Manager에서는 Intune Managed Browser(웹 검색 애플리케이션)를 배포하고 관리 브라우저 정책과 연결할 수 있습니다. 관리 브라우저 정책은 관리 브라우저의 사용자가 이동할 수 있는 웹 사이트를 제한하는 허용 목록 또는 차단 목록을 설정합니다.  
+Configuration Manager에서 Intune Managed Browser (웹 검색 응용 프로그램)를 배포 하 고 관리 브라우저 정책과 응용 프로그램을 연결할 수 있습니다. 관리 브라우저 정책은 관리 브라우저의 사용자가 이동할 수 있는 웹 사이트를 제한하는 허용 목록 또는 차단 목록을 설정합니다.  
 
  이 앱은 관리되는 앱이므로 잘라내기, 복사, 붙여넣기 사용 제어와 같은 모바일 애플리케이션 관리 정책을 적용할 수도 있습니다. 이 경우 화면 캡처가 금지되며 콘텐츠 링크가 다른 관리되는 앱에서만 열립니다. 자세한 내용은 [모바일 애플리케이션 관리 정책을 사용하여 앱 보호](protect-apps-using-mam-policies.md)를 참조하세요.  
 

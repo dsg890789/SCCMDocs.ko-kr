@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37a1b1bf6ca1b14933ce03005a5b6b8681ef4db0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1f220f42e45027d0f3e51066a5170a7a50238f40
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227899"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519909"
 ---
 # <a name="protect-data-and-devices-in-on-premises-mobile-device-management"></a>온-프레미스 모바일 디바이스 관리에서 데이터 및 디바이스 보호
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 인프라 및 데이터를 노출이나 악의적인 공격으로부터 보호하기 위해 사용자가 조직의 리소스에 안전하게 액세스할 수 있도록 설정할 수 있습니다.
 

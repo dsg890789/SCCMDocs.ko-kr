@@ -1,7 +1,7 @@
 ---
 title: '온-프레미스 MDM에 대한 역할 설치 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 위한 사이트 시스템 역할을 설치합니다.
+description: Configuration Manager에서 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할을 설치 합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5d81d385c48d9653e1596e6a5d9d1163e84f314
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 49a3d8722d3ad238b7f8fa417bd0eb47e1cda056
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62216258"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519575"
 ---
-# <a name="install-site-system-roles-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager의 온-프레미스 모바일 디바이스 관리를 위한 사이트 시스템 역할 설치
+# <a name="install-site-system-roles-for-on-premises-mobile-device-management-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-System Center Configuration Manager 온\-프레미스 모바일 디바이스 관리를 사용하려면 Configuration Manager 사이트 인프라에 다음과 같은 사이트 시스템 역할이 있어야 합니다.  
+\-프레미스 모바일 장치 관리를 Configuration Manager Configuration Manager 사이트 인프라에서 다음 사이트 시스템 역할이 필요 합니다.  
 
 - 등록 지점  
 
@@ -34,7 +34,7 @@ System Center Configuration Manager 온\-프레미스 모바일 디바이스 관
 
 - 서비스 연결 지점  
 
-  대부분의 PC 및 디바이스가 Configuration Manager 클라이언트 소프트웨어를 사용하여 관리되는 조직에 온\-프레미스 모바일 디바이스 관리를 추가하는 경우 대부분의 사이트 시스템 역할이 기존 인프라의 일부로 이미 설치되어 있을 수 있습니다. 설치되어 있지 않은 경우 사이트 시스템 역할을 사이트에 추가하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 사이트 시스템 역할 추가](../../core/servers/deploy/configure/add-site-system-roles.md)를 참조하세요.  
+  대부분의 PC 및 디바이스가 Configuration Manager 클라이언트 소프트웨어를 사용하여 관리되는 조직에 온\-프레미스 모바일 디바이스 관리를 추가하는 경우 대부분의 사이트 시스템 역할이 기존 인프라의 일부로 이미 설치되어 있을 수 있습니다. 그렇지 않은 경우 사이트에 추가 하는 방법에 대 한 자세한 내용은 [Configuration Manager에 대 한 사이트 시스템 역할 추가](../../core/servers/deploy/configure/add-site-system-roles.md) 를 참조 하세요.  
 
 > [!NOTE]  
 >  디바이스 관리 지점 사이트 시스템 역할에서 데이터베이스 복제본을 사용하는 경우 데이터베이스 복제본이 동기화될 때까지 새로 등록된 디바이스는 처음에 디바이스 관리 지점에 연결하지 못합니다. 이러한 연결 오류는 데이터베이스 복제본에 성공적인 연결에 필요한 새로 등록된 디바이스에 대한 정보가 없기 때문에 발생합니다. 복제본은 5분마다 동기화되므로 등록 후에 처음 5분 동안은 디바이스가 연결되지 않으며(일반적으로 2번 연결 시도 실패) 그 이후에 성공적으로 연결됩니다.  
@@ -55,7 +55,7 @@ System Center Configuration Manager 온\-프레미스 모바일 디바이스 관
     또한 Configuration Manager 클라이언트를 사용하여 Mac 컴퓨터를 별도로 관리하는 경우 **인트라넷 및 인터넷 연결 허용**을 대신 사용합니다.  
 
    > [!NOTE]  
-   >  인트라넷 연결에 대해 구성된 배포 지점에는 사이트 경계도 구성되어야 합니다. Configuration Manager의 현재 분기는 온\-프레미스 모바일 디바이스 관리에 대해 IPv4 범위 경계만 지원합니다. 사이트 경계를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](../../core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)를 참조하세요.  
+   >  인트라넷 연결에 대해 구성된 배포 지점에는 사이트 경계도 구성되어야 합니다. Configuration Manager의 현재 분기는 온\-프레미스 모바일 디바이스 관리에 대해 IPv4 범위 경계만 지원합니다. 사이트 경계를 구성 하는 방법에 대 한 자세한 내용은 [Configuration Manager에 대 한 사이트 경계 및 경계 그룹 정의](../../core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)를 참조 하세요.  
 
 4. **모바일 디바이스가 이 배포 지점에 연결하도록 허용** 옆의 확인란을 클릭한 다음 **확인**을 클릭합니다.  
 
@@ -67,4 +67,4 @@ System Center Configuration Manager 온\-프레미스 모바일 디바이스 관
 
     이렇게 하면 관리 지점이 디바이스 관리 지점이 됩니다.  
 
-   사이트 시스템 역할이 추가되고 최신 디바이스를 관리하도록 구성되면 해당 역할을 호스트하는 서버를 관리되는 디바이스에 등록하고 통신하기 위한 신뢰할 수 있는 엔드포인트로 구성해야 합니다. 자세한 내용은 [System Center Configuration Manager에서 온-프레미스 모바일 디바이스 관리를 위해 신뢰할 수 있는 통신에 대한 인증서 설정](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)을 참조하세요.  
+   사이트 시스템 역할이 추가되고 최신 디바이스를 관리하도록 구성되면 해당 역할을 호스트하는 서버를 관리되는 디바이스에 등록하고 통신하기 위한 신뢰할 수 있는 엔드포인트로 구성해야 합니다. 자세한 내용은 [온-프레미스 모바일 장치 관리를 위한 신뢰할 수 있는 통신에 대 한 인증서 설정](../../mdm/get-started/set-up-certificates-on-premises-mdm.md) 을 참조 하세요.  
