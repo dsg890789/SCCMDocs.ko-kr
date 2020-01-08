@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb9349a8c3f107f2da139148e4476537fe6aa7ed
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 165d3b5dfb2911ad7ecc3516ebd1dd36a995818f
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62287163"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519439"
 ---
 # <a name="plan-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 온-프레미스 MDM (모바일 장치 관리)을 사용 하면 장치 OS에 기본 제공 되는 관리 기능을 사용 하 여 모바일 장치를 관리할 수 있습니다. 관리 기능은 OMA(Open Mobile Alliance) DM(디바이스 관리) 표준을 기준으로 하며 많은 디바이스 플랫폼은 이 표준을 사용하여 디바이스를 관리할 수 있도록 합니다. 이러한 장치는 설명서 및 Configuration Manager 콘솔에서 *최신 장치* 라고 합니다. 이 용어는 Configuration Manager 클라이언트에서 관리 해야 하는 다른 장치와 구별 됩니다.  
 

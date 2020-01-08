@@ -11,23 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f6c25817973dcfacefe8aae31f0db02dcbd5807
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1fa6b9772b11533ce17c80f89814aa5a3780ef73
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71401523"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519388"
 ---
 # <a name="hybrid-mdm-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune에서 사용하는 하이브리드 MDM
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 > [!WARNING]
-> 하이브리드 MDM 서비스 제품은 2019 년 9 월 1 일부 터 사용 중지 됩니다. 나머지 하이브리드 MDM 장치는 정책, 앱 또는 보안 업데이트를 받지 않습니다.
+> 하이브리드 MDM 서비스 제품은 2019년 9월 1일부로 종료되었습니다. 나머지 하이브리드 MDM 장치는 정책, 앱 또는 보안 업데이트를 받지 않습니다.
 
 ## <a name="remove-hybrid-mdm"></a>하이브리드 MDM 제거
 
-Configuration Manager 사이트에 Microsoft Intune 구독이 있는 경우 제거 해야 합니다.
+Configuration Manager 사이트에 Microsoft Intune 구독이 있었다면 이를 제거해야 합니다.
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동합니다. **Cloud Services**를 확장하고 **Microsoft Intune 구독** 노드를 선택합니다. 기존 Intune 구독은 삭제합니다.
 

@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49e07a7ebe6ec53d61ea9e2ee3bc941dd8561094
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c50454b10b9470e0477392c923ff2fbd2cb8117f
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62286984"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75519422"
 ---
 # <a name="on-premises-mdm-in-configuration-manager"></a>Configuration Manager의 온-프레미스 MDM
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager 온-프레미스 MDM (모바일 장치 관리)은 장치 OS의 기본 제공 관리 기능을 사용 하는 장치 관리 솔루션입니다. 이 기능은 OMA (Open Mobile 동맹) DM (장치 관리) 표준을 기반으로 합니다. 조직의 Configuration Manager 인프라를 사용 하 여 장치를 관리 하 고 유지 관리 합니다. 온-프레미스 MDM은 관리 기능을 설정 하는 Microsoft Intune 필요 하지만 구독에만 필요 합니다. Intune은 장치에서 정책 변경 내용을 체크 인하는 데 도움을 주기 위해 때때로 사용 되지만 장치를 관리 하거나 데이터를 저장 하는 데 사용 되지 않습니다.  
 
