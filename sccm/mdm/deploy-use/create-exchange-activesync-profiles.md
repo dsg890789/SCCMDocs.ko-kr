@@ -1,7 +1,7 @@
 ---
 title: Exchange ActiveSync 메일 프로필 만들기
 titleSuffix: Configuration Manager
-description: Microsoft Intune에서 작동하는 System Center Configuration Manager의 메일 프로필을 만들고 구성하는 방법을 알아봅니다.
+description: Microsoft Intune에서 작동 하는 Configuration Manager에서 전자 메일 프로필을 만들고 구성 하는 방법에 대해 알아봅니다.
 ms.date: 07/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,23 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9d1b5e96dc8d2a43dfc39b9d1b2cd9678c083c9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6a32269ddd526f9801202f1ec10fd7e6d50c2cd9
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67159430"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521122"
 ---
-# <a name="exchange-activesync-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Exchange ActiveSync 메일 프로필
+# <a name="exchange-activesync-email-profiles-in-configuration-manager"></a>Configuration Manager에서 Exchange ActiveSync 전자 메일 프로필
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Microsoft Intune 및 Exchange ActiveSync를 사용하여 디바이스에 메일 프로필 및 제한 사항을 설정할 수 있습니다. 그러면 최소한의 설정으로 자신의 디바이스에서 회사 메일에 액세스할 수 있습니다.  
 
  전자 메일 프로필을 사용하여 구성할 수 있는 디바이스 유형은 다음과 같습니다.  
 
 - Windows 10
-- Windows Phone 8.1
+- WVPN 프로필dows Phone 8.1
 - iOS 9 이상을 실행하는 iPhone 
 - iOS 9 이상을 실행하는 iPad 
 - Samsung KNOX Standard 4 이상
@@ -40,7 +40,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 디바이스에 메일 
 
  디바이스에서 메일 계정을 구성하는 것 외에 연락처, 일정 및 작업에 대한 동기화 설정을 구성할 수 있습니다.  
 
- 메일 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 이러한 설정에는 System Center Configuration Manager 인증서 프로필을 사용하여 설정된 서명, 암호화 및 ID의 인증서가 포함되어 있습니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.    
+ 메일 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 이러한 설정에는 Configuration Manager 인증서 프로필을 사용 하 여 설정 된 id, 암호화 및 서명에 대 한 인증서가 포함 됩니다. 인증서 프로필에 대 한 자세한 내용은 [인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조 하세요.    
 
 ## <a name="create-an-exchange-activesync-email-profile"></a>Exchange ActiveSync 메일 프로필 만들기  
 
@@ -96,7 +96,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 디바이스에 메일 
 
    - **ID 인증서**. **선택**을 선택한 다음 ID에 사용할 인증서를 선택합니다.  
 
-      ID 인증서는 SCEP 인증서여야 합니다. PFX 인증서는 사용할 수 없습니다.  자세한 내용은 [Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
+      ID 인증서는 SCEP 인증서여야 합니다. PFX 인증서는 사용할 수 없습니다.  자세한 내용은 [인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조 하세요.  
 
       이 옵션은 **인증 방법** 에서 **인증서**를 선택한 경우에만 사용할 수 있습니다.  
 
@@ -110,7 +110,7 @@ Microsoft Intune 및 Exchange ActiveSync를 사용하여 디바이스에 메일 
 
      - iOS 디바이스에서 모든 메일 메시지를 암호화하려면 **암호화 필요** 확인란을 선택합니다.    
 
-       여기서 선택하려면 먼저 인증서 프로필을 만들어야 합니다.  자세한 내용은 [Configuration Manager의 인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조하세요.  
+       여기서 선택하려면 먼저 인증서 프로필을 만들어야 합니다.  자세한 내용은 [인증서 프로필](/sccm/protect/deploy-use/introduction-to-certificate-profiles)을 참조 하세요.  
 
 ## <a name="configure-synchronization-settings-for-the-exchange-activesync-email-profile"></a>Exchange ActiveSync 메일 프로필에 대한 동기화 설정을 구성합니다.  
 
@@ -170,4 +170,4 @@ Exchange ActiveSync 전자 메일 프로필 만들기 마법사의 **동기화 �
 
 2.  마법사를 마칩니다.
 
-Exchange ActiveSync 메일 프로필을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 프로필 배포](../../protect/deploy-use/deploy-wifi-vpn-email-cert-profiles.md)를 참조하세요.  
+Exchange ActiveSync 전자 메일 프로필을 배포 하는 방법에 대 한 자세한 내용은 [프로필을 배포 하는 방법](../../protect/deploy-use/deploy-wifi-vpn-email-cert-profiles.md)을 참조 하세요.  

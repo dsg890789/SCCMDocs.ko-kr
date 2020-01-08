@@ -1,7 +1,7 @@
 ---
 title: 도메인 이름 요구 사항 확인
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 도메인 이름 요구 사항 확인
+description: Configuration Manager를 사용 하 여 도메인 이름 요구 사항을 확인 합니다.
 ms.date: 03/21/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a276ab19267d97526d916fb246facd75314006dd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9d66b219f9d563637dd6be0215a0a9b6858d450e
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379621"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521139"
 ---
-# <a name="confirm-domain-name-requirements-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 도메인 이름 요구 사항 확인
+# <a name="confirm-domain-name-requirements-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 도메인 이름 요구 사항 확인
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 필요한 경우 다음 단계를 수행하여 Configuration Manager 외부 종속성을 충족합니다.
 
@@ -48,4 +48,4 @@ ms.locfileid: "70379621"
     AD FS를 사용하지 않을 경우 각 사용자의 Microsoft Online 암호를 설정해야 합니다.
 
 > [!div class="button"]
-> [< 이전 단계](create-mdm-collection.md)  [다음 단계 >](configure-intune-subscription.md)
+> [이전 단계 <](create-mdm-collection.md)  [다음 단계 >](configure-intune-subscription.md)

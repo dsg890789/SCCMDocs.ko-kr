@@ -1,7 +1,7 @@
 ---
 title: 플랫폼 등록 사용
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 및 Microsoft Intune을 사용하여 플랫폼 등록 설정
+description: Configuration Manager 및 Microsoft Intune를 사용 하 여 플랫폼 등록을 사용 하도록 설정 합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8633770f0bd6beaec8bddb38688a22fc677bfc51
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 66b1c52bb46dff5268ec2306ce6578a5afad7e84
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68338094"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520867"
 ---
-# <a name="enable-platform-enrollment-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 플랫폼 등록 설정
+# <a name="enable-platform-enrollment-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 플랫폼 등록 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 디바이스 등록을 사용하려면 각 디바이스 플랫폼마다 추가 구성이 필요합니다.
 - [iOS 및 Mac 등록 설정](enroll-hybrid-ios-mac.md): Apple MDM 푸시 인증서를 가져옵니다.

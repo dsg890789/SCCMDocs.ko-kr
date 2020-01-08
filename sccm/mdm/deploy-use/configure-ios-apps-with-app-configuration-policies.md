@@ -11,19 +11,19 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a259e81831c00ad585a0177ac75473eb6d62860
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f782e29d3631598a5f27e58602e389f4a50e282b
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678597"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521156"
 ---
-# <a name="apply-settings-to-ios-apps-with-app-configuration-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 앱 구성 정책을 사용하여 iOS 앱에 설정 적용
+# <a name="apply-settings-to-ios-apps-with-app-configuration-policies-in-configuration-manager"></a>Configuration Manager에서 앱 구성 정책을 사용 하 여 iOS 앱에 설정 적용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 
-System Center Configuration Manager(Configuration Manager)에서 앱 구성 정책을 사용하여 사용자가 앱을 실행할 때 필요할 수 있는 설정을 배포할 수 있습니다. 예를 들어 앱에서 다음 세부 정보를 지정하도록 사용자에게 요구할 수 있습니다.
+Configuration Manager (Configuration Manager)에서 앱 구성 정책을 사용 하 여 사용자가 앱을 실행할 때 필요할 수 있는 설정을 배포할 수 있습니다. 예를 들어 앱에서 다음 세부 정보를 지정하도록 사용자에게 요구할 수 있습니다.
 - 사용자 지정 포트 번호
 - 언어 설정
 - 보안 설정
@@ -67,7 +67,7 @@ System Center Configuration Manager(Configuration Manager)에서 앱 구성 정�
         XML 속성 목록에 대한 자세한 내용은 iOS Developer Library의 [XML 속성 목록](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)을 참조하세요.
 
 XML 속성 목록의 형식은 구성하는 앱에 따라 달라집니다. 사용할 형식에 대한 자세한 내용은 앱 공급업체에 문의하세요.
-Intune에서는 속성 목록의 다음 데이터 형식을 지원합니다.
+Intune에서는 속성 목록에서 다음과 같은 데이터 형식을 지원합니다.
 
 ```
 <integer>

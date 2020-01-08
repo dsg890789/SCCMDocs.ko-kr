@@ -1,7 +1,7 @@
 ---
 title: MDM 컬렉션 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 MDM 컬렉션 만들기
+description: Configuration Manager를 사용 하 여 MDM 컬렉션을 만듭니다.
 ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ec7c4cd58fbb717ab586d355ba4f0bf5f91fd06
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8776f6f77e716bdd4b921eb82181f8566ddace24
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62275820"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521173"
 ---
-# <a name="create-an-mdm-collection-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 MDM 컬렉션 만들기
+# <a name="create-an-mdm-collection-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 MDM 컬렉션 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 관리에 디바이스를 등록할 수 있는 사용자를 지정하려면 Configuration Manager 사용자 컬렉션이 필요합니다. Intune 라이선스는 사용자에 의해 할당되기 때문에 디바이스 컬렉션이 아니라 사용자 컬렉션만 사용할 수 있습니다.
 

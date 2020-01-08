@@ -1,7 +1,7 @@
 ---
 title: 서비스 연결 지점 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 서비스 연결 지점 만들기
+description: Configuration Manager를 사용 하 여 서비스 연결 지점을 만듭니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0ce47e9ade73d76e99aa5c0d4e5581c713a847a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e620ce639d20b52e106026a88162e6b1ada6a5fb
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62224846"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521003"
 ---
-# <a name="create-a-service-connection-point-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 서비스 연결 지점 만들기
+# <a name="create-a-service-connection-point-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 서비스 연결 지점 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 구독을 만든 후에는 Intue 서비스에 연결하는 데 사용할 수 있는 서비스 연결 지점 사이트 시스템 역할을 설치할 수 있습니다. 이 사이트 시스템 역할은 Intue 서비스에 설정 및 애플리케이션을 푸시합니다.
 
@@ -55,4 +55,4 @@ ms.locfileid: "62224846"
 2.  1단계에서 발급된 인증서가 서비스 연결 지점 사이트 역할에 설치되며 Microsoft Intune 서비스와의 이후 모든 통신을 인증하고 권한을 부여하는 데 사용됩니다.
 
 > [!div class="button"]
-> [< 이전 단계](terms-and-conditions.md)  [다음 단계 >](enable-platform-enrollment.md)
+> [이전 단계 <](terms-and-conditions.md)  [다음 단계 >](enable-platform-enrollment.md)

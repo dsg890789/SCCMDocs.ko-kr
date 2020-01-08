@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0d98ec11f7b9003c710b5150732a9137fc1c013
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d222daf111e790c8e71946a2bf08579f4bb4d7b8
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68337926"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520901"
 ---
 # <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>준수 정책에서 디바이스 위협 방지 규칙 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Lookout Mobile Threat Protection과 함께 Intune을 사용하면 모바일 위협을 탐지하고 디바이스에 대한 위험을 평가할 수 있습니다. 규격 디바이스의 경우 Configuration Manager에서 준수 정책 규칙을 만들어 확인할 위험 평가 항목을 포함할 수 있습니다. 그런 다음 디바이스 규정 준수에 따라 조건부 액세스 정책으로 Exchange, SharePoint 및 기타 서비스에 대한 액세스를 허용하거나 차단할 수 있습니다.
 

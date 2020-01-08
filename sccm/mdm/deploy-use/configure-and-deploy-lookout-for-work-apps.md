@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8762282c6a5007642e2cc174b9d2496b2d705c24
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 50c334f608086b9176ac3c2f5f3a3215d3f69a48
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67194655"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521241"
 ---
 # <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work 앱 구성 및 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 이 문서에서는 Android 및 iOS 디바이스에서 Lookout for Work 앱을 구성하고 배포하는 방법을 설명합니다.
 
@@ -58,12 +58,12 @@ ms.locfileid: "67194655"
    2.  **Lookout for Work iOS 앱**으로 이름을 지정하고 애플리케이션 유형으로 **네이티브**를 선택합니다.  
    ![네이티브 클라이언트 앱 옵션을 보여 주는 앱 추가 대화 상자 스크린샷](media/aad-add-app-reg.png)
 
-   3.  이 리디렉션 URI의 경우 다음 형식 `lookoutwork://com.lookout.enterprise.<yourcompanyname>`을 사용하여 `<yourcompanyname>`을 회사 이름으로 대체합니다. `lookoutwork://com.lookout.enterprise.contoso`
+   3.  이 리디렉션 URI의 경우 다음 형식 `lookoutwork://com.lookout.enterprise.<yourcompanyname>`을 사용하여 `<yourcompanyname>`을 회사 이름으로 대체합니다. 예를 들면 다음과 같습니다. `lookoutwork://com.lookout.enterprise.contoso`
    4. **만들기**를 클릭하여 웹을 만듭니다. 
    5.  새 앱을 열고 **설정을** 클릭하고 추가 리디렉션 URI를 추가합니다. `<originalURI>`가 원래 리디렉션 URI의 URL로 인코딩된 버전인 다음 형식 `companyportal://code/<originalURI>`를 사용합니다. 예를 들면 `companyportal://code/lookoutwork%3A%2F%2Fcom.lookout.enterprise.contoso`
    6.  앱 설정에서 **필요한 권한**으로 이동하여 **추가**를 클릭합니다. 다음의 위임된 권한을 선택합니다.  
 
-       | API  | 사용 권한  |
+       | API  | 권한  |
        |---------|---------|
        | Lookout MTP     | Lookout MTP 액세스         |
        | Microsoft Graph     | 로그인 및 사용자 프로필 읽기        |  

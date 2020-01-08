@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00907d200bf54a4a1eb13863cf5bb529aa2f9656
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b4cd11608fc515628d0d36bb2929f0ec7dc28994
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62282429"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520833"
 ---
-# <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>Set up Android hybrid device management with System Center Configuration Manager and Microsoft Intune
+# <a name="set-up-android-hybrid-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 Android 하이브리드 장치 관리 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 이 문서에서는 Android 및 Android for Work 디바이스의 하이브리드 등록을 사용하도록 설정할 수 있습니다. 그런 다음, Configuration Manger를 사용하여 구성된 Microsoft Intune 구독을 통해 디바이스를 관리할 수 있습니다. Google Play에서 사용자는 Android(Samsung KNOX Standard 포함) 및 Android for Work 디바이스를 등록할 수 있는 Android 회사 포털 앱을 다운로드할 수 있습니다.
 
@@ -81,4 +81,4 @@ Android for Work 등록을 사용하도록 설정한 후 Android for Work 디바
 - [회사 프로필 선택적 초기화](/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)
 
 > [!div class="button"]
-> [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
+> [이전 단계 <](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)

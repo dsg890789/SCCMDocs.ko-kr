@@ -10,16 +10,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a205d17835675f804736c0513bc9d6c7706e19b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7a1f76b31b403b3cfcd89fd6380d63af1d135900
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379595"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521037"
 ---
-# <a name="how-to-create-configuration-items-for-windows-phone-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법
+# <a name="how-to-create-configuration-items-for-windows-phone-devices-managed-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법
 
-System Center Configuration Manager **Windows Phone** 구성 항목을 사용하여 Microsoft Intune에 등록되어 있거나 Configuration Manager에서 온-프레미스로 관리되는 Windows Phone 디바이스에 대한 설정을 관리합니다.  
+Configuration Manager**Windows Phone** 구성 항목을 사용 하 여 Configuration Manager에서 온-프레미스로 Microsoft Intune 또는 관리에 등록 된 Windows Phone 장치에 대 한 설정을 관리할 수 있습니다.  
   
 ## <a name="create-a-windows-phone-configuration-item"></a>Windows Phone 구성 항목 만들기  
   
@@ -37,7 +37,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 7. 마법사의 **지원되는 플랫폼** 페이지에서 구성 항목을 평가할 특정 Windows Phone 플랫폼을 선택합니다.  
   
-8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목에서 [Windows Phone 구성 항목 설정 참조](#windows-phone-configuration-item-settings-reference)를 참조하고 **다음**을 클릭합니다.  
+8. 마법사의 **디바이스 설정** 페이지에서 구성하려는 설정 그룹을 선택합니다. 자세한 내용은 이 항목의 [Windows Phone 구성 항목 설정 참조](#windows-phone-configuration-item-settings-reference) 섹션을 참조하고 **다음**을 클릭합니다.  
   
    > [!TIP]  
    >  원하는 설정이 나열되지 않은 경우 **기본 설정 그룹에 없는 추가 설정 구성 확인란**을 선택합니다.  
@@ -70,7 +70,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ### <a name="password"></a>암호  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**디바이스에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
@@ -82,7 +82,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 ### <a name="device"></a>디바이스  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**화면 캡처**|사용자가 디바이스 디스플레이의 스크린샷을 찍을 수 있습니다.<br /><br /> (Windows Phone 8.1에만 해당)|  
 |**진단 데이터 전송**|앱 로그 파일을 전송할 수 있습니다.|  
@@ -90,10 +90,10 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |**복사 및 붙여넣기**|복사 및 붙여넣기를 사용하여 앱 간에 데이터를 전송합니다.<br /><br /> (Windows Phone 8.1에만 해당)|  
 |**Bluetooth**|디바이스의 Bluetooth 기능을 사용할 수 있습니다.|  
   
-### <a name="email-management"></a>전자 메일 관리  
+### <a name="email-management"></a>메일 관리  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**POP 및 IMAP 전자 메일**|POP 및 IMAP 표준을 사용하는 전자 메일 계정에 연결할 수 있습니다.|  
 |**최대 전자 메일 보존 시간**|전자 메일을 서버에서 삭제할 때까지 보존할 시간입니다.|  
@@ -108,14 +108,14 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ### <a name="store"></a>스토어  
  이러한 설정은 Windows Phone 8.1 디바이스에만 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**앱 스토어**|디바이스에서 앱 스토어에 액세스할 수 있습니다.|  
   
 ### <a name="browser"></a>브라우저  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**웹 브라우저 허용**|기본 인터넷 브라우저를 사용하거나 사용하지 않도록 설정합니다.|  
 |**자동 채우기**|사용자가 브라우저에서 자동 완성 설정을 변경할 수 있습니다.|  
@@ -127,7 +127,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ### <a name="internet-explorer"></a>Internet Explorer  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**항상 추적 방지 헤더 보내기**|검색 정보가 타사 사이트로 전송되지 않도록 차단합니다.|  
 |**인트라넷 보안 영역**||  
@@ -143,7 +143,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 ### <a name="cloud"></a>클라우드  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**설정 동기화**|디바이스 간에 설정을 동기화할 수 있습니다.|  
 |**자격 증명 동기화**|디바이스 간에 자격 증명을 동기화할 수 있습니다.|  
@@ -152,7 +152,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 ### <a name="security"></a>보안  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**서명되지 않은 파일 설치**|서명되지 않은 파일을 로드할 수 있습니다.|  
 |**서명되지 않은 애플리케이션**|서명되지 않은 앱을 로드할 수 있습니다.|  
@@ -165,7 +165,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ### <a name="peak-synchronization"></a>사용량이 가장 많을 때의 동기화  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**최대 사용량 시간 지정**|다음 두 가지 설정에서 사용할 시간 범위를 지정합니다.|  
 |**사용량이 가장 많을 때의 동기화 빈도**|지정한 최대 사용량 시간 중에 디바이스를 동기화할 빈도를 선택합니다.|  
@@ -174,17 +174,17 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ### <a name="roaming"></a>로밍  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**로밍 시 디바이스 관리**|디바이스를 로밍 중일 때 Configuration Manager에서 디바이스를 관리할 수 있습니다.|  
 |**로밍 시 소프트웨어 다운로드**|로밍 시 앱 및 소프트웨어를 다운로드할 수 있습니다.|  
 |**로밍 시 전자 메일 다운로드**|로밍 시 전자 메일을 다운로드할 수 있습니다.|  
 |**데이터 로밍**|데이터 액세스 시 네트워크 간 로밍이 가능합니다.|  
   
-### <a name="encryption"></a>암호화  
+### <a name="encryption"></a>Encryption  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**스토리지 카드 암호화**|디바이스에 사용되는 모든 메모리 카드를 암호화해야 합니다.|  
 |**디바이스에 파일 암호화**|모바일 디바이스의 파일을 암호화해야 합니다.|  
@@ -196,7 +196,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ###  <a name="wireless-communications"></a>무선 통신  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**무선 네트워크 연결**|디바이스 Wi-Fi 기능을 사용하거나 사용하지 않도록 설정합니다.|  
 |**Wi-Fi 테더링**|사용자가 디바이스를 모바일 핫스팟으로 사용할 수 있습니다.|  
@@ -209,13 +209,13 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 2.  **무선 네트워크 연결** 대화 상자에서 모바일 디바이스에 프로비전할 무선 연결에 대해 다음 정보를 지정합니다.  
   
-|설정|추가 정보|  
+|Setting|추가 정보|  
 |-------------|----------------------|  
 |**네트워크 이름(SSID)**||  
 |**네트워크 연결**|**인터넷** 또는 **작업**을 선택합니다.|  
 |**인증**|무선 연결에 대한 인증 방법을 다음 중에서 선택합니다.<br><br> - **개방형**<br> - **공유**<br> - **WPA**<br> - **WPA-PSK**<br> - **WPA2**<br> - **WPA2-PSK**|  
 |**데이터 암호화**|이 연결에 사용되는 암호화 방법을 선택합니다. 선택한 **인증** 방법에 따라 다른 값을 선택할 수 있습니다.<br><br> - **사용 안 함**<br> - **WEP**<br> - **TKIP**<br> - **AES**|  
-|**키 인덱스**|**데이터 암호화** 설정, **WEP**에 사용할 키 인덱스를 **1**~**4** 사이에서 선택합니다.|  
+|**키 인덱스**|**데이터 암호화** 설정 **WEP** 에 사용할 키 인덱스를 **1** ~ **4**사이에서 선택합니다.|  
 |**이 네트워크를 인터넷에 연결**|무선 연결의 모바일 디바이스가 인터넷에 연결할 수 있도록 하는 프록시 설정을 제공하려면 이 옵션을 선택합니다.|  
 |**프록시 서버 설정**|필요에 따라 **HTTP**, **WAP** 및 **소켓**에 대해 **서버** 및 **포트** 설정을 지정합니다.|  
 |**802.1X 네트워크 액세스 사용**|EAP 방식을 지정하여 연결을 보호하려면 이 옵션을 선택합니다.|  
@@ -260,7 +260,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ### <a name="system-security"></a>시스템 보안  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**사용자 계정 컨트롤**|디바이스에서 Windows 사용자 계정 컨트롤을 사용하거나 사용하지 않도록 설정합니다.|  
 |**네트워크 방화벽**|Windows 방화벽을 사용하거나 사용하지 않도록 설정합니다.|  
@@ -274,7 +274,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 ### <a name="windows-server-work-folders"></a>Windows 서버 작업 폴더  
  이러한 설정은 Windows Phone 8 및 Windows Phone 8.1 모두에 적용됩니다.  
   
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**작업 폴더 URL**|사용자가 디바이스에서 연결할 수 있는 Windows Server 작업 폴더의 위치를 구성합니다.|  
   
@@ -292,7 +292,7 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
   
 |||  
 |-|-|  
-|설정|추가 정보|  
+|Setting|추가 정보|  
 |**차단되는 앱 목록**|사용자가 설치할 수 없는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
 |**허용되는 앱 목록**|사용자가 설치할 수 있는 앱 목록을 지정하려면 이 옵션을 선택합니다.|  
 |**추가**|앱을 선택한 목록에 추가합니다. 원하는 이름, 앱 게시자(선택 사항) 및 앱 스토어의 앱 URL을 지정합니다.<br /><br /> URL을 지정하려면 Windows Phone 스토어 페이지에서 사용하려는 앱을 검색합니다.<br /><br /> **예:** 스토어에서 **Skype** 앱을 검색합니다. 사용할 URL은 https://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51 입니다.<br /><br /> 회사 포털 앱 또는 LOB(기간 업무) 앱의 경우 전체 URL을 지정할 필요가 없으며 앱 GUID만 지정하면 됩니다.|  
@@ -301,4 +301,4 @@ System Center Configuration Manager **Windows Phone** 구성 항목을 사용하
 |**가져오기**|지정한 앱 목록을 쉼표로 구분된 값 파일로 가져옵니다. 파일의 형식, 애플리케이션 이름, 게시자, 앱 URL을 사용합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
+ [Configuration Manager 클라이언트 없이 관리 되는 장치에 대 한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

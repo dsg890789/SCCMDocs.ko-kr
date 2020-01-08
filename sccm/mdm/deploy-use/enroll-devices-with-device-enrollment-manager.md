@@ -1,7 +1,7 @@
 ---
 title: '디바이스 등록 관리자를 사용하여 디바이스 등록 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager와 디바이스 등록 관리자 계정을 사용하여 회사 소유 디바이스를 등록합니다.
+description: Configuration Manager를 사용 하 여 장치 등록 관리자 계정을 사용 하 여 회사 소유의 장치를 등록 합니다.
 ms.date: 09/08/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00d6ccd54e7be4021c6dc31d30aedac50b41e3dd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3aabf376286ae9d5a9391197b45392f050006854
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69632483"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520799"
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>Configuration Manager와 디바이스 등록 관리자를 사용하여 디바이스 등록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 > [!Important]  
 > 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  

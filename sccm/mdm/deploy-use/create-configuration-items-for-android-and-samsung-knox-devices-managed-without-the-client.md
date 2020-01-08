@@ -1,7 +1,7 @@
 ---
 title: Intune으로 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager Android 및 Samsung KNOX Standard 구성 항목을 사용하여 디바이스 설정을 관리할 수 있습니다.
+description: Configuration Manager Android 및 Samsung KNOX Standard 구성 항목을 사용 하 여 장치에 대 한 설정을 관리 합니다.
 ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd17461f0db42afcbec821716eaeef83dfddcc98
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a16962c56437fc36bbfe6f61241f262b5e017d50
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67145989"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521088"
 ---
-# <a name="how-to-create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-system-center-configuration-manager-client"></a>System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX 디바이스에 대한 구성 항목을 만드는 방법
+# <a name="how-to-create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX 디바이스에 대한 구성 항목을 만드는 방법
 
-System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 Android 및 삼성 KNOX 디바이스에 대한 설정을 관리할 수 있습니다.  
+Configuration Manager **android 및 SAMSUNG knox** 구성 항목을 사용 하 여 Configuration Manager에서 온-프레미스로 Microsoft Intune 또는 관리에 등록 된 Android 및 samsung knox 장치에 대 한 설정을 관리 합니다.  
 
 ## <a name="create-an-android-and-samsung-knox-configuration-item"></a>Android 및 Samsung KNOX 구성 항목 만들기  
 
@@ -71,7 +71,7 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 ### <a name="password"></a>암호  
 이러한 설정은 Android 및 삼성 KNOX 디바이스 모두에 적용됩니다.  
 
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**디바이스에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 길이를 지정합니다.|  
@@ -80,12 +80,12 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 |**다음 로그온 실패 횟수 후 디바이스 초기화**|이 횟수만큼 로그인에 실패하면 디바이스를 초기화합니다.|  
 |**다음 유휴 시간 후 디바이스 잠그기**|디바이스를 사용하지 않는 경우 잠기기 전까지의 시간을 지정합니다.|
 |**암호 품질**|필요한 암호 복잡도 수준과 생체 인식 디바이스 사용 가능 여부를 지정합니다.|  
-|**Smart Lock 및 기타 신뢰 에이전트 허용**|호환되는 Android 디바이스의 스마트 잠금 기능을 제어하도록 허용합니다. 이 전화 기능을 통해 디바이스가 특정 Bluetooth 디바이스에 연결된 경우 또는 NFC 태그에 가까이 있는 경우와 같이 신뢰할 수 있는 위치에 있는 경우 디바이스 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 이 설정을 사용하면 최종 사용자가 스마트 잠금을 구성하지 않도록 방지할 수 있습니다.|
+|**Smart Lock 및 기타 신뢰 에이전트 허용**|호환되는 Android 디바이스의 스마트 잠금 기능을 제어하도록 허용합니다. 이 전화 기능을 통해 디바이스가 특정 Bluetooth 디바이스에 연결된 경우 또는 NFC 태그에 가까이 있는 경우와 같이 신뢰할 수 있는 위치에 있는 경우 디바이스 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 이 설정을 사용하면 사용자가 스마트 잠금 기능을 구성하는 것을 방지할 수 있습니다.|
 |**잠금 해제에 사용할 지문(KNOX 5.0 이상)**|지문을 사용하여 호환되는 디바이스의 잠금을 해제할 수 있습니다.|
 
 ### <a name="device"></a>디바이스   
 
-|                 설정                  |                             세부 정보                             |
+|                 Setting                  |                             Details                             |
 |------------------------------------------|-----------------------------------------------------------------|
 |            **음성 전화 걸기**             |  디바이스에서 음성 전화 걸기 기능을 활성화하거나 비활성화할 수 있습니다.   |
 |           **음성 도우미**            |    디바이스에서 음성 도우미 소프트웨어를 사용할 수 있습니다.    |
@@ -99,13 +99,13 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 
 ### <a name="store"></a>스토어
 
-|설정|세부 정보|  
+|Setting|Details|  
 |------------------|-------------|  
 |**앱 스토어**|사용자가 디바이스에서 Google Play 스토어에 액세스할 수 있습니다.|
 
 ### <a name="browser"></a>브라우저
 
-|설정|세부 정보|  
+|Setting|Details|  
 |------------------|-------------|  
 |**웹 브라우저 허용**|디바이스의 기본 웹 브라우저를를 사용할 수 있습니다.|
 |**자동 채우기**|웹 브라우저의 자동 채우기 기능을 사용할 수 있습니다.|
@@ -115,14 +115,14 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 
 ### <a name="cloud"></a>클라우드  
 
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**Google 백업**|Google 백업을 사용할 수 있습니다.|  
 |**Google 계정 자동 동기화**|Google 계정 설정을 자동으로 동기화할 수 있습니다.|  
 
 ### <a name="security"></a>보안  
 
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**SMS 및 MMS 메시징**|디바이스에서 SMS 및 MMS 메시징을 허용합니다.|
 |**이동식 스토리지**|디바이스가 SD 카드와 같은 이동식 스토리지를 사용할 수 있습니다.|
@@ -133,23 +133,23 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 
 ### <a name="roaming"></a>로밍
 
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |음성 로밍|디바이스가 셀룰러 네트워크에 있을 때 음성 로밍을 허용합니다.|
 |데이터 로밍|디바이스가 셀룰러 네트워크에 있을 때 데이터 로밍을 허용합니다.|
 
 
-### <a name="encryption"></a>암호화  
+### <a name="encryption"></a>Encryption  
  이러한 설정은 Android 및 삼성 KNOX 디바이스 모두에 적용됩니다.  
 
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**스토리지 카드 암호화**|디바이스의 메모리 카드를 암호화해야 합니다.|
 |**디바이스에 파일 암호화**|모바일 디바이스의 파일을 암호화해야 합니다.|  
 
 ### <a name="wireless-communications"></a>무선 통신
 
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**무선 네트워크 연결**|디바이스의 Wi-Fi 기능을 사용할 수 있습니다.|
 |**Wi-Fi 테더링**|디바이스의 Wi-Fi 테더링을 사용할 수 있습니다.|
@@ -165,7 +165,7 @@ System Center Configuration Manager **Android 및 삼성 KNOX** 구성 항목을
 **호환 및 비호환 앱(Android)** 페이지에서 다음 정보를 지정합니다.  
 
 
-|          설정           |                                                                                                                                                                                                                                                                                                                 추가 정보                                                                                                                                                                                                                                                                                                                  |
+|          Setting           |                                                                                                                                                                                                                                                                                                                 추가 정보                                                                                                                                                                                                                                                                                                                  |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **비규격 앱 목록** |                                                                                                                                                                                                                                                                               사용자가 설치하는 경우 비규격으로 보고될 앱 목록을 지정합니다.                                                                                                                                                                                                                                                                               |
 |  **규격 앱 목록**   |                                                                                                                                                                                                                                                              사용자가 설치할 수 있는 앱 목록을 지정합니다. 설치된 앱 중 이 목록에 포함되어 있지 않은 기타 모든 앱은 호환되지 않는 앱으로 보고됩니다.                                                                                                                                                                                                                                                               |
@@ -193,7 +193,7 @@ Android 회사 프로필에서 구성 항목을 만들려면 **일반** 페이�
 
 1. 구성 항목 만들기 마법사의 **Samsung KNOX 디바이스에 대한 키오스크 모드 설정 구성** 페이지에서 다음 정보를 지정합니다.  
 
-   |설정|추가 정보|  
+   |Setting|추가 정보|  
    |-------------|----------------------|  
    |**앱 선택**|**찾아보기**를 선택하여 디바이스가 키오스크 모드일 때 실행할 수 있는 Configuration Manager Android 애플리케이션(확장명이 **.apk**임)을 선택합니다. 다른 앱은 디바이스에서 실행할 수 없습니다.|  
    |**볼륨 단추**|디바이스에서 볼륨 단추를 사용하거나 사용하지 않도록 설정합니다.|  
@@ -208,7 +208,7 @@ Android 회사 프로필에서 구성 항목을 만들려면 **일반** 페이�
 
 - **호환되지 않는 앱을 설치한 사용자 요약**. 지정한 정책과 호환되지 않는 앱을 설치한 사용자에 대한 정보가 표시됩니다.  
 
-보고서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../core/servers/manage/reporting.md)을 참조하세요.  
+보고서를 사용 하는 방법에 대 한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조 하세요.  
 
 ## <a name="see-also"></a>참고 항목  
-[System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
+[Configuration Manager 클라이언트 없이 관리 되는 장치에 대 한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

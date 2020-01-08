@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune에서 iOS 및 Mac 하이브리드 디바이스 관리 설정
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 및 Microsoft Intune에서 iOS 디바이스 관리 설정
+description: Configuration Manager 및 Microsoft Intune를 사용 하 여 iOS 장치 관리를 설정 합니다.
 ms.date: 08/11/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,22 +11,22 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c6573ce4faf893e30eac070efd963dc7465e20e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 33ad4aeb220c163d429212990a92eae71f8549a7
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678843"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520952"
 ---
-# <a name="set-up-ios-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 iOS 하이브리드 디바이스 관리 설정
+# <a name="set-up-ios-hybrid-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 iOS 하이브리드 장치 관리 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager 및 Intune에서는 iPhone, iPad 및 Mac 사용자가 회사 메일 및 리소스에 액세스할 수 있도록 iOS 및 macOS 디바이스 등록을 사용하도록 설정합니다. 사용자가 Intune 회사 포털 앱을 설치하면 해당 디바이스를 정책 대상으로 지정할 수 있습니다. iOS 및 Mac 디바이스를 관리하려면 먼저 Apple의 APNs(Apple Push Notification Service) 인증서를 가져와야 합니다. 이 인증서를 사용하면 Intune에서는 Apple의 디바이스 관리 서비스와의 연결을 설정하여 iOS 및 Mac 디바이스를 관리할 수 있습니다.  
 
  회사 소유의 iOS 디바이스도 등록할 수 있습니다.  [회사 소유 디바이스 등록](enroll-company-owned-devices.md)을 참조하세요.  
 
-**필수 구성 요소**<br>
+**전제 조건<br>
 플랫폼에 대한 등록을 설정하려면 먼저 [하이브리드 MDM 설정](setup-hybrid-mdm.md)에서 필수 조건 및 절차를 완료합니다.
 
 iOS 디바이스 등록을 지원하려면 다음 단계를 수행해야 합니다.  
@@ -78,4 +78,4 @@ IOS 등록을 사용하도록 설정하려면 APNs 인증서를 업로드합니�
 3. **개인적으로 소유한 디바이스 차단**을 선택하여 회사 소유 디바이스에 대한 등록을 제한합니다.
 
 > [!div class="button"]
-> [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
+> [이전 단계 <](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)

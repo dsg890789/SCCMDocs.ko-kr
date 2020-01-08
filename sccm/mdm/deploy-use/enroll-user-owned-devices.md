@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b6d56309238acc2889ac39ab39d5982fb8d535c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 957461561386c85512c69d77bf92ea7669064c8c
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62282412"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520765"
 ---
 # <a name="enroll-user-owned-devices-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager를 사용하는 하이브리드 배포를 위해 사용자 소유 디바이스 등록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 “자체 디바이스 가져오기(BYOD, Bring Your Own Devices)”라고도 하는 프로세스를 통해 사용자 소유 디바이스를 등록하여 관리로 가져올 수 있습니다. 사용자는 회사 포털 앱을 설치하고 디바이스(iOS, macOS 및 Android)에 로그인하거나, 직장 또는 학교 계정을 디바이스에 추가하고 도메인에 연결하여(Windows) 이 작업을 수행합니다. 이 프로세스에서는 디바이스를 Intune에 등록하여 사용자에게 Intune으로 관리되는 리소스에 대한 액세스를 부여하고 Intune이 PIN 요구 등과 같은 특정 디바이스 설정을 관리하게 합니다.
 

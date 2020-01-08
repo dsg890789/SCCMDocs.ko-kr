@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50d79da3ab4e7ace9a682baaa5cfd8d2bdbdce10
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d9ae69ca94d2a196ae46631cb269189f069853d4
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678880"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520731"
 ---
 # <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>디바이스, 네트워크 및 애플리케이션 위험에 따라 회사 리소스에 대한 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Lookout에서 수행한 위험 평가를 기반으로 회사 리소스에 대한 모바일 디바이스의 액세스를 제어하세요. Lookout은 Microsoft Intune과 통합된 디바이스 위협 방지 솔루션입니다. 위험은 Lookout 서비스 수집하는 데이터를 기반으로 합니다. Lookout 서비스에서는 디바이스로부터 OS(운영 체제) 취약성, 설치된 악성 앱 및 악성 네트워크 프로필에 대한 데이터를 수집합니다. 
 
@@ -31,7 +31,7 @@ Configuration Manager 준수 정책을 통해 사용 설정되는 Lookout의 위
 
 
 
-## <a name="how-does-it-work"></a>작동 방식
+## <a name="how-does-it-work"></a>어떤 방식으로 작동합니까?
 
 하이브리드 MDM 배포 및 Lookout 디바이스 위협 방지는 회사 리소스 보호에 어떻게 도움이 되나요?
 
@@ -54,7 +54,7 @@ Lookout에서 지원하는 플랫폼 및 언어에 대한 자세한 내용은 �
 
 
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 - [하이브리드 MDM](/sccm/mdm/understand/hybrid-mobile-device-management)  
 

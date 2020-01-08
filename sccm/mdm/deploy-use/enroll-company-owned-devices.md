@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3586f51b7112f8667b7e120ea278ceb9adbbe89
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 51ddb56bd3a8afaf09ab0c31ace102fefa5fae2b
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62226560"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520816"
 ---
 # <a name="enroll-company-owned-devices-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager를 사용하는 하이브리드 배포를 위해 회사 소유 디바이스 등록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 조직이나 회사 소유 디바이스(COD)를 디바이스 및 구입 방법에 따라 다양한 방법으로 관리할 수 있습니다.  
 
@@ -37,7 +37,7 @@ ms.locfileid: "62226560"
  회사 소유 디바이스의 프로필을 구성할 때 관리자는 디바이스로 특정 사용자를 식별하는 *사용자 선호도*를 관리 디바이스가 지원할지 여부를 지정할 수 있습니다. **사용자 선호도**로 구성한 디바이스에서 회사 포털 앱을 설치하고 실행하여 앱을 다운로드하고 디바이스를 관리할 수 있습니다. [Configuration Manager의 하이브리드 관리 디바이스에 대한 사용자 선호도](../../mdm/deploy-use/user-affinity-for-hybrid-managed-devices.md)를 참조하세요.  
 
 ## <a name="manage-devices-with-activation-lock"></a>활성화 잠금을 사용한 디바이스 관리  
- Microsoft Intune에서는 iOS 7.1 이상 디바이스용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 디바이스에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다. [System Center Configuration Manager로 iOS 활성화 잠금 관리](../../mdm/deploy-use/manage-ios-activation-lock.md)를 참조하세요.
+ Microsoft Intune에서는 iOS 7.1 이상 디바이스용 나의 iPhone 찾기(Find My iPhone) 앱의 기능인 iOS 활성화 잠금을 관리할 수 있습니다. 활성화 잠금은 디바이스에서 나의 iPhone 찾기 앱을 사용할 때 자동으로 사용하도록 설정됩니다. [Configuration Manager를 사용 하 여 iOS 활성화 잠금 관리](../../mdm/deploy-use/manage-ios-activation-lock.md)를 참조 하세요.
 
  ## <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 디바이스 미리 선언
 

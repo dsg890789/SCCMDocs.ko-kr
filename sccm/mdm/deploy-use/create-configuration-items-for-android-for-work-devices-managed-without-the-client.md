@@ -9,16 +9,16 @@ ms.assetid: ab6784fd-8c57-4be9-858f-50fe39f2ff5f
 author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ebae22b8536c67fc5c912009b836185be3b17b6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 755d9ee33f46e12bed1f6b545c0b7b6937fcffc2
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66716249"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521071"
 ---
 # <a name="how-to-create-configuration-items-for-android-for-work-devices-managed-with-intune"></a>Intune으로 관리되는 Android for Work 디바이스에 대한 구성 항목을 만드는 방법
 
- System Center Configuration Manager **Android for Work** 구성 항목을 사용하여 Configuration Manager에서 온-프레미스로 관리되거나 Microsoft Intune에 등록된 Android for Work 디바이스에 대한 설정을 관리할 수 있습니다.  
+ Configuration Manager **android For work** 구성 항목을 사용 하 여 Configuration Manager에서 온-프레미스로 Microsoft Intune 또는 관리에 등록 된 Android for work 장치에 대 한 설정을 관리할 수 있습니다.  
 
 ## <a name="create-an-android-for-work-configuration-item"></a>Android for Work 구성 항목 만들기  
 
@@ -68,7 +68,7 @@ ms.locfileid: "66716249"
 
 ### <a name="password"></a>암호  
 
-|설정|세부 정보|  
+|Setting|Details|  
 |-------------|-------------|  
 |**디바이스에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
@@ -77,13 +77,13 @@ ms.locfileid: "66716249"
 |**다음 로그온 실패 횟수 후 디바이스 초기화**|이 횟수만큼 로그인에 실패하면 디바이스를 초기화합니다.|  
 |**다음 유휴 시간 후 디바이스 잠그기**|잠그기 전까지 디바이스를 사용하지 않은 기간을 선택합니다.|
 |**암호 품질**|필요한 암호 복잡도 수준과 생체 인식 디바이스 사용 가능 여부를 선택합니다.|  
-|**Smart Lock 및 기타 신뢰 에이전트 허용**|호환되는 Android 디바이스의 스마트 잠금 기능을 제어해 보겠습니다. 신뢰 에이전트라고도 하는 이 전화 기능을 통해 디바이스가 특정 Bluetooth 디바이스에 연결된 경우 또는 NFC 태그에 가까이 있는 경우와 같이 신뢰할 수 있는 위치에 있는 경우 디바이스 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 이 설정을 사용하면 최종 사용자가 스마트 잠금을 구성하지 않도록 방지할 수 있습니다.|
+|**Smart Lock 및 기타 신뢰 에이전트 허용**|호환되는 Android 디바이스의 스마트 잠금 기능을 제어해 보겠습니다. 신뢰 에이전트라고도 하는 이 전화 기능을 통해 디바이스가 특정 Bluetooth 디바이스에 연결된 경우 또는 NFC 태그에 가까이 있는 경우와 같이 신뢰할 수 있는 위치에 있는 경우 디바이스 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 이 설정을 사용하면 최종 사용자가 스마트 잠금 기능을 구성하는 것을 방지할 수 있습니다.|
 |**잠금 해제 지문**|&nbsp;|
 
 ###  <a name="work-profile"></a>작업 프로필  
  이러한 설정은 삼성 KNOX 디바이스에만 적용됩니다.  
 
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**회사 프로필과 개인 프로필 간의 데이터 공유 허용**|다음 중에서 선택합니다.<br>- **구성되지 않음**<br>- **기본 공유 제한 사항**<br>- **회사 프로필의 앱에서 개인 프로필의 요청을 처리할 수 있음**<br>- **개인 프로필의 앱에서 회사 프로필의 요청을 처리할 수 있음**<br><br>(사용자 지정 URI를 사용한 [복사하여 붙여넣기 설정](#copy-paste-configuration-item-settings) 참조)|  
 |**디바이스가 잠겼을 때 회사 프로필 알림 숨김(Android 6.0 이상)**||
@@ -98,4 +98,4 @@ ms.locfileid: "66716249"
 DisallowCrossProfileCopyPaste을 true로 설정하면 Android for Work 개인 및 회사 프로필 간에 복사-붙여넣기 동작이 방지됩니다.
 
 ## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
+ [Configuration Manager 클라이언트 없이 관리 되는 장치에 대 한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

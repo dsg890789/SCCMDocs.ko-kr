@@ -1,7 +1,7 @@
 ---
 title: Intune으로 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목 만들기
 titleSuffix: Configuration Manager
-description: Ios 및 macos 구성 항목 System Center Configuration Manager를 사용 하 여 iOS 및 macOS 장치에 대 한 설정을 관리 합니다.
+description: Ios 및 macos 구성 항목 Configuration Manager를 사용 하 여 iOS 및 macOS 장치에 대 한 설정을 관리 합니다.
 ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d1b15f441015ebea7ca00e9fa8bee7e02f168b8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4353651472f08bd9a13fa97a92fdd9eabc8fb904
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68859994"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521258"
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-macos-devices-managed-with-intune"></a>Intune으로 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목을 만드는 방법
 
-**Ios 및 macos** 구성 항목 System Center Configuration Manager를 사용 하 여 Configuration Manager에서 온-프레미스로 Microsoft Intune 또는 관리 되는 Ios 및 macos 장치에 대 한 설정을 관리 합니다.  
+**Ios 및 macos** 구성 항목 Configuration Manager를 사용 하 여 Configuration Manager에서 온-프레미스로 Microsoft Intune 또는 관리 되는 Ios 및 macos 장치에 대 한 설정을 관리 합니다.  
   
 ## <a name="create-an-ios-and-macos-configuration-item"></a>IOS 및 macOS 구성 항목 만들기  
   
@@ -70,7 +70,7 @@ ms.locfileid: "68859994"
   
 ###  <a name="password"></a>암호  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**모바일 디바이스에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 길이입니다.|  
@@ -85,7 +85,7 @@ ms.locfileid: "68859994"
 ###  <a name="device"></a>디바이스  
  이러한 설정은 iOS 및 macOS 장치에 모두 적용 됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**게임 센터 친구 추가**|게임 센터 앱에서 친구를 추가할 수 있습니다.|
 |**음성 전화 걸기**|디바이스에서 음성 전화 걸기 기능을 사용할 수 있습니다.|  
@@ -107,12 +107,12 @@ ms.locfileid: "68859994"
 |**디바이스 이름 수정**(감독 모드인 경우에만)|사용자가 디바이스의 이름을 변경할 수 있습니다.|
 |**진단 전송 설정 수정**(감독 모드인 경우에만)|디바이스의 Apple에 진단 데이터 제출을 허용 또는 차단합니다.|
 |**Game Center**(감독 모드인 경우에만)|Game Center 앱을 사용할 수 있습니다.|
-|**iTunes Radio**(감독 모드인 경우에만)|iTunes Radio 앱을 사용할 수 있습니다.|
+|**iTunes Radio**(감독 모드인 경우에만)|ITunes 라디오 앱을 사용할 수 있습니다.|
 |**Apple News**(감독 모드인 경우에만)|Apple News 앱을 사용할 수 있습니다.|
 |**Apple Watch 페어링**(감독 모드인 경우에만)|디바이스와 Apple Watch의 페어링을 허용합니다.|
 |**자동 수정**(감독 모드인 경우에만)|맞춤법이 틀린 단어를 디바이스가 자동으로 수정할 수 있습니다.|
 |**Bluetooth 수정**(감독 모드인 경우에만)|사용자가 디바이스에서 Bluetooth 설정을 변경할 수 있습니다.|
-|**앱 셀룰러 데이터 사용량 설정 변경**(감독 모드인 경우에만)|사용자가 셀룰러 데이터 사용이 허용된 앱을 제어할 수 있습니다.|
+|**앱 셀룰러 데이터 사용량 설정 변경**(감독 모드인 경우에만)|사용자가 셀룰러 데이터를 사용이 허용된 앱을 제어할 수 있습니다.|
 |**바로 가기 키**(감독 모드인 경우에만)|바로 가기 키를 사용할 수 있습니다.|
 |**자동 완성 키보드**(감독 모드인 경우에만)|사용자가 입력할 가능성이 있는 단어를 제안하는 자동 완성 키보드를 사용할 수 있습니다.|
 |**키보드 맞춤법 검사**(감독 모드인 경우에만)|디바이스 맞춤법 검사기를 사용할 수 있습니다.|
@@ -124,7 +124,7 @@ ms.locfileid: "68859994"
 ###  <a name="store"></a>스토어  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**앱 스토어**|디바이스에서 앱 스토어에 액세스할 수 있습니다.|  
 |**앱 스토어에 액세스하려면 암호 입력**|앱 스토어에 액세스하려는 사용자는 암호를 입력해야 합니다.|  
@@ -137,7 +137,7 @@ ms.locfileid: "68859994"
 ###  <a name="browser"></a>브라우저  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**기본 브라우저**|사용자가 기본 인터넷 브라우저를 변경할 수 있습니다.|  
 |**자동 채우기**|사용자가 브라우저에서 자동 완성 설정을 변경할 수 있습니다.|  
@@ -149,7 +149,7 @@ ms.locfileid: "68859994"
 ###  <a name="content-rating"></a>콘텐츠 등급  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**미디어 스토어의 성인 등급 콘텐츠**|앱 스토어에서 성인 등급 콘텐츠 액세스를 허용할지 여부를 지정합니다.|  
 |**등급 영역**|등급 제한을 적용하려는 국가를 지정합니다.|  
@@ -164,7 +164,7 @@ ms.locfileid: "68859994"
 ###  <a name="cloud"></a>클라우드  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**클라우드 백업**|iCloud와 같은 클라우드 서비스에 백업할 수 있습니다.|  
 |**암호화된 백업**|클라우드 서비스에 대한 백업을 암호화할 수 있습니다.|  
@@ -179,7 +179,7 @@ ms.locfileid: "68859994"
 ###  <a name="security"></a>보안  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**카메라**|디바이스 카메라를 사용할 수 있습니다.| 
 |**새로운 엔터프라이즈 앱 작성자 신뢰**|사용자가 앱 스토어에서 다운로드하지 않은 앱을 신뢰하도록 선택할 수 있습니다.| 
@@ -187,7 +187,7 @@ ms.locfileid: "68859994"
 ###  <a name="roaming"></a>로밍  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**음성 로밍**|로밍 시 음성 통화를 할 수 있습니다.|  
 |**로밍하는 동안 자동 동기화 허용**|로밍 시 디바이스를 자동으로 동기화할 수 있습니다.|  
@@ -196,10 +196,10 @@ ms.locfileid: "68859994"
 ###  <a name="system-security"></a>시스템 보안  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**신뢰할 수 없는 TLS 인증서를 허용하는 사용자**|**허용**으로 지정하는 경우 사용자가 이러한 인증서를 수락할 수 있습니다. **금지**로 지정하는 경우 신뢰할 수 없는 인증서가 자동으로 거부됩니다.|
-|**활성화 잠금 허용(감독 모드만)**|이 설정을 사용하면 관리하는 **감독 모드**의 iOS 디바이스에서 iOS 활성화 잠금을 사용하도록 설정할 수 있습니다. 활성화 잠금에 대한 자세한 내용은 [System Center Configuration Manager로 iOS 활성화 잠금 관리](../../mdm/deploy-use/manage-ios-activation-lock.md)를 참조하세요.
+|**활성화 잠금 허용(감독 모드만)**|이 설정을 사용하면 관리하는 **감독 모드**의 iOS 디바이스에서 iOS 활성화 잠금을 사용하도록 설정할 수 있습니다. 활성화 잠금에 대 한 자세한 내용은 [Configuration Manager를 사용 하 여 iOS 활성화 잠금 관리](../../mdm/deploy-use/manage-ios-activation-lock.md)를 참조 하세요.
 |**잠금 화면 제어 센터**|디바이스가 잠겨 있을 때 제어 센터 앱에 액세스할 수 있는지 여부를 제어합니다.|  
 |**잠금 화면 알림 보기**|디바이스가 잠겨 있을 때 알림을 볼 수 있는지 여부를 제어합니다.|  
 |**잠금 화면 오늘 보기**|디바이스가 잠겨 있을 때 오늘 보기를 볼 수 있는지 여부를 제어합니다.|  
@@ -208,13 +208,13 @@ ms.locfileid: "68859994"
 |**호스트 페어링을 사용하여 iOS 디바이스에서 페어링할 수 있는 디바이스 제어**(감독 모드인 경우에만)|호스트 페어링에서 iOS 디바이스가 페어링할 수 있는 디바이스를 관리자가 제어할 수 있도록 허용합니다.|
 |**모든 콘텐츠 및 설정 지우기**(감독 모드인 경우에만)|사용자가 디바이스의 모든 콘텐츠 및 설정을 지우는 옵션을 사용할 수 있습니다.|
 |**디바이스에 대한 제한 구성** (감독된 모드에만 해당)|사용자가 디바이스에 디바이스 제한(자녀 보호)을 구성할 수 있습니다.|
-|**구성 프로필 및 인증서 설치**(감독 모드인 경우에만)|사용자가 구성 프로필 및 인증서를 설치할 수 있습니다.|
+|**구성 프로필 및 인증서 설치**(감독 모드인 경우에만)|사용자가 구성 프로필 및 인증서를 설치하도록 허용합니다.|
 |**AirPlay 발신 요청 암호**|사용자가 Airplay를 사용하여 다른 Apple 디바이스로 콘텐츠를 스트리림할 때 페어링 암호가 필요합니다.|
   
 ###  <a name="data-protection"></a>데이터 보호  
  이러한 설정은 iOS 디바이스에만 적용됩니다.  
   
-|설정 이름|세부 정보|  
+|설정 이름|Details|  
 |------------------|-------------|  
 |**관리되지 않는 다른 앱에서 관리되는 앱의 문서 열기**|Configuration Manager 애플리케이션 관리 정책을 통해 관리되는 앱에서 사용하기 위해 문서를 엽니다.|  
 |**관리되는 다른 앱에서 관리되지 않는 앱의 문서 열기**|Configuration Manager 애플리케이션 관리 정책을 통해 관리되는 앱에서 사용하기 위해 문서를 엽니다.| 
@@ -256,7 +256,7 @@ ms.locfileid: "68859994"
   
 - **호환되지 않는 앱을 설치한 사용자 요약** - 지정한 정책과 호환되지 않는 앱을 설치한 사용자에 대한 정보가 표시됩니다.  
   
-  보고서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../core/servers/manage/reporting.md)을 참조하세요.  
+  보고서를 사용 하는 방법에 대 한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조 하세요.  
   
 ###  <a name="compliant-and-noncompliant-apps-macos"></a>규격 및 비규격 앱 (macOS)  
  회사에서 규정을 준수 하거나 비준수 인 macOS 앱 목록을 지정할 수 있습니다. 그런 다음 보고서를 사용하여 비호환 앱이 설치된 디바이스와 관련 사용자를 표시할 수 있습니다.  
@@ -297,7 +297,7 @@ ms.locfileid: "68859994"
   
 - **호환되지 않는 앱을 설치한 사용자 요약** - 지정한 정책과 호환되지 않는 앱을 설치한 사용자에 대한 정보가 표시됩니다.  
   
-  보고서를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고 기능](../../core/servers/manage/reporting.md)을 참조하세요.  
+  보고서를 사용 하는 방법에 대 한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조 하세요.  
   
 ### <a name="ios-and-macos-custom-profile-settings"></a>iOS 및 macOS 사용자 지정 프로필 설정  
  **Ios 및 Macos 사용자 지정 프로필** 을 사용 하 여 [Apple Configurator 도구](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 를 사용 하 여 만든 설정을 ios 및 macos 장치에 배포 합니다. 이 도구를 사용하면 이러한 디바이스의 작업을 제어하는 많은 설정을 만들어 구성 프로필에 내보낼 수 있습니다. 그런 다음이 구성 프로필을 iOS 및 macOS 사용자 지정 프로필로 가져와서 조직의 사용자와 장치에 설정을 배포할 수 있습니다.  
@@ -409,4 +409,4 @@ ms.locfileid: "68859994"
      -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 이 심각도 수준은 애플리케이션 이벤트 로그에 이벤트를 Windows 이벤트로 기록 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
+ [Configuration Manager 클라이언트 없이 관리 되는 장치에 대 한 구성 항목](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)

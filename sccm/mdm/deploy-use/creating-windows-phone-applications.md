@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24ce7609a2e3e3ec9cfd9363ebd58cba3ec4dadd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 682f03929b965c06b1edc571a37f757d77426668
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227290"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520935"
 ---
 # <a name="create-windows-phone-applications-in-configuration-manager"></a>Configuration Manager에서 Windows Phone 애플리케이션 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 배포 유형에는 소프트웨어를 디바이스에 배포하는 데 필요한 설치 파일 및 정보가 포함됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
 
@@ -34,7 +34,7 @@ Configuration Manager는 다음과 같은 앱 파일 형식의 배포를 지원�
 |디바이스 유형|지원되는 파일 형식|  
 |-----------------|---------------------|  
 |Windows Phone 8|xap|  
-|Windows Phone 8.1|xap, appx, appxbundle|
+|WVPN 프로필dows Phone 8.1|xap, appx, appxbundle|
 |Windows 10 Mobile|xap, appx, appxbundle|
 
 Windows Phone 응용 프로그램은 **사용 가능** 또는 **필수**로 배포되며, 응용 프로그램을 제거하는 데에도 이 배포를 사용합니다.  

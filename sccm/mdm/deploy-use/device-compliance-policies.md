@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e225b7ab54a1061387d1c8ee369641f68bd7889
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0c90bbbf3c72a7d21e52bb762b653bbda3dc5fd6
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62227152"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520918"
 ---
-# <a name="device-compliance-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 디바이스 준수 정책 관리
+# <a name="device-compliance-policies-in-configuration-manager"></a>Configuration Manager의 장치 준수 정책
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager의 준수 정책은 디바이스가 조건부 액세스 정책을 준수하는 것으로 간주되기 위해 준수해야 하는 규칙 및 설정을 정의합니다. 준수 정책을 사용하여 조건부 액세스와 독립적으로 디바이스를 모니터링하고 준수 문제를 수정할 수도 있습니다.  
 
@@ -57,7 +57,7 @@ Configuration Manager의 준수 정책은 디바이스가 조건부 액세스 �
 |**전자 메일 프로필**|해당 없음|해당 없음|격리됨|해당 없음|  
 |**최소 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
 |**최대 OS 버전**|격리됨|격리됨|격리됨|격리됨|  
-|**디바이스 상태 증명(1602 업데이트)**|설정은 Windows 8.1에 적용되지 않음<br /><br /> Windows 10 및 Windows 10 Mobile이 격리됩니다.|해당 없음|해당 없음|해당 없음|  
+|**디바이스 상태 증명(1602 업데이트)**|설정은 Windows 8.1에 적용되지 않음<br /><br /> Windows 10 및 Windows 10 Mobile은 격리됩니다.|해당 없음|해당 없음|해당 없음|  
 |**설치할 수 없는 앱**|해당 없음|해당 없음|격리됨|격리됨|
 
  **재구성** = 디바이스 OS에서 준수를 적용합니다. 예를 들어 사용자에게 PIN을 설정하도록 강제합니다. 설정이 비준수인 경우는 없습니다.  

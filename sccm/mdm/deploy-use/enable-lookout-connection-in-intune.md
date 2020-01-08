@@ -10,16 +10,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0be485bd9b77613be9a647106e96c4e41bede064
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 37098745b3c1714b6573a2b4be2c7c518301bcaf
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678120"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520850"
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-admin-console"></a>Intune 관리 콘솔에서 Lookout MTD 연결 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 이 문서는 Microsoft Intune에서 Lookout MTD(모바일 위협 방어) 연결을 사용하는 방법에 대해 설명합니다. 이 단계를 수행하기 전에 Lookout 콘솔에서 Intune 커넥터를 이미 구성한 상태여야 합니다. 아직 수행하지 않은 경우 [Lookout 모바일 위협 방어를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md)에 설명된 단계를 수행합니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "67678120"
 
 ## <a name="enable-the-lookout-mtd-connector"></a>Lookout MTD 커넥터 사용
 
-1. [Azure Portal](https://portal.azure.com)로 이동하여 Intune 자격 증명을 사용하여 로그인합니다. 성공적으로 로그인한 후 **Azure 대시보드**를 참조합니다.  
+1. [Azure Portal](https://portal.azure.com)로 이동하여 Intune 자격 증명을 사용하여 로그인합니다. 정상적으로 로그인되면 **Azure 대시보드**가 표시됩니다.  
 
 2. **Azure 대시보드**의 왼쪽 메뉴에서 **모든 서비스**를 선택한 다음, 텍스트 상자 필터에 **Intune**을 입력합니다.  
 
@@ -62,6 +62,6 @@ ms.locfileid: "67678120"
 Lookout 및 Intune 통합 설정이 완료되었습니다. 이 솔루션을 구현하는 다음 몇 단계에는 [Lookout for Work 앱](configure-and-deploy-lookout-for-work-apps.md) 배포 및 [준수](enable-device-threat-protection-rule-compliance-policy.md) 정책 설정이 포함됩니다.
 
 >[!IMPORTANT]
-> 준수 정책 규칙을 만들고 조건부 액세스를 구성하기 전에 Lookout for Work 앱을 *구성해야 합니다*. 이렇게 하면 앱이 준비되고 최종 사용자가 앱을 설치하여 이메일 또는 기타 회사 리소스에 액세스할 수 있습니다.
+> 규정 준수 정책 규칙을 만들고 조건부 액세스를 구성하기 전에 Lookout for Work 앱을 구성*해야 합니다*. 이렇게 하면 앱이 준비되고 최종 사용자가 앱을 설치하여 이메일 또는 기타 회사 리소스에 액세스할 수 있습니다.
 
 [Lookout for Work 앱 구성](configure-and-deploy-lookout-for-work-apps.md)

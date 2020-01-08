@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 170725e28d821b8e0df83ecb9b503bdb0227ecbc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 45286dc95a34dc1ad398bb20d5c2c0b621e62a4b
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660991"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521105"
 ---
 # <a name="create-and-deploy-a-device-compliance-policy"></a>디바이스 준수 정책 만들기 및 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 
 ## <a name="create-a-compliance-policy"></a>규정 준수 정책 만들기
@@ -262,13 +262,13 @@ ms.locfileid: "74660991"
 
         Windows BitLocker 드라이브 암호화는 Windows 운영 체제 볼륨에 저장된 모든 데이터를 암호화합니다. BitLocker는 TPM을 사용하여 Windows 운영 체제 및 사용자 데이터를 보호합니다. 따라서 컴퓨터를 방치하거나 분실하거나 도난당하더라도 변조를 방지할 수 있습니다.  
 
-        컴퓨터에 호환 가능한 TPM이 장착된 경우 BitLocker는 TPM을 사용하여 데이터를 보호하는 암호화 키를 잠급니다. 따라서 TPM에서 컴퓨터의 상태를 확인할 때까지 키에 액세스할 수 없습니다.  
+        컴퓨터에 호환되는 TPM이 장착되어 있으면 BitLocker는 TPM을 사용하여 데이터를 보호하는 암호화 키를 잠급니다. 따라서 TPM에서 컴퓨터의 상태를 확인할 때까지 키에 액세스할 수 없습니다.  
 
     - **코드 무결성 사용**: 코드 무결성은 메모리에 로드 될 때마다 드라이버 또는 시스템 파일의 무결성에 대 한 유효성을 검사 하는 기능입니다. 코드 무결성은 서명되지 않은 드라이버나 시스템 파일이 커널에 로드되는지를 검색합니다. 또한 관리자 권한이 있는 사용자 계정에서 실행 중인 악성 소프트웨어가 시스템 파일을 변경했는지도 검색합니다.  
 
     - **보안 부팅 사용**: 보안 부팅을 사용 하도록 설정 하면 시스템이 공장에서 신뢰할 수 있는 상태로 강제로 시작 됩니다. 또한 보안 부팅이 사용하도록 설정된 경우 컴퓨터를 시작하는 데 사용되는 핵심 구성 요소에는 디바이스를 제조한 조직에서 신뢰하는 올바른 암호화 서명이 있어야 합니다. UEFI 펌웨어에서 컴퓨터를 시작하도록 허용하기 전에 이를 확인합니다. 파일이 변조 되어 해당 서명이 손상 된 경우 시스템이 시작 되지 않습니다.  
 
-    - **맬웨어 방지 조기 실행 사용**:이 설정은 pc에만 적용 됩니다. 컴퓨터가 시작될 때 그리고 타사 드라이버 초기화되기 전에 ELAM(맬웨어 방지 조기 실행)에서 네트워크의 컴퓨터를 보호해 줍니다.  
+    - **맬웨어 방지 조기 실행 사용**:이 설정은 pc에만 적용 됩니다. ELAM(맬웨어 방지 조기 실행)은 타사 드라이버가 초기화되기 전에 시작될 경우 네트워크의 컴퓨터를 보호합니다.  
 
         이 규칙은 기본적으로 꺼져 있습니다.  
 
@@ -321,11 +321,11 @@ ms.locfileid: "74660991"
 - **Android**: 앱을 만드는 데 사용 된 GOOGLE PLAY 스토어 URL에서 앱 ID를 찾습니다. 예제 앱 ID는 다음과 같습니다. `...?id=com.companyname.appname&hl=en`  
 
 - **Android**  
-    1. ITunes 스토어 URL에서 ID 번호를 찾습니다. `/id875948587?mt=8`  
+    1. ITunes 스토어 URL에서 ID 번호를 찾습니다. 예를 들면 다음과 같습니다. `/id875948587?mt=8`  
 
     2. 웹 브라우저에서 다음 URL로 이동 하 여 번호를 방금 찾은 ID 번호로 바꿉니다. 예를 들면 `https://itunes.apple.com/lookup?id=875948587`  
 
     3. 텍스트 파일을 다운로드하여 엽니다.  
 
-    4. **bundleId** 텍스트를 검색합니다. `"bundleId":"com.companyname.appname"`  
+    4. **bundleId** 텍스트를 검색합니다. 예를 들면 다음과 같습니다. `"bundleId":"com.companyname.appname"`  
 

@@ -11,18 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d6f8c25902be857e0eec3cd4b969d1fb5bda136
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 41de9d51c2c3b3d277005c60effadea09787d5a8
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62288771"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521224"
 ---
-# <a name="apply-settings-to-android-for-work-apps-with-app-configuration-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 앱 구성 정책을 사용하여 Android for Work 앱에 설정 적용
+# <a name="apply-settings-to-android-for-work-apps-with-app-configuration-policies-in-configuration-manager"></a>Configuration Manager에서 앱 구성 정책을 사용 하 여 Android for Work 앱에 설정 적용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-System Center Configuration Manager에서 앱 구성 정책을 사용하여 사용자가 앱을 실행할 때 필요할 수 있는 설정을 배포할 수 있습니다. 예를 들어 앱에서 다음 세부 정보를 지정하도록 사용자에게 요구할 수 있습니다.
+Configuration Manager에서 앱 구성 정책을 사용 하 여 사용자가 앱을 실행할 때 필요할 수 있는 설정을 배포할 수 있습니다. 예를 들어 앱에서 다음 세부 정보를 지정하도록 사용자에게 요구할 수 있습니다.
 - 사용자 지정 포트 번호
 - 언어 설정
 - 보안 설정

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune에서 Windows 하이브리드 디바이스 관리 설정
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 및 Microsoft Intune에서 Windows 디바이스 관리 설정
+description: Configuration Manager 및 Microsoft Intune를 사용 하 여 Windows 장치 관리를 설정 합니다.
 ms.date: 03/17/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce20ac1917640bd9762bafb37c0e22fe39375fa
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 61ddfa93f4f13f7e648368efe1c611beaa420fdc
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379577"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520782"
 ---
-# <a name="set-up-windows-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune로 Windows 하이브리드 디바이스 관리 설정
+# <a name="set-up-windows-hybrid-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 Windows 하이브리드 장치 관리 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 이 항목에서는 IT 관리자가 사용자에게 Configuration Manager 및 Microsoft Intune을 사용하여 Windows PC 및 모바일 디바이스를 관리할 수 있도록 설정하는 방법을 설명합니다.
 
@@ -59,7 +59,7 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 자동 등록을 통해 사용자는 회사 또는 학교 계정을 추가하고 관리에 동의하여 회사 소유 또는 개인 Windows 10 PC 및 Intune의 Windows 10 Mobile 디바이스를 등록할 수 있습니다. 이러기만 하면 됩니다. 사용자 디바이스는 백그라운드에서 등록되어 Azure Active Directory에 가입됩니다. 등록된 디바이스는 Intune을 통해 관리됩니다.
 
-**필수 구성 요소**
+**전제 조건
 - Azure Active Directory Premium 구독([평가판 구독](https://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 구독
 
@@ -80,7 +80,7 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 4. **MDM 사용자 범위**를 구성합니다. Microsoft Intune에서 관리해야 하는 사용자의 디바이스를 지정합니다. 이러한 사용자의 Windows 10 디바이스는 Microsoft Intune에서 관리되도록 자동으로 등록됩니다.
 
-    - **None**
+    - **없음**
     - **일부**
     - **모두**
 
@@ -102,15 +102,15 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 ### <a name="create-cnames-to-simplify-enrollment"></a>CNAME을 만들어 등록을 단순화
 회사의 도메인에 대한 CNAME DNS 리소스 레코드를 만듭니다. 예를 들어, 회사의 웹 사이트가 contoso.com인 경우 DNS에 EnterpriseEnrollment.contoso.com을 enterpriseenrollment-s.manage.microsoft.com으로 리디렉션하는 CNAME을 만듭니다.
 
-CNAME DNS 항목을 만드는 것은 선택 사항이지만 CNAME 레코드를 사용하면 사용자가 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.com을 수동으로 입력하라는 메시지가 표시됩니다.
+CNAME DNS 항목은 선택 사항이지만 CNAME 레코드를 통해 보다 쉽게 등록할 수 있습니다. 등록 CNAME 레코드가 없으면 사용자에게 MDM 서버 이름인 enrollment.manage.microsoft.com을 수동으로 입력하라는 메시지가 표시됩니다.
 
-|type|호스트 이름|지시 대상|TTL|  
+|유형|호스트 이름|지시 대상|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1시간|
 
 UPN 접미사가 두 개 이상 있는 경우 각 도메인 이름에 대해 CNAME을 하나 만들고 EnterpriseEnrollment-s.manage.microsoft.com에 각각을 가리켜야 합니다. 예를 들어 Contoso의 사용자가 name@contoso.com을 사용하지만 메일/UPN으로 name@us.contoso.com 및 name@eu.constoso.com도 사용하는 경우 Contoso DNS 관리자는 다음 CNAME을 만들어야 합니다.
 
-|type|호스트 이름|지시 대상|TTL|  
+|유형|호스트 이름|지시 대상|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1시간|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1시간|
@@ -125,4 +125,4 @@ DNS 레코드 변경 내용이 전파되는 데는 최대 72시간이 걸릴 수
  설정한 후에는 사용자에게 디바이스를 등록하는 방법을 알려 주어야 합니다. 지침은 [디바이스 등록에 대해 사용자에게 알릴 내용](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)을 참조하세요. 사용자를 [Intune에서Windows 디바이스 등록](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)으로 바로 이동시킬 수 있습니다. 이 정보는 Microsoft Intune 및 Configuration Manager에서 관리되는 모바일 디바이스에 적용됩니다.
 
 > [!div class="button"]
-> [< 이전 단계](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)
+> [이전 단계 <](create-service-connection-point.md)  [다음 단계 >](set-up-additional-management.md)

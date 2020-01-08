@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef070186112642d204aade24039da87c0e3a22f0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0fbd64a887d133526338da77619b9c7d2ea6b97e
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62277041"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521054"
 ---
 # <a name="create-android-applications-in-configuration-manager"></a>Configuration Manager에서 Android 애플리케이션 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Configuration Manager 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 배포 유형은 디바이스에 소프트웨어를 배포하는 데 필요한 설치 파일 및 정보로 구성됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.  
 

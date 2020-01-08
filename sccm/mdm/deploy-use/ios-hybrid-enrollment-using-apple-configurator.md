@@ -11,22 +11,22 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e884b7c5d7ceca7fcb241a5bfef1832e66562d38
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 30520dbb336c444256ee73c4db1350c0f7aea6e8
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378909"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520714"
 ---
 # <a name="ios-hybrid-enrollment-using-apple-configurator-with-configuration-manager"></a>Configuration Manager에서 Apple Configurator를 사용한 iOS 하이브리드 등록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 직원이 사용할 iOS 디바이스를 구입한 회사는 Microsoft Intune을 사용하여 디바이스를 관리할 수 있습니다. 등록을 위해 회사 소유의 iOS 디바이스를 준비하려면 Configuration Manager 콘솔에서 등록 프로필을 구성한 다음 Apple Configurator에서 사용할 프로필 URL을 내보냅니다. USB 케이블로 Mac 컴퓨터에 연결하고 Apple Configurator를 통해 설정하여 등록할 iOS 디바이스를 준비합니다. Apple Configurator는 디바이스를 초기화하고, 사용자가 처음 전원을 켜고 설정 도우미 프로세스를 수행할 때 디바이스를 등록할 수 있도록 등록 프로필을 추가합니다.
 
 디바이스를 사용하여 회사 메일과 앱, 데이터 등의 회사 리소스에 액세스하는 단일 사용자가 있는 전용 iOS 디바이스에는 다음 절차를 사용하는 것이 좋습니다.  
 
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>전제 조건  
 
 -   IOS 디바이스에 대한 실제 액세스  
 
@@ -46,7 +46,7 @@ ms.locfileid: "70378909"
 
     -   **설명**(사용자에게는 보이지 않음)  
 
-    -   **사용자 선호도** – 디바이스의 등록 방식을 지정합니다. 대부분의 설치 도우미 시나리오의 경우 **사용자 선호도 확인**을 사용합니다.  
+    -   **사용자 선호도** – 디바이스의 등록 방식을 지정합니다. 대부분의 설정 도우미 시나리오에서 **사용자 선호도 확인**을 사용합니다.  
 
         -   **사용자 선호도 확인**: 초기 설치 작업을 진행할 때 디바이스에 사용자 정보를 등록해야 합니다. 그러면 디바이스가 해당 사용자 자격으로 회사 데이터와 메일에 액세스할 수 있게 됩니다.  
 
@@ -72,7 +72,7 @@ ms.locfileid: "70378909"
 
 3.  **프로필 URL**을 복사하고 편집할 수 있는 파일에 저장합니다.   
 
-4.  Apple 구성기 2를 지원하려면 2.0 프로필 URL을 편집해야 합니다. URL의 다음 부분을 바꿉니다.  
+4.  Apple Configurator 2를 지원하려면 2.0 프로필 URL을 편집해야 합니다. URL의 다음 부분을 바꿉니다.  
 
     ```  
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=  

@@ -1,7 +1,7 @@
 ---
 title: Intune 구독 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 Intune 구독 구성
+description: Configuration Manager를 사용 하 여 Intune 구독을 구성 합니다.
 ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd48ec41114b122d8d00549c1ae8d99d08ba5f1f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 151dbab44aaf02e3c299df02ae771677a90eca38
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379699"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521190"
 ---
-# <a name="configure-your-intune-subscription-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 및 Microsoft Intune을 사용하여 Intune 구독 구성
+# <a name="configure-your-intune-subscription-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 Intune 구독 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Intune 구독을 사용하면 인터넷을 통해 디바이스를 관리할 수 있습니다. 여기에는 디바이스를 등록할 수 있는 사용자 컬렉션 지정 및 사용자에게 표시되는 정보 정의가 포함됩니다. Intune 구독을 만드는 동안 회사 로고 및 사용자 지정 색 구성표를 사용하여 Intune 회사 포털에 회사 브랜딩을 추가할 수도 있습니다.
 
@@ -31,7 +31,7 @@ Intune 구독은 다음을 수행합니다.
 -   지원할 모바일 플랫폼 정의 및 구성
 
 > [!IMPORTANT]
->  Configuration Manager에서 Microsoft Intune에 대한 구독을 만들면 사이트의 서비스 연결 지점이 "온라인 모드"가 됩니다. [System Center Configuration Manager의 서비스 연결 지점 정보](../../core/servers/deploy/configure/about-the-service-connection-point.md)를 참조하세요.
+>  Configuration Manager에서 Microsoft Intune에 대한 구독을 만들면 사이트의 서비스 연결 지점이 "온라인 모드"가 됩니다. [서비스 연결 지점 정보를](../../core/servers/deploy/configure/about-the-service-connection-point.md)참조 하세요.
 
 ## <a name="to-create-the-microsoft-intune-subscription"></a>Microsoft Intune 구독을 만들려면
 
@@ -77,4 +77,4 @@ Intune 구독은 다음을 수행합니다.
 10. 마법사 완료
 
 > [!div class="button"]
-> [< 이전 단계](confirm-dns.md)  [다음 단계 >](terms-and-conditions.md)
+> [이전 단계 <](confirm-dns.md)  [다음 단계 >](terms-and-conditions.md)

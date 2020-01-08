@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 044ea01729b61f55dca74ac0e77b7007e05b346a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: fa05d553ba5d1f5ce7c0a6f6062f24371d151404
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62256721"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520748"
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager에서의 하이브리드 배포를 위한 iOS DEP(디바이스 등록 프로그램) 등록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 회사에서 Apple 장비 등록 프로그램을 통해 iOS 디바이스를 구입한 다음 Microsoft Intune을 사용하여 관리할 수 있습니다. Apple DEP(디바이스 등록 프로그램)를 사용하여 회사 소유 iOS 디바이스를 관리하려는 회사에서는 Apple에서 요구하는 단계를 완료하여 프로그램에 참여하고 해당 프로그램을 통해 디바이스를 가져와야 합니다. 해당 프로세스의 세부 정보는 [https://deploy.apple.com](https://deploy.apple.com)에 제공됩니다. 이 프로그램의 이점 중 하나는 USB로 각 디바이스를 컴퓨터에 연결하지 않고도 디바이스를 자동 설치할 수 있다는 것입니다.  
 
@@ -68,10 +68,10 @@ ms.locfileid: "62256721"
        ![iOS 디바이스에 DEP 프로필 할당 스크린샷](../media/dep-settings.png)
 
     - **준비 모드** - 이 상태는 활성화하는 동안 설정되며 디바이스를 초기화하지 않으면 변경할 수 없습니다.  
-        -   **감독되지 않음** - 관리 기능이 제한됩니다.  
+        -   **감독되지 않음** - 제한된 관리 기능  
         -   **감독됨** - 더 많은 관리 옵션을 사용할 수 있으며 기본적으로 활성화 잠금이 해제됩니다.  
     - **디바이스에 등록 프로필 잠금** - 이 상태는 활성화하는 동안 설정되며 초기화하지 않으면 변경할 수 없습니다.  
-      -   **사용 안 함** - **설정** 메뉴에서 관리 프로필을 제거할 수 있습니다.  
+      -   **사용 안 함** - 관리 프로필을 **설정** 메뉴에서 제거할 수 있습니다.  
       -   **사용** - (**준비 모드** = **감독됨** 필요) 관리 프로필 제거를 허용하는 iOS 설정이 해제됩니다.  
 
 4. **설정 도우미** 페이지에서 디바이스를 처음 켤 때 시작되는 iOS 설정 도우미를 사용자 지정하는 설정을 구성하고 **다음**을 클릭합니다. 이러한 설정은 다음과 같습니다.  
@@ -79,7 +79,7 @@ ms.locfileid: "62256721"
    -   **위치 서비스** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 서비스를 확인하는 메시지가 표시됩니다.  
    -   **복원** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 iCloud 백업을 확인하는 메시지가 표시됩니다.  
    -   **Apple ID** - Intune에 의해 설치된 앱을 포함하여 iOS App Store 앱을 다운로드하려면 Apple ID가 필요합니다. 이 옵션을 사용하도록 설정하면 Intune에서 ID 없이 앱을 설치하려고 할 때 iOS에서 Apple ID를 확인하는 메시지가 표시됩니다.  
-   -   **계약조건** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 Apple 계약조건에 동의하라는 메시지가 표시됩니다.  
+   -   **사용 약관** - 이를 설정하면 정품 인증을 하는 동안 설치 도우미가 Apple의 약관에 동의하라는 메시지를 표시합니다.  
    -   **터치 ID** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.
    -   **Apple Pay** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.
    -   **확대/축소** - 이 옵션을 사용하도록 설정하면 활성화하는 동안 설정 도우미에서 이 서비스를 확인하는 메시지가 표시됩니다.
@@ -95,7 +95,7 @@ ms.locfileid: "62256721"
 ## <a name="assign-dep-devices-for-management"></a>관리할 DEP 디바이스 할당
 
 1. [장비 등록 프로그램 포털](https://deploy.apple.com)(https://deploy.apple.com) 로 이동하여 회사 Apple ID로 로그인합니다.
-2. **배포 프로그램** > **디바이스 등록 프로그램** > **디바이스 관리**으로 관리할 수 있습니다. **디바이스 선택**방법을 지정하고, 디바이스 정보를 제공한 다음 디바이스 **일련번호**, **주문 번호**또는 **CSV 파일 업로드**에 따라 세부 정보를 지정합니다. **서버에 할당**을 선택하고 3단계에서 지정한 <*서버 이름*>을 선택한 후 **확인**을 클릭합니다.  
+2. **배포 프로그램** > **디바이스 등록 프로그램** > **디바이스 관리**로 이동합니다. **디바이스 선택**방법을 지정하고, 디바이스 정보를 제공한 다음 디바이스 **일련번호**, **주문 번호**또는 **CSV 파일 업로드**에 따라 세부 정보를 지정합니다. **서버에 할당**을 선택하고 3단계에서 지정한 <*서버 이름*>을 선택한 후 **확인**을 클릭합니다.  
 ![디바이스를 추가하는 Apple 장비 등록 프로그램 포털 스크린샷](../media/enrollment-program-token-specify-serial.png)
 
 3.  **DEP 관리 디바이스 동기화**   

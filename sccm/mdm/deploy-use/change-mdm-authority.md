@@ -11,16 +11,16 @@ ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0420113feaaf9c9485b8d1e3d488b07878c61b5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a2c98a7f2c5f08b7a3eed446ae3b5eaaef88f1ad
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62233992"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75521292"
 ---
 # <a name="change-your-mdm-authority"></a>MDM 기관 변경
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Microsoft 지원에 문의하지 않고 기존 관리 디바이스에 대한 등록 취소 및 다시 등록을 수행할 필요 없이 MDM 기관을 변경할 수 있습니다. 이 문서에서는 Configuration Manager 콘솔(하이브리드)에서 구성된 기존 Microsoft Intune 테넌트를 Intune 독립 실행형으로 변경하는 단계를 설명합니다. 이 문서의 단계를 완료하면 디바이스가 [Azure Portal](https://portal.azure.com)에서 Microsoft Intune을 통해 관리됩니다. 
 
