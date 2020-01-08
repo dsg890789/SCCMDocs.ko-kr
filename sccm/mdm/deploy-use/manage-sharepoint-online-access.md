@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online 액세스 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager SharePoint Online 조건부 액세스 정책을 사용하여 OneDrive에 대한 액세스를 관리하는 방법을 알아봅니다.
+description: Configuration Manager SharePoint Online 조건부 액세스 정책을 사용 하 여 OneDrive에 대 한 액세스를 관리 하는 방법에 대해 알아봅니다.
 ms.date: 03/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69a160a3c7833f196d50185e551f619d68dc0925
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: dc78d7f25426cb8f72814ffff8a2409be5ccfe5d
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62255597"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520578"
 ---
-# <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 SharePoint Online 액세스 관리
+# <a name="manage-sharepoint-online-access-in-configuration-manager"></a>Configuration Manager에서 SharePoint Online 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 
 **SharePoint Online**의 Configuration Manager 조건부 액세스 정책은 SharePoint Online에 저장된 비즈니스용 OneDrive 파일에 대한 액세스를 관리합니다. 액세스는 지정한 조건을 기반으로 합니다.
@@ -116,13 +116,13 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
   사용자가 두 그룹에 모두 속한 경우에는 정책에서 제외됩니다.  
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 규정 준수 정책 구성 및 배포  
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 준수 정책 구성 및 배포  
  SharePoint Online 정책의 대상이 되는 모든 디바이스에 대한 준수 정책을 만들고 배포합니다.  
 
 > [!NOTE]   
 >  준수 정책을 Intune 그룹 또는 Configuration Manager 컬렉션에 배포하는 동안에는 조건부 액세스 정책의 대상이 Azure AD 보안 그룹으로 지정됩니다.  
 
- 준수 정책을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 디바이스 규정 준수 정책 관리](../../protect/deploy-use/device-compliance-policies.md)를 참조하세요.  
+ 준수 정책을 구성하는 방법에 대한 자세한 내용은 [디바이스 규정 준수 정책 관리](../../protect/deploy-use/device-compliance-policies.md)를 참조하세요.  
 
 > [!IMPORTANT]  
 >  준수 정책을 배포하지 않은 다음, SharePoint Online 정책을 사용하도록 설정하면 대상으로 지정된 모든 디바이스에 대한 액세스가 허용됩니다.  
@@ -136,7 +136,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
  >[!NOTE]
  >Azure AD 관리 콘솔에서 조건부 액세스 정책을 만들 수도 있습니다. Azure AD 관리 콘솔을 사용하면 Intune 디바이스의 조건부 액세스 정책을 만들 수 있습니다. Azure AD는 이러한 정책을 디바이스 기반 조건부 액세스 정책으로 참조합니다. 다단계 인증과 같은 다른 조건부 액세스 정책을 만들 수도 있습니다. 포털에서 Azure AD가 지원하는 Salesforce, Box 등의 타사 엔터프라이즈 앱에 대한 조건부 액세스 정책을 설정할 수 있습니다. 자세한 내용은 [Azure AD 연결 애플리케이션에 대한 액세스 제어를 위해 Azure AD 디바이스 기반 조건부 액세스 정책을 설정하는 방법](/azure/active-directory/active-directory-conditional-access-policy-connected-applications)을 참조하세요.  
 
-1. Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
+1. Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
 
 2. **SharePoint Online에 대한 조건부 액세스 정책 사용**을 선택합니다.  
 
@@ -160,7 +160,7 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
    -   **디바이스가 규정을 준수해야 함**: PC가 Intune에 등록되어 있고 규정을 준수해야 합니다. PC가 등록되어 있지 않은 경우 등록 방법에 대한 지침이 포함된 메시지가 표시됩니다.  
 
-4. SharePoint Online 및 비즈니스용 OneDrive에 대한 **브라우저 액세스**에서, 지원되는 브라우저인 Safari(iOS) 및 Chrome(Android)을 통해서만 Exchange Online에 대한 액세스를 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. OneDrive에 대한 애플리케이션 액세스에 선택한 것과 동일한 플랫폼 제한 사항이 여기에도 적용됩니다.
+4. SharePoint Online 및 비즈니스용 OneDrive에 대한 **브라우저 액세스**에서, 지원되는 브라우저인 Safari(iOS) 및 Chrome(Android)을 통해서만 Exchange Online에 대한 액세스를 허용하도록 선택할 수 있습니다. 다른 브라우저에서의 액세스는 차단됩니다. OneDrive의 애플리케이션 액세스에 대해 선택한 동일한 플랫폼 제한이 여기에도 적용됩니다.
 
    **Android** 디바이스에서 사용자는 다음과 같이 등록된 디바이스에서 **브라우저 액세스 사용** 옵션을 사용해야 합니다.
    1.  **회사 포털 앱**을 시작합니다.
@@ -198,4 +198,4 @@ Office 데스크톱 애플리케이션은 다음을 실행하는 SharePoint Onli
 
 ### <a name="see-also"></a>참고 항목  
 
- [System Center Configuration Manager에서 서비스 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)
+ [서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)

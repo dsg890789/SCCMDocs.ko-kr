@@ -1,7 +1,7 @@
 ---
-title: '모바일 장치 관리 '
+title: '모바일 디바이스 관리 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리합니다.
+description: Configuration Manager에서 Exchange Server 커넥터를 사용 하 여 모바일 장치를 관리 합니다.
 ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,25 +11,25 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87f5957435cf1c83e6c15e761e0249c5384274df
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0dce91c73f96a608693e924073db677b65cf0553
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379534"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520561"
 ---
-# <a name="manage-mobile-devices-with-system-center-configuration-manager-and-exchange"></a>System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리
+# <a name="manage-mobile-devices-with-configuration-manager-and-exchange"></a>Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
-Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-프레미스 또는 온라인)에 연결하는 모바일 디바이스를 관리하려고 하며 Configuration Manager를 사용하여 해당 디바이스를 등록할 수 없는 경우 System Center Configuration Manager에서 Exchange Server 커넥터를 사용합니다. Configuration Manager 콘솔에서 여러 Exchange 서버에 대한 설정 제어 및 원격 디바이스 초기화와 같은 Exchange 모바일 디바이스 관리 기능을 구성할 수 있습니다.  
+Microsoft Exchange ActiveSync 프로토콜을 사용 하 여 Exchange Server (온-프레미스 또는 온라인)에 연결 하 고 구성을 사용 하 여 등록할 수 없는 모바일 장치를 관리 하려는 경우 Configuration Manager에서 Exchange Server 커넥터를 사용 합니다. Manager. Configuration Manager 콘솔에서 여러 Exchange 서버에 대한 설정 제어 및 원격 디바이스 초기화와 같은 Exchange 모바일 디바이스 관리 기능을 구성할 수 있습니다.  
 
  ![exchange&#45;를&#45;사용한 configmgr](../../mdm/deploy-use/media/configmgr-with-exchange.png "configmgr-exchange")  
 
- Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리하는 경우 모바일 디바이스에 Configuration Manager 클라이언트가 설치되지 않습니다. 따라서 일부 관리 기능이 제한됩니다. 예를 들어 소프트웨어를 해당 디바이스에 설치할 수 없거나 구성 항목을 사용하여 해당 디바이스를 구성할 수 없습니다. Configuration Manager와 함께 모바일 디바이스에 사용할 수 있는 다양한 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager용 디바이스 관리 솔루션 선택](../../core/plan-design/choose-a-device-management-solution.md)을 참조하세요.  
+ Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리하는 경우 모바일 디바이스에 Configuration Manager 클라이언트가 설치되지 않습니다. 따라서 일부 관리 기능이 제한됩니다. 예를 들어 소프트웨어를 해당 디바이스에 설치할 수 없거나 구성 항목을 사용하여 해당 디바이스를 구성할 수 없습니다. 모바일 장치에 대 한 Configuration Manager에서 사용할 수 있는 다양 한 관리 기능에 대 한 자세한 내용은 [Configuration Manager에 대 한 장치 관리 솔루션 선택](../../core/plan-design/choose-a-device-management-solution.md)을 참조 하세요.  
 
 > [!IMPORTANT]  
->  Exchange Server 커넥터를 설치하기 전에 사용 중인 Microsoft Exchange 버전이 Configuration Manager에서 지원되는지 확인합니다. 자세한 내용은 [System Center Configuration Manager의 사이트 및 클라이언트에 대해 지원되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers)에서 "Exchange Server 커넥터"를 참조하세요.  
+>  Exchange Server 커넥터를 설치하기 전에 사용 중인 Microsoft Exchange 버전이 Configuration Manager에서 지원되는지 확인합니다. 자세한 내용은 [Configuration Manager 사이트 및 클라이언트에 대해 지원 되는 운영 체제](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers)에서 "Exchange Server 커넥터"를 참조 하세요.  
 
  Exchange Server 커넥터를 사용하는 경우 모바일 디바이스를 기본 Exchange ActiveSync 사서함 정책으로 관리하는 대신 Configuration Manager에서 구성한 설정으로 관리할 수 있습니다. 사용할 설정을 **일반**, **암호**, **전자 메일 관리**, **보안**및 **애플리케이션**그룹 설정에서 정의합니다. 예를 들어 **암호** 그룹 설정에서, 모바일 디바이스에서 암호를 요구할 것인지 여부, 최소 암호 길이, 암호 복잡도, 암호 복구 허용 여부를 구성할 수 있습니다.  
 
@@ -37,7 +37,7 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 
  또한 Exchange 액세스 규칙을 관리하고 모바일 디바이스를 허용 또는 차단하거나 격리하도록 Exchange Server 커넥터를 구성할 수도 있습니다. 관리자는 Configuration Manager 콘솔을 사용하여 모바일 디바이스를 원격으로 초기화할 수 있으며, 사용자는 애플리케이션 카탈로그를 사용하여 모바일 디바이스를 원격으로 초기화할 수 있습니다.  
 
- 사용자의 모바일 디바이스가 Exchange Server 커넥터를 통해 관리되고 Exchange Server가 온-프레미스 버전인 경우 사용자의 모바일 디바이스가 애플리케이션 카탈로그에 자동으로 표시됩니다. Microsoft Exchange Online에 대해 Exchange Server 커넥터를 구성하는 경우 사용자의 모바일 디바이스가 애플리케이션 카탈로그에 표시되도록 사용자 디바이스 선호도를 수동으로 구성해야 합니다. 사용자 디바이스 선호도를 수동으로 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조하세요.  
+ 사용자의 모바일 디바이스가 Exchange Server 커넥터를 통해 관리되고 Exchange Server가 온-프레미스 버전인 경우 사용자의 모바일 디바이스가 애플리케이션 카탈로그에 자동으로 표시됩니다. Microsoft Exchange Online에 대해 Exchange Server 커넥터를 구성하는 경우 사용자의 모바일 디바이스가 애플리케이션 카탈로그에 표시되도록 사용자 디바이스 선호도를 수동으로 구성해야 합니다. 사용자 장치 선호도를 수동으로 구성 하는 방법에 대 한 자세한 내용은 [사용자 장치 선호도를 사용 하 여 사용자 및 장치 연결](../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)을 참조 하세요.  
 
 > [!TIP]  
 >  Exchange Server 커넥터를 사용 하 여 모바일 장치를 관리 하 고 모바일 장치가 다른 사용자에 게 양도 되는 경우 모바일 장치의 새 소유자가 자신의 Exchange 계정을 구성 하기 전에 Configuration Manager 콘솔에서 모바일 장치를 삭제 합니다. 전송 된 모바일 장치입니다.  
@@ -61,7 +61,7 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 
   **운영 관리자** 보안 역할에는 Exchange Server 커넥터를 사용하여 모바일 디바이스를 관리하기 위해 필요한 권한이 포함됩니다.  
 
-  보안 권한을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.  
+  보안 권한을 구성 하는 방법에 대 한 자세한 내용은 [Configuration Manager에 대 한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조 하세요.  
 
 ## <a name="installing-and-configuring-an-exchange-server-connector"></a>Exchange Server 커넥터 설치 및 구성  
  다음 절차에 따라 Exchange Server 커넥터를 설치하고 모바일 디바이스를 관리하도록 구성합니다. Configuration Manager는 Exchange 조직의 커넥터를 하나만 지원합니다. 이러한 단계를 완료한 후에는 모바일 디바이스가 표시된 컬렉션을 확인하고 모바일 디바이스에 대한 보고서를 사용하여 커넥터로 검색 및 관리되는 모바일 디바이스를 모니터링할 수 있습니다.  
@@ -133,7 +133,7 @@ Microsoft Exchange ActiveSync 프로토콜을 사용하여 Exchange Server(온-�
 
     -   마법사의 **계정** 페이지에서 Configuration Manager 조건부 액세스에 의해 차단되는 클라이언트로 메일 알림을 보내는 데 사용되는 계정을 구성할 수 있습니다. 이 경우 Exchange 서버에 유효한 사서함이 있는 계정을 지정해야 합니다.  
 
-         자세한 내용은 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요.  
+         자세한 내용은 [서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요.  
 
 6.  상태 메시지를 사용하고 로그 파일을 검토하여 Exchange Server 커넥터가 설치되었는지 확인할 수 있습니다.  
 

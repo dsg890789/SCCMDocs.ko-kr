@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbd3d765a17d41bfbc2c400a3368cf00784b16c1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 335a122ffb982e21e15fbc834106ce360b76b42d
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62256114"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520663"
 ---
-# <a name="manage-dynamics-crm-online-access-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Dynamics CRM Online 액세스 관리
+# <a name="manage-dynamics-crm-online-access-in-configuration-manager"></a>Configuration Manager에서 Dynamics CRM Online 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 Microsoft Intune 조건부 액세스가 설정된 iOS 및 Android 디바이스에서 Microsoft Dynamics CRM Online에 대한 액세스를 제어할 수 있습니다.  Intune 조건부 액세스는 다음 두 가지 구성 요소로 이루어져 있습니다.
 * 디바이스를 준수로 간주하기 위해 디바이스가 준수해야 하는 [디바이스 규정 준수 정책](../../protect/deploy-use/device-compliance-policies.md)
@@ -50,12 +50,12 @@ Dynamics CRM Online에 액세스해야 하는 디바이스는 다음과 같아�
 시작하기 전에 조건부 액세스 정책에 대한 Azure Active Directory 보안 그룹을 구성합니다. **Microsoft 365 관리 센터**에서 이러한 그룹을 구성할 수 있습니다. 이 그룹은 정책에서 사용자를 대상으로 지정하거나 제외하는 데 사용됩니다. 사용자가 정책의 대상인 경우 해당 사용자가 사용하는 각 디바이스가 규정을 준수해야 리소스에 액세스할 수 있습니다.
 
 Dynamics CRM 정책에 사용할 두 가지 그룹 유형을 지정할 수 있습니다.
-* **대상 그룹** - 정책이 적용되는 사용자 그룹을 포함합니다.
+* **대상 그룹** – 정책이 적용되는 사용자 그룹을 포함합니다.
 * **제외된 그룹** - 정책에서 제외되는 사용자 그룹을 포함합니다.
 
 사용자가 두 그룹에 모두 속한 경우에는 정책에서 제외됩니다.
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 규정 준수 정책 구성 및 배포
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2단계: 준수 정책 구성 및 배포
 정책의 영향을 받는 모든 디바이스에 준수 정책을 [만들어 배포](../../protect/deploy-use/device-compliance-policies.md)합니다. 대상 그룹에서 사용자가 사용하는 모든 디바이스가 됩니다.
 
 > [!NOTE]
@@ -73,7 +73,7 @@ Dynamics CRM 정책에 사용할 두 가지 그룹 유형을 지정할 수 있�
     ![Dynamics CRM Online 조건부 액세스 정책 페이지의 스크린샷](media/mdm-ca-dynamics-crm-policy-configuration.png)
 
 2. **조건부 액세스 정책 사용**을 선택합니다.
-3. **애플리케이션 액세스**에서 다음 플랫폼에 조건부 액세스 정책을 적용하도록 선택할 수 있습니다.
+3. **애플리케이션 액세스** 아래에서 다음 플랫폼에 조건부 액세스 정책을 적용하도록 선택할 수 있습니다.
    * **Android**
    * **OWA(Outlook Web Access)**
 4. **대상 그룹**에서 **수정**을 선택하여 정책을 적용할 Azure Active Directory 보안 그룹을 선택합니다. 모든 사용자 또는 선택한 사용자 그룹을 대상으로 지정할 수 있습니다.

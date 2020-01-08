@@ -1,7 +1,7 @@
 ---
 title: Office 365 서비스에 대 한 액세스 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성하는 방법을 알아봅니다.
+description: Configuration Manager에서 관리 하는 Pc에 대해 Office 365 서비스에 대 한 조건부 액세스를 구성 하는 방법에 대해 알아봅니다.
 ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
@@ -11,16 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40e99ccb5cb72b7a1b60ac15d1267d6f7d27e9c9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: caa1d0889ab3ffd35ca6a2bf7c0c7de03f4632e3
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659513"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75520697"
 ---
-# <a name="manage-access-to-office-365-services-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리 하는 Pc 용 Office 365 서비스에 대 한 액세스 관리
+# <a name="manage-access-to-office-365-services-for-pcs-managed-by-configuration-manager"></a>Configuration Manager에서 관리 하는 Pc 용 Office 365 서비스에 대 한 액세스 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 <!--1191496-->
 Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 조건부 액세스를 구성합니다.  
@@ -31,7 +31,7 @@ Configuration Manager에서 관리되는 PC의 Office 365 서비스에 대한 �
 > Configuration Manager 클라이언트를 사용 하 여 관리 되는 장치에서 조건부 액세스를 사용 하는 경우 보호 되 고 있는지 확인 하려면 마이그레이션하기 전에 먼저 Intune에서 해당 장치에 대 한 조건부 액세스를 사용 하도록 설정 합니다. Configuration Manager에서 공동 관리를 사용 하도록 설정 하 고, 준수 정책 워크 로드를 Intune으로 이동한 후 intune 하이브리드에서 Intune 독립 실행형으로의 마이그레이션을 완료 합니다. 자세한 내용은 [공동 관리를 사용 하는 조건부 액세스](https://docs.microsoft.com/sccm/comanage/quickstart-conditional-access)를 참조 하세요. 
 
 
-Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 액세스를 구성하는 방법에 대한 정보는 [System Center Configuration Manager에서 서비스에 대한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조하세요. 해당 문서에서는 도메인에 가입되었지만 규정 준수가 평가되지 않은 디바이스에 대해서도 다룹니다.
+Microsoft Intune에서 등록 하 고 관리 하는 장치에 대 한 조건부 액세스 구성에 대 한 자세한 내용은 [서비스에 대 한 액세스 관리](../../protect/deploy-use/manage-access-to-services.md)를 참조 하세요. 해당 문서에서는 도메인에 가입되었지만 규정 준수가 평가되지 않은 디바이스에 대해서도 다룹니다.
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
@@ -61,7 +61,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 ## <a name="configure-conditional-access"></a>조건부 액세스 구성  
  조건부 액세스를 설정하려면 먼저 규정 준수 정책을 만들고 조건부 액세스 정책을 구성해야 합니다. PC에 대한 조건부 액세스 정책을 구성할 때 Exchange Online 및 SharePoint Online 서비스에 액세스하기 위해 PC가 호환되도록 요구할 수 있습니다.  
 
-### <a name="prerequisites"></a>Prerequisites  
+### <a name="prerequisites"></a>전제 조건  
 
 - ADFS 동기화 및 Office 365 구독. Office 365 구독은 Exchange Online 및 SharePoint Online을 설정 하는 데 사용할 수 있습니다.  
 
@@ -75,7 +75,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 
   -   Windows 8.1 및 Windows 10 PC의 경우 Active Directory 그룹 정책을 사용하여 Azure AD에 자동으로 등록되도록 디바이스를 구성할 수 있습니다.  
 
-  -    Windows 7 PC의 경우 System Center Configuration Manager를 통해 Windows 7 PC에 장치 등록 소프트웨어 패키지를 배포해야 합니다. [Windows 도메인에 가입된 디바이스의 Azure Active Directory 자동 디바이스 등록](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) 문서에서 자세한 내용을 제공합니다.  
+  -    Windows 7 Pc의 경우 Configuration Manager를 통해 Windows 7 PC에 장치 등록 소프트웨어 패키지를 배포 해야 합니다. [Windows 도메인에 가입된 디바이스의 Azure Active Directory 자동 디바이스 등록](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) 문서에서 자세한 내용을 제공합니다.  
 
 - 최신 인증을 [사용](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)하는 상태에서 Office 2013 또는 Office 2016을 사용해야 합니다.  
 
@@ -104,7 +104,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
     >
     > - Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
-- **규정 준수 정책 평가에 구성 된 기준 포함**: Configuration Manager 버전 1910부터이 조건은 **준수 정책 평가의 일부로이 기준 평가** 옵션을 선택 하 여 구성 기준을 평가 합니다. 자세한 내용은 [규정 준수 정책 평가의 일부로 사용자 지정 구성 기준 포함](/configmgr/compliance/deploy-use/create-configuration-baselines#bkmk_CAbaselines)을 참조 하세요.
+- **규정 준수 정책 평가에 구성 된 기준 포함**: Configuration Manager 버전 1910부터이 조건은 **준수 정책 평가의 일부로이 기준 평가** 옵션을 선택 하 여 구성 기준을 평가 합니다. 자세한 내용은 [준수 정책 평가의 일환으로 사용자 지정 구성 기준 포함](/configmgr/compliance/deploy-use/create-configuration-baselines#bkmk_CAbaselines)을 참조하세요.
 
 ### <a name="step-2-evaluate-the-effect-of-conditional-access"></a>2단계. 조건부 액세스의 영향 평가  
  **조건부 액세스 규정 준수 보고서**를 실행합니다. 이 보고서는 **모니터링** 작업 영역의 **보고서** > **준수 및 설정 관리**에서 찾을 수 있습니다. 이 보고서는 모든 디바이스에 대한 준수 상태를 표시합니다. 호환되지 않음으로 보고되는 디바이스는 Exchange Online 및 SharePoint Online에 액세스하지 못하도록 차단됩니다.  
@@ -127,7 +127,7 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 
 ### <a name="step-3-create-a-conditional-access-policy-for-exchange-online-and-sharepoint-online"></a>3단계: Exchange Online 및 SharePoint Online에 대한 조건부 액세스 정책 만들기  
 
-1.  Configuration Manager 콘솔에서 **자산 및 준수**을 클릭합니다.  
+1.  Configuration Manager 콘솔에서 **자산 및 준수**를 클릭합니다.  
 
 2.  Exchange Online에 대한 정책을 만들려면 **Exchange Online에 대한 조건적 액세스 정책 사용**을 선택합니다.  
 
@@ -157,5 +157,5 @@ Microsoft Intune에서 등록하고 관리한 디바이스에 대한 조건부 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [System Center Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호](../../protect/understand/protect-data-and-site-infrastructure.md)
+- [Configuration Manager를 사용하여 데이터 및 사이트 인프라 보호](../../protect/understand/protect-data-and-site-infrastructure.md)
 - [Configuration Manager에 대한 조건부 액세스 문제 해결 순서도](https://gallery.technet.microsoft.com/Conditional-access-fd747c1a?redir=0)
