@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: c6826794-aa19-469d-ae47-1a0db68a1ff1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f6cae4772b1335317f9d63edd70ba4e8d189455d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ceac3612c68d49a82a18fe657f7d71e99516ee06
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659478"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817281"
 ---
 # <a name="plan-for-software-center"></a>소프트웨어 센터 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 사용자는 소프트웨어 센터에서 설정을 변경하고, 애플리케이션을 탐색하여 설치할 수 있습니다. Windows 디바이스에서 구성 관리자 클라이언트를 설치할 때 소프트웨어 센터가 자동으로 설치됩니다.
 
@@ -37,7 +36,7 @@ ms.locfileid: "74659478"
 >
 > - 현재 분기 버전 1806을 기준으로 Silverlight 사용자 환경은 지원되지 않습니다.
 > - 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다.
-> - 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다.  
+> - 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 
 ### <a name="starting-in-version-1802"></a>버전 1802부터 가능
 
@@ -60,7 +59,7 @@ ms.locfileid: "74659478"
 
 - 사용자 디바이스 선호도를 구성합니다. 자세한 내용은 [사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결](/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity)을 참조하세요.
 
-### <a name="starting-in-version-1906"></a>버전 1906부터 가능
+### <a name="starting-in-version-1906"></a>버전 1906부터
 
 - 이제 소프트웨어 센터는 사용자를 대상으로 하는 앱의 관리 지점과 통신합니다. 애플리케이션 카탈로그는 더 이상 사용하지 않습니다. 이러한 변경을 통해 사이트에서 애플리케이션 카탈로그를 보다 쉽게 제거할 수 있습니다.
 
@@ -114,7 +113,7 @@ ms.locfileid: "74659478"
 
 ### <a name="restart-required"></a>다시 시작 필요
 
-클라이언트 설정의 [컴퓨터 다시 시작](/sccm/core/clients/deploy/about-client-settings#computer-restart) 그룹에서 **배포를 다시 시작해야 하는 경우 알림 메시지 대신 사용자에게 대화 상자 창 표시** 옵션을 사용하도록 설정합니다.  
+클라이언트 설정의 [컴퓨터 다시 시작](/sccm/core/clients/deploy/about-client-settings#computer-restart) 그룹에서 다음 옵션을 사용하도록 설정합니다. **배포를 다시 시작해야 하는 경우 알림 메시지 대신 사용자에게 대화 상자 창 표시**.  
 
 이 클라이언트 설정을 구성하면 다음 유형의 다시 시작이 필요한 모든 필수 배포에서 사용자 환경이 변경됩니다.
 
@@ -158,7 +157,7 @@ Configuration Manager는 다음과 같은 우선 순위에 따라 소프트웨�
 #### <a name="application-catalog-branding-priorities"></a>응용 프로그램 카탈로그 브랜딩 우선 순위
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 
 응용 프로그램 카탈로그를 사용 하는 경우 브랜딩은 다음 우선 순위를 따릅니다.  
 

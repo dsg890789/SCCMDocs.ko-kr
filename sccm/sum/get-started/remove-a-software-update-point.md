@@ -10,17 +10,16 @@ ms.assetid: 2486375c-d4a2-4cf2-9124-9bee02bbf173
 manager: dougeby
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 999ace880812c6baa3fd359433e4e929699c8612
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e4078a34aa33a4fccb57fad44aee78194a3dab7f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499754"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827284"
 ---
 #  <a name="BKMK_RemoveSUP"></a> 소프트웨어 업데이트 지점 사이트 시스템 역할 제거  
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 콘솔에서 사이트의 소프트웨어 업데이트 지점 사이트 시스템 역할을 제거할 수 있습니다. 목록에서 소프트웨어 업데이트 지점을 제거하도록 클라이언트 정책이 업데이트됩니다. 사이트에서 마지막 소프트웨어 업데이트 지점을 제거하면 소프트웨어 업데이트 지점 목록에 소프트웨어 업데이트 지점이 포함되어 있지 않으므로 사실상 사이트에서 소프트웨어 업데이트가 사용되지 않습니다. 기본 사이트에 소프트웨어 업데이트 지점이 둘 이상인 경우 동기화 원본으로 구성된 소프트웨어 업데이트 지점을 제거하면 사이트에서 새 동기화 원본으로 사용할 다른 소프트웨어 업데이트 지점을 선택해야 합니다.  
 

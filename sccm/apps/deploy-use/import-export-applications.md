@@ -10,17 +10,16 @@ ms.assetid: dba00e54-9d5b-4f6b-916d-ead48c66e288
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02bb394de4f3bb947bdc2669a830167089c42311
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: dde136422f7ecc3a970179188afc16ca369801d3
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66411012"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815751"
 ---
 # <a name="import-and-export-applications"></a>애플리케이션 가져오기 및 내보내기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 사용하여 두 계층 간에 애플리케이션을 가져오고 내보냅니다. 예를 들어 애플리케이션을 테스트 환경에서 프로덕션 환경으로 복사합니다.
 

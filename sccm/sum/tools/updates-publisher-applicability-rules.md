@@ -10,13 +10,12 @@ ms.assetid: 3cf0c2cd-397a-4622-b11c-961f334fb7d7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b1f638bccb35ac10ea37956405c023a6ab0f184
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c3540ccbb2331f458096da34158dc304b84a0729
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892239"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818522"
 ---
 # <a name="manage-applicability-rules-in-updates-publisher"></a>Updates Publisher의 적용 가능성 규칙 관리
 

@@ -10,17 +10,16 @@ ms.assetid: 0bdcb018-bac2-4540-b786-6242bac73ff4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3280edbe900e96cf97af8e59578ceab5322ee2a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 82444b5f8612a129dc5b7df3338efdfc4b55e1a9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62204963"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816193"
 ---
 # <a name="deploy-and-monitor-scap-compliance-in-configuration-manager"></a>Configuration Manager에서 SCAP 준수 배포 및 모니터
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 SCAP 데이터 스트림 파일을 [변환하고 가져온 후에는](/sccm/compliance/plan-design/scap/install-configure-scap#bkmk_convert-and-import) 다음 단계를 참조하세요.  
 

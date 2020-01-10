@@ -6,21 +6,20 @@ ms.date: 05/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 3e3ff3a4-7a75-41bb-bdf9-33ede9c0e3a3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f0e5a313bb5afd0501f0d6027d42b5a51a7e8946
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 27491803af39e9611a00562eebe32f17e8f8f5f2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69631951"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821107"
 ---
 # <a name="provisioning-mode"></a>프로비저닝 모드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 OS 배포 작업 순서 중에 Configuration Manager는 클라이언트를 프로비전 모드에 배치합니다. (OS 배포 작업 순서에는 Windows 10으로 전체 업그레이드가 포함되어 있습니다.) 이 상태의 클라이언트는 사이트에서 정책을 처리하지 않습니다. 이 동작은 클라이언트에서 실행되는 추가 배포의 위험 없이 실행할 작업 순서를 허용합니다. 성공하든 또는 실패하든 작업 순서가 완료되면 클라이언트 프로비전 모드가 종료됩니다.
 

@@ -10,17 +10,16 @@ ms.assetid: 58a0d2ae-de76-401f-b854-7a5243949033
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 408f8c17150aa6b6ee9330b40d8b8fef09b7eae5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a840636ae1be0d8d38819d0465be1211ff6d2f60
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892519"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821429"
 ---
 # <a name="use-stand-alone-media-to-deploy-windows-without-using-the-network"></a>독립 실행형 미디어를 사용하여 네트워크를 사용하지 않고 Windows 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 독립 실행형 미디어에는 컴퓨터에서 운영 체제를 배포하는 데 필요한 모든 항목이 포함되어 있습니다. 여기에는 부팅 이미지 및 운영 체제 이미지와, 애플리케이션, 드라이버 등을 비롯한 운영 체제를 설치하는 작업 순서가 포함됩니다. 독립 실행형 미디어 배포를 사용하면 다음 상태에서 운영 체제를 배포할 수 있습니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: de78e8d3-043f-4cd3-97e0-4dfb824fd3fb
 manager: dougeby
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15ed5e56d5284b3014061a5d910dc88903b624db
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4249345b7412d624e84b472e4fc5d09cacd6a2ce
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500205"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818811"
 ---
 # <a name="download-software-updates"></a>소프트웨어 업데이트 다운로드  
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 소프트웨어 업데이트를 다운로드하는 데는 여러 가지 방법을 사용할 수 있습니다. ADR(자동 배포 규칙)을 만들거나 수동으로 소프트웨어 업데이트를 배포할 때 소프트웨어 업데이트는 사이트 서버의 콘텐츠 라이브러리에 다운로드됩니다. 그런 다음 소프트웨어 업데이트는 구성된 배포 패키지와 연결된 배포 지점에서 콘텐츠 라이브러리로 복사됩니다. 소프트웨어 업데이트를 다운로드한 후에 배포하는 경우 업데이트 다운로드 마법사를 사용할 수 있습니다. 이 마법사를 사용하면 클라이언트 컴퓨터에 소프트웨어 업데이트를 배포하기 전에 배포 지점에서 소프트웨어 업데이트를 사용할 수 있는지 확인할 수 있습니다.  
 

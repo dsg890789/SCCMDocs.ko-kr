@@ -10,17 +10,16 @@ ms.assetid: 72d1ccd5-3763-4f88-9273-e1a73e8f4286
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cb5d13dc3683a11731937d94d1f84414c3d923
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2581214b42216a9f099ceee8e8c06201612902ae
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892420"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821140"
 ---
 # <a name="install-software-updates"></a>소프트웨어 업데이트 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 **소프트웨어 업데이트 설치** 단계는 Configuration Manager 작업 순서에서 일반적으로 사용됩니다. OS를 설치하거나 업데이트할 때 이 단계가 소프트웨어 업데이트 구성 요소를 트리거하여 업데이트를 검사하고 배포합니다. 일부 고객의 경우 이 단계에서 긴 시간 제한 지연이나 업데이트 누락 같은 문제가 발생할 수 있습니다. 이 문서의 정보는 이 단계와 관련된 일반적인 문제를 완화하고 문제가 발생한 경우 더 효율적으로 문제를 해결하는 데 도움이 됩니다.
 
@@ -153,18 +152,18 @@ Configuration Manager가 이미지에 소프트웨어 업데이트를 적용하�
 2. **정책 컴파일 및 평가**: 클라이언트는 모든 소프트웨어 업데이트 정책을 WMI RequestedConfigs 네임스페이스로 컴파일합니다. (CIAgent.log)
 3. ‘이 인스턴스가 처음 호출되었습니까?’   
     1. **예**: **전체 검사**로 이동  
-    2. **아니요**: *단계가 [캐시된 검사 결과에서 소프트웨어 업데이트 평가](/sccm/osd/understand/task-sequence-steps#evaluate-software-updates-from-cached-scan-results) 옵션을 사용하여 구성되었나요?*
+    2. **아니요**: ‘단계가 [캐시된 검사 결과에서 소프트웨어 업데이트 평가](/sccm/osd/understand/task-sequence-steps#evaluate-software-updates-from-cached-scan-results) 옵션을 사용하여 구성되었습니까?’ 
         1. **예**: **캐시된 결과에서 검사**로 이동
         2. **아니요**: **전체 검사**로 이동
 4. 검사 프로세스: 전체 검사 또는 캐시된 결과에서 검사를 모니터링 프로세스와 병렬로 진행합니다.
-    1. **전체 검사**: 작업 순서 엔진이 업데이트 검사 API를 통해 소프트웨어 업데이트 에이전트를 호출하여 *전체* 검사를 수행합니다. (WUAHandler.log, ScanAgent.log)  
+    1. **전체 검사**: 작업 순서 엔진이 업데이트 검사 API를 통해 소프트웨어 업데이트 에이전트를 호출하여 ‘전체’ 검사를 수행합니다.  (WUAHandler.log, ScanAgent.log)  
         1. **SUM 에이전트 검사 - 전체**: WSUS 실행 소프트웨어 업데이트 지점과 통신하는 WUA(Windows 업데이트 에이전트)를 통한 일반 검사 프로세스입니다. 모든 적용 가능한 업데이트를 로컬 업데이트 저장소에 추가합니다. (WindowsUpdate.log, UpdateStore.log)
-    2. **캐시된 결과에서 검사**: 작업 순서 엔진이 업데이트 검사 API를 통해 소프트웨어 업데이트 에이전트를 호출하여 캐시된 메타데이터에 대해 검사합니다. (WUAHandler.log, ScanAgent.log)
+    2. **캐시된 결과에서 검색**: 작업 순서 엔진이 업데이트 검사 API를 통해 소프트웨어 업데이트 에이전트를 호출하여 캐시된 메타데이터에 대해 검사합니다. (WUAHandler.log, ScanAgent.log)
         1. **SUM 에이전트 검사 - 캐시됨**: WUA(Windows 업데이트 에이전트)는 로컬 업데이트 저장소에 이미 캐시된 업데이트에 대해 검사합니다. (WindowsUpdate.log, UpdateStore.log)
     3. **검사 타이머 시작**: 작업 순서 엔진이 타이머를 시작하고 대기합니다. (이 프로세스는 캐시된 결과 프로세스에서 검사 또는 전체 검사와 병렬로 진행됩니다.)
         1. **모니터링**: 작업 순서 엔진이 SUM 에이전트의 상태를 모니터링합니다.
         2. ‘SUM 에이전트의 응답은 무엇입니까?’ 
-            - **진행 중**: 타이머가 작업 순서 변수 [SMSTSSoftwareUpdateScanTimeout](/sccm/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)의 값에 도달했나요? (기본 1시간)
+            - **진행 중**: 타이머가 작업 순서 변수 [SMSTSSoftwareUpdateScanTimeout](/sccm/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)의 값에 도달했습니까? (기본 1시간)
                 - **예**: 단계가 실패합니다.
                 - **아니요**: **모니터링**으로 이동
             - **실패**: 단계가 실패합니다.
@@ -175,15 +174,15 @@ Configuration Manager가 이미지에 소프트웨어 업데이트를 적용하�
     - **아니요**: 설치할 업데이트가 없으면 단계가 완료됩니다.
 7. 배포 프로세스: 업데이트 설치 프로세스는 배포 모니터링 프로세스와 병렬로 진행됩니다.
     1. **업데이트 설치**: 작업 순서 엔진이 업데이트 배포 API를 통해 SUM 에이전트를 호출하여 모든 사용할 수 있는 업데이트를 설치하거나 필수 업데이트만 설치합니다. 이 동작은 단계 구성에서 **설치 필수 - 필수 소프트웨어 업데이트만**을 선택하는지 **설치 가능 - 모든 소프트웨어 업데이트**를 선택하는지에 따라 달라집니다. [SMSInstallUpdateTarget](/sccm/osd/understand/task-sequence-variables#SMSInstallUpdateTarget) 변수를 사용하여 이 동작을 지정할 수도 있습니다.
-        1. **SUM 에이전트 설치**: 표준 콘텐츠 다운로드와 함께 기존의 캐시된 업데이트 목록을 사용하는 일반 설치 프로세스입니다. WUA(Windows 업데이트 에이전트)를 통해 업데이트를 설치합니다. (UpdatesDeployment.log, UpdatesHandler.log, WuaHandler.log, WindowsUpdate.log)
+        1. **SUM 에이전트 설치**: 표준 콘텐츠 다운로드가 포함된, 기존의 캐시된 업데이트 목록을 사용하는 일반 설치 프로세스입니다. WUA(Windows 업데이트 에이전트)를 통해 업데이트를 설치합니다. (UpdatesDeployment.log, UpdatesHandler.log, WuaHandler.log, WindowsUpdate.log)
     2. **배포 타이머 시작 및 진행률 표시**: 작업 순서 엔진이 설치 타이머를 시작하고, TS 진행률 UI에 10% 간격으로 하위 진행률을 표시하고, 대기합니다.
         1. **모니터링**: 작업 순서 엔진이 SUM 에이전트의 상태를 폴링합니다.
         2. ‘SUM 에이전트의 응답은 무엇입니까?’ 
-            - **진행 중**: *설치 프로세스가 8시간 동안 비활성 상태였습니까?*
+            - **진행 중**: ‘설치 프로세스가 8시간 동안 비활성 상태였습니까?’ 
                 - **예**: 단계가 실패합니다.
                 - **아니요**: **모니터링**으로 이동
             - **실패**: 단계가 실패합니다.
-            - **완료**: *단계가 **캐시된 검사 결과에서 소프트웨어 업데이트 평가** 옵션을 사용하여 구성되었나요?* 로 이동
+            - **완료**: ‘단계가 **캐시된 검사 결과에서 소프트웨어 업데이트 평가** 옵션을 사용하여 구성되었습니까?’로 이동 
 
 
 ### <a name="timeouts"></a>시간 제한
@@ -208,7 +207,7 @@ Configuration Manager가 이미지에 소프트웨어 업데이트를 적용하�
 
 - 소프트웨어 업데이트 관리 프로세스 문제를 해결하는 데 도움을 받으려면 [소프트웨어 업데이트 관리 문제 해결](https://support.microsoft.com/help/10680/software-update-management-troubleshooting-in-configuration-manager)을 참조하세요.  
 
-- 전체 성능을 높이려면 소프트웨어 업데이트 카탈로그의 크기를 줄이세요. 예:  
+- 전체 성능을 높이려면 소프트웨어 업데이트 카탈로그의 크기를 줄이세요. 예를 들면 다음과 같습니다.  
 
     - 불필요한 분류, 제품 및 언어를 제거합니다. 자세한 내용은 [동기화할 분류 및 제품 구성](/sccm/sum/get-started/configure-classifications-and-products)을 참조하세요.  
 

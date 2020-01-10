@@ -10,17 +10,16 @@ ms.assetid: 8d27e5ac-4f19-4b3d-85c7-fa34eb5d5e7e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e303a7363e0641210cc7c6e436546d864fe0571
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5d9aff6f96c94593025e0fa7a794b65de7cd331f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62243642"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821259"
 ---
 # <a name="prepare-for-os-deployment-in-configuration-manager"></a>Configuration Manager에서 OS 배포 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 운영 체제를 배포하기 전에 Configuration Manager에서 수행해야 하는 몇 가지 작업이 있습니다. OS 배포를 준비하려면 다음 문서를 사용합니다.  
 

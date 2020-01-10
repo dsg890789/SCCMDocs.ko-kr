@@ -10,17 +10,16 @@ ms.assetid: e3aaa9d2-a40e-42b1-ad75-5a115351729e
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 642f74319fca149cce15c019a473904641b4ea9e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8b89f2dd9f60b43db5c4ce8956f843429b47bc62
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70902939"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819814"
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 클라이언트에 대한 질문과 대답
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 이 FAQ는 해당 IT 관리자가 관리되는 컴퓨터에 Windows Defender 또는 Endpoint Protection을 배포한 컴퓨터 사용자를 위한 것입니다. 여기 내용은 다른 맬웨어 방지 프로그램에 적용되지 않을 수 있습니다. Microsoft System Center Endpoint Protection은 Windows 10에서 Windows Defender를 관리합니다. 또한 Windows 10 이전의 컴퓨터에 Endpoint Protection 클라이언트를 배포하고 관리할 수 있습니다. 이 문서에서 Windows Defender가 설명되고 있지만 해당 정보가 Endpoint Protection에도 적용됩니다.  

@@ -10,17 +10,16 @@ ms.assetid: a0bd093d-67a5-4f74-bf79-dd604889f5ba
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a495d63a43fe40d4c4479d03b7d4c6ed4e3ba1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0c2f2f13d20f1148e85f06ade8c0410c0c48b132
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74474420"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815700"
 ---
 # <a name="learn-more-about-powershell-script-security"></a>PowerShell 스크립트 보안에 대해 자세히 알아보기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 관리자는 환경에서 제안된 PowerShell 및 PowerShell 매개 변수 사용의 유효성을 검사해야 합니다. PowerShell 및 잠재적 위험 표면의 기능에 대한 관리자를 학습할 수 있는 몇 가지 유용한 리소스는 다음과 같습니다. 잠재적 위험 표면을 완화하고 안전한 스크립트를 사용할 수 있도록 합니다.
 
@@ -63,7 +62,7 @@ ms.locfileid: "74474420"
 - PowerShell 갤러리에서 PowerShell 모듈 ["주입 사냥꾼"](https://www.powershellgallery.com/packages/InjectionHunter/1.0.0)을 활용합니다.
     - 거짓 긍정일 수 있습니다. 따라서 항목이 의심스럽다는 플래그가 지정된 경우 실제 문제가 있는지 확인하려면 의도를 찾아봅니다. 
 - Microsoft Visual Studio에는 PowerShell 구문을 확인하여 지원할 수 있는 스크립트 분석기가 있습니다.
-- "DEF CON 25 - Lee Holmes - Get $pwnd: 전투가 격화된 Windows Server 공격"이라는 이 비디오에서는 보호할 수 있는 형식의 문제 개요를 제공합니다(특히 섹션 12:20에서 17:50).     <iframe width="560" height="315" src="https://www.youtube.com/embed/ahxMOAAani8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+- 이 비디오 제목: “DEF CON 25 - Lee Holmes - Get $pwnd: 전투가 격화된 Windows Server 공격”에서는 보호할 수 있는 형식의 문제 개요를 제공합니다(특히 섹션 12:20에서 17:50).     <iframe width="560" height="315" src="https://www.youtube.com/embed/ahxMOAAani8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## <a name="environment-recommendations"></a>환경 권장 사항
 PowerShell 관리자에 대한 일반 권장 사항입니다.

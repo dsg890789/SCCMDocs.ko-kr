@@ -10,17 +10,16 @@ ms.assetid: b9800a66-7541-47ca-8276-da8ef6cb6d1b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0058c78f9e2eb3546b570d65f8c7c90e283935d0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8ea942cca00852ae828c7574b0a61b606e4b331d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659648"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825526"
 ---
 # <a name="create-a-custom-task-sequence-with-configuration-manager"></a>Configuration Manager를 사용하여 사용자 지정 작업 순서 만들기
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 사용자 지정 작업 순서를 만들 때는 작업 순서 단계가 포함되지 않습니다. 작업 순서를 만든 후에 편집하고 필요한 작업 순서 단계를 추가합니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 90498b4b-6a9b-43cd-b465-1d6c9a52df1c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101cee8ed63cacfc41481b2df69b42e1760d8837
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d3d0634987a369319bf7379edfe9ec827ed09e66
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65082811"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827022"
 ---
 # <a name="create-task-sequence-media"></a>작업 순서 미디어 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 참조 컴퓨터에서 OS 이미지를 캡처하거나 현재 Configuration Manager 환경에 있는 대상 컴퓨터에 OS를 배포하기 위해 미디어를 사용할 수 있습니다. 이때 만들 수 있는 미디어는 CD, DVD 세트, USB 플래시 드라이브 등입니다.  
 

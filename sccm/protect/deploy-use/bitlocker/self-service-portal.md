@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 88e0ad46-7f0c-4f5c-9b48-54773c23768d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cf839c9a4f80638194781a8f1f25432f9dcda0cf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3cbf700a25f34da5dc31fa5ac268126b1f69703a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662541"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820749"
 ---
 # <a name="bitlocker-self-service-portal"></a>BitLocker 셀프 서비스 포털
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 

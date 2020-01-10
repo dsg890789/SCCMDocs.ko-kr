@@ -10,17 +10,16 @@ ms.assetid: 92aaec8a-8751-442a-b64b-62ab05b5bf50
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3cd923348b3ac6dfd6b2da652efc0a56ad9b787
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 772f807f2d00aa9b69c7b1b0953341c80073ed66
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888462"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827073"
 ---
 # <a name="create-a-task-sequence-for-non-os-deployments"></a>비운영 체제 배포에 대한 작업 순서 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 작업 순서는 사용자 환경 내에서 다양한 작업을 자동화하는 데 사용됩니다. 이러한 작업은 주로 운영 체제 배포를 위해 설계되고 테스트됩니다. Configuration Manager에는 다음과 같은 시나리오에 사용하는 기본 기술에 해당하는 여러 다른 기능이 있습니다.
 

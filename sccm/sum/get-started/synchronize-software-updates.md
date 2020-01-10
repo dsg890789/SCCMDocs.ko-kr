@@ -10,17 +10,16 @@ ms.assetid: ea8698c4-9df5-4cf5-8b62-ab93115b4769
 manager: dougeby
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e89fd9422b6bf6c5abb61e154f38a1f479c7ff7e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3a0b116bf2faafc0ecb29f67392e961c2301703e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70902972"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827267"
 ---
 #  <a name="BKMK_SUMSync"></a> 소프트웨어 업데이트 동기화
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
  Configuration Manager의 소프트웨어 업데이트 동기화는 구성한 기준을 충족하는 소프트웨어 업데이트 메타데이터를 검색하는 프로세스입니다. 여기에는 특정 제품, 분류 및 언어가 포함됩니다. 일반적으로 중앙 관리 사이트나 독립 실행형 기본 사이트의 소프트웨어 업데이트 지점은 Microsoft 업데이트에서 메타데이터를 검색합니다. 그런 다음 최상위 사이트에서 다른 사이트에 동기화 요청을 보냅니다. 사이트가 상위 사이트에서 동기화 요청을 받으면 사이트의 소프트웨어 업데이트 지점이 해당 업스트림 [동기화 원본](../plan-design/plan-for-software-updates.md#BKMK_SyncSource)에서 소프트웨어 업데이트 메타데이터를 검색합니다. 소프트웨어 업데이트 동기화 프로세스에 대한 자세한 내용은 [소프트웨어 업데이트 동기화](../understand/software-updates-introduction.md#BKMK_Synchronization)를 참조하세요.
 

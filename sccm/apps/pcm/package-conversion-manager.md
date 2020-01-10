@@ -1,5 +1,5 @@
 ---
-title: Package Conversion Manager
+title: Package Conversion Manager
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 패키지를 애플리케이션으로 변환하는 Package Conversion Manager에 대해 알아봅니다.
 ms.date: 03/27/2019
@@ -10,17 +10,16 @@ ms.assetid: f053fa73-c553-4522-a6b9-f885f23fe57c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a90dff8b187c28d925daeb9dae02849dd5027bab
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cd17d220b39251b0f053aca6932006a81decd024
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339250"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817434"
 ---
-# <a name="package-conversion-manager"></a>Package Conversion Manager
+# <a name="package-conversion-manager"></a>Package Conversion Manager
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1357861-->
 

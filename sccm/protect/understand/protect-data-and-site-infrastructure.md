@@ -10,17 +10,16 @@ ms.assetid: 2117f786-d521-4790-9e8d-ec096c63c9d7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86eed6ef79a098bb53237890e410747d78788acd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8a5bf798183f2b33dc9bef0c545d7b0fcfb1c023
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660821"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818913"
 ---
 # <a name="protect-data-and-site-infrastructure"></a>데이터 및 사이트 인프라 보호
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 사용자가 조직의 리소스에 안전 하 게 액세스 하도록 하려고 합니다. 노출 또는 악의적인 공격 으로부터 인프라와 데이터를 모두 보호 합니다. Configuration Manager를 사용 하 여 액세스를 사용 하도록 설정 하 고 조직의 리소스를 보호할 수 있습니다.  
 
@@ -36,7 +35,7 @@ ms.locfileid: "74660821"
   > [!TIP]
   > Microsoft Endpoint Manager 클라우드 서비스를 사용 하 여 공동 관리 되는 Windows 10 장치에서 endpoint protection을 관리 하려면 [ **Endpoint Protection** 워크 로드](/configmgr/comanage/workloads#endpoint-protection) 를 Intune으로 전환 합니다. 자세한 내용은 [Microsoft Intune Endpoint protection](https://docs.microsoft.com/intune/endpoint-protection-windows-10)을 참조 하세요.
 
-- BitLocker 드라이브 암호화 (MANAGE-BDE)를 사용 하 여 온-프레미스 Windows 클라이언트에 저장 된 데이터를 보호 합니다. Configuration Manager은 MBAM (Microsoft BitLocker Administration and Monitoring)의 사용을 대체할 수 있는 전체 BitLocker 수명 주기 관리를 제공 합니다. 자세한 내용은 [BitLocker 관리 계획](/configmgr/protect/plan-design/bitlocker-management)을 참조 하세요.
+- BitLocker 드라이브 암호화 (MANAGE-BDE)를 사용 하 여 온-프레미스 Windows 클라이언트에 저장 된 데이터를 보호 합니다. Configuration Manager은 MBAM (Microsoft BitLocker Administration and Monitoring)의 사용을 대체할 수 있는 전체 BitLocker 수명 주기 관리를 제공 합니다. 자세한 내용은 [BitLocker 관리 계획](/configmgr/protect/plan-design/bitlocker-management)을 참조하세요.
 
 - 기존 암호 대신 비즈니스용 Windows Hello를 사용 하 여 Windows 10 장치에서 대체 로그인 방법을 사용 하도록 설정 합니다. 자세한 내용은 [비즈니스용 Windows Hello 설정](/configmgr/protect/deploy-use/windows-hello-for-business-settings)을 참조하세요.
 

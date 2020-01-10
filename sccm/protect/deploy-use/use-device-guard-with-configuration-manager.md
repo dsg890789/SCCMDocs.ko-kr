@@ -10,17 +10,16 @@ ms.assetid: 5e5d854c-9cc1-4dd8-b33f-0fcac675b395
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: abc5f4c29e1e97cb116905cc9f9af4a033a5bf8f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ee7562ee855cb3e3840aea5c29850a17187622ec
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74474512"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819387"
 ---
 # <a name="windows-defender-application-control-management-with-configuration-manager"></a>Configuration Manager를 사용 하 여 Windows Defender 응용 프로그램 제어 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 ## <a name="introduction"></a>소개
 Windows Defender 응용 프로그램 제어는 맬웨어 및 기타 신뢰할 수 없는 소프트웨어 로부터 Pc를 보호 하도록 설계 되었습니다. 사용자가 알고 있는 승인된 코드만 실행할 수 있도록 하여 악의적인 코드가 실행되지 못하게 합니다.

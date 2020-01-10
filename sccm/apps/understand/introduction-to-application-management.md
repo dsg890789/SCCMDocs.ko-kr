@@ -10,22 +10,21 @@ ms.assetid: 08f711ba-83bf-4b5f-9520-a0778c6ae7eb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee7527492851a89b013c6f59464c06e73c72b247
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f509380945f18c596b691dfaad4dc93fe70395b5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661331"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818335"
 ---
 # <a name="introduction-to-application-management-in-configuration-manager"></a>Configuration Manager의 애플리케이션 관리 소개
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 항목에서는 Configuration Manager 애플리케이션 작업을 시작하기 전에 기본 사항을 알아봅니다.  
 
 > [!TIP]  
-> Configuration Manager로 애플리케이션을 관리하는 방법에 이미 익숙한 경우에는 이 문서를 건너뛰어도 됩니다. [애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)의 샘플 애플리케이션 만들기로 이동하세요.  
+> Configuration Manager로 애플리케이션을 관리하는 방법에 이미 익숙한 경우에는 이 문서를 건너뛰어도 됩니다. 샘플 애플리케이션 만들기: [애플리케이션 만들기 및 배포](/sccm/apps/get-started/create-and-deploy-an-application)를 진행합니다.  
 
 ## <a name="what-is-an-application"></a>애플리케이션이란?
 
@@ -167,7 +166,7 @@ Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있�
 
 Configuration Manager 애플리케이션은 상태 기반 모니터링을 사용합니다. 사용자 및 디바이스의 마지막 애플리케이션 배포 상태를 추적할 수 있습니다. 상태 메시지는 개별 디바이스에 대한 정보를 표시합니다. 예를 들어 애플리케이션을 사용자 컬렉션에 배포하는 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 볼 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역에서 모든 소프트웨어 배포를 모니터링합니다. 자세한 내용은 [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)을 참조하세요.  
 
-Configuration Manager 클라이언트는 애플리케이션 배포를 정기적으로 다시 평가합니다. 예:  
+Configuration Manager 클라이언트는 애플리케이션 배포를 정기적으로 다시 평가합니다. 예를 들면 다음과 같습니다.  
 
 - 배포된 애플리케이션을 사용자가 제거합니다. 다음 평가 주기에서 Configuration Manager가 앱이 없는 것을 감지합니다. 그러면 클라이언트가 앱을 자동으로 다시 설치합니다.  
 
@@ -198,7 +197,7 @@ Configuration Manager 클라이언트는 애플리케이션 배포를 정기적�
 - [소프트웨어 센터 사용자 가이드](/sccm/core/understand/software-center)
 
 > [!Note]  
-> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 ## <a name="packages-and-programs"></a>패키지 및 프로그램  
 

@@ -10,17 +10,16 @@ ms.assetid: 07c3c6d9-f056-4c4d-bc70-ede5ca933807
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: de06556d6fbf785e08e5c14f7e0ee1b09458feaf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9e205c1f886e9eabcd534a9206ba1199ce1ad2f4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68340406"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821395"
 ---
 # <a name="associate-users-with-a-destination-computer-in-configuration-manager"></a>Configuration Manager에서 대상 컴퓨터에 사용자 연결
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 사용하여 운영 체제를 배포할 때 대상 컴퓨터에 사용자를 연결할 수 있습니다. 이 옵션은 대상 컴퓨터의 기본 사용자가 한 명이든 여러 명이든 상관없이 작동합니다.  
 

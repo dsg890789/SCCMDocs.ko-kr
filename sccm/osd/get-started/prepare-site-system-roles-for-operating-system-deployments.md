@@ -10,17 +10,16 @@ ms.assetid: 0ef5f3ce-b0e4-4775-b5c2-b245e45b4194
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c7f54ccda217ebbae543b70aeead37f6c55cf0f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 946cf2fb99e68d38eae12d2fb7fb4e89627c79e1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62243544"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821225"
 ---
 # <a name="prepare-site-system-roles-for-os-deployments-with-configuration-manager"></a>Configuration Manager를 사용하여 OS 배포를 위한 사이트 시스템 역할 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 운영 체제를 배포하려면 먼저 특정 구성과 고려 사항을 요구하는 다음과 같은 사이트 시스템 역할을 준비합니다.
 

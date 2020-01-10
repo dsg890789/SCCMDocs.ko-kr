@@ -10,19 +10,18 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 69f234a2-b04b-445a-b81f-6b4acfc00eaf
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f59f3fc666fec7fdfaf2eed3eaf2b9e5656a1707
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8e0dd73d038f6dd9eafa67f156cb345402e9f7b7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74814988"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818742"
 ---
 # <a name="office-365-client-management-dashboard"></a>Office 365 클라이언트 관리 대시보드
 
 Configuration Manager 버전 1802부터 Office 365 클라이언트 관리 대시보드에서 Office 365 클라이언트 정보를 검토할 수 있습니다. 그래프 섹션을 선택하면 Office 365 클라이언트 관리 대시보드에 관련 디바이스의 목록이 표시됩니다. <!--1357281 -->
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 ### <a name="enable-hardware-inventory"></a>하드웨어 인벤토리를 사용하도록 설정
 
@@ -170,7 +169,7 @@ Configuration Manager는 각 장치에서 가장 최근에 사용 된 파일을 
 <!--4488272, 4488301-->
 *(버전 1910에서 도입됨)*
 
-버전 1910부터 **office 365 Proplus 파일럿 및 상태 대시보드** 를 통해 Office 365 proplus 배포를 계획, 파일럿 및 수행할 수 있습니다. 대시보드는 배포 계획에 영향을 줄 수 있는 문제를 식별할 수 있도록 Office 365 ProPlus를 사용 하는 장치에 대 한 상태 정보를 제공 합니다. **Office 365 ProPlus 파일럿 및 상태 대시보드**는 추가 기능 인벤토리를 기반으로한 파일럿 디바이스의 권장 사항을 제공합니다. 다음 타일은 대시보드에 있습니다.
+버전 1910부터 **office 365 Proplus 파일럿 및 상태 대시보드** 를 통해 Office 365 proplus 배포를 계획, 파일럿 및 수행할 수 있습니다. 대시보드는 Office 365 ProPlus를 사용하는 디바이스의 상태 인사이트를 제공하여 배포 계획에 영향을 줄 수 있는 문제를 식별하는 데 도움을 줍니다. **Office 365 ProPlus 파일럿 및 상태 대시보드**는 추가 기능 인벤토리를 기반으로한 파일럿 디바이스의 권장 사항을 제공합니다. 다음 타일은 대시보드에 있습니다.
 
 - 파일럿 생성
 - 권장 파일럿 디바이스
@@ -208,12 +207,12 @@ Office 365 Proplus가 설치되면 파일럿 디바이스에서 상태 데이터
 
 ### <a name="devices-not-meeting-health-goals"></a>상태 목표를 충족하지 않는 장치
 
-이 타일에는 추가 기능, 매크로 또는 둘 다와 관련된 문제가 있는 장치가 요약되어 있습니다.
+이 타일에는 추가 기능, 매크로 또는 둘 다와 관련된 문제가 있는 디바이스가 요약되어 있습니다.
 
 ### <a name="add-ins-not-meeting-health-goals"></a>상태 목표를 충족하지 않는 추가 기능
 
 - 로드 실패: 추가 기능을 시작 하지 못했습니다.
-- 충돌: 추가 기능을 실행하는 동안 오류가 발생했습니다.
+- 크래시: 추가 기능을 실행하는 동안 오류가 발생했습니다.
 - 오류: 추가 기능에서 오류를 보고했습니다.
 - 여러 문제: 추가 기능에 위의 문제 중 두 개 이상이 있습니다.
 

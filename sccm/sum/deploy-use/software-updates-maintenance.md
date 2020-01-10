@@ -10,17 +10,16 @@ ms.technology: configmgr-sum
 ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72554b62203700a3930cb169a8758308364d7eb1
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 258c5535623c0824e49f09c556d6ffe943f96414
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198696"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827386"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 콘솔의 소프트웨어 업데이트 지점 구성 요소 속성에서 WSUS 정리 작업을 예약하고 실행할 수 있습니다. WSUS 정리 작업을 처음으로 실행하도록 선택하면 다음 소프트웨어 업데이트 동기화 후에 실행됩니다.  
 
@@ -35,7 +34,7 @@ Configuration Manager 콘솔의 소프트웨어 업데이트 지점 구성 요�
 
 4. **대체 동작**을 검토합니다. 필요한 경우 동작을 수정합니다.
 
-   ![대체 동작 스크린샷](media/sccm-supersedence-behavior.PNG)
+   ![대체 동작 스크린샷](media/supersedence-behavior.png)
 
 5. **대체 규칙** 탭을 클릭하고, **WSUS 정리 마법사 실행**을 선택합니다. 1806 버전에서는 옵션의 이름이 **Run WSUS cleanup after synchronization**(동기화 후 WSUS 정리 실행)으로 바뀝니다.
 

@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: a4d8cda2-bc9b-4fb4-aa0d-23c31b4fc60b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 25f8b13cbf0aa6e505c7fe22980e5bce3a39a2e4
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 878c5ab003861b2e8942e39a2679be9464ae7b9a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198730"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819270"
 ---
 # <a name="plan-for-bitlocker-management"></a>BitLocker 관리 플랜
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!-- 3601034 -->
 
@@ -71,7 +70,7 @@ Windows 10, Windows 8.1 또는 Windows 7을 실행 하는 관리 되는 Windows 
 
 사용자가 BitLocker로 암호화 된 장치의 잠금을 해제 하기 위해 단일 사용 키로 도움을 줄 수 있습니다. 이 키를 사용 하면 장치에 대 한 새 키가 생성 됩니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 1910 버전에서 BitLocker 관리 정책을 만들려면 Configuration Manager **전체 관리자** 역할이 필요 합니다.
 

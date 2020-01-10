@@ -10,17 +10,16 @@ ms.assetid: ab7626ae-d4bf-4ca6-ab25-c61f96800a02
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3162a1477fde3996582dfbe4ab011acfa1e0c4b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1f0d8ac635d514e750584126458bfde6b5fc24ee
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74161668"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819916"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-microsoft-updates"></a>Microsoft 업데이트에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Microsoft 업데이트에서 정의 업데이트를 다운로드하도록 선택하면 클라이언트는 맬웨어 방지 정책 대화 상자의 **보안 인텔리전스** 섹션에서 정의된 간격마다 Microsoft 업데이트 사이트를 확인합니다.
 

@@ -10,17 +10,16 @@ ms.assetid: a0767664-fd60-46a8-9da5-86cc431ce53c
 manager: dougeby
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b207d0c210aa25489d67a5a551bf795e86c1582b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c38ed629e606d3f891a6473866d0e8eda40eade1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500243"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818896"
 ---
 # <a name="add-software-updates-to-an-update-group"></a>업데이트 그룹에 소프트웨어 업데이트 추가  
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
  소프트웨어 업데이트 그룹을 활용하면 현재의 환경에서 소프트웨어 업데이트를 효과적으로 구성할 수 있습니다. 소프트웨어 업데이트를 소프트웨어 업데이트 그룹에 수동으로 추가하거나, ADR을 사용하여 소프트웨어 업데이트를 소프트웨어 업데이트 그룹에 자동으로 추가할 수 있습니다. 또한 소프트웨어 업데이트 그룹을 수동으로 배포하거나, ADR을 사용하여 소프트웨어 업데이트 그룹을 자동으로 배포할 수 있습니다. 소프트웨어 업데이트 그룹을 배포한 후 이 그룹에 새 소프트웨어 업데이트를 추가할 수 있으며 그 후 Configuration Manager는 새 소프트웨어 업데이트를 자동으로 배포합니다. 새로운 또는 기존 소프트웨어 업데이트 그룹에 소프트웨어 업데이트를 추가하려면 다음 절차를 따르세요.  
 

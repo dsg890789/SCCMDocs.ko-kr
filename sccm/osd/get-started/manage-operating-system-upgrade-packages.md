@@ -10,17 +10,16 @@ ms.assetid: b9b22655-b8c1-461f-8047-3a7e906f647a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1a57bc986d4f980b7a88e1ebc9f91b8f0301992
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 49c402bcf88bbfde20acb5e52db5a520aa794a4d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661076"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821293"
 ---
 # <a name="manage-os-upgrade-packages-with-configuration-manager"></a>Configuration Manager에서 OS 업그레이드 패키지 관리
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 OS 업그레이드 패키지에는 컴퓨터의 기존 OS를 업그레이드하는 데 사용되는 Windows 설치 원본 파일이 포함되어 있습니다. 이 문서에는 OS 업그레이드 패키지를 추가, 배포 및 서비스하는 방법을 설명합니다.
 
@@ -58,7 +57,7 @@ OS 업그레이드 패키지를 사용하려면 먼저 Configuration Manager 사
 
     - **버전**: 선택적 버전 식별자입니다. 이 속성은 업그레이드 패키지의 OS 버전이 아니어도 됩니다. 패키지에 대한 조직의 버전인 경우가 많습니다.  
 
-    - **주석**: 선택적 간략한 설명입니다.  
+    - **설명**: 선택적 간략한 설명입니다.  
 
 5. 마법사를 완료합니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 47118499-3d26-4c25-bfde-b129de7eaa59
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546cf0178993a364a4e1121e8236372162ab8481
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f109e4ea4bee4a1de767508d62bc3f080d24f625
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892307"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819604"
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn"></a>앱별 VPN에 대한 PFN(패키지 패밀리 이름) 찾기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 앱별 VPN을 구성할 수 있도록 두 가지 방법으로 PFN을 찾을 수 있습니다.
@@ -69,10 +68,10 @@ OneNote에 대해 검색된 정보는 다음과 같습니다.
 
 
 
-## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>앱이 컴퓨터에 설치되어 있지 않은 경우 PFN 찾기
+## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>컴퓨터에 설치되어 있지 않은 앱에 대한 PFN 찾기
 
 1. [https://www.microsoft.com/en-us/store/apps](https://www.microsoft.com/store/apps ) 로 이동
-2. 검색 창에 앱의 이름을 입력합니다. 이 예제에서는 OneNote를 검색합니다.
+2. 검색 표시줄에 앱의 이름을 입력합니다. 이 예제에서는 OneNote를 검색합니다.
 3. 앱에 대한 링크를 클릭합니다. 액세스하는 URL의 끝에 일련의 문자가 있습니다. 이 예제에서 URL은 다음과 같습니다. `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`
 4. 다른 탭에서 다음 URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`를 붙여넣어 `<app id>`를 https://www.microsoft.com/store/apps 에서 얻은 앱 ID로 대체합니다(3단계에서 URL의 끝에 있는 일련의 문자). 이 OneNote 예제에서는 `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`를 붙여넣습니다.
 

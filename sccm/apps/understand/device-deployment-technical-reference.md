@@ -10,17 +10,16 @@ ms.assetid: 4e62b04d-fe56-42ed-87dc-e673cf061d52
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 608f1442990f5b202cd4449d46a69c1102e99723
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d4a5da90d807601fbbc7d29de225f04cd944df9f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74823363"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825288"
 ---
 # <a name="application-deployment-for-device-collections"></a>장치 컬렉션에 대 한 응용 프로그램 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 응용 프로그램을 장치 컬렉션에 배포 하는 경우 해당 정책은 배포 목적에 관계 없이 컬렉션에 있는 모든 장치를 대상으로 합니다. 이 문서에서는 클라이언트에서 정책 다운로드 및 배포를 처리 하는 방법을 설명 합니다.
 

@@ -10,17 +10,16 @@ ms.assetid: fc497a8a-3c54-4529-8403-6f6171a21c64
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a17725ec45ab1938bfb7eff47723739578e6df0b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3910bcb99c0718044f5bb584b8860e00f67be8ad
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74814966"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821174"
 ---
 # <a name="plan-for-automating-tasks-in-configuration-manager"></a>Configuration Manager에서 작업 자동화 계획
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 환경에서 작업을 자동화하는 작업 순서를 만들 수 있습니다. 이러한 작업은 참조 컴퓨터에서 OS를 캡처하는 것부터 하나 이상의 대상 컴퓨터에 OS를 배포하는 것까지 다양합니다. 작업 순서의 각 단계에는 작업 순서의 작업이 정의되어 있습니다. 작업 순서가 실행될 때 작업 순서는 각 단계의 작업을 로컬 시스템 컨텍스트의 명령줄 수준에서 수행합니다. 이것은 작업 순서가 사용자 개입 없이 완전히 자동화되어 실행됨을 의미합니다.
 

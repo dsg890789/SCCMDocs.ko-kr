@@ -10,17 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 04536d51-3bf7-45e5-b4af-36ceed10583d
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d01e01bf8318e5d4016420044a5f2f49c9b6965c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 33a87217c7dc2e2054758fe62388f5fbc9090296
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65673367"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818828"
 ---
 # <a name="deploy-software-updates"></a>소프트웨어 업데이트 배포  
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 소프트웨어 업데이트 배포 단계는 소프트웨어 업데이트를 배포하는 프로세스입니다. 소프트웨어 업데이트를 배포하는 방법에 관계없이 사이트는 다음을 수행합니다.
 - 소프트웨어 업데이트 그룹에 업데이트 추가

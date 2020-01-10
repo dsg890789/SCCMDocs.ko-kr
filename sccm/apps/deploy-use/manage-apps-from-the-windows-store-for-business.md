@@ -10,13 +10,12 @@ ms.assetid: 8cdb22a6-72d7-41f5-9bed-c098b1bcf675
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1431e6854786d42194d58e8155e2282445f9e0de
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7b05c714a6ffadeb10a188b8a2bc270e2baff7cc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74814316"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815649"
 ---
 # <a name="manage-apps-from-the-microsoft-store-for-business-and-education-with-configuration-manager"></a>Configuration Manager를 사용하여 비즈니스 및 교육용 Microsoft Store에서 앱 관리
 
@@ -26,7 +25,7 @@ ms.locfileid: "74814316"
 
 비즈니스 및 교육용 Microsoft Store는 두 가지 유형의 앱을 지원 합니다.
 
-- **온라인**: 이 라이선스 유형에서는 사용자와 디바이스가 스토리지에 연결하여 앱과 해당 라이선스를 가져와야 합니다. Windows 10 장치는 Azure Active Directory (Azure AD) 조인 되거나 하이브리드 Azure AD에 가입 되어 있어야 합니다.  
+- **온라인**: 이 라이선스 유형에서는 사용자와 디바이스가 저장소에 연결하여 앱과 해당 라이선스를 가져와야 합니다. Windows 10 장치는 Azure Active Directory (Azure AD) 조인 되거나 하이브리드 Azure AD에 가입 되어 있어야 합니다.  
 
 - **오프라인**: 이 유형을 사용하면 캐시 앱 및 라이선스를 온-프레미스 네트워크 내에서 직접 배포할 수 있습니다. 디바이스를 스토어에 연결하거나 인터넷에 연결할 필요가 없습니다.
 
@@ -85,7 +84,7 @@ Configuration Manager 클라이언트가 있고 Windows 10 버전 1607 이하를
 
 - 사용자는 스토어에서 설치를 완료해야 합니다.  
 
-- Configuration Manager 콘솔에서 앱 배포 상태는 "Microsoft Store 앱이 클라이언트 PC에서 열렸으며 사용자가 설치를 완료하기를 기다리고 있습니다."라는 오류를 표시하고 실패했다고 보고합니다.  
+- Configuration Manager 콘솔에서 앱 배포 상태가 실패하고 다음 오류를 보고합니다. “Microsoft Store 앱이 클라이언트 PC에서 열렸으며 사용자가 설치를 완료하기를 기다리고 있습니다.”  
 
 다음 애플리케이션 평가 주기에서:  
 
@@ -125,9 +124,9 @@ Azure Services 마법사의 **앱** 페이지에서, 먼저 **Azure 환경** 및
 
 Azure Services 마법사의 **구성** 페이지에서 다음 정보를 지정합니다.  
 
-- **비즈니스용 Microsoft Store 앱 콘텐츠 스토리지의 경로**: 공유 네트워크 경로를 지정합니다(폴더 포함). 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 애플리케이션을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
+- **비즈니스용 Microsoft 스토어 앱 콘텐츠 스토리지 경로**: 폴더를 포함한 공유 네트워크 경로를 지정합니다. 예: `\\server\share\folder` 사이트 서버가 스토어와 동기화되면 콘텐츠가 이 위치에 캐시됩니다. Configuration Manager에서 애플리케이션을 만들면 사이트 서버가 이 로컬 캐시의 앱 콘텐츠를 사이트의 콘텐츠 라이브러리로 복사합니다.  
 
-- **언어 선택**: 스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 애플리케이션에 존재해야 합니다.
+- **언어 선택**:  스토어에서 동기화할 언어를 선택하고 소프트웨어 센터의 사용자에게 표시합니다. 예를 들어 사용자가 독일어로 Windows를 구성하면 소프트웨어 센터는 스토어 앱용 독일어 문자열을 표시합니다. 이 동작을 실행하려면 언어가 동기화되고 특정 애플리케이션에 존재해야 합니다.
 
 - **기본 언어**: 사용자의 언어를 사용할 수 없는 경우 사용할 기본 언어를 선택합니다.  
 

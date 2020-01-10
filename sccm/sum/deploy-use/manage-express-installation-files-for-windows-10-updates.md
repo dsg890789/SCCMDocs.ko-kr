@@ -10,13 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b8d8af88-e8ac-4deb-921b-975e2d2afd80
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 938d6f04a875e443286b3440cd06e3e537b8820d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e7daf0de68fcbcd9e05debe67418b99d3974290c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73622993"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818777"
 ---
 # <a name="manage-express-installation-files-for-windows-10-updates"></a>Windows 10 업데이트용 빠른 설치 파일 관리
 

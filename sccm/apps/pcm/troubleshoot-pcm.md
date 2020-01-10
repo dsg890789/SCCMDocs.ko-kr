@@ -10,17 +10,16 @@ ms.assetid: cb616925-bb94-4b7c-a867-b3d95aef4d5e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 475f80dc4d5841eb014b8f1ecb4d23ffdb699944
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a18a41a192845333bc8354516d65f379f0d81e12
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339189"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817298"
 ---
 # <a name="troubleshoot-package-conversion-manager"></a>Package Conversion Manager 문제 해결
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1357861-->
 
@@ -47,7 +46,7 @@ SMS 공급자가 제대로 작동하지 않으면 Package Conversion Manager를 
 
 - **수동**: **수정 및 변환** 기능을 사용하여 패키지를 변환하려면 먼저 패키지에 일부 추가 또는 변경이 있어야 합니다.  
 
-- **적용할 수 없음**: 패키지가 변환에 적합하지 않습니다. 이러한 패키지의 경우 문제를 해결하거나 계속해서 패키지로 배포할 수 있습니다.  
+- **해당 없음**: 패키지가 변환에 적합하지 않습니다. 이러한 패키지의 경우 문제를 해결하거나 계속해서 패키지로 배포할 수 있습니다.  
 
 - **오류**: 패키지에 오류가 있습니다. 분석하고 변환하려면 먼저 수동으로 이러한 오류를 수정합니다.  
 

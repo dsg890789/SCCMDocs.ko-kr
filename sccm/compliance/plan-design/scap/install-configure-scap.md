@@ -10,17 +10,16 @@ ms.assetid: f53b484b-5123-48f0-be2f-4e30318f3d39
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c36f2380a93d6da27651f1aa3a4894e25b3bce39
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3da7e68f11226957348bd151a14d092096432cea
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890713"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818250"
 ---
 # <a name="install-and-configure-the-scap-extensions-for-configuration-manager"></a>Configuration Manager용 SCAP 확장 설치 및 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 [인프라를 준비](/sccm/compliance/plan-design/scap/about-scap#bkmk_prepare)한 후에는 이 프로세스를 실행할 컴퓨터에서 Configuration Manager용 SCAP 확장을 설치 및 구성할 수 있습니다.
 

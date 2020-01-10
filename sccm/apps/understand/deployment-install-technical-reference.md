@@ -10,17 +10,16 @@ ms.assetid: 2af4f9c3-16b8-4691-a59d-aea6241d288e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1ba3702b45594be3047e10ee69f99eaf2391805
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 09d86e57d5bef1fccf3220be1ed79811985fe1fc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74823373"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818369"
 ---
 # <a name="application-installation"></a>애플리케이션 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 계속 하기 전에 [응용 프로그램 배포 클라이언트 구성 요소](/sccm/apps/understand/client-components-technical-reference) 를 검토 하 여 DCM 및 CI 에이전트 작업 처리를 이해 하세요.
 

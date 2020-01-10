@@ -10,17 +10,16 @@ ms.assetid: e63f2394-6eb1-4a33-bec5-8377fc62a34e
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fadbdaf8dc836e2f468aa0f8a82408d718606bc1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 63a8509267f6a16dd272a23ce46ae52696ec2733
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892324"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819763"
 ---
 # <a name="configure-custom-client-settings-for-endpoint-protection"></a>Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 절차에서는 계층 구조의 디바이스 컬렉션에 배포할 수 있는 Endpoint Protection에 대한 사용자 지정 클라이언트 설정을 구성합니다.
 
@@ -64,7 +63,7 @@ Configuration Manager OS 배포의 디스크 이미지 원본으로 사용하려
 다음 절차에 따라 참조 컴퓨터에 Endpoint Protection 클라이언트를 설치하고 구성할 수 있습니다.
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 다음 목록에는 참조 컴퓨터에 Endpoint Protection 클라이언트 소프트웨어를 설치하는 데 필요한 필수 구성 요소가 포함되어 있습니다.
 

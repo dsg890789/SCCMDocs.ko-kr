@@ -10,17 +10,16 @@ ms.assetid: b8e9dbfe-a046-4e06-8dec-cf0bc41ba095
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59a2a1873a712184430cfe6c499b7d8b1067b207
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6ef441f8fe85f8d88b71eca13455e0cba5271994
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74823343"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817230"
 ---
 # <a name="application-deployment-policy-for-users"></a>사용자에 대 한 응용 프로그램 배포 정책
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 응용 프로그램을 사용자 컬렉션에 배포 하는 경우 배포에 대 한 정책은 필수 배포에 대해서만 생성 됩니다. 사용 가능한 배포의 경우 사용자가 소프트웨어 센터에서 응용 프로그램을 설치 하려고 할 때 정책이 만들어집니다. 이 문서에서는 필수 배포 및 사용 가능한 배포에 대 한 배포 프로세스를 설명 합니다.
 

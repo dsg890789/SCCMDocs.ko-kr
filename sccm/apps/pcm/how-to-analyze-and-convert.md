@@ -10,17 +10,16 @@ ms.assetid: f3bf1737-827d-48fa-8bb1-f48fe71afe0c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50ec232c9f5b007ef7a139cbe7894c333b6eed63
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3a7e038ea64e638796dbed3f62444961d9968db8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62199259"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817468"
 ---
 # <a name="how-to-analyze-and-convert-packages-with-package-conversion-manager"></a>Package Conversion Manager를 사용하여 패키지를 분석하고 변환하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1357861-->
 
@@ -50,7 +49,7 @@ ms.locfileid: "62199259"
 
     - **수동**: [패키지를 수정하고 변환하는 방법](#bkmk_fix)
 
-    - **적용할 수 없음**: 이 패키지에는 필요한 콘텐츠 또는 프로그램이 누락되어 있습니다. 누락된 콘텐츠나 프로그램을 추가하고 분석을 다시 시도합니다. 또는 변환되지 않은 상태 그대로 두고 계속 패키지로 배포합니다.  
+    - **해당 없음**: 이 패키지에는 필요한 콘텐츠 또는 프로그램이 누락되어 있습니다. 누락된 콘텐츠나 프로그램을 추가하고 분석을 다시 시도합니다. 또는 변환되지 않은 상태 그대로 두고 계속 패키지로 배포합니다.  
 
 
 

@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 134c5b50-edeb-4d60-aaca-944d26deb9ba
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bd379017be114a9599f9519b3cb56ee0c3f22470
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f1cca789f99fc980ba154d0b3fbad867a7ab1ddc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662321"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818964"
 ---
 # <a name="troubleshoot-bitlocker"></a>BitLocker 문제 해결
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서의 정보를 참조 하 여 Configuration Manager의 BitLocker 관리 문제를 해결할 수 있습니다.
 
