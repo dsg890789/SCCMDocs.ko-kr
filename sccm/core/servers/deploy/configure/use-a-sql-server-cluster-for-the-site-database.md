@@ -10,17 +10,16 @@ ms.assetid: d09a82c6-bbd1-49ca-8ffe-e3ce87b85d33
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d07005c63f0d69d57d24eac163b67c34529658cf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: af40e75bdeb49279e942bfdd4311fcdc38124f0a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62215683"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798319"
 ---
 # <a name="use-a-sql-server-cluster-for-the-site-database"></a>사이트 데이터베이스에 대해 SQL Server 클러스터 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 SQL Server 장애 조치 클러스터를 사용하여 Configuration Manager 사이트 데이터베이스를 호스트할 수 있습니다. 클러스터는 장애 조치(failover) 지원을 제공하고 사이트 데이터베이스의 안정성을 개선합니다. 그러나 추가적인 처리 또는 부하 분산 이점은 제공하지 않습니다. 또한 SQL Server 장애 조치 클러스터에서는 공유 스토리지를 사용하고 단일 실패 지점을 소개합니다. 사이트 서버가 사이트 데이터베이스에 연결하기 전에 SQL Server 클러스터의 활성 노드를 찾아야 하므로 성능이 저하될 수도 있습니다.  
 
@@ -50,7 +49,7 @@ Configuration Manager 설치 중에 Windows 볼륨 섀도 복사본 서비스 �
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 다음 필수 조건에 유의하세요.  
 

@@ -10,19 +10,18 @@ ms.assetid: 32e2d6b9-148f-45e2-8083-98c656473f82
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 002bb488501bc3ec152f58aa22b08fec61216a9f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 50112b1ed19b23e355bfd64c4320be8d84802359
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659954"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75796101"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
 <!--1358456-->
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 이 사이트는 일반적으로 매주 이 데이터를 수집합니다. 버전 1806부터 CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화합니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다.
 
@@ -32,7 +31,7 @@ Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데
  > 일부 보안 소프트웨어는 c:\windows\ccm\scriptstore에서 실행되는 스크립트를 차단할 수 있습니다. 이 기능은 CMPivot 쿼리가 성공적인 실행되지 않도록 막을 수 있습니다. 일부 보안 소프트웨어는 CMPivot PowerShell을 실행할 때 감사 이벤트 또는 경고를 생성할 수도 있습니다.
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 
@@ -41,7 +40,7 @@ CMPivot을 사용하려면 다음 구성 요소가 필요합니다.
 - 대상 클라이언트에는 PowerShell 버전 4가 필요합니다.
 
 - 다음 엔터티에 대한 데이터를 수집하기 위해 대상 클라이언트는 PowerShell 버전 5.0이 필요합니다.  
-  - 관리자
+  - Administrators
   - 연결
   - IPConfig
   - SMBConfig
@@ -115,7 +114,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 
        - **모두 쿼리**: 모든 속성을 포함하여 이 엔터티에 대한 쿼리를 실행합니다. 이 작업을 사용하여 단일 엔터티에 대해 신속하게 쿼리합니다.  
 
-       - **디바이스별 쿼리**: 이 엔터티에 대한 쿼리를 실행하고 결과를 그룹화합니다. 예를 들면 `Disk | summarize dcount( Device ) by Name`  
+       - **디바이스별 쿼리**: 이 엔터티에 대한 쿼리를 실행하고 결과를 그룹화합니다. 예, `Disk | summarize dcount( Device ) by Name`  
 
     - 엔터티를 확장하여 각 엔터티에 사용할 수 있는 특정 속성을 봅니다. 속성을 두 번 클릭하여 현재 커서 위치에서 쿼리에 추가합니다.  
 
@@ -187,7 +186,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 
    - 현재 컬렉션입니다. `PM_Team_Machines`  
 
-   - 결과 창에서 행의 총 수입니다. 예를 들면 `1 objects`  
+   - 결과 창에서 행의 총 수입니다. 예, `1 objects`  
 
 
 
@@ -335,7 +334,7 @@ CMPivot을 사용하여 모든 하드웨어 인벤토리 클래스를 쿼리합�
 
 결과 테이블 또는 차트의 데이터 색 채도는 라이브 데이터인지 캐시된 데이터인지를 나타냅니다. 예를 들어, 진한 파랑은 온라인 클라이언트의 실시간 데이터입니다. 연한 파랑은 캐시된 데이터입니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 ``` Kusto
 LogicalDisk
@@ -491,7 +490,7 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 
 #### <a name="scalar-operators"></a>스칼라 연산자
 
-|연산자| 설명|예|
+|연산자| 설명|예제|
 |-----|-----|-----|
 | + | 추가| `2 + 1, now() + 1d`|
 | - |  빼기| `2 - 1, now() - 1d`|
@@ -501,14 +500,14 @@ CAS에서 CMPivot을 실행하려면 SQL 또는 공급자가 동일한 머신에
 
 #### <a name="aggregation-functions"></a>집계 함수
 
-|기능| 설명|
+|함수| 설명|
 |-----|-----|
 | percentile()| Expr로 정의한 모집단에 대해 지정된 가장 가까운 백분위수의 추정치를 반환합니다.|
 | sumif() | 조건자가 true로 평가되는 Expr의 합계를 반환합니다.|
 
 #### <a name="scalar-functions"></a>스칼라 함수
 
-|기능| 설명|
+|함수| 설명|
 |-----|-----|
 | case()| 조건자 목록을 평가하여 조건자를 충족하는 첫 번째 결과 식을 반환합니다. |
 | iff() | 첫 번째 인수를 평가하고 조건자가 true로 평가되는지(두 번째) 아니면 false(세 번째)로 평가되는지 여부에 따라 두 번째 또는 세 번째 인수의 값을 반환합니다.|
@@ -646,7 +645,7 @@ ProcessModule('powershell')
 
 ### <a name="bkmk_AadStatus"></a> AadStatus
 
-이 엔터티를 사용하여 장치에서 현재 Azure Active Directory ID 정보를 가져올 수 있습니다.
+이 엔터티를 사용하여 디바이스에서 현재 Azure Active Directory ID 정보를 가져올 수 있습니다.
 
 ``` Kusto
 AadStatus
@@ -679,7 +678,7 @@ Configuration Manager 콘솔 외부에서 CMPivot을 사용하는 경우 Configu
 
 ### <a name="bkmk_Other"></a> 기타 향상된 기능
 
-- 새로운 `like` 연산자를 사용하여 정규식 형식 쿼리를 실행할 수 있습니다. 예:<!--3056858-->
+- 새로운 `like` 연산자를 사용하여 정규식 형식 쿼리를 실행할 수 있습니다. 예를 들면 다음과 같습니다.<!--3056858-->
   
    ```kusto
    //Find BIOS manufacture that contains any word like Micro, such as Microsoft
@@ -695,7 +694,7 @@ Configuration Manager 콘솔 외부에서 CMPivot을 사용하는 경우 Configu
 
 - **File()** 엔터티가 숨겨진 파일 및 시스템 파일에 대한 정보를 수집하도록 업데이트되었으며 MD5 해시를 포함합니다. MD5 해시는 SHA256 해시만큼 정확한 것은 아니지만 대부분의 맬웨어 공지에서 일반적으로 보고되는 해시입니다.  
 
-- 쿼리에 주석을 추가할 수 있습니다.<!-- 5431463 --> 이 동작은 쿼리를 공유하는 경우에 유용합니다. 예:
+- 쿼리에 주석을 추가할 수 있습니다.<!-- 5431463 --> 이 동작은 쿼리를 공유하는 경우에 유용합니다. 예를 들면 다음과 같습니다.
 
     ``` Kusto
     //Get the top ten devices sorted by user
@@ -705,7 +704,7 @@ Configuration Manager 콘솔 외부에서 CMPivot을 사용하는 경우 Configu
 
 - CMPivot은 마지막 사이트에 자동으로 연결합니다.<!-- 5420395 --> CMPivot을 시작한 후 필요한 경우 새 사이트에 연결할 수 있습니다.
 
-- **내보내기** 메뉴에서 **클립보드에 대한 쿼리 링크**로 새로운 옵션을 선택합니다.<!-- 5431577 --> 이 작업을 수행하면 링크가 다른 사용자와 공유할 수 있는 클립보드에 복사됩니다. 예:
+- **내보내기** 메뉴에서 **클립보드에 대한 쿼리 링크**로 새로운 옵션을 선택합니다.<!-- 5431577 --> 이 작업을 수행하면 링크가 다른 사용자와 공유할 수 있는 클립보드에 복사됩니다. 예를 들면 다음과 같습니다.
 
     `cmpivot:Ly8gU2FtcGxlIHF1ZXJ5DQpPcGVyYXRpbmdTeXN0ZW0NCnwgc3VtbWFyaXplIGNvdW50KCkgYnkgQ2FwdGlvbg0KfCBvcmRlciBieSBjb3VudF8gYXNjDQp8IHJlbmRlciBiYXJjaGFydA==`
 

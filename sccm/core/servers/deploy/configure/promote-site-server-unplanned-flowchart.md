@@ -10,17 +10,16 @@ ms.assetid: f3df18c2-99eb-4606-a3ef-db31374af602
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 586ded5ad185513360c0087601d1966d9333ef48
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a4da4dbbb4fbec585f80171d929393c868c32478
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62211528"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798525"
 ---
 # <a name="flowchart---promote-site-server-unplanned"></a>순서도 - 사이트 서버 승격(계획되지 않음)
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 순서도 다이어그램은 활성 모드의 현재 사이트 서버가 오프라인 상태일 때 수동 모드의 사이트 서버가 활성 모드의 사이트 서버로 승격되는 프로세스를 보여줍니다. 이 예제에서는 활성 모드의 현재 사이트 서버가 완전히 작동되지 않습니다. 예를 들어 네트워크에서 연결이 끊어졌거나 전원이 꺼졌습니다. 자세한 내용은 다음 아티클을 참조하세요.  
 - [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)  

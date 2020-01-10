@@ -10,17 +10,16 @@ ms.assetid: 1a2a9b48-a95b-4643-b00c-b3079584ae2e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 433ccd79363f53304bf9822846de19723397eaa2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 69898bec1ebc19021ff07befe3e45c51e2343187
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658458"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824829"
 ---
 # <a name="prerequisites-for-deploying-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 사용 환경에 Configuration Manager 클라이언트를 배포할 경우 다음과 같은 외부 종속성과 제품 내 종속성이 있습니다. 또한, 각 클라이언트 배포 방법마다 클라이언트를 성공적으로 설치하기 위해 충족해야 할 자체 종속성이 있습니다.  
 

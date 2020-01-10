@@ -6,24 +6,23 @@ ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 349b2a69-af46-481f-afb2-24d98774e852
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 65e166d599574f1105f983096a50f34571c85047
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 1ee89e46f9bd780fe724a5b6092b4b9aa16ecb1c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75197982"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825594"
 ---
 # <a name="desktop-analytics-log-collector"></a>Desktop Analytics 로그 수집기
 
 Configuration Manager 버전 1906부터 Configuration Manager 설치 디렉터리에서 **DesktopAnalyticsLogsCollector.ps1** 도구를 사용하여 Desktop Analytics 디바이스 등록 문제를 해결할 수 있습니다. 이 도구는 몇 가지 기본적인 문제 해결 단계를 실행하고 관련 로그를 단일 작업 디렉터리로 수집합니다. 이 콘텐츠를 Microsoft 지원과 공유할 수 있습니다.
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - Windows 10, Windows 8.1 또는 Windows 7 서비스 팩 1을 실행하는 Desktop Analytics 클라이언트
 
@@ -124,7 +123,7 @@ DesktopAnalyticsLogsCollector.ps1
 
 스크립트가 *로그 파일*에 쓸 수 있도록 설정하면 작업 폴더에 하나가 생성됩니다. 예: **M365AnalyticsLogs_ yy_MM_dd_HH_mm_ss.txt**.
 
-스크립트는 작업 폴더에 다른 *진단 파일*도 생성합니다. 예:
+스크립트는 작업 폴더에 다른 *진단 파일*도 생성합니다. 예를 들면 다음과 같습니다.
 
 - `installedKBs.txt`: 디바이스에 설치된 Windows 업데이트 목록
 - `appcompat`: 애플리케이션 호환성 데이터

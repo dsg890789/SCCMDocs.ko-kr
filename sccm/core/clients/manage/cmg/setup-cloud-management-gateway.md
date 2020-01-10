@@ -10,17 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b57a4c63da20cefb7b247f99a97dbba0ec91d9e8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 238dcbadd00322dce57bbf06f5a1787f9b148d20
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71343834"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824523"
 ---
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>Configuration Manager용 클라우드 관리 게이트웨이 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 프로세스에는 CMG(클라우드 관리 게이트웨이)를 설정하는 데 필요한 단계가 포함됩니다.
 

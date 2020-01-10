@@ -10,17 +10,16 @@ ms.assetid: 65c88e54-3574-48b0-a127-9cc914a89dca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb4efaf8fb424ee4f6af221ad5316d8fd03f8aa0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2147acef5c5a9a2719ee5ee84a36036187960406
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68712588"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799678"
 ---
 # <a name="the-content-library-in-configuration-manager"></a>Configuration Manager의 콘텐츠 라이브러리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 콘텐츠 라이브러리는 Configuration Manager에서 콘텐츠의 단일 인스턴스 저장소입니다. 사이트에서는 배포하는 콘텐츠의 결합된 본문 전체 크기를 줄이기 위해 사용합니다. 콘텐츠 라이브러리는 소프트웨어 업데이트, 애플리케이션 및 OS 배포와 같은 소프트웨어 배포를 위한 모든 콘텐츠 파일을 저장합니다.  
 
@@ -86,7 +85,7 @@ Configuration Manager는 다음 경우에 중앙 관리 사이트에서 콘텐�
 >
 > 콘텐츠 라이브러리를 패키지 원본과 동일한 스토리지 볼륨으로 이동하는 경우 이 볼륨을 데이터 중복 제거용으로 표시할 수 없습니다. 콘텐츠 라이브러리는 데이터 중복 제거를 지원하지만, 패키지 원본 볼륨은 데이터 중복 제거를 지원하지 않습니다. 자세한 내용은 [데이터 중복 제거](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmmk_datadedup)를 참조하세요.<!--SCCMDOcs issue #831-->  
 
-### <a name="prerequisites"></a>필수 구성 요소  
+### <a name="prerequisites"></a>전제 조건  
 
 - 사이트 서버 컴퓨터 계정에 콘텐츠 라이브러리를 이동하는 네트워크 경로에 대한 **모든 권한**이 필요합니다. 이 사용 권한은 공유 및 파일 시스템 둘 다에 적용됩니다. 원격 시스템에 설치된 구성 요소가 없습니다.
 

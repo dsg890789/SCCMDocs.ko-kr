@@ -6,17 +6,16 @@ ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 4cde43d1-9b09-4601-b389-0776de451b4e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0e90a06b956c39cb7a473af87cdfca0f722122ff
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 35b417b3909a411b2f44cbfe7aa84f9ccbbd874d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72172636"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792443"
 ---
 # <a name="support-center-onetrace-preview"></a>지원 센터 OneTrace(미리 보기)
 
@@ -41,7 +40,7 @@ OneTrace는 다음과 같은 여러 로그 파일 형식에 사용할 수 있습
 - Windows 10의 Windows 업데이트 ETW 로그 파일
 - Windows 7 및 Windows 8.1의 Windows 업데이트 로그 파일
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - .NET Framework 버전 4.6 이상
 
@@ -49,7 +48,7 @@ OneTrace는 다음과 같은 여러 로그 파일 형식에 사용할 수 있습
 
 OneTrace는 지원 센터와 설치됩니다. `cd.latest\SMSSETUP\Tools\SupportCenter\SupportCenterInstaller.msi` 경로에서 사이트 서버의 지원 센터 설치 관리자를 찾습니다.
 
-기본적으로 OneTrace 애플리케이션은 `"C:\Program Files (x86)\Configuration Manager Support Center\CMPowerLogViewer.exe`에 설치됩니다.
+기본적으로 OneTrace 애플리케이션은 `C:\Program Files (x86)\Configuration Manager Support Center\CMPowerLogViewer.exe`에 설치됩니다.
 
 > [!Note]  
 > 지원 센터 및 OneTrace는 WPF(Windows Presentation Foundation)를 사용합니다. 이 구성 요소는 Windows PE에서 사용할 수 없습니다. 계속 작업 순서 배포를 통해 부트 이미지에서 CMTrace를 사용합니다.  

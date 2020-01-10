@@ -10,13 +10,12 @@ ms.assetid: 5beb5564-2fdf-4f0a-8801-d0cec8214c43
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c34cf73133086f08cb390f39ab4fe715dfcefd2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 04bec9f24e003d026d19768bb6f712d7bbac80ee
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67550677"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816924"
 ---
 # <a name="paths-to-co-management"></a>공동 관리 경로
 

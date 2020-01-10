@@ -10,17 +10,16 @@ ms.assetid: b7332ed3-8003-454b-bb12-1fdf8721425c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35aff235d537efd738f29a0794f1fdb51a1fbb74
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e985f3df91d1e749c1baa6b490033237ff4e369c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62216746"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794866"
 ---
 # <a name="list-of-reports-in-configuration-manager"></a>Configuration Manager의 보고서 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 수행하려는 많은 보고 작업을 다루는 다양한 기본 제공 보고서를 제공합니다. 이러한 보고서에서 SQL 문을 사용하여 보고서를 직접 작성할 수도 있습니다.   
 
@@ -456,7 +455,7 @@ Configuration Manager에는 다음 보고서가 포함되어 있습니다. 보�
 
 
 
-## <a name="network"></a>네트워크  
+## <a name="network"></a>Network (네트워크)  
 
 **네트워크** 범주에는 다음과 같은 6개 보고서가 나열됩니다.
 

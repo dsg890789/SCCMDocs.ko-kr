@@ -10,17 +10,16 @@ ms.assetid: 5f38b726-dc00-433a-ba05-5b7dbb0d8e99
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f665ea8315266e89e5ed94918823fc1b97becea
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8373f529258d23a93ee0e57cd37d0f825a557f40
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62241710"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799746"
 ---
 # <a name="security-and-privacy-for-content-management-in-configuration-manager"></a>Configuration Manager의 콘텐츠 관리를 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에는 Configuration Manager의 콘텐츠 관리를 위한 보안 및 개인 정보가 포함되어 있습니다. 
 

@@ -10,13 +10,12 @@ ms.assetid: 1f4e26f7-42f2-40c8-80cf-efd405349c6c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82cfcab2add617f21d4d2bbec483ab8532e9b90b
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: a0ef45dfb62bb68dd1d18b8184d647d6b1181e29
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75197951"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791468"
 ---
 # <a name="monitor-connection-health"></a>연결 상태 모니터링
 
@@ -145,7 +144,7 @@ Configuration Manager가 성공적으로 디바이스를 구성했지만 Desktop
 
 해당 열은 디바이스가 Desktop Analytics와 통신할 수 있도록 해주는 [필수 구성 요소](/sccm/desktop-analytics/overview#prerequisites)에 해당합니다.
 
-![적절하게 등록된 디바이스 목록의 스크린샷](media/sccm-device-list-properly-enrolled.png)
+![적절하게 등록된 디바이스 목록의 스크린샷](media/device-list-properly-enrolled.png)
 
 디바이스를 선택하면 세부 정보 창에서 사용 가능한 속성의 전체 목록이 표시됩니다. 해당 속성을 디바이스 목록에 열로 추가할 수도 있습니다.
 

@@ -10,17 +10,16 @@ ms.assetid: 6372ff17-7f56-4d7b-a21b-87fb8bdd6d3a
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 533d055db3a68360c3c18d0e30e0718bf42c2a7c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c9eb586e9d2068f41e7e670fcbb62e8e175c5006
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500796"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826019"
 ---
 # <a name="role-based-administration-and-auditing-tool"></a>역할 기반 관리 및 감사 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 역할 기반 관리 및 감사 도구는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 다음 작업에 이 도구를 사용합니다.
 

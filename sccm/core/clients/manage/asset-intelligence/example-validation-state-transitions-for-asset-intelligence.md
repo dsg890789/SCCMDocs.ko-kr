@@ -10,17 +10,16 @@ ms.assetid: 6230a6e5-a1f6-459b-84f1-07fbde0e70f0
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2fb577fc4799dfb1e9c1d6585df4ed244ebfab5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1891cef51c1400f4cce66e635d351a536f31d413
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890297"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824744"
 ---
 # <a name="example-validation-state-transitions-for-asset-intelligence"></a>Asset Intelligence에 대한 유효성 검사 상태 전환 예제
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 Asset Intelligence 유효성 검사 상태는 고정된 것이 아니며 수행하는 관리 작업에서 변경하면 Asset Intelligence 카탈로그에 저장된 데이터에 영향을 줄 수 있습니다. 이 항목에서는 가능한 유효성 검사 상태 전환에 대한 예제를 제공합니다.
 

@@ -10,13 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.assetid: 9e68de6e-2b33-442b-b674-a382728d9529
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a662e768cf4657e0b0ef1889d6bd869d62c71efe
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 03e28fe65ad0afc022fd911b8fad1e6f0f080784
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74825631"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791965"
 ---
 # <a name="software-center-user-guide"></a>소프트웨어 센터 사용자 가이드
 
@@ -115,7 +114,7 @@ Windows 10 컴퓨터에서 소프트웨어 센터를 시작하는 가장 간단�
 **규정 준수 확인**을 선택하여 IT 관리자가 정의한 보안 정책을 기준으로 이 디바이스의 설정을 평가합니다.
 
 
-## <a name="options"></a>Options
+## <a name="options"></a>옵션
 
 이 컴퓨터의 추가 설정을 보려면 **옵션** 탭을 선택합니다.
 

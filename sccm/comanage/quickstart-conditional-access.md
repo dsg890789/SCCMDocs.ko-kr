@@ -10,13 +10,12 @@ ms.assetid: 4cf640b3-610c-4c3c-b966-c62e9f5654ff
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0930e2f02d2a99073944c61cfead6767530accbc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 172c3d210ca951f372752669a271649b7d2ad3dd
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70738223"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817111"
 ---
 # <a name="conditional-access-with-co-management"></a>공동 관리를 사용하는 조건부 액세스
 

@@ -6,17 +6,16 @@ ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 95ab8cbd-0807-4422-823a-f5f9314ba623
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 515f3ef86dff0d60f16aa908759e785a4c8e4e0b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1580f310acbeb11a55b6b53641694f97e8826a2e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957623"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793578"
 ---
 # <a name="sql-configuration"></a>SQL 구성
 

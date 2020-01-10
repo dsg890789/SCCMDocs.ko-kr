@@ -10,13 +10,12 @@ ms.assetid: 7ed389c3-a9ab-48ce-a5eb-27d52ee4fb94
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 776c79afea87523fb6da5c92d0b50f128af2a515
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 19f2eefca3c3a4148c4e4cd2f80fc5d210428129
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73623395"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825696"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>Configuration Manager를 Desktop Analytics와 연결하는 방법
 
@@ -44,7 +43,7 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
     > [!Tip]  
     > **Desktop Analytics Servicing** 노드에서 직접 서비스에 연결합니다. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **Desktop Analytics Servicing** 노드를 선택합니다. *Desktop Analytics를 처음 사용하시나요?* 상자에서 *Desktop Analytics 서비스에 연결*에 대한 두 번째 링크를 선택합니다.  
 
-2. Azure Services 마법사의 **Azure Services** 페이지에서 다음 설정을 구성합니다.  
+2. Azure 서비스 마법사의 **Azure 서비스** 페이지에서 다음 설정을 구성합니다.  
 
     - Configuration Manager의 개체 **이름**을 지정합니다.  
 

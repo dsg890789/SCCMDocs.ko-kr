@@ -6,18 +6,17 @@ ms.date: 10/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 3f09226c-4ca7-4e43-9ae8-5ee6e78e6bc2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 338ef88d4fa32767d9e4eb605a4ad800c11dbfce
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2e5ead90769d8fdacc28502852dccead7c2dbd52
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73142961"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825577"
 ---
 # <a name="ready-for-modern-desktop-retirement-faq"></a>최신 데스크톱 준비 완료 사용 중지 FAQ
 

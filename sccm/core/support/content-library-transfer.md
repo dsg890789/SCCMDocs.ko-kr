@@ -10,17 +10,16 @@ ms.assetid: 7d07bd0a-7012-47f7-8bc5-509a402915b7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee63a4eb7b3f0d575586b2e672f9440060c7f6f6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5331443febeaf7f25cc5f37557abeed407e85ec3
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65495807"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826070"
 ---
 # <a name="content-library-transfer-tool"></a>콘텐츠 라이브러리 전송 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 콘텐츠 라이브러리 전송 도구는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 이 도구는 한 디스크 드라이브에서 다른 디스크 드라이브로 콘텐츠를 전송합니다. 이 도구는 배포 지점 사이트 시스템에서 실행되도록 설계되었습니다. 또한 사이트 또는 원격 사이트 시스템과 함께 배치된 배포 지점을 지원합니다.  
 
@@ -37,7 +36,7 @@ ms.locfileid: "65495807"
 #### <a name="syntax"></a>구문 
 `ContentLibraryTransfer.exe –SourceDrive <drive letter of source drive> –TargetDrive <drive letter of destination drive>`
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 `ContentLibraryTransfer –SourceDrive E –TargetDrive G`
 
 

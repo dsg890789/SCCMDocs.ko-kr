@@ -10,17 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7304730b-b517-4c76-aadd-4cbd157dc971
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26ed933e94b3d5e4d66ce8006bcf3c4c2936dd8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f716a0019bacb1ac25082176e81c31d40f3bc437
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68535576"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824540"
 ---
 # <a name="security-and-privacy-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 아티클에는 Configuration Manager CMG(클라우드 관리 게이트웨이)에 대한 보안 및 개인 정보가 포함되어 있습니다. 자세한 내용은 [클라우드 관리 게이트웨이 계획](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)을 참조하세요.
 

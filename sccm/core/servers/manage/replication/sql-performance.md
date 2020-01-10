@@ -6,17 +6,16 @@ ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 9930a8a4-4d7f-47a4-bf6b-4c36d0ed5528
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b2f77f1bf8e1dd46d8ee9cd65c30f72c1f936bbd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d23bd728997d65e19684f3ff0493e817241186da
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957753"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793551"
 ---
 # <a name="sql-performance"></a>SQL 성능
 

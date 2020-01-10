@@ -10,17 +10,16 @@ ms.assetid: cd74e5f5-33f6-4566-8c9d-d6a93bfe71ed
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 238165dfe6822e05e64b725546837b3b4f0c496b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 45cc845a0a591c462203afabbbdc2ea35e174c6e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65498024"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798177"
 ---
 # <a name="language-packs-in-configuration-manager"></a>Configuration Manager의 언어 팩
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager의 언어 지원에 대한 기술적인 세부 정보를 제공합니다. Configuration Manager 사이트 서버 및 클라이언트는 언어 중립적인 것으로 간주됩니다. 중앙 관리 사이트와 기본 사이트에 **서버 언어 팩** 또는 **클라이언트 언어 팩**을 설치하여 표시 언어에 대한 지원을 추가합니다. 사이트를 설치하는 동안 사이트에서 지원할 서버 및 클라이언트 언어를 사용 가능한 언어 팩 파일에서 선택합니다.
  

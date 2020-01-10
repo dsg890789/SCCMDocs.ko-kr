@@ -10,13 +10,12 @@ ms.assetid: d07198cf-49bb-4712-8c63-063b4302cc11
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b60326a746768e7045104a571d05a085ac0bd2a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e5d2ca6139783ba6fbb362434dcbd7b9b6878d3e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72387112"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825713"
 ---
 # <a name="assets-in-desktop-analytics"></a>Desktop Analytics의 자산
 

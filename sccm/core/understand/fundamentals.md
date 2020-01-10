@@ -10,13 +10,12 @@ ms.assetid: cc4cdb35-f0b4-42b5-9cec-6431a8c30793
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04b64768227f6db87d8d8da1e0f83d6864a57121
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 12434ccd389aa566918dee624ea4dcdc1586d544
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661161"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792080"
 ---
 # <a name="fundamentals-of-configuration-manager"></a>Configuration Manager의 기본 항목
 

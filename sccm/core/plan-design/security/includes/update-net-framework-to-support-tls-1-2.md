@@ -4,13 +4,12 @@ ms.author: mstewart
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 12/13/2019
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f12f42583237d40a03f6969455e9751f6be6fff7
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 59e234d988612f3474de2c4f129cc3fab2941aa8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198937"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799258"
 ---
 <!-- ## Update and configure the .NET Framework to support TLS 1.2 Note: the heading in in the 2 articles (enable-tls-1-2-client & enable-tls-1-2-server) to better facilitate linking. -->
 

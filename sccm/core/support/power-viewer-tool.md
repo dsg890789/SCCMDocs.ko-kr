@@ -10,17 +10,16 @@ ms.assetid: 8143e3bf-d6bd-4c69-aec1-e6989cf2ecd9
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09b1cf553aaa5fd75dbf0f7500246263a9bed7a6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c58839778a17a139a53e8893104f7d54375143cb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500825"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792690"
 ---
 # <a name="power-viewer-tool"></a>전원 뷰어 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 전원 뷰어 도구는 [Configuration Manager 도구](/sccm/core/support/tools) 중 하나입니다. 이를 사용하여 Configuration Manager 클라이언트에서 전원 관리 기능의 상태를 봅니다.
 

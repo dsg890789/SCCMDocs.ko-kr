@@ -6,17 +6,16 @@ ms.date: 08/16/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 884d4864-950b-4139-b778-d5368e1f6ef2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 34bb53bf9819149c989996a950f3b13329e4eef3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5fda61f12bda1637392606848fcf818dfa765d63
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72386796"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825662"
 ---
 # <a name="how-to-reset-your-account"></a>계정을 다시 설정하는 방법
 
@@ -24,7 +23,7 @@ ms.locfileid: "72386796"
 
 사용자 환경에 Desktop Analytics를 설정했지만 온보딩 및 등록으로 시작하려는 경우 이 프로세스를 사용하여 계정을 다시 설정합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 **글로벌 관리자**만 Azure Portal에서 계정을 다시 설정할 수 있습니다.
 

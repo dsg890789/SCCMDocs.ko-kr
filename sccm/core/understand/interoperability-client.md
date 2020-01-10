@@ -10,17 +10,16 @@ ms.assetid: 600086d5-bd9e-4ac1-8ace-c7a62de80dc2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bff382c4252eb99f35bad0cca05352e23705104
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 289b4ce6c822c909cf4d68ebdf562522431ede77
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70109893"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792063"
 ---
 # <a name="use-the-configuration-manager-client-software-for-extended-interoperability-with-future-versions-of-a-current-branch-site"></a>이후 버전의 현재 분기 사이트와 확장된 상호 운용성을 위해 버Configuration Manager 클라이언트 소프트웨어 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*  
+*적용 대상: Configuration Manager(현재 분기)*  
 
 비즈니스 요구 사항으로 인해 일부 디바이스에서 Configuration Manager 클라이언트를 정기적으로 업데이트하지 못할 수도 있습니다. 예를 들어, 변경 관리 정책을 따라야 하거나 디바이스가 중요 업무용일 경우입니다. EIC(확장된 상호 운용성 클라이언트)라는 새 클라이언트를 장기간 사용을 위해 설치하여 이러한 요구를 수용할 수 있습니다. EIC는 키오스크 또는 POS 디바이스와 같이 자주 업데이트할 수 없는 특정 디바이스에만 사용됩니다. 대부분의 클라이언트를 위해 [자동 클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients-for-windows-computers#bkmk_autoupdate)를 계속 사용합니다.
 

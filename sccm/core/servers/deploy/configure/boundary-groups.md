@@ -10,17 +10,16 @@ ms.assetid: 5db2926f-f03e-49c7-b44b-e89b1a5a6779
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22645b08e3cb5f8b1200ab5c4e77b418ea74c8d8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 77d736aa8d4e00ce9eada0e0d6f37a00cb8d9d50
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74840594"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798978"
 ---
 # <a name="configure-boundary-groups-for-configuration-manager"></a>Configuration Manager의 경계 그룹 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 위치([경계](/sccm/core/servers/deploy/configure/boundaries))를 논리적으로 구성하면 인프라를 보다 쉽게 관리할 수 있습니다. 경계 그룹을 사용하려면 먼저 경계 그룹에 경계를 할당해야 합니다.
 
@@ -177,7 +176,7 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 
 작업 순서 로그 파일 **smsts.log**에는 배포 속성에 따라 사용하는 위치 원본의 우선 순위가 표시됩니다.
 
-### <a name="bkmk_bgoptions"> </a> 피어 다운로드를 위한 경계 그룹 옵션
+### <a name="bkmk_bgoptions"></a> 피어 다운로드를 위한 경계 그룹 옵션
 
 <!--1356193-->
 1806 버전부터 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 다음과 같은 추가 설정이 포함됩니다.  
@@ -262,7 +261,7 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 
 2시간 내에 원래 서버에 도달하지 못하면 클라이언트는 더 짧은 주기를 사용해서 새 소프트웨어 업데이트 지점에 대한 연결을 설정합니다. 이 동작을 통해 클라이언트는 잠재적인 소프트웨어 업데이트 지점의 확장 목록을 빠르게 검색할 수 있습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 경계 그룹 *A*의 소프트웨어 업데이트 지점을 **10**분 후에 대체하도록 구성합니다. 경계 그룹 *B*에 대해 동일한 설정을 **130**분으로 구성합니다. 경계 그룹 *Z*의 클라이언트가 마지막으로 성공한 소프트웨어 업데이트 지점에 연결하지 못합니다.
 
@@ -312,7 +311,7 @@ Configuration Manager에서 경계 그룹을 사용하여 관련 네트워크 �
 
 **LocationServices.log**에 새 항목이 표시됩니다. **Locality** 특성은 다음 상태 중 하나를 식별합니다.
 
-- **0**: 알 수 없음  
+- **0**: Unknown  
 
 - **1**: 지정한 관리 지점이 대체를 위한 사이트 기본 경계 그룹에만 있습니다.  
 

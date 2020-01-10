@@ -10,17 +10,16 @@ ms.assetid: c21eec87-ad1c-4465-8e45-5feb60b92707
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1d6ba76983041c0c6c8d13147cfae481186f23
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: efcf478037ec224669d1a10da3a15366d3dba566
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380075"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806174"
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-configuration-manager"></a>Configuration Manager를 사용하여 최신 버전으로 Windows 업그레이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 컴퓨터의 OS를 업그레이드하는 Configuration Manager의 단계를 제공합니다. 독립 실행형 미디어 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 현재 위치 업그레이드 시나리오에는 다음과 같은 기능이 있습니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 82e8a693-9adf-4ca3-8484-7e101c34c7c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37bb1386284fa80d362479242a693b1a6f9b45a3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0880d4767da94b032b66a0ef354f6ea354705c83
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536493"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798636"
 ---
 # <a name="monitor-content-you-distribute-with-configuration-manager"></a>Configuration Manager를 사용하여 배포하는 콘텐츠 모니터링
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 콘솔을 사용하여 다음을 포함하는 분산 콘텐츠를 모니터링합니다.  
 
