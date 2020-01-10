@@ -1,5 +1,5 @@
-- name: 소프트웨어 업데이트 관리
-  href: understand/software-updates-introduction.md
+- name: 소프트웨어 업데이트 관리 설명서
+  href: index.yml
 - name: 이해 및 탐색
   items:
     - name: 소프트웨어 업데이트 소개
@@ -16,7 +16,7 @@
       href: plan-design/software-updates-best-practices.md
     - name: 소프트웨어 업데이트에 대한 보안 및 개인 정보
       href: plan-design/security-and-privacy-for-software-updates.md
-- name: 시작
+- name: 시작 작업
   items:
     - name: 소프트웨어 업데이트 관리 준비
       href: get-started/prepare-for-software-updates-management.md
