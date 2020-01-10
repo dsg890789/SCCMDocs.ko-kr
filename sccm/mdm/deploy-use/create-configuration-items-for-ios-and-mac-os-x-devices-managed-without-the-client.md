@@ -10,13 +10,12 @@ ms.assetid: 613a48ac-c55d-4c4a-94ea-d3747a1b10cb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4353651472f08bd9a13fa97a92fdd9eabc8fb904
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 99af3fd6f593b85a359debcc488b94386614bab2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521258"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75822041"
 ---
 # <a name="how-to-create-configuration-items-for-ios-and-macos-devices-managed-with-intune"></a>Intune으로 관리 되는 iOS 및 macOS 장치에 대 한 구성 항목을 만드는 방법
 

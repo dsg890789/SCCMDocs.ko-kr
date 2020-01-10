@@ -10,13 +10,12 @@ ms.assetid: 2bfc4c51-b25c-4c70-b81e-8a3b6ddf02c8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 335a122ffb982e21e15fbc834106ce360b76b42d
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: c1827417198a00c5a54eb97bdb90437426cb33bd
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520663"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806461"
 ---
 # <a name="manage-dynamics-crm-online-access-in-configuration-manager"></a>Configuration Manager에서 Dynamics CRM Online 액세스 관리
 

@@ -10,13 +10,12 @@ ms.assetid: e2745bac-e1b4-4dac-8ac7-32f1c820bc9c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f89a95fc10518abbe5353e5097d5616740166aae
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: a97b98c926628526e06ee2c47f5cfd3f9bcc1717
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520544"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821735"
 ---
 # <a name="manage-ios-activation-lock-with-configuration-manager"></a>Configuration Manager를 사용 하 여 iOS 활성화 잠금 관리
 

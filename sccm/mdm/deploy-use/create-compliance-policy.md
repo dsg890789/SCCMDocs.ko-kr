@@ -10,13 +10,12 @@ ms.assetid: 0fd76043-d7ee-423d-8c5f-aa7e9ed58ce0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45286dc95a34dc1ad398bb20d5c2c0b621e62a4b
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 9bdfd3dde3c1ea92779309be8657911d8162d666
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521105"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806682"
 ---
 # <a name="create-and-deploy-a-device-compliance-policy"></a>디바이스 준수 정책 만들기 및 배포
 
@@ -323,7 +322,7 @@ ms.locfileid: "75521105"
 - **Android**  
     1. ITunes 스토어 URL에서 ID 번호를 찾습니다. 예를 들면 다음과 같습니다. `/id875948587?mt=8`  
 
-    2. 웹 브라우저에서 다음 URL로 이동 하 여 번호를 방금 찾은 ID 번호로 바꿉니다. 예를 들면 `https://itunes.apple.com/lookup?id=875948587`  
+    2. 웹 브라우저에서 다음 URL로 이동 하 여 번호를 방금 찾은 ID 번호로 바꿉니다. `https://itunes.apple.com/lookup?id=875948587`).  
 
     3. 텍스트 파일을 다운로드하여 엽니다.  
 

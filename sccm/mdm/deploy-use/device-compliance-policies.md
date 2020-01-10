@@ -10,13 +10,12 @@ ms.assetid: ad8fa94d-45bb-4c94-8d86-31234c5cf21c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c90bbbf3c72a7d21e52bb762b653bbda3dc5fd6
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: f206e6127c869ed8b5dd3d80af6f96393afe1622
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520918"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806563"
 ---
 # <a name="device-compliance-policies-in-configuration-manager"></a>Configuration Manager의 장치 준수 정책
 

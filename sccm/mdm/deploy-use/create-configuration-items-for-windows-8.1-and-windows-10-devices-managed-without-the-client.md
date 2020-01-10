@@ -10,13 +10,12 @@ ms.assetid: 23e1e4dc-623a-4521-ad04-ae9482927097
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93cd7b4035f276f4e966a8b64ac63ca40449e7e7
-ms.sourcegitcommit: ecf4e8da78fed5e30c0eb81ea98959bd01354018
-ms.translationtype: HT
+ms.openlocfilehash: 24e4e25e2d668130e97e26ad2b437a123d05ea85
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75717778"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75822024"
 ---
 # <a name="how-to-create-configuration-items-for-windows-81-and-windows-10-devices-managed-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법
 

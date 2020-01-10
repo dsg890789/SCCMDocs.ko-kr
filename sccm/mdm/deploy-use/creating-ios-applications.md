@@ -10,13 +10,12 @@ ms.assetid: ff633013-5313-4cd3-949c-56d45e777280
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e82669c0aaa28fbeab512a524a94cf87bd015ed9
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: ae99fc30255b8608e811eb236f75220f28de9d8a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520969"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806580"
 ---
 # <a name="create-ios-applications-in-configuration-manager"></a>Configuration Manager에서 iOS 애플리케이션 만들기
 

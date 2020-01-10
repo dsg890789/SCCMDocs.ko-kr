@@ -10,13 +10,12 @@ ms.assetid: 8c13d593-3120-47a8-8fae-eff497afcd73
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a993aa88759f136a1f0a9c35d3caf1c6d7ca9c01
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 815974ccee3566d96968bf81d47d0a1c008f787d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519609"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821667"
 ---
 # <a name="microsoft-store-for-business-in-configuration-manager"></a>Configuration Manager의 비즈니스에 대 한 Microsoft Store
 

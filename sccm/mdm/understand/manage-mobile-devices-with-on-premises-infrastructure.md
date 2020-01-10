@@ -10,13 +10,12 @@ ms.assetid: 497c05c7-fe9f-4b88-983b-1c5b3d59308e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c50454b10b9470e0477392c923ff2fbd2cb8117f
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: ef153708b490fb4111a2070ccdefb933407fa6fc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519422"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821548"
 ---
 # <a name="on-premises-mdm-in-configuration-manager"></a>Configuration Manager의 온-프레미스 MDM
 

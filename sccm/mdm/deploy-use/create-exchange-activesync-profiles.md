@@ -10,13 +10,12 @@ ms.assetid: 120442be-179e-450c-a0c4-284046895da3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a32269ddd526f9801202f1ec10fd7e6d50c2cd9
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: edb116aa57eb4bc911ae7a5e9c32bfd42171899d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521122"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75822007"
 ---
 # <a name="exchange-activesync-email-profiles-in-configuration-manager"></a>Configuration Manager에서 Exchange ActiveSync 전자 메일 프로필
 

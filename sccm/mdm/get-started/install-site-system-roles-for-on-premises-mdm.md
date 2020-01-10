@@ -10,13 +10,12 @@ ms.assetid: c3cf9f64-c2b9-4ace-9527-2aba6d4eef04
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49a3d8722d3ad238b7f8fa417bd0eb47e1cda056
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 3b6421866dc9813fa562e3a8f5662b1c02c776e9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519575"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821650"
 ---
 # <a name="install-site-system-roles-for-on-premises-mobile-device-management-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 모바일 장치 관리를 위한 사이트 시스템 역할 설치
 

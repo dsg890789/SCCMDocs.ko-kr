@@ -10,13 +10,12 @@ ms.assetid: 522c2e82-20eb-4f38-859b-d55640b24e32
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d66b219f9d563637dd6be0215a0a9b6858d450e
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: c5b10095e153bbd13493f1c24c8bb1fc563a147f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521139"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75822075"
 ---
 # <a name="confirm-domain-name-requirements-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 도메인 이름 요구 사항 확인
 

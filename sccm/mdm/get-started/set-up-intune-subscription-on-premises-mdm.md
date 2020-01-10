@@ -10,13 +10,12 @@ ms.assetid: 1e42b1c1-3d58-481f-8647-5c7ae640c5f5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ba45f2f0e031fca5fa41ce735abae8d107c9d62
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 1f90b4088f066132e61d7dd60e3fe259eb945f96
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519516"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821616"
 ---
 # <a name="set-up-a-microsoft-intune-subscription-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 Microsoft Intune 구독 설정
 

@@ -10,13 +10,12 @@ ms.assetid: 2bdaa8a7-6a64-4b0e-b617-309dcd912c45
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 957461561386c85512c69d77bf92ea7669064c8c
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 268f6f98eacbdaf993a6d3af57a60c19a52be63d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520765"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821854"
 ---
 # <a name="enroll-user-owned-devices-for-hybrid-deployments-with-configuration-manager"></a>Configuration Manager를 사용하는 하이브리드 배포를 위해 사용자 소유 디바이스 등록
 

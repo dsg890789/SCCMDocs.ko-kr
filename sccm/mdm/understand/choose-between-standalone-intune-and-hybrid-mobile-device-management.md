@@ -11,13 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53b80a798e9c1d7d68977a2f545516f02a179a89
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: ebf88df28218d3008a99f7cc0e7844a03b0c53cf
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519405"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821565"
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mdm-with-configuration-manager"></a>Configuration Manager를 사용하여 Microsoft Intune 독립 실행형 및 하이브리드 MDM 중에서 선택
 

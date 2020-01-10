@@ -10,13 +10,12 @@ ms.assetid: ad8fa94d-45bb-4c94-8d86-31234c5cf21c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d5814895ba2829a1d4238581d85f955816e4058
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2100e74761c379c340cc5fc9b56236d275741cea
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678701"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806733"
 ---
 # <a name="set-up-actions-for-non-compliance"></a>비준수에 대한 작업 설정
 

@@ -10,13 +10,12 @@ ms.assetid: 9126d188-7780-45a4-b21d-7fcf4fad7da2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41de9d51c2c3b3d277005c60effadea09787d5a8
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 73ce088312288a09744348b1d41ef4894efc6330
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521224"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806699"
 ---
 # <a name="apply-settings-to-android-for-work-apps-with-app-configuration-policies-in-configuration-manager"></a>Configuration Manager에서 앱 구성 정책을 사용 하 여 Android for Work 앱에 설정 적용
 

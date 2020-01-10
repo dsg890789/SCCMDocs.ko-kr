@@ -10,13 +10,12 @@ ms.assetid: b81d06dc-3844-4117-9937-16732a227994
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: da653db38c8c4271bd4ac7d0b75329535f1545f2
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: a9480898e8af26a0f2cb8b4c8ec50a6f2dfd4f02
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519519"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821599"
 ---
 # <a name="overview-of-device-enrollment-methods"></a>디바이스 등록 방법 개요
 

@@ -10,13 +10,12 @@ ms.assetid: 99de8fe7-560e-401a-8ab2-6d87d091be17
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 151dbab44aaf02e3c299df02ae771677a90eca38
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 86d9582fa404188bf5a12b086d5c3acc47f8d9c1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521190"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75822092"
 ---
 # <a name="configure-your-intune-subscription-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 Intune 구독 구성
 

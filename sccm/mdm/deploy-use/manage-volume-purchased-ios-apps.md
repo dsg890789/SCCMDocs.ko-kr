@@ -10,13 +10,12 @@ ms.assetid: 7c3b9316-247b-490b-a363-8f8553821579
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa5fc58f078c2a0c64230bf7178e8d33e30b11ba
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: b6e66520a8c662c4bb7fc59d909c6cae1c19bc97
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520476"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821718"
 ---
 # <a name="manage-volume-purchased-ios-apps-with-configuration-manager"></a>Configuration Manager를 사용 하 여 대량 구매 iOS 앱 관리
 

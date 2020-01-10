@@ -10,13 +10,12 @@ ms.assetid: c517fe34-0130-465b-a020-bdb555878778
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4cd11608fc515628d0d36bb2929f0ec7dc28994
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 1e39e697ca074459fb620f74341a24b2a1f8361e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520833"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806512"
 ---
 # <a name="set-up-android-hybrid-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 Android 하이브리드 장치 관리 설정
 

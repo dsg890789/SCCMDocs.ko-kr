@@ -10,13 +10,12 @@ ms.assetid: 94ecfada-97d9-4d5f-bb04-63550dda5f47
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f33dafbdcb7b1f345403c72ecd54023df08a9f6
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 4280c791248624349539d3b198fa71683267644d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519660"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821684"
 ---
 # <a name="verify-mdm-configuration-with-configuration-manager"></a>Configuration Manager를 사용 하 여 MDM 구성 확인
 

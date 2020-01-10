@@ -10,13 +10,12 @@ ms.assetid: 68fe11fa-5fb2-4b81-b0f5-b6f2392fb4ad
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 682f03929b965c06b1edc571a37f757d77426668
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 8907c663a56149eb1e6174f5e4ad4f21e07088a8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520935"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821939"
 ---
 # <a name="create-windows-phone-applications-in-configuration-manager"></a>Configuration Manager에서 Windows Phone 애플리케이션 만들기
 

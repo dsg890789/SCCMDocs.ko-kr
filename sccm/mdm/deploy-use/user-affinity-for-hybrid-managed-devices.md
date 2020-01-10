@@ -10,13 +10,12 @@ ms.assetid: b5d520a7-e9e5-40ee-91f9-f2684214beb6
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d673a77c8d0e0abb9cf273f0333acbe31aa87ddd
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 40527cf32fcb4baf73b0fc96553a4785dc6af738
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519687"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821701"
 ---
 # <a name="user-affinity-for-hybrid-managed-devices-in-configuration-manager"></a>Configuration Manager의 하이브리드 관리 디바이스에 대한 사용자 선호도
 

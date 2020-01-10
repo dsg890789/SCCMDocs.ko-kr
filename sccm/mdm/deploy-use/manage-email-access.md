@@ -10,13 +10,12 @@ ms.assetid: fa648e73-5fb8-4818-ab57-7466ffaf888e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ec7f7c9818e1155b0593b38dc8e39ee899d633a
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: cae842c5da715d513630b24be98a00138ce9efad
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520646"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821786"
 ---
 # <a name="manage-email-access-in-configuration-manager"></a>Configuration Manager에서 전자 메일 액세스 관리
 

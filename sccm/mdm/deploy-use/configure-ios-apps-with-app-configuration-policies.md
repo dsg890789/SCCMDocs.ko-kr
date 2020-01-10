@@ -10,13 +10,12 @@ ms.assetid: f0a78038-ea22-4826-9c07-1771b7dd2e8d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f782e29d3631598a5f27e58602e389f4a50e282b
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: ef294582ceedc044a634a3423933a3e7a2311f4e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521156"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806665"
 ---
 # <a name="apply-settings-to-ios-apps-with-app-configuration-policies-in-configuration-manager"></a>Configuration Manager에서 앱 구성 정책을 사용 하 여 iOS 앱에 설정 적용
 

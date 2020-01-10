@@ -10,13 +10,12 @@ ms.assetid: a0eae17a-60a8-4132-91af-0b10ad338c92
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4ae28910772a3a615a87f130b4fa5114e2a6117
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: d7e2cc186cbb3ac6c5ea251ea71061803366f429
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519745"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826563"
 ---
 # <a name="software-inventory-for-mobile-devices-enrolled-with-microsoft-intune"></a>Microsoft Intune에서 등록한 모바일 디바이스를 위한 소프트웨어 인벤토리
 

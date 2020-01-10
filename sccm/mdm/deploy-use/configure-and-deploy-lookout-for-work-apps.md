@@ -10,13 +10,12 @@ ms.assetid: 3f62b763-4347-453d-b0a7-1f4a0d1d4105
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50c334f608086b9176ac3c2f5f3a3215d3f69a48
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 6ecfc5f3f77d7e016f8fd809c768079de53617b2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521241"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75822109"
 ---
 # <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work 앱 구성 및 배포
 
@@ -60,7 +59,7 @@ ms.locfileid: "75521241"
 
    3.  이 리디렉션 URI의 경우 다음 형식 `lookoutwork://com.lookout.enterprise.<yourcompanyname>`을 사용하여 `<yourcompanyname>`을 회사 이름으로 대체합니다. 예를 들면 다음과 같습니다. `lookoutwork://com.lookout.enterprise.contoso`
    4. **만들기**를 클릭하여 웹을 만듭니다. 
-   5.  새 앱을 열고 **설정을** 클릭하고 추가 리디렉션 URI를 추가합니다. `<originalURI>`가 원래 리디렉션 URI의 URL로 인코딩된 버전인 다음 형식 `companyportal://code/<originalURI>`를 사용합니다. 예를 들면 `companyportal://code/lookoutwork%3A%2F%2Fcom.lookout.enterprise.contoso`
+   5.  새 앱을 열고 **설정을** 클릭하고 추가 리디렉션 URI를 추가합니다. `<originalURI>`가 원래 리디렉션 URI의 URL로 인코딩된 버전인 다음 형식 `companyportal://code/<originalURI>`를 사용합니다. `companyportal://code/lookoutwork%3A%2F%2Fcom.lookout.enterprise.contoso`).
    6.  앱 설정에서 **필요한 권한**으로 이동하여 **추가**를 클릭합니다. 다음의 위임된 권한을 선택합니다.  
 
        | API  | 권한  |

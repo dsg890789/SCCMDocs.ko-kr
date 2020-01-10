@@ -10,13 +10,12 @@ ms.assetid: 617abb22-d22f-41fb-a76b-1c4259e419d2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e620ce639d20b52e106026a88162e6b1ada6a5fb
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 0ffc7248280c7b1ca36b4ad5a2f5da5abc5ed1fb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521003"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806648"
 ---
 # <a name="create-a-service-connection-point-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 서비스 연결 지점 만들기
 
