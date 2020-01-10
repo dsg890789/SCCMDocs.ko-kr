@@ -10,17 +10,16 @@ ms.assetid: c64e7483-b4bb-4738-95f4-ecdaeb6a2ba6
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9d379cc17182e7f0a61492e54a90c49f087e6ae
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9c423439f2909b9a493eb4a5dcf8ea7696d3400c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661348"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797920"
 ---
 # <a name="upgrade-to-configuration-manager-current-branch"></a>Configuration Manager 현재 분기로 업그레이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 구조에서 Configuration Manager 현재 분기로 현재 위치 업그레이드를 실행하세요. System Center 2012 Configuration Manager에서 업그레이드하려면 먼저 사이트를 준비해야 합니다. 이 준비에서 성공적인 업그레이드에 방해가 될 수 있는 특정 구성을 제거해야 합니다. 그런 다음, 관련된 사이트가 두 개 이상일 경우 업그레이드 순서를 따릅니다.  
 
@@ -38,7 +37,7 @@ System Center 2012 Configuration Manager를 실행하는 사이트 및 계층 �
 - Configuration Manager 현재 분기 버전 1902의 *평가판* 설치
 - System Center 2012 Configuration Manager 서비스 팩 1
 - System Center 2012 Configuration Manager 서비스 팩 2
-- System Center 2012 R2 Configuration Manager
+- System  Center  2012  R2  Configuration  Manager
 - System Center 2012 R2 Configuration Manager 서비스 팩 1
 
 자세한 내용은 [Configuration Manager 분기 및 라이선스에 대한 자주 묻는 질문](/sccm/core/understand/product-and-licensing-faq)을 참조하세요.

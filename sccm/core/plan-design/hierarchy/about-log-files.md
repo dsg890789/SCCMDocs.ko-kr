@@ -6,17 +6,16 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: b1751e3c-a60c-4ab7-a943-2595df1eb612
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6f0febe5dcfda5f95c695ad347e2d4408a901b25
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 38d4b1dbbe0573529e0f063aaf6774c1d4f28987
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660260"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800596"
 ---
 # <a name="about-log-files-in-configuration-manager"></a>Configuration Manager의 로그 파일 정보
 
@@ -214,7 +213,7 @@ Configuration Manager 콘솔의 AdminUI.log의 자세한 정보 표시 수준을
 
 1. 메모장 같은 XML 편집기에서 콘솔 구성 파일 **Microsoft.ConfigurationManagement.exe.config**를 엽니다. 기본 구성 파일은 다음 위치에 있습니다. `C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\Microsoft.ConfigurationManagement.exe.config`
 
-1. **system.diagnostics** > **원본** > **원본** 요소에서 **switchValue** 속성을 `Error`에서 `Verbose`로 변경합니다. 예:
+1. **system.diagnostics** > **원본** > **원본** 요소에서 **switchValue** 속성을 `Error`에서 `Verbose`로 변경합니다. 예를 들면 다음과 같습니다.
 
     원본: `<source name="SmsAdminUISnapIn" switchValue="Error">` 새로 만들기: `<source name="SmsAdminUISnapIn" switchValue="Verbose" >`
 

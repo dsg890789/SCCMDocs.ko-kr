@@ -10,17 +10,16 @@ ms.assetid: 0a7415ba-2c53-4433-983e-780e92aa662f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13353f6798196b6f096297b8eb016eceda8df70e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f875391c477755c65a40795c014014eacbd7f8da
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660067"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799882"
 ---
 # <a name="plan-for-site-system-servers-and-site-system-roles-in-configuration-manager"></a>Configuration Manager에서 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 설치하는 각 Configuration Manager 사이트에는 **사이트 시스템 서버**인 사이트 서버가 포함됩니다. 또한 사이트에는 사이트 서버에 원격인 컴퓨터의 추가 사이트 시스템 서버도 포함될 수 있습니다. 사이트 시스템 서버(사이트 서버 또는 원격 사이트 시스템 서버)에서는 **사이트 시스템 역할**을 지원합니다.  
 

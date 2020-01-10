@@ -6,17 +6,16 @@ ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: ce4a1ca8-6433-4447-819f-19dd5faa6f46
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ddc80fe039745930bfd5ecbdfedc5b028849f4d4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7bbd130e6425ae6cd77e55b6dd8c2f8ab51b635e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957633"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793534"
 ---
 # <a name="sql-replication-reinit"></a>SQL 복제 다시 초기화
 

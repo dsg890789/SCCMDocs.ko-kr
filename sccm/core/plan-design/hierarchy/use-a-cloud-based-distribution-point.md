@@ -10,17 +10,16 @@ ms.assetid: 3cd9c725-6b42-427d-9191-86e67f84e48c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b374b738a7938126d0e03a9b8b8fdb8dab220a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ec74032ab8490226436f8afe06de8ff025591726
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68833026"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799571"
 ---
 # <a name="use-a-cloud-distribution-point-in-configuration-manager"></a>Configuration Manager에서 클라우드 배포 지점 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 > [!Important]  
 > Azure 콘텐츠 공유를 위한 구현이 변경되었습니다. **CMG가 클라우드 배포 지점으로 기능하고 Azure 스토리지에서 콘텐츠를 제공하도록 허용** 옵션을 사용하도록 설정하여 콘텐츠 지원 클라우드 관리 게이트웨이를 사용합니다. 자세한 내용은 [CMG 수정](/sccm/core/clients/manage/cmg/setup-cloud-management-gateway#modify-a-cmg)을 참조하세요.

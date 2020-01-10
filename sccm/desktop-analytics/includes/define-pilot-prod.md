@@ -4,13 +4,12 @@ ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 12/30/2018
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8305102657a5973c19ca161f65204587954b0232
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5735d2662bd04293e083f52ed19d371da6b8a212
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62231896"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791651"
 ---
 아래의 정의를 참고하여 파일럿과 프로덕션을 구분하세요.  
 

@@ -10,17 +10,16 @@ ms.assetid: a0287beb-70a9-4b57-a627-e7bfba27fd3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30f9143551bc5c8da971267f6b77801758e8d752
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0b5b96089e0d89477398e6cba0f43ce2a58fb2bb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68338783"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801004"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1806"></a>1806 버전의 진단 사용량 현황 데이터 수집 수준
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 버전 1806은 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
@@ -519,7 +518,7 @@ Configuration Manager 버전 1806의 경우 이 수준에는 다음과 같은 �
 
 - 규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보
 
-- System Center Configuration Manager 사용을 위한 DCM 구성 팩
+- Configuration Manager 사용을 위한 DCM 구성 팩
 
 - 자세한 클라이언트 배포 설치 오류
 

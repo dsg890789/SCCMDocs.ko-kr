@@ -10,17 +10,16 @@ ms.assetid: 54aa20d5-791e-4416-9db4-5aaea472c0b7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d160c6ab64c5ad097bf5986882b65171b0df4651
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 552482a8bf73cd479d28c018fd5916cf1c9ca310
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74840465"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798785"
 ---
 # <a name="define-site-boundaries-and-boundary-groups"></a>사이트 경계 및 경계 그룹 정의
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 ‘경계’는 인트라넷의 네트워크 위치를 정의합니다.  이러한 위치로는 관리할 디바이스를 들 수 있습니다. ‘경계 그룹’은 구성하는 경계의 논리적 그룹입니다. 
 

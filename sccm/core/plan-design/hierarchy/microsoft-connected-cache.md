@@ -6,17 +6,16 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: c5cb5753-5728-4f81-b830-a6fd1a3e105c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 89d0168cfd34b67af1ca22978c9e916a843da477
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 046dd4bae3270ffaed93982e52ab63e85bf99ead
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662891"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799984"
 ---
 # <a name="microsoft-connected-cache-in-configuration-manager"></a>Configuration Manager의 Microsoft Connected Cache
 
@@ -131,7 +130,7 @@ Windows 10 버전 1809 이상에서는 **Get-DeliveryOptimizationStatus** Window
 
 버전 1910부터, Configuration Manager 배포 지점에서 Microsoft Connected Cache를 사용하도록 설정하면 배포 지점에서 공동 관리 클라이언트로 Microsoft Intune Win32 앱을 제공할 수 있습니다.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 #### <a name="client"></a>클라이언트
 

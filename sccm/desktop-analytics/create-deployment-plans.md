@@ -10,13 +10,12 @@ ms.assetid: 8e0e8496-136b-461f-8239-cc19c6b78c3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03befc6758d70acd93f1d884b9f29ca01483fe01
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 18bb8d2431e096969d193f32747249b6b84ed37f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72386534"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791680"
 ---
 # <a name="how-to-create-deployment-plans-in-desktop-analytics"></a>Desktop Analytics에서 배포 계획을 만드는 방법
 

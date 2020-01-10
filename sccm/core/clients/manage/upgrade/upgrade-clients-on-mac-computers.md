@@ -10,17 +10,16 @@ ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 33a956bf19a1b14a2190467b2148a3ef4b65e908
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 412a2528e25e732f28146e9a5f82f8e7b7e7201e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71826117"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823690"
 ---
 # <a name="how-to-upgrade-clients-on-mac-computers-in-configuration-manager"></a>Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서의 개략적인 단계를 따라 Configuration Manager 애플리케이션을 사용하여 Mac 컴퓨터용 클라이언트를 업그레이드하세요. Mac 클라이언트 설치 파일을 다운로드하고 공유 네트워크 위치나 Mac 컴퓨터의 로컬 폴더에 복사한 후 사용자에게 수동으로 설치하도록 지시할 수 있습니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 68dc6acd-5848-47a4-b4c1-ffa40e47890b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e32e96063f6c65a77e398c8434ce6b833c7be890
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cf3981a7b584653a7ebc4471a7e33e0702bbc5d8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379721"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794294"
 ---
 # <a name="reference-for-maintenance-tasks-in-configuration-manager"></a>Configuration Manager의 유지 관리 작업 참조
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 각 Configuration Manager 사이트 유지 관리 작업의 세부 정보를 나열합니다. 각 항목은 작업을 사용할 수 있는 사이트 유형과 기본적으로 사용되는지 여부를 지정합니다.
 

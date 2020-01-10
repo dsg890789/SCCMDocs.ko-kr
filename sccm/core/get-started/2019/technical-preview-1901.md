@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f693038c11a3a887258c5c9c4e400eb77a72ffbd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bfb7acc3652a1dc8390cc4ca9765282dc65eac23
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65974200"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823326"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1901"></a>Configuration Manager Technical Preview 버전 1901의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager Technical Preview 버전 1901에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가합니다. 
 

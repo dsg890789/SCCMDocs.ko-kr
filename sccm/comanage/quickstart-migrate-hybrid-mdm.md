@@ -10,13 +10,12 @@ ms.assetid: 456f32d5-8590-499f-a54d-d00618bc61f0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84625c12c9cac643fe5a895c066632f44ffeacdc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a2e0f9d803b01b423fb131d826a638b58de221d7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62193833"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816958"
 ---
 # <a name="migrate-from-hybrid-mdm-for-co-management"></a>공동 관리를 위해 하이브리드 MDM에서 마이그레이션
 

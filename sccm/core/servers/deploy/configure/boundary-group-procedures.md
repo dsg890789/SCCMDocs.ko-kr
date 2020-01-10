@@ -10,17 +10,16 @@ ms.assetid: a1fe22d0-4695-4de0-8bf0-e3475b03cf0e
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed583e07c59f61f5c06b8355f9d59f18dde47e6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 68e8aa886a56ab2b788a18e562dbe3f7492b0c4d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499054"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799012"
 ---
 # <a name="how-to-configure-boundary-groups-for-configuration-manager"></a>Configuration Manager에 대한 경계 그룹을 구성하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에는 경계 그룹을 구성하는 방법에 대한 절차가 나와 있습니다. 시작하기 전에 경계 그룹에 대한 개념을 이해해야 합니다. 자세한 내용은 [경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.
 

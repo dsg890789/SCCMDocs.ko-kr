@@ -11,13 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f0832dc96a5b03e0ed603b76c794444eff7d967
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 217851c3e9059925ce96fbda50e906d027344369
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73049435"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791740"
 ---
 # <a name="compatibility-assessment-in-desktop-analytics"></a>Desktop Analytics의 호환성 평가
 

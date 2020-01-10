@@ -10,17 +10,16 @@ ms.assetid: d39c201f-d364-4e7b-bde4-faa76d747f33
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebbbf62bb3cc1e2b96d83ad109064d643544fdb9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1f7948c27ae313541d299a71ae99889c14a21fa9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65498244"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798221"
 ---
 # <a name="install-the-configuration-manager-console"></a>Configuration Manager 콘솔 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 관리자는 Configuration Manager 콘솔을 사용하여 Configuration Manager 환경을 관리합니다. 각 Configuration Manager 콘솔은 (CAS)중앙 관리 사이트 또는 기본 사이트에 연결할 수 있습니다. Configuration Manager 콘솔을 보조 사이트에 연결할 수는 없습니다.
 
@@ -28,7 +27,7 @@ Configuration Manager 콘솔은 항상 CAS 또는 주 사이트에 대한 사이
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 콘솔에 대한 대상 컴퓨터에 로컬 **관리자** 권한이 있습니다.  
 

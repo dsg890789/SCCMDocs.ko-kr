@@ -10,17 +10,16 @@ ms.assetid: 5d5d6273-0d8a-43c7-865a-cdb1736dcae3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 852478c5534c801e116df01461981d0d2851864f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f113599fb25140effc809896ebf6d79772bf7797
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536650"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799797"
 ---
 # <a name="plan-for-the-sms-provider"></a>SMS 공급자에 대한 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 관리하려면 Configuration Manager 콘솔을 사용하여 **SMS 공급 기업**의 인스턴스에 연결합니다. 기본적으로 SMS 공급자는 중앙 관리 사이트나 기본 사이트를 설치할 때 사이트 서버에 설치됩니다.
 
@@ -249,7 +248,7 @@ Windows ADK를 설치하려면 SMS 공급자를 설치하는 각 컴퓨터에 �
 
 **관리 서비스** URL 형식은 `https://<servername>/AdminService/wmi/<ClassName>`입니다. 여기서 `<servername>`은 SMS 공급자를 설치한 서버이고 `<ClassName>`은 유효한 Configuration Manager WMI 클래스 이름입니다. 버전 1810에서는 클래스 이름에 `SMS_` 접두어가 포함되지 않습니다. 1902 이상 버전에서는 이 클래스 이름이 WMI 클래스 이름과 같습니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 - 1810: `https://servername/AdminService/wmi/Site`
 - 1902 이상: `https://servername/AdminService/wmi/SMS_Site`
@@ -270,7 +269,7 @@ OData 커넥터 옵션을 사용하여 Power BI에서 사이트 데이터에 액
 
 **SMS 공급자**는 CMG(클라우드 관리 게이트웨이)를 통해 통신할 수 있도록 옵션을 사용하여 역할로 표시됩니다. 이 설정에 대한 현재 사용은 원격 디바이스의 이메일을 통해 애플리케이션 승인을 활성화하는 것입니다. 자세한 내용은 [애플리케이션 승인](/sccm/apps/deploy-use/app-approval)을 참조하세요.
 
-#### <a name="prerequisites"></a>필수 구성 요소
+#### <a name="prerequisites"></a>전제 조건
 
 - SMS 공급자를 호스트하는 서버에는 .NET 4.5.2 이상이 필요합니다.  
 

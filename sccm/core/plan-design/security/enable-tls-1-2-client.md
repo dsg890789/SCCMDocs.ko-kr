@@ -6,17 +6,16 @@ ms.date: 12/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 5b094a02-a425-4b67-81d3-8455e4265512
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: a74d2cd6bebabb983d1806b79a5f691a5bfde2ee
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 84832c895934e10f898f0fe6989f133c5fa95c75
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198917"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799304"
 ---
 # <a name="how-to-enable-tls-12-on-clients"></a>클라이언트에서의 TLS 1.2 사용 설정 방법
 

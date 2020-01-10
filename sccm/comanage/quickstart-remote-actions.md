@@ -10,13 +10,12 @@ ms.assetid: 4a877bed-f6c4-4048-9421-507dc848af5c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4439aa280edaffbb59f8d49ece58e067a729ec91
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ae58a62849097b556fa4ed63325c0d8d17e9f5d5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62199457"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816890"
 ---
 # <a name="remote-actions-with-co-management"></a>공동 관리를 사용하는 원격 작업
 

@@ -10,17 +10,16 @@ ms.assetid: 7d8f530b-1a39-4a9d-a2f0-675b516da7e4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e658874c9ff5c7bfbf0305b937779d101fefeeb2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: dfceea40588f533cb2a29992f7236598380e140d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72448003"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799593"
 ---
 # <a name="use-a-pull-distribution-point-with-configuration-manager"></a>Configuration Manager에서 풀(pull) 배포 지점 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 Configuration Manager 콘솔에서 표준 배포 지점에 콘텐츠를 배포하면 사이트 서버가 콘텐츠를 배포 지점으로 푸시합니다. 풀(pull) 배포 지점은 클라이언트와 같은 원본 위치에서 콘텐츠를 다운로드하여 얻습니다.  

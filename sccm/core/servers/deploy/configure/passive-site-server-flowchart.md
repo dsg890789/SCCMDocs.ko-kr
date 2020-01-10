@@ -10,17 +10,16 @@ ms.assetid: b0fcb30e-147c-4910-ba88-5e5b60996e60
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2a24979cfbf4be56acad910e5a8fe230b11b53e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0dc38124bd43929927a91a9f5dbb70b1a72d1263
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62211703"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798589"
 ---
 # <a name="flowchart---set-up-a-site-server-in-passive-mode"></a>순서도 - 수동 모드로 사이트 서버 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 순서도 다이어그램은 사이트에서 수동 모드로 사이트 서버를 설정하는 프로세스를 보여줍니다. 자세한 내용은 다음 아티클을 참조하세요.  
 - [사이트 서버 고가용성](/sccm/core/servers/deploy/configure/site-server-high-availability)

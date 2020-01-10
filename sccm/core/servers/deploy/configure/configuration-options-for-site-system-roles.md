@@ -10,17 +10,16 @@ ms.assetid: 0e9f0fbd-e442-4509-a021-bfdedf2d04dd
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58d023f3c6f4485ef11e18c9b5d32fac4c1a4146
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4571634ff204ac882abb9dcca9f75291d3dbcf50
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74840516"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798927"
 ---
 # <a name="configuration-options-for-site-system-roles-in-configuration-manager"></a>Configuration Manager의 사이트 시스템 역할에 대한 구성 옵션
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 사이트 시스템 역할의 구성 옵션 대부분은 별도의 설명이 필요 없으며 구성할 때 마법사 또는 대화 상자에서 설명됩니다. 다음 섹션에서는 설정에 추가 정보가 필요할 수 있는 사이트 시스템 역할에 대해 설명합니다.  
 

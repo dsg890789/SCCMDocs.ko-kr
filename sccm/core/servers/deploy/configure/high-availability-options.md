@@ -10,17 +10,16 @@ ms.assetid: 1a38421d-24c1-4fef-bf6c-42fce53109ac
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58e0eb1327786d79fd8b9126dbd4a4691d565f62
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 54f60c22d8042c6f0e4818044f9863046854a5e7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660066"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798768"
 ---
 # <a name="high-availability-options-for-configuration-manager"></a>Configuration Manager의 고가용성 옵션
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 사용 가능한 서비스를 높은 수준으로 유지하는 옵션을 사용하여 Configuration Manager를 배포하는 방법을 설명합니다.
 
@@ -42,7 +41,7 @@ ms.locfileid: "74660066"
 
 - Configuration Manager에서는 몇 가지 기본 제공 보고서 및 대시보드를 제공합니다. 보고서 및 대시보드를 사용하여 서버 또는 클라이언트 작업에 문제가 발생하기 전에 문제와 추세를 파악합니다.  
 
-Configuration Manager에는 거의 실시간 서비스를 제공하는 여러 기능이 포함됩니다. 이러한 기능이 비즈니스 요구 사항을 충족하는 데 중요한 경우 고가용성을 위해 사이트와 계층 구조를 계획하고 구성합니다. 예:  
+Configuration Manager에는 거의 실시간 서비스를 제공하는 여러 기능이 포함됩니다. 이러한 기능이 비즈니스 요구 사항을 충족하는 데 중요한 경우 고가용성을 위해 사이트와 계층 구조를 계획하고 구성합니다. 예를 들면 다음과 같습니다.  
 
 - [클라이언트 알림 동작](/sccm/core/clients/manage/manage-clients): Windows Defender 검사 또는 원격 데스크톱을 시작하고 다시 시작하는 것 등이 포함됩니다.  
 

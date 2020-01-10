@@ -6,17 +6,16 @@ ms.date: 12/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 15083f28-8ff2-4e23-9f5e-b5dbd0859839
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 42c554bad7ed493a6c413bef950eb9dd68f27b7f
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 3822b90111cc5720ae59de9e237814f037032ac9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198897"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799219"
 ---
 # <a name="common-issues-when-enabling-tls-12"></a>TLS 1.2 사용 설정 시의 일반 문제
 

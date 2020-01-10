@@ -10,17 +10,16 @@ ms.assetid: 2aca914f-641e-4bc8-98d4-bbf0a2a5276f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce183f33a022259a5f706a6ec32aab409e0493a0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 818df92fd64fe97d1cdcc76b63a50283c572df41
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891262"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799406"
 ---
 # <a name="prepare-windows-servers-to-support-configuration-manager"></a>Configuration Manager를 지원할 Windows 서버 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Windows 컴퓨터를 Configuration Manager용 사이트 시스템 서버로 사용하려면 해당 컴퓨터가 사이트 서버 또는 사이트 시스템 서버로 사용할 용도에 해당하는 필수 구성 요소를 충족해야 합니다.  
 
@@ -40,7 +39,7 @@ Windows 컴퓨터를 Configuration Manager용 사이트 시스템 서버로 사�
 
     - ASP.NET  
     - HTTP 활성화  
-    - 비HTTP 활성화  
+    - 비 HTTP 활성화  
     - WCF(Windows Communication Foundation) 서비스  
 
     각 사이트 시스템 역할에는 각기 다른 버전의 .NET Framework가 필요합니다.  
@@ -64,7 +63,7 @@ Windows 컴퓨터를 Configuration Manager용 사이트 시스템 서버로 사�
     - 일반 HTTP 기능  
           - HTTP 리디렉션  
     - 애플리케이션 개발  
-          - .NET 확장  
+          - .NET 확장성  
           - ASP.NET  
           - ISAPI 확장  
           - ISAPI 필터  

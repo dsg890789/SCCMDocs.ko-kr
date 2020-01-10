@@ -10,17 +10,16 @@ ms.assetid: 226cbbb2-9afa-4e2e-a472-be989c0f0e11
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7662ccba7b6f672888ab8d98954fb8cb70631fe4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7efcd8eab0891cd953fe182cc97602a814df1049
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62237457"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800426"
 ---
 # <a name="content-library-cleanup-tool"></a>콘텐츠 라이브러리 정리 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 콘텐츠 라이브러리 정리 명령줄 도구를 사용하여 배포 지점의 패키지 또는 애플리케이션과 더 이상 연결되지 않은 콘텐츠를 제거합니다. 이 유형의 콘텐츠는 *분리된 콘텐츠*라고 합니다. 이 도구는 이전 Configuration Manager 제품용으로 릴리스된 이전 버전의 유사 도구를 대체합니다.  
 

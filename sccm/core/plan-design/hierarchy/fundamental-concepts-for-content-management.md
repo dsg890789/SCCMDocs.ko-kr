@@ -10,13 +10,12 @@ ms.assetid: c201be2a-692c-4d67-ac95-0a3afa5320fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f82ba5349af5d37b2a3d8d91f23b3ee8e7cac308
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 2588a1c009e81766f85f0e9e0c7ebae8fa3b3ea9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198441"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800188"
 ---
 # <a name="fundamental-concepts-for-content-management-in-configuration-manager"></a>Configuration Manager에서 콘텐츠 관리의 기본 개념
 

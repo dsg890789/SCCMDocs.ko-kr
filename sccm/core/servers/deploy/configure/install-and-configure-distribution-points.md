@@ -10,13 +10,12 @@ ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d739737db498a59743f98a114eefaa1ffed3217e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f9a10c8ad70c078a29abefa3056b5cbc5c1b728a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74814929"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798714"
 ---
 # <a name="install-and-configure-distribution-points-in-configuration-manager"></a>Configuration Manager에서 배포 지점 설치 및 구성
 
@@ -380,8 +379,8 @@ Configuration Manager SDK를 사용하여 이 프로세스를 자동화하는 �
 
 배포 지점에는 Windows 방화벽에 구성된 다음 인바운드 규칙이 있어야 합니다.
 
-- WMI(Windows Management Instrumentation)(DCOM-In)
-- WMI(Windows Management Instrumentation)(WMI-In)
+- Windows Management Instrumentation(DCOM-In)
+- Windows Management Instrumentation(WMI-In)
 
 이러한 규칙이 없으면 클라이언트는 콘텐츠를 다운로드할 때 DataTransferService.log에서 0x801901F4 오류를 수신합니다.
 

@@ -10,19 +10,18 @@ ms.assetid: 6e7d2850-b0af-497e-bbc1-bfc2a7420a7a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a37062bc945a69bfb6679186954146a337f8aed
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 115cb317e7e84798eb3f0387b6b0c224df63c4b8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72386773"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791780"
 ---
 # <a name="how-to-close-your-account"></a>계정을 종료하는 방법
 
 사용자 환경에서 Desktop Analytics를 설정한 다음, 이를 제거해야 한다고 결정한 경우 이 프로세스를 사용하여 계정을 닫습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 **전역 관리자**만 Azure Portal에서 계정을 닫거나 다시 활성화할 수 있습니다.
 

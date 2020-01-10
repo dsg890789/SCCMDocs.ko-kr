@@ -10,17 +10,16 @@ ms.assetid: bc2282d5-0571-465b-9528-a555855eaacd
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: af65085590d8b02d6b3a020668566a334de42f13
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 68f6c464b31aed1ee3b99eb6be4fb34e8d9a8c02
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67285559"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799090"
 ---
 # <a name="about-the-service-connection-point-in-configuration-manager"></a>Configuration Manager의 서비스 연결 지점 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 서비스 연결 지점은 계층 구조에 대한 몇 가지 중요한 기능을 수행하는 사이트 시스템 역할입니다. 서비스 연결 지점을 설정하기 전에 추가적인 사용 범위를 이해하고 계획하세요. 사용량 계획은 이 사이트 시스템 역할을 설정 방법에 영향을 줄 수 있습니다.  
 

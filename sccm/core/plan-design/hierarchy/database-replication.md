@@ -10,17 +10,16 @@ ms.assetid: 8b495b02-c966-4eb3-92b9-52ebbf5c38ae
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec1145357b68002d6966c437cf4943de6d5cebb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f26e40389b37939259394dd9fceb1c91c7cc98b2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957903"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800324"
 ---
 # <a name="database-replication"></a>데이터베이스 복제
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 데이터베이스 복제에서 SQL Server를 사용하여 데이터를 전송합니다. 이 방법을 사용하여 사이트 데이터베이스의 변경 내용을 계층의 다른 사이트에 있는 데이터베이스의 정보와 병합합니다.
 

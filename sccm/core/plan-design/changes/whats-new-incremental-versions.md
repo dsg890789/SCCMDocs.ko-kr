@@ -10,17 +10,16 @@ ms.assetid: b57acf0b-05b7-46af-ad4c-f3e707bd3861
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32da0d163ac4fd015537fd1982617b484184bf34
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 547ccb2fe9600f975fba5476fd53a31e5c8440c8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660600"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802279"
 ---
 # <a name="whats-new-in-configuration-manager-incremental-versions"></a>Configuration Manager 증분 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 콘솔 내 [업데이트 및 서비스](/sccm/core/servers/manage/updates) 프로세스를 사용합니다. 이 업데이트 프로세스를 사용하면 Configuration Manager 업데이트를 쉽게 검색하고 설치할 수 있습니다. 더 이상 추적하여 설치할 서비스 팩이나 누적 업데이트 버전이 없습니다. 최신 릴리스나 업데이트의 다운로드를 검색할 필요가 없습니다.
 

@@ -10,17 +10,16 @@ ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43ec12b596755a5c57290d9f567f6c070ad8881a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2f2a21e01d49c6d6f7513cc8d5f33c706e201e73
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661280"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795691"
 ---
 #  <a name="the-data-warehouse-service-point-for-configuration-manager"></a>Configuration Manager에 대한 데이터 웨어하우스 서비스 지점
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1277922-->
 데이터 웨어하우스 서비스 지점을 사용하여 Configuration Manager 배포에 대한 장기 기록 데이터를 저장하고 보고할 수 있습니다.
@@ -45,7 +44,7 @@ ms.locfileid: "74661280"
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 이러한 데이터 웨어하우스 사이트 시스템 역할은 계층의 최상위 계층 사이트에서만 지원됩니다. 중앙 관리 사이트 또는 독립 기본 사이트를 예로 들 수 있습니다.  
 

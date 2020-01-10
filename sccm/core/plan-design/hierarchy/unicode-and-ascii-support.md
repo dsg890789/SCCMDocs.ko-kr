@@ -10,17 +10,16 @@ ms.assetid: 2bdec799-905f-48bc-aed5-2d92134739e8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0214abdf1dd7ce735542ebace443c8aed297b2c3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 64ad092270afd66782d5dd992f8d45fbaf1d5778
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70176714"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799567"
 ---
 # <a name="unicode-and-ascii-support-in-configuration-manager"></a>Configuration Manager의 유니코드 및 ASCII 지원
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 유니코드 문자를 사용하여 대부분의 개체를 만듭니다. 그러나 여러 개체는 ASCII 문자만 지원하거나 다른 제한이 있습니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 4b72922a-d11e-4aef-b309-19f5f0716f32
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 720311c9bd4a8ecb9420801881d7c6c142457db3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 44cdb5584248cd64ced8fff12f13db84d1f3b61d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500865"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792724"
 ---
 # <a name="dp-job-queue-manager"></a>DP 작업 큐 관리자
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 DP(배포 지점) 작업 큐 관리자는 [Configuration Manager 도구](/sccm/core/support/tools) 중 하나입니다. 이를 사용하여 Configuration Manager 배포 지점에 대한 진행 중인 콘텐츠 배포 작업의 문제를 해결하고 관리합니다. 
 

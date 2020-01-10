@@ -10,17 +10,16 @@ ms.assetid: d6a73e68-57d8-4786-842b-36669541d8ff
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: acdad1bd6f531f03d42241dabd005b3a0898f826
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ee64d448bf8411642e4ff08d932525a06abc38fc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380145"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799423"
 ---
 # <a name="pki-certificate-requirements-for-configuration-manager"></a>Configuration Manager를 위한 PKI 인증서 요구 사항
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다음 표에는 Configuration Manager에 필요할 수 있는 PKI(공개 키 인프라) 인증서가 나열되어 있습니다. 이 정보는 PKI 인증서에 대한 기본 지식이 있다는 가정 하에 설명되었습니다. 자세한 내용은 [Configuration Manager를 위한 PKI 인증서 배포의 단계별 예: Windows Server 2008 인증 기관](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)을 참조하세요.
 

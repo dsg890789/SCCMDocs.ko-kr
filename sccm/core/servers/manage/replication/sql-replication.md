@@ -6,17 +6,16 @@ ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: adb198c4-da3c-49c3-8fbd-6d1361272869
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 35c807010e821f5a9857e7cc9d18354db5758298
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 03c0652c88d78806f796946c8da19a455dc80f56
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957743"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793490"
 ---
 # <a name="sql-replication"></a>SQL 복제
 

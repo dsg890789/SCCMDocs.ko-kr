@@ -10,17 +10,16 @@ ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bd46824a3f953543fa13258b60ff9fd4ecb5997
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5c32f1ea08fbeee900dfd30eef0f7ce446c7546f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67677839"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824846"
 ---
 # <a name="security-and-privacy-for-configuration-manager-clients"></a>Configuration Manager 클라이언트에 대한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager 클라이언트의 보안 및 개인 정보에 대해 설명합니다. 또한 [Exchange Server 커넥터](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)에서 관리하는 모바일 디바이스에 대한 정보도 포함됩니다.  
 

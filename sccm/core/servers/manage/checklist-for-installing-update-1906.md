@@ -10,17 +10,16 @@ ms.assetid: e6837956-1f1e-4104-a348-ac2266199f60
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2c712a3d5b0948f5069fb84d48e5cbf01d27b1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3b357b56f4980b9b066893414954a3b2980edc2c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70110028"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75796339"
 ---
 # <a name="checklist-for-installing-update-1906-for-configuration-manager"></a>Configuration Manager용 업데이트 1906을 설치하기 위한 검사 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 현재 분기를 사용하는 경우 버전 1906용 콘솔 내 업데이트를 설치하여 이전 버전의 계층 구조를 업데이트할 수 있습니다. <!-- baseline only statement:(Because version 1902 is also available as [baseline media](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions), you can use the installation media to install the first site of a new hierarchy.)-->
 

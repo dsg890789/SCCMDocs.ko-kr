@@ -10,17 +10,16 @@ ms.assetid: 69550b35-bcdb-4b47-bbec-b3c8bc92bb7b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8312202b4877ebcd9a30f5dd40858d119a123de
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9c83a539731cb2c3cd5052e309c55a601845240b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957843"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794741"
 ---
 # <a name="monitor-database-replication"></a>데이터베이스 복제 모니터링
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 콘솔의 **모니터링** 작업 영역에서 **데이터베이스 복제** 노드를 사용하여 데이터베이스 복제의 세부 정보를 모니터링합니다. 사이트 간 복제 링크의 상태를 모니터링할 수 있습니다. 또한 연결된 사이트에 대한 복제 그룹의 초기화 및 복제도 표시합니다.  
 

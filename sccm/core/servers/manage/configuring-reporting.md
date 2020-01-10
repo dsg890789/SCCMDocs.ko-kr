@@ -10,17 +10,16 @@ ms.assetid: 55ae86a7-f0ab-4c09-b4da-89cd0e7fa0e0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc84435b36fe413f9eab81ebdc0161b7cd64ab53
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 82e8e5c1e1d4f8d11842a6b625b54e16baafd055
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69999366"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795936"
 ---
 # <a name="configure-reporting-in-configuration-manager"></a>Configuration Manager에서 보고 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 콘솔에서 보고서를 만들고 수정하고 실행하려면 먼저 완료해야 할 여러 가지 구성 작업이 있습니다. 이 문서를 통해 Configuration Manager 계층 구조에서 보고를 구성하는 데 도움을 얻을 수 있습니다.  
 

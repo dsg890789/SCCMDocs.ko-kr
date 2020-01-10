@@ -10,17 +10,16 @@ ms.assetid: d6993bba-f6bd-4639-adbf-efc1c638b2f3
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a24e06d650b0e25007fb8490eb0c7d8c1996a1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 85c7b8ca5064475e1ce2ac1380b9a11f447b8eff
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67285608"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799491"
 ---
 # <a name="network-infrastructure-considerations-for-configuration-manager"></a>Configuration Manager의 네트워크 인프라 고려 사항
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 지원하도록 네트워크를 준비하려면 일부 인프라 구성 요소를 구성해야 할 수 있습니다. 예를 들어 Configuration Manager에서 사용하는 통신을 전달하도록 방화벽 포트를 열어야 합니다.  
 

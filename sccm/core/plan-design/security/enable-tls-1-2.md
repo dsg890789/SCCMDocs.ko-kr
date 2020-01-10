@@ -6,17 +6,16 @@ ms.date: 12/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 31de47c9-891b-4de7-8d5e-fbbc1bff7c60
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 89b799e01eb78e8395566b9479015faa268a1646
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: ccb9c241f79268b5571d3b18fa36783a092a0781
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198475"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799202"
 ---
 # <a name="how-to-enable-tls-12"></a>TLS 1.2를 사용하도록 설정하는 방법
 

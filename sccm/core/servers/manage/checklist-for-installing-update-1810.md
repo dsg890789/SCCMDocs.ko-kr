@@ -10,17 +10,16 @@ ms.assetid: b87ac054-9b37-4725-a3f3-2340cfb10bff
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 201dfffdae6b691085f4892b6b5b2b07b4ccecf8
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: b24618f76f0f6a5f4abba7f090dd0f86738d7b3a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198051"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75796631"
 ---
 # <a name="checklist-for-installing-update-1810-for-configuration-manager"></a>Configuration Manager용 업데이트 1810을 설치하기 위한 검사 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 현재 분기를 사용하는 경우 버전 1810용 콘솔 내 업데이트를 설치하여 이전 버전의 계층 구조를 업데이트할 수 있습니다. <!-- baseline only statement: (Because version 1802 is also available as [baseline media](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions), you can use the installation media to install the first site of a new hierarchy.)-->
 

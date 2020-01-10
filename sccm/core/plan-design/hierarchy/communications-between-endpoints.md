@@ -10,17 +10,16 @@ ms.assetid: 68fe0e7e-351e-4222-853a-877475adb589
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ebe37bb97c4a1e231bfaf94f420f7f0471f30f6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e1dc41e9ccee7a59d5014ace4e2db5d9071c5261
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62237732"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800529"
 ---
 # <a name="communications-between-endpoints-in-configuration-manager"></a>Configuration Manager의 엔드포인트 간 통신
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager 사이트 시스템과 클라이언트가 네트워크를 통해 통신하는 방법을 설명합니다. 여기에는 다음과 같은 섹션이 포함됩니다.  
 

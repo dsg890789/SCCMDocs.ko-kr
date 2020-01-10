@@ -10,17 +10,16 @@ ms.assetid: 58d52fdc-bd18-494d-9f3b-ccfc13ea3d35
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74905b9c681b98716447ac40683f4a09f024826b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 78f736fff05207154ab74f1c5a224478015e10df
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888955"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798346"
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>Configuration Manager에서 SQL Server Always On 가용성 그룹 사용 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager에서 SQL Server Always On 가용성 그룹을 사용할 준비를 합니다. 이 기능은 사이트 데이터베이스에 대한 고가용성 및 재해 복구 솔루션을 제공합니다.  
 
@@ -46,7 +45,7 @@ Configuration Manager에서의 가용성 그룹 사용을 위해 다음 시나�
 - [독립 실행형 SQL Server의 기본 또는 명명된 인스턴스로 가용성 그룹의 사이트 데이터베이스 이동](/sccm/core/servers/deploy/configure/configure-aoag#bkmk_stop)  
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 다음과 같은 필수 구성 요소가 모든 시나리오에 적용됩니다. 추가 필수 구성 요소가 특정 시나리오에 적용될 경우 해당 시나리오와 함께 자세히 설명됩니다.
 
@@ -63,7 +62,7 @@ Configuration Manager 설치 프로그램 실행에 사용하는 계정은 다�
 
 사이트 서버의 컴퓨터 계정은 가용성 그룹을 구성하는 각 컴퓨터에서 로컬 **관리자** 그룹의 구성원이어야 합니다.
 
-### <a name="sql-server"></a>SQL Server
+### <a name="sql-server"></a>SQL  Server
 
 #### <a name="version"></a>Version
 

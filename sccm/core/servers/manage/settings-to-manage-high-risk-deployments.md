@@ -10,17 +10,16 @@ ms.assetid: 8d37b983-a964-402c-819d-2512ed2d463b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4d617bdea9c63010c96cef6f91e5123b27641e9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2becba96dd96e8235bfa52d67edb42785fdecc31
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62250548"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793263"
 ---
 # <a name="settings-to-manage-high-risk-deployments-for-configuration-manager"></a>Configuration Manager에 대해 위험 수준이 높은 배포를 관리하기 위한 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 Configuration Manager에서 배포 확인 사이트 설정을 구성할 수 있습니다. 이러한 설정은 위험 수준이 높은 작업 순서 배포를 만들면 관리자에게 경고합니다. 위험 수준이 높은 배포는 다음과 같습니다.  
