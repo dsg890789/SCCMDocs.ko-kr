@@ -10,17 +10,16 @@ ms.assetid: 7a2abb79-9ae5-4a25-9e18-5dcf528de3bf
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e67e9fc63fad6cbfc986203fdec7b92c2aea73c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9b9a9d8a40a536d0d7229ae2616b3e0c91544f6b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71401532"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824489"
 ---
 # <a name="best-practices-for-collections-in-configuration-manager"></a>Configuration Manager의 컬렉션 모범 사례
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 System Center Configuration Manager에서 컬렉션에 대한 다음 모범 사례를 사용합니다.  
 

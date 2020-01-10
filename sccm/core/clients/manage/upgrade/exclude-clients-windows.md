@@ -10,17 +10,16 @@ ms.assetid: 4cd6031f-8844-4d0b-8166-b24d6528a94e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a16bc859006b0253459259d354a68e2ff1dec83
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b8906ec911061b2a72223d5709d9e6f389375fdc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70110147"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823758"
 ---
 # <a name="how-to-exclude-clients-from-upgrade-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 업그레이드에서 제외하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 업데이트된 클라이언트 버전을 자동으로 설치하지 않도록 클라이언트 컬렉션을 제외할 수 있습니다. 클라이언트를 업그레이드할 때 주의가 필요한 컴퓨터 컬렉션에 이 제외를 사용하세요. 제외된 컬렉션에 있는 클라이언트는 업데이트된 클라이언트 소프트웨어 설치 요청을 무시합니다.
 

@@ -10,13 +10,12 @@ ms.assetid: 5b243aac-8a1a-4f14-ba3f-5446bb483e92
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6838371a80530d5ab66abd9d8a976af41513e15
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3f43d5f18049835af719caaec420a5a7b15516d7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62193850"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817145"
 ---
 # <a name="client-health-with-co-management"></a>공동 관리를 사용하는 클라이언트 상태
 

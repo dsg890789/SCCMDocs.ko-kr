@@ -10,13 +10,12 @@ ms.assetid: 3343eccf-bf09-41cd-9e68-03e893c7f904
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee7b026662cb37ba8d0cc80062a24046a5c59342
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6870e9f9f9da3e4e2202f0d4298c0f583320996a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661188"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792046"
 ---
 # <a name="what-is-configuration-manager"></a>Configuration Manager란?
 

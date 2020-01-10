@@ -6,17 +6,16 @@ ms.date: 05/21/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: ed4dc65e-e5d5-4f75-88ac-f4849ec8fc10
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 5fbb2d4a902c21ac2fa2186bba70f58d66e50c48
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c4ecc3f5b456eb8d50675797ba2bfa4c7a6ecf25
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66176844"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75782033"
 ---
 # <a name="third-party-mdm-coexistence-with-configuration-manager"></a>Configuration Manager와 타사 MDM 공존
 

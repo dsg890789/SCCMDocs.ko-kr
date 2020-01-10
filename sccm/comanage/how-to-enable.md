@@ -10,13 +10,12 @@ ms.assetid: 8fac7ac5-96a3-4ec1-85cb-623b26bf5b1c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c17cf849dc5b717e06d127b73221d769ec850bc7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9f9e2911c70b1b07b46959a225c6bf0eb1bfe635
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68535308"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815550"
 ---
 # <a name="how-to-enable-co-management-in-configuration-manager"></a>Configuration Manager에서 공동 관리를 사용하도록 설정하는 방법
 

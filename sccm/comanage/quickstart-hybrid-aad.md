@@ -10,13 +10,12 @@ ms.assetid: 2af37410-d04c-4059-801c-9edb8bf72d89
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b773c0bfe8cd0f8253a67ac96f5a0113b7206c0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3241204a386df3e39523b05926e5cae0c7f70d82
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62193670"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816992"
 ---
 # <a name="use-azure-ad-for-co-management"></a>공동 관리를 위해 Azure AD 사용
 

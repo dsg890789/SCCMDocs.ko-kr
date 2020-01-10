@@ -10,17 +10,16 @@ ms.assetid: deb8aac8-2bd9-4980-a25b-5f8d93051226
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 770b25908512c8a9be475c4276cde8bbddbb85d2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f616c1cd87fcd0852fe783d5daec51284ef54233
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658475"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824625"
 ---
 # <a name="client-notification-in-configuration-manager"></a>Configuration Manager의 클라이언트 알림
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 원격 클라이언트에 대해 즉각적인 작업을 수행하려면 Configuration Manager 콘솔에서 클라이언트 알림 작업을 보냅니다. 개별 디바이스 또는 디바이스 컬렉션에 대해 이러한 작업을 시작합니다.
 

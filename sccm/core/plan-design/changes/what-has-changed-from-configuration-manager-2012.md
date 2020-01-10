@@ -10,13 +10,12 @@ ms.assetid: 3ae68fa6-8b30-45dd-9d12-50bb67cb4a9d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a49ef185da45429979b391608af2c36b569177c3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b6d0ac8b1aebcffa7ce26f0b759c240f50cfaeb3
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660719"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802823"
 ---
 # <a name="whats-changed-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager의 변경된 내용
 
@@ -31,7 +30,7 @@ Configuration Manager의 2015년 12월 릴리스(버전 1511)는 현재 Microsof
 
 Configuration Manager 현재 분기는  
 
-- System Center Configuration Manager 2007, System Center 2012 Configuration Manager 등의 이전 버전과 달리 제품 이름에 연도나 제품 식별자를 사용하지 않습니다.  
+- Configuration Manager 2007, System Center 2012 Configuration Manager 등의 이전 버전과 달리 제품 이름에 연도나 제품 식별자를 사용하지 않습니다.  
 
 - 업데이트 버전이라고도 하는 증분식 제품 내 업데이트를 지원합니다. 초기 릴리스는 버전 1511입니다. 이후 버전은 버전 1910과 같이 콘솔 내 업데이트로 1년에 여러 번 출시됩니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 0cf4bacb-6b6d-4d4f-8640-b13fe15873de
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2e5573ae4ec74db83dc895641af7b8fbc31a24
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 057858d4a67e1e1641dcde17fde6fc54cf70074a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499573"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801735"
 ---
 # <a name="support-for-windows-features-and-networks-in-configuration-manager"></a>Configuration Manager의 Windows 기능 및 네트워크 지원
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 아티클에서는 일반적인 Windows 및 네트워킹 기능에 대한 Configuration Manager 지원을 식별합니다.  
 
@@ -126,7 +125,7 @@ Configuration Manager는 단일 컴퓨터에서 둘 이상의 OS를 관리할 �
 
 Configuration Manager에서는 IPv4(인터넷 프로토콜 버전 4) 외에도, 다음과 같은 예외를 제외하고 IPv6(인터넷 프로토콜 버전 6)을 지원합니다.  
 
-|기능| IPv6 지원에 대한 예외|  
+|함수| IPv6 지원에 대한 예외|  
 |--------------|-------------------------------|  
 |클라우드 기반 배포 지점|Microsoft Azure 및 클라우드 기반 배포 지점을 지원하려면 IPv4를 사용해야 합니다.|  
 |클라우드 관리 게이트웨이|Microsoft Azure 및 클라우드 관리 게이트웨이를 지원하려면 IPv4를 사용해야 합니다.|  

@@ -10,17 +10,16 @@ ms.assetid: 828c31d1-3d70-4412-b1a8-c92e7e504d39
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34072fe18bc2d0d751938ff536f6d4ba8e4c378b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7703d7ce8ace9d0eda8cfe5175df7c5c18b9bf71
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500960"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793192"
 ---
 # <a name="unattended-site-recovery-for-configuration-manager"></a>Configuration Manager에 대한 무인 사이트 복구   
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
  Configuration Manager 중앙 관리 사이트 또는 기본 사이트의 [무인 복구](/sccm/protect/understand/recover-sites#site-recovery-procedures)를 수행하려는 경우, 무인 설치 스크립트를 만든 후 **/script** 명령 옵션과 함께 설치 프로그램을 사용하면 됩니다. 이 스크립트는 기본 설정이 없다는 점만 제외하고 설치 마법사에서 요구하는 정보와 동일한 유형의 정보를 제공합니다. 사용 중인 복구 유형에 적용되는 설치 키에 대해 모든 값을 지정해야 합니다.
 

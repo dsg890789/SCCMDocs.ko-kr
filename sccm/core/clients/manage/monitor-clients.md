@@ -10,17 +10,16 @@ ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5dadb6400ad76947ce7ace3228b6f7d95cedc17
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b692fa2024de18c55bc250aa090d1a98c14df5ed
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71311562"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824081"
 ---
 # <a name="how-to-monitor-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 모니터링하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 구성 관리자 클라이언트를 사이트의 Windows 컴퓨터 및 디바이스에 설치한 후에 Configuration Manager 콘솔에서 해당 상태 및 활동을 모니터링합니다.  
 

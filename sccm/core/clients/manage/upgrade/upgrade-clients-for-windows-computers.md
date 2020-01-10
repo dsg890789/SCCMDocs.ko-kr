@@ -10,17 +10,16 @@ ms.assetid: 6143fd47-48ec-4bca-b53b-5b9b9f067bc3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b811d6bb974dce7e71d986f81d3255d61382737
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6633f496cbec6fa4110037cf2eb2fc86bcc4372e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889920"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823707"
 ---
 # <a name="how-to-upgrade-clients-for-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터의 클라이언트를 업그레이드하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 클라이언트 설치 방법 또는 자동 클라이언트 업그레이드 기능을 사용하여 Windows 컴퓨터에서 Configuration Manager 클라이언트를 업그레이드합니다. 다음과 같은 클라이언트 설치 방법이 Windows 컴퓨터에서 클라이언트 소프트웨어를 업그레이드하는 올바른 방법입니다.  
 

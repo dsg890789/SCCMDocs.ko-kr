@@ -10,13 +10,12 @@ ms.assetid: bd3df04a-902f-4e91-89eb-5584b47d9efa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dd789f03d5547bdc695370ac28c7f9b81219e58
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 11eb8b02a958a480744f58777e388f7c4316df70
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62270834"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806240"
 ---
 # <a name="task-sequence-steps-to-manage-bios-to-uefi-conversion"></a>BIOS-UEFI 변환을 관리하는 작업 순서 단계
 Windows 10에서는 UEFI 사용 디바이스가 필요한 많은 새로운 보안 기능을 제공합니다. UEFI를 지원하지만 레거시 BIOS를 사용하는 최신 Windows PC가 있을 수 있습니다. 디바이스를 UEFI로 변환하려면 각 PC로 이동하여 하드 디스크를 다시 분할하고 펌웨어를 다시 구성해야 했습니다. Configuration Manager에서 작업 순서를 사용하여 하드 드라이브를 BIOS에서 UEFI로 변환할 준비를 하고, 현재 위치 업그레이드 프로세스의 일부로 BIOS에서 UEFI로 변환하고, 하드웨어 인벤토리의 일부로 UEFI 정보를 수집할 수 있습니다.
@@ -58,7 +57,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 ### <a name="to-convert-from-bios-to-uefi-during-an-in-place-upgrade"></a>현재 위치 업그레이드 중에 BIOS에서 UEFI로 변환하려면
 1. Windows 10 크리에이터 업데이트로의 현재 위치 업그레이드를 수행하는 운영 체제 업그레이드 작업 순서를 만듭니다.
 2. 작업 순서를 편집합니다. **사후 처리 그룹**에서 다음 작업 순서 단계를 추가합니다.
-   1. [일반]에서 **명령줄 실행** 단계를 추가합니다. 디스크에서 데이터를 수정하거나 삭제하지 않고 MBR에서 GPT로 디스크를 변환하는 MBR2GPT 도구에 대한 명령줄 도구를 추가합니다. 명령줄에서 다음을 입력합니다. **MBR2GPT /convert /disk:0 /AllowFullOS**. 전체 운영 체제가 아닌 Windows PE에 있을 때 MBR2GPT.EXE 도구를 실행할 수도 있습니다. 이 작업을 수행하려면 MBR2GPT.EXE 도구를 실행하는 단계 전에 컴퓨터를 WinPE로 다시 시작하는 단계를 추가하고 명령줄에서 /AllowFullOS 옵션을 제거합니다. 도구 및 사용 가능한 옵션에 대한 자세한 내용은 [MBR2GPT.EXE](https://technet.microsoft.com/itpro/windows/deploy/mbr-to-gpt)를 참조하세요.
+   1. [일반]에서 **명령줄 실행** 단계를 추가합니다. 디스크에서 데이터를 수정하거나 삭제하지 않고 MBR에서 GPT로 디스크를 변환하는 MBR2GPT 도구에 대한 명령줄 도구를 추가합니다. 명령줄에서 다음을 입력합니다.  **MBR2GPT /convert /disk:0 /AllowFullOS**. 전체 운영 체제가 아닌 Windows PE에 있을 때 MBR2GPT.EXE 도구를 실행할 수도 있습니다. 이 작업을 수행하려면 MBR2GPT.EXE 도구를 실행하는 단계 전에 컴퓨터를 WinPE로 다시 시작하는 단계를 추가하고 명령줄에서 /AllowFullOS 옵션을 제거합니다. 도구 및 사용 가능한 옵션에 대한 자세한 내용은 [MBR2GPT.EXE](https://technet.microsoft.com/itpro/windows/deploy/mbr-to-gpt)를 참조하세요.
    2. 펌웨어를 BIOS에서 UEFI로 변환하는 OEM 도구를 시작하는 단계를 추가합니다. 이 단계는 일반적으로 명령줄을 사용하여 OEM 도구를 시작하는 명령줄 실행 작업 순서 단계가 됩니다.
    3. [일반]에서 **컴퓨터 다시 시작** 단계를 추가합니다. [다시 시작한 후에 실행할 응용 프로그램을 지정하십시오.]에서 **현재 설치된 기본 운영 체제**를 선택합니다.
 3. 작업 순서를 배포합니다.

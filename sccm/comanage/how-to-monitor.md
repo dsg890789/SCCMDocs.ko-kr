@@ -10,17 +10,16 @@ ms.assetid: e83a7b0d-b381-4b4a-8eca-850385abbebb
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35ae9ca2a4ec42dab6302f0473a10b4c57ae1741
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ef379593a04c1f1e584c3d7066dbf1bece7a08c8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68534997"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825339"
 ---
 # <a name="how-to-monitor-co-management-in-configuration-manager"></a>Configuration Manager에서 공동 관리를 모니터링하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 공동 관리를 사용하도록 설정하면 다음 방법을 사용하여 공동 관리 디바이스를 모니터링합니다.
 

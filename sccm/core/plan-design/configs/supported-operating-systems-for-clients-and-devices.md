@@ -10,13 +10,12 @@ ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 278c8df83940f982e2daff6d4f5cd15fe923e03b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4e34f94b39984111f91b39cbd4eeaedb89bd07df
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660499"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801616"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 

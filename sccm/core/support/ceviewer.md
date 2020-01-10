@@ -10,17 +10,16 @@ ms.assetid: caad2d93-087c-4dc0-a2a7-6a2fd808b4c8
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48b5abb686171b475233a2c61b80c0819ee26994
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 55d2599654441dcaa86bceb06f7d1c2a49f8f736
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500896"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826104"
 ---
 # <a name="collection-evaluation-viewer"></a>컬렉션 평가 뷰어
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 컬렉션 평가 뷰어는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 이 뷰어를 사용하여 기본 사이트 서버에서 컬렉션 평가 프로세스를 보고 문제를 해결합니다.
 

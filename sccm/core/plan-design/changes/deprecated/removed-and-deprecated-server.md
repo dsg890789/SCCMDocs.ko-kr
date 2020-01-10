@@ -10,17 +10,16 @@ ms.assetid: d53ac075-438b-41da-ab85-42f33982da0c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88b192163ac7a947f73ff658f7bafbfc1bfd5e14
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 182dad525040257fc72671c8b49da3b3da9efd7d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67285871"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802857"
 ---
 # <a name="removed-and-deprecated-for-configuration-manager-site-servers"></a>Configuration Manager 사이트 서버에서 제거되거나 사용되지 않음
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager 사이트 서버 지원에서 제거되거나 향후 업데이트에서 제거될(사용되지 않음) 제품 및 운영 체제에 대해 설명합니다. Configuration Manager 사용에 영향을 줄 수 있는 향후 변경 내용에 대해 미리 알려드립니다.  
 
@@ -52,7 +51,7 @@ ms.locfileid: "67285871"
 
 
 
-## <a name="sql-server"></a>SQL Server   
+## <a name="sql-server"></a>SQL  Server   
 
 |**SQL Server 버전**|**처음 중단 발표**|**제거된 지원**|   
 |-|-|-| 

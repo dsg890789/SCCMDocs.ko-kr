@@ -10,17 +10,16 @@ ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb7206020ff0a31cbf853ac1513e806c5bc05165
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 625ae5a9a626db7ef7509cd67a7fbfde54a8a9cf
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67251961"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802687"
 ---
 # <a name="whats-new-in-version-1810-of-configuration-manager-current-branch"></a>Configuration Manager 1810 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 현재 분기에 대한 1810 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1710, 1802 또는 1806 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement: When installing a new site, it's also available as a baseline version.--> 이 문서는 Configuration Manager, 버전 1810에서 변경 내용 및 새로운 기능을 요약합니다.  
 

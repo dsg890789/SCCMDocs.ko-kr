@@ -10,17 +10,16 @@ ms.assetid: d5ce547d-3b3b-47d3-bcd7-6ff94692c046
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 799de01786debb44450d1ba67c75c14a1762f851
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 861136970db70c145d1ac9951b20b13a2ce76f55
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70176791"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826002"
 ---
 # <a name="send-schedule-tool"></a>일정 보내기 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 일정 보내기 도구는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 이를 사용하여 클라이언트에서 일정을 트리거하거나 지정된 구성 기준의 평가를 트리거합니다. 로컬 컴퓨터 또는 원격 클라이언트를 대상으로 작동합니다.  
 

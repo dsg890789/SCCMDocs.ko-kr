@@ -5,13 +5,12 @@ ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: include
 ms.date: 10/17/2019
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a92c149de02087d7dec586769ec770f50190329
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 01f38845992f79d49e141c5a326c0cea1c721605
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72694430"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805972"
 ---
 ### <a name="ki_osd"></a> 작업 순서는 PXE 또는 미디어에서 사용할 수 없습니다.
 

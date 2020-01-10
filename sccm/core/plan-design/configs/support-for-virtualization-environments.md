@@ -10,17 +10,16 @@ ms.assetid: 1098e8c5-9676-4c2b-841b-ec88bd04e495
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313f49804bb526d3a1e8d208b8efdc849d674e2e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 52e5d832a4c729cc292601eb373d7bf5a5fca7ef
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67623374"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801990"
 ---
 # <a name="support-for-virtualization-environments-with-configuration-manager"></a>Configuration Manager를 사용하여 가상화 환경 지원
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 다음 문서의 가상 환경에서 가상 머신으로 실행되는 지원 운영 체제에서 클라이언트 및 사이트 시스템 역할을 설치하도록 지원합니다. 가상 머신 호스트(가상화 환경)가 클라이언트 또는 사이트 서버로 지원되지 않는 경우에도 이러한 설치는 지원됩니다.  
 

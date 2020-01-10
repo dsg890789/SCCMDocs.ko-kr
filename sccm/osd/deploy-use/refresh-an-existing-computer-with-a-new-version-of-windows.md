@@ -10,17 +10,16 @@ ms.assetid: b189a346-8c0d-4870-a876-0719fbb0ab04
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2443f8ddc280e880ffb43a8e82bbc47b49d4395
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 771073b087378a6d53b8315c077d520d2c7f9d5b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70110212"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806291"
 ---
 # <a name="refresh-an-existing-computer-with-a-new-version-of-windows"></a>새 버전의 Windows로 기존 컴퓨터 새로 고침
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 사용 하 여 기존 컴퓨터를 분할 하 고 포맷 한 다음 새 OS를 설치 합니다. 이 프로세스를 *이미지로 다시 설치* 또는 *초기화 및 로드*라고도 합니다. 이 시나리오에서는 PXE, 부팅 가능한 미디어 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 또한 상태 마이그레이션 지점을 사용 하 여 설정을 저장 한 다음 새 OS로 복원할 수 있습니다.
 

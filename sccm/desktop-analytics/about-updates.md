@@ -10,13 +10,12 @@ ms.assetid: 14ae894c-26fb-4fe3-b51d-e80700122df4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f090c80f70ef8d286a36236c48503817adb93591
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4ac628641cc6b8c07bb0c603929397bd96fffda7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72387025"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825679"
 ---
 # <a name="updates-in-desktop-analytics"></a>Desktop Analytics의 업데이트
 

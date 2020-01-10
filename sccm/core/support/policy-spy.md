@@ -10,17 +10,16 @@ ms.assetid: 1012ec24-27d9-4193-8236-918d283c7448
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 297aa9f8756b0c7214381e5e688f26cc21645fc4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2212b401a205280c159dfddf916be57186575964
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500848"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826036"
 ---
 # <a name="policy-spy"></a>정책 감시
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Policy Spy는 [Configuration Manager 도구](/sccm/core/support/tools) 중 하나입니다. Configuration Manager 클라이언트에서 정책 시스템을 보고 문제를 해결하는 도구입니다. **PolicySpy.exe**를 실행하여 사용자 인터페이스를 엽니다. 명령줄 사용법에 대한 자세한 내용은 [명령줄 구문](#bkmk_policyspy-syntax)을 참조하세요.
 

@@ -6,17 +6,16 @@ ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 39a3001e-2df5-4b36-bd83-4f1d21dda335
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2307a4bddb3651f0954e479f34b987312a18e12f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d24c35019b7a33fbe1d007817f4121fc1121b8d7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957613"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793595"
 ---
 # <a name="reinit-missing-message"></a>누락 메시지 다시 초기화
 
@@ -81,7 +80,7 @@ WHERE it.RequestTrackingGUID=@trackingGuid
 
 자세한 내용은 [클래스 SMS_ReplicationGroup의 InitializeData 메서드](/sccm/develop/reference/core/servers/configure/initializedata-method-in-class-sms_replicationgroup)를 참조하세요.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 ```PowerShell
 Invoke-WmiMethod –Namespace "root\sms\site_CAS" -Class SMS_ReplicationGroup –Name InitializeData -ArgumentList "20", "CAS", "PR1"

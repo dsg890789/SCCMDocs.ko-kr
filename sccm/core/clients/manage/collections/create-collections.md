@@ -10,17 +10,16 @@ ms.assetid: 1401a35e-4312-4d3b-8ceb-0abbb10d4f05
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bec2d55cdf7ff5d405ee689c821735413e8a9ff
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3fabbb774b1bf4d6144b59dea75a61207304557f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69490089"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824472"
 ---
 # <a name="how-to-create-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 만드는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 컬렉션은 사용자 또는 디바이스의 그룹입니다. 애플리케이션 관리, 준수 설정 배포 또는 소프트웨어 업데이트 설치와 같은 작업에 컬렉션을 사용합니다. 또한 클라이언트 설정 그룹을 관리하는 데 컬렉션을 사용하거나 관리자가 액세스할 수 있는 리소스를 지정하기 위해 역할 기반 관리와 함께 컬렉션을 사용할 수 있습니다. Configuration Manager에는 여러 기본 제공 컬렉션이 포함되어 있습니다. 자세한 내용은 [컬렉션 소개](/sccm/core/clients/manage/collections/introduction-to-collections)를 참조하세요.  
 
@@ -68,7 +67,7 @@ Configuration Manager 컬렉션에 다른 컬렉션의 멤버를 포함합니다
 
 컬렉션에 여러 제외 컬렉션 규칙을 추가할 수 있습니다. 컬렉션에 포함 컬렉션 및 제외 컬렉션 규칙이 모두 포함되어 있고 충돌이 있다면 제외 컬렉션 규칙이 우선합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 하나의 포함 컬렉션 규칙과 하나의 제외 컬렉션 규칙이 있는 컬렉션을 만듭니다. 포함 컬렉션 규칙은 Dell 데스크톱의 컬렉션을 위한 것입니다. 제외 컬렉션은 RAM이 4GB보다 작은 컴퓨터의 컬렉션을 위한 것입니다. 새 컬렉션에는 RAM이 4GB 이상인 Dell 데스크톱이 포함되어 있습니다.
 
 
@@ -137,13 +136,13 @@ Configuration Manager 컬렉션에 다른 컬렉션의 멤버를 포함합니다
 
 1. **직접 멤버 관리 규칙 만들기 마법사** 의 **리소스 검색**페이지에서 다음 정보를 지정합니다.  
 
-    - **리소스 클래스**: 목록에서 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. 예:
+    - **리소스 클래스**: 목록에서 검색하여 컬렉션에 추가하려는 리소스의 유형을 선택합니다. 예를 들면 다음과 같습니다.
         - **시스템 리소스**: 클라이언트 컴퓨터에서 반환된 인벤토리 데이터를 검색합니다.
         - **알 수 없는 컴퓨터**: 알 수 없는 컴퓨터에서 반환된 값 중에서 선택합니다.
         - **사용자 리소스**: Configuration Manager에서 수집된 사용자 정보를 검색합니다.
         - **사용자 그룹 리소스**: Configuration Manager에서 수집된 사용자 그룹 정보를 검색합니다.
 
-    - **특성 이름**: 검색할 선택된 리소스 클래스와 연결된 특성을 선택합니다. 예:  
+    - **특성 이름**: 검색할 선택된 리소스 클래스와 연결된 특성을 선택합니다. 예를 들면 다음과 같습니다.  
 
         - NetBIOS 이름으로 컴퓨터를 선택하려는 경우 **리소스 클래스**목록에서 **시스템 리소스**를 선택하고 **특성 이름** 목록에서 **NetBIOS 이름**을 선택합니다.  
 
@@ -153,7 +152,7 @@ Configuration Manager 컬렉션에 다른 컬렉션의 멤버를 포함합니다
 
     - **Configuration Manager 클라이언트가 설치되지 않은 리소스 제외**: 이러한 리소스는 검색 결과에 표시되지 않습니다.  
 
-    - **값**: 선택한 특성 이름을 검색하려면 값을 입력합니다. 백분율 문자(%)를 와일드카드로 사용합니다. 예:  
+    - **값**: 선택한 특성 이름을 검색하려면 값을 입력합니다. 백분율 문자(%)를 와일드카드로 사용합니다. 예를 들면 다음과 같습니다.  
         - “M”으로 시작하는 NetBIOS 이름을 가진 컴퓨터를 검색하려면 이 필드에 **M%** 를 입력합니다.  
         - Contoso OU에서 사용자를 검색하려면 이 필드에 **Contoso**를 입력합니다.
 
@@ -228,7 +227,7 @@ Azure AD(Active Directory) 그룹에 대한 컬렉션 멤버 자격 동기화를
 Azure AD 동기화는 5분마다 발생합니다. Configuration Manager에서 Azure AD로의 단방향 프로세스입니다. Azure AD의 변경 내용은 Configuration Manager 컬렉션에 반영되지 않으며 Configuration Manager가 덮어씁니다. 예를 들어 Configuration Manager 컬렉션에 2개의 디바이스가 있고 Azure AD 그룹에 3개의 다른 디바이스가 있다면 동기화 후 Azure AD 그룹에는 5개의 디바이스가 있게 됩니다.
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 - [클라우드 관리](/sccm/core/servers/deploy/configure/azure-services-wizard)
 - [Azure Active Directory 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)

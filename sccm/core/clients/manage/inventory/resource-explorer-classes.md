@@ -6,21 +6,20 @@ ms.date: 11/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 1d333f4c-0f85-4278-b421-064cf01529a5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f96a288f2122a1972ab15d127d36df69b8b7c4c6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a8202dbcb677b2313982a538db0982a21c2fc761
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74820490"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824268"
 ---
 # <a name="resource-explorer-default-inventory-classes"></a>리소스 탐색기 기본 인벤토리 클래스
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 리소스 탐색기의 기본 인벤토리 클래스에 대해 설명합니다.
 
@@ -886,7 +885,7 @@ ms.locfileid: "74820490"
 
 
 
-## <a name="desktop"></a>바탕 화면
+## <a name="desktop"></a>데스크톱
 
 네임스페이스: root\cimv2
 

@@ -10,17 +10,16 @@ ms.assetid: c5a42100-2f60-4952-b495-918025ea6559
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ab58becbd3fb96dc1fba927ac5517926b5e108
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b9ab1fe53f5d86fa3427e4637ffe1013e48171ce
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660566"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802041"
 ---
 # <a name="size-and-scale-numbers-for-configuration-manager"></a>Configuration Manager의 크기 및 비율 값
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 각 Configuration Manager 배포에서 지원할 수 있는 사이트, 사이트 시스템 역할 및 디바이스의 최대 개수가 있습니다. 이러한 숫자 값은 계층 구조, 사용하는 사이트의 유형 및 개수, 배포하는 사이트 시스템 역할에 따라 달라집니다. 이 문서의 정보는 관리할 것으로 예상하는 디바이스를 지원하기 위해 필요한 사이트 시스템 역할 및 사이트 수를 확인하는 데 도움이 될 수 있습니다.
 

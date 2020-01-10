@@ -10,17 +10,16 @@ ms.assetid: c667d6af-80c4-485f-910c-896c0171fd00
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a97d05535b55071de6ab836f7fcd66c4c2cb8d0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 758b953ae06f9e9def1b4da025b700f86ead17c0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68535663"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824149"
 ---
 # <a name="manage-clients-on-the-internet-with-configuration-manager"></a>Configuration Manager를 사용하여 인터넷에서 클라이언트 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 일반적으로 Configuration Manager에서 대부분의 관리 컴퓨터와 서버는 관리 기능을 수행하는 사이트 시스템 서버와 물리적으로 동일한 내부 네트워크에 있습니다. 그러나 인터넷에 연결된 경우 내부 네트워크의 외부에서 클라이언트를 관리할 수 있습니다. 이 기능에서는 클라이언트가 사이트 시스템 서버에 연결하기 위해 VPN을 통해 연결하지 않아도 됩니다.
 

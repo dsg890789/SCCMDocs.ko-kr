@@ -10,17 +10,16 @@ ms.assetid: 9875c443-19bf-43a0-9203-3a741f305096
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb64b2f13bd1fe558d90d2c4011f03fb6322b443
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 380e3fdcc3ef2ee3ca1db91620ae9a966ecc6062
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198577"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805322"
 ---
 # <a name="create-a-configuration-manager-lab-in-azure"></a>Azure에서 Configuration Manager 랩 만들기
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 <!--3556017-->
 
@@ -33,7 +32,7 @@ ms.locfileid: "75198577"
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 이 프로세스에는 다음 개체를 만들 수 있는 Azure 구독이 필요합니다. 
 - 도메인 컨트롤러 및 MP/DP 역할에 대한 두 Standard_B2s 가상 머신
@@ -116,7 +115,7 @@ VM에 연결하려면 먼저 Azure Portal에서 각 VM에 대한 공용 IP 주�
 
 - 두 개의 CPU와 8GB의 메모리가 있는 Standard_B2ms
 - Windows Server 2016 Datacenter Edition
-- SQL Server
+- SQL  Server
 - Windows PE가 포함된 Windows 10 ADK 
 - Configuration Manager 기본 사이트
 

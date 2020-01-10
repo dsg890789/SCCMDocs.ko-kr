@@ -10,13 +10,12 @@ ms.assetid: 343dbe2a-597c-4719-b7ac-45b1f39b49ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b27238ea4a77879c353a882c860959d028b81adb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e02c168a95aa7fb1eccefa773c8347764f43b955
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72384947"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825611"
 ---
 # <a name="health-status-monitoring-in-desktop-analytics"></a>Desktop Analytics의 상태 모니터링
 

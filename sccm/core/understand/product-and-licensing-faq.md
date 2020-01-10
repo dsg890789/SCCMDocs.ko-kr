@@ -10,13 +10,12 @@ ms.assetid: ee8d611f-aa0c-4efd-b0ad-dbd14d0a0623
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8a86319168143850c754427651add636ff12ad5
-ms.sourcegitcommit: 4d3999de1e13d579dd128578cb5dcee46fe3b0d6
+ms.openlocfilehash: 6ce8140b3c6454123f8f8611015f2ff3923dbb2f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74855866"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792002"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 

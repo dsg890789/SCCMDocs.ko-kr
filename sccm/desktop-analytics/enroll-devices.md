@@ -10,13 +10,12 @@ ms.assetid: 2ea18d09-c957-47f7-8e54-c6f2b3c74347
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10535acc49f047876eafb188569e82db7a2bbea9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6f0b83d695ff3a80bd41973847ca91b654472a77
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73704801"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791571"
 ---
 # <a name="how-to-enroll-devices-in-desktop-analytics"></a>Desktop Analytics에서 디바이스를 등록하는 방법
 

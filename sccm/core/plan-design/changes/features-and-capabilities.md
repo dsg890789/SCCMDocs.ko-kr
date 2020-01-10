@@ -10,13 +10,12 @@ ms.assetid: 5d388399-07ca-431c-a9b2-56c69771aa87
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1df7198895878d5ffea296b24790067545c0e42b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c50efb804787bb8288e6b1f200cee005ed2d0370
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660736"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802840"
 ---
 # <a name="features-and-capabilities-of-configuration-manager"></a>Configuration Manager의 기능 및 특성
 
@@ -76,12 +75,12 @@ Windows 10의 현재 위치 업그레이드를 배포하거나 OS 이미지를 �
 - Microsoft Defender Advanced Threat Protection
 - Windows Defender Exploit Guard
 - Windows Defender Application Guard
-- Windows Defender Application Control
+- Windows Defender 애플리케이션 제어
 - Windows Defender 방화벽
 
 자세한 내용은 [Endpoint Protection](/sccm/protect/deploy-use/endpoint-protection)을 참조하세요.  
 
-## <a name="inventory"></a>인벤토리
+## <a name="inventory"></a>재고
 
 자산을 식별하고 모니터링하는 데 도움이 됩니다.
 

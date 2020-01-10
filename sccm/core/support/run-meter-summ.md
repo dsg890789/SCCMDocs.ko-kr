@@ -10,17 +10,16 @@ ms.assetid: d27f88fe-817f-4af4-b290-c16f2e46cf31
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b044272663ada4b43536f88c293308c57732e9c4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d54dc914fb6418ff9ad9048736400ee9d403f978
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500809"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792561"
 ---
 # <a name="run-meter-summarization-tool"></a>측정기 요약 도구 실행
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 측정기 요약 도구 실행은 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 이 도구를 사용하여 기본 사이트에 대한 소프트웨어 계량 요약 유지 관리 작업을 즉시 트리거합니다. 기본적으로 이러한 작업은 매일 오전 12시 이후에 시작하는 **사이트 유지 관리** 작업에 예약된 대로 실행됩니다. 
 
@@ -37,7 +36,7 @@ ms.locfileid: "65500809"
 `runmetersumm  [sms database name]  <delay in hours for summarization <default=0>>`
 
 
-### <a name="options"></a>Options
+### <a name="options"></a>옵션
 
 #### <a name="database-name"></a>데이터베이스 이름
 SQL Server의 사이트 데이터베이스 이름.
@@ -46,7 +45,7 @@ SQL Server의 사이트 데이터베이스 이름.
 이 도구는 지연 전에 생성된 소프트웨어 계량 사용량을 요약합니다. 기본적으로 이 지연은 0입니다.
 
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 #### <a name="summarize-the-software-metering-usage-generated-12-hours-ago"></a>12시간 전에 생성된 소프트웨어 계량 사용량 요약
 

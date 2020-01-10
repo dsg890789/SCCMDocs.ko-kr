@@ -10,17 +10,16 @@ ms.assetid: 15f72f80-9850-40ce-9c3a-443ba04b6a03
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d184118e0e99231a9160322740ab7690488a28a5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: fdcfd48045b4969b561100393a6cdf2a35955d1f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67286758"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824557"
 ---
 # <a name="monitor-cloud-management-gateway"></a>클라우드 관리 게이트웨이 모니터링
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 클라우드 관리 게이트웨이(CMG)가 실행되고 클라이언트가 CMG를 통해 연결된 후에 클라이언트 및 네트워크 트래픽을 모니터링하여 서비스가 수행되는 방법을 확인할 수 있습니다.
 

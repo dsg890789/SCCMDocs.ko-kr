@@ -10,13 +10,12 @@ ms.assetid: 3e82cd96-0ce0-474a-a597-d65fceadc95a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84b5bf720a974bd767db56b9e9da4784caefad1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 26ca3129e152c7dd8c521e39e6bd859fddbe29df
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72384679"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825543"
 ---
 # <a name="tutorial-deploy-windows-10-to-pilot"></a>자습서: 파일럿에 Windows 10 배포
 
@@ -36,7 +35,7 @@ Desktop Analytics는 Azure 구독에서 *Log Analytics 작업 영역*을 사용�
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 이 자습서를 시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.  
 
@@ -337,7 +336,7 @@ Configuration Manager는 연결을 만든 후 60분 이내에 컬렉션을 동�
 
     - **버전 인덱스**: 패키지에서 사용할 수 있는 OS 버전 인덱스가 여러 개 있는 경우 원하는 버전 인덱스를 선택합니다. 기본적으로 마법사는 첫 번째 인덱스를 선택합니다.  
 
-    - **제품 키**: 설치할 OS의 Windows 제품 키를 지정합니다. 인코딩된 볼륨 라이선스 키 또는 표준 제품 키를 지정하세요. 표준 제품 키를 사용하는 경우 5자로 이루어진 각 그룹을 대시(-)로 구분 합니다. 예: *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX*. 볼륨 라이선스 버전용 업그레이드의 경우에는 제품 키가 필요하지 않을 수 있습니다.  
+    - **제품 키**: 설치할 OS의 Windows 제품 키를 지정합니다. 인코딩된 볼륨 라이선스 키 또는 표준 제품 키를 지정하세요. 표준 제품 키를 사용하는 경우 5자로 이루어진 각 그룹을 대시(-)로 구분 합니다. 예를 들면 다음과 같습니다. *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX*. 볼륨 라이선스 버전용 업그레이드의 경우에는 제품 키가 필요하지 않을 수 있습니다.  
 
         > [!Note]  
         > 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요.

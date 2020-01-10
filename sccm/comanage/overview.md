@@ -10,13 +10,12 @@ ms.topic: overview
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3710cc7178020af1d03bfd02953e2a2f3ed64f26
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ee66cd2714eff036ee62afc7c457b1e81fe78011
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68743608"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817213"
 ---
 # <a name="what-is-co-management"></a>공동 관리란?
 
@@ -71,7 +70,7 @@ Windows 10 디바이스에 Configuration Manager 클라이언트가 있고 디�
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 공동 관리에는 다음 영역에서 다음과 같은 필수 조건이 있습니다.
 

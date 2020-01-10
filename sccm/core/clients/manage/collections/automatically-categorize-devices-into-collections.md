@@ -10,17 +10,16 @@ ms.assetid: 98b038b4-1a13-4228-bdb8-a12194e32b0e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0a70d55eb63a51ca980db1fb7089a9490a2803c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bd0f25b3fe165a09a426bffb6568bd922714c386
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66176707"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824506"
 ---
 # <a name="automatically-categorize-devices-into-collections"></a>컬렉션으로 디바이스 자동 분류
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Microsoft Intune에서 Configuration Manager를 사용하는 경우 디바이스 컬렉션에 디바이스를 자동으로 배치하는 데 사용할 수 있는 디바이스 범주를 만들 수 있습니다. 그런 다음, 사용자는 Intune에 디바이스를 등록할 때 디바이스 범주를 선택해야 합니다. Configuration Manager 콘솔에서 디바이스 범주를 변경할 수 있습니다.
 

@@ -10,17 +10,16 @@ ms.assetid: 375912f5-436d-4315-bdbe-d77afee6c9f3
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c55b7b5bc4effdb1bf1f13dbe0248aa56ad2abe1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b2ab72a821f469240d28606a7aa896df0ae6d141
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499968"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824217"
 ---
 # <a name="how-to-use-resource-explorer-to-view-hardware-inventory-in-configuration-manager"></a>리소스 탐색기를 사용하여 Configuration Manager에서 하드웨어 인벤토리를 확인하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 리소스 탐색기를 사용하여 하드웨어 인벤토리에 대한 정보를 확인합니다. 사이트는 계층 구조의 클라이언트에서 이 정보를 수집합니다.  
 

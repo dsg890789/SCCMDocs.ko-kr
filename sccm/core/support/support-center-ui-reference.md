@@ -10,17 +10,16 @@ ms.assetid: 41cdebfe-b595-40aa-a385-32e0746255ed
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79d805677b6a2572cb659ad8923717922c82f5d2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 89224fbcedb8e70a5b4f98671d7b6605a1b4de6f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68340228"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792398"
 ---
 # <a name="support-center-user-interface-reference"></a>지원 센터 사용자 인터페이스 참조
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서는 지원 센터 도구의 UI(사용자 인터페이스)를 설명하는 참조입니다.
 - 지원 센터
@@ -52,10 +51,10 @@ ms.locfileid: "68340228"
 #### <a name="remote-connection"></a>원격 연결
 다른 Configuration Manager 클라이언트를 사용하여 원격 연결을 구성합니다. 연결 후 지원 센터에서 연결된 클라이언트에 대한 로그 파일을 수집하고 문제 해결을 수행합니다.
 
-#### <a name="about"></a>정보
+#### <a name="about"></a>소개
 지원 센터에 대한 정보를 제공합니다.
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 **옵션** 대화 상자에서 다음을 수행할 수 있습니다.
 - 애니메이션된 사용자 인터페이스 요소의 이동 줄이기  
 - 데이터 번들 파일에 대한 기본 저장 위치 변경  
@@ -411,13 +410,13 @@ Configuration Manager 클라이언트와 관련된 가장 일반적인 문제 �
 #### <a name="open-logs"></a>로그 열기
 로그 파일의 위치로 이동하여 엽니다. 
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 **옵션** 대화 상자에서 다음을 수행할 수 있습니다.
 - 애니메이션된 사용자 인터페이스 요소의 이동 줄이기  
 - 로그 뷰어를 .log 및 .lo_ 파일 확장을 사용하여 로그 파일에 대한 기본 앱으로 등록  
 - 경고를 다시 설정합니다. 트리거되면 이전에 표시되지 않은 모든 경고 메시지 다시 표시됩니다.  
 
-#### <a name="about"></a>정보
+#### <a name="about"></a>소개
 지원 센터 로그 뷰어에 대한 정보 표시
 
 #### <a name="close"></a>닫기
@@ -449,7 +448,7 @@ Configuration Manager 클라이언트와 관련된 가장 일반적인 문제 �
 #### <a name="find-previous"></a>이전 찾기
 검색 중인 문자열과 일치하는 두 개 이상의 항목을 찾은 후 이 옵션을 누르면 이전 일치하는 항목으로 이동합니다.
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 
 - **실시간 업데이트**: 현재 열려 있는 로그 파일에서 변경 내용을 모니터링합니다. 이 기능은 여러 로그 파일이 열려 있는 경우에는 작동하지 않습니다. 기본적으로 이 옵션은 사용하도록 설정됩니다.  
 
@@ -551,10 +550,10 @@ Configuration Manager 클라이언트와 관련된 가장 일반적인 문제 �
 #### <a name="open-bundle"></a>번들 열기
 지원 센터에서 만든 데이터 번들의 위치로 이동합니다.
 
-#### <a name="about"></a>정보
+#### <a name="about"></a>소개
 지원 센터 뷰어에 대한 정보를 표시합니다.
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 **옵션** 대화 상자에서 다음을 수행할 수 있습니다.
 - 애니메이션된 사용자 인터페이스 요소의 이동 줄이기  
 - 임시 파일의 위치 변경    

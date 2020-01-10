@@ -10,17 +10,16 @@ ms.assetid: 1392797b-76cb-46b4-a3e4-8f349ccaa078
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 201441b4fd00199d5c8730b10dbb8631b69c1ee6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 00197d92e6a6bb928fd2727e55857056bf3839ac
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660583"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802092"
 ---
 # <a name="site-and-site-system-prerequisites-for-configuration-manager"></a>Configuration Manager의 사이트 및 사이트 시스템 필수 조건
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Windows 기반 컴퓨터에서 Configuration Manager 사이트 시스템 서버로서의 사용을 지원하려면 특정한 구성이 필요합니다.
 
@@ -158,7 +157,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 - Configuration Manager 사이트를 설치하는 동안 사이트 데이터베이스를 호스트하는 컴퓨터에서 **원격 레지스트리** 서비스를 사용하도록 설정합니다.  
 
-### <a name="sql-server"></a>SQL Server  
+### <a name="sql-server"></a>SQL  Server  
 
 - 중앙 관리 사이트 또는 기본 사이트를 설치하기 전에 사이트 데이터베이스를 호스트할 수 있는 버전의 SQL Server를 설치합니다. 자세한 내용은 [지원되는 SQL Server 버전](/sccm/core/plan-design/configs/support-for-sql-server-versions)을 참조하세요.  
 
@@ -220,7 +219,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="iis-configuration"></a>IIS 구성  
 
-- 일반 HTTP 기능:  
+- 일반적인 HTTP 기능:  
 
     - 기본 문서  
 
@@ -276,7 +275,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="iis-configuration"></a>IIS 구성
 
-- 일반 HTTP 기능:  
+- 일반적인 HTTP 기능:  
 
     - 기본 문서  
 
@@ -284,7 +283,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
     - IIS 6 메타데이터 호환성  
 
-- 애플리케이션 개발:  
+- 응용 프로그램 개발:  
 
     - ASP.NET 3.5 및 자동으로 선택된 옵션  
 
@@ -340,7 +339,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="iis-configuration"></a>IIS 구성
 
-- 애플리케이션 개발:  
+- 응용 프로그램 개발:  
 
     - ASP.NET 3.5 및 자동으로 선택된 옵션  
 
@@ -365,7 +364,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 #### <a name="iis-configuration"></a>IIS 구성
 
-- 애플리케이션 개발:  
+- 응용 프로그램 개발:  
 
     - ISAPI 확장  
 
@@ -452,11 +451,11 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="iis-configuration"></a>IIS 구성
 
-- 일반 HTTP 기능:  
+- 일반적인 HTTP 기능:  
 
     - 기본 문서  
 
-- 애플리케이션 개발:  
+- 응용 프로그램 개발:  
 
     - ASP.NET 3.5 및 자동으로 선택된 옵션  
 
@@ -503,7 +502,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="iis-configuration"></a>IIS 구성
 
-- 일반 HTTP 기능:  
+- 일반적인 HTTP 기능:  
 
     - 기본 문서  
 
@@ -566,7 +565,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="iis-configuration"></a>IIS 구성
 
-- 애플리케이션 개발:  
+- 응용 프로그램 개발:  
 
     - ISAPI 확장  
 
@@ -696,11 +695,11 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 ### <a name="iis-configuration"></a>IIS 구성
 
-- 일반 HTTP 기능:  
+- 일반적인 HTTP 기능:  
 
     - 기본 문서  
 
-- 애플리케이션 개발:  
+- 응용 프로그램 개발:  
 
     - ASP.NET 3.5 및 자동으로 선택된 옵션  
 
@@ -731,7 +730,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 기본 IIS 구성 또는 사용자 지정 구성을 사용할 수 있습니다. 사용자 지정 IIS 구성을 사용하려면 IIS에 대해 다음 옵션을 사용하도록 설정해야 합니다.  
 
-- 애플리케이션 개발:  
+- 응용 프로그램 개발:  
 
     - ISAPI 확장  
 
@@ -747,7 +746,7 @@ Windows Server 2012 이상에서 사이트 시스템 서버 및 역할의 특정
 
 사용자 지정 IIS 구성을 사용하는 경우 다음과 같이 불필요한 옵션을 제거할 수 있습니다.  
 
-- 일반 HTTP 기능:  
+- 일반적인 HTTP 기능:  
 
     - HTTP 리디렉션  
 

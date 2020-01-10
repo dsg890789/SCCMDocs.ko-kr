@@ -10,17 +10,16 @@ ms.assetid: 88ac4e55-d47b-4c94-b9c3-704c6a48b845
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a5787b4c4fa2caf05c1a8c9c6e64bbdd437279
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3aec273be7d46d93d96b6439c02301c460bd14d3
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536764"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801549"
 ---
 # <a name="diagnostics-and-usage-data-for-configuration-manager"></a>Configuration Manager의 진단 및 사용량 현황 데이터
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 진단 및 사용 현황 데이터를 수집하며, 이러한 데이터는 Microsoft에서 향후 버전의 설치 환경, 품질 및 보안을 개선하기 위해 사용됩니다.  
 

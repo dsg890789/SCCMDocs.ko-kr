@@ -10,13 +10,12 @@ ms.assetid: 38b2bed2-20dd-4ce1-abc0-219343d2c4b8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95f39681835a381720de3bddd1b5773893660280
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d0e82bc7eddb16f4b98e99a5c55081d15e0982be
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74734599"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825560"
 ---
 # <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
 
@@ -59,7 +58,7 @@ Desktop Analytics는 다음과 같은 이점을 제공합니다.
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 Desktop Analytics를 사용하려면 사용자 환경이 다음과 같은 필수 구성 요소를 충족하는지 확인합니다.
 

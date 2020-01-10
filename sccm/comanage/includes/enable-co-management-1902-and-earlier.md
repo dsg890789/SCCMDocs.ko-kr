@@ -4,13 +4,12 @@ ms.author: mstewart
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 08/23/2019
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02e8f49972b3cc85dc25ff28c44ed87ea45d61fb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d983c2abe283a5a1ac1d528889e974bc89f79879
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70036738"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815551"
 ---
 <!--Don't apply H2/H3 in this include file since they are context driven by article-->
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **공동 관리** 노드를 선택합니다. 리본 메뉴에서 **공동 관리 구성**을 클릭하여 **공동 관리 구성 마법사**를 엽니다.

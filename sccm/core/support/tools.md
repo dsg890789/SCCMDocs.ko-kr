@@ -10,17 +10,16 @@ ms.assetid: 395403dc-6997-4415-93fd-6b1eeb6ba31a
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80a51140ed356390aeae809912f46c3c512063b3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 205616f4f91a278218a5943974c6de38914fc8de
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792327"
 ---
 # <a name="configuration-manager-tools"></a>Configuration Manager 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 도구에는 [클라이언트 기반](#client-tools) 및 [서버 기반 도구](#server-tools)가 포함됩니다. 이러한 도구를 사용하여 Configuration Manager 인프라 문제를 해결하고 지원합니다.
 

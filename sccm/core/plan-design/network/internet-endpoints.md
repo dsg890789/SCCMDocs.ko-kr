@@ -6,17 +6,16 @@ ms.date: 08/30/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: b34fe701-5d05-42be-b965-e3dccc9363ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 11241176abade1233a6fbdbe2ee3bdd0e3219e48
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f7b52c720f586e50ee2b7cf2f1c62ef8b2b17f68
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70243584"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799440"
 ---
 # <a name="internet-access-requirements"></a>인터넷 액세스 요구 사항
 

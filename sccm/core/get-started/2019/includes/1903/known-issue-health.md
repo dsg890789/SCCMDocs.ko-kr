@@ -4,13 +4,12 @@ ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 04/03/2019
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31dfe75e85198b36b8a3125ccbd9fa504cf0bf5e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 968495f50823347f62590c977c407fd2af8ccfde
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62220007"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823124"
 ---
 ### <a name="ki_health"></a> 클라이언트 상태 대시보드
 

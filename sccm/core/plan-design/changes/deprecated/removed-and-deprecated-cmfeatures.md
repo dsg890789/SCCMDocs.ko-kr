@@ -10,13 +10,12 @@ ms.assetid: 287a6324-ae65-4d38-b2ef-198d47c91231
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: edcb5a5eed46f4b58799789014115c1b454cb7a5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2bde6cb473cf196bf4545ba5b106ed678f9f7dd4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660753"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802891"
 ---
 # <a name="removed-and-deprecated-features-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 이후 지원되지 않는 기능
 

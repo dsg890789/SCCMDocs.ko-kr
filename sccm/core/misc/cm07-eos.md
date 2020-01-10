@@ -11,13 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26c03d14b13143e7529c0b9124d2b1e6c196b8a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8c3abca9caec6c0e59d43bb9b2f871d45a13c867
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67726171"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803027"
 ---
 # <a name="product-end-of-support"></a>지원 종료 제품
 

@@ -10,17 +10,16 @@ ms.assetid: 110b65b3-2202-466f-bb5d-e5ee282506fc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4df97c1e0fd3df1ef6a27eb84134cc1213942451
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0a358cb0ba47901afae52add613415c3756efbeb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889907"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824115"
 ---
 # <a name="monitor-and-manage-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트 모니터링 및 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 조직의 디바이스에 클라이언트를 설치한 후 Configuration Manager는 해당 클라이언트를 모니터링하고 관리하는 여러 가지 방법을 제공합니다. 클라이언트를 모니터링하여 해당 상태를 확인할 수 있으며, Configuration Manager에서 검색하는 일부 문제를 자동으로 수정할 수 있습니다. Configuration Manager 콘솔을 사용하여 개별 디바이스 또는 디바이스 컬렉션의 클라이언트를 관리합니다.  
 

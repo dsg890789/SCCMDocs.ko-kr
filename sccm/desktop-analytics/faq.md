@@ -10,17 +10,16 @@ ms.assetid: e0db3311-2303-4013-a906-76b408172d3c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce8f76438e38cb9266750da573103296f92a668e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 279da97960866123e109fd8f51d9a6c81353c593
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73704937"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825628"
 ---
 # <a name="desktop-analytics-faq"></a>Desktop Analytics FAQ
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 ### <a name="bkmk_intune"></a> Intune 관리 디바이스에서 Desktop Analytics를 사용할 수 있나요? 
 
@@ -72,7 +71,7 @@ Desktop Analytics 포털에는 관리자 데이터 및 진단 데이터라는 �
 
 요청 시 데이터 새로 고침을 요청하지 않더라도 모든 데이터는 매일 한 번 자동으로 업데이트됩니다. 진단 데이터의 요청 시 새로 고침을 트리거할 수 있는 방법은 없습니다. Desktop Analytics의 다양한 데이터 형식에 대한 자세한 내용은 [데이터 대기 시간](/sccm/desktop-analytics/troubleshooting#data-latency)을 참조하세요.
 
-## <a name="privacy"></a>개인 정보 보호
+## <a name="privacy"></a>개인 정보 취급 방침
 
 ### <a name="can-desktop-analytics-be-used-without-a-direct-client-connection-to-the-microsoft-data-management-service"></a>Microsoft Data Management Service에 대한 직접 클라이언트 연결 없이 Desktop Analytics를 사용할 수 있나요?
 

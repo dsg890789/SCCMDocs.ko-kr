@@ -10,17 +10,16 @@ ms.assetid: cf014eb0-f8c2-4d37-b8d7-368d63a10b89
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6f0b7f67c1b25fc28f82956a43f9a503ad3d190
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e0c9cf9d0e1be301f43d9f48a396e7f673396e26
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62234549"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803214"
 ---
 # <a name="migrate-data-between-hierarchies-in-configuration-manager"></a>Configuration Manager에서 계층 구조 간에 데이터 마이그레이션
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 마이그레이션을 사용하여 지원되는 원본 계층 구조에서 Configuration Manager(현재 분기) 대상 계층 구조로 데이터를 전송합니다. 원본 계층 구조에서 데이터를 마이그레이션하는 경우  
 

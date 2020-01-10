@@ -10,13 +10,12 @@ ms.assetid: 42e80570-d637-41a4-97b7-ebf1f8975af3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5827f68dc7ec499e59291edc4ed4de10f5081311
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c0aaf7cf0e5ca104f6524c3581f8a9fde1bbddb7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62193948"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817009"
 ---
 # <a name="get-help-from-fasttrack-for-co-management"></a>FastTrack에서 공동 관리에 대한 도움받기
 

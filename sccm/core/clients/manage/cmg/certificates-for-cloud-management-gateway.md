@@ -10,17 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 71eaa409-b955-45d6-8309-26bf3b3b0911
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05031bbec72f5540e7f44d7f232b9527dce7789a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 304898b2028045d118ec3e4785847efb790fbd27
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68535587"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824608"
 ---
 # <a name="certificates-for-the-cloud-management-gateway"></a>클라우드 관리 게이트웨이에 대한 인증서
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 CMG(클라우드 관리 게이트웨이)를 통해 인터넷에서 클라이언트를 관리하는 데 사용하는 시나리오에 따라 다음 디지털 인증서 중 하나 이상이 필요합니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 19539f4d-1667-4b4c-99a1-9995f12cf5f7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d72c9404bc8d928619ca4f262304dabc479f808
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 594e5a069edbb742cf4348a9b1ef7d4d4da3cf96
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70021931"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794327"
 ---
 # <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 사이트가 실패하거나 사이트 데이터베이스에서 데이터 손실이 발생한 후에 Configuration Manager 사이트 복구를 실행합니다. 데이터 복구 및 재동기화는 사이트 복구의 핵심 작업으로서 작업 중단을 방지하기 위해 필요합니다.
 
@@ -51,7 +50,7 @@ ms.locfileid: "70021931"
 #### <a name="clean-an-existing-server-for-site-server-recovery-only"></a>사이트 서버 복구만을 위해 기존 서버 정리
 
 1. SMS 레지스트리 키 삭제: `HKLM\Software\Microsoft\SMS`
-2. `SMS`로 시작하는 모든 레지스트리 항목을 `HKLM\System\CurrentControlSet\Services`에서 삭제합니다. 예:
+2. `SMS`로 시작하는 모든 레지스트리 항목을 `HKLM\System\CurrentControlSet\Services`에서 삭제합니다. 예를 들면 다음과 같습니다.
     - SMS_DISCOVERY_DATA_MANAGER
     - SMS_EXECUTIVE
     - SMS_INBOX_MONITOR

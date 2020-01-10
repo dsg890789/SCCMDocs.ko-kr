@@ -10,13 +10,12 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: conceptual
 ms.assetid: 60e2022f-a4f9-40dd-af01-9ecb37b43878
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ff8597442902b70e626d0655cf0afb247366440
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 588ba5181187bf267fef0b708c2f3f44778b88ce
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890745"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821497"
 ---
 # <a name="how-to-switch-configuration-manager-workloads-to-intune"></a>Configuration Manager 워크로드를 Intune으로 전환하는 방법
 

@@ -10,17 +10,16 @@ ms.assetid: e5a8c79f-5791-49c5-8055-086d742e5559
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f3538265bdd7de801acf3d8f04c5561364989cf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: de564595ce51a336b5f11d4050928fa812269601
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62214401"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825050"
 ---
 # <a name="linux-and-unix-clients-component-services-and-commands-for-configuration-manager"></a>Configuration Manager의 Linux 및 UNIX 클라이언트 구성 요소 서비스 및 명령
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 > [!Important]  
 > 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 

@@ -10,17 +10,16 @@ ms.assetid: 435c923c-ea30-4dce-8afd-48962ed85502
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f76cf68cc007a5cefb323828752186ded62ad5f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: da0ed04ea85e48240b38cd4d585a83d46370828b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70902901"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823996"
 ---
 # <a name="configure-power-management-in-configuration-manager"></a>Configuration Manager에서 전원 관리 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager에서 전원 관리를 설정하는 방법을 설명합니다.
 

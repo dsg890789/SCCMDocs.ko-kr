@@ -10,17 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11cb935eef2d214cf541142aea81fbe8e12bd06b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: fca73bd1d448f39bd5d25ffeea4047102e80ade1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72384592"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823775"
 ---
 # <a name="integrate-upgrade-readiness-with-configuration-manager"></a>업그레이드 준비와 Configuration Manager 통합
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 > [!Important]  
 > 2019년 10월 현재 Configuration Manager의 업그레이드 준비 통합은 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)입니다. Windows Analytics 서비스는 2020년 1월 31일에 사용 중지됩니다.
@@ -93,7 +92,7 @@ Azure 서비스 마법사는 이 앱 등록을 사용하여 Configuration Manage
 
 1. Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동하고 **업그레이드 준비** 노드를 선택합니다.  
 
-2. 데이터를 검토하세요. 예:  
+2. 데이터를 검토하세요. 예를 들면 다음과 같습니다.  
     - 업그레이드 준비 상태  
     - 데이터를 보고하는 Windows 디바이스의 백분율  
 

@@ -5,17 +5,16 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 68430abb-d18e-4266-aa5a-3ad3ab753f4c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6c8e3ad3641de95be6e8276e422414738e7e6d01
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 92261422cf48119283107b93fea3016fbfab372f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662751"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825747"
 ---
 # <a name="what-happened-to-system-center-configuration-manager"></a>System Center Configuration Manager는 어떻게 되었나요?
 

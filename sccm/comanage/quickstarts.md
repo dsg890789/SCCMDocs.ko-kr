@@ -10,13 +10,12 @@ ms.assetid: 8d878443-90e7-46e4-9cd3-99e2a19b2ad0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed92d6249e4459f1902f639840b142977994df9e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 29d91b7b915a381be1ea26f1f0b4fa4395c99dcb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62205464"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816941"
 ---
 # <a name="cloud-connecting-with-co-management"></a>공동 관리에 연결된 클라우드
 
@@ -32,7 +31,7 @@ ms.locfileid: "62205464"
 > [!VIDEO https://channel9.msdn.com/Series/Endpoint-Zone/Cloud-Connecting-with-Co-Management/player]
 
 
-| 즉치 값 | 시작 |
+| 즉치 값 | 시작하기 |
 |-----------------|-----------------|
 | - [조건부 액세스](#bkmk_ca)<br> - [Intune에서 원격 작업](#bkmk_remote)<br> - [클라이언트 상태](#bkmk_client-health)<br> - [하이브리드 Azure AD](#bkmk_hybrid-aad)<br> - [Windows Autopilot](#bkmk_autopilot) | - [공동 관리 경로](#bkmk_paths)<br> - [하이브리드 Azure AD 설정](#bkmk_setup-hybrid-aad)<br> - [Windows 10으로 업그레이드](#bkmk_upgrade-win10)<br> - [하이브리드 MDM에서 마이그레이션](#bkmk_migrate-hybrid-mdm)<br> - [FastTrack에서 도움받기](#bkmk_fasttrack) | 
 
@@ -50,7 +49,7 @@ ms.locfileid: "62205464"
 
 
 
-## <a name="getting-started"></a>시작
+## <a name="getting-started"></a>시작하기
 
 공동 관리를 사용하도록 설정하려면 먼저 아래의 기술 요구 사항을 확인하고 필요한 지원을 받으세요.
 

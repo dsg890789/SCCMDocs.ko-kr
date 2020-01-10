@@ -10,17 +10,16 @@ ms.assetid: 341f0d0b-f907-44cf-9e10-e1b41fc15f82
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86c99fc79f89d94f4a32e34949b91d8633b23a65
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cb4179efbb0a8ad463a7c7604a0ad7b15d7bef95
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73049473"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825084"
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Windows 컴퓨터에 Configuration Manager 클라이언트를 배포하는 방법에 대해 자세히 설명합니다. 클라이언트 배포 계획 및 준비에 대한 자세한 내용은 다음 문서를 참조하세요.
 
@@ -203,7 +202,7 @@ CCMSetup.exe를 사용하여 클라이언트 소프트웨어를 컴퓨터에 수
 
 CCMSetup.exe는 필요한 모든 필수 구성 요소를 클라이언트 컴퓨터에 복사하고 Windows Installer 패키지(Client.msi)를 호출하여 클라이언트를 설치합니다. Client.msi는 직접 실행할 수 없습니다.  
 
-클라이언트 설치의 동작을 수정하려면 CCMSetup.exe와 Client.msi에 대한 명령줄 옵션을 모두 지정합니다. Client.msi 속성을 지정하기 전에 `/`로 시작하는 CCMSetup 매개 변수를 지정해야 합니다. 예:  
+클라이언트 설치의 동작을 수정하려면 CCMSetup.exe와 Client.msi에 대한 명령줄 옵션을 모두 지정합니다. Client.msi 속성을 지정하기 전에 `/`로 시작하는 CCMSetup 매개 변수를 지정해야 합니다. 예를 들면 다음과 같습니다.  
 
 `CCMSetup.exe /mp:SMSMP01 /logon SMSSITECODE=AUTO FSP=SMSFP01`
 
@@ -364,7 +363,7 @@ OS 이미지를 만드는 데 사용하는 참조 컴퓨터에 Configuration Man
 
 Configuration Manager에서 작업 그룹의 컴퓨터에 대한 클라이언트 설치를 지원합니다. [Configuration Manager 클라이언트를 수동으로 설치하는 방법](#BKMK_Manual)에 지정된 방법을 사용하여 작업 그룹 컴퓨터에 클라이언트를 설치합니다.  
 
-### <a name="prerequisites"></a>필수 구성 요소  
+### <a name="prerequisites"></a>전제 조건  
 
 - 각 작업 그룹 컴퓨터에 클라이언트를 수동으로 설치합니다. 설치 시 대화형 사용자에게는 로컬 관리자 권한이 있어야 합니다.  
 

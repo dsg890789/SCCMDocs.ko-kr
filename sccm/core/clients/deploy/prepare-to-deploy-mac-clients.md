@@ -10,17 +10,16 @@ ms.assetid: 2285a953-6a86-4ed5-97dd-cd57b02bc1ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3718661af1bae7dbf0984e29d95736b9f86104dc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b70150fe04900b467ea219da68ac674a18f9834d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378362"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824795"
 ---
 # <a name="prepare-to-deploy-client-software-to-macs"></a>Mac에 클라이언트 소프트웨어 배포 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다음 단계에 따라 [Mac 컴퓨터에 Configuration Manager 클라이언트를 배포](/sccm/core/clients/deploy/deploy-clients-to-macs)할 준비가 되었는지 확인합니다.
 
