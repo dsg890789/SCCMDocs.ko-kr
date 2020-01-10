@@ -10,13 +10,12 @@ ms.assetid: 1ef60106-8f31-46d6-95a6-25a6495f22c7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc67512ac6ec0dc9712402189ac6d02f3552eea3
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 77dab151328025e93fcf41d7d0e58c457b3ff295
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519558"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826444"
 ---
 # <a name="preparation-steps-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 준비 단계
 

@@ -10,13 +10,12 @@ ms.assetid: e36b98c7-d0f4-4dd6-bac3-6a6c4b4bf841
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 055b5b0499eddc04ceb73363b288a0096418aa35
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 7bd57e31cdb84a6d7fe750002f61ccdef42d804c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519626"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826529"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune과 Lookout 통합 문제 해결
 
@@ -39,7 +38,7 @@ Azure AD 전역 관리자가 초기 Lookout 설치에 동의하지 않은 경우
 
 ![로그인 오류를 보여 주는 Lookout 로그인 화면 스크린샷](media/lookout-consent-not-accepted-error.png)
 
-이 문제를 해결하려면 전역 관리자가 https://aad.lookout.com/les?action=consent 에 로그인한 다음, 메시지에 동의하여 설치를 시작해야 합니다. 자세한 정보는 [Lookout MTP를 사용하여 구독 설정](set-up-your-subscription-with-lookout.md) 항목에서 확인할 수 있습니다.
+이 문제를 해결하려면 전역 관리자가 https://aad.lookout.com/les?action=consent 에 로그인한 다음, 메시지에 동의하여 설치를 시작해야 합니다. 자세한 정보는 [Lookout MTP 구독 설정](set-up-your-subscription-with-lookout.md) 항목에서 확인할 수 있습니다.
 
 ## <a name="troubleshoot-device-status-issues"></a>디바이스 상태 문제 해결
 

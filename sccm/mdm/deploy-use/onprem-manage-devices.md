@@ -10,13 +10,12 @@ ms.assetid: 6e233f17-8ead-4984-a3fa-12687c4381ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96510f4250fa15f59abd41b7f29b4b73f20b8b85
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: a99b4755aa17ecedd110cbb42a8c1b8e383f6cf8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520034"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826665"
 ---
 # <a name="manage-devices-for-on-premises-mobile-device-management"></a>온-프레미스 모바일 디바이스 관리를 사용하여 디바이스 관리
 

@@ -10,13 +10,12 @@ ms.assetid: d1b4337f-85e8-45e6-8bbe-9f18b49041c7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8776f6f77e716bdd4b921eb82181f8566ddace24
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 3d84f427849d23993d7f7abfbe34b12a86b13f0f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521173"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826971"
 ---
 # <a name="create-an-mdm-collection-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 MDM 컬렉션 만들기
 

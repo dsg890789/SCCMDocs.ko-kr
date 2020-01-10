@@ -10,17 +10,16 @@ ms.assetid: 41c29a07-9bf6-4ec4-b3f2-1c05e001eff7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc1ca4f77b29de868e343add3e28719b7d2cae4a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b7405112ee1114c1da8b0c5764045637012d7420
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74823353"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815581"
 ---
 # <a name="application-download-in-configuration-manager"></a>Configuration Manager에서 응용 프로그램 다운로드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 계속 하기 전에 [응용 프로그램 배포 클라이언트 구성 요소](/sccm/apps/understand/client-components-technical-reference) 를 검토 하 여 DCM 및 CI 에이전트 작업 처리를 이해 하세요.
 
@@ -66,7 +65,7 @@ Location reply XML은 클라이언트의 경계 그룹을 기반으로 하는 �
 </code></pre>
 
 > [!NOTE]
-> 이 로그 항목은 CTM 및 DTS 작업 ID를 식별 하는 데 사용할 수 있습니다 .이 ID는 각각 **Contentdatatransferservice.log**와 **pulldp.log** 및의 콘텐츠 전송 진행률을 추적 하는 데 사용할 수 있습니다.
+> 이 로그 항목은 CTM 및 DTS 작업 ID를 식별 하는 데 사용할 수 있습니다 .이 ID는 각각 **ContentTransferManager.log** 및 **DataTransferService.log** 의 콘텐츠 전송 진행률을 추적 하는 데 사용할 수 있습니다.
 
 데이터 전송 서비스는 BITS (Background Intelligent Transfer Service) 작업을 만들고 다운로드가 완료 될 때까지 대기 하 여 응용 프로그램 콘텐츠 다운로드를 수행 합니다. 이 활동은 **Contentdatatransferservice.log와 pulldp.log**에서 가져온 DTS 작업 ID를 사용 하 여 클라이언트의 **로그** 에서 추적할 수 있습니다.
 

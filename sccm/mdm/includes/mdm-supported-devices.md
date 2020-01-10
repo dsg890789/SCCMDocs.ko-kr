@@ -4,13 +4,12 @@ ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 11/30/2018
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83ee795be7683a708a32b2c747524d4e400d0df2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ff4d40f20bca1bb68e0e1bbd661e3b71e2e8e605
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62287291"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826369"
 ---
 - Apple iOS 9.0 이상
 - Google Android 4.0 이상(Samsung KNOX Standard 4.0 이상 포함)*

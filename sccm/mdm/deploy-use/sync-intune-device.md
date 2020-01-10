@@ -10,13 +10,12 @@ ms.assetid: b3731ad0-2a24-4042-994e-5e4c1230e3fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f640c12bcf9fb1e1aeb561f09b4098e19e3e8b
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 95f6715a54af96d55330374488b7f3291bed8347
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519728"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826546"
 ---
 # <a name="remotely-synchronize-policy-on-intune-enrolled-devices-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 Intune에 등록된 디바이스의 정책 원격 동기화
 

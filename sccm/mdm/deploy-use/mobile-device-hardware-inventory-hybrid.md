@@ -10,13 +10,12 @@ ms.assetid: 78a0aecc-f775-451e-aa05-56377ec91b1f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dea53c3d98870d225df860a7b1f2ea7a43741f1
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 98f69640d2ed3a0572a59d0c15109eec3136decb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520153"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826716"
 ---
 # <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-configuration-manager"></a>Microsoft Intune 및 Configuration Manager에서 등록한 모바일 디바이스의 하드웨어 인벤토리 구성 방법
 

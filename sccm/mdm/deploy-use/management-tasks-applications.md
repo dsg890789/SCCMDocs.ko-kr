@@ -10,13 +10,12 @@ ms.assetid: 8adbe2e2-de26-4a80-8bbd-a5f34b8bac79
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563e7fe79658e310fdaf3da1b14f8ff0163691b5
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: f31de77387e4203840b1a93169321c66013da6cf
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520493"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826835"
 ---
 # <a name="manage-applications-in-configuration-manager"></a>Configuration Manager에서 응용 프로그램 관리
 

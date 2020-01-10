@@ -10,13 +10,12 @@ ms.assetid: 71c44250-626e-482c-8794-434c6aeb2fb1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d01bf518ae891622af544344f3bed4f955cdacc
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 55d882542f8b830ca3ae8a739f60c797c6b7ea80
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520527"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826903"
 ---
 # <a name="manage-skype-for-business-online-access"></a>비즈니스용 Skype Online 액세스 관리
 

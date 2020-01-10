@@ -10,13 +10,12 @@ ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d310f60dfebd32b8e01ad2975a69d1802f24ccc6
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: dac2b07fbd2afee11c2662e78869388a424f4b51
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519354"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826342"
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune을 지원하는 하이브리드 모바일 디바이스 관리의 새로운 기능
 
@@ -339,10 +338,10 @@ Microsoft Intune은 TLS(전송 계층 보안) 1.2 이상을 지원하여 동급 
 - 모든 디바이스 플랫폼에서 간소화된 워크플로
 - 향상된 디바이스 식별 및 등록 흐름
 - 오류 메시지의 효율성 향상
-- 더 친숙한 언어, 더 이해하기 쉬운 기술 용어
+- 전문 기술 용어는 줄이고 친근한 언어 사용
 - 앱에 대한 직접 링크를 공유하는 기능
 - 대규모 앱 카탈로그의 성능 향상
-- 향상된 모든 사용자에 대한 접근성
+- 모든 사용자의 접근성 향상
 
 
 
@@ -374,7 +373,7 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app"></a>회사 포털 앱에서 규정에 맞지 않는 메시지에 대한 업데이트
 
 <!--1832222-->  
-디바이스가 규정을 준수하지 않을 때 디바이스 사용자에게 표시되는 메시지를 수정하는 중입니다. 메시지의 원래 의미는 유지하지만 기술 용어를 줄이고 더 친근한 언어로 업데이트합니다. 설명서와 수정 단계에 대한 링크도 새로 고쳐서 최신 상태로 유지합니다.  
+디바이스가 규정을 준수하지 않을 때 디바이스 사용자에게 표시되는 메시지를 수정하는 중입니다. 메시지의 원래 의미는 유지하지만 기술 용어를 줄이고 더 친근한 언어로 업데이트합니다. 또한 설명서 및 수정 단계에 대한 링크를 최신 상태로 유지하기 위해 새로 고치는 중입니다.  
 
 다음의 텍스트는 표시되는 메시지의 개선 내용 중 한 가지 예입니다.  
 
@@ -392,7 +391,7 @@ Intune의 이전 배지 스타일을 사용하고 있는 경우 서류 가방 �
 <!--2317227-->  
 이제 Windows 용 회사 포털 앱에서 앱을 찾아보거나 검색할 때 기존 **타일** 뷰와 새로 추가 된 **세부 정보** 보기 사이를 전환 합니다. 새 보기는 이름, 게시자, 게시 날짜 및 설치 상태와 같은 애플리케이션 세부 정보를 나열합니다.
 
-**앱** 페이지의 **설치된** 보기를 사용하면 완료 및 진행 중인 앱 설치에 대한 세부 정보를 볼 수 있습니다. 새 보기의 모습을 보려면 [UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요.
+**앱** 페이지의 **설치됨** 보기를 통해 완료 및 진행 중인 앱 설치에 대한 세부 정보를 볼 수 있습니다. 새 보기의 모양을 보려면 [UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui)을 참조하세요.
 
 #### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows용 회사 포털 앱에서 더 많은 동기화 기회
 
@@ -486,7 +485,7 @@ Microsoft에서는 IT 관리자가 Parallels Desktop 및 VMware Fusion에서 가
 #### <a name="updated-help-experience-on-company-portal-app-for-android"></a>Android용 회사 포털 앱의 도움말 환경 업데이트
 
 <!--1631531-->  
-Android 플랫폼에 대한 모범 사례에 맞게 Android용 회사 포털 앱의 도움말 환경을 업데이트했습니다. 이제 사용자 앱에서 문제가 발생하는 경우 **메뉴** > **도움말**을 누르면 됩니다.
+Android 플랫폼에 대한 모범 사례에 맞게 Android용 회사 포털 앱의 도움말 환경을 업데이트했습니다. 이제 앱에서 문제가 발생하면 **메뉴** >  **도움말**를 탭하고 다음을 수행할 수 있습니다.
 
 - 진단 로그를 Microsoft에 업로드합니다.
 - 회사 지원 담당자에게 문제와 인시던트 ID를 설명하는 메일을 보냅니다.
@@ -496,7 +495,7 @@ Android 플랫폼에 대한 모범 사례에 맞게 Android용 회사 포털 앱
 <!--2144597-->  
 Microsoft Intune 서비스 내의 Azure Portal에서는 **Intune 앱 보호** 영역에서 **모바일 앱** 섹션으로 사용자를 일시적으로 리디렉션할 예정입니다. 모든 앱 보호 정책은 앱 구성 아래 Intune의 **모바일 앱** 섹션에 이미 있습니다. Intune 앱 보호로 이동하는 대신 바로 Intune으로 이동하세요. 2018년 4월에 리디렉션을 중지하고 **Intune 앱 보호**를 완전히 제거합니다. 이 시간 이후로는 Intune 내 앱 보호 정책의 위치가 하나만 있게 됩니다.
 
-**이 변경 사항은 어떤 영향을 미치나요?** 이 변경 사항은 Intune 독립 실행형 고객 및 하이브리드(Configuration Manager를 사용하는 Intune) 고객 모두에게 영향을 미칩니다. 이 통합은 클라우드 관리를 단순화하는 데 도움이 됩니다.
+**이 변경 사항은 어떤 영향을 미치나요?** 이 변경 사항은 Intune 독립형 고객과 하이브리드(Configuration Manager와 Intune) 고객 모두에 영향을 줍니다. 이 통합은 클라우드 관리를 단순화하는 데 도움이 됩니다.
 
 **이러한 변경에 대비하려면 어떻게 해야 하나요?** **Intune 앱 보호** 대신 **Intune**을 즐겨찾기로 태그합니다. Intune 내의 **모바일 앱** 영역에서 앱 보호 정책 워크플로를 숙지합니다. 짧은 기간 동안 리디렉션한 다음, **앱 보호**를 제거합니다. 모든 앱 보호 정책은 이미 Intune에 있으며 조건부 액세스 정책을 수정할 수 있습니다. 조건부 액세스 정책 수정에 대한 자세한 내용은 [Azure Active Directory의 조건부 액세스](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)를 참조하세요. 자세한 내용은 [앱 보호 정책이란?](https://docs.microsoft.com/intune/app-protection-policy)을 참조하세요.
 
@@ -573,7 +572,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
   <!--1797090 -->  
 
 - **Azure Portal에서만 Intune에 대한 조건부 액세스 정책 사용 가능**   
-  이 릴리스부터 **Azure Active Directory** > **조건부 액세스**에서 [Azure Portal](https://portal.azure.com)의 조건부 액세스 정책을 구성하고 관리해야 합니다. 편의를 위해 **Intune** > **조건부 액세스**를 통해 Azure Portal의 Intune에서 이러한 설정에도 액세스할 수 있습니다.
+  이 릴리스부터 [Azure Portal](https://portal.azure.com)의 **Azure Active Directory** > **조건부 액세스**에서 조건부 액세스 정책을 구성하고 관리해야 합니다. 편의를 위해 **Intune** > **조건부 액세스**를 통해 Azure Portal의 Intune에서 이러한 설정에도 액세스할 수 있습니다.
   <!-- 1737088 1634311 -->  
 
 - **호환성 메일에 대한 업데이트**    
@@ -629,7 +628,7 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
   iOS용 회사 포털 앱에서 디바이스 설정 워크플로를 개선했습니다. 언어가 사용자에게 더 친숙하고 가능한 경우 화면을 합쳤습니다. 또한 설정 텍스트 전체에서 회사 이름을 사용하여 회사에 대한 언어의 관련성을 높였습니다. 이 업데이트된 워크플로는 [앱 UI의 새로운 기능](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-november-13-2017) 페이지에서 확인할 수 있습니다.
 
 - **Android용 회사 포털 앱의 피드백 프롬프트**    
-  Android용 회사 포털 앱에서 이제 최종 사용자 피드백을 요청합니다. 이 피드백은 Microsoft로 바로 전송되며, 최종 사용자에게 공개 Google Play 스토어에서 앱을 검토할 기회를 제공합니다. 피드백은 필수는 아니며, 사용자가 앱을 계속 사용할 수 있도록 쉽게 해제할 수 있습니다. 
+  Android용 회사 포털 앱에서 이제 최종 사용자 피드백을 요청합니다. 이 피드백은 Microsoft에 직접 전송되고 최종 사용자에게 공개 Google Play 스토어에서 앱을 검토할 기회를 제공합니다. 피드백은 필수는 아니며, 사용자가 앱을 계속 사용할 수 있도록 쉽게 해제할 수 있습니다. 
   <!--1165249-->    
 
 - **Windows 10 디바이스에 대해 표시되는 디바이스 정보를 최종 사용자에게 알리기**    
@@ -751,11 +750,11 @@ Windows 10 버전 1607 이상의 최종 사용자에게 Microsoft Store에 있�
     <!--739894-->    
 
 - **Android용 회사 포털 앱의 구문을 쉽게 이해**   
-    최종 사용자가 더 쉽게 등록할 수 있도록 만드는 새로운 텍스트를 사용하여 Android용 회사 포털 앱에 대한 등록 프로세스가 간소화되었습니다. 사용자 지정 등록 설명서가 있는 경우 새 화면을 반영하도록 업데이트합니다. [Intune 최종 사용자 앱 UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-september-11-2017) 페이지에서 샘플 이미지를 확인할 수 있습니다.
+    최종 사용자가 쉽게 등록할 수 있도록 새로운 텍스트가 포함되어 Android용 회사 포털 앱의 등록 프로세스가 간소화되었습니다. 사용자 지정 등록 설명서가 있는 경우 새 화면을 반영하도록 업데이트합니다. [Intune 최종 사용자 앱 UI 업데이트](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-september-11-2017) 페이지에서 샘플 이미지를 확인할 수 있습니다.
     <!---1396349-->    
 
 - **Windows 10 회사 포털 앱이 Windows Information Protection 허용 정책에 추가됨**    
-    Windows 10 회사 포털 앱이 WIP(Windows Information Protection)를 지원하도록 업데이트되었습니다. WIP 허용 정책에 앱을 추가할 수 있습니다. 이러한 변경으로 이제 더 이상 앱을 **예외** 목록에 추가하지 않아도 됩니다. 
+    Windows 10 회사 포털 앱이 WIP(Windows Information Protection)를 지원하도록 업데이트되었습니다. 앱을 WIP 허용 정책에 추가할 수 있습니다. 이러한 변경으로 이제 앱을 **제외** 목록에 추가하지 않아도 됩니다. 
 
     단일 WIP 구성 항목만 디바이스에 전달할 수 있습니다. 두 개의 WIP 구성 항목이 동일한 디바이스를 대상으로 하는 경우 어던 WIP 정책도 적용되지 않습니다.
     <!-- 677129 -->    

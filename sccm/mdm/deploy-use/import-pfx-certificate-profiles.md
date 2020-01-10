@@ -10,13 +10,12 @@ ms.assetid: e3bb3e13-3037-4122-93bc-504bfd080a4d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6b0867f5f872eacb52d5e0e3faaffdfd7dae761
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e9ebc3993accadca7e17e06b4c27cbd704f58f00
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659496"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826920"
 ---
 # <a name="import-pfx-certificate-profiles"></a>PFX 인증서 프로필 가져오기
 
@@ -35,7 +34,7 @@ Configuration Manager를 사용 하 여 인증서 자격 증명을 가져온 다
 
 1. Configuration Manager 콘솔에서 **자산 및 호환성** 작업 영역으로 이동 하 고 **준수 설정**, **회사 리소스 액세스**를 차례로 확장 한 다음 **인증서 프로필**을 선택 합니다.
 
-1. 리본 메뉴의 **홈** 탭에 있는 **만들기** 그룹에서 **인증서 프로필 만들기**를 선택 합니다.
+1. 리본의 **홈** 탭에 있는 **만들기** 그룹에서 **인증서 프로필 만들기**를 선택합니다.
 
 1. **인증서 프로필 만들기 마법사**의 **일반** 페이지에서 다음 정보를 지정 합니다.  
 

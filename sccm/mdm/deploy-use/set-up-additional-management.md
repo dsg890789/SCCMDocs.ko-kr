@@ -10,13 +10,12 @@ ms.assetid: 4877d674-6bbc-4e16-810c-daad70c74daa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6b361742cb8b7f4dbf2da2d4b582e645bdd7545
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 9df42a9a1b8ab0252ec66b6b06f33d1200fd82cf
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519881"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826597"
 ---
 # <a name="set-up-additional-management-with-configuration-manager"></a>Configuration Manager를 사용 하 여 추가 관리 설정
 

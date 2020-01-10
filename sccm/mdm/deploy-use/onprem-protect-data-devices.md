@@ -10,13 +10,12 @@ ms.assetid: 692b86d5-dea7-4414-9e1f-043d2cadfd3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f220f42e45027d0f3e51066a5170a7a50238f40
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: eac9e7b5a1d900bbdead34a4c746ea44d7f14a64
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519909"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826699"
 ---
 # <a name="protect-data-and-devices-in-on-premises-mobile-device-management"></a>온-프레미스 모바일 디바이스 관리에서 데이터 및 디바이스 보호
 

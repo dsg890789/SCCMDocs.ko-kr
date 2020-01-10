@@ -10,13 +10,12 @@ ms.assetid: 9ffaea91-1379-4b86-9953-b25e152f56a9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea94e5c9aaf21879c1ea6879342ff1a928b05d82
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 79b82517a1ac83a0aaf54198d012fd84b47febe6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519456"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826427"
 ---
 # <a name="set-up-device-enrollment-for-on-premises-mobile-device-management-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 모바일 장치 관리에 대 한 장치 등록 설정
 

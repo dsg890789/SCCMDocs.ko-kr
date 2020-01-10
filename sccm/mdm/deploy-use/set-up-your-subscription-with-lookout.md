@@ -10,13 +10,12 @@ ms.assetid: 6087b279-ba05-4824-b5e3-3af14f3d3cfe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56b1ed9f22aeab073bb936ae525c3dec3c422837
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 080d184f09c3ee3dd45fe27b2b5f624fabfcdb91
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519779"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826631"
 ---
 # <a name="set-up-your-subscription-for-lookout-mobile-threat-defense"></a>Lookout 모바일 위협 방어에 대한 구독 설정
 
@@ -34,7 +33,7 @@ Lookout 모바일 위협 방어 구독을 설정하려면 다음 단계가 필�
 | 6 | [등록 설정 구성](#configure-enrollment-settings) |
 | 7 | [메일 알림 구성](#configure-email-notifications) |
 | 8 | [위협 분류 구성](#configure-threat-classification) |
-| 9 | [등록 감시](#watching-enrollment) |
+| 9 | [등록 점검](#watching-enrollment) |
 
 
 > [!IMPORTANT]  
@@ -47,7 +46,7 @@ Lookout 모바일 위협 방어 구독을 설정하려면 다음 단계가 필�
 Lookout Mobility Endpoint Security 테넌트가 Azure AD 구독과 연결되어 Lookout을 Intune과 통합합니다. Lookout 모바일 위협 방어 서비스 구독을 사용하도록 설정하려면 Lookout 지원 팀(enterprisesupport@lookout.com)은 다음 정보가 필요합니다.
 
 - **Azure AD 테넌트 ID**
-- *전체* Lookout 콘솔 액세스를 위한 **Azure AD 그룹 개체 ID**
+- Lookout 콘솔에 *전체* 액세스를 하기 위한 **Azure AD 그룹 개체 ID**
 - *제한된* Lookout 콘솔 액세스를 위한 **Azure AD 그룹 개체 ID**(선택 사항)
 
 Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 단계를 사용하세요.
@@ -133,7 +132,7 @@ Lookout 지원 팀에게 제공해야 하는 정보를 수집하려면 다음 �
 
 
 
-## <a name="configure-email-notifications"></a>메일 알림 구성
+## <a name="configure-email-notifications"></a>이메일 알림 구성
 위협에 대한 메일 경고를 받으려면 알림을 받을 사용자 계정으로 [Lookout 콘솔](https://aad.lookout.com)에 로그인합니다. **시스템** 모듈의 **기본 설정** 탭에서 알림을 받아야 하는 위협 수준을 선택하고 **ON**으로 설정합니다. 변경 내용을 저장합니다.
 
 ![사용자 계정이 표시된 기본 설정 페이지 스크린샷](media/lookout-email-notifications.png) 메일 알림을 더 이상 받지 않으려면 알림을 OFF로 설정하고 변경 내용을 저장합니다.

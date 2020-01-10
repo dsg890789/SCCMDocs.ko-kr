@@ -10,13 +10,12 @@ ms.assetid: 4d3f9e6b-4d71-4fc4-9b91-47f1bfbd8c70
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 861bc930a5be0d1d84b9e72cb19d1156b02f55e0
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 693d8a4f220956e3ee327a171fde032461fe2530
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519711"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826512"
 ---
 # <a name="add-terms-and-conditions-with-configuration-manager"></a>Configuration Manager 사용 약관 추가
 

@@ -10,13 +10,12 @@ ms.assetid: c0593c07-5dd7-4d23-a0d8-d30165f49ef7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e177eb752becbe020e41b914694e86e3926ca32
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 38d1569dc987ec6ca778abb4cd6d65a4863988c5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519688"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826478"
 ---
 # <a name="windows-hello-for-business-settings-in-configuration-manager-hybrid"></a>Configuration Manager (하이브리드)의 비즈니스용 Windows Hello 설정
 

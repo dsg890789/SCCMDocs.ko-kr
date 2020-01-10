@@ -10,13 +10,12 @@ ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: dad04c2b6dac5cd746214365f4d335330e8a94e3
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 81b0722fa597d377edc5e09406e2d15431293366
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520612"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826869"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-configuration-manager"></a>Configuration Manager를 통해 관리 브라우저 정책을 사용하여 인터넷 액세스 관리
 
@@ -97,7 +96,7 @@ Configuration Manager에서 Intune Managed Browser (웹 검색 응용 프로그�
 
   - https의 경우 포트 443  
 
-    포트 번호에 와일드카드를 사용하지 마세요. 지원되지 않습니다. 예를 들면 `http://www.contoso.com:*`   
+    포트 번호에 와일드카드를 사용하지 마세요. 지원되지 않습니다. `http://www.contoso.com:*`).   
 
 - 다음 표를 사용하여 URL을 지정할 때 사용할 수 있는 패턴에 대해 알아볼 수 있습니다.  
 

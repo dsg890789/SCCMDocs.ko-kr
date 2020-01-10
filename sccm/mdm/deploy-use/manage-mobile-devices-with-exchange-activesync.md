@@ -10,13 +10,12 @@ ms.assetid: aba688d9-fd5b-4c42-8cb4-f7e1b161ef50
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dce91c73f96a608693e924073db677b65cf0553
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: a79da84c0d3b36c1dade793298f54077058832d1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520561"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826852"
 ---
 # <a name="manage-mobile-devices-with-configuration-manager-and-exchange"></a>Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리
 

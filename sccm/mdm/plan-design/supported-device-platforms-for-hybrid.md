@@ -10,13 +10,12 @@ ms.assetid: 6b0732c8-1be8-44ba-8f8e-6fb2b67782e1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b572f293fca5250155a5fa5826b75c235890bc45
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 3f113e2a64f135c35fdaefc9721fb0b6e1f60dde
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519473"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826370"
 ---
 # <a name="supported-device-platforms-for-hybrid-mdm"></a>하이브리드 MDM에 대한 지원되는 디바이스 플랫폼
 

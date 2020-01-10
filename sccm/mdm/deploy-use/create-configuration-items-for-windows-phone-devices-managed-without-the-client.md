@@ -9,13 +9,12 @@ ms.assetid: df10dc4d-c9ff-4574-bb33-8d30eb14cfe3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a1f76b31b403b3cfcd89fd6380d63af1d135900
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: bda19305d1c10b5f95adaefb6a0aa3e353f2205f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521037"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826988"
 ---
 # <a name="how-to-create-configuration-items-for-windows-phone-devices-managed-without-the-configuration-manager-client"></a>Configuration Manager 클라이언트 없이 관리되는 Windows Phone 디바이스에 대한 구성 항목을 만드는 방법
 

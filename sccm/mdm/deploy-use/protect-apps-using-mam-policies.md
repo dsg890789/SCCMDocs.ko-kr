@@ -10,13 +10,12 @@ ms.assetid: 28115475-e563-4e16-bf30-f4c9fe704754
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 547fb4173a0cb30ff9e9b29bdc4efb9095793ef1
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 91235bb9db031ad743950e1237f5b9cc306415e4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75519908"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826614"
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-configuration-manager"></a>Configuration Manager에서 모바일 응용 프로그램 관리 정책을 사용하여 앱 보호
 
