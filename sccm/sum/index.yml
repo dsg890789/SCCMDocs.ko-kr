@@ -1,0 +1,66 @@
+### YamlMime:Landing
+title: 소프트웨어 업데이트 관리 설명서
+summary: Configuration Manager를 사용하면 소프트웨어 업데이트를 추적하여 조직의 클라이언트에 적용하는 복잡한 작업을 효과적으로 관리할 수 있습니다.
+metadata:
+  title: 소프트웨어 업데이트 관리 설명서
+  titleSuffix: Configuration Manager
+  description: Configuration Manager를 사용하면 소프트웨어 업데이트를 추적하여 조직의 클라이언트에 적용하는 복잡한 작업을 효과적으로 관리할 수 있습니다.
+  ms.product: configuration-manager
+  ms.technology: configmgr-sum
+  ms.topic: landing-page
+  author: mestew
+  ms.author: mstewart
+  ms.date: 01/10/2020
+  ms.openlocfilehash: 8b3bd644095790feb8608d1ebcadeec14e38dc9c
+  ms.sourcegitcommit: 17e12830eeb624f6272ad87081eb23589a447270
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 01/08/2020
+  ms.locfileid: "75756227"
+landingContent:
+- title: 소프트웨어 업데이트 관리에 대한 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 소프트웨어 업데이트 소개
+      url: understand/software-updates-introduction.md
+    - text: 월간 소프트웨어 업데이트 배포 및 모니터링 예제
+      url: deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md
+  - linkListType: architecture
+    links:
+    - text: 소프트웨어 업데이트 계획
+      url: plan-design/plan-for-software-updates.md
+    - text: 소프트웨어 업데이트에 대한 모범 사례
+      url: plan-design/software-updates-best-practices.md
+- title: 시작 작업
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 소프트웨어 업데이트 지점 설치
+      url: get-started/install-a-software-update-point.md
+    - text: 분류 및 제품 구성
+      url: get-started/configure-classifications-and-products.md
+    - text: 소프트웨어 업데이트 동기화
+      url: get-started/synchronize-software-updates.md
+  - linkListType: how-to-guide
+    links:
+    - text: 소프트웨어 업데이트 자동 배포
+      url: deploy-use/automatically-deploy-software-updates.md
+    - text: 소프트웨어 업데이트 모니터링
+      url: deploy-use/monitor-software-updates.md
+- title: 상위 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Office 365 ProPlus 업데이트 관리
+      url: deploy-use/manage-office-365-proplus-updates.md
+    - text: 타사 업데이트 사용
+      url: deploy-use/third-party-software-updates.md
+    - text: 소프트웨어 업데이트 설정 관리
+      url: get-started/manage-settings-for-software-updates.md
+  - linkListType: concept
+    links:
+    - text: Windows 10 업데이트 배달 최적화
+      url: deploy-use/optimize-windows-10-update-delivery.md
+    - text: 소프트웨어 업데이트 유지 관리
+      url: deploy-use/software-updates-maintenance.md

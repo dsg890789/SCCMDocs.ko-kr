@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d76b43a1918184fea9cc97bb3ed35a57a7c7ada
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 68139a985ddebcfaabeab7275d524bc5b0bc8436
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62198476"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817451"
 ---
 # <a name="how-to-use-the-package-conversion-manager-plug-in"></a>Package Conversion Manager 플러그 인을 사용하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1357861-->
 

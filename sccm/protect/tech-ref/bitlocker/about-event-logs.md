@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: a9ece9e8-37ec-441d-937c-be4941afce7f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 813975c200a281445a6fe24b9036216174acf393
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b8b9328c299b420b0d13d5a65e55a8ff8c24efb5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662341"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819066"
 ---
 # <a name="bitlocker-event-logs"></a>BitLocker 이벤트 로그
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 BitLocker 관리 에이전트 및 웹 서비스는 Windows 이벤트 로그를 사용 하 여 메시지를 기록 합니다. 이벤트 뷰어에서 **응용 프로그램 및 서비스 로그**, **Microsoft**, **Windows**로 이동 합니다. 로그 채널 (노드)은 컴퓨터 및 구성 요소에 따라 다릅니다.
 
@@ -39,7 +38,7 @@ BitLocker 관리 에이전트 및 웹 서비스는 Windows 이벤트 로그를 �
 
 ## <a name="log-properties"></a>로그 속성
 
-Windows 이벤트 뷰어에서 특정 로그를 선택 합니다. 예를 들어 관리자 **를** 합니다. **작업** 메뉴로 이동 하 여 **속성** 를 선택 합니다. 다음 설정을 구성합니다.
+Windows 이벤트 뷰어에서 특정 로그를 선택 합니다. 예를 들어 **관리자**를 합니다. **작업** 메뉴로 이동 하 여 **속성**를 선택 합니다. 다음 설정을 구성합니다.
 
 - **최대 로그 크기 (KB)** : 기본적으로이 설정은 모든 로그에 대해 `1028` (1mb)입니다.
 - **최대 이벤트 로그 크기에 도달 하면**기본적으로 **관리** 및 **작업** 로그가 **필요에 따라 이벤트를 덮어쓰도록 설정 됩니다 (가장 오래 된 이벤트 먼저)** .

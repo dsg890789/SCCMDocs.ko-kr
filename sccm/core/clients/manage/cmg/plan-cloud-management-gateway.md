@@ -10,17 +10,16 @@ ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60532a2692c8e9b25468d6f2cdca32f90aa88a7a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ed86d7d9218de87bacd7c34c6557071a1e2bf219
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73049494"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824574"
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>Configuration Manager에서 클라우드 관리 게이트웨이 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1101764-->
 CMG(클라우드 관리 게이트웨이)는 인터넷에서 Configuration Manager 클라이언트를 관리할 수 있는 간단한 방법을 제공합니다. CMG를 클라우드 서비스로 Microsoft Azure에 배포하면 추가 인프라 없이 인터넷에서 로밍하는 기존 클라이언트를 관리할 수 있습니다. 또한 온-프레미스 인프라를 인터넷에 노출할 필요도 없습니다.
@@ -221,7 +220,7 @@ Fourth Coffee는 시애틀 본사의 온-프레미스 데이터 센터에 중앙
 | 피어 캐시     | ![지원되지 않음](media/Red_X.png) |
 | 온-프레미스 MDM을 사용할 수 없음     | ![지원되지 않음](media/Red_X.png) |
 
-|키|
+|Key|
 |--|
 |![지원됨](media/green_check.png) = 이 기능은 지원되는 모든 Configuration Manager 버전의 CMG에서 지원됩니다  |
 |![지원됨](media/green_check.png)(*YYMM*) = 이 기능은 Configuration Manager의 *YYMM* 버전부터 CMG에서 지원됩니다  |
