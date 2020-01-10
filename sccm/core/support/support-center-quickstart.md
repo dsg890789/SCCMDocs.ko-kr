@@ -10,17 +10,16 @@ ms.assetid: 5cb41e2b-4c79-4da9-a432-ff869c0870f8
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9124f412b7e22fadf08ddc87668481747d52152
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a64f993be9bce42ef707d7a16a246f788c9326a9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339511"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825968"
 ---
 # <a name="support-center-quickstart-guide"></a>지원 센터 빠른 시작 가이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 지원 센터에는 문제 해결 및 실시간 로그 확인을 포함한 강력한 기능이 있습니다. 이를 사용하여 단 몇 분 안에 Configuration Manager 클라이언트 컴퓨터의 상태를 캡처할 수 있습니다. 이 기능은 원격 클라이언트 액세스를 포함합니다.
 
@@ -28,7 +27,7 @@ ms.locfileid: "68339511"
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - Configuration Manager 클라이언트에 대한 로컬 관리자 권한  
 

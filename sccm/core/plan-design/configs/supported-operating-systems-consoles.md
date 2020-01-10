@@ -10,17 +10,16 @@ ms.assetid: 21a80050-6452-4b7d-8424-99bddf9fa1f4
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 602dcde75e6efc4b588349edada1f1c49c3c1a5b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9f92eaa87806612dacd4d04b90e007d3afa6c30b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499361"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801684"
 ---
 # <a name="supported-os-versions-for-configuration-manager-consoles"></a>Configuration Manager 콘솔에 대해 지원되는 OS 버전
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 Configuration Manager 콘솔을 지원하려면 다음 OS 버전에 .NET Framework 버전 4.5.2 이상이 있어야 합니다. 단, .NET Framework 4.6 이상이 필요한 Windows 10은 예외입니다.  

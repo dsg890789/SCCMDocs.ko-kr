@@ -10,17 +10,16 @@ ms.assetid: a1626a65-da22-49e0-9564-d2f752ea3f4b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 447f4eb89dbddb705019c3ed744b29c060958747
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ceca75e1dda528d37028a02439c8407045dc050a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660617"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801888"
 ---
 # <a name="support-for-windows-10-in-configuration-manager"></a>Configuration Manager의 Windows 10에 대한 지원  
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다음을 포함하여 Configuration Manager가 지원하는 Windows 10 버전에 대해 알아봅니다.
 
@@ -67,7 +66,7 @@ Configuration Manager 버전은 [해당 버전의 지원](/sccm/core/servers/man
 
 Windows 수명 주기에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
 
-| 키 |
+| Key |
 |--|
 | ![지원됨](media/green_check.png) = **지원됨**  |
 | ![지원 안 됨](media/Red_X.png) = **지원 안 됨** |
@@ -107,7 +106,7 @@ Configuration Manager로 운영 체제를 배포할 때 Windows ADK는 필요한
 | **1809**<br>(10.1.17763) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![이전 버전과 호환](media/blue_compat.png) | ![이전 버전과 호환](media/blue_compat.png) |
 | **1903**<br>(10.1.18362) | ![지원되지 않음](media/Red_X.png) | ![지원되지 않음](media/Red_X.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) | ![지원됨](media/green_check.png) |
 
-|키|
+|Key|
 |--|
 | ![지원됨](media/green_check.png) = **지원됨** <br/> 이 표에서는 Configuration Manager 버전과 관련하여 Windows ADK 지원 가능성만 보여 줍니다. 배포하는 Windows 버전과 일치하는 Windows ADK를 사용하는 것이 좋습니다. 최신 Windows 10 버전을 배포하는 경우 최신 Windows ADK 버전을 사용하세요. 최신 Windows ADK 버전은 Windows 7과 같은 이전 OS 버전의 배포를 지원할 수 있습니다.<!-- SCCMDocs issue 1229 --> Windows ADK 구성 요소 지원 가능성에 대한 자세한 내용은 [DISM 지원 플랫폼](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-supported-platforms) 및 [USMT 요구 사항](https://docs.microsoft.com/windows/deployment/usmt/usmt-requirements#bkmk-1)을 참조하세요. |
 | ![이전 버전과 호환](media/blue_compat.png)  = **이전 버전과 호환** <br/> 이 조합은 테스트되지 않지만 작동해야 합니다. 알려진 문제 또는 주의 사항은 문서화할 것입니다. |

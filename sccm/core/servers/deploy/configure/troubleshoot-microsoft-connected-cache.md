@@ -6,17 +6,16 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 121e0341-4f51-4d54-a357-732c26caf7c5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: cac8216efd980bc728e648d0c237240e1a39ca5c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 353d0a8d62086f7e8cdb2e302394d2999a66bd52
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662861"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798363"
 ---
 # <a name="troubleshoot-microsoft-connected-cache-in-configuration-manager"></a>Configuration Manager의 Microsoft Connected Cache 문제 해결
 
@@ -37,7 +36,7 @@ ms.locfileid: "74662861"
 
 2. PowerShell을 열고 다음 명령을 실행합니다. `Get-DeliveryOptimizationStatus`
 
-예:
+예를 들면 다음과 같습니다.
 
 ```PowerShell
 PS C:\> Get-DeliveryOptimizationStatus

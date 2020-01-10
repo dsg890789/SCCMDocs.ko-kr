@@ -10,17 +10,16 @@ ms.assetid: 9efb4061-f642-48bd-8332-3357ff5b3118
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 975a92d2ef9e93bc5c1c5fc96cd91775a2627530
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 45219f7bb7e46f407a9ffe900b7d5cf2c4f3788d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74840550"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798856"
 ---
 # <a name="configure-sites-and-hierarchies-for-configuration-manager"></a>Configuration Manager에 대한 사이트 및 계층 구조 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 첫 번째 Configuration Manager 사이트를 설치하거나 계층 구조에 사이트를 더 추가한 후에는 이 검사 목록을 사용하여 사이트와 계층 구조 모두에 영향을 주는 가장 일반적인 구성을 고려해야 합니다.  
 

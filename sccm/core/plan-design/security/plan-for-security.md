@@ -10,17 +10,16 @@ ms.assetid: 2a216814-ca8c-4d2e-bcef-dc00966a3c9f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e96c47c23bd17d7b1059bbcab62b3d1568cd92cd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2fdc2be05d43999c32ecfbb3f1b6db5df318d31f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536586"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799185"
 ---
 # <a name="plan-for-security-in-configuration-manager"></a>Configuration Manager의 보안 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager 구현을 통해 보안을 계획할 때 고려해야 할 개념을 설명합니다. 여기에는 다음과 같은 섹션이 포함됩니다.  
 

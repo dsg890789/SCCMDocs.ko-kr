@@ -10,17 +10,16 @@ ms.assetid: ca4886d4-7173-46be-8dcd-1657d5b0deb9
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13085d38a043026e88cfcaceb4353f2c69b08305
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d8d7f0b94de676fe5722a509998a5064445467e9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73623314"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826257"
 ---
 #  <a name="service-windows-for-site-servers"></a>사이트 서버에 대한 서비스 기간
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 중앙 관리 사이트와 기본 사이트에서 서비스 기간을 구성하여 콘솔 내 업데이트를 설치할 수 있는 시기를 제어할 수 있습니다.  여러 기간을 구성할 수 있으며, 업데이트를 설치할 수 있는 기간은 해당 사이트 서버에 대한 모든 서비스 기간의 조합으로 결정됩니다.
 

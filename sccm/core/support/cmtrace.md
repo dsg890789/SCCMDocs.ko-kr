@@ -10,17 +10,16 @@ ms.assetid: 6a4a3290-5228-4871-918a-554aa1c20834
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3de8e414f5740eb5a667d342e875f3f00f37123d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 59e271c994a06182be7881df70174c6a4778ddc5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536118"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826087"
 ---
 # <a name="cmtrace"></a>CMTrace
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 CMTrace는 [Configuration Manager 도구](/sccm/core/support/tools) 중 하나입니다. 이 도구로 다음 형식을 포함한 로그 파일을 보고 모니터할 수 있습니다.  
 
@@ -152,7 +151,7 @@ CMTrace가 각 로그 항목의 텍스트를 검색하는 데 사용할 문자�
 
 지정 기준에 따라 로그 줄을 표시하거나 숨깁니다. 표시 여부에 관계없이 4개 열 중 어디에나 필터를 적용합니다. 이 설정은 열린 로그 파일 각각에 적용됩니다.
 
-예제:
+예:
 <!--SCCMDocs issue #603-->
 
 - "작업" 또는 "그룹"을 포함하는 입력 텍스트를 **smsts.log**에서 필터링합니다.

@@ -10,18 +10,17 @@ ms.assetid: d9c6163f-b365-4417-86b2-cd63c0602ec8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
 ROBOTS: NOINDEX
-ms.openlocfilehash: 6b9db398609850678d6f432adec475079ea3093a
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 2916c80d64fbd52852f54db7b07b4394c3fa5955
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198662"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806114"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1908"></a>Configuration Manager 기술 미리 보기 버전 1908의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager용 기술 미리 보기 버전 1908에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가합니다.
 

@@ -9,13 +9,12 @@ ms.assetid: 6d665cef-fc67-4686-bcb3-0572c0a3760c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bbfd9ada80c6f886f323f5239de03265c84e59c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 32ab76a7320672ed4168199cc6bee80e3bcded21
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73710497"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802942"
 ---
 # <a name="online-documentation-for-configuration-manager"></a>Configuration Manager에 대한 온라인 설명서
 

@@ -10,17 +10,16 @@ ms.assetid: 604ab835-bce3-4fe3-a7f3-3f059cfc0ecf
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8f881b828ba30d1e38e76c96c71709fb0e744f2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 87950615ec512f57046b206e86bb5b0c5ac2d9a1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536926"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802908"
 ---
 # <a name="removed-and-deprecated-items-for-configuration-manager-clients"></a>Configuration Manager 클라이언트에서 제거되는 항목과 사용되지 않는 항목
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager 클라이언트에서 이후 지원하지 않거나 업데이트에서 제거될(사용되지 않음) 제품 및 운영 체제에 대해 설명합니다. Configuration Manager 사용에 영향을 줄 수 있는 향후 변경 내용에 대해 미리 알려드립니다.  
 

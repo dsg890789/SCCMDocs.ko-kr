@@ -10,23 +10,22 @@ ms.assetid: c631197d-7daa-4faa-9e22-980cd6d604c2
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57762607c64016986ee1544c4b16c3ade9ea34f6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: fd47a417d94ad4a5e00a07726ed4136c98029fe6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536085"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825951"
 ---
 # <a name="support-center-for-configuration-manager"></a>Configuration Manager에 대한 지원 센터
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1357489-->
 1810 버전부터 클라이언트 문제 해결, 실시간 로그 보기, 나중에 분석하기 위해 구성 관리자 클라이언트 컴퓨터의 상태 캡처 등의 작업에 지원 센터를 사용합니다. 지원 센터는 많은 관리자 문제 해결 도구를 통합하는 단일 도구입니다.
 
 
-## <a name="about"></a>정보
+## <a name="about"></a>소개
 
 지원 센터는 Configuration Manager 클라이언트 컴퓨터의 문제를 해결할 때 발생하는 어려움을 줄이기 위한 것입니다. 이전에 Configuration Manager 클라이언트 문제를 해결할 때는 문제 해결에 도움이 되는 로그 파일 및 기타 정보를 수동으로 수집해야 했습니다. 이 때문에 중요한 로그 파일을 실수로 빼놓아 관련 작업자들에게 문제를 초래하기 쉬웠습니다.
 
@@ -56,7 +55,7 @@ ms.locfileid: "68536085"
 지원 센터는 [Windows PowerShell cmdlet](https://go.microsoft.com/fwlink/?linkid=397830)도 포함합니다. 이 cmdlet을 사용하여 다른 Configuration Manager 클라이언트에 원격 연결하고, 데이터 수집 옵션을 구성하며, 데이터 수집을 시작합니다.
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 지원 센터를 설치한 서버나 클라이언트 컴퓨터에 다음 구성 요소를 설치합니다.
 

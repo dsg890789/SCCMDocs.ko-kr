@@ -10,17 +10,16 @@ ms.assetid: 4deac022-e397-4f1f-bc0a-cea6c6c6368d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5634fb611d305fff196b7d6eb0b4ed97ff13d3e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e69487d1e8cbaccd2ed555762a3c9b55a123ce82
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70110076"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800273"
 ---
 # <a name="enhanced-http"></a>고급 HTTP
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1356889,1358460-->
 
@@ -84,7 +83,7 @@ Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브�
 > 소프트웨어 업데이트 지점 및 관련된 시나리오는 항상 클라우드 관리 게이트웨이 뿐만 아니라 클라이언트와의 보안 HTTP 트래픽을 지원했습니다. 여기서는 인증서 또는 토큰 기반 인증과는 다른 관리 지점의 메커니즘을 사용합니다.<!-- SCCMDocs issue #1148 -->
 
 
-## <a name="prerequisites"></a>필수 구성 요소  
+## <a name="prerequisites"></a>전제 조건  
 
 - HTTP 클라이언트 연결용으로 구성된 관리 지점. 사이트 시스템 역할 속성의 **일반** 탭에서 이 옵션을 설정합니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 5ef1bff8-9733-4b5a-b65f-26b94accd210
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b73d3072883405d1ac2b455f12e1c252244884d1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7e4c0f4c59afceb97cc6e6f9c14f955e9b8f940c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69999460"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825101"
 ---
 # <a name="device-restart-notifications-in-configuration-manager"></a>Configuration Manager에서 디바이스 다시 시작 알림
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 디바이스 다시 시작 보류 중에 대해 사용자가 받는 알림은 [컴퓨터 다시 시작 클라이언트 설정](/sccm/core/clients/deploy/about-client-settings#computer-restart) 및 사용 중인 Configuration Manager 버전에 따라 달라질 수 있습니다. 이 문서는 디바이스 다시 시작 보류 중 알림의 사용자 환경을 관리자가 결정하는 데 도움이 됩니다.
 

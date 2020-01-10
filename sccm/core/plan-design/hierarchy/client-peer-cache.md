@@ -10,17 +10,16 @@ ms.assetid: 86cd5382-8b41-45db-a4f0-16265ae22657
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57e80fca6c50c16bdde91f3691d8d10b71f88551
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e71a007906b5fb517c169b453a72c7f1f245943f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660158"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800579"
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 클라이언트용 피어 캐시
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1101436-->
 피어 캐시를 사용하면 원격 위치의 클라이언트로의 콘텐츠 배포를 관리하는 데 도움이 됩니다. 피어 캐시는 클라이언트가 로컬 캐시의 콘텐츠를 다른 클라이언트와 직접 공유할 수 있도록 하는 기본 제공 Configuration Manager 솔루션입니다.   

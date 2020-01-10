@@ -10,17 +10,16 @@ ms.assetid: 0bdfdef5-390f-4099-8bde-de51d9a89175
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d63fa2f25b63e663301fdf9b25d8190b57138e31
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: afe9872e5da40ed43f55e3af4e4f3cc738eaa945
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499991"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824727"
 ---
 # <a name="introduction-to-asset-intelligence-in-configuration-manager"></a>Configuration Manager의 Asset Intelligence 소개
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Asset Intelligence 카탈로그를 사용하여 기업 전반의 소프트웨어 라이선스 사용량을 인벤토리에 포함하고 관리합니다. Asset Intelligence는 Configuration Manager에서 수집하는 정보의 범위를 개선하기 위해 하드웨어 인벤토리 클래스를 추가합니다. 이 정보에는 사용자 환경에서 사용되는 하드웨어 및 소프트웨어 타이틀이 포함됩니다. 60개 이상의 보고서에서 사용하기 쉬운 형식으로 이 정보를 제공합니다. 이러한 보고서 대부분이 보다 구체적인 보고서로 연결됩니다. 일반 정보에 대해 쿼리하고 더 자세한 정보로 드릴다운합니다. 
 

@@ -10,17 +10,16 @@ ms.assetid: a6f7f6b7-9ef3-4ffa-a3cf-d877ac55983b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac2290c630393a047c5bdd8677562df6e0f0410d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 90ae389e59c6a8a81d96cb0b353c6e541855dac5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68340255"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825985"
 ---
 # <a name="customize-support-center"></a>지원 센터 사용자 지정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 [지원 센터](/sccm/core/support/support-center) 도구에는 사용자 지정할 수 있는 구성 파일이 포함됩니다. 기본적으로 지원 센터를 설치할 때 이 파일은 다음 경에 있습니다. `C:\Program Files (x86)\Configuration Manager Support Center\ConfigMgrSupportCenter.exe.config` 구성 파일은 프로그램의 동작을 변경합니다.
 
@@ -48,7 +47,7 @@ ms.locfileid: "68340255"
 
 `<CcmWmiDataCollector>` 요소는 `<collectionScopes>` 요소를 포함합니다. 지원 센터가 데이터를 수집하는 WMI 네임스페이스를 변경하려면 이 요소를 사용합니다. `<ignoreScopes>` 요소도 포함되어 있습니다. 이 요소를 사용하여 `<collectionScopes>` 요소에 정의된 네임스페이스의 일부에서 데이터 수집을 필터링할 수 있습니다.  
     
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 기본 구성 파일은 `root\ccm` 네임스페이스에서 데이터를 수집합니다. `<collectionScopes>`의 `<add/>` 요소에 이 경로도 포함되어 있습니다. 
 
 또한 이 네임스페이스에 대한 `\cimodels`, `\invagt`, `\events` 및 `\policy` 경로에 있는 모든 항목이 무시됩니다. `<ignoreScopes>` 내에 포함된 `<add/>` 요소에 있는 이러한 경로가 포함되어 있습니다.
@@ -76,7 +75,7 @@ ms.locfileid: "68340255"
 
 `<RegistryDataCollector>` 요소는 `<registryKeys>` 요소를 포함합니다. 지원 센터가 `HKEY_LOCAL_MACHINE` 경로에서 수집하는 레지스트리 및 하위 키를 변경하려면 이 요소를 사용합니다. 지원 센터는 다른 루트 레지스트리 경로에서 레지스트리 데이터 수집을 지원하지 않습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 디바이스에 설치된 클래식 프로그램에 대한 레지스트리 키를 수집하려면 다음과 같은 `<add/>` 요소를 `<registryKeys>` 요소에 추가합니다. `<add key="software\\microsoft\\windows\\currentversion\\uninstall"/>`
 
 ```XML
@@ -103,7 +102,7 @@ ms.locfileid: "68340255"
 
 `<componentLogGroup>` 요소 및 `<staticLogGroup>` 요소 내에서 모두 `<add/>` 요소에 동일한 키 특성 값을 사용하는 경우 지원 센터는 단일 그룹을 만듭니다. 이 그룹에는 동일한 키를 사용하는 두 요소에 의해 정의된 로그 파일이 포함되어 있습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 ```XML
 <logGroups>
   <componentLogGroup>

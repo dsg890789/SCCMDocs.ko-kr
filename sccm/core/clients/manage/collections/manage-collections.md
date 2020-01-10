@@ -10,17 +10,16 @@ ms.assetid: e102fd1a-76df-4d8e-b1b0-10ee18318f67
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02161f79270176f2904ae58af5d0dbec9a204ab6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b7047a2e931af73f961d2b2f87360921a3cf762b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68535428"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824438"
 ---
 # <a name="how-to-manage-collections-in-configuration-manager"></a>Configuration Manager에서 컬렉션을 관리하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서의 개요 정보를 참조하여 Configuration Manager에서 컬렉션에 대한 관리 작업을 수행할 수 있습니다.  
 
@@ -103,7 +102,7 @@ Configuration Manager에 기본 제공된 컬렉션을 삭제할 수 없습니�
 **애플리케이션 배포 시뮬레이트 마법사**를 엽니다. 이 마법사를 통해 애플리케이션을 설치하거나 제거하지 않고도 애플리케이션 배포 결과를 테스트할 수 있습니다. 자세한 내용은 [애플리케이션 배포 시뮬레이트](/sccm/apps/deploy-use/simulate-application-deployments)를 참조하세요.
 
 
-#### <a name="deploy"></a>배포:
+#### <a name="deploy"></a>배포
 다음 옵션이 표시됩니다.  
 
 - **애플리케이션**: **소프트웨어 배포 마법사**를 엽니다. 선택한 컬렉션에 대한 애플리케이션 배포를 선택하고 구성하세요. 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)를 참조하세요.  

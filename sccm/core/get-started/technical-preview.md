@@ -10,13 +10,12 @@ ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdf4a185a60bff7988b028b9ea8ae9f345cb5d78
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 12b3935ec400002a883912f784ac1f0e11e85654
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198543"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803282"
 ---
 # <a name="technical-preview-for-configuration-manager"></a>Configuration Manager에 대한 기술 미리 보기
 

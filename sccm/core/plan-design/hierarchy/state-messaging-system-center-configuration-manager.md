@@ -10,17 +10,16 @@ ms.assetid: f04c0a71-57bc-4443-a47c-592373050d04
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a83a7100819718dc8bd5fa74f0e4a317b4b47e44
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: df24765a034bce76003376e0e2844d8b8d74d859
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67676729"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799712"
 ---
 # <a name="state-messages-in-configuration-manager"></a>Configuration Manager의 상태 메시지 
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 상태 메시지에는 구성 관리자 클라이언트의 상태에 대한 간결한 정보가 포함되어 있습니다. 상태 메시징 시스템은 소프트웨어 업데이트 및 구성 설정과 같은 Configuration Manager의 특정 구성 요소에서 사용합니다.
 
@@ -84,7 +83,7 @@ ms.locfileid: "67676729"
 | 2 |비호환     |
 | 3 |충돌 검색됨    |
 | 4 |오류      |
-| 5 |알 수 없음     |
+| 5 |Unknown     |
 | 6 |부분 준수   |
 | 7 |준수가 구성되지 않음    |
 
@@ -459,7 +458,7 @@ ms.locfileid: "67676729"
 
 |     상태 메시지 ID     |  상태 메시지 설명 |
 |:-------------|:------|
-| 0 |  알 수 없음    |
+| 0 |  Unknown    |
 | 1 |  활성    |
 | 2 |  비활성    |
 

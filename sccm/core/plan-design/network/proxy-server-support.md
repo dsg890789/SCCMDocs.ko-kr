@@ -10,17 +10,16 @@ ms.assetid: 9123a87a-0b6f-43c7-b5c2-fac5d09686b1
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5c689ff3621477aa84d958e97c2dfebb81dcca1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a6dbca889d0c45e9136ff78405e7bb4f74fde0d6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499163"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799389"
 ---
 # <a name="proxy-server-support-in-configuration-manager"></a>Configuration Manager의 프록시 서버 지원
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 일부 Configuration Manager 사이트 시스템 서버는 인터넷 연결이 필요합니다. 사용자 환경에서 프록시 서버를 사용하기 위해 인터넷 트래픽이 필요한 경우 프록시를 사용하도록 이러한 사이트 시스템 역할을 구성합니다.  
 

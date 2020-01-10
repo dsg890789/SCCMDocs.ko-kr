@@ -10,17 +10,16 @@ ms.assetid: f74fdb86-c7c2-447f-91f6-b42df6370d7f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d34c3d8dfa753934f03337d68e989a8bf8fcd7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a0385c90011ce36419746b6eb9c45275eacd2eb0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62270505"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806257"
 ---
 # <a name="scenarios-to-deploy-enterprise-operating-systems-with-configuration-manager"></a>Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 시나리오
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다음 OS 배포 시나리오를 Configuration Manager에서 사용할 수 있습니다.  
 

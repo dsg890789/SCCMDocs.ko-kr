@@ -10,13 +10,12 @@ ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 690d37d2ce48851ab964011dcc41d94677ea7493
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b3c8306354a6dd31f164fe382be6e33e14192691
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658407"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824132"
 ---
 # <a name="how-to-manage-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 관리하는 방법
 
@@ -33,7 +32,7 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 >
 > 콘솔에서 디바이스를 관리하려면 **디바이스** 노드의 **클라이언트** 열을 사용하여 클라이언트가 설치되어 있는지 확인합니다.  
 
-## <a name="BKMK_ManagingClients_DevicesNode"></a> **디바이스** 노드에서 클라이언트 관리  
+## <a name="BKMK_ManagingClients_DevicesNode"></a>**디바이스** 노드에서 클라이언트 관리  
 
 디바이스 유형에 따라 이러한 옵션 중 일부를 사용하지 못할 수도 있습니다.  
 
@@ -203,7 +202,7 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 작업 순서에서 디바이스에 OS를 배포하는 데 사용하는 변수를 구성할 수도 있습니다. 자세한 내용은 [디바이스 및 컬렉션에 대한 작업 순서 변수 만들기](/configmgr/osd/understand/using-task-sequence-variables#bkmk_set-coll-var)를 참조하세요.
 
 
-## <a name="BKMK_ManagingClients_DeviceCollectionsNode"></a> **디바이스 컬렉션** 노드에서 클라이언트 관리
+## <a name="BKMK_ManagingClients_DeviceCollectionsNode"></a>**디바이스 컬렉션** 노드에서 클라이언트 관리
 
 **디바이스** 노드에서 디바이스에 사용할 수 있는 많은 작업은 컬렉션에서도 사용할 수 있습니다. 콘솔은 컬렉션에 있는 적격한 모든 디바이스에 자동으로 적용됩니다. 전체 컬렉션에서 이 작업은 추가 네트워크 패킷을 생성하고 사이트 서버에서 CPU 사용량을 증가시킵니다.  
 

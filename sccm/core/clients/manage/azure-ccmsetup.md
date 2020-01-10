@@ -6,21 +6,20 @@ ms.date: 07/03/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 9aaf466a-3f40-4468-b3cd-f0010f21f05a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 411752ae345b6af255e8fe1e46d5d5e3a93b8900
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 77c3c460a80eebfa469bd77a2745c7fa8e16c026
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890369"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824642"
 ---
 # <a name="azure-ad-authentication-workflow"></a>Azure AD 인증 워크플로
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서는 Azure AD(Azure Active Directory)에 가입된 Windows 10 디바이스의 구성 관리자 클라이언트 설치 프로세스에 관한 기술 참조입니다. 여기서는 디바이스 인증 및 클라이언트 설치의 워크플로 프로세스를 자세히 설명합니다.  
  

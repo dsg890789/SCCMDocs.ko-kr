@@ -6,17 +6,16 @@ ms.date: 12/13/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 0ce9b428-cb0f-46f3-bf69-c465e6623d6f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 148906504b77179757b38a87712d6629cc4b85d2
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 56be249e1d0e2c4dacbe8fec2f04e1a1f1fff806
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198927"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799256"
 ---
 # <a name="how-to-enable-tls-12-on-the-site-servers-and-remote-site-systems"></a>사이트 서버 및 원격 사이트 시스템에서의 TLS 1.2 사용 방법
 

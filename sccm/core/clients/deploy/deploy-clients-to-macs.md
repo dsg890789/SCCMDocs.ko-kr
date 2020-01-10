@@ -10,17 +10,16 @@ ms.assetid: e46ad501-5d73-44ac-92de-0de14ef72b83
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 066a4095fa5714df3243cc729a1dacccd613fd39
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e60a2bceee5736556164ab27ecb90cc155be8e4e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890350"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825118"
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>Mac에 클라이언트를 배포하는 방
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager 클라이언트를 Mac 컴퓨터에 배포 및 유지 관리하는 방법에 대해 설명합니다. 클라이언트를 Mac 컴퓨터에 배포하기 전에 구성해야 하는 내용을 알아보려면 [Mac에 클라이언트 소프트웨어 배포 준비](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients)를 참조하세요.
 
@@ -120,9 +119,9 @@ Mac 컴퓨터에 대한 등록을 구성하려면 [기본 클라이언트 설정
 
    - **사용자 이름**: 사용자 이름은 다음 형식이 될 수 있습니다.  
 
-     - `domain\name`를 재정의하려면 선택합니다. `contoso\mnorth`  
+     - `domain\name`과 같은 URL을 사용합니다. `contoso\mnorth`  
 
-     - `user@domain`를 재정의하려면 선택합니다. `mnorth@contoso.com`  
+     - `user@domain`과 같은 URL을 사용합니다. `mnorth@contoso.com`  
 
          > [!IMPORTANT]  
          >  이메일 주소를 사용하여 **사용자 이름** 필드를 채우면 Configuration Manager에서 **서버 이름** 필드를 자동으로 채웁니다. 등록 프록시 지점 서버의 기본 이름과 이메일 주소의 도메인 이름을 사용합니다. 이러한 이름이 등록 프록시 지점 서버의 이름과 일치하지 않으면 등록 중에 **서버 이름**을 수정합니다.  

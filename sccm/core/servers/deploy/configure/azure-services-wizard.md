@@ -10,17 +10,16 @@ ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: deabd60243f1911993c344e995ac0da848adae62
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bbd6809b29a36f8de7999780d5293a6544ad5b02
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73704943"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799063"
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>Configuration Manager에서 사용하도록 Azure 서비스 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 **Azure 서비스 마법사**를 사용하여 Configuration Manager에서 사용하도록 Azure 서비스를 구성하는 과정을 단순화할 수 있습니다. 이 마법사는 Azure AD(Azure Active Directory) 웹앱 등록을 사용하여 일반적인 구성 환경을 제공합니다. 이러한 앱은 구독 및 구성 세부 정보를 제공하고 Azure AD와의 통신을 인증합니다. 이 앱을 사용하면 Azure에서 새 Configuration Manager 구성 요소 또는 서비스를 설정할 때마다 같은 정보를 입력하지 않아도 됩니다.
 

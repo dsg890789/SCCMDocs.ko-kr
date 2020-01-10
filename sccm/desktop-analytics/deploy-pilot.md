@@ -10,13 +10,12 @@ ms.assetid: 637fbd8e-b8ea-4c7e-95ee-a60a323c496e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8cbae87d0dce391ad8ad160f29a598ac044fece
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 63eddcf725a309ed67e74934646dc72785ee0f99
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74190599"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825645"
 ---
 # <a name="how-to-deploy-to-pilot-with-desktop-analytics"></a>Desktop Analytics를 사용하여 파일럿에 배포하는 방법
 
@@ -48,7 +47,7 @@ Desktop Analytics의 데이터를 보면 최적의 검사를 위해 포함할 �
 
 또한 파일럿에서 포함하거나 제외할 Configuration Manager 컬렉션에 대해 시스템 차원의 결정을 내릴 수 있습니다. 주 Desktop Analytics 메뉴의 글로벌 설정 그룹에서 **글로벌 파일럿**을 선택합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 - **모든 시스템** 컬렉션을 대상으로 하도록 Configuration Manager의 Desktop Analytics 연결을 구성합니다. 이 작업을 통해 모든 클라이언트가 서비스에 등록됩니다.
 - Desktop Analytics와 동기화할 추가 컬렉션도 구성합니다.

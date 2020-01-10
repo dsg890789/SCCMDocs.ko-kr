@@ -10,17 +10,16 @@ ms.assetid: 1d58176e-abc0-4087-8583-ce70deb4dcf5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c851294bd7788e7c2ccd6fd661c73e22743d3e3c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: fba51730cdf6d293af3d073b346b99916bac6672
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536660"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799729"
 ---
 # <a name="security-and-privacy-for-site-administration-in-configuration-manager"></a>Configuration Manager에서 사이트 관리를 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에는 Configuration Manager 사이트 및 계층 구조에 대한 보안 및 개인 정보가 포함되어 있습니다.
 
