@@ -10,17 +10,16 @@ ms.assetid: 5fccbbeb-0faa-4943-83c2-e67db62d392d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70d6480db557fbef31aba91e8bc75f8514215059
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 932d0aa50b02f422ca335c60cac0a9db5357e1d0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65498496"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798427"
 ---
 # <a name="site-components-for-configuration-manager"></a>Configuration Manager를 위한 사이트 구성 요소
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 각 Configuration Manager 사이트에서 사이트 시스템 역할의 동작 및 사이트 상태 보고를 수정하도록 사이트 구성 요소를 구성할 수 있습니다. 사이트 구성 요소 구성은 사이트와 해당 사이트의 해당하는 각 사이트 시스템 역할 인스턴스에 적용됩니다.  
 

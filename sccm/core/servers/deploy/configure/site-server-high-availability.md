@@ -10,17 +10,16 @@ ms.assetid: 6dcef836-c0d1-40af-ad30-cd8d864b09a9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5738be3bd84d7698e7b67128e3aff178d2460e52
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d06cca3e859c6fd910e094b4b431179a3d7a5037
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66176918"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798400"
 ---
 # <a name="site-server-high-availability-in-configuration-manager"></a>Configuration Manager의 사이트 서버 고가용성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1128774-->
 
@@ -44,7 +43,7 @@ Microsoft Core Services 엔지니어링 및 운영 팀은 이 기능을 사용�
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 사이트 콘텐츠 라이브러리는 원격 네트워크 공유에 있어야 합니다. 두 사이트 서버는 공유와 해당 내용에 대한 모든 권한이 필요합니다. 자세한 내용은 [콘텐츠 라이브러리관리](/sccm/core/plan-design/hierarchy/the-content-library#bkmk_remote)를 참조하세요.<!--1357525-->  
 

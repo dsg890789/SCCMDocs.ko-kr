@@ -10,13 +10,12 @@ ms.assetid: 0f369f3a-f251-4f34-9302-1bdc6ea5d139
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cb1f2f2040a08d81387ecd2ba92c65efbdfb183
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0813f1be53691aa4fa3fef2beb888312408d36d4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74734582"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791807"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>Desktop Analytics의 배포 계획에 대한 정보
 

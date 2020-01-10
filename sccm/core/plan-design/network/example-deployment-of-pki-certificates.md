@@ -10,17 +10,16 @@ ms.assetid: 3417ff88-7177-4a0d-8967-ab21fe7eba17
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5561d0ee10eb425e582108f032d769195750a6d4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 04af80402877c2f59fe09d17dcbcec8a511614d5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70176748"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799474"
 ---
 # <a name="step-by-step-example-deployment-of-the-pki-certificates-for-configuration-manager-windows-server-2008-certification-authority"></a>Configuration Manager를 위한 PKI 인증서 배포의 단계별 예: Windows Server 2008 인증 기관
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예에서는 Configuration Manager에서 사용하는 PKI(공개 키 인프라) 인증서를 만들고 배포하는 방법을 절차에 따라 확인할 수 있습니다. 이러한 절차에서는 엔터프라이즈 CA(인증 기관)와 인증서 템플릿을 사용합니다. 이러한 단계는 개념 증명으로 테스트 네트워크에만 사용하는 것이 적절합니다.  
 
@@ -135,7 +134,7 @@ Windows Server 2008 CA(인증 기관)를 사용하는 이 단계별 배포 예�
 
 13. **값** 상자에 Configuration Manager 사이트 시스템 속성에서 지정할 FQDN 값을 지정하고 **확인**을 선택하여 **인증서 속성** 대화 상자를 닫습니다.  
 
-     예제:  
+     예:  
 
     - 사이트 시스템이 인트라넷에서만 클라이언트 연결을 수락하고 사이트 시스템 서버의 인트라넷 FQDN이 **server1.internal.contoso.com**일 경우: **server1.internal.contoso.com**을 입력하고 **추가**를 선택합니다.  
 

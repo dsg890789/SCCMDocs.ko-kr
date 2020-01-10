@@ -10,13 +10,12 @@ ms.assetid: b3ce6b9a-7d54-4374-9b7a-f017f872bd6f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cae38cd4708d6337537a04f1a09c081f139f50bb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2d72ec6511498375efa94c466be8946d661f7705
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662921"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800698"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1910"></a>1910 버전의 진단 사용량 현황 데이터 수집 수준
 

@@ -4,13 +4,12 @@ ms.author: mstewart
 ms.prod: configuration-manager
 ms.topic: include
 ms.date: 12/13/2019
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8d47aefee9ab47fa777dd648548ae45780e8f16
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 886eed4c3bd9911ffd8ebb0e14b375424c68d56a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198907"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799257"
 ---
 <!--## Enable Transport layer security (TLS) 1.2 protocol as a security provider Note: the heading in in the 2 articles (enable-tls-1-2-client & enable-tls-1-2-server) to better facilitate linking. -->
 

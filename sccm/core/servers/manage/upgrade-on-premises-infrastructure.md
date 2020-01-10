@@ -10,17 +10,16 @@ ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e8273cfd3e99f9085baf6db0590b08c6e0623a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a64db0660deee02264a333b695ef3493421f524c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379847"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793175"
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-configuration-manager"></a>Configuration Manager를 지원하는 온-프레미스 인프라 업그레이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서의 정보를 사용하여 Configuration Manager를 실행하는 서버 인프라를 업그레이드할 수 있습니다.  
 
@@ -29,7 +28,7 @@ ms.locfileid: "70379847"
 - Configuration Manager 인프라를 현재 분기인 새 버전으로 *업데이트*하려면 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.  
 
 
-## <a name="BKMK_SupConfigUpgradeSiteSrv"> </a> 사이트 시스템의 OS 업그레이드  
+## <a name="BKMK_SupConfigUpgradeSiteSrv"></a> 사이트 시스템의 OS 업그레이드  
 
 Configuration Manager는 다음과 같은 상황에서 사이트 서버 및 사이트 시스템 역할을 호스트하는 서버 OS의 현재 위치 업그레이드를 지원합니다.  
 

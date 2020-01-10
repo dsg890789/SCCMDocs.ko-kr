@@ -9,17 +9,16 @@ ms.assetid: 32609a30-465c-4406-b227-aca5c276e015
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2856869b17f851382750f9347c732f3a75a82467
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 199fb391201f123087205be56fb4989d5cddb5c1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891629"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797839"
 ---
 # <a name="deploy-servers-and-roles"></a>서버 및 역할 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 사이트 및 계층 구조 토폴로지를 계획하고 사이트를 설치하거나 업그레이드할 준비를 마친 후 다음 문서의 내용을 따르세요.  
 

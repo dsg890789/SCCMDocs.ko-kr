@@ -10,17 +10,16 @@ ms.assetid: b3d755bd-0870-4f1f-a56d-bfd3c7b492b9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085f91bfb99bcfabbcdee8083fb3a3089a33057e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4fe6a0a753c00c6703384d5400210a254a35a8dc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67285672"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791874"
 ---
 # <a name="how-to-use-the-configuration-manager-docs"></a>Configuration Manager 문서를 사용하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 다음 섹션에 Configuration Manager 문서 라이브러리를 사용하기 위한 여러 팁 및 리소스를 제공합니다.  
 
@@ -37,7 +36,7 @@ ms.locfileid: "67285672"
 
 
 ##  <a name="bkmk_searchtips"></a>검색   
- 필요한 정보를 찾으려면 다음 검색 팁을 사용하세요.  
+ 필요한 정보를 쉽게 찾으려면 다음 검색 팁을 활용하세요.  
 
 -   Configuration Manager에 대한 콘텐츠를 찾기 위해 기본 설정 검색 엔진을 사용할 경우 검색 키워드와 함께 `SCCM`을 포함합니다.  
 
@@ -90,7 +89,7 @@ docs.microsoft.com 플랫폼에 대한 피드백을 공유하려면 [문서 피�
 
 문서 라이브러리에서 콘텐츠가 변경될 때 알림을 받으려면 다음 단계를 사용합니다.
 
-1. 문서 또는 문서 집합을 찾으려면 [문서 검색](https://docs.microsoft.com/search/index?scope=ConfigMgr)을 사용합니다. 예:
+1. 문서 또는 문서 집합을 찾으려면 [문서 검색](https://docs.microsoft.com/search/index?scope=ConfigMgr)을 사용합니다. 예를 들면 다음과 같습니다.
     - 제목으로 단일 문서 검색: ["문제 해결을 위한 로그 파일 - Configuration Manager"](https://docs.microsoft.com/search/index?search=%22Log+files+for+troubleshooting+-+Configuration+Manager%22&scope=ConfigMgr)
     - [SQL](https://docs.microsoft.com/search/index?search=SQL&scope=ConfigMgr)에 관한 모든 문서 검색
 2. 오른쪽 위 모서리에서 **RSS** 링크를 클릭합니다. 

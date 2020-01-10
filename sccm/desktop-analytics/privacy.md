@@ -10,13 +10,12 @@ ms.assetid: b5606f15-f589-485c-a599-cdabf1a9e7ac
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ef45b216fce2370013afe5309e0843a3429e14c
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 2db3403960e52ee5329d506189be77b7e3f1e292
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198101"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791517"
 ---
 # <a name="desktop-analytics-data-privacy"></a>Desktop Analytics 데이터 프라이버시
 

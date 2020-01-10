@@ -10,13 +10,12 @@ ms.assetid: dba904ae-7c44-46db-ae63-999b9821cb46
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36db15b340a4122d44e60ee5a2a3eec101c16556
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3a28134aff7cdb446d268b7f6e956a25c61f3659
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499382"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799542"
 ---
 # <a name="cng-certificates-overview"></a>CNG 인증서 개요
 <!-- 1356191 --> 

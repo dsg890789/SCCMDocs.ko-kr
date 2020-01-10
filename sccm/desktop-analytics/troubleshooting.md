@@ -10,13 +10,12 @@ ms.assetid: 63e08f3f-9558-4ed7-9bf3-3a185ddaac5c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ecb1657903fd3d1dfe43f2ad46258b4643c2f55
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d88e674281c00f5516c21312ba1e2d01ce19f8d2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68712597"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791362"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>Desktop Analytics 문제 해결
 
@@ -44,7 +43,7 @@ ms.locfileid: "68712597"
 
 ## <a name="monitor-connection-health"></a>연결 상태 모니터링
 
-Configuration Manager의 **연결 상태** 대시보드를 사용하여 디바이스 상태별로 범주를 드릴다운합니다. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **Desktop Analytics Servicing** 노드를 확장하고 **연결 상태** 대시보드를 선택합니다.  
+Configuration Manager의 **연결 상태** 대시보드를 사용하여 디바이스 상태별로 범주를 드릴다운합니다. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **Desktop Analytics 서비스** 노드를 펼치고, **연결 상태** 대시보드를 선택합니다.  
 
 자세한 내용은 [연결 상태 모니터링](/sccm/desktop-analytics/monitor-connection-health)을 참조하세요.
 

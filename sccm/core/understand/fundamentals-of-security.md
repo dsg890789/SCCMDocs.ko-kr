@@ -10,17 +10,16 @@ ms.assetid: 035b7f73-8b78-4ed1-835e-a31f9a5c4a02
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6c6f931271d8cc8f69e3c65de8c4932f5ab5c95
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c45066b24fb17889a8278b97393e2905fe7d9b02
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67159271"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792117"
 ---
 # <a name="fundamentals-of-security-for-configuration-manager"></a>Configuration Manager의 보안 기본 사항
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에는 모든 Configuration Manager 환경의 다음 기본 보안 구성 요소가 요약되어 있습니다.
 - [보안 계층](#bkmk_layers)

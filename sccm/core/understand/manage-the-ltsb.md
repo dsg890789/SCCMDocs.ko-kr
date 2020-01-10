@@ -10,13 +10,12 @@ ms.assetid: 8da2887a-fd8e-438c-b926-849c121f7fdf
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08ab6cebbe44ecad8b8ce15691dd83217ada3ce9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 43f9e84c7a19f2567a7ebd0a4f9cc310b47d6ad7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67194123"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791938"
 ---
 # <a name="manage-the-long-term-servicing-branch-of-configuration-manager"></a>Configuration Manager의 장기 서비스 분기 관리
 

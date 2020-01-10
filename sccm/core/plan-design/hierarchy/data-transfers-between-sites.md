@@ -10,17 +10,16 @@ ms.assetid: dc526e8d-fac3-4bb5-b206-03ad29b0ae11
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9d2a318b6516fef8f5336cd738a3d2517014a4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e3f1d954194397d3e1c64ba108a660c351d9747a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957913"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800341"
 ---
 # <a name="data-transfers-between-sites"></a>사이트 간 데이터 전송
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 *파일 기반 복제* 및 *데이터베이스 복제*를 사용하여 사이트 간에 여러 유형의 정보를 전송합니다. Configuration Manager에서 사이트 간 데이터를 이동하는 방법과 네트워크를 통해 해당 데이터의 전송을 관리할 수 있는 방법에 대해 알아봅니다.  
 

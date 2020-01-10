@@ -10,17 +10,16 @@ ms.assetid: 65fcc1a8-214e-4dd9-8093-de4cd4a00442
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 685dd1cf6ad0bdea6e6c4aca756a47016cc419b6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 649a5a87be5608f01702c2b78f2b31f93aae77f8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957893"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800256"
 ---
 # <a name="file-based-replication"></a>파일 기반 복제
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 파일 기반 복제를 사용하여 계층 내의 사이트 간에 파일 기반 데이터를 전송합니다. 이 데이터에는 하위 사이트의 배포 지점에 배포하려는 애플리케이션과 패키지가 포함됩니다. 또한 사이트에서 상위 사이트로 전송한 후 처리하는 미처리 검색 데이터 기록도 처리합니다.  
 

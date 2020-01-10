@@ -10,13 +10,12 @@ ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4925cfdb7e6da832dc4292b1b7106a90974da5cb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b81b227b55b97ef5b8f1bdc87a14dc564075c88a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660107"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800069"
 ---
 # <a name="log-file-reference"></a>로그 파일 참조
 
@@ -173,7 +172,7 @@ Configuration Manager의 로그 파일에 대한 자세한 내용은 [로그 파
 |SCClient_&lt;*도메인*\>@&lt;*사용자 이름*\>_2.log|클라이언트 컴퓨터의 지정된 사용자에 대한 소프트웨어 센터의 이전 활동을 기록합니다.|  
 |Scheduler.log|모든 클라이언트 작업에 대해 예약된 작업의 활동을 기록합니다.|  
 |SCNotify_&lt;*도메인*\>@&lt;*사용자 이름*\>_1.log|지정된 사용자의 소프트웨어에 대해 사용자에게 알리는 활동을 기록합니다.|  
-|SCNotify_&lt;*도메인*\>@&lt;*사용자 이름*\>_1-&lt; *날짜\_시간*>.log|지정된 사용자의 소프트웨어에 대해 사용자에게 알리는 이전 정보를 기록합니다.|  
+|SCNotify_&lt;*도메인*\>@&lt;*사용자 이름*\>_1-&lt;*날짜\_시간*>.log|지정된 사용자의 소프트웨어에 대해 사용자에게 알리는 이전 정보를 기록합니다.|  
 |setuppolicyevaluator.log|WMI의 구성 및 인벤토리 정책 작성을 기록합니다.|  
 |SleepAgent_&lt;*도메인*\>@SYSTEM_0.log|절전 모드 해제 프록시에 대한 기본 로그 파일입니다.|  
 |smscliui.log|제어판에서 Configuration Manager 클라이언트의 사용을 기록합니다.|  

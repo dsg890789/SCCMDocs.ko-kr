@@ -9,17 +9,16 @@ ms.assetid: 57413dd3-b2f8-4a5f-b27f-8464d357caff
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4d99f53f1883bf5a488e5e6a08276a4f96d8743
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 68337652ecf6c82494b570f309e5a19a0bc234ad
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74840618"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798873"
 ---
 # <a name="configure-role-based-administration-for-configuration-manager"></a>Configuration Manager에 대한 역할 기반 관리 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 역할 기반 관리에서는 각 관리자의 관리 범위를 정의하기 위해 보안 역할, 보안 범위 및 할당된 컬렉션을 결합합니다. 관리 범위에는 관리자가 Configuration Manager 콘솔에서 볼 수 있는 개체 및 해당 개체와 관련이 있고 관리자가 수행할 권한이 있는 작업이 포함됩니다. 역할 기반 관리 구성은 계층의 각 사이트에 적용됩니다.  
 

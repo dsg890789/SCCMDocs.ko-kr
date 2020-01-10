@@ -10,17 +10,16 @@ ms.assetid: 6f0e08f8-f2e1-4823-90f6-7b1f4341eb46
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: eebd1aaf72cbd7932a919c0a8ffdef6d6af8389f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2cb27812ffe97bfd93cfb1eb721ace2a56286ac9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62217468"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826240"
 ---
 # <a name="site-failure-impacts-in-configuration-manager"></a>Configuration Manager에서 사이트 오류 영향
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 사이트 서버 및 다른 사이트 시스템은 실패할 수 있으며 정기적으로 제공하는 서비스의 손실이 발생할 수 있습니다. 동일한 컴퓨터에서 여러 사이트 시스템을 설치하고, 해당 컴퓨터가 실패하는 경우 해당 사이트 시스템에서 정기적으로 제공하는 모든 서비스는 더 이상 사용할 수 없습니다.
 

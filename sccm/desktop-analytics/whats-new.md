@@ -6,17 +6,16 @@ ms.date: 10/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: fa300181-86cb-4afe-8fbf-895a7572378d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 9e72ffc07d1c1e833b96131095b88a6fb3d269c3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 198e7667383c48959c8b6069a251f81c867d2d87
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73049457"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791335"
 ---
 # <a name="whats-new-in-desktop-analytics"></a>Desktop Analytics의 새로운 기능
 

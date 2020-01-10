@@ -10,17 +10,16 @@ ms.assetid: 753d2681-ea72-4f47-94d1-ac10188d9d5b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 500a59b4af9f1d25a1e0b5e82ba0a75bfa23df88
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 61a32c83aaa9c97a7dd230befa38b7351d8509b3
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500892"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792897"
 ---
 # <a name="content-ownership-tool"></a>콘텐츠 소유권 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 콘텐츠 소유권 도구는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. Configuration Manager에서 분리된 패키지의 소유권을 변경합니다. 분리된 패키지에는 소유하는 사이트 서버가 없습니다. 이 사이트 서버가 계속 소유하는 상태에서 사이트 서버를 제거하면 패키지가 분리될 수 있습니다.
 

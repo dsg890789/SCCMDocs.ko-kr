@@ -10,17 +10,16 @@ ms.assetid: 370fc61f-2d8a-45b4-adc7-7b5d5ede2bf4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e43b1768bf49e6c116bcdecaa722059cf28a6c3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f5b0531ae39f7496c6ce1beaae27231cb0dd3043
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68538059"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800817"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1906"></a>버전 1906의 진단 사용량 현황 데이터 수집 수준
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 버전 1906은 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 

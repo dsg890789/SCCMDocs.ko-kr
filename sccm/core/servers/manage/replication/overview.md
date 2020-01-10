@@ -6,17 +6,16 @@ ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 71d7430e-c5aa-485b-8dc0-c80fd8f29f17
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e4f1506ce7931fdb95a447695fbd9bf0c12146e0
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 26bba05d2d19758a9e1d7bb0f605c272b2a1b0b5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957803"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826291"
 ---
 # <a name="troubleshoot-sql-replication"></a>SQL 복제 문제 해결
 

@@ -10,17 +10,16 @@ ms.assetid: 49505eb1-d44d-4121-8712-e0f3d8b15bf5
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b23c5607cbbf008d7c9e18a2a0ee21146240bae
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d82f14b22bd6c9870c039706b34ef1e93ef86280
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74840635"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798910"
 ---
 # <a name="configure-discovery-methods-for-configuration-manager"></a>Configuration Manager 검색 방법 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 네트워크, Active Directory 및 Azure Active Directory(Azure AD)에서 관리할 리소스를 찾도록 검색 방법을 구성합니다. 먼저 환경을 검색할 때 사용할 각 방법을 사용하도록 설정하고 구성해야 합니다. 또한 방법을 사용하도록 설정할 때와 동일한 절차를 사용하여 해당 방법을 사용하지 않도록 설정할 수 있습니다. 단, 하트비트 검색 및 서버 검색은 예외입니다.  
 
@@ -151,7 +150,7 @@ Active Directory 포리스트 검색을 사용하도록 설정하고 Active Dire
 
 1. Active Directory 시스템 검색 속성 창의 **일반** 탭에서 **새로 만들기** 아이콘(![새로 만들기 아이콘](media/Disc_new_Icon.gif))을 선택하여 새 Active Directory 컨테이너를 지정합니다. **Active Directory 컨테이너** 대화 상자에서 다음 구성을 완료합니다.  
 
-    1. **경로** 위치를 입력하거나 찾아봅니다. 이 값은 컨테이너 또는 OU(조직 구성 단위)에 대한 유효한 LDAP 경로입니다. 사이트는 자원에 대해 이 경로를 쿼리합니다. 예를 들면 `LDAP://CN=Computers,DC=contoso,DC=com`  
+    1. **경로** 위치를 입력하거나 찾아봅니다. 이 값은 컨테이너 또는 OU(조직 구성 단위)에 대한 유효한 LDAP 경로입니다. 사이트는 자원에 대해 이 경로를 쿼리합니다. 예, `LDAP://CN=Computers,DC=contoso,DC=com`  
 
     2. 다음과 같이 검색 동작을 변경하는 옵션을 지정합니다.  
 
@@ -210,7 +209,7 @@ Azure AD 사용자 검색은 다른 검색 방법과 동일한 방식으로 설�
 
 자세한 내용은 [Azure AD 사용자 검색](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)을 참조하세요.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 이 검색 방법을 사용하고 구성하려면 **클라우드 관리**를 위한 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)이 필요합니다.
 
@@ -259,7 +258,7 @@ Azure에서 앱을 먼저 만든 다음 Configuration Manager로 *가져오면* 
 
 Azure AD에서 사용자 그룹과 해당 그룹의 구성원을 검색할 수 있습니다. 사이트에서 이전에 검색되지 않았던 Azure AD 그룹 사용자를 찾게 되면 Configuration Manager에서 새 사용자 리소스로서 추가합니다. 그룹이 보안 그룹이면 사용자 그룹 리소스 레코드가 생성됩니다.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 - 클라우드 관리 [Azure 서비스](/sccm/core/servers/deploy/configure/azure-services-wizard)
 - Azure AD 그룹을 읽고 검색하는 권한

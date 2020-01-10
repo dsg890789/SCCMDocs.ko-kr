@@ -6,17 +6,16 @@ ms.date: 08/09/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 19741d45-2d42-438e-a9f3-15bb365d63ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ed35f296b888d9e13d42114aa2bef2932c715a38
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 50d50bdc15d0aac73126c68ed2e6e79f2d0a9379
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892054"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826274"
 ---
 # <a name="troubleshoot-site-data-reinit"></a>사이트 데이터 다시 초기화 문제 해결
 

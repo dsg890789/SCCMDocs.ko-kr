@@ -10,17 +10,16 @@ ms.assetid: 691896d9-ec0f-461f-a3f2-40378ebd3121
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fbd046115dcd4d13cec7a2bf880740a9dd616cc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 544c24be388b07b0dd375a423de257bdc6215bb1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65495773"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792968"
 ---
 # <a name="content-library-explorer"></a>콘텐츠 라이브러리 탐색기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 콘텐츠 라이브러리 탐색기는 [Configuration Manager 도구](/sccm/core/support/tools)에 속합니다. 다음과 같은 작업에 도구를 사용합니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 35b5baec-d313-46aa-9d14-c443aa0d6c09
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e98cf178e7c88ec441bd46cb61e8b5c2a33831bb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 57f48fd6916294c66d623ec95e7ec5bbd1f6bf2f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661307"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795874"
 ---
 # <a name="support-for-configuration-manager-current-branch-versions"></a>Configuration Manager 현재 분기 버전에 대한 지원
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Microsoft는 1년에 몇 차례 Configuration Manager 현재 분기용 업데이트를 출시할 계획입니다. 각 업데이트 버전은 일반 공급 릴리스 날짜로부터 18개월 동안 지원됩니다. Microsoft는 전체 지원 기간 동안 기술 지원을 제공합니다. 최신 현재 분기 버전의 가용성에 따라 별도의 두 가지 서비스 단계가 있습니다.
 

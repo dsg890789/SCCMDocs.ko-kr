@@ -10,17 +10,16 @@ ms.assetid: 60575413-44fe-43bb-bcfb-39ec5ed5055b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: adb826a13e96947bba29a3a0928301517d446bc6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 90930e6db69403dd19c595e4b3cf16edba14f0c0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65495793"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793037"
 ---
 # <a name="client-spy"></a>클라이언트 감시
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 클라이언트 감시는 [Configuration Manager 도구](/sccm/core/support/tools) 중 하나입니다. Configuration Manager 클라이언트에서 소프트웨어 배포, 인벤토리 및 소프트웨어 계량 문제를 해결하기 위한 도구입니다. 
 
@@ -71,7 +70,7 @@ ms.locfileid: "65495793"
 #### <a name="software-distribution"></a>소프트웨어 배포
 [소프트웨어 배포](#software-distribution) 탭을 표시하고 다른 탭을 숨깁니다. 기본적으로 클라이언트 감시는 소프트웨어 배포 탭을 표시합니다.
 
-#### <a name="inventory"></a>인벤토리
+#### <a name="inventory"></a>재고
 인벤토리 탭을 표시하고 다른 탭을 숨깁니다.
 
 #### <a name="software-metering"></a>소프트웨어 계량

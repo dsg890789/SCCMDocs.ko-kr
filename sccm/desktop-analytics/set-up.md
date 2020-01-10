@@ -10,13 +10,12 @@ ms.assetid: 7ff8d453-f24d-4230-a116-585190a663fc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2d682a7cf53c01e1e5f3d65f3143b1107436dff
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 90a77bb9901f3c8516e2dfd3dfdcfe475b62c43b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72384856"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791379"
 ---
 # <a name="how-to-set-up-desktop-analytics"></a>Desktop Analytics를 설정하는 방법
 
