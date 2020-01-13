@@ -1,5 +1,5 @@
-- name: 공동 관리
-  href: overview.md
+- name: 공동 관리 설명서
+  href: index.yml
 - name: 개요
   items:
     - name: 공동 관리란?
@@ -20,7 +20,7 @@
           href: quickstart-hybrid-aad.md
         - name: Windows Autopilot
           href: quickstart-autopilot.md
-    - name: 시작
+    - name: 시작하기
       items:
         - name: 공동 관리 경로
           href: quickstart-paths.md

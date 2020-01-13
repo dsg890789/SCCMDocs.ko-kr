@@ -1,0 +1,56 @@
+### YamlMime:Landing
+title: 공동 관리 설명서
+summary: 공동 관리를 통해 Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 디바이스를 동시에 관리할 수 있습니다.
+metadata:
+  title: 공동 관리 설명서
+  titleSuffix: Configuration Manager
+  description: 공동 관리를 통해 Configuration Manager와 Microsoft Intune을 모두 사용하여 Windows 10 디바이스를 동시에 관리할 수 있습니다.
+  ms.product: configuration-manager
+  ms.technology: configmgr-other
+  ms.topic: landing-page
+  author: mestew
+  ms.author: mstewart
+  ms.date: 01/10/2020
+  ms.openlocfilehash: a201e8803ea7d49a5c0e47a56d70e08e72ceb256
+  ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 01/09/2020
+  ms.locfileid: "75827471"
+landingContent:
+- title: 공동 관리 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 공동 관리란?
+      url: overview.md
+    - text: 공동 관리 경로
+      url: quickstart-paths.md
+  - linkListType: video
+    links:
+    - text: 공동 관리를 사용하는 조건부 액세스
+      url: https://channel9.msdn.com/Series/Endpoint-Zone/The-Security-Benefits-of-Conditional-Access/player
+- title: 시작
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 기존 Configuration Manager 클라이언트에 대해 공동 관리 사용
+      url: tutorial-co-manage-clients.md
+    - text: 최신 인터넷 기반 디바이스의 공동 관리 사용
+      url: tutorial-co-manage-new-devices.md
+  - linkListType: video
+    links:
+    - text: 공동 관리를 위해 Windows 10으로 업그레이드
+      url: https://channel9.msdn.com/Series/Endpoint-Zone/Upgrading-to-Windows-10-to-Enable-Co-Management/player
+- title: 상위 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Configuration Manager 워크로드를 Intune으로 전환
+      url: how-to-switch-workloads.md
+    - text: Configuration Manager에서 공동 관리 모니터링
+      url: how-to-monitor.md
+  - linkListType: video
+    links:
+    - text: 공동 관리를 사용하는 Windows Autopilot
+      url: https://channel9.msdn.com/Series/Endpoint-Zone/Using-Windows-Autopilot-with-Co-Management/player
