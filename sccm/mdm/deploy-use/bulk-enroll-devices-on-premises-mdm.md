@@ -10,17 +10,16 @@ ms.assetid: b36f5e4a-2b57-4d18-83f6-197081ac2a0a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79cbcef2e4b503f10cf1ade529678ac370902331
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
-ms.translationtype: HT
+ms.openlocfilehash: 5a99f9d59e4d881cf027c2175012928c3f1a0425
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75521309"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75822126"
 ---
 # <a name="how-to-bulk-enroll-devices-with-on-premises-mobile-device-management-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 모바일 장치 관리를 사용 하 여 장치를 대량 등록 하는 방법
 
-*적용 대상: Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager (현재 분기)*
 
 
 사용자가 장치를 등록 하기 위해 자격 증명을 입력 해야 하는 사용자 등록과 비교 하 여 온-프레미스 모바일 장치 관리 Configuration Manager에서 대량 등록은 장치를 등록 하는 더 자동화 된 방법입니다.  대량 등록은 등록 패키지를 사용하여 등록 중에 디바이스를 인증합니다. 패키지(.ppkg 파일)에는 인증서 프로필이 포함되어 있으며, 디바이스가 등록을 지원하기 위해 인트라넷에 연결할 수 있어야 하는 경우 필요에 따라 Wi-Fi 프로필이 포함되어 있습니다.  
@@ -66,7 +65,7 @@ ms.locfileid: "75521309"
 >
 > - 현재 분기의 Configuration Manager에서는 온\-프레미스 모바일 디바이스 관리에 대한 다음 Wi-Fi 보안 구성만 지원합니다.  
 >   
->   - 보안 유형: **Wpa2 엔터프라이즈** 또는 **wpa2 개인**  
+>   - 보안 유형: **WPA2-엔터프라이즈** 또는 **WPA2 개인**  
 >   - 암호화 유형: **AES** 또는 **TKIP**  
 >   - EAP 유형: **스마트 카드 또는 기타 인증서** 또는 **PEAP**  
 >

@@ -10,13 +10,12 @@ ms.assetid: dc1f70f5-64ab-42ab-aa91-d3858803e12f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61ddfa93f4f13f7e648368efe1c611beaa420fdc
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: 175348de2309f675cc7fca9ad1236a08b0369e88
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75520782"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806597"
 ---
 # <a name="set-up-windows-hybrid-device-management-with-configuration-manager-and-microsoft-intune"></a>Configuration Manager 및 Microsoft Intune를 사용 하 여 Windows 하이브리드 장치 관리 설정
 
@@ -59,14 +58,14 @@ Intune 라이선스를 사용자에게 할당하면 추가 단계 없이 Windows
 
 자동 등록을 통해 사용자는 회사 또는 학교 계정을 추가하고 관리에 동의하여 회사 소유 또는 개인 Windows 10 PC 및 Intune의 Windows 10 Mobile 디바이스를 등록할 수 있습니다. 이러기만 하면 됩니다. 사용자 디바이스는 백그라운드에서 등록되어 Azure Active Directory에 가입됩니다. 등록된 디바이스는 Intune을 통해 관리됩니다.
 
-**전제 조건
+**전제 조건**
 - Azure Active Directory Premium 구독([평가판 구독](https://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 구독
 
 
 ### <a name="configure-automatic-mdm-enrollment"></a>자동 MDM 등록 구성
 
-1. [Azure 관리 포털](https://portal.azure.com)(https://manage.windowsazure.com) 에 로그인하여 **Azure Active Directory**를 선택합니다.
+1. [Azure 관리 포털](https://portal.azure.com)(https://manage.windowsazure.com) )에 로그인하여 **Azure Active Directory**를 선택합니다.
 
    ![Azure 포털의 스크린샷](../media/auto-enroll-azure-main.png)
 
