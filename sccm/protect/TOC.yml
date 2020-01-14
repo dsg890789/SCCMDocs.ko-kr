@@ -1,5 +1,5 @@
-- name: 데이터 및 인프라 보호
-  href: understand\protect-data-and-site-infrastructure.md
+- name: 데이터 및 인프라 보호 설명서
+  href: index.yml
 - name: 이해 및 탐색
   items:
     - name: 개요

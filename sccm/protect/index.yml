@@ -1,0 +1,100 @@
+### YamlMime:Landing
+title: 데이터 및 인프라 보호 설명서
+summary: Configuration Manager로 인프라와 데이터를 노출 또는 악의적인 공격으로부터 보호합니다.
+metadata:
+  title: 데이터 및 인프라 보호 설명서
+  titleSuffix: Configuration Manager
+  description: Configuration Manager로 인프라와 데이터를 노출 또는 악의적인 공격으로부터 보호합니다.
+  ms.product: configuration-manager
+  ms.technology: configmgr-protect
+  ms.topic: landing-page
+  author: mestew
+  ms.author: mstewart
+  ms.date: 01/10/2020
+  ms.openlocfilehash: 27ce13858044597862c0c63c2262d86c5d986c31
+  ms.sourcegitcommit: d8fdeb1e70f44ccbed675af73f75a00c35b8380f
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 01/10/2020
+  ms.locfileid: "75871167"
+landingContent:
+- title: BitLocker 드라이브 암호화(BDE) 관리
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: BitLocker 관리 플랜
+      url: plan-design/bitlocker-management.md
+  - linkListType: deploy
+    links:
+    - text: BitLocker 관리 배포
+      url: deploy-use/bitlocker/deploy-management-agent.md
+    - text: BitLocker 포털 설정
+      url: deploy-use/bitlocker/setup-websites.md
+  - linkListType: how-to-guide
+    links:
+    - text: BitLocker 보고서 보기
+      url: deploy-use/bitlocker/view-reports.md
+    - text: BitLocker 관리 및 모니터링 웹 사이트 사용
+      url: deploy-use/bitlocker/helpdesk-portal.md
+- title: 인증서 프로필
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 인증서 프로필 소개
+      url: deploy-use/introduction-to-certificate-profiles.md
+  - linkListType: get-started
+    links:
+    - text: 인증서 프로필에 대한 인증서 템플릿 권한 계획
+      url: plan-design/planning-for-certificate-template-permissions.md
+    - text: 인증서 프로필에 대한 필수 조건
+      url: plan-design/prerequisites-for-certificate-profiles.md
+  - linkListType: deploy
+    links:
+    - text: 인증서 인프라 구성
+      url: deploy-use/certificate-infrastructure.md
+    - text: 인증서 프로필 만들기
+      url: deploy-use/endpoint-configure-alerts.md
+    - text: 리소스 액세스 프로필 배포
+      url: deploy-use/endpoint-definition-updates.md
+- title: 상위 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft Defender Advanced Threat Protection 온보딩
+      url: deploy-use/windows-defender-advanced-threat-protection.md
+    - text: Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
+      url: deploy-use/troubleshoot-endpoint-client.md
+    - text: 맬웨어 방지 정책 및 방화벽 설정 관리
+      url: deploy-use/endpoint-antimalware-firewall.md
+    - text: Windows Defender Application Control 관리
+      url: deploy-use/use-device-guard-with-configuration-manager.md
+    - text: Windows Defender Application Guard 만들기 및 배포
+      url: deploy-use/create-deploy-application-guard-policy.md
+    - text: 비즈니스용 Windows Hello 설정
+      url: deploy-use/windows-hello-for-business-settings.md
+- title: Endpoint Protection
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Endpoint Protection 개요
+      url: deploy-use/endpoint-protection.md
+  - linkListType: get-started
+    links:
+    - text: Endpoint Protection 계획
+      url: plan-design/planning-for-endpoint-protection.md
+  - linkListType: deploy
+    links:
+    - text: Endpoint Protection 지점 사이트 시스템 역할 만들기
+      url: deploy-use/endpoint-protection-site-role.md
+    - text: Endpoint Protection에 대한 경고 구성
+      url: deploy-use/endpoint-configure-alerts.md
+    - text: Endpoint Protection에 대한 정의 업데이트 구성
+      url: deploy-use/endpoint-definition-updates.md
+  - linkListType: how-to-guide
+    links:
+    - text: Endpoint Protection에 대한 맬웨어 방지 정책 만들기 및 배포
+      url: deploy-use/endpoint-antimalware-policies.md
+    - text: Endpoint Protection에 대한 사용자 지정 클라이언트 설정 구성
+      url: deploy-use/endpoint-protection-configure-client.md
+    - text: Endpoint Protection 상태 모니터링
+      url: deploy-use/monitor-endpoint-protection.md
