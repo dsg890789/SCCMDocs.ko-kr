@@ -10,12 +10,12 @@ ms.assetid: d240a836-c49b-49ab-a920-784c062d6748
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: a797bde348654872cae7efe57429cff828828e5c
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: ba54eec13e86b1a21cad2b505484d7b32dfcaaed
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75821990"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035273"
 ---
 # <a name="create-pfx-certificate-profiles-using-a-certificate-authority"></a>인증 기관을 사용하여 PFX 인증서 프로필 만들기
 
@@ -26,6 +26,10 @@ ms.locfileid: "75821990"
 Configuration Manager를 사용 하면 인증 기관에서 발급 한 자격 증명을 사용 하 여 PFX 인증서 프로필을 만들 수 있습니다. Microsoft 또는 Entrust를 인증 기관으로 선택할 수 있습니다. 사용자 장치에 배포 하는 경우 PFX 파일은 암호화 된 데이터 교환을 지원 하기 위한 사용자별 인증서를 생성 합니다.
 
 기존 인증서 파일에서 인증서 자격 증명을 가져오려면 [PFX 인증서 프로필 가져오기](/configmgr/mdm/deploy-use/import-pfx-certificate-profiles)를 참조 하세요.
+
+## <a name="prerequisites"></a>전제 조건
+
+인증서 프로필 만들기를 시작 하기 전에 필요한 필수 구성 요소가 준비 되어 있는지 확인 합니다. 자세한 내용은 [인증서 프로필에 대 한 필수 조건](/configmgr/protect/plan-design/prerequisites-for-certificate-profiles)을 참조 하세요. 예를 들어 PFX 인증서 프로필의 경우 [인증서 등록 지점](/configmgr/protect/deploy-use/certificate-infrastructure#step-2---install-and-configure-the-certificate-registration-point) 사이트 시스템 역할이 필요 합니다.
 
 ## <a name="create-a-profile"></a>프로필 만들기  
 
