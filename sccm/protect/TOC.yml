@@ -16,18 +16,12 @@
           href: plan-design/prerequisites-for-certificate-profiles.md
         - name: 인증서 프로필에 대한 인증서 템플릿 권한
           href: plan-design/planning-for-certificate-template-permissions.md
-    - name: '이메일, Wi-Fi 및 VPN 프로필 계획'
-      items:
-        - name: 메일 프로필 필수 조건
-          href: plan-design/prerequisites-for-email-profiles.md
-        - name: Wi-Fi 및 VPN 프로필 필수 조건
-          href: plan-design/prerequisites-for-wifi-vpn-profiles.md
+    - name: Wi-Fi 및 VPN 프로필 필수 조건
+      href: plan-design/prerequisites-for-wifi-vpn-profiles.md
     - name: 보안 및 개인 정보
       items:
         - name: Wi-FI 및 VPN 프로필
           href: plan-design/security-and-privacy-for-wifi-vpn-profiles.md
-        - name: 전자 메일 프로필
-          href: plan-design/security-and-privacy-for-email-profiles.md
         - name: 인증서 프로필
           href: plan-design/security-and-privacy-for-certificate-profiles.md
 - name: 배포 및 사용

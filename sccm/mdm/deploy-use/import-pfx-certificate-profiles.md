@@ -10,12 +10,12 @@ ms.assetid: e3bb3e13-3037-4122-93bc-504bfd080a4d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e9ebc3993accadca7e17e06b4c27cbd704f58f00
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 6c0d5295eb5a8a184f7baab465d443cbd1323a7d
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75826920"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035233"
 ---
 # <a name="import-pfx-certificate-profiles"></a>PFX 인증서 프로필 가져오기
 

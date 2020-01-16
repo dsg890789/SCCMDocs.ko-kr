@@ -1,8 +1,8 @@
 ---
-title: 애플리케이션 관리
+title: 온-프레미스 MDM에 대 한 앱 관리
 titleSuffix: Configuration Manager
-description: Configuration Manager에서 응용 프로그램을 관리 합니다.
-ms.date: 03/05/2017
+description: Configuration Manager에서 온-프레미스 MDM (모바일 장치 관리)에 대 한 응용 프로그램을 관리 합니다.
+ms.date: 01/13/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.topic: conceptual
@@ -10,45 +10,55 @@ ms.assetid: 8adbe2e2-de26-4a80-8bbd-a5f34b8bac79
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f31de77387e4203840b1a93169321c66013da6cf
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 660975049ef91ad19e08eb18fa6c557106fbe783
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75826835"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76032695"
 ---
-# <a name="manage-applications-in-configuration-manager"></a>Configuration Manager에서 응용 프로그램 관리
+# <a name="manage-apps-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 앱 관리
 
 *적용 대상: Configuration Manager (현재 분기)*
 
-Microsoft Intune 또는 Configuration Manager 온-프레미스 디바이스 관리를 통해 디바이스를 관리하는 경우 다음과 같은 추가 애플리케이션 유형을 관리할 수 있습니다.
+Configuration Manager 온-프레미스 MDM (모바일 장치 관리)을 사용 하 여 장치를 관리 하는 경우 다음 응용 프로그램 유형을 관리할 수 있습니다.
+
 - Windows Phone 앱 패키지(*.xap 파일)
-- iOS용 앱 패키지(*.ipa 파일)
-- Android용 앱 패키지(*.apk 파일)
-- Google Play의 Android용 앱 패키지
 - Windows Phone 앱 패키지(Windows Phone 스토어)
 - MDM을 사용하는 Windows Installer
 - 웹 애플리케이션
 
-이 섹션에서는 하이브리드 MDM 또는 온-프레미스 MDM을 사용하여 애플리케이션을 만들고 관리하는 방법에 대한 자세한 정보를 제공합니다.
+Configuration Manager 응용 프로그램 및 배포 유형을 관리 하는 방법에 대 한 일반적인 내용은 [Configuration Manager 응용 프로그램에 대 한 관리 작업](/configmgr/apps/deploy-use/management-tasks-applications)을 참조 하세요.
 
-[Configuration Manager 응용 프로그램에 대 한 관리 작업](../../apps/deploy-use/management-tasks-applications.md) 은 Configuration Manager 응용 프로그램 및 배포 유형 관리에 대 한 보다 일반적인 정보를 제공 합니다.
+## <a name="bkmk_winphone"></a>Windows Phone 응용 프로그램 만들기
 
-## <a name="deploying-and-monitoring-apps"></a>앱 배포 및 모니터링
+Configuration Manager 애플리케이션에는 하나 이상의 배포 유형이 있습니다. 배포 유형에는 소프트웨어를 디바이스에 배포하는 데 필요한 설치 파일 및 정보가 포함됩니다. 또한 배포 유형에는 소프트웨어 배포 시점 및 방법을 지정하는 규칙이 포함됩니다.
 
-Configuration Manager에서 응용 프로그램을 배포 하 고 모니터링 하는 것은 랩톱, 데스크톱 등의 온사이트 장치에 대 한 모바일 장치에 대 한 프로세스와 동일 합니다. 애플리케이션 배포 및 모니터링에 대한 일반적인 내용은 다음 항목에서 확인할 수 있습니다.
+앱 및 배포 유형을 만드는 일반적인 단계는 [응용 프로그램 만들기](/configmgr/apps/deploy-use/create-applications#bkmk_create)를 참조 하세요.
 
-- [애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)
-- [애플리케이션 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)
+Configuration Manager은 Windows mobile 장치에 대해 다음과 같은 앱 파일 형식을 지원 합니다.
 
-다음은 애플리케이션을 배포하고 모니터링할 때 염두에 두어야 하는 모바일 디바이스 관리에 특정한 몇 가지 고려 사항입니다.
+|디바이스 유형|지원되는 파일 형식|
+|-----------------|---------------------|
+|Windows Phone 8|xap|
+|WVPN 프로필dows Phone 8.1|xap, appx, appxbundle|
+|Windows 10 Mobile|xap, appx, appxbundle|
+
+Windows Phone 응용 프로그램은 **사용 가능** 또는 **필수**로 배포되며, 응용 프로그램을 제거하는 데에도 이 배포를 사용합니다.
+
+## <a name="deploy-and-monitor-apps"></a>앱 배포 및 모니터링
+
+데스크톱 및 서버와 같은 다른 장치에서 수행 하는 것과 동일 하 게 Configuration Manager에서 모바일 장치용 응용 프로그램을 배포 하 고 모니터링할 수 있습니다. 자세한 내용은 다음 아티클을 참조하세요.
+
+- [애플리케이션 배포](/configmgr/apps/deploy-use/deploy-applications)
+- [애플리케이션 모니터링](/configmgr/apps/deploy-use/monitor-applications-from-the-console)
+
+모바일 장치와 관련 하 여 다음과 같은 제한 사항을 검토 합니다.
 
 - MDM에 등록된 디바이스는 시뮬레이트된 배포, 사용자 환경 또는 일정 설정을 지원하지 않습니다.
 
-- 단일 앱에 100 개 이상의 로캘을 추가 하지 마세요. 100 개를 초과 하는 로캘을 추가 하면 앱이 Intune과 동기화 되지 않습니다. 이 작업을 수행 하면 앱이 장치에 설치 되거나 설치 되는 것을 방지할 수도 있습니다.
+- 단일 앱에 100 개 이상의 로캘을 추가 하지 마세요. 이 작업을 수행 하면 앱이 장치에 설치 되지 않습니다.
 
-- iOS 응용 프로그램 구성 정책을 이미 구성한 경우 이 정책에 배포를 연결할 수 있습니다. [앱 구성 정책을 사용하여 iOS 앱 구성](configure-ios-apps-with-app-configuration-policies.md)을 참조하세요.
+## <a name="next-step"></a>다음 단계
 
-### <a name="next-steps"></a>다음 단계
-
-나중에 애플리케이션을 변경하거나, 애플리케이션을 제거하거나, 이미 배포된 애플리케이션을 새 애플리케이션으로 대체할 수 있습니다. 이러한 기능을 이해 하려면 [Configuration Manager를 사용 하 여 응용 프로그램 업데이트 및 사용 중지](../../apps/deploy-use/update-and-retire-applications.md) 를 참조 하세요.
+배포 된 응용 프로그램을 변경 하거나 제거 하거나 새 응용 프로그램으로 교체 하려면 Configuration Manager의 모든 앱과 동일 하 게 관리 합니다. 자세한 내용은 [애플리케이션 업데이트 및 사용 중지](/configmgr/apps/deploy-use/update-and-retire-applications)를 참조하세요.

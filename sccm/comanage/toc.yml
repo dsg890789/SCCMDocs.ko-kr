@@ -28,8 +28,6 @@
           href: quickstart-setup-hybrid-aad.md
         - name: Windows 10으로 업그레이드
           href: quickstart-upgrade-win10.md
-        - name: 하이브리드 MDM에서 마이그레이션
-          href: quickstart-migrate-hybrid-mdm.md
         - name: FastTrack에서 도움말 보기
           href: quickstart-fasttrack.md
 - name: 자습서

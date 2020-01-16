@@ -1,0 +1,15 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Enterprise Mobility + Security
+      tocHref: /
+      topicHref: /enterprise-mobility-security
+      items:
+        - name: Configuration Manager
+          tocHref: /configmgr/
+          topicHref: /configmgr/
+          items:
+            - name: 모바일 디바이스 관리
+              tocHref: /configmgr/protect/deploy-use
+              topicHref: /configmgr/mdm/index
