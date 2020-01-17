@@ -10,19 +10,18 @@ ms.assetid: b6b86078-fcc4-46cf-87d6-4b52b914b712
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2becf31d807f0854bf6ab9d4eb58adf84d8ab7e6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2280218d3d237f91f0db3150dbc2031bad3e1816
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62193931"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816006"
 ---
-# <a name="create-app-v-virtual-environments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 환경 만들기
+# <a name="create-app-v-virtual-environments-in-configuration-manager"></a>Configuration Manager에서 App-V 가상 환경을 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager(Configuration Manager)의 Microsoft Application Virtualization(App-V) 가상 환경에서는 배포된 가상 애플리케이션이 클라이언트 Windows PC에 있는 동일한 파일 시스템과 레지스트리를 공유할 수 있습니다. 표준 가상 애플리케이션과 달리 이러한 애플리케이션은 서로 데이터를 공유할 수 있습니다. 애플리케이션이 설치되거나 클라이언트에서 다음번에 설치된 애플리케이션을 평가할 때 클라이언트 PC에서 가상 환경이 만들어지거나 수정됩니다. 여러 애플리케이션이 파일시스템 또는 레지스트리 값을 수정하려는 경우 우선 순위가 가장 높은 애플리케이션이 우선권을 가질 수 있도록 이러한 애플리케이션의 순서를 지정할 수 있습니다.  
+Configuration Manager의 Microsoft Application Virtualization(App-V) 가상 환경에서는 배포된 가상 애플리케이션이 클라이언트 Windows PC에 있는 동일한 파일 시스템과 레지스트리를 공유할 수 있습니다. 표준 가상 애플리케이션과 달리 이러한 애플리케이션은 서로 데이터를 공유할 수 있습니다. 애플리케이션이 설치되거나 클라이언트에서 다음번에 설치된 애플리케이션을 평가할 때 클라이언트 PC에서 가상 환경이 만들어지거나 수정됩니다. 여러 애플리케이션이 파일시스템 또는 레지스트리 값을 수정하려는 경우 우선 순위가 가장 높은 애플리케이션이 우선권을 가질 수 있도록 이러한 애플리케이션의 순서를 지정할 수 있습니다.  
 
 > [!IMPORTANT]  
 >  App-V 가상 환경을 사용하여 보안 보호(예: 맬웨어 차단)를 제공해서는 안 됩니다.  

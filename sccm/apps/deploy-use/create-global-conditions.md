@@ -10,19 +10,18 @@ ms.assetid: 2d5f871a-19dc-4bd3-a3ad-4230c7a69f1b
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b92c88ae4a88ff674110fdae2dd0bd3f5470f48
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ae27e50e5093d7443c35df33b1757caec6086627
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62193816"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815921"
 ---
-# <a name="how-to-create-global-conditions-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 글로벌 조건을 만드는 방법
+# <a name="how-to-create-global-conditions-in-configuration-manager"></a>Configuration Manager에서 글로벌 조건을 만드는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 글로벌 조건은 비즈니스 또는 기술 조건을 나타내는 규칙으로 애플리케이션이 클라이언트 디바이스에 제공 및 배포되는 방식을 지정하는 데 사용할 수 있습니다. 글로벌 조건은 배포 유형 만들기 마법사의 **요구 사항** 페이지에서 액세스됩니다.  
+Configuration Manager에서 글로벌 조건은 비즈니스 또는 기술 조건을 나타내는 규칙으로 애플리케이션이 클라이언트 디바이스에 제공 및 배포되는 방식을 지정하는 데 사용할 수 있습니다. 글로벌 조건은 배포 유형 만들기 마법사의 **요구 사항** 페이지에서 액세스됩니다.  
 
 > [!NOTE]  
 >  글로벌 조건이 만들어진 사이트에서만 글로벌 조건을 편집할 수 있습니다.  

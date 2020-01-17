@@ -10,17 +10,16 @@ ms.assetid: 0a9dc0fe-a942-40a2-bab1-7eeee4d95380
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c1cdbbd1c4ede5c5f2e58bd6c42c982ebaa86fe
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5a8714f5bacf97e440bae07834ee6df5430a3d37
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68340335"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819644"
 ---
 # <a name="create-an-endpoint-protection-point-site-system-role"></a>Endpoint Protection 지점 사이트 시스템 역할 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Endpoint Protection을 사용하려면 먼저 Endpoint Protection 지점 사이트 시스템 역할을 설치해야 합니다. 하나의 사이트 시스템 서버에만 설치해야 하며, 중앙 관리 사이트 또는 독립 실행형 기본 사이트의 계층 구조 맨 위에 설치해야 합니다.
 
@@ -51,7 +50,7 @@ Endpoint Protection용 새 사이트 시스템 서버를 설치할지 아니면 
 7.  **클라우드 보호 서비스** 페이지에서 새 정의 개발을 돕기 위해 Microsoft로 전송하려는 정보 수준을 선택하고 **다음**을 클릭합니다.
 
     > [!NOTE]
-    >  이 옵션은 기본적으로 사용되는 클라우드 보호 서비스(이전에는 Microsoft 활성 보호 서비스 또는 MAPS라고 함) 설정을 구성합니다. 그런 후에 만든 각 맬웨어 방지 정책에 대한 사용자 지정 설정을 구성할 수 있습니다. Microsoft에서 맬웨어 방지 정의를 최신 상태로 유지하는 데 도움이 되는 맬웨어 샘플을 Microsoft에 제공하여 컴퓨터를 보다 안전하게 유지하려면 클라우드 보호 서비스에 가입하세요. 또한 클라우드 보호 서비스에 가입하면 Endpoint Protection 클라이언트가 동적 서명 서비스를 사용하여 Windows 업데이트에 게시되기 전에 새 정의를 다운로드할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
+    >  이 옵션은 기본적으로 사용되는 클라우드 보호 서비스(이전에는 Microsoft 활성 보호 서비스 또는 MAPS라고 함) 설정을 구성합니다. 그런 후에 만든 각 맬웨어 방지 정책에 대한 사용자 지정 설정을 구성할 수 있습니다. Microsoft에서 맬웨어 방지 정의를 최신 상태로 유지하는 데 도움이 되는 맬웨어 샘플을 Microsoft에 제공하여 컴퓨터를 보다 안전하게 유지하려면 클라우드 보호 서비스에 가입하세요. 또한 클라우드 보호 서비스에 가입하면 Endpoint Protection 클라이언트가 동적 서명 서비스를 사용하여 Windows 업데이트에 게시되기 전에 새 정의를 다운로드할 수 있습니다. 자세한 내용은 [Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
 
 8.  마법사를 완료합니다.
 
@@ -76,6 +75,6 @@ Endpoint Protection용 새 사이트 시스템 서버를 설치할지 아니면 
 7.  **클라우드 보호 서비스** 페이지에서 새 정의 개발을 돕기 위해 Microsoft로 전송하려는 정보 수준을 선택하고 **다음**을 클릭합니다.
 
     > [!NOTE]
-    >  이 옵션은 기본적으로 사용되는 클라우드 보호 서비스 설정(이전에는 MAPS라고 함)을 구성합니다. 구성한 각 맬웨어 방지 정책에 대한 사용자 지정 설정을 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
+    >  이 옵션은 기본적으로 사용되는 클라우드 보호 서비스 설정(이전에는 MAPS라고 함)을 구성합니다. 구성한 각 맬웨어 방지 정책에 대한 사용자 지정 설정을 구성할 수 있습니다. 자세한 내용은 [Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md)을 참조하세요.
 
 8.  마법사를 완료합니다.

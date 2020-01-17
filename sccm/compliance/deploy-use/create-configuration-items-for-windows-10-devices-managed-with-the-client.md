@@ -2,7 +2,7 @@
 title: Windows 10에 대 한 구성 항목 만들기
 titleSuffix: Configuration Manager
 description: Windows 10 구성 항목을 사용하여 구성 관리자 클라이언트에서 관리되는 Windows 10 컴퓨터에 대한 설정을 관리합니다.
-ms.date: 05/08/2019
+ms.date: 01/06/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
 ms.topic: conceptual
@@ -10,13 +10,12 @@ ms.assetid: 14226fbe-dd07-4432-910b-130790624a4e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f49820ed0436fe38ce774bf24268fa2ebb363cc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8050850582ca8e98e153966155b693075bd35949
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890668"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816550"
 ---
 # <a name="create-configuration-items-for-windows-10-devices"></a>Windows 10 장치에 대 한 구성 항목 만들기
 
@@ -52,15 +51,15 @@ System Center Configuration Manager **Windows 10** 구성 항목을 사용하여
   
 10. 각 설정 그룹에 대해 구성 항목이 비규격인 것으로 확인되는 경우 보고될 심각성을 구성할 수도 있습니다.  
   
-    -   **없음**: 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
+    -   **없음**: 이 호환성 규칙에 실패한 디바이스가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   
-    -   **정보**: 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
+    -   **정보**: 이 준수 규칙을 충족하지 않는 디바이스가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
   
-    -   **경고**: 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
+    -   **경고**: 이 준수 규칙을 충족하지 않는 디바이스가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
   
-    -   **위험**: 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
+    -   **위험**: 이 준수 규칙을 충족하지 않는 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-    -   **위험(이벤트 포함)** : 이 준수 규칙에 실패한 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+    -   **위험(이벤트 포함)** : 이 준수 규칙을 충족하지 않는 디바이스가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.  
   
 11. 마법사의 **플랫폼 적용 여부 가능성** 페이지에서 이전에 선택한 지원되는 플랫폼과 호환되지 않는 설정을 검토합니다. 뒤로 돌아가서 이러한 설정을 제거하거나 계속할 수 있습니다.  
   
@@ -75,7 +74,7 @@ System Center Configuration Manager **Windows 10** 구성 항목을 사용하여
   
 ### <a name="password"></a>암호  
   
-|설정|세부 정보|  
+|Setting|세부 정보|  
 |-------------|-------------|  
 |**디바이스에 암호 설정 필요**|지원되는 디바이스에는 암호가 필요합니다.|  
 |**최소 암호 길이(문자 수)**|암호의 최소 문자 길이입니다.|  
@@ -140,7 +139,10 @@ Windows Information Protection 구성 항목 Configuration Manager 다음을 관
 - 암호화 설정
   
 
-Configuration Manager로 WIP를 구성하는 방법에 대한 자세한 내용은 [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)(WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호)을 참조하세요.
-  
+Configuration Manager를 사용 하 여 WIP를 구성 하는 방법에 대 한 자세한 내용은 다음을 참조 하세요.
+- [WIP(Windows Information Protection)를 사용하여 엔터프라이즈 데이터 보호](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+- [System Center Configuration Manager를 사용하여 WIP(Windows Information Protection) 정책 만들기 및 배포](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm#related-topics)
+- [Windows Information Protection를 사용 하는 동안 발생 하는 제한 사항 (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/limitations-with-wip)
+
 ## <a name="see-also"></a>참고 항목  
-[System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)
+[Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)

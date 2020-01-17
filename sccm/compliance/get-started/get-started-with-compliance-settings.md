@@ -10,17 +10,16 @@ ms.assetid: a2742d52-851e-4abc-b623-d12d91684c0b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 656411ccf6c949237bf2fa68500520a8f7932137
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 7e963b7e2e6e333db8ccc1820ad27fb53cd06df1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339109"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816261"
 ---
-# <a name="get-started-with-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 시작
+# <a name="get-started-with-compliance-settings-in-configuration-manager"></a>Configuration Manager에서 호환성 설정 시작
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 준수 설정을 만들기 전에 먼저 핵심 개념에 대해 알아보고 작동 방식을 이해합니다.  
 
@@ -72,11 +71,11 @@ Configuration Manager 준수 설정을 만들기 전에 먼저 핵심 개념에 
 클라이언트 디바이스는 배포된 각 구성 기준에 대해 준수를 평가하고 상태 메시지 및 상황 메시지를 사용하여 해당 결과를 사이트에 즉시 보고합니다. 디바이스가 현재 네트워크에서 연결이 끊겼지만 구성 기준을 다운로드한 경우 여전히 구성 항목의 준수를 평가합니다. 다시 연결되면 준수 정보를 보냅니다.  
 
 ### <a name="monitoring-configuration-baselines"></a>구성 기준 모니터링
-- **배포** 노드에서 **모니터링** 작업 영역 아래의 Configuration Manager 콘솔에서 준수 평가의 결과를 모니터링합니다. 예:
+- **배포** 노드에서 **모니터링** 작업 영역 아래의 Configuration Manager 콘솔에서 준수 평가의 결과를 모니터링합니다. 예를 들면 다음과 같습니다.
   - 비준수의 일반적인 원인
   - 오류
   - 영향을 받는 사용자와 디바이스 수
-- 추가 세부 정보로 준수 설정 보고서를 실행합니다. 예:
+- 추가 세부 정보로 준수 설정 보고서를 실행합니다. 예를 들면 다음과 같습니다.
   - 디바이스의 호환 또는 비호환 여부
   - 구성 기준의 요소는 컴퓨터를 비호환으로 만듦
 - Configuration Manager 클라이언트를 실행하는 Windows 컴퓨터에서 준수 평가 결과를 봅니다. **Configuration Manager** 제어판을 열고, **구성** 탭으로 전환합니다.  

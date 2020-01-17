@@ -10,17 +10,16 @@ ms.assetid: 946b0f74-0794-4e8f-a6af-9737d877179b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c975580f3902a2cf468ea5f31ed0710508ef681b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 678b6a15bb1d80df4c320801b98438f75bebc7c7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658988"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827403"
 ---
 # <a name="enable-third-party-updates"></a>타사 업데이트 사용 
 
-*적용 대상: System Center Configuration Manager*
+*적용 대상: Configuration Manager(현재 분기)*
 
 버전 1806부터 Configuration Manager 콘솔에서 **타사 소프트웨어 업데이트 카탈로그** 노드를 사용하면 타사 카탈로그를 구독하고 SUP(소프트웨어 업데이트 지점)에 해당 업데이트를 게시한 다음, 클라이언트에 업데이트를 배포할 수 있습니다.  <!--1357605, 1352101, 1358714-->
 
@@ -28,7 +27,7 @@ ms.locfileid: "74658988"
 > Configuration Manager는 기본적으로 이 기능을 활성화하지 않습니다. 이 기능을 사용 하기 전에 선택적 기능을 사용 하도록 설정 하 여 **클라이언트에서 타사 업데이트 지원을 사용**하도록 설정 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
 
 
-## <a name="prerequisites"></a>필수 구성 요소 
+## <a name="prerequisites"></a>전제 조건 
 - 타사 소프트웨어 업데이트에 대한 원본 이진 콘텐츠를 저장하려면 최상위 소프트웨어 업데이트 지점의 WSUSContent 폴더에 충분한 디스크 공간이 있어야 합니다.
     - 필요한 스토리지 양은 공급 업체, 업데이트 유형 및 배포를 위해 게시하는 특정 업데이트에 따라 다릅니다.
     - 더 많은 여유 공간을 사용하여 WSUSContent 폴더를 다른 드라이브로 이동해야 하는 경우 [WSUS가 로컬로 업데이트를 저장하는 위치를 변경하는 방법](https://blogs.technet.microsoft.com/sus/2008/05/19/wsus-how-to-change-the-location-where-wsus-stores-updates-locally/) 블로그 게시물을 참조하세요.
@@ -159,7 +158,7 @@ Configuration Manager 콘솔에서 타사 공급업체 카탈로그를 구독하
 
 ## <a name="bkmk_1910"></a>1910부터 타사 업데이트에 대 한 개선 사항
 <!--4469002-->
-이제 타사 업데이트 카탈로그의 동기화를 보다 세부적으로 제어할 수 있습니다. Configuration Manager 버전 1910부터 각 카탈로그의 동기화 일정을 독립적으로 구성할 수 있습니다. 분류 된 업데이트를 포함 하는 카탈로그를 사용 하는 경우 전체 카탈로그 동기화를 방지 하기 위해 특정 범주의 업데이트만 포함 하도록 동기화를 구성할 수 있습니다. 분류 된 카탈로그를 사용 하는 경우 범주를 배포 하는 것이 확실 한 경우에는 자동으로 다운로드 하 여 WSUS에 게시 하도록 구성할 수 있습니다.
+이제 타사 업데이트 카탈로그 동기화를 더욱 세부적으로 제어할 수 있습니다. Configuration Manager 버전 1910부터, 각 카탈로그의 동기화 일정을 개별적으로 구성할 수 있습니다. 범주화된 업데이트를 포함하는 카탈로그를 사용하는 경우 전체 카탈로그가 동기화되지 않도록 동기화에 특정 업데이트 범주만 포함되도록 구성할 수 있습니다. 범주화된 업데이트를 사용하여 범주를 배포할 때는 범주가 자동으로 다운로드되고 WSUS로 게시되도록 구성할 수 있습니다.
 
 ### <a name="set-the-schedule-for-a-catalog-in-a-new-catalog-subscription"></a>새 카탈로그 구독에서 카탈로그에 대 한 일정 설정
 

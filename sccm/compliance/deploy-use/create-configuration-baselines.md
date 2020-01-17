@@ -1,7 +1,7 @@
 ---
 title: 구성 기준 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 컬렉션에 배포할 수 있는 구성 기준을 만듭니다.
+description: Configuration Manager에서 컬렉션에 배포할 수 있는 구성 기준을 만듭니다.
 ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -10,20 +10,19 @@ ms.assetid: 678c9622-c61b-47d1-ba25-690616e431c7
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb5d237ed4338c5a9c197bc749c557c542b0b6c4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 0c63e26a082b07580230d01e9485a8c31a977742
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74825561"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816652"
 ---
-# <a name="create-configuration-baselines-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준 만들기
+# <a name="create-configuration-baselines-in-configuration-manager"></a>Configuration Manager에서 구성 기준 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager의 구성 기준에는 미리 정의된 구성 항목과 필요에 따라 다른 구성 기준이 포함됩니다. 구성 기준을 만든 다음 컬렉션에 배포하여 컬렉션의 디바이스가 구성 기준을 다운로드하고 이를 준수하는지 평가하게 할 수 있습니다.  
+Configuration Manager의 구성 기준에는 미리 정의된 구성 항목과 필요에 따라 다른 구성 기준이 포함됩니다. 구성 기준을 만든 다음 컬렉션에 배포하여 컬렉션의 디바이스가 구성 기준을 다운로드하고 이를 준수하는지 평가하게 할 수 있습니다.  
 
 ## <a name="configuration-baselines"></a>구성 기준
 
@@ -58,7 +57,7 @@ System Center Configuration Manager의 구성 기준에는 미리 정의된 구�
 
    -   **필수**: 구성 항목이 클라이언트 디바이스에서 검색되지 않는 경우 구성 기준이 비규격으로 평가됩니다. 검색되는 경우 준수 여부가 평가됩니다.  
 
-   -   **선택 사항**: 구성 항목이 참조하는 애플리케이션이 클라이언트 컴퓨터에 있는 경우 구성 항목만 준수 여부를 평가합니다. 애플리케이션이 없는 경우 구성 기준은 비규격으로 표시되지 않습니다(애플리케이션 구성 항목에만 적용).  
+   -   **선택 사항**: 구성 항목이 참조하는 애플리케이션이 클라이언트 컴퓨터에 있는 경우 구성 항목만 규정 준수 여부를 평가합니다. 애플리케이션이 없는 경우 구성 기준은 비규격으로 표시되지 않습니다(애플리케이션 구성 항목에만 적용).  
 
    -   **허용 안 함**: 구성 항목이 클라이언트 컴퓨터에서 검색되는 경우 구성 기준이 비규격으로 평가됩니다(애플리케이션 구성 항목에만 적용).  
 
@@ -82,7 +81,7 @@ System Center Configuration Manager의 구성 기준에는 미리 정의된 구�
 <!--3608345-->
 *(버전 1910에서 도입됨)*
 
-버전 1910부터, 이제 사용자 지정 구성 기준의 평가를 준수 정책 평가 규칙으로 추가할 수 있습니다. 구성 기준을 만들거나 편집하는 경우, **준수 정책 평가의 일부로 이 기준을 평가**할 수 있는 옵션을 사용할 수 있습니다. 준수 정책 규칙을 추가하거나 편집하는 경우, **준수 정책 평가에 구성된 기준 포함**이라는 조건을 사용할 수 있습니다. 공동 관리 되는 장치의 경우 및 전체 준수 상태에 대 한 Configuration Manager 준수 평가 결과를 사용 하도록 Intune을 구성 하는 경우이 정보는 Azure AD로 전송 됩니다. 그런 다음 [Office 365 리소스에 대 한 조건부 액세스](/configmgr/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm#configure-conditional-access)에 사용할 수 있습니다.  
+버전 1910부터, 이제 사용자 지정 구성 기준의 평가를 준수 정책 평가 규칙으로 추가할 수 있습니다. 구성 기준을 만들거나 편집하는 경우, **준수 정책 평가의 일부로 이 기준을 평가**할 수 있는 옵션을 사용할 수 있습니다. 준수 정책 규칙을 추가하거나 편집하는 경우, **준수 정책 평가에 구성된 기준 포함**이라는 조건을 사용할 수 있습니다. 공동 관리 디바이스의 경우 그리고 Configuration Manager 호환성 평가 결과를 전체 호환성 상태의 일부로 취하도록 Intune을 구성하는 경우 이 정보가 Azure AD로 전송됩니다. 이 정보를 [Office 365 리소스에 대한 조건부 액세스](/configmgr/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm#configure-conditional-access)에 사용할 수 있습니다.  
 
 준수 정책 평가의 일환으로 사용자 지정 구성 기준을 포함하려면 다음 작업을 수행합니다.
 
@@ -94,7 +93,7 @@ System Center Configuration Manager의 구성 기준에는 미리 정의된 구�
 
 ### <a name="example-evaluation-scenario"></a>예제 평가 시나리오
 
-사용자가 규칙 조건 **준수 정책 평가에 구성된 기준 포함**을 포함하는 준수 정책을 사용하여 대상으로 지정된 컬렉션의 일부인 경우, 사용자 또는 사용자의 디바이스에 배포된 **규정 준수 평가의 일부로 이 기준 평가** 옵션이 선택된 기준이 규정 준수에 대해 평가됩니다. 예:
+사용자가 규칙 조건 **준수 정책 평가에 구성된 기준 포함**을 포함하는 준수 정책을 사용하여 대상으로 지정된 컬렉션의 일부인 경우, 사용자 또는 사용자의 디바이스에 배포된 **규정 준수 평가의 일부로 이 기준 평가** 옵션이 선택된 기준이 규정 준수에 대해 평가됩니다. 예를 들면 다음과 같습니다.
 
 - `User1`은 `User Collection 1`의 일부입니다.
 - `User1`에서 `Device1`을(를) 사용하며, 이는 `Device Collection 1` 및 `Device Collection 2`에 속합니다.

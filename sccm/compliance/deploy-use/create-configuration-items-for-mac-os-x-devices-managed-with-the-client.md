@@ -1,7 +1,7 @@
 ---
 title: '클라이언트 관리 Mac용 구성 항목 만들기 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager Mac OS X 구성 항목을 사용하여 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.
+description: Configuration Manager Mac OS X 구성 항목을 사용하여 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.
 ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -10,16 +10,15 @@ ms.assetid: 722d5bf5-bedc-4dfc-b324-6eeb773874e9
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346848bf3cd8b69b3bcecb479fb82250943dfd49
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 219ddd4c828cdabd022deb9fe372718184a4c024
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67726167"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816601"
 ---
 # <a name="create-configuration-items-for-mac-os-x-devices"></a>Mac OS X 장치에 대 한 구성 항목 만들기
-System Center Configuration Manager **Mac OS X(사용자 지정)** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
+Configuration Manager **Mac OS X(사용자 지정)** 구성 항목을 사용하여 Configuration Manager 클라이언트에서 관리되는 Mac OS X 디바이스에 대한 설정을 관리할 수 있습니다.  
   
 Mac OS X 운영 체제는 속성 목록(.plist) 파일을 사용하여 애플리케이션 설정을 저장합니다. 속성 목록 파일에서 설정을 평가하고 재구성하려면 준수 설정을 사용합니다. 또한 준수 여부를 평가하고 수정할 수 있는 값을 반환하는 셸 스크립트를 작성하여 Mac OS X 설정을 관리할 수 있습니다.  
   
@@ -47,23 +46,23 @@ Mac OS X 운영 체제는 속성 목록(.plist) 파일을 사용하여 애플리
   
     -   **Mac OS X 기본 설정**  
   
-        -   **애플리케이션 ID**: 키의 준수 여부를 평가하려는 속성 목록 파일의 애플리케이션 ID를 지정합니다.  
+        -   **애플리케이션 ID**: 키의 호환성 여부를 평가하려는 속성 목록 파일의 애플리케이션 ID를 지정합니다.  
   
              예를들어, Safari 웹 브라우저에 대 한 설정을 편집 하려는 경우 사용할 수 있습니다 **com.apple.Safari.plist**.  
   
-        -   **키**: Mac 컴퓨터에서 준수 여부를 평가하려는 키의 이름을 지정합니다. */<dictionary\>/<keyname\>* 구문을 사용합니다.  
+        -   **키**: Mac 컴퓨터에서 호환성 여부를 평가하려는 키의 이름을 지정합니다. */<dictionary\>/<keyname\>* 구문을 사용합니다.  
   
             > [!IMPORTANT]  
             >  키 이름은 대/소문자를 구분하므로 Mac 컴퓨터의 키 이름과 다른 경우 평가되지 않습니다. 또한 키 이름은 지정한 후에는 편집할 수 없습니다. 키 이름을 편집하려면 설정을 삭제한 다음 다시 만듭니다.  
   
     -   **스크립트**  
   
-        -   **검색 스크립트**: **스크립트 추가**를 선택한 다음 Mac 컴퓨터 설정의 준수 여부를 평가하는 셸 스크립트를 입력합니다. 준수 여부를 평가하기 위해 셸 스크립트에서 **echo** 명령을 사용하여 Configuration Manager에 값을 반환합니다. Configuration Manager는 **STDOUT**에서 반환된 결과를 사용하여 준수 여부를 평가합니다.  
+        -   **검색 스크립트**: **스크립트 추가**를 선택한 다음 Mac 컴퓨터 설정의 호환성 여부를 평가하는 셸 스크립트를 입력합니다. 준수 여부를 평가하기 위해 셸 스크립트에서 **echo** 명령을 사용하여 Configuration Manager에 값을 반환합니다. Configuration Manager는 **STDOUT**에서 반환된 결과를 사용하여 준수 여부를 평가합니다.  
   
             > [!IMPORTANT]  
             >  검색 스크립트에 **reboot** 명령을 포함하지 마세요. 클라이언트가 다시 시작할 때마다 검색 스크립트가 실행되기 때문에 Mac 컴퓨터가 계속해서 다시 시작할 수 있습니다.  
   
-        -   **재구성 스크립트(선택 사항)** : 필요한 경우 **스크립트 추가**를 선택한 다음 Mac 클라이언트 컴퓨터에서 발견된 비규격 설정을 재구성하기 위해 사용되는 셸 스크립트를 입력합니다.  
+        -   **재구성 스크립트(선택 사항)** : 필요한 경우 **스크립트 추가**를 선택한 다음 Mac 클라이언트 컴퓨터에서 발견된 비호환 설정을 재구성하기 위해 사용되는 셸 스크립트를 입력합니다.  
   
             > [!IMPORTANT]  
             >  Mac 컴퓨터에서 해석할 수 없는 형식 지정 문자를 사용 하지 않도록 하려면 복사 및 붙여넣기를 사용 하지 마세요. 대신 스크립트에를 입력 합니다.  
@@ -81,24 +80,24 @@ Mac OS X 운영 체제는 속성 목록(.plist) 파일을 사용하여 애플리
   
 14. 에 **규칙 만들기** 대화 상자에서 다음 정보를 제공 합니다.  
   
-    -   **이름**: 준수 규칙의 이름을 입력합니다.  
+    -   **이름**: 규정 준수 규칙의 이름을 입력합니다.  
   
-    -   **설명**: 준수 규칙에 대한 설명을 입력합니다.  
+    -   **설명**: 규정 준수 규칙에 대한 설명을 입력합니다.  
   
     -   **선택한 설정**: **찾아보기**를 선택하여 **설정 선택** 대화 상자를 엽니다. 규칙을 정의하려는 설정을 선택하거나 **새 설정**을 선택합니다. 작업을 완료했으면 **선택**을 선택합니다.  
   
         > [!TIP]  
         >  **속성**을 선택하여 현재 선택한 설정 관련 정보를 확인할 수도 있습니다.  
   
-    -   **규칙 유형을**: 사용 하려는 규정 준수 규칙의 유형을 선택 합니다.  
+    -   **규칙 유형**: 사용하려는 규정 준수 규칙의 유형을 선택합니다.  
   
-        -   **값:** : 구성 항목에서 반환된 값을 사용자가 지정한 값과 비교하는 규칙을 만듭니다.  
+        -   **값**: 구성 항목에서 반환된 값을 지정하는 값과 비교하는 규칙을 만듭니다.  
   
         -   **존재 여부**: 디바이스에 존재하는지 여부에 따라 설정을 평가하는 규칙을 만듭니다.  
   
     -   규칙 유형에 **값**, 다음 정보를 지정 합니다.  
   
-        -   **설정은 다음 규칙을 준수해야 함** – 선택한 설정을 사용하여 준수 여부를 평가하는 값과 연산자를 선택합니다. 다음과 같은 연산자를 사용할 수 있습니다.  
+        -   **설정은 다음 규칙을 준수해야 함**: 선택한 설정을 사용하여 호환성을 평가하는 값과 연산자를 선택합니다. 다음과 같은 연산자를 사용할 수 있습니다.  
   
             -   **같음**  
   
@@ -114,28 +113,28 @@ Mac OS X 운영 체제는 속성 목록(.plist) 파일을 사용하여 애플리
   
             -   **작거나 같음**  
   
-            -   **다음 중 하나**: 텍스트 상자의 각 줄에서 한 항목을 지정합니다.  
+            -   **다음 중 하나**: 텍스트 상자에서 각 줄에 하나의 항목을 지정 합니다.  
   
-            -   **다음 중 없음**: 텍스트 상자의 각 줄에서 한 항목을 지정합니다.  
+            -   **다음 중 없음**: 텍스트 상자에서 각 줄에 하나의 항목을 지정 합니다.  
   
-        -   **지원되는 경우 비규격 규칙 재구성**: Configuration Manager가 자동으로 비규격 규칙을 재구성하게 하려면 이 옵션을 선택합니다.  
+        -   **지원되는 경우 비규정 준수 규칙 수정**: Configuration Manager가 자동으로 비호환 규칙을 수정하게 하려면 이 옵션을 선택합니다.  
   
             > [!IMPORTANT]  
             >  규칙 연산자로 설정 된 경우에 비호환 규칙을 재구성할 수 있습니다 **Equals**.  
   
-        -   **이 설정 인스턴스가 없는 경우 비규격 보고**: 이 설정이 Mac 컴퓨터에 없는 경우 구성 항목이 비규격을 보고합니다.  
+        -   **이 설정 인스턴스를 찾을 수 없는 경우 비호환성 보고**: 이 설정이 Mac 컴퓨터에 없는 경우 구성 항목이 비호환성을 보고합니다.  
   
-        -   **Noncompliance severity for reports**(보고서에 대한 비규격 심각도): 이 비규격 규칙에 실패하면 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
+        -   **보고할 비호환성 심각도**: 이 호환성 규칙이 실패하는 경우 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
   
-            -   **없음**: 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
+            -   **없음**: 이 호환성 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   
-            -   **정보** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
+            -   **정보**: 이 규정 준수 규칙을 충족하지 않는 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
   
-            -   **경고** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
+            -   **경고**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
   
-            -   **위험** 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
+            -   **위험**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-            -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. Mac 클라이언트 컴퓨터도이 심각도 수준을 기록 합니다.  
+            -   **위험(이벤트 포함)** : 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. Mac 클라이언트 컴퓨터도이 심각도 수준을 기록 합니다.  
   
     -   규칙 유형에 **Existential**, 다음 정보를 지정 합니다.  
   
@@ -145,17 +144,17 @@ Mac OS X 운영 체제는 속성 목록(.plist) 파일을 사용하여 애플리
   
             -   **설정이 클라이언트 디바이스에 없어야 합니다.**  
   
-        -   **Noncompliance severity for reports**(보고서에 대한 비규격 심각도): 이 준수 규칙에 실패하면 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
+        -   **보고할 비호환성 심각도**: 이 규정 준수 규칙이 실패하는 경우 보고되는 심각도 수준을 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
   
-            -   **없음**: 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
+            -   **없음**: 이 호환성 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
   
-            -   **정보** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
+            -   **정보**: 이 규정 준수 규칙을 충족하지 않는 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
   
-            -   **경고** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
+            -   **경고**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
   
-            -   **위험** 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
+            -   **위험**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
   
-            -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. Mac 클라이언트 컴퓨터도이 심각도 수준을 기록 합니다.  
+            -   **위험(이벤트 포함)** : 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. Mac 클라이언트 컴퓨터도이 심각도 수준을 기록 합니다.  
   
         > [!NOTE]  
         >  표시되는 옵션은 규칙을 구성하는 설정 유형에 따라 달라질 수 있습니다.  
@@ -166,8 +165,8 @@ Mac OS X 운영 체제는 속성 목록(.plist) 파일을 사용하여 애플리
   
 **자산 및 준수** 작업 영역의 **구성 항목** 노드에 새 구성 항목이 표시됩니다.  
   
-이제 구성 기준에 이 구성 항목을 추가하려는 경우 [System Center Configuration Manager에서 구성 기준을 만드는 방법](../../compliance/deploy-use/create-configuration-baselines.md)을 참조하세요.  
+이제 이 구성 항목을 구성 기준에 추가하려면 [구성 기준을 만드는 방법](../../compliance/deploy-use/create-configuration-baselines.md)을 참조하세요.  
   
 ## <a name="next-steps"></a>다음 단계
 
- [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)
+ [Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)

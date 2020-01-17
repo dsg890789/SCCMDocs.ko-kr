@@ -10,17 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618dd44a32e624a67f03bb18ea01169dd80daeb7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c46e20e2a74e18edc7fdc5a10a2103a52785cc44
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67194676"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827301"
 ---
 # <a name="install-and-configure-a-software-update-point"></a>소프트웨어 업데이트 지점 설치 및 구성  
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 > [!IMPORTANT]  
@@ -75,7 +74,7 @@ ms.locfileid: "67194676"
 ### <a name="wsus-server-connection-account"></a>WSUS 서버 연결 계정  
  소프트웨어 업데이트 지점에서 실행하는 WSUS에 연결할 때 사이트 서버에서 사용할 계정을 구성할 수 있습니다. 이 계정을 구성하지 않으면 Configuration Manager는 사이트 서버의 컴퓨터 계정을 사용하여 WSUS에 연결합니다. 마법사의 **프록시 및 계정 설정** 페이지에서 또는 소프트웨어 업데이트 지점 속성의 **프록시 및 계정 설정** 탭에서 WSUS 서버 연결 계정을 구성할 수 있습니다.  사용하는 Configuration Manager 버전에 따라 마법사의 각기 다른 위치에서 계정을 구성할 수 있습니다.  
 
- Configuration Manager 계정에 대한 자세한 내용은 [System Center Configuration Manager에서 사용된 계정](../../core/plan-design/hierarchy/accounts.md)을 참조하세요.  
+ Configuration Manager 계정에 대 한 자세한 내용은 [사용 되는 계정](../../core/plan-design/hierarchy/accounts.md)을 참조 하세요.  
 
 ## <a name="synchronization-source"></a>동기화 원본  
  마법사의 **동기화 원본** 페이지 또는 소프트웨어 업데이트 지점 구성 요소 속성의 **동기화 설정** 탭에서 소프트웨어 업데이트 동기화에 대한 업스트림 동기화 원본을 구성할 수 있습니다. 동기화 원본에 대한 옵션은 사이트에 따라 달라집니다.  
@@ -89,14 +88,14 @@ ms.locfileid: "67194676"
 
  다음 목록에는 동기화 원본으로 사용할 수 있는 각 옵션에 대한 추가 정보가 나열되어 있습니다.  
 
--   **Microsoft 업데이트에서 동기화**: Microsoft 업데이트에서 소프트웨어 업데이트 메타데이터를 동기화하려면 이 설정을 사용합니다. 중앙 관리 사이트에서는 인터넷 액세스가 가능해야 하며 그렇지 않으면 동기화가 실패합니다. 이 설정은 소프트웨어 업데이트 지점을 최상위 사이트에 구성하는 경우에만 사용할 수 있습니다.  
+-   **Microsoft Update에서 동기화**: Microsoft Update에서 소프트웨어 업데이트 메타데이터를 동기화하려면 이 설정을 사용합니다. 중앙 관리 사이트에서는 인터넷 액세스가 가능해야 하며 그렇지 않으면 동기화가 실패합니다. 이 설정은 소프트웨어 업데이트 지점을 최상위 사이트에 구성하는 경우에만 사용할 수 있습니다.  
 
     > [!NOTE]  
     >  소프트웨어 업데이트 지점과 인터넷 간에 방화벽이 있는 경우 WSUS 웹 사이트에 사용되는 HTTP 및 HTTPS 포트를 허용하도록 이 방화벽을 구성해야 할 수 있습니다. 또한 방화벽에서 제한된 도메인에 대한 액세스를 제한하도록 선택할 수 있습니다. 소프트웨어 업데이트를 지원하는 방화벽을 계획하는 방법에 대한 자세한 내용은 [방화벽 구성](../plan-design/plan-for-software-updates.md#BKMK_ConfigureFirewalls)을 참조하세요.  
 
--   **<a name="BKMK_wsussync"></a>S업스트림 데이터 원본 위치에서 동기화**: 업스트림 동기화 원본에서 소프트웨어 업데이트 메타데이터를 동기화하려면 이 설정을 사용합니다. 자식 기본 사이트 및 보조 사이트는 이 설정에 부모 사이트 URL을 사용하도록 자동으로 구성됩니다. 기존 WSUS 서버에서 소프트웨어 업데이트를 동기화할 수 있는 옵션이 제공됩니다. 과 같이 URL https://WSUSServer:8531 을 지정하면 되며 여기서 8531은 WSUS 서버에 연결하는 데 사용되는 포트입니다.  
+-   **<a name="BKMK_wsussync"></a>업스트림 데이터 원본 위치에서 동기화**: 업스트림 동기화 원본에서 소프트웨어 업데이트 메타데이터를 동기화하려면 이 설정을 사용합니다. 자식 기본 사이트 및 보조 사이트는 이 설정에 부모 사이트 URL을 사용하도록 자동으로 구성됩니다. 기존 WSUS 서버에서 소프트웨어 업데이트를 동기화할 수 있는 옵션이 제공됩니다. 과 같이 URL https://WSUSServer:8531 을 지정하면 되며 여기서 8531은 WSUS 서버에 연결하는 데 사용되는 포트입니다.  
 
--   **Microsoft 업데이트 또는 업스트림 데이터 원본에서 동기화 안 함**: 최상위 사이트에서 소프트웨어 업데이트 지점의 인터넷 연결이 끊어졌을 때 소프트웨어 업데이트를 수동으로 동기화하려면 이 설정을 사용합니다. 자세한 내용은 [연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화](synchronize-software-updates-disconnected.md)를 참조하세요.  
+-   **Microsoft Update 또는 업스트림 데이터 원본에서 동기화 안 함**: 최상위 사이트에서 소프트웨어 업데이트 지점의 인터넷 연결이 끊어졌을 때 소프트웨어 업데이트를 수동으로 동기화하려면 이 설정을 사용합니다. 자세한 내용은 [연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화](synchronize-software-updates-disconnected.md)를 참조하세요.  
 
 > [!NOTE]  
 >  소프트웨어 업데이트 지점과 인터넷 간에 방화벽이 있는 경우 WSUS 웹 사이트에 사용되는 HTTP 및 HTTPS 포트를 허용하도록 이 방화벽을 구성해야 할 수 있습니다. 또한 방화벽에서 제한된 도메인에 대한 액세스를 제한하도록 선택할 수 있습니다. 소프트웨어 업데이트를 지원하는 방화벽을 계획하는 방법에 대한 자세한 내용은 [방화벽 구성](../plan-design/plan-for-software-updates.md#BKMK_ConfigureFirewalls)을 참조하세요.  

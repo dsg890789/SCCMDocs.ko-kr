@@ -10,19 +10,18 @@ ms.assetid: 92c1ccca-a748-44cd-a52e-e41d34bf981d
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07b766db6b80f92eba8d401b3c751ca1d4766b38
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9823922eeeed5f55fadc39adb59652f1ee86ab67
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62206303"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816312"
 ---
-# <a name="monitor-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 모니터링
+# <a name="monitor-compliance-settings-in-configuration-manager"></a>Configuration Manager에서 호환성 설정 모니터링
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-계층 구조의 디바이스에 System Center Configuration Manager 구성 기준을 배포한 후 이 항목의 절차 중 하나 이상을 사용하여 구성 기준의 준수 상태를 표시할 수 있습니다.
+계층 구조의 디바이스에 Configuration Manager 구성 기준을 배포한 후 이 항목의 절차 중 하나 이상을 사용하여 구성 기준의 호환성 상태를 표시할 수 있습니다.
 
 > [!NOTE]  
 >  준수 설정 보고서의 유효성 검사 조건 필드(클라이언트 쪽 보고서의 **제약 조건**에 해당)는 기본 SML(Service Modeling Language)을 표시합니다. 이로 인해 Configuration Manager 콘솔의 구성 항목을 작성한 관리자가 SML에 대한 지식이 없을 경우 유효성 검사 조건을 이해하기 어려울 수 있습니다. 이 경우 Configuration Manager 콘솔의 **모니터링** 작업 영역에서 구성 항목 및 해당 유효성 검사 기준의 속성을 볼 수 있습니다.  
@@ -47,7 +46,7 @@ ms.locfileid: "62206303"
 
     -   **오류**: 영향받는 자산 수에 따라 선택한 구성 기준 배포에 대한 모든 오류 목록을 표시합니다. 규칙을 클릭하여 **자산 및 호환성** 작업 영역의 **사용자** 또는 **디바이스** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 규칙에 대해 오류를 생성한 모든 사용자 또는 디바이스가 해당 노드에 포함됩니다. 사용자 또는 디바이스를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자 또는 디바이스가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자 또는 디바이스를 두 번 클릭합니다.  
 
-    -   **비규격**: 영향받는 자산 수에 따라 구성 기준 내에 있는 모든 비규격 규칙의 목록을 표시합니다. 규칙을 클릭하여 **자산 및 호환성** 작업 영역의 **사용자** 또는 **디바이스** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 규칙을 준수하지 않는 모든 사용자 또는 디바이스가 해당 노드에 포함됩니다. 사용자 또는 디바이스를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자 또는 디바이스가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자 또는 디바이스를 두 번 클릭합니다.  
+    -   **비준수**: 영향받는 자산 수에 따라 구성 기준 내에 있는 모든 비규격 규칙의 목록을 표시합니다. 규칙을 클릭하여 **자산 및 호환성** 작업 영역의 **사용자** 또는 **디바이스** 노드 아래에 임시 노드를 만들 수 있습니다. 그러면 이 규칙을 준수하지 않는 모든 사용자 또는 디바이스가 해당 노드에 포함됩니다. 사용자 또는 디바이스를 선택하면 **자산 정보** 창에 선택한 문제의 영향을 받는 사용자 또는 디바이스가 표시됩니다. 목록에서 문제에 대한 추가 정보를 표시할 사용자 또는 디바이스를 두 번 클릭합니다.  
 
     -   **알 수 없음**: 선택한 구성 기준 배포에 대해 준수 여부를 보고하지 않은 모든 사용자 및 디바이스의 목록과 디바이스의 현재 클라이언트 상태를 표시합니다.  
 
@@ -59,7 +58,7 @@ ms.locfileid: "62206303"
 > [!IMPORTANT]  
 >  준수 설정 보고서에서 **%** 디바이스 필터 **및 사용자 필터 매개 변수를 사용할 때 와일드카드(** ) 문자를 사용해야 합니다.  
 
- Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
+ Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조하세요.  
 
 ##  <a name="view-compliance-results-on-a-configuration-manager-windows-client-computer"></a>Configuration Manager Windows 클라이언트 컴퓨터에서 준수 결과 보기
 
@@ -77,7 +76,7 @@ ms.locfileid: "62206303"
 
     -   **규격**: 클라이언트 컴퓨터가 평가된 구성 기준을 준수합니다.  
 
-    -   **비규격**: 클라이언트 컴퓨터가 평가된 구성 기준을 준수하지 않습니다.  
+    -   **비준수**: 클라이언트 컴퓨터가 평가된 구성 기준을 준수하지 않습니다.  
 
     -   **알 수 없음**: 클라이언트 컴퓨터가 구성 기준을 아직 평가하지 않았습니다. 준수 평가 일정 외의 평가를 시작하려면 평가할 구성 기준을 선택한 다음 **평가**를 클릭합니다.  
 

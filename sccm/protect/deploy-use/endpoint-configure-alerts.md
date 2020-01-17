@@ -1,7 +1,7 @@
 ---
 title: Endpoint Protection 경고 구성
 titleSuffix: Configuration Manager
-description: Endpoint Protection 경고를 System Center Configuration Manager에서 구성하는 방법을 알아봅니다.
+description: Endpoint Protection 경고를 Configuration Manager에서 구성하는 방법을 알아봅니다.
 ms.date: 03/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -10,19 +10,18 @@ ms.assetid: f504de3e-4caf-455c-80d7-a63f13f4c5d9
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee1bf48298c3c21388267c4975d6d59383157593
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 55877923ae2e9a7aa47b3ebe774f7dc0e4ea21a4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65494756"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820052"
 ---
 #  <a name="configure-alerts-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager에서 Endpoint Protection에 대한 경고를 구성하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
- Microsoft System Center Configuration Manager에서 Endpoint Protection 경고를 구성하여 계층 구조에 맬웨어 감염 등 특정 이벤트가 발생하는 경우 관리자에게 알릴 수 있습니다. **모니터링** 작업 영역의 **경고** 노드에 있는 Configuration Manager 콘솔의 Endpoint Protection 대시보드에 알림이 표시되거나 지정된 사용자에게 메일을 보낼 수 있습니다.
+ Microsoft Configuration Manager에서 Endpoint Protection 경고를 구성하여 계층 구조에 맬웨어 감염 등 특정 이벤트가 발생하는 경우 관리자에게 알릴 수 있습니다. **모니터링** 작업 영역의 **경고** 노드에 있는 Configuration Manager 콘솔의 Endpoint Protection 대시보드에 알림이 표시되거나 지정된 사용자에게 메일을 보낼 수 있습니다.
 
  이 항목에서 다음 단계와 보완 절차를 사용하여 Configuration Manager에서 Endpoint Protection에 대한 경고를 구성합니다.
 

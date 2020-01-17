@@ -10,17 +10,16 @@ author: mestew
 ms.author: mstewart
 description: 정의 업데이트를 자동 승인하려면 Windows Server Update Services를 구성하는 방법에 대해 알아봅니다.
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e868945cf3d87df17dbe8197ec99497f1478d973
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 301a3f318e836f2501a25ae65ebb61173b8e6231
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380252"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827454"
 ---
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-windows-server-update-services-wsus-for-configuration-manager"></a>Configuration Manager의 WSUS(Windows Server Update Services)에서 다운로드하기 위해 Endpoint Protection 맬웨어 정의를 사용하도록 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
  WSUS를 사용하여 맬웨어 방지 정의를 최신 상태로 유지하는 경우 정의 업데이트를 자동 승인하도록 구성할 수 있습니다. Configuration Manager 소프트웨어 업데이트를 사용하여 정의를 최신 상태로 유지하는 것이 좋지만, 사용자가 정의 업데이트를 수동으로 시작할 수 있는 방법으로 WSUS를 구성할 수도 있습니다. WSUS를 정의 업데이트 원본으로 구성하려면 다음 절차를 따르세요.
 

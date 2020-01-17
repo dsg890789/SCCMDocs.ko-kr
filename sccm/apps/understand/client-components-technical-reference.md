@@ -10,17 +10,16 @@ ms.assetid: 701a3456-9dd6-4aaa-9c5a-37c1e1773216
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f866859c785a6cfa14496948b92d9bac138bc64
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 692b705f7e24bf71aa05111cafce68647dfeef9f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74823463"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75782050"
 ---
 # <a name="understanding-application-deployment-client-components"></a>응용 프로그램 배포 클라이언트 구성 요소 이해
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 응용 프로그램 배포 평가 및 적용 작업은 클라이언트의 DCM 에이전트 및 CI 에이전트 구성 요소에 의해 처리 됩니다. 이 문서에서는 일반적인 DCM 및 CI 에이전트 작업이 작동 하는 방식을 설명 합니다.
 
@@ -91,7 +90,7 @@ CI 에이전트는 구성 항목의 평가 및 수정을 담당 하는 클라이
   - 이 단계에서는 응용 프로그램 검색 방법을 사용 하 여 응용 프로그램이 설치 되어 있는지 확인 하 고 필요한 상태를 확인 합니다. 이 활동은 **Appdiscovery .log** 및 **Appintenteval .log**에서 추적할 수 있습니다. 이 단계에 대 한 자세한 내용은 [응용 프로그램 평가](/sccm/apps/understand/deployment-evaluation-technical-reference)를 참조 하세요.
 
 - **StateDownloadingContents**
-  - 이 단계 중에는 필요한 경우 응용 프로그램 콘텐츠가 다운로드 됩니다. 이 활동은 **CAS에서 추적할 수 있습니다. log**, **Content전송자 관리자. 로그**, **LocationServices. log**및 **Datatransferservice.log와 pulldp.log**. 이 단계에 대 한 자세한 내용은 [응용 프로그램 다운로드](/sccm/apps/understand/deployment-download-technical-reference)를 참조 하세요.
+  - 이 단계 중에는 필요한 경우 응용 프로그램 콘텐츠가 다운로드 됩니다. 이 활동은 Ca에서 추적할 수 있습니다 **. log**, **content전송자 관리자. .Log**, **locationservices**및. **DataTransferService.log** 이 단계에 대 한 자세한 내용은 [응용 프로그램 다운로드](/sccm/apps/understand/deployment-download-technical-reference)를 참조 하세요.
 
 - **StateEnforcingCIs**
   - 이 단계에서 응용 프로그램 설치가 시작 됩니다. 이 활동은 **Appenforce .log**에서 추적할 수 있습니다. 이 단계에 대 한 자세한 내용은 [응용 프로그램 설치](/sccm/apps/understand/deployment-install-technical-reference)를 참조 하세요.
@@ -108,6 +107,6 @@ CI 에이전트 작업이 모든 단계를 진행 하지만 필요 하지 않은
 
 ## <a name="next-steps"></a>다음 단계
 
-- [응용 프로그램 평가](/sccm/apps/understand/deployment-evaluation-technical-reference)
-- [응용 프로그램 다운로드](/sccm/apps/understand/deployment-download-technical-reference)
+- [애플리케이션 평가](/sccm/apps/understand/deployment-evaluation-technical-reference)
+- [애플리케이션 다운로드](/sccm/apps/understand/deployment-download-technical-reference)
 - [애플리케이션 설치](/sccm/apps/understand/deployment-install-technical-reference)

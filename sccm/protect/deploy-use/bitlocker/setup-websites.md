@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 1cd8ac9f-b7ba-4cf4-8cd2-d548b0d6b1df
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b48dac5f2cb850db104cc06f342fd6e286911d1f
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 4c2237fc7266c7aa6ab9be073eb2c205aa2f9bec
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198747"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820732"
 ---
 # <a name="set-up-bitlocker-portals"></a>BitLocker 포털 설정
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 
@@ -51,15 +50,15 @@ IIS를 사용 하 여 기존 사이트 서버에 포털을 설치 하거나 독�
     > [!NOTE]
     > 이 매개 변수는 administration and monitoring 웹 사이트에서 연결 된 **복구 감사 보고서** 를 설치 하는 것입니다. 기본적으로 Configuration Manager에는 다른 BitLocker 관리 보고서가 포함 됩니다.
 
-- `-HelpdeskUsersGroupName <DomainUserGroup>`: 예: `contoso\BitLocker help desk users`. 구성원이 Administration and Monitoring 웹 사이트의 **TPM 관리** 및 **드라이브 복구** 영역에 액세스할 수 있는 도메인 사용자 그룹입니다. 이러한 옵션을 사용하는 경우, 이 역할은 사용자의 도메인 및 계정 이름을 비롯한 모든 필드를 입력해야 합니다.
+- `-HelpdeskUsersGroupName <DomainUserGroup>`: 예: `contoso\BitLocker help desk users` 구성원이 Administration and Monitoring 웹 사이트의 **TPM 관리** 및 **드라이브 복구** 영역에 액세스할 수 있는 도메인 사용자 그룹입니다. 이러한 옵션을 사용하는 경우, 이 역할은 사용자의 도메인 및 계정 이름을 비롯한 모든 필드를 입력해야 합니다.
 
-- `-HelpdeskAdminsGroupName <DomainUserGroup>`: 예: `contoso\BitLocker help desk admins`. 구성원이 관리 및 모니터링 웹 사이트의 모든 복구 영역에 액세스할 수 있는 도메인 사용자 그룹입니다. 사용자가 드라이브를 복구할 수 있도록 지원하는 경우 이 역할은 복구 키만 입력하면 됩니다.
+- `-HelpdeskAdminsGroupName <DomainUserGroup>`: 예: `contoso\BitLocker help desk admins` 구성원이 관리 및 모니터링 웹 사이트의 모든 복구 영역에 액세스할 수 있는 도메인 사용자 그룹입니다. 사용자가 드라이브를 복구할 수 있도록 지원하는 경우 이 역할은 복구 키만 입력하면 됩니다.
 
-- `-MbamReportUsersGroupName <DomainUserGroup>`: 예: `contoso\BitLocker report users`. 구성원이 관리 및 모니터링 웹 사이트의 **보고서** 영역에 읽기 전용으로 액세스할 수 있는 도메인 사용자 그룹입니다.
+- `-MbamReportUsersGroupName <DomainUserGroup>`: 예: `contoso\BitLocker report users` 구성원이 관리 및 모니터링 웹 사이트의 **보고서** 영역에 읽기 전용으로 액세스할 수 있는 도메인 사용자 그룹입니다.
 
 - `-SiteInstall Both`: 설치할 구성 요소를 지정합니다. 유효한 선택 사항은 다음과 같습니다.
   - `Both`: 두 구성 요소 모두 설치
-  - `HelpDesk`: administration and monitoring 웹 사이트만 설치
+  - `HelpDesk`: 관리 및 모니터링 웹 사이트만 설치
   - `SSP`: 셀프 서비스 포털만 설치
 
 - `IISWebSite`: 스크립트가 MBAM 웹 애플리케이션을 설치하는 웹 사이트입니다. 기본적으로 IIS 기본 웹 사이트를 사용합니다.
@@ -84,7 +83,7 @@ IIS를 사용 하 여 기존 사이트 서버에 포털을 설치 하거나 독�
     .\MBAMWebSiteInstaller.ps1 -SqlServerName <ServerName> -SqlInstanceName <InstanceName> -SqlDatabaseName <DatabaseName> -ReportWebServiceUrl <ReportWebServiceUrl> -HelpdeskUsersGroupName <DomainUserGroup> -HelpdeskAdminsGroupName <DomainUserGroup> -MbamReportUsersGroupName <DomainUserGroup> -SiteInstall Both
     ```
 
-    예를 들어
+    예:
 
     ``` PowerShell
     .\MBAMWebSiteInstaller.ps1 -SqlServerName sql.contoso.com -SqlInstanceName instance1 -SqlDatabaseName CM_ABC -ReportWebServiceUrl https://rsp.contoso.com/ReportServer -HelpdeskUsersGroupName "contoso\BitLocker help desk users" -HelpdeskAdminsGroupName "contoso\BitLocker help desk admins" -MbamReportUsersGroupName "contoso\BitLocker report users" -SiteInstall Both

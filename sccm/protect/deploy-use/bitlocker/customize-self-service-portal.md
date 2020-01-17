@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 6bc26e36-9914-4606-ae8d-f7b23218942f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c35641e809092b832a081dbcba6ad7b5006beb70
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 448b2550506266801ad968b8fa9b52bad1b2619e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662411"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820919"
 ---
 # <a name="customize-the-self-service-portal"></a>셀프 서비스 포털 사용자 지정
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 
@@ -47,7 +46,7 @@ ms.locfileid: "74662411"
 
 ### <a name="supported-branding-values"></a>지원 되는 브랜딩 값
 
-설정할 수 있는 값에 대해서는 다음 표를 참조 하세요.
+설정할 수 있는 값은 다음 표를 참조하세요.
 
 |Name|설명|기본&nbsp;값|
 |--- |--- |--- |
@@ -79,7 +78,7 @@ ms.locfileid: "74662411"
 
 1. **쿠키 설정** 그룹에서 **제한 시간 (분)** 값을 변경 합니다. 사용자 세션이 만료 되는 시간 (분)입니다. 기본값은 `5`입니다. 시간 제한이 없도록 이 설정을 사용하지 않으려면 값을 `0`으로 설정합니다.
 
-1. **작업** 창에서 **적용**을 선택 합니다.
+1. **작업** 창에서 **적용**을 선택합니다.
 
 ## <a name="bkmk_localize"></a>기술 지원팀 텍스트 및 URL 지역화
 
@@ -91,7 +90,7 @@ ms.locfileid: "74662411"
 
 1. **사이트**를 확장 하 고 **기본 웹 사이트**를 확장 한 다음 **SelfService** 노드를 선택 합니다. 세부 정보 창의 **ASP.NET** 그룹에서 **응용 프로그램 설정**을 엽니다.
 
-1. **작업** 창에서 **추가**를 선택 합니다.
+1. **작업** 창에서 **추가**를 선택합니다.
 
 1. **응용 프로그램 설정 추가** 창에서 다음 값을 구성 합니다.
 
@@ -132,7 +131,7 @@ ms.locfileid: "74662411"
     사용할 수 있는 유효한 언어 코드 목록은 [National Language Support (NLS) API Reference(NLS[국가별 언어 지원] API 참조)](https://docs.microsoft.com/windows/win32/intl/locale-identifiers#predefined-locale-identifiers)를 참조하세요.
 
     > [!TIP]
-    > 언어 폴더의 이름은 언어 중립 이름일 수도 있습니다. 예를 들어 스페인어 (스페인 **)의 경우** **와 스페인어** (아르헨티나)의 경우 es 대신 스페인어 **를 사용할 것** 입니다. 사용자가 브라우저에서 es**를** 설정 하 고 해당 언어 폴더가 없으면 웹 서버는 부모 로캘 폴더 (**es**)를 재귀적으로 확인 합니다. 부모 로캘은 .NET에 정의 되어 있습니다. `Self Service Website\es\Notice.txt` 예를 들면 다음과 같습니다. 이 재귀 대체 (fallback)는 .NET 리소스 로드 규칙을 모방 합니다.
+    > 언어 폴더의 이름은 언어 중립 이름일 수도 있습니다. 예를 들어 스페인어 (스페인 **)의 경우** **와 스페인어** (아르헨티나)의 경우 es 대신 스페인어 **를 사용할 것** 입니다. 사용자가 브라우저에서 es**를** 설정 하 고 해당 언어 폴더가 없으면 웹 서버는 부모 로캘 폴더 (**es**)를 재귀적으로 확인 합니다. 부모 로캘은 .NET에 정의 되어 있습니다. 예를 들면 다음과 같습니다. `Self Service Website\es\Notice.txt` 이 재귀 대체 (fallback)는 .NET 리소스 로드 규칙을 모방 합니다.
 
 1. 지역화 된 텍스트를 사용 하 여 기본 알림 파일의 복사본을 만듭니다. 언어 코드의 폴더에 저장 합니다. 예를 들어 스페인어 (스페인)의 경우 기본적으로 전체 경로가 `C:\inetpub\Microsoft BitLocker Management Solution\Self Service Website\es-es\Notice.txt`됩니다.
 

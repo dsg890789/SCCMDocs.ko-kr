@@ -1,7 +1,7 @@
 ---
 title: Endpoint Protection 상태 모니터링
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 계층 구조에서 Endpoint Protection을 모니터링하는 방법을 알아봅니다.
+description: Configuration Manager 계층 구조에서 Endpoint Protection을 모니터링하는 방법을 알아봅니다.
 ms.date: 03/13/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -10,19 +10,18 @@ ms.assetid: f4a1335c-bb3d-493e-a124-83a32a107dc8
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b05f80eac2b7dfe8cf1a1eee7a37a29a8148a580
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c1890eb3cb6f201483c21ad4da85b83658d3081f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500411"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819508"
 ---
 # <a name="how-to-monitor-endpoint-protection-status"></a>Endpoint Protection 상태를 모니터링하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-**모니터링** 작업 영역 **보안** 아래의 **Endpoint Protection 상태** 노드, **자산 및 호환성** 작업 영역의 **Endpoint Protection** 노드 및 보고서를 사용하여 Microsoft System Center Configuration Manager 계층에서 Endpoint Protection을 모니터링할 수 있습니다.  
+**모니터링** 작업 영역 **보안** 아래의 **Endpoint Protection 상태** 노드, **자산 및 호환성** 작업 영역의 **Endpoint Protection** 노드 및 보고서를 사용하여 Microsoft Configuration Manager 계층에서 Endpoint Protection을 모니터링할 수 있습니다.  
 
 ##  <a name="BKMK_1"></a> Endpoint Protection 상태 노드를 사용하여 Endpoint Protection을 모니터링하는 방법  
 
@@ -57,7 +56,7 @@ ms.locfileid: "65500411"
 3.  *<컬렉션 이름\>* 목록에서 컴퓨터를 선택하고 **맬웨어 세부 정보** 탭을 클릭합니다.  
 
 ##  <a name="BKMK_3"></a> 보고서를 사용하여 Endpoint Protection을 모니터링하는 방법  
- 계층 구조의 Endpoint Protection에 대한 정보를 보려면 다음 보고서를 참조하세요. 이러한 보고서를 사용하여 Endpoint Protection 문제를 해결할 수도 있습니다. Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md) 및 [System Center Configuration Manager의 로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요. Endpoint Protection 보고서는 Endpoint Protection 폴더에 있습니다.  
+ 계층 구조의 Endpoint Protection에 대한 정보를 보려면 다음 보고서를 참조하세요. 이러한 보고서를 사용하여 Endpoint Protection 문제를 해결할 수도 있습니다. Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [보고](../../core/servers/manage/reporting.md) 및 [로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요. Endpoint Protection 보고서는 Endpoint Protection 폴더에 있습니다.  
 
 |보고서 이름|설명|  
 |-----------------|-----------------|  
@@ -71,7 +70,7 @@ ms.locfileid: "65500411"
 
 |경고 수준|설명|  
 |-----------------|-----------------|  
-|**실패**|Endpoint Protection에서 맬웨어를 수정하지 못했습니다. 오류의 세부 정보에 대 한 로그를 확인 합니다.<br /><br /> **참고:** Configuration Manager 및 Endpoint Protection 로그 파일 목록은 [System Center Configuration Manager의 로그 파일](../../core/plan-design/hierarchy/log-files.md) 항목에서 "Endpoint Protection" 섹션을 참조하세요.|  
+|**실패**|Endpoint Protection에서 맬웨어를 수정하지 못했습니다. 오류의 세부 정보에 대 한 로그를 확인 합니다.<br /><br /> **참고:** Configuration Manager 및 Endpoint Protection 로그 파일 목록은 [로그 파일](../../core/plan-design/hierarchy/log-files.md) 항목에서 "Endpoint Protection" 섹션을 참조 하세요.|  
 |**제거됨**|Endpoint Protection에서 맬웨어를 제거했습니다.|  
 |**격리됨**|Endpoint Protection에서 맬웨어를 안전한 위치로 이동하고, 제거하거나 실행을 허용할 때까지 실행되지 않도록 차단했습니다.|  
 |**치료됨**|맬웨어 감염된 된 파일에서 정리 되었습니다.|  

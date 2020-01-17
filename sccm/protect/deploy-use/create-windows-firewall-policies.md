@@ -10,19 +10,18 @@ ms.assetid: 6ecdfad1-6305-45a8-ae75-3f33b967cb8f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b42e8f06cfc5dffb04854f2296837f921eb86c5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b1e8ab5b0e6c45d86a0973093e8b405aa7762f87
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380263"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820239"
 ---
-# <a name="create-and-deploy-windows-firewall-policies-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책 만들기 및 배포
+# <a name="create-and-deploy-windows-firewall-policies-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 Endpoint Protection에 대한 방화벽 정책을 사용하면 계층의 클라이언트 컴퓨터에서 기본 Windows 방화벽 구성 및 유지 관리 작업을 수행할 수 있습니다. Windows 방화벽 정책을 사용하여 다음 작업을 수행할 수 있습니다.  
+Configuration Manager에서 Endpoint Protection에 대한 방화벽 정책을 사용하면 계층의 클라이언트 컴퓨터에서 기본 Windows 방화벽 구성 및 유지 관리 작업을 수행할 수 있습니다. Windows 방화벽 정책을 사용하여 다음 작업을 수행할 수 있습니다.  
 
 -   Windows 방화벽이 켜져 있는지 여부를 제어합니다.  
 

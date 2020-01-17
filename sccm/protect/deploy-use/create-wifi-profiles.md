@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi 프로필을 만드는 방법
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
+description: Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 사용자에게 무선 네트워크 설정을 배포하는 방법을 알아봅니다.
 ms.date: 12/11/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -10,20 +10,19 @@ ms.assetid: 321b19b2-a093-4b8f-995f-41f74b886eb5
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0e6a5d3b83bbf98bab8f36616622d376caa2266
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 1bb604cdc74ac7b599de7d046085b13aef80f780
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500596"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820307"
 ---
 # <a name="create-wi-fi-profiles"></a>Wi-Fi 프로필 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 사용자에게 무선 네트워크 설정을 배포할 수 있습니다. 이러한 설정을 배포하면 사용자가 더 쉽게 Wi-Fi에 연결할 수 있습니다.  
+Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의 사용자에게 무선 네트워크 설정을 배포합니다. 이러한 설정을 배포하면 사용자가 더 쉽게 Wi-Fi에 연결할 수 있습니다.  
 
  모든 iOS 디바이스가 특정 Wi-Fi 네트워크에 연결할 수 있도록 설정하려는 경우를 예로 들어 보겠습니다. 이 경우 무선 네트워크에 연결하는 데 필요한 설정이 포함된 Wi-Fi 프로필을 만듭니다. 그런 다음 계층에서 iOS 디바이스를 소유한 모든 사용자에게 프로필을 배포합니다. iOS 디바이스의 사용자는 무선 네트워크 목록에서 회사 네트워크를 볼 수 있으며 이 네트워크에 쉽게 연결할 수 있습니다.  
 
@@ -42,7 +41,7 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 > [!IMPORTANT]  
 >  Android, iOS, Windows Phone 및 등록된 Windows 8.1 이상 디바이스에 프로필을 배포하려면 이러한 디바이스를 Microsoft Intune에 등록해야 합니다. 디바이스를 등록하는 방법은 [Intune에서 관리할 디바이스 등록](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)을 참조하세요.  
 
- Wi-Fi 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 여기에는 Configuration Manager 인증서 프로필을 사용하여 푸시했던 서버 유효성 검사 및 클라이언트 인증용 인증서가 포함됩니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+ Wi-Fi 프로필을 만들 경우 광범위한 보안 설정을 포함할 수 있습니다. 여기에는 Configuration Manager 인증서 프로필을 사용하여 푸시했던 서버 유효성 검사 및 클라이언트 인증용 인증서가 포함됩니다. 인증서 프로필에 대한 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
 
 ## <a name="create-a-wi-fi-profile"></a>Wi-Fi 프로필 만들기  
 
@@ -57,15 +56,15 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 
 4. **보고할 비호환성 심각도**에서 클라이언트 디바이스에서 Wi-Fi 프로필이 비호환 상태로 확인된 경우(예: 프로필 설치가 실패한 경우) 보고되는 심각도를 지정합니다. 사용할 수 있는 심각도 수준은 다음과 같습니다.  
 
-   -   **없음** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
+   -   **없음**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 오류 심각도를 보고하지 않습니다.  
 
-   -   **정보** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
+   -   **정보**: 이 규정 준수 규칙을 충족하지 않는 컴퓨터가 Configuration Manager 보고서에 **정보** 오류 심각도를 보고합니다.  
 
-   -   **경고** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
+   -   **경고**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **경고** 오류 심각도를 보고합니다.  
 
-   -   **위험** 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
+   -   **위험**: 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다.  
 
-   -   **위험(이벤트 포함)** - 이 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.  
+   -   **위험(이벤트 포함)** : 이 규정 준수 규칙에 실패한 컴퓨터가 Configuration Manager 보고서에 **위험** 오류 심각도를 보고합니다. 또한 이 심각도 수준은 애플리케이션 이벤트 로그에 Windows 이벤트로 기록됩니다.  
 
 5. **Wi-Fi 프로필** 페이지에서 디바이스에서 네트워크 이름으로 표시할 이름을 입력합니다.  
 
@@ -79,7 +78,7 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
    > [!IMPORTANT]
    >  온\-프레미스 모바일 디바이스 관리에 대한 Wi-Fi 프로필을 만드는 경우 현재 분기의 Configuration Manager는 다음 Wi-Fi 보안 구성만 지원합니다.  
    > 
-   >  보안 유형: **WPA2 엔터프라이즈** 또는 **WPA2 개인**  
+   >  보안 유형: **WPA2 Enterprise** 또는 **WPA2 Personal**  
    > 암호화 유형: **AES** 또는 **TKIP**  
    > EAP 유형: **스마트 카드 또는 기타 인증서** 또는 **PEAP**  
    > 
@@ -113,7 +112,7 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
     - **클라이언트 인증을 위해 클라이언트 인증서 선택**: 연결된 디바이스를 인증하기 위해 서버 또는 네트워크 디바이스에 클라이언트 인증서가 필요한 경우 클라이언트 인증 인증서가 포함된 인증서 프로필을 선택합니다.  
 
       > [!NOTE]  
-      >  루트 인증서 및 클라이언트 인증서를 선택하려면 먼저 해당 인증서를 인증서 프로필로 구성하고 배포해야 합니다. 인증서 프로필에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
+      >  루트 인증서 및 클라이언트 인증서를 선택하려면 먼저 해당 인증서를 인증서 프로필로 구성하고 배포해야 합니다. 인증서 프로필에 대한 자세한 내용은 [인증서 프로필](introduction-to-certificate-profiles.md)을 참조하세요.  
 
 14. **고급 설정** 페이지에서 인증 모드, Single Sign-On, FIPS(Federal Information Processing Standard) 준수 등 Wi-Fi 프로필의 고급 설정을 지정합니다. 이러한 옵션에 대한 자세한 내용은 Windows 설명서를 참조하세요. 고급 설정은 마법사의 **보안 구성** 페이지에서 선택한 옵션에 따라 달라지거나 사용하지 못할 수 있습니다.  
 
@@ -122,4 +121,4 @@ System Center Configuration Manager의 Wi-Fi 프로필을 사용하여 조직의
 16. **지원되는 플랫폼** 페이지에서 Wi-Fi 프로필을 설치하려는 운영 체제를 선택합니다. 또는 **모두 선택** 을 클릭하여 사용 가능한 모든 운영 체제에 Wi-Fi 프로필을 설치합니다.  
 
 ### <a name="next-steps"></a>다음 단계
- Wi-Fi 프로필을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Wi-Fi 프로필을 배포하는 방법](deploy-wifi-vpn-email-cert-profiles.md)을 참조하세요.  
+ Wi-Fi 프로필을 배포하는 방법에 대한 자세한 내용은 [Wi-Fi 프로필을 배포하는 방법](deploy-wifi-vpn-email-cert-profiles.md)을 참조하세요.  

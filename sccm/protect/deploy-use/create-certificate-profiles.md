@@ -10,17 +10,16 @@ ms.assetid: 634d612c-92d7-4c03-873a-b2e730c9a72d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb0d0d2597dfb0eb2fa06c40db744d4cd5246a50
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: fe0be3f57f5842405f614b7227a534f27b39b115
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660906"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820579"
 ---
 # <a name="create-certificate-profiles"></a>인증서 프로필 만들기
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 인증서 프로필을 사용하여 관리되는 디바이스를 회사 리소스에 액세스하는 데 필요한 인증서로 프로비전할 수 있습니다. 인증서 프로필을 만들기 전에 [인증서 인프라 설정](/configmgr/protect/deploy-use/certificate-infrastructure)에 설명된 대로 인증서 인프라를 설정합니다.  
 
@@ -59,11 +58,11 @@ Configuration Manager에서 인증서 프로필을 사용하여 관리되는 디
   
     또한 SCEP 인증서 프로필을 만들려면 먼저 신뢰할 수 있는 CA 인증서 프로필을 구성합니다. 이 경우 사용자 또는 장치에 인증서를 발급 하는 CA에 대해 신뢰할 수 있는 CA 인증서가 있어야 합니다.  
 
-  - **SCEP(단순 인증서 등록 프로토콜) 설정**: 단순 인증서 등록 프로토콜 및 네트워크 디바이스 등록 서비스 역할 서비스를 사용하여 디바이스 또는 사용자의 인증서를 요청하려면 이 유형을 선택합니다.
+  - **SCEP(단순 인증서 등록 프로토콜) 설정**: 단순 인증서 등록 프로토콜 및 네트워크 디바이스 등록 서비스(NDES) 역할 서비스를 사용하여 디바이스 또는 사용자의 인증서를 요청하려면 이 유형을 선택합니다.
 
-  - **개인 정보 교환 PKCS #12(PFX) 설정 - 가져오기**: 이 옵션을 선택하여 PFX 인증서를 가져옵니다. 자세한 내용은 [PFX 인증서 프로필 가져오기](/configmgr/mdm/deploy-use/import-pfx-certificate-profiles)를 참조 하세요.
+  - **개인 정보 교환 PKCS #12(PFX) 설정 – 가져오기**: PFX 인증서를 가져오려면 이 옵션을 선택합니다. 자세한 내용은 [PFX 인증서 프로필 가져오기](/configmgr/mdm/deploy-use/import-pfx-certificate-profiles)를 참조하세요.
 
-  - **개인 정보 교환 PKCS #12(PFX) 설정 - 만들기**: 이 옵션을 선택하여 인증 기관을 통해 PFX 인증서를 처리합니다. 자세한 내용은 [PFX 인증서 프로필 만들기](/configmgr/mdm/deploy-use/create-pfx-certificate-profiles)를 참조하세요.
+  - **개인 정보 교환 PKCS #12(PFX) 설정 – 만들기**: 인증 기관을 사용하여 PFX 인증서를 처리하려면 이 옵션을 선택합니다. 자세한 내용은 [PFX 인증서 프로필 만들기](/configmgr/mdm/deploy-use/create-pfx-certificate-profiles)를 참조하세요.
 
 ## <a name="trusted-ca-certificate"></a>신뢰할 수 있는 CA 인증서  
 
@@ -103,24 +102,24 @@ Configuration Manager에서 인증서 프로필을 사용하여 관리되는 디
 
 - 다시 **시도**: 장치가 NDES 서버에 대 한 인증서 요청을 자동으로 다시 시도 하는 횟수를 지정 합니다. 이 설정을 사용하면 인증서를 허용하기 위해 CA 관리자가 인증서 요청을 승인해야 하는 시나리오가 지원됩니다. 이 설정은 일반적으로 보안 수준이 높은 환경 또는 엔터프라이즈 CA가 아닌 독립 실행형 발급 CA가 있는 경우에 사용됩니다. 또한 테스트 목적의 경우 발급 CA가 인증서 요청을 처리하기 전에 인증서 요청 옵션을 검사할 수 있도록 이 설정을 사용해야 합니다. 이 설정은 **다시 시도 지연 시간(분)** 설정과 함께 사용합니다.  
 
-- **다시 시도 지연 시간(초)** : 발급 CA가 인증서 요청을 처리하기 전에 CA 관리자 승인을 사용하는 경우 각 등록 시도 간의 간격을 분으로 지정합니다. 테스트 목적으로 관리자 승인을 사용 하는 경우 하위 값을 지정 합니다. 그런 다음 요청을 승인한 후 장치가 인증서 요청을 다시 시도할 때까지 오랜 시간을 기다리지 않습니다.
+- **다시 시도 지연 시간(분)** : 발급 CA가 인증서 요청을 처리하기 전에 CA 관리자 승인을 사용하는 경우 각 등록 시도 간의 간격을 분으로 지정합니다. 테스트 목적으로 관리자 승인을 사용 하는 경우 하위 값을 지정 합니다. 그런 다음 요청을 승인한 후 장치가 인증서 요청을 다시 시도할 때까지 오랜 시간을 기다리지 않습니다.
 
     프로덕션 네트워크에서 관리자 승인을 사용 하는 경우 더 높은 값을 지정 합니다. 이 동작은 CA 관리자가 보류 중인 승인을 승인 하거나 거부할 수 있는 충분 한 시간을 허용 합니다.  
 
 - **갱신 임계값(%)** : 디바이스에서 인증서 갱신을 요청하기 전까지 남은 인증서 수명을 백분율로 지정합니다.  
 
-- **KSP(키 스토리지 공급자)** : 인증서의 키를 저장할 위치를 지정합니다. 다음 값 중 하나를 선택합니다.  
+- **KSP(키 스토리지 공급자)** : 인증서에 대한 키를 저장할 위치를 지정합니다. 다음 값 중 하나를 선택합니다.  
 
   - **있는 경우 TPM(신뢰할 수 있는 플랫폼 모듈)에 설치**: TPM에 키를 설치합니다. TPM이 없는 경우 키는 소프트웨어 키의 스토리지 공급자에 설치됩니다.  
 
   - **TPM(신뢰할 수 있는 플랫폼 모듈)에 설치, 그렇지 않으면 실패**: TPM에 키를 설치합니다. TPM 모듈이 없는 경우 설치에 실패 합니다.  
 
-  - **비즈니스용 Windows Hello에 설치, 그렇지 않으면 실패**: 이 옵션은 Windows 10 디바이스에 사용할 수 있습니다. 이를 통해 multi-factor authentication으로 보호 되는 비즈니스용 Windows Hello 스토어에 인증서를 저장할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)를 참조하세요.
+  - **비즈니스용 Windows Hello에 설치, 그러지 않으면 실패**: 이 옵션은 Windows 10 디바이스에 사용할 수 있습니다. 이를 통해 multi-factor authentication으로 보호 되는 비즈니스용 Windows Hello 스토어에 인증서를 저장할 수 있습니다. 자세한 내용은 [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)를 참조하세요.
 
     > [!NOTE]  
     > 이 옵션은 인증서 속성 페이지에서 확장 된 키 사용에 대 한 스마트 카드 로그온을 지원 하지 않습니다.
 
-  - **소프트웨어 키 스토리지 공급자에 설치**: 소프트웨어 키의 스토리지 공급자에 키를 설치합니다.  
+  - **소프트웨어 키 스토리지 공급자에 설치**: 소프트웨어 키의 저장소 공급자에 키를 설치합니다.  
 
 - **인증서 등록을 위한 장치**: 인증서 프로필을 사용자 컬렉션에 배포 하는 경우 사용자의 기본 장치 또는 사용자가 로그인 하는 모든 장치에 대해서만 인증서 등록을 허용 합니다.
 
@@ -171,7 +170,7 @@ Configuration Manager에서 인증서 프로필을 사용하여 관리되는 디
 
   인증서 템플릿을 찾은 경우 다른 인증서 템플릿을 선택 하지 않으면 이러한 설정을 변경할 수 없습니다.  
 
-  위의 두 키 사용 옵션 중 하나 또는 둘 모두를 사용 하 여 선택한 인증서 템플릿을 구성 합니다. 구성하지 않은 경우, 인증서 등록 지점 로그 파일 **Crp.log**에 다음 메시지가 표시됩니다. **CSR의 키 사용과 인증 질문이 일치하지 않습니다.**  
+  위의 두 키 사용 옵션 중 하나 또는 둘 모두를 사용 하 여 선택한 인증서 템플릿을 구성 합니다. 그렇지 않으면 인증서 등록 지점 로그 파일(**Crp.log**)에 다음 메시지가 표시됩니다. **CSR의 키 사용과 챌린지의 키 사용이 일치하지 않습니다.**  
 
 - **키 크기(비트)** : 키의 크기(비트)를 선택합니다.  
 

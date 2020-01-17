@@ -10,20 +10,19 @@ ms.assetid: 3b9c4027-a98b-406b-935c-ccabcfe713df
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 976a6b149175b817ea7039faf1f909a73f2b514d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9c521da00e18f2af63388793bbe7353353eda1de
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500532"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819984"
 ---
 #  <a name="using-configuration-manager-software-updates-to-deliver-definition-updates"></a>Configuration Manager 소프트웨어 업데이트를 사용 하 여 정의 업데이트를 제공 하려면
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
- 클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트를 구성할 수 있습니다. 이 작업은 자동 배포 규칙을 구성하여 수행합니다. 자동 배포 규칙을 만들기 전에 Configuration Manager 소프트웨어 업데이트를 구성해야 합니다. 자세한 내용은 [System Center Configuration Manager의 소프트웨어 업데이트 소개](/sccm/sum/understand/software-updates-introduction)를 참조하세요.
+ 클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트를 구성할 수 있습니다. 이 작업은 자동 배포 규칙을 구성하여 수행합니다. 자동 배포 규칙을 만들기 전에 Configuration Manager 소프트웨어 업데이트를 구성해야 합니다. 자세한 내용은 [소프트웨어 업데이트 소개](/sccm/sum/understand/software-updates-introduction)를 참조하세요.
 
 > [!NOTE]
 >  이 절차는 특히 Endpoint Protection에 대해 구성해야 하는 항목에만 적용됩니다. 자동 배포 규칙 만들기 마법사에 대한 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates)를 참조하세요.
@@ -76,11 +75,11 @@ ms.locfileid: "65500532"
 
 17. 마법사의 **배포 일정** 페이지에서 다음 설정을 구성합니다.
 
-    -   **시간에 따라**: 계층 구조의 모든 클라이언트에서 동시에 최신 정의를 설치하려면 **UTC** 를 선택합니다. 실제 설치 시간은 2시간 이내에서 다를 수 있습니다. 이 설정을 사용하는 것이 좋습니다.
+    -   **기준 시간**: 계층 구조의 모든 클라이언트에서 동시에 최신 정의를 설치하려면 **UTC** 를 선택합니다. 실제 설치 시간은 2시간 이내에서 다를 수 있습니다. 이 설정을 사용하는 것이 좋습니다.
 
     -   **소프트웨어를 사용할 수 있는 시간**: 이 규칙에서 만든 배포에 사용할 수 있는 시간을 지정합니다. 지정된 시간은 최소한 자동 배포 규칙이 실행된 지 1시간 후여야 합니다. 이렇게 하면 계층 구조의 배포 지점에 콘텐츠를 복제할 시간이 충분합니다. 일부 정의 업데이트에는 맬웨어 방지 엔진 업데이트도 들어 있으며, 배포 지점에 도달하는 데 더 오래 걸릴 수 있습니다.
 
-    -   **설치 최종 기한**: **가능한 한 빨리**를 선택합니다.
+    -   **설치 최종 기한**: **가능하면 빨리**를 선택합니다.
 
         > [!NOTE]
         >  모든 클라이언트에서 동시에 업데이트를 요청하는 것을 방지하기 위해 소프트웨어 업데이트 최종 기한은 2시간 이내에서 다를 수 있습니다.

@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 1ee6541a-e243-43ea-be16-d0349f7f0c6e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1a7845db0115f35d5b2fc7472013c9061e270aee
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
-ms.translationtype: MTE75
+ms.openlocfilehash: 2d1bf84178c5b130d6fe1aa7d7b7e7cb9fd66878
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198849"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820834"
 ---
 # <a name="encrypt-recovery-data"></a>복구 데이터 암호화
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 
@@ -52,7 +51,7 @@ BitLocker 관리 암호화 인증서를 만들지 않으려면 복구 데이터�
 
 - 계층의 모든 사이트 데이터베이스에 동일한 인증서를 배포 합니다.
 
-- 사용자 환경에서 최신 버전의 SQL Server를 사용 하 여 인증서를 만듭니다. 예:
+- 사용자 환경에서 최신 버전의 SQL Server를 사용 하 여 인증서를 만듭니다. 예를 들면 다음과 같습니다.
   - SQL Server 2016 이상에서 만든 인증서는 SQL Server 2014 이전 버전과 호환 됩니다.
   - SQL Server 2014 이전 버전에서 만든 인증서는 SQL Server 2016 이상과 호환 되지 않습니다.
 
@@ -65,7 +64,7 @@ BitLocker 관리 암호화 인증서를 만들지 않으려면 복구 데이터�
 이 샘플 스크립트는 다음 작업을 수행 합니다.
 
 - 인증서를 만듭니다.
-- 사용 권한을 설정 합니다.
+- 권한을 설정합니다.
 - 데이터베이스 마스터 키를 만듭니다.
 
 프로덕션 환경에서이 스크립트를 사용 하기 전에 다음 값을 변경 합니다.
@@ -120,7 +119,7 @@ END
 프로덕션 환경에서이 스크립트를 사용 하기 전에 다음 값을 변경 합니다.
 
 - 사이트 데이터베이스 이름(`CM_ABC`)
-- `MyMasterKeyPassword`(마스터 키 암호)
+- 마스터 키 암호(`MyMasterKeyPassword`)
 - 파일 경로 및 이름(`C:\BitLockerManagement_CERT_KEY`)
 - 키 암호 내보내기 (`MyExportKeyPassword`)
 

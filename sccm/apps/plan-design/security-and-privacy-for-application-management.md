@@ -10,17 +10,16 @@ ms.assetid: 4d26deed-3b16-4116-b640-f618f2c20f5a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 004cc8e723008a79fcc336731f461ff35564c2f2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 54f38d0aa982213f06565dd343f0ec07e9057125
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661382"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817247"
 ---
 # <a name="security-and-privacy-for-application-management-in-configuration-manager"></a>Configuration Manager의 애플리케이션 관리를 위한 보안 및 개인정보보호
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 ## <a name="security-guidance-for-application-management"></a>애플리케이션 관리의 보안 가이드  
 
@@ -30,7 +29,7 @@ ms.locfileid: "74661382"
 
 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 이 구성은 사용자에게 애플리케이션을 전달하기 위해 필요한 서버 인프라를 줄일 수 있습니다.
 
-버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 서버 인프라를 줄이면 공격 노출도 줄어듭니다.
+버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 서버 인프라를 줄이면 공격 노출도 줄어듭니다.
 
 인터넷 기반 클라이언트에 대한 지속적이고 안전한 애플리케이션 환경을 제공하려면 Azure Active Directory와 클라우드 관리 게이트웨이를 사용합니다.
 
@@ -39,7 +38,7 @@ ms.locfileid: "74661382"
 ### <a name="use-https-with-the-application-catalog"></a>애플리케이션 카탈로그에서 HTTPS 사용
 
 > [!Important]  
-> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 HTTPS 연결을 수락하도록 애플리케이션 카탈로그 웹 사이트 지점과 애플리케이션 카탈로그 웹 서비스 지점을 구성합니다. 이 구성을 사용하면 서버가 사용자에게 인증됩니다. 전송된 데이터는 변조 및 보기에서 보호됩니다.
 
@@ -51,14 +50,14 @@ HTTPS를 사용하지 않는 경우에 브랜딩 구성 옵션을 사용하지 �
 ### <a name="use-role-separation"></a>역할 구분 사용
 
 > [!Important]  
-> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 별도의 서버에 애플리케이션 카탈로그 웹 사이트 지점 및 애플리케이션 카탈로그 웹 서비스 지점을 설치합니다. 웹 사이트 지점이 손상 된 경우 웹 서비스 지점과는 별개입니다. 이 설계는 구성 관리자 클라이언트 및 인프라를 보호하는 데 도움이 됩니다. 특히 웹 사이트 지점이 인터넷에서 클라이언트 연결을 수락하는 경우 이 구성이 매우 중요합니다. 서버가 공격에 취약해질 수 있습니다.  
 
 ### <a name="close-browser-windows"></a>브라우저 창 닫기
 
 > [!Important]  
-> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 사용자가 애플리케이션 카탈로그 사용을 마칠 때 브라우저를 닫도록 일러 줍니다. 애플리케이션 카탈로그를 위해 사용하던 브라우저 창에서 외부 웹 사이트를 탐색할 경우 브라우저에서 인트라넷의 신뢰할 수 있는 사이트에 적합한 보안 설정을 계속 사용합니다.  
 
@@ -92,7 +91,7 @@ HTTPS를 사용하지 않는 경우에 브랜딩 구성 옵션을 사용하지 �
 
 모바일 디바이스 애플리케이션은 해당 모바일 디바이스가 신뢰하는 CA(인증 기관)에서 코드에 서명한 경우에만 배포합니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 - VeriSign과 같은 잘 알려진 CA에서 서명한 공급업체의 애플리케이션  
 
@@ -176,7 +175,7 @@ Configuration Manager에 이 파일을 가져올 때 통신 채널을 보호합�
 ## <a name="BKMK_CertificatesSilverlight5"></a> 애플리케이션 카탈로그에 필요한 높은 권한 모드 및 Microsoft Silverlight 5용 인증서  
 
 > [!Important]  
-> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 구성 관리자 클라이언트 버전 1710 이상에는 Microsoft Silverlight 5가 필요하며, 사용자가 애플리케이션 카탈로그에서 소프트웨어를 설치하려면 Microsoft Silverlight 5를 높은 권한 모드로 실행해야 합니다. 기본적으로 Silverlight 애플리케이션은 사용자 데이터에 액세스할 수 없도록 부분 신뢰 모드로 실행됩니다. Configuration Manager는 Microsoft Silverlight 5가 클라이언트에 아직 설치되어 있지 않으면 자동으로 설치합니다. 기본적으로 Configuration Manager는 컴퓨터 에이전트의 **Silverlight 애플리케이션의 높은 권한 모드 실행을 허용합니다.** 클라이언트 설정을 **예**로 설정합니다. 이 설정을 사용하면 서명되고 신뢰할 수 있는 Silverlight 애플리케이션에서 높은 권한 모드를 요청할 수 있게 됩니다.  
 
@@ -196,7 +195,7 @@ Silverlight의 신뢰할 수 있는 애플리케이션에 대한 자세한 내�
 
 Configuration Manager에는 소프트웨어 배포 프로세스에 대한 상태 정보가 유지됩니다. 소프트웨어 배포 상태 정보는 클라이언트가 HTTPS를 사용하여 통신할 때를 제외하고 암호화되지 않습니다. 상태 정보는 데이터베이스에 암호화된 형식으로 저장되지 않습니다.  
 
-Configuration Manager 애플리케이션 설치를 사용하여 클라이언트에 소프트웨어를 원격으로, 대화형으로 또는 자동으로 설치하는 경우 해당 소프트웨어의 소프트웨어 사용 조건이 적용될 수 있습니다. 이 소프트웨어 사용 시에는 System Center Configuration Manager의 소프트웨어 사용 조건과는 별도의 사용 조건이 적용됩니다. Configuration Manager를 사용하여 소프트웨어를 배포하기 전에는 항상 소프트웨어 사용 조건을 검토하고 동의해야 합니다.  
+Configuration Manager 애플리케이션 설치를 사용하여 클라이언트에 소프트웨어를 원격으로, 대화형으로 또는 자동으로 설치하는 경우 해당 소프트웨어의 소프트웨어 사용 조건이 적용될 수 있습니다. 이 소프트웨어 사용 시에는 Configuration Manager의 소프트웨어 사용 조건과는 별도의 사용 조건이 적용됩니다. Configuration Manager를 사용하여 소프트웨어를 배포하기 전에는 항상 소프트웨어 사용 조건을 검토하고 동의해야 합니다.  
 
 Configuration Manager에서는 진단 및 사용량 데이터를 수집하며, 이러한 데이터는 Microsoft에서 향후 버전을 개선하기 위해 사용됩니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.
 
@@ -211,7 +210,7 @@ Configuration Manager에서는 진단 및 사용량 데이터를 수집하며, �
 - **애플리케이션 카탈로그**는 사용자가 소프트웨어를 설치하도록 요청할 수 있는 웹 사이트입니다.  
 
     > [!Important]  
-    > 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
+    > 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 ### <a name="bkmk_privacy-uda"></a>사용자 장치 선호도 개인 정보
 
@@ -238,7 +237,7 @@ Configuration Manager에서는 진단 및 사용량 데이터를 수집하며, �
 ### <a name="application-catalog-privacy-information"></a>응용 프로그램 카탈로그 개인 정보
 
 > [!Important]  
-> 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
+> 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
 - 애플리케이션 카탈로그는 기본적으로 설치되지 않습니다. 이를 설치하려면 몇 가지 구성 단계가 필요합니다.  
 

@@ -10,21 +10,20 @@ ms.assetid: 33a6c1d9-4dd8-411c-a748-693a5bd2ea5a
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9567dc53a204d639b3da5920cf1fc452426a11f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e6b7340f69aa859db227363008b0f4703f982b78
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892477"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820494"
 ---
 # <a name="create-and-deploy-windows-defender-application-guard-policy"></a>Windows Defender Application Guard 정책 만들기 및 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 <!-- 1351960 -->  
 Configuration Manager 엔드포인트 보호를 사용하여 [Windows Defender Application Guard (Application Guard)](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview) 정책을 만들고 배포할 수 있습니다. 이러한 정책은 운영 체제의 다른 부분에서 액세스할 수 없는 안전하게 격리된 컨테이너에서 신뢰할 수 없는 웹 사이트를 열어 사용자를 보호하는 데 도움이 됩니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 Windows Defender Application Guard 정책을 만들고 배포하려면 Windows 10 Fall Creators Update(1709)를 사용해야 합니다. 정책을 배포하는 Windows 10 디바이스는 네트워크 격리 정책을 사용하여 구성해야 합니다. 자세한 내용은 [Windows Defender Application Guard 개요](https://docs.microsoft.com/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview)를 참조하세요.
 
@@ -99,5 +98,5 @@ Application Guard 설정을 편집 하려면 **자산 및 호환성** 작업 영
 
 ## <a name="next-steps"></a>다음 단계
 
-Windows Defender Application Guard에 대한 자세한 내용은 [Windows Defender Application Guard 개요](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview)를 참조하세요.
+Windows Defender Application Guard에 대한 자세한 내용은 다음을 참조하세요. [Windows Defender Application Guard 개요](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview).
 [Windows Defender Application Guard FAQ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/faq-wd-app-guard).

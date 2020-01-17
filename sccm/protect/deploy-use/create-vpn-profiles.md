@@ -1,7 +1,7 @@
 ---
 title: 'VPN 프로필을 만드는 방법 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 VPN 프로필을 만드는 방법을 알아봅니다.
+description: Configuration Manager에서 VPN 프로필을 만드는 방법에 대해 알아봅니다.
 ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -10,21 +10,20 @@ ms.assetid: f338e4db-73b5-45ff-92f4-1b89a8ded989
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 677a3ef2086f20d94bd0ee6fca983a2cc429d329
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 7fc4329518808b0ab8bfe1dfd9dda7220081c21b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65494857"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820358"
 ---
-# <a name="how-to-create-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 VPN 프로필을 만드는 방법
+# <a name="how-to-create-vpn-profiles-in-configuration-manager"></a>Configuration Manager에서 VPN 프로필을 만드는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-다양한 디바이스 플랫폼에서 사용할 수 있는 연결 형식에 대한 자세한 내용은 [System Center Configuration Manager의 VPN 프로필](../../protect/deploy-use/vpn-profiles.md)을 참조하세요.  
+다양 한 장치 플랫폼에 사용할 수 있는 연결 형식은 [VPN 프로필](../../protect/deploy-use/vpn-profiles.md)에 설명 되어 있습니다.  
 
-타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
+타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
 
 ### <a name="create-a-vpn-profile"></a>VPN 프로필 만들기   
 
@@ -64,7 +63,7 @@ ms.locfileid: "65494857"
 |**회사 Wi-Fi 네트워크에 연결된 경우 VPN 무시**  |디바이스가 회사 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN<br /><br /> - Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - L2TP|  
 |**홈 Wi-Fi 네트워크 연결 시 VPN 건너뛰기**  |디바이스가 가정용 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|모두|  
 |**응용 프로그램 VPN(iOS 7 이상, Mac OS X 10.9 및 이후 버전)당** |앱이 실행될 때 연결이 열리도록 이 VPN 연결을 iOS 앱과 연결합니다. 앱을 배포할 때 VPN 프로필을 앱과 연결할 수 있습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
-|**사용자 지정 XML(선택 사항)** |VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.<br /><br /> 예제:<br /><br /> **Pulse Secure**의 경우:<br /><br /> **&lt;pulse-schema><br /> &nbsp; &lt;isSingleSignOnCredential>true&lt;/isSingleSignOnCredential\><br />&lt;/pulse-schema>**<br /><br /> **CheckPoint Mobile VPN**의 경우:<br /><br /> **&lt;CheckPointVPN <br /> &nbsp; port="443" name="CheckPointSelfhost" <br /> &nbsp; sso="true" <br /> &nbsp; debug="3"<br />/>**<br /><br /> **Dell SonicWALL Mobile Connect**의 경우:<br /><br /> **&lt;MobileConnect\><br />&nbsp; &nbsp; &lt;Compression\>false&lt;/Compression\><br />&nbsp; &nbsp; &lt;debugLogging\>True&lt;/debugLogging\><br />&nbsp; &nbsp; &lt;packetCapture\>False&lt;/packetCapture\><br />&lt;/MobileConnect\>**<br /><br /> **F5 Edge Client**의 경우:<br /><br /> **&lt;f5-vpn-conf>&lt;single-sign-on-credential>&lt;/f5-vpn-conf>**<br /><br /> 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
+|**사용자 지정 XML(선택 사항)** |VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.<br /><br /> 예:<br /><br /> **Pulse Secure**의 경우:<br /><br /> **&lt;pulse-schema><br /> &nbsp; &lt;isSingleSignOnCredential>true&lt;/isSingleSignOnCredential\><br />&lt;/pulse-schema>**<br /><br /> **CheckPoint Mobile VPN**의 경우:<br /><br /> **&lt;CheckPointVPN <br /> &nbsp; port="443" name="CheckPointSelfhost" <br /> &nbsp; sso="true" <br /> &nbsp; debug="3"<br />/>**<br /><br /> **Dell SonicWALL Mobile Connect**의 경우:<br /><br /> **&lt;MobileConnect\><br />&nbsp; &nbsp; &lt;Compression\>false&lt;/Compression\><br />&nbsp; &nbsp; &lt;debugLogging\>True&lt;/debugLogging\><br />&nbsp; &nbsp; &lt;packetCapture\>False&lt;/packetCapture\><br />&lt;/MobileConnect\>**<br /><br /> **F5 Edge Client**의 경우:<br /><br /> **&lt;f5-vpn-conf>&lt;single-sign-on-credential>&lt;/f5-vpn-conf>**<br /><br /> 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
 
 > [!NOTE]  
 >  모바일 디바이스에 대한 VPN 프로필 만들기에 특정한 정보는 [VPN 프로필 만들기](../../mdm/deploy-use/create-vpn-profiles.md)를 참조하세요.  
@@ -73,6 +72,6 @@ ms.locfileid: "65494857"
 
 ### <a name="next-steps"></a>다음 단계
 
-- 타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
+- 타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
 
-- [System Center Configuration Manager에서 프로필을 배포하는 방법](deploy-wifi-vpn-email-cert-profiles.md)에 설명된 대로 VPN 프로필을 배포합니다.  
+- [프로필을 배포 하는 방법](deploy-wifi-vpn-email-cert-profiles.md)에 설명 된 대로 VPN 프로필을 배포 합니다.  

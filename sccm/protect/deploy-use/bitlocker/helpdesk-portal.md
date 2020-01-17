@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 81f03922-90f6-4e8f-be65-da64ccb21cf2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0f6ec7cc76066fa4e2cb9ce8bcabe6e4f5b0dfd6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f7285d51353ed273858d2dada110ea6fed08e37f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662631"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820783"
 ---
 # <a name="bitlocker-administration-and-monitoring-website"></a>BitLocker administration and monitoring 웹 사이트
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 
@@ -33,9 +32,9 @@ BitLocker administration and monitoring 웹 사이트는 BitLocker 드라이브 
 다음 URL을 통해 administration and monitoring 웹 사이트에 액세스 합니다. `https://webserver.contoso.com/HelpDesk`
 
 > [!NOTE]
-> Administration and monitoring 웹 사이트에서 **복구 감사 보고서** 를 볼 수 있습니다. 다른 BitLocker 관리 보고서를 보고 서비스 지점에 추가 합니다. 자세한 내용은 [BitLocker 보고서 보기](/configmgr/protect/deploy-use/bitlocker/view-reports)를 참조 하세요.
+> 관리 및 모니터링 웹 사이트에서 **복구 감사 보고서**를 볼 수 있습니다. 다른 BitLocker 관리 보고서를 보고 서비스 지점에 추가 합니다. 자세한 내용은 [BitLocker 보고서 보기](/configmgr/protect/deploy-use/bitlocker/view-reports)를 참조 하세요.
 
-## <a name="groups"></a>그룹
+## <a name="groups"></a>Groups
 
 Administration and monitoring 웹 사이트의 특정 영역에 액세스 하려면 사용자 계정이 다음 그룹 중 하나에 있어야 합니다. 원하는 이름을 사용 하 여 Active Directory에서 이러한 그룹을 만듭니다. 이 웹 사이트를 설치 하는 경우 이러한 그룹 이름을 지정 합니다. 자세한 내용은 [BitLocker 보고서 및 포털 설정](/configmgr/protect/deploy-use/bitlocker/setup-websites)을 참조 하세요.
 
@@ -139,7 +138,7 @@ TPM 소유권에 대 한 자세한 내용은 [tpm을 구성 하도록 MBAM 구�
 
     복구 암호 및 복구 패키지를 검색 한 후에는 웹 사이트에서 복구 암호를 표시 합니다.
 
-1. 암호를 복사 하려면 **키 복사**를 선택 합니다. 복구 암호를 파일에 저장 하려면 **저장**을 선택 합니다.
+1. 암호를 복사 하려면 **키 복사**를 선택 합니다. 복구 암호를 파일에 저장하려면 **저장**을 선택합니다.
 
 드라이브 잠금을 해제 하려면 복구 암호를 입력 하거나 복구 패키지를 사용 하십시오.
 
@@ -158,7 +157,7 @@ Administration and Monitoring 웹 사이트의 **드라이브 복구** 영역을
 
 1. Recovery key ID를 사용 하 여 administration and monitoring 웹 사이트에서 복구 암호를 가져옵니다. 자세한 내용은 [복구 모드에서 드라이브 복구](#bkmk_recovery)를 참조 하세요.
 
-원래 컴퓨터에서 TPM 칩을 사용 하도록 이동 된 드라이브를 구성한 경우 다음 단계를 완료 합니다. 그렇지 않은 경우에는 복구 프로세스가 완료된 것입니다.
+원래 컴퓨터에서 TPM 칩을 사용하도록 이동된 드라이브를 구성한 경우 다음 단계를 완료합니다. 그렇지 않은 경우에는 복구 프로세스가 완료된 것입니다.
 
 1. 드라이브의 잠금을 해제 한 후에는 WinRE 모드로 컴퓨터를 시작 합니다. WinRE에서 명령 프롬프트를 열고 `manage-bde` 명령을 사용 하 여 드라이브 암호를 해독 합니다. 원래 TPM 칩이 없는 경우 **TPM + PIN** 보호기를 제거하는 방법은 이 도구를 사용하는 것뿐입니다. 이 명령에 대한 자세한 내용은 [Manage-bde](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker#bkmk-managebde)를 참조하세요.
 
@@ -181,7 +180,7 @@ Recovery key ID를 사용 하 여 administration and monitoring 웹 사이트에
     - `<key package>`: 복구 키 패키지의 위치
     - `<recovery password>`: 연결 된 복구 암호
 
-    예:
+    예를 들면 다음과 같습니다.
 
     `repair-bde C: D: -kp F:\RecoveryKeyPackage -rp 111111-222222-333333-444444-555555-666666-777777-888888`
 

@@ -10,13 +10,12 @@ ms.assetid: 09929057-ecf2-4d49-aee0-709916932b14
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1deab2a7dc77f7bb06d847b47a9d7679e78f236b
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: a5c4594f89ce0f699ee24612b0ac306f7e7151b7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198679"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817842"
 ---
 # <a name="troubleshoot-the-microsoft-store-for-business-and-education-integration-with-configuration-manager"></a>Configuration Manager와의 비즈니스 및 교육 통합을 위한 Microsoft Store 문제 해결
 
@@ -74,7 +73,7 @@ Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 �
 
 마지막 동기화 상태가 *실패*인 경우 다음 [로그 파일](#log-files) 을 검토 하 여 증상을 파악 합니다.
 
-- WSfBSyncWorker
+- WSfbSyncWorker
 - SMS_CLOUDCONNECTION.log
 
 그리고 일반적인 문제에 대해서는 다음 섹션 중 하나를 살펴보세요.
@@ -148,7 +147,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 1. 계정을 선택 하 고 해당 **속성**을 엽니다.
 
-1. 구성 탭으로 전환합니다. **위치** 설정은 비즈니스 및 교육용 Microsoft Store에서 다운로드 한 응용 프로그램 콘텐츠를 저장할 네트워크 경로를 표시 합니다.
+1. **구성** 탭으로 전환합니다. **위치** 설정은 비즈니스 및 교육용 Microsoft Store에서 다운로드 한 응용 프로그램 콘텐츠를 저장할 네트워크 경로를 표시 합니다.
 
 #### <a name="workaround"></a>해결 방법
 
@@ -169,7 +168,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 동기화 프로세스 다시 시도
 
 1. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고 **Cloud Services**를 확장한 후, **비즈니스용 Microsoft Store** 노드를 선택합니다.
-1. 연결을 선택 합니다. 리본에서 **비즈니스용 Microsoft Store에서 동기화**를 선택 합니다.
+1. 연결을 선택합니다. 리본에서 **비즈니스용 Microsoft Store에서 동기화**를 선택 합니다.
 
 매번 계속 진행 해야 합니다. 다음 요소에 따라 몇 가지 다시 시도를 수행할 수 있습니다.
 
@@ -189,7 +188,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 이러한 앱은 자동으로 동기화 할 수 없지만 콘텐츠를 다운로드 하 고 응용 프로그램을 수동으로 만들 수 있습니다.
 
-1. **MSfBSynWorker**의 다음 줄에서 실패 한 응용 프로그램 ID를 가져옵니다.
+1. **WSfbSynWorker**의 다음 줄에서 실패 한 응용 프로그램 ID를 가져옵니다.
 
     `Error(s) syncing or downloading application <ApplicationID> from the Microsoft Store for Business.`
 
@@ -214,7 +213,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
     1. 이전에 다운로드 한 지원 되는 각 플랫폼에 대 한 배포 유형을 만듭니다.
 
-    1. 유형: **Windows 앱 패키지(\*.appx, \*.appxbundle)**
+    1. 종류: **Windows 앱 패키지(\*.appx, \*.appxbundle)**
 
     1. 필수 종속성 패키지가 아닌 실제 응용 프로그램 패키지에 대 한 appx/.appxbundle를 지정 합니다.
 
@@ -235,7 +234,7 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 - BusinessAppProcessWorker.log
 - SMS_BUSINESS_APP_PROCESS_MANAGER.log
-- MSfBSyncWorker.log
+- WsfbSyncWorker
 - SMS_CLOUDCONNECTION.log
 
 그리고 일반적인 문제에 대해서는 다음 섹션 중 하나를 살펴보세요.
@@ -257,11 +256,11 @@ Azure AD 응용 프로그램에 대 한 비밀 키를 갱신 합니다. 자세�
 
 #### <a name="cause"></a>원인
 
-SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 MSfBSyncWorker 스레드를 중지 하는 경우이 문제가 발생할 수 있습니다. 이 오류는 `2` 또는 `4` 작업자를 지정할 수 있습니다.
+SMS_BUSINESS_APP_PROCESS_MANAGER 구성 요소가 WsfbSyncWorker 스레드를 중지 하는 경우이 문제가 발생할 수 있습니다. 이 오류는 `2` 또는 `4` 작업자를 지정할 수 있습니다.
 
 #### <a name="workaround"></a>해결 방법
 
-**SMS_EXECUTIVE** 서비스를 다시 시작 합니다.
+**SMS_EXECUTIVE** 서비스를 다시 시작합니다.
 
 주 서비스를 다시 시작할 수 없는 경우 MSfB worker를 사용 하 여 두 구성 요소를 모두 중지 하 고 두 구성 요소를 모두 시작 합니다.
 

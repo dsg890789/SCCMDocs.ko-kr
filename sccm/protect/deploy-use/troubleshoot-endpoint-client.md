@@ -10,17 +10,16 @@ ms.assetid: d837253e-fcc2-422a-9e2c-c78b938dfd8c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d55335eb8e55381cfa5481edf027a54a18f6bda
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c28fb1d8bad62f4aa84bb0d459579d97e4e0d28d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71826164"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819406"
 ---
 # <a name="troubleshoot-windows-defender-or-endpoint-protection-client"></a>Windows Defender 또는 Endpoint Protection 클라이언트 문제 해결
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Windows Defender 또는 Endpoint Protection 관련 된 문제가 발생 하는 경우이 문서를 참조 하 여 다음 문제를 해결 하십시오.  
 
@@ -128,7 +127,7 @@ Windows Defender 또는 Endpoint Protection은 자동으로 Microsoft 업데이�
 
 [최신 업데이트를 수동으로 다운로드](https://www.microsoft.com/en-us/wdsi/defenderupdates)합니다.  
 
-#### <a name="step-6-contact-microsoft-support"></a>6단계: Microsoft 지원에 문의합니다.  
+#### <a name="step-6-contact-microsoft-support"></a>6단계: Microsoft 지원에 문의  
 
 이러한 단계를 수행 해도 문제가 해결 되지 않으면 Microsoft 지원에 문의 하세요. 자세한 내용은 [지원 옵션 및 커뮤니티 리소스](/sccm/core/understand/find-help#BKMK_SupportOptions)를 참조 하세요.  
 
@@ -140,7 +139,7 @@ Windows Defender 또는 Endpoint Protection은 자동으로 Microsoft 업데이�
 
 ### <a name="solution"></a>솔루션
 
-#### <a name="step-1-restart-your-computer"></a>1단계: 컴퓨터를 다시 시작합니다.
+#### <a name="step-1-restart-your-computer"></a>1단계: 컴퓨터 다시 시작
 
 모든 애플리케이션을 종료한 후 컴퓨터를 다시 시작합니다.  
 

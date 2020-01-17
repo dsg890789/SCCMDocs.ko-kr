@@ -10,17 +10,16 @@ ms.assetid: b670cfaf-96a4-4fcb-9caa-0f2e8c2c6198
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e730a71f7924e0ac55c9dd142f87abe279b82c4
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 1c6a2c20685703e9d47016b8e5ba914438064b28
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198713"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827352"
 ---
 # <a name="optimize-windows-10-update-delivery-with-configuration-manager"></a>Configuration Manager로 Windows 10 업데이트 배달 최적화
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 많은 고객이 Windows 10 월별 업데이트로 최신 상태를 유지하는 성공적인 방법은 Configuration Manager를 사용하는 뛰어난 콘텐츠 배포 전략에서 시작됩니다. 대규모 조직의 경우 월별 품질 업데이트의 크기가 문제가 될 수 있습니다. 업데이트 배달을 최적화하는 데 필요한 대역폭 및 네트워크 부하를 줄이는 데 도움이 되는 몇 가지 기술을 사용할 수 있습니다. 이 문서에서는 이러한 기술에 대해 설명하고, 이러한 기술을 비교하며, 사용할 기술을 결정하는 데 도움이 되는 권장 사항을 제공합니다.  
  
@@ -53,7 +52,7 @@ Configuration Manager는 다음을 포함하여 많은 피어 투 피어 기술�
 [배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)는 Windows 10에 기본 제공되는 주요 다운로드 기술 및 피어 투 피어 배포 방법입니다. Windows 10 클라이언트는 동일한 업데이트를 다운로드하는 로컬 네트워크의 다른 디바이스에서 콘텐츠를 가져올 수 있습니다. [배달 최적화에 사용 가능한 Windows 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delivery-optimization-options)을 사용하여 클라이언트를 그룹으로 구성할 수 있습니다. 이 그룹화를 통해 조직은 피어 투 피어 요청을 수행하는 최상의 후보가 될 수 있는 디바이스를 식별할 수 있습니다. 배달 최적화를 사용하면 다운로드 시간을 단축하는 동시에 디바이스를 최신 상태로 유지하는 데 사용되는 전체 대역폭을 현저하게 줄일 수 있습니다.
 
 > [!NOTE]  
-> 배달 최적화는 클라우드 관리 솔루션입니다. 피어 투 피어 기능을 활용하려면 배달 최적화 클라우드 서비스에 대한 인터넷 액세스가 필요합니다. 필요한 인터넷 끝점에 대 한 자세한 내용은 [배달 최적화에 대 한 질문과 대답](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#frequently-asked-questions)을 참조 하세요. 
+> 배달 최적화는 클라우드 관리 솔루션입니다. 피어 투 피어 기능을 활용하려면 배달 최적화 클라우드 서비스에 대한 인터넷 액세스가 필요합니다. 필요한 인터넷 엔드포인트에 대한 자세한 내용은 [배달 최적화에 대한 질문과 대답](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#frequently-asked-questions)을 참조하세요. 
 
 최상의 결과를 얻으려면 배달 최적화 [다운로드 모드](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)를 **그룹(2)** 로 설정하고 *그룹 ID*를 정의해야 합니다. 그룹 모드에서 피어링은 원격 사무실의 디바이스를 포함하여 동일한 그룹에 속한 디바이스 간 내부 서브넷을 교차할 수 있습니다. [그룹 ID 옵션](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#select-the-source-of-group-ids)을 사용하여 도메인 및 AD DS 사이트와 별개로 공유한 사용자 지정 그룹을 만듭니다. 그룹 다운로드 모드는 배달 최적화를 사용하여 최상의 대역폭 최적화를 달성하려는 대부분의 조직에 권장되는 옵션입니다.
 
@@ -162,7 +161,7 @@ WUA(Windows 업데이트 에이전트)에서 먼저 빠른 콘텐츠를 요청�
 
 
 #### <a name="is-there-any-way-to-see-how-much-content-is-downloaded-from-peers-using-delivery-optimization"></a>배달 최적화를 사용하여 피어에서 다운로드되는 콘텐츠의 양을 확인할 방법이 있나요?
-Windows 10 버전 1703 이상에는 **Get-DeliveryOptimizationPerfSnap** 및 **Get-DeliveryOptimizationStatus**의 새 PowerShell cmdlet 두 개가 포함됩니다. 이러한 cmdlet은 배달 최적화 및 캐시 사용에 대한 더 많은 인사이트를 제공합니다. 자세한 내용은 [Windows 10 업데이트에 대 한 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#the-cloud-service-doesnt-see-other-peers-on-the-network) 를 참조 하세요.
+Windows 10 버전 1703 이상에는 **Get-DeliveryOptimizationPerfSnap** 및 **Get-DeliveryOptimizationStatus**의 새 PowerShell cmdlet 두 개가 포함됩니다. 이러한 cmdlet은 배달 최적화 및 캐시 사용에 대한 더 많은 인사이트를 제공합니다. 자세한 내용은 [Windows 10 업데이트 배달 최적화](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#the-cloud-service-doesnt-see-other-peers-on-the-network)를 참조하세요.
 
 
 #### <a name="how-do-clients-communicate-with-delivery-optimization-over-the-network"></a>클라이언트는 네트워크를 통해 배달 최적화와 어떻게 통신하나요?

@@ -10,28 +10,27 @@ ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c76a635144d2cac945eb6c7cf0544891b65c0ce9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5c841824229de43fd53625db041085c72a0c2e68
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658883"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815955"
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 PowerShell 스크립트 만들기 및 실행
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1236459-->
-System Center Configuration Manager가 PowerShell 스크립트를 실행하는 기능과 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 대형 작업을 수행할 수 있습니다.  
+Configuration Manager가 Powershell 스크립트를 실행하는 기능과 통합되었습니다. Powershell은 정교하고 자동화된 스크립트를 만들어 더 큰 커뮤니티에서 이해하고 공유할 수 있는 이점이 있습니다. 스크립트는 소프트웨어를 관리하는 사용자 지정 도구 빌드를 간소화하고 일상적인 작업을 빠르게 수행하므로 더 쉽고 일관되게 대형 작업을 수행할 수 있습니다.  
 
 > [!Note]  
 > Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
 
-이 통합 기능을 System Center Configuration Manager에서 사용하면 *스크립트 실행* 기능을 사용하여 다음을 수행할 수 있습니다.
+이 통합 기능을 Configuration Manager에서 사용하면 *스크립트 실행* 기능을 사용하여 다음을 수행할 수 있습니다.
 
-- System Center Configuration Manager에서 사용할 스크립트를 만들고 편집합니다.
+- Configuration Manager에서 사용할 스크립트를 만들고 편집합니다.
 - 역할 및 보안 범위를 통해 스크립트 사용을 관리합니다. 
 - 컬렉션 또는 개별 온-프레미스 관리 Windows PC에서 스크립트를 실행합니다.
 - 클라이언트 디바이스에서 빠르게 집계된 스크립트 결과를 가져옵니다.
@@ -40,7 +39,7 @@ System Center Configuration Manager가 PowerShell 스크립트를 실행하는 �
 >[!WARNING]
 >스크립트의 능력을 고려할 때 계획적이고 신중하게 사용해야 합니다. 사용자를 지원하기 위해 안전 장치, 즉 분리된 역할과 범위를 추가로 구축했습니다. 스크립트를 실행하기 전에 스크립트의 정확성을 검사하고 신뢰할 수 있는 원본에서 제공되는지 확인하여 의도하지 않은 스크립트 실행을 방지합니다. 확장된 문자 또는 다른 난독 처리에 유의하고 스크립트 보안에 대한 지식을 습득합니다. [PowerShell 스크립트 보안에 대해 자세히 알아보기](/sccm/apps/deploy-use/learn-script-security)
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - PowerShell 스크립트를 실행하려면 클라이언트에서 PowerShell 버전 3.0 이상이 실행되고 있어야 합니다. 그러나 실행하는 스크립트에 이후 버전의 PowerShell 기능이 포함되어 있을 경우 스크립트를 실행하는 클라이언트에서 해당 버전의 PowerShell이 실행되고 있어야 합니다.
 - Configuration Manager 클라이언트는 스크립트를 실행하려면 1706 릴리스 이상의 클라이언트를 실행하고 있어야 합니다.
@@ -99,7 +98,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 
 ## <a name="security-scopes"></a>보안 범위
 *(버전 1710에서 도입됨)*  
-스크립트 실행은 Configuration Manager의 기존 기능인 보안 범위를 사용하여 사용자 그룹을 나타내는 태그를 할당하여 스크립트 작성 및 실행을 제어합니다. 보안 범위 사용에 대한 자세한 내용은 [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.
+스크립트 실행은 Configuration Manager의 기존 기능인 보안 범위를 사용하여 사용자 그룹을 나타내는 태그를 할당하여 스크립트 작성 및 실행을 제어합니다. 보안 범위 사용에 대한 자세한 내용은 [Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.
 
 ## <a name="bkmk_ScriptRoles"></a>스크립트에 대한 보안 역할 만들기
 스크립트를 실행하는 데 사용되는 세 가지 보안 역할은 Configuration Manager에서 기본으로 만들어지지 않습니다. 스크립트 실행기, 스크립트 작성자 및 스크립트 승인자 역할을 만들려면 개략적으로 설명된 단계를 수행 합니다.
@@ -113,7 +112,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 
 **역할 이름**: 스크립트 실행기  
 - **설명**: 이러한 사용 권한을 통해 이 역할이 다른 역할에 의해 이전에 만들어지고 승인된 스크립트만 실행하도록 설정합니다.  
-- **사용 권한:** 다음을 확인하려면 **예**로 설정합니다.  
+- **사용 권한:** 다음이 **예**로 설정되었는지 확인합니다.  
 
 |범주|사용 권한|시스템 상태|
 |---|---|---|
@@ -124,7 +123,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 다음과 같�
 
 **역할 이름**: 스크립트 작성자  
 - **설명**: 이러한 사용 권한을 통해 이 역할이 스크립트를 작성하도록 설정하지만 승인하거나 실행할 수는 없습니다.  
-- **사용 권한:** 다음 사용 권한이 설정되었는지 확인합니다.
+- **사용 권한**: 다음 사용 권한이 설정되었는지 확인합니다.
  
 |범주|사용 권한|시스템 상태|
 |---|---|---|
@@ -348,5 +347,5 @@ Microsoft Windows 10 Enterprise
 
 ## <a name="see-also"></a>참고 항목
 
-- [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)
+- [Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)
 - [역할 기반 관리의 기본 사항](/sccm/core/understand/fundamentals-of-role-based-administration)

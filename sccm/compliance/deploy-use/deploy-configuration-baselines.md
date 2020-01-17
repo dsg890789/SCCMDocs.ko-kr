@@ -10,19 +10,18 @@ ms.assetid: 9be8aaf3-075e-4acd-abd2-7459254e16e2
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf818fdb7b1ff87b53277bf9313aa94663163e64
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b9dbec123ba1a29f4389c5efeb680f6173675a28
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62214341"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816346"
 ---
-# <a name="how-to-deploy-configuration-baselines-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준을 배포하는 방법
+# <a name="how-to-deploy-configuration-baselines-in-configuration-manager"></a>Configuration Manager에서 구성 기준을 배포하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-해당 컬렉션의 클라이언트 디바이스가 구성 기준의 규격 준수 여부를 평가하려면 System Center Configuration Manager의 구성 기준이 하나 이상의 사용자 또는 디바이스 컬렉션에 배포되어야 합니다.  
+해당 컬렉션의 클라이언트 디바이스가 구성 기준의 호환성을 평가하려면 Configuration Manager의 구성 기준이 하나 이상의 사용자 또는 디바이스 컬렉션에 배포되어야 합니다.  
 
 **구성 기준 배포** 대화 상자를 사용하여 구성 기준 배포를 정의합니다. 여기에는 평가 일정 지정 외에도 배포에서 구성 기준 추가 또는 제거가 포함됩니다.  
 

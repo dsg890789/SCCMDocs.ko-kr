@@ -10,17 +10,16 @@ ms.assetid: 41dcc259-f147-4420-bff2-b65bdf8cff77
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65cba26a0d1a90fb152f269259e737e2446141f1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1b3afee0219b93b120748c1078cfa0944b71946d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659172"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819576"
 ---
 # <a name="introduction-to-certificate-profiles-in-configuration-manager"></a>Configuration Manager의 인증서 프로필 소개
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 인증서 프로필은 Active Directory 인증서 서비스 및 NDES(네트워크 디바이스 등록 서비스) 역할에서 작동합니다. 사용자가 조직 리소스에 쉽게 액세스할 수 있도록 관리되는 디바이스에 대한 인증 인증서를 만들고 배포하세요. 예를 들어, 인증서 프로필을 만들고 배포하여 사용자가 VPN 및 무선 연결을 시작하는 데 필요한 인증서를 제공할 수 있습니다.
 
@@ -36,7 +35,7 @@ ms.locfileid: "74659172"
 
 **예 1**: 모든 직원이 여러 사무실 위치에서 wi-fi 핫스팟에 연결 해야 합니다. 사용자가 손쉽게 연결할 수 있도록 하려면 먼저 Wi-Fi에 연결하는 데 필요한 인증서를 배포합니다. 그런 다음, 인증서를 참조하는 Wi-Fi 프로필을 배포합니다.  
 
-**예 2**: PKI가 준비된 경우 더 유연하고 안전한 인증서 배포 방법으로 전환하려고 합니다. 사용자는 보안을 손상 시 키 지 않고 개인 장치에서 조직 리소스에 액세스 해야 합니다. 특정 디바이스 플랫폼을 지원하는 설정 및 프로토콜을 사용하여 인증서 프로필을 구성합니다. 그러고 나면 디바이스는 인터넷에 연결된 등록 서버에서 이 인증서를 자동으로 요청할 수 있습니다. 그런 다음 디바이스가 조직 리소스에 액세스할 수 있도록 VPN 프로필을 구성하여 이러한 인증서를 사용합니다.  
+**예제 2**: 현재 PKI를 사용 중입니다. 더 유연하고 안전한 인증서 배포 방법으로 전환하려고 합니다. 사용자는 보안을 손상 시 키 지 않고 개인 장치에서 조직 리소스에 액세스 해야 합니다. 특정 디바이스 플랫폼을 지원하는 설정 및 프로토콜을 사용하여 인증서 프로필을 구성합니다. 그러고 나면 디바이스는 인터넷에 연결된 등록 서버에서 이 인증서를 자동으로 요청할 수 있습니다. 그런 다음 디바이스가 조직 리소스에 액세스할 수 있도록 VPN 프로필을 구성하여 이러한 인증서를 사용합니다.  
 
 ## <a name="types"></a>유형
 
@@ -77,7 +76,7 @@ Configuration Manager에서는 요구 사항에 따라 다양한 디바이스 �
 - Windows Phone 8.1  
 
 > [!NOTE]  
-> Configuration Manager 온-프레미스 MDM을 사용 하 여 Windows Phone 8.1 및 Windows 10 Mobile을 관리 합니다. 자세한 내용은 [온-프레미스 MDM](/configmgr/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)을 참조 하세요.
+> Configuration Manager 온-프레미스 MDM을 사용 하 여 Windows Phone 8.1 및 Windows 10 Mobile을 관리 합니다. 자세한 내용은 [온-프레미스 MDM](/configmgr/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)을 참조하세요.
 
 Configuration Manager에 대 한 일반적인 시나리오는 Wi-fi 및 VPN 서버를 인증 하기 위해 신뢰할 수 있는 루트 CA 인증서를 설치 하는 것입니다. 일반적인 연결은 다음 프로토콜을 사용 합니다.
 
@@ -88,7 +87,7 @@ Configuration Manager에 대 한 일반적인 시나리오는 Wi-fi 및 VPN 서�
 
 여러 환경 또는 연결 요구 사항에 맞게 사용자 지정된 인증서를 요청할 수 있도록 SCEP 인증서 프로필에서 설정을 지정할 수 있습니다. **인증서 프로필 만들기 마법사**에는 등록 매개 변수에 대한 두 페이지가 있습니다. 먼저 **SCEP 등록**에는 등록 요청 및 인증서를 설치할 위치에 대한 설정이 포함되어 있습니다. 두 번째 페이지인 **인증서 속성**에서는 요청된 인증서 자체에 대해 설명합니다.  
 
-## <a name="deploy"></a>배포:
+## <a name="deploy"></a>배포
 
 SCEP 인증서 프로필을 배포할 때 Configuration Manager 클라이언트는 정책을 처리 합니다. 그런 다음 관리 지점에서 SCEP 챌린지 암호를 요청 합니다. 장치에서 공개/개인 키 쌍을 만들고 CSR (인증서 서명 요청)을 생성 합니다. NDES 서버에이 요청을 보냅니다. NDES 서버는 NDES 정책 모듈을 통해 인증서 등록 지점 사이트 시스템에 요청을 전달 합니다. 인증서 등록 지점은 요청의 유효성을 검사 하 고 SCEP 챌린지 암호를 확인 한 후 요청이 변조 되지 않았는지 확인 합니다. 그런 다음 요청을 승인 하거나 거부 합니다. 승인 되 면 NDES 서버는 서명 요청을 서명 하기 위해 연결 된 CA (인증 기관)로 보냅니다. CA는 요청에 서명한 다음 요청 하는 장치에 인증서를 반환 합니다.
 

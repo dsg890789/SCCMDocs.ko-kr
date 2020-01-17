@@ -10,23 +10,22 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 083dbbbd14b7364c88abfb6471ea1505657586ae
-ms.sourcegitcommit: 66e7363108e37ea8bb5d36fca0231829d48ac612
+ms.openlocfilehash: bfeab3e36c486369f1043baee51b4a0dc7f61ea3
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899524"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827420"
 ---
 # <a name="manage-office-365-proplus-with-configuration-manager"></a>Configuration Manager를 사용하여 Office 365 ProPlus 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 사용하여 다음과 같은 방법으로 Office 365 ProPlus 앱을 관리할 수 있습니다.
 
 - [Office 365 앱 배포](#deploy-office-365-apps): [Office 365 클라이언트 관리 대시보드](/sccm/sum/deploy-use/office-365-dashboard)에서 Office 365 설치 관리자를 시작하여 초기 Office 365 앱 설치 환경을 간편하게 만들 수 있습니다. 마법사를 통해 Office 365 설치 설정을 구성하고, Office CDN(콘텐츠 배달 네트워크)에서 파일을 다운로드하고, 콘텐츠가 포함된 스크립트 애플리케이션을 만들고 배포할 수 있습니다.
 
-- [Deploy Office 365 업데이트](#deploy-office-365-updates): 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
+- [Office 365 업데이트 배포](#deploy-office-365-updates): 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. Microsoft에서 새 Office 365 클라이언트 업데이트를 Office CDN(Content Delivery Network)에 게시하면 Microsoft에서 업데이트 패키지도 WSUS(Windows Server Update Services)에 게시합니다. Configuration Manager에서 WSUS 카탈로그의 Office 365 클라이언트 업데이트를 사이트 서버로 동기화한 후에 업데이트를 클라이언트에 배포할 수 있습니다.    
 
 - [Office 365 업데이트 다운로드 언어 추가](#bkmk_o365_lang): Office 365에서 지원되는 모든 언어의 업데이트를 다운로드하도록 Configuration Manager에 대한 지원을 추가할 수 있습니다. 즉, Office 365가 언어를 지원하면 Configuration Manager는 언어를 지원할 필요가 없습니다. Configuration Manager 버전 1610 이전에는 Office 365 클라이언트에 구성된 동일한 언어로 업데이트를 다운로드하고 배포해야 합니다.
 
@@ -111,11 +110,11 @@ Configuration Manager를 사용하여 Office 365 업데이트를 배포하려면
 
       1. Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**을 클릭합니다.  
 
-      2. 적절한 디바이스 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
+      2. 적절한 디바이스 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
       3. **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
 
-    **방법 2**: Office 배포 도구 또는 그룹 정책을 사용하여 Configuration Manager에서 [Office 365 클라이언트가 업데이트를 받도록 설정](/DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager#BKMK_EnableClient)합니다.  
+    **방법 2**:  Office 배포 도구 또는 그룹 정책을 사용하여 Configuration Manager에서 [Office 365 클라이언트가 업데이트를 받도록 설정](/DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager#BKMK_EnableClient)합니다.  
 
 4. 클라이언트에 [Office 365 업데이트를 배포](deploy-software-updates.md)합니다.
 

@@ -10,17 +10,16 @@ ms.assetid: 76c90f64-d729-456b-8304-01852cd66fb6
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce48f468154357a0032d737c6d77a6b6b29d9565
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 018bd22e56a5646e09861108600a64885392e8bf
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678830"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819627"
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Endpoint Protection은 Configuration Manager 계층 구조에서 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리합니다.  
 
@@ -46,7 +45,7 @@ Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 �
 
  또한 Configuration Manager 콘솔의 Endpoint Protection을 사용하면 Windows 방화벽 설정을 관리할 수 있습니다.  
 
- [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](scenarios-endpoint-protection.md) Endpoint Protection 및 Windows 방화벽  
+ [예제 시나리오: System Center Endpoint Protection을 사용하여 맬웨어에서 컴퓨터 보호](scenarios-endpoint-protection.md) Endpoint Protection 및 Windows 방화벽.  
 
 
 ## <a name="managing-malware-with-endpoint-protection"></a>Endpoint Protection을 사용하여 맬웨어 관리  
@@ -54,11 +53,11 @@ Windows 10 및 Windows Server 2016 컴퓨터부터, Windows Defender가 이미 �
 
  추가 정보:  
 
--   [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책 만들고 배포하는 방법](endpoint-antimalware-policies.md) - 구성할 수 있는 설정 목록을 사용하여 맬웨어 방지 정책을 만들고 배포하고 모니터링합니다.  
+-   [Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](endpoint-antimalware-policies.md) - 구성할 수 있는 설정 목록을 사용하여 맬웨어 방지 정책을 생성, 배포, 모니터링합니다.  
 
--   [System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](monitor-endpoint-protection.md) - 작업 보고서, 감염된 클라이언트 컴퓨터 등을 모니터링합니다.  
+-   Endpoint Protection 모니터링 작업 보고서, 감염 된 클라이언트 컴퓨터 등을 [모니터링 하는 방법](monitor-endpoint-protection.md) 입니다.  
 
--   [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책 및 방화벽 설정을 관리하는 방법](endpoint-antimalware-firewall.md) - 클라이언트 컴퓨터에서 검색된 맬웨어를 수정합니다.  
+-   [Endpoint Protection에 대 한 맬웨어 방지 정책 및 방화벽 설정을 관리 하는 방법](endpoint-antimalware-firewall.md) 클라이언트 컴퓨터에서 발견 되는 맬웨어 수정  
 
 
 ## <a name="managing-windows-firewall-with-endpoint-protection"></a>Endpoint Protection을 사용하여 Windows 방화벽 관리  
@@ -112,7 +111,7 @@ Mac 컴퓨터와 Linux 서버에 대한 Endpoint Protection 클라이언트 소�
 2. 웹 사이트의 위쪽에서 **다운로드 및 키** 탭을 선택합니다.
 3. **System Center Endpoint Protection(현재 분기)** 제품을 필터링합니다.
 4. **다운로드** 링크를 클릭합니다.
-5. **Continue(계속)** 를 클릭합니다. **Linux OS 및 Macintosh OS 다국어 32/64비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,878MB ISO** 파일을 포함하여 여러 개의 파일이 표시됩니다.
+5. **Continue(계속)** 를 클릭합니다. 다음 파일을 비롯해 여러 파일이 표시됩니다. **Linux OS 및 Macintosh OS 다국어 32/64비트용 System Center Endpoint Protection(현재 분기 - 버전 1606) 1,878MB ISO**.
 6. 파일을 다운로드하려면 화살표 아이콘을 클릭합니다. 파일 이름은 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_-3_EptProt_Lin_Mac_MLF_X21-67050.ISO**입니다.
 
 2018년 1월 업데이트(X21-67050)에 포함된 버전은 다음과 같습니다.

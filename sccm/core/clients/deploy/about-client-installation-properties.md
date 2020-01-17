@@ -10,17 +10,16 @@ ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3758e7aa996a47b78e1d17864843cf0be70bdd8f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b18fbc2e3f6745578bd773079abe431683914b1d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70176508"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826325"
 ---
-# <a name="about-client-installation-parameters-and-properties-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
+# <a name="about-client-installation-parameters-and-properties-in-configuration-manager"></a>Configuration Manager의 클라이언트 설치 매개 변수 및 속성 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 CCMSetup.exe 명령을 사용하여 Configuration Manager 클라이언트를 설치합니다. 명령줄에서 제공하는 클라이언트 설치 매개 변수는 설치 동작을 수정합니다. 명령줄에서 제공하는 클라이언트 설치 속성은 설치된 클라이언트 에이전트의 초기 구성을 수정합니다.
 
@@ -51,7 +50,7 @@ CCMSetup.exe 명령을 사용하여 Configuration Manager 클라이언트를 설
 
  `CCMSetup.exe [<Ccmsetup parameters>] [<client.msi setup properties>]`  
 
- 예:  
+ 예를 들면 다음과 같습니다.  
 
    `CCMSetup.exe /mp:SMSMP01 /logon SMSSITECODE=S01 FSP=SMSFSP01`  
 
@@ -114,7 +113,7 @@ FQDN을 사용하는 경우의 예: `ccmsetup.exe /mp:smsmp01.contoso.com`
 - 다음 명령을 실행합니다. `(Get-WmiObject -Namespace Root\Ccm\LocationServices -Class SMS_ActiveMPCandidate | Where-Object {$_.Type -eq "Internet"}).MP`
 - **/mp** 매개 변수에 사용할 “https://” 접두사를 추가합니다.
 
-클라우드 관리 게이트웨이 URL을 사용하는 경우에 대한 예제. `ccmsetup.exe /mp: https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100`
+클라우드 관리 게이트웨이 URL을 사용하는 경우에 대한 예제. `ccmsetup.exe /mp:https://CONTOSO.CLOUDAPP.NET/CCM_Proxy_MutualAuth/72057598037248100`
 
  > [!Important]
  > **/mp** 매개 변수에 대해 클라우드 관리 게이트웨이의 URL을 지정하는 경우 **https://** 로 시작해야 합니다.
@@ -253,7 +252,7 @@ CCMSetup이 설치 파일 다운로드를 중지하기 전까지 시도할 시�
 
 ccmsetup.msi로 설치된 후에 ccmsetup.exe에 전달되는 명령줄 매개 변수와 속성을 지정합니다. 따옴표 안에 다른 속성을 포함합니다. Intune MDM 설치 방법을 사용하여 Configuration Manager 클라이언트를 부트스트래핑할 때 이 속성을 사용합니다. 
 
-예: `ccmsetup.msi CCMSETUPCMD="/mp: https://mp.contoso.com CCMHOSTNAME=mp.contoso.com"`
+예: `ccmsetup.msi CCMSETUPCMD="/mp:https://mp.contoso.com CCMHOSTNAME=mp.contoso.com"`
 
  > [!Tip]
  > Microsoft Intune은 명령줄을 1024자로 제한합니다. 
@@ -285,7 +284,7 @@ Azure 관리자가 Azure Portal에서 이 속성에 대한 값을 가져올 수 
 Azure AD 테넌트 식별자를 지정합니다. 클라우드 관리를 위한 [Azure 서비스 구성](/sccm/core/servers/deploy/configure/azure-services-wizard)할 때 이 테넌트는 Configuration Manager에 연결됩니다. 이 속성에 대한 값을 가져오려면 다음 단계를 사용합니다.
 - 동일한 Azure AD 테넌트에 가입된 Windows 10 디바이스에서 명령 프롬프트를 엽니다.
 - 다음 명령을 실행합니다. `dsregcmd.exe /status`
-- 디바이스 상태 섹션에서 **TenantId** 값을 찾습니다. 예를 들면 `TenantId : 607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
+- 디바이스 상태 섹션에서 **TenantId** 값을 찾습니다. 예, `TenantId : 607b7853-6f6f-4d5d-b3d4-811c33fdd49a`
 
   > [!Note]
   > Azure 관리자는 Azure Portal에서 이 값을 가져울 수도 있습니다. 자세한 내용은 [테넌트 ID 가져오기](/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in) 참조
@@ -345,7 +344,7 @@ Example: `ccmsetup.exe AADTENANTNAME=Contoso`
 
  클라이언트에 HTTPS 통신용 1 초과 인증서가 있는 경우 인증서 선택 기준을 지정합니다. 이 인증서는 클라이언트 인증 기능을 포함하는 유효한 인증서입니다.  
 
- 정확하게 일치하는 항목( **Subject:** 사용) 또는 부분적으로 일치하는 항목( **SubjectStr: 사용)** 을 검색할 수 있습니다. 예제:  
+ 정확하게 일치하는 항목( **Subject:** 사용) 또는 부분적으로 일치하는 항목( **SubjectStr: 사용)** 을 검색할 수 있습니다. 예:  
 
  `CCMCERTSEL="Subject:computer1.contoso.com"`은 주체 이름 또는 주체 대체 이름에서 컴퓨터 이름 "computer1.contoso.com"과 정확히 일치하는 인증서를 검색합니다.  
 
