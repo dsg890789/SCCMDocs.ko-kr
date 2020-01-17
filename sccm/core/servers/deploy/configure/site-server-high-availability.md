@@ -10,12 +10,12 @@ ms.assetid: 6dcef836-c0d1-40af-ad30-cd8d864b09a9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d06cca3e859c6fd910e094b4b431179a3d7a5037
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 555895f2b4c437320995d742b1abcfd0e84c957f
+ms.sourcegitcommit: 9901ed9219916b6f185b53c0f62e69fc4dbd6692
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75798400"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124160"
 ---
 # <a name="site-server-high-availability-in-configuration-manager"></a>Configuration Manager의 사이트 서버 고가용성
 
@@ -23,7 +23,7 @@ ms.locfileid: "75798400"
 
 <!--1128774-->
 
-지금까지 작업 환경에 이러한 역할의 여러 인스턴스를 유지하여 Configuration Manager에서 대부분의 역할에 중복성을 추가할 수 있습니다. 사이트 서버 자체는 예외입니다. Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가용성은  *수동* 모드에서 추가 사이트 서버를 설치하기 위한 Configuration Manager 기반 솔루션입니다. 버전 1810은 계층 구조 지원을 추가하므로, 중앙 관리 사이트 및 자식 기본 사이트도 수동 모드의 추가 사이트 서버를 가질 수 있습니다. 수동 모드의 사이트 서버는 Azure에서 온-프레미스 또는 클라우드 기반일 수 있습니다.
+지금까지 작업 환경에 이러한 역할의 여러 인스턴스를 유지하여 Configuration Manager에서 대부분의 역할에 중복성을 추가할 수 있습니다. 사이트 서버 자체는 예외입니다. Configuration Manager 버전 1806부터 사이트 서버 역할에 대한 고가용성은 *수동* 모드에서 추가 사이트 서버를 설치하기 위한 Configuration Manager 기반 솔루션입니다. 버전 1810은 계층 구조 지원을 추가하므로, 중앙 관리 사이트 및 자식 기본 사이트도 수동 모드의 추가 사이트 서버를 가질 수 있습니다. 수동 모드의 사이트 서버는 Azure에서 온-프레미스 또는 클라우드 기반일 수 있습니다.
 
 이 기능은 다음과 같은 이점을 제공합니다. 
 - 사이트 서버 역할에 대한 중복성 및 고가용성  

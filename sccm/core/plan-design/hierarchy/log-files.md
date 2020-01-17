@@ -10,12 +10,12 @@ ms.assetid: c1ff371e-b0ad-4048-aeda-02a9ff08889e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b81b227b55b97ef5b8f1bdc87a14dc564075c88a
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 8b424c995114eab266bcf9a133791e4eac70d119
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75800069"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034790"
 ---
 # <a name="log-file-reference"></a>로그 파일 참조
 
@@ -68,8 +68,6 @@ Configuration Manager의 로그 파일에 대한 자세한 내용은 [로그 파
     - [클라우드 관리 게이트웨이](#cloud-management-gateway)
 
     - [준수 설정 및 회사 리소스 액세스](#BKMK_CompSettingsLog)  
-
-    - [조건부 액세스](#BKMK_CA)
 
     - [Configuration Manager 콘솔](#BKMK_ConsoleLog)  
 
@@ -584,20 +582,6 @@ Configuration Manager 로그 파일뿐 아니라 네트워크 디바이스 등�
 |DCMAgent.log|구성 항목과 애플리케이션의 평가, 충돌 보고 및 재구성에 대한 높은 수준의 정보를 기록합니다.|클라이언트|  
 |DCMReporting.log|구성 항목에 대한 상태 메시지에 정책 플랫폼 결과를 보고하는 작업에 대한 정보를 기록합니다.|클라이언트|  
 |DcmWmiProvider.log|WMI에서 구성 항목 synclet를 읽는 작업에 대한 정보를 기록합니다.|클라이언트|  
-
-### <a name="BKMK_CA"></a> 조건부 액세스
-
-다음 표에는 조건부 액세스와 관련된 정보가 포함된 로그 파일이 나와 있습니다.  
-
-|로그 이름|설명|로그 파일이 있는 컴퓨터|  
-|--------------|-----------------|----------------------------|  
-|ADALOperationProvider.log|AAD 토큰 취득에 대한 세부 정보를 기록합니다.|클라이언트|  
-|cloudusersync.log|사용자의 라이선스 사용을 기록합니다.|서비스 연결 지점이 있는 컴퓨터|  
-|ComplRelayAgent.log|DCM에서 전반적인 준수 상태를 수신하고, MP 토큰을 취득하고, AAD 토큰을 취득하며, Intune에 준수를 다시 보고(CA 릴레이 서비스)합니다.|클라이언트|  
-|DcmWmiProvider.log|WMI에서 구성 항목 synclet를 읽는 작업에 대한 정보를 기록합니다.|클라이언트|  
-|dmpdownloader.log|Microsoft Intune의 다운로드에 대한 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|
-|dmpuploader.log|데이터베이스 변경 내용을 Microsoft Intune에 업로드하는 작업과 관련된 세부 정보를 기록합니다.|서비스 연결 지점이 있는 컴퓨터|
-|MP_Token.log|클라이언트의 토큰 요청을 기록합니다.|사이트 시스템 서버|  
 
 ### <a name="BKMK_ConsoleLog"></a> Configuration Manager 콘솔
 

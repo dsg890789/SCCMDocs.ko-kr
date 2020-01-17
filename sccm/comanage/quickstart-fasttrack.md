@@ -10,12 +10,12 @@ ms.assetid: 42e80570-d637-41a4-97b7-ebf1f8975af3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: c0aaf7cf0e5ca104f6524c3581f8a9fde1bbddb7
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 146b03b4d6cc9e49c1cbe56b9da3b5da1d194246
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75817009"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034700"
 ---
 # <a name="get-help-from-fasttrack-for-co-management"></a>FastTrack에서 공동 관리에 대한 도움받기
 
@@ -40,7 +40,7 @@ Microsoft 365용 FastTrack 사이트에는 전문가가 만든 설명서, 권장
 
 3. 조직의 **EMS 라이선스** 수를 입력합니다.  
 
-4. 연락처 정보, 비즈니스 시나리오 및 문제를 해결하고자 하는 제품을 추가하여 양식을 완료합니다. 예를 들어 Intune 하이브리드에서 Intune 독립 실행형으로 마이그레이션하는 지원이 필요한 경우 양식에서 **Microsoft Intune**을 선택합니다.  
+4. 연락처 정보, 비즈니스 시나리오 및 문제를 해결하고자 하는 제품을 추가하여 양식을 완료합니다.
 
 5. 요청을 제출합니다. 
 

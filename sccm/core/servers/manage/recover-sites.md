@@ -10,12 +10,12 @@ ms.assetid: 19539f4d-1667-4b4c-99a1-9995f12cf5f7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 594e5a069edbb742cf4348a9b1ef7d4d4da3cf96
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: f9a272133a76fbca1b8363caf3a866b8d3b591d7
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75794327"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033272"
 ---
 # <a name="recover-a-configuration-manager-site"></a>Configuration Manager 사이트 복구
 
@@ -353,10 +353,6 @@ SQL Server 변경 내용 추적 내부에 대한 자세한 내용은 SQL Server 
 사이트 서버 복구 후 사이트에 대해 지정된 Windows 테스트용 로드 키를 다시 입력합니다. 이러한 키는 사이트 복구 동안 다시 설정됩니다. 테스트용 로드 키를 다시 입력한 후 사이트가 Windows 테스트용 로드 키에 **사용된 활성화** 열 수를 다시 설정합니다.
 
 예를 들어 사이트 오류 전에 **총 활성화** 수는 **100**으로 표시됩니다. 디바이스가 사용한 키의 수 또는 **사용된 활성화** 수는 **90**입니다. 사이트 복구 후 **총 활성화** 값은 여전히 **100**으로 표시되지만 **사용된 활성화** 열은 **0**으로 잘못 표시됩니다. 10개의 새 디바이스에서 테스트용 로드 키를 사용한 후에는 더 이상 테스트용 로드 키가 없으며 11번째 디바이스에서 테스트용 로드 키를 적용하지 못합니다.
-
-### <a name="recreate-the-microsoft-intune-subscription"></a>Microsoft Intune 구독 다시 만들기
-
-사이트 서버를 이미지로 다시 설치한 후에 Configuration Manager 사이트 서버를 복구하는 경우 Microsoft Intune 구독이 복원되지 않습니다. 사이트를 복구한 후 구독을 다시 연결합니다. 새 APN 요청을 만들지 않습니다. 대신 현재 유효한 PEM 파일을 업로드합니다. 마지막으로 iOS 관리를 구성하거나 갱신한 뒤 업로드한 동일한 파일을 사용합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하십시오.
 
 ### <a name="recreate-azure-services"></a>Azure 서비스 다시 만들기
 

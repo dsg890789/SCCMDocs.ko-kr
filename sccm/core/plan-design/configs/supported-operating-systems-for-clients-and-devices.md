@@ -10,12 +10,12 @@ ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 4e34f94b39984111f91b39cbd4eeaedb89bd07df
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: fda54091063cd95538c9d4b6353339224dc22fd7
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75801616"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034853"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
@@ -345,10 +345,6 @@ Linux 및 UNIX 클라이언트 설치 패키지는 Configuration Manager 미디�
 ## <a name="bkmk_OnpremOS"></a> 온-프레미스 MDM
 
 Configuration Manager에는 클라이언트 소프트웨어를 설치하지 않고 온-프레미스의 모바일 디바이스를 관리할 수 있는 기본 제공 기능이 있습니다. 자세한 내용은 [온-프레미스 인프라로 모바일 디바이스 관리](/sccm/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)를 참조하세요.  
-
-### <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항:
-
-- 계층 구조의 최상위 계층 사이트에서 **서비스 연결점**을 구성해야 합니다.  
 
 ### <a name="supported-operating-systems"></a>지원되는 운영 체제
 

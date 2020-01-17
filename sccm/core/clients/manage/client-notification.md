@@ -10,12 +10,12 @@ ms.assetid: deb8aac8-2bd9-4980-a25b-5f8d93051226
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f616c1cd87fcd0852fe783d5daec51284ef54233
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: e0a7334e2c4c47a7de3854b736faf480a35caaa2
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75824625"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033992"
 ---
 # <a name="client-notification-in-configuration-manager"></a>Configuration Manager의 클라이언트 알림
 
@@ -124,10 +124,6 @@ DDR(검색 데이터 레코드)을 전송하도록 클라이언트를 트리거�
 ### <a name="evaluate-device-health-attestation"></a>디바이스 상태 증명 평가
 
 최신 디바이스 성능 상태를 확인하고 보내도록 Windows 10 클라이언트를 트리거합니다. 자세한 내용은 [상태 증명](/sccm/core/servers/manage/health-attestation)을 참조하세요.  
-
-### <a name="check-conditional-access-compliance"></a>조건부 액세스 규정 준수 확인
-
-조건부 액세스 규정 준수를 확인하도록 클라이언트를 트리거합니다. 자세한 내용은 [PC용 Office 365 서비스에 대한 액세스 관리](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)를 참조하세요.  
 
 ### <a name="wake-up"></a>절전 모드 해제
 

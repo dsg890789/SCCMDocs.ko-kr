@@ -10,12 +10,12 @@ ms.topic: overview
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
-ms.openlocfilehash: ee66cd2714eff036ee62afc7c457b1e81fe78011
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 84cd21453a7df61e0f6abe46c96c9259f5f32ac7
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75817213"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034731"
 ---
 # <a name="what-is-co-management"></a>공동 관리란?
 
@@ -116,11 +116,6 @@ Configuration Manager 버전 1806부터 단일 Intune 테넌트에 여러 Config
 - [Intune 설정](https://docs.microsoft.com/intune/setup-steps)  
 
 - [Windows 10 자동 등록을 사용하도록 설정](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)  
-
-> [!Note]  
-> 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. 그러나 사용자를 Intune 독립 실행형으로 마이그레이션하기 시작한 후 관련 Windows 10 디바이스에 공동 관리를 활성화할 수 있습니다. Intune 독립 실행형으로 마이그레이션하는 방법에 대한 자세한 정보는 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.  
->
-> [혼합 기관](/sccm/mdm/deploy-use/migrate-mixed-authority)을 사용 중인 경우 먼저 Intune 독립 실행형으로 마이그레이션을 완료합니다. 그런 다음 공동 관리를 설정하기 전에 MDM 기관을 Intune으로 설정합니다.<!--SCCMDocs issue #797-->
 
 
 ### <a name="windows-10"></a>Windows 10

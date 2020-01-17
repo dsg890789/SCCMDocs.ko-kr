@@ -10,12 +10,12 @@ ms.assetid: b34fe701-5d05-42be-b965-e3dccc9363ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f7b52c720f586e50ee2b7cf2f1c62ef8b2b17f68
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 06ff9a0b97478460dc9e76ae263b55536539267f
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75799440"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033630"
 ---
 # <a name="internet-access-requirements"></a>인터넷 액세스 요구 사항
 
@@ -60,16 +60,6 @@ ms.locfileid: "75799440"
 - `sccmconnected-a01.cloudapp.net`  
 
 - `configmgrbits.azureedge.net`  
-
-### <a name="microsoft-intune"></a>Microsoft Intune
-
-자세한 내용은 [Hybrid MDM with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)(Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM)을 참조하세요.
-
-- `*manage.microsoft.com`  
-
-- `https://bspmts.mp.microsoft.com/V`  
-
-- `https://login.microsoftonline.com/{TenantID}`  
 
 ### <a name="windows-10-servicing"></a>Windows 10 서비스
 

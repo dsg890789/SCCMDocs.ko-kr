@@ -10,12 +10,12 @@ ms.assetid: ee8d611f-aa0c-4efd-b0ad-dbd14d0a0623
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6ce8140b3c6454123f8f8611015f2ff3923dbb2f
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 0cf5cca3093b5975cbb04b284de6740f977fc3fb
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75792002"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034617"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
@@ -149,4 +149,4 @@ Configuration Manager에 포함된 SQL Server 라이선스는 Configuration Mana
 
 버전 1806 및 이전 버전에서 온-프레미스 MDM을 사용하려면 Microsoft Intune 구독이 필요합니다. 구독은 디바이스 라이선스를 추적하는 데만 필요하며 디바이스에 대한 관리 정보를 관리하거나 저장하는 데는 사용되지 않습니다. 모든 관리 데이터는 온-프레미스 Configuration Manager 인프라를 사용하여 조직에 저장됩니다.  
 
-버전 1810부터는 Intune 연결이 새로운 온-프레미스 MDM 배포에 더 이상 필요하지 않습니다.<!--3607730, fka 1359124--> 조직에서 이 기능을 사용하려면 여전히 Intune 라이선스가 필요합니다. 현재 기존 온-프레미스 MDM 배포에서 Intune 연결을 제거할 수 없습니다. 자세한 내용은 [Intune 지원 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)을 참조하세요.
+버전 1810부터는 Intune 연결이 새로운 온-프레미스 MDM 배포에 더 이상 필요하지 않습니다.<!--3607730, fka 1359124--> 조직에서 이 기능을 사용하려면 여전히 Intune 라이선스가 필요합니다. 자세한 내용은 [Intune 지원 블로그 게시물](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)을 참조하세요.

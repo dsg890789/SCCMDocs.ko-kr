@@ -10,12 +10,12 @@ ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: b3c8306354a6dd31f164fe382be6e33e14192691
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 53ee871a712290c4e74398fd467064aee5f56a9b
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75824132"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033944"
 ---
 # <a name="how-to-manage-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트를 관리하는 방법
 
@@ -119,7 +119,7 @@ Configuration Manager 클라이언트를 디바이스에 설치하고 사이트�
 
 차단된 클라이언트를 차단 해제할 수도 있습니다.
 
-자세한 내용은 [클라이언트 차단 여부 결정](/configmgr/core/clients/deploy/plan/determine-whether-to-block-clients)을 참조하세요.
+자세한 내용은 [클라이언트를 차단할지 여부 결정](/configmgr/core/clients/deploy/plan/determine-whether-to-block-clients)을 참조하세요.
 
 <!-- Change Category is a hybrid action -->
 
@@ -171,8 +171,6 @@ Configuration Manager 컬렉션 또는 컴퓨터에 할당된 마지막 PXE 배�
 애플리케이션 요구 사항에서 이 값을 사용하여 배포를 제어하고 사용자 디바이스에서 수집되는 인벤토리 수를 제어할 수 있습니다.  
 
 열 머리글을 마우스 오른쪽 단추로 클릭하고 선택하여 보려는 **Device Owner**(디바이스 소유자) 열을 추가해야 할 수 있습니다.
-
-자세한 내용은 [Hybrid MDM with Configuration Manager and Microsoft Intune](/configmgr/mdm/understand/hybrid-mobile-device-management)(Configuration Manager 및 Microsoft Intune에서 하이브리드 MDM)을 참조하세요.
 
 ### <a name="delete"></a>삭제
 

@@ -10,12 +10,12 @@ ms.assetid: 1a2a9b48-a95b-4643-b00c-b3079584ae2e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 69898bec1ebc19021ff07befe3e45c51e2343187
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 070fae940fc73aa1695668d78bf50076e34aef68
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75824829"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034021"
 ---
 # <a name="prerequisites-for-deploying-clients-to-windows-computers-in-configuration-manager"></a>Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하기 위한 필수 조건
 
@@ -173,9 +173,6 @@ Configuration Manager 소프트웨어 업데이트를 관리하는 데 필요한
 원본 파일을 다운로드하려면 클라이언트 컴퓨터가 배포 지점이나 관리 지점과 통신해야 합니다. 다음 명령줄 매개 변수로 CCMSetup.exe를 지정한 경우는 제외됩니다. `ccmsetup /source`  
 
 #### <a name="microsoft-intune-mdm-installation"></a>Microsoft Intune MDM 설치
-
-> [!Important]
-> 하이브리드 모바일 디바이스 관리는 [사용되지 않는 기능](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures)입니다.
 
 - Microsoft Intune 구독 및 적절한 라이선스가 필요합니다.  
 
