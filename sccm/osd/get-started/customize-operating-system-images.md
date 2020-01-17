@@ -10,19 +10,18 @@ ms.assetid: 95033a9b-ff13-4b70-b1de-bcb25bcb6024
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd7f84e097ddfbc36d3c595a28e0cb31b968ce57
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9a1dcd3528f4dbaacec81837150d6f8a1ad6c455
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380061"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821361"
 ---
-# <a name="customize-operating-system-images-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 운영 체제 이미지 사용자 지정
+# <a name="customize-operating-system-images-with-configuration-manager"></a>Configuration Manager를 사용하여 운영 체제 이미지 사용자 지정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 운영 체제 이미지는 WIM 파일이며 컴퓨터에 운영 체제를 성공적으로 설치하고 구성하는 데 필요한 참조 파일 및 폴더의 압축된 컬렉션을 나타냅니다. 사용자 지정 운영 체제 이미지는 필요한 모든 운영 체제 파일, 지원 파일, 소프트웨어 업데이트, 도구 및 기타 소프트웨어 앱을 사용하여 구성된 참조 컴퓨터에서 만들어지고 캡처됩니다. 참조 컴퓨터를 수동으로 구성하는 범위는 사용자가 결정합니다. 빌드를 사용하여 참조 컴퓨터의 구성을 완전히 자동화하고 작업 순서를 캡처하거나, 참조 컴퓨터의 특정 부분을 수동으로 구성한 다음 작업 순서를 사용하여 나머지를 자동화하거나, 작업 순서를 사용하지 않고 수동으로 참조 컴퓨터를 구성할 수 있습니다. 다음 섹션은 운영 체제를 사용자 지정하는 데 사용됩니다.
+Configuration Manager의 운영 체제 이미지는 WIM 파일이며 컴퓨터에 운영 체제를 성공적으로 설치하고 구성하는 데 필요한 참조 파일 및 폴더의 압축된 컬렉션을 나타냅니다. 사용자 지정 운영 체제 이미지는 필요한 모든 운영 체제 파일, 지원 파일, 소프트웨어 업데이트, 도구 및 기타 소프트웨어 앱을 사용하여 구성된 참조 컴퓨터에서 만들어지고 캡처됩니다. 참조 컴퓨터를 수동으로 구성하는 범위는 사용자가 결정합니다. 빌드를 사용하여 참조 컴퓨터의 구성을 완전히 자동화하고 작업 순서를 캡처하거나, 참조 컴퓨터의 특정 부분을 수동으로 구성한 다음 작업 순서를 사용하여 나머지를 자동화하거나, 작업 순서를 사용하지 않고 수동으로 참조 컴퓨터를 구성할 수 있습니다. 다음 섹션은 운영 체제를 사용자 지정하는 데 사용됩니다.
 
 ##  <a name="BKMK_PrepareReferenceComputer"></a> 참조 컴퓨터 준비  
  참조 컴퓨터에서 운영 체제 이미지를 캡처하기 전에 고려할 사항이 몇 가지 있습니다.  

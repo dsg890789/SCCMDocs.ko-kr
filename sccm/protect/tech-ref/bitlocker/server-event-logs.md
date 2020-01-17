@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: c3279b7d-654d-444b-bd17-1262894590c3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 54f6ec4442e729db4dd5c9d4d02f5903babb5f47
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 535f9bbef9900cbdd5d8916b2ac3b7b5fa9777b7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662501"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818998"
 ---
 # <a name="server-event-logs"></a>서버 이벤트 로그
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 
@@ -34,7 +33,7 @@ Windows 이벤트 뷰어를 사용 하 여 Configuration Manager의 다음 BitLo
 
 다음 섹션에는 BitLocker 관리 서버 구성 요소에서 발생할 수 있는 이벤트 Id에 대 한 메시지 및 문제 해결 정보가 포함 되어 있습니다.
 
-## <a name="admin"></a>관리
+## <a name="admin"></a>관리자
 
 ### <a name="1-webappspnerror"></a>1: WebAppSpnError
 
@@ -202,10 +201,10 @@ SPN을 확인 하려면 Active Directory을 쿼리하여 Spn이 매핑된 실행
 
 - ArgumentNullException: 요청 된 성능 카운터의 범주, 카운터 또는 인스턴스가 잘못 된 경우이 예외가 throw 됩니다.
 - InvalidOperationException: 범주는 빈 문자열 ("")입니다. counterName은 빈 문자열 ("")입니다.
-- 요청 된 읽기/쓰기 권한 설정이이 카운터에 대해 잘못 되었습니다.
+- 요청된 읽기/쓰기 권한 설정이 이 카운터에 대해 유효하지 않습니다.
 - 지정 된 범주가 없습니다 (readOnly가 true 인 경우).
-- 지정 된 범주가 .NET Framework 사용자 지정 범주가 아닙니다 (readOnly가 false 인 경우).
-- 지정 된 범주가 다중 인스턴스로 표시 되어 있고 인스턴스 이름을 사용 하 여 성능 카운터를 만들어야 합니다.
+- 지정된 범주가 .NET Framework 사용자 지정 범주가 아닙니다(readOnly가 false인 경우).
+- 지정된 범주가 다중 인스턴스로 표시되어 있으며 인스턴스 이름을 사용하여 성능 카운터를 만들어야 합니다.
 - instanceName이 127 자 보다 깁니다.
 - 범주 및 counterName 다른 언어로 지역화 되었습니다.
 - System.componentmodel. System.componentmodel.win32exception: 시스템 API에 액세스 하는 동안 오류가 발생 했습니다.

@@ -10,17 +10,16 @@ ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39208f0ff2265e2ca9b89647e082224c01cbd731
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 49b2edf7234e53c3fc03542f803933463190e8c1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890343"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825271"
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 위해 Active Directory 스키마를 확장하고 Active Directory 도메인 서비스에 사이트를 게시하면 많은 클라이언트 설치 속성이 Active Directory 도메인 서비스에 게시됩니다. 컴퓨터에서 이러한 클라이언트 설치 속성을 찾을 수 있는 경우 Configuration Manager 클라이언트 배포 시 이러한 속성을 사용할 수 있습니다.  
 
@@ -31,10 +30,10 @@ Configuration Manager를 위해 Active Directory 스키마를 확장하고 Activ
 -   이 정보는 자동으로 생성되므로 수동으로 설치 속성을 입력하는 데 따른 사람의 실수 위험이 없습니다.  
 
 > [!NOTE]  
->  Configuration Manager용으로 Active Directory 스키마를 확장하는 방법과 사이트를 게시하는 방법에 대한 자세한 내용은 [System Center Configuration Manager용으로 스키마 확장](../../plan-design/network/schema-extensions.md)을 참조하세요.  
+>  Configuration Manager용으로 Active Directory 스키마를 확장하는 방법과 사이트를 게시하는 방법에 대한 자세한 내용은 [Configuration Manager용으로 스키마 확장](../../plan-design/network/schema-extensions.md)을 참조하세요.  
 
 ## <a name="client-installation-properties-published-to-active-directory-domain-services"></a>Active Directory Domain Services에 게시된 클라이언트 설치 속성  
-아래 목록에는 클라이언트 설치 속성이 나와 있습니다. 아래 나열된 각 항목에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+아래 목록에는 클라이언트 설치 속성이 나와 있습니다. 아래 나열된 각 항목에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
 - Configuration Manager 사이트 코드  
 

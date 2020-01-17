@@ -1,7 +1,7 @@
 ---
 title: 사이트 데이터베이스 계획
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 계층 구조를 계획할 때 사이트 데이터베이스 및 사이트 데이터베이스 서버 역할을 고려하세요.
+description: Configuration Manager 계층 구조를 계획할 때 사이트 데이터베이스 및 사이트 데이터베이스 서버 역할을 고려하세요.
 ms.date: 03/08/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,17 +10,16 @@ ms.assetid: 104fb4cc-6e83-40a3-8e6b-ac909fb9ec7d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c9134fa0bbabf5425ce17d21b143d71437aea36
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 66f742dab8e222c620ddc6079c9a63340f40cda5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62241619"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799831"
 ---
-# <a name="plan-for-the-site-database-for-system-center-configuration-manager"></a>System Center Configuration Manager용 사이트 데이터베이스에 대한 계획
+# <a name="plan-for-the-site-database-for-configuration-manager"></a>Configuration Manager용 사이트 데이터베이스에 대한 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 사이트 데이터베이스 서버는 지원되는 Microsoft SQL Server 버전이 실행되는 컴퓨터입니다. SQL Server는 Configuration Manager 사이트에 대한 정보를 저장하는 데 사용됩니다. Configuration Manager 계층 구조의 각 사이트에는 사이트 데이터베이스를 포함해 사이트 데이터베이스 서버 역할이 할당된 서버가 있습니다.  
 
@@ -42,10 +41,10 @@ SQL 복구 모드에 대한 자세한 내용은 [복구 모델(SQL Server)](http
 
 -   SQL Server의 클러스터된 인스턴스의 명명된 인스턴스  
 
--   SQL Server AlwaysOn 가용성 그룹(System Center Configuration Manager 버전 1602 이상)
+-   SQL Server AlwaysOn 가용성 그룹(Configuration Manager 버전 1602 이상)
 
 
-사이트 데이터베이스를 호스트하려면 SQL Server는 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)에 자세히 설명되어 있는 요구 사항을 충족해야 합니다.  
+사이트 데이터베이스를 호스트하려면 SQL Server는 [Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)에 자세히 설명되어있는 요구 사항을 충족해야 합니다.  
 
 
 

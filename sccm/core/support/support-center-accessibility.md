@@ -10,17 +10,16 @@ ms.assetid: 1b931c9d-ffae-4d8e-baa7-c330a152674f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9f8b65180c4255c5c279d75f012db766163fd6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 46482876d328a19da9328a4a32b78421328bafc5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500772"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792544"
 ---
 # <a name="accessibility-features-in-support-center"></a>지원 센터의 내게 필요한 옵션 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 지원 센터에는 모두가 손쉽게 사용할 수 있는 많은 유용한 내게 필요한 옵션 기능이 있습니다. 
 

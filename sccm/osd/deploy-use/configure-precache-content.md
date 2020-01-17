@@ -10,23 +10,22 @@ ms.assetid: 9d1e8252-99e3-48aa-bfa5-0cf4cd6637b2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1f62f3a0c22d57563a984dc453cf8c41ca1977e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 643431c69fb8ea99d88cf84dc5ad71c618434967
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661059"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825356"
 ---
 # <a name="configure-pre-cache-content-for-task-sequences"></a>작업 순서에 대해 사전 캐시 콘텐츠 구성
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1021244-->
 작업 순서의 사용 가능한 배포에 대해 사전 캐시 기능을 사용하면 사용자가 작업 순서를 설치하기 전에 클라이언트에서 관련 콘텐츠를 다운로드할 수 있습니다. 클라이언트는 [os를 업그레이드](/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) 하거나 [os 이미지를 설치](/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)하는 작업 순서에 대 한 콘텐츠를 미리 캐시할 수 있습니다.
 
 > [!Note]  
-> 버전 1910에서는이 기능이 기본적으로 사용 하도록 설정 Configuration Manager. 1906 이전 버전에서 Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/configmgr/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
+> 버전 1910에서는 Configuration Manager가 기본적으로 이 기능을 사용하도록 설정합니다. 1906 이전 버전에서 Configuration Manager는 기본적으로 이 선택적 기능을 활성화하지 않습니다. 이 기능은 사용하기 전에 활성화해야 합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/configmgr/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.<!--505213-->  
 
 예를 들어 모든 사용자를 위한 단일 내부 업그레이드 작업 순서만 원하거나 많은 아키텍처 및 언어를 포함할 수 있습니다. 이전 버전에서 사용자가 소프트웨어 센터에서 사용 가능한 작업 순서 배포를 설치할 때 콘텐츠가 다운로드를 시작합니다. 이 지연 때문에 설치를 시작할 준비가 되기 전에 추가 시간이 필요합니다. 또한 작업 순서에서 참조되는 모든 콘텐츠가 다운로드됩니다. 이 콘텐츠에는 모든 언어 및 아키텍처에 대한 OS 업그레이드 패키지가 포함됩니다. 각 업그레이드 패키지의 크기가 약 3GB이면 전체 콘텐츠는 더 큽니다.
 
@@ -50,7 +49,7 @@ Configuration Manager 버전 1902 및 이전 버전에서이 동작은 *OS 업�
 3. [작업 순서를 배포 하 고 미리 캐싱을 사용 하도록 설정](#bkmk_deploy)
 
 
-### <a name="bkmk_createpkg"></a>-1 패키지 만들기 및 구성
+### <a name="bkmk_createpkg"></a> 1. 패키지 만들기 및 구성
 
 클라이언트는 패키지의 특성을 평가 하 여 사전 캐싱을 수행 하는 동안 다운로드 하는 콘텐츠를 결정 합니다.  
 

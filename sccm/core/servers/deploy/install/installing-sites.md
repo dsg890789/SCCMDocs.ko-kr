@@ -1,7 +1,7 @@
 ---
 title: 사이트 설치 리소스
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 설치하거나 계층 구조에 사이트를 추가하는 데 도움이 되는 항목 목록을 검토합니다.
+description: Configuration Manager를 설치하거나 계층 구조에 사이트를 추가하는 데 도움이 되는 항목 목록을 검토합니다.
 ms.date: 01/3/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: d0e4ddc3-d9c4-4f5c-8b1f-af098e54f5c8
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54f79af62780cd29705a84ab4b42275a9226e469
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5f6176e19ded11a29892c7cfbc91449e4c86a1ce
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888862"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798194"
 ---
-# <a name="resources-for-installing-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치용 리소스
+# <a name="resources-for-installing-configuration-manager-sites"></a>Configuration Manager 사이트 설치를 위한 리소스
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-다음 항목은 System Center Configuration Manager를 설치하거나 기존 Configuration Manager 계층 구조에 사이트를 추가하는 데 도움이 될 수 있습니다.
+다음 항목은 Configuration Manager를 설치하거나 기존 Configuration Manager 계층 구조에 사이트를 추가하는 데 도움이 될 수 있습니다.
 
 - [사이트를 설치할 준비](prepare-to-install-sites.md)
 

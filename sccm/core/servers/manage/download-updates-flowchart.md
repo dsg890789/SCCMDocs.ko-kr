@@ -10,17 +10,16 @@ ms.assetid: 5d50a8d7-90d2-42da-b9fd-2edc190fa22e
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2e6e9c03253c505505b0258c5bf658dca034931
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 083d9b55a844c72c9a08e0858016ebdcf3ffd6fa
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65497518"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795280"
 ---
-# <a name="flowchart---download-updates-for-system-center-configuration-manager"></a>순서도 – System Center Configuration Manager용 업데이트 다운로드
+# <a name="flowchart---download-updates-for-configuration-manager"></a>순서도 - Configuration Manager에 대한 업데이트 다운로드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 데이터 흐름은 온라인 서비스 연결 지점이 있는 사이트가 콘솔 내 업데이트를 다운로드하는 프로세스를 표시합니다.  
 

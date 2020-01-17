@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: a4e8bb56-ee85-49fd-8b1c-c8f513cec671
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2c4053419fc45dce352d527a73a79b96416a5d02
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 95357792fb838ca054f3d7b7496aa3a993c59188
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662421"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821038"
 ---
 # <a name="use-the-task-sequence-editor"></a>작업 순서 편집기 사용
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 **작업 순서 편집기**를 사용 하 여 Configuration Manager 콘솔에서 작업 순서를 편집 합니다. 편집기를 사용 하 여 다음을 수행 합니다.  
 
@@ -112,7 +111,7 @@ ms.locfileid: "74662421"
 
 2. **작업 순서** 목록에서 편집할 작업 순서를 선택합니다.  
 
-3. 리본의 **홈** 탭에 있는 **작업 순서** 그룹에서 **편집**을 선택합니다. 다음 작업 중 하나를 수행 합니다.  
+3. 리본의 **홈** 탭에 있는 **작업 순서** 그룹에서 **편집**을 선택합니다. 그러고 나서 다음 작업을 수행합니다.  
 
     - **단계 추가**: **추가**를 선택 하 고 범주를 선택한 다음 추가할 단계를 선택 합니다. 예를 들어, [명령줄 실행](/sccm/osd/understand/task-sequence-steps#BKMK_RunCommandLine) 단계를 추가하려면 **추가**를 선택하고, **일반** 범주를 선택한 후 **명령줄 실행**을 선택합니다. 이 작업을 수행 하면 현재 선택한 단계 다음에 단계가 추가 됩니다.
 
@@ -189,7 +188,7 @@ ms.locfileid: "74662421"
 > [!Note]  
 > 작업 순서에서 단계 간에 조건을 복사하여 붙여넣을 수 있습니다. 다른 작업 순서 간에는 이 작업이 지원되지 않습니다.
 
-## <a name="bkmk_sedo"></a>편집용 잠금 회수
+## <a name="bkmk_sedo"></a> 편집을 위해 잠금 회수
 
 <!--3699337-->
 Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금상태가 끝날 때까지 어떤 변경 도 할 수 없습니다. 이 잠금은 Configuration Manager SEDO(erialized Editing of Distributed Objects) 시스템의 일부입니다. 자세한 내용은 [Configuration Manager SEDO](/sccm/develop/core/understand/sedo)를 참조하세요.
@@ -197,7 +196,7 @@ Configuration Manager 콘솔에서 응답을 중지하는 경우 30분간 잠금
 버전 1906부터 작업 순서에 대 한 잠금을 해제할 수 있습니다. 이 작업은 잠금에 대한 권한이 있는 사용자 계정 및 사이트에서 잠금을 허가한 동일한 디바이스에만 적용됩니다. 잠긴 작업 순서에 액세스하려고 하면 이제 **변경 내용을 취소**하고, 계속 개체를 편집할 수 있습니다. 이러한 변경 내용은 잠금이 만료된 경우에도 손실됩니다.
 
 > [!TIP]
-> 버전 1910부터 Configuration Manager 콘솔의 모든 개체에 대 한 잠금을 해제할 수 있습니다. 자세한 내용은 [Configuration Manager 콘솔 사용](/configmgr/core/servers/manage/admin-console#bkmk_sedo)을 참조하세요.<!--4786915-->
+> 버전 1910부터, Configuration Manager 콘솔에서 모든 개체에 대한 잠금을 해제할 수 있습니다. 자세한 내용은 [Configuration Manager 콘솔 사용](/configmgr/core/servers/manage/admin-console#bkmk_sedo)을 참조하세요.<!--4786915-->
 
 ## <a name="bkmk_search"></a>검색
 

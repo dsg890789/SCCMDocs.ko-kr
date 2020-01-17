@@ -1,7 +1,7 @@
 ---
-title: 1710에 대한 진단 데이터 | System Center Configuration Manager
+title: 1710에 대한 진단 데이터 | Configuration Manager
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1710에서 수집하는 진단 및 사용량 현황 데이터를 알아봅니다.
+description: Configuration Manager 버전 1710에서 수집하는 진단 및 사용량 현황 데이터에 대해 알아봅니다.
 ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28bd29867b56e9c4a0e0f335634cc17f5a5084f6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a72331783cd610146a775f196414188fb04c7daf
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536744"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801089"
 ---
-# <a name="levels-of-diagnostic-usage-data-collection-for-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710에 대한 진단 및 사용량 현황 데이터 수집 수준
+# <a name="levels-of-diagnostic-usage-data-collection-for-version-1710-of-configuration-manager"></a>Configuration Manager 버전 1710에 대한 진단 사용량 현황 데이터 수집의 수준
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1710에서는 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+Configuration Manager 버전 1710은 다음과 같은 세 가지 수준의 진단 및 사용량 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -43,7 +42,7 @@ System Center Configuration Manager 버전 1710에서는 다음과 같은 세 �
 ##  <a name="bkmk_level1"></a> 수준 1 - 기본
 기본 수준에는 계층 구조에 대한 데이터, 설치 환경이나 업그레이드 환경을 개선하는 데 필요한 데이터 및 계층 구조에 적용할 수 있는 Configuration Manager 업데이트를 확인할 수 있는 데이터가 포함됩니다.
 
-System Center Configuration Manager 버전 1710의 경우 이 수준에는 다음이 포함됩니다.
+Configuration Manager 버전 1710의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
 - 관리 콘솔:
    - 콘솔 연결에 대한 통계(운영 체제 버전, 언어, SKU 및 아키텍처, 시스템 메모리, 논리 프로세서 개수, 연결 사이트 ID, 설치된 .NET 버전 및 콘솔 언어 팩)
@@ -106,7 +105,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 이 수준에 포함된 정보는 Microsoft에서 향후 개선된 제품 및 서비스를 제공하기 위해 필요한 최소한의 데이터로 유용하게 사용할 수 있기 때문에 이 수준을 사용하는 것이 권장됩니다. 이 수준에서는 개체 이름(사이트, 사용자, 컴퓨터 또는 개체), 보안 관련 개체의 세부 정보 또는 소프트웨어 업데이트가 필요한 시스템 개수와 같은 취약성은 수집하지 않습니다.
 
-System Center Configuration Manager 버전 1710의 경우 이 수준에는 다음이 포함됩니다.
+Configuration Manager 버전 1710의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
 - **애플리케이션 관리:**  
 
@@ -455,7 +454,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 ##  <a name="bkmk_level3"></a> 수준 3 - 전체
 전체 수준은 기본 및 고급 수준의 모든 데이터를 포함합니다. 또한 Endpoint Protection, 업데이트 준수 비율 및 소프트웨어 업데이트 정보에 대한 추가 정보를 포함합니다.  또한 이 수준은 캡처 시점의 메모리 또는 로그 파일에 있던 개인 정보를 포함할 수도 있는 시스템 파일 및 메모리 스냅샷과 같은 고급 진단 정보를 포함할 수 있습니다.
 
-System Center Configuration Manager 버전 1710의 경우 이 수준에는 다음이 포함됩니다.
+Configuration Manager 버전 1710의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
 - 자동 배포 규칙 평가 일정 정보
 
@@ -467,7 +466,7 @@ System Center Configuration Manager 버전 1710의 경우 이 수준에는 다�
 
 - 규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보, 소프트웨어 업데이트가 만료된 그룹 개수
 
-- System Center Configuration Manager 사용을 위한 DCM 구성 팩
+- Configuration Manager 사용을 위한 DCM 구성 팩
 
 - 자세한 클라이언트 배포 설치 오류
 

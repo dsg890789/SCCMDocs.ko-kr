@@ -1,7 +1,7 @@
 ---
 title: 권장 하드웨어
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다.
+description: Configuration Manager 환경을 기본 배포 이상으로 확장하는 데 도움이 되는 하드웨어 권장 사항을 확인합니다.
 ms.date: 05/23/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 5267f0af-34d3-47a0-9ab8-986c41276e6c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: af69076b4a1f1e8d18cced225ff2373d8172051d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 321be3e111f82000602f2bf4325e481fa8417433
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536870"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802143"
 ---
-# <a name="recommended-hardware-for-system-center-configuration-manager"></a>System Center Configuration Manager에 권장되는 하드웨어
+# <a name="recommended-hardware-for-configuration-manager"></a>Configuration Manager에 권장되는 하드웨어
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-사이트, 사이트 시스템 및 클라이언트의 기본 배포 이상을 지원하도록 System Center Configuration Manager 환경을 확장하려는 경우 다음 권장 사항을 지침으로 참고할 수 있습니다. 권장 사항이 가능한 모든 사이트 및 계층 구조 구성을 포괄하는 것은 아닙니다.  
+사이트, 사이트 시스템 및 클라이언트의 기본 배포 이상을 지원하도록 Configuration Manager 환경을 확장하려는 경우 다음 권장 사항을 지침으로 참고할 수 있습니다. 권장 사항이 가능한 모든 사이트 및 계층 구조 구성을 포괄하는 것은 아닙니다.  
 
 다음 섹션의 정보는 기본 구성으로 사용 가능한 Configuration Manager 기능을 사용하는 클라이언트와 사이트의 처리 부하를 충족할 수 있는 하드웨어를 계획하기 위한 지침으로 사용하세요.  
 
@@ -54,7 +53,7 @@ ms.locfileid: "68536870"
 |자식 기본 사이트에 대한 원격 데이터베이스 서버|16|72|90|  
 |보조 사이트 서버|8|16|-|  
 
-<sup>1</sup> 사이트 서버와 SQL Server가 동일한 컴퓨터에 설치된 경우 배포에서 사이트와 클라이언트에 대해 최대 [크기 조정 및 규모 숫자 값](/sccm/core/plan-design/configs/size-and-scale-numbers)을 지원합니다. 그러나 이 구성에서는 SQL Server 클러스터 사용과 같은 [System Center Configuration Manager의 고가용성 옵션](/sccm/protect/understand/high-availability-options)이 제한될 수 있습니다. 또한 동일한 컴퓨터에서 실행할 경우 SQL Server와 Configuration Manager 사이트 서버를 둘 다 지원하기 위해 더 높은 I/O 요구 사항이 필요하기 때문에 대규모 배포를 사용하는 경우 원격 SQL Server 컴퓨터가 포함된 구성을 사용하는 것이 좋습니다.  
+<sup>1</sup> 사이트 서버와 SQL Server가 동일한 컴퓨터에 설치된 경우 배포에서 사이트와 클라이언트에 대해 최대 [크기 조정 및 규모 숫자 값](/sccm/core/plan-design/configs/size-and-scale-numbers)을 지원합니다. 그러나 이 구성에서는 SQL Server 클러스터 사용과 같은 [Configuration Manager의 고가용성 옵션](/sccm/protect/understand/high-availability-options)이 제한될 수 있습니다. 또한 동일한 컴퓨터에서 실행할 경우 SQL Server와 Configuration Manager 사이트 서버를 둘 다 지원하기 위해 더 높은 I/O 요구 사항이 필요하기 때문에 대규모 배포를 사용하는 경우 원격 SQL Server 컴퓨터가 포함된 구성을 사용하는 것이 좋습니다.  
 
 ###  <a name="bkmk_RemoteSiteSystem"></a> 원격 사이트 시스템 서버  
 다음 지침은 단일 사이트 시스템 역할을 포함하는 컴퓨터에 적용됩니다. 같은 컴퓨터에 여러 사이트 시스템 역할을 설치할 때는 해당 지침을 조정하세요.  

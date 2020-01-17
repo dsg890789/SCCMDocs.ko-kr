@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1707
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1707에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1707에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 08/14/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dbd7696821b9c333b556f67e42cdccd086dc2bf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d4bc0d6a620696dff58955366d43775abf89b7e0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62228865"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804812"
 ---
-# <a name="capabilities-in-technical-preview-1707-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1707의 기능
+# <a name="capabilities-in-technical-preview-1707-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1707의 기능
 
-*적용 대상: System Center Configuration Manager(기술 미리 보기)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1707에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1707에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.     
 
 
 <!--  Known Issues Template   

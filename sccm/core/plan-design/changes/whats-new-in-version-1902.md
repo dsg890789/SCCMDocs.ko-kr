@@ -10,17 +10,16 @@ ms.assetid: 4812324b-e6aa-4431-bf1d-9fcd763a8caa
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: af59b3ea1dfefcf0ae0e4919229b77b633819657
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8ddaf7be7d5e769f36b9b5a547bf683909b278f2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71401662"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802551"
 ---
 # <a name="whats-new-in-version-1902-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기, 버전 1902의 새 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 현재 분기, 버전 1902 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1802, 1806, 또는 1810 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:-->새 사이트를 설치할 때 기준 버전으로 사용할 수도 있습니다. 이 문서에는 Configuration Manager 버전 1902의 변경 내용과 새로운 기능이 요약되어 있습니다.  
 
@@ -352,7 +351,7 @@ Configuration Manager를 사용하여 알려진 Windows 폴더를 비즈니스�
 
 비즈니스용 OneDrive의 이 기능에 대한 자세한 내용은 [알려진 Windows 폴더를 OneDrive로 리디렉션 및 이동](https://docs.microsoft.com/onedrive/redirect-known-folders)을 참조하세요.
 
-먼저 [Office 365 테넌트 ID를 찾습니다](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id). 그런 다음 OneDrive 동기화 클라이언트 버전 18.111.0603.0004 이상을 배포합니다. 자세한 내용은 [System Center Configuration Manager를 사용하여 OneDrive 앱 배포](https://docs.microsoft.com/onedrive/deploy-on-windows)를 참조하세요.  
+먼저 [Office 365 테넌트 ID를 찾습니다](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id). 그런 다음 OneDrive 동기화 클라이언트 버전 18.111.0603.0004 이상을 배포합니다. 자세한 내용은 [Configuration Manager를 사용하여 OneDrive 앱 배포](https://docs.microsoft.com/onedrive/deploy-on-windows)를 참조하세요.  
 
 Business용 OneDrive 프로필을 만들고 배포하려면 Configuration Manager 콘솔에서 **자산 및 준수** 작업 영역으로 이동합니다. **준수 설정**을 확장하고 **비즈니스용 OneDrive 프로필** 노드를 선택합니다.  
 

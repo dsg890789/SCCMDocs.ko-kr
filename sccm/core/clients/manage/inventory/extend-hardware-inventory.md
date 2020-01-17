@@ -1,7 +1,7 @@
 ---
 title: 하드웨어 인벤토리 확장
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법에 대해 알아봅니다.
+description: Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법에 대해 알아봅니다.
 ms.date: 03/22/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,17 +10,16 @@ ms.assetid: d5bfab4f-c55e-4545-877c-5c8db8bc1891
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 719620b3903cd85dc387794f8fbbe6b2bffe0aef
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 380ba550a6edb0f639644280df74c500663e19f4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500043"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824336"
 ---
-# <a name="how-to-extend-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법
+# <a name="how-to-extend-hardware-inventory-in-configuration-manager"></a>Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 하드웨어 인벤토리가 WMI(Windows Management Instrumentation)를 사용하여 Windows PC에서 정보를 읽습니다. WMI는 WBEM(Web-Based Enterprise Management)을 Microsoft에서 구현한 것으로, 엔터프라이즈에서 관리 정보에 액세스하기 위한 산업 표준입니다. 이전 버전의 Configuration Manager에서는 사이트 서버에서 sms_def.mof 파일을 수정하여 하드웨어 인벤토리를 확장합니다. 이 파일에서 읽을 수 있는 WMI 클래스의 목록이 포함 하드웨어 인벤토리 합니다. 이 파일을 편집하면 기존 클래스를 사용하거나 사용하지 않도록 설정할 수 있으며 새 클래스를 인벤토리에 만들 수도 있습니다.  
 
@@ -46,7 +45,7 @@ Configuration.mof 파일은 클라이언트의 하드웨어 인벤토리에서 �
 |IDMIF 파일 만들기|IDMIF 파일을 사용하여 조직에서 Configuration Manager 클라이언트와 연결되지 않은 프로젝터, 복사기, 네트워크 프린터 등의 자산에 대한 정보를 수집합니다. 이 문서의 [IDMIF 파일을 만들려면](#BKMK_IDMIF)을 참조하세요.|  
 
 ## <a name="procedures-to-extend-hardware-inventory"></a>하드웨어 인벤토리를 확장하는 절차  
-이러한 절차를 통해 하드웨어 인벤토리에 대 한 기본 클라이언트 설정을 구성할 수 있으며 계층의 모든 클라이언트에 적용. 이러한 설정이 일부 클라이언트에만 적용되도록 하려면 사용자 지정 클라이언트 디바이스 설정을 만들어서 특정 클라이언트의 컬렉션에 할당합니다. [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
+이러한 절차를 통해 하드웨어 인벤토리에 대 한 기본 클라이언트 설정을 구성할 수 있으며 계층의 모든 클라이언트에 적용. 이러한 설정이 일부 클라이언트에만 적용되도록 하려면 사용자 지정 클라이언트 디바이스 설정을 만들어서 특정 클라이언트의 컬렉션에 할당합니다. [클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
 ###  <a name="BKMK_Enable"></a> 기존 인벤토리 클래스를 사용하거나 사용하지 않도록 설정하려면  
 
@@ -167,4 +166,4 @@ Configuration Manager 1802부터 하드웨어 인벤토리 속성의 경우 255�
  IDMIF 파일을 만든 후 클라이언트 컴퓨터의 _%Windir%_ **\CCM\Inventory\Idmifs** 폴더에 이 파일을 저장합니다. Configuration Manager에서 다음에 예약된 하드웨어 인벤토리 주기 중 이 파일에서 정보를 수집합니다. 추가 하거나 가져와 하 여 파일에 포함 된 정보에 대 한 새 클래스를 선언 해야 합니다.  
 
 > [!NOTE]
-> MIF 파일은 데이터를 대량으로 포함할 수 있으므로 이 데이터를 수집하면 사이트의 성능에 부정적인 영향을 줄 수 있습니다. 필요한 경우에만 MIF 컬렉션을 사용하도록 설정하고 하드웨어 인벤토리 설정에서 **최대 사용자 지정 MIF 파일 크기(KB)** 옵션을 구성합니다. 자세한 내용은 [System Center Configuration Manager의 하드웨어 인벤토리 소개](introduction-to-hardware-inventory.md)를 참조하세요.
+> MIF 파일은 데이터를 대량으로 포함할 수 있으므로 이 데이터를 수집하면 사이트의 성능에 부정적인 영향을 줄 수 있습니다. 필요한 경우에만 MIF 컬렉션을 사용하도록 설정하고 하드웨어 인벤토리 설정에서 **최대 사용자 지정 MIF 파일 크기(KB)** 옵션을 구성합니다. 자세한 내용은 [하드웨어 인벤토리 소개](introduction-to-hardware-inventory.md)를 참조하세요.

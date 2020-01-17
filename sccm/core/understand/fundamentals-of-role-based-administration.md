@@ -10,19 +10,18 @@ ms.assetid: 0a2d6c3f-a4e4-4c19-b087-3caada480de9
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68dfe7869a76fe15ca9e65372de7341733cf49
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2aabe3b4b563ca1f04eb87423a96515c16ada178
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536055"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825866"
 ---
-# <a name="fundamentals-of-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager의 역할 기반 관리 기본 사항
+# <a name="fundamentals-of-role-based-administration-for-configuration-manager"></a>Configuration Manager의 역할 기반 관리 기본 사항
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 역할 기반 관리를 사용하여 Configuration Manager를 관리하는 데 필요한 액세스를 보호합니다. 또한 컬렉션, 배포, 사이트 등 관리하는 개체에 대한 액세스를 보호합니다. 이 문서에서 소개하는 개념을 이해하면 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 수행할 수 있습니다.  
+Configuration Manager에서 역할 기반 관리를 사용하여 Configuration Manager를 관리하는 데 필요한 액세스를 보호합니다. 또한 컬렉션, 배포, 사이트 등 관리하는 개체에 대한 액세스를 보호합니다. 이 문서에서 소개하는 개념을 이해하면 [Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 수행할 수 있습니다.  
 
  역할 기반 관리 모델에서는 다음 항목을 사용하여 모든 사이트 및 사이트 설정에 대한 계층 구조 전체의 보안 액세스 설정을 중앙에서 정의하고 관리합니다.  
 
@@ -54,7 +53,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
  관리 범위는 관리자가 Configuration Manager 콘솔에서 볼 수 있는 개체를 제어하고 해당 개체에 대한 사용자의 권한을 제어합니다. 역할 기반 관리 구성은 계층의 각 사이트에 글로벌 데이터로 복제된 다음 모든 관리 연결에 적용됩니다.  
 
 > [!IMPORTANT]  
-> 사이트 간 복제 지연으로 인해 사이트에서 역할 기반 관리의 변경 내용을 수신하지 못할 수 있습니다. 사이트 간 데이터베이스 복제를 모니터링하는 방법에 대한 내용은 [System Center Configuration Manager에서 사이트 간 데이터 전송](../../core/servers/manage/data-transfers-between-sites.md) 항목을 참조하세요.  
+> 사이트 간 복제 지연으로 인해 사이트에서 역할 기반 관리의 변경 내용을 수신하지 못할 수 있습니다. 사이트 간 데이터베이스 복제를 모니터링하는 방법에 대한 자세한 내용은 [사이트 간 데이터 전송](../../core/servers/manage/data-transfers-between-sites.md) 항목을 참조하세요.  
 
 ##  <a name="bkmk_Planroles"></a> 보안 역할
 
@@ -87,13 +86,13 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 
 4. 식별한 작업이 기본 제공 보안 역할에 매핑되지 않으면 새 보안 역할을 만들어 테스트합니다.  
 
-역할 기반 관리용 보안 역할을 만들고 구성하는 자세한 방법은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 문서의 [사용자 지정 보안 역할 만들기](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_CreateSecRole) 및 [보안 역할 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecRole)을 참조하세요.  
+역할 기반 관리용 보안 역할을 만들고 구성하는 자세한 방법은 [Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 문서의 [사용자 지정 보안 역할 만들기](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_CreateSecRole) 및 [보안 역할 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecRole)을 참조하세요.  
 
 ##  <a name="bkmk_planCol"></a> 컬렉션
 
  컬렉션은 관리자가 보거나 관리할 수 있는 사용자 및 컴퓨터 리소스를 지정합니다. 예를 들어 애플리케이션을 배포하거나 원격 제어를 실행하는 관리자의 경우 이러한 리소스를 포함하는 컬렉션에 대한 액세스 권한을 부여하는 보안 역할을 할당받아야 합니다. 사용자 또는 디바이스의 컬렉션을 선택할 수 있습니다.  
 
- 컬렉션에 대한 자세한 내용은 [System Center Configuration Manager의 컬렉션 소개](../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.  
+ 컬렉션에 대한 자세한 내용은 [컬렉션 소개](../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요.  
 
  역할 기반 관리를 구성하기 전에 다음과 같은 이유로 새로운 컬렉션을 만들어야 하는지 확인합니다.  
 
@@ -102,7 +101,7 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 - 보안 요구 사항 및 비즈니스 프로세스: 예를 들어 프로덕션 컴퓨터와 테스트 컴퓨터의 컬렉션이 구분되어 있습니다.  
 - 조직 구조별 구분: 예를 들어 각 사업부별로 컬렉션을 구분할 수 있습니다.  
 
-역할 기반 관리용 컬렉션을 구성하는 자세한 방법은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 문서의 [보안을 관리하도록 컬렉션 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigColl)을 참조하세요.  
+역할 기반 관리용 컬렉션을 구성하는 자세한 방법은 [Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 문서의 [보안을 관리하도록 컬렉션 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigColl)을 참조하세요.  
 
 ## <a name="bkmk_PlanScope"></a> 보안 범위
 
@@ -161,14 +160,14 @@ Configuration Manager에 대해 관리 보안을 디자인하고 구현할 때�
 - 상태 메시지  
 - 사용자 디바이스 선호도  
 
-별도의 개체 인스턴스에 대한 액세스를 제한해야 하는 경우 보안 범위를 만듭니다. 예:  
+별도의 개체 인스턴스에 대한 액세스를 제한해야 하는 경우 보안 범위를 만듭니다. 예를 들면 다음과 같습니다.  
 
 - 테스트 애플리케이션은 제외하고 프로덕션 애플리케이션만 볼 수 있는 관리자 그룹이 있는 경우 프로덕션 애플리케이션에 대해 보안 범위를 만들고, 테스트 애플리케이션에 대해 다른 보안 범위를 만듭니다.  
 
 - 관리자별로 개체 유형의 일부 인스턴스에 대해 서로 다른 액세스 권한이 필요할 수 있습니다. 예를 들어 한 관리자 그룹에는 특정 소프트웨어 업데이트 그룹에 대해 읽기 권한이 필요하고, 다른 관리자 그룹에는 다른 소프트웨어 업데이트 그룹에 대해 수정 및 삭제 권한이 필요한 경우 해당 소프트웨어 업데이트 그룹에 대해 여러 보안 범위를 만듭니다.  
 
-역할 기반 관리용 보안 범위를 구성하는 자세한 방법은 [System Center Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecScope) 문서의 [개체에 대한 보안 범위 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.  
+역할 기반 관리용 보안 범위를 구성하는 자세한 방법은 [Configuration Manager용 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md) 문서의 [개체에 대한 보안 범위 구성](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecScope)을 참조하세요.  
 
 ## <a name="next-steps"></a>다음 단계
 
-[System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)
+[Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)

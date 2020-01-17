@@ -10,17 +10,16 @@ ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab44233756a237513298391a59951919ac4412d5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 06eb21125408f15aa8ecf738f87e7442cfc32019
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380117"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826138"
 ---
-# <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager의 서비스 연결 도구 사용
+# <a name="use-the-service-connection-tool-for-configuration-manager"></a>Configuration Manager의 서비스 연결 도구 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 서비스 연결 지점이 오프라인 모드일 때 또는 Configuration Manager 사이트 시스템 서버가 인터넷에 연결되어 있지 않을 때 **서비스 연결 도구**를 사용합니다. 이 도구를 통해 Configuration Manager에 대한 최신 업데이트를 사용하여 사이트를 최신 상태로 유지할 수 있습니다.  
 
@@ -72,7 +71,7 @@ ms.locfileid: "70380117"
 
   기본적으로 이 도구는 Configuration Manager 설치 미디어의 **%path%\smssetup\tools\ServiceConnectionTool** 폴더에 있습니다. 서비스 연결 도구가 작동하려면 이 폴더의 모든 파일이 동일한 폴더에 있어야 합니다.  
 
-다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사합니다. .cab 파일의 데이터는 사이트가 수집하도록 구성된 진단 사용량 현황 데이터의 수준을 기반으로 합니다. [System Center Configuration Manager의 진단 및 사용량 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  다음 명령을 실행하여 .cab 파일을 만듭니다.  
+다음 명령을 실행하면 이 도구에서 사용 정보를 포함하는 .cab 파일을 준비하고 지정된 위치로 복사합니다. .cab 파일의 데이터는 사이트가 수집하도록 구성된 진단 사용량 현황 데이터의 수준을 기반으로 합니다. [Configuration Manager의 진단 및 사용량 현황 데이터](../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  다음 명령을 실행하여 .cab 파일을 만듭니다.  
 
 - **serviceconnectiontool.exe -prepare -usagedatadest D:\USB\UsageData.cab**  
 
@@ -166,7 +165,7 @@ ms.locfileid: "70380117"
 
 9. Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 업데이트를 설치할 수 있습니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
 
-   업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
+   업데이트를 설치하는 방법에 대한 자세한 내용은 [Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
 
 ## <a name="bkmk_cmd"></a> 로그 파일
 

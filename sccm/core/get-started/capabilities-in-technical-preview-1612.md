@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1612의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1612에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1612에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,21 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b425103d4d7455a6453f6415f911e01defdc0d6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 67ced156211acad8ce27b3f043cbab7aa0adc2f6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68340118"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805050"
 ---
-# <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1612의 기능
+# <a name="capabilities-in-technical-preview-1612-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1612의 기능
 
-*적용 대상: System Center Configuration Manager(기술 미리 보기)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1612에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1612에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.    
 
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
@@ -234,7 +233,7 @@ User Voice 피드백에 따라 콘솔 내 검색에 대한 다음과 같은 향�
 ## <a name="windows-store-for-business-support-in-configuration-manager"></a>Configuration Manager의 비즈니스용 Windows 스토어 지원
 
 이제 배포 목적이 **사용 가능**인 온라인에서 사용이 허가된 앱을 비즈니스용 Windows 스토어에서 Configuration Manager 클라이언트를 실행하는 PC로 배포할 수 있습니다.
-자세한 내용은 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조하세요.
+자세한 내용은 [Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조하세요.
 
 이 기능에 대한 지원은 현재 Windows 10 RS2 미리 보기 빌드를 실행하는 PC에만 제공됩니다.
 

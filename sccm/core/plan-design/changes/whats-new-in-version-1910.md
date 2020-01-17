@@ -1,8 +1,8 @@
 ---
 title: 버전 1910의 새로운 기능
 titleSuffix: Configuration Manager
-description: Configuration Manager 현재 분기의 버전 1906에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 12/04/2019
+description: Configuration Manager 현재 분기의 버전 1910에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
+ms.date: 12/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,25 +10,24 @@ ms.assetid: 3e1ddb65-1193-46ce-a7c0-a48dfd9fd833
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 545b68cd1628bb9652f1e87da96e5fb6e18787f1
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 43bedd7418079c3badb24869b4bde71e781112cc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198492"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802398"
 ---
 # <a name="whats-new-in-version-1910-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1910의 새로운 기능
 
 *적용 대상: Configuration Manager(현재 분기)*
 
-Configuration Manager 현재 분기의 1910 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 버전 1806 이상을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:When installing a new site, it's also available as a baseline version.--> 이 문서에는 Configuration Manager 버전 1910의 변경 내용과 새로운 기능이 요약되어 있습니다.  
+Configuration Manager 현재 분기의 1910 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 버전 1806 이상을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:When installing a new site, it's also available as a baseline version.--> 이 문서에는 Configuration Manager 버전 1910의 변경 내용과 새로운 기능이 요약되어 있습니다.
 
 이 업데이트를 설치하기 위한 최신 검사 목록을 항상 검토하세요. 자세한 내용은 [업데이트 1910을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1910)을 참조하세요. 사이트를 업데이트한 후 [업데이트 후 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1910#post-update-checklist)도 검토하세요.
 
 새 Configuration Manager 기능을 모두 활용하려면 사용자를 업데이트한 후 클라이언트를 최신 버전으로 업데이트합니다. 사이트 및 콘솔을 업데이트할 때 Configuration Manager 콘솔에 새 기능이 표시되지만 클라이언트 버전도 최신 버전이 될 때까지 전체 시나리오가 작동하지 않습니다.
 
-> [!Tip]  
+> [!TIP]
 > 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22what%27s+new+in+version+1910+-+Configuration+Manager%22&locale=en-us`
 
 ## <a name="bkmk_mem"></a> Microsoft Endpoint Configuration Manager
@@ -41,7 +40,7 @@ Configuration Manager는 이제 Microsoft Endpoint Manager의 일부입니다.
 
 Microsoft Endpoint Manager는 모든 디바이스를 관리하기 위한 통합 솔루션입니다. Microsoft는 간소화된 라이선싱을 통해 Configuration Manager와 Intune을 함께 제공합니다. 원하는 대로 Microsoft 클라우드의 강력한 기능을 활용하면서 기존 Configuration Manager 투자를 계속 활용하세요.
 
-다음 Microsoft 관리 솔루션은 이제 모두 **Microsoft Endpoint Manager** 브랜드의 일부입니다.
+다음 Microsoft 관리 솔루션은 이제 모두 Microsoft Endpoint Manager 브랜드의 일부입니다.
 
 - [Configuration Manager](https://docs.microsoft.com/configmgr)
 - [Intune](https://docs.microsoft.com/intune)
@@ -68,7 +67,7 @@ Microsoft Endpoint Manager는 모든 디바이스를 관리하기 위한 통합 
 내부 문서를 이 새 위치로 업데이트하시기 바랍니다.
 
 > [!TIP]
-> Windows 10에서는 시작 메뉴를 열고 이름을 입력하면 아이콘을 찾을 수 있습니다. 예를 들어, Configuration Manager 콘솔을 찾으려면 `config`를 입력하고 소프트웨어 센터를 찾으려면 `software`를 입력합니다.
+> Windows 10에서는 시작 메뉴를 열 때 이름을 입력하여 아이콘을 찾습니다. 예를 들어 `Configuration Manager` 또는 `Software Center`을 입력합니다.
 
 ## <a name="bkmk_infra"></a> 사이트 인프라
 
@@ -97,7 +96,9 @@ Desktop Analytics 클라우드 서비스의 월별 변경 사항에 대한 자�
 
 ### <a name="optimizations-to-the-cmpivot-engine"></a>CMPivot 엔진에 대한 최적화
 <!--3197353-->
-ConfigMgr 클라이언트에 더 많은 처리를 푸시할 수 있는 몇 가지 중요한 최적화를 CMPivot 엔진에 추가했습니다. 최적화는 CMPivot 쿼리를 실행하는 데 필요한 네트워크 및 서버 CPU 로드를 크게 줄입니다. 이러한 최적화를 통해 이제 클라이언트 데이터(기가바이트)를 실시간으로 자세히 살펴볼 수 있습니다. 자세한 내용은 [CMPivot 엔진에 대한 최적화](/sccm/core/servers/manage/cmpivot#bkmk_optimization)를 참조하세요.
+CMPivot 엔진에 몇 가지 중요한 최적화를 추가했습니다. 이제 ConfigMgr 클라이언트에 더 많은 처리를 푸시할 수 있습니다. 최적화는 CMPivot 쿼리를 실행하는 데 필요한 네트워크 및 서버 CPU 로드를 크게 줄입니다. 이러한 최적화를 통해 이제 클라이언트 데이터(기가바이트)를 실시간으로 자세히 살펴볼 수 있습니다. 
+
+자세한 내용은 [CMPivot 엔진에 대한 최적화](/sccm/core/servers/manage/cmpivot#bkmk_optimization)를 참조하세요.
 
 ### <a name="additional-cmpivot-entities-and-enhancements"></a>추가 CMPivot 엔터티 및 향상된 기능
 <!--5410930-->
@@ -105,7 +106,7 @@ ConfigMgr 클라이언트에 더 많은 처리를 푸시할 수 있는 몇 가�
 
 - Windows 이벤트 로그([WinEvent](/sccm/core/servers/manage/cmpivot#bkmk_WinEvent))
 - 파일 콘텐츠([FileContent](/sccm/core/servers/manage/cmpivot#bkmk_File))
-- 프로세스에 의해 로드된 dll([ProcessModule](/sccm/core/servers/manage/cmpivot#bkmk_ProcessModule))
+- 프로세스에 의해 로드된 DLL([ProcessModule](/sccm/core/servers/manage/cmpivot#bkmk_ProcessModule))
 - Azure Active Directory 정보([AADStatus](/sccm/core/servers/manage/cmpivot#bkmk_AadStatus))
 - Endpoint Protection 상태([EPStatus](/sccm/core/servers/manage/cmpivot#bkmk_EPStatus))
 
@@ -122,7 +123,7 @@ Configuration Manager 배포 지점에서 Microsoft Connected Cache를 사용하
 자세한 내용은 [Configuration Manager의 Microsoft Connected Cache](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)를 참조하세요.
 
 > [!NOTE]
-> Configuration Manager 현재 분기 지점 1906에는 Windows Server에 설치된 애플리케이션으로 아직 개발 단계에 있는 DOINC([전송 최적화 네트워크 내 캐시](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache))가 포함되어 있습니다. 현재 분기 버전 1910부터, 이 기능을 **Microsoft Connected Cache**라고 합니다.
+> Configuration Manager 현재 분기 지점 1906에는 Windows Server에 설치된 애플리케이션으로 아직 개발 단계에 있는 DOINC([전송 최적화 네트워크 내 캐시](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache))가 포함되어 있습니다. 현재 분기 버전 1910부터, 이 기능을 Microsoft Connected Cache라고 합니다.
 >
 > Configuration Manager 배포 지점에 Connected Cache를 설치하면 제공 최적화 서비스 트래픽이 로컬 원본으로 오프로드됩니다. Connected Cache는 바이트 범위 수준에서 콘텐츠를 효율적으로 캐싱하여 이 동작을 수행합니다.
 
@@ -133,7 +134,7 @@ Configuration Manager 배포 지점에서 Microsoft Connected Cache를 사용하
 
 이제 사용자 지정 구성 기준의 평가를 준수 정책 평가 규칙으로 추가할 수 있습니다. 구성 기준을 만들거나 편집하는 경우 **준수 정책 평가의 일부로 이 기준을 평가**할 수 있는 옵션을 사용할 수 있습니다. 준수 정책 규칙을 추가하거나 편집하는 경우 **준수 정책 평가에 구성된 기준 포함**이라는 조건을 사용할 수 있습니다.
 
-공동 관리 디바이스의 경우 그리고 Configuration Manager 준수 평가 결과를 전체 규정 준수 상태의 일부로 취하도록 Intune을 구성하는 경우 이 정보가 Azure Active Directory로 전송됩니다. 이 정보를 Office 365 리소스에 대한 조건부 액세스에 사용할 수 있습니다.  
+공동 관리 디바이스의 경우 그리고 Configuration Manager 준수 평가 결과를 전체 규정 준수 상태의 일부로 취하도록 Intune을 구성하는 경우 이 정보가 Azure Active Directory로 전송됩니다. 이 정보를 Office 365 리소스에 대한 조건부 액세스에 사용할 수 있습니다.
 
 자세한 내용은 [준수 정책 평가의 일환으로 사용자 지정 구성 기준 포함](/sccm/compliance/deploy-use/create-configuration-baselines#bkmk_CAbaselines)을 참조하세요.
 
@@ -141,9 +142,9 @@ Configuration Manager 배포 지점에서 Microsoft Connected Cache를 사용하
 
 <!--4737447-->
 
-Configuration Manager 현재 분기 버전 1906에 [Windows Virtual Desktop](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#windows-virtual-desktop)의 지원이 도입되었습니다. 이 Microsoft Azure 환경은 여러 OS 버전을 지원하며, 그중에는 다중 동시 활성 사용자 세션을 허용하는 것도 있습니다. 그 예로 Windows 10 Enterprise 다중 세션을 들 수 있습니다.
+Configuration Manager 현재 분기 버전 1906에 [Windows Virtual Desktop](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#windows-virtual-desktop)의 지원이 도입되었습니다. 이 Microsoft Azure 환경은 여러 OS 버전을 지원하며, 그중에는 다중 동시 활성 사용자 세션을 허용하는 것도 있습니다. 예를 들어 Windows 10 Enterprise 다중 세션은 이러한 OS 버전 중 하나입니다.
 
-다중 세션 디바이스에서 사용자 정책이 필요하고 잠재적인 성능 영향이 허용되는 경우 이제 사용자 정책을 사용하도록 클라이언트 설정을 구성할 수 있습니다. **클라이언트 정책** 그룹에서 다음 설정을 구성합니다. **다중 사용자 세션에 대한 사용자 정책 사용**.
+다중 세션 디바이스에서 사용자 정책이 필요하고 잠재적인 성능 영향이 허용되는 경우 이제 사용자 정책을 사용하도록 클라이언트 설정을 구성할 수 있습니다. **클라이언트 정책** 그룹에서 **다중 사용자 세션에 대한 사용자 정책 사용** 설정을 구성합니다.
 
 자세한 내용은 [클라이언트 설정을 구성하는 방법](/configmgr/core/clients/deploy/configure-client-settings)을 참조하세요.
 
@@ -166,7 +167,6 @@ Configuration Manager 현재 분기 버전 1906에 [Windows Virtual Desktop](/sc
 현재 분기 버전 1906부터 디바이스 컬렉션을 단일 배포로 보낼 수 있는 애플리케이션 그룹을 만들 수 있습니다. 이 릴리스에서는 다음 기능이 개선되었습니다.
 
 - 사용자는 소프트웨어 센터에서 앱 그룹을 **제거**할 수 있습니다.
-
 - **사용자 컬렉션**에 앱 그룹을 배포할 수 있습니다.
 
 자세한 내용은 [애플리케이션 그룹 만들기](/configmgr/apps/deploy-use/create-app-groups)를 참조하세요.
@@ -176,13 +176,14 @@ Configuration Manager 현재 분기 버전 1906에 [Windows Virtual Desktop](/sc
 
 ### <a name="improvements-to-the-task-sequence-editor"></a>작업 순서 편집기의 향상된 기능:
 
-- **작업 순서 편집기 검색**<!--4621085-->: 그룹과 단계가 많은 대규모 작업 순서가 있는 경우 특정 단계를 찾기가 어려울 수 있습니다. 이제 작업 순서 편집기에서 검색할 수 있습니다. 이 작업을 통해 작업 순서에서 단계를 더 빨리 찾을 수 있습니다.
+ 작업 순서 편집기에는 다음과 같은 향상된 기능이 포함되어 있습니다.
 
-- **복사 및 붙여넣기 작업 순서 조건**<!--4621098-->: 한 작업 순서 단계의 조건을 다른 작업 순서 단계에서 다시 사용하려는 경우 이제 작업 순서 편집기에서 조건을 복사하여 붙여넣을 수 있습니다.
+- **작업 순서 편집기 검색:**<!--4621085--> 그룹과 단계가 많은 대규모 작업 순서가 있는 경우 특정 단계를 찾기가 어려울 수 있습니다. 이제 작업 순서 편집기에서 검색할 수 있습니다. 이 작업을 통해 작업 순서에서 단계를 더 빨리 찾을 수 있습니다.
+- **복사 및 붙여넣기 작업 순서 조건:**<!--4621098--> 한 작업 순서 단계의 조건을 다른 작업 순서 단계에서 다시 사용하려는 경우 이제 작업 순서 편집기에서 조건을 복사하여 붙여넣을 수 있습니다.
 
 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)에 관한 새로운 문서를 참조하세요.
 
-### <a name="task-sequence-performance-improvements---power-plans"></a>작업 순서 성능 향상 - 전원 계획
+### <a name="task-sequence-performance-improvements-power-plans"></a>작업 순서 성능 향상: 전원 계획
 
 <!--3555926-->
 
@@ -196,7 +197,7 @@ Configuration Manager 현재 분기 버전 1906에 [Windows Virtual Desktop](/sc
 
 작업 순서를 사용하여 CMG(클라우드 관리 게이트웨이)를 통해 Windows 10 현재 위치 업그레이드를 배포할 수 있습니다. 그러나 작업 순서를 시작하기 전에 모든 콘텐츠를 로컬에 다운로드하도록 배포해야 합니다.
 
-이 릴리스부터는 작업 순서 엔진이 콘텐츠 사용 CMG 또는 클라우드 배포 지점에서 패키지를 주문형으로 다운로드할 수 있습니다. 이러한 변경을 통해 인터넷 기반 장치에 대한 Windows 10 현재 위치 업그레이드 배포의 유연성을 강화할 수 있습니다.
+이 릴리스부터는 작업 순서 엔진이 콘텐츠 사용 CMG 또는 클라우드 배포 지점에서 패키지를 주문형으로 다운로드할 수 있습니다. 이러한 변경을 통해 인터넷 기반 디바이스에 대한 Windows 10 현재 위치 업그레이드 배포의 유연성을 강화할 수 있습니다.
 
 자세한 내용은 [CMG를 통한 Windows 10 현재 위치 업그레이드 배포](/configmgr/osd/deploy-use/deploy-a-task-sequence#deploy-windows-10-in-place-upgrade-via-cmg)를 참조하세요.
 
@@ -216,7 +217,7 @@ Configuration Manager 현재 분기 버전 1906에 [Windows Virtual Desktop](/sc
 
 <!--4931110-->
 
-OS 업그레이드 패키지를 가져올 때 **선택한 업그레이드 패키지의 install.wim 파일에서 특정 이미지 인덱스를 추출**할 수 있습니다. 이 동작은 OS 업그레이드 패키지의 기존 install.wim을 덮어쓴다는 점을 제외하고 [OS 이미지](/configmgr/osd/get-started/manage-operating-system-images#BKMK_AddOSImages)와 비슷합니다. 이미지 인덱스를 임시 위치로 추출한 다음, 원래 원본 디렉터리로 이동합니다.
+OS 업그레이드 패키지를 가져올 때 **선택한 업그레이드 패키지의 install.wim 파일에서 특정 이미지 인덱스 추출**을 사용할 수 있습니다. 이 동작은 OS 업그레이드 패키지의 기존 install.wim을 덮어쓴다는 점을 제외하고 [OS 이미지](/configmgr/osd/get-started/manage-operating-system-images#BKMK_AddOSImages)와 비슷합니다. 이미지 인덱스를 임시 위치로 추출한 다음, 원래 원본 디렉터리로 이동합니다.
 
 자세한 내용은 [OS 업그레이드 패키지 관리](/configmgr/osd/get-started/manage-operating-system-upgrade-packages#BKMK_AddOSUpgradePkgs)를 참조하세요.
 
@@ -224,7 +225,7 @@ OS 업그레이드 패키지를 가져올 때 **선택한 업그레이드 패키
 
 <!--user story 4977616/bug 4798352-->
 
-이제 **명령줄 실행** 단계에 **작업 순서 변수에 출력**하는 옵션이 포함됩니다. 이 옵션을 사용하도록 설정하면 작업 순서가 명령의 출력을 사용자가 지정하는 사용자 지정 작업 순서 변수에 저장합니다.
+이제 **명령줄 실행** 단계에 **작업 순서 변수에 출력** 옵션이 포함됩니다. 이 옵션을 사용하도록 설정하면 작업 순서가 명령의 출력을 사용자가 지정하는 사용자 지정 작업 순서 변수에 저장합니다.
 
 자세한 내용은 [명령줄 실행](/configmgr/osd/understand/task-sequence-steps#BKMK_RunCommandLine)을 참조하세요.
 
@@ -233,7 +234,6 @@ OS 업그레이드 패키지를 가져올 때 **선택한 업그레이드 패키
 이 릴리스에 포함된 작업 순서 디버거의 향상된 기능은 다음과 같습니다.
 
 - 새 작업 순서 변수 **TSDebugOnError**를 사용하여, 작업 순서에서 오류를 반환할 때 자동으로 디버거를 시작합니다.<!-- 5012536 -->
-
 - 디버거에서 중단점을 만든 다음 작업 순서에서 컴퓨터를 다시 시작하는 경우, 디버거는 다시 시작한 후에도 중단점을 유지합니다.<!-- 5012509 -->
 
 자세한 내용은 [작업 순서 디버거](/configmgr/osd/deploy-use/debug-task-sequence) 및 [작업 순서 변수 - TSDebugOnError](/configmgr/osd/understand/task-sequence-variables#TSDebugOnError)를 참조하세요.
@@ -268,7 +268,7 @@ Windows 설치가 완료되고 난 후 고성능 디바이스에서 발생하는
 
 ### <a name="additional-options-for-third-party-update-catalogs"></a>타사 업데이트 카탈로그에 대한 추가 옵션
 <!--4469002-->
-이제 타사 업데이트 카탈로그 동기화를 더욱 세부적으로 제어할 수 있습니다. Configuration Manager 버전 1910부터, 각 카탈로그의 동기화 일정을 개별적으로 구성할 수 있습니다. 범주화된 업데이트를 포함하는 카탈로그를 사용하는 경우 전체 카탈로그가 동기화되지 않도록 동기화에 특정 업데이트 범주만 포함되도록 구성할 수 있습니다. 범주화된 업데이트를 사용하여 범주를 배포할 때는 범주가 자동으로 다운로드되고 WSUS로 게시되도록 구성할 수 있습니다.
+이제 타사 업데이트 카탈로그 동기화를 더욱 세부적으로 제어할 수 있습니다. Configuration Manager 버전 1910부터, 각 카탈로그의 동기화 일정을 개별적으로 구성할 수 있습니다. 범주화된 업데이트를 포함하는 카탈로그를 사용하는 경우 전체 카탈로그가 동기화되지 않도록 동기화에 특정 업데이트 범주만 포함되도록 구성할 수 있습니다. 범주화된 업데이트를 사용하여 범주를 배포할 때는 범주가 자동으로 다운로드되고 WSUS(Windows Server Update Services)로 게시되도록 구성할 수 있습니다.
 
 자세한 내용은 [타사 업데이트 사용](/sccm/sum/deploy-use/third-party-software-updates#bkmk_1910)을 참조하세요.
 
@@ -283,7 +283,7 @@ Windows 설치가 완료되고 난 후 고성능 디바이스에서 발생하는
 
 ### <a name="additional-software-update-filter-for-adrs"></a>ADR용 추가 소프트웨어 업데이트 필터
 <!--4852033-->
-이제 자동 배포 규칙을 위한 업데이트 필터로 **Deployed**를 사용할 수 있습니다. 이 필터는 파일럿 또는 테스트 컬렉션에 배포해야 할 수 있는 새 업데이트를 식별하는 데 도움이 됩니다.
+이제 ADR(자동 배포 규칙)을 위한 업데이트 필터로 **Deployed**를 사용할 수 있습니다. 이 필터는 파일럿 또는 테스트 컬렉션에 배포해야 할 수 있는 새 업데이트를 식별하는 데 도움이 됩니다.
 
 자세한 내용은 [소프트웨어 업데이트 자동 배포](/sccm/sum/deploy-use/automatically-deploy-software-updates#bkmk_adr-process)를 참조하세요.
 
@@ -293,7 +293,9 @@ Windows 설치가 완료되고 난 후 고성능 디바이스에서 발생하는
 ### <a name="office-365-proplus-pilot-and-health-dashboard"></a>Office 365 ProPlus 파일럿 및 상태 대시보드
 <!--4488272, 4488301-->
 
-**Office 365 ProPlus 파일럿 및 상태 대시보드**를 사용하여 Office 365 ProPlus를 계획, 파일럿 및 배포할 수 있습니다. 대시보드는 Office 365 ProPlus를 사용하는 디바이스의 상태 인사이트를 제공하여 배포 계획에 영향을 줄 수 있는 문제를 식별하는 데 도움을 줍니다. **Office 365 ProPlus 파일럿 및 상태 대시보드**는 추가 기능 인벤토리를 기반으로한 파일럿 디바이스의 권장 사항을 제공합니다. 자세한 내용은 [Office 365 ProPlus 파일럿 및 상태 대시보드](/sccm/sum/deploy-use/office-365-dashboard#bkmk_pilot)를 참조하세요.
+Office 365 ProPlus 파일럿 및 상태 대시보드를 사용하여 Office 365 ProPlus를 계획, 파일럿 및 배포할 수 있습니다. 대시보드는 Office 365 ProPlus를 사용하는 디바이스의 상태 인사이트를 제공하여 배포 계획에 영향을 줄 수 있는 문제를 식별하는 데 도움을 줍니다. Office 365 ProPlus 파일럿 및 상태 대시보드는 추가 기능 인벤토리를 기반으로 한 파일럿 디바이스의 권장 사항을 제공합니다.
+
+자세한 내용은 [Office 365 ProPlus 파일럿 및 상태 대시보드](/sccm/sum/deploy-use/office-365-dashboard#bkmk_pilot)를 참조하세요.
 
 ## <a name="bkmk_protect"></a> 보호
 
@@ -303,11 +305,11 @@ Windows 설치가 완료되고 난 후 고성능 디바이스에서 발생하는
 
 이제 Configuration Manager가 BitLocker 드라이브 암호화를 위한 다음과 같은 관리 기능을 제공합니다.
 
-- 관리형 Windows 디바이스에 BitLocker 클라이언트 배포
-- 디바이스 암호화 정책 관리
-- 규정 준수 보고서
-- 키 복구를 위한 웹 사이트 관리 및 모니터링
-- 사용자 셀프 서비스 포털
+- 관리형 Windows 디바이스에 BitLocker 클라이언트를 배포합니다.
+- 디바이스 암호화 정책을 관리합니다.
+- 규정 준수 보고서를 생성합니다.
+- 키 복구를 위해 관리 및 웹 사이트 모니터링을 사용합니다.
+- 사용자 셀프 서비스 포털에 액세스합니다.
 
 자세한 내용은 [BitLocker 관리 계획](/configmgr/protect/plan-design/bitlocker-management)을 참조하세요.
 
@@ -329,8 +331,8 @@ Windows 설치가 완료되고 난 후 고성능 디바이스에서 발생하는
 
 Configuration Manager 콘솔에 **클라이언트 진단**을 위한 새로운 디바이스 작업이 있습니다.
 
-- **자세한 정보 로깅 사용** CCM 구성 요소의 전역 로그 수준을 자세히로 변경하고 디버그 로깅을 사용하도록 설정합니다.
-- **자세한 정보 로깅 사용 안 함**: 전역 로그 수준을 기본값으로 변경하고 디버그 로깅을 사용하지 않도록 설정합니다.
+- **자세한 정보 로깅 사용:** CCM 구성 요소의 전역 로그 수준을 *자세히*로 변경하고 디버그 로깅을 사용하도록 설정합니다.
+- **자세한 정보 로깅 사용 안 함:** 전역 로그 수준을 *기본값*으로 변경하고 디버그 로깅을 사용하지 않도록 설정합니다.
 
 자세한 내용은 [클라이언트 진단](/sccm/core/clients/manage/client-notification#client-diagnostics)을 참조하세요.
 
@@ -340,19 +342,18 @@ Configuration Manager 콘솔에 **클라이언트 진단**을 위한 새로운 �
 이 릴리스에서는 Configuration Manager 콘솔의 검색 기능이 다음과 같이 개선되었습니다.
 
 - 이제 **드라이버 패키지**에서 **모든 하위 폴더** 검색 옵션을 사용하고 노드의 **쿼리**를 사용할 수 있습니다.<!--2841181,5424892-->
-
-- 검색에서 1000개 보다 많은 결과를 반환하는 경우 이제 알림 표시줄에서 **확인** 단추를 선택하여 더 많은 결과를 볼 수 있습니다.<!--4640570-->
+- 검색에서 1000개보다 많은 결과를 반환하는 경우 알림 표시줄에서 **확인**을 선택하여 더 많은 결과를 볼 수 있습니다.<!--4640570-->
 
 ## <a name="other-updates"></a>기타 업데이트
 
 Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 자세한 내용은 [PowerShell 버전 1910 릴리스 정보](https://docs.microsoft.com/powershell/sccm/1910-release-notes?view=sccm-ps)를 참조하세요.
 
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1910의 변경 내용 요약](https://support.microsoft.com/help/4535776)을 참조하세요.
+
 <!--
 As of this version, the following features are no longer pre-release:
 - [SMS Provider administration service](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service)
 - [Device Guard management](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)
-
-Aside from new features, this release also includes additional changes such as bug fixes. For more information, see [Summary of changes in Configuration Manager current branch, version 1906](https://support.microsoft.com/help/4514258).
 
 The following update rollup (4517869) is available in the console starting on October 1, 2019: [Update rollup for Configuration Manager current branch, version 1906](https://support.microsoft.com/help/4517869).
 
@@ -367,24 +368,24 @@ The following additional hotfixes are available to address specific issues:
 |---------|---------|---------|---------|
 | [4487960](https://support.microsoft.com/help/4487960) | Microsoft Intune connector certificate does not renew in Configuration Manager | 18 January 2019 | Yes |
 
-> [!Note]  
+> [!NOTE]  
 > Starting in version 1902, in-console hotfixes now have supersedence relationships. For more information, see [Supersedence for in-console hotfixes](/sccm/core/servers/manage/updates#bkmk_supersede).
 -->
 
 ## <a name="next-steps"></a>다음 단계
 
-현재 버전 1910은 조기 업데이트 링을 위해 릴리스되었습니다. 이 업데이트를 설치하려면 옵트인해야 합니다. 자세한 내용은 [조기 업데이트 링](/sccm/core/servers/manage/checklist-for-installing-update-1910#early-update-ring)을 참조하세요.
-<!--As of August 16, 2019, version 1906 is globally available for all customers to install.-->
+<!-- At this time, version 1910 is released for the early update ring. To install this update, you need to opt in. For more information, see [Early update ring](/sccm/core/servers/manage/checklist-for-installing-update-1910#early-update-ring). -->
+2019년 12월 20일부터는 모든 고객이 설치할 수 있도록 버전 1910이 전 세계적으로 제공됩니다.
 
 이 버전을 설치할 준비가 되었으면 [Configuration Manager에 대한 업데이트 설치](/sccm/core/servers/manage/updates) 및 [업데이트 1910을 설치하기 위한 검사 목록](/sccm/core/servers/manage/checklist-for-installing-update-1910)을 참조하세요.
 
-> [!TIP]  
-> 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용합니다.  
+> [!TIP]
+> 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용합니다.
 >
 > 다음에 대해 자세히 알아보세요.
 >
-> - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
-> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)  
+> - [새 사이트 설치](/sccm/core/servers/deploy/install/installing-sites) 
+> - [기준 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines) 
 
 알려진 중요한 문제는 [릴리스 정보](/sccm/core/servers/deploy/install/release-notes)를 참조하세요.
 

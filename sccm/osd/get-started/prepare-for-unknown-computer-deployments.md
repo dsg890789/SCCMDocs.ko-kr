@@ -1,7 +1,7 @@
 ---
 title: 알 수 없는 컴퓨터 배포 준비
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 환경에서 Configuration Manager가 관리하지 않는 컴퓨터에 운영 체제를 배포하는 방법을 알아봅니다.
+description: Configuration Manager 환경에서 Configuration Manager가 관리하지 않는 컴퓨터에 운영 체제를 배포하는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -10,19 +10,18 @@ ms.assetid: 9e447e34-0943-49ed-b6ba-3efebf3566c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c64ae61e2ff31a14b6c4b094eafa5feac197e21
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6e79e2ec1d42c7ed0e520b5e117fbac73817511a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62243625"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821242"
 ---
-# <a name="prepare-for-unknown-computer-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 알 수 없는 컴퓨터 배포 준비
+# <a name="prepare-for-unknown-computer-deployments-in-configuration-manager"></a>Configuration Manager에서 알 수 없는 컴퓨터 배포 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목의 정보를 통해 System Center Configuration Manager 환경에서 알 수 없는 컴퓨터에 운영 체제를 배포합니다. 알 수 없는 컴퓨터는 Configuration Manager에서 관리되지 않는 컴퓨터입니다. 따라서 Configuration Manager 데이터베이스에 이러한 컴퓨터의 레코드가 없습니다. 알 수 없는 컴퓨터는 다음과 같습니다.  
+이 항목의 정보를 통해 Configuration Manager 환경에서 알 수 없는 컴퓨터에 운영 체제를 배포합니다. 알 수 없는 컴퓨터는 Configuration Manager에서 관리되지 않는 컴퓨터입니다. 따라서 Configuration Manager 데이터베이스에 이러한 컴퓨터의 레코드가 없습니다. 알 수 없는 컴퓨터는 다음과 같습니다.  
 
 - Configuration Manager 클라이언트가 설치되지 않은 컴퓨터  
 
@@ -75,8 +74,8 @@ ms.locfileid: "62243625"
 
 -   **부팅 가능한 미디어**  
 
-     작업 순서 미디어 만들기 마법사의 **보안** 페이지에서 **알 수 없는 컴퓨터 지원 사용** 확인란을 선택합니다. 자세한 내용은 [PXE 요청을 수락하도록 배포 지점 구성](prepare-site-system-roles-for-operating-system-deployments.md#BKMK_PXEDistributionPoint) 및 [System Center Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-pxe-to-deploy-windows-over-the-network.md)를 참조하세요.  
+     작업 순서 미디어 만들기 마법사의 **보안** 페이지에서 **알 수 없는 컴퓨터 지원 사용** 확인란을 선택합니다. 자세한 내용은 [PXE 요청을 수락하도록 배포 지점 구성](prepare-site-system-roles-for-operating-system-deployments.md#BKMK_PXEDistributionPoint) 및 [Configuration Manager에서 PXE를 사용하여 네트워크를 통해 Windows 배포](../deploy-use/use-pxe-to-deploy-windows-over-the-network.md)를 참조하세요.  
 
 -   **미리 준비된 미디어**  
 
-     작업 순서 미디어 만들기 마법사의 **보안** 페이지에서 **알 수 없는 컴퓨터 지원 사용** 확인란을 선택합니다. 자세한 내용은 [System Center Configuration Manager에서 사전 준비된 미디어 만들기](../deploy-use/create-prestaged-media.md)를 참조하세요.  
+     작업 순서 미디어 만들기 마법사의 **보안** 페이지에서 **알 수 없는 컴퓨터 지원 사용** 확인란을 선택합니다. 자세한 내용은 [Configuration Manager에서 사전 준비된 미디어 만들기](../deploy-use/create-prestaged-media.md)를 참조하세요.  

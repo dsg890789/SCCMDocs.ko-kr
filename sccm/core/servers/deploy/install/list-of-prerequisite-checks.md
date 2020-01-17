@@ -10,17 +10,16 @@ ms.assetid: 6a279624-ffc9-41aa-8132-df1809708dd5
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b2904f7cd6945b6aa447f0404bf67a4caf4279
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3c195922218a11ab4c4cfe4e676656e244707967
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810802"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798160"
 ---
 # <a name="list-of-prerequisite-checks-for-configuration-manager"></a>Configuration Manager의 필수 구성 요소 검사 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager를 설치하거나 업데이트할 때 실행되는 필수 구성 요소 검사에 대해 자세히 설명합니다. 자세한 내용은 [필수 구성 요소 검사기](/sccm/core/servers/deploy/install/prerequisite-checker)를 참조하세요.  
 
@@ -832,7 +831,7 @@ SQL Server가 Windows 인증 보안에 대해 구성됩니다.
 
 WinRM 1.1이 대역 외 관리 콘솔을 실행할 주 사이트 서버 또는 Configuration Manager 콘솔 컴퓨터에 설치됩니다.
 
-WinRM 1.1을 다운로드하는 방법에 대한 자세한 내용은 [936059 지원 문서](https://support.microsoft.com/help/936059)를 참조하세요.
+WinRM은 현재 지원되는 모든 버전의 Windows와 함께 자동으로 설치됩니다. 자세한 내용은 [Windows 원격 관리를 위한 설치 및 구성](https://docs.microsoft.com/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)을 참조하세요.
 
 ### <a name="wsus-on-site-server"></a>사이트 서버의 WSUS
 

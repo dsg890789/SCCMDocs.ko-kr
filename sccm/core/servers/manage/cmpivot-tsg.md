@@ -10,13 +10,12 @@ ms.assetid: 36385bea-f05e-4300-947f-cb3927b3bac5
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ea58a234c6de90b57bee0de6ad04b92b32e6263
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9e8ffbd2a73a19204d7e408510a1da7eff970dc2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72303876"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75796007"
 ---
 # <a name="troubleshoot-cmpivot"></a>CMPivot 문제 해결
 
@@ -26,7 +25,7 @@ CMPivot은 사용자 환경에 있는 디바이스의 실시간 상태에 액세
 
 ## <a name="bkmk_CMPivot-1902"></a> CMPivot 버전 1902 이상 문제 해결
 
-System Center Configuration Manager 버전 1902 이상에서는 계층 구조의 CAS(중앙 관리 사이트)에서 CMPivot을 실행할 수 있습니다. 기본 사이트는 계속 클라이언트 통신을 처리합니다.
+Configuration Manager 버전 1902 이상에서는 계층 구조의 CAS(중앙 관리 사이트)에서 CMPivot을 실행할 수 있습니다. 기본 사이트는 계속 클라이언트 통신을 처리합니다.
 
 CAS에서 CMPivot을 실행하는 경우 CMPivot은 고속 메시지 구독 채널을 사용하여 기본 사이트와 통신합니다. CMPivot은 사이트 간 표준 SQL 복제를 사용하지 않습니다. SQL Server 인스턴스 또는 SQL 공급자가 원격이거나 SQL Server Always On을 사용하는 경우 CMPivot에 대해 “더블홉 시나리오”가 제공됩니다. “이중 홉 시나리오”의 제한된 위임을 정의하는 방법에 대한 자세한 내용은 [CMPivot 버전 1902부터 가능](/sccm/core/servers/manage/cmpivot#bkmk_cmpivot1902)을 참조하세요.
 
@@ -58,7 +57,7 @@ ClientAction 테이블에서 `TaskID`를 찾습니다. `TaskID`는 ClientAction 
 select * from ClientAction where ClientOperationId=<id>
 ```
 
-`BgbServer.log`에서 SQL에서 수집한 `TaskID`를 찾고 `PushID`를 적어 둡니다. `TaskID`가 `TaskGUID`로 레이블이 지정됩니다. 예:
+`BgbServer.log`에서 SQL에서 수집한 `TaskID`를 찾고 `PushID`를 적어 둡니다. `TaskID`가 `TaskGUID`로 레이블이 지정됩니다. 예를 들면 다음과 같습니다.
 
 <pre><code lang="Log">Starting to send push task (<b>PushID: 9</b> TaskID: 12 <b>TaskGUID: 9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0</b> TaskType: 15 TaskParam: PFNjcmlwdENvbnRlbnQgU2NyaXB0R3VpZD0nN0RDNkI2RjEtRTdGNi00M0MxL (truncated log entry)
 Finished sending push task (<b>PushID: 9</b> TaskID: 12) to 2 clients
@@ -74,7 +73,7 @@ Finished sending push task (<b>PushID: 9</b> TaskID: 12) to 2 clients
 Send Task response message &ltBgbResponseMessage TimeStamp="2019-09-13T17:29:09Z"><b>&ltPushID>5</b>&lt/PushID>&ltTaskID>4&lt/TaskID>&ltReturnCode>1&lt/ReturnCode>&lt/BgbResponseMessage> successfuly.
  </code></pre>
 
-`Scripts.log`에서 `TaskID`를 확인합니다. 다음 예에서는 `Task ID`  `{9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}`이 표시됩니다.
+`Scripts.log`에서 `TaskID`를 확인합니다. 다음 예에서는 `Task ID` `{9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}`이 표시됩니다.
 
 <pre><code lang="Log">Sending script state message (fast): <b>{9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}</b>
 Result are sent for ScriptGuid: 7DC6B6F1-E7F6-43C1-96E0-E1D16BC25C14 and <b>TaskID: {9A4E59D2-2F5B-4067-A9FA-B99602A3A4A0}</b>
@@ -145,7 +144,7 @@ ClientAction 테이블에서 `TaskID`를 찾습니다. `TaskID`는 ClientAction 
 select * from ClientAction where ClientOperationId=<id>
 ```
 
-`BgbServer.log`에서 SQL에서 수집한 `TaskID`를 찾습니다. `TaskGUID`로 레이블이 지정되어 있습니다. 예:
+`BgbServer.log`에서 SQL에서 수집한 `TaskID`를 찾습니다. `TaskGUID`로 레이블이 지정되어 있습니다. 예를 들면 다음과 같습니다.
 
 <pre><code lang="Log">Starting to send push task (PushID: 260 TaskID: 258 TaskGUID: <b>F8C7C37F-B42B-4C0A-B050-2BB44DF1098A</b> TaskType: 15
 TaskParam: PFNjcmlwdEhhc2ggU2NyaXB0SGF...truncated...to 5 clients with throttling (strategy: 1 param: 42)

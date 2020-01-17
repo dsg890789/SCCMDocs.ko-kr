@@ -10,17 +10,16 @@ ms.assetid: 44153689-70e8-42ad-9ae8-17ae35f6a2e3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa2a2412744046ca1a16aad2721fcb9efcff38e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 176cf780259cf5511face8b236d85af4052f2bd9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62202299"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824897"
 ---
 # <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX 컴퓨터에 클라이언트 배포 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 > [!Important]  
 > 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
@@ -43,7 +42,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 Configuration Manager 클라이�
 >   -   클라이언트 상태 클라이언트 검사 및 재구성  
 >   -   인터넷 기반 클라이언트 관리  
 
- 지원되는 Linux 및 UNIX 배포와, Linux 및 UNIX의 클라이언트를 지원하는 데 필요한 하드웨어에 대한 자세한 내용은 [System Center Configuration Manager에 권장되는 하드웨어](../../../../core/plan-design/configs/recommended-hardware.md)를 참조하세요.  
+ 지원되는 Linux 및 UNIX 배포와, Linux 및 UNIX의 클라이언트를 지원하는 데 필요한 하드웨어에 대한 자세한 내용은 [Configuration Manager에 권장되는 하드웨어](../../../../core/plan-design/configs/recommended-hardware.md)를 참조하세요.  
 
  이 문서의 정보를 통해 Linux 및 UNIX용 Configuration Manager 클라이언트 배포를 계획할 수 있습니다.  
 
@@ -184,7 +183,7 @@ Linux 또는 UNIX를 실행하는 컴퓨터에 Configuration Manager 클라이�
 |SysMgmtMin.openssl|OpenSSL Libraries, 보안 네트워크 통신 프로토콜|A.00.09.08d.002|  
 |PAM|플러그 가능 인증 모듈|HP-UX에서 PAM은 핵심 운영 체제 구성 요소의 일부입니다. 다른 종속 파일은 없습니다.|  
 
- **Configuration Manager 종속성:** 다음 테이블에는 Linux 및 UNIX 클라이언트를 지 원하는 사이트 시스템 역할이 나열됩니다. 이러한 사이트 시스템 역할에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트에 대한 사이트 시스템 역할 결정](../../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md)을 참조하세요.  
+ **Configuration Manager 종속성:** 다음 테이블에는 Linux 및 UNIX 클라이언트를 지 원하는 사이트 시스템 역할이 나열됩니다. 이러한 사이트 시스템 역할에 대한 자세한 내용은 [Configuration Manager 클라이언트에 대한 사이트 시스템 역할 결정](../../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md)을 참조하세요.  
 
 |Configuration Manager 사이트 시스템|추가 정보|  
 |---------------------------------------|----------------------|  

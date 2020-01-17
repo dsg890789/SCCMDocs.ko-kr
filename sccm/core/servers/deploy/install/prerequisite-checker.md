@@ -2,7 +2,7 @@
 title: 필수 구성 요소 검사기
 titleSuffix: Configuration Manager
 description: 필수 조건 검사기를 사용하여 사이트 또는 사이트 시스템 역할 설치를 차단하는 문제를 확인하고 해결하는 방법을 알아봅니다.
-ms.date: 03/1/2017
+ms.date: 01/08/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,19 +10,18 @@ ms.assetid: aaf13bb8-4ba2-4bd7-9fac-d36a9d88a1b6
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19167ee3b25d838ad6d2268d2b67230968394ef5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8c5764c9ad502abc9ef791c4db32e8080a08a7e2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888796"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798116"
 ---
-# <a name="prerequisite-checker-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 필수 조건 검사기
+# <a name="prerequisite-checker-for-configuration-manager"></a>Configuration Manager에 대한 필수 조건 검사기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
- 설치 프로그램을 실행하여 System Center Configuration Manager 사이트를 설치하거나 업그레이드하기 전에 또는 새 서버에 사이트 시스템 역할을 설치하기 전에 사용하려는 Configuration Manager 버전에서 이 독립 실행형 애플리케이션(**Prereqchk.exe**)을 시작하여 서버의 준비 상태를 확인할 수 있습니다. 필수 조건 검사기를 사용하여 사이트 또는 사이트 시스템 역할 설치를 차단하는 문제를 확인하고 해결할 수 있습니다.  
+ 설치 프로그램을 실행하여 Configuration Manager 사이트를 설치하거나 업그레이드하기 전에 또는 새 서버에 사이트 시스템 역할을 설치하기 전에 사용하려는 Configuration Manager 버전에서 이 독립 실행형 애플리케이션(**Prereqchk.exe**)을 시작하여 서버의 준비 상태를 확인할 수 있습니다. 필수 조건 검사기를 사용하여 사이트 또는 사이트 시스템 역할 설치를 차단하는 문제를 확인하고 해결할 수 있습니다.  
 
 > [!NOTE]  
 >  필수 조건 검사기는 설치 프로그램의 일부로 항상 실행됩니다.  
@@ -40,7 +39,7 @@ ms.locfileid: "70888796"
 -   필수 조건 검사기는 명령줄에서 지정한 사이트 서버 또는 사이트 시스템에 연결된 검사만 수행합니다.  
 -   원격 컴퓨터를 검사하려면 사용자 계정에 원격 컴퓨터에 대한 관리자 권한이 있어야 합니다.  
 
-필수 조건 검사기가 수행하는 검사에 대한 자세한 내용은 [System Center Configuration Manager에 대한 필수 조건 검사 목록](../../../../core/servers/deploy/install/list-of-prerequisite-checks.md)을 참조하세요.  
+필수 조건 검사기가 수행하는 검사에 대한 자세한 내용은 [Configuration Manager에 대한 필수 조건 검사 목록](../../../../core/servers/deploy/install/list-of-prerequisite-checks.md)을 참조하세요.  
 
 ## <a name="copy-prerequisite-checker-files-to-another-computer"></a>필수 조건 검사기 파일을 다른 컴퓨터로 복사  
 
@@ -51,11 +50,12 @@ ms.locfileid: "70888796"
 
 2.  다음 파일을 다른 컴퓨터의 대상 폴더에 복사합니다.  
 
-    -   Prereqchk.exe  
-    -   Prereqcore.dll  
-    -   Basesql.dll  
-    -   Basesvr.dll  
-    -   Baseutil.dll  
+    - prereqchk.exe
+    - prereqcore.dll
+    - prereqchkres.dll
+    - basesql.dll
+    - basesvr.dll
+    - baseutil.dll
 
 ##  <a name="run-prerequisite-checker-with-default-checks"></a>필수 조건 검사기를 실행하여 기본 검사 수행  
 

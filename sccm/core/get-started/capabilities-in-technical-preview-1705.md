@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1705
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1705에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1705에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e61489373c7e5c739485f1a5162f203d883a4835
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ff14adadca4024cf480bdf2a138c8781697d1469
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71826098"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804846"
 ---
-# <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1705의 기능
+# <a name="capabilities-in-technical-preview-1705-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1705의 기능
 
-*적용 대상: System Center Configuration Manager(기술 미리 보기)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1705에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1705에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.    
 
 **이 Technical Preview의 알려진 문제:**
 -   **Operations Manager 도구 모음 커넥터가 업그레이드되지 않습니다**. OMS 커넥터가 구성된 Technical Preview의 이전 버전에서 업그레이드하는 경우 해당 커넥터는 업그레이드되지 않으며 콘솔에서 더 이상 사용할 수 없게 됩니다. 업그레이드 후에는 [Azure 서비스 마법사를 사용](capabilities-in-technical-preview-1705.md#use-azure-services-wizard-to-configure-a-connection-to-oms)하고 OMS 작업 영역에 대한 연결을 다시 설정해야 합니다.
@@ -58,7 +57,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 
 이 도구를 실행하면 지정한 업데이트에 대해 실행됩니다. 기본적으로 이 도구는 성공적으로 설치되었거나 다운로드된 업데이트를 삭제하지 않습니다.  
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 이 도구를 실행하는 데 사용하는 계정에는 다음 권한이 필요합니다.
 -   중앙 관리 사이트 및 계층 구조에 있는 각 기본 사이트의 사이트 데이터베이스에 대한 **읽기** 및 **쓰기** 권한. 이러한 권한을 설정하려면 사용자 계정을 각 사이트의 Configuration Manager 데이터베이스에 **db_datawriter** 및 **db_datareader** [고정 데이터베이스 역할](/sql/relational-databases/security/authentication-access/database-level-roles#fixed-database-roles)의 구성원으로 추가할 수 있습니다. 이 도구는 보조 사이트와는 상호 작용하지 않습니다.
 -   계층 구조의 최상위 사이트에 대한 **로컬 관리자**
@@ -140,7 +139,7 @@ Technical Preview 버전 1606 이상에서 이 도구를 사용할 수 있습니
 ## <a name="improved-user-notifications-for-office-365-updates"></a>Office 365 업데이트에 대한 향상된 사용자 알림
 클라이언트가 Office 365 업데이트를 설치할 때 Office 간편 실행 사용자 환경을 활용하도록 개선되었습니다. 여기에는 팝업 및 앱 내 알림과 카운트다운 환경이 포함됩니다. 이 릴리스 전에는 Office 365 업데이트가 클라이언트로 전송될 때 열려 있던 Office 애플리케이션이 경고 없이 자동으로 닫혔습니다. 이 업데이트 후에는 Office 애플리케이션이 더 이상 예기치 않게 닫히지 않습니다.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 이 업데이트는 Office 365 ProPlus 클라이언트에 적용됩니다.
 
 ### <a name="known-issues"></a>알려진 문제
@@ -245,7 +244,7 @@ Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 
 ### <a name="install-the-cm-client-from-the-internet"></a>인터넷에서 CM 클라이언트 설치
 
 시작 하기 전에 클라이언트를 설치하려는 디바이스에 클라이언트 설치 원본 파일이 로컬로 저장되어 있는지 확인합니다.
-그런 다음 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)의 지침에 따라 다음 설치 명령줄을 사용합니다(이 예제의 값을 고유한 값으로 대체).
+그런 다음 [Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)의 지침에 따라 다음 설치 명령줄을 사용합니다(이 예제의 값을 고유한 값으로 대체).
 
 **ccmsetup.exe /NoCrlCheck /Source:C:\CLIENT  CCMHOSTNAME=SCCMPROXYCONTOSO.CLOUDAPP.NET/CCM_Proxy_ServerAuth/72457598037527932 SMSSiteCode=HEC AADTENANTID=780433B5-E05E-4B7D-BFD1-E8013911E543 AADTENANTNAME=contoso  AADCLIENTAPPID=\<GUID> AADRESOURCEURI=<https://contososerver>**
 

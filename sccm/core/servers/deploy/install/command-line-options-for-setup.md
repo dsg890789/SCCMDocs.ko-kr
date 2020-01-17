@@ -10,17 +10,16 @@ ms.assetid: 0da167f1-52cf-4dfd-8f73-833ca3eb8478
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b49f05708f824c16dd90cbb9c872f49ab484de8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e85b883a70d9848a697872fc1e546279b2d69d5e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69974719"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798302"
 ---
 # <a name="command-line-options-for-configuration-manager-setup"></a>Configuration Manager 설치를 위한 명령줄 옵션
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다음 정보를 사용하여 명령줄에서 스크립트를 구성하거나 Configuration Manager를 설치할 수 있습니다.  
 
@@ -122,7 +121,7 @@ ms.locfileid: "69974719"
 
     - **세부 정보:** 사이트의 서버, 클라이언트 및 모바일 클라이언트 언어 지원을 관리합니다.  
 
-### <a name="options"></a>Options
+### <a name="options"></a>옵션
 
 - **키 이름:** AddServerLanguages  
 
@@ -224,7 +223,7 @@ ms.locfileid: "69974719"
 
     - **세부 정보:** 기본 사이트 또는 CA를 설치하거나 복구할 때 이 키 및 값을 포함하여 CD.Latest 폴더에서 설치 프로그램을 실행합니다. 이 값은 CD.Latest의 미디어를 사용하고 있음을 설치 프로그램에 알립니다.
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 
 - **키 이름:** ProductID  
 
@@ -510,7 +509,7 @@ ms.locfileid: "69974719"
 
     - **세부 정보:** 기본 사이트 또는 CA를 설치하거나 복구할 때 이 키 및 값을 포함하여 CD.Latest 폴더에서 설치 프로그램을 실행합니다. 이 값은 CD.Latest의 미디어를 사용하고 있음을 설치 프로그램에 알립니다.
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 
 - **키 이름:** ProductID  
 
@@ -912,7 +911,7 @@ ms.locfileid: "69974719"
 
 - **키 이름:** ReferenceSite  
 
-    - **필수:** DatabaseRecoveryOptions 설정 값이 **40**인 경우 이 키는 필수입니다.  
+    - **필수:** **DatabaseRecoveryOptions** 설정 값이 **40**인 경우 이 키는 필수입니다.  
 
     - **값:**  <*참조 사이트 FQDN*>  
 
@@ -938,7 +937,7 @@ ms.locfileid: "69974719"
 
     - **세부 정보:** 사이트 데이터베이스 백업 세트의 경로를 지정합니다.  
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 
 - **키 이름:** ProductID  
 
@@ -1008,7 +1007,7 @@ ms.locfileid: "69974719"
 
 - **키 이름:** AdminConsole  
 
-    - **필수:** ServerRecoveryOptions 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
+    - **필수:** **ServerRecoveryOptions** 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
 
     - **값:**
 
@@ -1206,7 +1205,7 @@ ms.locfileid: "69974719"
 
     - **세부 정보:** 사이트 데이터베이스 백업 세트의 경로를 지정합니다.  
 
-#### <a name="options"></a>Options
+#### <a name="options"></a>옵션
 
 - **키 이름:** ProductID  
 
@@ -1274,7 +1273,7 @@ ms.locfileid: "69974719"
 
 - **키 이름:** AdminConsole  
 
-    - **필수:** ServerRecoveryOptions 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
+    - **필수:** **ServerRecoveryOptions** 설정 값이 **4**인 경우를 제외하고 이 키는 필수입니다.  
 
     - **값:**
 

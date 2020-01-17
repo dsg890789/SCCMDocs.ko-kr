@@ -10,17 +10,16 @@ ms.assetid: 97e23075-549c-4e45-ab1e-0671027edacf
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c8955e969771cc5e20505875a53d794e4e7ecdd
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 8f6d144cc52e0baa790462b1eff9a7a6d15d5b4e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198509"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802517"
 ---
 # <a name="whats-new-in-version-1906-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1906의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 현재 분기의 1906 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 버전 1802 이상을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement:When installing a new site, it's also available as a baseline version.--> 이 문서에는 Configuration Manager 버전 1906의 변경 내용과 새로운 기능이 요약되어 있습니다.  
 
@@ -442,7 +441,7 @@ Configuration Manager 콘솔이 응답하지 않는 경우 잠금으로 인해 �
 |`OSD`|운영 체제|
 |`InstallationStatus`|설치 상태|
 |`Compliance`|디바이스 정책 준수|
-|`Options`|Options|
+|`Options`|옵션|
 
 자세한 내용은 [소프트웨어 센터 탭 표시 여부](/sccm/core/clients/deploy/about-client-settings#software-center-tab-visibility)를 참조하세요.
 

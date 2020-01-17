@@ -10,17 +10,16 @@ ms.assetid: 9cbfc406-d009-446d-8fee-4938de48c919
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: dad3906732a237cad94ae94f9974d94fd72292c2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1e486ddd8652529000c6ec02266f677e45669111
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70380314"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821378"
 ---
-# <a name="customize-boot-images-with-system-center-configuration-manager"></a>System Center Configuration Manager로 부팅 이미지 사용자 지정
+# <a name="customize-boot-images-with-configuration-manager"></a>Configuration Manager를 사용하여 부팅 이미지 사용자 지정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deployment Kit)의 특정 버전을 지원합니다. 부팅 이미지가 지원되는 버전의 Windows ADK에 있는 Windows PE 버전을 기반으로 하는 경우 Configuration Manager 콘솔에서 부팅 이미지를 제공하거나 사용자 지정할 수 있습니다. 다른 부팅 이미지의 경우 Windows AIK 및 Windows ADK의 구성 요소인 DISM(배포 이미지 서비스 및 관리) 명령줄 도구를 사용하는 등의 다른 방법을 사용하여 해당 이미지를 사용자 지정해야 합니다.  
 
@@ -44,7 +43,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
   이 항목의 절차에서는 다음과 같은 Windows PE 패키지를 사용하여 Configuration Manager에 필요한 옵션 구성 요소를 부팅 이미지에 추가하는 방법을 보여 줍니다.  
 
-- **WinPE WMI**: Windows Management Instrumentation(WMI) 지원을 추가합니다.  
+- **WinPE-WMI**: WMI(Windows Management Instrumentation) 지원을 추가합니다.  
 
 - **WinPE-Scripting**: WSH(Windows Script Host) 지원을 추가합니다.  
 
@@ -52,7 +51,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
   다른 Windows PE 패키지를 추가할 수 있습니다. 다음 리소스에서는 부팅 이미지에 추가할 수 있는 선택적 구성 요소에 대한 자세한 정보를 제공합니다.  
 
-- Windows PE 5의 경우 [WinPE: 패키지 추가(선택적 구성 요소 참조)](https://msdn.microsoft.com/library/windows/hardware/dn938382\(v=vs.85\).aspx)를 참조하세요.  
+- Windows PE 5는 [WinPE: 패키지 추가(선택적 구성 요소 참조)](https://msdn.microsoft.com/library/windows/hardware/dn938382\(v=vs.85\).aspx) 참조  
 
 - Windows PE 3.1의 경우, Windows 7 TechNet 문서 라이브러리의 [Windows PE 이미지에 패키지 추가](https://technet.microsoft.com/library/dd799312\(v=WS.10\).aspx) 항목을 참조하세요.  
 
@@ -117,7 +116,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
 6. 필요한 경우 DISM을 사용하여 특정 드라이버를 부팅 이미지에 추가합니다. 다음을 입력하여 부팅 이미지에 드라이버를 추가하세요.  
 
-    **dism.exe /image:C:\WinPEMount /add-driver /driver:&lt;** *드라이버 .inf 파일의 경로* **>**  
+    **dism.exe /image:C:\WinPEMount /add-driver /driver:<** *드라이버 .inf 파일의 경로* **>**  
 
     여기서 C:\WinPEMount는 탑재된 폴더입니다.  
 
@@ -233,7 +232,7 @@ Configuration Manager의 각 버전은 Windows ADK(Windows Assessment and Deploy
 
 6. 필요한 경우 DISM을 사용하여 특정 드라이버를 부팅 이미지에 추가합니다. 필요한 경우 다음을 입력하여 부팅 이미지에 드라이버를 추가하세요.  
 
-    **dism.exe /image:C:\WinPEMount /add-driver /driver:&lt;** *드라이버 .inf 파일의 경로* **>**  
+    **dism.exe /image:C:\WinPEMount /add-driver /driver:<** *드라이버 .inf 파일의 경로* **>**  
 
     여기서 C:\WinPEMount는 탑재된 폴더입니다.  
 

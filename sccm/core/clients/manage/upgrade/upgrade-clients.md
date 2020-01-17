@@ -10,19 +10,18 @@ ms.assetid: 446c83b5-c292-4e74-ba19-0792ac6b3472
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50212a84185396e53c92bff46dd3b369ad811928
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 40fc094d6c1a1acbd31f1d26e6fe6617972f8da5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890205"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823673"
 ---
 # <a name="upgrade-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트 업그레이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-다양한 방법을 사용하여 Windows 장치, UNIX 및 Linux 서버, Mac 컴퓨터에서 System Center Configuration Manager 클라이언트 소프트웨어를 업그레이드할 수 있습니다. 각 방법의 장점과 단점은 다음과 같습니다.  
+다양한 방법을 사용하여 Windows 디바이스, UNIX 및 Linux 서버, Mac 컴퓨터에서 Configuration Manager 클라이언트 소프트웨어를 업그레이드할 수 있습니다. 각 방법의 장점과 단점은 다음과 같습니다.  
 
 > [!TIP]  
 >  이전 버전의 Configuration Manager\(예: Configuration Manager 2007 또는 System Center 2012 Configuration Manager\)에서 서버 인프라를 업그레이드하는 경우 Configuration Manager 클라이언트를 업그레이드하기 전에 현재 분기 업데이트를 모두 설치하는 등 서버를 업그레이드하는 것이 좋습니다. 이 방법으로 최신 버전의 클라이언트 소프트웨어를 보유하게 됩니다.  
@@ -85,9 +84,9 @@ ms.locfileid: "70890205"
 
 - [Configuration Manager 클라이언트를 수동으로 설치하는 방법](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_Manual)  
 
-- [System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)  
+- [Linux 및 UNIX 서버용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)  
 
-- [System Center Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md)  
+- [Mac 컴퓨터의 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md)  
 
 ## <a name="upgrade-installation-application-management"></a>업그레이드 설치(애플리케이션 관리)  
  **지원되는 클라이언트 플랫폼:** Windows  
@@ -110,7 +109,7 @@ ms.locfileid: "70890205"
 ## <a name="automatic-client-upgrade"></a>자동 클라이언트 업그레이드  
 
 > [!NOTE]  
->  Configuration Manager 2007 클라이언트를 System Center Configuration Manager 클라이언트로 업그레이드하는 데 사용할 수 있습니다. Configuration Manager 2007 클라이언트에서 Configuration Manager 사이트에 할당할 수 있지만 자동 클라이언트 업그레이드 외에 다른 작업은 수행할 수 없습니다.  
+> Configuration Manager 2007 클라이언트를 Configuration Manager 현재 분기 클라이언트로 업그레이드하는 데 사용할 수 있습니다. Configuration Manager 2007 클라이언트에서 Configuration Manager 사이트에 할당할 수 있지만 자동 클라이언트 업그레이드 외에 다른 작업은 수행할 수 없습니다.  
 
  **지원되는 클라이언트 플랫폼:** Windows  
 
@@ -132,7 +131,7 @@ ms.locfileid: "70890205"
 
 - 일정 옵션이 제한적입니다.  
 
-  자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터용 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
+  자세한 내용은 [Windows 컴퓨터에 대한 클라이언트를 업그레이드하는 방법](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)을 참조하세요.  
 
 ## <a name="client-testing"></a>클라이언트 테스트  
  **지원되는 클라이언트 플랫폼:** Windows  
@@ -147,4 +146,4 @@ ms.locfileid: "70890205"
 
 - 클라이언트 소프트웨어를 업그레이드할 수만 있고 새 클라이언트를 설치할 수는 없습니다.  
 
-  [System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../../core/clients/manage/upgrade/test-client-upgrades.md)  
+  [사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../../core/clients/manage/upgrade/test-client-upgrades.md)  

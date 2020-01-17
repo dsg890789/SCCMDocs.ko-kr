@@ -10,19 +10,18 @@ ms.assetid: b06f781b-ab25-4d9a-b128-02cbd7cbcffe
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3520217cde80b080676d23dc49a16974c11823a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 31562587bfd84a4845ffaa4eb1d4f419d995d9d0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889137"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798812"
 ---
-# <a name="database-replicas-for-management-points-for-system-center-configuration-manager"></a>System Center Configuration Manager의 관리 지점용 데이터베이스 복제본
+# <a name="database-replicas-for-management-points-for-configuration-manager"></a>Configuration Manager의 관리 지점용 데이터베이스 복제본
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 기본 사이트는 데이터베이스 복제본을 사용하여 클라이언트의 요청을 처리하는 관리 지점이 사이트 데이터베이스 서버에 적용하는 CPU 부하를 줄일 수 있습니다.  
+Configuration Manager 기본 사이트는 데이터베이스 복제본을 사용하여 클라이언트의 요청을 처리하는 관리 지점이 사이트 데이터베이스 서버에 적용하는 CPU 부하를 줄일 수 있습니다.  
 
 -   데이터베이스 복제본을 사용하는 관리 지점은 사이트 데이터베이스 서버가 아닌 데이터베이스 복제본을 호스트하는 SQL Server 컴퓨터에서 데이터를 요청합니다.  
 
@@ -50,7 +49,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
 -   **SQL Server 요구 사항:**  
 
-    -   데이터베이스 복제본을 호스트하는 SQL Server는 사이트 데이터베이스 서버와 같은 요구 사항을 충족해야 합니다. 그러나 복제본 서버는 지원되는 SQL Server 서버 및 에디션을 실행할 경우 사이트 데이터베이스 서버와 동일한 SQL Server 버전이나 에디션을 실행하지 않아도 됩니다. 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
+    -   데이터베이스 복제본을 호스트하는 SQL Server는 사이트 데이터베이스 서버와 같은 요구 사항을 충족해야 합니다. 그러나 복제본 서버는 지원되는 SQL Server 서버 및 에디션을 실행할 경우 사이트 데이터베이스 서버와 동일한 SQL Server 버전이나 에디션을 실행하지 않아도 됩니다. 자세한 내용은 [Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
 
     -   복제본 데이터베이스를 호스트하는 컴퓨터의 SQL Server 서비스는 **시스템** 계정으로 실행해야 합니다.  
 
@@ -80,7 +79,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
     -   [데이터베이스 복제본을 게시하는 사이트 서버 데이터베이스 이동](#BKMK_DBReplicaOps_Move)  
 
--   **System Center Configuration Manager로 업그레이드**: 사이트를 System Center 2012 Configuration Manager에서 System Center Configuration Manager 현재 분기로 업그레이드하거나 Configuration Manager 현재 분기를 최신 릴리스로 업데이트하기 전에 관리 지점의 데이터베이스 복제본을 사용하지 않도록 설정해야 합니다.  사이트를 업그레이드한 후 관리 지점에 대해 데이터베이스 복제본을 다시 구성할 수 있습니다.  
+-   **Configuration Manager 현재 분기로 업그레이드**: 사이트를 System Center 2012 Configuration Manager에서 Configuration Manager 현재 분기로 업그레이드하거나 Configuration Manager 현재 분기를 최신 릴리스로 업데이트하기 전에 관리 지점의 데이터베이스 복제본을 사용하지 않도록 설정해야 합니다.  사이트를 업그레이드한 후 관리 지점에 대해 데이터베이스 복제본을 다시 구성할 수 있습니다.  
 
 -   **단일 SQL Server의 여러 복제본:**  관리 지점에 대해 여러 데이터베이스 복제본을 호스트하도록 데이터베이스 복제본 서버를 구성하는 경우(각 복제본은 개별 인스턴스에 있어야 함), 해당 서버에서 이전에 구성한 데이터베이스 복제본에서 사용되는 자체 서명된 인증서를 덮어쓰지 않도록 하려면 다음 섹션의 4단계에서 수정된 구성 스크립트를 사용해야 합니다.  
 
@@ -132,7 +131,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 ###  <a name="BKMK_DBReplica_ConfigSrv"></a> 2단계 - 데이터베이스 복제본 서버 구성  
 데이터베이스 복제본 서버는 SQL Server를 실행하고 관리 지점이 사용할 사이트 데이터베이스의 복제본을 호스팅하는 컴퓨터입니다. 데이터베이스 복제본 서버는 고정된 일정으로 사이트 데이터베이스 서버에서 게시되는 데이터베이스 복제본과 데이터베이스 복제본을 동기화합니다.  
 
-데이터베이스 복제본 서버는 사이트 데이터베이스 서버와 동일한 요구 사항을 충족해야 합니다. 그러나 데이터베이스 복제본 서버는 사이트 데이터베이스 서버가 사용하는 것과 다른 에디션 또는 버전의 SQL Server를 실행할 수 있습니다. 지원되는 SQL Server의 버전에 대한 자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
+데이터베이스 복제본 서버는 사이트 데이터베이스 서버와 동일한 요구 사항을 충족해야 합니다. 그러나 데이터베이스 복제본 서버는 사이트 데이터베이스 서버가 사용하는 것과 다른 에디션 또는 버전의 SQL Server를 실행할 수 있습니다. 지원되는 SQL Server의 버전에 대한 자세한 내용은 [Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
 
 > [!IMPORTANT]  
 >  복제본 데이터베이스를 호스팅하는 컴퓨터의 SQL Server Service는 System 계정으로 실행해야 합니다.  
@@ -502,7 +501,7 @@ System Center Configuration Manager 기본 사이트는 데이터베이스 복�
 
 2.  **SQL Server Management Studio** 를 사용하여 이 사이트의 각 데이터베이스 복제 서버에서 데이터베이스 복제본에 대한 구독을 삭제합니다.  
 
-3.  데이터베이스를 새 SQL Server 컴퓨터로 이동합니다. 자세한 내용은 [Modify the site database configuration](../../../../core/servers/manage/modify-your-infrastructure.md#bkmk_dbconfig) 항목의 [Modify your System Center Configuration Manager infrastructure](../../../../core/servers/manage/modify-your-infrastructure.md) 섹션을 참조하세요.  
+3.  데이터베이스를 새 SQL Server 컴퓨터로 이동합니다. 자세한 내용은 [Configuration Manager 인프라 수정](../../../../core/servers/manage/modify-your-infrastructure.md) 항목의 [사이트 데이터베이스 구성 수정](../../../../core/servers/manage/modify-your-infrastructure.md#bkmk_dbconfig) 섹션을 참조하세요.  
 
 4.  사이트 데이터베이스 서버에서 데이터베이스 복제본에 대한 게시를 다시 만듭니다. 자세한 내용은 이 항목의 [1단계 - 데이터베이스 복제본을 게시하도록 사이트 데이터베이스 서버 구성](#BKMK_DBReplica_ConfigSiteDB) 를 참조하세요.  
 

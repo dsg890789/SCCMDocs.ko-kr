@@ -1,7 +1,7 @@
 ---
 title: Asset Intelligence 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Asset Intelligence를 설정합니다.
+description: Configuration Manager에서 Asset Intelligence를 설정합니다.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,24 +10,23 @@ ms.assetid: 08e0382d-de05-4a76-ba5c-7223173f7066
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b808535542a5757a9e8b1f6e4d14fc34cc33c3e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d22c98686c95a11f4fd88c6ba81a901e475d143e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890239"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824778"
 ---
-# <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 구성
+# <a name="configure-asset-intelligence-in-configuration-manager"></a>Configuration Manager에서 Asset Intelligence 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Asset Intelligence는 소프트웨어 라이선스 사용을 인벤토리에 포함하고 관리합니다.   
 
 ## <a name="steps-to-configure-asset-intelligence"></a>Asset Intelligence 구성 단계  
    
 
-- **1단계**: Asset Intelligence 보고서에 필요한 인벤토리 데이터를 수집하려면 [System Center Configuration Manager에서 하드웨어 인벤토리를 확장하는 방법](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)에 설명된 대로 하드웨어 인벤토리 클라이언트 에이전트를 사용하도록 설정해야 합니다.
+- **1단계**: Asset Intelligence 보고서에 필요한 인벤토리 데이터를 수집하려면 [하드웨어 인벤토리를 확장하는 방법](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)에 설명된 대로 하드웨어 인벤토리 클라이언트 에이전트를 사용하도록 설정해야 합니다.
 - **2단계**: [Asset Intelligence 하드웨어 인벤토리 보고 클래스를 사용하도록 설정합니다](#BKMK_EnableAssetIntelligence).  
 - **3단계**: [Asset Intelligence 동기화 지점 설치](#BKMK_InstallAssetIntelligenceSynchronizationPoint)
 - **4단계**: [성공 로그온 이벤트 감사를 사용하도록 설정](#BKMK_EnableSuccessLogonEvents)  
@@ -56,7 +55,7 @@ Asset Intelligence는 소프트웨어 라이선스 사용을 인벤토리에 포
 
 3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택합니다.   
 
-4.  **하드웨어 인벤토리** > **클래스 설정**을 선택합니다. 을 참조하세요.  
+4.  **하드웨어 인벤토리** > **클래스 설정**을 선택합니다. .  
 
 5.  **범주별 필터링** > **Asset Intelligence 보고 클래스**를 선택합니다. 클래스의 목록은 Asset Intelligence 하드웨어 인벤토리 보고 클래스로만 새로 고쳐집니다.  
 
@@ -102,7 +101,7 @@ Asset Intelligence 동기화 지점 사이트 시스템 역할은 Configuration 
     > [!WARNING]  
     >  System Center Online에 연결하기 위해 프록시 서버가 필요한 경우 프록시 서버 인증용으로 구성된 계정에 대해 사용자 계정 암호가 만료되면 연결 인증서도 삭제될 수 있습니다.  
 
-9. **동기화 일정** 페이지에서 일정에 따라 Asset Intelligence 카탈로그를 동기화할지 지정합니다. 동기화 일정을 사용하도록 설정하는 경우 단순 또는 사용자 지정 동기화 일정을 지정합니다. 예약된 동기화를 진행하는 동안 Asset Intelligence 동기화 지점이 System Center Online에 연결되어 최신 Asset Intelligence 카탈로그를 검색합니다. Configuration Manager 콘솔의 Asset Intelligence 노드에서 Asset Intelligence 카탈로그를 수동으로 동기화할 수 있습니다. Asset Intelligence 카탈로그를 수동으로 동기화하는 단계는 [System Center Configuration Manager에서 Asset Intelligence에 대한 작업](../../../../core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md)의 [Asset Intelligence 카탈로그를 수동으로 동기화하려면](../../../../core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md#BKMK_ManuallySynchronizeCatalog) 섹션을 참조하세요.  
+9. **동기화 일정** 페이지에서 일정에 따라 Asset Intelligence 카탈로그를 동기화할지 지정합니다. 동기화 일정을 사용하도록 설정하는 경우 단순 또는 사용자 지정 동기화 일정을 지정합니다. 예약된 동기화를 진행하는 동안 Asset Intelligence 동기화 지점이 System Center Online에 연결되어 최신 Asset Intelligence 카탈로그를 검색합니다. Configuration Manager 콘솔의 Asset Intelligence 노드에서 Asset Intelligence 카탈로그를 수동으로 동기화할 수 있습니다. Asset Intelligence 카탈로그를 수동으로 동기화하는 단계는 [Asset Intelligence에 대한 작업](../../../../core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md)의 [Asset Intelligence 카탈로그를 수동으로 동기화하려면](../../../../core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md#BKMK_ManuallySynchronizeCatalog) 섹션을 참조하세요.  
 
 10. 마법사 완료 
 
@@ -186,12 +185,12 @@ Asset Intelligence는 일반 라이선스 계정에서 지정하는 제품을 �
 7.  Asset Intelligence **라이선스 15A – 제3자 소프트웨어 조정 보고서**를 실행하여 라이선스 정보를 Asset Intelligence 카탈로그에 성공적으로 가져왔는지 확인합니다.  
 
 > [!NOTE]  
->  테스트 목적으로 사용할 수 있는 일반 소프트웨어 라이선스 파일의 예를 보려면 [System Center Configuration Manager에서 Asset Intelligence 일반 라이선스 가져오기 파일 예제](../../../../core/clients/manage/asset-intelligence/example-asset-intelligence-general-license-import.md)를 참조하세요.  
+>  테스트 목적으로 사용할 수 있는 일반 소프트웨어 라이선스 파일의 예를 보려면 [Asset Intelligence 일반 라이선스 가져오기 파일 예제](../../../../core/clients/manage/asset-intelligence/example-asset-intelligence-general-license-import.md)를 참조하세요.  
 
 #### <a name="sample-table-to-describe-software-licenses"></a>소프트웨어 라이선스를 설명하는 샘플 표  
  일반 라이선스 계정 가져오기 파일을 만들 때 다음 표의 정보를 사용하여 Asset Intelligence 카탈로그에 가져올 소프트웨어 라이선스를 설명할 수 있습니다.  
 
-|열 이름|데이터 형식|필수|예|  
+|열 이름|데이터 형식|필수|예제|  
 |-----------------|---------------|--------------|-------------|  
 |Name|최대 255자|예|소프트웨어 타이틀|  
 |Publisher|최대 255자|예|소프트웨어 게시자|  

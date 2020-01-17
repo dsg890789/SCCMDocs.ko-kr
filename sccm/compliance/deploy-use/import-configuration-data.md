@@ -10,19 +10,18 @@ ms.assetid: 309b9a09-a611-4ba2-90ab-dde51582cf87
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1292e2af9a88c1e93252fe080b6b34f2d5702aa3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4f70a956051858fce5b4ba5f519c7e1035600793
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378133"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818352"
 ---
-# <a name="import-configuration-data-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 구성 데이터 가져오기
+# <a name="import-configuration-data-with-configuration-manager"></a>Configuration Manager를 사용 하 여 구성 데이터 가져오기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 콘솔에서 구성 기준 및 구성 항목을 만들 수 있을 뿐만 아니라 캐비닛(.cab) 파일 형식에 포함되어 있고 지원되는 SML(서비스 모델링 언어) 스키마를 준수하는 경우 구성 데이터를 가져올 수 있습니다. 다음과 같은 구성 데이터를 가져올 수 있습니다.  
+Configuration Manager 콘솔에서 구성 기준 및 구성 항목을 만들 수 있을 뿐만 아니라 캐비닛(.cab) 파일 형식에 포함되어 있고 지원되는 SML(서비스 모델링 언어) 스키마를 준수하는 경우 구성 데이터를 가져올 수 있습니다. 다음과 같은 구성 데이터를 가져올 수 있습니다.  
 
 - Microsoft 또는 다른 소프트웨어 공급업체 사이트에서 다운로드한 모범 사례 구성 데이터(구성 팩)  
 

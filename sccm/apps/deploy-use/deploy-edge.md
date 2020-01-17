@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge 버전 77 이상 배포 및 업데이트
+title: Microsoft Edge 버전 77 이상의 배포 및 업데이트
 titleSuffix: Configuration Manager
 description: Configuration Manager를 사용 하 여 Microsoft Edge, 77 이상 버전을 배포 하 고 업데이트 하는 방법
 ms.date: 11/29/2019
@@ -10,17 +10,16 @@ ms.assetid: 73b420be-5d6a-483a-be66-c4d274437508
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65488348507a434f324d1e239b790d5c06323c38
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 25ff9d97fb0079373ae8ac8fe75e2d31d2f2e662
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662261"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815870"
 ---
 # <a name="microsoft-edge-management"></a>Microsoft Edge 관리
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 모든 새로운 Microsoft Edge는 비즈니스용으로 준비됩니다. Configuration Manager 버전 1910부터 이제 사용자에 게 [Microsoft Edge, 버전 77 이상을](https://docs.microsoft.com/deployedge/) 배포할 수 있습니다.
 
@@ -37,7 +36,7 @@ Microsoft Edge 버전 77 이상 배포를 대상으로 하는 클라이언트:
   
 Configuration Manager 콘솔을 실행하는 디바이스에는 다음 엔드포인트에 대한 액세스 권한이 있어야 합니다.
 
-|위치|관리 그룹을 연결하거나 연결된 관리 그룹의 속성을 편집하려면 관리 작업 영역의|
+|위치|Windows Server Update Services와 함께|
 |---|---|
 |`https://edgeupdates.azurewebsites.net/api/products?view=enterprise`|Microsoft Edge 버전 77 이상의 릴리스에 대한 정보|
 |`http://dl.delivery.mp.microsoft.com`|Microsoft Edge 릴리스, 버전 77 이상에 대한 콘텐츠|
@@ -66,7 +65,7 @@ Configuration Manager 콘솔을 실행하는 디바이스에는 다음 엔드포
 
 ### <a name="log-files-for-deployment"></a>배포용 로그 파일
 
-|위치|로그|관리 그룹을 연결하거나 연결된 관리 그룹의 속성을 편집하려면 관리 작업 영역의|
+|위치|로그|Windows Server Update Services와 함께|
 |---|---|---|
 | 사이트 서버|SMSProv.log|앱 또는 배포 만들기가 실패할 경우 세부 정보를 표시합니다.|
 | [상황에 따라 다름](/sccm/core/plan-design/hierarchy/log-files)|PatchDownloader.log| 콘텐츠 다운로드에 실패하는 경우 세부 정보 표시|

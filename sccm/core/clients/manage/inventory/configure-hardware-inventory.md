@@ -1,7 +1,7 @@
 ---
 title: 하드웨어 인벤토리 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 컬렉션 또는 모든 클라이언트에 대한 하드웨어 인벤토리를 설정합니다.
+description: Configuration Manager에서 컬렉션 또는 모든 클라이언트에 대한 하드웨어 인벤토리를 설정합니다.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 0e45290e-f8f7-4335-801e-570225d12c2b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fecaa5a9fb74c9f8d473cc9dba6a307800fd70f9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ee40a6c58e3d3a4c85eb5cc8cb19c2a834fbfd0e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499943"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824370"
 ---
-# <a name="how-to-configure-hardware-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 하드웨어 인벤토리를 구성하는 방법
+# <a name="how-to-configure-hardware-inventory-in-configuration-manager"></a>Configuration Manager에서 하드웨어 인벤토리를 구성 하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 절차는 하드웨어 인벤토리에 대한 기본 클라이언트 설정을 구성하고 계층의 모든 클라이언트에 적용됩니다. 이러한 설정을 일부 클라이언트에만 적용하려면 사용자 지정 디바이스 클라이언트 설정을 만들고 이를 하드웨어 인벤토리를 사용하려는 디바이스가 포함된 컬렉션에 할당합니다. [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
+이 절차는 하드웨어 인벤토리에 대한 기본 클라이언트 설정을 구성하고 계층의 모든 클라이언트에 적용됩니다. 이러한 설정을 일부 클라이언트에만 적용하려면 사용자 지정 디바이스 클라이언트 설정을 만들고 이를 하드웨어 인벤토리를 사용하려는 디바이스가 포함된 컬렉션에 할당합니다. [클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.  
 
 > [!NOTE]  
 >  클라이언트 디바이스가 하드웨어 인벤토리 설정을 여러 클라이언트 설정 집합에서 받는 경우 각 설정 집합의 하드웨어 인벤토리 클래스는 클라이언트가 하드웨어 인벤토리를 보고할 때 병합됩니다. 또한 우선순위가 높은 사용자 지정 클라이언트 설정에서 클래스를 확인하지 않으면 클라이언트가 해당 클래스를 인벤토리에 보관할 수 없습니다. 
@@ -46,4 +45,4 @@ ms.locfileid: "65499943"
 
 7.  필요한 다른 [하드웨어 인벤토리 클라이언트 설정](../../../../core/clients/deploy/about-client-settings.md#hardware-inventory)을 구성합니다.  
 
-클라이언트 디바이스가 다음번에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
+클라이언트 디바이스가 다음번에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  

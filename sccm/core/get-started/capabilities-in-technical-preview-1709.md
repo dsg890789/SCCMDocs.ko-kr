@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1709
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1709에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1709에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 09/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a88052e0d799b324ddbed6acbdf0b25a97f4d80c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c16ea4928873a987ff673a44574f9734a08607b2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67677369"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804744"
 ---
-# <a name="capabilities-in-technical-preview-1709-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1709의 기능
+# <a name="capabilities-in-technical-preview-1709-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1709의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1709에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1709에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.     
 
 
 <!--  Known Issues Template   
@@ -82,7 +81,7 @@ ms.locfileid: "67677369"
 <!-- 1350871 -->
 고객은 보통 낮은 비용으로 간소화된 클라우드 기반 솔루션을 사용하여 모바일 디바이스를 관리하는 동일한 방식으로 Windows 10 디바이스를 관리하려고 합니다. 그러나 기존 관리에서 최신 관리로 전환하기가 어려울 수 있습니다. Windows 10 버전 1607(Anniversary Update라고도 함)부터는 Windows 10 디바이스를 온-프레미스 AD(Active Directory)와 클라우드 기반 Azure AD에 동시에 조인할 수 있습니다(하이브리드 Azure AD). 공동 관리에서는 이 향상된 기능을 사용하며 Configuration Manager 및 Intune을 둘 다 사용하여 Windows 10 디바이스를 동시에 관리할 수 있게 해줍니다. 이것은 기존 관리에서 최신 관리에 대한 연결을 제공하고 단계별 접근 방법을 사용하여 전환할 수 있는 경로를 제공하는 솔루션입니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 공동 관리를 활성화하기 전에 다음 필수 구성 요소를 준비해야 합니다. 기존 Configuration Manager 클라이언트 및 클라이언트가 아닌 디바이스에 대한 일반 전제 조건 및 다른 필수 구성 요소가 있습니다.
 
 ### <a name="known-issues"></a>알려진 문제
@@ -220,4 +219,4 @@ Select the co-management object, and then on the Home tab, click **Properties**.
 After you have enabled co-management, you can monitor which devices are managed by Configuration Manager and which are managed by Intune. You can also see which Configuration Manager workloads are managed by which product.-->
 
 ## <a name="see-also"></a>참고 항목
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요. 
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요. 

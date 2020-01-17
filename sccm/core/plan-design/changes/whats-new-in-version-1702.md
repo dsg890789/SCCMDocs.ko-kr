@@ -1,7 +1,7 @@
 ---
 title: 새 버전 1702
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1702에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
+description: Configuration Manager 1702 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
 ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e41779d7901471e208c26b9050c4db82b678244
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b5e48166ff09d47f7240256fe0ca451d7a14452f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339829"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802755"
 ---
-# <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1702의 새로운 기능
+# <a name="what39s-new-in-version-1702-of-configuration-manager"></a>Configuration Manager 1702 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 현재 분기의 업데이트 1702는 버전 1602, 1606 또는 1610을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다. 새 배포를 설치할 때 이를 기준선 버전으로 사용할 수도 있습니다.
+Configuration Manager 현재 분기의 업데이트 1702는 버전 1602, 1606 또는 1610을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다. 새 배포를 설치할 때 이를 기준선 버전으로 사용할 수도 있습니다.
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  

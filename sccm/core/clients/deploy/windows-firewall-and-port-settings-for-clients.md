@@ -1,7 +1,7 @@
 ---
 title: Windows 클라이언트 방화벽 및 포트 설정
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 클라이언트에 대한 Windows 방화벽 및 포트 설정을 선택합니다.
+description: Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정을 선택합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: dce4b640-c92f-401a-9873-ce9aa9262014
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b53f55a47a77848840493fa7fe08b599a4db2111
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2290899c0159221c5f45ce6c34332b766984e4c1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62200836"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824812"
 ---
-# <a name="windows-firewall-and-port-settings-for-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정
+# <a name="windows-firewall-and-port-settings-for-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트용 Windows 방화벽 및 포트 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-Windows 방화벽을 실행하는 System Center Configuration Manager의 클라이언트 컴퓨터에서는 보통 해당 사이트와의 통신을 허용하는 예외를 구성해야 합니다. 구성해야 할 예외는 Configuration Manager 클라이언트에서 사용하는 관리 기능에 따라 달라집니다.  
+Windows 방화벽을 실행하는 Configuration Manager의 클라이언트 컴퓨터에서는 보통 해당 사이트와의 통신을 허용하는 예외를 구성해야 합니다. 구성해야 할 예외는 Configuration Manager 클라이언트에서 사용하는 관리 기능에 따라 달라집니다.  
 
  이러한 관리 기능을 확인하고 Windows 방화벽에서 이러한 예외를 구성하는 방법에 대한 자세한 내용을 보려면 다음 섹션을 참조하십시오.  
 
@@ -61,7 +60,7 @@ Windows 방화벽을 실행하는 System Center Configuration Manager의 클라�
  아웃바운드: TCP 포트 **443**(HTTPS 통신용)  
 
 > [!IMPORTANT]  
->  이러한 포트는 Configuration Manager에서 변경할 수 없는 기본 포트 번호입니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요. 이러한 포트가 기본값에서 변경된 경우 Windows 방화벽에서 일치하는 예외도 구성해야 합니다.  
+>  이러한 포트는 Configuration Manager에서 변경할 수 없는 기본 포트 번호입니다. 자세한 내용은 [클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md) 항목을 참조하세요. 이러한 포트가 기본값에서 변경된 경우 Windows 방화벽에서 일치하는 예외도 구성해야 합니다.  
 
 ### <a name="client-notification"></a>클라이언트 알림  
  관리자가 Configuration Manager 콘솔에서 클라이언트 작업을 선택하는 경우에 수행해야 할 작업(예: 컴퓨터 정책 다운로드 또는 맬웨어 검색 시작)에 대해 관리 지점에서 클라이언트 컴퓨터에 알리도록 하려면 Windows 방화벽에서 다음을 예외로 추가합니다.  
@@ -75,7 +74,7 @@ Windows 방화벽을 실행하는 System Center Configuration Manager의 클라�
  아웃바운드: TCP 포트 **443**(HTTPS 통신용)  
 
 > [!IMPORTANT]  
->  이러한 포트는 Configuration Manager에서 변경할 수 없는 기본 포트 번호입니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요. 이러한 포트가 기본값에서 변경된 경우 Windows 방화벽에서 일치하는 예외도 구성해야 합니다.  
+>  이러한 포트는 Configuration Manager에서 변경할 수 없는 기본 포트 번호입니다. 자세한 내용은 [클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요. 이러한 포트가 기본값에서 변경된 경우 Windows 방화벽에서 일치하는 예외도 구성해야 합니다.  
 
 ### <a name="remote-control"></a>원격 제어  
  Configuration Manager 원격 제어를 사용하려면 다음 포트를 허용합니다.  
@@ -96,7 +95,7 @@ Windows 방화벽을 실행하는 System Center Configuration Manager의 클라�
 
  이러한 포트뿐 아니라 절전 모드 해제 프록시 역시 클라이언트 컴퓨터 간에 ICMP(Internet Control Message Protocol) 에코 요청 메시지를 사용합니다. 이 통신은 네트워크의 다른 클라이언트 컴퓨터가 절전 모드에서 해제되었는지 여부를 확인하는 데 사용됩니다. ICMP는 TCP/IP Ping 명령이라고도 합니다.  
 
- 절전 모드 해제 프록시에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트의 절전 모드 해제 계획](../../../core/clients/deploy/plan/plan-wake-up-clients.md)을 참조하세요.  
+ 절전 모드 해제 프록시에 대한 자세한 내용은 [클라이언트를 절전 모드에서 해제하는 방식 계획](../../../core/clients/deploy/plan/plan-wake-up-clients.md) 섹션을 참조하세요.  
 
 ### <a name="windows-event-viewer-windows-performance-monitor-and-windows-diagnostics"></a>Windows 이벤트 뷰어, Windows 성능 모니터 및 Windows 진단  
  Configuration Manager 콘솔에서 Windows 이벤트 뷰어, Windows 성능 모니터 및 Windows 진단에 액세스하려면 Windows 방화벽에서 **파일 및 프린터 공유**를 예외로 설정합니다.  

@@ -10,18 +10,17 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22edda205cc513119b03210cb416a256ec636a80
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e3f835f3fb583569cf0f2701188a787f1ce2715a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67516057"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802993"
 ---
-# <a name="learn-more-about-available-updates-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사용 가능한 업데이트에 대한 자세한 내용을 알아봅니다.
+# <a name="learn-more-about-available-updates-for-configuration-manager"></a>Configuration Manager의 사용 가능한 업데이트에 대한 자세한 내용을 알아봅니다.
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 릴리스 버전을 사용하는 경우 [System Center Configuration Manager의 새로운 기능](https://technet.microsoft.com/library/mt622084.aspx)을 참조하세요.  
+Configuration Manager 릴리스 버전을 사용하는 경우 [새로운 기능](https://technet.microsoft.com/library/mt622084.aspx)을 참조하세요.  
 
- System Center Configuration Manager의 Technical Preview 버전을 사용하는 경우 [System Center Configuration Manager Technical Preview](https://technet.microsoft.com/library/mt595861.aspx)를 참조하세요.
+ Configuration Manager용 Technical Preview 버전을 사용하는 경우 [Configuration Manager용 Technical Preview](https://technet.microsoft.com/library/mt595861.aspx)를 참조하세요.

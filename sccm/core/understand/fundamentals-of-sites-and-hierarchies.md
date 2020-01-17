@@ -1,7 +1,7 @@
 ---
 title: 사이트 및 계층의 기본 사항
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 사이트 및 계층 구조에 대한 기본 정보를 가져옵니다.
+description: Configuration Manager 사이트 및 계층 구조에 대한 기본 정보를 가져옵니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,22 +10,21 @@ ms.assetid: 4db1e15f-e832-4cf9-be33-d3971e635a55
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00465c431ded49c3833b19a3efd1da05ad1c388d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e187656c5149ff7dbfd3c4a21d023f55c85b2015
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62251531"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825849"
 ---
-# <a name="fundamentals-of-sites-and-hierarchies-for-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 및 계층 구조에 대한 기본 사항
+# <a name="fundamentals-of-sites-and-hierarchies-for-configuration-manager"></a>Configuration Manager의 사이트 및 계층 구조에 대한 기본 사항
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 배포는 Active Directory 도메인에 설치해야 합니다. 이 배포의 기반에는 사이트 계층 구조를 형성하는 하나 이상의 Configuration Manager 사이트가 포함됩니다. 단일 사이트에서 여러 사이트 계층에 이르기까지, 설치하는 사이트 유형과 위치에 따라 필요한 경우 배포 범위를 확장하고, 관리되는 사용자와 디바이스에 대한 중요 서비스를 제공할 수 있습니다.
+Configuration Manager 배포는 Active Directory 도메인에 설치해야 합니다. 이 배포의 기반에는 사이트 계층 구조를 형성하는 하나 이상의 Configuration Manager 사이트가 포함됩니다. 단일 사이트에서 여러 사이트 계층에 이르기까지, 설치하는 사이트 유형과 위치에 따라 필요한 경우 배포 범위를 확장하고, 관리되는 사용자와 디바이스에 대한 중요 서비스를 제공할 수 있습니다.
 
 ## <a name="hierarchies-of-sites"></a>사이트의 계층 구조
-처음으로 System Center Configuration Manager를 설치하는 경우 설치하는 첫 번째 Configuration Manager 사이트에 따라 계층 구조의 범위가 결정됩니다. 첫 번째 Configuration Manager 사이트는 엔터프라이즈에서 디바이스와 사용자를 관리할 기반입니다. 첫 번째 사이트는 중앙 관리 사이트나 독립 실행형 기본 사이트여야 합니다.  
+처음으로 Configuration Manager를 설치하는 경우 설치하는 첫 번째 Configuration Manager 사이트에 따라 계층 구조의 범위가 결정됩니다. 첫 번째 Configuration Manager 사이트는 엔터프라이즈에서 디바이스와 사용자를 관리할 기반입니다. 첫 번째 사이트는 중앙 관리 사이트나 독립 실행형 기본 사이트여야 합니다.  
 
  *중앙 관리 사이트*는 대규모 배포에 적합하고, 중앙 관리 지점을 제공하고, 글로벌 네트워크 인프라를 통해 배포되는 디바이스를 지원할 수 있는 유연성을 제공합니다. 중앙 관리 사이트를 설치한 후 하나 이상의 기본 사이트를 자식 사이트로 설치해야 합니다. 중앙 관리 사이트에서 기본 사이트의 기능인 디바이스의 관리를 직접 지원하지 않기 때문에 이 구성이 필요합니다. 중앙 관리 사이트는 여러 자식 기본 사이트를 지원합니다. 자식 기본 사이트는 디바이스를 직접 관리하고 관리되는 디바이스가 지리적으로 서로 다른 위치에 있는 경우 네트워크 대역폭을 제어하는 데 사용됩니다.  
 
@@ -44,11 +43,11 @@ System Center Configuration Manager 배포는 Active Directory 도메인에 설�
 
  자세한 내용은 다음 항목을 참조하세요.  
 
--   [System Center Configuration Manager 소개](../../core/understand/introduction.md)  
+-   [Configuration Manager 소개](../../core/understand/introduction.md)  
 
--   [System Center Configuration Manager에 대한 사이트 계층 구조 디자인](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md)  
+-   [Configuration Manager에 대한 사이트 계층 구조 디자인](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md)  
 
--   [System Center Configuration Manager 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
+-   [Configuration Manager 사이트 설치](/sccm/core/servers/deploy/install/installing-sites)  
 
 ## <a name="site-system-servers-and-site-system-roles"></a>사이트 시스템 서버 및 사이트 시스템 역할  
  각 Configuration Manager 사이트에서 관리 작업을 지원하는 *사이트 시스템 역할*을 설치합니다. 다음 역할은 사이트를 설치할 때 기본적으로 설치됩니다.
@@ -61,7 +60,7 @@ System Center Configuration Manager 배포는 Active Directory 도메인에 설�
 
  더 작은 규모의 Configuration Manager 배포의 경우 처음에 사이트 서버 컴퓨터에서 직접 사이트 시스템 역할을 모두 실행할 수 있습니다. 관리되는 환경을 확장해야 하는 경우 보다 많은 디바이스에 서비스를 제공한다는 측면에서 사이트 효율성을 개선하기 위해 추가 사이트 시스템 역할을 호스트할 사이트 시스템 서버를 추가로 설치할 수 있습니다.  
 
- 다른 사이트 시스템 역할에 대한 자세한 내용은 [System Center Configuration Manager에 대한 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md#bkmk_planroles)에서 [사이트 시스템 역할](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)을 참조하세요.
+ 다른 사이트 시스템 역할에 대한 자세한 내용은 [Configuration Manager에 대한 사이트 시스템 서버 및 사이트 시스템 역할에 대한 계획](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)에서 [사이트 시스템 역할](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md#bkmk_planroles)을 참조하세요.
 
 ## <a name="publishing-site-information-to-active-directory-domain-services"></a>Active Directory Domain Services에 사이트 정보 게시  
  Configuration Manager의 관리를 간소화하려면 Configuration Manager에서 사용하는 세부 정보를 지원하도록 Active Directory 스키마를 확장한 후 사이트를 통해 AD DS(Active Directory Domain Services)에 키 정보를 게시할 수 있습니다. 이렇게 하면 관리하려는 컴퓨터가 AD DS의 신뢰할 수 있는 원본에서 사이트 관련 정보를 안전하게 검색할 수 있습니다. 정보 클라이언트는 사용 가능한 사이트, 사이트 시스템 서버 및 해당 사이트 시스템 서버에서 제공하는 서비스를 검색할 수 있습니다.  

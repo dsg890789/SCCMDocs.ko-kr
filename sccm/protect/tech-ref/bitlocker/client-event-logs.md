@@ -6,27 +6,26 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: c38b6963-cb1f-40ed-a888-e19d401ec3fc
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 63b0ae248fe3126e6a2ce62de75062df3ddda93d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 228d96ad71b81d4e544e1f8906dbcf6bb032858b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662701"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819032"
 ---
 # <a name="client-event-logs"></a>클라이언트 이벤트 로그
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 
 BitLocker 관리 정책을 배포할 Configuration Manager 클라이언트에서 Windows 이벤트 뷰어를 사용 하 여 BitLocker 클라이언트 이벤트 로그를 확인 합니다. [관리](#admin) 및 [운영](#operational) 이벤트 로그에 대 한 **응용 프로그램 및 서비스 로그**, **Microsoft**, **Windows**, **mbam** 으로 이동 합니다.
 
-## <a name="admin"></a>관리
+## <a name="admin"></a>관리자
 
 ### <a name="2-volumeenactmentfailed"></a>2: VolumeEnactmentFailed
 
@@ -94,7 +93,7 @@ MBAM 복구 및 하드웨어 서비스에 연결할 수 없습니다.
 
 #### <a name="error-code--2147024809"></a>오류 코드: -2147024809
 
-세부 정보: 매개 변수가 잘못 되었습니다.
+세부 정보: 매개 변수가 잘못되었습니다.
 
 이 오류는 웹 사이트가 HTTPS가 아니거나 클라이언트에 PKI 인증서가 없는 경우에 발생 합니다.
 

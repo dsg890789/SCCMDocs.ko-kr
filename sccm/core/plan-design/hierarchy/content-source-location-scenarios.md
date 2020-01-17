@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 원본 위치
 titleSuffix: Configuration Manager
-description: 클라이언트가 저속 네트워크에서 콘텐츠를 찾을 수 있도록 하는 System Center Configuration Manager 설정에 대해 알아봅니다.
+description: 클라이언트가 저속 네트워크에서 콘텐츠를 찾을 수 있도록 하는 Configuration Manager 설정에 대해 알아봅니다.
 ms.date: 01/3/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,24 +11,23 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3414fb15f3a303b443aa615a45440e1b0636e5b4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a8168c8fcc1645c620287d15ce11a733731af8d5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891381"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800409"
 ---
-# <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager의 콘텐츠 원본 위치 시나리오
+# <a name="content-source-location-scenarios-in-configuration-manager"></a>Configuration Manager의 콘텐츠 원본 위치 시나리오
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-버전 1610 이전의 System Center Configuration Manager에서는 서로 조합되어 클라이언트가 저속 네트워크에 있을 때 콘텐츠를 찾는 방법과 위치를 정의하는 여러 설정을 지원했습니다. 가능한 조합은 클라이언트가 사용하는 콘텐츠 위치 및 기본 콘텐츠 원본을 사용할 수 없는 경우 대체 위치를 사용할 수 있는지 여부에 영향을 줍니다.  
+버전 1610 이전의 Configuration Manager에서는 서로 조합되어 클라이언트가 저속 네트워크에 있을 때 콘텐츠를 찾는 방법과 위치를 정의하는 여러 설정을 지원했습니다. 가능한 조합은 클라이언트가 사용하는 콘텐츠 위치 및 기본 콘텐츠 원본을 사용할 수 없는 경우 대체 위치를 사용할 수 있는지 여부에 영향을 줍니다.  
 
 > [!IMPORTANT]  
 > **사이트에서 버전 1511, 1602 또는 1606을 실행하는 경우** 이 항목의 정보가 인프라에 적용됩니다. 또한 이러한 버전의 Configuration Manager와 경계 그룹에 대한 자세한 내용은 [버전 1511, 1602 및 1606에 대한 경계 그룹](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)을 참조하세요.
 >
-> **사이트에서 버전 1610 이상을 실행하는 경우** [System Center Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups)의 정보를 사용하여 클라이언트에서 사용 가능한 콘텐츠가 있는 배포 지점을 찾는 방법을 파악합니다.
+> **사이트에서 버전 1610 이상을 실행하는 경우**[Configuration Manager에 대한 사이트 경계 및 경계 그룹 정의](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups)의 정보를 사용하여 클라이언트에서 사용 가능한 콘텐츠가 있는 배포 지점을 찾는 방법을 파악합니다.
 
 
 

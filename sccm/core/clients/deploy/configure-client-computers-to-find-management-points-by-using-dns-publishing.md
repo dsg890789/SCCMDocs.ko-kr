@@ -10,26 +10,25 @@ ms.assetid: 03cec407-0f9f-454f-a360-b005af738d29
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5305b557eb3db83125e0f259e804a8eba0384290
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d28a8a35f711dcef7e3f9adb6dccbabc4082ab28
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890257"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825220"
 ---
 # <a name="configure-client-computers-to-find-management-points-by-using-dns-publishing"></a>DNS 게시를 사용하여 관리 지점을 찾도록 클라이언트 컴퓨터 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 클라이언트는 사이트 할당을 완료하고 계속되는 프로세스를 관리되는 상태로 유지하기 위해 관리 지점을 찾아야 합니다. 인트라넷의 클라이언트가 관리 지점을 찾는 데 Active Directory Domain Services를 사용하는 것이 가장 안전하지만, 예를 들어 Active Directory 스키마를 확장하지 않았거나 클라이언트가 작업 그룹에 없어서 클라이언트가 이 서비스 위치 방법을 사용할 수 없는 경우에는 기본 대체 서비스 위치 방법으로 DNS 게시를 사용하십시오.  
+Configuration Manager의 클라이언트는 사이트 할당을 완료하고 계속되는 프로세스를 관리되는 상태로 유지하기 위해 관리 지점을 찾아야 합니다. 인트라넷의 클라이언트가 관리 지점을 찾는 데 Active Directory Domain Services를 사용하는 것이 가장 안전하지만, 예를 들어 Active Directory 스키마를 확장하지 않았거나 클라이언트가 작업 그룹에 없어서 클라이언트가 이 서비스 위치 방법을 사용할 수 없는 경우에는 기본 대체 서비스 위치 방법으로 DNS 게시를 사용하십시오.  
 
 > [!NOTE]  
->  Linux 및 UNIX 서버에 클라이언트를 설치하는 경우 초기 연결 지점으로 사용할 관리 지점을 지정해야 합니다. Linux 및 UNIX용 클라이언트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md)을 참조하세요.  
+>  Linux 및 UNIX 서버에 클라이언트를 설치하는 경우 초기 연결 지점으로 사용할 관리 지점을 지정해야 합니다. Linux 및 UNIX용 클라이언트를 설치하는 방법에 대한 자세한 내용은 [UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md)을 참조하세요.  
 
  관리 지점에 DNS 게시를 사용하기 전에 인트라넷의 DNS 서버에 사이트 관리 지점에 대한 SRV RR(서비스 위치 리소스 레코드)과 해당 호스트(A 또는 AAA) 리소스 레코드가 있어야 합니다. 서비스 위치 리소스 레코드는 Configuration Manager에서 자동으로 만들거나 DNS에 레코드를 만드는 DNS 관리자가 수동으로 만들 수 있습니다.  
 
- Configuration Manager 클라이언트의 서비스 위치 방법으로 DNS 게시를 사용하는 방법에 대한 자세한 내용은 [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
+ Configuration Manager 클라이언트의 서비스 위치 방법으로 DNS 게시를 사용하는 방법에 대한 자세한 내용은 [클라이언트가 Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
 
  기본적으로 클라이언트는 해당 DNS 도메인에서 관리 지점의 DNS를 검색합니다. 그러나 클라이언트의 도메인에 게시된 관리 지점이 없으면 관리 지점 DNS 접미사를 사용하여 수동으로 클라이언트를 구성해야 합니다. 클라이언트 설치 중이나 후에 클라이언트에서 이 DNS 접미사를 구성할 수 있습니다.  
 
@@ -45,7 +44,7 @@ System Center Configuration Manager의 클라이언트는 사이트 할당을 �
 
      사이트가 관리 지점을 둘 이상 갖고 둘 이상의 도메인에 있는 경우 한 도메인만 지정합니다. 클라이언트가 이 도메인의 관리 지점에 연결하면 사용 가능한 관리 지점 목록을 다운로드하며, 여기에는 다른 도메인의 관리 지점도 포함됩니다.  
 
-    CCMSetup 명령줄 속성에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+    CCMSetup 명령줄 속성에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
 #### <a name="to-configure-clients-for-a-management-point-suffix-after-client-installation"></a>클라이언트 설치 후에 클라이언트에서 관리 지점 접미사를 구성하려면  
 

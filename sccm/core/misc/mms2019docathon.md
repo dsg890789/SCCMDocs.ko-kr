@@ -4,22 +4,21 @@ ms.date: 05/06/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 8fe2ecfc-f5c1-4fa6-8703-245339400723
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: cb17e22f7eb525f10a3494f893928a836c847c9d
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 9af04678ac35311f35dde991b4aa43d7b6df736f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198458"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802959"
 ---
 # <a name="mms-2019-docathon"></a>MMS 2019 Docathon
 
-MMS(Midwest Management Summit) 2019 기간에 System Center Configuration Manager 및 Microsoft Intune을 위한 Microsoft 콘텐츠 팀은 docathon을 진행합니다. 5월 6일 월요일 [Docs.microsoft.com 실습 랩](https://sched.co/N6fd) 세션에 참석하는 동안 Microsoft 작성자의 지원과 함께 기여 활동에 참여하게 됩니다. Docathon은 회의 내내 진행되고 모든 등록된 MMS 2019 참석자가 참여할 수 있습니다.
+MMS(Midwest Management Summit) 2019 기간에 Configuration Manager 및 Microsoft Intune을 위한 Microsoft 콘텐츠 팀은 docathon을 진행합니다. 5월 6일 월요일 [Docs.microsoft.com 실습 랩](https://sched.co/N6fd) 세션에 참석하는 동안 Microsoft 작성자의 지원과 함께 기여 활동에 참여하게 됩니다. Docathon은 회의 내내 진행되고 모든 등록된 MMS 2019 참석자가 참여할 수 있습니다.
 
 참여하신 이유는 무엇인가요? Docs.microsoft.com은 GitHub에서 제공하는 Microsoft 제품 설명서를 위한 오픈 소스 플랫폼입니다. Microsoft는 모든 사용자가 문서에 기여할 것을 권장합니다. 기여 활동에 참여하면 귀하는 이 플랫폼을 통해 모든 문서의 기여자 목록에 포함됩니다. 커뮤니티에서 제공할 수 있는 몇 가지 기여 유형은 다음과 같습니다.
 

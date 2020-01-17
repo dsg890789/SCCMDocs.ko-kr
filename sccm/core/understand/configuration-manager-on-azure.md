@@ -10,23 +10,22 @@ ms.assetid: d24257d8-8136-47f4-8e0d-34021356dc37
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71588dbd541c9d42c37b182b3ef420f3e68f3c3a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 18f4f85ebf51e9baad7d003ca97ec74f2fca9efa
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891966"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825917"
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure의 Configuration Manager - 질문과 대답
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다음 질문과 대답을 사용하여 Microsoft Azure에서 Configuration Manager를 사용하는 시기와 구성 방법을 이해할 수 있습니다.
 
 ## <a name="general-questions"></a>일반적인 질문
 ### <a name="my-company-is-trying-to-move-as-many-physical-servers-as-possible-to-microsoft-azure-can-i-move-configuration-manager-servers-to-azure"></a>회사에서 가능한 한 많은 물리적 서버를 Microsoft Azure로 이동하려고 합니다. Configuration Manager 서버를 Azure로 이동할 수 있나요?
-물론입니다. 지원되는 시나리오입니다.  [System Center Configuration Manager에 대한 가상화 환경 지원](/sccm/core/plan-design/configs/support-for-virtualization-environments)을 참조하세요.
+물론입니다. 지원되는 시나리오입니다.  [Configuration Manager에 대한 가상화 환경 지원](/sccm/core/plan-design/configs/support-for-virtualization-environments)을 참조하세요.
 
 ### <a name="great-my-environment-requires-multiple-sites-should-all-child-primary-sites-be-in-azure-with-the-central-administration-site-or-on-premises-what-about-secondary-sites"></a>좋습니다! 현재 환경에 여러 사이트가 필요합니다. 모든 하위 기본 사이트가 중앙 관리 사이트 또는 온-프레미스가 있는 Azure에 있어야 하나요? 보조 사이트의 경우는 어떤가요?
 사이트 간 통신(파일 기반 및 데이터베이스 복제)은 Azure에 호스트 중인 근접 연결에 유용합니다. 그러나 트래픽과 관련된 모든 클라이언트는 사이트 서버 및 사이트 시스템의 원격 클라이언트가 됩니다. 무제한 데이터 요금제를 사용하고 Azure와 인트라넷 간에 빠르고 안정적인 네트워크 연결을 사용하는 경우 Azure의 모든 인프라를 호스트할 수 있습니다.
@@ -88,7 +87,7 @@ Configuration Manager는 Azure 부하 분산 장치에서 테스트되지 않았
 [Azure VM 크기 및 형식](https://azure.microsoft.com/documentation/articles/virtual-machines-size-specs), Azure VM 디스크(Premium Storage 권장, 특히 SQL Server의 경우), 네트워킹 대기 시간 및 속도가 가장 중요한 요인입니다.
 
 ### <a name="so-tell-me-more-about-azure-virtual-machines-what-size-vms-should-i-use"></a>그럼 Azure Virtual Machines에 대해 자세히 알고 싶습니다. 어떤 크기의 VM을 사용해야 하나요?
-일반적으로 컴퓨터 성능(CPU 및 메모리)은 [System Center Configuration Manager의 하드웨어 권장 사항](/sccm/core/plan-design/configs/recommended-hardware)을 만족해야 합니다. 그러나 일반적인 컴퓨터 하드웨어와 Azure VM 간에는 약간의 차이가 있습니다. 특히 이러한 VM이 사용하는 디스크가 다릅니다.  사용할 VM의 크기는 해당 환경의 크기에 따라 달라지지만 다음 권장 사항을 참조할 수 있습니다.
+일반적으로 컴퓨터 성능(CPU 및 메모리)은 [Configuration Manager의 하드웨어 권장 사항](/sccm/core/plan-design/configs/recommended-hardware)을 만족해야 합니다. 그러나 일반적인 컴퓨터 하드웨어와 Azure VM 간에는 약간의 차이가 있습니다. 특히 이러한 VM이 사용하는 디스크가 다릅니다.  사용할 VM의 크기는 해당 환경의 크기에 따라 달라지지만 다음 권장 사항을 참조할 수 있습니다.
 - 대용량 크기의 프로덕션 배포의 경우 “**S**” 클래스 Azure VM을 권장합니다. 이는 Premium Storage 디스크를 이용할 수 있기 때문입니다.  “S” 클래스가 아닌 VM은 Blob Storage를 사용하는데 이 스토리지는 일반적으로 수용 가능한 프로덕션 환경의 성능 요구 사항을 만족하지 않습니다.
 - 확장성을 향상시키려면 여러 개의 Premium Storage 디스크를 사용해야 합니다. 최대 IOPS를 위해서는 Windows 디스크 관리 콘솔에서 스트라이프해야 합니다.  
 - 초기 사이트 배포 중 더 나은 또는 여러 개의 프리미엄 디스크를 사용하는 것이 좋습니다(예: P20보다 P30, 1xP30보다 스트라이프 볼륨의 2xP30). 그런 다음 나중에 추가 로드로 인해 VM 크기를 확장해야 할 경우 더 큰 VM 크기가 제공하는 추가 CPU 및 메모리를 사용할 수 있습니다. 또한 이미 배치된 디스크가 더 큰 VM 크기에서 허용하는 추가 IOPS 처리량을 사용하게 될 수 있습니다.

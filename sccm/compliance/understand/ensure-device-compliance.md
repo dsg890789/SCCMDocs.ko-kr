@@ -1,7 +1,7 @@
 ---
 title: 디바이스 규정 준수를 확인합니다.
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 조직에서 디바이스의 구성 및 준수를 관리합니다.
+description: Configuration Manager를 사용하여 조직에서 디바이스의 구성 및 호환성을 관리합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -10,19 +10,18 @@ ms.assetid: 7568c9aa-b99e-4466-bfc8-0301aa376930
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ac27cfd7bccc55da891707878fccd8829c43d93
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b3512c9d784f529952d3e6358950acf5bc08f24e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62213813"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818131"
 ---
-# <a name="ensure-device-compliance-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 디바이스 준수 확인
+# <a name="ensure-device-compliance-with-configuration-manager"></a>Configuration Manager를 사용하여 디바이스 준수를 확인합니다.
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 준수 설정은 조직에서 디바이스의 구성과 준수를 관리하는 데 필요한 도구와 리소스를 제공합니다. 다음과 같은 비즈니스 요구 사항을 지원하는 데 도움이 됩니다.  
+Configuration Manager의 호환성 설정은 조직에서 디바이스의 구성과 호환성을 관리하는 데 필요한 도구와 리소스를 제공합니다. 다음과 같은 비즈니스 요구 사항을 지원하는 데 도움이 됩니다.  
 
 -   관리하는 Windows PC, Mac 컴퓨터, 서버 및 모바일 디바이스의 구성과 직접 만들었거나 다른 공급업체에서 얻은 모범 사례 구성 비교  
 

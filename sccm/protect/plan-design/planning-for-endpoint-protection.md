@@ -9,20 +9,19 @@ ms.assetid: 7610bbd3-a67f-4a09-8115-e35d40d43b42
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77c87a06a76b6084f499e613dd97077dbf34fe9e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0f12d37bff70e314f755a3ff95e314b8363f3599
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65612843"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819219"
 ---
-# <a name="planning-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Endpoint Protection 계획
+# <a name="planning-for-endpoint-protection-in-configuration-manager"></a>Configuration Manager의 Endpoint Protection 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager의 Endpoint Protection을 사용하면 Configuration Manager 계층 구조의 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리할 수 있습니다.  
+Configuration Manager의 Endpoint Protection을 사용하면 Configuration Manager 계층 구조의 클라이언트 컴퓨터에 대한 맬웨어 방지 정책 및 Windows 방화벽 보안을 관리할 수 있습니다.  
 
 > [!IMPORTANT]  
 >  Configuration Manager 계층 구조의 클라이언트를 관리하려면 Endpoint Protection 사용을 허가받아야 합니다.  
@@ -52,7 +51,7 @@ Windows 10 컴퓨터에서는 Endpoint Protection 관리에 대한 추가 클라
 
   또한 Configuration Manager의 Endpoint Protection을 사용하면 Configuration Manager 콘솔에서 Windows 방화벽 설정을 관리할 수 있습니다.  
 
- [예제 시나리오: System Center Endpoint Protection을 사용하여 System Center Configuration Manager에서 맬웨어로부터 컴퓨터 보호](../deploy-use/scenarios-endpoint-protection.md)에서는 Endpoint Protection 및 Windows 방화벽을 구성하고 관리할 수 있는 방법을 보여 줍니다.  
+ [예제 시나리오: System Center Endpoint Protection을 사용하여 맬웨어로부터 컴퓨터 보호](../deploy-use/scenarios-endpoint-protection.md)에서는 Endpoint Protection 및 Windows 방화벽을 구성하고 관리할 수 있는 방법을 보여 줍니다.  
 
 ## <a name="managing-malware-with-endpoint-protection"></a>Endpoint Protection을 사용하여 맬웨어 관리  
 
@@ -60,11 +59,11 @@ Configuration Manager의 Endpoint Protection을 사용하면 Endpoint Protection
 
  추가 정보:  
 
--   [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책 만들기 및 배포](../deploy-use/endpoint-antimalware-policies.md) - 구성할 수 있는 설정 목록을 사용하여 맬웨어 방지 정책을 만들고 배포하고 모니터링합니다.  
+-   [Endpoint Protection에 대한 맬웨어 방지 정책 만들기 및 배포](../deploy-use/endpoint-antimalware-policies.md) - 구성할 수 있는 설정 목록을 사용하여 맬웨어 방지 정책을 생성, 배포, 모니터링합니다.  
 
--   [System Center Configuration Manager에서 Endpoint Protection 모니터링](../deploy-use/monitor-endpoint-protection.md) - 작업 보고서, 감염된 클라이언트 컴퓨터 등을 모니터링합니다.   
+-   [Endpoint Protection](../deploy-use/monitor-endpoint-protection.md) 모니터링 작업 보고서, 감염 된 클라이언트 컴퓨터 등을 모니터링 합니다.   
 
--   [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책 및 방화벽 설정 관리](../deploy-use/endpoint-antimalware-firewall.md) - [맬웨어 방지](../deploy-use/endpoint-antimalware-firewall.md#manage-antimalware-policies) 또는 [방화벽](../deploy-use/endpoint-antimalware-firewall.md#manage-windows-firewall-policies), [클라이언트 컴퓨터에서 검색된 맬웨어 수정](../deploy-use/endpoint-antimalware-firewall.md#remediate-detected-malware) 및 기타 작업에 대한 정책 우선 순위를 변경할 수 있습니다.
+-   [Endpoint Protection에 대한 맬웨어 방지 정책 및 방화벽 설정 관리](../deploy-use/endpoint-antimalware-firewall.md) - [맬웨어 방지](../deploy-use/endpoint-antimalware-firewall.md#manage-antimalware-policies) 또는 [방화벽](../deploy-use/endpoint-antimalware-firewall.md#manage-windows-firewall-policies), [클라이언트 컴퓨터에서 검색된 맬웨어 수정](../deploy-use/endpoint-antimalware-firewall.md#remediate-detected-malware) 및 기타 작업에 대한 정책 우선 순위를 변경할 수 있습니다.
 
 ## <a name="managing-windows-firewall-with-endpoint-protection"></a>Endpoint Protection을 사용하여 Windows 방화벽 관리  
  Configuration Manager의 Endpoint Protection은 클라이언트 컴퓨터에서 Windows 방화벽의 기본 관리 기능을 제공합니다. 각 네트워크 프로필에 대해 다음 설정을 구성할 수 있습니다.  
@@ -78,7 +77,7 @@ Configuration Manager의 Endpoint Protection을 사용하면 Endpoint Protection
 > [!NOTE]  
 >  Endpoint Protection은 Windows 방화벽 관리만 지원합니다.  
 
-  Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](../deploy-use/create-windows-firewall-policies.md)을 참조하세요.  
+  Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법에 대한 자세한 내용은 [Endpoint Protection에 대한 Windows 방화벽 정책을 만들어 배포하는 방법](../deploy-use/create-windows-firewall-policies.md)을 참조하세요.  
 
 ## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 

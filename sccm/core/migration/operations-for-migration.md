@@ -1,7 +1,7 @@
 ---
 title: 마이그레이션 작업
 titleSuffix: Configuration Manager
-description: 데이터 및 클라이언트를 System Center Configuration Manager로 마이그레이션하는 작업을 만들고 실행합니다.
+description: 데이터 및 클라이언트를 Configuration Manager 현재 분기로 마이그레이션하는 작업을 만들고 실행합니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: c28e3492-851a-40fc-ba13-67ebc2d8b41a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b59ff47ace87e4c7e8a345402616de44342ea9c1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2d60dd0b6d8feaa0501910c45129eb05c7c1c95a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62236312"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803197"
 ---
-# <a name="operations-for-migrating-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션을 위한 작업
+# <a name="operations-for-migrating-to-configuration-manager-current-branch"></a>Configuration Manager 현재 분기로 마이그레이션하는 작업
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 마이그레이션할 경우 지원되는 원본 계층의 원본 사이트에서 데이터를 성공적으로 수집한 후에 데이터와 클라이언트를 마이그레이션할 수 있습니다. 데이터 및 클라이언트를 마이그레이션하는 마이그레이션 작업을 만들고 실행한 다음 마이그레이션 프로세스를 완료하려면 다음 섹션의 정보를 참조하세요.  
+Configuration Manager에서 마이그레이션할 경우 지원되는 원본 계층의 원본 사이트에서 데이터를 성공적으로 수집한 후에 데이터와 클라이언트를 마이그레이션할 수 있습니다. 데이터 및 클라이언트를 마이그레이션하는 마이그레이션 작업을 만들고 실행한 다음 마이그레이션 프로세스를 완료하려면 다음 섹션의 정보를 참조하세요.  
 
 -   [마이그레이션 작업 만들기 및 편집](#Create_Edit_migration_Jobs)  
 
@@ -40,7 +39,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
  데이터 마이그레이션 작업을 만들고, 컬렉션 기반 마이그레이션 작업에 대한 제외 목록을 편집하고, 공유 배포 지점을 설정하고, 마이그레이션 작업 일정을 편집하려면 다음 절차를 따르세요.  
 
 > [!NOTE]  
->  컬렉션별로 마이그레이션하는 마이그레이션 작업을 만드는 다음 절차는 지원되는 Configuration Manager 2007 버전을 실행하는 원본 계층에만 적용됩니다. System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층에서 마이그레이션하는 경우 컬렉션 기반 마이그레이션 작업 유형을 사용할 수 없습니다.  
+>  컬렉션별로 마이그레이션하는 마이그레이션 작업을 만드는 다음 절차는 지원되는 Configuration Manager 2007 버전을 실행하는 원본 계층에만 적용됩니다. System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기 원본 계층에서 마이그레이션하는 경우 컬렉션 기반 마이그레이션 작업 유형을 사용할 수 없습니다.  
 
 #### <a name="create-a-migration-job-to-migrate-by-collections"></a>컬렉션별로 마이그레이션하는 마이그레이션 작업 만들기  
 
@@ -126,7 +125,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 8.  **정보 검토** 페이지에서 **파일에 저장**을 선택하여 표시된 정보를 추후 확인하기 위해 저장합니다. 계속 진행할 준비가 되면 **다음**을 선택합니다.  
 
-9. **설정** 페이지에서 마이그레이션 작업이 실행될 시점을 설정하고 이 마이그레이션 작업에 필요한 추가 설정을 선택합니다. 다른 마이그레이션 작업 유형과 달리 이 마이그레이션 작업은 System Center Configuration Manager 데이터베이스에서 이전에 마이그레이션된 개체를 덮어써야 합니다. **다음**을 선택합니다.  
+9. **설정** 페이지에서 마이그레이션 작업이 실행될 시점을 설정하고 이 마이그레이션 작업에 필요한 추가 설정을 선택합니다. 다른 마이그레이션 작업 유형과 달리 이 마이그레이션 작업은 Configuration Manager 데이터베이스에서 이전에 마이그레이션된 개체를 덮어써야 합니다. **다음**을 선택합니다.  
 
 10. 설정을 확인하고 마법사를 완료합니다.  
 
@@ -177,7 +176,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 4.  **예**를 선택하여 마이그레이션 작업을 시작합니다.  
 
 ##  <a name="BKMK_ProcUpgrdSS"></a> 공유 배포 지점 업그레이드 또는 다시 할당  
- Configuration Manager 2007 원본 사이트에서 지원되는 공유 배포 지점을 업그레이드하거나 System Center Configuration Manager 원본 사이트에서 지원되는 공유 배포 지점을 다시 할당하여 대상 계층의 배포 지점이 되도록 할 수 있습니다.  
+ Configuration Manager 2007 원본 사이트에서 지원되는 공유 배포 지점을 업그레이드하거나 Configuration Manager 원본 사이트에서 지원되는 공유 배포 지점을 다시 할당하여 대상 계층의 배포 지점이 되도록 할 수 있습니다.  
 
 > [!IMPORTANT]  
 >  Configuration Manager 2007 분기 배포 지점을 업그레이드하려면 먼저 분기 배포 지점 컴퓨터에서 Configuration Manager 2007 클라이언트 소프트웨어를 제거해야 합니다. 배포 지점을 업그레이드하려 할 때 Configuration Manager 2007 클라이언트 소프트웨어가 설치되어 있으면 업그레이드는 실패하고 이전에 분기 배포 지점에 배포한 콘텐츠가 컴퓨터에서 제거됩니다.  
@@ -213,7 +212,7 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 4.  **요약** 및 **작업에 포함된 개체**탭에서 선택한 마이그레이션 작업에 대한 세부 정보와 상태를 확인합니다.  
 
 ##  <a name="BKMK_MigrateClients"></a> 클라이언트 마이그레이션  
- 계층 구조 간에 클라이언트에 대한 데이터를 마이그레이션한 후 마이그레이션을 완료하기 전에 대상 계층으로 클라이언트를 마이그레이션할 계획을 세웁니다. 계층 간 클라이언트 마이그레이션은 원본 계층에 할당된 컴퓨터에서 Configuration Manager 클라이언트 소프트웨어를 제거한 다음 대상 계층에서 Configuration Manager 클라이언트 소프트웨어를 설치하는 과정으로 이루어집니다. 대상 계층에서 클라이언트를 설치할 때 해당 계층의 기본 사이트에도 클라이언트를 할당합니다. 클라이언트 마이그레이션에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)을 참조하세요.  
+ 계층 구조 간에 클라이언트에 대한 데이터를 마이그레이션한 후 마이그레이션을 완료하기 전에 대상 계층으로 클라이언트를 마이그레이션할 계획을 세웁니다. 계층 간 클라이언트 마이그레이션은 원본 계층에 할당된 컴퓨터에서 Configuration Manager 클라이언트 소프트웨어를 제거한 다음 대상 계층에서 Configuration Manager 클라이언트 소프트웨어를 설치하는 과정으로 이루어집니다. 대상 계층에서 클라이언트를 설치할 때 해당 계층의 기본 사이트에도 클라이언트를 할당합니다. 클라이언트 마이그레이션에 대한 자세한 내용은 [클라이언트 마이그레이션 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)을 참조하세요.  
 
 ##  <a name="Complete_Migration"></a> 마이그레이션 완료  
  원본 계층에서 마이그레이션을 완료하려면 이 절차를 따르세요.  
@@ -222,13 +221,13 @@ System Center Configuration Manager에서 마이그레이션할 경우 지원되
 
 2.  **관리** 작업 영역에서 **마이그레이션**을 확장한 후 **원본 계층**을 선택합니다.  
 
-3.  Configuration Manager 2007 원본 계층의 경우 원본 계층의 하위 수준에 있는 원본 사이트를 선택합니다. System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층의 경우 사용 가능한 원본 사이트를 선택합니다.  
+3.  Configuration Manager 2007 원본 계층의 경우 원본 계층의 하위 수준에 있는 원본 사이트를 선택합니다. System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기 원본 계층의 경우 사용 가능한 원본 사이트를 선택합니다.  
 
 4.  **홈** 탭의 **정리** 그룹에서 **데이터 수집 중지**를 선택합니다.  
 
 5.  **예**를 선택하여 작업을 확인합니다.  
 
-6.  Configuration Manager 2007 원본 계층의 경우 다음 단계를 계속 진행하기 전에 3, 4, 5단계를 반복합니다. 계층 구조의 각 사이트에서 아래쪽부터 위쪽 방향으로 이러한 단계를 수행합니다. System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층의 경우 다음 단계를 계속합니다.  
+6.  Configuration Manager 2007 원본 계층의 경우 다음 단계를 계속 진행하기 전에 3, 4, 5단계를 반복합니다. 계층 구조의 각 사이트에서 아래쪽부터 위쪽 방향으로 이러한 단계를 수행합니다. System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기 원본 계층의 경우 다음 단계를 계속합니다.  
 
 7.  **홈** 탭의 **정리** 그룹에서 **마이그레이션 데이터 정리**를 선택합니다.  
 

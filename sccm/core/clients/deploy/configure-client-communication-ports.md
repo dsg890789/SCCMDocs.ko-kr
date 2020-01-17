@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 통신 포트 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 클라이언트 통신 포트를 설정합니다.
+description: Configuration Manager에서 클라이언트 통신 포트를 설정합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 406bbdbf-ab4a-4121-a68b-154f96ea14ec
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8909ce8cc3a7c98c64e227810ff7916a85de7e4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 30b553bbe2a68ec97e4d5200644a88d09ee5967d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62213613"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825237"
 ---
-# <a name="how-to-configure-client-communication-ports-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법
+# <a name="how-to-configure-client-communication-ports-in-configuration-manager"></a>Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 클라이언트가 통신용으로 HTTP 및 HTTPS를 사용하는 사이트 시스템과 통신하는 데 사용하는 요청 포트 번호를 변경할 수 있습니다. 방화벽을 위해 HTTP 또는 HTTPS가 이미 구성되어 있을 가능성이 높지만 사용자 지정 포트 번호를 사용하는 경우 HTTP 또는 HTTPS를 사용하는 클라이언트 알림을 지정하면 관리 지점 컴퓨터의 CPU 사용량과 메모리가 더 많이 필요합니다. 절전 모드 해제 패킷을 사용하여 클라이언트의 절전 모드를 해제하는 경우 사용할 사이트 포트 번호를 지정할 수도 있습니다.  
+Configuration Manager 클라이언트가 통신용으로 HTTP 및 HTTPS를 사용하는 사이트 시스템과 통신하는 데 사용하는 요청 포트 번호를 변경할 수 있습니다. 방화벽을 위해 HTTP 또는 HTTPS가 이미 구성되어 있을 가능성이 높지만 사용자 지정 포트 번호를 사용하는 경우 HTTP 또는 HTTPS를 사용하는 클라이언트 알림을 지정하면 관리 지점 컴퓨터의 CPU 사용량과 메모리가 더 많이 필요합니다. 절전 모드 해제 패킷을 사용하여 클라이언트의 절전 모드를 해제하는 경우 사용할 사이트 포트 번호를 지정할 수도 있습니다.  
 
  HTTP 및 HTTPS 요청 포트를 지정하는 경우 기본 포트 번호와 대체 포트 번호를 모두 지정할 수 있습니다. 클라이언트는 기본 포트를 사용한 통신에 실패하면 자동으로 대체 포트와의 통신을 시도합니다. HTTP 및 HTTPS 데이터 통신에 대한 설정을 지정할 수 있습니다.  
 
@@ -43,9 +42,9 @@ System Center Configuration Manager 클라이언트가 통신용으로 HTTP 및 
 
 - 클라이언트 강제 설치 마법사를 사용하여 클라이언트를 다시 설치합니다. 클라이언트 강제 설치는 자동으로 현재 사이트 포트 구성으로 클라이언트를 구성합니다. 클라이언트 강제 설치 마법사를 사용하는 방법에 대한 자세한 내용은 [클라이언트 강제 설치를 사용하여 Configuration Manager 클라이언트를 설치하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientPush)을 참조하세요.  
 
-- CCMSetup.exe와 CCMHTTPPORT 및 CCMHTTPSPORT의 client.msi 설치 속성을 사용하여 클라이언트를 다시 설치합니다. 이러한 속성에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+- CCMSetup.exe와 CCMHTTPPORT 및 CCMHTTPSPORT의 client.msi 설치 속성을 사용하여 클라이언트를 다시 설치합니다. 이러한 속성에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
-- Active Directory Domain Services에서 Configuration Manager 클라이언트 설치 속성을 검색하는 방법을 사용하여 클라이언트를 다시 설치합니다. 자세한 내용은 [System Center Configuration Manager에서 Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services.md)를 참조하세요.  
+- Active Directory Domain Services에서 Configuration Manager 클라이언트 설치 속성을 검색하는 방법을 사용하여 클라이언트를 다시 설치합니다. 자세한 내용은 [Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services.md)를 참조하세요.  
 
   기존 클라이언트의 포트 번호를 다시 구성하기 위해 설치 미디어의 SMSSETUP\Tools\PortConfiguration 폴더에 제공된 PORTSWITCH.VBS 스크립트를 사용할 수도 있습니다.  
 

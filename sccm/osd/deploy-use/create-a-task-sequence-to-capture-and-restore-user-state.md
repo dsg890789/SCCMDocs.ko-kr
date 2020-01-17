@@ -10,17 +10,16 @@ ms.assetid: d566d85c-bf7a-40e7-8239-57640a1db5f4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82de88250a7faa44747fc897fcfee09bed45823
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2010289276b86ec55356972650c95e8910bbc065
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67678800"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825475"
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-configuration-manager"></a>Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기
 
- *적용 대상: System Center Configuration Manager(현재 분기)*
+ *적용 대상: Configuration Manager(현재 분기)*
 
  Configuration Manager 작업 순서를 사용하여 OS 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원합니다. 이러한 시나리오에서 현재 OS의 사용자 상태를 유지할 수 있습니다. 만드는 작업 순서 유형에 따라, 캡처 및 복원 단계가 작업 순서의 일부로 자동으로 추가될 수도 있습니다. 다른 시나리오에서는 캡처 및 복원 단계를 작업 순서에 수동으로 추가해야 할 수 있습니다. 이 문서에서는 사용자 상태 데이터를 캡처 및 복원하기 위해 기존 작업 순서에 추가해야 하는 단계를 제공합니다.  
 

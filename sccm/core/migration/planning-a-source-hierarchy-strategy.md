@@ -1,7 +1,7 @@
 ---
 title: 원본 계층 구조 전략
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 마이그레이션 작업을 구성하기 전에 원본 계층을 구성하고 원본 사이트의 데이터를 수집합니다.
+description: Configuration Manager 마이그레이션 작업을 구성하기 전에 원본 계층을 구성하고 원본 사이트의 데이터를 수집합니다.
 ms.date: 01/3/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 4800a800-66c8-4c35-aebe-e413a23790c1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cc925b4986c7de4fdcb0963b9435524d09306f3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5b9ee1375ba915a67f509f32c3ee20053236fbd2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889581"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803129"
 ---
-# <a name="plan-a-source-hierarchy-strategy-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원본 계층 전략 계획
+# <a name="plan-a-source-hierarchy-strategy-in-configuration-manager"></a>Configuration Manager에서 원본 계층 구조 전략 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 환경에서 마이그레이션 작업을 설정하려면 먼저 원본 계층을 구성하고 이 계층 구조에 있는 하나 이상의 원본 사이트에서 데이터를 수집해야 합니다. 다음 섹션을 사용하여 원본 계층 및 원본 사이트를 구성하는 방법과 Configuration Manager를 통해 원본 계층의 원본 사이트에서 정보를 수집하는 방법에 대해 계획합니다. 
+Configuration Manager 환경에서 마이그레이션 작업을 설정하려면 먼저 원본 계층을 구성하고 이 계층 구조에 있는 하나 이상의 원본 사이트에서 데이터를 수집해야 합니다. 다음 섹션을 사용하여 원본 계층 및 원본 사이트를 구성하는 방법과 Configuration Manager를 통해 원본 계층의 원본 사이트에서 정보를 수집하는 방법에 대해 계획합니다. 
 
 ##  <a name="BKMK_Source_Hierarchies"></a> 원본 계층 구조  
 원본 계층은 마이그레이션할 데이터가 포함된 Configuration Manager 계층 구조입니다. 마이그레이션을 설정하고 원본 계층을 지정할 때 원본 계층의 최상위 사이트를 지정합니다. 이 사이트를 원본 사이트라고도 합니다. 원본 계층에서 데이터를 마이그레이션할 수 있는 추가 사이트 또한 원본 사이트라고 합니다.  
@@ -57,7 +56,7 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
 >  두 개 이상의 원본 계층에서 데이터를 마이그레이션하려면 각 추가 원본 계층에 고유한 사이트 코드 집합이 있어야 합니다.  
 > 원본 및 대상 계층 구조에는 서로 다른 사이트 코드 집합이 있어야 합니다.
 
-원본 계층을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager로 마이그레이션할 원본 계층 및 원본 사이트 구성](../../core/migration/configuring-source-hierarchies-and-source-sites-for-migration.md)을 참조하세요.  
+원본 계층을 구성하는 방법에 대한 자세한 내용은 [Configuration Manager 현재 분기로 마이그레이션할 원본 계층 및 원본 사이트 구성](../../core/migration/configuring-source-hierarchies-and-source-sites-for-migration.md)을 참조하세요.  
 
 ##  <a name="BKMK_Source_Sites"></a> 원본 사이트  
  원본 사이트는 마이그레이션할 데이터가 포함된 원본 계층 내 사이트입니다. 원본 계층의 최상위 사이트는 항상 첫 번째 원본 사이트가 됩니다. 마이그레이션하는 동안 새 원본 계층의 첫 번째 원본 사이트에서 데이터가 수집될 때 해당 계층의 추가 사이트에 대한 정보도 검색됩니다.  
@@ -65,9 +64,9 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
  초기 원본 사이트에 대해 데이터 수집이 완료된 후 다음에 수행할 작업은 원본 계층의 제품 버전에 따라 달라집니다.  
 
 ### <a name="source-sites-that-run-configuration-manager-2007-sp2"></a>Configuration Manager 2007 SP2를 실행하는 원본 사이트  
- Configuration Manager 2007 SP2 계층 구조의 초기 원본 사이트에서 데이터가 수집되면 마이그레이션 작업을 만들기 전에 추가 원본 사이트를 설정할 필요가 없습니다. 그러나 추가 사이트에서 데이터를 마이그레이션하려면 먼저 추가 사이트를 원본 사이트로 설정하고 System Center Configuration Manager를 통해 이 사이트에서 데이터를 수집해야 합니다.  
+ Configuration Manager 2007 SP2 계층 구조의 초기 원본 사이트에서 데이터가 수집되면 마이그레이션 작업을 만들기 전에 추가 원본 사이트를 설정할 필요가 없습니다. 그러나 추가 사이트에서 데이터를 마이그레이션하려면 먼저 추가 사이트를 원본 사이트로 설정하고 Configuration Manager를 통해 이 사이트에서 데이터를 수집해야 합니다.  
 
- 추가 사이트에서 데이터를 수집하려면 각 사이트를 개별적으로 원본 사이트로 설정해야 합니다. 이렇게 하려면 각 원본 사이트의 SMS 공급자 및 사이트 데이터베이스에 연결하기 위해 System Center Configuration Manager에 대한 자격 증명을 지정해야 합니다. 원본 사이트에 대한 자격 증명을 설정하고 나면 사이트에 대해 데이터 수집 프로세스가 시작됩니다.  
+ 추가 사이트에서 데이터를 수집하려면 각 사이트를 개별적으로 원본 사이트로 설정해야 합니다. 이렇게 하려면 각 원본 사이트의 SMS 공급자 및 사이트 데이터베이스에 연결하기 위해 Configuration Manager에 대한 자격 증명을 지정해야 합니다. 원본 사이트에 대한 자격 증명을 설정하고 나면 사이트에 대해 데이터 수집 프로세스가 시작됩니다.  
 
  Configuration Manager 2007 SP2 원본 계층에서 추가 원본 사이트를 설정할 경우 위에서 아래 방향으로 원본 사이트를 설정해야 합니다. 따라서 최하위 계층 사이트는 마지막으로 설정해야 합니다. 언제든지 계층 구조의 분기 안에 원본 사이트를 설정할 수 있지만 자식 사이트를 원본 사이트로 구성하려면 먼저 부모 사이트를 원본 사이트로 설정해야 합니다.  
 
@@ -84,7 +83,7 @@ System Center Configuration Manager 환경에서 마이그레이션 작업을 �
 
  데이터 수집 프로세스는 단순 일정에 따라 자동으로 반복되어 원본 사이트 내 데이터의 변경 내용에 대해 동기화 상태를 유지합니다. 기본적으로 이 프로세스는 4시간마다 반복됩니다. 원본 사이트의 **속성**을 편집하면 이 주기에 대한 일정을 변경할 수 있습니다. 초기 데이터 수집 프로세스는 Configuration Manager 데이터베이스의 모든 개체를 검토하므로 완료하는 데 오랜 시간이 걸릴 수 있습니다. 이후의 데이터 수집 프로세스는 데이터의 변경 내용만 확인하므로 더 적은 시간이 소요됩니다.  
 
- 대상 계층의 최상위 사이트는 데이터를 수집하기 위해 원본 사이트의 SMS 공급자와 사이트 데이터베이스에 연결한 후 개체 및 배포 지점의 목록을 검색합니다. 이 연결에서 원본 사이트 액세스 계정이 사용됩니다. 데이터 수집을 위한 필수 구성에 대한 자세한 내용은 [System Center Configuration Manager에서 마이그레이션을 수행하기 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)을 참조하세요.  
+ 대상 계층의 최상위 사이트는 데이터를 수집하기 위해 원본 사이트의 SMS 공급자와 사이트 데이터베이스에 연결한 후 개체 및 배포 지점의 목록을 검색합니다. 이 연결에서 원본 사이트 액세스 계정이 사용됩니다. 데이터 수집을 위한 필수 구성에 대한 자세한 내용은 [마이그레이션을 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)을 참조하세요.  
 
  Configuration Manager 콘솔에서 **지금 데이터 수집** 및 **데이터 수집 중지**를 사용하여 데이터 수집 프로세스를 시작하고 중지할 수 있습니다.  
 

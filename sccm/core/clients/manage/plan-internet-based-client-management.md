@@ -1,7 +1,7 @@
 ---
 title: 인터넷 기반 클라이언트 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획을 만듭니다.
+description: Configuration Manager에서 인터넷 기반 클라이언트 관리 계획을 만듭니다.
 ms.date: 05/16/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 83a7c934-3b11-435d-ba22-cbc274951e83
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d7bb4fd955eb225788e45c3859945bf4b3dee9a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1524c5a42e9014aea9e2640257f8a710052bbed5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658424"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824047"
 ---
-# <a name="plan-for-internet-based-client-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 인터넷 기반 클라이언트 관리 계획
+# <a name="plan-for-internet-based-client-management-in-configuration-manager"></a>Configuration Manager에서 인터넷 기반 클라이언트 관리 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 클라이언트가 회사 네트워크에 연결되어 있지 않지만 표준 인터넷 연결이 있는 경우 인터넷 기반 클라이언트 관리(IBCM이라고도 함)를 통해 해당 클라이언트를 관리할 수 있습니다. 이러한 방식에는 가상 프라이빗 네트워크(VPN)을 실행할 필요가 없고 소프트웨어 업데이트를 적시에 배포할 수 있는 데서 발생하는 비용 절감을 포함해 여러 이점이 있습니다.  
+Configuration Manager 클라이언트가 회사 네트워크에 연결되어 있지 않지만 표준 인터넷 연결이 있는 경우 인터넷 기반 클라이언트 관리(IBCM이라고도 함)를 통해 해당 클라이언트를 관리할 수 있습니다. 이러한 방식에는 가상 프라이빗 네트워크(VPN)을 실행할 필요가 없고 소프트웨어 업데이트를 적시에 배포할 수 있는 데서 발생하는 비용 절감을 포함해 여러 이점이 있습니다.  
 
  공용 네트워크에서 클라이언트 컴퓨터를 관리할 경우 높은 수준의 보안이 요구되므로 인터넷 기반 클라이언트 관리를 사용하려면 클라이언트 및 클라이언트가 연결하는 사이트 시스템 서버에서 PKI 인증서를 사용해야 합니다. 이렇게 하면 연결은 독립 기관에 의해 인증되고 이 사이트 시스템에 전송되거나 이 사이트 시스템에서 전송되는 데이터는 SSL(Secure Sockets Layer)로 암호화됩니다.  
 
@@ -140,7 +139,7 @@ System Center Configuration Manager 클라이언트가 회사 네트워크에 �
 
 - 클라이언트에서 요구하고 인터넷 및 인터넷 기반 사이트 시스템 서버에서 관리되는 인증서를 배포 및 관리할 수 있는 지원 PKI(공개 키 인프라)가 있어야 합니다.  
 
-   PKI 인증서에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
+   PKI 인증서에 대한 자세한 내용은 [Configuration Manager를 위한 PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)을 참조하세요.  
 
 - 인터넷 기반 클라이언트 관리를 지원하는 사이트 시스템의 인터넷 FQDN(정규화된 도메인 이름)은 공용 DNS 서버에 호스트 항목으로 등록되어야 합니다.  
 
@@ -184,7 +183,7 @@ System Center Configuration Manager 클라이언트가 회사 네트워크에 �
 
   - 인터넷 기반 관리 지점에 대해 다음 HTTP 헤더 허용:  
 
-    -   Range:  
+    -   범위:  
 
     -   CCMClientID:  
 
@@ -196,7 +195,7 @@ System Center Configuration Manager 클라이언트가 회사 네트워크에 �
 
   - 인터넷 기반 배포 지점에 대해 다음 HTTP 헤더 허용:  
 
-    -   Range:  
+    -   범위:  
 
     이 요구 사항을 지원하기 위한 구성 정보를 보려면 해당 방화벽 또는 프록시 서버 설명서를 참조하세요.  
 

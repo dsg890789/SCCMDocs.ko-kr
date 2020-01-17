@@ -10,17 +10,16 @@ ms.assetid: 86810629-cf2a-43e8-86a2-847444119fc1
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: be9fd76105685a283931bc298e534a6a8f6683d8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5853bf9850b96ff886217efc00c24a70f40b5e73
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68340270"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825900"
 ---
 # <a name="find-help-for-using-configuration-manager"></a>Configuration Manager 사용 도움말 찾기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 다음 섹션에 Configuration Manager를 사용하기 위한 도움말을 찾도록 여러 리소스를 제공합니다.  
 
@@ -163,11 +162,11 @@ Configuration Manager 엔지니어링 및 파트너 팀은 [Enterprise Mobility
 
 ##  <a name="BKMK_SupportOptions"></a> 지원 옵션 및 커뮤니티 리소스  
 
-다음 링크는 지원 옵션 및 커뮤니티 리소스에 대한 정보를 제공합니다.  
+다음 링크에서는 지원 옵션 및 커뮤니티 리소스에 대한 정보를 제공합니다.  
 
 -   [Microsoft 지원](https://aka.ms/cmcbsupport)  
 
--   [Configuration Manager 커뮤니티: System Center Configuration Manager(현재 분기) 서바이벌 가이드](https://social.technet.microsoft.com/wiki/contents/articles/33035.system-center-configuration-manager-current-branch-survival-guide.aspx )  
+-   [Configuration Manager 커뮤니티: Configuration Manager(현재 분기) 서바이벌 가이드](https://social.technet.microsoft.com/wiki/contents/articles/33035.system-center-configuration-manager-current-branch-survival-guide.aspx )  
 
 -   [Configuration Manager 포럼 페이지](https://social.technet.microsoft.com/Forums/en-US/home?category=ConfigMgrCB)  
     <!-- NOTE: the above URL requires "en-US" for the category to work -->

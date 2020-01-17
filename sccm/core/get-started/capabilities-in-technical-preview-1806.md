@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 021f52cfa4404476ecf836b3e2bfaaba8907e5f3
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: e8487e2d73ad6fc85cb675ee01db05adf11e16d8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198560"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804421"
 ---
-# <a name="capabilities-in-technical-preview-1806-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1806의 기능
+# <a name="capabilities-in-technical-preview-1806-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1806의 기능
 
-*적용 대상: System Center Configuration Manager(기술 미리 보기)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager용 Technical Preview 버전 1806에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가할 수 있습니다. 
 
@@ -76,7 +75,7 @@ ERROR: Failed to process configuration manager update.
 SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configuration Manager 콘솔의 타사 소프트웨어 업데이트 카탈로그 노드에 있는 카탈로그 목록은 동적이며, 추가 카탈로그가 사용가능하고 지원될 때 업데이트됩니다.
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - HTTPS 사용 소프트웨어 업데이트 지점을 사용하여 소프트웨어 업데이트 관리를 설정합니다. 자세한 내용은 [소프트웨어 업데이트 관리 준비](/sccm/sum/get-started/prepare-for-software-updates-management)를 참조하세요.  
   - 소프트웨어 업데이트 지점은 이 릴리스에서 이 기능에 대한 사이트 서버에 있어야 합니다. <!--515810--> 
 
@@ -188,7 +187,7 @@ SCUP는 다른 카탈로그 및 시나리오를 계속 지원합니다. Configur
 
 
 
-## <a name="package-conversion-manager"></a>Package Conversion Manager 
+## <a name="package-conversion-manager"></a>Package Conversion Manager 
 <!--1357861-->
 Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 Configuration Manager 현재 분기 애플리케이션으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 애플리케이션 기능을 사용할 수 있습니다.
 
@@ -238,7 +237,7 @@ Package Conversion Manager는 레거시 Configuration Manager 2007 패키지를 
 <!--1358149-->
 Office 사용자 지정 도구는 Configuration Manager 콘솔에서 Office 365 설치 관리자와 통합됩니다. Office 365에 대한 배포를 만들 때 최신 Office 관리 효율성 설정을 이제 동적으로 구성할 수 있습니다. Office 사용자 지정 도구는 새로운 빌드의 Office 365의 릴리스와 동시에 업데이트됩니다. Office 365에서 새 관리 효율성 설정은 사용할 수 있으면 바로 활용할 수 있습니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - Configuration Manager 콘솔을 실행하는 컴퓨터는 HTTPS 포트 443을 통한 인터넷 액세스가 필요합니다. Office 365 클라이언트 설치 마법사는 Windows 표준 웹 브라우저 API를 사용하여 https://config.office.com 을 엽니다. 인터넷 프록시를 사용하는 경우 사용자는 이 URL에 액세스할 수 있어야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -359,4 +358,4 @@ CMG를 만들 경우 설정 페이지에서 [신뢰할 수 있는 루트 인증�
 
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

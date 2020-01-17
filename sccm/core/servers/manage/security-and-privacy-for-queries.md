@@ -10,21 +10,20 @@ ms.assetid: 30080620-20d3-4c38-b8dd-db5516e1acae
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0315124b44af4359528b590bf0a6b325bfd14eb1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3bb2647f8914ed45d77c1d6718ee258f8d8f373d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67561981"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793463"
 ---
-# <a name="security-and-privacy-for-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-queries-in-configuration-manager"></a>Configuration Manager에서 쿼리를 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 쿼리를 사용하여 지정하는 기준에 따라 사이트 데이터베이스에서 정보를 검색할 수 있습니다. Configuration Manager에서 표준 작업 중에 사이트 데이터베이스 정보를 수집합니다. 예를 들어 검색 또는 인벤토리 중에 수집된 정보를 사용하여 지정된 기준을 충족하는 디바이스를 식별하는 쿼리를 구성할 수 있습니다.  
+Configuration Manager의 쿼리를 사용하여 지정하는 기준에 따라 사이트 데이터베이스에서 정보를 검색할 수 있습니다. Configuration Manager에서 표준 작업 중에 사이트 데이터베이스 정보를 수집합니다. 예를 들어 검색 또는 인벤토리 중에 수집된 정보를 사용하여 지정된 기준을 충족하는 디바이스를 식별하는 쿼리를 구성할 수 있습니다.  
 
- 쿼리에 대한 자세한 내용은 [System Center Configuration Manager의 쿼리 소개](../../../core/servers/manage/introduction-to-queries.md)를 참조하세요. 쿼리를 사용하여 검색할 수 있는 데이터를 수집하는 Configuration Manager 작업에 대해 보안 모범 사례 및 개인 정보에 대해서는 [System Center Configuration Manager의 보안 및 개인 정보](../../../core/plan-design/security/security-and-privacy.md)를 참조하세요.  
+ 쿼리에 대한 자세한 내용은 [쿼리 소개](../../../core/servers/manage/introduction-to-queries.md)를 참조하세요. 쿼리를 사용하여 검색할 수 있는 데이터를 수집하는 Configuration Manager 작업에 대해 보안 모범 사례 및 개인 정보에 대해서는 [Configuration Manager의 보안 및 개인 정보](../../../core/plan-design/security/security-and-privacy.md)를 참조하세요.  
 
 ## <a name="security-best-practices-for-queries"></a>쿼리에 대한 보안 모범 사례
 
@@ -36,4 +35,4 @@ System Center Configuration Manager의 쿼리를 사용하여 지정하는 기�
 
 ## <a name="next-steps"></a>다음 단계
   
-[System Center Configuration Manager의 보안 및 개인 정보](../../../core/plan-design/security/security-and-privacy.md)
+[Configuration Manager에 대한 보안 및 개인 정보](../../../core/plan-design/security/security-and-privacy.md)

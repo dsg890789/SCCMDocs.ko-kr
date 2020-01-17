@@ -10,17 +10,16 @@ ms.assetid: 15a4e323-9f42-4fea-bb14-f2b905d1f77c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 013228fc3df9d899d92767ef50a69a4894be07e2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0b42b68920fa1830d4e316d2058ef5a630c57e78
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378095"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825135"
 ---
 # <a name="how-to-deploy-clients-to-unix-and-linux-servers-in-configuration-manager"></a>Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 > [!Important]  
 > 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
@@ -220,7 +219,7 @@ Configuration Manager를 사용하여 Linux 또는 UNIX 서버를 관리하려�
 
  클라이언트를 설치한 후에는 해당 요청 포트 구성을 변경할 수 없습니다. 대신, 포트 구성을 변경 하려면 클라이언트를 다시 설치 하 고 새 포트 구성을 지정 해야 합니다. 요청 포트 번호를 변경하기 위해 클라이언트를 다시 설치하는 경우 새 클라이언트 설치와 유사한 **install** 명령을 실행하되 **-keepdb**의 추가적인 명령줄 속성을 사용하세요. 이 스위치는 클라이언트 GUID 및 인증서 저장소를 포함하여 클라이언트 데이터베이스 및 파일을 유지하도록 설치 시 지시합니다.  
 
- 클라이언트 통신 포트 번호에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요.  
+ 클라이언트 통신 포트 번호에 대한 자세한 내용은 [클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요.  
 
 ##  <a name="BKMK_ConfigClientMP"></a> 관리 지점을 찾기위해 Linux 및 UNIX 용 클라이언트를 구성 합니다.  
  Linux 및 UNIX용 Configuration Manager 클라이언트를 설치하는 경우 초기 연결 지점으로 사용할 관리 지점을 지정해야 합니다.  

@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c21f85271b0fd1f96b3e5397d2f2fb7a3e3798d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 135700601abcd0652323891347e21e8266377786
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339878"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804472"
 ---
-# <a name="capabilities-in-technical-preview-1804-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1804의 기능
+# <a name="capabilities-in-technical-preview-1804-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1804의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager용 Technical Preview 버전 1804에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가할 수 있습니다. 
 
@@ -69,7 +68,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 > [!Note]  
 > 이 작업은 사이트 서버의 콘텐츠 라이브러리만 이동합니다. 배포 지점에 있는 콘텐츠 라이브러리의 위치에는 영향을 주지 않습니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소  
+### <a name="prerequisites"></a>전제 조건  
 - 사이트 서버 컴퓨터 계정에 콘텐츠 라이브러리를 이동하는 네트워크 경로에 대한 **읽기** 및 **쓰기** 권한이 필요합니다. 원격 시스템에 설치된 구성 요소가 없습니다. 
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -197,7 +196,7 @@ HTTP 연결을 사용하여 통신하도록 애플리케이션 카탈로그 웹 
 
 애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 애플리케이션을 제거합니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - **디바이스당 사용자에 대한 애플리케이션 요청 승인** 기능을 사용하도록 설정합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -315,4 +314,4 @@ OS 배포가 다음과 같이 향상되었으며, 일부는 사용자 의견 피
 
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

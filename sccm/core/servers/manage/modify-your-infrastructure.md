@@ -10,17 +10,16 @@ ms.assetid: a7975dc8-46ab-4dae-86b6-dc3e3cf3b2f0
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c228132fe36c516b428cee47417fcc66e0dd221
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9f022c53a54dff266cf25514ebe9124121246632
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73704771"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794643"
 ---
-# <a name="modify-your-system-center-configuration-manager-infrastructure"></a>System Center Configuration Manager 인프라 수정
+# <a name="modify-your-configuration-manager-infrastructure"></a>Configuration Manager 인프라 수정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 하나 이상의 사이트를 설치한 후 배포한 인프라에 영향을 주는 작업을 수행하거나 구성을 수정해야 할 수도 있습니다.  
 
@@ -36,7 +35,7 @@ SMS 공급자(동적 연결 라이브러리 파일(smsprov.dll))는 하나 이�
 
 설치 프로그램을 실행하는 사이트 서버의 루트 폴더에서 **ConfigMgrSetup.log** 를 확인하여 SMS 공급자의 설치 또는 제거를 모니터링할 수 있습니다.  
 
-사이트에서 SMS 공급자를 수정하기 전에 [System Center Configuration Manager용 SMS 공급자에 대한 계획](../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md)의 정보를 숙지해 주세요.  
+사이트에서 SMS 공급자를 수정하기 전에 [Configuration Manager용 SMS 공급자에 대한 계획](../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md)의 정보를 숙지해 주세요.  
 
 #### <a name="to-manage-the-sms-provider-configuration-for-a-site"></a>사이트의 SMS 공급자 구성을 관리하려면  
 
@@ -66,7 +65,7 @@ SMS 공급자(동적 연결 라이브러리 파일(smsprov.dll))는 하나 이�
 
 - **Configuration Manager 콘솔에 표시되는 언어 수정** - 설치된 언어를 수정하려면 이 항목에서 [Configuration Manager 콘솔 언어 관리](#BKMK_ManageConsoleLanguages)를 참조하세요.  
 
-- **추가 콘솔 설치** - 추가 콘솔을 설치하려면 [System Center Configuration Manager 콘솔 설치](/sccm/core/servers/deploy/install/install-consoles)를 참조하세요.  
+- **추가 콘솔 설치** - 추가 콘솔을 설치하려면 [Configuration Manager 콘솔 설치](/sccm/core/servers/deploy/install/install-consoles)를 참조하세요.  
 
 - **DCOM 구성** - 사이트 서버의 원격 콘솔에서 연결할 수 있도록 하는 DCOM 권한을 구성하려면 이 항목에서 [원격 Configuration Manager 콘솔에 대한 DCOM 권한 구성](#BKMK_ConfigDCOMforRemoteConsole)을 참조하세요.  
 
@@ -157,7 +156,7 @@ SMS 공급자가 설치되는 각 중앙 관리 사이트, 기본 사이트 서�
 
 - SQL Server 데이터베이스를 호스트하는 서버에서 사용 중인 SQL Server의 인스턴스  
 
-- 데이터베이스 이름.  
+- 데이터베이스 이름입니다.  
 
 - Configuration Manager에서 사용 중인 SQL Server 포트  
 
@@ -172,7 +171,7 @@ SMS 공급자가 설치되는 각 중앙 관리 사이트, 기본 사이트 서�
 
 
 > [!IMPORTANT]  
-> 관리 지점에 대해 하나 이상의 데이터베이스 복제본이 있는 데이터베이스를 이동하려면 먼저 데이터베이스 복제본을 제거해야 합니다. 데이터베이스 이동을 완료한 후 데이터베이스 복제본을 다시 구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 참조하세요.  
+> 관리 지점에 대해 하나 이상의 데이터베이스 복제본이 있는 데이터베이스를 이동하려면 먼저 데이터베이스 복제본을 제거해야 합니다. 데이터베이스 이동을 완료한 후 데이터베이스 복제본을 다시 구성할 수 있습니다. 자세한 내용은 [Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 참조하세요.  
 
 ##  <a name="bkmk_SPN"></a> 사이트 데이터베이스 서버에 대한 SPN 관리  
 사이트 데이터베이스에 대한 SQL 서비스를 실행하는 계정을 선택할 수 있습니다.  
@@ -329,7 +328,7 @@ SQL Server 설명서는 [수동으로 SPN을 등록](https://technet.microsoft.c
 
   사이트에서 클라이언트 언어 팩을 업데이트한 후 클라이언트 언어 팩을 포함하는 원본 파일을 사용하여 언어 팩을 사용하는 각 클라이언트를 설치해야 합니다.  
 
-Configuration Manager에서 지원하는 클라이언트 및 서버 언어에 대한 자세한 내용은 [System Center Configuration Manager의 언어 팩](../../../core/servers/deploy/install/language-packs.md)을 참조하세요.  
+Configuration Manager에서 지원하는 클라이언트 및 서버 언어에 대한 자세한 내용은 [언어 팩](../../../core/servers/deploy/install/language-packs.md)을 참조하세요.  
 
 #### <a name="to-modify-the-language-packs-that-are-supported-at-a-site"></a>사이트에서 지원되는 언어 팩을 수정하려면  
 

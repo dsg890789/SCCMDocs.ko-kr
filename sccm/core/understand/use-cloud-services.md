@@ -10,17 +10,16 @@ ms.assetid: 24fca61e-9cdb-447a-ad7a-f4d2e4fd6704
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2828443de3833f2b98665fc4d87dcb63eb795b4d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ac97418e58bf311903895371f2eb197f207736ca
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891839"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825764"
 ---
 # <a name="use-cloud-services-with-configuration-manager"></a>Configuration Manager에서 클라우드 서비스 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager는 몇 가지 클라우드 기반 옵션을 지원합니다. 이러한 옵션은 온-프레미스 인프라를 보완하며 다음과 같은 비즈니스 문제를 해결하는 데 도움이 됩니다.  
 
@@ -55,7 +54,7 @@ Azure 가상 컴퓨터를 사용하려면 Azure 구독이 필요합니다. 사�
 또한 Azure 가상 컴퓨터에서 실행되는 Configuration Manager 사이트 및 클라이언트에는 온-프레미스 설치와 같은 라이선스 요구 사항이 적용됩니다.  
 
 ### <a name="azure-services-for-cloud-based-distribution-points"></a>Azure 서비스(클라우드 기반 배포 지점의 경우)  
- Azure 서비스를 사용하여 Configuration Manager 배포 지점(클라우드 기반 배포 지점)을 호스트할 수 있습니다. Azure 가상 컴퓨터에 배포된 배포 지점 및 온-프레미스 배포 지점과 함께 [클라우드 기반 배포 지점을 System Center Configuration Manager에서 사용](../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md)할 수 있습니다.  
+ Azure 서비스를 사용하여 Configuration Manager 배포 지점(클라우드 기반 배포 지점)을 호스트할 수 있습니다. Azure 가상 컴퓨터에 배포된 배포 지점 및 온-프레미스 배포 지점과 함께 [클라우드 기반 배포 지점을 Configuration Manager에서 사용](../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md)할 수 있습니다.  
 
  이러한 방식은 사이트 시스템 역할을 배포하는 Azure 가상 머신을 사용하는 방식과는 다릅니다. 클라우드 기반 배포 지점:  
 

@@ -1,7 +1,7 @@
 ---
 title: '구성 기준에 대한 일반 작업 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 구성 기준을 만들고 배포하는 방법을 알아봅니다.
+description: Configuration Manager 구성 기준을 만들고 배포하는 방법을 알아봅니다.
 ms.date: 07/12/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -10,23 +10,22 @@ ms.assetid: 4bb6afeb-d267-4f9b-ade2-26e5400c223b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: acccaf1994d758fbb089aebe16d22dc10e09e765
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 52e83639029db9eeb4ef64657e70e3dc11aab8f2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62204459"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818284"
 ---
-# <a name="common-tasks-for-creating-and-deploying-configuration-baselines-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업
+# <a name="common-tasks-for-creating-and-deploying-configuration-baselines-with-configuration-manager"></a>Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager 구성 기준을 만들고 배포하는 방법을 배울 수 있는 일반 시나리오가 있습니다.  
+이 항목에는 Configuration Manager 구성 기준을 만들고 배포하는 방법을 배울 수 있는 일반 시나리오가 있습니다.  
 
  준수 설정에 이미 익숙한 경우 사용하는 모든 기능에 대한 자세한 설명은 [구성 기준 만들기](../../compliance/deploy-use/create-configuration-baselines.md) 및 [구성 기준 배포](../../compliance/deploy-use/deploy-configuration-baselines.md) 항목을 참조하세요.  
 
- 시작하기 전에 [System Center Configuration Manager에서 준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)을 읽어 준수 설정에 대한 일부 기본 지식을 익히고 [준수 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 읽어 필수 전제 조건을 구현합니다.  
+ 시작하기 전에 [준수 설정 시작](../../compliance/get-started/get-started-with-compliance-settings.md)을 읽어 준수 설정에 대한 일부 기본 지식을 익히고 [준수 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)을 읽어 필수 전제 조건을 구현합니다.  
 
 ## <a name="create-a-configuration-baseline"></a>구성 기준 만들기  
  이 예제에서는 Configuration Manager 클라이언트를 실행하는 Windows 10 PC 전용 구성 항목을 만들었습니다.  

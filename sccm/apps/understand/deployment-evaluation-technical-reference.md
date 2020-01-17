@@ -10,17 +10,16 @@ ms.assetid: a7035223-d7bd-47b4-896f-08de3416a4eb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32035f05c9bea47aa240e7b928e3171697aa07f7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: fff63f58ebc261f4d9aef42be7c9cbe24450938a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74823323"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821514"
 ---
 # <a name="application-deployment-evaluation"></a>애플리케이션 배포 평가
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 계속 하기 전에 [응용 프로그램 배포 클라이언트 구성 요소](/sccm/apps/understand/client-components-technical-reference) 를 검토 하 여 DCM 및 CI 에이전트 작업 처리를 이해 하세요.
 
@@ -60,4 +59,4 @@ Performing detection of app deployment type ConfigMgr Toolkit - Windows Installe
 
 ## <a name="next-steps"></a>다음 단계
 
-- [응용 프로그램 다운로드](/sccm/apps/understand/deployment-download-technical-reference)
+- [애플리케이션 다운로드](/sccm/apps/understand/deployment-download-technical-reference)

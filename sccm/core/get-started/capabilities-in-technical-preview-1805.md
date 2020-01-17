@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce70f690899e6ad9413c1fcd57e3f1b47a61fd4b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c5dcda08e66ad2b11d62c4d14a8ebbcf411dfdc8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67623310"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804438"
 ---
-# <a name="capabilities-in-technical-preview-1805-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1805의 기능
+# <a name="capabilities-in-technical-preview-1805-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1805의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager Technical Preview 버전 1805에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가할 수 있습니다. 
 
@@ -98,7 +97,7 @@ Configuration Manager는 기존 클래식 클라우드 배포 지점을 Azure Re
 > 이 기능은 Azure CSP(클라우드 서비스 공급자) 지원을 사용하도록 설정하지 않습니다. Azure Resource Manager를 통한 클라우드 배포 지점 배포는 CSP가 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
 
 
-### <a name="prerequisites"></a>필수 구성 요소  
+### <a name="prerequisites"></a>전제 조건  
 - [Azure AD](/sccm/core/clients/deploy/deploy-clients-cmg-azure)와의 통합. Azure AD 사용자 검색은 필요하지 않습니다.  
 
 - Azure 관리 인증서를 제외하고 [클라우드 배포 지점의 요구 사항](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#bkmk_requirements)과 동일합니다.  
@@ -168,7 +167,7 @@ Windows LEDBAT(Low Extra Delay Background Transport)는 백그라운드 네트�
 Windows LEDBAT에 대한 자세한 정보는 [New transport advancements](https://blogs.technet.microsoft.com/networking/2016/07/18/announcing-new-transport-advancements-in-the-anniversary-update-for-windows-10-and-windows-server-2016/)(새로운 전송 개선 사항) 블로그 게시물을 참조하세요.
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - Windows Server 버전 1709의 배포 지점.  
 
 - 클라이언트의 필수 구성 요소는 없습니다.<!--SCCMDocs issue 699-->  
@@ -193,7 +192,7 @@ Windows LEDBAT에 대한 자세한 정보는 [New transport advancements](https:
 이 기능에는 문제 해결에 도움이 되도록 실시간 확인에 사용하는 **CMG 연결 분석기**도 포함됩니다. 콘솔 내 유틸리티는 서비스의 현재 상태를 확인하며, CMG 연결 지점을 통해 CMG 트래픽을 허용하는 모든 관리 지점에 대한 통신 채널을 확인합니다.
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - 인터넷 기반 클라이언트에서 사용하는 활성 [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway).  
 
 - 클라우드 관리를 위해 [Azure 서비스](/sccm/core/servers/deploy/configure/azure-services-wizard)에 등록된 사이트.  
@@ -249,7 +248,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 - 활성 연결
 - 누락 업데이트
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - 대상 클라이언트를 최신 버전으로 업데이트해야 합니다.  
 
 - Configuration Manager 관리자는 스크립트를 실행할 수 있는 권한이 필요합니다. 자세한 내용은 [스크립트의 보안 역할](/sccm/apps/deploy-use/create-deploy-scripts#bkmk_ScriptRoles)을 참조하세요.  
@@ -299,7 +298,7 @@ CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스�
 Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브리드 Azure AD 디바이스](/azure/active-directory/devices/concept-azure-ad-join-hybrid)에서 할당된 사이트와 안전하게 통신할 수 있습니다. 이제 클라우드 기반 디바이스 ID만 있으면 CMG 및 관리 지점을 인증하는 데 충분합니다.  
 
 
-### <a name="prerequisites"></a>필수 구성 요소  
+### <a name="prerequisites"></a>전제 조건  
 
 - HTTP 클라이언트 연결용으로 구성된 관리 지점. 사이트 시스템 역할 속성의 **일반** 탭에서 이 옵션을 설정합니다.  
 
@@ -346,7 +345,7 @@ Azure AD 사용자가 로그인되지 않은 Azure AD 조인 또는 [하이브�
 
 SCUP 도구의 일반적인 용도에 대한 자세한 내용은 [System Center Updates Publisher](/sccm/sum/tools/updates-publisher)를 참조하세요.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - **소프트웨어 업데이트** 그룹에서 **타사 소프트웨어 업데이트 사용** 클라이언트 설정을 사용하고 배포합니다.
 - WSUS가 소프트웨어 업데이트 지점과 별도의 서버에 있는 경우 원격 WSUS 서버에서 다음 옵션 중 하나를 수행해야 합니다.
     - Windows에서 원격 레지스트리 서비스 사용  
@@ -464,4 +463,4 @@ Configuration Manager 콘솔이 다음과 같이 개선되었습니다.
 
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

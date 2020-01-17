@@ -10,21 +10,20 @@ ms.assetid: 4e345791-74db-41ad-b472-024ce6521daf
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: da92506d291ca24af807db7b4f4b73473359e12f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8f5a4eeb1e9dadbb191c4d6efb45270c4dff8148
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890655"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816227"
 ---
 # <a name="common-tasks-for-managing-compliance-on-devices-with-the-configuration-manager-client"></a>Configuration Manager 클라이언트가 설치된 디바이스의 준수 관리를 위한 일반 작업
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 문서에서는 여러 가지 일반적인 시나리오를 안내 하 여 System Center Configuration Manager 준수 설정을 사용 하는 방법을 소개 합니다.  
+이 문서에서는 여러 가지 일반적인 시나리오를 안내 하 여 Configuration Manager 준수 설정을 사용 하는 방법을 소개 합니다.  
 
- 준수 설정에 이미 익숙한 경우 사용할 수 있는 모든 기능에 대한 자세한 설명은 [System Center Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)을 참조하세요.  
+ 호환성 설정에 이미 익숙한 경우 사용할 수 있는 모든 기능에 대한 자세한 설명은 [Configuration Manager 클라이언트로 관리되는 디바이스의 구성 항목](../../compliance/deploy-use/create-configuration-items.md)을 참조하세요.  
 
  시작 하기 전에 준수 설정 [시작](../../compliance/get-started/get-started-with-compliance-settings.md) 을 읽어 준수 설정에 대 한 몇 가지 기본 사항을 알아보세요. 필요한 필수 구성 요소에 대 한 정보는 [호환성 설정 계획 및 구성](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md) 을 참조 하세요.  
 
@@ -55,7 +54,7 @@ ms.locfileid: "70890655"
 
 6. 마법사를 완료하여 구성 항목을 만듭니다.  
 
- 이제 [System Center Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md)의 정보를 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
+ 이제 [Configuration Manager에서 구성 기준을 만들고 배포하기 위한 일반 작업](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md)의 정보를 참조하여, 만든 구성을 디바이스에 쉽게 배포할 수 있습니다.  
 
 ## <a name="scenario-remediate-an-incorrect-registry-value-on-windows-desktop-computers"></a>시나리오: Windows 데스크톱 컴퓨터에서 잘못된 레지스트리 값 수정
 
@@ -64,7 +63,7 @@ ms.locfileid: "70890655"
 > - Mac OS X 기본 설정(plist) 파일을 평가합니다.
 > - 사용자 지정 스크립트를 사용하고 스크립트에서 반환된 결과를 평가합니다.  
 >
->자세한 내용은 [System Center Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 디바이스용 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)을 참조하세요.  
+>자세한 내용은 [Configuration Manager 클라이언트를 사용하여 관리하는 Mac OS X 디바이스용 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)을 참조하세요.  
 
  이 시나리오에서는 관리 하는 일부 Windows 8.1 컴퓨터에서 중요 한 lob (기간 업무) 앱이 제대로 실행 되지 않는다는 것을 알 수 있습니다. 일부 컴퓨터에서 **HKEY_LOCAL_MACHINE\SOFTWARE\Woodgrove\LOB App\Configuration\Configuration1** 이라는 레지스트리 키가 **0** 의 값으로 설정했습니다. LOB(기간 업무) 앱이 제대로 실행되려면 이 값이 **1**로 설정되어 있어야 합니다.  
 

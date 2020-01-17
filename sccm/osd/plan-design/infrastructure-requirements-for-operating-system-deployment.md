@@ -10,17 +10,16 @@ ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9115fb3e0d36e4664541c70b29929dfe3ef8b6d9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 41a690aa8233f2812934d58b69bbb9461da675fd
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67572731"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821191"
 ---
 # <a name="infrastructure-requirements-for-os-deployment-in-configuration-manager"></a>Configuration Manager의 OS 배포에 대한 인프라 요구 사항
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 OS 배포에는 외부 종속성뿐만 아니라 제품 내 종속성이 있습니다. 이 아티클을 사용하여 OS 배포를 위한 인프라를 준비할 수 있습니다.  
 

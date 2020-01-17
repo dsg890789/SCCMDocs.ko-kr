@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1704의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1704에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1704에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 04/21/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,25 +11,24 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9a7c8b9aab94e9b56d2d421be94a523116f35c9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c02dd687adf32c080a9788b5f9fc0ff707537390
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889676"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804948"
 ---
-# <a name="capabilities-in-technical-preview-1704-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1704의 기능
+# <a name="capabilities-in-technical-preview-1704-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1704의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1704에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1704에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.    
 
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
 
 ## <a name="configure-android-apps-with-app-configuration-policies"></a>앱 구성 정책을 사용하여 Android 앱 구성
-System Center Configuration Manager(Configuration Manager)에서 앱 구성 정책을 사용하여 사용자가 Android for Work 디바이스에서 앱을 실행할 때 필요할 수도 있는 설정을 배포할 수 있습니다. Android 앱 구성 정책은 Android for Work를 실행 중인 디바이스에서만 사용 가능하며 Play for Work 스토어에서 승인한 앱에 적용됩니다.
+Configuration Manager에서 앱 구성 정책을 사용하여 사용자가 Android for Work 디바이스에서 앱을 실행할 때 필요할 수 있는 설정을 배포할 수 있습니다. Android 앱 구성 정책은 Android for Work를 실행 중인 디바이스에서만 사용 가능하며 Play for Work 스토어에서 승인한 앱에 적용됩니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기                 
 

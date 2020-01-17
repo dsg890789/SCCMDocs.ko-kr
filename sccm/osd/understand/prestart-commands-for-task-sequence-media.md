@@ -10,19 +10,18 @@ ms.assetid: ccc9f652-2953-4c38-8a90-c799484105ca
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519d0e93116115dcd6ca223b62af67b4d7a89a4
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9dd921d58e6ef777017af3e2eb24dbf4bd611fab
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892495"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821072"
 ---
-# <a name="prestart-commands-for-task-sequence-media-in-system-center-configuration-manager"></a>System Center Configuration Manager의 작업 순서 미디어에 대한 시작 전 명령
+# <a name="prestart-commands-for-task-sequence-media-in-configuration-manager"></a>Configuration Manager의 작업 순서 미디어에 대한 시작 전 명령
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-부팅 미디어, 독립 실행형 미디어 및 사전 준비된 미디어와 함께 사용할 시작 전 명령을 System Center Configuration Manager에서 만들 수 있습니다. 시작 전 명령은 작업 순서를 선택하기 전에 실행되고 Windows PE에서 사용자와 상호 작용할 수 있는 스크립트 또는 실행 파일입니다. 시작 전 명령은 사용자에게 정보를 알리고 이 정보를 작업 순서 환경에 저장하거나, 정보에 사용될 작업 순서 변수를 쿼리할 수 있습니다. 대상 컴퓨터가 부팅하면 정책이 관리 지점에서 다운로드되기 전에 명령줄이 실행됩니다. 시작 전 명령에 사용할 스크립트를 만들고, 시작 전 명령과 연관된 콘텐츠를 배포하고, 미디어 안에 시작 전 명령을 구성하려면 다음 절차를 따르십시오.  
+부팅 미디어, 독립 실행형 미디어 및 사전 준비된 미디어와 함께 사용할 시작 전 명령을 Configuration Manager에서 만들 수 있습니다. 시작 전 명령은 작업 순서를 선택하기 전에 실행되고 Windows PE에서 사용자와 상호 작용할 수 있는 스크립트 또는 실행 파일입니다. 시작 전 명령은 사용자에게 정보를 알리고 이 정보를 작업 순서 환경에 저장하거나, 정보에 사용될 작업 순서 변수를 쿼리할 수 있습니다. 대상 컴퓨터가 부팅하면 정책이 관리 지점에서 다운로드되기 전에 명령줄이 실행됩니다. 시작 전 명령에 사용할 스크립트를 만들고, 시작 전 명령과 연관된 콘텐츠를 배포하고, 미디어 안에 시작 전 명령을 구성하려면 다음 절차를 따르십시오.  
 
 ## <a name="create-a-script-file-to-use-for-the-prestart-command"></a>시작 전 명령에 사용할 스크립트 파일 만들기  
  작업 순서 변수는 작업 순서가 실행되는 동안 Microsoft.SMS.TSEnvironment COM 개체를 사용하여 읽고 쓸 수 있습니다. 다음 예제는 _SMSTSLogPath 작업 순서 변수를 쿼리하여 현재 로그 위치를 가져오는 Visual Basic 스크립트 파일을 보여 줍니다. 또한 스크립트는 사용자 지정 변수를 설정합니다.  

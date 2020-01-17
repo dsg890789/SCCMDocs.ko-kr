@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1606의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1606에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1606에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 135589a924e62cf4eed592fe339780cf138c410d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 10ce7ff5a95a1e931a1d5b3d048e9e841b8abf6f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889703"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805186"
 ---
-# <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1606의 기능
+# <a name="capabilities-in-technical-preview-1606-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1606의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1606에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1606에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.    
 
 **이 Technical Preview의 알려진 문제:**  
 *  Technical Preview 1604에서 1605로 업데이트 후 1606으로 업데이트하는 경우 업데이트가 실패하고 다음과 유사한 오류가 **cmupdate.log**에 기록됩니다.
@@ -111,7 +110,7 @@ Configuration Manager에서 Device Guard를 사용하는 방법에 대한 추가
 
 2.  온\-프레미스 모바일 디바이스 관리를 위한 Windows 10 1주년 업데이트 디바이스를 등록합니다.  
 
-사이트 준비 방법 및 온\-프레미스 모바일 디바이스 관리를 위한 디바이스 등록 방법은 [System Center Configuration Manager의 온-프레미스 인프라로 모바일 디바이스 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
+사이트 준비 방법 및 온\-프레미스 모바일 디바이스 관리를 위한 디바이스 등록 방법은 [온-프레미스 인프라로 모바일 디바이스 관리](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)를 참조하세요.  
 
 ## <a name="cloud_proxy"></a>인터넷상의 클라이언트를 관리하기 위한 클라우드 프록시 서비스
 
@@ -201,7 +200,7 @@ Azure 관리 인증서는 Configuration Manager에서 Azure API에 액세스하�
 
 #### <a name="add-the-cloud-proxy-connector-point"></a>클라우드 프록시 연결점 추가
 
-클라우드 프록시 연결점은 클라우드 프록시 서비스와 통신하기 위한 새 사이트 시스템 역할입니다. 클라우드 프록시 연결점을 추가하려면 [System Center Configuration Manager에 대한 사이트 시스템 역할 추가](../../core/servers/deploy/configure/add-site-system-roles.md)의 지침을 따릅니다.
+클라우드 프록시 연결점은 클라우드 프록시 서비스와 통신하기 위한 새 사이트 시스템 역할입니다. 클라우드 프록시 연결점을 추가하려면 [Configuration Manager에 대한 사이트 시스템 역할 추가](../../core/servers/deploy/configure/add-site-system-roles.md)의 지침을 따릅니다.
 
 #### <a name="configure-roles-for-cloud-proxy-traffic"></a>클라우드 프록시 트래픽에 대한 역할 구성
 
@@ -226,7 +225,7 @@ Technical Preview 1606부터 Configuration Manager 클라이언트 에이전트 
 
 ### <a name="set-the-configuration-manager-client-setting-to-manage-the-office-365-client-agent"></a>Office 365 클라이언트 에이전트를 관리하려면 Configuration Manager 클라이언트 설정을 지정합니다.
 1.  Configuration Manager 콘솔에서 **관리** > **개요** > **클라이언트 설정**을 클릭합니다.
-2. 적절한 디바이스 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.
+2. 적절한 디바이스 설정을 열어 클라이언트 에이전트를 사용하도록 설정합니다. 기본 및 사용자 지정 클라이언트 설정에 대한 자세한 내용은 [클라이언트 설정을 구성하는 방법](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.
 3. **소프트웨어 업데이트**를 클릭하고 **Office 365 클라이언트 에이전트 관리 사용** 설정에 대해 **예**를 선택합니다.  
 
 

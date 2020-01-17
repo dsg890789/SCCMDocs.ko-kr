@@ -1,7 +1,7 @@
 ---
 title: Technical Preview 1802 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1802에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1802에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 02/09/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,21 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49f125ab40b44c9a70f7e53a0c7a8b34d3bc65ed
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 053270e047b46f6811add0ccb918a17b119e46d0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73704742"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804608"
 ---
-# <a name="capabilities-in-technical-preview-1802-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1802의 기능
+# <a name="capabilities-in-technical-preview-1802-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1802의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1802에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1802에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 
 
-이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하세요. 해당 문서에서는 Technical Preview를 사용하기 위한 일반 요구 사항 및 제한 사항, 버전 간에 업데이트하는 방법 및 피드백을 제공하는 방법에 대해 설명합니다.     
+이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하세요. 해당 문서에서는 Technical Preview를 사용하기 위한 일반 요구 사항 및 제한 사항, 버전 간에 업데이트하는 방법 및 피드백을 제공하는 방법에 대해 설명합니다.     
 
 
 <!--  Known Issues Template   
@@ -59,7 +58,7 @@ ms.locfileid: "73704742"
 <!-- 1324696 -->
 Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원격 사무실에 대한 콘텐츠 배포를 정의하고 규정합니다. [Windows 배달 최적화](/windows/deployment/update/waas-delivery-optimization)는 Windows 10 디바이스 간에 콘텐츠를 공유하는 클라우드 기반의 피어 투 피어 기술입니다. 이 릴리스부터는 피어 간에 콘텐츠를 공유할 때 경계 그룹을 사용하도록 배달 최적화를 구성합니다. 새 클라이언트 설정은 경계 그룹 식별자를 클라이언트의 배달 최적화 그룹 식별자로 적용합니다. 클라이언트는 배달 최적화 클라우드 서비스와 통신할 때 이 식별자를 사용하여 원하는 콘텐츠가 있는 피어를 찾습니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - 배달 최적화는 Windows 10 클라이언트에서만 사용할 수 있습니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -94,7 +93,7 @@ Configuration Manager 경계 그룹을 사용하여 회사 네트워크 및 원�
 ### <a name="new-groups-under-prepare-for-upgrade"></a>**업그레이드 준비** 중인 새 그룹
 - **배터리 확인**: 컴퓨터가 배터리를 사용하는지, 전원에 연결되어 있는지 확인하려면 이 그룹에 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.
 - **네트워크/유선 연결 확인**: 컴퓨터가 네트워크에 연결되어 있고 무선 연결을 사용하지 않는지 여부를 확인하려면 이 그룹에 단계를 추가합니다. 이 작업에서 배터리 확인을 수행하려면 사용자 지정 스크립트 또는 유틸리티가 필요합니다.
-- **호환되지 않는 애플리케이션 제거**: 이 Windows 10 버전과 호환되지 않는 애플리케이션을 모두 제거하려면 이 그룹에 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다. 애플리케이션이 Windows Installer를 사용하는 경우 애플리케이션의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예: </br>`msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`</br> 
+- **호환되지 않는 애플리케이션 제거**: 이 Windows 10 버전과 호환되지 않는 애플리케이션을 모두 제거하려면 이 그룹에 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다. 애플리케이션이 Windows Installer를 사용하는 경우 애플리케이션의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예를 들면 다음과 같습니다. </br>`msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`</br> 
 - **호환되지 않는 드라이버 제거**: 이 Windows 10 버전과 호환되지 않는 드라이버를 모두 제거하려면 이 그룹에 단계를 추가합니다.
 - **타사 보안 제거/일시 중단**: 바이러스 백신 소프트웨어와 같은 타사 보안 프로그램을 제거하거나 일시 중단하려면 이 그룹에 단계를 추가합니다.
    - 타사 디스크 암호화 프로그램을 사용하는 경우 **/ReflectDrivers** [명령줄 옵션](/windows-hardware/manufacture/desktop/windows-setup-command-line-options)을 사용하여 Windows 설치 프로그램에 해당 암호화 드라이버를 제공합니다. 이 그룹의 작업 순서에 [작업 순서 변수 설정](/sccm/osd/understand/task-sequence-steps#BKMK_SetTaskSequenceVariable) 단계를 추가합니다. 작업 순서 변수를 **OSDSetupAdditionalUpgradeOptions**로 설정합니다. 드라이버 경로를 사용하여 값을 **/ReflectDriver**로 설정합니다. 이 [작업 순서 작업 변수](/sccm/osd/understand/task-sequence-steps#BKMK_UpgradeOS)는 작업 순서에서 사용되는 Windows 설치 명령줄을 추가합니다. 이 프로세스에 대한 추가 지침은 소프트웨어 공급업체에 문의하세요.
@@ -194,7 +193,7 @@ WDS가 필요하지 않으므로 PXE 사용 배포 지점은 Windows Server Core
 
 관리 지점 경계 그룹 대체는 클라이언트 설치(ccmsetup) 중에 동작을 변경하지 않습니다. 명령줄에서 /MP 매개 변수를 사용하여 초기 관리 지점을 지정하지 않을 경우 새 클라이언트는 사용 가능한 관리 지점의 전체 목록을 수신합니다. 초기 부트스트랩 프로세스에서는 클라이언트가 액세스할 수 있는 첫 번째 관리 지점을 사용합니다. 클라이언트가 사이트에 등록하면 이 새로운 동작으로 올바르게 정렬된 관리 지점 목록을 수신합니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - [기본 설정 관리 지점](/sccm/core/servers/deploy/configure/boundary-groups#bkmk_preferred)을 사용하도록 설정합니다. Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동합니다. **사이트 구성**을 확장하고 **사이트**를 선택합니다. 리본에서 **계층 구조 설정**을 클릭합니다. **일반** 탭에서 **클라이언트가 경계 그룹에 지정된 관리 지점 사용을 선호**를 사용하도록 설정합니다. 
 
 ### <a name="known-issues"></a>알려진 문제
@@ -202,7 +201,7 @@ WDS가 필요하지 않으므로 PXE 사용 배포 지점은 Windows Server Core
 
 ### <a name="troubleshooting"></a>문제 해결
 **LocationServices.log**에 새 항목이 표시됩니다. **Locality** 특성은 다음 상태 중 하나를 식별합니다.
-- 0: 알 수 없음
+- 0: Unknown
 - 1: 지정한 관리 지점이 대체를 위한 사이트 기본 경계 그룹에만 있습니다.
 - 2: 지정한 관리 지점이 원격 또는 인접 경계 그룹에 있습니다. 관리 지점이 인접 및 사이트 기본 경계 그룹 둘 다에 있는 경우 위치는 2입니다.
 - 3: 지정한 관리 지점이 로컬 또는 현재 경계 그룹에 있습니다. 관리 지점이 현재 경계 그룹뿐 아니라 인접 또는 사이트 기본 경계 그룹에도 있는 경우 위치는 3입니다. 계층 구조 설정에서 기본 관리 지점 설정을 사용하도록 설정하지 않을 경우 위치는 관리 지점이 있는 경계 그룹에 관계없이 항상 3입니다.
@@ -237,7 +236,7 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 > [!IMPORTANT]
 > 이 기능은 Azure CSP(클라우드 서비스 공급자) 지원을 사용하도록 설정하지 않습니다. Azure Resource Manager를 통한 CMG 배포는 CSP가 지원하지 않는 클래식 클라우드 서비스를 계속 사용합니다. 자세한 내용은 [Azure CSP에서 사용 가능한 Azure 서비스](/azure/cloud-solution-provider/overview/azure-csp-available-services)를 참조하세요.  
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - [Azure AD](/sccm/core/clients/deploy/deploy-clients-cmg-azure)와의 통합. Azure AD 사용자 검색은 필요하지 않습니다.
 - Azure 관리 인증서를 제외하고 [클라우드 관리 게이트웨이에 대한 요구 사항](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway#requirements)과 동일합니다.
 
@@ -263,7 +262,7 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 > [!NOTE]
 > 이 기능은 선택 사항입니다. 이 릴리스로 업데이트할 때 업데이트 마법사에서 이 기능을 사용하도록 설정합니다. 또는 나중에 콘솔에서 기능을 사용하도록 설정합니다. 자세한 내용은 [업데이트에서 선택적 기능 사용](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)을 참조하세요.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - 구성 관리자 클라이언트를 최신 버전으로 업그레이드
 - [컴퓨터 에이전트](/sccm/core/clients/deploy/about-client-settings#computer-agent) 그룹에서 클라이언트 설정인 **새 소프트웨어 센터 사용** 설정
 
@@ -281,7 +280,7 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 <!-- 1322613 -->
 사용자가 사용할 수 있는 애플리케이션으로 배포하는 경우 이제 Azure AD(Azure Active Directory) 디바이스에서 소프트웨어 센터를 통해 해당 애플리케이션을 찾아보고 설치할 수 있습니다.  
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - 관리 지점에서 HTTPS 사용
 - [Azure AD](/sccm/core/clients/deploy/deploy-clients-cmg-azure)와 사이트 통합
 - 사용자 컬렉션이 사용할 수 있는 애플리케이션으로 배포
@@ -303,7 +302,7 @@ Configuration Manager는 기존 클래식 CMG 인스턴스를 Azure Resource Man
 <!-- 1351442 -->
 Windows AutoPilot은 새로운 Windows 10 디바이스를 최신 방법으로 온보딩 및 구성하기 위한 솔루션입니다. 자세한 내용은 [Windows AutoPilot 개요](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)를 참조하세요. 기존 디바이스를 Windows AutoPilot에 등록하는 한 가지 방법은 비즈니스 및 교육용 Microsoft 스토어에 디바이스 정보를 업로드하는 것입니다. 이 정보에는 디바이스 일련 번호, Windows 제품 식별자 및 하드웨어 식별자가 포함됩니다. Configuration Manager를 사용하여 이 디바이스 정보를 수집하고 보고할 수 있습니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - 이 디바이스 정보는 Windows 10 버전 1703 이상의 클라이언트에만 적용됩니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -348,7 +347,7 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 - **개발자 도구 허용**: 자세한 내용은 [AllowDeveloperTools 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-allowdevelopertools)을 참조하세요.
 - **확장 허용**: 자세한 내용은 [AllowExtensions 브라우저 정책](/windows/client-management/mdm/policy-csp-browser#browser-allowextensions)을 참조하세요.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - Azure Active Directory 조인 Windows 10 클라이언트 
 
 ### <a name="known-issues"></a>알려진 문제
@@ -425,4 +424,4 @@ Windows 10 클라이언트에서 [Microsoft Edge](https://technet.microsoft.com/
 
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

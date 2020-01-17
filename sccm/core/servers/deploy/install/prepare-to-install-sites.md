@@ -10,22 +10,21 @@ ms.assetid: 9089e1b5-cba4-42bd-a2de-126ef882a3af
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d530540ba83fbe03752aab6943b8bf4fa02404b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f93d12774240599d5f0584c2f45b8aad6463037c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71062125"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798143"
 ---
-# <a name="prepare-to-install-system-center-configuration-manager-sites"></a>System Center Configuration Manager 사이트 설치 준비
+# <a name="prepare-to-install-configuration-manager-sites"></a>Configuration Manager 사이트 설치 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-하나 이상의 System Center Configuration Manager 사이트의 성공적인 배포를 준비하려면 이 문서를 자세히 이해하고 숙지해야 합니다. 이 단계를 통해 여러 사이트를 설치할 때 시간을 절약할 수 있으며 하나 이상의 사이트를 다시 설치해야 할 경우를 발생시키는 실수를 방지할 수 있습니다.
+하나 이상의 Configuration Manager 사이트의 성공적인 배포를 준비하려면 이 문서를 자세히 이해하고 숙지해야 합니다. 이 단계를 통해 여러 사이트를 설치할 때 시간을 절약할 수 있으며 하나 이상의 사이트를 다시 설치해야 할 경우를 발생시키는 실수를 방지할 수 있습니다.
 
 > [!TIP]
-> System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지 알아보려면 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
+> Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다. 각 용어가 어떻게 사용되는지 알아보려면 [업그레이드, 업데이트 및 설치 정보](/sccm/core/understand/upgrade-update-install)를 참조하세요.
 
 ## <a name="bkmk_options"></a> 서로 다른 유형의 사이트 설치 옵션
 새 Configuration Manager 사이트를 설치하는 경우 사용할 수 있는 소스 파일의 버전은 계층 구조에 이미 있는 사이트(있는 경우)의 버전에 따라 달라집니다. 사용할 수 있는 설치 방법은 설치하려는 사이트 유형에 따라 달라집니다.  
@@ -64,13 +63,13 @@ Configuration Manager 콘솔에서 보조 사이트를 설치해야 합니다. �
 
 ## <a name="bkmk_tasks"></a> 설치를 시작하기 전에 완료해야 하는 일반적인 작업
 - **배포에 사용할 계층 구조 토폴로지 이해**    
-자세한 내용은 [System Center Configuration Manager에 대한 사이트 계층 구조 디자인](../../../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md)을 참조하세요.  
+자세한 내용은 [Configuration Manager에 대한 사이트 계층 구조 디자인](../../../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md)을 참조하세요.  
 
 - **Configuration Manager에 사용할 수 있도록 필수 조건과 지원되는 구성을 충족하는 개별 서버 준비 및 구성**         
 자세한 내용은 [사이트 및 사이트 시스템 필수 조건](../../../../core/plan-design/configs/site-and-site-system-prerequisites.md)을 참조하세요.  
 
 - **사이트 데이터베이스를 호스트하는 SQL Server 설치 및 구성**     
-자세한 내용은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
+자세한 내용은 [Configuration Manager에 대한 지원되는 SQL Server 버전](../../../../core/plan-design/configs/support-for-sql-server-versions.md)을 참조하세요.  
 
 - **Configuration Manager를 지원하도록 네트워크 환경 준비**      
 자세한 내용은 [Configuration Manager를 준비하기 위한 방화벽, 포트 및 도메인 구성](../../../../core/plan-design/network/configure-firewalls-ports-domains.md)을 참조하세요.  
@@ -135,4 +134,4 @@ Configuration Manager의 업데이트된 설치 파일을 다운로드하려면 
 - 기본적으로 사이트 시스템 및 클라이언트는 미리 정의된 포트를 사용하여 통신합니다.
 - 설치하는 동안 대체 포트를 구성할 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager에서 사용되는 포트](../../../../core/plan-design/hierarchy/ports.md)를 참조하세요.
+자세한 내용은 [사용된 포트](../../../../core/plan-design/hierarchy/ports.md)를 참조하세요.

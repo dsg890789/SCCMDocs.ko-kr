@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 설정 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 클라이언트 설정을 선택합니다.
+description: Configuration Manager에서 클라이언트 설정을 선택합니다.
 ms.date: 12/29/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,24 +10,23 @@ ms.assetid: 95e9858a-bad4-4651-9e61-2e31dc5050fa
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8dc3b4d64511e944bd7d03feca7370d1d4b5d8b6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c64895c7945b972821a1dee1702047e61b740026
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62213481"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825186"
 ---
-# <a name="how-to-configure-client-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법
+# <a name="how-to-configure-client-settings-in-configuration-manager"></a>Configuration Manager에서 클라이언트 설정을 구성하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-**관리** > **클라이언트 설정**에서 System Center Configuration Manager의 모든 클라이언트 설정을 관리합니다. 계층에서 사용자 지정 설정이 적용되지 않은 모든 사용자 및 디바이스에 대한 설정을 구성하려면 기본 설정을 수정하세요. 일부 사용자 또는 디바이스에만 다른 설정을 적용하려면 사용자 지정 설정을 만들어 컬렉션에 배포하세요.  
+**관리** > **클라이언트 설정**에서 Configuration Manager의 모든 클라이언트 설정을 관리합니다. 계층에서 사용자 지정 설정이 적용되지 않은 모든 사용자 및 디바이스에 대한 설정을 구성하려면 기본 설정을 수정하세요. 일부 사용자 또는 디바이스에만 다른 설정을 적용하려면 사용자 지정 설정을 만들어 컬렉션에 배포하세요.  
 
-각 클라이언트 설정에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설정 정보](../../../core/clients/deploy/about-client-settings.md)를 참조하세요.
+각 클라이언트 설정에 대한 자세한 내용은 [클라이언트 설정 정보](../../../core/clients/deploy/about-client-settings.md)를 참조하세요.
 
 > [!NOTE]  
->  또한 클라이언트를 관리할 구성 항목을 사용하여 디바이스의 구성 호환성을 평가, 추적 및 재구성할 수 있습니다. 자세한 내용은 [System Center Configuration Manager를 사용하여 디바이스 준수 확인](../../../compliance/understand/ensure-device-compliance.md)을 참조하세요.  
+>  또한 클라이언트를 관리할 구성 항목을 사용하여 디바이스의 구성 호환성을 평가, 추적 및 재구성할 수 있습니다. 자세한 내용은 [Configuration Manager를 사용하여 디바이스 준수 확인](../../../compliance/understand/ensure-device-compliance.md)을 참조하세요.  
 
 ##  <a name="configure-the-default-client-settings"></a>기본 클라이언트 설정 구성    
 
@@ -37,7 +36,7 @@ ms.locfileid: "62213481"
 
 3. 탐색 창에서 각 설정 그룹의 클라이언트 설정을 보고 구성합니다.  
 
-   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대해 정책 검색을 시작하려면 [System Center Configuration Manager의 클라이언트 관리 방법](../../../core/clients/manage/manage-clients.md)에서 [Configuration Manager 클라이언트에 대한 정책 검색 시작](../../../core/clients/manage/manage-clients.md#BKMK_PolicyRetrieval)을 참조하세요.  
+   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients.md)에서 [Configuration Manager 클라이언트에 대한 정책 검색 시작](../../../core/clients/manage/manage-clients.md#BKMK_PolicyRetrieval)을 참조하세요.  
 
 ##  <a name="create-and-deploy-custom-client-settings"></a>사용자 지정 클라이언트 설정 만들기 및 배포  
 이러한 사용자 지정 설정을 배포하면 기본 클라이언트 설정이 재정의됩니다. 이 절차를 시작하기 전에 이러한 사용자 지정 클라이언트 설정이 필요한 사용자 또는 디바이스가 포함된 컬렉션이 있는지 확인하세요.  
@@ -62,7 +61,7 @@ ms.locfileid: "62213481"
 
 8. 만든 사용자 지정 클라이언트 설정 순서를 봅니다. 사용자 지정 클라이언트 설정이 여러 개인 경우 해당 순서 번호에 따라 적용됩니다. 충돌이 있는 경우 순서 번호가 가장 낮은 설정이 다른 설정을 재정의합니다. 순서를 변경하려면 **홈** 탭의 **클라이언트 설정** 그룹에서 **위로 항목 이동** 또는 **아래로 항목 이동**을 선택합니다.  
 
-   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대해 정책 검색을 시작하려면 [System Center Configuration Manager의 클라이언트 관리 방법](../../../core/clients/manage/manage-clients.md)에서 [Configuration Manager 클라이언트에 대한 정책 검색 시작](../../../core/clients/manage/manage-clients.md#BKMK_PolicyRetrieval)을 참조하세요.  
+   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients.md)에서 [Configuration Manager 클라이언트에 대한 정책 검색 시작](../../../core/clients/manage/manage-clients.md#BKMK_PolicyRetrieval)을 참조하세요.  
 
 
 

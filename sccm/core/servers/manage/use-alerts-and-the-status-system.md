@@ -10,19 +10,18 @@ ms.assetid: 7341cc6e-9e08-41e4-bcc6-6c1ff12e85ca
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52c501c30d2eb4ecea3d7830d0f0c3bb61262137
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f89d646729bd4303ab823864e41d1a20770d96c2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65497221"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826155"
 ---
-# <a name="use-alerts-and-the-status-system-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 경고 및 상태 시스템 사용
+# <a name="use-alerts-and-the-status-system-for-configuration-manager"></a>Configuration Manager에 대한 경고 및 상태 시스템 사용
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-경고를 구성한 후 기본 제공 상태 시스템을 사용하여 System Center Configuration Manager 배포 상태에 대한 최신 정보를 받습니다.  
+경고를 구성한 후 기본 제공 상태 시스템을 사용하여 Configuration Manager 배포 상태에 대한 최신 정보를 받습니다.  
 
 
 ##  <a name="bkmk_Status"></a> 상태 시스템  
@@ -195,8 +194,8 @@ ms.locfileid: "65497221"
 
 |작업|추가 정보|  
 |------------|----------------------|  
-|컬렉션에 대한 Endpoint Protection 경고 구성|[System Center Configuration Manager에서 Endpoint Protection 구성](../../../protect/deploy-use/configure-endpoint-protection.md)에서 **Configuration Manager에서 Endpoint Protection에 대한 경고를 구성하는 방법**을 참조하세요.|  
-|컬렉션에 대한 클라이언트 상태 경고 구성|[System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법](../../../core/clients/deploy/configure-client-status.md)을 참조하세요.|  
+|컬렉션에 대한 Endpoint Protection 경고 구성|[Endpoint Protection 구성](../../../protect/deploy-use/configure-endpoint-protection.md)에서 **Configuration Manager에서 Endpoint Protection에 대한 경고를 구성하는 방법**을 참조하세요.|  
+|컬렉션에 대한 클라이언트 상태 경고 구성|[클라이언트 상태를 구성하는 방법](../../../core/clients/deploy/configure-client-status.md)을 참조하세요.|  
 |Configuration Manager 경고 관리|이 항목에서 [Management tasks for alerts](#BKMK_Manage) 섹션을 참조하세요.|  
 |경고에 대한 메일 구독 구성|이 항목에서 [Management tasks for alerts](#BKMK_Manage) 섹션을 참조하세요.|  
 |경고 모니터링|이 항목에서 [경고 모니터링](#BKMK_MonitorAlerts)|  

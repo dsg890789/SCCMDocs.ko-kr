@@ -1,7 +1,7 @@
 ---
 title: 예제 시나리오 - Windows Embedded 클라이언트 배포
 titleSuffix: Configuration Manager
-description: Windows Embedded 디바이스의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오를 참조하세요.
+description: Windows Embedded 디바이스의 Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오를 참조하세요.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,17 +10,16 @@ ms.assetid: 10049c89-b37c-472b-b317-ce4f56cd4be7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f0cc9800931c802d29edd5cacc1f1ed5e95c24e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0d6e318a9606eb4988d28a363ea40c5eec3a7cde
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65933275"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825067"
 ---
-# <a name="example-scenario-for-deploying-and-managing-system-center-configuration-manager-clients-on-windows-embedded-devices"></a>Windows Embedded 디바이스의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오
+# <a name="example-scenario-for-deploying-and-managing-configuration-manager-clients-on-windows-embedded-devices"></a>Windows Embedded 디바이스의 Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 시나리오에서는 Configuration Manager를 통해 쓰기 필터를 사용하는 Windows Embedded 디바이스를 관리하는 방법을 보여 줍니다. Embedded 디바이스가 쓰기 필터를 지원하지 않는 경우 표준 Configuration Manager 클라이언트로 동작하므로 이러한 절차가 적용되지 않습니다.  
 
@@ -32,17 +31,17 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
 
 1. Configuration Manager 관리자(이하 관리자)는 Windows Embedded 디바이스에서 쓰기 필터를 사용하는 방법과 Configuration Manager에서 자동으로 쓰기 필터를 사용하지 않도록 설정한 후 다시 사용하도록 설정하는 방식으로 쓰기 필터 사용을 간편하게 하여 소프트웨어 설치 상태를 유지하는 방법에 대해 읽습니다.  
 
-    자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획](../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
+    자세한 내용은 [Windows Embedded 디바이스에 클라이언트 배포 계획](../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 
 2. 관리자는 Configuration Manager 클라이언트를 설치하기 전에 Windows Embedded 디바이스를 위한 새로운 쿼리 기반 디바이스 컬렉션을 만듭니다. 회사에서는 표준 명명 형식을 사용하여 컴퓨터를 식별하기 때문에 관리자는 컴퓨터 이름의 첫 6자로 Windows Embedded 디바이스를 고유하게 식별할 수 있습니다. **WEMDVC**. 관리자는 다음 WQL 쿼리를 사용하여 이 컬렉션을 만듭니다. **select SMS_R_System.NetbiosName from SMS_R_System where SMS_R_System.NetbiosName like "WEMDVC%"**  
 
     이 컬렉션을 통해 관리자는 다른 디바이스와 다른 구성 옵션을 갖는 Windows Embedded 디바이스를 관리할 수 있습니다. 관리자는 이 컬렉션을 사용하여 다시 시작을 제어하고, 클라이언트 설정을 갖는 Endpoint Protection을 배포하고, 대화형 프레젠테이션 애플리케이션을 배포하게 됩니다.  
 
-    [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
+    [컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
 
 3. 관리자는 프레젠테이션 애플리케이션 설치와 업그레이드에 필요할 수 있는 다시 시작이 방문자 센터 운영 시간 동안 발생하지 않도록 컬렉션의 유지 관리 기간을 구성합니다. 운영 시간은 월요일부터 일요일 09:00부터 18:00이므로 관리자는 유지 관리 기간을 매일 18:30부터 06:00까지로 구성합니다.  
 
-4. 자세한 내용은 [System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법](../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
+4. 자세한 내용은 [유지 관리 기간을 사용하는 방법](../../../core/clients/manage/collections/use-maintenance-windows.md)을 참조하세요.  
 
 5. 그런 다음, 관리자는 다음 설정에 대해 **예** 를 선택하여 Endpoint Protection 클라이언트를 설치하도록 사용자 지정 디바이스 클라이언트 설정을 구성한 다음, 이 사용자 지정 클라이언트 설정을 Windows Embedded 디바이스 컬렉션에 배포합니다.  
 
@@ -57,7 +56,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
    > [!NOTE]  
    >  Endpoint Protection 클라이언트를 설치하는 데 필요한 다시 시작은 방문자 센터가 운영되기 전에 디바이스 설치 기간 동안 한 번만 이루어집니다. 애플리케이션 또는 소프트웨어 정의 업데이트가 정기적으로 배포되는 것과 달리, 동일한 디바이스에 Endpoint Protection 클라이언트가 설치되는 다음 시기는 회사에서 차기 버전의 Configuration Manager로 업그레이드하는 때가 될 것입니다.  
 
-    자세한 내용은 [System Center Configuration Manager의 Endpoint Protection 구성](../../../protect/deploy-use/configure-endpoint-protection.md)을 참조하세요.  
+    자세한 내용은 [Endpoint Protection 구성](../../../protect/deploy-use/configure-endpoint-protection.md)을 참조하세요.  
 
 6. 이제 클라이언트에 대한 구성 설정이 갖추어졌으므로 관리자는 Configuration Manager 클라이언트 설치를 준비합니다. 먼저 Windows Embedded 디바이스에서 쓰기 필터를 사용하지 않도록 수동으로 설정해야 관리자가 클라이언트를 설치할 수 있습니다. 관리자는 키오스크와 함께 제공된 OEM 문서를 읽고 해당 지침에 따라 쓰기 필터를 사용하지 않도록 설정합니다.  
 
@@ -73,15 +72,15 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
 
     자세한 내용은 다음을 참조하십시오.  
 
-   -   [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)  
+   -   [Windows 컴퓨터에 클라이언트를 배포하는 방법](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)  
 
-   -   [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](../../../core/clients/deploy/assign-clients-to-a-site.md)  
+   -   [사이트에 클라이언트를 할당하는 방법](../../../core/clients/deploy/assign-clients-to-a-site.md)  
 
 7. 이제 Windows Embedded 디바이스에 Configuration Manager 클라이언트가 설치되었으므로 관리자는 표준 Windows 클라이언트를 관리하는 것과 같은 방법으로 해당 디바이스를 관리할 수 있다는 것을 확인합니다. 예를 들어 Configuration Manager 콘솔에서 원격 제어를 사용하여 원격으로 디바이스를 관리하고 디바이스에 대한 클라이언트 정책을 시작하고 클라이언트 속성 및 하드웨어 인벤토리를 볼 수 있습니다.  
 
     이러한 디바이스는 Active Directory 도메인에 조인되었기 때문에 수동으로 신뢰할 수 있는 클라이언트로 승인하지 않아도 되며, Configuration Manager 콘솔에서 승인된 것을 확인합니다.  
 
-    자세한 내용은 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients.md)항목을 참조하세요.  
+    자세한 내용은 [클라이언트를 관리하는 방법](../../../core/clients/manage/manage-clients.md)을 참조하세요.  
 
 8. 대화형 프레젠테이션 소프트웨어를 설치하기 위해 관리자는 **소프트웨어 배포 마법사**를 실행하고 필수 애플리케이션을 구성합니다. 마법사의 **사용자 환경** 페이지에 있는 **Windows Embedded 디바이스에 대한 쓰기 필터 처리** 섹션에서 **최종 기한에 또는 유지 관리 기간 동안 변경 내용 커밋(다시 시작해야 함)** 을 선택하는 기본 옵션을 적용합니다.  
 
@@ -89,7 +88,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
 
     관리자는 Windows Embedded 디바이스 컬렉션에 애플리케이션을 배포합니다.  
 
-    자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 배포하는 방법](../../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
+    자세한 내용은 [Configuration Manager에서 애플리케이션을 배포하는 방법](../../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
 
 9. 관리자는 Endpoint Protection에 대한 정의 업데이트를 구성하도록 소프트웨어 업데이트를 사용하고 자동 배포 규칙 만들기 마법사를 실행하고 **정의 업데이트** 템플릿을 선택하여 Endpoint Protection에 적합한 설정으로 마법사를 미리 채웁니다.  
 
@@ -107,7 +106,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
      관리자는 자동 배포 규칙을 위해 Windows Embedded 디바이스 컬렉션을 선택합니다.  
 
      자세한 내용은  
-               3단계: [System Center Configuration Manager에서 Endpoint Protection 구성](../../../protect/deploy-use/configure-endpoint-protection.md)의 클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트 구성  
+               3단계: [Endpoint Protection 구성](../../../protect/deploy-use/configure-endpoint-protection.md)의 클라이언트 컴퓨터에 정의 업데이트를 제공하도록 Configuration Manager 소프트웨어 업데이트 구성  
 
 10. 관리자는 모든 변경 내용을 오버레이에 정기적으로 커밋하는 유지 관리 작업을 구성하기로 결정합니다. 이 작업은 소프트웨어 업데이트 정의 배포를 지원하며, 누적되어 디바이스가 다시 시작될 때마다 다시 설치해야 하는 업데이트 수를 줄입니다. 관리자의 경험상 이렇게 하면 맬웨어 방지 프로그램을 더욱 효율적으로 실행하는 데 도움이 됩니다.  
 
@@ -133,7 +132,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
     7. 관리자는 더 이상 변경하지 않고 마법사를 완료합니다.  
 
        자세한 내용은  
-                 [System Center Configuration Manager에서 작업을 자동화하는 작업 순서 관리](../../../osd/deploy-use/manage-task-sequences-to-automate-tasks.md)  
+                 [작업을 자동화하는 작업 순서 관리](../../../osd/deploy-use/manage-task-sequences-to-automate-tasks.md)  
 
 11. 관리자는 키오스크가 자동으로 실행되도록 다음 설정으로 디바이스를 구성하는 스크립트를 작성합니다.  
 
@@ -143,7 +142,7 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
 
       관리자는 패키지와 프로그램을 사용하여 이 스크립트를 Windows Embedded 디바이스 컬렉션에 배포합니다. 관리자는 소프트웨어 배포 마법사를 실행할 때 **최종 기한에 또는 유지 관리 기간 동안 변경 내용 커밋(다시 시작해야 함)** 확인란을 다시 선택하여 다시 시작 후에 변경 내용을 유지합니다.  
 
-      자세한 내용은 [System Center Configuration Manager의 패키지 및 프로그램](../../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
+      자세한 내용은 [패키지 및 프로그램](../../../apps/deploy-use/packages-and-programs.md)을 참조하세요.  
 
 12. 다음 날 아침 관리자는 Windows Embedded 디바이스에 대해 다음 사항을 확인합니다.  
 
@@ -157,9 +156,9 @@ Coho Vineyard & Winery에서는 방문자 센터를 개설할 예정이며 Windo
 
       자세한 내용은 다음을 참조하십시오.  
 
-    - [System Center Configuration Manager에서 Endpoint Protection을 모니터링하는 방법](../../../protect/deploy-use/monitor-endpoint-protection.md)  
+    - [Endpoint Protection을 모니터링하는 방법](../../../protect/deploy-use/monitor-endpoint-protection.md)  
 
-    - [System Center Configuration Manager에서 애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)  
+    - [Configuration Manager에서 애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)  
 
 13. 관리자는 키오스크를 모니터링하여 성공적으로 관리되고 있음을 상사에게 보고합니다. 결과적으로 방문자 센터에 20개의 키오스크를 주문했습니다.  
 

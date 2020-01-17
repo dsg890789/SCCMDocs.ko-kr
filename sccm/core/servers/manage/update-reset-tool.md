@@ -1,7 +1,7 @@
 ---
 title: 업데이트 다시 설정 도구
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 콘솔 내 업데이트를 위해 업데이트 다시 설정 도구를 사용합니다.
+description: Configuration Manager의 콘솔 내 업데이트를 위해 업데이트 다시 설정 도구를 사용합니다.
 ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,17 +10,16 @@ ms.assetid: 25fa89d6-7e47-45a6-8f4e-70b77560fba6
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbd5f382a50baecf53c3925e2d903b2abb1948ec
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c9a8fdc083d5c1fae16b5077dd25daa14353e1e5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892023"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793209"
 ---
 # <a name="update-reset-tool"></a>업데이트 다시 설정 도구
 
-*적용 대상: System Center Configuration Manager(현재 분기)*  
+*적용 대상: Configuration Manager(현재 분기)*  
 
 
 버전 1706부터 Configuration Manager 기본 사이트 및 중앙 관리 사이트에는 Configuration Manager 업데이트 다시 설정 도구 **CMUpdateReset.exe**가 포함되어 있습니다. 콘솔 내 업데이트를 다운로드 또는 복제하는 데 문제가 있는 경우 이 도구를 사용하여 문제를 해결합니다. 이 도구는 사이트 서버의 ***\cd.latest\SMSSETUP\TOOLS*** 폴더에 있습니다.
@@ -31,7 +30,7 @@ ms.locfileid: "70892023"
 
 이 도구를 실행하면 지정한 업데이트에 대해 실행됩니다. 기본적으로 이 도구는 성공적으로 설치되었거나 다운로드된 업데이트를 삭제하지 않습니다.  
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 이 도구를 실행하는 데 사용하는 계정에는 다음 권한이 필요합니다.
 - 중앙 관리 사이트 및 계층 구조에 있는 각 기본 사이트의 사이트 데이터베이스에 대한 **읽기** 및 **쓰기** 권한 이러한 권한을 설정하려면 사용자 계정을 각 사이트의 Configuration Manager 데이터베이스에 **db_datawriter** 및 **db_datareader** [고정 데이터베이스 역할](/sql/relational-databases/security/authentication-access/database-level-roles#fixed-database-roles)의 구성원으로 추가할 수 있습니다. 이 도구는 보조 사이트와는 상호 작용하지 않습니다.
 - 계층 구조의 최상위 사이트에 대한 **로컬 관리자**

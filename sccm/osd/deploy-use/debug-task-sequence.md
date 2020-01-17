@@ -6,21 +6,20 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 4b60b0e1-ffa4-4fd5-864e-70a0546c8b3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 75b6a22bf19db09e3070e7cd7cea0f685484359f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3c04a106e7be35bff1ebaee97f7373ad777f7c73
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661042"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827056"
 ---
 # <a name="debug-a-task-sequence"></a>작업 순서 디버그
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3612274-->
 
@@ -30,7 +29,7 @@ ms.locfileid: "74661042"
 > 이 버전의 Configuration Manager에서 작업 순서 디버거는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/configmgr/core/servers/manage/pre-release-features)을 참조하세요.  
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 대상 디바이스의 Configuration Manager 클라이언트를 업데이트합니다.
 

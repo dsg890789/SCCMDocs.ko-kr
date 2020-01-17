@@ -10,13 +10,12 @@ ms.assetid: 140c522f-d09a-40b6-a4b0-e0d14742834a
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947f23f4dd6890326860cd9e499819f6c7c9f546
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 816d1aeb2ba7fca8379e9c9de369776d88fbf8d8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890807"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816805"
 ---
 # <a name="tutorial-enable-co-management-for-existing-configuration-manager-clients"></a>자습서: 기존 Configuration Manager 클라이언트에 대해 공동 관리 사용
 
@@ -40,7 +39,7 @@ ms.locfileid: "70890807"
 > * 사용자에게 Intune 라이선스 할당  
 > * Configuration Manager에서 공동 관리 사용  
 
-## <a name="prerequisites"></a>필수 구성 요소  
+## <a name="prerequisites"></a>전제 조건  
 
 ### <a name="azure-services-and-environment"></a>Azure 서비스 및 환경
 
@@ -57,7 +56,7 @@ ms.locfileid: "70890807"
 
 ### <a name="on-premises-infrastructure"></a>온-프레미스 인프라
 
-- [지원되는 버전](https://docs.microsoft.com/sccm/core/servers/manage/updates#supported-versions)의 System Center Configuration Manager 현재 분기
+- Configuration Manager 현재 분기의 [지원되는 버전](https://docs.microsoft.com/sccm/core/servers/manage/updates#supported-versions)
 - [MDM(모바일 디바이스 관리) 권한](https://docs.microsoft.com/sccm/mdm/deploy-use/change-mdm-authority)은 Intune으로 설정되어 있어야 합니다.  
 
 ### <a name="permissions"></a>사용 권한

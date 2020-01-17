@@ -1,7 +1,7 @@
 ---
 title: 1606에 대한 검사 목록
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 버전 1511 또는 1602를 1606으로 업데이트하기 전에 수행할 작업에 대해 알아봅니다.
+description: Configuration Manager에서 버전 1511 또는 1602를 1606으로 업데이트하기 전에 수행할 작업에 대해 알아봅니다.
 ms.date: 06/6/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,23 +11,22 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5639e66b52d7ea3f7257e495d445a93dd058fe8e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c39b7a524234e3cc3ae37bae9e435c682454cde8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892149"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797391"
 ---
-# <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1606을 설치하기 위한 검사 목록
+# <a name="checklist-for-installing-update-1606-for-configuration-manager"></a>Configuration Manager용 업데이트 1606을 설치하기 위한 검사 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 또는 1602에서 업데이트하는 데 사용할 수 있는 업데이트입니다.
+Configuration Manager 버전 1606의 현재 분기는 버전 1511 또는 1602에서 업데이트하는 데 사용할 수 있는 업데이트입니다.
 
 버전 1606을 업데이트로 설치하기 전에, 다음 정보와 업데이트를 시작하기 전에 수행할 작업에 대한 검사 목록을 검토합니다.
 
-기준 버전에 대한 자세한 내용은 [System Center Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)의 [기준선 및 업데이트 버전](../../../core/servers/manage/updates.md#bkmk_Baselines)을 참조하세요.
+기준 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)의 [기준선 및 업데이트 버전](../../../core/servers/manage/updates.md#bkmk_Baselines)을 참조하세요.
 
 ## <a name="about-installing-update-1606"></a>업데이트 1606 설치 정보
 
@@ -49,7 +48,7 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 ## <a name="checklist"></a>확인 목록  
 
-**모든 사이트에서 System Center Configuration Manager의 지원되는 버전을 실행하는지 확인:**  업데이트 1606의 설치를 시작하기 전에 계층 구조의 각 사이트 서버에서 버전 1511 또는 1602이든 동일한 버전의 System Center Configuration Manager를 실행해야 합니다.
+**모든 사이트에서 지원되는 Configuration Manager 버전을 실행하는지 확인합니다.**  업데이트 1606의 설치를 시작하기 전에 계층 구조의 각 사이트 서버에서 버전 1511 또는 1602이든 동일한 버전의 Configuration Manager를 실행해야 합니다.
 
 **사이트 시스템 서버에서 설치된 Microsoft.NET 버전 검토:** 사이트에서 업데이트 1606을 설치할 때 .NET Framework 4.5 이상이 아직 설치되어 있지 않은 경우 Configuration Manager가 다음 사이트 시스템 역할 중 하나를 호스트하는 각 컴퓨터에 자동으로 .NET Framework 4.5.2를 설치합니다.  
 
@@ -67,7 +66,7 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 **사이트 및 계층 구조 상태를 검토하고 해결되지 않은 문제가 있는지 확인:** 사이트를 업데이트하기 전에 원격 컴퓨터에 설치된 사이트 서버, 사이트 데이터베이스 서버 및 사이트 시스템 역할의 모든 작동 문제를 해결합니다. 기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager에 대한 경고 및 상태 시스템 사용](../../../core/servers/manage/use-alerts-and-the-status-system.md)을 참조하세요.  
+자세한 내용은 [Configuration Manager에 대한 경고 및 상태 시스템 사용](../../../core/servers/manage/use-alerts-and-the-status-system.md)을 참조하세요.  
 
 **사이트 간의 파일 및 데이터 복제 검토:**  사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 원활한 업데이트 또는 성공적인 업데이트를 방해할 수 있습니다.    
 
@@ -78,7 +77,7 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 **기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정:** Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업데이트할 수 없습니다. Configuration Manager용 업데이트를 설치하기 전에 데이터베이스 복제를 사용하지 않도록 설정합니다.  
 
-자세한 내용은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 참조하세요.  
+자세한 내용은 [Configuration Manager의 관리 지점용 데이터베이스 복제본](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)을 참조하세요.  
 
 **SQL Server AlwaysOn 가용성 그룹을 수동 장애 조치(failover)로 설정:**  
 버전 1606과 같은 업데이트를 설치하기 전에 가용성 그룹이 수동 장애 조치로 설정되어 있는지 확인합니다. 사이트를 업데이트한 후에 장애 조치를 자동으로 되돌릴 수 있습니다. 자세한 내용은 [사이트 데이터베이스에 대한 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.
@@ -87,7 +86,7 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 소프트웨어 업데이트 지점에 NLB 클러스터를 사용하는 경우 Windows PowerShell을 사용하여 NLB 클러스터를 제거하세요.    
 
-자세한 내용은 [System Center Configuration Manager에서 소프트웨어 업데이트 계획](../../../sum/plan-design/plan-for-software-updates.md)을 참조하세요.  
+자세한 내용은 [소프트웨어 업데이트 계획](../../../sum/plan-design/plan-for-software-updates.md)을 참조하세요.  
 
 **해당 사이트에 업데이트를 설치하는 동안 각 사이트에서 모든 사이트 유지 관리 작업을 사용하지 않도록 설정:** 업데이트를 설치하기 전에 업데이트 프로세스가 활성 상태인 동안 실행될 수 있는 모든 사이트 유지 관리 작업을 사용하지 않도록 설정합니다. 이러한 작업의 일부 예는 다음과 같습니다.  
 
@@ -99,16 +98,16 @@ System Center Configuration Manager 버전 1606의 현재 분기는 버전 1511 
 
 업데이트를 설치하는 동안 사이트 데이터베이스 유지 관리 작업이 실행되면 업데이트 설치가 실패할 수 있습니다. 작업을 사용하지 않도록 설정하기 전에 작업 일정을 기록하세요. 그래야 업데이트가 설치된 후에 해당 구성을 복원할 수 있습니다.  
 
-자세한 내용은 [System Center Configuration Manager에 대한 유지 관리 작업](../../../core/servers/manage/maintenance-tasks.md) 및 [System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../core/servers/manage/reference-for-maintenance-tasks.md)를 참조하세요. 
+자세한 내용은 [Configuration Manager에 대한 유지 관리 작업](../../../core/servers/manage/maintenance-tasks.md) 및 [Configuration Manager에 대한 유지 관리 작업 참조](../../../core/servers/manage/reference-for-maintenance-tasks.md)를 참조하세요. 
 
-**System Center Configuration Manager 서버에서 바이러스 백신 소프트웨어 일시 중지:** 사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어가 중지됐는지 확인합니다. <!--SMS.503481--> 
+**Configuration Manager 서버에서 바이러스 백신 소프트웨어 일시 중지:** 사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어가 중지됐는지 확인합니다. <!--SMS.503481--> 
 
 **중앙 관리 사이트와 기본 사이트의 사이트 데이터베이스 백업 만들기:** 사이트를 업데이트하기 전에 사이트 데이터베이스를 백업하여 재해 복구에 사용할 백업을 갖추어야 합니다.   
 
-자세한 내용은 [System Center Configuration Manager 백업 및 복구](../../../protect/understand/backup-and-recovery.md)를 참조하세요.  
+자세한 내용은 [Configuration Manager 백업 및 복구](../../../protect/understand/backup-and-recovery.md)를 참조하세요.  
 
 <!-- Removed from update guidance 6/6/2017
-**Test the database upgrade on a copy of the most recent site database backup:** Before you update a System Center Configuration Manager central administration site or primary site, test the site database upgrade process on a copy of the site database.  
+**Test the database upgrade on a copy of the most recent site database backup:** Before you update a Configuration Manager central administration site or primary site, test the site database upgrade process on a copy of the site database.  
 
 - You should test the site database upgrade process because when you upgrade a site, the site database might be modified.  
 
@@ -127,8 +126,8 @@ Do not run a test database upgrade on the production site database. Doing so upd
 
 **클라이언트 파일럿에 대한 플랜:** 클라이언트를 업데이트하는 업데이트를 설치할 때 모든 활성 클라이언트를 배포하고 업그레이드하기 전에 사전 프로덕션 환경에서 새로운 클라이언트 업데이트를 테스트할 수 있습니다.   
 
-이 옵션을 활용하려면 업데이트 설치를 시작하기 전에 사전 프로덕션에 대한 자동 업그레이드를 지원하도록 사이트를 구성해야 합니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 업그레이드](../../../core/clients/manage/upgrade/upgrade-clients.md) 및   
-[System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](../../../core/clients/manage/upgrade/test-client-upgrades.md)  
+이 옵션을 활용하려면 업데이트 설치를 시작하기 전에 사전 프로덕션에 대한 자동 업그레이드를 지원하도록 사이트를 구성해야 합니다. 자세한 내용은 [클라이언트 업그레이드](../../../core/clients/manage/upgrade/upgrade-clients.md) 및   
+[사전 프로덕션 컬렉션에서 클라이언트 업그레이드 테스트](../../../core/clients/manage/upgrade/test-client-upgrades.md)를 참조하세요.  
 
 **서비스 기간을 사용하여 사이트 서버에서 업데이트를 설치하는 시기를 제어하도록 계획:** 서비스 기간을 사용하여 사이트 서버에 업데이트를 설치할 수 있는 기간을 정의할 수 있습니다.
 
@@ -137,7 +136,7 @@ Do not run a test database upgrade on the production site database. Doing so upd
 
 **설치 필수 구성 요소 검사기 실행:**  업데이트 1606을 설치하기 전에 업데이트 설치와 독립적으로 필수 구성 요소 검사기를 실행할 수 있습니다. 사이트에 업데이트를 설치할 때 필수 조건 검사가 다시 실행됩니다.  
 
-자세한 내용은 이 항목의 **3단계: [System Center Configuration Manager용 업데이트](../../../core/servers/manage/install-in-console-updates.md) 항목에서 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행**을 참조하세요.  
+자세한 내용은 이 항목의 **3단계: [Configuration Manager용 업데이트](../../../core/servers/manage/install-in-console-updates.md) 항목에서 업데이트를 설치하기 전에 필수 조건 검사기 실행**을 참조하세요.  
 
 > [!IMPORTANT]  
 > 필수 조건 검사가 독립적으로 또는 업데이트 설치의 일부로 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 1606 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서 **Setupwpf.exe**(Configuration Manager 설치 프로그램)를 실행합니다.  
@@ -145,4 +144,4 @@ Do not run a test database upgrade on the production site database. Doing so upd
 **사이트 업데이트:** 이제 계층 구조에 대한 업데이트 설치를 시작할 수 있습니다.  
 각 사이트에 대한 일상적인 업무 시간 외(업데이트를 설치하는 프로세스와 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치하는 작업이 비즈니스 운영에 가장 영향을 덜 주는 시기)에 업데이트를 설치하도록 계획하는 것이 좋습니다.
 
-자세한 내용은 [System Center Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)를 참조하세요.  
+자세한 내용은 [Configuration Manager용 업데이트](../../../core/servers/manage/updates.md)를 참조하세요.  

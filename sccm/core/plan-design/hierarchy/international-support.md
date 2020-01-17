@@ -1,7 +1,7 @@
 ---
 title: 다국어 기능 지원
 titleSuffix: Configuration Manager
-description: 특정 다국어 기능 요구 사항을 준수하도록 System Center Configuration Manager를 구성합니다.
+description: 특정 다국어 기능 요구 사항을 준수하도록 Configuration Manager를 구성합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 46dd9cb2-a812-4b6a-a747-b840f92fef8b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c76f0213ffb30432c51430f3fd98b911ab5d627
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: da46580c67d916e8c7e48978bc57f067eec28d2a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62237494"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800137"
 ---
-# <a name="international-support-in-system-center-configuration-manager"></a>System Center Configuration Manager의 다국어 기능 지원
+# <a name="international-support-in-configuration-manager"></a>Configuration Manager의 다국어 지원
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-다음 섹션에서는 특정 다국어 기능 요구 사항을 준수하도록 System Center Configuration Manager를 설정하는 방법에 대한 기술적인 정보를 제공합니다.  
+다음 섹션에서는 특정 다국어 기능 요구 사항을 준수하도록 Configuration Manager를 설정하는 방법에 대한 기술적인 정보를 제공합니다.  
 
 ## <a name="gb18030-requirements"></a>GB18030 요건  
  Configuration Manager는 GB18030에 정의된 표준을 준수하므로 중국에서 Configuration Manager를 사용할 수 있습니다. GB18030 요구 사항을 준수하려면 Configuration Manager 배포가 다음 구성을 갖추어야 합니다.  
@@ -36,6 +35,6 @@ ms.locfileid: "62237494"
     -   Chinese_Simplified_Stroke_Order_100_CI_AI  
 
     > [!NOTE]  
-    >  이러한 데이터베이스 정렬은 [System Center Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)에 설명된 요구 사항에 대한 예외입니다.  
+    >  이러한 데이터베이스 정렬은 [Configuration Manager에 대한 SQL Server 버전 지원](../../../core/plan-design/configs/support-for-sql-server-versions.md)에 설명된 요구 사항에 대한 예외입니다.  
 
 -   계층에 있는 각 사이트 서버 컴퓨터 시스템 볼륨의 루트 폴더에 **GB18030.SMS** 라는 이름의 파일을 배치해야 합니다. 이 파일은 이 요구 사항을 충족하도록 이름이 지정된, 데이터가 없이 비어 있는 텍스트 파일일 수 있습니다.  

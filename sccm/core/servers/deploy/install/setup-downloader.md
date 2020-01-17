@@ -10,19 +10,18 @@ ms.assetid: bda87fc5-2e4c-4992-98a4-01770365038c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcf41ada4d8fd2d6e4c185a485d94c64cd55b541
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 34879344395a1cd3ecebc3b357d5c3856dad9160
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888821"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798028"
 ---
-# <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 설치 다운로더
+# <a name="setup-downloader-for-configuration-manager"></a>Configuration Manager용 설치 다운로더
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-설치 프로그램을 실행하여 System Center Configuration Manager 사이트를 설치하거나 업그레이드하기 전에 설치하려는 Configuration Manager 버전의 설치 다운로더 독립 실행형 애플리케이션을 사용하여 업데이트된 설치 파일을 다운로드할 수 있습니다.  
+설치 프로그램을 실행하여 Configuration Manager 사이트를 설치하거나 업그레이드하기 전에 설치하려는 Configuration Manager 버전의 설치 다운로더 독립 실행형 애플리케이션을 사용하여 업데이트된 설치 파일을 다운로드할 수 있습니다.  
 
 업데이트된 설치 파일을 사용하면 사이트 설치 시 주요 설치 파일의 최신 버전을 사용하게 됩니다. 개요:   
 -   설치 다운로더를 사용하여 설치를 시작하기 전에 파일을 다운로드할 때는 파일을 포함할 폴더를 지정합니다.  

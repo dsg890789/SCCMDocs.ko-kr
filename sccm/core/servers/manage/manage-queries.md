@@ -10,21 +10,20 @@ ms.assetid: e562e2a0-8df8-4952-952f-e8c38461c612
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 456289520e25fe94da7e94f6a795537f68ba069e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1c82b27b367a123471efefb98f9ab32d6152f3d0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67561971"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794768"
 ---
-# <a name="how-to-manage-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리를 관리하는 방법
+# <a name="how-to-manage-queries-in-configuration-manager"></a>Configuration Manager에서 쿼리를 관리하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 문서를 참조하여 System Center Configuration Manager에서 쿼리를 보다 쉽게 관리할 수 있습니다.  
+이 문서를 참조하여 Configuration Manager에서 쿼리를 보다 쉽게 관리할 수 있습니다.  
 
- 쿼리를 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 쿼리를 만드는 방법](../../../core/servers/manage/create-queries.md)을 참조하세요.  
+ 쿼리를 만드는 방법에 대한 자세한 내용은 [쿼리를 만드는 방법](../../../core/servers/manage/create-queries.md)을 참조하세요.  
 
 ## <a name="manage-queries"></a>쿼리 관리
  **모니터링** 작업 영역에서 **쿼리**를 선택하고 관리할 쿼리를 선택한 다음 관리 작업을 선택합니다.  
@@ -39,4 +38,4 @@ ms.locfileid: "67561971"
 |**이동**|**선택한 항목 이동** 대화 상자를 엽니다. 이 대화 상자에서는 선택한 쿼리를 **쿼리** 노드 아래의 이전에 만든 폴더로 이동할 수 있습니다.|
 
 ## <a name="next-steps"></a>다음 단계 
- [System Center Configuration Manager에서 쿼리 만들기](../../../core/servers/manage/create-queries.md)
+ [쿼리 만들기](../../../core/servers/manage/create-queries.md)

@@ -1,7 +1,7 @@
 ---
 title: 리소스 탐색기를 사용하여 소프트웨어 인벤토리 보기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 리소스 탐색기를 사용하여 소프트웨어 인벤토리를 볼 수 있습니다.
+description: Configuration Manager에서 소프트웨어 인벤토리를 보려면 리소스 탐색기를 사용하세요.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 4b7aa5f6-5ebd-49be-b7f3-4206caadc187
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: eba3e3757a325576222636ca0113bc667639c538
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 794d52440f1fcf441af74e42be9c5dff34f37016
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890058"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824200"
 ---
-# <a name="how-to-use-resource-explorer-to-view-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법
+# <a name="how-to-use-resource-explorer-to-view-software-inventory-in-configuration-manager"></a>Configuration Manager에서 리소스 탐색기를 사용하여 소프트웨어 인벤토리를 확인하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 리소스 탐색기를 사용하여 계층 구조의 컴퓨터에서 수집된 소프트웨어 인벤토리에 대한 정보를 볼 수 있습니다.  
+Configuration Manager의 리소스 탐색기를 사용하여 계층 구조의 컴퓨터에서 수집된 소프트웨어 인벤토리에 대한 정보를 볼 수 있습니다.  
 
 > [!NOTE]  
 >  리소스 탐색기는 소프트웨어 인벤토리 주기가 클라이언트에서 실행될 때까지 인벤토리 데이터를 표시하지 않습니다.  

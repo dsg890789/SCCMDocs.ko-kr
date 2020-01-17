@@ -10,17 +10,16 @@ ms.assetid: a1f099f1-e9b5-4189-88b3-f53e3b4e4add
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d1b7a629d8976fa961acaeb5bc2860cb6f4769b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9f97de0ef5945b02aadf5d46d4db50f49aaafd3c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660974"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806376"
 ---
 # <a name="manage-task-sequences-to-automate-tasks"></a>작업 순서를 관리하여 작업 자동화
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자동화할 수 있습니다. 이러한 단계는 대상 컴퓨터에 운영 체제 이미지를 배포하고, 운영 체제 설치 파일 집합에서 운영 체제 이미지를 만들고 캡처하며, 사용자 상태 정보를 캡처하고 복원할 수 있습니다. 작업 순서는 Configuration Manager 콘솔에 위치해 있습니다. **소프트웨어 라이브러리** 작업 영역에서 **운영 체제**를 확장하고 **작업 순서**를 선택합니다. **작업 순서** 노드는 사용자가 만든 하위 폴더를 포함하여 Configuration Manager 계층 구조 전체에 복제됩니다. 계획 정보는 [작업 자동화에 대한 계획 고려 사항](/configmgr/osd/plan-design/planning-considerations-for-automating-tasks)을 참조하세요.  
 
@@ -32,15 +31,15 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
 - [Os를 업그레이드 하는 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system): os를 업그레이드 하는 단계를 만듭니다. 이 유형에는 소프트웨어 업데이트를 포함하고, 애플리케이션을 설치하는 옵션도 포함되어 있습니다.
 
-- [OS를 캡처하기 위한 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-capture-an-operating-system): 참조 컴퓨터에서 운영 체제를 빌드하고 캡처하는 단계를 만듭니다. 이미지를 캡처하기 전에 참조 컴퓨터에서 소프트웨어 업데이트를 포함하고 애플리케이션을 설치할 수 있습니다.
+- [OS를 캡처하는 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-capture-an-operating-system): 참조 컴퓨터에서 OS를 빌드하고 캡처하는 단계를 만듭니다. 이미지를 캡처하기 전에 참조 컴퓨터에서 소프트웨어 업데이트를 포함하고 애플리케이션을 설치할 수 있습니다.
 
 - [사용자 상태를 캡처 및 복원 하는 작업 순서](/configmgr/osd/deploy-use/create-a-task-sequence-to-capture-and-restore-user-state): 사용자 상태 데이터를 캡처 및 복원 하기 위해 기존 작업 순서에 단계를 추가 합니다.
 
-- [사용자 지정 작업 순서](/configmgr/osd/deploy-use/create-a-custom-task-sequence): 이 작업 순서 유형은 작업 순서에 단계를 추가하지 않습니다. 이 작업 순서를 만든 후 편집하고 단계를 추가합니다.
+- [사용자 지정 작업 순서](/configmgr/osd/deploy-use/create-a-custom-task-sequence): 이 유형은 작업 순서에 단계를 추가하지 않습니다. 이 작업 순서를 만든 후 편집하고 단계를 추가합니다.
 
 ## <a name="BKMK_ModifyTaskSequence"></a> 편집  
 
-단계를 추가 또는 제거하거나, 그룹을 추가 또는 제거하거나, 단계의 순서를 변경하여 작업 순서를 수정합니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)을 참조 하세요.
+단계를 추가 또는 제거하거나, 그룹을 추가 또는 제거하거나, 단계의 순서를 변경하여 작업 순서를 수정합니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)을 참조하세요.
 
 ## <a name="bkmk_prop-general"></a>소프트웨어 센터 속성
 
@@ -82,7 +81,7 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
     - **작업 순서 알림 표시 안 함**: **새 소프트웨어가 사용 가능합니다.** 라는 알림 메시지를 숨기려면 이 옵션을 선택합니다. 알림 영역의 소프트웨어 센터에서 **새 소프트웨어** 아이콘이 계속 표시됩니다. 이 옵션은 기본적으로 사용되지 않습니다.  
 
-    - **이 작업 순서가 배포된 컴퓨터에서 이 작업 순서 사용 안 함**: 이 옵션을 선택하는 경우 Configuration Manager가 이 작업 순서를 포함하는 모든 배포가 일시적으로 사용되지 않도록 설정됩니다. 작업 순서도 실행할 수 있는 배포 목록에서 제거됩니다. 작업 순서는 사용 설정되기 전에는 실행되지 않습니다. 이 옵션은 기본적으로 사용되지 않습니다.  
+    - **이 작업 순서가 배포된 컴퓨터에서 이 작업 순서 사용 안 함**: 이 옵션을 선택하는 경우 Configuration Manager에서 이 작업 순서를 포함하는 모든 배포를 일시적으로 사용하지 않도록 설정합니다. 작업 순서도 실행할 수 있는 배포 목록에서 제거됩니다. 작업 순서는 사용 설정되기 전에는 실행되지 않습니다. 이 옵션은 기본적으로 사용되지 않습니다.  
 
     - **최대 허용 실행 시간**: 대상 컴퓨터에서 작업 순서가 실행될 것으로 예상되는 최대 시간(분)을 지정합니다. 0보다 크거나 같은 정수를 사용합니다. 이 값은 기본적으로 120분입니다.  
 
@@ -96,9 +95,9 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
     - **부팅 이미지 사용**: 작업 순서를 실행할 때 선택한 부팅 이미지를 사용합니다. 다른 부팅 이미지를 선택하려면 **찾아보기**를 선택합니다. 작업 순서가 실행될 때 선택한 부팅 이미지가 사용되지 않도록 설정하려면 이 옵션을 선택 취소합니다.  
 
-    - **이 작업 순서는 모든 플랫폼에서 실행할 수 있음**: 이 옵션을 선택하면 Configuration Manager는 작업 순서가 실행될 때 대상 컴퓨터의 플랫폼 유형을 확인하지 않습니다. 이 옵션은 기본적으로 선택됩니다.  
+    - **모든 플랫폼에서 이 작업 순서 실행 가능**: 이 옵션을 선택하는 경우 Configuration Manager는 작업 순서가 실행될 때 대상 컴퓨터의 플랫폼 유형을 확인하지 않습니다. 이 옵션은 기본적으로 선택됩니다.  
 
-    - **이 작업 순서는 지정된 클라이언트 플랫폼에서만 실행할 수 있음**: 이 옵션은 이 작업 순서를 실행할 수 있는 프로세서, OS 및 서비스 팩을 지정합니다. 이 옵션을 선택하는 경우 목록에서 하나 이상의 플랫폼을 선택합니다. 기본적으로 선택된 플랫폼이 없습니다. Configuration Manager는 컬렉션에서 배포된 작업 순서를 수신하는 대상 컴퓨터를 평가할 때 이 정보를 사용합니다.  
+    - **이 작업 순서는 지정된 클라이언트 플랫폼에서만 실행할 수 있음**: 이 옵션은 이 작업 순서를 실행할 수 있는 프로세서, 운영 체제 및 서비스 팩을 지정합니다. 이 옵션을 선택하는 경우 목록에서 하나 이상의 플랫폼을 선택합니다. 기본적으로 선택된 플랫폼이 없습니다. Configuration Manager는 컬렉션에서 배포된 작업 순서를 수신하는 대상 컴퓨터를 평가할 때 이 정보를 사용합니다.  
 
         > [!NOTE]  
         > 부팅 미디어 또는 PXE에서 작업 순서를 실행하는 경우 Configuration Manager에서는 이 옵션을 무시합니다. 작업 순서는 마치 **모든 플랫폼에서 이 프로그램 실행** 옵션이 선택된 것처럼 실행됩니다.  
@@ -144,11 +143,11 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
         - 첫 번째 텍스트 상자: 일반적으로 사용자에 대한 지침이 포함된 텍스트의 본문을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "운영 체제를 업그레이드하는 데 시간이 걸리며 컴퓨터가 여러 번 다시 시작될 수 있습니다"라는 내용이 포함됩니다.  
 
-        - 두 번째 텍스트 상자: 텍스트의 기본 본문 아래에 표시되는 굵은 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 현재 위치 업그레이드에서는 새 운영 체제를 설치하고 앱, 데이터 및 설정을 자동으로 마이그레이션합니다"라는 내용이 포함됩니다.  
+        - 두 번째 텍스트 상자: 텍스트의 본문 아래에 표시되는 굵은 텍스트를 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "이 현재 위치 업그레이드에서는 새 운영 체제를 설치하고 앱, 데이터 및 설정을 자동으로 마이그레이션합니다"라는 내용이 포함됩니다.  
 
         - 세 번째 텍스트 상자: 굵은 텍스트 아래에 표시되는 텍스트의 마지막 줄을 지정합니다. 예를 들어 기본 사용자 알림에서 이 섹션에는 "시작하려면 [설치]를 클릭하고 그렇지 않으면 [취소]를 클릭하세요."와 같은 내용이 포함됩니다.  
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 속성에서 다음과 같은 사용자 지정 알림을 구성한다고 가정해 봅니다.
 
@@ -162,7 +161,7 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
 <!--3555926-->
 
-버전 1910부터 이제 고성능 전원 계획을 사용 하 여 작업 순서를 실행할 수 있습니다. 이 옵션은 작업 순서의 전체 속도를 향상시킵니다. 이 옵션은 기본 제공 고성능 전원 계획을 사용하도록 Windows를 구성하여 더 높은 전력을 소비하면서 최대 성능을 제공합니다. 이 옵션은 새 작업 순서에 대해 기본적으로 설정 되어 있습니다.
+버전 1910부터 이제 고성능 전원 계획을 사용하여 작업 순서를 실행할 수 있습니다. 이 옵션은 작업 순서의 전체 속도를 향상시킵니다. 이 옵션은 기본 제공 고성능 전원 계획을 사용하도록 Windows를 구성하여 더 높은 전력을 소비하면서 최대 성능을 제공합니다. 이 옵션은 새 작업 순서에 대해 기본적으로 설정 되어 있습니다.
 
 작업 순서가 시작되면 대부분의 시나리오에서 현재 사용하도록 설정된 전원 계획을 기록합니다. 그런 다음, 활성 전원 계획을 Windows 기본 **고성능** 계획으로 전환합니다. 작업 순서가 컴퓨터를 다시 시작하면 이 프로세스를 반복합니다. 작업 순서가 끝나면 전원 계획을 저장된 값으로 다시 설정합니다. 이 기능은 Windows 및 Windows PE에서 둘 다에서 작동하지만 가상 머신에는 영향을 주지 않습니다.
 
@@ -309,7 +308,7 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
 ### <a name="edit"></a>편집
 
-자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor#bkmk_edit)을 참조 하세요.
+자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor#bkmk_edit)을 참조하세요.
 
 ### <a name="enable"></a>사용 하도록 설정
 
@@ -341,7 +340,7 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 
 자세한 내용은 [단계적 배포 만들기](/configmgr/osd/deploy-use/create-phased-deployment-for-task-sequence)를 참조하세요.
 
-### <a name="deploy"></a>배포:
+### <a name="deploy"></a>배포
 
 자세한 내용은 [Deploy a task sequence](/configmgr/osd/deploy-use/deploy-a-task-sequence)항목을 참조하세요.
 
@@ -368,7 +367,7 @@ Configuration Manager 환경에서 작업 순서를 사용하여 단계를 자�
 ### <a name="view"></a>보기
 
 <!--3633146-->
-버전 1902부터 작업 순서에 대한 **보기** 작업이 기본 작업입니다. 이 작업을 사용하면 편집을 위해 작업 순서를 잠그지 않고 작업 순서의 단계를 볼 수 있습니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor#bkmk_view)을 참조 하세요.
+버전 1902부터 작업 순서에 대한 **보기** 작업이 기본 작업입니다. 이 작업을 사용하면 편집을 위해 작업 순서를 잠그지 않고 작업 순서의 단계를 볼 수 있습니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor#bkmk_view)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

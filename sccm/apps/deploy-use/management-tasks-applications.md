@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션에 대한 관리 작업
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 애플리케이션 및 배포 유형을 관리합니다.
+description: Configuration Manager 애플리케이션 및 배포 유형을 관리합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,19 +10,18 @@ ms.assetid: c4041e21-21ff-4d95-ab05-14007e0047cf
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39548117fb7e03614af32fa330fb86bf6de4151e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0896204fa994643064676b55b20d63d349c4098b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378060"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815632"
 ---
-# <a name="management-tasks-for-system-center-configuration-manager-applications"></a>System Center Configuration Manager 애플리케이션에 대한 관리 작업
+# <a name="management-tasks-for-configuration-manager-applications"></a>Configuration Manager 애플리케이션에 대한 관리 작업
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 문서의 정보를 사용하여 System Center Configuration Manager 애플리케이션 및 배포 유형을 관리할 수 있습니다.  
+이 문서의 정보를 사용하여 Configuration Manager 애플리케이션 및 배포 유형을 관리할 수 있습니다.  
 
 애플리케이션 및 배포 유형을 만드는 방법에 대한 도움말은 [애플리케이션 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.  
 
@@ -38,7 +37,7 @@ ms.locfileid: "70378060"
 |**사전 준비된 콘텐츠 파일 만들기**|**사전 준비된 콘텐츠 파일 만들기 마법사** 를 엽니다. 이 마법사를 통해 원격 배포 지점에 대한 콘텐츠 배포를 손쉽게 관리할 수 있습니다. 원격 배포 지점에 대해 예약 및 제한을 사용하는 것이 효과가 없는 경우 배포 지점에서 콘텐츠를 사전에 준비할 수 있습니다.<br /><br /> [콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
 |**수정 기록**|**애플리케이션 수정 기록** 대화 상자를 엽니다. 여기서 이 애플리케이션에 대한 수정 버전의 속성을 보고, 이전 애플리케이션 수정 버전을 삭제하며, 이 애플리케이션의 이전 버전을 복원할 수 있습니다.<br /><br /> [애플리케이션을 수정하고 교체하는 방법](../../apps/deploy-use/revise-and-supersede-applications.md)을 참조하세요.|  
 |**배포 유형 만들기**|**배포 유형 만들기 마법사**를 엽니다. 여기서 선택한 애플리케이션에 새 배포 유형을 추가할 수 있습니다.<br /><br /> [애플리케이션 만들기](../../apps/deploy-use/create-applications.md)를 참조하세요.|  
-|**통계 업데이트**|**모니터링** 작업 영역의 **배포** 노드에 표시되는 이 애플리케이션 배포에 대한 정보를 업데이트합니다.<br /><br /> [System Center Configuration Manager 콘솔에서 애플리케이션 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)을 참조하세요.|  
+|**통계 업데이트**|**모니터링** 작업 영역의 **배포** 노드에 표시되는 이 애플리케이션 배포에 대한 정보를 업데이트합니다.<br /><br /> [Configuration Manager 콘솔에서 애플리케이션 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)을 참조하세요.|  
 |**복구**|**사용 중지** 관리 작업을 사용하여 사용이 중지된 애플리케이션을 복구합니다.|  
 |**사용 중지**|애플리케이션을 사용 중지하면 더 이상 배포에 사용할 수 없지만 이 애플리케이션과 애플리케이션의 모든 배포가 삭제되지 않습니다. 클라이언트 컴퓨터에 설치된 이 애플리케이션의 기존 복사본은 제거되지 않습니다. 애플리케이션에 대한 모든 수정 사항은 60일 후 Configuration Manager에서 삭제됩니다. 그러나 설치된 애플리케이션 복사본은 제거되지 않습니다.<br /><br /> 애플리케이션을 삭제하려면 먼저 애플리케이션을 사용 중지하고 모든 배포를 삭제하고 이 애플리케이션에 대한 다른 배포의 참조를 제거한 후 애플리케이션의 모든 수정 버전을 삭제해야 합니다.<br /><br /> [애플리케이션 수정 및 대체](../../apps/deploy-use/revise-and-supersede-applications.md)를 참조하세요.|  
 |**내보내기**|**애플리케이션 내보내기 마법사**를 엽니다. 여기에서 선택한 애플리케이션을 .zip 파일로 내보낸 후에 다른 사이트에 보관하거나 설치할 수 있습니다. 애플리케이션 콘텐츠를 내보내도록 선택하는 경우 해당 콘텐츠가 포함된 폴더가 만들어집니다.<br /><br /> 또한 애플리케이션 종속성, 교체 관계 및 조건, 애플리케이션 및 해당 종속성 콘텐츠를 내보낼 수 있습니다.<br /><br /> Windows PowerShell cmdlet인 **Export-CMApplication**도 이와 동일한 기능을 수행합니다. 자세한 내용은 Microsoft System Center 2012 Configuration Manager SP1 Cmdlet 참조 문서에서 [Export-CMApplication](https://go.microsoft.com/fwlink/p/?LinkID=258880)을 참조하세요.|  

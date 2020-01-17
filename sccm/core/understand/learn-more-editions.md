@@ -10,19 +10,18 @@ ms.assetid: 495b87ae-41a4-49ba-abe2-d4f7d22ac0d4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02c0839bf7587fa9ee1421bf7035e31a3ca59cd1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cff7f8b696066f20a312b68e34c3c268d4eebd68
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66748094"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792019"
 ---
-# <a name="licensing-and-branches-for-system-center-configuration-manager"></a>System Center Configuration Manager의 라이선스 및 분기
+# <a name="licensing-and-branches-for-configuration-manager"></a>Configuration Manager의 라이선스 및 분기
 
-*적용 대상: System Center Configuration Manager(현재 분기), (장기 서비스 분기)*
+*적용 대상: Configuration Manager(현재 분기), System Center Configuration Manager(장기 서비스 분기)*
 
-이 문서에서는 System Center Configuration Manager에서 사용할 수 있는 설치 옵션에 대한 라이선스 요구 사항을 알아봅니다. 이러한 설치 옵션은 다음 분기를 포함합니다.
+이 문서에서는 Configuration Manager에서 사용할 수 있는 설치 옵션에 대한 라이선스 요구 사항을 알아봅니다. 이러한 설치 옵션은 다음 분기를 포함합니다.
 
 - 현재 분기
 - LTSB(장기 서비스 분기)
@@ -31,7 +30,7 @@ ms.locfileid: "66748094"
 
 ## <a name="licensing-overview"></a>라이선스 개요
 
-2016년 10월 1일 당시 System Center Configuration Manager 라이선스에 활성 SA(Software Assurance)가 있거나 이와 동등한 구독 권한이 있는 고객은 System Center Configuration Manager의 2016년 10월 버전 1606 릴리스를 사용할 수 있습니다. 2016년 10월 1일 이후에 System Center Configuration Manager에 대한 권한이 있는 고객에게는 설치 시 다음 두 가지 사용이 허가된 옵션이 있습니다. 현재 분기 및 LTSB(장기 서비스 분기).
+2016년 10월 1일 당시 Configuration Manager 라이선스에 활성 SA(Software Assurance)가 있거나 이와 동등한 구독 권한이 있는 고객은 Configuration Manager의 2016년 10월 버전 1606 릴리스를 사용할 수 있습니다. 2016년 10월 1일 이후에 Configuration Manager에 대한 권한이 있는 고객은 설치 시 현재 분기 및 LTSB(장기 서비스 분기)라는 두 가지 사용이 허가된 옵션을 사용할 수 있습니다.
 
 Microsoft 볼륨 라이선스 프로그램을 통해 구입하는 제품에 대한 전체 사용 약관은 [사용 조건 및 설명서](https://go.microsoft.com/fwlink/?LinkId=800052)를 참조하세요.
 
@@ -46,7 +45,7 @@ Microsoft 볼륨 라이선스 프로그램을 통해 구입하는 제품에 대�
 
 이 분기는 Microsoft에서 정기적인 품질 및 기능 업데이트를 수신하려는 프로덕션 환경에서 사용할 수 있습니다. 이를 통해 모든 기능과 향상된 기능에 액세스할 수 있습니다.
 
-1710 릴리스부터 각 업데이트 버전은 일반 공급 출시 날짜로부터 18개월 동안 지원됩니다. 자세한 내용은 [System Center Configuration Manager 현재 분기 버전 지원](/sccm/core/servers/manage/current-branch-versions-supported)을 참조하세요.
+1710 릴리스부터 각 업데이트 버전은 일반 공급 출시 날짜로부터 18개월 동안 지원됩니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 지원](/sccm/core/servers/manage/current-branch-versions-supported)을 참조하세요.
 
 ### <a name="long-term-servicing-branch-ltsb"></a>LTSB(장기 서비스 분기)
 
@@ -69,7 +68,7 @@ Configuration Manager에 대한 중요 보안 업데이트는 이 분기에 제�
 
 ## <a name="software-assurance-agreements"></a>Software Assurance 계약
 
-2016년 10월 1일 이후 System Center Configuration Manager 라이선스의 Software Assurance 상태나 이와 동등한 구독 권한에 따라 설치 및 사용할 수 있는 분기가 결정됩니다.
+2016년 10월 1일 이후 Configuration Manager 라이선스의 Software Assurance 상태나 이와 동등한 구독 권한에 따라 설치 및 사용할 수 있는 분기가 결정됩니다.
 
 ### <a name="software-assurance-and-the-current-branch"></a>Software Assurance 및 현재 분기
 
@@ -77,18 +76,18 @@ Configuration Manager 현재 분기를 사용할 수 있는 권한은 다음을 
 
 - **System Center**: System Center 표준 또는 데이터 센터 라이선스에 활성 SA가 있는 고객은 Configuration Manager의 현재 분기 옵션을 설치 및 사용할 수 있습니다.
 
-- **System Center Configuration Manager:** System Center Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있는 고객은 Configuration Manager의 현재 분기 옵션을 설치 및 사용할 수 있습니다.
+- **System Center Configuration Manager:** Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있는 고객은 Configuration Manager의 현재 분기 옵션을 설치 및 사용할 수 있습니다.
 
-2016년 10월 1일 이후에 System Center Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있는 경우:
+2016년 10월 1일 이후에 Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있는 경우:
 
 - 현재 분기를 설치 및 사용할 수 있습니다.
 - SA 또는 구독의 경과를 허용하는 경우 현재 분기를 제거해야 합니다.
 
 ### <a name="software-assurance-and-the-ltsb"></a>Software Assurance 및 LTSB
 
-2016년 10월 1일 이후에 System Center Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있는 경우:
+2016년 10월 1일 이후에 Configuration Manager 라이선스에 활성 SA가 있거나 이와 동등한 구독 권한이 있는 경우:
 
-- LTSB를 설치 및 사용할 수 있습니다. System Center Configuration Manager에 대한 영구적인 권한이 있거나 SA 또는 구독 경과를 허용하는 고객은 경과 당시 최신 버전인 Configuration Manager LTSB 버전을 설치할 수 있습니다.
+- LTSB를 설치 및 사용할 수 있습니다. Configuration Manager에 대한 영구적인 권한이 있거나 SA 또는 구독 경과를 허용하는 고객은 경과 당시 최신 버전인 Configuration Manager LTSB 버전을 설치할 수 있습니다.
 
 LTSB는 현재 분기 버전 1606을 기반으로 하며 다음과 같은 제한 사항이 있습니다.
 

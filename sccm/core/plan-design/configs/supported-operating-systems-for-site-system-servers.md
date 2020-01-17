@@ -10,17 +10,16 @@ ms.assetid: 17905b4c-3895-4ad4-a69c-5e0d0fc5a8c3
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a83b55726903369677d3daf04f7c879b3660c06
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 02f1127256f3fc36d7c77cb720d9018c6a311e4c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67251671"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801582"
 ---
 # <a name="supported-operating-systems-for-configuration-manager-site-system-servers"></a>Configuration Manager 사이트 시스템 서버에 대해 지원되는 운영 체제
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 이 문서에서는 Configuration Manager 사이트 또는 사이트 시스템 역할을 호스트하는 데 사용할 수 있는 Windows 버전에 대해 자세히 설명합니다.
@@ -219,7 +218,7 @@ OS는 배포 지점 및 풀(pull) 배포 지점을 제외하고, 사이트 서�
 
 ## <a name="bkmk_client"></a> 클라이언트 OS 버전
 
-**배포 지점**으로 사용하도록 지원되는 클라이언트 OS 버전은 다음과 같습니다.<sup>[참고 1](#bkmk_note1)</sup>  
+**배포 지점**으로 사용하도록 지원되는 클라이언트 OS 버전은 다음과 같습니다. <sup>[참고 1](#bkmk_note1)</sup>:  
 
 - Windows 10(x86, x64): Pro 및 Enterprise
 - Windows 8.1(x86, x64): Professional 및 Enterprise

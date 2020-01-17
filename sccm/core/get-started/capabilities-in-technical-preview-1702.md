@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1702의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 02/24/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ed8434086a7f1515cc538c3b265cb4e8f54780e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1b424e98753ffc056a26321c341a13d65460f79c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68340102"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805135"
 ---
-# <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1702의 기능
+# <a name="capabilities-in-technical-preview-1702-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1702의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1702에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1702에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.    
 
 
 **다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.**  
@@ -59,7 +58,7 @@ ms.locfileid: "68340102"
 -  디스크 I/O에 10을 초과하는 *AvgDiskQueueLength*가 있는 경우
 -  컴퓨터에 대한 연결을 더 이상 사용할 수 없는 경우   
 
-System Center Configuration Manager SDK를 사용하는 경우 피어 원본 기능에 대한 클라이언트 에이전트 구성 클래스(*SMS_WinPEPeerCacheConfig*)를 사용하여 이러한 설정을 구성할 수 있습니다.
+Configuration Manager SDK를 사용하는 경우 피어 원본 기능에 대한 클라이언트 에이전트 구성 클래스(*SMS_WinPEPeerCacheConfig*)를 사용하여 이러한 설정을 구성할 수 있습니다.
 
 컴퓨터가 콘텐츠 요청을 거부하는 경우 요청하는 컴퓨터는 사용 가능한 콘텐츠 원본 위치 풀에서 콘텐츠 폼 대체 원본을 계속 검색합니다.   
 
@@ -230,7 +229,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 
 iOS 디바이스의 경우 PFX 인증서 프로필을 메일 프로필에 연결하고 S/MIME 암호화를 사용하도록 설정할 수 있습니다.  이렇게 하면 iOS의 네이티브 메일 클라이언트에서 S/MIME이 사용되고 올바른 S/MIME 암호화 인증서가 연결됩니다.
 
-Configuration Manager의 인증서에 대한 자세한 내용은 [System Center Configuration Manager의 인증서 프로필 소개]( https://docs.microsoft.com/sccm/protect/deploy-use/introduction-to-certificate-profiles)를 참조하세요.
+Configuration Manager의 인증서에 대한 자세한 내용은 [인증서 프로필 소개]( https://docs.microsoft.com/sccm/protect/deploy-use/introduction-to-certificate-profiles)를 참조하세요.
 
 
 ## <a name="new-compliance-settings-for-ios-devices"></a>iOS 디바이스에 대한 새 준수 설정

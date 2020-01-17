@@ -1,7 +1,7 @@
 ---
 title: 쿼리 소개
 titleSuffix: Configuration Manager
-description: 쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 System Center Configuration Manager 계층 구조에서 찾습니다.
+description: 쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 Configuration Manager 계층 구조에서 찾습니다.
 ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 03d1b3a9-41db-4d3a-a70e-e05ab5dc8141
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28fe8d38b03efaa101cfe01d8a8a054f0b26f2ed
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e841dcc232e71bc1253bf6e88d70f121d879bd31
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67561951"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795201"
 ---
-# <a name="introduction-to-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager의 쿼리 소개
+# <a name="introduction-to-queries-in-configuration-manager"></a>Configuration Manager에서 쿼리 소개
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 System Center Configuration Manager 계층 구조에서 찾을 수 있습니다. 이러한 개체에는 특정 유형의 컴퓨터 또는 사용자 그룹과 같은 항목이 포함됩니다. 쿼리는 사이트, 컬렉션, 애플리케이션 및 인벤토리 데이터 등을 포함한 대부분의 Configuration Manager 개체 형식을 반환할 수 있습니다.  
+쿼리를 만들고 실행하여 쿼리 조건과 일치하는 개체를 Configuration Manager 계층 구조에서 찾을 수 있습니다. 이러한 개체에는 특정 유형의 컴퓨터 또는 사용자 그룹과 같은 항목이 포함됩니다. 쿼리는 사이트, 컬렉션, 애플리케이션 및 인벤토리 데이터 등을 포함한 대부분의 Configuration Manager 개체 형식을 반환할 수 있습니다.  
 
 ## <a name="query-creation-overview"></a>쿼리 만들기 개요
 
@@ -32,8 +31,8 @@ ms.locfileid: "67561951"
 
  쿼리를 만들면 Configuration Manager에서 저장되고 **모니터링** 작업 영역의 **쿼리** 노드에 표시됩니다. 이 위치에서 새 쿼리를 만들고 기존 쿼리를 실행, 업데이트 및 관리할 수 있습니다.  
 
- 쿼리를 Configuration Manager 컬렉션의 쿼리 규칙으로 가져올 수도 있습니다. 자세한 내용은 [System Center Configuration Manager에서 컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
+ 쿼리를 Configuration Manager 컬렉션의 쿼리 규칙으로 가져올 수도 있습니다. 자세한 내용은 [컬렉션을 만드는 방법](../../../core/clients/manage/collections/create-collections.md)을 참조하세요.  
 
 ## <a name="next-steps"></a>다음 단계
 
- [System Center Configuration Manager에서 쿼리를 만드는 방법](../../../core/servers/manage/create-queries.md)
+ [쿼리를 만드는 방법](../../../core/servers/manage/create-queries.md)

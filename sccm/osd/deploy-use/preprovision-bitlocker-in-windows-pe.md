@@ -10,19 +10,18 @@ ms.assetid: c7c94ba0-d709-4129-8077-075a8abaea1c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: edab13fb95f62a994036e1fdb8ecacdec3755cfa
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8d032cdd55296affc919c5e039de9444c96979d9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62253918"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806308"
 ---
-# <a name="preprovision-bitlocker-in-windows-pe-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows PE에서 BitLocker 사전 프로비전
+# <a name="preprovision-bitlocker-in-windows-pe-with-configuration-manager"></a>Configuration Manager를 사용하여 Windows PE에서 BitLocker 사전 프로비전
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 **BitLocker 사전 프로비전** 작업 순서 단계를 통해 운영 체제 배포 전에 Windows PE(Windows 사전 설치 환경)에서 BitLocker를 사용하도록 설정할 수 있습니다. 사용된 드라이브 공간만 암호화되므로 암호화 속도가 훨씬 빠릅니다. Windows 설치 프로세스를 실행하기 전에 임의로 생성된 암호화되지 않은 보호기를 포맷된 볼륨에 적용하고 볼륨을 암호화하여 그렇게 할 수 있습니다. Windows 8 및 Windows Server 2012에는 BitLocker를 사전 프로비전하는 기능이 도입되었습니다. 그러나 다음 단계를 따르면 하드 드라이브에서 BitLocker를 사전 프로비전하고 Windows 7을 설치할 수 있습니다. Windows 7 설치가 완료되면 Windows 7 BitLocker 제어판에서 암호화되지 않은 보호기를 사용하는 BitLocker를 지원하지 않으므로 BitLocker 키 보호기를 설정해야 합니다. **BitLocker 사용** 단계를 사용하거나 manage-bde.exe 명령줄 도구를 사용하여 키 보호기를 추가해야 합니다.  
+Configuration Manager의 **BitLocker 사전 프로비전** 작업 순서 단계를 통해 운영 체제 배포 전에 Windows PE(Windows 사전 설치 환경)에서 BitLocker를 사용하도록 설정할 수 있습니다. 사용된 드라이브 공간만 암호화되므로 암호화 속도가 훨씬 빠릅니다. Windows 설치 프로세스를 실행하기 전에 임의로 생성된 암호화되지 않은 보호기를 포맷된 볼륨에 적용하고 볼륨을 암호화하여 그렇게 할 수 있습니다. Windows 8 및 Windows Server 2012에는 BitLocker를 사전 프로비전하는 기능이 도입되었습니다. 그러나 다음 단계를 따르면 하드 드라이브에서 BitLocker를 사전 프로비전하고 Windows 7을 설치할 수 있습니다. Windows 7 설치가 완료되면 Windows 7 BitLocker 제어판에서 암호화되지 않은 보호기를 사용하는 BitLocker를 지원하지 않으므로 BitLocker 키 보호기를 설정해야 합니다. **BitLocker 사용** 단계를 사용하거나 manage-bde.exe 명령줄 도구를 사용하여 키 보호기를 추가해야 합니다.  
 
  일반적으로, Windows 7을 설치할 컴퓨터에서 BitLocker를 사전 프로비전하려면 다음 단계를 수행해야 합니다.  
 

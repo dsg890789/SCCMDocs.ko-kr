@@ -10,30 +10,29 @@ ms.assetid: 17cf034f-eaff-43ce-bc8e-917213c1db74
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 016e809e752b54d73550f783c5a16296521121e5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bc8028f5634b873afcafd3b9c5553c80b48a5516
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891206"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798488"
 ---
-# <a name="publish-site-data-for-system-center-configuration-manager"></a>System Center Configuration Manager용으로 사이트 데이터 게시
+# <a name="publish-site-data-for-configuration-manager"></a>Configuration Manager용으로 사이트 데이터 게시
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 Active Directory 스키마를 확장한 후에 Configuration Manager 사이트를 AD DS(Active Directory Domain Services)에 게시할 수 있습니다. 이렇게 하면 Active Directory 컴퓨터를 통해 신뢰할 수 있는 소스에서 사이트 정보를 안전하게 검색할 수 있습니다. 기본 Configuration Manager 기능을 사용하기 위해 사이트 정보를 AD DS에 반드시 게시해야 하는 것은 아니지만, 게시하면 관리 부담을 줄일 수 있습니다.  
+Configuration Manager의 Active Directory 스키마를 확장한 후에 Configuration Manager 사이트를 AD DS(Active Directory Domain Services)에 게시할 수 있습니다. 이렇게 하면 Active Directory 컴퓨터를 통해 신뢰할 수 있는 소스에서 사이트 정보를 안전하게 검색할 수 있습니다. 기본 Configuration Manager 기능을 사용하기 위해 사이트 정보를 AD DS에 반드시 게시해야 하는 것은 아니지만, 게시하면 관리 부담을 줄일 수 있습니다.  
 
 -   **사이트를 AD DS에 게시하도록 구성하면** Configuration Manager 클라이언트는 Active Directory 게시를 통해 관리 지점을 자동으로 찾을 수 있습니다. 여기에는 글로벌 카탈로그 서버에 대한 LDAP 쿼리를 사용합니다.  
 
 -   **사이트가 AD DS에 게시되지 않으면**클라이언트는 대체 메커니즘을 통해 기본 관리 지점을 찾아야 합니다.  
 
-클라이언트가 관리 지점을 찾는 방법에 대한 자세한 내용은 [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
+클라이언트가 관리 지점을 찾는 방법에 대한 자세한 내용은 [클라이언트가 Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
 
 ## <a name="configure-sites-to-publish-to-ad-ds"></a>AD DS에 게시하도록 사이트 구성  
  대략적인 구성 단계는 다음과 같습니다.  
 
--   사이트 데이터를 게시할 각 포리스트에서 [System Center Configuration Manager의 Active Directory 스키마를 확장](../../../../core/plan-design/network/extend-the-active-directory-schema.md)해야 합니다. **시스템 관리** 컨테이너도 있어야 합니다.  
+-   사이트 데이터를 게시할 각 포리스트에서 [Configuration Manager의 Active Directory 스키마를 확장](../../../../core/plan-design/network/extend-the-active-directory-schema.md)해야 합니다. **시스템 관리** 컨테이너도 있어야 합니다.  
 
 -   데이터를 게시할 각 기본 사이트의 컴퓨터 계정에   **시스템 관리** 컨테이너와 모든 자식 개체에 대한 **모든 권한** 을 부여해야 합니다.  
 

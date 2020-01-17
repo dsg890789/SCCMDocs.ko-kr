@@ -10,17 +10,16 @@ ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fb5a451c460ccc1bf47315c63a523380fc85d2b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 772c38bbfd471378235a52b14a1d6c29f851db14
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74190651"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799763"
 ---
 # <a name="ports-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 포트
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager가 사용하는 네트워크 포트를 나열합니다. 일부 연결은 구성할 수 없는 포트를 사용하고, 일부 연결은 지정하는 사용자 지정 포트를 지원합니다. 포트 필터링 기술을 사용하는 경우 필수 포트를 사용할 수 있는지 확인합니다. 이러한 포트 필터링 기술에는 방화벽, 라우터, 프록시 서버 또는 IPsec이 포함됩니다.   
 
@@ -760,7 +759,7 @@ PXE 지원 배포 지점 및 Windows PE의 클라이언트는 TFTP 전송에 대
 
 ###  <a name="BKMK_ClientShares"></a> 클라이언트-서버 공유  
 
- 클라이언트는 UNC 공유에 연결할 때마다 SMB(Server Message Block)를 사용합니다. 예:  
+ 클라이언트는 UNC 공유에 연결할 때마다 SMB(Server Message Block)를 사용합니다. 예를 들면 다음과 같습니다.  
 
 - CCMSetup.exe **/source:** 명령줄 속성을 지정하는 수동 클라이언트 설치  
 

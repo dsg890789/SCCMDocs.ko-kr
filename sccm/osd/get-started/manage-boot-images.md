@@ -10,23 +10,22 @@ ms.assetid: 97f2d81a-2c58-442c-88bc-defd5a1cd48f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0d71a752396d22d9eadcc0ffa4ca63a3b0424a9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9a2294502fe1550ef1f895544037c344a3a2f883
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659564"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821344"
 ---
 # <a name="manage-boot-images-with-configuration-manager"></a>Configuration Manager를 사용하여 부팅 이미지 관리
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 부팅 이미지는 OS 배포 중에 사용되는 [WinPE(Windows PE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) 이미지입니다. 부팅 이미지는 WinPE에서 컴퓨터를 시작하는 데 사용됩니다. 이 최소 OS에는 제한된 구성 요소와 서비스가 포함되어 있습니다. Configuration Manager는 WinPE를 사용하여 Windows 설치용으로 대상 컴퓨터를 준비합니다.
 
 ## <a name="BKMK_BootImageDefault"></a> 기본 부팅 이미지
 
-Configuration Manager는 x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지 등 두 가지 기본 부팅 이미지를 제공합니다. 이러한 이미지는 사이트 서버의 공유 위치인 `\\<SiteServerName>\SMS_<sitecode>\osd\boot\`에 있는 *x64* 또는 *i386* 폴더에 저장됩니다. 기본 부팅 이미지는 수행하는 작업에 따라 업데이트되거나 다시 생성됩니다.
+Configuration Manager에서 두 개의 기본 부팅 이미지 제공: x86 플랫폼을 지원하는 부팅 이미지와 x64 플랫폼을 지원하는 부팅 이미지의 두 가지 부팅 이미지를 제공합니다. 이러한 이미지는 사이트 서버의 공유 위치인 `\\<SiteServerName>\SMS_<sitecode>\osd\boot\`에 있는 *x64* 또는 *i386* 폴더에 저장됩니다. 기본 부팅 이미지는 수행하는 작업에 따라 업데이트되거나 다시 생성됩니다.
 
 기본 부팅 이미지에 대해 설명된 작업 중 하나에 대한 다음과 같은 동작을 고려합니다.
 
@@ -203,7 +202,7 @@ PXE를 사용하여 운영 체제를 배포하는 방법에 대한 자세한 내
 - **WinPE에서 기본 자판 배열 설정**: <!--4910348-->버전 1910부터 부팅 이미지에 대 한 기본 자판 배열을 구성 합니다. en-us 이외의 언어를 선택하는 경우에도 Configuration Manager의 사용 가능한 입력 로캘에 en-us가 계속 포함됩니다. 디바이스에서 초기 키보드 레이아웃은 선택된 로캘이지만 사용자는 필요한 경우 디바이스를 en-us로 전환할 수 있습니다.
 
     > [!Tip]
-    > 이제 [Set-CMBootImage](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmbootimage?view=sccm-ps) PowerShell cmdlet에 새 매개 변수 `-InputLocale`이 포함되어 있습니다. 예:
+    > 이제 [Set-CMBootImage](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmbootimage?view=sccm-ps) PowerShell cmdlet에 새 매개 변수 `-InputLocale`이 포함되어 있습니다. 예를 들면 다음과 같습니다.
     >
     > ```PowerShell
     > # Set boot image keyboard layout to Russian (Russia)
@@ -288,7 +287,7 @@ PXE 기반 배포에 부팅 이미지를 사용하려면 먼저 해당 부팅 �
 ## <a name="BKMK_BootImageLanguage"></a> 여러 언어 구성
 
 > [!TIP]
-> 버전 1910부터 부팅 이미지의 속성에 대 한 기본 키보드 레이아웃을 구성 합니다. 자세한 내용은 [사용자 지정](#customization)을 참조 하세요.<!--4910348-->
+> 버전 1910부터 부팅 이미지의 속성에 대 한 기본 키보드 레이아웃을 구성 합니다. 자세한 내용은 [사용자 지정](#customization)을 참조하세요.<!--4910348-->
 
 부팅 이미지는 언어 중립적입니다. 이 기능을 통해 하나의 부팅 이미지를 사용하여 WinPE에 있는 동안 여러 언어로 작업 순서 텍스트를 표시할 수 있습니다. 부팅 이미지 **선택적 구성 요소** 탭에서 적절한 언어 지원을 포함합니다. 그런 다음, 표시할 언어를 나타내도록 적절한 작업 순서 변수를 설정합니다. 배포된 OS의 언어와 WinPE의 언어는 상호 독립적입니다. WinPE에서 사용자에게 표시하는 언어는 다음과 같은 방식으로 결정됩니다.  
 

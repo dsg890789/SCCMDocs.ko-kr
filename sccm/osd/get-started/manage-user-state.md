@@ -1,7 +1,7 @@
 ---
 title: '사용자 상태 관리 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager는 사용자 상태 마이그레이션 도구를 사용하여 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원합니다.
+description: Configuration Manager는 사용자 상태 마이그레이션 도구를 사용하여 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원합니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -10,19 +10,18 @@ ms.assetid: d8d5c345-1e91-410b-b8a9-0170dcfa846e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef5cfc38ea6c91653964e057396c47c11eab97b3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ca567691cbacd79c54a76f5c108d6072354ff274
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73142943"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821276"
 ---
-# <a name="manage-user-state-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사용자 상태 관리
+# <a name="manage-user-state-in-configuration-manager"></a>Configuration Manager에서 사용자 상태 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 작업 순서를 사용하여 현재 운영 체제의 사용자 상태를 보존하려는 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다. 예:  
+Configuration Manager 작업 순서를 사용하면 현재 운영 체제의 사용자 상태를 보존하려는 운영 체제 배포 시나리오에서 사용자 상태 데이터를 캡처 및 복원할 수 있습니다. 예를 들면 다음과 같습니다.  
 
 - 배포 시 한 컴퓨터에서 사용자 상태를 캡처하여 다른 컴퓨터에서 복원  
 
@@ -57,7 +56,7 @@ System Center Configuration Manager 작업 순서를 사용하여 현재 운영 
 
 2.  원본 컴퓨터와 대상 컴퓨터 사이의[Create a computer association](#BKMK_ComputerAssociation) . 원본 컴퓨터에서 사용자 상태를 캡처하기 전에 이 연결을 만들어야 합니다.  
 
-3.  [System Center Configuration Manager에서 사용자 상태를 캡처 및 복원하는 작업 순서 만들기](../deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md) 특히 컴퓨터에서 사용자 데이터를 캡처하고, 상태 마이그레이션 지점에 사용자 데이터를 저장하고, 사용자 데이터를 컴퓨터에 복원하는 다음 작업 순서 단계를 추가해야 합니다.  
+3.  [사용자 상태를 캡처 및 복원하는 작업 순서 만들기](../deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md) 특히 컴퓨터에서 사용자 데이터를 캡처하고, 상태 마이그레이션 지점에 사용자 데이터를 저장하고, 사용자 데이터를 컴퓨터에 복원하는 다음 작업 순서 단계를 추가해야 합니다.  
 
     -   [상태 저장소 요청](../understand/task-sequence-steps.md#BKMK_RequestStateStore): 컴퓨터에서 상태를 캡처하거나 컴퓨터로 상태를 복원할 때 상태 마이그레이션 지점에 대한 액세스 요청  
 

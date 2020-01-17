@@ -10,13 +10,12 @@ ms.assetid: 6bce416b-761d-4b23-bd33-5b7c30edb10d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce75992344dde471cdab682747fbb95e17c1cad5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0142d8a6dbf2f7cbc23f14972ec5e536e946fc98
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661229"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794549"
 ---
 # <a name="pre-release-features-in-configuration-manager"></a>Configuration Manager 시험판 기능
 
@@ -77,7 +76,7 @@ ms.locfileid: "74661229"
 | [CMPivot 독립 실행형](/sccm/core/servers/manage/cmpivot#bkmk_standalone) <!--3555890/4692885,no GUID--> | 버전 1906 | ![아직 추가되지 않음](media/red_x.png) |
 | [SMS 공급자 관리 서비스](/sccm/core/plan-design/hierarchy/plan-for-the-sms-provider#bkmk_admin-service) <!--1359052--> | 버전 1810 | 버전 1906 |
 | [향상된 HTTP 사이트 시스템](/sccm/core/plan-design/hierarchy/enhanced-http) <!--1356889,1358228--> | 버전 1806 | 버전 1810 |
-| [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps) <!--1357892,CC3AE625-BF72-49B1-8AB1-AF0DCF2D6F4C--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
+| [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps) <br/> (이전의 *공동 관리형 디바이스용 모바일 앱*) <!--1357892,CC3AE625-BF72-49B1-8AB1-AF0DCF2D6F4C--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
 | [SCAP 확장](/sccm/compliance/plan-design/scap/about-scap) <!--3607889--> | 버전 1806 | ![아직 추가되지 않음](media/red_x.png) |
 | [Package Conversion Manager](/sccm/apps/pcm/package-conversion-manager) <!--1357861--> | 버전 1806 | 버전 1810 |
 | [단계별 배포](/sccm/osd/deploy-use/create-phased-deployment-for-task-sequence) <!--1356837--> | 1802 버전 | 버전 1806 |

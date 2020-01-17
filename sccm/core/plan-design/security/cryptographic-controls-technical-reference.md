@@ -1,7 +1,7 @@
 ---
 title: 암호화 컨트롤 기술 참조
 titleSuffix: Configuration Manager
-description: 공격을 방지하여 System Center Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다.
+description: 공격을 방지하여 Configuration Manager의 데이터를 읽을 수 없도록 서명 및 암호화하는 방법에 대해 알아봅니다.
 ms.date: 12/08/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -9,20 +9,19 @@ ms.topic: conceptual
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: da9ec9265d8929860fa6d15d2ba3efb3eb215343
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 47acde9e784e9fd342c2a31f664e83f38b8cc080
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889279"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799287"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager는 서명 및 암호화를 사용하여 Configuration Manager 계층 구조의 디바이스 관리를 보호합니다. 서명된 데이터가 전송 중에 변경된 경우 무시됩니다. 암호화는 공격자가 네트워크 프로토콜 분석기로 데이터를 읽지 못하도록 방지합니다.  
+Configuration Manager는 서명 및 암호화를 사용하여 Configuration Manager 계층 구조의 디바이스 관리를 보호합니다. 서명된 데이터가 전송 중에 변경된 경우 무시됩니다. 암호화는 공격자가 네트워크 프로토콜 분석기로 데이터를 읽지 못하도록 방지합니다.  
 
  Configuration Manager에서 서명에 사용하는 기본 해싱 알고리즘은 SHA-256입니다. 서로 통신하는 두 Configuration Manager 사이트는 SHA-256을 사용하여 통신에 서명합니다. Configuration Manager에서 구현되는 기본 암호화 알고리즘은 3DES입니다. 이 방식은 Configuration Manager 데이터베이스에 데이터를 저장하고 클라이언트 HTTP 통신에 사용됩니다. HTTPS를 통해 클라이언트 통신을 사용할 경우 [PKI 인증서 요구 사항](/sccm/core/plan-design/network/pki-certificate-requirements)에 문서화된 최대 해시 알고리즘 및 키 길이를 포함하는 RSA 인증서를 사용하도록 PKI(공개 키 인프라)를 구성할 수 있습니다.  
 

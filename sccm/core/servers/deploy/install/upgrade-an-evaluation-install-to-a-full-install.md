@@ -1,7 +1,7 @@
 ---
 title: 평가판 설치 업그레이드
 titleSuffix: Configuration Manager
-description: 평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드하는 방법을 알아봅니다.
+description: 평가판 설치를 Configuration Manager 전체 설치로 업그레이드하는 방법을 알아봅니다.
 ms.date: 02/7/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 9a32f5a3-9917-434f-9811-106170f404be
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29c1aee34669ac65ae3175895bc1061e851182d1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f9c669829fe965352e036383e672d1d44942f5ef
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888872"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797957"
 ---
-# <a name="upgrade-an-evaluation-installation-of-system-center-configuration-manager-to-a-full-installation"></a>평가판 설치를 System Center Configuration Manager 전체 설치로 업그레이드
+# <a name="upgrade-an-evaluation-installation-of-configuration-manager-to-a-full-installation"></a>평가판 설치를 Configuration Manager 전체 설치로 업그레이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager를 평가판으로 설치하는 경우 180일이 지나면 Configuration Manager 콘솔은 설치 프로그램의 **사이트 유지 관리** 페이지에서 제품을 정품 인증할 때까지 읽기 전용 상태가 됩니다. 180일 기간 전이나 후에 언제든지 평가판 설치를 전체 설치로 업그레이드하는 옵션이 있습니다.  
+Configuration Manager를 평가판으로 설치하는 경우 180일이 지나면 Configuration Manager 콘솔은 설치 프로그램의 **사이트 유지 관리** 페이지에서 제품을 정품 인증할 때까지 읽기 전용 상태가 됩니다. 180일 기간 전이나 후에 언제든지 평가판 설치를 전체 설치로 업그레이드하는 옵션이 있습니다.  
 
 > [!NOTE]  
 >  Configuration Manager 콘솔을 Configuration Manager 평가판 설치에 연결하는 경우 콘솔의 제목 표시줄에는 평가판 설치가 만료되기까지 남은 기간(일)이 표시됩니다. 일 수는 자동으로 새로 고쳐지지 않으며 사이트에 새로 연결할 때에만 업데이트됩니다.  

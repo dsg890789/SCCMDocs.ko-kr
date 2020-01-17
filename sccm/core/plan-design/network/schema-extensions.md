@@ -1,7 +1,7 @@
 ---
 title: 스키마 확장
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 지원하도록 Active Directory 스키마를 확장합니다.
+description: Active Directory 스키마를 확장하여 Configuration Manager를 지원할 수 있습니다.
 ms.date: 02/7/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,17 +10,16 @@ ms.assetid: 95c13c00-909f-4fbb-bbaa-1eba9d54d8c5
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5390dfaeb9a9a45b96e35f2a5b4e988479f0a492
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9af7a0209eaa84aa4029339f6fa2507dc1fe1d36
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889316"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799372"
 ---
-# <a name="schema-extensions-for-system-center-configuration-manager"></a>System Center Configuration Manager의 스키마 확장
+# <a name="schema-extensions-for-configuration-manager"></a>Configuration Manager의 스키마 확장
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Active Directory 스키마를 확장하여 Configuration Manager를 지원할 수 있습니다. 이 경우 클라이언트에서 안전하게 사용할 수 있는 Active Directory에 중요한 정보를 게시하기 위해 Configuration Manager 사이트에서 사용하는 여러 특성과 새 컨테이너를 추가하도록 포리스트 Active Directory 스키마가 편집됩니다. 이 정보는 클라이언트의 배포 및 구성을 간소화할 수 있으며, 클라이언트가 배포된 콘텐츠를 포함하거나 클라이언트에 다양한 서비스를 제공하는 서버와 같은 사이트 리소스를 찾는 데 도움이 됩니다.  
 
@@ -30,7 +29,7 @@ Active Directory 스키마를 확장하여 Configuration Manager를 지원할 �
 
 ## <a name="considerations-for-extending-the-active-directory-schema-for-configuration-manager"></a>Configuration Manager를 위한 Active Directory 스키마 확장에 대한 고려 사항  
 
--   System Center Configuration Manager의 Active Directory 스키마 확장은 Configuration Manager 2007 및 Configuration Manager 2012에서 사용된 Active Directory 스키마 확장에서 변경되지 않았습니다. 두 버전의 스키마를 이전에 확장한 경우 스키마를 다시 확장하지 않아도 됩니다.  
+-   Configuration Manager의 Active Directory 스키마 확장은 Configuration Manager 2007 및 Configuration Manager 2012에서 사용된 Active Directory 스키마 확장에서 변경되지 않았습니다. 두 버전의 스키마를 이전에 확장한 경우 스키마를 다시 확장하지 않아도 됩니다.  
 
 -   스키마 확장은 포리스트 전체에 적용되며 취소할 수 없는 일회성 작업입니다.  
 
@@ -92,7 +91,7 @@ Active Directory 스키마를 확장하여 Configuration Manager를 지원할 �
      예를 들어 기본 사이트에 콘텐츠를 만들고 해당 콘텐츠를 다른 기본 사이트 아래의 보조 사이트에 배포하려는 경우, Active Directory 도메인 스키마를 확장하여 보조 사이트에서 원본 기본 사이트 공개 키를 가져올 수 있도록 하거나, preinst.exe를 사용하여 두 사이트 간에 직접 키를 공유하도록 해야 합니다.  
 
 ## <a name="active-directory-attributes-and-classes"></a>Active Directory 특성 및 클래스  
-System Center Configuration Manager의 스키마를 확장하는 경우 다음 클래스와 특성이 스키마에 추가되며 해당 Active Directory 포리스트의 모든 Configuration Manager 사이트에서 사용할 수 있습니다.  
+Configuration Manager의 스키마를 확장하는 경우 다음 클래스와 특성이 스키마에 추가되며 해당 Active Directory 포리스트의 모든 Configuration Manager 사이트에서 사용할 수 있습니다.  
 
 -   특성:  
 
@@ -137,10 +136,10 @@ System Center Configuration Manager의 스키마를 확장하는 경우 다음 �
 
 > [!NOTE]
 > 
->  스키마 확장에는 이전 버전의 제품에서 유지되었지만 System Center Configuration Manager에서는 사용되지 않는 특성과 클래스가 포함될 수 있습니다. 예:  
+>  스키마 확장에는 이전 버전의 제품에서 유지되었지만 Configuration Manager에서는 사용되지 않는 특성과 클래스가 포함될 수 있습니다. 예를 들면 다음과 같습니다.  
 > 
 > 
 > - : cn = SMS 사이트 경계 MS  
 >   -   Class: cn=MS-SMS-Server-Locator-Point  
 
-System Center Configuration Manager 설치 미디어의 **\SMSSETUP\BIN\x64** 폴더에 있는 **ConfigMgr_ad_schema.LDF** 파일을 보면 위의 목록이 최신 상태인지 확인할 수 있습니다.  
+Configuration Manager 설치 미디어의 **\SMSSETUP\BIN\x64** 폴더에 있는 **ConfigMgr_ad_schema.LDF** 파일을 보면 위의 목록이 최신 상태인지 확인할 수 있습니다.  

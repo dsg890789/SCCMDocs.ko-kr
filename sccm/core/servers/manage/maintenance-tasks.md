@@ -10,21 +10,20 @@ ms.assetid: 625bb787-6d16-47a0-8b0f-b129cd909ca3
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07308fbeed33ee9aea68d08b50825b4467105cdd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ab2f3e4fa5b04ae427e30af27363381a25f06d42
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68536181"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794885"
 ---
-# <a name="maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 유지 관리 작업
+# <a name="maintenance-tasks-for-configuration-manager"></a>Configuration Manager에 대한 유지 관리 작업
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 사이트 및 계층 구조는 효과적이고 지속적으로 서비스를 제공하기 위해 정기적인 유지 관리 및 모니터링을 필요로 합니다. 정기적인 유지 관리를 통해 하드웨어, 소프트웨어 및 Configuration Manager 데이터베이스는 올바르게 효율적으로 계속 작동할 수 있습니다. 최적의 성능은 오류의 위험을 크게 줄일 수 있습니다.  
+Configuration Manager 사이트 및 계층 구조는 효과적이고 지속적으로 서비스를 제공하기 위해 정기적인 유지 관리 및 모니터링을 필요로 합니다. 정기적인 유지 관리를 통해 하드웨어, 소프트웨어 및 Configuration Manager 데이터베이스는 올바르게 효율적으로 계속 작동할 수 있습니다. 최적의 성능은 오류의 위험을 크게 줄일 수 있습니다.  
 
- 경고를 설정하고 상태 시스템을 사용하여 Configuration Manager의 상태를 모니터링하려면 [System Center Configuration Manager에 대한 경고 및 상태 시스템 사용](../../../core/servers/manage/use-alerts-and-the-status-system.md)을 참조하세요.  
+ 경고를 설정하고 상태 시스템을 사용하여 Configuration Manager의 상태를 모니터링하려면 [Configuration Manager에 대한 경고 및 상태 시스템 사용](../../../core/servers/manage/use-alerts-and-the-status-system.md)을 참조하세요.  
 
 ## <a name="bkmk_MTs"></a> 유지 관리 작업
 
@@ -112,7 +111,7 @@ Configuration Manager 사이트를 설치한 후에 사용 가능한 유지 관�
 
  각 Configuration Manager 사이트는 사이트 데이터베이스의 운영 효율성을 유지하는 데 도움이 되는 유지 관리 작업을 지원합니다. 기본적으로 각 사이트에서 여러 유지 관리 작업을 사용 하 고 모든 작업 독립적인 일정을 지원 합니다. 유지 관리 작업은 각 사이트에 대해 개별적으로 설정되고 해당 사이트의 데이터베이스에 적용됩니다. 그러나 **오래된 검색 데이터 삭제** 등의 일부 작업은 계층 구조의 모든 사이트에서 사용할 수 있는 정보에 영향을 줍니다.  
 
- 사이트에서 설정할 수 있는 유지 관리 작업만 Configuration Manager 콘솔에 표시됩니다. 사이트 유형별 유지 관리 작업의 전체 목록은 [System Center Configuration Manager에 대한 유지 관리 작업 참조](../../../core/servers/manage/reference-for-maintenance-tasks.md)를 참조하세요.  
+ 사이트에서 설정할 수 있는 유지 관리 작업만 Configuration Manager 콘솔에 표시됩니다. 사이트 유형별 유지 관리 작업의 전체 목록은 [Configuration Manager에 대한 유지 관리 작업 참조](../../../core/servers/manage/reference-for-maintenance-tasks.md)를 참조하세요.  
 
  유지 관리 작업의 일반 설정을 지정하려면 다음 절차를 따르세요.  
 

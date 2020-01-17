@@ -10,17 +10,16 @@ ms.technology: configmgr-sum
 ms.assetid: 63c5ef72-5715-4d86-85a2-71beba469fab
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f096f9ff9baaff2411289c27282ab53eb697b0b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 220280239a73cd4b64f21a503eb35c84acfb432c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66354972"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827097"
 ---
-# <a name="icons-used-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 사용되는 아이콘
+# <a name="icons-used-for-software-updates-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 업데이트에 사용되는 아이콘
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 동기화된 소프트웨어 업데이트는 Configuration Manager 콘솔에 표시되고, 각 소프트웨어 업데이트의 첫 번째 열에는 특정 상태를 나타내는 아이콘이 포함됩니다. 소프트웨어 업데이트 그룹도 그룹에 포함된 소프트웨어 업데이트의 상태 정보를 제공하는 아이콘으로 표시됩니다. 이 섹션에서는 소프트웨어 업데이트 아이콘 및 각 아이콘의 의미에 대한 정보를 제공합니다.  
 

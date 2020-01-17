@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠의 네트워크 대역폭 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 대한 일정, 제한 및 사전 준비된 콘텐츠를 구성합니다.
+description: Configuration Manager에 대한 일정, 제한 및 사전 준비된 콘텐츠를 구성합니다.
 ms.date: 02/6/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,16 +10,15 @@ ms.assetid: e80d1151-91db-4a27-8411-a957297b67d0
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15dfd5d1ba7f19832f3a25faf4a8bd0bb6c9fd34
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a3016e2bd513ec19e16a185283e5d871ee2b040e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891172"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800018"
 ---
 # <a name="manage-network-bandwidth-for-content"></a>콘텐츠의 네트워크 대역폭 관리
-System Center Configuration Manager의 콘텐츠 관리 프로세스에 사용되는 네트워크 대역폭을 관리하려는 경우 일정 및 제한용 기본 제공 컨트롤을 사용할 수 있습니다. 사전 준비된 콘텐츠를 사용할 수도 있습니다. 다음 섹션에서는 이러한 옵션을 더 자세히 설명합니다.
+Configuration Manager의 콘텐츠 관리 프로세스에 사용되는 네트워크 대역폭을 관리하려는 경우 일정 및 제한용 기본 제공 컨트롤을 사용할 수 있습니다. 사전 준비된 콘텐츠를 사용할 수도 있습니다. 다음 섹션에서는 이러한 옵션을 더 자세히 설명합니다.
 
 ##  <a name="BKMK_PlanningForThrottling"></a> 일정 및 제한  
 
@@ -34,7 +33,7 @@ System Center Configuration Manager의 콘텐츠 관리 프로세스에 사용�
 > [!IMPORTANT]  
 >  **속도 제한** 및 **일정** 탭은 사이트 서버에 설치되지 않은 배포 지점에 대한 속성에만 표시됩니다.  
 
-자세한 내용은 [System Center Configuration Manager의 배포 지점 설치 및 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points)을 참조하세요.  
+자세한 내용은 [Configuration Manager의 배포 지점 설치 및 구성](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points)을 참조하세요.  
 
 ##  <a name="BKMK_PrestagingContent"></a>사전 준비된 콘텐츠  
  콘텐츠를 사전 준비하여 콘텐츠를 배포하기 전에 사이트 서버 또는 배포 지점의 콘텐츠 라이브러리에 콘텐츠 파일을 추가할 수 있습니다. 콘텐츠 파일은 콘텐츠 라이브러리에 이미 있기 때문에 콘텐츠를 배포할 때 네트워크를 통해 전송되지 않습니다. 애플리케이션과 패키지의 콘텐츠 파일을 사전 준비할 수 있습니다.  
@@ -69,4 +68,4 @@ Configuration Manager 콘솔에서 사전 준비할 콘텐츠를 선택한 다�
     > [!IMPORTANT]  
     >  위의 옵션들은 패키지별로 적용되며 배포 지점이 사전 준비된 것으로 확인되는 경우에만 사용됩니다. 사전 준비된 것으로 확인되지 않은 배포 지점에서는 이러한 설정을 무시합니다. 이 경우, 콘텐츠는 항상 네트워크를 통해 사이트 서버에서 배포 지점으로 배포됩니다.  
 
--   **사이트 서버에서 콘텐츠 라이브러리 복원.** 사이트 서버에 오류가 발생할 경우 콘텐츠 라이브러리에 포함된 패키지와 애플리케이션에 대한 정보가 복원 과정 중 사이트 데이터베이스로 복원되지만 콘텐츠 라이브러리 파일은 이 과정에서 복원되지 않습니다. 콘텐츠 라이브러리를 복원할 파일 시스템 백업이 없는 경우에는 필요한 패키지와 애플리케이션을 보유한 다른 사이트에서 사전 준비된 콘텐츠 파일을 만들 수 있습니다. 그런 다음 사전 준비된 콘텐츠 파일을 복구된 사이트 서버에 추출할 수 있습니다. 사이트 서버 백업 및 복구에 대한 자세한 내용은 [System Center Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.  
+-   **사이트 서버에서 콘텐츠 라이브러리 복원.** 사이트 서버에 오류가 발생할 경우 콘텐츠 라이브러리에 포함된 패키지와 애플리케이션에 대한 정보가 복원 과정 중 사이트 데이터베이스로 복원되지만 콘텐츠 라이브러리 파일은 이 과정에서 복원되지 않습니다. 콘텐츠 라이브러리를 복원할 파일 시스템 백업이 없는 경우에는 필요한 패키지와 애플리케이션을 보유한 다른 사이트에서 사전 준비된 콘텐츠 파일을 만들 수 있습니다. 그런 다음 사전 준비된 콘텐츠 파일을 복구된 사이트 서버에 추출할 수 있습니다. 사이트 서버 백업 및 복구에 대한 자세한 내용은 [Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.  

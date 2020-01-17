@@ -1,0 +1,58 @@
+### YamlMime:Landing
+title: MDM(모바일 디바이스 관리) 설명서
+summary: Microsoft Endpoint Manager를 사용하여 온-프레미스 또는 클라우드 기반 조직의 모바일 디바이스를 관리합니다.
+metadata:
+  title: Configuration Manager로 모바일 디바이스 관리
+  description: Microsoft Endpoint Manager를 사용하여 온-프레미스 또는 클라우드 기반 조직의 모바일 디바이스를 관리합니다.
+  ms.prod: configuration-manager
+  ms.technology: configmgr-hybrid
+  ms.topic: landing-page
+  ms.collection: M365-identity-device-management
+  author: aczechowski
+  ms.author: aaroncz
+  ms.date: 12/31/2019
+  ms.openlocfilehash: ca54f0b81aa12ab27121b4d7031e138ddc6a8ed4
+  ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 01/15/2020
+  ms.locfileid: "76036276"
+landingContent:
+- title: 온-프레미스 MDM에 대한 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 온-프레미스 MDM이란?
+      url: understand/manage-mobile-devices-with-on-premises-infrastructure.md
+    - text: 온-프레미스 MDM 계획
+      url: plan-design/plan-on-premises-mdm.md
+  - linkListType: how-to-guide
+    links:
+    - text: 역할 설치
+      url: get-started/install-site-system-roles-for-on-premises-mdm.md
+    - text: 디바이스 등록
+      url: deploy-use/enroll-devices-on-premises-mdm.md
+    - text: 디바이스 관리
+      url: deploy-use/wipe-lock-reset-devices.md
+- title: ConfigMgr 및 Exchange 연결
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Exchange를 사용한 디바이스 관리
+      url: deploy-use/manage-mobile-devices-with-exchange-activesync.md
+  - linkListType: how-to-guide
+    links:
+    - text: Exchange Connector 설치
+      url: deploy-use/install-configure-exchange-connector.md
+- title: 클라우드 기반 Intune 사용
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Intune이란?
+      url: https://docs.microsoft.com/intune/fundamentals/what-is-intune
+    - text: 디바이스 관리 개요
+      url: https://docs.microsoft.com/intune/fundamentals/what-is-device-management
+  - linkListType: tutorial
+    links:
+    - text: Microsoft Endpoint Manager에서 Intune 연습
+      url: https://docs.microsoft.com/intune/fundamentals/tutorial-walkthrough-endpoint-manager

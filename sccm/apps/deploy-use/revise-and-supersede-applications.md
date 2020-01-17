@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 수정 및 대체
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 애플리케이션 버전을 사용하는 방법과 애플리케이션을 교체하는 방법에 대해 설명합니다.
+description: Configuration Manager 애플리케이션 버전을 사용하는 방법과 애플리케이션을 교체하는 방법에 대해 설명합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,19 +10,18 @@ ms.assetid: 30170d70-489f-47f7-bebf-9ed0115db26b
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1330eafb50d7a855d60b86e427f9cf4f3cb8790e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 87804ee2a76dea918cebb964a3672ab61bf6de8d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62198376"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818046"
 ---
-# <a name="revise-and-supersede-applications-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 수정 및 교체
+# <a name="revise-and-supersede-applications-in-configuration-manager"></a>Configuration Manager에서 응용 프로그램 수정 및 대체
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에서는 System Center Configuration Manager 애플리케이션 버전을 사용하는 방법 및 애플리케이션을 새 버전으로 대체하는 방법을 알아봅니다.  
+이 항목에서는 Configuration Manager 애플리케이션 버전을 사용하는 방법 및 애플리케이션을 새 버전으로 대체하는 방법을 알아봅니다.  
 
 ##  <a name="application-revisions"></a>애플리케이션 수정 버전  
  애플리케이션 또는 애플리케이션에 포함된 배포 유형을 수정하면 Configuration Manager에서 애플리케이션의 새 수정 버전을 만듭니다. 각 애플리케이션 수정 버전의 기록을 표시할 수 있습니다. 또한 각 수정 버전의 속성을 확인하고 이전의 애플리케이션 수정 버전을 복원하거나, 이전 수정 버전을 삭제할 수 있습니다.  
@@ -99,7 +98,7 @@ ms.locfileid: "62198376"
 
 3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택하여 애플리케이션 이름 **속성** 대화 상자를 엽니다.  
 
-4.  *&lt;애플리케이션 이름\>* **속성** 대화 상자의 **교체** 탭에서 **추가**를 선택합니다.  
+4.  *<애플리케이션 이름\>* **속성** 대화 상자의 **교체** 탭에서 **추가**를 선택합니다.  
 
 5.  **교체 관계 지정** 대화 상자에서 **찾아보기**를 클릭합니다.  
 
@@ -112,7 +111,7 @@ ms.locfileid: "62198376"
 
 8.  **확인**을 선택하여 **교체 관계 지정** 대화 상자를 닫습니다.  
 
-9. **확인**을 선택하여 *&lt;애플리케이션 이름\>* **속성** 대화 상자를 닫습니다.  
+9. **확인**을 선택하여 *<애플리케이션 이름\>* **속성** 대화 상자를 닫습니다.  
 
 ### <a name="to-display-applications-that-supersede-the-current-application"></a>현재 애플리케이션을 교체하는 애플리케이션을 표시하려면  
 
@@ -120,8 +119,8 @@ ms.locfileid: "62198376"
 
 2.  **소프트웨어 라이브러리** 작업 영역에서 **애플리케이션 관리**를 확장하고 **애플리케이션**을 선택한 다음 원하는 애플리케이션을 선택합니다.  
 
-3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택하여 *&lt;애플리케이션 이름\>* **속성** 대화 상자를 엽니다.  
+3.  **홈** 탭의 **속성** 그룹에서 **속성**을 선택하여 *<애플리케이션 이름\>* **속성** 대화 상자를 엽니다.  
 
-4.  *&lt;애플리케이션 이름\>* **속성** 대화 상자의 **참조** 탭에 있는 **관계 유형** 드롭다운 목록에서 **이 애플리케이션을 교체하는 애플리케이션**을 선택합니다.  
+4.  *<애플리케이션 이름\>* **속성** 대화 상자의 **참조** 탭에 있는 **관계 유형** 드롭다운 목록에서 **이 애플리케이션을 교체하는 애플리케이션**을 선택합니다.  
 
-5.  선택한 애플리케이션을 교체하는 애플리케이션 목록을 검토한 다음 **확인**을 선택하여 *&lt;애플리케이션 이름\>* **속성** 대화 상자를 닫습니다.  
+5.  선택한 애플리케이션을 교체하는 애플리케이션 목록을 검토한 다음 **확인**을 선택하여 *<애플리케이션 이름\>* **속성** 대화 상자를 닫습니다.  

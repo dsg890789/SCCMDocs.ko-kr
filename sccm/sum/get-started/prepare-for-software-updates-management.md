@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 업데이트 관리 준비
 titleSuffix: Configuration Manager
-description: 업데이트 관리를 준비하려면 System Center Configuration Manager 콘솔에 준수 평가 데이터가 표시되도록 이 작업을 완료합니다.
+description: 업데이트 관리를 준비하려면 Configuration Manager 콘솔에 호환성 평가 데이터가 표시되도록 이 작업을 완료합니다.
 ms.date: 10/06/2016
 ms.topic: conceptual
 ms.prod: configuration-manager
@@ -10,19 +10,18 @@ ms.assetid: 01907900-e28b-4cd7-9479-42906416707b
 manager: dougeby
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8381a9a5195982a2defa347934c28286e9082ce7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ab22fdcacf7574884f7cfd21859cb4b1aeb8e23f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65493964"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818590"
 ---
 # <a name="prepare-for-software-updates-management"></a>소프트웨어 업데이트 관리 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 콘솔에 소프트웨어 업데이트의 준수 평가 데이터가 표시되기 전에, 그리고 클라이언트 컴퓨터에 소프트웨어 업데이트를 배포하기 전에 먼저 다음 섹션의 단계를 완료해야 합니다.
+Configuration Manager 콘솔에 소프트웨어 업데이트의 호환성 평가 데이터가 표시되기 전에, 그리고 클라이언트 컴퓨터에 소프트웨어 업데이트를 배포하기 전에 먼저 다음 섹션의 단계를 완료해야 합니다.
 
 ## <a name="step-1-install-a-software-update-point"></a>1단계: 소프트웨어 업데이트 지점 설치  
 소프트웨어 업데이트 준수 평가를 사용하고 클라이언트에 소프트웨어 업데이트를 배포하려면 중앙 관리 사이트, 독립 실행형 기본 사이트 등에 소프트웨어 업데이트 지점이 필요합니다. 보조 사이트에서는 소프트웨어 업데이트 지점이 선택 사항입니다. 자세한 내용은 [소프트웨어 업데이트 지점 설치](install-a-software-update-point.md)를 참조하세요.  

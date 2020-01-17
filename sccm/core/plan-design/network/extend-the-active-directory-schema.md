@@ -1,7 +1,7 @@
 ---
 title: 게시 및 Active Directory 스키마
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 대한 Active Directory 스키마를 확장하여 클라이언트 배포 및 구성 프로세스를 간소화합니다.
+description: Configuration Manager에 대한 Active Directory 스키마를 확장하여 클라이언트 배포 및 구성 프로세스를 간소화합니다.
 ms.date: 09/22/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,25 +10,24 @@ ms.assetid: bc15ee7e-4d0a-4463-ae2c-f72d8d45d65d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 094cef520a2c5f1f4da06b8eefdafb4d3d58f3ac
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 523c79586f29ca2fcf0bb283de1d3f5e5373b588
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71311600"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799457"
 ---
 # <a name="prepare-active-directory-for-site-publishing"></a>사이트 게시를 위해 Active Directory 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에 대한 Active Directory 스키마를 확장하는 경우 클라이언트가 쉽게 액세스할 수 있는 안전한 위치에서 주요 정보를 게시하기 위해 Configuration Manager 사이트에서 사용하는 Active Directory에 새로운 구조를 도입합니다.  
+Configuration Manager에 대한 Active Directory 스키마를 확장하는 경우 클라이언트가 쉽게 액세스할 수 있는 안전한 위치에서 주요 정보를 게시하기 위해 Configuration Manager 사이트에서 사용하는 Active Directory에 새로운 구조를 도입합니다.  
 
 온-프레미스 클라이언트를 관리할 때는 Active Directory 스키마가 확장된 Configuration Manager를 사용하는 것이 좋습니다. 확장된 스키마로 클라이언트 배포 및 설정 프로세스를 간소화할 수 있습니다. 확장된 스키마를 사용하면 콘텐츠 서버나 다른 Configuration Manager 사이트 시스템 역할에서 제공하는 추가 서비스와 같은 리소스를 클라이언트에서 효율적으로 찾을 수 있습니다.  
 
--   Configuration Manager 배포를 제공하는 확장된 스키마를 모르는 경우 [System Center Configuration Manager의 스키마 확장](../../../core/plan-design/network/schema-extensions.md)을 참조하여 적절한 스키마를 결정할 수 있습니다.  
+-   Configuration Manager 배포를 제공하는 확장된 스키마를 모르는 경우 [Configuration Manager의 스키마 확장](../../../core/plan-design/network/schema-extensions.md)을 참조하여 적절한 스키마를 결정할 수 있습니다.  
 
--   확장된 스키마를 사용하지 않는 경우에는 서비스 및 사이트 시스템 서버를 찾기 위한 DNS, WINS 등의 다른 방법을 설정할 수 있습니다. 이러한 서비스 위치 찾기 방법을 사용하는 경우 추가 구성이 필요하므로, 클라이언트가 서비스 위치를 찾을 때 이러한 방법이 기본적으로 사용되지는 않습니다. 자세히 알아보려면 [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
+-   확장된 스키마를 사용하지 않는 경우에는 서비스 및 사이트 시스템 서버를 찾기 위한 DNS, WINS 등의 다른 방법을 설정할 수 있습니다. 이러한 서비스 위치 찾기 방법을 사용하는 경우 추가 구성이 필요하므로, 클라이언트가 서비스 위치를 찾을 때 이러한 방법이 기본적으로 사용되지는 않습니다. 자세히 알아보려면 [클라이언트가 Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
 
 -   Active Directory 스키마가 Configuration Manager 2007 또는 System Center 2012 Configuration Manager에 대해 확장된 경우 더 이상은 확장할 필요가 없습니다. 스키마 확장은 변경되지 않았으며 내부에 이미 포함되어 있기 때문입니다.  
 
@@ -105,4 +104,4 @@ Configuration Manager의 스키마를 확장하려면:
 ## <a name="step-3-set-up-sites-to-publish-to-active-directory-domain-services"></a>3단계: 사이트를 Active Directory Domain Services에 게시하도록 설정  
  컨테이너를 설정하고 권한을 부여했으며 Configuration Manager 기본 사이트를 설치한 후에는 Active Directory에 데이터를 게시하도록 해당 사이트를 설정할 수 있습니다.  
 
- 게시에 대한 자세한 내용은 [System Center Configuration Manager용으로 사이트 데이터 게시](../../../core/servers/deploy/configure/publish-site-data.md)를 참조하세요.  
+ 게시에 대한 자세한 내용은 [Configuration Manager용으로 사이트 데이터 게시](../../../core/servers/deploy/configure/publish-site-data.md)를 참조하세요.  

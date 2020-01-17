@@ -10,17 +10,16 @@ ms.assetid: b0c9db74-841e-46eb-8924-957cde968bf7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 643ba6189743d4e3d465fa369811867ebcd32e83
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f98870239be1f9018d6fce79ca2a2110fd6a68ed
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70243607"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818318"
 ---
 # <a name="upgrade-windows-devices-to-a-new-edition-with-configuration-manager"></a>Configuration Manager를 사용 하 여 Windows 장치를 새 버전으로 업그레이드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 **버전 업그레이드 정책**을 통해 Windows 10 디바이스를 최신 버전으로 자동으로 업그레이드할 수 있습니다.
 
@@ -36,9 +35,9 @@ ms.locfileid: "70243607"
 
 디바이스를 최신 버전으로 업그레이드하기 전에 다음과 같은 필수 구성 요소를 검토합니다.  
 
-- Windows 10의 데스크톱 버전의 경우: 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 유효한 제품 키 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요. <!--496871-->  
+- Windows 10의 데스크톱 버전: 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 유효한 제품 키입니다. 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요. <!--496871-->  
 
-- Windows 10 Mobile의 경우: VLSC(Microsoft 볼륨 라이선스 서비스 센터)의 XML 라이선스 파일 이 파일에는 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 대한 라이선스 정보가 있습니다.
+- Windows 10 Mobile: VLSC(Microsoft 볼륨 라이선스 서비스 센터)의 XML 라이선스 파일입니다. 이 파일에는 정책으로 대상을 지정하는 모든 디바이스에서 새 버전의 Windows에 대한 라이선스 정보가 있습니다.
 
 - 이 정책 유형을 관리하려면 Configuration Manager **전체 관리자** 보안 역할이 있어야 합니다.
 
@@ -102,4 +101,4 @@ ms.locfileid: "70243607"
 
 - [Windows 10 버전 업그레이드](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades)
 
-- [Microsoft Intune를 사용 하 여 Windows 10 버전 업그레이드 또는 장치의 S 모드 전환](https://docs.microsoft.com/intune/edition-upgrade-configure-windows-10)
+- [Windows 10 버전을 업그레이드하거나 Microsoft Intune을 사용하여 디바이스에서 S 모드 전환](https://docs.microsoft.com/intune/edition-upgrade-configure-windows-10)

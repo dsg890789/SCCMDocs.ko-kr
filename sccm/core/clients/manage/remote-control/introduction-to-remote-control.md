@@ -1,7 +1,7 @@
 ---
 title: 원격 제어
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 원격 제어를 소개합니다.
+description: Configuration Manager에서 원격 제어 소개를 확인합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 29350919-6a25-446b-a0da-05e8914fbb26
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 272c43f7514c585ea182b9b7e946c89fd13d3ad8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 261638e7b7da300732ab6649c25b6e801c1bfbc7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500029"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823860"
 ---
-# <a name="introduction-to-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager의 원격 제어 소개
+# <a name="introduction-to-remote-control-in-configuration-manager"></a>Configuration Manager에서 원격 제어 소개
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-원격 제어를 사용하여 원격으로 관리하거나 지원을 제공하고 또는 계층 구조에 있는 모든 클라이언트 컴퓨터를 볼 수 있습니다. 원격 제어를 사용하여 클라이언트 프로그램에서 발생하는 하드웨어 및 소프트웨어 구성 문제를 해결할 수 있으며 지원을 제공할 수 있습니다. Configuration Manager는 Configuration Manager 클라이언트에 대해 지원되는 운영 체제를 실행하는 모든 작업 그룹 컴퓨터 및 도메인에 조인된 컴퓨터의 원격 제어를 지원합니다. 자세한 내용은 [System Center Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 운영 체제](../../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)를 참조하세요.
+원격 제어를 사용하여 원격으로 관리하거나 지원을 제공하고 또는 계층 구조에 있는 모든 클라이언트 컴퓨터를 볼 수 있습니다. 원격 제어를 사용하여 클라이언트 프로그램에서 발생하는 하드웨어 및 소프트웨어 구성 문제를 해결할 수 있으며 지원을 제공할 수 있습니다. Configuration Manager는 Configuration Manager 클라이언트에 대해 지원되는 운영 체제를 실행하는 모든 작업 그룹 컴퓨터 및 도메인에 조인된 컴퓨터의 원격 제어를 지원합니다. 자세한 내용은 [Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 운영 체제](../../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)를 참조하세요.
 
 또한 Configuration Manager로 클라이언트 설정을 구성하여 Configuration Manager 콘솔에서 Windows 원격 데스크톱 및 원격 지원을 실행할 수 있습니다.  
 

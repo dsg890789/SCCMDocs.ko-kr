@@ -1,7 +1,7 @@
 ---
 title: 원격 제어 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 원격 제어를 설정합니다.
+description: Configuration Manager에서 원격 제어를 설정합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 45affc27-aa11-4249-9493-082ac23a3a3d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3802a7e9059f0c578178a967dcc04f0afd5f5dbf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1362f44c510fd34aebc6af77efc63e881c27688c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499690"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823877"
 ---
-# <a name="configuring-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어 구성
+# <a name="configuring-remote-control-in-configuration-manager"></a>Configuration Manager에서 원격 제어 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
- 이 절차에서는 원격 제어용 기본 클라이언트 설정을 구성하는 방법에 대해 설명합니다. 이러한 설정은 계층의 모든 컴퓨터에 적용됩니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 원하는 컴퓨터가 포함된 컬렉션에 사용자 지정 디바이스 클라이언트 설정을 할당합니다. 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요. 
+ 이 절차에서는 원격 제어용 기본 클라이언트 설정을 구성하는 방법에 대해 설명합니다. 이러한 설정은 계층의 모든 컴퓨터에 적용됩니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 원하는 컴퓨터가 포함된 컬렉션에 사용자 지정 디바이스 클라이언트 설정을 할당합니다. 자세한 내용은 [클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요. 
 
 원격 지원 또는 원격 데스크톱을 사용하려면 Configuration Manager 콘솔을 실행하는 컴퓨터에 설치되고 구성되어야 합니다. 원격 지원 또는 원격 데스크톱을 설치하고 구성하는 방법에 대한 자세한 내용은 Windows 설명서를 참조하세요.  
 
@@ -38,7 +37,7 @@ ms.locfileid: "65499690"
 
    **컴퓨터 에이전트** 클라이언트 설정의 **소프트웨어 센터에 표시되는 조직 이름** 에 대한 값을 구성하여 **ConfigMgr 원격 제어** 대화 상자에 표시되는 회사 이름을 변경할 수 있습니다.  
 
-   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
+   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이러한 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
 
 #### <a name="enable-keyboard-translation"></a>키보드 변환 사용
 

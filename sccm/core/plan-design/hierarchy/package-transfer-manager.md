@@ -1,7 +1,7 @@
 ---
 title: 패키지 전송 관리자
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 패키지 전송 관리자가 사이트 서버에서 원격 배포 지점으로 콘텐츠를 전송하는 방법을 알아봅니다.
+description: Configuration Manager의 패키지 전송 관리자가 사이트 서버에서 원격 배포 지점으로 콘텐츠를 전송하는 방법을 알아봅니다.
 ms.date: 02/8/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 3359f254-dd48-42b7-9eab-c92a3417e3fb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5994ba2689ba276412012b6bd1c18b65d27c3df
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b2df092295a93e6ba09200a55219879c9d583c2f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889467"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799916"
 ---
-# <a name="package-transfer-manager-in-system-center-configuration-manager"></a>System Center Configuration Manager의 패키지 전송 관리자
+# <a name="package-transfer-manager-in-configuration-manager"></a>Configuration Manager의 패키지 전송 관리자
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 사이트에서 패키지 전송 관리자는 SMS_Executive 서비스의 새로운 구성 요소로, 사이트 서버 컴퓨터에서 사이트의 원격 배포 지점으로의 콘텐츠 전송을 관리합니다. (원격 배포 지점은 사이트 서버 컴퓨터에 위치하지 않은 지점입니다.) 패키지 전송 관리자는 관리자의 구성을 지원하지 않지만, 작동 방식을 이해하면 콘텐츠 관리 인프라를 계획하는 데 도움이 됩니다. 콘텐츠 배포 문제를 해결하는 데에도 도움이 됩니다.
+Configuration Manager 사이트에서 패키지 전송 관리자는 SMS_Executive 서비스의 새로운 구성 요소로, 사이트 서버 컴퓨터에서 사이트의 원격 배포 지점으로의 콘텐츠 전송을 관리합니다. (원격 배포 지점은 사이트 서버 컴퓨터에 위치하지 않은 지점입니다.) 패키지 전송 관리자는 관리자의 구성을 지원하지 않지만, 작동 방식을 이해하면 콘텐츠 관리 인프라를 계획하는 데 도움이 됩니다. 콘텐츠 배포 문제를 해결하는 데에도 도움이 됩니다.
 
 
 사이트에 있는 원격 배포 지점 하나 이상에 콘텐츠를 배포하면 **배포 관리자**가 콘텐츠 전송 작업을 만듭니다. 그런 다음 기본 및 보조 사이트 서버의 패키지 전송 관리자에 콘텐츠를 원격 배포 지점에 전송하라고 알립니다.
@@ -30,7 +29,7 @@ System Center Configuration Manager 사이트에서 패키지 전송 관리자�
  패키지 전송 관리자는 사이트 서버의 **pkgxfermgr.log** 파일에 그 작업을 기록합니다. 로그 파일은 패키지 전송 관리자의 작업을 볼 수 있는 유일한 위치입니다.  
 
 > [!NOTE]  
->  이전 버전의 Configuration Manager에서 배포 관리자는 원격 배포 지점으로의 콘텐츠 전송을 관리합니다. 또한 배포 관리자는 사이트 간에 콘텐츠 전송도 관리합니다. System Center Configuration Manager에서도 배포 관리자는 두 사이트 간의 콘텐츠 전송을 계속 관리합니다. 그러나 이제 대량의 배포 지점에 대한 콘텐츠 전송은 패키지 전송 관리자가 관리합니다. 이런 기능을 통해 두 사이트 간 콘텐츠 배포와 사이트 내 배포 지점으로 콘텐츠 배포의 전반적인 성능을 증가시킬 수 있습니다.  
+>  이전 버전의 Configuration Manager에서 배포 관리자는 원격 배포 지점으로의 콘텐츠 전송을 관리합니다. 또한 배포 관리자는 사이트 간에 콘텐츠 전송도 관리합니다. Configuration Manager에서도 배포 관리자는 두 사이트 간의 콘텐츠 전송을 계속 관리합니다. 그러나 이제 대량의 배포 지점에 대한 콘텐츠 전송은 패키지 전송 관리자가 관리합니다. 이런 기능을 통해 두 사이트 간 콘텐츠 배포와 사이트 내 배포 지점으로 콘텐츠 배포의 전반적인 성능을 증가시킬 수 있습니다.  
 
 표준 배포 지점으로 콘텐츠를 전송하기 위해 패키지 전송 관리자는 이전 버전의 Configuration Manager에서 배포 관리자와 동일한 작업을 수행합니다. 즉, 각 원격 배포 지점으로의 파일 전송을 적극적으로 관리합니다. 그러나 풀(pull) 배포 지점으로 콘텐츠를 배포하기 위해 패키지 전송 관리자는 풀(pull) 배포 지점에 콘텐츠를 사용할 수 있다고 알립니다. 그 후에 풀(pull) 배포 지점에서 전송 프로세스를 넘겨 받습니다.  
 
@@ -69,7 +68,7 @@ System Center Configuration Manager 사이트에서 패키지 전송 관리자�
 
         -   기본적으로, 패키지 전송 관리자는 세 가지 고유한 패키지를 동시에 처리하고 5가지 배포 지점에 병렬로 배포할 수 있습니다. 통칭해서 **동시 배포 설정**이라고 합니다. 동시 배포를 설정하려면 각 사이트의 **소프트웨어 배포 구성 요소 속성**에서 **일반** 탭으로 이동합니다.  
 
-        -   패키지 전송 관리자는 해당 배포 지점으로 콘텐츠를 전송할 때 각 배포 지점에 대한 일정 및 네트워크 대역폭 구성을 사용합니다. 이러한 설정을 구성하려면 각 원격 배포 지점의 **속성**에서 **일정** 및 **속도 제한** 탭으로 이동합니다. 자세한 내용은 [System Center Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
+        -   패키지 전송 관리자는 해당 배포 지점으로 콘텐츠를 전송할 때 각 배포 지점에 대한 일정 및 네트워크 대역폭 구성을 사용합니다. 이러한 설정을 구성하려면 각 원격 배포 지점의 **속성**에서 **일정** 및 **속도 제한** 탭으로 이동합니다. 자세한 내용은 [Configuration Manager용 콘텐츠 및 콘텐츠 인프라 관리](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.  
 
     -   **풀(pull) 배포 지점**: 풀(pull) 배포 지점에서 알림 파일을 받으면 배포 지점은 콘텐츠를 전송하는 프로세스를 시작합니다. 전송 프로세스는 각 풀(pull) 배포 지점에서 개별적으로 실행됩니다.  
 

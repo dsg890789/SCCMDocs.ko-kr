@@ -1,7 +1,7 @@
 ---
 title: 사이트 제거
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 사이트를 제거하려면 다음 세부 정보를 지침으로 사용합니다.
+description: Configuration Manager 사이트를 제거하려면 다음 세부 정보를 지침으로 사용합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: d466edd2-97f0-44c1-a73e-d71abbdbf4a8
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7d67657581f385d22f87ef4fd41a7b0564f66d7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7157c2f346c4697f52df7f0c30efb25a62392213
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65501286"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797974"
 ---
-# <a name="uninstall-sites-and-hierarchies-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 사이트 및 계층 제거
+# <a name="uninstall-sites-and-hierarchies-in-configuration-manager"></a>Configuration Manager에서 사이트 및 계층 제거
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 사이트를 제거해야 하는 경우 다음 세부 정보를 지침으로 사용합니다.  
+Configuration Manager 사이트를 제거해야 하는 경우 다음 세부 정보를 지침으로 사용합니다.  
 
 여러 사이트가 있는 계층 구조를 서비스 해제하려면 제거의 순서가 중요합니다. 계층 구조의 맨 아래에 있는 사이트부터 제거하기 시작하여 위쪽으로 이동합니다.  
 
@@ -44,7 +43,7 @@ System Center Configuration Manager 사이트를 제거해야 하는 경우 다�
     이 옵션은 Configuration Manager 계층 구조에서 사이트 및 관련 리소스에 대한 모든 정보를 삭제하지만 보조 사이트 서버에 설치된 Configuration Manager는 그대로 둡니다.  
 
     > [!NOTE]  
-    >  계층 유지 관리 도구 및 **/DELSITE** 옵션을 사용하여 보조 사이트를 삭제할 수도 있습니다. 자세한 내용은 [System Center Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)를 참조하세요.  
+    >  계층 유지 관리 도구 및 **/DELSITE** 옵션을 사용하여 보조 사이트를 삭제할 수도 있습니다. 자세한 내용은 [Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)를 참조하세요.  
 
 #### <a name="to-uninstall-or-delete-a-secondary-site"></a>보조 사이트를 제거 또는 삭제하려면  
 
@@ -67,7 +66,7 @@ System Center Configuration Manager 사이트를 제거해야 하는 경우 다�
 Configuration Manager 설치 프로그램을 실행하여 연결된 보조 사이트가 없는 기본 사이트를 제거할 수 있습니다. 기본 사이트를 제거하기 전에 다음 사항을 고려해야 합니다.  
 
 -   Configuration Manager 클라이언트가 사이트에 구성된 경계 내에 있고 기본 사이트가 Configuration Manager 계층 구조의 일부인 경우 기본 사이트를 제거하기 전에 경계를 계층 구조의 다른 기본 사이트에 추가하는 것이 좋습니다.  
--   기본 사이트 서버를 더 이상 사용할 수 없는 경우 중앙 관리 사이트에서 계층 유지 관리 도구를 사용하여 사이트 데이터베이스에서 기본 사이트를 삭제해야 합니다. 자세한 내용은 [System Center Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)를 참조하세요.  
+-   기본 사이트 서버를 더 이상 사용할 수 없는 경우 중앙 관리 사이트에서 계층 유지 관리 도구를 사용하여 사이트 데이터베이스에서 기본 사이트를 삭제해야 합니다. 자세한 내용은 [Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)를 참조하세요.  
 
 기본 사이트를 제거하려면 다음 절차를 참조합니다.  
 

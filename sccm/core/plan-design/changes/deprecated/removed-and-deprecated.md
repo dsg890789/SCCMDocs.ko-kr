@@ -1,7 +1,7 @@
 ---
 title: 사용되지 않는 항목
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 더 이상 지원되지 않는 기능, 제품 및 운영 체제에 대해 알아봅니다.
+description: Configuration Manager에서 더 이상 지원되지 않는 기능, 제품 및 운영 체제에 대해 알아봅니다.
 ms.date: 01/25/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: b0adf873-2ff4-4a7b-b5e7-6047f146511f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 300d3763ba877bcd05817e40f4a8a86a1e899ce5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d65b27dbd010e514a977478c9bde8b85fbf1118a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339697"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802874"
 ---
-# <a name="removed-and-deprecated-items-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 제거된 기능과 사용되지 않는 항목
+# <a name="removed-and-deprecated-items-for-configuration-manager"></a>Configuration Manager에서 제거되는 기능과 사용되지 않는 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 문서에서는 System Center Configuration Manager 지원에서 제거되거나 향후 업데이트에서 제거될(사용되지 않음) 기능, 제품 및 운영 체제에 대한 정보를 사용하는 방법을 설명합니다. 이 문서에서는 Configuration Manager 사용에 영향을 줄 수 있는 향후 변경 사항에 대해 미리 알려줍니다.  
+이 문서에서는 Configuration Manager 지원에서 제거되거나 향후 업데이트에서 제거될(사용되지 않음) 기능, 제품 및 운영 체제에 대한 정보를 사용하는 방법을 설명합니다. 이 문서에서는 Configuration Manager 사용에 영향을 줄 수 있는 향후 변경 사항에 대해 미리 알려줍니다.  
 
 이 정보는 이후 릴리스에서 변경될 수 있으며 더 이상 지원되지 않는 각 기능, 제품 및 운영 체제가 누락될 수 있습니다.  
 

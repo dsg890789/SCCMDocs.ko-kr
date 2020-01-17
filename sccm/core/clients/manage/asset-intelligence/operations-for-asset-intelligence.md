@@ -1,7 +1,7 @@
 ---
 title: Asset Intelligence 사용
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 일반적인 Asset Intelligence 작업을 수행합니다.
+description: Configuration Manager에서 일반적인 Asset Intelligence 작업을 수행합니다.
 ms.date: 08/30/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: e8159bd9-5c2b-4d25-82f9-78fcfd732ba9
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fde63b3400441815b227fe8fae78c354bc156c2a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d2e575b799a4f7c0b63610dbe13c0c8a50c29215
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70176552"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824710"
 ---
-# <a name="how-to-use-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence를 사용하는 방법
+# <a name="how-to-use-asset-intelligence-in-configuration-manager"></a>Configuration Manager에서 Asset Intelligence를 사용하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager 계층 구조에서 일반적인 Asset Intelligence 작업을 관리할 수 있는 정보가 포함되어 있습니다.  
+이 항목에는 Configuration Manager 계층 구조에서 일반적인 Asset Intelligence 작업을 관리할 수 있는 정보가 포함되어 있습니다.  
 
 ##  <a name="BKMK_ViewInformation"></a> Asset Intelligence 정보 보기  
  **Asset Intelligence** 홈페이지 및 Asset Intelligence 보고서에서 Asset Intelligence 정보를 볼 수 있습니다.  
@@ -46,7 +45,7 @@ ms.locfileid: "70176552"
 2.  **자산 및 준수** 작업 영역에서 **Asset Intelligence**를 클릭합니다. Asset Intelligence 보고서가 표시됩니다.  
 
 ###  <a name="BKMK_AssetIntelligenceReports"></a> Asset Intelligence 보고서  
- Asset Intelligence에서 수집한 정보를 표시하는 60개 이상의 Asset Intelligence 보고서가 있습니다. 이들 중 많은 보고서는 일반 정보에 대해 쿼리하고 더 자세한 정보로 드릴다운할 수 있는 더 구체적인 보고서에 연결되어 있습니다. Asset Intelligence 보고서는 Configuration Manager 콘솔에서 **모니터링** 작업 영역에 있는 **보고** 노드 아래에 있습니다. 보고서는 하드웨어, 라이선스 관리 및 소프트웨어에 대한 정보를 제공합니다. Configuration Manager의 보고서에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
+ Asset Intelligence에서 수집한 정보를 표시하는 60개 이상의 Asset Intelligence 보고서가 있습니다. 이들 중 많은 보고서는 일반 정보에 대해 쿼리하고 더 자세한 정보로 드릴다운할 수 있는 더 구체적인 보고서에 연결되어 있습니다. Asset Intelligence 보고서는 Configuration Manager 콘솔에서 **모니터링** 작업 영역에 있는 **보고** 노드 아래에 있습니다. 보고서는 하드웨어, 라이선스 관리 및 소프트웨어에 대한 정보를 제공합니다. Configuration Manager의 보고서에 대한 자세한 내용은 [보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
 
 > [!NOTE]  
 >  Asset Intelligence 보고서에 표시된 라이선스 정보 및 설치된 소프트웨어 타이틀 수량의 정확성은 엔터프라이즈 환경에 설치된 소프트웨어 타이틀에 대한 소프트웨어 라이선스 정보 인벤토리와 관련된 복잡한 종속성 및 제한 때문에 환경에서 사용 중인 라이선스 또는 설치된 소프트웨어 타이틀의 실제 수량과 다를 수 있습니다. Asset Intelligence 보고서를 구매한 소프트웨어 라이선스 준수를 확인하기 위한 유일한 출처로 사용해서는 안 됩니다.  
@@ -60,7 +59,7 @@ ms.locfileid: "70176552"
 2.  **모니터링** 작업 영역에서 **보고**, **보고서**를 확장하고 **Asset Intelligence**를 클릭합니다. Asset Intelligence 보고서가 표시됩니다.  
 
     > [!WARNING]  
-    >  보고서 폴더가 **보고서** 노드에 없는 경우 보고를 구성했는지 확인합니다. 자세한 내용은 [System Center Configuration Manager의 보고 구성](../../../../core/servers/manage/configuring-reporting.md)을 참조하세요.  
+    >  보고서 폴더가 **보고서** 노드에 없는 경우 보고를 구성했는지 확인합니다. 자세한 내용은 [보고 구성](../../../../core/servers/manage/configuring-reporting.md)을 참조하세요.  
 
 3.  실행할 Asset Intelligence 보고서를 선택한 다음 **홈** 탭의 **보고서 그룹** 그룹에서 **실행**을 클릭합니다.  
 
@@ -68,7 +67,7 @@ ms.locfileid: "70176552"
  최신 소프트웨어 타이틀 분류를 검색하려면 로컬 Asset Intelligence 카탈로그를 System Center Online과 동기화하면 됩니다. System Center Online에서 카탈로그 동기화를 수동으로 요청하면 System Center Online에서 동기화 프로세스를 완료하는 데 15분 이상 걸릴 수 있습니다. Configuration Manager는 동기화가 성공적으로 완료된 현재 시간으로 **Asset Intelligence** 홈페이지의 **마지막으로 성공한 업데이트** 설정을 업데이트합니다.  
 
 > [!NOTE]  
->  절차를 사용하기 전에 Asset Intelligence 동기화 지점 사이트 시스템 역할을 먼저 설치해야 합니다. Asset Intelligence 동기화 지점 설치에 대한 자세한 내용은 [System Center Configuration Manager에서 Asset Intelligence 구성](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md)을 참조하세요.  
+>  절차를 사용하기 전에 Asset Intelligence 동기화 지점 사이트 시스템 역할을 먼저 설치해야 합니다. Asset Intelligence 동기화 지점을 설치하는 방법에 대한 자세한 내용은 [Asset Intelligence 구성](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md)을 참조하세요.  
 
  다음 절차를 사용하여 Asset Intelligence 카탈로그에 대한 동기화 일정을 만들 수 있습니다.  
 
@@ -275,7 +274,7 @@ ms.locfileid: "70176552"
 -   소프트웨어 타이틀의 원본은 System Center Online 카탈로그에 저장되지 않습니다. 그러나 기밀 또는 소유 정보를 포함 하는 애플리케이션 제목 하지 제출 해야 분류를 위한 System Center Online 합니다.  
 
 > [!NOTE]  
->  Asset Intelligence 개인 정보에 대한 자세한 내용은 [System Center Configuration Manager에서 Asset Intelligence 대한 보안 및 개인 정보](../../../../core/clients/manage/asset-intelligence/security-and-privacy-for-asset-intelligence.md)를 참조하세요.  
+>  Asset Intelligence 개인 정보에 대한 자세한 내용은 [Configuration Manager에서 Asset Intelligence에 대한 보안 및 개인 정보](../../../../core/clients/manage/asset-intelligence/security-and-privacy-for-asset-intelligence.md)를 참조하세요.  
 
  다음 절차를 사용하여 System Center Online에서 Asset Intelligence 카탈로그 소프트웨어 타이틀 분류를 요청할 수 있습니다.  
 

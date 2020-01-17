@@ -1,7 +1,7 @@
 ---
 title: 마이그레이션 원본 계층
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 환경에 데이터를 마이그레이션할 수 있도록 원본 계층 및 원본 사이트를 구성합니다.
+description: Configuration Manager 현재 분기 환경에 데이터를 마이그레이션할 수 있도록 원본 계층 및 원본 사이트를 구성합니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: ccce7cb5-e18f-4337-8adf-2018edca3c00
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a2b336173df72a2b54bd92cda4477df58e4dac5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 073639402723cbd836e0ce25dcec1ca056cc7ef1
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62234714"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803248"
 ---
-# <a name="configure-source-hierarchies-and-source-sites-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로 마이그레이션할 원본 계층 및 원본 사이트 구성
+# <a name="configure-source-hierarchies-and-source-sites-for-migration-to-configuration-manager-current-branch"></a>Configuration Manager 현재 분기로 마이그레이션할 원본 계층 및 원본 사이트 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 환경으로 데이터를 마이그레이션할 수 있도록 하려면 지원되는 Configuration Manager 원본 계층을 구성하고 해당 계층에 마이그레이션할 데이터가 포함된 원본 사이트를 하나 이상 구성해야 합니다.  
+Configuration Manager 현재 분기 환경으로 데이터를 마이그레이션할 수 있도록 하려면 지원되는 Configuration Manager 원본 계층을 구성하고 해당 계층에 마이그레이션할 데이터가 포함된 원본 사이트를 하나 이상 구성해야 합니다.  
 
 > [!NOTE]  
 >  마이그레이션을 위한 작업은 대상 계층의 최상위 사이트에서 실행됩니다. 기본 자식 사이트에 연결된 Configuration Manager 콘솔을 사용하는 경우 마이그레이션을 구성하면 중앙 관리 사이트에 구성을 복제하여 시작한 다음, 연결된 기본 사이트로 상태를 다시 복제할 시간을 허용해야 합니다.  
@@ -34,7 +33,7 @@ System Center Configuration Manager 환경으로 데이터를 마이그레이션
 -   [원본 계층의 추가 원본 사이트 식별](#BKBM_ConfigSrcSites)  
 
 ##  <a name="BKBM_ConfigSrcHierarchy"></a> 마이그레이션할 원본 계층 지정  
- 대상 계층으로 데이터를 마이그레이션하려면 마이그레이션할 데이터가 포함된 지원되는 원본 계층을 지정해야 합니다. 기본적으로 해당 계층의 최상위 사이트가 원본 계층의 원본 사이트가 됩니다. Configuration Manager 2007 계층 구조에서 마이그레이션하는 경우 첫 번째 원본 사이트에서 데이터를 수집한 다음 마이그레이션할 추가 원본 사이트를 설정할 수 있습니다. System Center 2012 Configuration Manager 또는 System Center Configuration Manager 계층 구조에서 마이그레이션하는 경우 원본 계층에서 데이터를 마이그레이션하기 위해 추가 원본 사이트를 설정할 필요가 없습니다. 이러한 버전의 Configuration Manager에서는 원본 계층의 최상위 사이트에서 사용할 수 있는 공유 데이터베이스를 사용하기 때문입니다. 공유 데이터베이스에는 마이그레이션할 수 있는 모든 정보가 포함되어 있습니다.  
+ 대상 계층으로 데이터를 마이그레이션하려면 마이그레이션할 데이터가 포함된 지원되는 원본 계층을 지정해야 합니다. 기본적으로 해당 계층의 최상위 사이트가 원본 계층의 원본 사이트가 됩니다. Configuration Manager 2007 계층 구조에서 마이그레이션하는 경우 첫 번째 원본 사이트에서 데이터를 수집한 다음 마이그레이션할 추가 원본 사이트를 설정할 수 있습니다. System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기 계층 구조에서 마이그레이션하는 경우 원본 계층에서 데이터를 마이그레이션하기 위해 추가 원본 사이트를 설정할 필요가 없습니다. 이러한 버전의 Configuration Manager에서는 원본 계층의 최상위 사이트에서 사용할 수 있는 공유 데이터베이스를 사용하기 때문입니다. 공유 데이터베이스에는 마이그레이션할 수 있는 모든 정보가 포함되어 있습니다.  
 
  마이그레이션할 원본 계층을 지정하고 Configuration Manager 2007 계층 구조에서 추가 원본 사이트를 식별하려면 다음 절차를 수행합니다.  
 
@@ -71,7 +70,7 @@ System Center Configuration Manager 환경으로 데이터를 마이그레이션
 
 -   Configuration Manager 2007 원본 계층의 경우 첫 번째 원본 사이트에 대해 데이터 수집을 완료한 후에 해당 첫 번째 원본 사이트에서 마이그레이션을 시작하거나 원본 계층에서 추가 원본 사이트를 설정할 수 있습니다. 자식 사이트에서만 사용할 수 있는 데이터를 마이그레이션하려면 Configuration Manager 2007 계층 구조의 추가 원본 사이트를 설정합니다. 예를 들어 마이그레이션할 콘텐츠를 원본 계층의 자식 사이트에서 만들었고 원본 계층의 최상위 사이트에서 사용할 수 없는 경우에 해당 콘텐츠에 대한 데이터를 수집하도록 추가 원본 사이트를 구성할 수 있습니다.  
 
--   System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 계층의 경우 원본 사이트를 추가로 구성할 필요가 없습니다. 이러한 버전의 Configuration Manager에서는 원본 계층의 최상위 사이트에서 사용할 수 있는 공유 데이터베이스를 사용하기 때문입니다. 공유 데이터베이스에는 해당 원본 계층의 모든 사이트에서 마이그레이션할 수 있는 모든 정보가 포함되어 있습니다. 따라서 마이그레이션할 수 있는 데이터를 원본 계층의 최상위 사이트에서 사용할 수 있습니다.  
+-   System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기 원본 계층의 경우 원본 사이트를 추가로 구성할 필요가 없습니다. 이러한 버전의 Configuration Manager에서는 원본 계층의 최상위 사이트에서 사용할 수 있는 공유 데이터베이스를 사용하기 때문입니다. 공유 데이터베이스에는 해당 원본 계층의 모든 사이트에서 마이그레이션할 수 있는 모든 정보가 포함되어 있습니다. 따라서 마이그레이션할 수 있는 데이터를 원본 계층의 최상위 사이트에서 사용할 수 있습니다.  
 
 Configuration Manager 2007 원본 계층의 추가 원본 사이트를 구성할 때는 원본 계층의 최상위부터 최하위까지 추가 원본 사이트를 구성해야 합니다. 자식 사이트를 원본 사이트로 구성하기 전에 부모 사이트를 원본 사이트로 구성해야 합니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d94d348f3cee7d55bbbbf6f4a9f791e7b65c768
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: ee87fcbfa1b8661e645156d2a2b6afe08e59493b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198883"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821004"
 ---
 # <a name="task-sequence-steps"></a>작업 순서 단계
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계는 다음과 같습니다. 자세한 내용은 [작업 순서 편집기 사용](/configmgr/osd/understand/task-sequence-editor)을 참조하세요.  
 
@@ -38,7 +37,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 - **이 단계 사용 안 함**: 작업 순서가 컴퓨터에서 실행되면 이 단계를 건너뜁니다. 작업 순서 편집기에서 이 단계의 아이콘은 회색으로 표시됩니다.  
 
-- **오류 발생 시 계속**: 단계를 실행하는 동안 오류가 발생하더라도 작업 순서가 계속됩니다. 자세한 내용은 [작업 자동화에 대한 계획 고려 사항](/configmgr/osd/plan-design/planning-considerations-for-automating-tasks#BKMK_TSGroups)을 참조하세요.  
+- **오류 발생 시 계속**: 단계를 실행하는 동안 오류가 발생한 경우에도 작업 순서가 계속됩니다. 자세한 내용은 [작업 자동화에 대한 계획 고려 사항](/configmgr/osd/plan-design/planning-considerations-for-automating-tasks#BKMK_TSGroups)을 참조하세요.  
 
 - **조건 추가**: 작업 순서에서 이러한 조건부 명령문을 평가하여 단계가 실행되는지 확인합니다. 작업 순서 변수를 조건으로 사용하는 예를 알려면 [How to use task sequence variables](/configmgr/osd/understand/using-task-sequence-variables#bkmk_access-condition)(작업 순서 변수 사용 방법)를 참조하세요. 조건에 대 한 자세한 내용은 [작업 순서 편집기-상태](/configmgr/osd/understand/task-sequence-editor#bkmk_conditions)를 참조 하세요.
 
@@ -80,7 +79,7 @@ Configuration Manager 작업 순서에 추가할 수 있는 작업 순서 단계
 
 - **특정 논리적 드라이브 문자**: Windows PE에서 파티션에 할당하는 **드라이브 문자**를 지정합니다. 이 드라이브 문자는 새로 배포된 OS에서 할당한 드라이브 문자와 다를 수 있습니다.  
 
-- **변수에 저장된 논리적 드라이브 문자**: Windows PE에서 파티션에 할당한 드라이브 문자를 포함하는 작업 순서 변수를 지정합니다. 이 변수는 일반적으로 **디스크 포맷 및 파티션 만들기** 작업 순서 단계에 대한 **파티션 속성** 대화 상자의 [고급] 섹션에서 설정됩니다.  
+- **변수에 저장된 논리적 드라이브 문자**: Windows PE에서 파티션에 할당된 드라이브 문자를 포함하는 작업 순서 변수를 지정합니다. 이 변수는 일반적으로 **디스크 포맷 및 파티션 만들기** 작업 순서 단계에 대한 **파티션 속성** 대화 상자의 [고급] 섹션에서 설정됩니다.  
 
 #### <a name="delete-all-content-on-the-partition-before-applying-the-image"></a>이미지를 적용하기 전에 파티션의 모든 내용 삭제  
 
@@ -270,15 +269,15 @@ Windows 설치 응답 파일을 제공하지 않으면 작업 순서에서 응�
 
 다음 옵션 중 하나를 구성합니다.  
 
-- **사용 가능한 다음 파티션**: 이 작업 순서의 **운영 체제 적용** 또는 **데이터 이미지 적용** 단계가 아직 대상으로 지정하지 않은 다음 순차 파티션을 사용합니다.  
+- **사용 가능한 다음 파티션**: 이 작업 순서의 **운영 체제 적용** 또는 **데이터 이미지 적용** 단계에서 아직 대상으로 지정되지 않은 다음 순차 파티션을 사용합니다.  
 
 - **특정 디스크 및 파티션**: **디스크** 번호(0부터 시작) 및 **파티션** 번호(1부터 시작)를 선택합니다.  
 
-- **특정 논리적 드라이브 문자**: Windows PE에서 파티션에 할당한 **드라이브 문자**를 지정합니다. 이 드라이브 문자는 새로 배포된 OS에서 할당한 드라이브 문자와 다를 수 있습니다.  
+- **특정 논리적 드라이브 문자**: Windows PE에서 파티션에 할당된 **드라이브 문자**를 지정합니다. 이 드라이브 문자는 새로 배포된 OS에서 할당한 드라이브 문자와 다를 수 있습니다.  
 
-- **변수에 저장된 논리적 드라이브 문자**: Windows PE에서 파티션에 할당한 드라이브 문자가 포함된 작업 순서 변수를 지정합니다. 이 변수는 일반적으로 **디스크 포맷 및 파티션 만들기** 작업 순서 단계에 대한 **파티션 속성** 대화 상자의 [고급] 섹션에서 설정됩니다.  
+- **변수에 저장된 논리적 드라이브 문자**: Windows PE에서 파티션에 할당된 드라이브 문자를 포함하는 작업 순서 변수를 지정합니다. 이 변수는 일반적으로 **디스크 포맷 및 파티션 만들기** 작업 순서 단계에 대한 **파티션 속성** 대화 상자의 [고급] 섹션에서 설정됩니다.  
 
-### <a name="options"></a>Options  
+### <a name="options"></a>옵션  
 
 기본 옵션 외에도, 이 작업 순서 단계의 **옵션** 탭에서 다음과 같은 추가 설정을 구성합니다.  
 
@@ -472,7 +471,7 @@ Windows 설치 응답 파일을 제공하지 않으면 작업 순서에서 응�
 
 - 전역 네트워크 설정  
 - 어댑터 수  
-- 각 어댑터와 연결된 네트워크 설정: DNS, WINS, IP 및 포트 필터
+- 각 어댑터와 연결된 다음 네트워크 설정: DNS, WINS, IP 및 포트 필터
 
 
 
@@ -504,7 +503,7 @@ Configuration Manager는 참조 컴퓨터에서 .wim 파일 내의 별도 이미
 
 이 단계에 대한 **속성** 탭에서 이 섹션에서 설명하는 설정을 구성합니다.  
 
-#### <a name="target"></a>Target  
+#### <a name="target"></a>대상  
 
 Configuration Manager에서 캡처된 OS 이미지를 저장할 때 사용하는 위치의 파일 시스템 경로입니다.  
 
@@ -593,11 +592,11 @@ EFS(암호화된 파일 시스템)로 암호화된 파일의 캡처를 건너뛰
 
 - **일부 파일을 캡처할 수 없는 경우 계속**: 일부 파일을 캡처할 수 없는 경우에도 마이그레이션 프로세스를 계속하려면 이 설정을 사용하도록 설정합니다. 이 옵션을 사용하지 않고 파일도 캡처할 수 없다면 이 단계는 실패합니다. 기본적으로 이 옵션은 사용하도록 설정됩니다.  
 
-- **파일을 복사하지 않고 링크를 사용하여 로컬로 캡처**: NTFS 하드 링크를 사용하여 파일을 캡처하려면 이 설정을 사용하도록 설정합니다.  
+- **파일을 복사하지 않고 링크를 사용하여 로컬로 캡처**: NTFS 하드 링크를 사용하여 파일을 캡처하려면 이 설정을 선택합니다.  
 
     하드 링크를 사용하여 데이터를 마이그레이션하는 방법에 대한 자세한 내용은 [하드 링크 마이그레이션 저장소](https://docs.microsoft.com/windows/deployment/usmt/usmt-hard-link-migration-store)를 참조하세요.  
 
-- **오프라인 모드 캡처(Windows PE 전용)**: 전체 OS 대신 Windows PE에서 사용자 상태를 캡처하려면 이 설정을 선택합니다.  
+- **오프 라인 모드로 캡처(Windows PE만 해당)** : 전체 OS 대신 Windows PE에서 사용자 상태를 캡처하려면 이 설정을 사용하도록 설정합니다.  
 
 #### <a name="capture-by-using-volume-copy-shadow-services-vss"></a>VSS(Volume Copy Shadow) 서비스를 사용하여 캡처
 
@@ -666,7 +665,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 대상 컴퓨터에 설치된 OS에서 지정된 요구 사항이 충족되는지 확인합니다. 이 단계는 기본적으로 이 설정을 **클라이언트**로 설정합니다.  
 
-### <a name="options"></a>Options
+### <a name="options"></a>옵션
 
 > [!NOTE]  
 > 이 단계의 **옵션** 탭에서 **오류 발생 시 계속** 설정을 사용하도록 설정하면 준비 검사 결과만 기록됩니다. 검사가 실패하더라도 작업 순서는 중지되지 않습니다.  
@@ -784,7 +783,7 @@ MB(메가바이트) 단위의 사용 가능한 디스크 공간이 지정된 크
 
 - **작업 순서 작업 디렉터리**: 이 위치는 작업 순서 캐시라고도 합니다.  
 
-- **구성 관리자 클라이언트 캐시**: 이 옵션을 사용하여 클라이언트 캐시에 콘텐츠를 저장합니다. 기본적으로 이 경로는 `%WinDir%\ccmcache`입니다.  
+- **Configuration Manager 클라이언트 캐시**: 이 옵션을 사용하여 클라이언트 캐시에 콘텐츠를 저장합니다. 기본적으로 이 경로는 `%WinDir%\ccmcache`입니다.  
 
 - **사용자 지정 경로**: 작업 순서 엔진이 먼저 패키지를 작업 순서 작업 디렉터리에 다운로드합니다. 그런 다음 콘텐츠를 사용자가 지정한 이 경로로 이동합니다. 작업 순서 엔진은 경로에 패키지 ID를 추가합니다.  
 
@@ -929,7 +928,7 @@ BitLocker에서 복구 암호를 만들고 Active Directory에서 암호를 에�
 
 포맷할 디스크의 유형입니다. 드롭다운 목록에서 선택할 수 있는 두 가지 옵션이 있습니다.
 
-- **표준(MBR)**: 마스터 부트 레코드  
+- **표준(MBR)** : 마스터 부트 레코드  
 - **GPT**: GUID 파티션 테이블  
 
 > [!NOTE]  
@@ -1016,7 +1015,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 작업 순서는 이 기본 변수 이름을 사용하여 애플리케이션을 설치합니다. 기본 변수 이름은 컬렉션 또는 컴퓨터에 대해 정의된 작업 순서 변수 집합을 나타냅니다. 이러한 변수는 작업 순서에서 해당 컬렉션 또는 컴퓨터에 대해 설치할 애플리케이션을 지정합니다. 각 변수 이름은 공통 기본 이름과 01부터 시작되는 숫자 접미사로 구성됩니다. 각 변수의 값은 애플리케이션 이름만 포함해야 합니다.  
 
-작업 순서에서 동적 변수 목록을 사용하여 애플리케이션을 설치하려면, 애플리케이션 **속성**의 **일반** 탭에서 **이 애플리케이션을 배포하는 대신, 애플리케이션 설치 작업 순서 동작으로 설치하도록 허용** 설정을 사용하도록 설정합니다.  
+동적 변수 목록을 사용하여 애플리케이션을 설치할 작업 순서의 경우 해당 애플리케이션의 **속성**의 **일반** 탭에서 다음 설정을 사용하도록 설정합니다. **수동으로 배포하지 않고 애플리케이션 설치 작업 순서 동작에서 이 애플리케이션을 설치하도록 허용**.  
 
 > [!NOTE]  
 > 독립 실행형 미디어 배포의 경우 동적 변수 목록을 사용하여 애플리케이션을 설치할 수 없습니다.  
@@ -1041,7 +1040,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 - 작업 순서가 지정된 기본 이름과 “01” 접미사가 있는 변수를 찾지 못하면 애플리케이션을 설치하지 않습니다.  
 
 > [!Important]  
-> 이러한 값은 대/소문자를 구분합니다. 예를 들어 “install”은 “Install”과 다릅니다. 값을 변경해야 하는 경우 작업 순서 편집기가 대/소문자 변경을 감지하지 않습니다. 예를 들어 동시에 다른 편집을 수행하세요(예: 단계 설명 수정).<!--509714-->
+> 이 값은 대/소문자를 구분합니다. 예를 들어 “install”은 “Install”과 다릅니다. 값을 변경해야 하는 경우 작업 순서 편집기가 대/소문자 변경을 감지하지 않습니다. 예를 들어 동시에 다른 편집을 수행하세요(예: 단계 설명 수정).<!--509714-->
 
 #### <a name="if-an-application-fails-continue-installing-other-applications-in-the-list"></a>애플리케이션 설치가 실패할 경우 목록의 다른 애플리케이션 설치 계속
 
@@ -1053,7 +1052,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 버전 1906부터 단계가 실행 된 후 클라이언트 캐시에서 앱 콘텐츠를 삭제 합니다. 이 동작은 디바이스의 하드 드라이브 용량이 작을 때 또는 다수의 큰 앱을 연속으로 설치할 때 유용합니다.
 
 
-### <a name="options"></a>Options
+### <a name="options"></a>옵션
 
 > [!NOTE]  
 > 이 단계의 **옵션** 탭에서 **오류 발생 시 계속**을 선택하면 애플리케이션 설치가 실패하더라도 작업 순서가 계속됩니다. 이 옵션을 사용하지 않으면 작업 순서가 실패하고 나머지 애플리케이션이 설치되지 않습니다.  
@@ -1117,7 +1116,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 작업 순서는 이 기본 변수 이름을 사용하여 패키지를 설치합니다. 기본 변수 이름은 컬렉션 또는 컴퓨터에 대해 정의된 작업 순서 변수 집합을 나타냅니다. 이러한 변수는 작업 순서에서 해당 컬렉션 또는 컴퓨터에 대해 설치할 패키지를 지정합니다. 각 변수 이름은 공통 기본 이름과 001부터 시작되는 숫자 접미사로 구성됩니다. 각 변수의 값은 콜론으로 구분된 패키지 ID와 소프트웨어 이름을 포함해야 합니다.  
 
-작업 순서에서 동적 변수 목록을 사용하여 응용 프로그램을 설치하려면, 패키지 **속성**의 **고급** 탭에서 **배포하지 않고 패키지 설치 작업 순서에서 프로그램 설치 허용** 설정을 사용하도록 설정합니다.  
+동적 변수 목록을 사용하여 소프트웨어를 설치할 작업 순서의 경우 패키지 **속성**의 **고급** 탭에서 다음 설정을 사용하도록 설정합니다. **배포하지 않고 패키지 설치 작업 순서에서 이 프로그램을 설치하도록 허용**.  
 
 > [!NOTE]  
 > 독립 실행형 미디어 배포의 경우 동적 변수 목록을 사용하여 소프트웨어 패키지를 설치할 수 없습니다.  
@@ -1145,7 +1144,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 - 작업 순서가 지정된 기본 이름과 “001” 접미사가 있는 변수를 찾지 못하면 패키지를 설치하지 않습니다. 작업 순서가 계속됩니다.  
 
 > [!Important]  
-> 이러한 값은 대/소문자를 구분합니다. 예를 들어 “install”은 “Install”과 다릅니다. 값을 변경해야 하는 경우 작업 순서 편집기가 대/소문자 변경을 감지하지 않습니다. 예를 들어 동시에 다른 편집을 수행하세요(예: 단계 설명 수정).<!--509714-->
+> 이 값은 대/소문자를 구분합니다. 예를 들어 “install”은 “Install”과 다릅니다. 값을 변경해야 하는 경우 작업 순서 편집기가 대/소문자 변경을 감지하지 않습니다. 예를 들어 동시에 다른 편집을 수행하세요(예: 단계 설명 수정).<!--509714-->
 
 #### <a name="if-installation-of-a-software-package-fails-continue-installing-other-packages-in-the-list"></a>소프트웨어 패키지 설치가 실패할 경우 목록의 다른 패키지 설치 계속
 
@@ -1206,7 +1205,7 @@ Configuration Manager는 사용하지 않도록 설정된 애플리케이션 또
 
 **SMSTSSoftwareUpdateScanTimeout** 변수는 이 단계에서 소프트웨어 업데이트 검색 시간 제한을 제어합니다. 기본값은 60분입니다. 자세한 내용은 [Task sequence variables](/configmgr/osd/understand/task-sequence-variables#SMSTSSoftwareUpdateScanTimeout)\(작업 순서 변수\)를 참조하세요.
 
-### <a name="options"></a>Options  
+### <a name="options"></a>옵션  
 
 기본 옵션 외에도, 이 작업 순서 단계의 **옵션** 탭에서 다음과 같은 추가 설정을 구성합니다.  
 
@@ -1559,7 +1558,7 @@ USMT에서 일부 파일을 복원할 수 없는 경우에도 사용자 상태 �
 
 파일 이름 확장명을 지정하지 않는 경우 Configuration Manager에서는 .com, .exe 및 .bat를 사용합니다. 파일 이름에 실행할 수 있는 유형이 아닌 확장명이 있는 경우에는 Configuration Manager에서 로컬 연결을 적용합니다. 예를 들어 명령줄이 readme.gif인 경우 Configuration Manager는 .gif 파일을 열기 위해 대상 컴퓨터에 지정된 애플리케이션을 시작합니다.  
 
-예제:  
+예:  
 
 `setup.exe /a`  
 
@@ -1585,7 +1584,7 @@ USMT에서 일부 파일을 복원할 수 없는 경우에도 사용자 상태 �
 
 프로그램의 실행 가능한 폴더를 지정합니다(최대 127자). 이 폴더는 대상 클라이언트의 절대 경로 또는 패키지가 포함된 배포 지점 폴더의 상대 경로일 수 있습니다. 이 필드는 선택 항목입니다.  
 
-예제:  
+예:  
 
 `c:\officexp`  
 
@@ -1619,7 +1618,7 @@ Configuration Manager에서 명령줄을 실행할 수 있는 기간을 나타�
 > [!IMPORTANT]  
 > 이 단계에서 사용자 계정을 지정하고 Windows PE에서 실행하면 동작이 실패합니다. Windows PE는 도메인에 조인할 수 없습니다. **smsts.log** 파일은 이 실패를 기록합니다.  
 
-### <a name="options"></a>Options  
+### <a name="options"></a>옵션  
 
 기본 옵션 외에도, 이 작업 순서 단계의 **옵션** 탭에서 다음과 같은 추가 설정을 구성합니다.  
 
@@ -1649,7 +1648,7 @@ Configuration Manager에서 명령줄을 실행할 수 있는 기간을 나타�
 다음 PowerShell cmdlet을 사용 하 여이 단계를 관리 합니다.<!-- SCCMDocs #1118 -->
 
 - [Get-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/get-cmtssteprunpowershellscript?view=sccm-ps)
-- [신규-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtssteprunpowershellscript?view=sccm-ps)
+- [New-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmtssteprunpowershellscript?view=sccm-ps)
 - [제거-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/remove-cmtssteprunpowershellscript?view=sccm-ps)
 - [Set-CMTSStepRunPowerShellScript](https://docs.microsoft.com/powershell/module/configurationmanager/set-cmtssteprunpowershellscript?view=sccm-ps)
 
@@ -1693,7 +1692,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 `-MyParameter1 MyValue1 -MyParameter2 MyValue2`  
 
-잘못된 매개 변수의 예는 다음과 같습니다. 처음 두 항목은 Windows PowerShell 명령줄 매개 변수(**-NoLogo** 및 **-ExecutionPolicy Unrestricted**)입니다. 스크립트는 이러한 매개 변수를 사용하지 않습니다.  
+잘못된 매개 변수의 예는 다음과 같습니다. 처음 두 항목은 Windows PowerShell 명령줄 매개 변수( **-NoLogo** 및 **-ExecutionPolicy Unrestricted**)입니다. 스크립트는 이러한 매개 변수를 사용하지 않습니다.  
 
 `-NoLogo -ExecutionPolicy Unrestricted -File MyScript.ps1 -MyParameter1 MyValue1 -MyParameter2 MyValue2`
 
@@ -1755,7 +1754,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 > [!IMPORTANT]  
 > 이 단계에서 사용자 계정을 지정하고 Windows PE에서 실행하면 동작이 실패합니다. Windows PE는 도메인에 조인할 수 없습니다. **smsts.log** 파일은 이 실패를 기록합니다.  
 
-### <a name="options"></a>Options  
+### <a name="options"></a>옵션  
 
 기본 옵션 외에도, 이 작업 순서 단계의 **옵션** 탭에서 다음과 같은 추가 설정을 구성합니다.  
 
@@ -1802,7 +1801,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 - 자식 작업 순서를 사용하지 않도록 설정한 경우 배포에 실패합니다. **오류 발생 시 계속** 옵션으로 이 제한 사항을 해결할 수 없습니다.  
 
-- ‘영향도가 높은’ 것으로 간주되는 단계가 자식 작업 순서에 포함되어 있는 경우 소프트웨어 센터에서 해당 자식 작업 순서를 검색하지 않고 영향도가 높은 작업 순서 알림을 표시하지 않습니다. 사용자 알림 탭에서 부모 작업 순서의 속성을 수정하여 **강력한 작업 순서임**을 지정하세요.  
+- ‘영향도가 높은’ 것으로 간주되는 단계가 자식 작업 순서에 포함되어 있는 경우 소프트웨어 센터에서 해당 자식 작업 순서를 검색하지 않고 영향도가 높은 작업 순서 알림을 표시하지 않습니다.  사용자 알림 탭에서 부모 작업 순서의 속성을 수정하여 **강력한 작업 순서임**을 지정하세요.  
 
 - 자식 작업 순서에 누락된 패키지 참조가 있어도 부모 작업 순서 보기에서 이러한 상태를 검색하지 않습니다. 부모 작업 순서를 편집하는 경우에는 부모를 변경할 때 자식 작업 순서에서 누락된 참조를 검색합니다.  
 
@@ -1859,7 +1858,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 - **위치**: 기본 네트워크 게이트웨이에 대한 값을 평가합니다.  
 
-- **제조사 및 모델**: 컴퓨터의 제조업체 및 모델에 대한 값을 평가합니다. 규칙이 true로 평가되려면 제조업체와 모델 둘 다 true로 평가되어야 합니다.
+- **제조업체 및 모델**: 컴퓨터의 제조업체 및 모델에 대한 값을 평가합니다. 규칙이 true로 평가되려면 제조업체와 모델 둘 다 true로 평가되어야 합니다.
 
     별표(`*`) 및 물음표(`?`)를 와일드카드 문자로 지정합니다. 별표는 여러 문자를 찾고, 물음표는 단일 문자를 찾습니다. 예를 들어 `DELL*900?` 문자열은 `DELL-ABC-9001`과 `DELL9009`를 모두 찾습니다.  
 
@@ -2007,7 +2006,7 @@ Windows PowerShell 명령줄이 아니라 스크립트에서 사용되는 매개
 
 클라이언트 설치 중에 사용할 명령줄 옵션을 지정하세요. 예를 들어 Microsoft Silverlight 필수 조건을 설치하지 않도록 CCMSetup.exe에 알리려면 `/skipprereq: silverlight.exe`를 입력합니다. CCMSetup.exe의 사용 가능한 명령줄 옵션에 대한 자세한 내용은 [클라이언트 설치 속성 정보](/configmgr/core/clients/deploy/about-client-installation-properties)를 참조하세요.  
 
-### <a name="options"></a>Options
+### <a name="options"></a>옵션
 
 > [!NOTE]  
 > **옵션** 탭에서 **오류 발생 시 계속**을 사용하지 않도록 설정합니다. 이 단계에서 오류가 발생하면 이 설정을 사용할지 여부에 관계없이 작업 순서가 실패합니다.  
@@ -2057,9 +2056,9 @@ Windows 설치 프로그램에서 사용하는 Windows 10 미디어에 대한 �
 
 업그레이드 프로세스 중에 드라이버를 대상 컴퓨터에 추가합니다. 이 설정은 Windows 설치 프로그램의 `/InstallDriver` 명령줄 옵션에 해당합니다. 드라이버는 Windows 10과 호환되어야 합니다. 다음 옵션 중 하나를 지정합니다.  
 
-- **드라이버 패키지**: **찾아보기**를 선택하고, 목록에서 기존 드라이버 패키지를 선택합니다.  
+- **드라이버 패키지**: **찾아보기**를 선택하고 목록에서 기존 드라이버 패키지를 선택합니다.  
 
-- **준비된 콘텐츠**: 드라이버 패키지의 위치를 지정하려면 이 옵션을 선택합니다. 로컬 폴더, 네트워크 경로 또는 작업 순서 변수를 지정할 수 있습니다. 원본 경로에 대한 변수를 사용하는 경우 작업 순서의 앞 부분에서 해당 값을 설정하세요. 예를 들어 [패키지 콘텐츠 다운로드](/configmgr/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent) 단계를 사용합니다.  
+- **준비된 콘텐츠**:  드라이버 패키지의 위치를 지정하려면 이 옵션을 선택합니다. 로컬 폴더, 네트워크 경로 또는 작업 순서 변수를 지정할 수 있습니다. 원본 경로에 대한 변수를 사용하는 경우 작업 순서의 앞 부분에서 해당 값을 설정하세요. 예를 들어 [패키지 콘텐츠 다운로드](/configmgr/osd/understand/task-sequence-steps#BKMK_DownloadPackageContent) 단계를 사용합니다.  
 
 #### <a name="time-out-minutes"></a>시간 제한(분)
 

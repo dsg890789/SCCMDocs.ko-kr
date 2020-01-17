@@ -1,7 +1,7 @@
 ---
 title: 전원 관리에 대한 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 전원 관리에 대한 보안 및 개인 정보를 확인합니다.
+description: Configuration Manager에서 전원 관리에 대한 보안 및 개인 정보를 확인합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 469ff35f-59a1-484d-902b-107dd6070baf
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7bba23bf35d60d83fcff01acb20c8f404b6445d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c019faee1ffa035bde626778bb15b8f5feabc243
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62215448"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823911"
 ---
-# <a name="security-and-privacy-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-power-management-in-configuration-manager"></a>Configuration Manager의 전원 관리를 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 섹션에서는 System Center Configuration Manager에서 전원 관리에 대한 보안과 개인 정보에 대해 설명합니다.  
+이 섹션에서는 Configuration Manager에서 전원 관리에 대한 보안과 개인 정보에 대해 설명합니다.  
 
 ## <a name="security-best-practices-for-power-management"></a>전원 관리의 보안 모범 사례  
  전원 관리에 대한 보안 관련 모범 사례가 없습니다.  

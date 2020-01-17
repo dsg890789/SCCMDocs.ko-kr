@@ -1,7 +1,7 @@
 ---
 title: Windows Embedded 디바이스에 클라이언트 배포 계획
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포를 계획합니다.
+description: Configuration Manager에서 Windows Embedded 디바이스에 클라이언트를 배포하기 위한 계획을 세울 수 있습니다.
 ms.date: 06/12/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 038e61f9-f49d-41d1-9a9f-87bec9e00d5d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b96e7f77dae283d31ba3d2f0955c2910ea499dd5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 623125ad64c7ed421ea209137eb68f17891d7a81
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378665"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824863"
 ---
-# <a name="planning-for-client-deployment-to-windows-embedded-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획
+# <a name="planning-for-client-deployment-to-windows-embedded-devices-in-configuration-manager"></a>Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-<a name="BKMK_DeployClientEmbedded"></a> Windows Embedded 디바이스에 System Center Configuration Manager 클라이언트가 포함되지 않은 경우 디바이스가 필요한 종속성을 충족하는 한 모든 클라이언트 설치 방법을 사용할 수 있습니다. Windows Embedded 디바이스가 쓰기 필터를 지원하는 경우 클라이언트를 설치하기 전에 이러한 필터를 사용하지 않도록 설정하고 클라이언트가 설치되어 사이트에 할당된 후에 다시 사용하도록 설정해야 합니다.  
+<a name="BKMK_DeployClientEmbedded"></a> Windows Embedded 디바이스에 Configuration Manager 클라이언트가 포함되지 않은 경우 디바이스가 필요한 종속성을 충족하는 한 모든 클라이언트 설치 방법을 사용할 수 있습니다. Windows Embedded 디바이스가 쓰기 필터를 지원하는 경우 클라이언트를 설치하기 전에 이러한 필터를 사용하지 않도록 설정하고 클라이언트가 설치되어 사이트에 할당된 후에 다시 사용하도록 설정해야 합니다.  
 
  필터를 사용하지 않도록 설정할 때 필터 드라이버는 사용하지 않도록 설정하면 안 됩니다. 이러한 드라이버는 일반적으로 컴퓨터를 시작할 때 자동으로 시작됩니다. 드라이버를 사용하지 않도록 설정하면 클라이언트 설치가 차단되거나 쓰기 필터 오케스트레이션을 간섭하게 되어 클라이언트 작업이 실패합니다. 각 쓰기 필터 유형과 연결된 계속 실행되어야 하는 서비스는 다음과 같습니다.  
 
@@ -85,7 +84,7 @@ ms.locfileid: "70378665"
 > [!NOTE]
 > 위의 **중요** 상자에 설명된 예외 외에는 Configuration Manager 클라이언트에 더 이상의 예외가 필요 없습니다. Configuration Manager 또는 WMI(WBEM) 관련 예외를 더 추가하면 디바이스 설정이 서비스 모드에서 멈추거나 디바이스에서 재부팅 루프가 발생하는 등 Configuration Manager에서 오류가 발생할 수 있습니다. 불필요한 예외로는 Configuration Manager 클라이언트 디렉터리, CCMcache 디렉터리, CCMSetup 디렉터리, 작업 순서 캐시 디렉터리, WBEM 디렉터리 및 Configuration Manager 관련 레지스트리 키가 있습니다.
 
- Configuration Manager에서 쓰기 필터를 사용하는 Windows Embedded 디바이스를 배포하고 관리하는 예제 시나리오를 보려면 [Windows Embedded 디바이스의 System Center Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오](../../../../core/clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md)를 참조하세요.  
+ Configuration Manager에서 쓰기 필터를 사용하는 Windows Embedded 디바이스를 배포하고 관리하는 예제 시나리오를 보려면 [Windows Embedded 디바이스의 Configuration Manager 클라이언트 배포 및 관리에 대한 예제 시나리오](../../../../core/clients/deploy/example-scenario-for-deploying-and-managing-clients-on-windows-embedded-devices.md)를 참조하세요.  
 
  Windows Embedded 디바이스에 대한 이미지를 작성하고 쓰기 필터를 구성하는 방법에 대한 자세한 내용은 관련 Windows Embedded 설명서를 참조하거나 OEM에 문의하세요.  
 

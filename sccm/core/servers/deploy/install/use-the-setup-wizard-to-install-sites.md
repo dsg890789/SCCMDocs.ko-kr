@@ -9,17 +9,16 @@ ms.assetid: 1f703376-5f2c-4fd2-8209-7028c931ddc7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81130d513ff4f0a412c1774e50d3ac7058504c99
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e4325b5bfeff07768abb41462b9a737b955eb216
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70377875"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797876"
 ---
 # <a name="use-the-setup-wizard-to-install-configuration-manager-sites"></a>설치 마법사를 사용하여 Configuration Manager 사이트 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 단계별 사용자 인터페이스를 사용하여 새 Configuration Manager 사이트를 설치하려면 Configuration Manager 설치 마법사(setup.exe)를 사용합니다. 마법사는 기본 사이트 또는 중앙 관리 사이트의 설치를 지원합니다. 또한 마법사를 사용하여 Configuration Manager의 [평가판 설치를 정식 라이선스 설치로 업그레이드](/sccm/core/servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install)합니다. 마법사를 사용하지 않으려는 경우 [설치 스크립트](/sccm/core/servers/deploy/install/use-a-command-line-to-install-sites)를 대신 사용하고 무인 명령줄 설치를 실행할 수 있습니다.
 
@@ -55,7 +54,7 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 
 ### <a name="bkmk_installpri"></a> 기본 사이트 또는 중앙 관리 사이트 설치 프로세스
 
-1. 사이트를 설치하려는 컴퓨터에서 `<InstallationMedia>\SMSSETUP\BIN\X64\Setup.exe`를 실행하여 **System Center Configuration Manager 설치 마법사**를 시작합니다.  
+1. 사이트를 설치하려는 컴퓨터에서 `<InstallationMedia>\SMSSETUP\BIN\X64\Setup.exe`를 실행하여 **Configuration Manager 설치 마법사**를 시작합니다.  
 
     > [!NOTE]  
     > 중앙 관리 사이트를 설치하여 독립 실행형 기본 사이트를 확장하거나 기존 계층 구조에 새 하위 기본 사이트를 설치하는 경우 기존 사이트 또는 사이트의 버전과 일치하는 설치 미디어(소스 파일)를 사용합니다. 이전에 설치한 사이트의 버전이 변경된 콘솔 내 업데이트를 설치한 경우 원본 설치 미디어를 사용하지 마세요. 대신, 업데이트된 사이트의 [CD.Latest 폴더](/sccm/core/servers/manage/the-cd.latest-folder)에 있는 소스 파일을 사용합니다. Configuration Manager에서는 새 사이트가 연결될 기존 사이트의 버전과 일치하는 소스 파일을 사용해야 합니다.  
@@ -359,7 +358,7 @@ Configuration Manager 콘솔을 사용하여 보조 사이트를 설치합니다
         - **SQL Server Broker 포트**: SQL Server에 대해 사용할 SQL SSB(Server Service Broker) 포트를 지정합니다. 방화벽 제한으로 인해 차단되지 않으면서도 다른 사이트 또는 서비스가 사용하지 않는 유효한 포트를 지정합니다.  
 
     > [!TIP]  
-    > System Center Configuration Manager에서 지원하는 SQL Server 버전 목록은 [지원되는 SQL Server 버전](/sccm/core/plan-design/configs/support-for-sql-server-versions)을 참조하세요.  
+    > Configuration Manager에서 지원하는 SQL Server 버전 목록은 [지원되는 SQL Server 버전](/sccm/core/plan-design/configs/support-for-sql-server-versions)을 참조하세요.  
 
 7. **배포 지점** 페이지에서 보조 사이트 서버에 설치할 배포 지점에 대한 설정을 구성합니다.  
 

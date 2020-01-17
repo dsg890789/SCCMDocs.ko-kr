@@ -10,32 +10,31 @@ ms.assetid: cdb9fb0c-0912-41e4-b427-f40620971763
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1b3e1506114cf931fb61d8c2c4c05eb8942ea49
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3fdcce193c7f586c731d25d9b5c374a84a4fb7fc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888827"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798011"
 ---
-# <a name="reference-for-system-center-configuration-manager-setup"></a>System Center Configuration Manager 설치에 대한 참조
+# <a name="reference-for-configuration-manager-setup"></a>Configuration Manager 설치에 대한 참조
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 설치 프로그램은 다음 섹션에 자세히 설명된 여러 항목에 대한 링크를 제공합니다. 여기에 있는 정보는 Configuration Manager 사이트 또는 계층 구조의 설치를 준비하고 설치 중에 결정해야 하는 몇 가지 사항을 준비하는 데 도움이 되는 다음 섹션에 대한 링크를 제공합니다.  
+Configuration Manager 설치 프로그램은 다음 섹션에 자세히 설명된 여러 항목에 대한 링크를 제공합니다. 여기에 있는 정보는 Configuration Manager 사이트 또는 계층 구조의 설치를 준비하고 설치 중에 결정해야 하는 몇 가지 사항을 준비하는 데 도움이 되는 다음 섹션에 대한 링크를 제공합니다.  
 
 
 ##  <a name="bkmk_start"></a> 시작하기 전에  
 Configuration Manager 사이트를 새로 설치하기 전에 성공적인 배포 디자인을 준비하는 데 유용한 다음 정보를 검토해야 합니다.  
 
--   [System Center Configuration Manager의 기본 사항](../../../../core/understand/fundamentals.md)  
--   [System Center Configuration Manager 인프라 계획](../../../plan-design/network/configure-firewalls-ports-domains.md)  
--   [System Center Configuration Manager 사이트 설치 준비](prepare-to-install-sites.md)  
+-   [Configuration Manager의 기본 사항](../../../../core/understand/fundamentals.md)  
+-   [Configuration Manager 인프라 계획](../../../plan-design/network/configure-firewalls-ports-domains.md)  
+-   [Configuration Manager 사이트 설치 준비](prepare-to-install-sites.md)  
 
 ##  <a name="bkmk_assess"></a> 서버 준비 상태 평가  
 새 사이트의 설치를 시작하기 전에 사이트 서버와 그 사이트에서 사용할 사이트 시스템 서버(예: 사이트 데이터베이스를 호스트하는 서버)가 모든 필수 조건 구성을 충족하는지 확인합니다. 문서 라이브러리의 다음 항목을 활용할 수 있습니다.  
 
--   [System Center Configuration Manager에서 지원되는 구성](../../../../core/plan-design/configs/supported-configurations.md)  
+-   [Configuration Manager에서 지원되는 구성](../../../../core/plan-design/configs/supported-configurations.md)  
 -   [필수 구성 요소 검사기](prerequisite-checker.md)  
 
 ##  <a name="bkmk_Addclients"></a> 추가 운영 체제에 대한 클라이언트  
@@ -47,10 +46,10 @@ Microsoft 다운로드 센터에서 다음 운영 체제에 대한 Configuration
 
 사용하는 Configuration Manager 버전용 클라이언트를 다운로드하려면 다음 링크를 사용합니다.  
 
--   [Microsoft System Center Configuration Manager - 추가 운영 체제용 클라이언트](https://www.microsoft.com/download/details.aspx?id=47719)를 참조하세요.  
+-   [Microsoft Configuration Manager - 추가 운영 체제용 클라이언트](https://www.microsoft.com/download/details.aspx?id=47719)를 참조하세요.  
 
 ##  <a name="bkmk_usage"></a> 사용량 현황 데이터 수준 및 설정  
-System Center Configuration Manager 사이트를 처음 설치하는 경우 Configuration Manager가 자동으로 설치되고 사이트 서버에 새 사이트 시스템 역할 **서비스 연결 지점**이 구성됩니다. 서비스 연결 지점의 기본 설정은 다음과 같습니다.  
+Configuration Manager 사이트를 처음 설치하는 경우 Configuration Manager가 자동으로 설치되고 사이트 서버에 새 사이트 시스템 역할 **서비스 연결 지점**이 구성됩니다. 서비스 연결 지점의 기본 설정은 다음과 같습니다.  
 
 -   **온라인** 모드(오프라인 모드도 사용 가능)  
 -   **확장** 데이터 수집 수준(다른 두 데이터 수집 수준인 기본과 전체도 사용 가능)  
@@ -70,6 +69,6 @@ System Center Configuration Manager 사이트를 처음 설치하는 경우 Conf
 
 -   **전체** - 기본 및 확장 수준 설정의 데이터와 함께 시스템 파일, 시스템 스냅샷 등의 고급 진단 정보도 전송됩니다. 이 옵션을 선택하는 경우 개인 식별이 가능한 정보가 포함될 수도 있지만 Microsoft는 해당 정보를 토대로 사용자를 식별하거나 사용자에게 연락을 하지 않으며 사용자를 대상으로 하는 광고를 전송하지도 않습니다.  
 
-각 수준별로 수집되는 정보의 공개를 비롯한 자세한 내용은 [System Center Configuration Manager의 진단 및 사용량 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
+각 수준별로 수집되는 정보의 공개를 비롯한 자세한 내용은 [Configuration Manager의 진단 및 사용량 현황 데이터](../../../../core/plan-design/diagnostics/diagnostics-and-usage-data.md)를 참조하세요.  
 
-온라인으로 System Center Configuration Manager 개인정보 취급방침을 보려면 [https://go.microsoft.com/fwlink/?LinkID=626527](https://go.microsoft.com/fwlink/?LinkID=626527)으로 이동하세요.
+온라인으로 Configuration Manager 개인정보처리방침을 보려면 [https://go.microsoft.com/fwlink/?LinkID=626527](https://go.microsoft.com/fwlink/?LinkID=626527)로 이동하세요.

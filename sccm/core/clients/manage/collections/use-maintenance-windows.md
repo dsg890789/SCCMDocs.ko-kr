@@ -1,7 +1,7 @@
 ---
 title: 유지 관리 기간 사용
 titleSuffix: Configuration Manager
-description: 컬렉션 및 유지 관리 기간을 사용하여 System Center Configuration Manager에서 클라이언트를 효과적으로 관리할 수 있습니다.
+description: 컬렉션 및 유지 관리 기간을 사용하여 Configuration Manager에서 클라이언트를 효과적으로 관리할 수 있습니다.
 ms.date: 07/30/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,17 +10,16 @@ ms.assetid: 4564ebcb-41a8-4eb0-afdb-2e1f0795cfa2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4a984b15af66a5426d30f3fb4f0b68c794ba5f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6c2128c9e26137c268577e68e5ee12e3a71f8513
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65673330"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824387"
 ---
-# <a name="how-to-use-maintenance-windows-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 유지 관리 기간을 사용하는 방법
+# <a name="how-to-use-maintenance-windows-in-configuration-manager"></a>Configuration Manager에서 유지 관리 기간을 사용하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 유지 관리 기간을 사용하면 디바이스 컬렉션에 대해 Configuration Manager 작업을 수행할 수 있는 시간을 정의할 수 있습니다. 유지 관리 기간을 사용하면 생산성에 영향을 미치지 않는 기간 동안 클라이언트 구성이 변경되도록 할 수 있습니다. Configuration Manager 버전 1806부터, **소프트웨어 센터**의 **설치 상태** 탭에서 사용자가 다음 유지 관리 기간을 볼 수 있습니다. <!--1358131-->
 

@@ -1,7 +1,7 @@
 ---
 title: Technical Preview 1801 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 기술 미리 보기 버전 1801에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1801에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/19/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,21 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0ce9a88e66e441749034dff3a6e0dc1dd6bc745
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 10d7e46c4ef84a3855f57ee5243afdfdca5cb0ec
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62226383"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804676"
 ---
-# <a name="capabilities-in-technical-preview-1801-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1801의 기능
+# <a name="capabilities-in-technical-preview-1801-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1801의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1801에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1801에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 
 
-이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하세요. 해당 문서에서는 Technical Preview를 사용하기 위한 일반 요구 사항 및 제한 사항, 버전 간에 업데이트하는 방법 및 피드백을 제공하는 방법에 대해 설명합니다.     
+이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하세요. 해당 문서에서는 Technical Preview를 사용하기 위한 일반 요구 사항 및 제한 사항, 버전 간에 업데이트하는 방법 및 피드백을 제공하는 방법에 대해 설명합니다.     
 
 
 <!--  Known Issues Template   
@@ -90,11 +89,11 @@ ms.locfileid: "62226383"
    - 성공, Azure AD 조인됨
    - 실패: 자동 등록 실패
 - **워크로드 전환**: 사용 가능한 세 가지 작업 부하에 대해 Microsoft Intune으로 전환한 디바이스 수를 나타내는 가로 막대형 차트 
-   - 준수 정책
+   - 규정 준수 정책
    - 리소스 액세스
    - Windows Update for Business
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - Configuration Manager 콘솔을 실행하는 컴퓨터는 Internet Explorer 9 이상이 필요합니다.
 
 
@@ -196,4 +195,4 @@ Windows 10 버전 1709 이상이 설치된 디바이스에는 [Windows Defender 
 
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

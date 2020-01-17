@@ -1,7 +1,7 @@
 ---
 title: Asset Intelligence 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Asset Intelligence 대한 보안 및 개인 정보를 확인합니다.
+description: Configuration Manager에서 Asset Intelligence에 대한 보안 및 개인 정보를 확인합니다.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: d0c6f7a0-dcae-4e6d-aa28-35d464d97ff7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 283a60145047da5c593ab287c83fc2a9d06783aa
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1bbfe35e9a35b87dfebab78391d53b538684e3f8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890278"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824659"
 ---
-# <a name="security-and-privacy-for-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Asset Intelligence 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-asset-intelligence-in-configuration-manager"></a>Configuration Manager에서 Asset Intelligence에 대한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager의 Asset Intelligence에 대한 보안 및 개인 정보가 포함되어 있습니다.  
+이 항목에는 Configuration Manager의 Asset Intelligence에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
 ##  <a name="BKMK_Security_AI"></a> Asset Intelligence에 대한 보안 모범 사례  
  Asset Intelligence를 사용하는 경우 다음 보안 모범 사례를 따르세요.  
@@ -33,7 +32,7 @@ ms.locfileid: "70890278"
 |최소 권한 원칙을 사용하여 라이선스 파일을 가져올 수 있습니다.|역할 기반 관리를 사용하여 라이선스 파일을 가져오는 관리자에게 Asset Intelligence 관리 권한을 부여합니다. 자산 관리자의 기본 제공 역할에는 이 권한이 포함되어 있습니다.|  
 
 ##  <a name="BKMK_Privacy_HardwareInventory"></a> Asset Intelligence에 대한 개인 정보 보호  
- Asset Intelligence는 Configuration Manager의 인벤토리 기능을 확장하여 엔터프라이즈에서 더 높은 수준의 자산 가시성을 제공합니다. Asset Intelligence 정보 수집은 사용하도록 자동 설정되지 않습니다. 하드웨어 인벤토리 보고 클래스를 사용하도록 설정하여 수집된 정보 유형을 수정할 수 있습니다. 자세한 내용은 [System Center Configuration Manager의 Asset Intelligence 구성](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md)을 참조하세요.  
+ Asset Intelligence는 Configuration Manager의 인벤토리 기능을 확장하여 엔터프라이즈에서 더 높은 수준의 자산 가시성을 제공합니다. Asset Intelligence 정보 수집은 사용하도록 자동 설정되지 않습니다. 하드웨어 인벤토리 보고 클래스를 사용하도록 설정하여 수집된 정보 유형을 수정할 수 있습니다. 자세한 내용은 [Asset Intelligence 구성](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md)을 참조하세요.  
 
  Asset Intelligence 정보가 인벤토리 정보와 동일한 방식으로 Configuration Manager 데이터베이스에 저장됩니다. 클라이언트가 HTTPS를 사용하여 관리 지점에 연결하는 경우 데이터가 관리 지점으로 전송되는 동안 상시 암호화됩니다. 클라이언트가 HTTP를 사용하여 연결하는 경우 인벤토리 데이터 전송이 서명되고 암호화되도록 구성할 수 있습니다. 인벤토리 데이터는 데이터베이스에서 암호화된 형식으로 저장되지 않습니다. 사이트 유지 관리 작업 **오래된 인벤토리 기록 삭제** 가 90일 간격으로 해당 정보를 삭제할 때까지 정보가 데이터베이스에서 유지됩니다. 삭제 간격은 필요에 따라 구성할 수 있습니다.  
 

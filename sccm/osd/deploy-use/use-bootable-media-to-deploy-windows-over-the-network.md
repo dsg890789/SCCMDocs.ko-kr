@@ -1,7 +1,7 @@
 ---
 title: 부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 부팅 가능한 미디어 배포를 사용하면 대상 컴퓨터가 시작될 때 운영 체제를 배포할 수 있습니다.
+description: Configuration Manager에서 부팅 가능한 미디어 배포를 사용하면 대상 컴퓨터가 시작될 때 운영 체제를 배포할 수 있습니다.
 ms.date: 06/16/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -10,17 +10,16 @@ ms.assetid: 999b5409-7e72-48d2-8554-4d44427ce383
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98aa69cc0a80b12ca5caabb2c5b7167310ea2c83
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 22a3219cdf0bb09061e57f34e52ca7a061f55a2f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892541"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806155"
 ---
-# <a name="use-bootable-media-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포
+# <a name="use-bootable-media-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 부팅 가능한 미디어를 사용하여 네트워크를 통해 Windows 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 대상 컴퓨터가 부팅 가능한 미디어 배포를 사용하여 시작될 경우 운영 체제를 배포할 수 있습니다. 미디어에는 작업 순서에 대한 포인터, 운영 체제 이미지 및 네트워크의 기타 필수 콘텐츠가 포함됩니다. 대상 컴퓨터는 시작될 때 포인터에서 참조된 항목을 검색합니다. 부팅 가능한 미디어에 콘텐츠가 없으면 미디어에서 대상을 바꾸지 않고도 업데이트할 수 있습니다.
 

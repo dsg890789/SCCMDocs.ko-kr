@@ -10,13 +10,12 @@ ms.assetid: cd64994c-b426-4465-96cd-54b0edc2778d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5b9292359f3451c9c39bef3510b3d5621ec4278
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7c144b3330237decc8a3b9309698672066575a8d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888489"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818539"
 ---
 # <a name="manage-software-updates-in-updates-publisher"></a>Updates Publisher에서 소프트웨어 업데이트 관리
 
@@ -78,7 +77,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 ## <a name="publish-updates-and-bundles-from-the-updates-workspace"></a>업데이트 작업 영역에서 업데이트 및 번들 게시
 업데이트 및 번들을 게시하면 Updates Publisher가 해당 업데이트 및 번들에 대한 정보(메타데이터)와 업데이트용 이진 파일(전체 콘텐츠)을 디바이스 배포용 업데이트 서버에 추가합니다.
 
-게시 옵션을 사용하려면 Updates Publisher의 [업데이트 서버](/sccm/sum/tools/updates-publisher-options#update-server) 옵션을 구성해야 합니다. 이 구성 옵션을 열려면 **업데이트 작업 영역** &gt; **개요**로 이동하여 **Configure WSUS and Signing Certificate**(WSUS 및 서명 인증서 구성)를 선택합니다. Updates Publisher 옵션의 [업데이트 서버] 페이지로 이동할 수도 있습니다.
+게시 옵션을 사용하려면 Updates Publisher의 [업데이트 서버](/sccm/sum/tools/updates-publisher-options#update-server) 옵션을 구성해야 합니다. 이 구성 옵션을 열려면 **업데이트 작업 영역** &gt; **개요**로 이동하여 **WSUS 및 서명 인증서 구성**을 선택합니다. Updates Publisher 옵션의 [업데이트 서버] 페이지로 이동할 수도 있습니다.
 
 업데이트와 번들을 게시하는 방법에는 두 가지가 있습니다.
 -   업데이트 작업 영역에서 직접. *업데이트 및 번들을 게시하려면* 절차를 참조하세요.
@@ -90,7 +89,7 @@ System Center Updates Publisher에서는 **업데이트 작업 영역**을 사�
 ### <a name="to-publish-updates-and-bundles"></a>업데이트 및 번들을 게시하려면
 1.  **업데이트 작업 영역**으로 이동하여 게시할 업데이트 및 번들을 하나 이상 선택합니다. 그런 다음 리본의 **홈** 탭에서 **게시**를 선택합니다.
 
-2.  **게시** 마법사의 **선택** 페이지에서 업데이트를 게시할 방법을 선택합니다. 옵션은 [업데이트 할당](#assign-updates-and-bundles-to-a-publication)과 동일하게 **전체 콘텐츠**, **메타데이터만** 또는 **자동**입니다.
+2.  **게시** 마법사의 **선택** 페이지에서 업데이트를 게시할 방법을 선택합니다. 옵션은 [업데이트를 할당](#assign-updates-and-bundles-to-a-publication)할 경우 즉, **전체 콘텐츠**, **메타데이터 전용** 또는 **자동**과 동일합니다.
 
     새 게시 인증서로 모든 업데이트에 서명하도록 선택할 수도 있습니다.
 

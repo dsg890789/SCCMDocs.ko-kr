@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8f03013a7f040d9c0dacac3ac8d94bcaa37dd62
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 830f83abffac84f74fdbfaa36281a3475f8959e5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67677286"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804625"
 ---
-# <a name="capabilities-in-technical-preview-1803-for-system-center-configuration-manager"></a>System Center Configuration Manager용 기술 미리 보기 1803의 기능
+# <a name="capabilities-in-technical-preview-1803-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1803의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 아티클에서는 Configuration Manager용 기술 미리 보기 버전 1803에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가할 수 있습니다. 
 
@@ -46,7 +45,7 @@ ms.locfileid: "67677286"
 <!--1321554-->
 많은 고객은 WAN을 통해 원본 배포 지점에서 콘텐츠를 다운로드하는 원격 사무실 또는 지사에서 [풀(pull) 배포 지점](/sccm/core/plan-design/hierarchy/use-a-pull-distribution-point)을 사용합니다. 원격 사무실의 인터넷 연결 속도가 더 빠르거나 WAN 링크에 대한 로드를 줄이려는 경우 이제 Microsoft Azure의 [클라우드 배포 지점](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 원본으로 사용할 수 있습니다. 배포 지점 속성의 **풀(pull) 배포 지점** 탭에 원본을 추가하면 이제 사이트의 모든 클라우드 배포 지점이 사용 가능한 배포 지점으로 나열됩니다. 그렇지 않을 경우 두 사이트 시스템 역할의 동작이 동일하게 유지됩니다. 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - 풀(pull) 배포 지점은 인터넷에 액세스할 수 있어야 Microsoft Azure와 통신할 수 있습니다.
 - 콘텐츠는 원본 클라우드 배포 지점에 배포되어야 합니다.
 
@@ -149,4 +148,4 @@ SCAP 확장의 시험판 버전은 SMSSETUP\TOOLS\ConfigMgrSCAPExtension\ConfigM
 
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

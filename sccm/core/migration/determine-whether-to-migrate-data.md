@@ -1,7 +1,7 @@
 ---
 title: 마이그레이션 항목 선택
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 마이그레이션할 수 있는 데이터와 마이그레이션할 수 없는 데이터를 알아봅니다.
+description: Configuration Manager 현재 분기에 마이그레이션할 수 있는 데이터와 마이그레이션할 수 없는 데이터를 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,25 +10,24 @@ ms.assetid: 99222dc8-0e1e-4513-8302-7a1acf671e9b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b260a9e3deeb8668d736c3ed5ec2c2519e3ed50
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e0031652aba7e31a5a152c7f4834cb2d56d5c9d0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62234685"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803231"
 ---
-# <a name="determine-whether-to-migrate-data-to-system-center-configuration-manager"></a>System Center Configuration Manager로 데이터를 마이그레이션할지 여부 결정
+# <a name="determine-whether-to-migrate-data-to-configuration-manager-current-branch"></a>Configuration Manager 현재 분기로 데이터를 마이그레이션할지 여부 결정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 마이그레이션은 지원되는 버전의 Configuration Manager에서 만든 데이터 및 구성을 새 계층 구조로 전송할 수 있는 프로세스를 제공합니다.  이 프로세스를 통해 다음을 수행할 수 있습니다.  
+Configuration Manager 현재 분기에서 마이그레이션은 지원되는 버전의 Configuration Manager에서 만든 데이터 및 구성을 새 계층 구조로 전송할 수 있는 프로세스를 제공합니다.  이 프로세스를 통해 다음을 수행할 수 있습니다.  
 
 -   여러 계층 구조를 하나로 결합합니다.  
 
 -   랩 배포에서 프로덕션 배포로 데이터 및 구성을 이동합니다.
 
--   System Center Configuration Manager의 업그레이드 경로가 없는 Configuration Manager 2007과 같은 이전 버전의 Configuration Manager 또는 System Center Configuration Manager의 업그레이드 경로를 지원하는 System Center 2012 Configuration Manager에서 데이터 및 구성을 이동합니다.  
+-   Configuration Manager 현재 분기의 업그레이드 경로가 없는 Configuration Manager 2007과 같은 이전 버전의 Configuration Manager 또는 Configuration Manager 현재 분기의 업그레이드 경로를 지원하는 System Center 2012 Configuration Manager에서 데이터 및 구성을 이동합니다.  
 
 배포 지점 사이트 역할 및 배포 지점을 호스팅하는 컴퓨터를 제외하고 인프라(사이트, 사이트 시스템 역할 또는 사이트 시스템 역할을 호스팅하는 컴퓨터 포함)를 마이그레이션하거나 전송하거나 계층 간에 공유할 수 없습니다.  
 
@@ -36,24 +35,19 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 새 계층 구조에 클라이언트를 설치하고 클라이언트가 해당 데이터를 제출하면 고유한 Configuration Manager ID를 통해 Configuration Manager에서 이전에 마이그레이션한 데이터를 각 클라이언트 컴퓨터에 연결할 수 있습니다.  
 
- 마이그레이션을 통해 제공되는 기능을 사용하면 구성 및 배포에 대한 기존의 투자를 유지하면서도 System Center 2012 Configuration Manager에서 처음 도입되어 System Center Configuration Manager에서 계속 제공되는 첫 번째 제품의 핵심 변경 내용을 모두 활용할 수 있습니다. 이러한 변경 내용으로는 더 적은 사이트와 리소스를 사용하는 간단해진 Configuration Manager 계층 구조와, 64비트 하드웨어에서 실행되는 네이티브 64비트 코드를 사용하여 향상된 처리 기능이 있습니다.  
+ 마이그레이션을 통해 제공되는 기능을 사용하면 구성 및 배포에 대한 기존의 투자를 유지하면서도 System Center 2012 Configuration Manager에서 처음 도입되어 Configuration Manager에서 계속 제공되는 첫 번째 제품의 핵심 변경 내용을 모두 활용할 수 있습니다. 이러한 변경 내용으로는 더 적은 사이트와 리소스를 사용하는 간단해진 Configuration Manager 계층 구조와, 64비트 하드웨어에서 실행되는 네이티브 64비트 코드를 사용하여 향상된 처리 기능이 있습니다.  
 
- 마이그레이션에서 지원하는 Configuration Manager 버전에 대한 자세한 내용은 [System Center Configuration Manager에서 수행하는 마이그레이션을 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)을 참조하세요.  
+ 마이그레이션에서 지원하는 Configuration Manager 버전에 대한 자세한 내용은 [마이그레이션을 위한 필수 조건](../../core/migration/prerequisites-for-migration.md)을 참조하세요.  
 
- 다음 섹션의 내용을 참조하여 마이그레이션할 수 있는/없는 데이터를 계획할 수 있습니다.  
+## <a name="Can_Migrate"></a> Configuration Manager 현재 분기로 마이그레이션할 수 있는 데이터
 
--   [System Center Configuration Manager로 마이그레이션할 수 있는 데이터](#Can_Migrate)  
+지원되는 Configuration Manager 계층 구조 간에는 대부분의 개체를 마이그레이션할 수 있습니다. 지원되는 버전의 Configuration Manager 2007에서 마이그레이션된 일부 개체의 인스턴스는 System Center 2012 Configuration Manager 스키마 및 개체 형식에 맞게 수정해야 합니다.
 
--   [System Center Configuration Manager로 마이그레이션할 수 없는 데이터](#Cannot_migrate)  
+이렇게 수정한 내용은 원본 사이트 데이터베이스의 데이터에 영향을 주지 않습니다. 지원되는 버전의 System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기에서 마이그레이션된 개체는 수정할 필요가 없습니다.  
 
-##  <a name="Can_Migrate"></a> System Center Configuration Manager로 마이그레이션할 수 있는 데이터  
- 지원되는 Configuration Manager 계층 구조 간에는 대부분의 개체를 마이그레이션할 수 있습니다. 지원되는 버전의 Configuration Manager 2007에서 마이그레이션된 일부 개체의 인스턴스는 System Center 2012 Configuration Manager 스키마 및 개체 형식에 맞게 수정해야 합니다.
+다음에는 원본 계층의 Configuration Manager 버전에 따라 마이그레이션할 수 있는 개체가 나와 있습니다. 쿼리와 같은 일부 개체는 마이그레이션되지 않습니다. 마이그레이션되지 않는 개체를 계속 사용하려면 새 계층에서 다시 만들어야 합니다. 다른 개체(일부 클라이언트 데이터 포함)는 새 계층 구조에서 클라이언트를 관리할 때 해당 계층 구조에서 자동으로 다시 만들어집니다.  
 
-이렇게 수정한 내용은 원본 사이트 데이터베이스의 데이터에 영향을 주지 않습니다. 지원되는 버전의 System Center 2012 Configuration Manager 또는 System Center Configuration Manager에서 마이그레이션된 개체는 수정할 필요가 없습니다.  
-
- 다음에는 원본 계층의 Configuration Manager 버전에 따라 마이그레이션할 수 있는 개체가 나와 있습니다. 쿼리와 같은 일부 개체는 마이그레이션되지 않습니다. 마이그레이션되지 않는 개체를 계속 사용하려면 새 계층에서 다시 만들어야 합니다. 다른 개체(일부 클라이언트 데이터 포함)는 새 계층 구조에서 클라이언트를 관리할 때 해당 계층 구조에서 자동으로 다시 만들어집니다.  
-
-### <a name="objects-that-you-can-migrate-from-system-center-2012-configuration-manager-or-system-center-configuration-manager-current-branch"></a>System Center 2012 Configuration Manager 또는 System Center Configuration Manager 현재 분기에서 마이그레이션할 수 있는 개체
+### <a name="objects-that-you-can-migrate-from-system-center-2012-configuration-manager-or-configuration-manager-current-branch"></a>System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기에서 마이그레이션할 수 있는 개체
 
 -   System Center 2012 Configuration Manager 이상 버전용 애플리케이션  
 
@@ -63,7 +57,7 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 -   경계  
 
--   컬렉션: 지원되는 버전의 System Center 2012 Configuration Manager 또는 System Center Configuration Manager에서 컬렉션을 마이그레이션하려면 개체 마이그레이션 작업을 사용합니다.  
+-   컬렉션: 지원되는 버전의 System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기에서 컬렉션을 마이그레이션하려면 개체 마이그레이션 작업을 사용합니다.  
 
 -   준수 설정:  
 
@@ -157,8 +151,9 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 -   가상 애플리케이션 패키지  
 
-##  <a name="Cannot_migrate"></a> System Center Configuration Manager로 마이그레이션할 수 없는 데이터  
- 다음과 같은 유형의 개체는 마이그레이션할 수 없습니다.  
+## <a name="Cannot_migrate"></a> Configuration Manager 현재 분기로 마이그레이션할 수 없는 데이터
+
+다음과 같은 유형의 개체는 마이그레이션할 수 없습니다.  
 
 -   AMT 클라이언트 프로비전 정보  
 
@@ -176,9 +171,9 @@ System Center Configuration Manager에서 마이그레이션은 지원되는 버
 
 -   Configuration Manager 2007 웹 보고서  
 
--   System Center 2012 Configuration Manager 및 System Center Configuration Manager 보고서  
+-   System Center 2012 Configuration Manager 및 Configuration Manager 현재 분기 보고서  
 
--   System Center 2012 Configuration Manager 및 System Center Configuration Manager 역할 기반 관리:  
+-   System Center 2012 Configuration Manager 및 Configuration Manager 현재 분기 역할 기반 관리:  
 
     -   보안 역할  
 

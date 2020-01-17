@@ -1,7 +1,7 @@
 ---
 title: 쿼리 만들기
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 쿼리를 만들고 가져오는 방법을 알아봅니다. 예제 쿼리 및 팁이 포함되어 있습니다.
+description: Configuration Manager에서 쿼리를 만들고 가져오는 방법을 알아봅니다. 예제 쿼리 및 팁이 포함되어 있습니다.
 ms.date: 05/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 868049d3-3209-47ec-b34a-9cc26941893a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6c5d99860d8897e34038319c5c16417985132cf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6430614c9b3cd82ee6b0b18c99625ade48e422bb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892078"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795857"
 ---
-# <a name="create-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 쿼리 만들기
+# <a name="create-queries-in-configuration-manager"></a>Configuration Manager에서 쿼리 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 문서에서는 System Center Configuration Manager에서 쿼리를 만들고 가져오는 방법을 설명합니다.  
+이 문서에서는 Configuration Manager에서 쿼리를 만들고 가져오는 방법을 설명합니다.  
 
 ##  <a name="BKMK_Create"></a> 쿼리 만들기  
  이 절차를 사용하여 Configuration Manager에서 쿼리를 만듭니다.  
@@ -43,7 +42,7 @@ ms.locfileid: "70892078"
     |**사용자 리소스**|사용자 이름, 사용자 그룹 이름 및 보안 그룹 이름과 같은 일반적인 사용자 정보를 검색하는 경우 사용합니다.|  
     |**배포**|배포 이름, 일정 및 배포된 컬렉션과 같은 배포의 일반적인 특성을 검색하는 경우 사용합니다.|  
 
-6.  **쿼리 문 편집**을 선택하여 &lt;쿼리 이름\>**문 속성** 대화 상자를 엽니다.  
+6.  **쿼리 문 편집**을 선택하여 &lt;쿼리 이름\> **문 속성** 대화 상자를 엽니다.  
 
 7.  &lt;쿼리 이름\> **문 속성** 대화 상자의 **일반** 탭에서 이 쿼리가 반환되는 특성 및 표시되는 방식을 지정합니다. 새 특성을 추가하려면 **새로 만들기** 아이콘을 선택합니다. WQL(WMI Query Language)에서 쿼리를 직접 입력 또는 편집하려면 **쿼리 언어 표시**를 선택할 수도 있습니다. WMI 쿼리의 예제를 보려면 이 문서의 [Example WQL queries](#BKMK_Example) 섹션을 참조하세요.  
 
@@ -70,14 +69,14 @@ ms.locfileid: "70892078"
 
      조인 작업을 사용하는 방법에 대한 자세한 내용은 SQL Server 설명서를 참조하세요.  
 
-10. &lt;쿼리 이름\> **문 속성** 대화 상자를 닫으려면 **확인**을 클릭합니다.  
+10. &lt;쿼리 이름\> **문 속성** 대화 상자를 닫으려면 **확인**을 선택합니다.  
 
 11. **쿼리 만들기 마법사** 의 **일반** 탭에서 이 쿼리의 결과가 컬렉션의 구성원으로 제한되지 않거나, 지정된 컬렉션의 구성원으로 제한되거나, 쿼리를 실행할 때마다 컬렉션을 확인하도록 지정합니다.  
 
 12. 쿼리 만들기 마법사를 완료합니다. **모니터링** 작업 영역의 **쿼리** 노드에 새 쿼리가 표시됩니다.  
 
 ##  <a name="BKMK_Import"></a> 쿼리 가져오기  
- 이 절차를 사용하여 쿼리를 Configuration Manager로 가져올 수 있습니다. 쿼리를 내보내는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 쿼리를 관리하는 방법](../../../core/servers/manage/manage-queries.md)을 참조하세요.  
+ 이 절차를 사용하여 쿼리를 Configuration Manager로 가져올 수 있습니다. 쿼리를 내보내는 방법에 대한 자세한 내용은 [쿼리를 관리하는 방법](../../../core/servers/manage/manage-queries.md)을 참조하세요.  
 
 1.  Configuration Manager 콘솔에서 **모니터링**을 선택합니다.  
 

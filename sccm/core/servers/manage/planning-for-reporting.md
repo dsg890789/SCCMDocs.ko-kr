@@ -10,19 +10,18 @@ ms.assetid: ff920c84-d5c8-458c-b67f-bc7219b05690
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9920b8b16f076fe9f0ebf807f4231e262fcabf33
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 855f181f44002d9135980729d0a535974b9c1451
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62250390"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794582"
 ---
-# <a name="planning-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager의 보고 계획
+# <a name="planning-for-reporting-in-configuration-manager"></a>Configuration Manager의 보고 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 보고는 SQL Server Reporting Services의 고급 보고 기능을 사용하는 데 도움이 되는 일련의 도구와 리소스를 제공합니다. 다음 섹션을 사용하여 Configuration Manager의 보고를 계획할 수 있습니다.  
+Configuration Manager의 보고는 SQL Server Reporting Services의 고급 보고 기능을 사용하는 데 도움이 되는 일련의 도구와 리소스를 제공합니다. 다음 섹션을 사용하여 Configuration Manager의 보고를 계획할 수 있습니다.  
 
 ##  <a name="BKMK_InstallReportingServicesPoint"></a> 보고 서비스 지점을 설치할 위치 결정  
  사이트에서 Configuration Manager 보고서를 실행하는 경우 보고서가 연결되는 사이트 데이터베이스에 있는 정보에 액세스할 수 있습니다. 다음 섹션에서는 보고 서비스 지점을 설치할 위치와 사용할 데이터 원본을 결정하는 방법을 설명합니다.  
@@ -62,5 +61,5 @@ System Center Configuration Manager의 보고는 SQL Server Reporting Services�
 ## <a name="next-steps"></a>다음 단계  
  다음 추가 항목에서는 Configuration Manager의 보고를 계획하는 데 도움이 되는 정보를 제공합니다.  
 
--   [System Center Configuration Manager에서 보고에 대한 필수 조건](../../../core/servers/manage/prerequisites-for-reporting.md)  
--   [System Center Configuration Manager에서 보고에 대한 모범 사례](../../../core/servers/manage/best-practices-for-reporting.md)  
+-   [보고에 대한 필수 조건](../../../core/servers/manage/prerequisites-for-reporting.md)  
+-   [보고에 대한 모범 사례](../../../core/servers/manage/best-practices-for-reporting.md)  

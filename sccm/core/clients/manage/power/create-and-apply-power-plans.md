@@ -1,7 +1,7 @@
 ---
 title: 전원 계획 만들기 및 적용
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 전원 계획을 만들고 적용합니다.
+description: Configuration Manager에서 전원 계획을 만들고 적용합니다.
 ms.date: 04/17/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 738eddaa-52e2-467f-b453-821ef2884d47
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22ee6cb6cba41baf66e471e32635e30fa9f88bc1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: aca0f3078c046bbc988a289f548ac11e26747088
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62200296"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823979"
 ---
-# <a name="how-to-create-and-apply-power-plans-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 계획을 만들고 적용하는 방법
+# <a name="how-to-create-and-apply-power-plans-in-configuration-manager"></a>Configuration Manager에서 전원 계획을 만들고 적용하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 전원 관리를 사용하면 Configuration Manager에 제공되는 전원 계획을 계층 구조의 컴퓨터 컬렉션에 적용하거나 사용자 지정 전원 계획을 직접 만들 수 있습니다. 이 항목의 절차를 사용하여 기본 제공되거나 사용자 지정 전원 계획을 컴퓨터에 적용합니다.  
+Configuration Manager에서 전원 관리를 사용하면 Configuration Manager에 제공되는 전원 계획을 계층 구조의 컴퓨터 컬렉션에 적용하거나 사용자 지정 전원 계획을 직접 만들 수 있습니다. 이 항목의 절차를 사용하여 기본 제공되거나 사용자 지정 전원 계획을 컴퓨터에 적용합니다.  
 
 > [!IMPORTANT]  
 >  Configuration Manager 전원 계획만 디바이스 컬렉션에 적용할 수 있습니다.  
@@ -33,7 +32,7 @@ System Center Configuration Manager에서 전원 관리를 사용하면 Configur
 
 - 절전 모드 해제 시간: 여러 절전 모드 해제 시간이 데스크톱 컴퓨터에 적용된 경우 자정에 가장 가까운 시간이 사용됩니다.  
 
-  여러 전원 계획이 적용되는 모든 컴퓨터를 표시하려면 **전원 계획이 여러 개인 컴퓨터** 보고서를 사용합니다. 그러면 전원이 충돌하는 컴퓨터를 검색할 수 있습니다. 전원 관리 보고서에 대한 자세한 내용은 [System Center Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법](../../../../core/clients/manage/power/monitor-and-plan-for-power-management.md)을 참조하세요.  
+  여러 전원 계획이 적용되는 모든 컴퓨터를 표시하려면 **전원 계획이 여러 개인 컴퓨터** 보고서를 사용합니다. 그러면 전원이 충돌하는 컴퓨터를 검색할 수 있습니다. 전원 관리 보고서에 대한 자세한 내용은 참조 [전원 관리를 모니터링하고 계획하는 방법](../../../../core/clients/manage/power/monitor-and-plan-for-power-management.md)을 참조하세요.  
 
 > [!IMPORTANT]  
 >  Windows 그룹 정책을 사용하여 구성된 전원 설정은 Configuration Manager 전원 관리에서 구성된 설정을 재정의합니다.  
@@ -63,7 +62,7 @@ System Center Configuration Manager에서 전원 관리를 사용하면 Configur
 7. 사용량 증가(또는 업무) 시간에 대한 사용자 지정 전원 계획을 구성하려면 **사용량 증가 시 계획** 드롭다운 목록에서 **사용자 지정된 사용량 증가 시 계획(ConfigMgr)** 을 선택한 다음 **편집**을 클릭합니다. 사용량 감소(또는 업무 외) 시간에 대한 전원 계획을 구성하려면 **사용량 감소 시 계획** 드롭다운 목록에서 **사용자 지정된 사용량 감소 시 계획(ConfigMgr)** 을 선택한 다음 **편집**을 클릭합니다.  
 
    > [!NOTE]  
-   >  전원 계획을 컴퓨터 컬렉션에 적용할 때 **컴퓨터 활동** 보고서를 사용하면 사용량이 증가하거나 감소하는 시간에 대한 사용 일정을 결정할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법](../../../../core/clients/manage/power/monitor-and-plan-for-power-management.md)을 참조하세요.  
+   >  전원 계획을 컴퓨터 컬렉션에 적용할 때 **컴퓨터 활동** 보고서를 사용하면 사용량이 증가하거나 감소하는 시간에 대한 사용 일정을 결정할 수 있습니다. 자세한 내용은 [전원 관리를 모니터링하고 계획하는 방법](../../../../core/clients/manage/power/monitor-and-plan-for-power-management.md)을 참조하세요.  
 
     또한 기본 제공된 전원 계획에서 **균형(ConfigMgr)** , **고성능(ConfigMgr)** 및 **절전(ConfigMgr)** 을 선택한 다음 **보기** 를 클릭하여 각 전원 계획의 속성을 표시할 수 있습니다.  
 

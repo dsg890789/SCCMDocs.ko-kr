@@ -1,7 +1,7 @@
 ---
 title: 마이그레이션 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: 사용자의 System Center Configuration Manager 환경으로 마이그레이션하는 데 대한 보안 모범 사례 및 개인 정보를 확인합니다.
+description: 사용자의 Configuration Manager 현재 분기 환경으로 마이그레이션하는 데 대한 보안 모범 사례 및 개인 정보를 확인합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 6893fce1-7ad5-4151-9ba9-3096871e8e4a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdfbd5ae0e72cf258e92e9504a955f39e6ced52b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e267403e9d79a3e537a326dacf4d9f618ac7e267
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379306"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803010"
 ---
-# <a name="security-and-privacy-for-migration-to-system-center-configuration-manager"></a>System Center Configuration Manager로의 마이그레이션에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-migration-to-configuration-manager-current-branch"></a>Configuration Manager 현재 분기로의 마이그레이션에 대한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 사용자의 System Center Configuration Manager 환경으로 마이그레이션하는 데 대한 보안 모범 사례 및 개인 정보가 포함되어 있습니다.  
+이 항목에는 사용자의 Configuration Manager 현재 분기 환경으로 마이그레이션하는 데 대한 보안 모범 사례 및 개인 정보가 포함되어 있습니다.  
 
 ## <a name="security-best-practices-for-migration"></a>마이그레이션에 대한 보안 모범 사례  
  마이그레이션을 위한 다음의 보안 모범 사례를 활용하십시오.  
@@ -45,7 +44,7 @@ ms.locfileid: "70379306"
 데이터를 원본 사이트에서 대상 사이트로 마이그레이션할 때 원본 계층의 모든 감사 정보는 손실됩니다.  
 
 ## <a name="privacy-information-for-migration"></a>마이그레이션에 대한 개인 정보  
- 사용자가 원본 인프라에서 확인한 사이트 데이터베이스의 정보가 마이그레이션 과정에서 검색되고 이 데이터는 대상 계층의 데이터베이스에 저장됩니다. System Center Configuration Manager로 원본 사이트 또는 계층에서 검색할 수 있는 정보는 원본 환경에서 사용하도록 설정된 기능과 해당 원본 환경에서 수행된 관리 작업에 따라 다릅니다.  
+ 사용자가 원본 인프라에서 확인한 사이트 데이터베이스의 정보가 마이그레이션 과정에서 검색되고 이 데이터는 대상 계층의 데이터베이스에 저장됩니다. Configuration Manager로 원본 사이트 또는 계층에서 검색할 수 있는 정보는 원본 환경에서 사용하도록 설정된 기능과 해당 원본 환경에서 수행된 관리 작업에 따라 다릅니다.  
 
  보안 및 개인 정보에 대한 자세한 내용은 다음 항목 중 하나를 참조하십시오.  
 
@@ -53,7 +52,7 @@ ms.locfileid: "70379306"
 
 -   System Center 2012 Configuration Manager의 개인 정보에 대한 자세한 내용은 System Center 2012 Configuration Manager 문서 라이브러리에서 [System Center 2012 Configuration Manager의 보안 및 개인 정보](https://technet.microsoft.com/library/gg682033.aspx)를 참조하세요.  
 
--   System Center Configuration Manager의 개인 정보에 대한 자세한 내용은 [System Center Configuration Manager의 보안 및 개인 정보](../../core/plan-design/security/security-and-privacy.md)를 참조하세요.  
+-   Configuration Manager의 개인 정보에 대한 자세한 내용은 [Configuration Manager의 보안 및 개인 정보](../../core/plan-design/security/security-and-privacy.md)를 참조하세요.  
 
 지원되는 데이터 중 일부 또는 모두를 원본 사이트에서 대상 계층으로 마이그레이션할 수 있습니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: b1970688-0cd2-404f-a17f-9e2aa4a78758
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb1a527a96bcf068253f7832d67a4ee650330e49
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f633b0e62056bd1e5733a9e8c58abad4d331bb50
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71311580"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803351"
 ---
 # <a name="set-up-a-configuration-manager-lab"></a>Configuration Manager 랩 설정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 항목의 지침을 따라 시뮬레이트된 실제 작업을 사용하여 Configuration Manager 평가를 위해 랩을 설정할 수 있습니다.  
 
@@ -28,9 +27,9 @@ ms.locfileid: "71311580"
 > Microsoft는 Configuration Manager 평가 버전을 사용하여 이 랩의 미리 구성된 버전을 제공합니다. 자세한 정보는 [Windows 및 Office 배포 및 관리 랩 키트](https://docs.microsoft.com/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab)를 참조하세요. 
 
 ##  <a name="BKMK_LabCore"></a> 핵심 구성 요소  
- System Center Configuration Manager에 대해 환경을 설정하려면 일부 핵심 구성 요소가 Configuration Manager 설치를 지원해야 합니다.    
+ Configuration Manager에 대해 환경을 설정하려면 일부 핵심 구성 요소가 Configuration Manager 설치를 지원해야 합니다.    
 
--   **랩 환경에서는 Windows Server 2012 R2를 사용**하며, 여기에 System Center Configuration Manager를 설치합니다.  
+-   **랩 환경에서는 Windows Server 2012 R2를 사용**하며, 여기에 Configuration Manager를 설치합니다.  
 
      Windows Server 2012 R2 평가판은 [TechNet 평가 센터](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012)에서 다운로드할 수 있습니다.  
 
@@ -40,13 +39,13 @@ ms.locfileid: "71311580"
 
      SQL Server 2012 평가판은 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=29066)에서 다운로드할 수 있습니다.  
 
-     SQL Server에는 System Center Configuration Manager에서 사용하기 위해 충족해야 하는 [지원되는 버전의 SQL Server](../../core/plan-design/configs/support-for-sql-server-versions.md#bkmk_SQLVersions)가 있습니다.  
+     SQL Server에는 Configuration Manager에서 사용하기 위해 충족해야 하는 [지원되는 SQL Server 버전](../../core/plan-design/configs/support-for-sql-server-versions.md#bkmk_SQLVersions)이 있습니다.  
 
     -   Configuration Manager에서 사이트 데이터베이스를 호스트하려면 64비트 버전의 SQL Server가 필요합니다.  
 
     -   **SQL_Latin1_General_CP1_CI_AS**가 **SQL Collation** 클래스로 필요합니다.  
 
-    -   [SQL 인증 대신](https://technet.microsoft.com/library/ms144284.aspx) **Windows 인증**이 필요합니다.  
+    -   [SQL 인증 대신](https://technet.microsoft.com/library/ms144284.aspx)**Windows 인증**이 필요합니다.  
 
     -   전용 **SQL Server 인스턴스**가 필요합니다.  
 
@@ -76,7 +75,7 @@ ms.locfileid: "71311580"
 
     -   가상 컴퓨터는 컴퓨터 자체에 대한 로컬 권한이 필요함  
 
-이 랩에는 필요하지 않지만 System Center Configuration Manager 구현 요구 사항에 대한 추가 정보를 위해 [System Center Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md)을 검토할 수 있습니다. 여기서 참조할 수 없는 소프트웨어 버전은 설명서를 참조하세요.  
+이 랩에는 필요하지 않지만 Configuration Manager 구현 요구 사항에 대한 추가 정보를 위해 [Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md)을 검토할 수 있습니다. 여기서 참조할 수 없는 소프트웨어 버전은 설명서를 참조하세요.  
 
 이러한 구성 요소를 모두 설치한 후에는 Configuration Manager에 대한 Windows 환경을 구성하기 위해 다음과 같은 추가 단계를 수행해야 합니다.  
 
@@ -130,7 +129,7 @@ ms.locfileid: "71311580"
 
 5.  **확인** 을 클릭하여 **ADSI Edit** 콘솔을 닫고 절차를 완료합니다.  
 
-     이 절차에 대한 자세한 내용은 [System Center Configuration Manager에 대한 Active Directory 스키마 확장](../../core/plan-design/network/extend-the-active-directory-schema.md)을 참조하세요.  
+     이 절차에 대한 자세한 내용은 [Configuration Manager에 대한 Active Directory 스키마 확장](../../core/plan-design/network/extend-the-active-directory-schema.md)을 참조하세요.  
 
 ##  <a name="BKMK_ExtADSchLab"></a> extadsch.exe를 사용하여 Active Directory 스키마 확장  
  이 랩에 대해 Active Directory 스키마를 확장하면 최소한의 관리 오버헤드로 모든 Configuration Manager 기능을 사용할 수 있습니다. Active Directory 스키마 확장은 포리스트당 한 번만 수행하는 포리스트 전체 구성입니다. 스키마를 영구적으로 확장하면 기본 Active Directory 구성에서 클래스 및 특성의 집합이 수정됩니다. 이 작업은 되돌릴 수 없습니다. 스키마를 확장하면 Configuration Manager가 랩 환경에서 가장 효과적으로 기능을 수행할 수 있게 하는 구성 요소에 액세스할 수 있습니다.  
@@ -148,7 +147,7 @@ ms.locfileid: "71311580"
 
 4.  시스템 드라이브의 루트 폴더에 있는 **extadsch.log** 를 검토하여 스키마가 제대로 확장되었는지 확인합니다.  
 
-     이 절차에 대한 자세한 내용은 [System Center Configuration Manager에 대한 Active Directory 스키마 확장](../../core/plan-design/network/extend-the-active-directory-schema.md)을 참조하세요.  
+     이 절차에 대한 자세한 내용은 [Configuration Manager에 대한 Active Directory 스키마 확장](../../core/plan-design/network/extend-the-active-directory-schema.md)을 참조하세요.  
 
 ##  <a name="BKMK_OtherTasksLab"></a> 기타 필수 작업  
  또한 설치하기 전에 다음 작업도 완료해야 합니다.  
@@ -217,7 +216,7 @@ ms.locfileid: "71311580"
 
 이 사이트 서버가 관리 지점으로도 사용되므로 이 랩에 대한 BITS를 설치합니다.  
 
-IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 사용할 수 있는 유연하고 확장성 있는 웹 서버입니다. 이는 많은 사이트 시스템 역할을 위해 Configuration Manager에서 사용됩니다. IIS에 대한 자세한 내용은 [System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트](../../core/plan-design/network/websites-for-site-system-servers.md)를 참조하세요.  
+IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 사용할 수 있는 유연하고 확장성 있는 웹 서버입니다. 이는 많은 사이트 시스템 역할을 위해 Configuration Manager에서 사용됩니다. IIS에 대한 자세한 내용은 [사이트 시스템 서버용 웹 사이트](../../core/plan-design/network/websites-for-site-system-servers.md)를 참조하세요.  
 
 [RDC(원격 차등 압축)](https://technet.microsoft.com/library/cc754372.aspx) 은 애플리케이션이 파일 집합에 변경 사항이 생겼는지 확인하는 데 사용할 수 있는 API 집합입니다. RDC를 통해 애플리케이션이 파일의 변경된 부분만 복제하므로 네트워크 트래픽을 최소로 유지할 수 있습니다.  
 
@@ -351,11 +350,11 @@ IIS(인터넷 정보 서비스)는 웹에서 서비스를 호스트하는 데 �
 
 #### <a name="to-download-and-install-configuration-manager"></a>구성 관리자를 다운로드하고 설치하려면  
 
-1.  [System Center 평가](https://www.microsoft.com/evalcenter/evaluate-system-center-2012-configuration-manager-and-endpoint-protection) 페이지로 이동하여 System Center Configuration Manager의 최신 평가판을 다운로드합니다.  
+1.  [System Center 평가](https://www.microsoft.com/evalcenter/evaluate-system-center-2012-configuration-manager-and-endpoint-protection) 페이지로 이동하여 Configuration Manager의 최신 평가판을 다운로드합니다.  
 
 2.  미리 정의된 위치에 다운로드 미디어의 압축을 풉니다.  
 
-3.  [System Center Configuration Manager 설치 마법사를 사용하여 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites)에 나열된 설치 절차를 따릅니다. 해당 절차 내에서 다음을 입력합니다.  
+3.  [Configuration Manager 설치 마법사를 사용하여 사이트 설치](/sccm/core/servers/deploy/install/use-the-setup-wizard-to-install-sites)에 나열된 설치 절차를 따릅니다. 해당 절차 내에서 다음을 입력합니다.  
 
     |사이트 설치 절차 단계|선택 항목|  
     |-----------------------------------------|---------------|  

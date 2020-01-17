@@ -10,17 +10,16 @@ ms.assetid: 51b5964b-374d-4abc-8619-414a9fffad2d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c206a8045429551f361f640febbcda4a39ef9698
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1ee523825947a24c68ea8c3f72292dff8de53df2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62201326"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824999"
 ---
-# <a name="client-installation-methods-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 설치 방법
+# <a name="client-installation-methods-in-configuration-manager"></a>Configuration Manager의 클라이언트 설치 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다양한 방법으로 Configuration Manager 클라이언트 소프트웨어를 설치할 수 있습니다. 한 가지 방법이나 여러 방법의 조합을 사용하세요. 이 문서에서는 각 방법을 설명하므로 조직에 가장 적합한 방법을 배울 수 있습니다.  
 

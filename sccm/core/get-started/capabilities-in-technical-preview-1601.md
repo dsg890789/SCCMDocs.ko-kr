@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1601의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 605a95aa96191fab63f7c4a0e0ce2f8b7c6a8778
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 63274efc1bbc4a22c6f3f38d7e00b2d4f1112150
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70902554"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805271"
 ---
-# <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1601의 기능
+# <a name="capabilities-in-technical-preview-1601-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1601의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1601에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.  
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1601에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.  
 
  **Technical Preview의 알려진 문제:**  
 
@@ -63,9 +62,9 @@ ms.locfileid: "70902554"
 
 ### <a name="improvements-to-conditional-access"></a>향상된 조건부 액세스 기능  
 
--   **System Center Configuration Manager에서 관리되는 PC에 대한 조건부 액세스 지원**  
+-   **Configuration Manager에서 관리되는 PC에 대한 조건부 액세스 지원**  
 
-     이제 System Center Configuration Manager에서 관리되는 PC에 대해 조건부 액세스 정책을 설정할 수 있습니다. Exchange Online 및 SharePoint Online 서비스에 액세스하기 위해 PC는 준수 정책을 준수해야 합니다.  이 새로운 기능을 사용하면 준수 정책을 통해 Azure AD에 PC를 등록하고, Azure AD 등록을 모니터링 및 보고할 수 있습니다.  
+     이제 Configuration Manager에서 관리되는 PC에 대해 조건부 액세스 정책을 설정할 수 있습니다. Exchange Online 및 SharePoint Online 서비스에 액세스하기 위해 PC는 준수 정책을 준수해야 합니다.  이 새로운 기능을 사용하면 준수 정책을 통해 Azure AD에 PC를 등록하고, Azure AD 등록을 모니터링 및 보고할 수 있습니다.  
 
     > [!NOTE]  
     >  Windows 10에서는 조건부 액세스가 아직 지원되지 않습니다.  
@@ -78,7 +77,7 @@ ms.locfileid: "70902554"
 
     -   [Azure AD 자동 등록에 대한 필수 조건](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/?rnd=1)  
 
-    이 옵션을 사용하려면 아래에 설명된 특정 규칙을 사용하여 Configuration Manager에서 준수 정책을 만들고, Intune 콘솔에서 조건부 액세스 정책을 설정해야 합니다.  또한 호환 PC에만 액세스를 허용하려면 Windows PC 요구 사항을 **디바이스가 호환되어야 함** 옵션으로 설정해야 합니다. 다음은 System Center Configuration manager에서 관리하는 PC에 적용되는 준수 정책 규칙입니다.  
+    이 옵션을 사용하려면 아래에 설명된 특정 규칙을 사용하여 Configuration Manager에서 준수 정책을 만들고, Intune 콘솔에서 조건부 액세스 정책을 설정해야 합니다.  또한 호환 PC에만 액세스를 허용하려면 Windows PC 요구 사항을 **디바이스가 호환되어야 함** 옵션으로 설정해야 합니다. 다음은 Configuration Manager에서 관리하는 PC에 적용되는 준수 정책 규칙입니다.  
 
     -   **Azure Active Directory에서 등록 필요:** 이 규칙은 사용자의 디바이스가 Azure AD에 연결된 작업 영역인지 확인합니다. 그렇지 않은 경우 디바이스는 Azure AD에 자동으로 등록됩니다. 자동 등록은 Windows 8.1에서만 지원됩니다. Windows 7 PC의 경우 자동 등록을 수행하기 위해 MSI를 배포합니다. 자세한 내용은 [여기](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/?rnd=1)를 참조하세요.  
 
@@ -137,7 +136,7 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 |![클라이언트에 대한 오프라인 상태 아이콘](media/offline-status-icon.png)|클라이언트가 오프라인 상태입니다.|  
 |![클라이언트에 대한 알 수 없는 상태 아이콘](media/unknown-status-icon.png)|클라이언트 상태를 알 수 없습니다.|  
 
-### <a name="prerequisites"></a>필수 구성 요소  
+### <a name="prerequisites"></a>전제 조건  
  클라이언트 온라인 상태에는 필수 구성 요소가 없습니다. Configuration Manager Technical Preview 1601이 설치되기만 하면 바로 사용할 수 있습니다.  
 
 ### <a name="limitations"></a>제한 사항  
@@ -201,18 +200,18 @@ Technical Preview 1601부터는 Configuration Manager 콘솔에서 클라이언�
 
  새 설정을 보려면 **구성 항목 만들기** 마법사의 구성 항목 **디바이스 설정** 페이지에서 **Microsoft Edge**를 선택하세요.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
+ 자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
 
 ### <a name="compliance-settings-for-windows-10-team-devices"></a>Windows 10 Team 디바이스에 대한 준수 설정  
  이러한 새 준수 설정을 사용하여 Surface Hub 디바이스와 같이 Windows 10 Team이 실행되는 디바이스를 구성합니다.  
 
  새 설정을 보려면 **구성 항목 만들기** 마법사의 구성 항목 **디바이스 설정** 페이지에서 **Windows 10 Team**을 선택하세요.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
+ 자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
 
 ### <a name="android---kiosk-mode-for-samsung-knox-standardbr-hybrid"></a>Android - Samsung KNOX Standard용 키오스크 모드<br />하이브리드  
  키오스크 모드에서는 디바이스를 잠가 특정 기능만 작동하도록 허용할 수 있습니다. 예를 들어, 디바이스에서 지정된 관리되는 앱만 실행할 수 있게 하거나 디바이스에서 볼륨 단추를 사용되지 않도록 설정할 수 있습니다. 이러한 설정은 POS 디바이스와 같이 한 가지 기능만 수행하도록 지정된 디바이스 또는 디바이스의 데모 모델에 사용할 수 있습니다. 이러한 설정을 Samsung KNOX Standard 디바이스의 **Windows 8.1 및 Windows 10** 구성 항목에서는 사용할 수 없습니다(해당 설정이 Windows 10 디바이스에만 적용됨).  
 
  새 설정을 보려면 **구성 항목 만들기** 마법사의 구성 항목 **디바이스 설정** 페이지에서 **키오스크 모드 - Samsung KNOX**를 선택하세요.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
+ 자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  

@@ -1,7 +1,7 @@
 ---
 title: 버전 1706의 새로운 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1706에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
+description: Configuration Manager 1706 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
 ms.date: 08/11/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4c0bc6710f6978eb4ed95b11de6be6845d72e8e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 2bc287f11db08d8cdf533465d188966a33e79bfb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68338792"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802738"
 ---
-# <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1706의 새로운 기능
+# <a name="what39s-new-in-version-1706-of-configuration-manager"></a>Configuration Manager 1706 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 현재 분기의 업데이트 1706은 버전 1606, 1610 또는 1702를 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
+Configuration Manager 현재 분기의 업데이트 1706은 버전 1606, 1610 또는 1702를 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
@@ -139,7 +138,7 @@ Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했�
   - OpenSearch XML URL
   - 홈페이지(데스크톱만 해당)
 
-모든 Windows 10 설정에 대한 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 10 및 Windows 8.1 디바이스에 대한 구성 항목을 만드는 방법](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)을 참조하세요.
+모든 Windows 10 설정에 대한 자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Windows 10 및 Windows 8.1 디바이스에 대한 구성 항목을 만드는 방법](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)을 참조하세요.
 
 ### <a name="new-device-compliance-policy-rules"></a>새 디바이스 준수 정책 규칙
 
@@ -215,7 +214,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.    
 
 
-#### <a name="prerequisites"></a>필수 구성 요소
+#### <a name="prerequisites"></a>전제 조건
 - 모든 소프트웨어 업데이트 지점에서 Windows Server 2016이 실행되어야 합니다.    
 - 이 기능은 사용하기 위해 설정해야 하는 시험판 기능입니다. 자세한 내용은 [업데이트에서 시험판 기능 사용](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)을 참조하세요.
 

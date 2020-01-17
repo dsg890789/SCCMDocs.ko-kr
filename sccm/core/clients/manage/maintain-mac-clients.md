@@ -10,16 +10,15 @@ ms.assetid: cf6337a2-700c-47f3-b6f8-5814f9b81e59
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbc0800b78023e3813a31d2482a64a913008e306
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6a4b8e0678cb2fe438159d401852c8caa123659d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889970"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824183"
 ---
 # <a name="maintain-mac-clients"></a>Mac 클라이언트 유지 관리
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다음과 같습니다.
 
@@ -57,7 +56,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
      **예:** 값을 기본값으로 유지하는 경우 인증서 만료 45일 전에 마법사가 24시간마다 열립니다.  인증서 만료 3일 전부터는 마법사가 8시간마다 열립니다.  
 
-     **예:** 다음 명령줄 또는 스크립트를 사용하여 첫 번째 갱신 기간을 20일로 설정할 수 있습니다.  
+     **예제:** 다음 명령줄 또는 스크립트를 사용하여 첫 번째 갱신 기간을 20일로 설정할 수 있습니다.  
 
      `sudo defaults write com.microsoft.ccmclient RenewalPeriod1 1728000`  
 
@@ -131,7 +130,7 @@ Mac 클라이언트 제거하고 해당 인증서를 갱신하는 절차는 다�
 
 14. 방금 만든 구성 항목을 포함하는 구성 기준을 만들고 이를 1단계에서 만든 디바이스 컬렉션에 배포합니다.  
 
-     구성 기준을 만들고 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 구성 기준을 만드는 방법](../../../compliance/deploy-use/create-configuration-baselines.md) 및 [System Center Configuration Manager에서 구성 기준을 배포하는 방법](../../../compliance/deploy-use/deploy-configuration-baselines.md)을 참조하세요.  
+     구성 기준을 만들고 배포하는 방법에 대한 자세한 내용은 [구성 기준을 만드는 방법](../../../compliance/deploy-use/create-configuration-baselines.md) 및 [구성 기준을 배포하는 방법](../../../compliance/deploy-use/deploy-configuration-baselines.md)을 참조하세요.  
 
 15. SMSID가 제거된 Mac 컴퓨터에서 다음 명령을 실행하여 새 인증서를 설치합니다.  
 

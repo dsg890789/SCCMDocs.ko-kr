@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1604의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1604에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1604에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e41114313a896403368f8b4eb3c4c1fa6f2ebb31
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: aed156d042d57a1420a2c036aeb77066422e6bdf
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379379"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805203"
 ---
-# <a name="capabilities-in-technical-preview-1604-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1604의 기능
+# <a name="capabilities-in-technical-preview-1604-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1604의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1604에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.  
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1604에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.  
 
  다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.  
 
@@ -146,7 +145,7 @@ ms.locfileid: "70379379"
     >  기술 미리 보기 및 단일 배포 지점으로 이 작업을 완료하려면 모든 클라이언트의 네트워크 위치에 대해 배포 지점을 느린 속도로 구성합니다. 이제 단일 클라이언트에 콘텐츠를 배포합니다.  해당 클라이언트가 콘텐츠를 가져온 후 클라이언트 위치가 느린 것으로 간주되는 배포 지점을 사용하려면 먼저 콘텐츠 원본으로 사용할 로컬 피어를 찾아야 하는 추가 클라이언트에 콘텐츠를 배포할 수 있습니다.  
 
 ##  <a name="bkmk_passport"></a> KSP로서 Passport for Work에 대한 지원  
- System Center Configuration Manager에서는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법인 Microsoft Passport for Work와 통합할 수 있습니다.  
+ Configuration Manager에서는 Active Directory 또는 Azure Active Directory 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대신하는 대체 로그인 방법인 Microsoft Passport for Work와 통합할 수 있습니다.  
 Passport를 사용하면 암호 대신 사용자 제스처를 사용하여 로그인할 수 있습니다. 사용자 제스처는 단순 PIN, 생체 인식 인증(예: Windows Hello) 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.  
 
 -   Configuration Manager에서 사용자가 로그인하는 데 사용할 수 있는 제스처와 사용할 수 없는 제스처를 제어하고 PIN 복잡성 요구 사항을 구성할 수 있습니다.  

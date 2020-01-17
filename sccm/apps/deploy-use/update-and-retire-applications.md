@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 업데이트 및 사용 중지
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 배포된 애플리케이션을 수정, 대체 또는 제거합니다.
+description: Configuration Manager를 사용하여 배포된 애플리케이션을 수정, 대체 또는 제거합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,20 +10,19 @@ ms.assetid: 68ac8a07-8e54-4a3c-91e3-e50dc1cabf5d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 767d6b54d19158a33b582dc3ab605d780914b18e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7770f1db0e311186a908890dc339401ed3cbeb4b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62198312"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817825"
 ---
-# <a name="update-and-retire-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 업데이트 및 사용 중지
+# <a name="update-and-retire-applications-with-configuration-manager"></a>Configuration Manager를 사용하여 애플리케이션 업데이트 및 사용 중지
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
-나중에 애플리케이션을 변경하거나, 애플리케이션을 제거하거나, 이미 배포된 애플리케이션을 새 애플리케이션으로 대체할 가능성이 큽니다. System Center Configuration Manager는 애플리케이션 업데이트 및 사용 중지에 도움이 되는 다음 기능을 제공합니다.  
+나중에 애플리케이션을 변경하거나, 애플리케이션을 제거하거나, 이미 배포된 애플리케이션을 새 애플리케이션으로 대체할 가능성이 큽니다. Configuration Manager는 애플리케이션 업데이트 및 사용 중지에 도움이 되는 다음 기능을 제공합니다.  
 
 - **애플리케이션 수정**. 애플리케이션 또는 배포 유형을 변경하면 Configuration Manager에서 이러한 변경 내용의 기록을 유지 관리합니다. 언제든지 애플리케이션을 이전 수정 버전으로 되돌릴 수 있습니다. 또한 각 수정 버전의 속성을 확인하고 이전의 애플리케이션 수정 버전을 복원하거나, 이전 수정 버전을 삭제할 수 있습니다.  
 

@@ -10,17 +10,16 @@ ms.assetid: ddcad9f2-a542-4079-83ca-007d7cb44995
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 361676d51c83e298ab2e0e57fcc4cfad2d0b2906
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c6c7aff755dea033cc9debf90680ea7f4d6dd183
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378052"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817621"
 ---
-# <a name="deploy-app-v-virtual-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 App-V 가상 애플리케이션 배포
+# <a name="deploy-app-v-virtual-applications-with-configuration-manager"></a>Configuration Manager에서 App-V 가상 애플리케이션 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager를 사용하여 가상 애플리케이션을 관리할 때 다음과 같은 이점이 있습니다.  
 
@@ -34,7 +33,7 @@ Configuration Manager를 사용하여 가상 애플리케이션을 관리할 때
 
 Microsoft App-V(Application Virtualization)를 사용하여 애플리케이션을 만들고 시퀀스하는 방법에 대한 자세한 내용은 TechNet 라이브러리에서 [애플리케이션 가상화](https://technet.microsoft.com/library/cc843848.aspx)를 참조하세요.  
 
-가상 애플리케이션을 만들어 배포할 때는 애플리케이션을 만들기 위한 다른 System Center Configuration Manager 요구 사항 및 절차 외에 다음 사항을 고려해야 합니다.
+가상 애플리케이션을 만들어 배포할 때는 애플리케이션을 만들기 위한 다른 Configuration Manager 요구 사항 및 절차 외에 다음 사항을 고려해야 합니다.
 
 -   컴퓨터에 가상 애플리케이션을 배포하려면 Configuration Manager 클라이언트와 App-V 클라이언트를 컴퓨터에 설치해야 합니다. 클라이언트 디바이스에는 데스크톱 및 휴대용 컴퓨터와 VDI(가상 데스크톱 인프라) 클라이언트가 포함될 수 있습니다. Configuration Manager와 App-V 클라이언트 소프트웨어가 함께 작동하여 가상 애플리케이션 패키지를 제공하고 찾아서 시작합니다. Configuration Manager 클라이언트는 App-V 클라이언트에 대한 가상 애플리케이션 패키지 제공을 관리합니다. App-V 클라이언트는 클라이언트에서 가상 애플리케이션을 실행합니다.  
 
@@ -61,8 +60,8 @@ Microsoft App-V(Application Virtualization)를 사용하여 애플리케이션�
 
      또한 기술 자료 문서 [2645225](https://go.microsoft.com/fwlink/p/?LinkId=237322)에 설명된 핫픽스를 사용하여 App-V 4.6 SP1 클라이언트를 업데이트해야 가상 애플리케이션을 배포할 수 있습니다.  
 
--   **App-V 5, App-V 5.0 SP1, App-V 5.0 SP2, App-V 5.0 SP3 및 App-V 5.1**: App-V 5.0 SP2의 경우 [핫픽스 패키지 5](https://support.microsoft.com/en-us/kb/2963211)를 설치하거나 App-V 5.0 SP3을 사용해야 합니다.  
--   **App-V 5.2**: 이는 Windows 10 Education(1607 이상), Windows 10 Enterprise(1607 이상), Windows Server 2016에 기본 제공됩니다.
+-   **App-V 5, App-V 5.0 SP1, App-V 5.0 SP2, App-V 5.0 SP3 및 App-V 5.1**: App-V 5.0 SP2의 경우 [Hotfix Package 5](https://support.microsoft.com/en-us/kb/2963211)를 설치하거나 App-V 5.0 SP3을 사용해야 합니다.  
+-   **App-V 5.2**: Windows 10 Education(1607 이상), Windows 10 Enterprise(1607 이상), Windows Server 2016에 기본 제공됩니다.
 
 Windows 10의 App-V에 대한 자세한 내용은 다음 항목을 참조하세요.
 
@@ -73,9 +72,9 @@ Windows 10의 App-V에 대한 자세한 내용은 다음 항목을 참조하세�
 ##  <a name="steps-to-manage-app-v-virtual-applications"></a>App-V 가상 애플리케이션을 관리하는 단계  
  App-V 가상 애플리케이션을 관리하려면 다음 단계를 수행합니다.  
 
-1.   **시퀀싱**: 시퀀싱은 App-V Sequencer를 사용하여 애플리케이션을 가상 애플리케이션으로 변환하는 프로세스입니다.
+1.   **시퀀스**: 시퀀싱은 App-V Sequencer를 사용하여 애플리케이션을 가상 애플리케이션으로 변환하는 프로세스입니다.
 
-2.   **만들기**: 배포 유형 만들기 마법사를 사용하여 시퀀싱된 애플리케이션을 Configuration Manager 배포 유형으로 가져온 다음 애플리케이션에 추가할 수 있습니다. 여러 가상 애플리케이션이 설정을 공유할 수 있는 가상 환경을 만들 수도 있습니다.
+2.   **만들기**: 배포 유형 만들기 마법사를 사용하여 시퀀싱된 애플리케이션을 Configuration Manager 배포 유형으로 가져온 다음, 애플리케이션에 추가할 수 있습니다. 여러 가상 애플리케이션이 설정을 공유할 수 있는 가상 환경을 만들 수도 있습니다.
 
 3.   **배포**: 배포는 App-V 애플리케이션을 Configuration Manager 배포 지점에서 사용할 수 있게 만드는 프로세스입니다.
 
@@ -121,7 +120,7 @@ Configuration Manager를 사용할 때는 다운로드하고 실행하는 것이
 |가상 애플리케이션이 처음 배포된 후에 클라이언트에서 Configuration Manager를 통해 가상 애플리케이션 관리를 시작합니다. 그리고 나면 Configuration Manager가 컴퓨터의 모든 App-V 애플리케이션을 관리해야 합니다.|추가 정보가 없습니다.|  
 |애플리케이션의 로컬 배달을 사용하도록 콘텐츠를 적절한 배포 지점에 배포합니다.|[콘텐츠 및 콘텐츠 인프라 관리](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)를 참조하세요.|  
 |Configuration Manager 클라이언트에 애플리케이션을 배포합니다.<br /><br /> 매니페스트 XML 파일을 만들지 않는 이전 버전의 시퀀서로 App-V 애플리케이션이 만들어진 경우 최신 버전의 시퀀서로 이 애플리케이션을 열고 저장하여 매니페스트 XML 파일을 만들 수 있습니다. 이 파일은 Configuration Manager를 사용하여 가상 애플리케이션을 배포하는 데 필요합니다.<br /><br /> App-V는 SoftGrid 4.1 SP1 또는 4.2 버전의 시퀀서로 만들어진 가상 애플리케이션 패키지를 지원합니다.<br /><br /> 애플리케이션이 이전에 로컬로 설치된 경우 이를 제거한 후에 애플리케이션의 가상 버전을 배포해야 합니다.|[애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.|  
-|System Center Configuration Manager에서는 더 이상 가상 애플리케이션이 포함된 패키지와 프로그램을 사용할 수 없습니다. Configuration Manager 2007에서 System Center Configuration Manager로 마이그레이션할 때 Configuration Manager가 이러한 패키지를 애플리케이션으로 변환합니다.<br /><br /> Configuration Manager 2007 보급 알림은 다음 배포 유형으로 변환됩니다.<br /><br /> - 보급 알림이 없는 App-V 패키지 마이그레이션: 기본 배포 유형 설정을 사용하는 한 가지 배포 유형입니다.<br /><br /> - 보급 알림이 하나 포함된 App-V 패키지 마이그레이션: Configuration Manager 2007 보급 알림과 동일한 설정을 사용하는 <br />                한 가지 배포 유형입니다.<br /><br /> - 보급 알림이 여러 개 포함된 App-V 패키지 마이그레이션: 각각에 대한 배포 유형 <br />                Configuration Manager 2007 보급 알림은 해당 보급 알림에 대한 설정을 사용합니다.|[Configuration Manager 개체를 System Center Configuration Manager로 마이그레이션하도록 계획](../../core/migration/planning-for-the-migration-of-objects.md)을 참조하세요.|  
+|Configuration Manager에서는 더 이상 가상 애플리케이션이 포함된 패키지와 프로그램을 사용할 수 없습니다. Configuration Manager 2007에서 Configuration Manager 현재 분기로 마이그레이션할 때 Configuration Manager가 이러한 패키지를 애플리케이션으로 변환합니다.<br /><br /> Configuration Manager 2007 보급 알림은 다음 배포 유형으로 변환됩니다.<br /><br /> - 보급 알림이 포함되지 않은 APP-V 패키지 마이그레이션:  기본 배포 유형 설정을 사용하는 한 가지 배포 유형입니다.<br /><br /> - 보급 알림이 하나 포함된 APP-V 패키지 마이그레이션: 보급 알림과 동일한 설정을 사용하는 <br />                한 가지 배포 유형입니다.<br /><br /> - 보급 알림이 여러 개 포함된 APP-V 패키지 마이그레이션: 배포 유형. 각각의 <br />                Configuration Manager 2007 보급 알림은 해당 보급 알림에 대한 설정을 사용합니다.|[현재 분기로 Configuration Manager 개체의 마이그레이션 계획](../../core/migration/planning-for-the-migration-of-objects.md)을 참조 하세요.|  
 
 ##  <a name="migrating-app-v-5-connection-groups-to-configuration-manager-virtual-environments"></a>App-V 5 연결 그룹을 Configuration Manager 가상 환경으로 마이그레이션  
 Configuration Manager의 App-V 가상 환경에서는 배포된 가상 애플리케이션이 클라이언트 컴퓨터에 있는 동일한 파일 시스템과 레지스트리를 공유할 수 있습니다. 즉, 일반 가상 애플리케이션과 달리 이러한 애플리케이션은 서로 데이터를 공유할 수 있습니다. 가상 환경은 애플리케이션이 설치되거나 설치된 애플리케이션을 클라이언트가 다음에 평가할 때 클라이언트 컴퓨터에서 만들어지거나 변경됩니다. 가상 환경은 독립 실행형 App-V 5의 연결 그룹과 유사합니다.  
@@ -205,6 +204,6 @@ Configuration Manager는 App-V 5 공유 콘텐츠 저장소 기능을 지원합�
 |모든 가상 애플리케이션 인스턴스 수|검색된 모든 App-V 애플리케이션 수를 표시합니다(App-V 4.6에만 해당).|  
 
 ### <a name="log-files"></a>로그 파일  
-Configuration Manager는 가상 애플리케이션 배포에 대한 정보를 로그 파일에 기록합니다. 가상 애플리케이션 및 Configuration Manager 애플리케이션 관리에서 사용하는 로그 파일에 대한 자세한 내용은 [System Center Configuration Manager의 로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요.  
+Configuration Manager는 가상 애플리케이션 배포에 대한 정보를 로그 파일에 기록합니다. 가상 애플리케이션 및 Configuration Manager 애플리케이션 관리에서 사용하는 로그 파일에 대한 자세한 내용은 [로그 파일](../../core/plan-design/hierarchy/log-files.md)을 참조하세요.  
 
 Windows Vista, Windows 7 및 Windows 8의 경우 App-V 클라이언트의 로그는 C:\ProgramData\Microsoft\Application Virtualization Client에 있습니다.  

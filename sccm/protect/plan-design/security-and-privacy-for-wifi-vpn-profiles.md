@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi 및 VPN 프로필 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 디바이스의 Wi-Fi 및 VPN 프로필 관리에 대한 보안 모범 사례를 알아봅니다.
+description: Configuration Manager에서 디바이스의 Wi-Fi 및 VPN 프로필 관리를 위한 보안 모범 사례를 알아봅니다.
 ms.date: 12/28/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -10,17 +10,16 @@ ms.assetid: ef3ab519-9cf7-47fc-8831-d400e0e96df8
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae2b5825948b8f25491a111e62de9fd6e3534062
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 1d582679009b90d7d8806c98a1598e040f80390d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65496303"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819083"
 ---
-# <a name="security-and-privacy-for-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Wi-Fi 및 VPN 프로필에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-wi-fi-and-vpn-profiles-in-configuration-manager"></a>Configuration Manager의 Wi-Fi 및 VPN 프로필에 대한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 ##  <a name="security-best-practices-for-wi-fi--and-vpn-profiles"></a>Wi-Fi 및 VPN 프로필에 대한 보안 모범 사례  
  디바이스의 Wi-Fi 및 VPN 프로필을 관리하는 경우 다음 보안 모범 사례를 따르세요.  

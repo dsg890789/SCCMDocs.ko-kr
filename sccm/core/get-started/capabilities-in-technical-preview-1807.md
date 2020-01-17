@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41abaa02759a2f49b04f56963e6285b972a61cfc
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 658c820944f13ef828849c7579c057dee139328c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891666"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804353"
 ---
 # <a name="capabilities-in-configuration-manager-technical-preview-version-1807"></a>Configuration Manager Technical Preview 버전 1807의 기능 
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager Technical Preview 버전 1807에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가합니다. 
 
@@ -79,7 +78,7 @@ Steps to workaround, if any.
 - **피드백**: Configuration Manager [UserVoice 사이트](https://configurationmanager.uservoice.com/) 표시  
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 - 클라이언트 OS에서 Configuration Manager 콘솔을 사용합니다.  
 
@@ -170,7 +169,7 @@ Steps to workaround, if any.
 애플리케이션 승인 요청에 대한 메일 알림을 구성합니다. 사용자가 애플리케이션을 요청하면 메일을 받게 됩니다. 메일의 링크를 클릭하면 Configuration Manager 콘솔을 사용하지 않고 요청을 승인 또는 거부할 수 있습니다.
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 #### <a name="to-send-email-notifications"></a>메일 알림을 보내려면
 - [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정합니다.  

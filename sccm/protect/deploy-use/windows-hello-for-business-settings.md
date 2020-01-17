@@ -10,17 +10,16 @@ ms.assetid: a95bc292-af10-4beb-ab56-2a815fc69304
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fa638c292755dafbb03262680a240103e082ad9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 134f5e718fc72eddc2264ef5864c93bd519378c0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660865"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819304"
 ---
 # <a name="windows-hello-for-business-settings-in-configuration-manager"></a>Configuration Manager의 비즈니스용 Windows Hello 설정
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1245704-->
 Configuration Manager는 비즈니스용 Windows Hello와 통합됩니다. (이 기능은 이전에 Microsoft Passport for Work로 알려져 있었습니다.) 비즈니스용 windows Hello는 Windows 10 장치에 대 한 대체 로그인 방법입니다. 이는 Active Directory 또는 Azure AD(Azure Active Directory) 계정을 사용하여 암호, 스마트 카드 또는 가상 스마트 카드를 대체합니다. 비즈니스용 Hello를 통해 암호 대신 *사용자 제스처* 를 사용하여 로그인할 수 있습니다. 사용자 제스처는 PIN, 생체 인식 인증 또는 외부 디바이스(예: 지문 판독기)일 수 있습니다.
@@ -61,9 +60,9 @@ Configuration Manager는 다음과 같은 방법으로 비즈니스용 Windows H
 
     - **TPM(신뢰할 수 있는 플랫폼 모듈) 사용**: TPM은 추가적인 데이터 보안 계층을 제공합니다. 다음 값 중 하나를 선택합니다.  
 
-      - **필수**: 액세스할 수 있는 TPM이 있는 디바이스만 비즈니스용 Windows Hello를 프로비전할 수 있습니다.  
+      - **필수**: 액세스할 수는 TPM이 있는 디바이스만 비즈니스용 Windows Hello를 프로비전할 수 있습니다.  
 
-      - **기본 설정**: 디바이스는 먼저 TPM을 사용하려고 합니다. 사용할 수 없는 경우 소프트웨어 암호화를 사용할 수 있습니다.
+      - **기본 설정**: 디바이스에서 먼저 TPM을 사용하려고 합니다. 사용할 수 없는 경우 소프트웨어 암호화를 사용할 수 있습니다.
 
     - **인증 방법**:이 옵션을 **구성 안 함** 또는 **키 기반**으로 설정 합니다.
 
@@ -74,11 +73,11 @@ Configuration Manager는 다음과 같은 방법으로 비즈니스용 Windows H
 
     - **최대 pin 길이 구성**: 사용자 PIN의 최대 길이를 요구 하려는 경우이 옵션을 사용 하도록 설정 하 고 값을 지정 합니다. 사용 하도록 설정 하는 경우 기본값은 `127`입니다.
 
-    - **PIN 만료(일) 필요**: 디바이스 PIN을 변경해야 할 때까지의 기간(일)을 지정합니다.
+    - **PIN 만료 필요(일)** : 사용자가 디바이스 PIN을 변경해야 할 때까지의 기간(일)을 지정합니다.
 
     - **이전 pin 다시 사용 안 함**: 사용자가 이전에 사용한 pin을 사용 하도록 허용 하지 않습니다.
 
-    - **PIN에 대문자 필요**: 비즈니스용 Windows Hello PIN에 대문자를 사용해야 하는지 여부를 지정합니다. 다음 중에서 선택합니다.  
+    - **PIN에 대문자 필요**: 비즈니스용 Windows Hello PIN에 대문자를 포함해야 하는지 여부를 지정합니다. 다음 중에서 선택합니다.  
 
       - **허용**: PIN에 대문자를 사용할 수 있지만, 사용하지 않아도 됩니다.
 
@@ -86,7 +85,7 @@ Configuration Manager는 다음과 같은 방법으로 비즈니스용 Windows H
 
       - **허용 안 함**: PIN에 대문자를 사용할 수 없습니다.  
 
-    - **PIN에 소문자 필요** - 비즈니스용 Windows Hello PIN에 소문자를 사용해야 하는지 여부를 지정합니다. 다음 중에서 선택합니다.  
+    - **PIN에 소문자 필요**: 비즈니스용 Windows Hello PIN에 소문자를 포함해야 하는지 여부를 지정합니다. 다음 중에서 선택합니다.  
 
       - **허용**: PIN에 소문자를 사용할 수 있지만, 사용하지 않아도 됩니다.
 
@@ -94,7 +93,7 @@ Configuration Manager는 다음과 같은 방법으로 비즈니스용 Windows H
 
       - **허용 안 함**: PIN에 소문자를 사용할 수 없습니다.  
 
-    - **특수 문자 구성**: PIN에 특수 문자의 사용을 지정합니다. 다음 중에서 선택합니다.  
+    - **특수 문자 구성**: PIN의 특수 문자 사용을 지정합니다. 다음 중에서 선택합니다.  
 
         > [!NOTE]
         > 특수 문자에는 다음 집합이 포함 됩니다.
@@ -103,7 +102,7 @@ Configuration Manager는 다음과 같은 방법으로 비즈니스용 Windows H
         > ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
         > ```
 
-      - **허용**: 사용자가 PIN에 특수 문자를 사용할 수 있지만 반드시 필요 하지는 않습니다.  
+      - **허용**: PIN에 특수 문자를 사용할 수 있지만, 사용하지 않아도 됩니다.  
 
       - **필수**: PIN에 특수 문자를 하나 이상 포함해야 합니다.  
 
@@ -137,7 +136,7 @@ Configuration Manager는 다음과 같은 방법으로 비즈니스용 Windows H
 
 1. **Active Directory 사용자 및 컴퓨터** 콘솔을 엽니다.
 
-1. 도메인을 선택 하 고 **동작** 메뉴로 이동 하 여 **속성**을 선택 합니다.
+1. 도메인을 선택하고 **작업** 메뉴로 이동하여 **속성**을 선택합니다.
 
 1. **보안** 탭으로 전환 하 고 **고급**을 선택 합니다.
 
@@ -154,7 +153,7 @@ Configuration Manager는 다음과 같은 방법으로 비즈니스용 Windows H
 
 1. **속성** 섹션에서 **msDS-KeyCredentialLink 읽기**를 선택합니다.
 
-1. **확인** 을 선택 하 여 변경 내용을 저장 하 고 모든 창을 닫습니다.
+1. **확인**을 선택하여 변경 내용을 저장하고 모든 창을 닫습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

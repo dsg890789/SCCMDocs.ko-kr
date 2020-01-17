@@ -10,31 +10,30 @@ ms.assetid: 61f5c774-7667-44ae-b8e4-a4951318b183
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c73a541c11d9681c17198d4bf4eaad9989cd56a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 4ec74f030dc216d85c9c9f52453d9c742a9abd39
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888966"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798674"
 ---
-# <a name="install-site-system-roles-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 사이트 시스템 역할 설치
+# <a name="install-site-system-roles-for-configuration-manager"></a>Configuration Manager에 대한 사이트 시스템 역할 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 콘솔에는 사이트 시스템 역할을 설치하는 데 사용할 수 있는 두 가지 마법사가 있습니다.  
+Configuration Manager 콘솔에는 사이트 시스템 역할을 설치하는 데 사용할 수 있는 두 가지 마법사가 있습니다.  
 
 -   **사이트 시스템 역할 추가 마법사**: 사이트의 기존 사이트 시스템 서버에 사이트 시스템 역할을 추가하려면 이 마법사를 사용합니다.  
 
 -   **사이트 시스템 서버 만들기 마법사**: 새 서버를 사이트 시스템 서버로 지정한 다음, 이 서버에 사이트 시스템 역할을 하나 이상 설치하려면 이 마법사를 사용합니다. 이 마법사는 첫 페이지에서 사용할 서버 이름과 사이트 시스템 역할을 추가할 사이트를 지정해야 하는 점을 제외하고 **사이트 시스템 역할 추가 마법사**와 같습니다.  
 
-원격 컴퓨터(SMS 공급자의 인스턴스 포함)에 사이트 시스템 역할을 설치하면 원격 컴퓨터의 컴퓨터 계정이 사이트 서버의 로컬 그룹에 추가됩니다. 사이트가 도메인 컨트롤러에 설치되어 있으면 사이트 서버의 그룹은 로컬 그룹이 아닌 도메인 그룹입니다. 이 경우, 원격 사이트 시스템 역할은 사이트 시스템 역할 컴퓨터가 다시 시작되거나 원격 컴퓨터 계정의 Kerberos 티켓이 새로 고쳐질 때까지 작동하지 않습니다. 자세한 내용은 [System Center Configuration Manager에 사용된 계정](../../../../core/plan-design/hierarchy/accounts.md)을 참조하세요.  
+원격 컴퓨터(SMS 공급자의 인스턴스 포함)에 사이트 시스템 역할을 설치하면 원격 컴퓨터의 컴퓨터 계정이 사이트 서버의 로컬 그룹에 추가됩니다. 사이트가 도메인 컨트롤러에 설치되어 있으면 사이트 서버의 그룹은 로컬 그룹이 아닌 도메인 그룹입니다. 이 경우, 원격 사이트 시스템 역할은 사이트 시스템 역할 컴퓨터가 다시 시작되거나 원격 컴퓨터 계정의 Kerberos 티켓이 새로 고쳐질 때까지 작동하지 않습니다. 자세한 내용은 [사용된 계정](../../../../core/plan-design/hierarchy/accounts.md)을 참조하세요.  
 
 사이트 시스템 역할을 설치하기 직전에 Configuration Manager는 대상 컴퓨터가 선택한 사이트 시스템 역할에 대한 필수 조건을 충족하는지 확인합니다. 사이트 시스템 역할 설치에 관한 다음 사항을 이해해야 합니다.  
 
 -   기본적으로 Configuration Manager에서 사이트 시스템 역할을 설치할 때 사용 가능한 첫 번째 NTFS 포맷의 디스크 드라이브(디스크 여유 공간이 가장 큼)에 설치 파일이 설치됩니다. Configuration Manager가 특정 드라이브에 설치되는 것을 방지하려면 **no_sms_on_drive.sms**라는 빈 파일을 만듭니다. 사이트 시스템 서버를 설치하기 전에 그 파일을 드라이브의 루트 폴더에 복사합니다.  
 
--   Configuration Manager에서 **사이트 시스템 설치 계정**을 사용하여 사이트 시스템 역할을 설치합니다. 적절한 마법사를 실행하여 새 사이트 시스템 서버를 만들거나 기존 사이트 시스템 서버에 사이트 시스템 역할을 추가할 때 이 계정을 지정합니다. 기본적으로 이 계정은 사이트 서버 컴퓨터의 로컬 시스템 계정이지만, 사이트 시스템 설치 계정으로 사용할 도메인 사용자 계정을 지정할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에 사용된 계정](../../../../core/plan-design/hierarchy/accounts.md)을 참조하세요.  
+-   Configuration Manager에서 **사이트 시스템 설치 계정**을 사용하여 사이트 시스템 역할을 설치합니다. 적절한 마법사를 실행하여 새 사이트 시스템 서버를 만들거나 기존 사이트 시스템 서버에 사이트 시스템 역할을 추가할 때 이 계정을 지정합니다. 기본적으로 이 계정은 사이트 서버 컴퓨터의 로컬 시스템 계정이지만, 사이트 시스템 설치 계정으로 사용할 도메인 사용자 계정을 지정할 수 있습니다. 자세한 내용은 [사용된 계정](../../../../core/plan-design/hierarchy/accounts.md)을 참조하세요.  
 
 ##  <a name="bkmk_Install"></a> 기존 사이트 시스템 서버에 사이트 시스템 역할을 설치하려면  
 

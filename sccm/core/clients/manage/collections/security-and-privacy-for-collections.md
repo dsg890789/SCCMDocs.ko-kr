@@ -1,7 +1,7 @@
 ---
 title: 컬렉션 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 컬렉션의 보안 및 개인 정보에 대한 모범 사례를 확인합니다.
+description: Configuration Manager에서 컬렉션의 보안 및 개인 정보에 대한 모범 사례를 확인합니다.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,23 +10,22 @@ ms.assetid: 30bf2451-5415-4be2-ba8d-21759370cd83
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c71df04bab25a07d854ccc582fc92e4da8d1ad40
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 42345ee91baaad7dcc82eab537fbeb697d6cd7ab
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890148"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824404"
 ---
-# <a name="security-and-privacy-for-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 컬렉션에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-collections-in-configuration-manager"></a>Configuration Manager의 컬렉션을 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager에서 컬렉션에 대한 보안 모범 사례 및 개인 정보가 포함되어 있습니다.  
+이 항목에는 Configuration Manager에서 컬렉션에 대한 보안 모범 사례 및 개인 정보가 포함되어 있습니다.  
 
  Configuration Manager에 컬렉션 전용의 개인 정보가 없습니다. 컬렉션은 사용자 및 디바이스와 같은 리소스에 대한 컨테이너입니다. 컬렉션 멤버 자격은 종종 표준 작업 중에 Configuration Manager에서 수집하는 정보에 따라 달라집니다. 예를 들어 검색 또는 인벤토리에서 수집된 자원 정보를 사용하여 지정된 기준을 충족하는 디바이스를 포함하도록 컬렉션을 구성할 수 있습니다. 또한 컬렉션은 소프트웨어 배포 및 준수 확인 등과 같은 클라이언트 관리 작업에 대한 현재 상태 정보를 기반으로 합니다. 이러한 쿼리 기반 컬렉션 외에도 관리자가 리소스를 추가할 수도 컬렉션에 있습니다.  
 
- 컬렉션에 대한 자세한 내용은 [System Center Configuration Manager의 컬렉션 소개](../../../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요. 컬렉션 멤버 자격을 구성하는 데 사용할 수 있는 Configuration Manager 작업에 대한 보안 모범 사례 및 개인 정보에 대한 자세한 내용은 [System Center Configuration Manager의 보안 모범 사례 및 개인 정보](../../../../core/plan-design/security/security-best-practices-and-privacy-information.md)를 참조하세요.  
+ 컬렉션에 대한 자세한 내용은 [컬렉션 소개](../../../../core/clients/manage/collections/introduction-to-collections.md)를 참조하세요. 컬렉션 멤버 자격을 구성하는 데 사용할 수 있는 Configuration Manager 작업에 대한 보안 모범 사례 및 개인 정보에 대한 자세한 내용은 [Configuration Manager의 보안 모범 사례 및 개인 정보](../../../../core/plan-design/security/security-best-practices-and-privacy-information.md)를 참조하세요.  
 
 ## <a name="security-best-practices-for-collections"></a>컬렉션에 대한 보안 모범 사례  
  컬렉션의 경우 다음 보안 모범 사례를 따르세요.  

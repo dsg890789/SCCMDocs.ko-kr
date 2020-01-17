@@ -10,18 +10,17 @@ ms.assetid: deb470e3-6f6b-4ccf-b3d8-1598d79d3490
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
 ROBOTS: NOINDEX
-ms.openlocfilehash: a0d844c6ee5b40e987ab25f4183e8365d18edac3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8d01a04e5527d84b2e67040671b255133821fe73
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73145516"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800545"
 ---
 # <a name="recommended-antivirus-exclusions-for-configuration-manager"></a>Configuration Manager에 대한 권장 바이러스 백신 제외
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에는 관리자가 지원되는 버전의 Configuration Manager 사이트 서버, 사이트 시스템 및 클라이언트를 실행하는 컴퓨터에서 바이러스 백신 소프트웨어이 함께 사용됐을 때 잠재적인 불안정의 원인을 확인하는 데 도움이 되는 권장 사항이 포함되어 있습니다.
 
@@ -97,7 +96,7 @@ ms.locfileid: "73145516"
 
 ### <a name="process-exclusions"></a>프로세스 제외
 
-프로세스 제외는 적극적인 바이러스 백신 프로그램이 System Center Configuration Manager 프로그램 파일(.exe 파일)을 높은 위험 수준 프로세스로 간주하는 경우에만 필요합니다.
+프로세스 제외는 적극적인 바이러스 백신 프로그램이 Configuration Manager 프로그램 파일(.exe 파일)을 높은 위험 수준 프로세스로 간주하는 경우에만 필요합니다.
 
 - *ConfigMgr 설치 폴더*\bin\64\Smsexec.exe
 - 다음 프로세스 중 하나:

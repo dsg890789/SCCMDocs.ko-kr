@@ -10,19 +10,18 @@ ms.assetid: 28b240a4-d358-40ce-8006-c697b1622ece
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89283226a067ff3e0bd232c33ab1cfe5d9240fb5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bed491b4800dd6ae8b53a837618abf3d8a5a597d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62198787"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817944"
 ---
-# <a name="simulate-application-deployments-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 배포 시뮬레이트
+# <a name="simulate-application-deployments-with-configuration-manager"></a>Configuration Manager를 사용 하 여 응용 프로그램 배포 시뮬레이트
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-시뮬레이트된 배포를 사용하면 애플리케이션을 설치하거나 제거하지 않고 애플리케이션 배포를 테스트할 수 있습니다. 시뮬레이트된 배포는 배포 유형의 검색 방법, 요구 사항 및 종속성을 평가합니다. 결과는 **모니터링** 작업 영역의 **배포** 노드에 보고됩니다. System Center Configuration Manager(Configuration Manager)에서 애플리케이션 배포를 시뮬레이트하려면 이 항목의 절차를 따르세요.  
+시뮬레이트된 배포를 사용하면 애플리케이션을 설치하거나 제거하지 않고 애플리케이션 배포를 테스트할 수 있습니다. 시뮬레이트된 배포는 배포 유형의 검색 방법, 요구 사항 및 종속성을 평가합니다. 결과는 **모니터링** 작업 영역의 **배포** 노드에 보고됩니다. 이 항목의 절차를 사용하여 Configuration Manager에서 애플리케이션 배포를 시뮬레이트할 수 있습니다.  
 
 > [!NOTE]  
 > 시뮬레이트된 배포는 모바일 디바이스 컬렉션에 대해 사용할 수 없습니다.  
@@ -50,4 +49,4 @@ ms.locfileid: "62198787"
 
 4.  **다음**을 클릭하여 **요약** 페이지에서 정보를 검토한 다음 마법사를 완료하여 시뮬레이트된 애플리케이션 배포를 만듭니다.  
 
-5.  시뮬레이트된 애플리케이션은 **모니터링** 작업 영역의 **배포** 노드에 **시뮬레이트** 용도로 나타납니다. 애플리케이션 배포를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager 콘솔에서 애플리케이션 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)을 참조하세요.  
+5.  시뮬레이트된 애플리케이션은 **모니터링** 작업 영역의 **배포** 노드에 **시뮬레이트** 용도로 나타납니다. 애플리케이션 배포를 모니터링하는 방법에 대한 자세한 내용은 [Configuration Manager 콘솔에서 애플리케이션 모니터링](../../apps/deploy-use/monitor-applications-from-the-console.md)을 참조하세요.  

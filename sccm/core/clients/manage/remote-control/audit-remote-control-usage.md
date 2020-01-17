@@ -1,7 +1,7 @@
 ---
 title: 원격 제어 사용 감사
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 원격 제어 사용 감사
+description: Configuration Manager에서 원격 제어 사용을 감사합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,21 +10,20 @@ ms.assetid: 5c975e69-0cc0-4afd-b7fb-b7182162a933
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88dfdb9ed5279b981b20946385aa948fcad67814
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e88753245b65276be989bd3850a116c9ec6fd74e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499638"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823894"
 ---
-# <a name="how-to-audit-remote-control-usage-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어 사용을 감사하는 방법
+# <a name="how-to-audit-remote-control-usage-in-configuration-manager"></a>Configuration Manager에서 원격 제어 사용을 감사하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 보고서를 사용하여 원격 제어에 대한 감사 정보를 볼 수 있습니다.  
+Configuration Manager 보고서를 사용하여 원격 제어에 대한 감사 정보를 볼 수 있습니다.  
 
- Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
+ Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
 
  다음 두 보고서는 **상태 메시지 - 감사**범주에서 사용할 수 있습니다.  
 

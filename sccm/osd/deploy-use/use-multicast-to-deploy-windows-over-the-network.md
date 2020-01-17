@@ -1,7 +1,7 @@
 ---
 title: 멀티캐스트를 사용하여 네트워크를 통해 Windows 배포
 titleSuffix: Configuration Manager
-description: 여러 컴퓨터에서 운영 체제 이미지를 동시에 다운로드할 수 있도록 System Center Configuration Manager 환경에서 멀티캐스트를 사용합니다.
+description: 여러 컴퓨터에서 운영 체제 이미지를 동시에 다운로드할 수 있도록 Configuration Manager 환경에서 멀티캐스트를 사용합니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -10,19 +10,18 @@ ms.assetid: 4cafb7fc-380b-41b1-b83e-045aebfb7131
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e47df52fd3b59c950f7005a7639abe57b2080bb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8b41557c84fc4e69c0d55e7347942c88008ab76b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65083216"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821480"
 ---
-# <a name="use-multicast-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 멀티캐스트를 사용하여 네트워크를 통해 Windows 배포
+# <a name="use-multicast-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 멀티캐스트를 사용하여 네트워크를 통해 Windows 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-멀티캐스트는 여러 클라이언트가 동시에 같은 운영 체제 이미지를 다운로드할 수도 있는 System Center Configuration Manager 환경에서 사용할 수 있는 네트워크 최적화 방법입니다. 멀티캐스트를 사용할 경우 여러 컴퓨터는 배포 지점에서 멀티캐스트되는 운영 체제 이미지를 동시에 다운로드하며 배포 지점은 개별 연결을 통해 데이터 복사본을 각 클라이언트에 전송하지 않습니다.  
+멀티캐스트는 여러 클라이언트가 동시에 같은 운영 체제 이미지를 다운로드할 수도 있는 Configuration Manager 환경에서 사용할 수 있는 네트워크 최적화 방법입니다. 멀티캐스트를 사용할 경우 여러 컴퓨터는 배포 지점에서 멀티캐스트되는 운영 체제 이미지를 동시에 다운로드하며 배포 지점은 개별 연결을 통해 데이터 복사본을 각 클라이언트에 전송하지 않습니다.  
 
  다음 운영 체제 배포 시나리오에서 멀티캐스트를 사용하여 네트워크를 통해 운영 체제를 배포할 수 있습니다.  
 

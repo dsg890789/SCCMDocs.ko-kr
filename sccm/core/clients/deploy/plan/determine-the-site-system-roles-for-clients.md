@@ -1,7 +1,7 @@
 ---
 title: 클라이언트의 사이트 시스템 역할
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 클라이언트에 대한 사이트 시스템 역할을 결정합니다.
+description: Configuration Manager의 클라이언트를 위한 사이트 시스템 역할 결정
 ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,17 +10,16 @@ ms.assetid: 984e8d92-7327-4b08-9228-0c955e6ac778
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40328e2156ea238bca29eff4a89c6d32efa2124d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 83c7fb801c4a6052807b9e2cfe14e13f72e85bab
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658492"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824965"
 ---
 # <a name="determine-the-site-system-roles-for-configuration-manager-clients"></a>Configuration Manager 클라이언트를 위한 사이트 시스템 역할 결정
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서는 Configuration Manager 클라이언트를 배포하는 데 필요한 사이트 시스템 역할을 결정하는 데 도움이 됩니다.
 

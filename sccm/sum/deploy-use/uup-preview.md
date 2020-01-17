@@ -11,13 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a83dde537a847f562422a1a972ebc65244435b9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bf72755de71d9e044f79f92f148c6c3842d93bc6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660787"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818709"
 ---
 # <a name="uup-private-preview-instructions"></a>UUP 프라이빗 미리 보기 지침
 
@@ -28,7 +27,7 @@ ms.locfileid: "74660787"
 
 통합 업데이트 플랫폼 (UUP)은 소비자 및 엔터프라이즈 장치가 비즈니스용 Windows 업데이트에서 업데이트를 수신 하는 데 사용 하는 패키징 및 게시 플랫폼입니다. UUP 비공개 미리 보기 프로그램은 Microsoft Configuration Manager에서 제공 하는 최신 업데이트 사용의 유효성을 확인 하는 데 도움이 되는 고객을 위한 것으로, 고객이 현재 Windows 서비스에 보고 하는 문제를 해결 하는 데 도움이 됩니다. 이러한 업데이트는 현재 공개적으로 사용할 수 없습니다.
 
-UUP에 대한 자세한 내용은 다음 Windows 블로그 게시물을 참조하세요. [통합 업데이트 플랫폼(UUP)의 업데이트](https://blogs.windows.com/windowsexperience/2017/03/02/an-update-on-our-unified-update-platform-uup/)
+UUP에 대한 자세한 내용은 다음 Windows 블로그 게시물을 참조하세요. [UUP(Unified Update Platform)에 대한 업데이트](https://blogs.windows.com/windowsexperience/2017/03/02/an-update-on-our-unified-update-platform-uup/).
 
 ## <a name="benefits"></a>이점
 
@@ -164,7 +163,7 @@ Microsoft에서 릴리스된 모든 Windows 10 업데이트에 대 한 자세한
 
 #### <a name="cumulative-updates-to-test"></a>테스트에 대 한 누적 업데이트
 
-여러 개의 UUP 태그가 지정 된 업데이트를 사용할 수 있는 반면, **2019 년 9 월** (2019-09) 이상 버전부터 시작 합니다. 예:
+여러 개의 UUP 태그가 지정 된 업데이트를 사용할 수 있는 반면, **2019 년 9 월** (2019-09) 이상 버전부터 시작 합니다. 예를 들면 다음과 같습니다.
 
 - 2019-09 x64 기반 시스템용 Windows 10 버전 1809 누적 업데이트 (KB4512578) (영문)
 - 2019-09 x64 기반 시스템용 Windows 10 버전 1803 누적 업데이트 (KB4516058) (영문)
@@ -172,7 +171,7 @@ Microsoft에서 릴리스된 모든 Windows 10 업데이트에 대 한 자세한
 
 #### <a name="feature-updates-to-test"></a>테스트할 기능 업데이트
 
-여러 개의 UUP 태그가 지정 된 업데이트가 표시 될 수 있지만, **9 월 2019** (2019-09b) 업데이트 이상 버전부터 시작 합니다. 예:
+여러 개의 UUP 태그가 지정 된 업데이트가 표시 될 수 있지만, **9 월 2019** (2019-09b) 업데이트 이상 버전부터 시작 합니다. 예를 들면 다음과 같습니다.
 
 - Windows 10 버전 1809 x64 2019-09B로 기능 업데이트
 - Windows 10 버전 1803 x64 2019-09B로 기능 업데이트

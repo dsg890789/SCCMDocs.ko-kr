@@ -10,22 +10,21 @@ ms.assetid: 10eb8958-3848-49d7-95c0-16119b624580
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdd6ca5b2ab0c26caf0f558eff39fc8f01bc9d15
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5a6e76fea130329dcf812f9d18c7575c019da36a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71401563"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825458"
 ---
 # <a name="create-capture-media"></a>미디어 캡처 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 미디어 캡처를 사용하면 참조 컴퓨터에서 OS 이미지를 캡처할 수 있습니다. 미디어 캡처에는 참조 컴퓨터를 시작하는 부팅 이미지와, OS 이미지를 캡처하는 작업 순서가 포함되어 있습니다. 이 시나리오의 경우 미디어 캡처를 사용하여 [OS를 캡처하는 작업 순서를 만듭니다](/sccm/osd/deploy-use/create-a-task-sequence-to-capture-an-operating-system).  
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 작업 순서 미디어 만들기 마법사를 사용하여 미디어 캡처를 만들려면 먼저 다음 조건을 모두 충족해야 합니다.
 
@@ -66,7 +65,7 @@ OS를 배포하는 작업 순서에서 사용할 부팅 이미지에 대한 다�
 
     - **이동식 USB 드라이브**를 선택하는 경우 콘텐츠를 저장할 드라이브를 선택합니다.  
 
-        - **이동식 USB 드라이브 포맷(FAT32) 및 부팅 가능하도록 구성**: 기본적으로 Configuration Manager가 USB 드라이브를 준비하도록 합니다. 많은 최신 UEFI 디바이스에 부팅 가능한 FAT32 파티션이 필요합니다. 그러나 이 포맷은 파일의 크기와 드라이브의 전체 용량도 제한합니다. 이동식 드라이브를 이미 포맷하고 구성한 경우에는 이 옵션을 사용하지 않도록 설정합니다.
+        - **이동식 USB 드라이브 포맷(FAT32) 및 부팅 가능하도록 구성**: 기본적으로 Configuration Manager를 통해 USB 드라이브를 준비합니다. 많은 최신 UEFI 디바이스에 부팅 가능한 FAT32 파티션이 필요합니다. 그러나 이 포맷은 파일의 크기와 드라이브의 전체 용량도 제한합니다. 이동식 드라이브를 이미 포맷하고 구성한 경우에는 이 옵션을 사용하지 않도록 설정합니다.
 
     - **CD/DVD 세트**를 선택하는 경우 미디어 용량(**미디어 크기**) 및 출력 파일(**미디어 파일**)의 이름과 경로를 지정해야 합니다. 마법사에서 출력 파일을 이 위치에 기록합니다. `\\servername\folder\outputfile.iso`  
 

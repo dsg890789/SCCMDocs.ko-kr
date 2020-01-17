@@ -6,27 +6,26 @@ ms.date: 11/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 6c28fa29-fc97-49ef-9fc3-cb062bdba908
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ace4481f680a9d05d7df599e124df991b273f398
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 7e8b94a66cce2a6e8b4c5cc14e23ce8b8cdd655c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74662331"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818981"
 ---
 # <a name="non-compliance-codes"></a>비호환 코드
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--3601034-->
 
 클라이언트의 WMI는 다음과 같은 비호환 코드를 제공 합니다. 또한 특정 장치가 비규격으로 보고 하는 이유를 설명 합니다.
 
-다양 한 방법으로 WMI를 볼 수 있습니다. 예를 들어 다음 PowerShell 명령을 사용 합니다.
+다양 한 방법으로 WMI를 볼 수 있습니다. 예를 들어 다음 PowerShell 명령을 사용합니다.
 
 ``` PowerShell
 (Get-WmiObject -Class mbam_Volume -Namespace root\microsoft\mbam).ReasonsForNoncompliance

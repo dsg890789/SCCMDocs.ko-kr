@@ -10,17 +10,16 @@ ms.assetid: a3be4f8f-3d44-4e3c-9fa1-e85f30a36e72
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d06098eba14209be3e73ff3bdb4fd7f8bb0487a6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0d7949741ae9092e8f12b01c03ea864fb7075942
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74661025"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791847"
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>사용해야 하는 Configuration Manager 분기
 
-*적용 대상: System Center Configuration Manager(현재 분기, 장기 서비스 분기 및 기술 미리 보기)*
+*적용 대상: Configuration Manager(현재 분기 및 기술 미리 보기 분기), System Center Configuration Manager(장기 서비스 분기)*
 
 Configuration Manager에는 다음과 같은 세 가지 분기가 있습니다.
 

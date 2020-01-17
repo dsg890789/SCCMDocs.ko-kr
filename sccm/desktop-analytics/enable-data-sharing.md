@@ -10,13 +10,12 @@ ms.assetid: be680198-4cea-4378-a686-d52f382ba483
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8b21f1fcc702190322c97ed36333bd612ae3984
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e6ca37194ea8cd166f1f77418fdcadf5873c63a5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74734616"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825730"
 ---
 # <a name="enable-data-sharing-for-desktop-analytics"></a>Desktop Analytics에 데이터 공유 사용
 
@@ -77,7 +76,7 @@ Microsoft는 Desktop Analytics로 **강화(제한됨)** 진단 데이터 수준�
 > [!Important]  
 > 개인 정보 및 데이터 무결성을 위해 Windows는 진단 데이터 엔드포인트와 통신할 때 Microsoft SSL 인증서(인증서 고정)를 확인합니다. SSL 가로채기 및 검사는 불가능합니다. Desktop Analytics를 사용하려면 이러한 엔드포인트를 SSL 검사에서 제외합니다.<!-- BUG 4647542 -->
 
-| 엔드포인트  | 기능  |
+| 엔드포인트  | 함수  |
 |-----------|-----------|
 | `https://aka.ms` | 서비스를 찾는 데 사용됨 |
 | `https://v10c.events.data.microsoft.com` | 연결된 사용자 환경 및 진단 구성 요소 엔드포인트입니다. 2018-09 누적 업데이트 이상이 설치된 Windows 10, 버전 1809 이상 또는 버전 1803을 실행하는 디바이스에서 사용됩니다. |

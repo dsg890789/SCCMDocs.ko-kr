@@ -10,17 +10,16 @@ ms.assetid: a5fc033e-828e-4e45-9097-bbbd0697ebdf
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d9777c2f6d82dd0e2d89437aaa460c65fc37563
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
-ms.translationtype: MTE75
+ms.openlocfilehash: 7ffa07dff0e84b0277710d718f86f9d6039d05eb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198815"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819338"
 ---
 # <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 1606버전부터(현재 분기) Endpoint Protection은 [Microsoft Defender ATP(Advanced Threat Protection)](https://aka.ms/technet-wdatp)를 관리하고 모니터링할 수 있습니다(이전에는 Windows Defender ATP였음). Windows Defender ATP는 엔터프라이즈에서 네트워크에 대한 고급 공격을 검색, 조사 및 대응할 수 있게 해줍니다.  Configuration Manager 또는 Microsoft Intune 정책은 관리되는 Windows 10 버전 1607(빌드 14328) 이상을 등록하고 모니터링하는 데 도움이 됩니다.
 
@@ -36,9 +35,9 @@ Microsoft Defender ATP는 [Windows Defender Security Center](https://securitycen
 
  1. [Microsoft Defender ATP 온라인 서비스](https://securitycenter.windows.com/)로 이동하여 로그인합니다.
 
- 2.  **설정**에서 **컴퓨터 관리** 항목을 클릭 한 다음 **온 보 딩**을 선택 합니다. 
+ 2.  **설정**에서 **컴퓨터 관리** 항목을 클릭한 다음 **온보딩**을 선택합니다. 
 
- 3.  **System Center Configuration Manager(현재 분기) 버전 1606**을 선택하고 **패키지 다운로드**를 클릭합니다.  
+ 3.  **Configuration Manager(현재 분기) 버전 1606**을 선택하고 **패키지 다운로드**를 클릭합니다.  
 
  4.  압축된 보관 파일(.zip)을 다운로드하고 압축을 풉니다.
 
@@ -88,9 +87,9 @@ Microsoft Defender ATP는 [Windows Defender Security Center](https://securitycen
 
 1.  [Microsoft Defender ATP 온라인 서비스](https://securitycenter.windows.com/)에 로그온합니다.   
 
-2.  **설정**에서 **컴퓨터 관리** 항목을 클릭 한 다음 **온 보 딩**을 선택 합니다.  
+2.  **설정**에서 **컴퓨터 관리** 항목을 클릭한 다음 **온보딩**을 선택합니다.  
 
-3.  **System Center Configuration Manager(현재 분기) 버전 1606**을 선택하고 **엔드포인트 오프보딩**을 클릭합니다.  
+3.  **Configuration Manager(현재 분기) 버전 1606**을 선택하고 **엔드포인트 오프보딩**을 클릭합니다.  
 
 4.  압축된 보관 파일(.zip)을 다운로드하고 압축을 풉니다. 오프보딩 파일은 30일 동안 유효합니다.
 

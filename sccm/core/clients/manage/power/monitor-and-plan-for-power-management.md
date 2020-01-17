@@ -1,7 +1,7 @@
 ---
 title: 전원 관리 모니터링 및 계획
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법을 알아봅니다.
+description: Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,24 +10,23 @@ ms.assetid: 507bf676-2679-4e4d-8831-3ffc9cf8557e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bfd0dd70c350196ff3e6e4a66da9fb04863b8b8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cc0b4903033d8df9f45c1c0629f2c2037f0dba1f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62203165"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823945"
 ---
-# <a name="how-to-monitor-and-plan-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법
+# <a name="how-to-monitor-and-plan-for-power-management-in-configuration-manager"></a>Configuration Manager에서 전원 관리를 모니터링하고 계획하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-다음 정보를 사용하여 System Center Configuration Manager에서 전원 관리를 모니터링하고 계획할 수 있습니다.  
+다음 정보를 사용하여 Configuration Manager에서 전원 관리를 모니터링하고 계획할 수 있습니다.  
 
 ##  <a name="BKMK_How_to_use_reports"></a> 전원 관리에 대한 보고서를 사용하는 방법  
  Configuration Manager의 전원 관리에는 조직의 전력 소비 및 컴퓨터 전원 설정을 분석할 수 있는 여러 보고서가 포함됩니다. 보고서는 문제를 해결하기 위해서도 사용할 수 있습니다.  
 
- 전원 관리 보고서를 사용하려면 먼저 계층에 대한 보고를 구성해야 합니다. Configuration Manager에서 보고하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
+ 전원 관리 보고서를 사용하려면 먼저 계층에 대한 보고를 구성해야 합니다. Configuration Manager의 보고서에 대한 자세한 내용은 [보고](../../../../core/servers/manage/reporting.md)를 참조하세요.  
 
 > [!NOTE]  
 >  일일 보고서에 사용된 전원 관리 정보는 31일간 Configuration Manager 사이트 데이터베이스에 보존됩니다.  
@@ -111,7 +110,7 @@ ms.locfileid: "62203165"
 |**컴퓨터 세부 정보**|선택한 컴퓨터에 대한 전원 기능, 전원 설정 및 적용된 전원 계획을 확인하려면 **자세한 정보를 보려면 클릭** 링크를 클릭합니다.|  
 
 ###  <a name="BKMK_Activity_Details"></a> Computer Activity Details report  
- **컴퓨터 활동 세부 정보** 보고서에는 절전 모드 및 절전 모드 해제 기능이 있는 활성 또는 비활성 컴퓨터의 목록이 표시됩니다. 이 보고서는 [Computer Activity Report](#BKMK_Activity) 에서 호출되며 사이트 관리자가 직접 실행하도록 설계되지 않았습니다.  
+ **컴퓨터 활동 세부 정보** 보고서에는 절전 모드 및 절전 모드 해제 기능이 있는 활성 또는 비활성 컴퓨터의 목록이 표시됩니다. 이 보고서에 의해 호출 됩니다는 [Computer Activity Report](#BKMK_Activity) 및 사이트 관리자가 직접 실행 하도록 설계 되지 않았습니다.  
 
  이 보고서를 구성하려면 다음 매개 변수를 사용합니다.  
 
@@ -603,7 +602,7 @@ ms.locfileid: "62203165"
 |매개 변수 이름|설명|  
 |--------------------|-----------------|  
 |**수집**|드롭다운 목록에서 이 보고서에 사용할 컬렉션을 선택합니다.|  
-|**전원 설정 GUID**|드롭다운 목록에서 보고서에 원하는 전원 설정 GUID를 선택 합니다. 모든 전원 설정 및 해당 용도 목록을 보려면 [System Center Configuration Manager에서 전원 계획을 만들고 적용하는 방법](../../../../core/clients/manage/power/create-and-apply-power-plans.md) 항목에서 [사용 가능한 전원 관리 계획 설정](../../../../core/clients/manage/power/create-and-apply-power-plans.md#BKMK_Plans)을 참조하세요.|  
+|**전원 설정 GUID**|드롭다운 목록에서 보고서에 원하는 전원 설정 GUID를 선택 합니다. 모든 전원 설정 및 해당 용도 목록을 보려면 [전원 계획을 만들고 적용하는 방법](../../../../core/clients/manage/power/create-and-apply-power-plans.md) 항목에서 [사용 가능한 전원 관리 계획 설정](../../../../core/clients/manage/power/create-and-apply-power-plans.md#BKMK_Plans)을 참조하세요.|  
 |**Power Mode**|드롭다운 목록에서 보고서 결과에 표시하려는 전원 설정의 유형을 선택합니다. 컴퓨터가 전원에 연결된 경우에 대해 구성된 전원 설정을 보려면 **전원 사용** 을 선택하고 컴퓨터가 배터리 전원으로 실행 중인 경우에 대해 구성된 전원 설정을 보려면 **배터리 사용** 을 선택합니다.|  
 |**인덱스 설정**|드롭다운 목록에서 보고하려는 선택된 전원 설정 이름에 대한 값을 선택합니다. 예를 들어 **다음 시간 이후에 하드 디스크 끄기** 설정이 **10** 분으로 설정된 모든 컴퓨터를 표시하려면 **전원 설정 이름** 에는 **다음 시간 이후에 하드 디스크 끄기** 를 선택하고 **인덱스 설정** 에는 **10**을 선택합니다.|  
 

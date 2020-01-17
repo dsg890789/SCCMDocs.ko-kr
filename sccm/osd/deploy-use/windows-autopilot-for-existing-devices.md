@@ -6,22 +6,21 @@ ms.date: 03/05/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: 2e96f847-5b5a-4da9-8e8f-6aa488838508
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4cc806009f9cb02e50a2b023722a2045d4bde655
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 31004429493252ddef4b45621695d2fcd275fa36
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70243704"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821412"
 ---
 # <a name="windows-autopilot-for-existing-devices"></a>기존 디바이스에 대한 Windows Autopilot
 <!--3607717, fka 1358333-->
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)을 통해 조직은 새로운 Windows 10 디바이스를 본래 그대로 최종 사용자에게 제공하며 안전하고 생산성 높은 Windows 10 디바이스를 구성하기 위해 사용자가 수행할 프로비저닝 흐름을 정의할 수 있습니다. 디바이스는 Windows Autopilot 서비스를 통해 등록되므로 필요한 Windows Autopilot 프로필을 할당할 수 있습니다. 이 프로필은 해당 디바이스에 대한 OOBE(첫 실행 경험)를 정의합니다. 
 
@@ -29,7 +28,7 @@ ms.locfileid: "70243704"
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - Windows 10 버전 1809 이상의 설치 미디어를 가져옵니다. 그런 다음, Configuration Manager OS 이미지를 만듭니다. 자세한 내용은 [OS 이미지 관리](/sccm/osd/get-started/manage-operating-system-images)를 참조하세요.
 
@@ -124,9 +123,9 @@ ms.locfileid: "70243704"
 
 작업 순서를 편집하는 것은 기존 OS 이미지를 적용하는 기본 작업 순서와 비슷합니다. 이 작업 순서에는 다음 추가 단계가 포함됩니다.  
 
-- **Windows Autopilot 구성 적용**: 이 단계는 지정된 패키지의 Autopilot 구성 파일을 적용합니다. 이 단계는 새로운 형식의 단계가 아니라 파일을 복사하는 **명령줄 실행** 단계입니다.  
+- **Windows Autopilot 구성 적용**: 이 단계에서는 지정된 패키지의 Autopilot 구성 파일을 적용합니다. 이 단계는 새로운 형식의 단계가 아니라 파일을 복사하는 **명령줄 실행** 단계입니다.  
 
-- **Windows 캡처 준비**: 이 단계는 Windows Sysprep을 실행하고 **이 작업을 실행한 후 컴퓨터 종료** 설정을 포함합니다. 자세한 내용은 [Windows 캡처 준비](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareWindowsforCapture)를 참조하세요.  
+- **Windows 캡처 준비**: 이 단계는 Windows Sysprep을 실행하며 **이 작업을 실행한 후 컴퓨터 종료** 설정을 포함하고 있습니다. 자세한 내용은 [Windows 캡처 준비](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareWindowsforCapture)를 참조하세요.  
 
 기존 디바이스에 대한 Windows Autopilot 작업 순서를 진행하면 디바이스가 Azure AD(Azure Active Directory)에 가입됩니다. 
 
@@ -144,4 +143,4 @@ ms.locfileid: "70243704"
 
 ## <a name="see-also"></a>참고 항목
 
-- [Windows Autopilot를 사용 하 여 Intune에 Windows 장치 등록](https://docs.microsoft.com/intune/enrollment-autopilot)
+- [Windows Autopilot을 사용하여 Intune에 Windows 디바이스 등록](https://docs.microsoft.com/intune/enrollment-autopilot)

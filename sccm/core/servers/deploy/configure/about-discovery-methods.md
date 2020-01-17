@@ -10,17 +10,16 @@ ms.assetid: ed931751-18f2-4230-a09e-a0a329fbfa1c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21183b620b8161056377bb7fc6e86bde79f31767
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 91936216304dd3da8c30bb11137536edc82823d4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68860073"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799117"
 ---
-# <a name="about-discovery-methods-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 검색 방법 정보
+# <a name="about-discovery-methods-for-configuration-manager"></a>Configuration Manager에 대한 검색 방법 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 검색 방법은 네트워크에서 다양한 디바이스를 찾거나, Active Directory에서 디바이스 및 사용자를 찾거나, Azure AD(Azure Active Directory)에서 사용자를 찾을 수 있습니다. 검색 방법을 효율적으로 사용하려면 사용 가능한 구성 및 제한 사항을 이해해야 합니다.  
 

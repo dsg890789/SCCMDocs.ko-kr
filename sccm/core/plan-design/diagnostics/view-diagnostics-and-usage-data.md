@@ -1,7 +1,7 @@
 ---
 title: 진단 데이터 보기
 titleSuffix: Configuration Manager
-description: 진단 및 사용량 현황 데이터를 보고 System Center Configuration Manager 계층 구조에 중요한 정보가 포함되어 있지 않은지 확인합니다.
+description: 진단 및 사용량 현황 데이터를 보고 Configuration Manager 계층 구조에 중요한 정보가 포함되어 있지 않은지 확인합니다.
 ms.date: 09/10/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,17 +10,16 @@ ms.assetid: 594eb284-0d93-4c5d-9ae6-f0f71203682a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68155a31d1d50d1df4c06882416f158f9a71c8d2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 51cc45b2524895beb1cf3ead5839e4fc3a1b11fb
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889433"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75800766"
 ---
 # <a name="how-to-view-diagnostics-and-usage-data-for-configuration-manager"></a>Configuration Manager의 진단 및 사용량 데이터를 보는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 계층 구조에서 진단 및 사용량 데이터를 보면 여기에 중요하거나 식별할 수 있는 정보가 포함되지 않았는지 확인할 수 있습니다. 사이트는 사이트 데이터베이스의 **TEL_TelemetryResults** 테이블에 진단 데이터를 요약하고 저장합니다. 이렇게 하면 프로그래밍 방식으로 사용할 수 있고 효율적인 데이터 형식이 지정됩니다.
 

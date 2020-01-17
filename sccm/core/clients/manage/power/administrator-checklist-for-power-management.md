@@ -1,7 +1,7 @@
 ---
 title: 전원 관리를 위한 관리자 검사 목록
 titleSuffix: Configuration Manager
-description: 관리자 검사 목록을 사용하면 System Center Configuration Manager에서 전원 관리를 계획하고 구현할 수 있습니다.
+description: 관리자 검사 목록을 사용하면 Configuration Manager에서 전원 관리를 계획하고 구현할 수 있습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 94e42cbe-9df8-4228-a04e-0ad7626180ca
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8198669fdf7d0acf3273af2d8a2e83f5b89f520c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 039ebf73fba9850b8479bfabab6ab928b7d6f2df
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62200120"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824030"
 ---
-# <a name="administrator-checklist-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 전원 관리를 위한 관리자 검사 목록
+# <a name="administrator-checklist-for-power-management-in-configuration-manager"></a>Configuration Manager의 전원 관리를 위한 관리자 검사 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 관리자 검사 목록은 조직에서 System Center Configuration Manager 전원 관리를 사용하기 위한 권장 단계를 제공합니다.  
+이 관리자 검사 목록은 조직에서 Configuration Manager 전원 관리를 사용하기 위한 권장 단계를 제공합니다.  
 
 ## <a name="configuring-power-management"></a>전원 관리 구성  
  다음 단계를 사용하여 클라이언트 컴퓨터에서 전원 관리 정보를 수집할 수 있도록 계층을 구성할 수 있습니다.  

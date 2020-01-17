@@ -10,13 +10,12 @@ ms.assetid: e6c1df1d-7728-4980-9199-bc32cde5439e
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61228a84c642693f38122c06b060bfc638ad01e3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b13a574d424aa17e3f0390dd76d97751b2f764c0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888415"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827148"
 ---
 # <a name="manage-publications-in-updates-publisher"></a>Updates Publisher의 게시물 관리
 
@@ -37,7 +36,7 @@ ms.locfileid: "70888415"
 ## <a name="change-the-publication-type-of-updates-in-a-publication"></a>게시물에서 업데이트의 게시물 유형을 변경합니다.
 **게시물 작업 영역**에서 게시물에 할당된 업데이트 및 번들의 **게시물 유형**을 수정할 수 있습니다.
 
-1. 수정하려는 업데이트를 포함하는 게시물을 선택한 다음  **&lt;게시물 이름> 구성원 업데이트** 목록에서 하나 이상의 업데이트 또는 번들을 선택합니다.
+1. 수정하려는 업데이트를 포함하는 게시물을 선택한 다음 **&lt;게시물 이름> 구성원 업데이트** 목록에서 하나 이상의 업데이트 또는 번들을 선택합니다.
 
 2. 다음으로 **홈** 탭에서 다음 옵션 중 하나를 선택합니다. 사용할 수 있는 옵션은 선택한 업데이트의 게시물 유형에 따라 달라집니다.
 
@@ -60,7 +59,7 @@ ms.locfileid: "70888415"
 ## <a name="publish-publications"></a>게시물 게시
 업데이트 및 번들을 게시하면 Updates Publisher가 해당 업데이트 및 번들에 대한 정보(메타데이터)와 업데이트용 이진 파일(전체 콘텐츠)을 디바이스 배포용 업데이트 서버에 추가합니다.
 
-게시 옵션을 사용하려면 Updates Publisher의 [업데이트 서버](/sccm/sum/tools/updates-publisher-options#update-server) 옵션을 구성해야 합니다. 이 구성 옵션을 열려면 **업데이트 작업 영역** &gt; **개요**로 이동하여 **Configure WSUS and Signing Certificate**(WSUS 및 서명 인증서 구성)를 선택합니다. Updates Publisher 옵션의 [업데이트 서버] 페이지로 이동할 수도 있습니다.
+게시 옵션을 사용하려면 Updates Publisher의 [업데이트 서버](/sccm/sum/tools/updates-publisher-options#update-server) 옵션을 구성해야 합니다. 이 구성 옵션을 열려면 **업데이트 작업 영역** &gt; **개요**로 이동하여 **WSUS 및 서명 인증서 구성**을 선택합니다. Updates Publisher 옵션의 [업데이트 서버] 페이지로 이동할 수도 있습니다.
 
 > [!NOTE]   
 > Updates Publisher는 크기가 375MB 이하인 업데이트만 게시할 수 있습니다.

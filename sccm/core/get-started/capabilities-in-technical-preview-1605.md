@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1605의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1605에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1605에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0726f08d5c0e0e31e8a49cb792ac36954e47ae46
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0d1c669c8ce5b57eaa1cc391d50d7fab90adbe4c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65612614"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805220"
 ---
-# <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1605의 기능
+# <a name="capabilities-in-technical-preview-1605-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1605의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1605에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.  
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1605에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.  
 
  **이 Technical Preview의 알려진 문제:**  
 
@@ -173,10 +172,10 @@ ms.locfileid: "65612614"
 
 -   [EDP(엔터프라이즈 데이터 보호)를 사용한 엔터프라이즈 데이터 보호](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp)  
 
--   [System Center Configuration Manager를 사용하여 EDP(엔터프라이즈 데이터 보호) 정책 만들기 및 배포](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-sccm)  
+-   [Configuration Manager를 사용하여 EDP(엔터프라이즈 데이터 보호) 정책 만들기 및 배포](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-sccm)  
 
 ##  <a name="BKMK_End"></a> 최종 사용자가 회사 포털에서 앱을 설치할 수 있습니다.  
- System Center Configuration Manager 버전 1511에 온-프레미스 MDM이 도입되었습니다. 이전 버전에서는 온-프레미스 MDM 관리 디바이스에 대해 **필수** 설치 배포 용도로 MDM 관리 Windows 10 디바이스에 애플리케이션을 배포할 수 있었습니다.  
+ Configuration Manager 버전 1511에 온-프레미스 MDM이 도입되었습니다. 이전 버전에서는 온-프레미스 MDM 관리 디바이스에 대해 **필수** 설치 배포 용도로 MDM 관리 Windows 10 디바이스에 애플리케이션을 배포할 수 있었습니다.  
 
  이 릴리스에서는 이제 온-프레미스 MDM 관리 Windows 10 컴퓨터 사용자에게 **사용 가능** 배포 용도로 앱을 배포할 수 있으며, 사용자가 회사 포털에서 이 앱을 스스로 설치할 수 있습니다.
 이 Technical Preview에서 회사 포털이 15분보다 오래 열려 있으면 최종 사용자에게 오류 메시지가 표시됩니다. 문제를 해결하려면 회사 포털을 다시 시작합니다.  
@@ -264,7 +263,7 @@ ms.locfileid: "65612614"
 
 2.  사용자가 회사 포털에서 앱을 검색한 후 설치할 수 있습니다.  
 
-     회사 포털을 연 후 **System Center Configuration Manager**라는 이름의 인증 대화 상자가 나타나면 사용자의 Active Directory 자격 증명(user@domain 또는 domain\user 중 하나)을 지정하여 로그인합니다.  
+     회사 포털을 연 후 **Configuration Manager**라는 이름의 인증 대화 상자가 나타나면 사용자의 Active Directory 자격 증명(user@domain 또는 domain\user 중 하나)을 지정하여 로그인합니다.  
 
 ##  <a name="BKMK_SW1"></a> 소프트웨어 센터의 업데이트 및 운영 체제에 대한 새로운 탭  
  이 릴리스에서는 소프트웨어 센터 애플리케이션의 레이아웃을 개선하기 위해 다음과 같이 변경되었습니다.  
@@ -272,9 +271,9 @@ ms.locfileid: "65612614"
 -   **애플리케이션** 탭이 세 개의 별도 탭(**업데이트**, **운영 체제**(이전에는 둘 다 **필터** 목록에 있었음) 및 **애플리케이션**)으로 분리되었습니다.  
 
 ##  <a name="BKMK_ServerGroups"></a> 서버 그룹 제공  
- System Center Configuration Manager용 Technical Preview 버전 1511은 컬렉션을 만드는 기능을 포함하고 있으며 여기서 컬렉션의 모든 디바이스는 서버 그룹을 구성합니다. 서버 그룹에 소프트웨어 업데이트를 배포할 때 사용할 서버 그룹 설정을 구성하고, 지정된 시간에 업데이트되는 컴퓨터의 백분율을 제어할 수 있으며, 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수 있습니다.  
+ Configuration Manager용 Technical Preview 버전 1511은 컬렉션을 만드는 기능을 포함하고 있으며 여기서 컬렉션의 모든 디바이스는 서버 그룹을 구성합니다. 서버 그룹에 소프트웨어 업데이트를 배포할 때 사용할 서버 그룹 설정을 구성하고, 지정된 시간에 업데이트되는 컴퓨터의 백분율을 제어할 수 있으며, 사용자 지정 작업을 실행하도록 배포 전/배포 후 PowerShell 스크립트를 구성할 수 있습니다.  
 
- System Center Configuration Manager용 Technical Preview 버전 1605에서는 정의하는 특정 순서대로 서버 그룹의 컴퓨터를 업데이트하는 기능이 추가되고, 서버 그룹의 컴퓨터 상태를 볼 수 있도록 모니터링 기능이 향상되었으며, 클라이언트가 소프트웨어 업데이트를 설치하지 못하거나 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 않도록 하는 경우에 유용한 배포 잠금을 제거하는 기능이 제공됩니다.  
+ Configuration Manager용 Technical Preview 버전 1605에서는 정의하는 특정 순서대로 서버 그룹의 컴퓨터를 업데이트하는 기능이 추가되고, 서버 그룹의 컴퓨터 상태를 볼 수 있도록 모니터링 기능이 향상되었으며, 클라이언트가 소프트웨어 업데이트를 설치하지 못하거나 다른 클라이언트가 해당 소프트웨어 업데이트를 설치하지 않도록 하는 경우에 유용한 배포 잠금을 제거하는 기능이 제공됩니다.  
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기  
  다음 작업을 완료해 보고 어떻게 작동하는지 Microsoft Connect 사이트의 [Configuration Manager 사용자 의견 프로그램](https://connect.microsoft.com/ConfigurationManagervnext/ConfigMgr%20Customer%20Feedback) 페이지에서 사용자 의견 양식을 사용하여 알려주세요.  
@@ -362,7 +361,7 @@ ms.locfileid: "65612614"
 
   2.  **클라이언트 온보딩** 메뉴 항목을 클릭합니다.  
 
-  3.  **System Center Configuration Manager**를 선택하고 **패키지 다운로드**를 클릭합니다.  
+  3.  **Configuration Manager**를 선택하고 **패키지 다운로드**를 클릭합니다.  
 
   4.  압축된 보관 파일(.zip)을 다운로드하고 압축을 풉니다.  
 

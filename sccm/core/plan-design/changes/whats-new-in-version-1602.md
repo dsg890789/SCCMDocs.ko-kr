@@ -1,7 +1,7 @@
 ---
 title: 버전 1602의 새로운 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1602에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
+description: Configuration Manager 1602 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,20 +11,19 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f44dc0886b763e9b4d6fe1f689e241d102f54c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 341be5186a59dde5e32d1414e40d30eca781f4f6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68338994"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802806"
 ---
-# <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1602의 새로운 기능
+# <a name="what39s-new-in-version-1602-of-configuration-manager"></a>Configuration Manager 1602 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager 업데이트 1602는 버전 1511을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로만 제공됩니다. 버전 1511은 새 Configuration Manager 사이트를 설치하는 데 사용하는 초기 기준선 버전입니다.  
+Configuration Manager 업데이트 1602는 버전 1511을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로만 제공됩니다. 버전 1511은 새 Configuration Manager 사이트를 설치하는 데 사용하는 초기 기준선 버전입니다.  
 
 
 > [!TIP]  
@@ -50,7 +49,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 ###  <a name="bkmk_AOAG"></a> SQL Server AlwaysOn 가용성 그룹  
  SQL Server AlwaysOn 가용성 그룹을 사용하여 기본 사이트와 중앙 관리 사이트에서 사이트 데이터베이스를 고가용성 및 재해 복구 솔루션으로 호스트할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.  
+ 자세한 내용은 [Configuration Manager용 항상 사용 가능한 사이트 데이터베이스를 위한 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)을 참조하세요.  
 
 ## <a name="operating-system-deployment"></a>운영 체제 배포  
 
@@ -63,7 +62,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 -   이제 사용 가능한 Windows 10 업그레이드가 Configuration Manager 콘솔의 **Windows 10 서비스** \ **모든 Windows 10 업데이트** 노드에만 표시됩니다. 이러한 업데이트는 더 이상 콘솔의 **소프트웨어 업데이트** \ **모든 소프트웨어 업데이트** 노드에 표시되지 않습니다.  
 
--   서비스 계획은 높은 위험 수준의 배포로 간주되며 **컬렉션 선택** 창에는 사이트 속성에서 구성한 배포 확인 설정을 충족하는 사용자 지정 컬렉션만 표시됩니다. 자세한 내용은 [System Center Configuration Manager에 대해 위험 수준이 높은 배포를 관리하기 위한 설정](../../../protect/understand/settings-to-manage-high-risk-deployments.md)항목을 참조하세요.  
+-   서비스 계획은 높은 위험 수준의 배포로 간주되며 **컬렉션 선택** 창에는 사이트 속성에서 구성한 배포 확인 설정을 충족하는 사용자 지정 컬렉션만 표시됩니다. 자세한 내용은 [Configuration Manager에 대해 위험 수준이 높은 배포를 관리하기 위한 설정](../../../protect/understand/settings-to-manage-high-risk-deployments.md)을 참조하세요.  
 
 -   이제 Windows 10 업그레이드 패키지를 시작하는 사용자는 해당 운영 체제를 업그레이드할 것임을 알리는 메시지를 받습니다.  
 
@@ -72,12 +71,12 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 ### <a name="ios-app-configuration-policies"></a>iOS 앱 구성 정책  
  Configuration Manager 앱 구성 정책을 사용하여 사용자가 iOS 앱을 실행할 때 필요할 수 있는 설정을 제공할 수 있습니다. 예를 들어 앱에서 사용자가 사용자 지정 포트 번호, 언어, 보안 설정 또는 브랜딩 설정(예: 회사 로고)을 지정하도록 요구할 수 있습니다. 이러한 설정을 잘못 입력하면 지원 센터의 부담이 증가하며 새 앱 도입도 지연됩니다.  
 
- 앱 구성 정책을 사용하는 경우 사용자가 앱을 실행하기 전에 정책에서 이러한 설정을 사용자에게 배포할 수 있으므로 이러한 문제를 방지할 수 있습니다. 설정은 자동으로 제공되므로 사용자가 아무런 작업을 수행하지 않아도 됩니다. 자세한 내용은 [System Center Configuration Manager에서 앱 구성 정책을 사용하여 iOS 앱 구성](../../../apps/deploy-use/configure-ios-apps-with-app-configuration-policies.md)을 참조하세요.  
+ 앱 구성 정책을 사용하는 경우 사용자가 앱을 실행하기 전에 정책에서 이러한 설정을 사용자에게 배포할 수 있으므로 이러한 문제를 방지할 수 있습니다. 설정은 자동으로 제공되므로 사용자가 아무런 작업을 수행하지 않아도 됩니다. 자세한 내용은 [앱 구성 정책을 사용하여 iOS 앱 구성](../../../apps/deploy-use/configure-ios-apps-with-app-configuration-policies.md)을 참조하세요.  
 
-### <a name="manage-volume-purchased-ios-apps"></a>Manage volume-purchased iOS apps  
+### <a name="manage-volume-purchased-ios-apps"></a>대량 구매 iOS 앱 관리  
  Configuration Manager를 통해 Apple VPP(Volume-Purchase Program)에서 대량 구매한 앱을 배포하고 관리할 수 있습니다. Configuration Manager는 App Store에서 라이선스 정보를 가져오고 사용한 라이선스 수를 추적합니다.  
 
- 자세한 내용은 [System Center Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리](../../../apps/deploy-use/manage-volume-purchased-ios-apps.md)를 참조하세요.  
+ 자세한 내용은 [Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리](../../../apps/deploy-use/manage-volume-purchased-ios-apps.md)를 참조하세요.  
 
 ### <a name="automatic-creation-of-office-mobile-apps"></a>Office 모바일 앱의 자동 만들기  
  1511에서 1602 버전으로 업데이트하는 경우 Configuration Manager에서 Android 및 iOS용으로 다음과 같은 Microsoft Office 모바일 앱을 자동으로 만듭니다.  
@@ -96,55 +95,55 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 이러한 앱은 Configuration Manager 콘솔의 **애플리케이션** 노드에 있습니다.  
 
- 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 애플리케이션을 배포하는 방법](../../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
+ 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [Configuration Manager에서 애플리케이션을 배포하는 방법](../../../apps/deploy-use/deploy-applications.md)을 참조하세요.  
 
 ## <a name="software-updates"></a>소프트웨어 업데이트  
 
 ### <a name="manage-office-365-client-updates"></a>Office 365 클라이언트 업데이트 관리  
- System Center Configuration Manager에서는 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Office 365 ProPlus 업데이트 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)를 참조하세요.  
+ Configuration Manager에서는 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 클라이언트 업데이트를 관리할 수 있습니다. 자세한 내용은 [Configuration Manager에서 Office 365 ProPlus 업데이트 관리](/sccm/sum/deploy-use/manage-office-365-proplus-updates)를 참조하세요.  
 
 ## <a name="compliance-settings"></a>호환성 설정  
 
 ### <a name="compliance-settings-for-devices-running-windows-10-team"></a>Windows 10 Team을 실행하는 디바이스에 대한 준수 설정  
  **Windows 8.1 및 Windows 10** 구성 항목에 새로운 설정이 추가되었습니다. 이러한 설정을 통해 Windows 10 Team을 실행하는 디바이스(예: Surface Hub 디바이스)를 제어할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
+ 자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)을 참조하세요.  
 
 ### <a name="kiosk-mode-settings-for-android-samsung-knox-standard-devices"></a>Android Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정  
  키오스크 모드에서는 디바이스를 잠가 특정 기능만 작동하도록 허용할 수 있습니다. 예를 들어, 디바이스에서 지정된 관리되는 앱만 실행할 수 있게 하거나 디바이스에서 볼륨 단추를 사용되지 않도록 설정할 수 있습니다. 이러한 설정은 POS 디바이스와 같이 한 가지 기능만 수행하도록 지정된 디바이스 또는 디바이스의 데모 모델에 사용할 수 있습니다. 이제 Configuration Manager에서, Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정을 지정할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)을 참조하세요.  
+ 자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)을 참조하세요.  
 
 ## <a name="conditional-access"></a>조건부 액세스  
 
-### <a name="conditional-access-for-pcs-managed-by-system-center-configuration-manager"></a>System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스 지원  
- 이 릴리스 이전에서는, PC에 대한 조건부 액세스를 설정하려면 PC가 Intune에 등록되어 있거나 도메인에 가입된 PC여야 합니다. 1602 업데이트부터, System Center Configuration Manager에서 관리하는 PC에 대한 조건부 액세스가 지원됩니다. System Center Configuration Manager에서 관리하는 사용자 PC에 대해, 설정하는 준수 정책을 준수하는 디바이스로만 Exchange Online 및 SharePoint Online에 대한 액세스를 제한할 수 있습니다.  
+### <a name="conditional-access-for-pcs-managed-by-configuration-manager"></a>Configuration Manager에서 관리하는 PC에 대한 조건부 액세스  
+ 이 릴리스 이전에서는, PC에 대한 조건부 액세스를 설정하려면 PC가 Intune에 등록되어 있거나 도메인에 가입된 PC여야 합니다. 1602 업데이트부터, Configuration Manager에서 관리하는 PC에 대한 조건부 액세스가 지원됩니다. Configuration Manager에서 관리하는 사용자 PC에 대해, 설정하는 준수 정책을 준수하는 디바이스로만 Exchange Online 및 SharePoint Online에 대한 액세스를 제한할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager에서 관리되는 PC용 Office 365 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
+ 자세한 내용은 [Configuration Manager에서 관리되는 PC용 Office 365 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
 
 ### <a name="restricting-access-based-on-the-health-of-devices"></a>디바이스 상태에 따라 액세스 제한  
  이제 상태 증명 서비스에서 보고하는 디바이스의 상태를 기준으로, 이메일 및 Office 365 서비스에 대한 액세스를 제한할 수 있습니다. 또한 Intune에서 관리하는 디바이스는 디바이스 상태 보고서에 포함됩니다.  
 
- Configuration Manager 콘솔에서는 상태에 따라 디바이스의 액세스가 허용되거나 차단되어야 하는지를 지정할 수 있는 새 준수 규칙을 제공합니다. 상태 증명 서비스 및 Intune에서 디바이스 상태가 보고되는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 상태 증명](../../../core/servers/manage/health-attestation.md)을 참조하세요.  
+ Configuration Manager 콘솔에서는 상태에 따라 디바이스의 액세스가 허용되거나 차단되어야 하는지를 지정할 수 있는 새 준수 규칙을 제공합니다. 상태 증명 서비스 및 Intune에서 디바이스 상태가 보고되는 방법에 대한 자세한 내용은 [Configuration Manager에 대한 상태 증명](../../../core/servers/manage/health-attestation.md)을 참조하세요.  
 
 ### <a name="new-compliance-policy-rules"></a>새 준수 정책 규칙  
  자동 업데이트, 디바이스 잠금을 해제하는 암호 요구 등 새로운 준수 정책 규칙이 더 나은 보안 요구 사항을 지원하기 위해 추가되었습니다.
 
- 자세한 내용은 [System Center Configuration Manager의 디바이스 준수 정책](../../../protect/deploy-use/device-compliance-policies.md)을 참조하세요.  
+ 자세한 내용은 [디바이스 규정 준수 정책](../../../protect/deploy-use/device-compliance-policies.md)을 참조하세요.  
 
 ### <a name="make-sure-enrolled-and-compliant-devices-always-have-access-to-exchange-on-premises"></a>등록된 규격 디바이스에서 항상 Exchange 온-프레미스에 액세스할 수 있는지 확인  
  다음 옵션을 선택하면 Intune에 등록되어 있고 규정 준수 정책을 준수하는 디바이스는 Exchange 온-프레미스에 액세스할 수 있습니다. **기본 규칙 재정의 - Intune 등록 및 규정 준수 디바이스가 Exchange 온-프레미스에 액세스할 수 있도록 항상 허용합니다**. 이 규칙은 Exchange 온-프레미스에 대한 **조건부 액세스 정책 구성 마법사**의 **일반 페이지**에서 사용할 수 있습니다.
 
  이 규칙은 기본 규칙을 재정의하며, 이것은 기본 규칙을 액세스를 격리 또는 차단하도록 설정하더라도 등록 및 규격 디바이스는 여전히 Exchange 온-프레미스에 액세스할 수 있음을 의미합니다. 등록된 규격 디바이스에서 Exchange 온-프레미스를 통해 항상 메일에 액세스할 수 있도록 하려면 이 설정을 사용합니다.   
 
- 자세한 연습을 보려면 [System Center Configuration Manager의 메일 액세스 관리](../../../protect/deploy-use/manage-email-access.md)를 참조하세요.  
+ 자세한 연습에 대해서는 [메일 액세스 관리](../../../protect/deploy-use/manage-email-access.md)를 참조하세요.  
 
 ## <a name="client-management"></a>클라이언트 관리  
 
 ### <a name="client-online-status"></a>클라이언트 온라인 상태  
  클라이언트에 대한 새로운 상태를 컴퓨터가 온라인인지 여부를 모니터링하는 데 사용할 수 있습니다. 컴퓨터가 할당된 관리 지점에 연결된 경우 온라인인 것으로 간주합니다. 컴퓨터가 온라인 상태임을 나타내기 위해 클라이언트에서 관리 지점에 ping과 유사한 메시지를 보냅니다. 관리 지점에서 5분 후에 메시지를 받지 못하면 클라이언트 상태가 오프라인인 것으로 간주됩니다.  
 
- 자세한 내용은 [System Center Configuration Manager에서 클라이언트를 모니터링하는 방법](../../../core/clients/manage/monitor-clients.md)을 참조하세요.  
+ 자세한 내용은 [클라이언트를 모니터링하는 방법](../../../core/clients/manage/monitor-clients.md)을 참조하세요.  
 
 ### <a name="refresh-pc-machine-and-user-policy-from-software-center"></a>소프트웨어 센터에서 PC 컴퓨터 및 사용자 정책 새로 고침  
  PC가 해당 Configuration Manager 컴퓨터 및 사용자 정책을 새로 고치도록 하는 새 옵션, **동기화 정책**이 **옵션** > **컴퓨터 유지 관리** 페이지에 추가되었습니다.  
@@ -169,7 +168,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 -   코드 무결성  
 
-자세한 내용은 [System Center Configuration Manager에 대한 상태 증명](../../../core/servers/manage/health-attestation.md)을 참조하세요.  
+자세한 내용은 [Configuration Manager에 대한 상태 증명](../../../core/servers/manage/health-attestation.md)을 참조하세요.  
 
 ### <a name="improvements-to-endpoint-protection-antimalware-settings"></a>Endpoint Protection 맬웨어 방지 설정의 향상된 기능  
  1602에서는 Windows Defender에 대한 Endpoint Protection 맬웨어 방지 프로그램 정책에서 다음과 같은 새 설정을 추가합니다.  
@@ -188,7 +187,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
     또한 Endpoint Protection 맬웨어 방지 정책의 "제외 설정" 섹션에 포함된 기존의 **파일 및 폴더 제외** 설정이 이제 디바이스 제외를 허용합니다.  
 
-자세한 내용은 [System Center Configuration Manager에서 Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](../../../protect/deploy-use/endpoint-antimalware-policies.md)을 참조하세요.  
+자세한 내용은 [Endpoint Protection에 대한 맬웨어 방지 정책을 만들어 배포하는 방법](../../../protect/deploy-use/endpoint-antimalware-policies.md)을 참조하세요.  
 
 ## <a name="mobile-device-management"></a>모바일 디바이스 관리  
 
@@ -203,7 +202,7 @@ System Center Configuration Manager 업데이트 1602는 버전 1511을 실행�
 
 Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독되지 않은 디바이스의 활성화 잠금 상태를 요청할 수 있습니다. 감독된 디바이스의 경우 Configuration Manager에서 활성화 잠금 무시 코드를 검색하여 디바이스에 직접 제공할 수 있습니다.  
 
- 자세한 내용은 [System Center Configuration Manager의 활성화 잠금 무시를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
+ 자세한 내용은 [활성화 잠금 무시를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
 
 ### <a name="monitor-terms-and-conditions-deployments"></a>사용 약관 배포 모니터링  
  Configuration Manager 콘솔에서 사용 약관 배포를 모니터링할 수 있습니다.  

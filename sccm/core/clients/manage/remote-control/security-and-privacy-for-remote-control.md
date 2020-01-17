@@ -1,7 +1,7 @@
 ---
 title: 원격 제어 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보를 확인합니다.
+description: Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보를 확인합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 272ee86b-d3d9-4fd9-b5c4-73e490e1a1e4
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5952aaa71aacaa7e1ddd61746423a4bd572c7417
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 83631b331030f9648c3e88a2e101a013cfa0e98f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65499685"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823809"
 ---
-# <a name="security-and-privacy-for-remote-control-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-remote-control-in-configuration-manager"></a>Configuration Manager에서 원격 제어를 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager에서 원격 제어에 대한 보안 및 개인 정보가 포함되어 있습니다.  
+이 항목에는 Configuration Manager에서의 원격 제어에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
 ##  <a name="BKMK_Security_HardwareInventory"></a> 원격 제어에 대한 보안 모범 사례  
  원격 제어를 사용 하 여 클라이언트 컴퓨터를 관리 하는 경우에 다음 보안 모범 사례를 사용 합니다.  

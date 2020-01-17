@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 상태 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 클라이언트 상태 설정을 선택합니다.
+description: Configuration Manager에서 클라이언트 상태 설정을 선택합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: a2275ba2-c83d-43e7-90ed-418963a707fe
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70c213a628c72d415a912f99ae5efd6f07150ebf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5bb77e1e9f55919a03368d549946ee4dd1cda58a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62213466"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825203"
 ---
-# <a name="how-to-configure-client-status-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트 상태를 구성하는 방법
+# <a name="how-to-configure-client-status-in-configuration-manager"></a>Configuration Manager에서 클라이언트 상태를 구성하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 클라이언트 상태를 모니터링하고 발견되는 문제를 재구성하려면 먼저 사이트를 구성하여 클라이언트를 비활성으로 표시하는 데 사용할 매개 변수를 지정하고 클라이언트 활동이 지정된 임계값 미만으로 떨어질 경우 경고하는 옵션을 구성해야 합니다. 또한 컴퓨터에서 클라이언트 상태를 통해 발견되는 문제를 자동으로 해결하지 않도록 설정할 수 있습니다.  
+Configuration Manager 클라이언트 상태를 모니터링하고 발견되는 문제를 재구성하려면 먼저 사이트를 구성하여 클라이언트를 비활성으로 표시하는 데 사용할 매개 변수를 지정하고 클라이언트 활동이 지정된 임계값 미만으로 떨어질 경우 경고하는 옵션을 구성해야 합니다. 또한 컴퓨터에서 클라이언트 상태를 통해 발견되는 문제를 자동으로 해결하지 않도록 설정할 수 있습니다.  
 
 ##  <a name="BKMK_1"></a> 클라이언트 상태를 구성하려면  
 
@@ -95,7 +94,7 @@ System Center Configuration Manager 클라이언트 상태를 모니터링하고
 1. 자동 문제 해결을 사용하지 않도록 설정할 클라이언트 컴퓨터에서 레지스트리 편집기를 엽니다.  
 
    > [!WARNING]  
-   >  레지스트리 편집기를 잘못 사용할 경우 운영 체제를 다시 설치해야 하는 심각한 문제가 발생할 수 있습니다. 레지스트리 편집기를 잘못 사용하여 발생하는 문제는 해결할 수 있다는 보장이 없습니다. 레지스트리 편집기 사용에 따른 결과는 사용자의 책임입니다.  
+   >  레지스트리 편집기를 잘못 사용할 경우 운영 체제를 다시 설치해야 하는 심각한 문제가 발생할 수 있습니다. Microsoft는 레지스트리 편집기를 잘못 사용해서 유발된 문제를 사용자가 해결할 수 있으리라고 보장할 수 없습니다. 레지스트리 편집기 사용에 따른 위험은 사용자가 책임져야 합니다.  
 
 2. **HKEY_LOCAL_MACHINE\Software\Microsoft\CCM\CcmEval\NotifyOnly**로 이동합니다.  
 
@@ -107,4 +106,4 @@ System Center Configuration Manager 클라이언트 상태를 모니터링하고
 
 4. 레지스트리 편집기를 닫습니다.  
 
-   또한 CCMSetup **NotifyOnly** 설치 속성을 사용하여 클라이언트를 설치함으로써 자동 문제 해결에서 클라이언트를 제외할 수도 있습니다. 클라이언트 설치 속성에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+   또한 CCMSetup **NotifyOnly** 설치 속성을 사용하여 클라이언트를 설치함으로써 자동 문제 해결에서 클라이언트를 제외할 수도 있습니다. 이 클라이언트 설치 속성에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  

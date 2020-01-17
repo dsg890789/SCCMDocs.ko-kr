@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 인벤토리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 소프트웨어 인벤토리를 소개합니다.
+description: Configuration Manager의 소프트웨어 인벤토리를 소개합니다.
 ms.date: 04/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,17 +10,16 @@ ms.assetid: 79eb49da-cd2b-4ffc-b355-b595aeba3aea
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0ca25d64f3dd0e86ddbd89e2d86ae13da170891
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: cdd8e0740e4932b4c1c98d18458d5a8bc946cf55
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67550739"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824285"
 ---
-# <a name="introduction-to-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 인벤토리 소개
+# <a name="introduction-to-software-inventory-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 인벤토리 소개
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 소프트웨어 인벤토리를 사용하여 클라이언트 디바이스의 파일에 대한 정보를 수집합니다. 또한 소프트웨어 인벤토리는 클라이언트 디바이스에서 파일을 수집하고 사이트 서버에 저장할 수 있습니다. 소프트웨어 인벤토리는 클라이언트 설정에서 **클라이언트에서 소프트웨어 인벤토리 사용** 설정을 선택할 때 수집됩니다. 또한 클라이언트 설정에서 이 작업을 예약할 수도 있습니다.  
 

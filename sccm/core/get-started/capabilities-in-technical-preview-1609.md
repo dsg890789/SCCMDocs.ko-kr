@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1609의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1609에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1609에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,21 +11,20 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: caa916afa1bb254223844e97d9f2299a91d1ec07
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 06b16f8d2952eb8e81962ee6a4f7f906bfd4e04a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67677765"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805152"
 ---
-# <a name="capabilities-in-technical-preview-1609-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1609의 기능
+# <a name="capabilities-in-technical-preview-1609-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1609의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1609에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.    
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1609에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다.      이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.    
 
 **이 Technical Preview의 알려진 문제:**  
 *  Configuration Manager 1609 Technical Preview로 업데이트하면 배포한 모든 버전 업그레이드 정책이 삭제됩니다. 이러한 정책을 계속 사용하려면 다시 만들어서 배포해야 합니다.
@@ -79,7 +78,7 @@ Configuration Manager를 Intune과 함께 사용할 경우 OMA-URI를 사용하�
 
 #### <a name="create-and-deploy-a-configuration-manager-application-from-the-synchronized-app-data"></a>동기화된 앱 데이터에서 Configuration Manager 애플리케이션 만들기 및 배포
 
-유료 스토어 앱에서 Configuration Manager 애플리케이션을 만들고 배포하는 절차는 무료 앱에서 애플리케이션을 만들 때와 동일합니다. [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 **비즈니스용 Windows 스토어에서 앱에서 Configuration Manager 애플리케이션 만들기 및 배포**를 참조하세요.
+유료 스토어 앱에서 Configuration Manager 애플리케이션을 만들고 배포하는 절차는 무료 앱에서 애플리케이션을 만들 때와 동일합니다. [Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)의 **비즈니스용 Windows 스토어에서 앱에서 Configuration Manager 애플리케이션 만들기 및 배포**를 참조하세요.
 
 
 #### <a name="modify-the-client-secret-key-from-azure-active-directory"></a>Azure Active Directory에서 클라이언트 암호 키 수정
@@ -451,4 +450,4 @@ Office 365 ProPlus 업데이트에 대한 자세한 내용은 [Manage Office 365
 
 
 ## <a name="see-also"></a>참고 항목
-[System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)
+[Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)

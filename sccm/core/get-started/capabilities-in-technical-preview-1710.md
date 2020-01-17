@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1710 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1710에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1710에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 11/20/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e668baafac94dfc7da5008c37556c017c5e01c9d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3ea9521e310aac48db15f6d063b3558d00f0c574
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67286101"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804710"
 ---
-# <a name="capabilities-in-technical-preview-1710-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1710의 기능
+# <a name="capabilities-in-technical-preview-1710-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1710의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1710에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1710에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.     
 
 
 <!--  Known Issues Template   
@@ -54,7 +53,7 @@ ms.locfileid: "67286101"
 
 ## <a name="improvements-for-deploying-powershell-scripts-from-configuration-manager"></a>Configuration Manager에서 PowerShell 스크립트를 배포하기 위한 향상된 기능
 이 릴리스에서는 이제 배포하는 PowerShell 스크립트에서 다음과 같은 향상된 기능을 사용하도록 지원합니다. 
-- **보안 범위** -  스크립트에서 보안 범위를 사용하여 스크립트 작성 및 실행을 제어합니다. 이는 사용자 그룹을 나타내는 태그를 할당하여 수행됩니다. 보안 범위 사용에 대한 자세한 내용은 [System Center Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.
+- **보안 범위** -  스크립트에서 보안 범위를 사용하여 스크립트 작성 및 실행을 제어합니다. 이는 사용자 그룹을 나타내는 태그를 할당하여 수행됩니다. 보안 범위 사용에 대한 자세한 내용은 [Configuration Manager에 대한 역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)을 참조하세요.
 - **실시간 모니터링** - 스크립트 실행을 모니터링하는 경우 스크립트가 실행되는 즉시 실시간으로 수행됩니다.
 - **매개 변수 유효성 검사** - 스크립트의 각 매개 변수는 **스크립트 매개 변수 속성** 대화 상자를 통해 해당 매개 변수에 대한 유효성 검사를 추가할 수 있습니다. 유효성 검사를 추가한 후에 유효성 검사를 충족하지 않는 매개 변수 값이 입력되면 오류가 발생합니다.
 
@@ -103,7 +102,7 @@ Exploit Guard 정책 배포를 위한 준수 데이터는 Configuration Manager 
 
 Exploit Guard 및 구체적인 구성 요소와 규칙에 대한 자세한 내용은 Windows 설명서 라이브러리에 있는 [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)를 참조하세요.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 관리되는 디바이스는 Windows 10 1709 Fall Creators Update 이상을 실행해야 하며 구성된 구성 요소 및 규칙에 따라 다음 요구 사항을 충족해야 합니다.
 
 |Exploit Guard 구성 요소 |추가 필수 구성 요소|
@@ -223,4 +222,4 @@ Windows Defender Application Guard에 대한 기본 사항을 이해하려면 [�
 Windows Defender Application Guard에 대한 자세한 내용은 [이 블로그 게시물](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#BmJGKPfSjHHzsMmI.97)을 참조하세요. 또한 Windows Defender Application Guard 독립 실행형 모드에 대한 자세한 내용은 [이 블로그 게시물](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-Application-Guard-Standalone-mode/td-p/66903)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

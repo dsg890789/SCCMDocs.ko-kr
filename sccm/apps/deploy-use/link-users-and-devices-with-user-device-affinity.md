@@ -10,17 +10,16 @@ ms.assetid: 5b30b0d5-722d-4d4b-9ed7-5a43de315461
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c91aeb94067a6b61c5a96bc9176a0825634225f8
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 40468a161145a858c72e305326bf4fa0460de549
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658713"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815683"
 ---
 # <a name="link-users-and-devices-with-user-device-affinity-in-configuration-manager"></a>Configuration Manager에서 사용자 디바이스 선호도를 사용하여 사용자와 디바이스 연결
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 사용자 디바이스 선호도는 사용자를 하나 이상의 디바이스에 연결합니다. 이 동작을 통해 사용자 디바이스의 이름을 알지 않고도 사용자에게 애플리케이션을 배포할 수 있습니다. 사용자의 각 디바이스에 애플리케이션을 배포하는 대신 사용자에게 애플리케이션을 배포하면 됩니다. 그러면 사용자 디바이스 선호도를 통해 자동으로 해당 사용자와 연결된 모든 디바이스에 애플리케이션이 설치되도록 할 수 있습니다.  
 
@@ -77,7 +76,7 @@ Configuration Manager는 Windows 이벤트 로그에서 사용자 로그온 이�
 
     - **사용자 장치 선호도 사용량 임계값 (분)** : 사이트에서 사용자 장치 선호도를 만들기 전에 장치 사용의 시간 (분)을 설정 합니다.  
 
-    - **사용자 디바이스 선호도 사용량 임계값(일)** : 사이트가 사용량 기반 선호도 임계값을 측정할 일 수를 지정합니다.  
+    - **사용자 디바이스 선호도 임계값(일)** : 사이트에서 사용량 기반 선호도 임계값을 측정하는 기간(일)을 설정합니다.  
 
     - **사용량 데이터에서 사용자 장치 선호도 자동 구성**: 사이트에서 사용자 장치 선호도를 자동으로 만들 수 있도록 하려면 **True** 를 선택 합니다. **False**를 선택할 경우 모든 사용자 디바이스 선호도 할당을 수동으로 승인해야 합니다.  
 
@@ -134,7 +133,7 @@ Configuration Manager에서 자동 사용자 디바이스 선호도가 만들어
 ### <a name="set-up-a-user-device-affinity-in-the-application-catalog"></a>응용 프로그램 카탈로그에서 사용자 장치 선호도 설정
 
 > [!Important]
-> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910을 사용 하는 응용 프로그램 카탈로그 역할에 대 한 지원이 종료 됩니다.  
+> 애플리케이션 카탈로그의 Silverlight 사용자 환경은 현재 분기 버전 1806부터 지원되지 않습니다. 버전 1906부터 업데이트된 클라이언트는 사용자가 이용할 수 있는 애플리케이션 배포에 관리 지점을 자동으로 사용하게 됩니다. 새 애플리케이션 카탈로그 역할도 설치할 수 없습니다. 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다.  
 >
 > 자세한 내용은 다음 아티클을 참조하세요.
 >

@@ -10,19 +10,18 @@ ms.assetid: 919e3636-53fe-4119-ad14-2d03702b391b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c8f360d864c0ff8c17e4833a7cb6384a06f373c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3f6cc4366346d32934d8f69fe240f023d74ff49e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888525"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821446"
 ---
-# <a name="use-software-center-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포
+# <a name="use-software-center-to-deploy-windows-over-the-network-with-configuration-manager"></a>Configuration Manager에서 소프트웨어 센터를 사용하여 네트워크를 통해 Windows 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 운영 체제를 설치하기 위한 작업 순서를 소프트웨어 센터에서 사용하도록 만들 수 있습니다. 다음 운영 체제 배포 시나리오에서 소프트웨어 센터에 운영 체제를 배포할 수 있습니다.
+Configuration Manager에서 운영 체제를 설치하기 위한 작업 순서를 소프트웨어 센터에서 사용하도록 만들 수 있습니다. 다음 운영 체제 배포 시나리오에서 소프트웨어 센터에 운영 체제를 배포할 수 있습니다.
 
 -   [새 버전의 Windows로 기존 컴퓨터 새로 고침](refresh-an-existing-computer-with-a-new-version-of-windows.md)
 

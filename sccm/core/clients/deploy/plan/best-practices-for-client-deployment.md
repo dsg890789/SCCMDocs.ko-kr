@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 배포 모범 사례
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 클라이언트 배포 모범 사례를 확인합니다.
+description: Configuration Manager의 클라이언트 배포 모범 사례를 확인합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,17 +10,16 @@ ms.assetid: a933d69c-5feb-4b2b-84e8-56b3b64d5947
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3f5be163775e667571d97ef8a9d417ce6256b2d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 28f8bfb2ef012fcd4f19835190b7c042d38fd9e0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62202099"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825016"
 ---
-# <a name="best-practices-for-client-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager의 클라이언트 배포 모범 사례
+# <a name="best-practices-for-client-deployment-in-configuration-manager"></a>Configuration Manager의 클라이언트 배포 모범 사례
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 ## <a name="use-software-update-based-client-installation-for-active-directory-computers"></a>Active Directory 컴퓨터에 소프트웨어 업데이트 기반의 클라이언트 설치 사용  
@@ -31,7 +30,7 @@ ms.locfileid: "62202099"
 ## <a name="extend-the-active-directory-schema-and-publish-the-site-so-that-you-can-run-ccmsetup-without-command-line-options"></a>명령줄 옵션 없이 CCMSetup을 실행할 수 있도록 Active Directory 스키마를 확장하고 사이트 게시  
  Configuration Manager를 위해 Active Directory 스키마를 확장하고 Active Directory Domain Service에 사이트를 게시하면 많은 클라이언트 설치 속성이 Active Directory Domain Service에 게시됩니다. 컴퓨터에서 이러한 클라이언트 설치 속성을 찾을 수 있는 경우 Configuration Manager 클라이언트 배포 시 이러한 속성을 사용할 수 있습니다. 이 정보는 자동으로 생성되므로 수동으로 설치 속성을 입력하는 데 따른 사람의 실수 위험이 없습니다.  
 
- 자세한 내용은 [System Center Configuration Manager에서 Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보](../../../../core/clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services.md)를 참조하세요.  
+ 자세한 내용은 [Active Directory Domain Services에 게시된 클라이언트 설치 속성 정보](../../../../core/clients/deploy/about-client-installation-properties-published-to-active-directory-domain-services.md)를 참조하세요.  
 
 ## <a name="use-a-phased-rollout-to-manage-cpu-usage"></a>단계적 롤아웃을 사용하여 CPU 사용량 관리  
  단계적 클라이언트 배포를 사용하여 CPU 처리 요구 사항이 사이트 서버에 미치는 영향을 최소화합니다. 업무 시간 동안 기타 서비스에 보다 많은 가용 대역폭을 확보하는 동시에 배포로 인해 사용자의 컴퓨터가 느려지거나 다시 시작해야 할 경우 사용자에게 영향을 주지 않도록 업무 외 시간에 클라이언트를 배포합니다.  
@@ -48,7 +47,7 @@ ms.locfileid: "62202099"
 
  또한 FSP 속성을 사용하여 대체 상태 지점을 설치하면 클라이언트 설치와 할당을 모니터링하고 통신 문제를 파악할 수 있습니다.  
 
- 이러한 옵션에 대한 자세한 내용은 [System Center Configuration Manager의 클라이언트 설치 속성 정보](../../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
+ 이 옵션에 대한 자세한 내용은 [클라이언트 설치 속성 정보](../../../../core/clients/deploy/about-client-installation-properties.md)를 참조하세요.  
 
 ## <a name="install-client-language-packs-before-you-install-the-clients"></a>클라이언트를 설치하기 전에 클라이언트 언어 팩 설치  
 클라이언트를 배포하기 전에 클라이언트 언어 팩을 설치하는 것이 좋습니다. 클라이언트를 설치한 후에 추가 언어를 사용하기 위해 [클라이언트 언어 팩](../../../../core/servers/deploy/install/language-packs.md)을 설치할 경우 해당 언어를 사용하려면 먼저 클라이언트를 다시 설치해야 합니다. 모바일 디바이스 클라이언트의 경우 모바일 디바이스를 지우고 다시 등록해야 합니다.  
@@ -56,7 +55,7 @@ ms.locfileid: "62202099"
 ## <a name="prepare-required-pki-certificates-in-advance"></a>필요한 PKI 인증서를 미리 준비  
  인터넷상의 디바이스, 등록된 모바일 디바이스 및 Mac 컴퓨터를 관리하려면 사이트 시스템(관리 지점 및 배포 지점)과 클라이언트 디바이스에 PKI 인증서가 있어야 합니다. 프로덕션 네트워크에서 새 인증서를 사용하기 위한 변경 관리 승인이 필요하고 사이트 시스템 서버를 다시 시작하거나 사용자가 새 그룹 멤버 자격을 위해 로그오프했다가 로그온해야 할 수 있습니다. 또한 보안 권한 복제와 새 인증서 템플릿을 위한 충분한 시간을 고려해야 할 수 있습니다.  
 
- 필요한 PKI 인증서에 대한 자세한 내용은 [System Center Configuration Manager를 위한 PKI 인증서 요구 사항](../../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
+ 필수 PKI 인증서에 대한 자세한 내용은 [Configuration Manager를 위한 PKI 인증서 요구 사항](../../../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.  
 
 ## <a name="before-you-install-clients-configure-any-required-client-settings-and-maintenance-windows"></a>클라이언트를 설치하기 전에 필요한 클라이언트 설정 및 유지 관리 기간 구성  
  클라이언트 설치 전이나 후에 유지 관리 기간과 [클라이언트 설정을 구성](../../../../core/clients/deploy/configure-client-settings.md)할 수 있지만, 클라이언트 설치 후에 즉시 이러한 설정이 사용되도록 클라이언트 설치 전에 필요한 설정을 구성하는 것이 좋습니다. 
@@ -72,6 +71,6 @@ ms.locfileid: "62202099"
 ## <a name="use-file-based-write-filters-for-windows-embedded-devices"></a>Windows Embedded 디바이스에 대한 파일 기반 쓰기 필터 사용 
  EWF(강화된 쓰기 필터)를 사용하는 Windows Embedded 디바이스는 상태 메시지 재동기화가 이루어질 수 있습니다. EWF를 사용하는 Windows Embedded 디바이스가 몇 개에 불과한 경우 이러한 재동기화가 눈에 띄지 않지만 델타 인벤토리 대신 전체 인벤토리를 전송하는 것과 같이 정보를 재동기화하는 Windows Embedded 디바이스가 많을 경우 이로 인해 네트워크 패킷이 크게 증가하고 사이트 서버의 CPU 처리량이 늘어날 수 있습니다.  
 
- Configuration Manager 클라이언트에서 사용할 쓰기 필터 유형을 선택하는 옵션이 나타나면 네트워크 및 CPU 효율성을 위해 파일 기반 쓰기 필터를 선택하고 디바이스 다시 시작 사이에 클라이언트 상태와 인벤토리 데이터를 유지하는 예외를 구성합니다. 필터 작성에 대한 자세한 내용은   [Planning for client deployment to Windows Embedded devices in System Center Configuration Manager](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)항목을 참조하세요.  
+ Configuration Manager 클라이언트에서 사용할 쓰기 필터 유형을 선택하는 옵션이 나타나면 네트워크 및 CPU 효율성을 위해 파일 기반 쓰기 필터를 선택하고 디바이스 다시 시작 사이에 클라이언트 상태와 인벤토리 데이터를 유지하는 예외를 구성합니다. 쓰기 필터에 대한 자세한 내용은 [Windows Embedded 디바이스에 클라이언트 배포 계획](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)을 참조하세요.  
 
  기본 사이트에서 지원할 수 있는 Windows Embedded 클라이언트의 최대 수에 대한 자세한 내용은 [클라이언트 및 디바이스에 대해 지원되는 운영 체제](../../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)를 참조하세요.  

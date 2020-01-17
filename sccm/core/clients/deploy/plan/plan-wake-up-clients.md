@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 깨우기
 titleSuffix: Configuration Manager
-description: WOL(Wake On LAN)을 사용하여 System Center Configuration Manager에서 클라이언트의 절전 모드를 해제하는 방법을 계획합니다.
+description: WOL(Wake On LAN)을 사용하여 Configuration Manager에서 클라이언트의 절전 모드를 해제하는 방법을 계획합니다.
 ms.date: 04/23/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,24 +10,23 @@ ms.assetid: 52ee82b2-0b91-4829-89df-80a6abc0e63a
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a16d598b80dd18802e42cae51aeba3c91a4d707c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: a9caf7f34fbf375d0a5195b5d464d12f8d479ade
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64669140"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824931"
 ---
-# <a name="plan-how-to-wake-up-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트의 절전 모드 해제 계획
+# <a name="plan-how-to-wake-up-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트의 절전 모드 해제 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
  Configuration Manager는 소프트웨어 업데이트 및 애플리케이션 등과 같은 필수 소프트웨어의 설치가 필요할 때 컴퓨터를 절전 모드에서 해제하는 기존 절전 모드 해제 패킷을 지원합니다.
 
 > [!NOTE]
 > 이 문서에서는 이전 버전 Wake on LAN의 작동 방식을 설명합니다. 이 기능은 최신 버전 Wake on LAN도 들어 있는 Configuration Manager 버전 1810에 포함되어 있습니다. Wake on LAN의 두 버전은 모두 동시에 사용하도록 설정될 수 있고 대부분은 동시에 사용하도록 설정됩니다. 1810부터 새 버전 Wake on LAN의 작동 방식 및 한 버전만 또는 두 버전을 모두 사용하도록 설정하는 방법에 대한 자세한 내용은 [Wake on LAN을 구성하는 방식](/sccm/core/clients/deploy/configure-wake-on-lan)을 참조하세요.  
 
-## <a name="how-to-wake-up-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 클라이언트의 절전 모드를 해제하는 방법
+## <a name="how-to-wake-up-clients-in-configuration-manager"></a>Configuration Manager에서 클라이언트의 절전 모드를 해제하는 방법
 
  Configuration Manager는 소프트웨어 업데이트 및 애플리케이션 등과 같은 필수 소프트웨어의 설치가 필요할 때 컴퓨터를 절전 모드에서 해제하는 기존 절전 모드 해제 패킷을 지원합니다.  
 

@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 인벤토리 보안 및 개인 정보
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 소프트웨어 인벤토리에 대한 보안 및 개인 정보를 확인합니다.
+description: Configuration Manager에서 소프트웨어 인벤토리에 대한 보안 및 개인 정보를 확인합니다.
 ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,19 +10,18 @@ ms.assetid: 8e68e1fb-a8ec-4543-bb8a-cbbaf184a418
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 717f6c3a086a74772aaea98fe8a90cf573258f43
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d64fd2ac98996a6a1ccadae78e5f9cc576b55444
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889978"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824234"
 ---
-# <a name="security-and-privacy-for-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 인벤토리에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-software-inventory-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 인벤토리를 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager에서 소프트웨어 인벤토리에 대한 보안 및 개인 정보가 포함되어 있습니다.  
+이 항목에는 Configuration Manager의 소프트웨어 인벤토리에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
 ##  <a name="BKMK_Security_HardwareInventory"></a> 소프트웨어 인벤토리에 대한 보안 모범 사례  
  클라이언트에서 소프트웨어 인벤토리 데이터를 수집하는 경우에 대해 다음 보안 모범 사례를 따르세요.  

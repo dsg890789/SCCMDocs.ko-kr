@@ -10,25 +10,24 @@ ms.assetid: 5bd637b1-d7a1-411b-877a-c7aae9741173
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
 ROBOTS: NOINDEX
-ms.openlocfilehash: 98a3443963ce14d2b0a4593bda541b1971a06bc1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 833d7e3a673a3638150b2107889636de749df2af
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660685"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802602"
 ---
-# <a name="whats-new-in-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 1802 버전의 새로운 기능
+# <a name="whats-new-in-version-1802-of-configuration-manager"></a>Configuration Manager 1802 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 현재 분기에 대한 1802 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1702, 1706 또는 1710 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement: -->새 사이트를 설치할 때 기준 버전으로 사용할 수도 있습니다.
 
-새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [System Center Configuration Manager 현재 분기, 버전 1802의 변경 내용 요약](https://support.microsoft.com/help/4101375)을 참조하세요.
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1802의 변경 내용 요약](https://support.microsoft.com/help/4101375)을 참조하세요.
 
 이제 이 릴리스에 대한 다음과 같은 추가 업데이트도 사용할 수 있습니다.
-- [System Center Configuration Manager 현재 분기, 버전 1802의 업데이트 롤업](https://support.microsoft.com/help/4163547)
+- [Configuration Manager 현재 분기, 버전 1802용 업데이트 롤업](https://support.microsoft.com/help/4163547)
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
@@ -87,7 +86,7 @@ Configuration Manager(현재 분기) 버전 1710은 [CNG(Cryptography: Next Gene
 
 ## <a name="management-insights"></a>관리 정보
 <!-- 1353967 -->
-System Center Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정보를 제공합니다. 이 정보는 사이트 데이터베이스의 데이터 분석을 기반으로 합니다. 이 정보를 통해 환경을 더 잘 이해하고 해당 정보에 기반한 조치를 취할 수 있습니다. 자세한 내용은 [관리 정보](/sccm/core/servers/manage/management-insights)를 참조하세요.
+Configuration Manager의 관리 정보는 환경의 현재 상태에 대한 정보를 제공합니다. 이 정보는 사이트 데이터베이스의 데이터 분석을 기반으로 합니다. 이 정보를 통해 환경을 더 잘 이해하고 해당 정보에 기반한 조치를 취할 수 있습니다. 자세한 내용은 [관리 정보](/sccm/core/servers/manage/management-insights)를 참조하세요.
 
 Configuration Manager 1802에서 사용할 수 있는 정보는 다음과 같습니다.
 - 애플리케이션:
@@ -140,7 +139,7 @@ CMG([클라우드 관리 게이트웨이](/sccm/core/clients/manage/plan-cloud-m
 
  ### <a name="deprecation-announcement-for-linux-and-unix-client-support"></a>Linux 및 Unix 클라이언트 지원에 대한 사용 중단 알림
  <!--510139-->
-Microsoft는 약 1년 후에 System Center Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에 버전 1902에는 이 클라이언트가 포함되지 않습니다. 2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다. Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
+Microsoft는 약 1년 후에 Configuration Manager에서 Linux 및 UNIX 클라이언트 지원을 중단할 예정이므로 2019년 초에는 버전 1902에 이 클라이언트가 포함되지 않습니다. 2018년 후반기의 Configuration Manager 1810 릴리스는 Linux 및 UNIX 클라이언트를 포함하는 마지막 릴리스이며, Configuration Manager 1810의 전체 수명 주기 동안 이러한 클라이언트가 지원됩니다. Configuration Manager 1810 이후 고객이 Linux 서버를 관리하려면 Microsoft Azure 관리를 고려해야 합니다. Azure 솔루션은 대부분의 경우 Linux용 엔드투엔드 패치 관리를 포함하여 Configuration Manager 기능을 능가하는 광범위한 Linux 지원을 제공합니다.
 
 ### <a name="surface-device-dashboard"></a>Surface 디바이스 대시보드
 <!--1355788-->
@@ -161,7 +160,7 @@ Surface 디바이스 대시보드는 사용자 환경에 있는 Surface 디바�
 <!-- 1357365 -->
  공동 관리를 사용하도록 설정한 후 Endpoint Protection 워크로드를 Intune으로 전환할 수 있습니다. Endpoint Protection 워크로드를 전환하려면 공동 관리 속성 페이지로 이동한 다음, 슬라이더 막대를 Configuration Manager에서 **파일럿** 또는 **모두**로 이동합니다. 워크로드에 대한 자세한 내용은 [공동 관리 워크로드](/sccm/comanage/workloads)를 참조하세요. 공동 관리에 대한 자세한 내용은 [Windows 10 디바이스에 대한 공동 관리](/sccm/comanage/overview)를 참조하세요.
  
-### <a name="co-management-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 공동 관리 대시보드
+### <a name="co-management-dashboard-in-configuration-manager"></a>Configuration Manager의 공동 관리 대시보드
 <!--1356648-->
 이 릴리스부터 공동 관리에 대한 정보가 포함된 대시보드를 볼 수 있습니다. 대시보드를 사용하면 사용자 환경에서 공동으로 관리되는 시스템을 검토할 수 있습니다. 그래프는 주의가 필요한 디바이스를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [공동 관리 대시보드](/sccm/comanage/how-to-monitor#co-management-dashboard) 문서를 참조하세요. 
 

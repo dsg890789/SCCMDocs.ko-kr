@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 계량을 사용하여 앱 사용 모니터링
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 소프트웨어 계량에 사용할 수 있는 작업에 대해 알아봅니다.
+description: Configuration Manager 소프트웨어 계량에 사용할 수 있는 작업에 대해 알아봅니다.
 ms.date: 09/20/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,19 +10,18 @@ ms.assetid: b1fdaee2-2816-4447-94cd-609f6948f215
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 652c10cfcb4d53b32409dd5af83e7d55f2676463
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 3b317a915d4a1b0dd0e65a93ab6882869eb36862
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65933473"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815598"
 ---
-# <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 계량
+# <a name="software-metering-in-configuration-manager"></a>Configuration Manager의 소프트웨어 계량
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager 소프트웨어 계량을 사용할 때 수행할 수도 있는 모든 작업에 대한 참조가 있습니다.
+이 항목에는 Configuration Manager 소프트웨어 계량을 사용할 때 수행할 수도 있는 모든 작업에 대한 참조가 있습니다.
 
 > [!IMPORTANT]
 >  소프트웨어 계량은 **.exe**로 끝나는 파일 이름을 가진 Windows PC 데스크톱 앱을 모니터링하는 데 사용됩니다. 소프트웨어 계량에서는 최신 Windows 앱(예: Windows 8에서 사용하는 앱)을 모니터링하지 않습니다.
@@ -33,7 +32,7 @@ ms.locfileid: "65933473"
 |종속성|추가 정보|
 |----------------|----------------------|
 |소프트웨어 계량을 위한 클라이언트 설정.|소프트웨어 계량을 사용하려면 **클라이언트에서 소프트웨어 계량 사용** 클라이언트 설정을 사용하도록 설정하고 컴퓨터에 배포해야 합니다. 소프트웨어 계량 설정을 계층의 모든 컴퓨터에 배포하거나 사용자 지정 설정을 컴퓨터 그룹에 배포할 수 있습니다. 이 항목에서 **소프트웨어 계량 구성**을 참조하세요.|
-|보고 서비스 지점.|소프트웨어 계량 보고서를 보려면 먼저 보고 서비스 지점을 구성해야 합니다. 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.|
+|보고 서비스 지점.|소프트웨어 계량 보고서를 보려면 먼저 보고 서비스 지점을 구성해야 합니다. 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조하세요.|
 
 ##  <a name="configure-software-metering"></a>소프트웨어 계량 구성
  이 절차에서는 소프트웨어 계량에 대한 기본 클라이언트 설정을 구성하고 계층의 모든 컴퓨터에 적용합니다. 이러한 설정을 일부 컴퓨터에만 적용하려면 사용자 지정 디바이스 클라이언트 설정을 만들어서 소프트웨어 계량을 사용하려는 컴퓨터가 포함된 컬렉션에 배포합니다. 사용자 지정 디바이스 설정을 만드는 방법에 대한 자세한 내용은 [클라이언트 설정 구성](../../core/clients/deploy/configure-client-settings.md)을 참조하세요.
@@ -46,9 +45,9 @@ ms.locfileid: "65933473"
 
 4. **디바이스 설정** 목록에서 다음을 구성합니다.
 
-   -   **클라이언트에서 소프트웨어 계량 사용**: **True** 를 선택하여 소프트웨어 계량을 사용하도록 설정합니다.
+   -   **클라이언트에서 소프트웨어 계량 사용**: **True**를 선택하여 소프트웨어 계량을 사용합니다.
 
-   -   **데이터 컬렉션 예약**: 소프트웨어 계량 데이터가 클라이언트 컴퓨터에서 수집되는 간격을 구성합니다. 기본값인 **7일** 마다를 사용하거나 **일정** 을 클릭하여 사용자 지정 일정을 지정합니다.
+   -   **데이터 컬렉션 예약**: 소프트웨어 계량 데이터가 클라이언트 컴퓨터에서 수집되는 빈도를 구성합니다. 기본값인 **7일** 마다를 사용하거나 **일정** 을 클릭하여 사용자 지정 일정을 지정합니다.
 
 5. **확인** 을 클릭하여 **기본 설정** 대화 상자를 닫습니다.
 
@@ -128,7 +127,7 @@ ms.locfileid: "65933473"
 ##  <a name="monitor-software-metering"></a>소프트웨어 계량 모니터링
  Configuration Manager의 소프트웨어 계량에는 소프트웨어 계량 작업에 대한 정보를 모니터링할 수 있게 해주는 다양한 기본 제공 보고서가 포함되어 있습니다. 이러한 보고서의 보고서 범주는 **소프트웨어 계량**입니다.
 
- Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.
+ Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조하세요.
 
  또한 소프트웨어 계량을 통해 Configuration Manager 데이터베이스에 저장된 데이터를 기반으로 쿼리 및 컬렉션을 만들 수 있습니다.
 

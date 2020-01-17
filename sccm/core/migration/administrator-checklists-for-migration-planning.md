@@ -1,7 +1,7 @@
 ---
 title: 마이그레이션 체크리스트
 titleSuffix: Configuration Manager
-description: 관리자 검사 목록을 사용하여 System Center Configuration Manager로의 마이그레이션 전략을 계획할 수 있습니다.
+description: 관리자 검사 목록을 사용하여 Configuration Manager 현재 분기로의 마이그레이션 전략을 계획할 수 있습니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 295fdf07-93cc-490c-acdd-ce3ee88cb36f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3136c8add4256a646409c4a540da783a04a5b71d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 315bcc18e424d219975619e82266996a4e6b135d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62234788"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803571"
 ---
-# <a name="administrator-checklists-for-migration-planning-in-system-center-configuration-manager"></a>System Center Configuration Manager의 마이그레이션 계획에 대한 관리자 검사 목록
+# <a name="administrator-checklists-for-migration-planning-in-configuration-manager"></a>Configuration Manager의 마이그레이션 계획에 대한 관리자 검사 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-다음 관리자 검사 목록을 사용하여 System Center Configuration Manager로의 마이그레이션 전략을 계획할 수 있습니다.
+다음 관리자 검사 목록을 사용하여 Configuration Manager 현재 분기로의 마이그레이션 전략을 계획할 수 있습니다.
 
 ##  <a name="Checklist_Migraiton_Planning"></a> 마이그레이션 계획을 위한 관리자 검사 목록  
  사전 마이그레이션 계획 단계에서는 다음 검사 목록을 사용하십시오.  
@@ -33,12 +32,12 @@ ms.locfileid: "62234788"
 
 -   **현재 사용 중인 Configuration Manager 버전에서 사용 가능한 기능과 변경 사항을 검토하고 이러한 정보를 활용하여 대상 계층을 설계합니다.**  
 
-    자세한 내용은 [System Center Configuration Manager의 기본 사항](../../core/understand/fundamentals.md) 및 [System Center Configuration Manager의 새로운 기능](../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)항목을 참조하세요.  
+    자세한 내용은 [Configuration Manager의 기본 사항](../../core/understand/fundamentals.md) 및 [새로운 기능](../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)을 참조하세요.  
 
 
 -   **역할 기반 관리에 대해 사용할 관리 보안 모델을 결정합니다.**  
 
-    자세한 내용은 [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)을 참조하세요.  
+    자세한 내용은 [Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)을 참조하세요.  
 
 -   **사용자 네트워크 및 Active Directory 토폴로지를 평가합니다.** 기존 도메인 구조와 네트워크 토폴로지를 검토하고 이러한 구성이 계층 설계 및 마이그레이션 작업에 어떠한 영향을 미치는지 살펴봅니다.  
 
@@ -52,7 +51,7 @@ ms.locfileid: "62234788"
 
 -   **개체 마이그레이션 전략을 계획합니다.**  
 
-    사이트 경계, 컬렉션, 보급 알림 및 배포 등과 같은 여러 개체를 마이그레이션하는 마이그레이션 작업의 사용을 계획합니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 작업 전략 계획](../../core/migration/planning-a-migration-job-strategy.md)에서 [마이그레이션 작업 유형](../../core/migration/planning-a-migration-job-strategy.md#Types_of_Migration)을 참조하세요.  
+    사이트 경계, 컬렉션, 보급 알림 및 배포 등과 같은 여러 개체를 마이그레이션하는 마이그레이션 작업의 사용을 계획합니다. 자세한 내용은 [마이그레이션 작업 전략 계획](../../core/migration/planning-a-migration-job-strategy.md)에서 [마이그레이션 작업 유형](../../core/migration/planning-a-migration-job-strategy.md#Types_of_Migration)을 참조하세요.  
 
     Configuration Manager는 선택하는 개체만 마이그레이션합니다. 마이그레이션되지 않은 개체 중 대상 계층에 필요한 개체는 대상 계층에서 다시 만들어야 합니다.  
 
@@ -60,7 +59,7 @@ ms.locfileid: "62234788"
 
 -   **클라이언트 마이그레이션 전략을 계획합니다.**  
 
-    클라이언트의 마이그레이션을 계획합니다. 여기서는 클라이언트를 대상 계층으로 마이그레이션할 때 네트워크 대역폭 및 서버 처리 요구 사항을 제한하는 제어되는 방법을 사용합니다. 클라이언트 마이그레이션 전략을 계획하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 마이그레이션 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)을 참조하세요.  
+    클라이언트의 마이그레이션을 계획합니다. 여기서는 클라이언트를 대상 계층으로 마이그레이션할 때 네트워크 대역폭 및 서버 처리 요구 사항을 제한하는 제어되는 방법을 사용합니다. 클라이언트 마이그레이션 전략을 계획하는 방법에 대한 자세한 내용은 [클라이언트 마이그레이션 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)을 참조하세요.  
 
 -   **인벤토리 및 준수 데이터를 계획합니다.**  
 
@@ -77,13 +76,13 @@ ms.locfileid: "62234788"
 
 -   **대상 계층에서 사용할 컴퓨터를 확인합니다.**  
 
-    Configuration Manager는 Configuration Manager 2007 인프라에서의 현재 위치 업그레이드를 지원하지 않습니다. 대신 Configuration Manager 2007에서 System Center Configuration Manager로 데이터를 이동하는 마이그레이션을 사용합니다. 이렇게 하려면 병렬 배포를 사용하고 새 컴퓨터에 System Center Configuration Manager를 설치해야 합니다.  
+    Configuration Manager는 Configuration Manager 2007 인프라에서의 현재 위치 업그레이드를 지원하지 않습니다. 대신 Configuration Manager 2007에서 Configuration Manager 현재 분기로 데이터를 이동하는 마이그레이션을 사용합니다. 이렇게 하려면 병렬 배포를 사용하고 새 컴퓨터에 Configuration Manager를 설치해야 합니다.  
 
-    마찬가지로 다른 System Center Configuration Manager 계층 구조에서 마이그레이션할 경우 원본 계층에 대한 병렬 배포를 위해 새 대상 계층을 설치해야 합니다.  
+    마찬가지로 다른 Configuration Manager 계층 구조에서 마이그레이션할 경우 원본 계층에 대한 병렬 배포를 위해 새 대상 계층을 설치해야 합니다.  
 
 -   **대상 계층을 만듭니다.**  
 
-    마이그레이션을 준비하기 위해 기본 사이트를 포함하는 System Center Configuration Manager 대상 계층 구조를 설치하고 구성합니다. 예:  
+    마이그레이션을 준비하기 위해 기본 사이트를 포함하는 Configuration Manager 대상 계층 구조를 설치하고 구성합니다. 예를 들면 다음과 같습니다.  
 
     -   중앙 관리 사이트를 설치한 다음 하나 이상의 자식 기본 사이트를 설치합니다.  
 
@@ -114,7 +113,7 @@ ms.locfileid: "62234788"
 
 -   **대상 계층에서 마이그레이션을 사용하도록 설정합니다.**  
 
-    원본 계층의 최상위 사이트를 지정하여 원본 계층을 구성합니다. 원본 사이트 지정에 대한 자세한 내용은 [System Center Configuration Manager에서 원본 계층 전략 계획](../../core/migration/planning-a-source-hierarchy-strategy.md)을 참조하세요.  
+    원본 계층의 최상위 사이트를 지정하여 원본 계층을 구성합니다. 원본 사이트 지정에 대한 자세한 내용은 [원본 계층 전략 계획](../../core/migration/planning-a-source-hierarchy-strategy.md)을 참조하세요.  
 
 -   **원본 계층에서 Configuration Manager 2007 SP2를 실행하는 경우 해당 원본 계층에서 추가 사이트를 선택 및 구성합니다.**  
 
@@ -127,7 +126,7 @@ ms.locfileid: "62234788"
 
     두 계층 간에 배포 지점을 공유하면 마이그레이션하는 개체에 대한 콘텐츠를 대상 계층의 클라이언트에서 사용할 수 있습니다. 이렇게 하면 두 계층 구조 모두에서 각 클라이언트는 동일한 콘텐츠를 계속 사용할 수 있고 관리자는 데이터 수집을 중지하고 마이그레이션을 완료할 때까지 이 콘텐츠를 유지 관리할 수 있습니다.  
 
-    공유 배포 지점에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 [원본 계층과 대상 계층 간에 배포 지점 공유](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)를 참조하세요.  
+    공유 배포 지점에 대한 자세한 내용은 [콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 [원본 계층과 대상 계층 간에 배포 지점 공유](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)를 참조하세요.  
 
 -   **원본 계층의 클라이언트와 연결된 개체를 마이그레이션하는 마이그레이션 작업을 만들고 실행합니다.**  
 
@@ -135,7 +134,7 @@ ms.locfileid: "62234788"
 
     예를 들어 콘텐츠를 마이그레이션하는 경우 사용 중인 마이그레이션 작업에 상관없이 해당 콘텐츠의 관리를 소유할 대상 계층 내 사이트를 할당해야 합니다. 할당된 사이트는 콘텐츠에 대한 원래의 원본 파일 위치에 액세스하며 이 콘텐츠를 대상 계층의 배포 지점에 배포하는 작업을 담당합니다.  
 
-    자세한 내용은 [System Center Configuration Manager로 마이그레이션을 위한 작업](../../core/migration/operations-for-migration.md)에서 [System Center Configuration Manager를 위한 마이그레이션 작업 만들기 및 편집](../../core/migration/operations-for-migration.md#Create_Edit_migration_Jobs)을 참조하세요.  
+    자세한 내용은 [Configuration Manager 현재 분기로 마이그레이션을 위한 작업](../../core/migration/operations-for-migration.md)에서 [Configuration Manager를 위한 마이그레이션 작업 만들기 및 편집](../../core/migration/operations-for-migration.md#Create_Edit_migration_Jobs)을 참조하세요.  
 
 -   **클라이언트를 대상 계층으로 마이그레이션합니다.**  
 
@@ -147,16 +146,16 @@ ms.locfileid: "62234788"
 
     클라이언트를 대상 계층으로 마이그레이션할 때 이 클라이언트는 이전에 같은 대상 계층으로 마이그레이션된 클라이언트 데이터와 연결됩니다.  
 
-    자세한 내용은 [System Center Configuration Manager에서 마이그레이션 작업 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)항목을 참조하세요.  
+    자세한 내용은 [클라이언트 마이그레이션 전략 계획](../../core/migration/planning-a-client-migration-strategy.md)을 참조하세요.  
 
 -   **공유 배포 지점을 업그레이드하거나 재할당합니다.**  
 
-    원본 계층에서 더 이상 클라이언트를 지원할 필요가 없는 경우 Configuration Manager 2007 원본 사이트에서 공유 배포 지점을 업그레이드하거나 System Center 2012 Configuration Manager 또는 System Center Configuration Manager 원본 사이트에서 공유 배포 지점을 재할당할 수 있습니다. 배포 지점을 업그레이드하거나 재할당하면 사이트 시스템 역할이 대상 계층의 기본 사이트에 전송되고 원본 계층의 원본 사이트에서 이 배포 지점이 제거됩니다. 공유 배포 지점을 업그레이드하거나 재할당할 경우 배포 지점 컴퓨터에 콘텐츠가 남아 있으며 대상 계층의 새 배포 지점에 다시 배포할 필요가 없습니다.  
+    원본 계층에서 더 이상 클라이언트를 지원할 필요가 없는 경우 Configuration Manager 2007 원본 사이트에서 공유 배포 지점을 업그레이드하거나 System Center 2012 Configuration Manager 또는 Configuration Manager 현재 분기 원본 사이트에서 공유 배포 지점을 재할당할 수 있습니다. 배포 지점을 업그레이드하거나 재할당하면 사이트 시스템 역할이 대상 계층의 기본 사이트에 전송되고 원본 계층의 원본 사이트에서 이 배포 지점이 제거됩니다. 공유 배포 지점을 업그레이드하거나 재할당할 경우 배포 지점 컴퓨터에 콘텐츠가 남아 있으며 대상 계층의 새 배포 지점에 다시 배포할 필요가 없습니다.  
 
     또한 Configuration Manager 2007 보조 사이트 서버에 함께 있는 배포 지점도 업그레이드할 수 있습니다. 이렇게 하면 보조 사이트는 제거되고 대상 계층의 배포 지점만 남습니다.  
 
-    공유 배포 지점에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 [원본 계층과 대상 계층 간에 배포 지점 공유](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)를 참조하세요.  
+    공유 배포 지점에 대한 자세한 내용은 [콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 [원본 계층과 대상 계층 간에 배포 지점 공유](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)를 참조하세요.  
 
 -   **마이그레이션을 완료합니다.**  
 
-    원본 계층의 모든 사이트에서 데이터와 클라이언트를 마이그레이션하고 해당되는 배포 지점을 업그레이드한 후에는 마이그레이션을 완료할 수 있습니다. 마이그레이션을 완료하려면 원본 계층의 각 원본 사이트에 대해 데이터 수집을 중지해야 합니다. 그런 다음 필요 없는 마이그레이션 정보를 제거하고 원본 계층 인프라의 역할을 해제할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 마이그레이션 완료 계획](../../core/migration/planning-to-complete-migration.md)항목을 참조하세요.  
+    원본 계층의 모든 사이트에서 데이터와 클라이언트를 마이그레이션하고 해당되는 배포 지점을 업그레이드한 후에는 마이그레이션을 완료할 수 있습니다. 마이그레이션을 완료하려면 원본 계층의 각 원본 사이트에 대해 데이터 수집을 중지해야 합니다. 그런 다음 필요 없는 마이그레이션 정보를 제거하고 원본 계층 인프라의 역할을 해제할 수 있습니다. 자세한 내용은 [마이그레이션 완료 계획](../../core/migration/planning-to-complete-migration.md)을 참조하세요.  

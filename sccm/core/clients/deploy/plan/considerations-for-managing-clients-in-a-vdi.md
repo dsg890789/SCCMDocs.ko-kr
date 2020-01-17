@@ -10,19 +10,18 @@ ms.assetid: abd45393-d84e-4583-bc80-74bbb3709577
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07df750daf0af7aa82a13c1eef421678d7df8202
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: b01348695ac5b3b64ca87a9b42aa52ac235b533d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70890329"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824982"
 ---
 # <a name="manage-configuration-manager-clients-in-a-virtual-desktop-infrastructure-vdi"></a>VDI(가상 데스크톱 인프라)에서 구성 관리자 클라이언트 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager는 다음과 같은 VDI(가상 데스크톱 인프라) 시나리오에서 Configuration Manager 클라이언트 설치를 지원합니다.  
+Configuration Manager는 다음과 같은 VDI(가상 데스크톱 인프라) 시나리오에서 Configuration Manager 클라이언트 설치를 지원합니다.  
 
 - **개인 가상 머신** - 일반적으로 사용자 데이터 및 설정을 세션 간에 가상 머신에서 유지 관리하도록 구성할 때 사용됩니다.  
 

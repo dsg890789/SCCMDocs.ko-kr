@@ -1,7 +1,7 @@
 ---
 title: 진단 및 사용량 데이터 FAQ
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대한 질문과 대답을 찾습니다.
+description: Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대한 자주 묻는 질문을 찾습니다.
 ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,17 +10,16 @@ ms.assetid: 3fe32aa2-d594-4ad0-a291-b8f5395ac50b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17e9ee2b969a9cc6e9258fa698be91fa15f4c2e3
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8180b1eee08f3e0ba0ef58fdd18138d4e1b7ca6d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62252593"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792181"
 ---
-# <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대한 질문과 대답
+# <a name="frequently-asked-questions-about-diagnostics-and-usage-data-for-configuration-manager"></a>Configuration Manager에 대한 진단 및 사용량 현황 데이터에 대한 자주 묻는 질문
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 아티클에서는 Configuration Manager의 진단 및 사용량 데이터에 대해 자주 묻는 질문에 대한 대답을 제공합니다.
 

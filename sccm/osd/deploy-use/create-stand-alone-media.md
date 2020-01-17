@@ -10,17 +10,16 @@ ms.assetid: c6b9ccd2-78d9-4f0e-b25a-70d0866300ba
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37143372acdadb6a340c2ee556901f5133683c5f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5dbebcb59897510e537b247484c0cfe12f5bb244
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71401570"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827039"
 ---
 # <a name="create-stand-alone-media"></a>독립 실행형 미디어 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 독립 실행형 미디어에는 네트워크에 연결하지 않고 컴퓨터에 OS를 배포하는 데 필요한 모든 항목이 포함됩니다.
 
@@ -40,7 +39,7 @@ Configuration Manager의 독립 실행형 미디어에는 네트워크에 연결
 중앙 관리 사이트에서 독립 실행형 미디어를 만들 때 클라이언트가 Active Directory에서 할당된 사이트 코드를 검색합니다. 자식 사이트에 생성된 독립 실행형 미디어에서 자동으로 해당 사이트의 사이트 코드를 클라이언트에 할당합니다.  
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 작업 순서 미디어 만들기 마법사를 사용하여 독립 실행형 미디어를 만들려면 먼저 다음 조건을 모두 충족해야 합니다.
 
@@ -120,7 +119,7 @@ Configuration Manager의 독립 실행형 미디어에는 네트워크에 연결
 
     - **이동식 USB 드라이브**를 선택하는 경우 콘텐츠를 저장할 드라이브를 선택합니다.  
 
-        - **이동식 USB 드라이브 포맷(FAT32) 및 부팅 가능하도록 구성**: 기본적으로 Configuration Manager가 USB 드라이브를 준비하도록 합니다. 많은 최신 UEFI 디바이스에 부팅 가능한 FAT32 파티션이 필요합니다. 그러나 이 포맷은 파일의 크기와 드라이브의 전체 용량도 제한합니다. 이동식 드라이브를 이미 포맷하고 구성한 경우에는 이 옵션을 사용하지 않도록 설정합니다.
+        - **이동식 USB 드라이브 포맷(FAT32) 및 부팅 가능하도록 구성**: 기본적으로 Configuration Manager를 통해 USB 드라이브를 준비합니다. 많은 최신 UEFI 디바이스에 부팅 가능한 FAT32 파티션이 필요합니다. 그러나 이 포맷은 파일의 크기와 드라이브의 전체 용량도 제한합니다. 이동식 드라이브를 이미 포맷하고 구성한 경우에는 이 옵션을 사용하지 않도록 설정합니다.
 
     - **CD/DVD 세트**를 선택하는 경우 미디어 용량(**미디어 크기**) 및 출력 파일(**미디어 파일**)의 이름과 경로를 지정해야 합니다. 마법사에서 출력 파일을 이 위치에 기록합니다. `\\servername\folder\outputfile.iso`  
 
@@ -145,18 +144,18 @@ Configuration Manager의 독립 실행형 미디어에는 네트워크에 연결
 
 5. **보안** 페이지에서 다음 옵션을 지정합니다.
 
-    - **암호로 미디어 보호**: 강력한 암호를 입력하여 미디어의 무단 액세스를 방지합니다. 암호를 지정하면 사용자가 미디어를 사용하기 위해 암호를 입력해야 합니다.  
+    - **암호로 미디어 보호**: 무단 액세스로부터 미디어를 보호할 수 있도록 강력한 암호를 입력합니다. 암호를 지정하면 사용자가 미디어를 사용하기 위해 암호를 입력해야 합니다.  
 
         > [!IMPORTANT]  
         > 미디어를 보호하기 위해 항상 암호를 지정하는 것이 좋습니다.  
         >
         > 독립 실행형 미디어에서는 작업 순서 단계 및 관련 변수만 암호화합니다. 미디어의 나머지 콘텐츠는 암호화하지 않습니다. 작업 순서 스크립트에 중요한 정보를 포함하지 마세요. 모든 중요 정보는 작업 순서 변수를 사용하여 저장 및 구현해야 합니다.  
 
-    - **이 독립 실행형 미디어가 유효한 날짜 범위 선택**: 미디어에 대한 선택적 시작 및 만료 날짜를 설정합니다. 이 설정은 기본적으로 사용되지 않습니다. 독립 실행형 미디어를 실행하기 전에 날짜가 컴퓨터의 시스템 시간과 비교됩니다. 시스템 시간이 시작 시간보다 이전이거나 만료 시간보다 이후이면 독립 실행형 미디어가 시작되지 않습니다. [New-CMStandaloneMedia](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmstandalonemedia?view=sccm-ps) PowerShell cmdlet을 사용하여 이러한 옵션을 사용할 수도 있습니다.  
+    - **이 독립 실행형 미디어가 유효한 날짜 범위 선택**: 미디어에 시작 및 만료 날짜를 선택적으로 설정합니다. 이 설정은 기본적으로 사용되지 않습니다. 독립 실행형 미디어를 실행하기 전에 날짜가 컴퓨터의 시스템 시간과 비교됩니다. 시스템 시간이 시작 시간보다 이전이거나 만료 시간보다 이후이면 독립 실행형 미디어가 시작되지 않습니다. [New-CMStandaloneMedia](https://docs.microsoft.com/powershell/module/configurationmanager/new-cmstandalonemedia?view=sccm-ps) PowerShell cmdlet을 사용하여 이러한 옵션을 사용할 수도 있습니다.  
 
 6. **독립 실행형 CD/DVD** 페이지에서 OS를 배포하는 작업 순서를 선택합니다. 부팅 이미지와 연결된 해당 작업 순서만 선택할 수 있습니다. 작업 순서에서 참조되는 콘텐츠 목록을 확인합니다.  
 
-    - **연결된 애플리케이션 종속성을 검색하고 이 미디어에 추가**: 애플리케이션 종속성에 대한 콘텐츠를 미디어에 추가합니다.  
+    - **연결된 애플리케이션 종속성을 검색하고 이 미디어에 추가**: 또한 애플리케이션 종속성에 대한 콘텐츠를 미디어에 추가합니다.  
 
         > [!TIP]  
         > 예상한 애플리케이션 종속성이 표시되지 않으면 이 옵션을 선택 취소한 후 다시 선택하여 목록을 새로 고칩니다.  

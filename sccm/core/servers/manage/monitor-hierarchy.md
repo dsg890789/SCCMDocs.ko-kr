@@ -10,29 +10,28 @@ ms.assetid: 007dbb73-18a7-48a3-a489-97cf9fc4f140
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd15890bf08d9db359f336b3ca68914fa9c2a9c6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 93b2ab22b0503dd673a8f0ad85da91449e327185
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68957853"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794660"
 ---
 # <a name="monitor-the-hierarchy"></a>계층 모니터링
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 계층을 모니터링하려면 Configuration Manager 콘솔에서 **모니터링** 작업 영역을 사용합니다.  
 
 > [!NOTE]  
-> 이 위치의 예외는 사이트를 마이그레이션하는 경우입니다. **관리** 작업 영역의 **마이그레이션** 노드에서 이 프로세스를 모니터링했습니다. 자세한 내용은 [System Center Configuration Manager로 마이그레이션을 위한 작업](/sccm/core/migration/operations-for-migration)을 참조하세요.  
+> 이 위치의 예외는 사이트를 마이그레이션하는 경우입니다. **관리** 작업 영역의 **마이그레이션** 노드에서 이 프로세스를 모니터링했습니다. 자세한 내용은 [Configuration Manager 현재 분기로의 마이그레이션을 위한 작업](/sccm/core/migration/operations-for-migration)을 참조하세요.  
 
 모니터링을 위한 Configuration Manager 콘솔 외에 다음 기능을 사용합니다.
 
 - [보고](/sccm/core/servers/manage/reporting)
 - [로그 파일](/sccm/core/plan-design/hierarchy/log-files).  
 
-사이트를 모니터링할 때에는 조치가 필요한 문제를 나타내는 징후를 확인합니다. 예:  
+사이트를 모니터링할 때에는 조치가 필요한 문제를 나타내는 징후를 확인합니다. 예를 들면 다음과 같습니다.  
 
 - 사이트 서버 또는 사이트 시스템에 있는 파일 백로그  
 
@@ -122,7 +121,7 @@ Configuration Manager는 Configuration Manager 콘솔 내에서 기본 제공 �
 
 다음 옵션을 통해 계층 다이어그램을 수정할 수 있습니다.  
 
-#### <a name="groups"></a>그룹
+#### <a name="groups"></a>Groups
 
 계층 다이어그램 변경을 트리거하는 기본 사이트 및 보조 사이트 수를 구성합니다. 이와 같이 표시가 변경되면 사이트가 단일 개체로 결합됩니다. 그러면 전체 사이트 수와 상태 메시지 및 사이트 상태의 개략적인 롤업을 볼 수 있습니다. 그룹 구성은 지리적 보기에 영향을 주지 않습니다.  
 

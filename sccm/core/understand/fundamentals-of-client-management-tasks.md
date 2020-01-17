@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 관리의 기본 사항
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 클라이언트를 관리하기 위해 실행하는 작업을 알아봅니다.
+description: Configuration Manager 클라이언트를 관리하기 위해 실행하는 작업을 알아봅니다.
 ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 8d4e5641-354e-4439-8b4f-620a760e233d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 468d21123e6a4166957b7dcc8cda614a78d2366e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: eb35071145b0d115e2e139bc6848c6fe7bb66705
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62252649"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825883"
 ---
-# <a name="fundamentals-of-client-management-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 클라이언트 관리 작업의 기본 사항
+# <a name="fundamentals-of-client-management-tasks-for-configuration-manager"></a>Configuration Manager에 대한 클라이언트 관리 작업의 기본 사항
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 클라이언트를 설치한 후 클라이언트를 관리하기 위해 실행하는 여러 작업이 있습니다.  몇몇 작업은 Configuration Manager 콘솔에서 실행됩니다. 다른 작업은 Configuration Manager 클라이언트 애플리케이션에서 실행됩니다. Configuration Manager 클라이언트 애플리케이션은 Configuration Manager 클라이언트 소프트웨어와 함께 설치됩니다.
+Configuration Manager 클라이언트를 설치한 후 클라이언트를 관리하기 위해 실행하는 여러 작업이 있습니다.  몇몇 작업은 Configuration Manager 콘솔에서 실행됩니다. 다른 작업은 Configuration Manager 클라이언트 애플리케이션에서 실행됩니다. Configuration Manager 클라이언트 애플리케이션은 Configuration Manager 클라이언트 소프트웨어와 함께 설치됩니다.
 
 ## <a name="configuration-manager-console-tasks"></a>Configuration Manager 콘솔 작업
  Configuration Manager 콘솔에서 다음과 같은 다양한 클라이언트 관리 작업을 수행할 수 있습니다.  
@@ -41,8 +40,8 @@ System Center Configuration Manager 클라이언트를 설치한 후 클라이�
 
 Configuration Manager 콘솔은 거의 실시간으로 이전 작업을 모니터링합니다. 각 작업에 대한 알림과 상태 정보는 Configuration Manager 콘솔에서 확인할 수 있습니다. 데이터와 기록적 추세 정보를 캡처하려면 SQL Server Reporting Services의 통합 보고 기능을 사용합니다. 클라이언트에서 사이트에 대한 세부 정보를 클라이언트 상태로 제출합니다.  클라이언트 상태 정보는 클라이언트 및 클라이언트 활동의 상태에 대한 데이터를 제공하며, 콘솔에서 또는 Configuration Manager에 대한 기본 제공 보고서를 사용하여 볼 수 있습니다. 이 데이터를 통해 응답하지 않는 컴퓨터를 식별하고 경우에 따라 문제가 자동으로 해결됩니다.  
 
- 클라이언트의 관리 작업에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../core/clients/manage/manage-clients.md) 및 [System Center Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 관리하는 방법](../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md)을 참조하세요. 보고서 사용 방법에 대한 자세한 내용은   
-            [System Center Configuration Manager의 보고 소개](../../core/servers/manage/introduction-to-reporting.md)  
+ 클라이언트의 관리 작업에 대한 자세한 내용은 [클라이언트를 관리하는 방법](../../core/clients/manage/manage-clients.md) 및 [Linux 및 UNIX 서버용 클라이언트를 관리하는 방법](../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md)을 참조하세요. 보고서 사용 방법에 대한 자세한 내용은   
+            [보고 소개](../../core/servers/manage/introduction-to-reporting.md)를 참조하세요.  
 
 ## <a name="configuration-manager-client-application"></a>Configuration Manager 클라이언트 애플리케이션  
  Configuration Manager 클라이언트 소프트웨어를 설치하면 Configuration Manager 클라이언트 애플리케이션도 설치됩니다. 소프트웨어 센터와 달리 Configuration Manager 클라이언트 애플리케이션은 최종 사용자가 아닌 지원 센터를 위해 고안되었습니다. 일부 구성 옵션을 사용하려면 로컬 관리자 권한이 필요하고, 대부분의 옵션을 사용하려면 Configuration Manager 클라이언트 애플리케이션의 작동 원리에 대한 기술적 지식이 필요합니다. 이 애플리케이션을 사용하여 클라이언트에서 다음 작업을 수행할 수 있습니다.  

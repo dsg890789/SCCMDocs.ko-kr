@@ -1,7 +1,7 @@
 ---
 title: 앱 배포에 대 한 문제 해결 팁
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 애플리케이션 배포 문제 해결을 위한 팁
+description: Configuration Manager에서 애플리케이션 배포 문제 해결을 위한 팁
 ms.date: 05/29/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,17 +10,16 @@ ms.assetid: 4e8b46a3-3e11-475f-a4d7-6bf9ddf14145
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1eb1c19f7001ac144551e8f63b8273fe1db1df8c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 696fd350d8fc98d1f84564c5e360af45a46c077e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74814191"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817876"
 ---
 # <a name="troubleshooting-tips-for-application-deployments"></a>응용 프로그램 배포에 대 한 문제 해결 팁
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 애플리케이션 배포와 관련된 일반적인 문제는 다음 범주 중 하나에 속합니다.
 
@@ -60,7 +59,7 @@ ms.locfileid: "74814191"
 
 - **진행 중**: 클라이언트에서 [콘텐츠 다운로드](#download-failures)가 중단될 수 있습니다.
 
-- **오류**: 이 문제를 해결하는 방법에 대한 자세한 내용은 [팁 및 요령: 실패한 배포를 보고하는 자산에서 작업을 수행하는 방법](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Tips-and-Tricks-How-to-Take-Action-on-Assets-That-Report-a/ba-p/273019) 블로그 게시물을 참조하세요.
+- **오류**: 이 문제를 해결하는 방법에 대한 자세한 내용은 다음 블로그 게시물을 참조하세요. [유용한 정보: 실패한 배포를 보고하는 자산에 대한 조치를 수행하는 방법](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Tips-and-Tricks-How-to-Take-Action-on-Assets-That-Report-a/ba-p/273019)
 
 - **알 수 없음**: 이 상태는 일반적으로 클라이언트가 정책을 수신하지 못했음을 의미합니다. 클라이언트 정책을 수동으로 새로 고쳐 클라이언트가 정책을 수신하는지 확인합니다. 자세한 내용은 [Configuration Manager 클라이언트에 대한 정책 검색 시작](/sccm/core/clients/manage/manage-clients#BKMK_PolicyRetrieval)을 참조하세요.
   
@@ -72,4 +71,4 @@ ms.locfileid: "74814191"
 - [애플리케이션 모니터링](/sccm/apps/deploy-use/monitor-applications-from-the-console)
 - [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications)
 - [애플리케이션에 대한 관리 작업](/sccm/apps/deploy-use/management-tasks-applications)
-- [응용 프로그램 배포 기술 참조 문제 해결](/sccm/apps/understand/app-deployment-technical-reference)
+- [애플리케이션 배포 기술 참조 문제 해결](/sccm/apps/understand/app-deployment-technical-reference)

@@ -2,7 +2,7 @@
 title: 사이트 백업
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 장애 또는 데이터 손실이 발생하기 전에 사이트를 백업하는 방법을 알아봅니다.
-ms.date: 08/24/2018
+ms.date: 01/08/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,22 +10,27 @@ ms.assetid: f7832d83-9ae2-4530-8a77-790e0845e12f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf20d24b8a1322f1d74c42c66f49fd8026ac075e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d13369027f38092a54db676c91287256869e03c0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67676617"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797703"
 ---
 # <a name="back-up-a-configuration-manager-site"></a>Configuration Manager 사이트 백업
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 데이터 손실을 방지하려면 백업 및 복구 방법을 준비합니다. Configuration Manager 사이트의 백업 및 복구 방법을 사용하면 데이터 손실을 최소화하면서 사이트 및 계층 구조를 더 신속하게 복구할 수 있습니다.  
 
 이 문서의 섹션은 사이트 백업에 도움을 줍니다. 사이트를 복구하려면 [Configuration Manager 복구](/sccm/core/servers/manage/recover-sites)를 참조하세요.  
 
+<!--/SCCMdocs/issues/2108-->
+>[!WARNING]
+> Configuration Manager 사이트 복구에 지원되는 두 가지 백업 방법은 다음과 같습니다.
+>
+> - **백업 사이트 서버** 유지 관리 작업에서 성공적인 백업
+> - 수동으로 복구된 사이트 데이터베이스 백업
 
 
 ## <a name="considerations-before-creating-a-backup"></a>백업 전 고려 사항  

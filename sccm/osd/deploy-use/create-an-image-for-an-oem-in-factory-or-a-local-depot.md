@@ -10,19 +10,18 @@ ms.assetid: a7d3df90-062d-4d57-9e9d-e137d3e7cd7f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56ac5353052fdba2884b6caee8f56d0835028e3e
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5c4d445d18b9e239ace673199f6a7d0f26d10a42
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62268855"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825407"
 ---
-# <a name="create-an-image-for-an-oem-in-factory-or-a-local-depot-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기
+# <a name="create-an-image-for-an-oem-in-factory-or-a-local-depot-with-configuration-manager"></a>Configuration Manager를 사용하여 팩터리 또는 로컬 저장소에 OEM에 대한 이미지 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 사전 준비된 미디어 배포를 사용하면 완전히 프로비전되지 않은 컴퓨터에 운영 체제를 배포할 수 있습니다. 사전 준비된 미디어는 제조업체(OEM)가 운영 체제 미설치 컴퓨터에 설치하거나, Configuration Manager 환경에 연결되지 않은 엔터프라이즈 준비 센터에 설치할 수 있는 WIM(Windows Imaging Format) 파일입니다. Configuration Manager 환경에서 이후에 미디어에서 제공된 부팅 이미지를 사용하여 컴퓨터가 시작되고, 사전 준비된 미디어가 올바른지 해시 확인이 실행된 다음, 컴퓨터가 사이트 관리 지점에 연결되어 사용 가능한 작업 순서를 통해 다운로드 프로세스를 완료하게 됩니다.
+Configuration Manager에서 사전 준비된 미디어 배포를 사용하면 완전히 프로비전되지 않은 컴퓨터에 운영 체제를 배포할 수 있습니다. 사전 준비된 미디어는 제조업체(OEM)가 운영 체제 미설치 컴퓨터에 설치하거나, Configuration Manager 환경에 연결되지 않은 엔터프라이즈 준비 센터에 설치할 수 있는 WIM(Windows Imaging Format) 파일입니다. Configuration Manager 환경에서 이후에 미디어에서 제공된 부팅 이미지를 사용하여 컴퓨터가 시작되고, 사전 준비된 미디어가 올바른지 해시 확인이 실행된 다음, 컴퓨터가 사이트 관리 지점에 연결되어 사용 가능한 작업 순서를 통해 다운로드 프로세스를 완료하게 됩니다.
 
 
 이 배포 방법에서는 부팅 이미지와 운영 체제 이미지가 이미 대상 컴퓨터에 있으므로 네트워크 트래픽을 줄일 수 있습니다. 사전 준비된 미디어에 포함할 애플리케이션, 패키지 및 드라이버 패키지를 지정할 수 있습니다. 운영 체제가 컴퓨터에 설치된 후 애플리케이션, 패키지 및 드라이버 패키지에 대한 로컬 작업 순서 캐시를 먼저 확인하고 콘텐츠를 찾을 수 없거나 콘텐츠가 수정된 경우 사전 준비된 미디어에 구성된 배포 지점에서 콘텐츠를 다운로드한 다음 설치합니다.  
@@ -45,7 +44,7 @@ System Center Configuration Manager에서 사전 준비된 미디어 배포를 �
 -   **미디어 및 PXE만(숨김)**  
 
 ## <a name="create-the-prestaged-media"></a>사전 준비된 미디어 만들기  
- OEM 또는 로컬 저장소로 보낼 사전 준비된 미디어 파일을 만듭니다. 자세한 내용은 [System Center Configuration Manager에서 사전 준비된 미디어 만들기](create-prestaged-media.md)항목을 참조하세요.  
+ OEM 또는 로컬 저장소로 보낼 사전 준비된 미디어 파일을 만듭니다. 자세한 내용은 [Configuration Manager에서 사전 준비된 미디어 만들기](create-prestaged-media.md)를 참조하세요.  
 
 ## <a name="send-the-prestaged-media-file-to-the-oem-or-local-depot"></a>사전 준비된 미디어 파일을 OEM 또는 로컬 저장소로 보냅니다.  
  OEM 또는 로컬 저장소로 미디어를 보내 컴퓨터를 사전 준비합니다. 사전 준비된 미디어 파일은 컴퓨터의 포맷된 하드 디스크에 적용됩니다.  

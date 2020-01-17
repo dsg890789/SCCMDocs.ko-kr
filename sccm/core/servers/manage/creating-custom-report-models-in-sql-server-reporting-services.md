@@ -10,19 +10,18 @@ ms.assetid: f2df88b4-c348-4dcf-854a-54fd6eedf485
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a5ba60644d789d73779828ed1a5437cb1365c5d
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: a53a52a7224fb6ff9598aed3904cf64818149cf7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198017"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795796"
 ---
-# <a name="creating-custom-report-models-for-system-center-configuration-manager-in-sql-server-reporting-services"></a>SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기
+# <a name="creating-custom-report-models-for-configuration-manager-in-sql-server-reporting-services"></a>SQL Server Reporting Services에서 Configuration Manager에 대한 사용자 지정 보고서 모델 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에 샘플 보고서 모델이 포함되어 있지만, 고유한 비즈니스 요구 사항에 맞게 보고서 모델을 정의한 다음 Configuration Manager에 보고서 모델을 배포하여 새 모델 기반 보고서를 만들 때 사용할 수 있습니다. 다음 표에는 기본 보고서 모델을 만들고 배포하는 단계가 나와 있습니다.  
+Configuration Manager에 샘플 보고서 모델이 포함되어 있지만, 고유한 비즈니스 요구 사항에 맞게 보고서 모델을 정의한 다음 Configuration Manager에 보고서 모델을 배포하여 새 모델 기반 보고서를 만들 때 사용할 수 있습니다. 다음 표에는 기본 보고서 모델을 만들고 배포하는 단계가 나와 있습니다.  
 
 > [!NOTE]  
 >  더 다양한 고급 보고서 모델을 만드는 단계는 이 항목의 [SQL Server Reporting Services에서 고급 보고서 모델을 만드는 단계](#AdvancedReportModel) 섹션을 참조하십시오.  
@@ -141,9 +140,9 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 2. 보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
 
-   -   *&lt;모델 이름\>* **.dsv**  
+   -   *&lt;Model Name\>* **.dsv**  
 
-   -   *&lt;모델 이름\>* **.smdl**  
+   -   *&lt;Model Name\>* **.smdl**  
 
 3. 텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
 
@@ -384,9 +383,9 @@ System Center Configuration Manager에 샘플 보고서 모델이 포함되어 �
 
 2. 보고서 모델 프로젝트 폴더에서 컴퓨터의 임시 폴더로 다음 파일을 복사합니다.  
 
-   -   *&lt;모델 이름\>* **.dsv**  
+   -   *&lt;Model Name\>* **.dsv**  
 
-   -   *&lt;모델 이름\>* **.smdl**  
+   -   *&lt;Model Name\>* **.smdl**  
 
 3. 텍스트 편집기(예: 메모장)를 사용하여 이전 파일을 엽니다.  
 

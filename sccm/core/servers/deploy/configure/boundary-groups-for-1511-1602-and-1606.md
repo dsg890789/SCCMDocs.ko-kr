@@ -10,20 +10,19 @@ ms.assetid: dec1e0d7-5864-43a8-9f56-413923b3914e
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb769a4a48bdc6627d89cf710605cadd86376e57
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f42437987c9aaf71b09537430f042b7712e0e3f2
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889160"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798995"
 ---
-# <a name="boundary-groups-for-system-center-configuration-manager-version-1511-1602-and-1606"></a>System Center Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹
+# <a name="boundary-groups-for-configuration-manager-version-1511-1602-and-1606"></a>Configuration Manager 버전 1511, 1602 및 1606에 대한 경계 그룹
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 <!-- This topic drops from TOC with the release of version 1706 -->
 
-이 항목의 정보는 System Center Configuration Manager 버전 1511, 1602 및 1606에서 경계 그룹을 사용하는 경우에 해당합니다.
+이 항목의 정보는 Configuration Manager 버전 1511, 1602 및 1606에서 경계 그룹을 사용하는 경우에 해당합니다.
 버전 1610 이상을 사용할 경우 다시 디자인된 경계 그룹에 대한 자세한 내용은 [경계 그룹 구성](/sccm/core/servers/deploy/configure/boundary-groups)을 참조하세요.  
 
 
@@ -133,7 +132,7 @@ ms.locfileid: "70889160"
 
 -   경계 그룹의 할당된 사이트에 대한 변경 내용은 새 사이트 할당 작업에만 적용됩니다. 이전에 사이트에 할당된 클라이언트는 경계 그룹의 구성 또는 고유 네트워크 위치의 변경 내용을 기준으로 사이트 할당을 다시 평가하지 않습니다.  
 
-클라이언트 사이트 할당에 대한 자세한 내용은 [System Center Configuration Manager에서 사이트에 클라이언트를 할당하는 방법](../../../../core/clients/deploy/assign-clients-to-a-site.md)에서 [컴퓨터에 대한 자동 사이트 할당 사용](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_AutomaticAssignment)을 참조하세요.  
+클라이언트 사이트 할당에 대한 자세한 내용은 [사이트에 클라이언트를 할당하는 방법](../../../../core/clients/deploy/assign-clients-to-a-site.md)에서 [컴퓨터에 대한 자동 사이트 할당 사용](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_AutomaticAssignment)을 참조하세요.  
 
 ###  <a name="BKMK_BoundaryContentLocation"></a> 콘텐츠 위치 정보  
  하나 이상의 배포 지점 및 상태 마이그레이션 지점을 사용하여 각 경계 그룹을 설정할 수 있으며, 같은 배포 지점 및 상태 마이그레이션 지점을 여러 경계 그룹과 연결할 수 있습니다.  
@@ -154,7 +153,7 @@ ms.locfileid: "70889160"
 -   기본 설정 관리 지점이 설정되어 있으면 클라이언트는 관리 지점 목록을 구성할 때 할당된 관리 지점 목록 맨 위에 기본 설정 관리 지점을 표시합니다. 할당된 관리 지점 목록에는 클라이언트의 할당된 사이트에 있는 모든 관리 지점이 포함됩니다.  
 
 > [!NOTE]  
->  노트북을 원격 사무실 위치로 이동하여 네트워크 위치를 변경할 때와 같이 클라이언트가 로밍할 때, 할당된 사이트의 관리 지점(기본 설정 관리 지점 포함)을 사용하려 하기 전에 로컬 사이트의 관리 지점 또는 프록시 관리 지점을 새 위치로 사용할 수 있습니다.  [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
+>  노트북을 원격 사무실 위치로 이동하여 네트워크 위치를 변경할 때와 같이 클라이언트가 로밍할 때, 할당된 사이트의 관리 지점(기본 설정 관리 지점 포함)을 사용하려 하기 전에 로컬 사이트의 관리 지점 또는 프록시 관리 지점을 새 위치로 사용할 수 있습니다.  [클라이언트가 Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 참조하세요.  
 
 ###  <a name="BKMK_BoundaryOverlap"></a> 겹치는 경계 정보  
  Configuration Manager에서는 콘텐츠 위치에 대한 겹치는 경계를 구성할 수 있습니다.  

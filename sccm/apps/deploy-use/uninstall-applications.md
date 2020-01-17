@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 제거
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager를 사용하여 애플리케이션 제거
+description: Configuration Manager를 사용 하 여 응용 프로그램 제거
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,17 +10,16 @@ ms.assetid: 0ea3edaa-27c6-4391-9896-cd97d9c5d06d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0626b94d4ffe97b34a6c8376d6ebaa621d91d44
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: dc8268ede9ecf43329cf37f789a7fe99e13635b8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62199318"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817859"
 ---
-# <a name="uninstall-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager에서 애플리케이션 제거
+# <a name="uninstall-applications-with-configuration-manager"></a>Configuration Manager를 사용하여 애플리케이션 제거
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 이전에 배포한 애플리케이션을 제거하려면 다음 작업을 수행합니다.
@@ -34,7 +33,7 @@ ms.locfileid: "62199318"
 
  이 목록은 애플리케이션 제거가 작동하는 방식에 대한 자세한 정보를 제공합니다.  
 
--   System Center Configuration Manager(Configuration Manager) 애플리케이션을 제거할 때 종속된 애플리케이션은 자동으로 제거되지 않습니다.  
+-   Configuration Manager(Configuration Manager) 애플리케이션을 제거할 때 종속된 애플리케이션은 자동으로 제거되지 않습니다.  
 
 -   **제거** 작업을 사용하는 애플리케이션을 사용자에게 배포하고 컴퓨터의 모든 사용자를 위해 애플리케이션을 설치한 경우, 사용자 계정에 애플리케이션 제거 권한이 없으면 제거가 실패할 수 있습니다.  
 

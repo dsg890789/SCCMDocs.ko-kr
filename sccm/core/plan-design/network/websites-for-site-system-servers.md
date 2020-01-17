@@ -1,7 +1,7 @@
 ---
 title: 사이트 시스템용 웹 사이트
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 사이트 시스템 서버에 대한 기본 및 사용자 지정 웹 사이트를 알아봅니다.
+description: Configuration Manager의 사이트 시스템 서버에 대한 기본 및 사용자 지정 웹 사이트에 대해 알아봅니다.
 ms.date: 02/8/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,17 +10,16 @@ ms.assetid: 681f0893-e83b-476e-9ec0-a5dc7c9deeb6
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e70c78161db4d7c97829f48348b547a0e1c7e85f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 12299a3e822286e9115efc0fe468d5154dcf9372
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889310"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799355"
 ---
-# <a name="websites-for-site-system-servers-in-system-center-configuration-manager"></a>System Center Configuration Manager의 사이트 시스템 서버용 웹 사이트
+# <a name="websites-for-site-system-servers-in-configuration-manager"></a>Configuration Manager의 사이트 시스템 서버용 웹 사이트
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 다수의 Configuration Manager 사이트 시스템 역할은 Microsoft IIS(인터넷 정보 서비스) 사용을 필요로 하며, 기본 IIS 웹 사이트를 사용하여 사이트 시스템 서비스를 호스트합니다. 동일한 서버에서 다른 웹 애플리케이션을 실행해야 하는데 설정이 Configuration Manager와 호환되지 않는 경우 Configuration Manager에 대해 사용자 지정 웹 사이트를 사용할 수 있습니다.  
 
@@ -112,7 +111,7 @@ ms.locfileid: "70889310"
 
 -   기본 웹 사이트에서 사용자 지정 웹 사이트를 사용하도록 변경하는 경우 Configuration Manager에서 이전 가상 디렉터리를 제거하지 않습니다. Configuration Manager에 사용된 파일을 제거하려면 기본 웹 사이트 아래에 만들어진 가상 디렉터리를 수동으로 삭제해야 합니다.  
 
--   사용자 지정 웹 사이트를 사용하도록 사이트를 변경하는 경우에는 해당 사이트에 이미 할당된 클라이언트가 사용자 지정 웹 사이트에 대해 새 클라이언트 요청 포트를 사용하도록 다시 구성해야 합니다. [System Center Configuration Manager에서 클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요.  
+-   사용자 지정 웹 사이트를 사용하도록 사이트를 변경하는 경우에는 해당 사이트에 이미 할당된 클라이언트가 사용자 지정 웹 사이트에 대해 새 클라이언트 요청 포트를 사용하도록 다시 구성해야 합니다. [클라이언트 통신 포트를 구성하는 방법](../../../core/clients/deploy/configure-client-communication-ports.md)을 참조하세요.  
 
 ## <a name="set-up-custom-websites"></a>사용자 지정 웹 사이트 설정  
 운영 체제 버전마다 사용자 지정 웹 사이트를 만드는 단계가 다르므로 정확한 단계는 사용 중인 운영 체제 버전의 설명서를 참조해야 합니다. 해당하는 경우 다음 정보를 사용할 수 있습니다.  

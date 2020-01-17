@@ -1,7 +1,7 @@
 ---
 title: 1610에 대한 검사 목록
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1610으로 업데이트하기 전에 수행할 작업에 대해 알아봅니다.
+description: Configuration Manager 버전 1610으로 업데이트하기 전에 수행할 작업을 알아봅니다.
 ms.date: 06/6/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f5bdd61d4699ea145bc3b734371d2e20803e84
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 7c629a336fdc32b69931a9be2669ff5398235582
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198424"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797126"
 ---
-# <a name="checklist-for-installing-update-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 업데이트 1610을 설치하기 위한 검사 목록
+# <a name="checklist-for-installing-update-1610-for-configuration-manager"></a>Configuration Manager용 업데이트 1610을 설치하기 위한 검사 목록
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 현재 분기를 사용하는 경우 버전 1610에 대한 콘솔 내 업데이트를 설치하여 계층 구조를 버전 1606에서 업데이트할 수 있습니다. 계층 구조에서 버전 1511, 1602 또는 1606을 실행하는 경우 버전 1610으로 업데이트할 수 있습니다.
+Configuration Manager의 현재 분기를 사용하는 경우 버전 1610용 콘솔 내 업데이트를 설치하여 버전 1606의 계층 구조를 업데이트할 수 있습니다. 계층 구조에서 버전 1511, 1602 또는 1606을 실행하는 경우 버전 1610으로 업데이트할 수 있습니다.
 
 버전 1610에 대한 업데이트를 가져오려면 계층 구조의 최상위 사이트에서 서비스 연결 지점 사이트 시스템 역할을 사용해야 합니다. 온라인 또는 오프라인 모드에 있을 수 있습니다. 계층 구조에서 Microsoft에서 업데이트 패키지를 다운로드하면 콘솔의 **관리 &gt; 개요 &gt; 클라우드 서비스 &gt; 업데이트 및 서비스**에 표시됩니다.
 
@@ -37,7 +36,7 @@ System Center Configuration Manager 현재 분기를 사용하는 경우 버전 
 
 업데이트 설치에 대한 자세한 내용은 [콘솔 내 업데이트 및 서비스](/sccm/core/servers/manage/updates#bkmk_inconsole)를 참조하세요.
 
-현재 분기 버전에 대한 자세한 내용은 [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
+현재 분기 버전에 대한 자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)에서 [기준선 및 업데이트 버전](/sccm/core/servers/manage/updates#bkmk_Baselines)을 참조하세요.
 
 ## <a name="about-installing-update-1610"></a>업데이트 1610 설치 정보
 
@@ -58,14 +57,14 @@ System Center Configuration Manager 현재 분기를 사용하는 경우 버전 
 
 ## <a name="checklist"></a>확인 목록
 
-**모든 사이트에서 System Center Configuration Manager의 지원되는 버전을 실행하는지 확인:**   업데이트 1610의 설치를 시작하기 전에 계층 구조의 각 사이트에서 버전 1511, 1602 또는 1606이든 동일한 버전의 System Center Configuration Manager를 실행해야 합니다.
+**모든 사이트에서 지원되는 Configuration Manager 버전을 실행하는지 확인합니다.**   업데이트 1610의 설치를 시작하기 전에 계층 구조의 각 사이트에서 버전 1511, 1602 또는 1606 등 동일한 버전의 Configuration Manager를 실행해야 합니다.
 
 **Software Assurance 또는 동등한 구독 권한의 상태 검토:**    
 업데이트 1610을 설치하려면 활성 SA(Software Assurance) 계약이 있어야 합니다. 버전 1610을 설치하는 경우 **라이선스** 탭에 **Software Assurance 만료 날짜**를 확인하는 옵션이 있습니다.
 
 이 값은 향후 업데이트를 설치할 때 표시되는 사용자 라이선스 만료 날짜에 대한 편리한 미리 알림으로 지정할 수 있는 선택적 값입니다. 버전 1606 기준 미디어에서 Configuration Manager를 설치한 경우 설치 중에 이 값을 지정했거나 사이트 설치 후 **계층 설정**의 **라이선스** 탭에서 이 값을 지정했을 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager의 라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
+자세한 내용은 [Configuration Manager의 라이선스 및 분기](/sccm/core/understand/learn-more-editions)를 참조하세요.
 
 **사이트 시스템 서버에서 설치된 Microsoft .NET 버전 검토:**   사이트에서 1610 업데이트를 설치할 때 .NET Framework 4.5 이상이 아직 설치되어 있지 않은 경우 Configuration Manager가 다음 사이트 시스템 역할 중 하나를 호스트하는 각 컴퓨터에 자동으로 .NET Framework 4.5.2를 설치합니다.
 
@@ -80,7 +79,7 @@ System Center Configuration Manager 현재 분기를 사용하는 경우 버전 
 
 **사이트 및 계층 구조 상태를 검토하고 해결되지 않은 문제가 있는지 확인:**   사이트를 업데이트하기 전에 원격 컴퓨터에 설치된 사이트 서버, 사이트 데이터베이스 서버 및 사이트 시스템 역할의 모든 작동 문제를 해결합니다. 기존 작동 문제로 인해 사이트 업데이트가 실패할 수 있습니다.
 
-자세한 내용은  [System Center Configuration Manager에 대한 경고 및 상태 시스템 사용](/sccm/core/servers/manage/use-alerts-and-the-status-system)을 참조하세요.
+자세한 내용은  [Configuration Manager에 대한 경고 및 상태 시스템 사용](/sccm/core/servers/manage/use-alerts-and-the-status-system)을 참조하세요.
 
 **사이트 간의 파일 및 데이터 복제 검토:**    
 사이트 간의 파일 및 데이터베이스 복제가 작동하고 최신 상태인지 확인합니다. 어떤 경우든 지연 또는 백로그는 원활한 업데이트 또는 성공적인 업데이트를 방해할 수 있습니다.
@@ -93,7 +92,7 @@ System Center Configuration Manager 현재 분기를 사용하는 경우 버전 
 **기본 사이트의 관리 지점에 데이터베이스 복제본을 사용하지 않도록 설정:**    
 Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본이 사용하도록 설정된 기본 사이트를 성공적으로 업데이트할 수 없습니다. Configuration Manager용 업데이트를 설치하기 전에 데이터베이스 복제를 사용하지 않도록 설정합니다.
 
-자세한 내용은 [System Center Configuration Manager의 관리 지점용 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요.
+자세한 내용은 [Configuration Manager의 관리 지점용 데이터베이스 복제본](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)을 참조하세요.
 
 **SQL Server AlwaysOn 가용성 그룹을 수동 장애 조치(failover)로 설정:**    
 버전 1610과 같은 업데이트를 설치하기 전에 가용성 그룹이 수동 장애 조치로 설정되어 있는지 확인합니다. 사이트를 업데이트한 후에 장애 조치를 자동으로 되돌릴 수 있습니다. 자세한 내용은  [사이트 데이터베이스에 대한 SQL Server AlwaysOn](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)을 참조하세요.
@@ -102,7 +101,7 @@ Configuration Manager에서 관리 지점에 대한 데이터베이스 복제본
 Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 사용하는 사이트를 소프트웨어 업데이트 지점을 호스트하도록 업데이트할 수 없습니다.
 
 소프트웨어 업데이트 지점에 NLB 클러스터를 사용하는 경우 Windows PowerShell을 사용하여 NLB 클러스터를 제거하세요.
-자세한 내용은  [System Center Configuration Manager에서 소프트웨어 업데이트 플랜](/sccm/sum/plan-design/plan-for-software-updates)을 참조하세요.
+자세한 내용은  [소프트웨어 업데이트 계획](/sccm/sum/plan-design/plan-for-software-updates)을 참조하세요.
 
 **해당 사이트에 업데이트를 설치하는 동안 각 사이트에서 모든 사이트 유지 관리 작업을 사용하지 않도록 설정**   
 업데이트를 설치하기 전에 업데이트 프로세스가 활성 상태인 동안 실행될 수 있는 모든 사이트 유지 관리 작업을 사용하지 않도록 설정합니다. 이러한 작업의 일부 예는 다음과 같습니다.
@@ -113,17 +112,17 @@ Configuration Manager에서는 NLB(네트워크 부하 분산) 클러스터를 �
 
 업데이트를 설치하는 동안 사이트 데이터베이스 유지 관리 작업이 실행되면 업데이트 설치가 실패할 수 있습니다. 작업을 사용하지 않도록 설정하기 전에 작업 일정을 기록하세요. 그래야 업데이트가 설치된 후에 해당 구성을 복원할 수 있습니다.
 
-자세한 내용은  [System Center Configuration Manager에 대한 유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks)  및 [System Center Configuration Manager에 대한 유지 관리 작업 참조](/sccm/core/servers/manage/reference-for-maintenance-tasks)를 참조하세요.
+자세한 내용은  [Configuration Manager에 대한 유지 관리 작업](/sccm/core/servers/manage/maintenance-tasks)  및 [Configuration Manager에 대한 유지 관리 작업 참조](/sccm/core/servers/manage/reference-for-maintenance-tasks)를 참조하세요.
 
-**System Center Configuration Manager 서버에서 바이러스 백신 소프트웨어 일시 중지:** 사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어가 중지됐는지 확인합니다. <!--SMS.503481-->
+**Configuration Manager 서버에서 바이러스 백신 소프트웨어 일시 중지:** 사이트를 업데이트하기 전에 Configuration Manager 서버에서 바이러스 백신 소프트웨어가 중지됐는지 확인합니다. <!--SMS.503481-->
 
 **중앙 관리 사이트와 기본 사이트에서 사이트 데이터베이스 백업 만들기:**   사이트를 업데이트하기 전에 사이트 데이터베이스를 백업하여 재해 복구에 사용할 백업을 갖추어야 합니다.
 
-자세한 내용은  [System Center Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
+자세한 내용은  [Configuration Manager 백업 및 복구](/sccm/protect/understand/backup-and-recovery)를 참조하세요.
 
 <!-- Removed from update guidance 6/6/2017
 **Test the database upgrade on a copy of the most recent site database backup:** 
-Before you update a System Center Configuration Manager central administration site or primary site, test the site database upgrade process on a copy of the site database.
+Before you update a Configuration Manager central administration site or primary site, test the site database upgrade process on a copy of the site database.
 
 -   We recommend that you test the site database upgrade process because when you upgrade a site, the site database might be modified.
 
@@ -145,7 +144,7 @@ Do not run a test database upgrade on the production site database. Doing so upd
 
 이 옵션을 활용하려면 업데이트의 설치를 시작하기 전에 사전 프로덕션에 대한 자동 업그레이드를 지원하도록 사이트를 구성해야 합니다.
 
-자세한 내용은  [System Center Configuration Manager에서 클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients)  및 [System Center Configuration Manager의 사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](/sccm/core/clients/manage/upgrade/test-client-upgrades)을 참조하세요.
+자세한 내용은  [클라이언트 업그레이드](/sccm/core/clients/manage/upgrade/upgrade-clients) 및 [사전 프로덕션 컬렉션에서 클라이언트 업그레이드를 테스트하는 방법](/sccm/core/clients/manage/upgrade/test-client-upgrades)을 참조하세요.
 
 **서비스 기간을 사용하여 사이트 서버에서 업데이트를 설치하는 시기를 제어하도록 계획:**    
 서비스 기간을 사용하여 사이트 서버에 업데이트를 설치할 수 있는 기간을 정의할 수 있습니다.
@@ -157,7 +156,7 @@ Do not run a test database upgrade on the production site database. Doing so upd
 
 콘솔에서 필수 구성 요소 검사를 실행 하려면 **관리 > 개요 > 클라우드 서비스 > 업데이트 및 서비스**로 이동합니다. 다음으로 **Configuration Manager 1610 업데이트 패키지**를 마우스 오른쪽 단추로 클릭한 후 **필수 구성 요소 검사 실행**을 선택합니다.
 
-시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 **. [System Center Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의 3단계: 업데이트를 설치하기 전에 필수 구성 요소 검사기 실행** 을 참조하세요.
+시작한 다음, 필수 구성 요소 검사를 모니터링하는 방법에 대한 자세한 내용은 **. [Configuration Manager용 콘솔 내 업데이트](/sccm/core/servers/manage/install-in-console-updates) 항목의 3단계: 업데이트를 설치하기 전에 필수 조건 검사기 실행** 을 참조하세요.
 
 > [!IMPORTANT]  
 > 필수 조건 검사가 독립적으로 또는 업데이트 설치의 일부로 실행되면 프로세스에서 사이트 유지 관리 작업에 사용되는 일부 제품 소스 파일을 업데이트합니다. 따라서 필수 구성 요소 검사기를 실행한 후 1610 업데이트를 설치하기 전에 사이트 유지 관리 작업을 수행해야 하는 경우 사이트 서버의 CD.Latest 폴더에서  **Setupwpf.exe** (Configuration Manager 설치 프로그램)를 실행합니다.
@@ -167,4 +166,4 @@ Do not run a test database upgrade on the production site database. Doing so upd
 
 각 사이트에 대한 일상적인 업무 시간 외(업데이트를 설치하는 프로세스와 사이트 구성 요소 및 사이트 시스템 역할을 다시 설치하는 작업이 비즈니스 운영에 가장 영향을 덜 주는 시기)에 업데이트를 설치하도록 계획하는 것이 좋습니다.
 
-자세한 내용은  [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.
+자세한 내용은  [Configuration Manager에 대한 업데이트](/sccm/core/servers/manage/updates)를 참조하세요.

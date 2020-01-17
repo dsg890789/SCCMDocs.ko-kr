@@ -10,19 +10,18 @@ ms.assetid: f86559de-092a-4ce8-9b43-5d7530e0b763
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ca174893aab04194b96969375e9d073a4fee7b9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 74436eb95166ae9bc78d7ae22881b709349bf847
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500098"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824353"
 ---
-# <a name="how-to-configure-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 인벤토리를 구성하는 방법
+# <a name="how-to-configure-software-inventory-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 인벤토리를 구성하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 절차에서는 소프트웨어 인벤토리에 대한 기본 클라이언트 설정을 구성하고 계층에 있는 모든 컴퓨터에 적용합니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 사용자 지정 클라이언트 디바이스 설정을 만들고 컬렉션에 할당합니다. 사용자 지정 디바이스 설정을 만드는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)항목을 참조하세요.   
+이 절차에서는 소프트웨어 인벤토리에 대한 기본 클라이언트 설정을 구성하고 계층에 있는 모든 컴퓨터에 적용합니다. 이러한 설정이 일부 컴퓨터에만 적용되도록 하려면 사용자 지정 클라이언트 디바이스 설정을 만들고 컬렉션에 할당합니다. 사용자 지정 디바이스 설정을 만드는 방법에 대한 자세한 내용은 [클라이언트 설정을 구성하는 방법](../../../../core/clients/deploy/configure-client-settings.md)을 참조하세요.   
 
 ## <a name="to-configure-software-inventory"></a>소프트웨어 인벤토리를 구성하려면  
 
@@ -38,9 +37,9 @@ ms.locfileid: "65500098"
 
    -   **소프트웨어 인벤토리 및 파일 컬렉션 일정 예약** – 클라이언트가 소프트웨어 인벤토리 및 파일을 수집하는 간격을 구성합니다.   
 
-5. 필요한 클라이언트 설정을 구성합니다. [System Center Configuration Manager의 클라이언트 설정 정보](../../../../core/clients/deploy/about-client-settings.md) 항목의 [소프트웨어 인벤토리](../../../../core/clients/deploy/about-client-settings.md#software-inventory) 섹션에는 클라이언트 설정 목록이 있습니다.  
+5. 필요한 클라이언트 설정을 구성합니다. [클라이언트 설정 정보](../../../../core/clients/deploy/about-client-settings.md) 문서의 [소프트웨어 인벤토리](../../../../core/clients/deploy/about-client-settings.md#software-inventory) 섹션에는 클라이언트 설정 목록이 있습니다.  
 
-   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [System Center Configuration Manager에서 클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
+   클라이언트 컴퓨터는 다음에 클라이언트 정책을 다운로드할 때 이 설정으로 구성됩니다. 단일 클라이언트에 대한 정책 검색을 시작하려면 [클라이언트를 관리하는 방법](../../../../core/clients/manage/manage-clients.md)을 참조하세요.  
 
    > [!TIP]
    >   inventoryprovider.log의 오류 코드 80041006은 WMI 공급자에 메모리가 부족하다는 의미입니다. 즉, 공급자에 대한 메모리 할당량 제한에 도달했고 인벤토리 공급자를 계속할 수 없습니다.

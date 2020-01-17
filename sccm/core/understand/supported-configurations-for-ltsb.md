@@ -10,13 +10,12 @@ ms.assetid: f0f818d4-7f45-402f-8758-dc88bc024953
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b71530cbde931c14810ba0e0960e530b56ece04
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 03c79e2079a2e706f63613c670fcff23902a75fa
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891894"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825781"
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager의 장기 서비스 분기에 대해 지원되는 구성
 
@@ -57,13 +56,13 @@ LTSB에서는 다음 Windows 컴퓨터 운영 체제를 사이트 시스템으�
 - Windows Server 2012의 Server Core 설치
 - Windows Server 2012 R2의 Server Core 설치    
 
-*참고 1*: 배포 지점 및 풀(pull) 배포 지점을 제외하고, 이 운영 체제는 사이트 서버 또는 사이트 시스템 역할에 대해 지원되지 않습니다. 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 이 운영 체제를 배포 지점으로 계속 사용할 수 있습니다. 자세한 내용은 [Installation of System Center Configuration Manager CB and LTSB fails on Windows Server 2008](https://support.microsoft.com/help/4015095)(Windows Server 2008에서 System Center Configuration Manager CB 및 LTSB 설치 실패)을 참조하세요.
+*참고 1*: 배포 지점 및 풀(pull) 배포 지점을 제외하고, 이 운영 체제는 사이트 서버 또는 사이트 시스템 역할에 대해 지원되지 않습니다. 이 지원의 중단이 발표되거나 이 운영 체제의 추가 지원 기간이 만료될 때까지 이 운영 체제를 배포 지점으로 계속 사용할 수 있습니다. 자세한 내용은 [Windows Server 2008에서 Configuration Manager CB 및 LTSB 설치 실패](https://support.microsoft.com/help/4015095)를 참조하세요.
 
 ## <a name="client-management"></a>클라이언트 관리
 다음 섹션에서는 LTSB를 사용하여 관리할 수 있는 클라이언트 운영 체제를 식별합니다. LTSB에서는 새 운영 체제를 지원되는 클라이언트로 추가할 수 없습니다.
 
 ### <a name="windows-computers"></a>Windows 컴퓨터
-LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager 클라이언트 소프트웨어를 통해 다음 Windows 컴퓨터 운영 체제를 관리할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)을 참조하세요.
+LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager 클라이언트 소프트웨어를 통해 다음 Windows 컴퓨터 운영 체제를 관리할 수 있습니다. 자세한 내용은 [Configuration Manager에서 Windows 컴퓨터에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)을 참조하세요.
 
 **지원되는 운영 체제:**
 - Windows Server 2016
@@ -87,7 +86,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 **(참고 2)** 클라이언트 강제 설치를 지원하려면 이 운영 체제 버전을 실행하는 컴퓨터에서 파일 및 스토리지 서비스 서버 역할용으로 파일 서버 역할 서비스를 실행해야 합니다. Server Core 컴퓨터에 Windows 기능을 설치하는 방법에 대한 자세한 내용은 Windows Server 2012 TechNet 라이브러리에서 [Server Core 서버에 서버 역할 및 기능 설치](https://technet.microsoft.com/library/jj574158(v=ws.11).aspx)를 참조하세요.
 
 ### <a name="windows-embedded"></a>Windows Embedded
-디바이스에 클라이언트 소프트웨어를 설치하면 LTSB를 사용하여 다음 Windows Embedded 디바이스를 관리할 수 있습니다.  자세한 내용은 [System Center Configuration Manager에서 Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.
+디바이스에 클라이언트 소프트웨어를 설치하면 LTSB를 사용하여 다음 Windows Embedded 디바이스를 관리할 수 있습니다.  자세한 내용은 [Windows Embedded 디바이스에 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)을 참조하세요.
 
 **요구 사항 및 제한 사항:**  
 
@@ -122,7 +121,7 @@ LTSB를 사용하여 Configuration Manager에 포함된 Configuration Manager �
 
 -   모바일 디바이스 클라이언트를 설치하려면 0.78MB의 스토리지 공간이 필요합니다. 모바일 디바이스에서 로그인하려면 최대 256KB의 추가 스토리지 공간이 필요할 수 있습니다.    
 
--   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 디바이스 레거시 클라이언트에 대해 지원하는 관리 기능 종류에 대한 자세한 내용은 [System Center Configuration Manager용 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
+-   이러한 모바일 디바이스의 기능은 플랫폼 및 클라이언트 유형별로 달라집니다. Configuration Manager에서 모바일 디바이스 레거시 클라이언트에 대해 지원하는 관리 기능 종류에 대한 자세한 내용은 [Configuration Manager용 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 **지원되는 운영 체제:**  
 
@@ -147,7 +146,7 @@ Mac 클라이언트 설치 패키지는 Configuration Manager 미디어와 함�
 
 Mac 운영 체제에 대한 지원은 이 섹션에 나열된 운영 체제로 제한됩니다. 현재 분기에 대한 Mac 클라이언트 설치 패키지의 이후 업데이트에서 지원될 수 있는 추가 운영 체제는 지원에 포함되지 않습니다.
 
-자세한 내용은 [System Center Configuration Manager에서 Mac에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-macs)을 참조하세요.
+자세한 내용은 [How to deploy clients to Macs](/sccm/core/clients/deploy/deploy-clients-to-macs)(Mac에 클라이언트를 배포하는 방법)를 참조하세요.
 
 **지원되는 버전:**  
 -   Mac OS X 10.9(Mavericks)  
@@ -164,9 +163,9 @@ Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 
 **요구 사항 및 제한 사항:**  
 
 -   Linux 및 UNIX용 클라이언트에 대한 운영 체제 파일 종속성을 검토하려면 [Linux 및 UNIX 서버에 클라이언트 배포를 위한 필수 조건](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers#BKMK_ClientDeployPrereqforLnU)을 참조하세요.  
--   Linux 또는 UNIX를 실행하는 컴퓨터에 대해 지원되는 관리 기능의 개요는 [System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-unix-and-linux-servers)을 참조하세요.  
+-   Linux 또는 UNIX를 실행하는 컴퓨터에 대해 지원되는 관리 기능의 개요는 [UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-unix-and-linux-servers)을 참조하세요.  
 -   Linux 및 UNIX에 대해 지원되는 버전의 경우 나열된 버전에는 모든 후속 부 버전이 포함됩니다. 예를 들어 CentOS 버전 6이 지원되는 것으로 나와 있는 경우 여기에는 CentOS 6.3과 같은 CentOS 6의 후속 부 버전도 포함됩니다. 마찬가지로 SUSE Linux Enterprise Server 11 SP1과 같이 서비스 팩을 사용하는 운영 체제가 지원되는 것으로 나와 있는 경우에는 해당 운영 체제 버전의 후속 서비스 팩도 지원 대상에 포함됩니다.
--   클라이언트 설치 패키지 및 유니버설 에이전트에 대한 자세한 내용은 [System Center Configuration Manager에서 UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-unix-and-linux-servers)을 참조하세요.
+-   클라이언트 설치 패키지 및 유니버설 에이전트에 대한 자세한 내용은 [UNIX 및 Linux 서버에 클라이언트를 배포하는 방법](/sccm/core/clients/deploy/deploy-clients-to-unix-and-linux-servers)을 참조하세요.
 
 
 **지원되는 버전:**    
@@ -266,13 +265,13 @@ Linux 및 UNIX 운영 체제에 대한 지원은 이 섹션에 나열된 운영 
 |버전 14.04 LTS x64|ccm-Universalx64.&lt;빌드\>.tar|  
 
 ### <a name="exchange-server-connector"></a>Exchange Server 커넥터
- LTSB에서는 클라이언트 소프트웨어를 설치하지 않고 Exchange Sever 인스턴스에 연결하는 디바이스에 대해 제한적인 관리를 지원합니다. 자세한 내용은 [System Center Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.
+ LTSB에서는 클라이언트 소프트웨어를 설치하지 않고 Exchange Sever 인스턴스에 연결하는 디바이스에 대해 제한적인 관리를 지원합니다. 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.
 
  **요구 사항 및 제한 사항:**  
 
 -   Configuration Manager는 모바일 디바이스에 대해 제한적인 관리 기능을 제공합니다. Exchange Server 또는 Exchange Online을 실행하는 서버에 연결하는 EAS(Exchange Active Sync) 사용 가능 디바이스에 대해 Exchange Server 커넥터를 사용하는 경우 제한적인 관리 기능을 사용할 수 있습니다.  
 
--   Exchange Server 커넥터가 관리하는 모바일 디바이스에 대해 Configuration Manager가 지원하는 관리 기능에 대한 자세한 내용은 [System Center Configuration Manager에 대한 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
+-   Exchange Server 커넥터가 관리하는 모바일 디바이스에 대해 Configuration Manager가 지원하는 관리 기능에 대한 자세한 내용은 [Configuration Manager에 대한 디바이스 관리 솔루션 선택](/sccm/core/plan-design/choose-a-device-management-solution)을 참조하세요.  
 
 **Exchange Server의 지원되는 버전:**  
 -   Exchange Server 2010 SP1  

@@ -1,22 +1,22 @@
 ---
 title: 사이트 크기 조정 및 성능 FAQ
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 사이트 크기 조정 및 성능에 관한 일반적인 질문에 대한 대답
+description: Configuration Manager의 사이트 크기 조정 및 성능에 관한 일반적인 질문에 대한 대답
 author: aczechowski
 ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: conceptual
 ms.date: 04/19/2019
-ms.openlocfilehash: 93ddf18f78667058b137368a4948ac3d4dc38288
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5332655696cc9213eca00a77c4638c125d08cee5
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73912980"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75507403"
 ---
-# <a name="system-center-configuration-manager-site-sizing-and-performance-faq"></a>System Center Configuration Manager 사이트 크기 조정 및 성능 FAQ
+# <a name="configuration-manager-site-sizing-and-performance-faq"></a>Configuration Manager 사이트 크기 조정 및 성능 FAQ
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 Configuration Manager 사이트 크기 조정 지침 및 일반적인 성능 문제에 관한 질문과 대답을 다룹니다.
 

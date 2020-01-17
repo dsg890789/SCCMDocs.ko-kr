@@ -10,19 +10,18 @@ ms.assetid: 16acfd63-0c40-424c-82f4-8c63f7f1c30b
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a76ce199b84db200ed023d610f40dbf6f9f989c2
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: bec9765e5152863bb8b55a0b75f1e5c2fc580550
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62198547"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817604"
 ---
-# <a name="create-windows-embedded-applications-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 Windows Embedded 애플리케이션 만들기
+# <a name="create-windows-embedded-applications-with-configuration-manager"></a>Configuration Manager를 사용하여 Windows Embedded 애플리케이션 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-애플리케이션을 만들기 위한 다른 System Center Configuration Manager 요구 사항 및 절차 외에도 Windows Embedded 디바이스에 대한 애플리케이션을 만들어 배포할 때는 다음 사항을 고려해야 합니다.  
+애플리케이션을 만들기 위한 다른 Configuration Manager 요구 사항 및 절차 외에도 Windows Embedded 디바이스에 대한 애플리케이션을 만들어 배포할 때는 다음 사항을 고려해야 합니다.  
 
 ## <a name="general-considerations"></a>일반적인 고려 사항  
 

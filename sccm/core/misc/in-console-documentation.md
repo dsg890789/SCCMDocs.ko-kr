@@ -11,13 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269e8786fe086abb663511da51948ebc3ffb801a
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: 9dae4dd75398c84f465d411b2eb6b4a7d2ae953e
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198526"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802976"
 ---
 <!-- 
 - Feature 1357546
@@ -107,11 +106,14 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 
 ## <a name="new-and-updated-support-articles"></a>새로 제공되거나 업데이트된 지원 문서
 
-2019년 10월 25일부터 11월 27일 사이에 새로 제공되거나 업데이트된 지원 문서입니다.
+2019년 10월 25일부터 12월 23일 사이에 새로 제공되거나 업데이트된 지원 문서입니다.
 
 - [KB 4528414: Configuration Manager가 만료된 Endpoint Protection 정의 버전 및 마지막 업데이트 시간 표시함](https://support.microsoft.com/help/4528414/)
 - [KB 4529905: Configuration Manager 현재 분기 버전 1906의 콘텐츠 배포 지연](https://support.microsoft.com/help/4529905)
 - [KB 4529827: 구성 관리자 클라이언트가 공동 관리 상태를 잘못 감지함](https://support.microsoft.com/help/4529827)
+- [KB 4529824: Configuration Manager 현재 분기, 버전 1906용 메시지 처리 엔진 업데이트](https://support.microsoft.com/help/4529824)
+- [KB 4535819: Microsoft Endpoint Configuration Manager 버전 1910용 업데이트, 조기 업데이트 링](https://support.microsoft.com/help/4535819)
+- [KB 4535776: Microsoft Endpoint Configuration Manager 현재 분기, 버전 1910의 변경 내용 요약](https://support.microsoft.com/help/4535776)
 
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **Microsoft Endpoint Configuration Manager**를 선택하세요.  

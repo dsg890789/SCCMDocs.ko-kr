@@ -10,31 +10,31 @@ ms.assetid: 17fab17f-304d-4f6a-87c7-30ab4f5521ed
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 263ec638afa62cee4f8fce86a9f7b9e35b37f0bb
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 512755ab8eae8a5bbfbc1b2a0eb39b69216d8ae9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67676038"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791921"
 ---
 # <a name="about-upgrade-update-and-install-for-site-and-hierarchy-infrastructure"></a>사이트 및 계층 인프라에 대한 업그레이드, 업데이트 및 설치 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-
-System Center Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다.
+Configuration Manager 사이트 및 계층 인프라를 관리할 때 *업그레이드*, *업데이트* 및 *설치*라는 용어는 세 가지 별도의 개념을 설명하는 데 사용됩니다.
 
 ## <a name="upgrade"></a>Upgrade
-*업그레이드* 또는 *전체 업그레이드*는 Configuration Manager 2012 사이트 또는 계층을 System Center Configuration Manager를 실행하는 사이트 또는 계층으로 변환하는 데 사용됩니다.
-System Center 2012 Configuration Manager를 System Center Configuration Manager로 업그레이드한 경우 사이트 및 사이트 서버를 호스트하는 데 계속해서 동일한 서버가 사용되며 Configuration Manager에 대한 기존 데이터 및 구성이 그대로 유지됩니다.  이는 새 하드웨어에 설치된 새 System Center Configuration Manager 사이트를 사용하면서 관리되는 디바이스에 대한 구성 및 데이터를 유지하는 방법인 [마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)과 다릅니다.
 
-자세한 내용은 [System Center Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.
+*업그레이드* 또는 *전체 업그레이드*는 Configuration Manager 2012 사이트 또는 계층을 Configuration Manager 현재 분기를 실행하는 사이트 또는 계층으로 변환하는 데 사용됩니다.
+
+System Center 2012 Configuration Manager를 Configuration Manager 현재 분기로 업그레이드한 경우 사이트 및 사이트 서버를 호스트하는 데 계속해서 동일한 서버가 사용되며 Configuration Manager에 대한 기존 데이터 및 구성이 그대로 유지됩니다.  이는 새 하드웨어에 설치된 새 Configuration Manager 현재 분기 사이트를 사용하면서 관리되는 디바이스에 대한 구성 및 데이터를 유지하는 방법인 [마이그레이션](/sccm/core/migration/migrate-data-between-hierarchies)과 다릅니다.
+
+자세한 내용은 [Configuration Manager로 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)를 참조하세요.
 
 
 
 ## <a name="update"></a>업데이트
-*업데이트*는 System Center Configuration Manager에 대한 콘솔 내 업데이트 설치 및 Configuration Manager 콘솔 내에서 배달할 수 없는 업데이트인 대역 외 업데이트에 사용됩니다. 콘솔 내 업데이트는 상위 버전을 실행할 수 있도록 현재 분기 사이트(또는 기술 미리 보기 사이트)의 버전을 수정할 수 있습니다. 예를 들어 사이트에서 버전 1806을 실행하는 경우 버전 1810에 대한 업데이트를 설치할 수 있습니다. 또한 사이트 버전을 수정하지 않고 업데이트에서 알려진 문제에 대한 수정 프로그램을 설치할 수 있습니다.      
+*업데이트*는 Configuration Manager에 대한 콘솔 내 업데이트 설치 및 Configuration Manager 콘솔 내에서 배달할 수 없는 업데이트인 대역 외 업데이트에 사용됩니다. 콘솔 내 업데이트는 상위 버전을 실행할 수 있도록 현재 분기 사이트(또는 기술 미리 보기 사이트)의 버전을 수정할 수 있습니다. 예를 들어 사이트에서 버전 1806을 실행하는 경우 버전 1810에 대한 업데이트를 설치할 수 있습니다. 또한 사이트 버전을 수정하지 않고 업데이트에서 알려진 문제에 대한 수정 프로그램을 설치할 수 있습니다.      
 
 일반적으로 업데이트는 기존 배포에 보안 수정 프로그램, 품질 개선 및 새로운 기능을 추가합니다. 기술 미리 보기 분기를 사용하는 경우 업데이트를 통해 기술 미리 보기의 최신 버전을 설치할 수 있습니다.
 - 콘솔 내 업데이트를 설치할 시기는 계층의 최상위 계층 사이트부터 선택합니다.
@@ -42,7 +42,7 @@ System Center 2012 Configuration Manager를 System Center Configuration Manager�
 - 최상위 계층 사이트에서 새 업데이트 설치가 완료되면 자식 기본 사이트에서 업데이트 프로세스가 자동으로 시작됩니다. 그러나 [서비스 기간](/sccm/core/servers/manage/service-windows)을 설정하여 업데이트 시기를 제어할 수 있습니다.
 - 보조 사이트에는 업데이트가 자동으로 설치되지 않습니다. 대신 Configuration Manager 콘솔 내에서 수동으로 업데이트를 시작해야 합니다.
 
-자세한 내용은 [System Center Configuration Manager용 업데이트](/sccm/core/servers/manage/updates) 및 [System Center Configuration Manager Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.
+자세한 내용은 [Configuration Manager용 업데이트](/sccm/core/servers/manage/updates) 및 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.
 
 
 

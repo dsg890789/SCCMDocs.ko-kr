@@ -1,7 +1,7 @@
 ---
 title: 랩 환경에서 평가
 titleSuffix: Configuration Manager
-description: 조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만듭니다.
+description: 조직에서 사용할 Configuration Manager를 평가하는 랩 환경을 만듭니다.
 ms.date: 02/28/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,21 +10,20 @@ ms.assetid: 01b30260-f03a-4851-a549-d1b76e8cfc69
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e06d0afc32535e3459cad6da07ce4964055f0b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: eb959c9e99c22a0b248c138d755d5a841c12960f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889665"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803384"
 ---
-# <a name="evaluate-system-center-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 System Center Configuration Manager 평가
+# <a name="evaluate-configuration-manager-by-building-your-own-lab-environment"></a>고유한 랩 환경을 구축하여 Configuration Manager 평가
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
- 조직에서 사용할 System Center Configuration Manager를 평가하는 랩 환경을 만드는 방법에 알아봅니다.  
+ 조직에서 사용할 Configuration Manager를 평가하는 랩 환경을 만드는 방법을 알아봅니다.  
 
- System Center Configuration Manager는 사용자, 디바이스 및 소프트웨어를 관리하는 복잡하고 강력한 도구입니다. 개념적 이해를 바탕으로 실무 연습을 진행할 수 있도록 전체 배포 전에 System Center Configuration Manager를 철저히 평가하는 것이 좋습니다.  
+ Configuration Manager는 사용자, 디바이스 및 소프트웨어를 관리하는 복잡하고 강력한 도구입니다. 개념적 이해를 바탕으로 실무 연습을 진행할 수 있도록 전체 배포 전에 Configuration Manager를 철저히 평가하는 것이 좋습니다.  
 
  이 가이드는 주로 기업 환경에서 Configuration Manager의 사용을 평가하는 관리자를 위해 작성되었습니다.  
 
@@ -49,16 +48,16 @@ ms.locfileid: "70889665"
  이 랩을 구축하면 작업할 수 있는 기능 환경이 구현되게 됩니다. 그러나 이 환경은 시스템 성능, 하드 디스크 공간 관리, SQL Server 스토리지 등의 요소에 대해 최적화되지 않습니다.  
 
 ##  <a name="BKMK_EvalRec"></a> 랩을 빌드하기 전의 권장 자료  
- [System Center Configuration Manager에 대한 설명서](https://docs.microsoft.com/sccm/)에서 다양한 콘텐츠를 사용할 수 있습니다. 랩 빌드를 시작하기 전에 이 라이브러리에서 다음 항목을 참조하는 것이 좋습니다.  
+ [Configuration Manager에 대한 설명서](https://docs.microsoft.com/sccm/)에서 다양한 콘텐츠를 사용할 수 있습니다. 랩 빌드를 시작하기 전에 이 라이브러리에서 다음 항목을 참조하는 것이 좋습니다.  
 
--   [System Center Configuration Manager 소개](../../core/understand/introduction.md)에서 Configuration Manager 콘솔, 최종 사용자 포털 및 예제 시나리오에 대한 핵심 개념을 알아봅니다.  
+-   [Configuration Manager 소개](../../core/understand/introduction.md)에서 Configuration Manager 콘솔, 최종 사용자 포털 및 예제 시나리오에 대한 핵심 개념을 알아봅니다.  
 
--   [System Center Configuration Manager의 기능 및 특성](../../core/plan-design/changes/features-and-capabilities.md)에서 Configuration Manager의 기본 관리 기능에 대해 알아봅니다.  
+-   [Configuration Manager의 기능 및 특성](../../core/plan-design/changes/features-and-capabilities.md)에서 Configuration Manager의 기본 관리 기능에 대해 알아봅니다.  
 
--   [System Center Configuration Manager의 기본 사항](../../core/understand/fundamentals.md)으로 풍부한 지식을 얻습니다.  
+-   [Configuration Manager의 기본 사항](../../core/understand/fundamentals.md)으로 풍부한 지식을 얻습니다.  
 
--   [System Center Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)에서 보안 역할의 중요성을 알아봅니다.  
+-   [Configuration Manager의 역할 기반 관리 기본 사항](../../core/understand/fundamentals-of-role-based-administration.md)에서 보안 역할의 중요성을 알아봅니다.  
 
 -   콘텐츠 관리에 대한 자세한 내용은 [콘텐츠 관리 관련 개념](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)을 참조하세요.  
 
--   [클라이언트가 System Center Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 통해 배포 전체에서 매일 진행하는 작업을 지원하는 방법을 알아봅니다.  
+-   [클라이언트가 Configuration Manager에 대한 사이트 리소스 및 서비스를 찾는 방법 이해](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)를 통해 배포 전체에서 매일 진행하는 작업을 지원하는 방법을 알아봅니다.  

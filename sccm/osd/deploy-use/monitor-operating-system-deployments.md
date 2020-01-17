@@ -10,17 +10,16 @@ ms.assetid: 08085d94-295c-432f-b5e3-9736bce0193b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47bc9f00a64614e2483feb2ce3171fc8b245a0ba
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 9d0a430a1010611bc6a7e0871e8c59ca3d1f8de7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62270614"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806325"
 ---
-# <a name="monitor-operating-system-deployments-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 운영 체제 배포 모니터링
+# <a name="monitor-operating-system-deployments-in-configuration-manager"></a>Configuration Manager에서 운영 체제 배포 모니터링
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 운영 체제 배포 개체를 모니터링할 수 있도록 돕기 위해 Configuration Manager 콘솔에서는 다양한 방법을 제공합니다.  
 

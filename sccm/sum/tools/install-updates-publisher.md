@@ -10,22 +10,21 @@ ms.assetid: ab5cda93-b67c-4aa5-904d-7b63ce790aa0
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7194d77d7d1fd2c4f9cd143bcf3b69446f394c08
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 979243fe992cf5e0087c013d8a75737193dcf9a9
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "69974682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827165"
 ---
 # <a name="install-updates-publisher"></a>Updates Publisher 설치
 
 *적용 대상: System Center Updates Publisher*
 
-이 문서의 정보는 System Center Configuration Manager 환경에서 사용할 수 있도록 업데이트 게시자를 다운로드, 설치 및 설정하는 데 도움이 될 수 있습니다.
+이 문서의 정보는 Configuration Manager 환경에서 사용할 수 있도록 업데이트 게시자를 다운로드, 설치 및 설정하는 데 도움이 될 수 있습니다.
 
 ## <a name="prerequisites-and-limitations"></a>필수 구성 요소 및 제한 사항
-System Center Updates Publisher는 System Center Configuration Manager와 함께만 사용할 수 있습니다. 독립 실행형 WSUS 계층 구조와 함께 사용할 수 없습니다.
+System Center Updates Publisher는 Configuration Manager와 함께만 사용할 수 있습니다. 독립 실행형 WSUS 계층 구조와 함께 사용할 수 없습니다.
 
 다음 섹션에서는 Updates Publisher를 설치하고 사용하기 위한 요구 사항과 사용 제한 사항 또는 알려진 문제점에 대해 자세히 설명합니다.  
 
@@ -37,7 +36,7 @@ System Center Updates Publisher는 System Center Configuration Manager와 함께
 -   Windows 10(Pro, Education, Pro Education, Enterprise)
 -   Windows 8.1(Professional, Enterprise)
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 Updates Publisher를 실행하는 컴퓨터에는 다음이 필요합니다.
 
 -   **64비트 운영 체제**: Updates Publisher를 설치하려면 컴퓨터에서 64비트 운영 체제를 실행해야 합니다.
@@ -47,7 +46,7 @@ Updates Publisher를 실행하는 컴퓨터에는 다음이 필요합니다.
 -   **사용 권한**:
     -   설치: 로컬 관리자
     -   대부분의 작업: 로컬 사용자
-    -   게시 또는 WSUS와 관련된 작업: WSUS 서버의 WSUS Administrators 그룹 구성원
+    -   게시 또는 WSUS와 관련된 작업: WSUS 서버의 WSUS 관리자 그룹의 멤버입니다.
 
 ### <a name="supported-languages"></a>지원되는 언어
 Updates Publisher는 영어로만 제공되지만 다른 언어의 업데이트를 관리할 수 있습니다. 언어 지원은 업데이트 게시, 만들기 또는 편집과 같은 작업에 따라 달라집니다.
@@ -59,7 +58,7 @@ Updates Publisher는 영어로만 제공되지만 다른 언어의 업데이트�
 -   로캘이 영어인 컴퓨터에서 업데이트를 만들면 기본적으로 제목과 설명이 영어로 표시됩니다.
 -   로캘이 스페인어인 컴퓨터로 업데이트를 내보내거나 게시하면 해당 컴퓨터에서 제목과 설명이 스페인어로 표시됩니다.
 
-### <a name="publishing"></a>게시
+### <a name="publishing"></a>게시 중
 소프트웨어 업데이트를 게시할 때 소프트웨어 업데이트 이진 파일의 언어를 지정할 수 있습니다. 이진 파일이 언어 중립적임을 지정할 수도 있습니다. 다음 언어가 지원됩니다.
 
 -   아랍어

@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 12/03/2019
+ms.date: 12/20/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,13 +10,12 @@ ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48decd20e6a77657e4ba6ac1e074e3068b69ef12
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f6eaebf71fb9f03c5ed27157ed23a67cf10dc715
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74813483"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798072"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -200,7 +199,7 @@ Configuration Manager 콘솔을 사용하여 파일럿 배포 상태를 모니�
 
 <!-- 5771680 -->
 
-*버전 1906, 1910에 적용*
+*버전 1906, 1910 초기 업데이트 링에 적용*
 
 CMG(클라우드 관리 게이트웨이)에서 **클라우드 배포 지점으로 작동하고 Azure Storage에서 콘텐츠를 제공할 수 있도록 허용** 및 **TLS 1.2 적용**을 설정한 경우 콘텐츠 다운로드에 실패할 수 있습니다.
 
@@ -220,4 +219,8 @@ Error retrieving manifest (0x87d0027e).
 ERROR: Exception processing request. Microsoft.WindowsAzure.Storage.StorageException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.ComponentModel.Win32Exception: The client and server cannot communicate, because they do not possess a common algorithm...
 ```
 
-이 문제를 해결하려면 기존 방식의 [클라우드 배포 지점](/configmgr/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 사용하세요. 이 역할은 TLS 1.2를 적용하지는 않지만 TLS 1.2가 필요한 클라이언트와 호환됩니다.
+이 문제를 해결하려면
+
+- 2019년 12월 20일에 출시되어 전 세계적으로 사용 가능한 1910 버전으로 사이트를 업데이트합니다. 이전에 1910 초기 업데이트 링으로 업데이트한 경우에는 사용 가능할 때 이 빌드로 업데이트해야 합니다.
+
+- 또는 기존의 [클라우드 배포 지점](/configmgr/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 사용합니다. 이 역할은 TLS 1.2를 적용하지는 않지만 TLS 1.2가 필요한 클라이언트와 호환됩니다.

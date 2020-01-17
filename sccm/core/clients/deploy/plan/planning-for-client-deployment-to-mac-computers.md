@@ -1,7 +1,7 @@
 ---
 title: Mac 컴퓨터에 클라이언트 배포 계획
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포를 계획합니다.
+description: Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포를 계획합니다.
 ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
@@ -10,23 +10,22 @@ ms.assetid: 8d15ae3f-de42-461f-a907-c43873da22d2
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe9c5a22f1c3a17737ccfb452b3cd4dd418bf9a9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f231e0681b2a202696b6c719966abf818a9c8e27
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62213281"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824880"
 ---
-# <a name="planning-for-client-deployment-to-mac-computers-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포 계획
+# <a name="planning-for-client-deployment-to-mac-computers-in-configuration-manager"></a>Configuration Manager에서 Mac 컴퓨터에 클라이언트 배포 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Mac OS X 운영 체제를 실행하는 Mac 컴퓨터에 Configuration Manager 클라이언트를 설치하고 다음 관리 기능을 사용할 수 있습니다.  
 
 - **하드웨어 인벤토리**  
 
-   Configuration Manager 하드웨어 인벤토리를 사용하여 Mac 컴퓨터의 하드웨어 및 설치된 애플리케이션에 대한 정보를 수집할 수 있습니다. 이 정보는 Configuration Manager 콘솔의 리소스 탐색기에서 볼 수 있으며 컬렉션, 쿼리 및 보고서를 만드는 데 활용할 수 있습니다. 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](../../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)을 참조하세요.  
+   Configuration Manager 하드웨어 인벤토리를 사용하여 Mac 컴퓨터의 하드웨어 및 설치된 애플리케이션에 대한 정보를 수집할 수 있습니다. 이 정보는 Configuration Manager 콘솔의 리소스 탐색기에서 볼 수 있으며 컬렉션, 쿼리 및 보고서를 만드는 데 활용할 수 있습니다. 자세한 내용은 [하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](../../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)을 참조하세요.  
 
    Configuration Manager는 Mac 컴퓨터에서 다음 하드웨어 정보를 수집합니다.  
 
@@ -104,4 +103,4 @@ Mac OS X 운영 체제를 실행하는 Mac 컴퓨터에 Configuration Manager �
 
 - 클라이언트 상태 클라이언트 검사 및 재구성  
 
-  Configuration Manager Mac 클라이언트를 설치하고 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 Mac에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-macs.md)을 참조하세요.
+  Configuration Manager Mac 클라이언트를 설치하고 구성하는 방법에 대한 자세한 내용은 [Mac에 클라이언트를 배포하는 방법](../../../../core/clients/deploy/deploy-clients-to-macs.md)을 참조하세요.

@@ -1,7 +1,7 @@
 ---
 title: 모범 사례 보고
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 보고 기능 사용에 대한 몇 가지 유용한 팁을 참조하세요.
+description: Configuration Manager의 보고 기능 사용에 대한 몇 가지 유용한 팁을 참조하세요.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -9,19 +9,18 @@ ms.topic: conceptual
 ms.assetid: 64f9d931-33f1-456f-a4e4-0ec077465bd0
 author: mestew
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17e8ede7185892e226d576c532ad460d7cd4f32
-ms.sourcegitcommit: 3a0eaf3378632f312b46b2b8a524e286f9c4cd8e
+ms.openlocfilehash: b5ba34b3b4fa6c38ce904ab6786ba2b1587ca723
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75198407"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797506"
 ---
-# <a name="best-practices-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고에 대한 모범 사례
+# <a name="best-practices-for-reporting-in-configuration-manager"></a>Configuration Manager에서의 보고에 대한 모범 사례
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 보고에 대한 다음 모범 사례를 사용합니다.  
+Configuration Manager에서의 보고에 대한 다음 모범 사례를 사용합니다.  
 
 ## <a name="for-best-performance-install-the-reporting-services-point-on-a-remote-site-system-server"></a>최고의 성능을 위해 원격 사이트 시스템 서버에 보고 서비스 지점 설치  
 사이트 서버나 원격 사이트 시스템에 보고 서비스 지점을 설치할 수 있지만 원격 사이트 시스템 서버에 보고 서비스 지점을 설치하면 성능이 향상됩니다.  

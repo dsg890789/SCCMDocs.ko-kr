@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 배포
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에 대한 배포 지점을 설치한 후 해당 배포 지점에 콘텐츠 배포를 시작할 수 있는 방법은 다음과 같습니다.
+description: Configuration Manager에 대한 배포 지점을 설치한 후 해당 배포 지점에 콘텐츠 배포를 시작할 수 있는 방법은 다음과 같습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: d50dcca0-4419-449d-a487-73abcadf328f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ce4d2f54163ba4dd891b5b70092de59cac38bcf
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ad5cc86aac61dfd86771b623b6ce51399f0bc714
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74840482"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798751"
 ---
-# <a name="deploy-and-manage-content-for-system-center-configuration-manager"></a>System Center Configuration Manager에 대한 콘텐츠 배포 및 관리
+# <a name="deploy-and-manage-content-for-configuration-manager"></a>Configuration Manager의 콘텐츠 배포 및 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에 대한 배포 지점을 설치한 후 해당 지점에 콘텐츠 배포를 시작할 수 있습니다. 일반적으로 콘텐츠는 네트워크를 통해 배포 지점으로 전송되지만 배포 지점에 콘텐츠를 가져오는 다른 옵션도 있습니다. 특정 배포 지점에 콘텐츠를 전송한 후 여러 배포 지점에서 해당 콘텐츠에 대한 업데이트, 재배포, 제거 및 유효성 검사를 할 수 있습니다.  
+Configuration Manager에 대한 배포 지점을 설치한 후 해당 지점에 콘텐츠 배포를 시작할 수 있습니다. 일반적으로 콘텐츠는 네트워크를 통해 배포 지점으로 전송되지만 배포 지점에 콘텐츠를 가져오는 다른 옵션도 있습니다. 특정 배포 지점에 콘텐츠를 전송한 후 여러 배포 지점에서 해당 콘텐츠에 대한 업데이트, 재배포, 제거 및 유효성 검사를 할 수 있습니다.  
 
 ##  <a name="bkmk_distribute"></a> 콘텐츠 배포  
 일반적으로 콘텐츠는 배포 지점으로 배포해야 클라이언트 컴퓨터에서 사용할 수 있습니다. 단, 특정 배포용으로 주문형 콘텐츠 배포를 사용하는 경우는 예외입니다.  콘텐츠를 배포할 때 Configuration Manager에서는 콘텐츠 파일을 패키지에 저장한 다음 해당 패키지를 배포 지점으로 배포합니다. 배포할 수 있는 콘텐츠 유형은 다음과 같습니다.  
@@ -89,7 +88,7 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
     - **컬렉션**: **사용자 컬렉션** 또는 **디바이스 컬렉션**을 선택하고 하나 이상의 배포 지점 그룹에 연결된 컬렉션을 클릭한 다음, **확인**을 클릭합니다.  
 
         > [!NOTE]  
-        > 배포 지점 그룹과 연결된 컬렉션만 표시됩니다. 컬렉션을 배포 지점 그룹과 연결하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 그룹 관리](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_manage)를 참조하세요.  
+        > 배포 지점 그룹과 연결된 컬렉션만 표시됩니다. 컬렉션을 배포 지점 그룹과 연결하는 방법에 대한 자세한 내용은 [Configuration Manager에 대한 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 그룹 관리](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_manage)를 참조하세요.  
 
     - **배포 지점**: 기존 배포 지점을 선택한 후에 **확인**을 클릭합니다. 이전에 콘텐츠를 받은 배포 지점은 표시되지 않습니다.  
 
@@ -101,7 +100,7 @@ System Center Configuration Manager에 대한 배포 지점을 설치한 후 해
 
 8.  **진행률** 페이지에 배포 진행률이 표시됩니다.  
 
-9. **확인** 페이지에 콘텐츠가 지점에 성공적으로 할당되었는지 여부가 표시됩니다. 콘텐츠 배포를 모니터링하려면 [System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
+9. **확인** 페이지에 콘텐츠가 지점에 성공적으로 할당되었는지 여부가 표시됩니다. 콘텐츠 배포를 모니터링하려면 [Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
 
 ##  <a name="bkmk_prestage"></a> 사전 준비된 콘텐츠 사용  
 애플리케이션과 패키지 유형의 콘텐츠 파일을 사전 준비할 수 있습니다.  
@@ -222,7 +221,7 @@ Configuration Manager 콘솔에서 선택한 콘텐츠의 파일 및 관련 메�
     - **컬렉션**: **사용자 컬렉션** 또는 **디바이스 컬렉션**을 선택하고 하나 이상의 배포 지점 그룹에 연결된 컬렉션을 클릭한 다음, **확인**을 클릭합니다.  
 
       > [!NOTE]  
-      > 배포 지점 그룹과 연결된 컬렉션만 표시됩니다.  [System Center Configuration Manager의 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 그룹 관리](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_manage)를 참조하세요.  
+      > 배포 지점 그룹과 연결된 컬렉션만 표시됩니다.  [Configuration Manager의 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 그룹 관리](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_manage)를 참조하세요.  
 
     - **배포 지점**: 기존 배포 지점을 선택한 후에 **확인**을 클릭합니다. 이전에 콘텐츠를 받은 배포 지점은 표시되지 않습니다.  
 
@@ -234,7 +233,7 @@ Configuration Manager 콘솔에서 선택한 콘텐츠의 파일 및 관련 메�
 
 8.  **진행률** 페이지에 배포 진행률이 표시됩니다.  
 
-9. **확인** 페이지에 콘텐츠가 배포 지점에 성공적으로 할당되었는지 여부가 표시됩니다. 콘텐츠 배포를 모니터링하려면 [System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
+9. **확인** 페이지에 콘텐츠가 배포 지점에 성공적으로 할당되었는지 여부가 표시됩니다. 콘텐츠 배포를 모니터링하려면 [Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
 
 ###  <a name="BKMK_ExportContentFromPrestagedContentFile"></a> 3단계: 사전 준비된 콘텐츠 파일에서 콘텐츠 추출  
 사전 준비된 콘텐츠 파일을 만들고 배포 지점에 콘텐츠를 할당하면 사이트 서버나 배포 지점의 콘텐츠 라이브러리로 콘텐츠 파일을 추출할 수 있습니다. 기존에는 사전 준비된 콘텐츠 파일을 이동식 드라이브(예: USB 드라이브)에 복사하거나 콘텐츠를 미디어(예: DVD)로 구워 콘텐츠가 필요한 사이트 서버나 배포 지점의 위치에서 사용할 수 있도록 만들었습니다.  
@@ -471,7 +470,7 @@ Configuration Manager SDK의 **RetryContentReplication** WMI(Windows Management 
 
 콘텐츠 유효성 검사가 시작되면 Configuration Manager가 배포 지점의 콘텐츠 파일을 확인하고 배포 지점의 파일에 예기치 않은 파일 해시가 있는 경우 Configuration Manager가 **모니터링** 작업 영역에서 검토할 수 있는 상태 메시지를 만듭니다.  
 
-콘텐츠 유효성 검사 일정을 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_configs)을 참조하세요.  
+콘텐츠 유효성 검사 일정을 구성하는 방법에 대한 자세한 내용은 [Configuration Manager에 대한 배포 지점 설치 및 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) 항목의 [배포 지점 구성](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_configs)을 참조하세요.  
 
 
 #### <a name="to-initiate-content-validation-for-all-content-on-a-distribution-point"></a>배포 지점의 모든 콘텐츠에 대해 콘텐츠 유효성 검사를 시작하려면  
@@ -484,7 +483,7 @@ Configuration Manager SDK의 **RetryContentReplication** WMI(Windows Management 
 
 4.  **콘텐츠** 탭에서 콘텐츠 유효성 검사를 수행할 패키지를 선택하고 **유효성 검사**, **확인**, **확인**을 차례로 클릭합니다. 배포 지점의 패키지에 대한 콘텐츠 유효성 검사 프로세스가 시작됩니다.  
 
-5.  콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 클릭합니다. 각 패키지 유형(예: 애플리케이션, 소프트웨어 업데이트 패키지 및 부팅 이미지)의 콘텐츠가 표시됩니다. 콘텐츠 상태를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
+5.  콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 클릭합니다. 각 패키지 유형(예: 애플리케이션, 소프트웨어 업데이트 패키지 및 부팅 이미지)의 콘텐츠가 표시됩니다. 콘텐츠 상태를 모니터링하는 방법에 대한 자세한 내용은 [Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
 
 #### <a name="to-initiate-content-validation-for-a-package"></a>패키지에 대한 콘텐츠 유효성 검사를 시작하려면  
 
@@ -510,4 +509,4 @@ Configuration Manager SDK의 **RetryContentReplication** WMI(Windows Management 
 
 4.  **콘텐츠 위치** 탭에서 콘텐츠 유효성 검사를 수행할 배포 지점 또는 배포 지점 그룹을 선택하고 **유효성 검사**, **확인**, **확인**을 차례로 클릭합니다. 선택한 배포 지점 또는 배포 지점 그룹의 콘텐츠에 대한 콘텐츠 유효성 검사 프로세스가 시작됩니다.  
 
-5.  콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 클릭합니다. 각 패키지 유형(예: 애플리케이션, 소프트웨어 업데이트 패키지 및 부팅 이미지)의 콘텐츠가 표시됩니다. 콘텐츠 상태를 모니터링하는 방법에 대한 자세한 내용은 [System Center Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  
+5.  콘텐츠 유효성 검사 프로세스의 결과를 보려면 **모니터링** 작업 영역에서 **배포 상태**를 확장한 후 **콘텐츠 상태** 노드를 클릭합니다. 각 패키지 유형(예: 애플리케이션, 소프트웨어 업데이트 패키지 및 부팅 이미지)의 콘텐츠가 표시됩니다. 콘텐츠 상태를 모니터링하는 방법에 대한 자세한 내용은 [Configuration Manager를 사용하여 배포한 콘텐츠 모니터링](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)을 참조하세요.  

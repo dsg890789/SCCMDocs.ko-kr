@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 업데이트에 대한 필수 조건
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건에 대해 알아봅니다.
+description: Configuration Manager의 소프트웨어 업데이트를 위한 필수 구성 요소에 대해 알아봅니다.
 author: mestew
 ms.author: mstewart
 manager: dougeby
@@ -10,19 +10,18 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 334854072e5c724f2c76432e7a7372c02cab3d54
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1885fdb11786cce5ae65aaeb4d407fb226b6a670
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70892260"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818556"
 ---
-# <a name="prerequisites-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건
+# <a name="prerequisites-for-software-updates-in-configuration-manager"></a>Configuration Manager의 소프트웨어 업데이트를 위한 필수 구성 요소
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 목록에서는 System Center Configuration Manager의 소프트웨어 업데이트에 대한 필수 조건을 나열합니다. 각 필수 구성 요소에 대해 외부 종속성과 내부 종속성이 별도의 표에 표시됩니다.  
+이 목록에서는 Configuration Manager의 소프트웨어 업데이트를 위한 필수 구성 요소를 나열합니다. 각 필수 구성 요소에 대해 외부 종속성과 내부 종속성이 별도의 표에 표시됩니다.  
 
 ## <a name="software-update-dependencies-that-are-external-to-configuration-manager"></a>Configuration Manager 외부인 소프트웨어 업데이트 종속성  
  다음 섹션에는 소프트웨어 업데이트에 대한 외부 종속성이 나열되어 있습니다.  

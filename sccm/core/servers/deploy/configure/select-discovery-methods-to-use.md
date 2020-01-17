@@ -10,23 +10,22 @@ ms.assetid: 127ce713-d085-430f-ac7b-2701637fe126
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3965f0df55e16fa87d259532fdc4f2f580d1253
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 19266daaad0c1e068cfd332bb02eb8643b59b43d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65501412"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75798444"
 ---
-# <a name="select-discovery-methods-to-use-for-system-center-configuration-manager"></a>System Center Configuration Manager에 사용할 검색 방법 선택
+# <a name="select-discovery-methods-to-use-for-configuration-manager"></a>Configuration Manager에 사용할 검색 방법 선택
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에 검색을 성공적 및 효율적으로 사용하려면 사용할 방법과 해당 방법을 실행할 사이트를 고려해야 합니다.  
+Configuration Manager에 검색을 성공적 및 효율적으로 사용하려면 사용할 방법과 해당 방법을 실행할 사이트를 고려해야 합니다.  
 
  검색에서는 대량의 네트워크 트래픽이 발생할 수 있으며 검색에서 생성된 DDR(검색 데이터 기록)의 처리 시 상당한 CPU 리소스가 사용되므로 원하는 결과를 얻는 데 필요한 검색 방법만 사용해야 합니다. 한두 가지 검색 방법을 사용하고 제어된 방식으로 추가 방법을 사용하도록 설정하여 환경의 검색 수준을 확장할 수 있습니다. 이 항목의 정보는 올바른 결정을 내리는 데 도움이 될 수 있습니다.  
 
- 다양한 검색 방법에 대한 자세한 내용은 [System Center Configuration Manager에 대한 검색 방법 정보](../../../../core/servers/deploy/configure/about-discovery-methods.md)를 참조하세요.  
+ 다양한 검색 방법에 대한 자세한 내용은 [Configuration Manager에 대한 검색 방법 정보](../../../../core/servers/deploy/configure/about-discovery-methods.md)를 참조하세요.  
 
 ## <a name="select-methods-to-discover-different-things"></a>각 항목을 검색할 방법 선택  
  잠재적인 Configuration Manager 클라이언트 컴퓨터 또는 사용자 리소스를 검색하려면 적절한 검색 방법을 사용하도록 설정해야 합니다. 여러 가지 검색 방법을 함께 사용하여 다양한 리소스를 찾고 이러한 리소스에 대한 추가 정보를 검색할 수 있습니다. 사용하는 검색 방법에 따라 검색되는 리소스 유형과 검색 프로세스에서 사용되는 Configuration Manager 서비스와 에이전트가 결정됩니다. 또한 검색할 수 있는 리소스에 대한 정보 유형도 결정됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: 명령줄 설치
 titleSuffix: Configuration Manager
-description: 명령 프롬프트에서 여러 사이트 설치에 대해 System Center Configuration Manager 설치 프로그램을 실행하는 방법을 알아봅니다.
+description: 명령 프롬프트에서 여러 사이트 설치에 대해 Configuration Manager 설치 프로그램을 실행하는 방법을 알아봅니다.
 ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: e7cdb1a9-140a-436e-ac71-72d083110223
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e24fb163d144d69b11e7ae1aae4a5ebc5e0c38f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d059ca50cd56bc252e70070abee1b862bbed7b03
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888703"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75797903"
 ---
-# <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>명령줄을 사용하여 System Center Configuration Manager 사이트 설치
+# <a name="use-a-command-line-to-install-configuration-manager-sites"></a>명령줄을 사용하여 Configuration Manager 사이트 설치
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
- 명령 프롬프트에서 System Center Configuration Manager 설치 프로그램을 실행하여 다양한 사이트 유형을 설치할 수 있습니다.
+ 명령 프롬프트에서 Configuration Manager 설치 프로그램을 실행하여 다양한 사이트 유형을 설치할 수 있습니다.
 
 ## <a name="supported-tasks-for-command-line-installations"></a>명령줄 설치에 대해 지원되는 작업
  설치 프로그램을 실행하는 이 방법은 다음과 같은 사이트 설치 및 사이트 유지 관리 작업을 지원합니다.
@@ -53,7 +52,7 @@ ms.locfileid: "70888703"
     중앙 관리 사이트 또는 기본 사이트의 무인 설치를 수행하려면 스크립트 파일에 다음 섹션이 있어야 합니다.  
 
   - Identification    
-  - Options    
+  - 옵션    
   - SQLConfigOptions    
     -   HierarchyOptions    
   - CloudConnectorOptions   

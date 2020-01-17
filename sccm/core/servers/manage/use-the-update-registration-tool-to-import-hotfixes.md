@@ -10,25 +10,24 @@ ms.assetid: 8cc13635-85d6-4b07-a3ec-c42188bc5c74
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bd4d86d5ac83062da66c40b596cf86eb3d2bfa9
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d547867a0b9b5fe940d7919379c41f9beb8ddbbc
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891994"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826123"
 ---
-# <a name="use-the-update-registration-tool-to-import-hotfixes-to-system-center-configuration-manager"></a>업데이트 등록 도구를 사용하여 System Center Configuration Manager에 핫픽스 가져오기
+# <a name="use-the-update-registration-tool-to-import-hotfixes-to-configuration-manager"></a>업데이트 등록 도구를 사용하여 Configuration Manager에 핫픽스 가져오기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 일부 업데이트는 Microsoft 클라우드 서비스에서 사용할 수 없으며, 대역 외에서만 가져옵니다. 특정 문제를 해결하는 제한된 릴리스 핫픽스를 예로 들 수 있습니다.   
 대역 외 릴리스를 설치해야 하고 업데이트 또는 핫픽스 파일 이름이 **update.exe** 확장명으로 끝나는 경우 **업데이트 등록 도구**를 사용하여 Configuration Manager 콘솔에 업데이트를 수동으로 가져옵니다. 이 도구를 통해 업데이트 패키지를 추출하여 사이트 서버에 전송하고 Configuration Manager 콘솔에 업데이트를 등록할 수 있습니다.  
 
- 핫픽스 파일의 파일 확장명이 **.exe**인 경우(**update.exe** 제외) [핫픽스 설치 관리자를 사용하여 System Center Configuration Manager의 업데이트 설치](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)를 참조하세요.  
+ 핫픽스 파일의 파일 확장명이 **.exe**인 경우(**update.exe** 제외) [핫픽스 설치 관리자를 사용하여 Configuration Manager의 업데이트 설치](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)를 참조하세요.  
 
 > [!NOTE]  
->  이 항목에서는 System Center Configuration Manager를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다. 특정 핫픽스 또는 업데이트에 대한 자세한 내용은 Microsoft 지원에서 해당 KB(기술 자료)를 참조하세요.  
+>  이 항목에서는 Configuration Manager를 업데이트하는 핫픽스를 설치하는 방법에 대한 일반적인 지침을 제공합니다. 특정 핫픽스 또는 업데이트에 대한 자세한 내용은 Microsoft 지원에서 해당 KB(기술 자료)를 참조하세요.  
 
  **업데이트 등록 도구를 사용하기 위한 필수 조건:**  
 
@@ -66,4 +65,4 @@ Configuration Manager의 일부 업데이트는 Microsoft 클라우드 서비스
 
 3. Configuration Manager 콘솔을 열고 **관리** > **업데이트 및 서비스**로 이동합니다. 이제 가져온 핫픽스를 설치할 수 있습니다. 버전 1702 이전에는 업데이트 및 서비스가 **관리** > **Cloud Services** 아래에 있었습니다.
 
-   업데이트를 설치하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  
+   업데이트를 설치하는 방법에 대한 자세한 내용은 [Configuration Manager의 콘솔 내 업데이트 설치](../../../core/servers/manage/install-in-console-updates.md)를 참조하세요.  

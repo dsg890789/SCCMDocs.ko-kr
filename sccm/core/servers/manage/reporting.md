@@ -9,19 +9,18 @@ ms.assetid: 78c1f344-4d72-4718-aad9-3a3834b64dbd
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a7819963246762bff7f1ac58a6b43c6a0687c2d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 91257ec12d765b9faf13c2e1f9fc507f85701931
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62249613"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793507"
 ---
-# <a name="reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고
+# <a name="reporting-in-configuration-manager"></a>Configuration Manager의 보고 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 보고는 Configuration Manager 콘솔에서 Microsoft SQL Server Reporting Services의 고급 보고 기능을 사용하는 데 도움이 되는 일련의 도구와 리소스를 제공합니다.  
+Configuration Manager의 보고는 Configuration Manager 콘솔에서 Microsoft SQL Server Reporting Services의 고급 보고 기능을 사용하는 데 도움이 되는 일련의 도구와 리소스를 제공합니다.  
 
 ## <a name="reporting-topics"></a>보고 항목  
  다음 항목은 Configuration Manager에서 보고를 관리하는 데 도움이 됩니다.  

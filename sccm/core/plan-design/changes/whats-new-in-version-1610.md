@@ -1,7 +1,7 @@
 ---
 title: 새 버전 1610
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1610에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
+description: Configuration Manager 1610 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
 ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45406eca95511d2380430e4cf4702fb4eca96d5d
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 80548a53d00707905f24622ab3713427a41b3095
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68338976"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802772"
 ---
-# <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610의 새로운 기능
+# <a name="what39s-new-in-version-1610-of-configuration-manager"></a>Configuration Manager 1610 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 현재 분기의 업데이트 1610은 버전 1511, 1602 또는 1606을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
+Configuration Manager 현재 분기의 업데이트 1610은 버전 1511, 1602 또는 1606을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
 
 
 > [!TIP]  
@@ -95,7 +94,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 - 이제 Azure Active Directory에서 얻은 클라이언트 비밀 키를 수정할 수 있습니다.
 - 저장소에 대한 구독을 삭제할 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조하세요.
+자세한 내용은 [Configuration Manager를 사용하여 비즈니스용 Windows 스토어에서 앱 관리](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)를 참조하세요.
 
 
 ## <a name="policy-sync-for-intune-enrolled-devices"></a>Intune에 등록된 디바이스에 대한 정책 동기화
@@ -105,7 +104,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 
 ## <a name="use-compliance-settings-to-configure-windows-defender-settings"></a>준수 설정을 사용하여 Windows Defender 설정 구성
 이제 Configuration Manager 콘솔에서 구성 항목을 사용하여 Intune에 등록된 Windows 10 컴퓨터에 대한 Windows Defender 클라이언트 설정을 구성할 수 있습니다.
-자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)에서 **Windows Defender** 섹션을 참조하세요.
+자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Windows 8.1 및 Windows 10 디바이스에 대한 구성 항목을 만드는 방법](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)에서 **Windows Defender** 섹션을 참조하세요.
 
 
 
@@ -154,7 +153,7 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 ![필수 소프트웨어 대화 상자](media/client-toast-notification.png)
 
 
-자세한 내용을 보려면 다음을 수행하십시오.
+추가 정보는 다음 항목을 참조하세요.
 - [높은 위험 수준의 배포를 관리하는 설정](../../../protect/understand/settings-to-manage-high-risk-deployments.md)
 - [클라이언트 설정을 구성하는 방법](../../clients/deploy/configure-client-settings.md)
 
@@ -203,15 +202,15 @@ System Center Configuration Manager 현재 분기의 업데이트 1610은 버전
 
 
 ## <a name="lookout-integration-for-hybrid-implementations-to-protect-ios-and-android-devices"></a>하이브리드 구현에서 iOS 및 Android 디바이스를 보호하기 위한 Lookout 통합
-Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. System Center Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 통합 및 작동 방식에 대해 알아보려면 [디바이스, 네트워크 및 애플리케이션 위험에 따라 액세스 관리](/sccm/mdm/deploy-use/mobile-threat-defense)를 참조하세요.
+Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 통합 및 작동 방식에 대해 알아보려면 [디바이스, 네트워크 및 애플리케이션 위험에 따라 액세스 관리](/sccm/mdm/deploy-use/mobile-threat-defense)를 참조하세요.
 
-호환되지 않는 iOS 디바이스 사용자에게는 등록하라는 내용의 메시지가 표시됩니다. 그러면 디바이스에 Lookout for Work 앱을 설치하고, 앱을 활성화하고, Lookout for Work 애플리케이션에서 보고된 위협을 수정한 후에 회사 데이터에 액세스할 수 있습니다. [Lookout for Work 앱 구성 및 배포](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) 방법을 알아봅니다.
+호환되지 않는 iOS 디바이스 사용자에게는 등록하라는 내용의 메시지가 표시됩니다. 그러면 디바이스에 Lookout for Work 앱을 설치하고, 앱을 활성화하고, Lookout for Work 애플리케이션에서 보고된 위협을 수정한 후에 회사 데이터에 액세스할 수 있습니다. [Lookout for Work 앱 구성 및 배포](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) 방법을 알아 봅니다.
 
 
 
 ## <a name="new-compliance-settings-for-configuration-items"></a>구성 항목의 새 준수 설정
 다양한 디바이스 플랫폼의 구성 항목에 사용할 수 있는 여러 가지 새로운 설정이 있습니다. 이러한 설정은 이전에 Microsoft Intune의 독립 실행형 구성에 있던 설정이며 이제 Intune과 Configuration Manager를 사용할 때 제공됩니다.
-자세한 내용은 [System Center Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](/sccm/compliance/deploy-use/configuration-items-for-devices-managed-without-the-client)을 참조하세요.
+자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 디바이스에 대한 구성 항목](/sccm/compliance/deploy-use/configuration-items-for-devices-managed-without-the-client)을 참조하세요.
 
 ### <a name="new-settings-for-android-devices"></a>Android 디바이스에 대한 새로운 설정
 #### <a name="password-settings"></a>암호 설정

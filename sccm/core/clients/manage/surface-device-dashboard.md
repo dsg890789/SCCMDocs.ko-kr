@@ -10,17 +10,16 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7397fc17-3ae8-4525-8386-aea8a9cffa06
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e131f8c76b03c36557f3f1161729d523e4e7f946
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 28fe6b7a7cc3030456df47b95820a1d91e4a4db8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68339863"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75823792"
 ---
-# <a name="surface-device-dashboard-in-system-center-configuration-manager"></a>System Center Configuration Manager의 Surface 디바이스 대시보드
+# <a name="surface-device-dashboard-in-configuration-manager"></a>Configuration Manager의 Surface 디바이스 대시보드
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 1802 버전부터 Surface 디바이스 대시보드는 사용자 환경에서 Surface 디바이스에 대한 정보를 한거번에 제공합니다. <!--1355788-->
 

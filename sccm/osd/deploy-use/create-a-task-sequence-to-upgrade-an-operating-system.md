@@ -10,22 +10,21 @@ ms.assetid: 7591e386-a9ab-4640-8643-332dce5aa006
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31f253c0a1aaa2e1268d80a79a4960d2c4da3ad7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: ee1a392510d8c34b1f053837f9bba5334398fe3f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74117625"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825441"
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-os-in-configuration-manager"></a>Configuration Manager에서 OS를 업그레이드하는 작업 순서 만들기
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS를 자동으로 업그레이드합니다. Windows 7 이상에서 Windows 10으로 또는 Windows Server 2012 이상에서 Windows Server 2016으로 업그레이드할 수 있습니다. OS 업그레이드 패키지 및 애플리케이션 또는 소프트웨어 업데이트와 같은 설치할 기타 콘텐츠를 참조하는 작업 순서를 만듭니다. OS를 업그레이드하는 작업 순서는 [최신 버전으로 Windows 업그레이드](upgrade-windows-to-the-latest-version.md) 시나리오의 일부입니다.  
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 작업 순서를 만들려면 먼저 다음 요구 사항이 준비되어야 합니다.
 
@@ -60,7 +59,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
 
 5. **Windows 운영 체제 업그레이드** 페이지에서 다음 설정을 지정합니다.  
 
-    - **업그레이드 패키지**: OS 업그레이드 원본 파일이 포함된 업그레이드 패키지를 지정합니다. **속성** 창에서 해당 정보를 확인하여 올바른 업그레이드 패키지를 선택했는지 알아봅니다. 자세한 내용은 [OS 업그레이드 패키지 관리](/sccm/osd/get-started/manage-operating-system-upgrade-packages)를 참조하세요.  
+    - **업그레이드 패키지**:  OS 업그레이드 원본 파일이 포함된 업그레이드 패키지를 지정합니다. **속성** 창에서 해당 정보를 확인하여 올바른 업그레이드 패키지를 선택했는지 알아봅니다. 자세한 내용은 [OS 업그레이드 패키지 관리](/sccm/osd/get-started/manage-operating-system-upgrade-packages)를 참조하세요.  
 
     - **버전 인덱스**: 패키지에서 사용할 수 있는 OS 버전 인덱스가 여러 개 있는 경우 원하는 버전 인덱스를 선택합니다. 기본적으로 마법사는 첫 번째 인덱스를 선택합니다.  
 
@@ -69,7 +68,7 @@ Configuration Manager에서 작업 순서를 사용하여 대상 컴퓨터의 OS
         > [!Note]  
         > 이 제품 키는 MAK(복수 정품 인증 키) 또는 GVLK(일반 볼륨 라이선스 키)일 수 있습니다. GVLK는 또한 KMS(키 관리 서비스) 클라이언트 설정 키라고도 합니다. 자세한 내용은 [볼륨 활성화 계획](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)을 참조하세요. KMS 클라이언트 설정 키의 목록은 Windows Server 정품 인증 가이드의 [부록 A](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys)를 참조하세요.
 
-    - **무시할 수 있는 호환성 메시지 모두 무시**: Windows Server 2016으로 업그레이드하는 중인 경우 이 설정을 선택합니다. 이 설정을 선택하지 않으면 Windows 설치 프로그램이 사용자가 Windows 앱 호환성 대화 상자에서 **확인**을 선택할 때까지 대기하므로 작업 순서가 완료되지 않습니다.  
+    - **해제 가능한 호환성 메시지 무시**: Windows Server 2016으로 업그레이드할 때 이 설정을 선택합니다. 이 설정을 선택하지 않으면 Windows 설치 프로그램이 사용자가 Windows 앱 호환성 대화 상자에서 **확인**을 선택할 때까지 대기하므로 작업 순서가 완료되지 않습니다.  
 
 6. **업데이트 포함** 페이지에서 모든 소프트웨어 업데이트를 설치해야 하는지 아니면 소프트웨어 업데이트가 필요하지 않은지를 지정합니다. **다음**을 선택합니다. 소프트웨어 업데이트를 설치하도록 지정하면 Configuration Manager에서 대상 컴퓨터가 속해 있는 컬렉션을 대상으로 하는 해당 업데이트만을 설치합니다.  
 
@@ -125,7 +124,7 @@ WbemTest를 사용 하 여 `root\cimv2` 네임 스페이스에 연결 합니다.
 
 이 Windows 10 버전과 호환되지 않는 애플리케이션을 모두 제거하려면 이 그룹에 단계를 추가합니다. 애플리케이션을 제거하는 방법은 다양합니다.  
 
-애플리케이션이 Windows Installer를 사용하는 경우 애플리케이션의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예:
+애플리케이션이 Windows Installer를 사용하는 경우 애플리케이션의 Windows Installer 배포 유형 속성에 있는 **프로그램** 탭의 **제거 프로그램** 명령줄을 복사합니다. 그런 다음, 제거 프로그램 명령줄을 사용하여 이 그룹의 **명령줄 실행** 단계를 추가합니다. 예를 들면 다음과 같습니다.
 
 `msiexec /x {150031D8-1234-4BA8-9F52-D6E5190D1CBA} /q`  
 

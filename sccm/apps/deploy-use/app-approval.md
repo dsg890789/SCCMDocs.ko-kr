@@ -10,17 +10,16 @@ ms.assetid: 20493c86-6454-4b35-8f22-0d049b68b8bb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a650fd5517fb86108d230cc997c8586520826e7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 81128d74214c77a973624df2b4a78510d838e7fe
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68743589"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806444"
 ---
 # <a name="approve-applications-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 승인
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서 [애플리케이션을 배포](/sccm/apps/deploy-use/deploy-applications)할 때는 설치에 앞서 승인을 요구할 수 있습니다. 사용자가 소프트웨어 센터에서 애플리케이션을 요청하면 Configuration Manager 콘솔에서 요청을 검토합니다. 요청을 승인 또는 거부할 수 있습니다.
 
@@ -105,7 +104,7 @@ Configuration Manager 콘솔의 **소프트웨어 라이브러리** 작업 영�
 사용자는 소프트웨어 센터의 요청에 주석을 추가할 수 있습니다. 이 주석은 Configuration Manager 콘솔의 애플리케이션 요청에 표시됩니다. 1902 버전부터 해당 주석은 이메일에도 표시됩니다. 이메일에 이 주석이 포함되면 승인자가 요청을 승인하거나 거부하는 데 더 나은 결정을 내릴 수 있습니다.<!--3594063-->
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 #### <a name="to-send-email-notifications-and-take-action-on-internal-network"></a>이메일 알림을 보내고 내부 네트워크에 대한 작업 수행
 

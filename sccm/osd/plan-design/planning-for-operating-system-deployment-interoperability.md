@@ -1,7 +1,7 @@
 ---
 title: OS 배포 상호 운용성
 titleSuffix: Configuration Manager
-description: 단일 계층 구조의 다른 System Center Configuration Manager 사이트가 서로 다른 버전을 사용하는 경우 상호 운용성 문제를 고려해야 합니다.
+description: 단일 계층 구조의 다른 Configuration Manager 사이트가 서로 다른 버전을 사용하는 경우 상호 운용성 문제를 고려해야 합니다.
 ms.date: 05/28/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -10,19 +10,18 @@ ms.assetid: e327ce38-6c07-4a27-b6eb-7e5bf74ed04b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4f6275ede2a751acb8ca14d7b8b6ad307e78bd
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 08b838792904c4de5a3c691e6b362d13c3cdc872
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66355008"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821157"
 ---
 # <a name="plan-for-os-deployment-interoperability"></a>OS 배포 상호 운용성 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-단일 계층 구조의 여러 System Center Configuration Manager 사이트가 서로 다른 버전을 사용하는 경우 일부 Configuration Manager 기능을 사용할 수 없습니다. 일반적으로 최신 버전의 Configuration Manager 기능은 더 낮은 버전을 실행하는 사이트 또는 클라이언트에서 액세스할 수 없습니다. 자세한 내용은 [서로 다른 버전의 System Center Configuration Manager 간 상호 운용성](/sccm/core/plan-design/hierarchy/interoperability-between-different-versions)을 참조하세요.  
+단일 계층 구조의 여러 Configuration Manager 사이트가 서로 다른 버전을 사용하는 경우 일부 Configuration Manager 기능을 사용할 수 없습니다. 일반적으로 최신 버전의 Configuration Manager 기능은 더 낮은 버전을 실행하는 사이트 또는 클라이언트에서 액세스할 수 없습니다. 자세한 내용은 [다른 버전의 Configuration Manager 간 상호 운용성](/sccm/core/plan-design/hierarchy/interoperability-between-different-versions)을 참조하세요.  
 
 
 ## <a name="objects"></a>개체

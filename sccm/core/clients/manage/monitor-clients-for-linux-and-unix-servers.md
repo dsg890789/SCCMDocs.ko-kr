@@ -10,17 +10,16 @@ ms.assetid: d827cf91-b18f-4ee7-b538-24ba6f003ab9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47a85ec7dea72f08a0ec48ebb151566b8563ba9a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 50b9ed81ea7c682ed977d40472a42653aacc0b8b
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62201353"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824098"
 ---
 # <a name="how-to-monitor-clients-for-linux-and-unix-servers-in-configuration-manager"></a>Configuration Manager에서 Linux 및 UNIX 서버용 클라이언트를 모니터링하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 > [!Important]  
 > 버전 1902부터 Configuration Manager는 Linux 또는 UNIX 클라이언트를 지원하지 않습니다. 
@@ -45,7 +44,7 @@ Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 �
 
  예를 들어 Linux 및 UNIX 서버에서 기본적으로 설치된 모든 프로그램 목록을 수집할 수 있습니다. 기본적으로 설치된 프로그램의 예로 Linux의 **.rpms** 또는 Solaris의 **.pkgs** 가 있습니다. Linux 또는 UNIX 클라이언트에서 인벤토리를 전송한 후 Configuration Manager 콘솔의 리소스 탐색기에서 기본적으로 설치된 모든 Linux 또는 UNIX 프로그램 목록을 볼 수 있습니다.  
 
- 리소스 탐색기를 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)을 참조하세요.  
+ 리소스 탐색기를 사용하는 방법에 대한 자세한 내용은 [하드웨어 인벤토리를 보기 위해 리소스 탐색기를 사용하는 방법](../../../core/clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)을 참조하세요.  
 
 ##  <a name="BKMK_UseReportsforLnU"></a> 보고서를 사용하여 Linux 및 UNIX 서버에 대한 정보를 보는 방법  
  Configuration Manager 보고서에는 Windows 기반 컴퓨터의 정보와 함께 Linux 및 UNIX 서버의 정보가 포함됩니다. 보고서에 Linux 및 UNIX 데이터를 통합하는 데 필요한 추가 구성은 없습니다.  
@@ -54,4 +53,4 @@ Windows 기반 클라이언트에서 정보를 볼 때와 동일한 방법을 �
 
  Linux 및 UNIX 서버 데이터와 관련된 사용자 지정 보고서를 만들 수도 있습니다. 하드웨어 인벤토리 클래스 **운영 체제** 의 **캡션** 속성은 보고서 쿼리에서 특정 운영 체제를 식별하는 데 사용할 수 있는 유용한 특성입니다.  
 
- Configuration Manager의 보고서에 대한 자세한 내용은 [System Center Configuration Manager에서 보고](../../../core/servers/manage/reporting.md)를 참조하세요.  
+ Configuration Manager의 보고서에 대한 자세한 내용은 [보고](../../../core/servers/manage/reporting.md)를 참조하세요.  

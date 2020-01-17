@@ -10,13 +10,12 @@ ms.assetid: 561eb5b6-f90c-485a-91c2-e45bb0ce7877
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe3f5e35fcec9bfc9bf0746ecfd118e10487f78c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 12d72b4b7c355b86ef5e67fe3bc65fd699681064
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68533835"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816839"
 ---
 # <a name="upgrade-windows-10-for-co-management"></a>공동 관리를 위해 Windows 10 업그레이드
 
@@ -45,7 +44,7 @@ Windows 10 버전 1709 이상에서는 향상된 다른 플랫폼 기능 외에 
 
 - 기본 현재 위치 업그레이드 작업 순서 템플릿을 사용합니다. 그런 다음 업그레이드 전후를 위한 단계와 오류 동작을 구성합니다. 자세한 내용은 [사후 처리를 위한 권장되는 작업 순서 단계](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#recommended-task-sequence-steps-for-post-processing)를 참조하세요.  
 
-- 외근이 잦은 모바일 인력이 있는 환경을 위해 Configuration Manager에서는 CMG(클라우드 관리 게이트웨이)를 통한 현재 위치 업그레이드를 지원합니다. 이 기능을 사용하면 인터넷 기반의 Windows 10 클라이언트를 업그레이드할 수 있습니다. CMG에 대한 자세한 내용은 [](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)을(를) 참조하세요.  
+- 외근이 잦은 모바일 인력이 있는 환경을 위해 Configuration Manager에서는 CMG(클라우드 관리 게이트웨이)를 통한 현재 위치 업그레이드를 지원합니다. 이 기능을 사용하면 인터넷 기반의 Windows 10 클라이언트를 업그레이드할 수 있습니다. CMG에 대한 자세한 내용은 [CMG를 통한 Windows 10 현재 위치 업그레이드 배포](/configmgr/osd/deploy-use/deploy-a-task-sequence#deploy-windows-10-in-place-upgrade-via-cmg)를 참조하세요.  
 
 - 얼리어답터가 되기를 원하는 사용자에게는 공동 관리로 옵트인을 제공합니다. 이 접근 방식은 초기 채택을 앞당깁니다. 이러한 사용자를 사전에 식별하면 출시 초기에 혜택 범위를 늘릴 수 있습니다. 또한 변경에 만족하고 더 빈번한 출시에 관심이 있는 사용자의 검증과 의견을 받을 수 있습니다. 얼리어답터 프로그램은 새로운 기술에의 관심을 불러일으키고 시간에 따라 규모가 커집니다.  
 

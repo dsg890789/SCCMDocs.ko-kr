@@ -1,7 +1,7 @@
 ---
 title: 버전 1710의 새로운 기능 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1710에 도입된 변경 내용 및 새로운 기능에 대한 세부 정보를 제공합니다.
+description: Configuration Manager 1710 버전에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
 ms.date: 01/08/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,25 +11,24 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f558961ee6f3fe6f20c2ebd4f0b943161156f28
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8e2342ec83e82c0400c370dd469887fc264356ef
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70889546"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802585"
 ---
-# <a name="what39s-new-in-version-1710-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1710의 새로운 기능
+# <a name="what39s-new-in-version-1710-of-configuration-manager"></a>Configuration Manager 1710 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 현재 분기의 업데이트 1710은 버전 1610, 1702 또는 1706을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
+Configuration Manager 현재 분기의 업데이트 1710은 버전 1610, 1702 또는 1706을 실행하는 이전에 설치된 사이트에 대한 콘솔 내 업데이트로 제공됩니다.
 
-새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [System Center Configuration Manager 현재 분기, 버전 1710의 변경 내용 요약](https://support.microsoft.com/help/4056470/summary-of-changes-in-system-center-configuration-manager-current-bran)을 참조하세요.
+새 기능 외에 이 릴리스에는 버그 수정과 같은 추가 변경 사항도 포함되어 있습니다. 자세한 내용은 [Configuration Manager 현재 분기 버전 1710의 변경 내용 요약](https://support.microsoft.com/help/4056470/summary-of-changes-in-system-center-configuration-manager-current-bran)을 참조하세요.
 
 이제 이 릴리스에 대한 다음과 같은 추가 업데이트도 사용할 수 있습니다.
-- [System Center Configuration Manager 현재 분기, 버전 1710의 업데이트 롤업](https://support.microsoft.com/help/4057517/update-rollup-for-system-center-configuration-manager-current-branch-v)
-- [System Center Configuration Manager 현재 분기, 버전 1710의 업데이트 롤업 2](https://support.microsoft.com/en-us/help/4086143/update-rollup-2-for-system-center-configuration-manager-current-branch)
+- [Configuration Manager 현재 분기, 버전 1710용 업데이트 롤업](https://support.microsoft.com/help/4057517/update-rollup-for-system-center-configuration-manager-current-branch-v)
+- [Configuration Manager 현재 분기, 버전 1710용 업데이트 롤업 2](https://support.microsoft.com/en-us/help/4086143/update-rollup-2-for-system-center-configuration-manager-current-branch).
 
 > [!TIP]  
 > 새 사이트를 설치하려면 기준 버전의 Configuration Manager를 사용해야 합니다.  
@@ -73,7 +72,7 @@ Version 1710 drops support for the following products:
 ### <a name="restart-computers-from-the-configuration-manager-console-----1356283---"></a>Configuration Manager 콘솔에서 컴퓨터 다시 시작  <!-- 1356283 -->
 이 릴리스부터 Configuration Manager 콘솔을 사용하여 다시 시작해야 하는 클라이언트 디바이스를 식별한 다음 클라이언트 알림 작업을 통해 해당 디바이스를 다시 시작할 수 있습니다.
 
-[System Center Configuration Manager에서 클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients#restart-clients)을 참조하세요.
+[클라이언트를 관리하는 방법](/sccm/core/clients/manage/manage-clients#restart-clients)을 참조하세요.
 
 
 <!-- ## Compliance settings -->
@@ -119,7 +118,7 @@ Version 1710 drops support for the following products:
 <!-- 1351224 -->
 엔터프라이즈 브랜딩 요소를 추가하고 소프트웨어 센터에서 탭의 표시 여부를 지정할 수 있습니다. 소프트웨어 센터 특정의 회사 이름을 추가하고 소프트웨어 센터 구성 색 테마, 회사 로고 및 클라이언트 디바이스에 대한 표시 탭을 설정할 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager에서 애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.
+자세한 내용은 [애플리케이션 관리 계획 및 구성](/sccm/apps/plan-design/plan-for-and-configure-application-management)을 참조하세요.
 
 ## <a name="software-updates"></a>소프트웨어 업데이트
 
@@ -134,7 +133,7 @@ Version 1710 drops support for the following products:
 
 이제 Windows 10 원격 분석 데이터 수집 수준을 **고급(제한적)** 으로 설정할 수 있습니다. 이 설정을 사용하면 Windows 10 버전 1709 이상을 사용하여 **고급** 원격 분석 수준의 모든 데이터를 보고하는 디바이스가 없는 환경에서 디바이스에 대해 조치 가능한 통찰력을 얻을 수 있습니다.
 
-자세한 내용은 [System Center Configuration Manager에서 클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)섹션을 참조하세요.
+자세한 내용은 [클라이언트 설정을 구성하는 방법](/sccm/core/clients/deploy/configure-client-settings)을 참조하세요.
 
 <!-- ## Inventory  -->
 
@@ -184,7 +183,7 @@ Version 1710 drops support for the following products:
 
 호환성 위험을 최소화하기 위해 기존 VPN 프로필은 변경되지 않습니다.  기존 프로필을 편집하는 경우 프로필을 만들 때와 마찬가지로 설정이 표시됩니다.  
 
-자세한 내용은 [System Center Configuration Manager의 모바일 디바이스에 대한 VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)을 참조하세요.
+자세한 내용은 [모바일 디바이스의 VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)을 참조하세요.
 
 ### <a name="limited-support-for-cryptography-next-generation-cng-certificates----1356191---"></a>Cryptography: Next Generation(CNG) 인증서 <!-- 1356191 -->
 

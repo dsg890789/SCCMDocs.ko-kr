@@ -11,17 +11,16 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11b970cc93db5edbabec58d18cd6d12b2275fd57
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6a80bc1662a790d726acd2a19426087a9cdc3146
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65933259"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804727"
 ---
-# <a name="capabilities-in-technical-preview-18062-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1806.2의 기능
+# <a name="capabilities-in-technical-preview-18062-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1806.2의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
 이 문서에서는 Configuration Manager Technical Preview 버전 1806.2에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 기술 미리 보기 사이트를 업데이트하고 새 기능을 추가할 수 있습니다. 
 
@@ -50,9 +49,9 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
 사이트를 이미 업데이트한 경우, 자동 클라이언트 업그레이드 및 클라이언트 강제가 작동하지 않습니다. 대부분의 새로운 기능을 완전히 테스트하려면 클라이언트를 업데이트해야 합니다. 다음 프로세스를 사용하여 기술 미리 보기 클라이언트를 수동으로 업데이트하세요.  
 
-1. 사이트 서버에 있는 Configuration Manager 설치 디렉터리의 **CMUClient** 폴더에서 클라이언트 원본 파일을 찾습니다. 예를 들면 `C:\Program Files\Configuration Manager\CMUClient`  
+1. 사이트 서버에 있는 Configuration Manager 설치 디렉터리의 **CMUClient** 폴더에서 클라이언트 원본 파일을 찾습니다. 예, `C:\Program Files\Configuration Manager\CMUClient`  
 
-2. 전체 CMUClient 폴더를 클라이언트 디바이스에 복사합니다. 예를 들면 `C:\Temp\CMUClient`  
+2. 전체 CMUClient 폴더를 클라이언트 디바이스에 복사합니다. 예, `C:\Temp\CMUClient`  
 
     이 위치는 클라이언트에서 액세스할 수 있는 네트워크 공유일 수 있습니다.  
 
@@ -66,7 +65,7 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 > 명령줄 속성(예: SMSSITECODE 또는 CCMLOGLEVEL)을 사용해도 문제가 없지만 기존 클라이언트를 업그레이드할 때는 필요하지 않습니다. 
 
 
-### <a name="ki_version"> </a> 버전 1806.2의 Configuration Manager 정보에 버전 1806이 표시됨
+### <a name="ki_version"></a> 버전 1806.2의 Configuration Manager 정보에 버전 1806이 표시됨
 <!--518148-->
 기술 미리 보기 버전 1806.2로 업그레이드한 후 콘솔의 왼쪽 위 모서리에서  **Configuration Manager 정보** 창을 열면 **버전 1806**이 계속 표시됩니다. 
 
@@ -111,7 +110,7 @@ Configuration Manager를 버전 1806.2로 ‘업데이트하기 전에’ SQL Na
 
     - **일시 중단됨**: 관리자가 배포를 일시 중단했습니다.  
 
-- **진행률**: 클라이언트에서 색으로 구분된 배포 상태입니다. 예: 성공, 진행 중, 오류, 요구 사항에 맞지 않음, 알 수 없음 등이 있습니다. 
+- **진행률**: 클라이언트에서 색으로 구분된 배포 상태입니다. 예를 들면 다음과 같습니다. 성공, 진행 중, 오류, 요구 사항에 맞지 않음, 알 수 없음 등이 있습니다. 
 
 
 #### <a name="known-issue"></a>알려진 문제
@@ -152,7 +151,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 새 MSIX 앱을 만드는 방법은 [MSIX support introduced in Insider Build 17682](https://techcommunity.microsoft.com/t5/MSIX-Blog/MSIX-support-introduced-in-Insider-Build-17682/ba-p/202376)(Insider 빌드 17682에서 도입된 MSIX 지원)를 참조하세요.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 - Windows Insider Preview 빌드 17682 이상을 실행하는 Windows 10 클라이언트
 - MSIX 형식의 Windows 앱 패키지
 
@@ -165,7 +164,7 @@ MSIX에 대한 개요는 [A closer look at MSIX](https://blogs.msdn.microsoft.co
 
 
 
-## <a name="bkmk_client-push"> </a> 클라이언트 강제 보안 개선 사항
+## <a name="bkmk_client-push"></a> 클라이언트 강제 보안 개선 사항
 <!--1358204-->
 Configuration Manager 클라이언트 설치의 [클라이언트 강제](/sccm/core/clients/deploy/plan/client-installation-methods#client-push-installation) 방법을 사용하면 사이트 서버에서 클라이언트에 대한 원격 연결을 만들어 설치를 시작합니다. 이 릴리스부터 사이트에서 연결을 설정하기 전에 NTLM으로 대체를 허용하지 않아 Kerberos 상호 인증을 요구할 수 있습니다. 이 개선 사항은 서버와 클라이언트 간의 통신을 보안하는 데 도움이 됩니다. 
 
@@ -223,7 +222,7 @@ Configuration Manager 클라이언트 설치의 [클라이언트 강제](/sccm/c
 
 
 
-## <a name="bkmk_bgoptions"> </a> 피어 다운로드를 위한 경계 그룹 옵션
+## <a name="bkmk_bgoptions"></a> 피어 다운로드를 위한 경계 그룹 옵션
 <!--1356193-->
 이제 경계 그룹에는 사용자 환경에서 콘텐츠 배포를 보다 세밀하게 제어할 수 있는 추가 설정이 포함됩니다. 이 릴리스에서는 다음 옵션을 추가합니다.  
 
@@ -249,12 +248,12 @@ Configuration Manager 클라이언트 설치의 [클라이언트 강제](/sccm/c
 
 
 
-## <a name="bkmk_3pupdate"> </a> 사용자 지정 카탈로그에 대한 타사 소프트웨어 업데이트 지원
+## <a name="bkmk_3pupdate"></a> 사용자 지정 카탈로그에 대한 타사 소프트웨어 업데이트 지원
 <!--1358714-->
 이 릴리스에서는 [UserVoice 피드백](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/8803711-3rd-party-patching-scup-integration-with-sccm-co)의 결과로서 타사 소프트웨어 업데이트에 대한 지원을 계속 반복합니다. [기술 미리 보기 버전 1806](/sccm/core/get-started/capabilities-in-technical-preview-1806#bkmk-3pupdate)에서는 소프트웨어 공급업체의 등록된 카탈로그인 *파트너 카탈로그*를 지원했습니다. 사용자가 제공하고 Microsoft에 등록되지 않은 카탈로그를 *사용자 지정 카탈로그*라고 합니다. Configuration Manager 콘솔에서 사용자 지정 카탈로그를 추가하세요.  
 
 
-### <a name="prerequisites"></a>필수 구성 요소 
+### <a name="prerequisites"></a>전제 조건 
 
 - [타사 소프트웨어 업데이트](/sccm/core/get-started/capabilities-in-technical-preview-1806#bkmk-3pupdate)를 설정합니다. 1단계 완료: 기능을 사용하도록 설정합니다.   
 
@@ -324,7 +323,7 @@ Configuration Manager 클라이언트 설치의 [클라이언트 강제](/sccm/c
 
 
 
-## <a name="bkmk_report"> </a> 새 소프트웨어 업데이트 준수 보고서
+## <a name="bkmk_report"></a> 새 소프트웨어 업데이트 준수 보고서
 <!--1357775-->
 소프트웨어 업데이트 준수에 대한 보고서 보기에는 일반적으로 최근 사이트에 연결하지 않은 클라이언트의 데이터가 포함됩니다. 새 보고서에서는 특정 소프트웨어 업데이트 그룹에 대한 준수 결과를 “정상” 클라이언트별로 필터링할 수 있습니다. 이 보고서에서는 사용자 환경에서 활성 클라이언트의 보다 사실적인 준수 상태를 보여 줍니다. 
  
@@ -339,4 +338,4 @@ Configuration Manager 클라이언트 설치의 [클라이언트 강제](/sccm/c
 
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

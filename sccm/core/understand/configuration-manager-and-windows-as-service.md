@@ -10,19 +10,18 @@ ms.assetid: c8534a1e-57b8-4688-b6e6-299d82cfcec9
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ea9e2ef8da09d0ab344d56fe0ad4f1b3fb9d94b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f99f29ecb9ab66c4cb762854bebf71fe7e4eb5ad
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62250702"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75792225"
 ---
 # <a name="configuration-manager-and-windows-as-a-service"></a>Configuration Manager 및 Windows as a Service
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager는 Windows 10의 기능 업데이트를 포괄적으로 제어합니다. Windows as a Service 모델을 완전히 채택하려면 Configuration Manager 현재 분기 모델도 채택해야 합니다. Windows 10을 최신 상태로 유지하려면 최상의 환경을 위해 Configuration Manager를 최신 상태로 유지해야 합니다. 새 버전의 Configuration Manager는 Windows 10의 흥미롭고 새로운 엔터프라이즈 기능을 최대한 활용해야 합니다. 이 문서는 Configuration Manager 현재 분기를 채택하는 데 필요한 주요 문서의 방문 페이지로 사용됩니다. Configuration Manager 현재 분기는 Windows as a Service로 안내합니다.
+Configuration Manager는 Windows 10의 기능 업데이트를 포괄적으로 제어합니다. Windows as a Service 모델을 완전히 채택하려면 Configuration Manager 현재 분기 모델도 채택해야 합니다. Windows 10을 최신 상태로 유지하려면 최상의 환경을 위해 Configuration Manager를 최신 상태로 유지해야 합니다. 새 버전의 Configuration Manager는 Windows 10의 흥미롭고 새로운 엔터프라이즈 기능을 최대한 활용해야 합니다. 이 문서는 Configuration Manager 현재 분기를 채택하는 데 필요한 주요 문서의 방문 페이지로 사용됩니다. Configuration Manager 현재 분기는 Windows as a Service로 안내합니다.
 
 ## <a name="key-articles-about-adopting-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 채택에 관한 주요 문서
 
@@ -54,5 +53,5 @@ System Center Configuration Manager는 Windows 10의 기능 업데이트를 포�
 
 ## <a name="related-articles"></a>관련 문서
 
-- [ConfigMgr 2012에서 System Center Configuration Manager(현재 분기)로 전체 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
-- [ConfigMgr 2007에서 System Center Configuration Manager(현재 분기)로 마이그레이션 계획](/sccm/core/migration/planning-for-migration)
+- [System Center 2012 Configuration Manager에서 Configuration Manager 현재 분기로의 현재 위치 업그레이드](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
+- [Configuration Manager 현재 분기로 마이그레이션 계획](/sccm/core/migration/planning-for-migration)

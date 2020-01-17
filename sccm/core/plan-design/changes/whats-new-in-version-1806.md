@@ -10,17 +10,16 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad5034ca7475009f2dcd4b50df96d22b2f9428fa
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 85c3612c84baeca85596ff6410d2a1de3338e438
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70110124"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802534"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 현재 분기에 대한 1806 업데이트는 콘솔 내 업데이트로 사용할 수 있습니다. 1706, 1710 또는 1802 버전을 실행하는 사이트에서 이 업데이트를 적용합니다. <!-- baseline only statement: When installing a new site, it's also available as a baseline version.-->
 
@@ -308,12 +307,12 @@ Configuration Manager는 이제 새 Windows 10 앱 패키지(.msix) 및 앱 번�
 
 ### <a name="uninstall-application-on-approval-revocation"></a>승인 취소 시 애플리케이션 제거
 <!--1357891-->
-애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 애플리케이션을 제거합니다. 이를 위해서는 [선택적 기능](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정해야 합니다. 
+애플리케이션 승인 취소 시의 동작이 변경되었습니다. 이제 애플리케이션에 대한 요청을 거부하면 클라이언트가 사용자 디바이스에서 애플리케이션을 제거합니다. 이 동작이 수행되려면 [선택적 기능](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정해야 합니다. 
 
 자세한 내용은 [애플리케이션 배포](/sccm/apps/deploy-use/deploy-applications#bkmk_approval)를 참조하세요.
 
 
-### <a name="package-conversion-manager"></a>Package Conversion Manager 
+### <a name="package-conversion-manager"></a>Package Conversion Manager 
 <!--1357861-->
 Package Conversion Manager는 레거시 패키지를 Configuration Manager 현재 분기 애플리케이션으로 변환할 수 있는 통합 도구입니다. 이와 같은 변환을 수행한 후에는 종속성, 요구 사항 규칙, 사용자 디바이스 선호도 등의 애플리케이션 기능을 사용할 수 있습니다.
 
@@ -503,7 +502,7 @@ Package Conversion Manager는 레거시 패키지를 Configuration Manager 현�
 
 
 
-## <a name="inventory"></a>인벤토리
+## <a name="inventory"></a>재고
 
 ### <a name="bkmk_bigint"></a> 큰 정수 값에 대한 하드웨어 인벤토리 개선 사항
 <!--1357880-->
@@ -595,7 +594,7 @@ Configuration Manager용 Windows PowerShell cmdlet의 변경 내용에 대한 �
 
 | ID | 제목 | 날짜 | 콘솔 내 |
 |---------|---------|---------|---------|
-| [4346645](https://support.microsoft.com/help/4346645) | System Center Configuration Manager 버전 1806용 업데이트, 첫 번째 웨이브 | 2018년 8월 31일 | 예 |
+| [4346645](https://support.microsoft.com/help/4346645) | Configuration Manager 버전 1806용 업데이트, 첫 번째 웨이브 | 2018년 8월 31일 | 예 |
 | [4465865](https://support.microsoft.com/help/4465865) | 소프트웨어 업데이트는 WSUS가 연결되어 있지 않으면 Configuration Manager 환경에서 다운로드되지 않음<br><br>이 업데이트는 업데이트 롤업(4462978)에 포함되어 있음 | 2018년 10월 1일 | 예 |
 | [4471892](https://support.microsoft.com/help/4471892) | PXE 응답기는 Configuration Manager 1806의 서브넷에서 작동하지 않음 | 2018년 11월 23일 | 아니요 |
 | [4487960](https://support.microsoft.com/help/4487960) | Microsoft Intune 커넥터 인증서가 Configuration Manager에서 갱신되지 않음 | 2019년 1월 18일 | 예 |

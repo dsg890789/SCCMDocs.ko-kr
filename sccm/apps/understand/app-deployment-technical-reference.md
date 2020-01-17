@@ -1,7 +1,7 @@
 ---
-title: 응용 프로그램 배포 기술 참조 문제 해결
+title: 애플리케이션 배포 기술 참조 문제 해결
 titleSuffix: Configuration Manager
-description: Configuration Manager의 응용 프로그램 배포 문제 해결에 대 한 기술 참조입니다.
+description: Configuration Manager에서 애플리케이션 배포 문제 해결을 위한 기술 참조
 ms.date: 11/04/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
@@ -10,21 +10,20 @@ ms.assetid: a4eb09c8-e570-4369-9adb-ded9c8ad3400
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a436c7acd254d9b07289eb0f5ddce6f75d93fa43
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d8e996adffadc87e74e88bef684ed97a9371146a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74823443"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75782067"
 ---
 # <a name="technical-reference-for-application-deployment-in-configuration-manager"></a>Configuration Manager에서 애플리케이션 배포에 대한 기술 참조
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서에서는 응용 프로그램 배포의 작동 방식에 대해 알아봅니다.
 
-## <a name="before-you-begin"></a>시작하기 전에
+## <a name="before-you-begin"></a>시작하기 전 주의 사항
 
 응용 프로그램 배포 문제를 해결 하는 경우 클라이언트 로그를 검토할 때 유용할 수 있는 여러 항목이 있습니다. 이 항목은 다음과 같습니다.
 
@@ -32,7 +31,7 @@ ms.locfileid: "74823443"
 - 응용 프로그램 고유 ID
 - 배포 유형 고유 ID
 - 응용 프로그램 배포 고유 ID (할당 고유 ID 라고도 함)
-- 응용 프로그램 배포 목적
+- 애플리케이션 배포 목적
 - 콘텐츠 고유 ID
 - 컬렉션 ID 및 이름
 - 컬렉션 형식

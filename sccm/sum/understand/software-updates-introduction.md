@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 업데이트 소개
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다.
+description: Configuration Manager의 소프트웨어 업데이트에 대한 기본 사항을 알아봅니다.
 author: mestew
 ms.author: mstewart
 manager: dougeby
@@ -10,19 +10,18 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce8b194ffe0a7efccd112b8f69e60636db5e2721
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: c857997bdbeed51286e874dcbecf00b414dfe6a0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378659"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818471"
 ---
-# <a name="introduction-to-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager의 소프트웨어 업데이트 소개
+# <a name="introduction-to-software-updates-in-configuration-manager"></a>Configuration Manager의 소프트웨어 업데이트 소개
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager의 소프트웨어 업데이트는 기업의 클라이언트 컴퓨터에서 소프트웨어 업데이트를 추적하고 적용하는 복잡한 작업을 관리할 수 있는 도구 및 리소스 집합을 제공합니다. 작업의 효율성을 유지하고, 보안 문제를 극복하고, 네트워크 인프라의 안정성을 유지 관리하려면 효과적인 소프트웨어 업데이트 관리 프로세스가 필요합니다. 그러나 변화하는 기술의 특성과 지속적으로 출현하는 새로운 보안 위협 때문에 소프트웨어 업데이트를 효과적으로 관리하려면 일관되고 꾸준한 주의를 기울여야 합니다.  
+Configuration Manager의 소프트웨어 업데이트는 기업의 클라이언트 컴퓨터에서 소프트웨어 업데이트를 추적하고 적용하는 복잡한 작업을 관리할 수 있는 도구 및 리소스 집합을 제공합니다. 작업의 효율성을 유지하고, 보안 문제를 극복하고, 네트워크 인프라의 안정성을 유지 관리하려면 효과적인 소프트웨어 업데이트 관리 프로세스가 필요합니다. 그러나 변화하는 기술의 특성과 지속적으로 출현하는 새로운 보안 위협 때문에 소프트웨어 업데이트를 효과적으로 관리하려면 일관되고 꾸준한 주의를 기울여야 합니다.  
 
 사용 환경에서 소프트웨어 업데이트를 배포할 수 있는 방법을 보여 주는 예제 시나리오는 [보안 소프트웨어 업데이트를 배포하는 예제 시나리오](../deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)를 참조하세요.  
 
@@ -130,11 +129,11 @@ System Center Configuration Manager의 소프트웨어 업데이트는 기업의
 
  검사 일정을 포함해 소프트웨어 업데이트 호환성에 대한 검사는 다음 방식으로 시작할 수 있습니다.  
 
--   **소프트웨어 업데이트 검사 일정**: 소프트웨어 업데이트 준수 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 검사 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
+-   **소프트웨어 업데이트 검사 일정**: 소프트웨어 업데이트 호환성 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 검사 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정을 구성하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
 
 -   **Configuration Manager 속성 작업**: 사용자는 클라이언트 컴퓨터의 **Configuration Manager 속성** 대화 상자에 있는 **작업** 탭에서 **소프트웨어 업데이트 검사 주기** 또는 **소프트웨어 업데이트 배포 평가 주기** 작업을 시작할 수 있습니다.  
 
--   **배포 재평가 일정**: 소프트웨어 업데이트 준수에 대한 배포 평가 및 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 배포 재평가 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
+-   **배포 재평가 일정**: 소프트웨어 업데이트 호환성에 대한 배포 평가 및 검사는 소프트웨어 업데이트 클라이언트 에이전트 설정에 구성된 배포 재평가 일정에 따라 시작됩니다. 소프트웨어 업데이트 클라이언트 설정에 대한 자세한 내용은 [소프트웨어 업데이트 클라이언트 설정](../../core/clients/deploy/about-client-settings.md#software-updates)을 참조하세요.  
 
 -   **업데이트 파일 다운로드 전**: 클라이언트 컴퓨터에서 새 필수 배포에 대한 할당 정책을 받으면 소프트웨어 업데이트 클라이언트 에이전트에서는 소프트웨어 업데이트 파일을 로컬 클라이언트 캐시에 다운로드합니다. 소프트웨어 업데이트 파일이 다운로드되기 전에 클라이언트 에이전트는 검사를 시작하여 소프트웨어 업데이트가 아직 필요한지 확인합니다.  
 

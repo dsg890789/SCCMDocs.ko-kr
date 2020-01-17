@@ -10,19 +10,18 @@ ms.assetid: cead6825-6113-4ba5-a381-ac3598dfee86
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c033b7a48aeaf4821a67a277f23b2f672115d105
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 37abd1044bdbcf8a517b75d1e2e7d9262526ae22
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65497540"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75795236"
 ---
-# <a name="hierarchy-maintenance-tool-preinstexe-for-system-center-configuration-manager"></a>System Center Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)
+# <a name="hierarchy-maintenance-tool-preinstexe-for-configuration-manager"></a>Configuration Manager용 계층 구조 유지 관리 도구(Preinst.exe)
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-계층 유지 관리 도구(Preinst.exe)는 계층 구조 관리자 서비스가 실행되는 동안 System Center Configuration Manager 계층 구조 관리자에 명령을 전달합니다. 계층 유지 관리 도구는 Configuration Manager 사이트를 설치할 때 자동으로 설치됩니다. Preinst.exe는 사이트 서버의 \\&lt;*사이트 서버 이름*>\SMS_&lt;*사이트 코드*\bin\X64\00000409 공유 폴더에 있습니다.  
+계층 구조 유지 관리 도구(Preinst.exe)는 계층 구조 관리자 서비스가 실행되는 동안 Configuration Manager 계층 구조 관리자에 명령을 전달합니다. 계층 유지 관리 도구는 Configuration Manager 사이트를 설치할 때 자동으로 설치됩니다. Preinst.exe는 사이트 서버의 \\&lt;*사이트 서버 이름*>\SMS_&lt;*사이트 코드*\bin\X64\00000409 공유 폴더에 있습니다.  
 
  다음과 같은 경우에 계층 유지 관리 도구를 사용할 수 있습니다.  
 

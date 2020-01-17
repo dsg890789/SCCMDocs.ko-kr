@@ -7,18 +7,18 @@ ms.author: aaroncz
 ms.prod: configuration-manager
 ms.topic: conceptual
 ms.date: 04/23/2019
-ms.openlocfilehash: 91fc86d10eeb0d898866c63207e4d8af3ce06724
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 06a20a1a2d0f53598db367f3792a74c1d46631c7
+ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71401695"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75517348"
 ---
-# <a name="system-center-configuration-manager-site-size-and-performance-guidelines"></a>System Center Configuration Manager 사이트 크기 조정 및 성능 지침
+# <a name="configuration-manager-site-size-and-performance-guidelines"></a>Configuration Manager 사이트 크기 조정 및 성능 지침
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager는 확장성 및 성능에서 업계를 선도합니다. 최대 환경 크기로 사이트를 운영하기 위한 [최대 지원 확장성 한도](size-and-scale-numbers.md) 및 [하드웨어 지침](recommended-hardware.md)은 다른 설명서에서 다룹니다. 이 문서에서는 모든 크기의 환경에 대한 보완적인 성능 지침을 제공합니다. 이 지침을 통해 Configuration Manager를 배포하는 데 필요한 하드웨어를 더 정확하게 예측할 수 있습니다.
+Configuration Manager는 확장성 및 성능에서 업계를 선도합니다. 최대 환경 크기로 사이트를 운영하기 위한 [최대 지원 확장성 한도](size-and-scale-numbers.md) 및 [하드웨어 지침](recommended-hardware.md)은 다른 설명서에서 다룹니다. 이 문서에서는 모든 크기의 환경에 대한 보완적인 성능 지침을 제공합니다. 이 지침을 통해 Configuration Manager를 배포하는 데 필요한 하드웨어를 더 정확하게 예측할 수 있습니다.
 
 이 문서에서는 Configuration Manager 성능 병목 상태의 가장 큰 요인인 디스크 입력/출력 하위 시스템 또는 IOPS에 집중합니다. 문서:
 
@@ -98,7 +98,7 @@ Configuration Manager는 컬렉션의 모든 개체에 배포와 같은 작업�
 | 50k  | 기본 또는 CAS                                              | 4   | 8   |     | 1200 |      | 200  |
 |      | 원격 SQL                                                  | 8   | 24  | 70% |      | 2800 | 400  |
 |      |                                                             |     |     |     |      |      |      |
-| 100k | 동일한 서버에 데이터베이스 사이트 역할을 가진 기본 또는 CAS   | 12  | 64개  | 70% | 1200 | 5000 | 1100 |
+| 100k | 동일한 서버에 데이터베이스 사이트 역할을 가진 기본 또는 CAS   | 12  | 64  | 70% | 1200 | 5000 | 1100 |
 | 100k | 기본 또는 CAS                                              | 6   | 12  |     | 1200 |      | 300  |
 |      | 원격 SQL                                                  | 12  | 48  | 80% |      | 5000 | 800  |
 |      |                                                             |     |     |     |      |      |      |

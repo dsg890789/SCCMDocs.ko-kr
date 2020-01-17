@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1511의 기능
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1511에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1511에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a24f33e9cef10df9ba329958e4cf93db838b5969
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f6b58acab889d9986b183988f9821a0bd91723c0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70378019"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75805305"
 ---
-# <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1511의 기능
+# <a name="capabilities-in-technical-preview-1511-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1511의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1511에서 사용 가능한 기능을 소개합니다. 이 버전은 새 Technical Preview 사이트를 설치하거나 이전 버전의 Technical Preview에서 업그레이드하는 데 사용할 수 있는 Technical Preview의 기준선 설치입니다.   이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.  
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1511에서 사용할 수 있는 기능을 소개합니다. 이 버전은 새 Technical Preview 사이트를 설치하거나 이전 버전의 Technical Preview에서 업그레이드하는 데 사용할 수 있는 Technical Preview의 기준선 설치입니다.   이 버전의 Technical Preview를 설치하기 전에 소개 항목인 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.  
 
 다음은 이 버전에서 사용할 수 있는 새로운 기능입니다.  
 
@@ -51,7 +50,7 @@ WUfB를 통해 연결된 컴퓨터의 경우 Configuration Manager에서 준수 
 
 5.  WUfB를 통해 관리하는 컴퓨터에서 준수 상태가 **알 수 없음** 으로 표시되며, 해당 컴퓨터는 전체 준수 비율의 일부로 계산되지 않습니다.  
 
-##  <a name="BKMK_Office365ProPlus"></a> System Center Configuration Manager를 통해 Office 365 ProPlus 클라이언트 업데이트 관리  
+##  <a name="BKMK_Office365ProPlus"></a> Configuration Manager를 통해 Office 365 ProPlus 클라이언트 업데이트 관리  
  이제 Configuration Manager에서는 Configuration Manager 소프트웨어 업데이트 관리 워크플로를 사용하여 Office 365 데스크톱 클라이언트 업데이트를 관리할 수 있습니다.    
 Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 365 데스크톱 클라이언트 업데이트를 게시하면 카탈로그 동기화의 일부로 Office 365 업데이트가 구성된 경우 Configuration Manager에서 업데이트를 카탈로그에 동기화할 수 있습니다.  Configuration Manager 사이트 서버에서 Office 365 클라이언트 업데이트를 다운로드하고 패키지를 Configuration Manager 배포 지점에 배포합니다.  그러면 Configuration Manager 클라이언트에서 업데이트를 가져올 위치와 업데이트 설치 프로세스를 시작할 시기를 Office 365 데스크톱 클라이언트에 알립니다.  
 
@@ -68,7 +67,7 @@ Microsoft가 WSUS(Windows Server Updates Services)를 위한 새로운 Office 36
 
 4. 콘솔 내 모니터링이나 보고서를 사용하여 Office 365 업데이트의 준수를 확인할 수 있습니다.  
 
-   자세한 내용은 [System Center Configuration Manager Technical Preview로 Office 365 클라이언트 업데이트 관리](https://technet.microsoft.com/library/mt628083.aspx)를 참조하세요.  
+   자세한 내용은 [Configuration Manager Technical Preview로 Office 365 클라이언트 업데이트 관리](https://technet.microsoft.com/library/mt628083.aspx)를 참조하세요.  
 
 ##  <a name="BKMK_AlwasyOn"></a> 항상 사용 가능한 데이터베이스에 대한 SQL Server AlwaysOn 지원  
  Configuration Manager에서는 이제 SQL Server AlwaysOn 가용성 그룹을 사용하여 사이트 데이터베이스를 호스트할 수 있습니다.  새 사이트를 설치할 때 설치 프로그램이 SQL Server의 일반 인스턴스가 아닌 가용성 그룹을 사용하도록 지정할 수 있습니다.  

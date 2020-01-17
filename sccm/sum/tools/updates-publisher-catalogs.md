@@ -10,13 +10,12 @@ ms.assetid: 887f8029-1a3a-423c-a9c1-31dc0d693386
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83e0f9d4f84a93d057701a3aab521d4650d66472
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 95a67435fb292ed2b592256694f525a53cf4f50a
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70888478"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827182"
 ---
 # <a name="manage-software-update-catalogs-in-updates-publisher"></a>Updates Publisher의 소프트웨어 업데이트 카탈로그 관리
 
@@ -57,13 +56,13 @@ Updates Publisher는 시작할 때마다 변경 사항에 대한 구독을 자�
 -   **사용자 카탈로그 추가:** 콘솔에서 **카탈로그 작업 영역** > **My Catalogs**(내 카탈로그)로 이동합니다. 그런 다음 리본 메뉴에서 **Add Catalogs**(카탈로그 추가)를 선택합니다. 카탈로그를 식별하려면 .cab 파일의 위치뿐만 아니라 게시자, 이름 및 설명을 지정해야 합니다.
 
 
--   **카탈로그에 대한 업데이트 확인:** 하나 이상의 카탈로그를 선택한 다음 리본에서 **새로 고침**을 선택합니다.
+-   **카탈로그에 대한 업데이트 확인:** 하나 이상의 카탈로그를 선택한 다음, 리본에서 **새로 고침**을 선택합니다.
 
--   **사용자 카탈로그 편집:** *사용자* 카탈로그를 선택한 다음 리본에서 **편집**을 선택합니다. 그런 다음 사용자 정의 속성을 수정할 수 있습니다.
+-   **사용자 카탈로그 편집:** *사용자* 카탈로그를 선택한 다음, 리본에서 **편집**을 선택합니다. 그런 다음 사용자 정의 속성을 수정할 수 있습니다.
 
--   **카탈로그 삭제:** 하나 이상의 카탈로그를 선택한 다음 리본에서 **제거**를 선택합니다. 그러면 Updates Publisher 리포지토리에서 카탈로그, 구독 및 해당 카탈로그의 업데이트가 제거됩니다.
+-   **카탈로그 삭제:** 하나 이상의 카탈로그를 선택한 다음, 리본에서 **제거**를 선택합니다. 그러면 Updates Publisher 리포지토리에서 카탈로그, 구독 및 해당 카탈로그의 업데이트가 제거됩니다.
 
--   **카탈로그에서 리포지토리에 업데이트 추가**: 리본에서 **가져오기**를 선택하여 **Import Catalog**(카탈로그 가져오기) 마법사를 시작합니다. 자세한 내용은 [업데이트 가져오기](#import-updates)를 참조하세요.
+-   **카탈로그에서 리포지토리에 업데이트 추가**: 리본에서 **가져오기**를 선택하여 **카탈로그 가져오기** 마법사를 시작합니다. 자세한 내용은 [업데이트 가져오기](#import-updates)를 참조하세요.
 
 ## <a name="import-updates"></a>업데이트 가져오기
 카탈로그를 가져올 때 업데이트 관리자가 해당 카탈로그에서 Updates Publisher 리포지토리로 업데이트를 추가합니다. 업데이트를 가져온 후 관리되는 디바이스에 사용할 수 있도록 업데이트 서버에 게시할 수 있습니다.

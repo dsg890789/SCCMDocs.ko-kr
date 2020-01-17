@@ -10,17 +10,16 @@ ms.assetid: bc7de742-9e5c-4a70-945c-df4153a61cc3
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad851316d0922a62c2c06a718ef879678e67f9b
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 25cdde1aae4b27cf37ec8852d78413fba9a57944
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660923"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820953"
 ---
 # <a name="how-to-use-task-sequence-variables-in-configuration-manager"></a>Configuration Manager에서 작업 순서 변수를 사용하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
  Configuration Manager의 OS 배포 기능에 있는 작업 순서 엔진에서는 많은 변수를 사용하여 해당 동작을 제어합니다. 다음 작업에 이러한 변수를 사용합니다.
 
@@ -249,11 +248,11 @@ ms.locfileid: "74660923"
 
 3. **작업 순서 변수** 대화 상자에서 다음 설정을 지정합니다.  
 
-    - **변수**: 변수 이름. 예: `_SMSTSInWinPE`  
+    - **변수**: 변수의 이름입니다. 예: `_SMSTSInWinPE`  
 
-    - **조건**: 변수 값을 평가할 조건. 예: **같음**  
+    - **조건**: 변수 값을 평가할 조건입니다. 예: **같음**  
 
-    - **값**: 검사할 변수의 값. 예: `false`  
+    - **값**: 검사할 변수의 값입니다. 예: `false`  
 
 위의 세 가지 예는 다음과 같이 작업 순서가 Windows PE의 부팅 이미지에서 실행되는지 여부를 테스트하기 위한 일반적인 조건을 형성합니다.
 

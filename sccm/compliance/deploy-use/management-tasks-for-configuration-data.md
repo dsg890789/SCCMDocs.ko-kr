@@ -1,7 +1,7 @@
 ---
 title: 구성 데이터 관리
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 구성 항목 및 기준을 만든 후 다른 명령을 사용하여 다양한 작업을 수행할 수 있습니다.
+description: Configuration Manager에서 구성 항목 및 기준을 만든 후 다른 명령을 사용하여 다양한 작업을 수행할 수 있습니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -10,19 +10,18 @@ ms.assetid: b48c693c-d2b0-4707-a5dd-fe92172c49fe
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1eb13beac2882121b2e083ad3e29eef6918eeaa
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: de8168d7d699998117eff8821929c654815f1a49
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62214470"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816329"
 ---
-# <a name="manage-configuration-data-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 구성 데이터 관리
+# <a name="manage-configuration-data-in-configuration-manager"></a>Configuration Manager에서 구성 데이터 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 구성 항목 및 구성 기준을 만든 후 추가 명령을 사용하여 다양한 작업을 수행할 수 있습니다.  
+Configuration Manager에서 구성 항목 및 구성 기준을 만든 후 추가 명령을 사용하여 다양한 작업을 수행할 수 있습니다.  
 
 ## <a name="manage-configuration-items"></a>구성 항목 관리  
 

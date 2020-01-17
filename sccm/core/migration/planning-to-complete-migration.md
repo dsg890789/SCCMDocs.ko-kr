@@ -1,7 +1,7 @@
 ---
 title: 마이그레이션 완료
 titleSuffix: Configuration Manager
-description: 원본 계층 구조에 더 이상 데이터가 없게 된 후 System Center Configuration Manager 대상 계층 구조로의 마이그레이션을 완료하는 방법을 알아봅니다.
+description: 원본 계층 구조에 더 이상 데이터가 없게 된 후 Configuration Manager 현재 분기 대상 계층 구조로의 마이그레이션을 완료하는 방법을 알아봅니다.
 ms.date: 01/12/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: f4854b50-2e8c-414c-a872-9579554dca98
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25cf1473da6bf44792e4037821000b110dc09c37
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 66a61dbd6c5c2a0c438dbe66d6e4409da06e2580
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70891505"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75803061"
 ---
-# <a name="plan-to-complete-migration-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 마이그레이션 완료 계획
+# <a name="plan-to-complete-migration-in-configuration-manager"></a>Configuration Manager에서 마이그레이션 완료 계획
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서는 원본 계층 구조에 더 이상 대상 계층 구조로 마이그레이션할 데이터가 없을 경우 마이그레이션 프로세스를 완료할 수 있습니다. 마이그레이션을 완료하는 단계는 일반적으로 다음과 같습니다.  
+Configuration Manager에서는 원본 계층 구조에 더 이상 대상 계층 구조로 마이그레이션할 데이터가 없을 경우 마이그레이션 프로세스를 완료할 수 있습니다. 마이그레이션을 완료하는 단계는 일반적으로 다음과 같습니다.  
 
 -   필요한 데이터가 마이그레이션되었는지 확인합니다. 원본 계층에서 마이그레이션을 완료하기 전에 대상 계층에서 필요한 원본 계층의 모든 리소스가 성공적으로 마이그레이션되었는지 확인합니다. 이러한 리소스에는 데이터와 클라이언트가 포함될 수 있습니다.  
 
@@ -45,11 +44,11 @@ System Center Configuration Manager에서는 원본 계층 구조에 더 이상 
 
 -   대상 계층에서 하나 이상의 배포 지점에 콘텐츠를 배포합니다.  
 
--   원본 사이트에서 데이터 수집을 중지하기 전에 필요한 콘텐츠가 있는 공유 배포 지점을 업그레이드하거나 재할당합니다. 공유 배포 지점 업그레이드 또는 재할당에 대한 자세한 내용은 [System Center Configuration Manager에서 콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 해당 섹션을 참조하세요.  
+-   원본 사이트에서 데이터 수집을 중지하기 전에 필요한 콘텐츠가 있는 공유 배포 지점을 업그레이드하거나 재할당합니다. 공유 배포 지점 업그레이드 또는 재할당에 대한 자세한 내용은 [콘텐츠 배포 마이그레이션 전략 계획](../../core/migration/planning-a-content-deployment-migration-strategy.md)에서 해당 섹션을 참조하세요.  
 
 원본 계층에 있는 각 원본 사이트로부터 데이터 수집을 중지한 후에는 마이그레이션 데이터를 정리할 수 있습니다. 마이그레이션 데이터를 정리하기 전에는 실행되었거나 실행 예약된 각 마이그레이션 작업을 Configuration Manager 콘솔에서 계속 액세스할 수 있습니다.  
 
-원본 사이트 및 데이터 수집에 대한 자세한 내용은 [System Center Configuration Manager에서 원본 계층 구조 전략 계획](../../core/migration/planning-a-source-hierarchy-strategy.md)을 참조하세요.  
+원본 사이트 및 데이터 수집에 대한 자세한 내용은 [원본 계층 구조 전략 계획](../../core/migration/planning-a-source-hierarchy-strategy.md)을 참조하세요.  
 
 ##  <a name="Plan_to_clean_up"></a> 마이그레이션 데이터 정리 계획  
  마이그레이션을 완료하는 데 필요한 마지막 단계는 마이그레이션 데이터를 정리하는 것입니다. 원본 계층의 각 원본 사이트에 대해 데이터 수집을 중지한 후에 **마이그레이션 데이터 정리** 명령을 사용할 수 있습니다. 이 작업은 선택 사항으로서 대상 계층의 데이터베이스에서 현재 원본 계층과 관련된 데이터를 제거합니다.  

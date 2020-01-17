@@ -10,19 +10,18 @@ ms.assetid: d28f4363-9e8a-4c54-9cb7-0594fabfff26
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 769794f98a14b5d8bf27b46c6fb2408d0b0ebe18
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8b494fd5d9623af9de16d68e3d30e0e78a4ef338
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62270642"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806274"
 ---
-# <a name="replace-an-existing-computer-and-transfer-settings-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 기존 컴퓨터 바꾸기 및 설정 전송
+# <a name="replace-an-existing-computer-and-transfer-settings-with-configuration-manager"></a>Configuration Manager를 사용하여 기존 컴퓨터 바꾸기 및 설정 전송
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에서는 System Center Configuration Manager에서 기존 컴퓨터를 새 컴퓨터로 바꾸기 위한 일반 단계를 제공합니다. 이 시나리오에서는 부팅 가능한 미디어, 멀티캐스트 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 또한 설정을 저장하기 위한 상태 마이그레이션 지점을 설치하도록 선택한 다음 설치 후에 새 운영 체제로 복원할 수 있습니다. 올바른 운영 체제 배포 시나리오인지 확실하지 않으면 [엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)를 참조하세요.  
+이 항목에서는 Configuration Manager에서 기존 컴퓨터를 새 컴퓨터로 바꾸기 위한 일반 단계를 제공합니다. 이 시나리오에서는 부팅 가능한 미디어, 멀티캐스트 또는 소프트웨어 센터와 같은 여러 다양한 배포 방법 중에서 선택할 수 있습니다. 또한 설정을 저장하기 위한 상태 마이그레이션 지점을 설치하도록 선택한 다음 설치 후에 새 운영 체제로 복원할 수 있습니다. 올바른 운영 체제 배포 시나리오인지 확실하지 않으면 [엔터프라이즈 운영 체제를 배포하는 시나리오](scenarios-to-deploy-enterprise-operating-systems.md)를 참조하세요.  
 
  다음 섹션을 사용하여 새 버전의 Windows로 기존 컴퓨터를 새로 고치세요.  
 

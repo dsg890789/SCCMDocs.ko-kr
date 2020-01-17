@@ -10,13 +10,12 @@ ms.assetid: 1c975c5e-efd1-4d47-a315-39ccb32633dc
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e40e20fab31a505e59941a786ee3c8e7b4db63c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d801f892fcee56e9c6b5184e18370392b43ff080
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74813384"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75793124"
 ---
 # <a name="extend-and-migrate-on-premises-site-to-microsoft-azure"></a>온-프레미스 사이트를 Microsoft Azure로 확장 및 마이그레이션
 
@@ -25,7 +24,7 @@ ms.locfileid: "74813384"
 
 버전 1910부터 적용된 이 도구를 사용하여 Configuration Manager를 위해 Azure VM(가상 머신)을 프로그래밍 방식으로 만들 수 있습니다. <!--3556022--> 수동 사이트 서버, 관리 지점 및 배포 지점과 같은 기본 설정 사이트 역할을 사용하여 설치할 수 있습니다. 새 역할의 유효성을 검사한 후에는 고가용성을 위해 추가 사이트 시스템으로 사용합니다. 또한 온-프레미스 사이트 시스템 역할을 제거하고 Azure VM 역할만 유지할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - Azure 구독
 

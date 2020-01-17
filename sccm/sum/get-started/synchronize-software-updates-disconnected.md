@@ -10,17 +10,16 @@ ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
 manager: dougeby
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67b284e369268b184067e33d2a505585618795e5
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 6f415e1871409cece5462b4d57ad3285fe7a22d0
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65493976"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818573"
 ---
 # <a name="synchronize-software-updates-from-a-disconnected-software-update-point"></a>연결이 끊긴 소프트웨어 업데이트 지점에서 소프트웨어 업데이트 동기화  
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
  최상위 사이트의 소프트웨어 업데이트 지점이 인터넷에서 연결이 끊기면 WSUSUtil 도구의 내보내기 및 가져오기 기능을 사용하여 소프트웨어 업데이트 메타데이터를 동기화해야 합니다. Configuration Manager 계층 구조에 속하지 않는 기존 WSUS 서버를 동기화 원본으로 선택할 수 있습니다. 이 항목에서는 WSUSUtil 도구의 내보내기 및 가져오기 기능을 사용하는 방법에 대한 정보를 제공합니다.  
 
@@ -67,11 +66,11 @@ ms.locfileid: "65493976"
 
      **wsusutil.exe export**  *packagename*  *logfile*  
 
-     예:  
+     예를 들면 다음과 같습니다.  
 
      **wsusutil.exe export export.cab export.log**  
 
-     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 내보내기 옵션, 내보내기 작업 중에 만든 내보내기 .cab 파일 이름, 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 내보내고 작업의 로그 파일을 만듭니다.  
+     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 내보내기 옵션, 그 뒤에 내보내기 작업 중에 만든 내보내기 .cab 파일 이름, 그리고 그 뒤에 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 내보내고 작업의 로그 파일을 만듭니다.  
 
     > [!NOTE]  
     >  현재 폴더에서 패키지(.cab 파일) 및 로그 파일 이름이 고유해야 합니다.  
@@ -91,15 +90,15 @@ ms.locfileid: "65493976"
 
 1.  가져오기 WSUS 서버의 명령 프롬프트에서 WSUSutil.exe가 포함된 폴더로 이동합니다. 이 도구는 기본적으로 %*ProgramFiles*%\Update Services\Tools에 있습니다.  
 
-2.  다음과 같이 입력합니다.  
+2.  다음 명령을 입력하면 됩니다.  
 
      **wsusutil.exe import**  *packagename*  *logfile*  
 
-     예:  
+     예를 들면 다음과 같습니다.  
 
      **wsusutil.exe import export.cab import.log**  
 
-     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 import 명령, 내보내기 작업 중에 만든 패키지 파일(.cab) 이름, 패키지 파일의 경로(패키지 파일이 다른 폴더에 있는 경우) 및 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 가져오고 작업의 로그 파일을 만듭니다.  
+     이 형식은 다음과 같이 요약할 수 있습니다. WSUSutil.exe 뒤에 import 명령, 그 뒤에 내보내기 작업 중에 만든 패키지 파일(.cab) 이름, 그 뒤에 패키지 파일의 경로(패키지 파일이 다른 폴더에 있는 경우), 그리고 그 뒤에 로그 파일 이름이 옵니다. WSUSutil.exe는 내보내기 서버에서 메타데이터를 가져오고 작업의 로그 파일을 만듭니다.  
 
 ## <a name="next-steps"></a>다음 단계
 처음으로 소프트웨어 업데이트를 동기화한 후 또는 새 분류나 제품을 사용할 수 있게 되면 [새 분류 및 제품을 구성](configure-classifications-and-products.md)하여 소프트웨어 업데이트를 새 기준과 동기화해야 합니다.

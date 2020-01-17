@@ -1,7 +1,7 @@
 ---
 title: Technical Preview 1712 | Microsoft Docs
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1712에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1712에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 12/15/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,21 +11,20 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571884ded86bd6c0ef7ce2d9a0d92ec9ac9457f7
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8086f527a82b6b9b9c5125a244daee4ddcdfe33d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70379454"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804659"
 ---
-# <a name="capabilities-in-technical-preview-1712-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1712의 기능
+# <a name="capabilities-in-technical-preview-1712-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1712의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1712에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1712에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 
 
-이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하세요. 해당 문서에서는 Technical Preview를 사용하기 위한 일반 요구 사항 및 제한 사항, 버전 간에 업데이트하는 방법 및 Technical Preview의 기능에 대한 피드백을 제공하는 방법에 대해 설명합니다.     
+이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 검토하세요. 해당 문서에서는 Technical Preview를 사용하기 위한 일반 요구 사항 및 제한 사항, 버전 간에 업데이트하는 방법 및 Technical Preview의 기능에 대한 피드백을 제공하는 방법에 대해 설명합니다.     
 
 
 <!--  Known Issues Template   
@@ -156,4 +155,4 @@ Windows 10에 기본 제공되는 [피드백 허브 앱](https://support.microso
 <!-- When we have another H2 in this topic, Add this Next Steps section back in.  -->
 
 ## <a name="next-steps"></a>다음 단계
-Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [System Center Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    
+Technical Preview 분기를 설치하거나 업데이트하는 방법에 대한 정보는 [Configuration Manager용 Technical Preview](/sccm/core/get-started/technical-preview)를 참조하세요.    

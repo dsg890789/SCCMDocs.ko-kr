@@ -1,7 +1,7 @@
 ---
 title: '보고에 대한 운영 및 유지 관리 '
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 보고서 및 보고서 구독 관리의 세부 정보에 대해 알아봅니다.
+description: Configuration Manager에서 보고서 및 보고서 구독 관리의 세부 정보에 대해 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: b89bcfbf-f5b6-4fb1-bb5e-a5cc18ec0c78
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11c9bbbab40ec593ae6455a9018502a754402385
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e0b49c234ca55b515df16c5bfd6d9324a20f20b6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70377860"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75794616"
 ---
-# <a name="operations-and-maintenance-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 보고 작업 및 유지 관리
+# <a name="operations-and-maintenance-for-reporting-in-configuration-manager"></a>Configuration Manager에서 보고 기능 운영 및 유지 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 보고용 인프라가 준비된 후 보고서 및 보고서 구독을 관리하기 위해 일반적으로 수행하는 작업이 여러 가지가 있습니다.  
+Configuration Manager에서 보고용 인프라가 준비된 후 보고서 및 보고서 구독을 관리하기 위해 일반적으로 수행하는 작업이 여러 가지가 있습니다.  
 
 ##  <a name="BKMK_ManageReports"></a> Configuration Manager 보고서 관리  
  Configuration Manager는 조직 내의 사용자, 하드웨어 및 소프트웨어 인벤토리, 소프트웨어 업데이트, 애플리케이션, 사이트 상태, 기타 Configuration Manager 작업 등에 대한 정보를 수집, 구성 및 제공하는 미리 정의된 보고서를 400개 이상 제공합니다. 미리 정의된 보고서는 그대로 사용할 수도 있고 요구 사항에 맞게 수정할 수도 있습니다. 또한 요구 사항에 따라 사용자 지정 모델 기반 보고서 및 SQL 기반 보고서를 만들 수도 있습니다. 다음 섹션을 사용하여 Configuration Manager 보고서를 관리할 수 있습니다.  
@@ -116,7 +115,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 4.  보고서 작성기에서 적합한 보고서 설정을 수정한 다음 **저장** 을 클릭하여 보고서를 보고서 서버에 저장합니다.  
 
 ###  <a name="BKMK_CreateModelBasedReport"></a> 모델 기반 보고서 만들기  
- 모델 기반 보고서를 사용하면 보고서에 포함하려는 항목을 대화식으로 선택할 수 있습니다. 보고서 모델을 만드는 방법에 대한 자세한 내용은 [SQL Server Reporting Services에서 System Center Configuration Manager에 대한 사용자 지정 보고서 모델 만들기](creating-custom-report-models-in-sql-server-reporting-services.md)를 참조하세요.  
+ 모델 기반 보고서를 사용하면 보고서에 포함하려는 항목을 대화식으로 선택할 수 있습니다. 보고서 모델을 만드는 방법에 대한 자세한 내용은 [SQL Server Reporting Services에서 Configuration Manager에 대한 사용자 지정 보고서 모델 만들기](creating-custom-report-models-in-sql-server-reporting-services.md)를 참조하세요.  
 
 > [!IMPORTANT]  
 >  새 보고서를 만들려면 사용자 계정에 **사이트 수정** 권한이 있어야 합니다. 사용자는 **보고서 수정** 권한을 가진 폴더에만 보고서를 만들 수 있습니다.  
@@ -323,7 +322,7 @@ System Center Configuration Manager에서 보고용 인프라가 준비된 후 �
 
     -   **우선 순위**: 이 전자 메일 메시지의 우선 순위 플래그를 선택합니다. **낮음**, **보통**, **높음**중에서 선택할 수 있습니다. 우선 순위 설정은 Microsoft Exchange에서 전자 메일 메시지의 중요도를 나타내는 플래그를 설정할 때 사용됩니다.  
 
-    -   **주석**: 구독 전자 메일 메시지의 본문에 추가할 텍스트를 지정합니다.  
+    -   **설명**: 구독 전자 메일 메시지의 본문에 추가할 텍스트를 지정합니다.  
 
     -   **설명**: 보고서 구독에 대한 설명을 지정합니다.  
 

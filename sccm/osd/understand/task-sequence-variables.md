@@ -10,17 +10,16 @@ ms.assetid: 62f15230-d3a6-4afc-abd4-1e07e7ba6c97
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ff08588390e42705596cb0be40e7640a42d7989
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e32e574a183e23c6d5b6eb8d846536b865592e55
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659547"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75820987"
 ---
 # <a name="task-sequence-variables"></a>작업 순서 변수
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 이 문서는 사전순의 사용 가능한 모든 변수에 대한 참조입니다. 브라우저의 **찾기** 기능(일반적으로 **CTRL** + **F**)을 사용하면 특정 변수를 찾을 수 있습니다. 이렇게 찾은 변수는 특정 단계와 관련이 있는지를 알려줍니다. [작업 순서 단계](/configmgr/osd/understand/task-sequence-steps)에 대한 문서에는 각 단계에 사용되는 변수 목록이 포함되어 있습니다.
 
@@ -56,7 +55,7 @@ USMT 파일을 포함할 Configuration Manager 패키지의 패키지 ID를 지�
 
 현재 실행 중인 작업 순서 배포의 고유 ID를 저장합니다. Configuration Manager 소프트웨어 배포의 배포 ID와 동일한 형식을 사용합니다. 독립 실행형 미디어에서 작업 순서를 실행 중인 경우에는 이 변수가 정의되지 않습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `ABC20001`
 
@@ -70,7 +69,7 @@ USMT 파일을 포함할 Configuration Manager 패키지의 패키지 ID를 지�
 
 현재 실행 중인 작업 순서가 부팅 이미지 패키지를 참조하는 경우 이 변수가 부팅 이미지 패키지 ID를 저장합니다. 작업 순서가 부팅 이미지 패키지를 참조하지 않는 경우에는 이 변수가 설정되지 않습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `ABC00001`  
 
@@ -87,7 +86,7 @@ USMT 파일을 포함할 Configuration Manager 패키지의 패키지 ID를 지�
 
 Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순서가 독립 실행형 미디어에서 실행 중이라면 이 변수가 설정되지 않습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `0a1a9a4b-fc56-44f6-b7cd-c3f8ee37c04c`
 
@@ -95,7 +94,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 현재 실행 중인 작업 순서 단계의 이름을 지정합니다. 이 변수는 작업 순서 관리자가 각 개별 단계를 실행하기 전에 설정됩니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `run command line`
 
@@ -129,7 +128,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 마지막으로 실행된 동작에서 반환 코드를 저장합니다. 이 변수를 다음 단계 실행 여부를 결정하는 조건으로 사용할 수 있습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `0`
 
@@ -152,7 +151,7 @@ Configuration Manager 클라이언트 GUID의 값을 저장합니다. 작업 순
 
 - **SMS**: 구성 관리자 클라이언트(예: 소프트웨어 센터에서 시작하는 경우)
 - **UFD**: 레거시 USB 미디어
-- **UFD + FORMAT**: 최신 USB 미디어
+- **UFD+FORMAT**: 최신 USB 미디어
 - **CD**: 부팅 가능 CD
 - **DVD**: 부팅 가능 DVD
 - **PXE**: PXE 네트워크 부팅
@@ -210,7 +209,7 @@ Configuration Manager 관리 지점의 포트 번호를 저장합니다.
 
 Windows 설치 프로그램에서 성공 또는 실패를 나타내기 위해 반환하는 종료 코드 값을 저장합니다. 이 변수는 `/Compat` 명령줄 옵션과 함께 사용하면 좋습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 compat 전용 검사가 완료되면 실패 또는 성공 종료 코드에 따라 이후 단계에서 조치를 취하세요. 성공하면 업그레이드를 시작하세요. 또는 하드웨어 인벤토리를 사용하여 수집할 환경에 마커를 설정합니다. 예를 들어 파일을 추가하거나 레지스트리 키를 설정합니다. 이 마커를 사용하여 업그레이드할 준비가 되었거나 업그레이드하기 전에 조치가 필요한 컴퓨터의 컬렉션을 만듭니다.
 
@@ -218,7 +217,7 @@ compat 전용 검사가 완료되면 실패 또는 성공 종료 코드에 따�
 
 현재 실행 중인 작업 순서 ID를 저장합니다. 이 ID는 Configuration Manager 패키지 ID와 동일한 형식을 사용합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `HJT00001`
 
@@ -226,7 +225,7 @@ compat 전용 검사가 완료되면 실패 또는 성공 종료 코드에 따�
 
 현재 실행 중인 작업 순서 이름을 저장합니다. 작업 순서를 작성할 때 Configuration Manager 관리자가 이 이름을 지정합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `Deploy Windows 10 task sequence`
 
@@ -248,7 +247,7 @@ compat 전용 검사가 완료되면 실패 또는 성공 종료 코드에 따�
 
 Configuration Manager 사이트의 사이트 코드를 저장합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `ABC`
 
@@ -258,7 +257,7 @@ Configuration Manager 사이트의 사이트 코드를 저장합니다.
 
 `Bias,StandardBias,DaylightBias,StandardDate.wYear,wMonth,wDayOfWeek,wDay,wHour,wMinute,wSecond,wMilliseconds,DaylightDate.wYear,wMonth,wDayOfWeek,wDay,wHour,wMinute,wSecond,wMilliseconds,StandardName,DaylightName`
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 **동부 표준시(미국과 캐나다)** 표준 시간대의 경우:
 
@@ -303,7 +302,7 @@ Configuration Manager 사이트의 사이트 코드를 저장합니다.
 
 [애플리케이션 설치](task-sequence-steps.md#BKMK_InstallApplication) 단계 중에 작업 순서가 애플리케이션의 설치 상태를 사용하여 이 변수를 설정하며, 다음 값 중 하나를 설정합니다.  
 
-- **정의되지 않음**: 애플리케이션 설치 단계가 실행되지 않았습니다.  
+- **Undefined**: 애플리케이션 설치 단계가 실행되지 않았습니다.  
 
 - **오류**: 애플리케이션 설치 단계 중에 애플리케이션 하나 이상이 오류 때문에 실패했습니다.  
 
@@ -319,13 +318,13 @@ Configuration Manager 사이트의 사이트 코드를 저장합니다.
 
 이 작업 순서 변수는 *배열* 변수입니다. 배열의 각 요소는 컴퓨터에서 단일 네트워크 어댑터에 대한 설정을 나타냅니다. 각 어댑터에 대한 설정은 배열 변수 이름과 0부터 시작하는 네트워크 어댑터 인덱스 및 속성 이름을 결합하여 액세스할 수 있습니다.
 
-네트워크 설정 적용 단계에서 여러 네트워크 어댑터를 구성할 경우 변수 이름에 인덱스 **1**을 사용하여 ‘두 번째’ 네트워크 어댑터의 속성을 정의합니다.  예를 들어 OSDAdapter1EnableDHCP, OSDAdapter1IPAddressList 및 OSDAdapter1DNSDomain이 있습니다.
+네트워크 설정 적용 단계에서 여러 네트워크 어댑터를 구성할 경우 변수 이름에 인덱스 **1**을 사용하여 ‘두 번째’ 네트워크 어댑터의 속성을 정의합니다.  예를 들면 다음과 같습니다. OSDAdapter1EnableDHCP, OSDAdapter1IPAddressList 및 OSDAdapter1DNSDomain.
 
 다음 변수 이름을 사용하여 단계가 구성할 ‘첫 번째’ 네트워크 어댑터의 속성을 정의할 수 있습니다. 
 
 #### <a name="osdadapter0enabledhcp"></a>OSDAdapter0EnableDHCP
 
-이 설정은 필수입니다. 가능한 값은 `True` 또는 `False`입니다. 예:
+이 설정은 필수입니다. 가능한 값은 `True` 또는 `False`입니다. 예를 들면 다음과 같습니다.
 
 `true`: 어댑터에 대해 DHCP(Dynamic Host Configuration Protocol)를 사용합니다.
 
@@ -377,9 +376,9 @@ TCP에 대해 액세스 권한을 부여할 쉼표로 구분된 포트 목록입
 
 NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.  
 
-- `0`: DHCP 서버에서 NetBIOS 설정을 사용합니다.  
-- `1`: NetBIOS over TCP/IP를 사용하도록 설정합니다.  
-- `2`: NetBIOS over TCP/IP를 사용하지 않도록 설정합니다.  
+- `0`: DHCP 서버에서 NetBIOS 설정 사용  
+- `1`: NetBIOS over TCP/IP 사용  
+- `2`: NetBIOS over TCP/IP 사용 안 함  
 
 #### <a name="osdadapter0enablewins"></a>OSDAdapter0EnableWINS
 
@@ -401,7 +400,7 @@ NetBIOS over TCP/IP 옵션입니다. 가능한 값은 다음과 같습니다.
 
 설정의 배열에서 네트워크 어댑터 설정의 인덱스입니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 - **OSDAdapterCount** = `1`  
 - **OSDAdapter0EnableDHCP** = `FALSE`  
@@ -552,7 +551,7 @@ OS 이미지 캡처 계정에 대한 자세한 내용은 [계정](/configmgr/cor
 
 대상 컴퓨터의 이름을 지정합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `%_SMSTSMachineName%`(기본값)
 
@@ -618,7 +617,7 @@ OS 배포 이미지 패키지와 관련된 OS 배포 응답 파일의 파일 이
 
 대상 컴퓨터가 가입하는 OU(조직 구성 단위)의 RFC 1779 형식 이름을 지정합니다. 지정하는 경우 값에 전체 경로가 포함되어야 합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `LDAP://OU=MyOu,DC=MyDom,DC=MyCompany,DC=com`
 
@@ -738,7 +737,7 @@ GPT 하드 디스크에서 EFI 파티션을 만들지 여부를 지정합니다.
 
 대상 컴퓨터가 가입하는 OU(조직 구성 단위)의 RFC 1779 형식 이름을 지정합니다. 지정하는 경우 값에 전체 경로가 포함되어야 합니다. OU 이름의 길이는 0-32,767자 사이여야 합니다. [OSDJoinType](#OSDJoinType) 변수가 `1`(작업 그룹에 가입)로 설정되면 이 값이 설정되지 않습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `LDAP://OU=MyOu,DC=MyDom,DC=MyCompany,DC=com`  
 
@@ -776,8 +775,8 @@ Active Directory 도메인에 가입하기 위해 대상 컴퓨터에서 사용�
 
 #### <a name="valid-values"></a>유효한 값
 
-- `0`: 대상 컴퓨터를 Windows 도메인에 가입합니다.  
-- `1`: 대상 컴퓨터를 작업 그룹에 가입합니다.  
+- `0`: 대상 컴퓨터를 Windows 도메인에 조인합니다.  
+- `1`: 대상 컴퓨터를 작업 그룹에 조인합니다.  
 
 ### <a name="OSDJoinWorkgroupName"></a> OSDJoinWorkgroupName
 
@@ -876,7 +875,7 @@ Sysprep이 제품 활성화 플래그를 다시 설정하는지 여부를 지정
 
 사용자 프로필의 캡처를 제어하기 위해 사용되는 구성 파일을 지정합니다. 이 변수는 [OSDMigrateMode](#OSDMigrateMode)가 `Advanced`로 설정된 경우에만 사용됩니다. 이 쉼표로 구분된 목록 값은 사용자 지정된 사용자 프로필 마이그레이션을 수행하기 위해 설정됩니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `miguser.xml,migsys.xml,migapps.xml`  
 
@@ -1019,8 +1018,8 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 #### <a name="value-values"></a>유효한 값
 
-- `0`: Active Directory 도메인에 가입합니다.  
-- `1`: 작업 그룹에 가입합니다.
+- `0`: Active Directory 도메인에 조인합니다.  
+- `1`: 작업 그룹에 가입
 
 ### <a name="OSDPartitions"></a> OSDPartitions
 
@@ -1064,7 +1063,7 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 이 단계에서 파티션을 만들 때 Windows PE에서 항상 사용 가능한 다음 드라이브 문자를 사용합니다. 이 선택적 속성을 사용하여 다른 작업 순서 변수의 이름을 지정할 수 있습니다. 이 단계에서는 이 변수를 사용하여 나중에 참조할 새 드라이브 문자를 저장합니다.
 
-이 작업 순서 단계를 사용하여 여러 파티션을 정의하는 경우 ‘두 번째’ 파티션에 대한 속성이 변수 이름의 **1** 인덱스를 사용하여 정의됩니다.  예를 들어 **OSDPartitions1Type**, **OSDPartitions1FileSystem**, **OSDPartitions1Bootable**, **OSDPartitions1QuickFormat** 및 **OSDPartitions1VolumeName**이 있습니다.
+이 작업 순서 단계를 사용하여 여러 파티션을 정의하는 경우 ‘두 번째’ 파티션에 대한 속성이 변수 이름의 **1** 인덱스를 사용하여 정의됩니다.  예를 들면 다음과 같습니다. **OSDPartitions1Type**, **OSDPartitions1FileSystem**, **OSDPartitions1Bootable**, **OSDPartitions1QuickFormat** 및 **OSDPartitions1VolumeName**.
 
 ### <a name="OSDPartitionStyle"></a> OSDPartitionStyle
 
@@ -1076,8 +1075,8 @@ USMT에서 캡처하는 파일을 사용자 지정할 수 있습니다.
 
 #### <a name="valid-values"></a>유효한 값
 
-- `GPT`: GUID 파티션 테이블 스타일을 사용합니다.
-- `MBR`: 마스터 부트 레코드 파티션 스타일을 사용합니다.
+- `GPT`: GUID 파티션 테이블 스타일 사용
+- `MBR`: 마스터 부트 레코드 파티션 스타일 사용
 
 ### <a name="OSDProductKey"></a> OSDProductKey
 
@@ -1097,7 +1096,7 @@ Windows 제품 키를 지정합니다. 지정된 값은 1-255자 사이여야 �
 
 #### <a name="valid-values"></a>유효한 값
 
-- `true`(기본값): Windows 설치 프로그램이 대상 컴퓨터에서 로컬 관리자 계정을 사용하지 않도록 설정합니다.  
+- `true`(기본값): Windows 설치 프로그램이 대상 컴퓨터에서 로컬 관리자 계정을 사용하지 않도록 설정  
 
 - `false`: Windows 설치 프로그램이 대상 컴퓨터에서 로컬 관리자 계정을 사용하도록 설정하고 계정 암호를 [OSDLocalAdminPassword](#OSDLocalAdminPassword) 값으로 설정합니다.  
 
@@ -1242,7 +1241,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 ‘[Windows 설정 적용](task-sequence-steps.md#BKMK_ApplyWindowsSettings) 단계에 적용됩니다.’ 
 
-새 OS에서 사용 되는 기본 시스템 로캘 설정을 지정 합니다.
+새 OS에서 사용되는 기본 시스템 로캘 설정을 지정합니다.
 
 이러한 Windows 설치 응답 파일 값에 대한 자세한 내용은 [Microsoft-Windows-International-Core - SystemLocale](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-systemlocale)을 참조하세요.
 
@@ -1369,7 +1368,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 연결에 대한 네트워크 경로를 지정합니다. 이 경로를 드라이브 문자에 매핑해야 하는 경우 [SMSConnectNetworkFolderDriveLetter](#SMSConnectNetworkFolderDriveLetter) 값을 사용합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `\\server\share`
 
@@ -1394,7 +1393,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 
 대상 컴퓨터를 다시 시작하기 전에 사용자에게 표시할 메시지를 지정합니다. 이 변수가 설정되지 않은 경우 기본 메시지 텍스트가 표시됩니다. 지정된 메시지는 512자를 초과할 수 없습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `Save your work before the computer restarts.`  
 
@@ -1409,7 +1408,7 @@ Windows 10 업그레이드 중 Windows 설치 프로그램에 추가된 추가 �
 #### <a name="examples"></a>예
 
 - `0`(기본값): 다시 부팅 메시지를 표시하지 않습니다.  
-- `60`: 1분 동안 경고를 표시합니다.  
+- `60`: 1분 동안 경고 표시  
 
 ### <a name="SMSTSAssignmentsDownloadInterval"></a> SMSTSAssignmentsDownloadInterval
 
@@ -1563,7 +1562,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 
 컴퓨터를 다시 시작하기 전에 대기할 시간(초)을 지정합니다. 이 변수가 0일 경우 다시 부팅하기 전에 작업 순서 관리자가 알림 대화 상자를 표시하지 않습니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 - `0`: 알림을 표시하지 않습니다.  
 
@@ -1574,7 +1573,7 @@ Windows PE 피어 캐시가 초기 브로드캐스트에 사용하는 사용자 
 <!--4447680-->
 1906 버전부터 기존 [SMSTSRebootDelay](/configmgr/osd/understand/task-sequence-variables#SMSTSRebootDelay) 변수를 사용 하 여이 변수를 사용 합니다. 이후에 수행되는 다시 부팅은 첫 번째 다시 부팅보다 다른 시간 제한에 따라 수행되도록 하려면 SMSTSRebootDelayNext를 다른 값(초)으로 설정합니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시 부팅 알림을 제공할 수 있습니다. 이러한 긴 첫 번째 시간 제한 후에는 추가 시간 제한을 60초만 줄 수 있습니다. SMSTSRebootDelay를 `3600`으로 설정한 후 SMSTSRebootDelayNext를 `60`으로 설정합니다.  
 
@@ -1583,7 +1582,7 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 
 다시 시작 알림 대화 상자에 표시할 메시지를 지정합니다. 이 변수를 설정하지 않으면 기본 메시지가 표시됩니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `The task sequence is restarting this computer`
 
@@ -1625,7 +1624,7 @@ Windows 10 전체 업그레이드 작업 순서가 시작될 때 60분의 다시
 
 (입력)
 
-PowerShell 스크립트를 실행 하는 데 사용할 계정을 지정 합니다. 값은 양식 사용자 이름 또는 도메인\사용자 이름의 문자열입니다. [SMSTSRunPowerShellUserPassword](#SMSTSRunPowerShellUserPassword) 변수를 사용 하 여 계정 암호를 지정 합니다.
+PowerShell 스크립트를 실행 하는 데 사용할 계정을 지정 합니다. 값은 양식 사용자 이름 또는 도메인\사용자 이름의 문자열입니다. [SMSTSRunPowerShellUserPassword](#SMSTSRunPowerShellUserPassword) 변수를 사용하여 계정 암호를 지정하세요.
 
 > [!NOTE]
 > 이러한 변수를 사용 하려면 **이 단계를 다음 계정으로 실행**하는 설정을 사용 하 여 **PowerShell 스크립트 실행** 단계를 구성 합니다. 이 옵션을 사용 하도록 설정 하는 경우 변수를 사용 하 여 사용자 이름과 암호를 설정 하는 경우 계정에 대 한 값을 지정 합니다.
@@ -1652,7 +1651,7 @@ PowerShell 스크립트를 실행 하는 데 사용할 계정을 지정 합니�
 
 `<DomainName>\<UserName>` 형식을 사용하여 대상 컴퓨터의 기본 사용자를 지정합니다. 여러 사용자를 구분하려면 쉼표(`,`)를 사용합니다. 자세한 내용은 [사용자를 대상 컴퓨터에 연결](/configmgr/osd/get-started/associate-users-with-a-destination-computer)을 참조하세요.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 `contoso\jqpublic, contoso\megb, contoso\janedoh`
 
@@ -1694,9 +1693,9 @@ PowerShell 스크립트를 실행 하는 데 사용할 계정을 지정 합니�
 <!-- 1354291 -->
 작업 순서가 최종 사용자에게 진행률을 표시하는 시기를 제어하려면 이 변수를 사용하세요. 다른 시간에 진행률을 숨기거나 표시하려면 이 변수를 작업 순서에 여러 번 설정합니다.  
 
-- `true`: 작업 순서 진행률을 숨깁니다.  
+- `true`: 작업 순서 진행률 숨기기  
 
-- `false`: 작업 순서 진행률을 표시합니다.  
+- `false`: 작업 순서 진행률 표시  
 
 ### <a name="TSErrorOnWarning"></a> TSErrorOnWarning
 
@@ -1726,8 +1725,8 @@ PowerShell 스크립트를 실행 하는 데 사용할 계정을 지정 합니�
 
 - **OSDAllowUnsignedDriver**: Windows Vista 이상 운영 체제를 배포하는 경우에는 사용되지 않습니다.
 - **OSDBuildStorageDriverList**: Windows XP 및 Windows Server 2003에만 적용됩니다.
-- **OSDDiskpartBiosCompatibilityMode**: Windows XP 또는 Windows Server 2003을 배포할 때만 필요합니다.
-- **OSDInstallEditionIndex**: Windows Vista 이후에는 필요하지 않습니다.
+- **OSDDiskpartBiosCompatibilityMode**: Windows XP 또는 Windows Server 2003을 배포할 때만 필요함
+- **OSDInstallEditionIndex**: Windows Vista 이후 필요 없음
 - **OSDPreserveDriveLetter**: 자세한 내용은 [OSDPreserveDriveLetter](#osdpreservedriveletter)를 참조하세요.
 
 ### <a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter

@@ -10,24 +10,23 @@ ms.assetid: 784c295c-b8b8-4202-ab9f-665908d49d6d
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8dea33a78229387f4aa3a1bbbd139d14aa560c1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8ae250411b9d57bf763f2a1e18d8e9c283d21350
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62198821"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75818097"
 ---
-# <a name="monitor-applications-from-the-system-center-configuration-manager-console"></a>System Center Configuration Manager 콘솔에서 애플리케이션 모니터링
+# <a name="monitor-applications-from-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 애플리케이션 모니터링
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
-System Center Configuration Manager에서 소프트웨어 업데이트, 준수 설정, 애플리케이션, 작업 순서, 패키지 및 프로그램 등을 포함해 모든 소프트웨어의 배포를 모니터링할 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역을 사용하거나 보고서를 사용하여 배포를 모니터링할 수 있습니다.  
+Configuration Manager에서 소프트웨어 업데이트, 호환성 설정, 애플리케이션, 작업 순서, 패키지 및 프로그램 등을 포함해 모든 소프트웨어의 배포를 모니터링할 수 있습니다. Configuration Manager 콘솔의 **모니터링** 작업 영역을 사용하거나 보고서를 사용하여 배포를 모니터링할 수 있습니다.  
 
  Configuration Manager의 애플리케이션에서는 상태 기반 모니터링을 지원합니다. 이 방식을 통해 사용자 및 디바이스에 대한 마지막 애플리케이션 배포 상태를 추적할 수 있습니다. 이러한 상태 메시지는 개별 디바이스에 대한 정보를 표시합니다. 예를 들어 애플리케이션이 사용자 컬렉션에 배포된 경우 Configuration Manager 콘솔에서 배포의 준수 상태 및 배포 용도를 확인할 수 있습니다.  
 
-## <a name="learn-about-compliance-states-in-system-center-configuration-manager"></a>System Center Configuration Manager의 준수 상태에 대한 자세한 정보
+## <a name="learn-about-compliance-states"></a>준수 상태에 대 한 자세한 정보
  애플리케이션 배포 상태의 호환성 상태는 다음 중 하나에 해당됩니다.  
 
 -   **성공** - 애플리케이션 배포가 성공했거나 이미 설치되어 있습니다.  
@@ -48,7 +47,7 @@ System Center Configuration Manager에서 소프트웨어 업데이트, 준수 �
 
 - 설치 오류  
 
-  한 애플리케이션 배포에 두 개 이상의 호환성 상태가 적용되면 가장 낮은 호환성을 나타내는 집계 상태를 볼 수 있습니다. 예:  
+  한 애플리케이션 배포에 두 개 이상의 호환성 상태가 적용되면 가장 낮은 호환성을 나타내는 집계 상태를 볼 수 있습니다. 예를 들면 다음과 같습니다.  
 
   -   사용자가 두 개의 디바이스에 로그인하고 애플리케이션이 첫 번째 디바이스에 성공적으로 설치되었지만 두 번째 디바이스에는 설치되지 못한 경우, 해당 사용자에 대한 애플리케이션의 집계 배포 상태는 **오류**로 표시됩니다.  
 
@@ -60,7 +59,7 @@ System Center Configuration Manager에서 소프트웨어 업데이트, 준수 �
 
  Configuration Manager의 애플리케이션 관리에는 애플리케이션 및 배포에 대한 정보를 모니터링할 수 있는 여러 기본 제공 보고서가 포함됩니다. 이러한 보고서의 보고서 범주는 **소프트웨어 배포 - 애플리케이션 모니터링**입니다.  
 
- Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [System Center Configuration Manager의 보고](../../core/servers/manage/reporting.md)를 참조하세요.  
+ Configuration Manager에서 보고를 구성하는 방법에 대한 자세한 내용은 [보고](../../core/servers/manage/reporting.md)를 참조하세요.  
 
 ## <a name="monitor-the-state-of-an-application-in-the-configuration-manager-console"></a>Configuration Manager 콘솔에서 애플리케이션의 상태 모니터링  
 

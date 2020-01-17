@@ -10,17 +10,16 @@ ms.assetid: fab13949-371c-4a4c-978e-471db1e54966
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecee342fb65cde6a210a4f2d13d4d75a5f30f19a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: eb245d5c3178c9b0a5690fc662add1d89e5213aa
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68537003"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821327"
 ---
 # <a name="manage-os-images-with-configuration-manager"></a>Configuration Manager를 사용하여 OS 이미지 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager의 OS 이미지는 WIM(Windows 이미지) 파일 형식으로 저장됩니다. 이러한 이미지는 컴퓨터에 새 OS를 설치하고 구성하는 데 사용하는 참조 파일 및 폴더의 압축된 컬렉션입니다. 많은 OS 배포 시나리오에는 OS 이미지가 필요합니다.
 
@@ -82,11 +81,11 @@ OS 이미지를 사용하려면 Configuration Manager 사이트에 추가합니�
 
 4. **일반** 페이지에서 다음 정보를 지정합니다. 이 정보는 OS 이미지가 여러 개인 경우 목적을 식별하는 데 유용합니다.  
 
-    - **이름**: 이미지에 대한 고유 이름입니다. 기본적으로 이름은 WIM 파일 이름을 사용합니다.  
+    - **이름**: 이미지의 고유 이름입니다. 기본적으로 이름은 WIM 파일 이름을 사용합니다.  
 
     - **버전**: 선택적 버전 식별자입니다. 이 속성은 이미지의 OS 버전이 아니어도 됩니다. 패키지에 대한 조직의 버전인 경우가 많습니다.  
 
-    - **주석**: 선택적 간략한 설명입니다.  
+    - **설명**: 선택적 간략한 설명입니다.  
 
 5. 마법사를 완료합니다.  
 

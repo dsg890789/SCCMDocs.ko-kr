@@ -1,7 +1,7 @@
 ---
 title: 1610에 대한 진단 데이터
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 버전 1610에서 수집하는 진단 및 사용량 현황 데이터에 대해 알아봅니다.
+description: Configuration Manager 버전 1610에서 수집하는 진단 및 사용량 현황 데이터를 알아봅니다.
 ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 193ad88be6766c085373185145429d8535655e61
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: d82a8d05f440d1e55a4b2ff957745550c07c470c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67677120"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801208"
 ---
-# <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1610에 대한 진단 사용량 현황 데이터 수집의 수준
+# <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-configuration-manager"></a>Configuration Manager 버전 1610에 대한 진단 사용량 현황 데이터 수집의 수준
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 버전 1610에서는 다음과 같은 세 가지 수준의 진단 및 사용량 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
+Configuration Manager 버전 1610은 다음과 같은 세 가지 수준의 진단 및 사용량 현황 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
 이전 버전에서 변경된 내용은 ***[새로운 기능]***, ***[업데이트된 기능]***, ***[제거된 기능]*** 또는 ***[이동된 기능]*** 으로 표시됩니다.
 
@@ -39,7 +38,7 @@ System Center Configuration Manager 버전 1610에서는 다음과 같은 세 �
 ##  <a name="bkmk_level1"></a> 수준 1 - 기본
  기본 수준에는 계층 구조에 대한 데이터, 설치 환경이나 업그레이드 환경을 개선하는 데 필요한 데이터 및 계층 구조에 적용할 수 있는 Configuration Manager 업데이트를 확인할 수 있는 데이터가 포함됩니다.
 
- System Center Configuration Manager 버전 1610에서 이 수준에는 다음이 포함됩니다.
+ Configuration Manager 버전 1610의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
 
 - 설정 정보:
@@ -100,7 +99,7 @@ System Center Configuration Manager 버전 1610에서는 다음과 같은 세 �
 
 이 수준에 포함된 정보는 Microsoft에서 향후 개선된 제품 및 서비스를 제공하기 위해 필요한 최소한의 데이터로 유용하게 사용할 수 있기 때문에 이 수준을 사용하는 것이 권장됩니다. 이 수준에서는 개체 이름(사이트, 사용자, 컴퓨터 또는 개체), 보안 관련 개체의 세부 정보 또는 소프트웨어 업데이트가 필요한 시스템 개수와 같은 취약성은 수집하지 않습니다.
 
-System Center Configuration Manager 버전 1610에서 이 수준에는 다음이 포함됩니다.
+Configuration Manager 버전 1610의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
 -   **애플리케이션 관리:**  
 
@@ -375,7 +374,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 ##  <a name="bkmk_level3"></a> 수준 3 - 전체
 전체 수준은 기본 및 고급 수준의 모든 데이터를 포함합니다. 또한 Endpoint Protection, 업데이트 준수 비율 및 소프트웨어 업데이트 정보에 대한 추가 정보를 포함합니다.  또한 이 수준은 캡처 시점의 메모리 또는 로그 파일에 있던 개인 정보를 포함할 수도 있는 시스템 파일 및 메모리 스냅샷과 같은 고급 진단 정보를 포함할 수 있습니다.
 
-System Center Configuration Manager 버전 1610에서 이 수준에는 다음이 포함됩니다.
+Configuration Manager 버전 1610의 경우 이 수준에는 다음과 같은 데이터가 포함됩니다.
 
 -   컬렉션 평가 및 새로 고침 통계
 
@@ -408,7 +407,7 @@ System Center Configuration Manager 버전 1610에서 이 수준에는 다음이
 
 -   환경에서 상위 50개 CPU
 
--   System Center Configuration Manager 사용을 위한 DCM 구성 팩
+-   Configuration Manager 사용을 위한 DCM 구성 팩
 
 -   MSI 제품 코드(고객이 배포하는 일반 앱)
 

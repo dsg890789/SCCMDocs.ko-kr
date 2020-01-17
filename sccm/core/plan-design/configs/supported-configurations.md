@@ -1,7 +1,7 @@
 ---
 title: 지원되는 구성
 titleSuffix: Configuration Manager
-description: 작동하는 System Center Configuration Manager 배포를 계획, 배포 및 유지 관리할 수 있도록 주요 구성 및 요구 사항을 식별합니다.
+description: 작동하는 Configuration Manager 배포를 계획, 배포 및 유지 관리할 수 있도록 주요 구성 및 요구 사항을 식별합니다.
 ms.date: 10/08/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -10,19 +10,18 @@ ms.assetid: 45a10878-ff48-4318-9c6d-c014b38a4039
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fd2805ad886bd0e2f8d6dbcadc8953ae20be24c
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 20384ae1705f35fc4b99d4245bbc6a2567428825
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71999023"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801718"
 ---
-# <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager에서 지원되는 구성
+# <a name="supported-configurations-for-configuration-manager"></a>Configuration Manager에서 지원되는 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-온-프레미스 솔루션인 System Center Configuration Manager는 서버, 클라이언트, 네트워크 구성 및 Microsoft Intune, SQL Server, Azure 등의 추가 제품을 사용합니다.
+온-프레미스 솔루션인 Configuration Manager는 서버, 클라이언트, 네트워크 구성 및 Microsoft Intune, SQL Server, Azure 등의 추가 제품을 사용합니다.
 
 이 항목과 다음 항목의 정보는 작동하는 Configuration Manager 배포를 계획, 배포 및 유지 관리할 수 있도록 주요 구성, 요구 사항 및 제한 사항을 식별하는 데 필요합니다.  이 정보는 Configuration Manager 사이트, 계층 구조 및 관리 디바이스에 대한 인프라와 관련이 있습니다.
 
@@ -33,7 +32,7 @@ Configuration Manager 기능 또는 특징에 보다 구체적인 구성이 필�
 > [!NOTE]  
 >  Microsoft 지원 주기 정책에 대한 자세한 내용은 Microsoft 지원 주기 지원 정책 FAQ 웹 사이트([Microsoft 지원 주기 정책 FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976))를 참조하세요.  
 
- 또한 다음 항목에 나열되지 않은 제품 및 제품 버전은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/)(Enterprise Mobility 및 보안 블로그)에서 공지되지 않은 경우 System Center Configuration Manager에서 지원되지 않습니다.  이 블로그의 내용이 이 설명서 본문에 대한 업데이트보다 앞서는 경우도 있습니다.
+ 또한 다음 항목에 나열되지 않은 제품 및 제품 버전은 [Enterprise Mobility 및 보안 블로그](https://blogs.technet.microsoft.com/enterprisemobility/)에서 공지되지 않은 경우 Configuration Manager에서 지원되지 않습니다.  이 블로그의 내용이 이 설명서 본문에 대한 업데이트보다 앞서는 경우도 있습니다.
 
 
 -  [크기 조정 및 규모 숫자 값](../../../core/plan-design/configs/size-and-scale-numbers.md)  

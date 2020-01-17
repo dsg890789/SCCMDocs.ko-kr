@@ -10,17 +10,16 @@ ms.assetid: 25e4ac68-0e78-4bbe-b8fc-3898b372c4e8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee008f256dbdb728d2f31b6a6dfa2828798bd38a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1b6b6f9c4bf17196821c21b9677215df83eeaed6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74659376"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75825509"
 ---
 # <a name="create-a-task-sequence-to-capture-an-os"></a>OS를 캡처하는 작업 순서 만들기
 
-*적용 대상: Configuration Manager (현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 작업 순서를 사용 하 여 Configuration Manager에서 컴퓨터에 OS를 배포 하는 경우 컴퓨터는 작업 순서에서 지정한 OS 이미지를 설치 합니다. 특정 드라이버, 응용 프로그램 및 소프트웨어 업데이트를 포함 하도록 OS 이미지를 사용자 지정할 수 있습니다. 우선, 만들기 및 캡처 작업 순서를 사용하여 참조 컴퓨터를 만듭니다. 그런 다음 해당 참조 컴퓨터에서 OS 이미지를 캡처합니다. 캡처를 사용할 수 있는 참조 컴퓨터가 이미 있는 경우에는 사용자 지정 작업 순서를 만들어 OS를 캡처합니다.
 
@@ -84,7 +83,7 @@ ms.locfileid: "74659376"
 
     - **제품 키**: 필요한 경우 설치할 Windows OS의 제품 키를 지정 합니다. 인코딩된 볼륨 라이선스와 표준 제품 키를 지정할 수 있습니다. 인코딩되지 않은 제품 키를 사용 하는 경우 5 자의 각 그룹을 대시 (`-`)로 구분 합니다. `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX`  
 
-    - **서버 라이선싱 모드**: 필요한 경우, 서버 라이선스가 **사용자 단위**인지 **서버 당**인지 또는 지정된 라이선스가 없는지 지정합니다. 서버 라이선스가 **서버 단위**인 경우 최대 서버 연결 수도 지정합니다.  
+    - **서버 라이선싱 모드**: 필요한 경우, 서버 라이선스가 **사용자 단위**인지 **서버 단위**인지 또는 지정된 라이선스가 없는지 지정합니다. 서버 라이선스가 **서버 단위**인 경우 최대 서버 연결 수도 지정합니다.  
 
     - 배포 된 OS에 대 한 관리자 계정을 구성 하는 방법을 지정 합니다.  
 
@@ -180,7 +179,7 @@ ms.locfileid: "74659376"
 
     - **대상**: 출력 .WIM 파일이 저장되는 공유 네트워크 폴더를 지정합니다. 이 파일에는이 마법사를 사용 하 여 지정한 설정에 따라 OS 이미지가 포함 됩니다. 기존를 포함 하는 폴더를 지정 하는 경우 WIM 파일을 덮어씁니다.  
 
-    - **설명**, **버전**, **만든 사람**: 필요에 따라 캡처할 이미지에 대한 세부 정보를 제공합니다.  
+    - **설명**, **버전** 및 **만든 사람**: 선택적으로, 캡처할 이미지에 대한 세부 정보를 제공합니다.  
 
     - **운영 체제 이미지 캡처 계정**: 지정한 네트워크 공유에 대한 권한이 있는 Windows 계정을 지정합니다. **설정**을 선택하여 해당 Windows 계정의 이름을 지정합니다.  
 
@@ -203,7 +202,7 @@ OS 이미지를 만들고 캡처하는 작업 순서를 만드는 동안 다음 
 >
 > 마법사는 동일한 단계를 수동으로 추가 하는 경우 표시 되는 이름과 약간 다른 이름을 사용 하 여 작업 순서에 단계를 추가 합니다.
 
-### <a name="group-build-the-reference-machine"></a>그룹: 참조 머신 만들기
+### <a name="group-build-the-reference-machine"></a>그룹: 참조 컴퓨터 만들기
 
 이 그룹에는 참조 컴퓨터를 빌드하는 데 필요한 작업이 포함됩니다.
 
@@ -220,7 +219,7 @@ OS 이미지를 만들고 캡처하는 작업 순서를 만드는 동안 다음 
 |**업데이트 설치**|대상 컴퓨터에 소프트웨어 업데이트를 설치 하는 방법을 지정 합니다. 이 단계가 실행될 때까지 적용 가능한 소프트웨어 업데이트에 대해 대상 컴퓨터가 평가되지 않습니다. 이 시점에서 평가는 다른 Configuration Manager 관리 클라이언트와 비슷합니다. 자세한 내용은 [소프트웨어 업데이트 설치](/sccm/osd/understand/install-software-updates)를 참조하세요.<br /><br />이 단계에서는 읽기 전용 `_SMSTSMediaType` 작업 순서 변수를 사용 합니다. 연결 된 값이 `FullMedia`같지 않으면이 단계가 실행 되지 않습니다.|
 |**애플리케이션 설치**|참조 컴퓨터에 설치할 응용 프로그램을 지정 합니다.|
 
-### <a name="group-capture-the-reference-machine"></a>그룹: 참조 머신 캡처
+### <a name="group-capture-the-reference-machine"></a>그룹: 참조 컴퓨터 캡처
 
 이 그룹에는 참조 컴퓨터를 준비 및 캡처하는 데 필요한 단계가 포함됩니다.
 

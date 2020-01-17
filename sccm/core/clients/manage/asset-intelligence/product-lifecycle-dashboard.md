@@ -2,7 +2,7 @@
 title: 제품 수명 주기 대시보드
 titleSuffix: Configuration Manager
 description: Configuration Manager의 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책을 봅니다.
-ms.date: 05/13/2019
+ms.date: 01/09/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,17 +10,16 @@ ms.assetid: 8b5b144a-0e5f-4fcc-87b2-33b9bcdb5655
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8876f00ecb26aabd84f863ee1fcef4f2aac283a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e8375268c495cc6197bfd671814b9912595b051c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65673412"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75824676"
 ---
 # <a name="manage-microsoft-lifecycle-policy-with-configuration-manager"></a>Configuration Manager로 Microsoft 수명 주기 정책 관리
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 버전 1806부터 Configuration Manager 제품 수명 주기 대시보드를 사용하여 Microsoft 수명 주기 정책을 볼 수 있습니다. 대시보드에는 Configuration Manager로 관리되는 디바이스에 설치된 Microsoft 제품에 대한 Microsoft 수명 주기 정책의 상태가 표시됩니다. 또한 사용자 환경의 Microsoft 제품, 지원 가능성 상태 및 지원 종료 날짜에 대한 정보도 제공합니다. 대시보드를 사용하여 각 제품에 대한 지원 가용성을 파악합니다. 이 정보는 현재 지원 종료에 도달하기 전에 사용하는 Microsoft 제품을 업데이트할 시기를 계획하는 데 도움이 됩니다.  
 
@@ -30,7 +29,7 @@ ms.locfileid: "65673412"
 
 
 
-## <a name="prerequisites"></a>필수 구성 요소 
+## <a name="prerequisites"></a>전제 조건 
 
  제품 수명 주기 대시보드에서 데이터를 보려면 다음 구성 요소가 필요합니다.  
 
@@ -41,9 +40,8 @@ ms.locfileid: "65673412"
 - 대시보드에서 하이퍼링크가 작동하려면 보고 서비스 지점이 필요합니다. 대시보드는 SSRS(SQL Server Reporting Services) 보고서에 연결됩니다. 자세한 내용은 [Configuration Manager의 보고 기능](/sccm/core/servers/manage/reporting)을 참조하세요.  
 
 - Asset Intelligence 동기화 지점을 구성하고 동기화해야 합니다. 대시보드는 Asset Intelligence 카탈로그를 제품 제목의 메타데이터로 사용합니다. 메타데이터는 계층 구조의 인벤토리 데이터와 비교됩니다. 자세한 내용은 [Configuration Manager에서 Asset Intelligence 구성](/sccm/core/clients/manage/asset-intelligence/configuring-asset-intelligence)을 참조하세요.  
-
-     > [!NOTE]  
-     > Asset Intelligence 서비스 지점을 처음 구성하는 경우 [Asset Intelligence 하드웨어 인벤토리 클래스를 사용하도록 설정](/sccm/core/clients/manage/asset-intelligence/configuring-asset-intelligence#BKMK_EnableAssetIntelligence)해야 합니다. 수명 주기 대시보드는 이러한 Asset Intelligence 하드웨어 인벤토리 클래스에 따라 달라집니다. 대시보드는 클라이언트가 하드웨어 인벤토리를 검색하고 반환할 때까지 데이터를 표시하지 않습니다.  
+  - Asset Intelligence 서비스 지점을 처음 구성하는 경우 [Asset Intelligence 하드웨어 인벤토리 클래스를 사용하도록 설정](/sccm/core/clients/manage/asset-intelligence/configuring-asset-intelligence#BKMK_EnableAssetIntelligence)해야 합니다. 수명 주기 대시보드는 이러한 Asset Intelligence 하드웨어 인벤토리 클래스에 따라 달라집니다. 대시보드는 클라이언트가 하드웨어 인벤토리를 검색하고 반환할 때까지 데이터를 표시하지 않습니다.  
+  - Windows 7 및 Windows Server 2008 R2용 ESU(확장 보안 업데이트)를 사용하려면 하드웨어 인벤토리 클래스 **소프트웨어 라이선스 제품 - Asset Intelligence(SoftwareLicensingProduct)** 를 사용하도록 설정해야 합니다. 클래스를 사용하도록 설정하는 방법에 대한 자세한 내용은 [Asset Intelligence 하드웨어 인벤토리 클래스를 사용하도록 설정](/sccm/core/clients/manage/asset-intelligence/configuring-asset-intelligence#BKMK_EnableAssetIntelligence)을 참조하세요. <!--4962901-->
 
 
 
@@ -74,11 +72,11 @@ Configuration Manager 콘솔에서 수명 주기 대시보드에 액세스하려
 
 이 대시보드에는 다음과 같은 타일에 있습니다.  
 
-- **수명이 종료된 상위 5개 제품:**  이 타일은 사용자 환경에서 찾은 수명이 종료된 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 만료된, 설치된 소프트웨어를 보여 줍니다.  
+- **수명이 종료된 상위 5개 제품:** 이 타일은 사용자 환경에서 찾은 수명이 종료된 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 만료된, 설치된 소프트웨어를 보여 줍니다.  
 
-- **수명이 종료되는 상위 5개 제품:**  이 타일은 사용자 환경에서 찾은, 앞으로 18개월 이내에 수명이 종료되는 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 18개월 이내에 수명이 종료되는, 설치된 소프트웨어를 보여 줍니다.  
+- **수명이 종료되는 상위 5개 제품:** 이 타일은 사용자 환경에서 찾은, 앞으로 18개월 이내에 수명이 종료되는 제품의 통합 데이터 뷰입니다. 그래프는 운영 체제 및 SQL Server 제품에 대한 지원 수명 주기를 기준으로 18개월 이내에 수명이 종료되는, 설치된 소프트웨어를 보여 줍니다.  
 
-- **설치된 제품에 대한 수명 주기 데이터:**  이 타일은 제품이 지원됨 상태에서 만료됨 상태로 전환되는 시기를 일반적으로 설명합니다. 차트는 제품이 설치된 클라이언트 수의 분류, 지원 가용성 상태 및 다음에 수행할 단계에 대해 자세히 알아볼 수 있는 링크를 제공합니다. 차트에는 다음 정보가 포함됩니다.     
+- **설치된 제품에 대한 수명 주기 데이터:** 이 타일은 제품이 지원됨 상태에서 만료됨 상태로 전환되는 시기를 일반적으로 설명합니다. 차트는 제품이 설치된 클라이언트 수의 분류, 지원 가용성 상태 및 다음에 수행할 단계에 대해 자세히 알아볼 수 있는 링크를 제공합니다. 차트에는 다음 정보가 포함됩니다.     
     - 남은 지원 시간
     - 환경의 클라이언트 수 
     - 일반 지원 종료 날짜

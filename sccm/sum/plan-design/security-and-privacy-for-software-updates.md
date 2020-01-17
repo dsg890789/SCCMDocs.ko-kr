@@ -10,19 +10,18 @@ ms.technology: configmgr-sum
 ms.assetid: 41d6d5d8-ba84-4efb-b105-4d1eed239824
 author: mestew
 ms.author: mstewart
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 437710d32d979a687a4075761bb1ce3b76dcda51
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 5c7a1ac5e88aa669ae1d5e6bb9333e1f54fb5980
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65493587"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827216"
 ---
-# <a name="security-and-privacy-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 소프트웨어 업데이트에 대한 보안 및 개인 정보
+# <a name="security-and-privacy-for-software-updates-in-configuration-manager"></a>Configuration Manager의 소프트웨어 업데이트를 위한 보안 및 개인 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에는 System Center Configuration Manager에서 소프트웨어 업데이트에 대한 보안 및 개인 정보가 포함되어 있습니다.  
+이 항목에는 Configuration Manager의 소프트웨어 업데이트에 대한 보안 및 개인 정보가 포함되어 있습니다.  
 
 ##  <a name="BKMK_Security_HardwareInventory"></a> 소프트웨어 업데이트에 대한 보안 모범 사례  
  클라이언트에 소프트웨어 업데이트를 배포할 경우 다음 보안 모범 사례를 따르십시오.  
@@ -52,7 +51,7 @@ ms.locfileid: "65493587"
 
      기본적으로 Configuration Manager에서는 소프트웨어 업데이트가 컴퓨터에 배포되기 전에 서명을 검사하기 위해 CRL(인증서 해지 목록)을 확인하지 않습니다. 인증서가 사용될 때마다 CRL을 확인하면 해지된 인증서를 사용할 경우보다는 보안성이 향상되지만, 연결 지연이 발생할 수 있고 CRL 확인을 수행하는 컴퓨터에서 처리 부하가 증가합니다.  
 
-     소프트웨어 업데이트에 대해 CRL 확인을 사용하는 방법에 대한 자세한 내용은 [System Center Configuration Manager에서 소프트웨어 업데이트에 CRL 확인을 사용하는 방법](../get-started/manage-settings-for-software-updates.md#crl-checking-for-software-updates)을 참조하세요.  
+     소프트웨어 업데이트에 대해 CRL 확인을 사용하는 방법에 대한 자세한 내용은 [소프트웨어 업데이트에 CRL 확인을 사용하는 방법](../get-started/manage-settings-for-software-updates.md#crl-checking-for-software-updates)을 참조하세요.  
 
 -   사용자 지정 웹 사이트를 사용하도록 WSUS를 구성합니다.  
 
@@ -65,7 +64,7 @@ ms.locfileid: "65493587"
 
  Configuration Manager에는 소프트웨어 배포 프로세스에 대한 상태 정보가 유지됩니다. 상태 정보는 전송 또는 스토리지 중에 암호화되지 않습니다. 또한 상태 정보는 Configuration Manager 데이터베이스에 저장되며 데이터베이스 유지 관리 작업에 의해 삭제됩니다. Microsoft로 전송되는 상태 정보는 없습니다.  
 
- 클라이언트 컴퓨터에 소프트웨어 업데이트를 설치할 때 Configuration Manager 소프트웨어 업데이트는 해당 업데이트에 대한 소프트웨어 사용 조건에 따라 사용해야 합니다. 이 소프트웨어 사용 조건은 System Center Configuration Manager에 대한 소프트웨어 사용 조건과 별개입니다. Configuration Manager를 사용하여 소프트웨어 업데이트를 설치하기 전에는 항상 소프트웨어 사용 조건을 살펴보고 이에 동의해야 합니다.  
+ 클라이언트 컴퓨터에 소프트웨어 업데이트를 설치할 때 Configuration Manager 소프트웨어 업데이트는 해당 업데이트에 대한 소프트웨어 사용 조건에 따라 사용해야 합니다. 이 소프트웨어 사용 조건은 Configuration Manager에 대한 소프트웨어 사용 조건과 별개입니다. Configuration Manager를 사용하여 소프트웨어 업데이트를 설치하기 전에는 항상 소프트웨어 사용 조건을 살펴보고 이에 동의해야 합니다.  
 
  Configuration Manager는 소프트웨어 업데이트를 기본적으로 구현하지 않으며 몇 개의 구성 단계를 거쳐야 정보를 수집할 수 있습니다.  
 

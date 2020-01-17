@@ -10,17 +10,16 @@ ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e5a42249df462be1584a153657a42ae325f1b9a
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f2e9302ea51eeb179eca08babefe21374b7bf379
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62235669"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75799338"
 ---
 # <a name="additional-information-about-privacy-for-configuration-manager"></a>Configuration Manager의 개인정보보호 대한 추가 정보
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 
 ## <a name="updates-and-servicing"></a>업데이트 및 서비스
@@ -81,7 +80,7 @@ Asset Intelligence를 통해 관리자는 구성 표준에 대한 준수를 정�
 
 Microsoft 클라우드 보호 서비스는 이전에는 MAPS(Microsoft 활성 보호 서비스)라고 했습니다.
 
-해당하는 제품은 System Center Endpoint Protection 및 System Center Configuration Manager의 Endpoint Protection 기능(System Center Endpoint Protection 및 Windows 10용 Windows Defender 관리)입니다. Linux용 System Center Endpoint Protection 또는 Mac용 System Center Endpoint Protection에는 이 기능이 구현되지 않습니다.
+해당하는 제품은 System Center Endpoint Protection 및 Configuration Manager의 Endpoint Protection 기능(System Center Endpoint Protection 및 Windows 10용 Windows Defender 관리)입니다. Linux용 System Center Endpoint Protection 또는 Mac용 System Center Endpoint Protection에는 이 기능이 구현되지 않습니다.
 
 Microsoft 클라우드 보호 서비스의 맬웨어 방지 커뮤니티는 System Center Endpoint Protection 사용자를 포함하는 자발적인 전 세계 온라인 커뮤니티입니다. Microsoft 클라우드 보호 서비스에 가입하면 System Center Endpoint Protection에서는 자동으로 정보를 Microsoft에 보냅니다. Microsoft에서는 이 정보를 사용하여 잠재적인 위협을 조사할 소프트웨어를 결정하고 System Center Endpoint Protection의 효율성을 개선하도록 지원합니다. 이 커뮤니티는 새로운 악성 소프트웨어 감염의 확산을 막기 위해 지원합니다. Microsoft 클라우드 보호 서비스 보고서에 맬웨어 또는 Endpoint Protection 클라이언트가 제거할 수도 있는 사용자 동의 없이 설치된 소프트웨어가 포함되어 있는 경우 Microsoft 클라우드 보호 서비스에서 최신 서명을 다운로드하여 문제를 해결합니다. 또한 Microsoft 클라우드 보호 서비스가 “거짓 긍정”을 찾아 해결할 수 있습니다. (거짓 긍정은 처음에는 악성 소프트웨어로 식별되었다가 악성이 아닌 것으로 판별된 것입니다.) 
 

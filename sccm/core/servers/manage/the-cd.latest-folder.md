@@ -10,17 +10,16 @@ ms.assetid: 8db92d67-5d9c-4e9c-80d0-ae6fa0dd4817
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4f69d686a48af3c6e710c6aff592d71de1dbff1
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 0711ede4beaa57b9382c30e8187cab40671b59a7
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65496998"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75826206"
 ---
 # <a name="the-cdlatest-folder-for-configuration-manager"></a>Configuration Manager의 CD.Latest 폴더
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에는 Configuration Manager 콘솔 내에서 제품 업데이트를 제공하는 프로세스가 있습니다. Configuration Manager를 업데이트하는 이 새로운 방법을 지원하기 위해 **CD.Latest**라는 새 폴더가 만들어집니다. 이 폴더에는 업데이트된 버전의 사이트에 대한 Configuration Manager 설치 파일의 복사본이 포함되어 있습니다.  
 
@@ -71,9 +70,8 @@ CD.Latest 폴더의 소스 파일은 다음 시나리오에서 지원됩니다.
 ## <a name="unsupported-scenarios"></a>지원되지 않는 시나리오
 
 업데이트된 CD.Latest 소스 파일은 다음에 대해 지원되지 않습니다.  
-   
+
 - 새 계층을 위한 새 사이트 설치  
-- Microsoft System Center 2012 Configuration Manager 사이트를 System Center Configuration Manager 현재 분기로 업그레이드
+- Microsoft System Center 2012 Configuration Manager 사이트를 Configuration Manager 현재 분기로 업그레이드
 - Configuration Manager 클라이언트 설치
 - Configuration Manager 콘솔 설치
-

@@ -6,17 +6,16 @@ ms.date: 07/26/2019
 ms.prod: configuration-manager
 ms.technology: configmgr-app
 ms.topic: conceptual
-ms.collection: M365-identity-device-management
 ms.assetid: c2a71fca-8744-4d72-abf9-9d8c5d2afb00
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: ba68dc78f289b779a157398e9487b637318788c6
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 1e74823b0a548974482b4a387c6079b5a18c0ee8
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68537691"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75815785"
 ---
 # <a name="install-applications-for-a-device"></a>디바이스용 애플리케이션 설치
 
@@ -24,7 +23,7 @@ ms.locfileid: "68537691"
 
 1906 버전부터는 Configuration Manager 콘솔에서 실시간으로 디바이스에 애플리케이션을 설치할 수 있습니다. 이 기능을 사용하면 애플리케이션마다 별도의 컬렉션이 필요하지 않습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - [선택적 기능](/sccm/core/servers/manage/install-in-console-updates#bkmk_options)인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정합니다.  
 

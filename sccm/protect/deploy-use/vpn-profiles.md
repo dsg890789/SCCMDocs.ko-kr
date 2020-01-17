@@ -1,7 +1,7 @@
 ---
 title: VPN 프로필
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager의 VPN 프로필을 사용하여 VPN 설정을 조직의 사용자에게 배포하는 방법을 알아봅니다.
+description: Configuration Manager의 VPN 프로필을 사용하여 VPN 설정을 조직의 사용자에게 배포하는 방법을 알아봅니다.
 ms.date: 04/10/2018
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
@@ -10,17 +10,16 @@ ms.assetid: c0f094f1-852e-4606-91db-97846d8f0772
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 505a4f3c00bc69e115b4130d422e11d8dec3fe30
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: bf3aed14665588d5d6638491c61df4a6b62a6ee4
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65500392"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75819379"
 ---
-# <a name="vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager의 VPN 프로필
+# <a name="vpn-profiles-in-configuration-manager"></a>Configuration Manager의 VPN 프로필
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 <!--1283610-->
 조직의 사용자에게 VPN 설정을 배포하려면 Configuration Manager에서 VPN 프로필을 사용합니다. 이러한 설정을 배포하여 최종 사용자가 회사 네트워크에 있는 리소스에 연결하는 데 필요한 노력을 최소화할 수 있습니다.  
@@ -54,6 +53,6 @@ ms.locfileid: "65500392"
 ### <a name="next-steps"></a>다음 단계  
  다음 항목에서는 Configuration Manager의 VPN 프로필을 계획, 구성, 운영 및 유지 관리하는 방법을 설명합니다.  
 
--   [System Center Configuration Manager에서 VPN 프로필에 대한 필수 조건](../plan-design/prerequisites-for-wifi-vpn-profiles.md)  
+-   [VPN 프로필에 대한 필수 구성 요소](../plan-design/prerequisites-for-wifi-vpn-profiles.md)  
 
--   [System Center Configuration Manager에서 VPN 프로필에 대한 보안 및 개인 정보](../plan-design/security-and-privacy-for-wifi-vpn-profiles.md)
+-   [VPN 프로필에 대한 보안 및 개인 정보](../plan-design/security-and-privacy-for-wifi-vpn-profiles.md)

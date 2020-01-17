@@ -10,17 +10,16 @@ ms.assetid: 24633725-791a-4df7-8dce-2c24c1a19a03
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1aec1447207d20393b0b8454851755ec85f5020
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8afe860e37f7b882f9511aaf888238206b12180d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66264355"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75802262"
 ---
 # <a name="choose-a-device-management-solution-for-configuration-manager"></a>Configuration Manager의 디바이스 관리 솔루션 선택
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 PC, 서버 및 디바이스를 관리하기 위한 다양한 솔루션을 제공합니다. 조직에 적합한 솔루션을 선택하세요. 관리해야 하는 디바이스 플랫폼과 필요한 관리 기능에 따라 적합한 솔루션을 선택하세요.  
 
@@ -91,7 +90,7 @@ Configuration Manager에서는 PC, 서버 및 디바이스를 관리하기 위�
 |Windows Embedded|예| | |  
 |Windows Mobile| | |예|  
 
-지원되는 플랫폼의 전체 목록은 [Supported operating systems for clients and devices for System Center Configuration Manager](configs/supported-operating-systems-for-clients-and-devices.md)(System Center Configuration Manager용 클라이언트 및 디바이스에 대해 지원되는 운영 체제)를 참조하세요.
+지원되는 플랫폼의 전체 목록은 [Supported operating systems for clients and devices for Configuration Manager](configs/supported-operating-systems-for-clients-and-devices.md)를 참조하세요.
 
 Microsoft는 Intune를 사용하여 Android, iOS 및 Windows 10 모바일 디바이스를 관리하는 것을 권장합니다. 자세한 내용은 [Microsoft Intune이란?](https://docs.microsoft.com/intune/what-is-intune)을 참조하세요.
 

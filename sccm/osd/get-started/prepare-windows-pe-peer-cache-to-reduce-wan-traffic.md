@@ -10,19 +10,18 @@ ms.assetid: 6c64f276-b88c-4b1e-8073-331876a03038
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80dffb04d7f6ef097ad5b629690e704d1c9a263f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 562d14edff2b56ba42ec41655657cb7cad393035
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67286575"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75821208"
 ---
-# <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
+# <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-configuration-manager"></a>Configuration Manager에서 WAN 트래픽을 줄이기 위해 Windows PE 피어 캐시 준비
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager에서 새 운영 체제를 배포할 때 작업 순서를 실행하는 컴퓨터가 배포 지점에서 콘텐츠를 다운로드하는 대신 Windows PE 피어 캐시를 사용하여 로컬 피어(피어 캐시 원본)에서 콘텐츠를 가져올 수 있습니다. 따라서 로컬 배포 지점이 없는 지점 시나리오에서 WAN(광역 네트워크) 트래픽을 최소화할 수 있습니다.  
+Configuration Manager에서 새 운영 체제를 배포할 때 작업 순서를 실행하는 컴퓨터가 배포 지점에서 콘텐츠를 다운로드하는 대신 Windows PE 피어 캐시를 사용하여 로컬 피어(피어 캐시 원본)에서 콘텐츠를 가져올 수 있습니다. 따라서 로컬 배포 지점이 없는 지점 시나리오에서 WAN(광역 네트워크) 트래픽을 최소화할 수 있습니다.  
 
  Windows PE 피어 캐시는 [Windows BranchCache](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#bkmk_branchcache)와 비슷하지만 Windows PE(사전 설치 환경)에서 작동합니다. Windows PE 피어 캐시를 사용하는 클라이언트에 설명하는 데 다음과 같은 용어가 사용됩니다.  
 
@@ -116,7 +115,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 - **SMSTSPeerDownload**  
 
-   값: TRUE  
+   Value:  TRUE  
 
    클라이언트가 Windows PE 피어 캐시를 사용할 수 있도록 합니다.  
 
@@ -128,7 +127,7 @@ System Center Configuration Manager에서 새 운영 체제를 배포할 때 작
 
 - **SMSTSPreserveContent**  
 
-   값: TRUE  
+   Value: TRUE  
 
    이 변수는 배포 후 Configuration Manager 클라이언트 캐시에 보존할 작업 순서의 콘텐츠에 플래그를 지정합니다. 이 변수를 사용하는 것은 SMSTSPersisContent를 사용하는 것과는 다릅니다. SMSTSPersisContent는 작업 시퀀스 기간 동안만 콘텐츠를 보존하며 Configuration Manager 클라이언트 캐시가 아닌 작업 순서 캐시를 사용합니다.  
 

@@ -1,7 +1,7 @@
 ---
 title: 준수 설정 계획 및 구성
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager에서 준수 설정으로 작업하기 위한 필수 조건 및 구성 작업에 대해 알아봅니다.
+description: Configuration Manager에서 호환성 설정으로 작업하기 위한 필수 조건 및 구성 작업에 대해 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-compliance
@@ -10,26 +10,25 @@ ms.assetid: 9ea20b01-676a-4cc2-b328-0098a41b202e
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d728dae6dc67a4c66403bdb2299e50dcd6e3557
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: e98b2963b81f58262524daafb5921b6c5ead23d6
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67677937"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816244"
 ---
-# <a name="plan-for-and-configure-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager에서 준수 설정 계획 및 구성
+# <a name="plan-for-and-configure-compliance-settings-in-configuration-manager"></a>Configuration Manager에서 호환성 설정 계획 및 구성
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 준수 설정 작업을 시작하기 전에 알아야 하는 몇 가지 필수 조건과 수행해야 하는 일부 구성 작업이 있습니다.  
+Configuration Manager 호환성 설정 작업을 시작하기 전에 알아야 하는 몇 가지 필수 조건과 수행해야 하는 일부 구성 작업이 있습니다.  
 
 ## <a name="prerequisites-for-compliance-settings"></a>준수 설정의 필수 조건  
 
 |필수 구성 요소|추가 정보|  
 |------------------|----------------------|  
 |준수 평가에 대해 Windows Configuration Manager 클라이언트를 사용하도록 설정하고 구성해야 합니다.|아래를 참조하세요.|  
-|보고서를 실행하려면 사이트에 대해 보고를 구성해야 합니다.|[System Center Configuration Manager에서 보고](../../core/servers/manage/reporting.md)|  
+|보고서를 실행하려면 사이트에 대해 보고를 구성해야 합니다.|[보고](../../core/servers/manage/reporting.md)|  
 |필요한 보안 권한입니다.|**준수 설정 관리자** 보안 역할에는 준수 설정, 사용자 데이터 및 프로필 구성 항목, 원격 연결 프로필 관리에 필요한 권한이 포함됩니다.<br /><br /> [역할 기반 관리 구성](../../core/servers/deploy/configure/configure-role-based-administration.md)|  
 
 ##  <a name="enable-and-configure-compliance-settings-for-windows-pcs-only"></a>준수 설정 사용 및 구성(Windows PC에만 해당)  

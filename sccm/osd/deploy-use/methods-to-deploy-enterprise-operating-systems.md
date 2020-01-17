@@ -1,7 +1,7 @@
 ---
 title: 엔터프라이즈 운영 체제를 배포하는 방법
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager 환경에서 엔터프라이즈 운영 체제를 배포하는 데 사용할 수 있는 방법을 알아봅니다.
+description: Configuration Manager 환경에서 엔터프라이즈 운영 체제를 배포하는 데 사용할 수 있는 방법을 알아봅니다.
 ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.technology: configmgr-osd
@@ -10,19 +10,18 @@ ms.assetid: 3646d62d-355a-43fc-8569-c08dc2257ee5
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7dd3ffa5f58be387b229224f31a57965871241f
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: f236729e7aa4a19b71f5c68a41a99781790b5d3f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "62270622"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75806342"
 ---
-# <a name="methods-to-deploy-enterprise-operating-systems-using-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 방법
+# <a name="methods-to-deploy-enterprise-operating-systems-using-configuration-manager"></a>Configuration Manager를 사용하여 엔터프라이즈 운영 체제를 배포하는 방법
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-System Center Configuration Manager 환경에서 운영 체제를 배포하는 데 사용할 수 있는 방법에는 여러 가지가 있습니다.
+Configuration Manager 환경에서 운영 체제를 배포하는 데 사용할 수 있는 방법에는 여러 가지가 있습니다.
 
 -   [PXE를 사용하여 네트워크를 통해 Windows 배포](use-pxe-to-deploy-windows-over-the-network.md)  
 

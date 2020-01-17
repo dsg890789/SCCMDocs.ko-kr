@@ -10,18 +10,17 @@ ms.assetid: 29dd51b8-6576-4010-81ba-3129ed2c3421
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-identity-device-management
 ROBOTS: NOINDEX
-ms.openlocfilehash: 730c44ff71816b8fe99ccfac61d2efafad2c1650
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 8b8a3a40e88d9873c80d19c7f0e802aa2c19845c
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74660464"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75801072"
 ---
-# <a name="levels-of-diagnostic-usage-data-collection-for-version-1802-of-system-center-configuration-manager"></a>System Center Configuration Manager 버전 1802에 대한 진단 및 사용량 데이터 수집 수준
+# <a name="levels-of-diagnostic-usage-data-collection-for-version-1802-of-configuration-manager"></a>Configuration Manager 버전 1802에 대한 진단 사용량 현황 데이터 수집의 수준
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager 버전 1802는 다음과 같은 세 가지 수준의 진단 및 사용량 데이터를 수집합니다. **기본**, **고급**, **전체**. 기본적으로 이 기능은 고급 수준으로 설정되어 있습니다. 다음 섹션은 각 수준에서 수집되는 데이터에 대한 추가 세부 정보를 제공합니다.
 
@@ -471,7 +470,7 @@ Configuration Manager 버전 1802의 경우 이 수준에는 다음과 같은 �
 
 - 규정 준수 설정: SCEP, VPN, Wi-Fi 및 규정 준수 정책 템플릿 구성 세부 정보
 
-- System Center Configuration Manager 사용을 위한 DCM 구성 팩
+- Configuration Manager 사용을 위한 DCM 구성 팩
 
 - 자세한 클라이언트 배포 설치 오류
 

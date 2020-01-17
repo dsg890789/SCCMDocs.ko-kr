@@ -10,13 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 4c90befe-9c4e-4c27-a947-625887e15052
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99ef87c6317cd1284cf692196fa50ffdae3aca52
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 345d0be107a2ea68cf4d7e662b43e41181031be5
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74658832"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75816669"
 ---
 # <a name="co-management-workloads"></a>공동 관리 워크로드
 
@@ -118,7 +117,7 @@ Intune 기능에 대한 자세한 내용은 [Microsoft Intune을 사용하여 Of
 Intune 기능에 대한 자세한 내용은 [Microsoft Intune 앱 관리란?](https://docs.microsoft.com/intune/app-management)을 참조하세요.
 
 > [!Note]  
-> 클라이언트 앱 워크로드는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  
+> 클라이언트 앱 워크로드는 시험판 기능입니다. 이 기능을 사용하려면 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요. 이 기능은 **공동 관리 디바이스용 모바일 앱** 기능으로 기능 목록에 표시될 수 있습니다.<!-- 5849669 -->
 
 버전 1910부터, Configuration Manager 배포 지점에서 Microsoft Connected Cache를 사용하도록 설정하면 배포 지점이 공동 관리형 클라이언트에 Microsoft Intune Win32 앱을 제공할 수 있습니다. 자세한 내용은 [Configuration Manager의 Microsoft Connected Cache](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)를 참조하세요.
 

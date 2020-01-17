@@ -10,19 +10,18 @@ ms.assetid: 3bd1e487-ea18-43c1-b7c3-acbd9b86d429
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c754486bd1026ccea3dc3b85f8412420c3c66a40
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
-ms.translationtype: MTE75
+ms.openlocfilehash: 3b3c138b2f84d5101957c3f0e0afe29350506d2d
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68535391"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75817808"
 ---
-# <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>System Center Configuration Manager를 사용하여 애플리케이션 만들기 및 배포
+# <a name="create-and-deploy-an-application-with-configuration-manager"></a>Configuration Manager를 사용하여 애플리케이션 만들기 및 배포
 
-*적용 대상: System Center Configuration Manager(현재 분기)*
+*적용 대상: Configuration Manager(현재 분기)*
 
-이 항목에서는 바로 System Center Configuration Manager를 사용하여 애플리케이션을 만듭니다. 이 예제에서는 Windows PC용 LOB(기간 업무) 앱이 포함된 **Contoso.msi**라는 애플리케이션을 만들어 배포합니다. 회사에서 Windows 10을 실행하는 모든 PC에 이 애플리케이션을 설치해야 합니다. 이 과정에서 애플리케이션을 효과적으로 관리하기 위해 수행할 수 있는 많은 작업을 살펴보겠습니다.  
+이 항목에서는 바로 Configuration Manager를 사용하여 애플리케이션을 만듭니다. 이 예제에서는 Windows PC용 LOB(기간 업무) 앱이 포함된 **Contoso.msi**라는 애플리케이션을 만들어 배포합니다. 회사에서 Windows 10을 실행하는 모든 PC에 이 애플리케이션을 설치해야 합니다. 이 과정에서 애플리케이션을 효과적으로 관리하기 위해 수행할 수 있는 많은 작업을 살펴보겠습니다.  
 
  이 절차는 Configuration Manager 애플리케이션을 만들어 배포하는 방법을 간략하게 설명하기 위한 것입니다. 그러나 모든 구성 옵션이나 다른 플랫폼용 애플리케이션을 만들어 배포하는 방법은 설명하지 않습니다.  
 
@@ -57,7 +56,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
    - **형식**: **Windows Installer(\*.msi 파일)** 를 선택합니다.  
 
-   - **위치**: 설치 파일 **Contoso.msi**의 위치를 입력하거나 **찾아보기**를 선택하여 위치를 선택합니다. Configuration Manager에서 설치 파일을 찾을 수 있도록 하려면 위치를 *\\\Server\Share\File* 형식으로 지정해야 합니다.  
+   - **위치**: 설치 파일**Contoso.msi**의 위치를 입력하거나 **찾아보기**를 선택하여 위치를 선택합니다. Configuration Manager에서 설치 파일을 찾을 수 있도록 하려면 위치를 *\\\Server\Share\File* 형식으로 지정해야 합니다.  
 
    그러면 다음 스크린샷과 같은 화면이 표시됩니다.  
 
@@ -110,7 +109,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
     - **규칙 유형**: **값**  
 
-    - **연산자**: **다음 중 하나**  
+    - **연산자**: **중 하나**  
 
     - 운영 체제 목록에서 **Windows 10**을 선택합니다.  
 
@@ -188,7 +187,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
 4. 다음 탭 중 하나를 선택하여 애플리케이션 배포에 대한 추가 상태 업데이트를 확인합니다.  
 
-    - **성공**: 애플리케이션이 표시된 PC에 설치되었습니다.  
+    - **성공**: 표시된 PC에 애플리케이션을 성공적으로 설치했습니다.  
 
     - **진행 중**: 애플리케이션 설치가 아직 완료되지 않았습니다.  
 

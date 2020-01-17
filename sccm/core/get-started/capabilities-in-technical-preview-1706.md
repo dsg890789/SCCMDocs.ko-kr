@@ -1,7 +1,7 @@
 ---
 title: 기술 미리 보기 1706
 titleSuffix: Configuration Manager
-description: System Center Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능에 대해 알아봅니다.
+description: Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능에 대해 알아봅니다.
 ms.date: 09/15/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,19 +11,18 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e7a13e53e4054593310378b5f667fd91c597448
-ms.sourcegitcommit: 1bccb61bf3c7c69d51e0e224d0619c8f608e8777
+ms.openlocfilehash: 99a9774f9c2d4217da6e6aedd7d1075a63923c3f
+ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67677442"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75804829"
 ---
-# <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager용 Technical Preview 1706의 기능
+# <a name="capabilities-in-technical-preview-1706-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1706의 기능
 
-*적용 대상: System Center Configuration Manager(Technical Preview)*
+*적용 대상: Configuration Manager(기술 미리 보기 분기)*
 
-이 문서에서는 System Center Configuration Manager용 Technical Preview 버전 1706에서 사용 가능한 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [System Center Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대해 피드백 제공 방법 등에 익숙해져야 합니다.     
+이 문서에서는 Configuration Manager용 Technical Preview 버전 1706에서 사용할 수 있는 기능을 소개합니다. 이 버전을 설치하여 Configuration Manager Technical Preview 사이트를 업데이트하고 새로운 기능을 추가할 수 있습니다. 이 버전의 Technical Preview를 설치하기 전에 [Configuration Manager용 Technical Preview](../../core/get-started/technical-preview.md)를 검토하여 Technical Preview 사용을 위한 일반 요구 사항 및 제한 사항, 버전 업데이트 방법 및 Technical Preview의 기능에 대한 피드백 제공 방법 등에 익숙해져야 합니다.     
 
 
 <!--  Known Issues Template   
@@ -324,7 +323,7 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 - Configuration Manager 콘솔에서 스크립트에 의해 반환된 결과를 검토합니다.
 
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 스크립트를 사용하려면 해당 Configuration Manager 보안 역할의 구성원이어야 합니다.
 
@@ -404,7 +403,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 <!-- 1098490 -->
 이제 Configuration Manager를 사용하여 Microsoft Surface 드라이버 업데이트를 관리할 수 있습니다.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 모든 소프트웨어 업데이트 지점에서 Windows Server 2016이 실행되어야 합니다.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
@@ -417,7 +416,7 @@ Configuration Manager 보안 역할에 대한 자세한 내용은 [역할 기반
 <!-- 1290890 -->
 이제 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. **소프트웨어 라이브러리** > **Windows 10 서비스** 아래의 새 **비즈니스용 Windows 업데이트 정책** 노드에서 지연 정책을 관리할 수 있습니다.
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 비즈니스용 Windows 업데이트에서 관리되는 Windows 10 디바이스는 인터넷에 연결되어 있어야 합니다.
 
 #### <a name="to-create-a-windows-update-for-business-deferral-policy"></a>비즈니스용 Windows 업데이트 지연 정책을 만들려면
