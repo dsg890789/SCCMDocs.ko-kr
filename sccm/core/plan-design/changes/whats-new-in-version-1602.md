@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 341be5186a59dde5e32d1414e40d30eca781f4f6
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 5171beaccc43a1f894a21ac10af44fa808c0a1f4
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802806"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034507"
 ---
 # <a name="what39s-new-in-version-1602-of-configuration-manager"></a>Configuration Manager 1602 버전의 새로운 기능
 
@@ -71,12 +71,11 @@ Configuration Manager 업데이트 1602는 버전 1511을 실행하는 이전에
 ### <a name="ios-app-configuration-policies"></a>iOS 앱 구성 정책  
  Configuration Manager 앱 구성 정책을 사용하여 사용자가 iOS 앱을 실행할 때 필요할 수 있는 설정을 제공할 수 있습니다. 예를 들어 앱에서 사용자가 사용자 지정 포트 번호, 언어, 보안 설정 또는 브랜딩 설정(예: 회사 로고)을 지정하도록 요구할 수 있습니다. 이러한 설정을 잘못 입력하면 지원 센터의 부담이 증가하며 새 앱 도입도 지연됩니다.  
 
- 앱 구성 정책을 사용하는 경우 사용자가 앱을 실행하기 전에 정책에서 이러한 설정을 사용자에게 배포할 수 있으므로 이러한 문제를 방지할 수 있습니다. 설정은 자동으로 제공되므로 사용자가 아무런 작업을 수행하지 않아도 됩니다. 자세한 내용은 [앱 구성 정책을 사용하여 iOS 앱 구성](../../../apps/deploy-use/configure-ios-apps-with-app-configuration-policies.md)을 참조하세요.  
+ 앱 구성 정책을 사용하는 경우 사용자가 앱을 실행하기 전에 정책에서 이러한 설정을 사용자에게 배포할 수 있으므로 이러한 문제를 방지할 수 있습니다. 설정은 자동으로 제공되므로 사용자가 아무런 작업을 수행하지 않아도 됩니다.
 
 ### <a name="manage-volume-purchased-ios-apps"></a>대량 구매 iOS 앱 관리  
  Configuration Manager를 통해 Apple VPP(Volume-Purchase Program)에서 대량 구매한 앱을 배포하고 관리할 수 있습니다. Configuration Manager는 App Store에서 라이선스 정보를 가져오고 사용한 라이선스 수를 추적합니다.  
 
- 자세한 내용은 [Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리](../../../apps/deploy-use/manage-volume-purchased-ios-apps.md)를 참조하세요.  
 
 ### <a name="automatic-creation-of-office-mobile-apps"></a>Office 모바일 앱의 자동 만들기  
  1511에서 1602 버전으로 업데이트하는 경우 Configuration Manager에서 Android 및 iOS용으로 다음과 같은 Microsoft Office 모바일 앱을 자동으로 만듭니다.  
@@ -112,14 +111,12 @@ Configuration Manager 업데이트 1602는 버전 1511을 실행하는 이전에
 ### <a name="kiosk-mode-settings-for-android-samsung-knox-standard-devices"></a>Android Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정  
  키오스크 모드에서는 디바이스를 잠가 특정 기능만 작동하도록 허용할 수 있습니다. 예를 들어, 디바이스에서 지정된 관리되는 앱만 실행할 수 있게 하거나 디바이스에서 볼륨 단추를 사용되지 않도록 설정할 수 있습니다. 이러한 설정은 POS 디바이스와 같이 한 가지 기능만 수행하도록 지정된 디바이스 또는 디바이스의 데모 모델에 사용할 수 있습니다. 이제 Configuration Manager에서, Samsung KNOX Standard 디바이스에 대한 키오스크 모드 설정을 지정할 수 있습니다.  
 
- 자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)을 참조하세요.  
 
 ## <a name="conditional-access"></a>조건부 액세스  
 
 ### <a name="conditional-access-for-pcs-managed-by-configuration-manager"></a>Configuration Manager에서 관리하는 PC에 대한 조건부 액세스  
  이 릴리스 이전에서는, PC에 대한 조건부 액세스를 설정하려면 PC가 Intune에 등록되어 있거나 도메인에 가입된 PC여야 합니다. 1602 업데이트부터, Configuration Manager에서 관리하는 PC에 대한 조건부 액세스가 지원됩니다. Configuration Manager에서 관리하는 사용자 PC에 대해, 설정하는 준수 정책을 준수하는 디바이스로만 Exchange Online 및 SharePoint Online에 대한 액세스를 제한할 수 있습니다.  
 
- 자세한 내용은 [Configuration Manager에서 관리되는 PC용 Office 365 서비스에 대한 액세스 관리](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)를 참조하세요.  
 
 ### <a name="restricting-access-based-on-the-health-of-devices"></a>디바이스 상태에 따라 액세스 제한  
  이제 상태 증명 서비스에서 보고하는 디바이스의 상태를 기준으로, 이메일 및 Office 365 서비스에 대한 액세스를 제한할 수 있습니다. 또한 Intune에서 관리하는 디바이스는 디바이스 상태 보고서에 포함됩니다.  
@@ -129,7 +126,6 @@ Configuration Manager 업데이트 1602는 버전 1511을 실행하는 이전에
 ### <a name="new-compliance-policy-rules"></a>새 준수 정책 규칙  
  자동 업데이트, 디바이스 잠금을 해제하는 암호 요구 등 새로운 준수 정책 규칙이 더 나은 보안 요구 사항을 지원하기 위해 추가되었습니다.
 
- 자세한 내용은 [디바이스 규정 준수 정책](../../../protect/deploy-use/device-compliance-policies.md)을 참조하세요.  
 
 ### <a name="make-sure-enrolled-and-compliant-devices-always-have-access-to-exchange-on-premises"></a>등록된 규격 디바이스에서 항상 Exchange 온-프레미스에 액세스할 수 있는지 확인  
  다음 옵션을 선택하면 Intune에 등록되어 있고 규정 준수 정책을 준수하는 디바이스는 Exchange 온-프레미스에 액세스할 수 있습니다. **기본 규칙 재정의 - Intune 등록 및 규정 준수 디바이스가 Exchange 온-프레미스에 액세스할 수 있도록 항상 허용합니다**. 이 규칙은 Exchange 온-프레미스에 대한 **조건부 액세스 정책 구성 마법사**의 **일반 페이지**에서 사용할 수 있습니다.
@@ -201,8 +197,6 @@ Configuration Manager 업데이트 1602는 버전 1511을 실행하는 이전에
 -   디바이스를 다시 활성화합니다.  
 
 Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독되지 않은 디바이스의 활성화 잠금 상태를 요청할 수 있습니다. 감독된 디바이스의 경우 Configuration Manager에서 활성화 잠금 무시 코드를 검색하여 디바이스에 직접 제공할 수 있습니다.  
-
- 자세한 내용은 [활성화 잠금 무시를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
 
 ### <a name="monitor-terms-and-conditions-deployments"></a>사용 약관 배포 모니터링  
  Configuration Manager 콘솔에서 사용 약관 배포를 모니터링할 수 있습니다.  

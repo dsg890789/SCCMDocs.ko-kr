@@ -10,12 +10,12 @@ ms.assetid: c14a3607-253b-41fb-8381-ae2d534a9022
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 35de22a69096815c4b4fb6d46d80eb455e6054a6
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: a1abddbd886d3bf4374219b7a6174d67d4ff8b81
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75795219"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033372"
 ---
 # <a name="install-in-console-updates-for-configuration-manager"></a>Configuration Manager용 콘솔 내 업데이트 설치
 
@@ -45,8 +45,6 @@ Configuration Manager는 Microsoft 클라우드 서비스와 동기화하여 업
 서비스 연결 지점을 구성하기 전에 추가적인 사용을 이해하고 계획하세요. 다음 사용은 이 사이트 시스템 역할을 구성하는 방법에 영향을 줄 수 있습니다.  
 
 - 사이트에서 서비스 연결 지점을 사용하여 사이트에 대한 사용 정보를 업로드합니다. 이 정보는 Microsoft 클라우드 서비스에서 현재 인프라 버전에 사용할 수 있는 업데이트를 식별하는 데 도움이 됩니다. 자세한 내용은 [진단 및 사용량 현황 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조합니다.  
-
-- 사이트에서 서비스 연결 지점을 사용하여 Microsoft Intune을 사용하는 디바이스를 관리하고, Configuration Manager 온-프레미스 모바일 디바이스 관리를 사용합니다. 자세한 내용은 [하이브리드 MDM(모바일 디바이스 관리)](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.  
 
 업데이트를 다운로드할 때 수행되는 작업을 더 잘 이해하려면 다음 순서도를 참조하세요.  
 
@@ -409,7 +407,6 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 - [공동 관리형 디바이스용 클라이언트 앱](/sccm/comanage/workloads#client-apps)(이전의 *공동 관리형 디바이스용 모바일* ) <!--1357892,CC3AE625-BF72-49B1-8AB1-AF0DCF2D6F4C-->
 - [타사 소프트웨어 업데이트](/sccm/sum/deploy-use/third-party-software-updates)<!--1357605,1352101,1358714;B5E192AE-C81F-4348-9EF9-07A3C0FBE597-->
 - [디바이스당 사용자에 대한 애플리케이션 요청 승인](/sccm/apps/deploy-use/deploy-applications#bkmk_deploy-settings) <!--1357015,4BA987C9-08FC-48E2-BFFE-C9DCF35B496A-->  
-- [조건부 액세스의 준수 정책에 대한 디바이스 상태 증명 평가](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm) <!--1235616,0E986DC1-D20A-4386-9EB5-108D9D5118EB-->
 - [스크립트 만들기 및 실행](/sccm/apps/deploy-use/create-deploy-scripts) <!--1236459,566F8720-F415-4E10-9A51-CDE682BA2B2E-->
 - [Surface 드라이버 업데이트](/sccm/sum/get-started/configure-classifications-and-products) <!--1098490,82AD973A-7CDF-4B67-A665-72875D6E099A-->
 - [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway) <!--1101764,DD043119-789C-4158-AC79-725E999F385A-->
@@ -419,7 +416,6 @@ Configuration Manager 콘솔 내에서 업데이트를 설치할 준비가 되�
 - [Windows 10용 VPN](/sccm/protect/deploy-use/vpn-profiles) <!--1283610,EDBEBA3D-3A4D-4465-84D9-D71EB811E7F6-->
 - [클러스터 인식 컬렉션 서비스(서버 그룹 서비스)](/sccm/sum/deploy-use/service-a-server-group) <!--1081776,290B66D8-C735-4895-B59A-DD732D84A697-->
 - [비즈니스용 Windows Hello](/sccm/protect/deploy-use/windows-hello-for-business-settings)(이전의 *Passport for Work*) <!--1245704,8BCA2642-3719-4862-A355-9D39C979E1B4-->
-- [관리형 PC에 대한 조건부 액세스](/sccm/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm)  <!--1191496,1CD5B9FC-022E-4A78-89F5-DEA58B6F5050-->
 
 > [!Tip]  
 > 사용하려면 동의가 필요한 기능에 대한 자세한 내용은 [시험판 기능](/sccm/core/servers/manage/pre-release-features)을 참조하세요.  

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: b5e48166ff09d47f7240256fe0ca451d7a14452f
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 54e144ec8ddd785c49ecfe55a43c2de7057cc960
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802755"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034943"
 ---
 # <a name="what39s-new-in-version-1702-of-configuration-manager"></a>Configuration Manager 1702 버전의 새로운 기능
 
@@ -133,7 +133,6 @@ OMS 커넥터를 사용하여 Microsoft Azure Government 클라우드에 있는 
 ### <a name="new-compliance-settings-for-ios"></a>iOS에 대한 새 준수 설정
 
 Microsoft Intune에서 제공하는 설정과 일치하도록 iOS 디바이스에 대한 많은 새로운 설정을 추가했습니다.
-모든 사용 가능한 설정 목록은 [Intune으로 관리되는 iOS 및 Mac OS X 디바이스에 대한 구성 항목 만들기](/sccm/mdm/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)를 참조하세요.
 
 
 ## <a name="application-management"></a>애플리케이션 관리
@@ -266,15 +265,7 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 > - **모든 iOS 10 이상의 iPad 디바이스**
 
 ### <a name="android-for-work-support"></a>Android for Work 지원
-1702부터 이제 Microsoft Intune을 통한 하이브리드 모바일 디바이스 관리에서 Android for Work 디바이스 등록 및 관리를 지원합니다. 관리되는 Android for Work 디바이스 지침:
-
-- [Android for Work 디바이스 등록](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-enrollment)
-- [Android for Work 앱 승인 및 배포](/sccm/mdm/deploy-use/creating-android-applications#approve-and-deploy-android-for-work-apps)
-- [Android for Work에 대한 구성 항목 만들기](/sccm/mdm/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-for-work-configuration-items)
-- [Android for Work 디바이스에서 선택적 초기화](/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)
-- [Android for Work 메일 프로필](/sccm/mdm/deploy-use/create-exchange-activesync-profiles)
-- [Android for Work 준수 정책](/sccm/mdm/deploy-use/create-compliance-policy)
-
+1702부터 이제 Microsoft Intune을 통한 하이브리드 모바일 디바이스 관리에서 Android for Work 디바이스 등록 및 관리를 지원합니다.
 
 ### <a name="deploy-volume-purchased-ios-apps-to-device-collections"></a>디바이스 컬렉션에 대량 구매한 iOS 앱 배포
 
@@ -292,17 +283,13 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 |1702 이상|예|디바이스|디바이스 라이선스|
 |1702 이상|아니요|디바이스|사용자 라이선스|
 
-대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
-
 ### <a name="support-for-ios-volume-purchase-program-for-education"></a>교육용 iOS Volume Purchase Program에 대한 지원
 
 이제 교육용 iOS Volume Purchase Program에서 구매한 앱을 배포하고 추적할 수도 있습니다.
-대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
 
 ### <a name="support-for-multiple-volume-purchase-program-tokens"></a>여러 대량 Volume Purchase Program 토큰에 대한 지원
 
 이제 여러 Apple Volume Purchase Program 토큰을 Configuration Manager와 연결할 수 있습니다.
-대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
 
 ### <a name="support-for-line-of-business-apps-in-windows-store-for-business"></a>비즈니스용 Windows 스토어의 LOB(기간 업무) 앱 지원
 
@@ -314,14 +301,11 @@ Windows 10 크리에이터 업데이트에서는 UEFI 사용 하드웨어에 맞
 
 또한 이렇게 하면 조직에서 보안되지 않은 앱을 통한 데이터 누출을 완화하고 특정 앱을 통한 과도한 데이터 사용을 방지할 수 있습니다.
 
-- 자세한 내용은 [디바이스 준수 정책의 작동 방식](/sccm/mdm/deploy-use/device-compliance-policies)을 참조하세요.
-- 자세한 내용은 [디바이스 준수 정책을 만드는 방법](/sccm/mdm/deploy-use/create-compliance-policy)을 참조하세요.
 
 ### <a name="new-mobile-threat-defense-monitoring-tools"></a>새로운 Mobile Threat Defense 모니터링 도구
 
 버전 1702부터 Mobile Threat Defense 서비스 공급자를 통해 준수 상태를 모니터링하는 새로운 방법이 있습니다.
 
-- [Mobile Threat Defense 준수를 모니터링하는 방법](https://docs.microsoft.com/sccm/mdm/deploy-use/monitor-mobile-threat-defense-compliance)을 자세히 알아보세요.
 
 ## <a name="protect-devices"></a>디바이스 보호
 

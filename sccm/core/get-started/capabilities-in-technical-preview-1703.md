@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4a2260e4c431d6bf10e75c8b47e34732a1350da3
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 7c04fa33a0624854e4e05bd3e552c2edb2163195
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75804999"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033786"
 ---
 # <a name="capabilities-in-technical-preview-1703-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1703의 기능
 
@@ -43,7 +43,6 @@ ms.locfileid: "75804999"
 |1702 이상|예|디바이스|디바이스 라이선스|
 |1702 이상|아니요|디바이스|사용자 라이선스|
 
-대량 구매한 iOS 앱에 대한 자세한 내용은 [대량 구매한 iOS 앱 관리](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)를 참조하세요.
 
 ## <a name="direct-links-to-applications-in-software-center"></a>소프트웨어 센터의 애플리케이션에 대한 직접 링크
 

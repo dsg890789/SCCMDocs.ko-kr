@@ -10,12 +10,12 @@ ms.assetid: 694bc29f-a7fd-4e06-815a-1a9c5e9ac563
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4ce78a04f05b14d56fb7351d82cdb18a3947cfbc
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: d58015ae8540a52bb2d99e776eaee6f5f0c74bca
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825815"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034653"
 ---
 # <a name="introduction-to-the-long-term-servicing-branch-of-configuration-manager"></a>Configuration Manager의 장기 서비스 분기 관리 소개
 
@@ -34,9 +34,7 @@ Configuration Manager의 현재 분기는 LTSB에서는 사용할 수 없는 다
 
 - 새로운 기능과 개선 사항을 추가하는 콘솔 내 업데이트
 - 사이트 서버 및 클라이언트로 사용하기 위해 새로 릴리스된 운영 체제에 대한 지원
-- Microsoft Intune 구독을 사용하여 다음 지원:
-  - 하이브리드 MDM(모바일 디바이스 관리) 구성에서 Intune을 사용할 수 없음
-  - 온-프레미스 MDM을 사용할 수 없음
+- 온-프레미스 MDM을 사용할 수 없음
 - 최신 Windows 10 버전에 대한 지원을 포함한 Windows 10 서비스 대시보드 및 서비스 계획  
 - Windows Server 및 Windows 10 LTSB의 향후 릴리스에 대한 지원
 - Asset Intelligence

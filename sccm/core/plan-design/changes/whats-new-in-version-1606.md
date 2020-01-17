@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 5401e8465d31857219a78309ca901683408b8668
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 2db2c56cdefe4a7088d4b6e6908786f855ed82cf
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802789"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034935"
 ---
 # <a name="what39s-new-in-version-1606-of-configuration-manager"></a>Configuration Manager 1606 버전의 새로운 기능
 
@@ -113,7 +113,6 @@ OMS 커넥터는 시험판 기능입니다. 사용하도록 설정하려면 [업
 
 Configuration Manager를 사용하여 대량 구매 iOS 앱을 관리하고 배포하기 위한 워크플로가 향상되었습니다.
 
-자세한 내용은 [Configuration Manager를 사용하여 대량 구매한 iOS 앱 관리](../../../apps/deploy-use/manage-volume-purchased-ios-apps.md)를 참조하세요.
 
 ### <a name="software-center-user-interface"></a>소프트웨어 센터 사용자 인터페이스
 
@@ -169,7 +168,6 @@ OSDPreserveDriveLetter 작업 순서 변수는 사용되지 않습니다. Config
 
 이 설정을 사용하면 호환 가능한 Android 디바이스에 대한 Smart Lock 기능을 제어할 수 있습니다. “신뢰 에이전트”라고도 하는 이 전화 기능을 통해 디바이스가 신뢰할 수 있는 위치에 있는 경우 디바이스 잠금 화면 암호를 사용하지 않도록 설정하거나 무시할 수 있습니다. 예를 들어 신뢰할 수 있는 위치는 디바이스가 특정 Bluetooth 디바이스에 연결된 경우 또는 NFC 태그에 가까이 있는 경우일 수 있습니다. 이 설정을 사용하면 사용자가 스마트 잠금 기능을 구성하는 것을 방지할 수 있습니다.
 
-자세한 내용은 [Configuration Manager 클라이언트 없이 관리되는 Android 및 Samsung KNOX Standard 디바이스에 대한 구성 항목을 만드는 방법](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)을 참조하세요.
 
 ## <a name="device-configuration-and-protection"></a>디바이스 구성 및 보호
 
@@ -195,8 +193,6 @@ Configuration Manager를 사용하면 iOS 7.1 이상 디바이스용 나의 iPho
 - 감독된 디바이스에서 활성화 잠금을 사용합니다.
 - 감독된 디바이스에서 활성화 잠금을 무시합니다.
 
-자세한 내용은 [Configuration Manager로 iOS 활성화 잠금 관리](../../../mdm/deploy-use/manage-ios-activation-lock.md)를 참조하세요.
-
 
 ### <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 
@@ -212,8 +208,6 @@ Microsoft Intune에서 Configuration Manager를 사용하는 경우 디바이스
 ### <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>IMEI 또는 iOS 일련 번호로 디바이스 미리 선언
 
 해당 IMEI(International station Mobile Equipment Identity) 번호 또는 iOS 일련 번호를 가져와서 회사 소유의 디바이스를 식별할 수 있습니다. 디바이스 IMEI 번호를 포함한 쉼표로 구분된 값(.csv) 파일을 업로드하거나 디바이스 정보를 수동으로 입력할 수 있습니다. 가져온 정보에 따라 디바이스 목록에 "회사"로 등록된 디바이스의 소유권이 설정됩니다. 서비스에 액세스하는 각 사용자는 Intune 라이선스가 여전히 필요합니다.
-
-자세한 내용은 [IMEI 또는 iOS 일련 번호로 디바이스 미리 선언](../../../mdm/deploy-use/predeclare-devices-with-hardware-id.md)을 참조하세요.
 
 ### <a name="on-premises-health-attestation-service-communication"></a>온-프레미스 상태 증명 서비스 통신
 

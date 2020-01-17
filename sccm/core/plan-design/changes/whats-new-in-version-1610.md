@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 80548a53d00707905f24622ab3713427a41b3095
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 54373c35717307d97be66363265e0395d47d53ee
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802772"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034546"
 ---
 # <a name="what39s-new-in-version-1610-of-configuration-manager"></a>Configuration Manager 1610 버전의 새로운 기능
 
@@ -99,7 +99,6 @@ Configuration Manager 현재 분기의 업데이트 1610은 버전 1511, 1602 �
 
 ## <a name="policy-sync-for-intune-enrolled-devices"></a>Intune에 등록된 디바이스에 대한 정책 동기화
 이제 디바이스 자체의 회사 포털 앱에서 동기화를 요청할 필요 없이 Configuration Manager 콘솔에서 Intune 등록 디바이스에 대한 정책 동기화를 요청할 수 있습니다. 동기화 요청 상태 정보는 디바이스 뷰에서 **원격 동기화 상태**라는 새 열로 제공됩니다. 각 디바이스의 **속성** 대화 상자에 있는 검색 데이터 섹션에서도 정보를 확인할 수 있습니다.
-자세한 내용은 [Configuration Manager 콘솔에서 원격으로 Intune에 등록된 디바이스의 정책 동기화](/sccm/mdm/deploy-use/sync-intune-device)를 참조하세요.
 
 
 ## <a name="use-compliance-settings-to-configure-windows-defender-settings"></a>준수 설정을 사용하여 Windows Defender 설정 구성
@@ -114,7 +113,6 @@ Configuration Manager 현재 분기의 업데이트 1610은 버전 1511, 1602 �
 
 ## <a name="new-columns-in-device-collection-views"></a>디바이스 컬렉션 뷰의 새 열
 이제 디바이스 컬렉션 뷰에서 **IMEI** 및 **일련 번호**(iOS 디바이스)의 열을 표시할 수 있습니다.
-자세한 내용은 [IMEI 또는 iOS 일련 번호로 디바이스 미리 선언](https://docs.microsoft.com/sccm/mdm/deploy-use/predeclare-devices-with-hardware-id)을 참조하세요.
 
 ## <a name="customizable-branding-for-software-center-dialogs"></a>소프트웨어 센터 대화 상자에 대한 사용자 지정 가능한 브랜딩
 소프트웨어 센터에 대한 사용자 지정 브랜딩은 Configuration Manager 버전 1602에서 도입되었습니다. 버전 1610에서는 해당 브랜딩이 이제 모든 관련 대화 상자로 확장되어 소프트웨어 센터 사용자에게 보다 일관된 환경을 제공합니다.
@@ -125,7 +123,7 @@ Configuration Manager 현재 분기의 업데이트 1610은 버전 1511, 1602 �
 
 - 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할이 설치되어 있는 경우 소프트웨어 센터에서 애플리케이션 카탈로그 웹 사이트 지점 사이트 서버 역할 속성에 지정된 조직 이름 및 색을 표시합니다. 자세한 내용은 [애플리케이션 카탈로그 웹 사이트 지점에 대한 옵션 구성](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#BKMK_ApplicationCatalog_Website)을 참조하세요.
 
-- Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다. 자세한 내용은 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)을 참조하십시오.
+- Microsoft Intune 구독을 구성하고 Configuration Manager 환경에 연결한 경우 소프트웨어 센터에서 Intune 구독 속성에 지정된 조직 이름, 색 및 회사 로고를 표시합니다.
 
 
 ## <a name="enforcement-grace-period-for-required-application-and-software-update-deployments"></a>필수 애플리케이션 및 소프트웨어 업데이트 배포를 위한 유예 기간 적용
@@ -202,10 +200,9 @@ Configuration Manager 현재 분기의 업데이트 1610은 버전 1511, 1602 �
 
 
 ## <a name="lookout-integration-for-hybrid-implementations-to-protect-ios-and-android-devices"></a>하이브리드 구현에서 iOS 및 Android 디바이스를 보호하기 위한 Lookout 통합
-Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다. 통합 및 작동 방식에 대해 알아보려면 [디바이스, 네트워크 및 애플리케이션 위험에 따라 액세스 관리](/sccm/mdm/deploy-use/mobile-threat-defense)를 참조하세요.
+Microsoft는 맬웨어, 위험한 앱 등을 디바이스에서 검색하여 iOS 및 Android 모바일 디바이스를 보호하기 위해 Lookout 모바일 위협 방지 솔루션과 통합합니다. Lookout 솔루션은 구성할 수 있는 위협 수준을 확인하는 데 도움이 됩니다. Configuration Manager에서 준수 정책 규칙을 만들어 Lookout의 위험 평가에 따라 디바이스 준수를 확인할 수 있습니다. 조건부 액세스 정책을 사용하여 디바이스 준수 상태에 따라 회사 리소스에 대한 액세스를 허용하거나 차단할 수 있습니다.
 
-호환되지 않는 iOS 디바이스 사용자에게는 등록하라는 내용의 메시지가 표시됩니다. 그러면 디바이스에 Lookout for Work 앱을 설치하고, 앱을 활성화하고, Lookout for Work 애플리케이션에서 보고된 위협을 수정한 후에 회사 데이터에 액세스할 수 있습니다. [Lookout for Work 앱 구성 및 배포](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) 방법을 알아 봅니다.
-
+호환되지 않는 iOS 디바이스 사용자에게는 등록하라는 내용의 메시지가 표시됩니다. 그러면 디바이스에 Lookout for Work 앱을 설치하고, 앱을 활성화하고, Lookout for Work 애플리케이션에서 보고된 위협을 수정한 후에 회사 데이터에 액세스할 수 있습니다.
 
 
 ## <a name="new-compliance-settings-for-configuration-items"></a>구성 항목의 새 준수 설정

@@ -10,25 +10,18 @@ ms.assetid: 24633725-791a-4df7-8dce-2c24c1a19a03
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 8afe860e37f7b882f9511aaf888238206b12180d
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: e021a55ede1b65afaa1e260f770f3890d840fb66
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802262"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034875"
 ---
 # <a name="choose-a-device-management-solution-for-configuration-manager"></a>Configuration Manager의 디바이스 관리 솔루션 선택
 
 *적용 대상: Configuration Manager(현재 분기)*
 
 Configuration Manager에서는 PC, 서버 및 디바이스를 관리하기 위한 다양한 솔루션을 제공합니다. 조직에 적합한 솔루션을 선택하세요. 관리해야 하는 디바이스 플랫폼과 필요한 관리 기능에 따라 적합한 솔루션을 선택하세요.  
-
-
-> [!Important]  
-> 2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 [기능은 사용되지 않습니다](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
-<!-- SCCMDocs issue 1197 -->
-
-
 
 ## <a name="overview"></a>개요
 

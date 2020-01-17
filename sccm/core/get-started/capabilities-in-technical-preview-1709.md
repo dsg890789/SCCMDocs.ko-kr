@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: c16ea4928873a987ff673a44574f9734a08607b2
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 3822f8951b97348fce73c163c777482534a79b5f
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75804744"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033732"
 ---
 # <a name="capabilities-in-technical-preview-1709-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1709의 기능
 
@@ -96,7 +96,7 @@ ms.locfileid: "75804744"
 - **Intune**으로 설정된 Intune 구독 및 Intune의 MDM 기관
 
    > [!Note]  
-   > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다. Intune 독립 실행형으로 마이그레이션하는 방법을 알아보려면 [하이브리드 MDM에서 Intune 독립 실행형으로 마이그레이션 시작](/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)을 참조하세요.
+   > 하이브리드 MDM 환경(Configuration Manager와 통합된 Intune)이 설정된 경우 공동 관리를 사용할 수 없습니다.
 
 #### <a name="additional-prerequisites-for-existing-configuration-manager-clients"></a>기존 Configuration Manager 클라이언트용 추가 필수 구성 요소
 - Windows 10, 버전 1709(가을 크리에이터 업데이트) 이상
@@ -110,7 +110,7 @@ ms.locfileid: "75804744"
 공동 관리를 활성화한 후에 Configuration Manager가 계속 모든 워크로드를 관리합니다. 준비되었는지 결정할 때 Intune으로 사용 가능한 워크로드를 관리하기 시작할 수 있습니다. 이 릴리스에서 Intune으로 다음과 같은 워크로드를 관리할 수 있습니다.   
 
 #### <a name="compliance-policies"></a>규정 준수 정책
-규정 준수 정책은 디바이스가 조건부 액세스 정책을 준수하는 것으로 간주되기 위해 준수해야 하는 규칙 및 설정을 정의합니다. 준수 정책을 사용하여 조건부 액세스와 독립적으로 디바이스를 모니터링하고 준수 문제를 수정할 수도 있습니다. 자세한 내용은 [디바이스 규정 준수 정책](https://docs.microsoft.com/sccm/mdm/deploy-use/device-compliance-policies)를 참조하세요.  
+규정 준수 정책은 디바이스가 조건부 액세스 정책을 준수하는 것으로 간주되기 위해 준수해야 하는 규칙 및 설정을 정의합니다. 준수 정책을 사용하여 조건부 액세스와 독립적으로 디바이스를 모니터링하고 준수 문제를 수정할 수도 있습니다.
 
 #### <a name="windows-update-for-business-policies"></a>비즈니스용 Windows 업데이트 정책
 비즈니스용 Windows 업데이트 정책을 통해 비즈니스용 Windows 업데이트에서 직접 관리되는 Windows 10 디바이스에 대한 Windows 10 기능 업데이트 또는 품질 업데이트의 지연 정책을 구성할 수 있습니다. 자세한 내용은 [비즈니스용 Windows 업데이트 지연 정책 구성](https://docs.microsoft.com/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10#configure-windows-update-for-business-deferral-policies)을 참조하세요.  

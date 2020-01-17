@@ -10,12 +10,12 @@ ms.assetid: 91f9de33-b277-4500-acd6-e7d90a2947c9
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 72b5283cc1b34d4e74e0bfdfbd9ab5bf368985ef
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: c15a6aa2084d9ed296909cbc9c5a1b9b9fd5b9fd
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75795263"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033389"
 ---
 # <a name="health-attestation-for-configuration-manager"></a>Configuration Manager에 대한 상태 증명
 
@@ -76,5 +76,3 @@ Configuration Manager 디바이스 상태 증명에는 다음이 표시됩니다
 -   **디바이스 보고 상태 증명** - 상태 증명 상태를 보고하는 디바이스의 비율을 표시합니다.  
 -   **클라이언트 유형별 비규격 디바이스** - 비규격인 모바일 디바이스 및 컴퓨터의 비율을 표시합니다.  
 -   **가장 많이 누락되는 상태 증명 설정** - 상태 증명 설정이 누락된 디바이스의 수를 표시합니다(설정별로 나열됨).
-
-클라이언트 디바이스 상태 증명 상태를 사용하여 Microsoft Intune과 함께 Configuration Manager에서 관리하는 디바이스에 대한 준수 정책에서 조건부 액세스에 대한 규칙을 정의할 수 있습니다. 자세한 내용은 [디바이스 준수 정책 관리](/sccm/protect/deploy-use/device-compliance-policies)를 참조하세요.  

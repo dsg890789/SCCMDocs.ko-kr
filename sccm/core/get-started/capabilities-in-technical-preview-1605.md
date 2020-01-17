@@ -11,12 +11,12 @@ author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ROBOTS: NOINDEX
-ms.openlocfilehash: 0d1c669c8ce5b57eaa1cc391d50d7fab90adbe4c
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 57326e074e314def7a954cc897427a90fc4c8b5c
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75805220"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033921"
 ---
 # <a name="capabilities-in-technical-preview-1605-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1605의 기능
 
@@ -81,8 +81,6 @@ ms.locfileid: "75805220"
 - 디바이스의 **속성** 페이지  
 
 - **디바이스** 노드의 기본 페이지(일부 열이 기본적으로 표시됨)  
-
-  iOS 활성화 잠금 바이패스에 대한 자세한 내용은 [Configuration Manager의 활성화 잠금 바이패스를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock), 특히 **Configuration Manager Technical Preview의 활성화 잠금 무시에 대해 현재 알려진 문제** 섹션을 참조하세요.  
 
 ##  <a name="BKMK_WSFB"></a> 비즈니스용 Windows 스토어 앱  
  [비즈니스용 Windows 스토어](https://www.microsoft.com/business-store)에서 조직을 위한 앱을 찾아서 개별적으로 또는 대량으로 구매할 수 있습니다. 예를 들어 스토어를 Configuration Manager에 연결하여 Configuration Manager 콘솔에서 대량 구매 앱을 관리할 수 있습니다.  

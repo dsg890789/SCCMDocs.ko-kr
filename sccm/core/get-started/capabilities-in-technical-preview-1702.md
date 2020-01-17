@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 1b424e98753ffc056a26321c341a13d65460f79c
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 8062136a9a6a753dabadffa111bf09d9e9396a56
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75805135"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034594"
 ---
 # <a name="capabilities-in-technical-preview-1702-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1702의 기능
 
@@ -108,9 +108,6 @@ Azure AD에 대한 자세한 내용은 다음을 참조하세요.
 새 디바이스 준수 정책 규칙을 사용하면 사용자가 비규격 앱 목록에 포함된 앱을 사용하는 경우 조건부 액세스를 지원하는 회사 리소스에 대한 액세스를 차단할 수 있습니다. 비규격 앱 목록은 관리자가 새 준수 규칙 **설치할 수 없는 앱**을 추가할 때 정의할 수 있습니다. 이 규칙을 사용하려면 관리자가 비규격 목록에 앱을 추가할 때 **앱 이름**, **앱 ID** 및 **앱 게시자**(선택 사항)를 입력해야 합니다. 이 설정은 iOS 및 Android 디바이스에만 적용됩니다.
 
 또한 이렇게 하면 조직에서 보안되지 않은 앱을 통한 데이터 누출을 완화하고 특정 앱을 통한 과도한 데이터 사용을 방지할 수 있습니다.
-
-- 자세한 내용은 [디바이스 준수 정책의 작동 방식](https://docs.microsoft.com/sccm/protect/deploy-use/device-compliance-policies)을 참조하세요.
-- 자세한 내용은 [디바이스 준수 정책을 만드는 방법](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy)을 참조하세요.
 
 ### <a name="try-it-out"></a>기능 직접 사용해 보기
 

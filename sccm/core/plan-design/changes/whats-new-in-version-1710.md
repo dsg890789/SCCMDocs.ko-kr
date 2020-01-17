@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8e2342ec83e82c0400c370dd469887fc264356ef
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 47941e43a2e2125aa466ddbf16df975ae0d271e8
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802585"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034922"
 ---
 # <a name="what39s-new-in-version-1710-of-configuration-manager"></a>Configuration Manager 1710 버전의 새로운 기능
 
@@ -142,29 +142,12 @@ Version 1710 drops support for the following products:
 
 ### <a name="actions-for-non-compliance"></a>비준수에 대한 작업 
 <!--1321366 -->    
-이제 규정을 준수하지 않는 디바이스에 적용되는 작업을 시간 순으로 구성할 수 있습니다. 예를 들어 전자 메일을 통해 사용자에게 비준수 디바이스를 알리거나 해당 디바이스를 비준수 디바이스로 표시할 수 있습니다. 자세한 내용은 [비준수에 대한 작업 설정](/sccm/mdm/deploy-use/actions-for-noncompliance)을 참조하세요.
+이제 규정을 준수하지 않는 디바이스에 적용되는 작업을 시간 순으로 구성할 수 있습니다. 예를 들어 전자 메일을 통해 사용자에게 비준수 디바이스를 알리거나 해당 디바이스를 비준수 디바이스로 표시할 수 있습니다.
 
 ### <a name="windows-10-arm64-device-support"></a>Windows 10 ARM64 디바이스 지원
 <!-- 1355000 -->
 
 하이브리드 MDM(모바일 디바이스 관리) 시나리오는 이러한 디바이스를 사용할 수 있을 때 Windows 10을 실행하는 ARM64 디바이스에서 지원됩니다.
-
-이러한 시나리오는 다음과 같습니다.
-
-- [디바이스 등록](../../../mdm/deploy-use/enroll-hybrid-windows.md)
-- [원격 전체 및 선택적 초기화 작업 수행](../../../mdm/deploy-use/wipe-lock-reset-devices.md)
-- [구성 항목 및 기준을 통해 설정 관리](../../../mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)
-- [규정 준수 정책](../../../mdm/deploy-use/device-compliance-policies.md) 및 [조건부 액세스](../../../protect/deploy-use/manage-access-to-services.md)
-- 회사 리소스에 대한 액세스는 다음 항목을 통해 관리합니다.
-   - [인증서 프로필](../../../mdm/deploy-use/create-pfx-certificate-profiles.md)
-   - [VPN 프로필](../../../mdm/deploy-use/create-vpn-profiles.md)
-   - [Wi-Fi 프로필](../../../mdm/deploy-use/create-wifi-profiles.md)
-   - [메일 프로필](../../../mdm/deploy-use/create-exchange-activesync-profiles.md)
-- [비즈니스용 Windows Hello 정책 구성](../../../mdm/deploy-use/windows-hello-for-business-settings.md)
-- [애플리케이션 관리](../../../mdm/deploy-use/management-tasks-applications.md)
-
-> [!NOTE]
-> 여러 아키텍처용으로 빌드된 .appxbundle 애플리케이션을 배포하면 이들 디바이스에서 작동하지 않을 수 있으며, 현재 이 시나리오는 지원되지 않습니다.
 
 ### <a name="improved-vpn-profile-experience-in-configuration-manager-console"></a>Configuration Manager 콘솔의 VPN 프로필 환경 개선 
 <!-- 1318232 -->

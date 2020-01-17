@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 2bc287f11db08d8cdf533465d188966a33e79bfb
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: ee55930802e6757589331eefbdbc5a076c14707e
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802738"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034479"
 ---
 # <a name="what39s-new-in-version-1706-of-configuration-manager"></a>Configuration Manager 1706 버전의 새로운 기능
 
@@ -167,7 +167,6 @@ Configuration Manager 콘솔에 대한 접근성 기능을 추가로 개선했�
   * Android 4.2 ~ 4.4
   * Samsung KNOX Standard 4.0 이상
 
-새 디바이스 준수 규칙을 사용해 보려면 [디바이스 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
 
 ## <a name="application-management"></a>애플리케이션 관리
 
@@ -189,8 +188,6 @@ Configuration Manager에서 패키지 및 프로그램을 사용하여 클라이
 이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
 
 - **화면 캡처 차단(Android 디바이스 전용)** : 이 앱을 사용할 때 디바이스의 화면 캡처 기능을 차단하도록 지정합니다.
-
-새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 
 
 ## <a name="operating-system-deployment"></a>운영 체제 배포
@@ -250,13 +247,10 @@ Windows Analytics는 사용자 환경의 현재 상태에 대한 인사이트를
 <!-- 1338403 -->
 이 릴리스에서는 **회사 프로필** 설정 그룹의 **회사 프로필과 개인 프로필 간의 데이터 공유 허용** 설정 값이 업데이트되었습니다. 또한 회사 및 개인 프로필 간의 복사하여 붙여넣기를 차단하기 위한 사용자 지정 설정을 추가했습니다.
 
-자세한 내용은 [Android for Work 디바이스에 대한 구성 항목](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)을 참조하세요.
 
 ### <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
 <!-- 1290826 -->
 이제 이 릴리스에서 사용자가 개인 Android 또는 iOS 디바이스를 등록하도록 지정할 수 있습니다. 새 디바이스 제한 설정을 통해 미리 선언된 디바이스에 대한 Android 디바이스 등록을 제한할 수 있습니다. iOS 디바이스의 경우 Apple의 장비 등록 프로그램, Apple Configurator 또는 Intune 디바이스 등록 관리자 계정에 등록된 디바이스를 제외한 모든 디바이스의 등록을 차단할 수 있습니다.
-- Android 등록 제한에 대한 자세한 내용은 [Android 디바이스 관리 설정](/sccm/mdm/deploy-use/enroll-hybrid-android)을 참조하세요.
-- iOS 등록 제한에 대한 자세한 내용은 [iOS 등록 제한 구성](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac#configure-enrollment-restrictions)을 참조하세요.
 
 ## <a name="protect-devices"></a>디바이스 보호
 

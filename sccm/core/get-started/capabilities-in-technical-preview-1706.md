@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 99a9774f9c2d4217da6e6aedd7d1075a63923c3f
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 047bf97b538eb33e6f6210a524f63eb306d641f9
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75804829"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034988"
 ---
 # <a name="capabilities-in-technical-preview-1706-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1706의 기능
 
@@ -529,7 +529,6 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
   * Android 4.2 ~ 4.4
   * Samsung KNOX Standard 4.0 이상
 
-새 디바이스 준수 규칙을 사용해 보려면 [디바이스 규정 준수 정책 만들기 및 배포](https://docs.microsoft.com/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
 
 ## <a name="new-mobile-application-management-policy-settings"></a>새 모바일 애플리케이션 관리 정책 설정
 이 릴리스부터 3개의 새 MAM(모바일 애플리케이션 관리) 정책 설정을 사용할 수 있습니다.
@@ -539,8 +538,6 @@ Configuration Manager에서 인증서 등록 지점 역할을 추가할 때 Entr
 - **연락처 동기화 사용 안 함**: 앱에서 디바이스의 네이티브 연락처 앱에 데이터를 저장하지 않도록 방지합니다.
 
 - **인쇄 사용 안 함:** 앱에서 회사 또는 학교 데이터를 인쇄하지 않도록 방지합니다.
-
-새로운 앱 보호 정책 설정을 사용하려면 [Configuration Manager에서 앱 보호 정책을 사용하여 앱 보호](https://docs.microsoft.com/sccm/mdm/deploy-use/protect-apps-using-mam-policies)를 참조하세요.
 
 ## <a name="android-and-ios-enrollment-restrictions"></a>Android 및 iOS 등록 제한
 <!-- 1290826 -->

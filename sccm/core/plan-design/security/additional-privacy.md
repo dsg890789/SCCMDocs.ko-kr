@@ -10,12 +10,12 @@ ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f2e9302ea51eeb179eca08babefe21374b7bf379
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 3f9a3f89881fd96261ac7723a879bd1d075d1290
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75799338"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033607"
 ---
 # <a name="additional-information-about-privacy-for-configuration-manager"></a>Configuration Manager의 개인정보보호 대한 추가 정보
 
@@ -107,15 +107,3 @@ Configuration Manager 콘솔에서 **모니터링** 작업 영역으로 이동�
 Microsoft는 정보를 사용하여 Microsoft Bing 지도와 기타 Microsoft 사이트 및 서비스를 작동하고 개선합니다. 자세한 내용은 [Microsoft 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkId=823548)을 참조하세요.
 
 사이트 계층에 대한 지리적 보기를 사용하지 않도록 선택할 수 있습니다. 기본 계층 구조 다이어그램 보기에서 계층 구조를 볼 수 있으며, 이 보기에서는 Bing 지도 서비스가 사용되지 않습니다.
-
-
-
-## <a name="microsoft-intune-subscription"></a>Microsoft Intune 구독
-
-Microsoft Intune의 구독을 구매한 고객은 Configuration Manager를 사용하여 Microsoft Intune을 통해 연결된 모바일 디바이스를 관리할 수 있습니다. [Microsoft Online Services 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkId=262214)은 Microsoft Intune을 비롯한 Microsoft Online Services에 적용됩니다. 고객이 Microsoft Intune도 구독하고 있는 경우에도 [Microsoft Online Services 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkId=262214)은 이 개인정보취급방침과 함께 확인해야 합니다.
-
-Microsoft Intune과의 모든 통신은 HTTPS를 사용합니다. Microsoft Intune 구독을 구성하고 iOS 지원 구성에 필요한 CSR(인증서 서명 요청)을 다운로드하려면 관리자가 회사 계정 및 암호를 사용하여 Microsoft Intune에 로그인해야 합니다. 이러한 자격 증명은 Configuration Manager에 저장되지 않습니다. Microsoft Intune과의 모든 다른 통신은 Microsoft Intune에서 자동으로 생성되는 PKI 인증서를 사용하여 인증됩니다.
-
-Microsoft Intune에 연결된 디바이스를 관리하기 위해 일부 정보는 Microsoft Intune에 전송하고 일부 정보는 Microsoft Intune에서 수신합니다. 이 정보에는 서비스에 할당된 모든 사용자의 UPN(사용자 계정 이름)과 Microsoft Intune을 통해 관리되는 디바이스에 대한 디바이스 인벤토리 정보가 포함됩니다. Manage.Microsoft.com 배포 지점에 할당된 콘텐츠의 메타데이터(예: 애플리케이션 이름, 게시자, 버전 등)가 Microsoft Intune으로 전송됩니다. Manage.Microsoft.com 배포 지점에 할당되는 실제 이진 콘텐츠는 Microsoft Intune에 업로드되기 전에 암호화됩니다.
-
-이 기능은 기본적으로 구성되어 있지 않습니다. 관리자가 Manage.Microsoft.com 배포 지점으로 전송되는 콘텐츠와 서비스에 할당되는 사용자를 제어합니다. 이 기능은 언제든 제거할 수 있습니다.

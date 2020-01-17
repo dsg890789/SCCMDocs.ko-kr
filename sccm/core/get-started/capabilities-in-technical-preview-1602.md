@@ -11,12 +11,12 @@ author: aczechowski
 ROBOTS: NOINDEX
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: c32636de631c92ff1ce8046e69272e20ec4b9b55
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 40148c2656c4b73775ee994a90d144aa94c98745
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75805254"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035006"
 ---
 # <a name="capabilities-in-technical-preview-1602-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1602의 기능
 
@@ -38,8 +38,6 @@ ms.locfileid: "75805254"
 - 디바이스 다시 활성화  
 
   Configuration Manager에서는 iOS 7.1 이상을 실행하는 감독된/감독되지 않은 디바이스의 활성화 잠금 상태를 요청할 수 있습니다. 감독된 디바이스의 경우 Intune은 활성화 잠금 무시 코드를 검색하여 디바이스에 직접 제공할 수 있습니다.  
-
-  자세한 내용은 [Configuration Manager의 활성화 잠금 바이패스를 사용하여 iOS 디바이스 보호](/sccm/mdm/deploy-use/manage-ios-activation-lock)를 참조하세요.  
 
 ##  <a name="BKMK_SC1601"></a> 1602 버전에서 소프트웨어 센터의 개선 사항  
 

@@ -10,12 +10,12 @@ ms.assetid: 79eb49da-cd2b-4ffc-b355-b595aeba3aea
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: cdd8e0740e4932b4c1c98d18458d5a8bc946cf55
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 71ca3ab9a2bcb3233bcf134ad82117838f9f0208
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75824285"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033970"
 ---
 # <a name="introduction-to-software-inventory-in-configuration-manager"></a>Configuration Manager에서 소프트웨어 인벤토리 소개
 
@@ -38,5 +38,3 @@ ms.locfileid: "75824285"
  소프트웨어 인벤토리가 클라이언트 디바이스에서 실행되는 경우 첫 번째 인벤토리 보고서는 전체 인벤토리입니다. 후속 보고서는 델타 인벤토리 정보만 포함합니다. 사이트 서버는 받은 순서대로 델타 정보를 처리합니다. 클라이언트에 대한 델타 정보가 없는 경우 사이트 서버에서는 추가 델타 정보를 거부하고 클라이언트에게 전체 인벤토리를 실행하도록 지시합니다.  
 
  Configuration Manager에서 이중 부팅 컴퓨터를 검색할 수 있지만 인벤토리 시 활성화되었던 운영 체제의 인벤토리 정보만 반환합니다.  
-
-**모바일 디바이스:** 모바일 디바이스에 설치된 앱용 인벤토리를 수집하는 방법에 대한 자세한 내용은 [Microsoft Intune에 등록된 모바일 디바이스용 소프트웨어 인벤토리](../../../../mdm/deploy-use/software-inventory-mobile-devices.md)를 참조하세요.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 47acde9e784e9fd342c2a31f664e83f38b8cc080
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: d600297aa51a1d5e5332f64159205407a65c378d
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75799287"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033481"
 ---
 # <a name="cryptographic-controls-technical-reference"></a>암호화 컨트롤 기술 참조
 
@@ -57,12 +57,6 @@ Configuration Manager는 서명 및 암호화를 사용하여 Configuration Mana
 -   Windows Phone 클라이언트, 그러나 이러한 클라이언트는 신뢰할 수 있는 원본에서 서명된 애플리케이션의 서명을 확인합니다.  
 
 -   Windows RT 클라이언트, 그러나 이러한 클라이언트는 신뢰할 수 있는 원본에서 서명된 애플리케이션의 서명을 확인하고 PFN(Package Full Name) 유효성 검사도 사용합니다.  
-
--   iOS, 그러나 이러한 디바이스는 신뢰할 수 있는 원본의 개발자 인증서에서 서명된 애플리케이션의 서명을 확인합니다.  
-
--   Nokia 클라이언트, 그러나 이러한 클라이언트는 자체 서명된 인증서를 사용하는 애플리케이션의 서명을 확인합니다. 또는 신뢰할 수 있는 원본의 인증서의 서명과 인증서는 Nokia SIS(Symbian Installation Source) 애플리케이션을 서명할 수 있습니다.  
-
--   Android: 그 밖에, 이러한 디바이스는 애플리케이션 설치에 서명 유효성 검사를 사용하지 않습니다.  
 
 -   SHA-256을 지원하지 않는 Linux 및 UNIX 버전에서 실행되는 클라이언트. 자세한 내용은 [Linux 및 UNIX 컴퓨터에 대한 클라이언트 배포 계획](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers)을 참조하세요.  
 
