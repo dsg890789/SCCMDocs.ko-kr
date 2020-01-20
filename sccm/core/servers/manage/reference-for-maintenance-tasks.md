@@ -10,12 +10,12 @@ ms.assetid: 68dc6acd-5848-47a4-b4c1-ffa40e47890b
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: cf3981a7b584653a7ebc4471a7e33e0702bbc5d8
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 9d651d0278f750090bfbc2ba3068b84c35ded4a7
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75794294"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034239"
 ---
 # <a name="reference-for-maintenance-tasks-in-configuration-manager"></a>Configuration Manager의 유지 관리 작업 참조
 
@@ -315,7 +315,7 @@ ms.locfileid: "75794294"
 
 ### <a name="delete-aged-passcode-records"></a>오래된 암호 기록 삭제
 
-계층 구조의 최상위 사이트에서 이 작업을 사용하면 Android 및 Windows Phone 디바이스의 오래된 암호 재설정 데이터를 삭제할 수 있습니다. 암호 재설정 데이터는 암호화되지만 디바이스에 대한 PIN을 포함하고 있습니다. 기본적으로 이 작업은 사용하도록 설정되며 1일보다 오래된 데이터를 삭제합니다.  
+계층 구조의 최상위 사이트에서 이 작업을 사용하여 Windows Phone 디바이스의 오래된 암호 재설정 데이터를 삭제합니다. 암호 재설정 데이터는 암호화되지만 디바이스에 대한 PIN을 포함하고 있습니다. 기본적으로 이 작업은 사용하도록 설정되며 1일보다 오래된 데이터를 삭제합니다.  
 
 |||
 |---------|---------|

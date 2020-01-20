@@ -10,12 +10,12 @@ ms.assetid: 14ae894c-26fb-4fe3-b51d-e80700122df4
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 4ac628641cc6b8c07bb0c603929397bd96fffda7
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 100c6d392fd9602277b00857aba3426f5f7f2bab
+ms.sourcegitcommit: cf978bfea545ed9116dacadfac830cbb08aaa649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825679"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951676"
 ---
 # <a name="updates-in-desktop-analytics"></a>Desktop Analytics의 업데이트
 
@@ -71,7 +71,7 @@ Windows 10 디바이스가 Microsoft 계정으로 *인증되지 않은* 경우 W
 
 #### <a name="end-of-service"></a>서비스 종료
 
-디바이스가 서비스 종료 날짜가 지난 기능 업데이트를 실행하고 있습니다. 서비스 종료 날짜에 대한 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
+디바이스가 서비스 종료 날짜가 지난 기능 업데이트를 실행하고 있습니다. 이러한 날짜는 Windows의 Enterprise 및 Education 버전에만 적용됩니다. Home, Pro, Pro Education, 또는 Pro for Workstations 버전에는 적용되지 않습니다. 자세한 내용은 [Windows 수명 주기 팩트 시트](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)를 참조하세요.
 
 #### <a name="not-measured"></a>측정되지 않음
 

@@ -10,12 +10,12 @@ ms.assetid: 9123a87a-0b6f-43c7-b5c2-fac5d09686b1
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: a6dbca889d0c45e9136ff78405e7bb4f74fde0d6
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 3bc1c0b26a9d5799978dc56ef24fa98132e5d6e9
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75799389"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034284"
 ---
 # <a name="proxy-server-support-in-configuration-manager"></a>Configuration Manager의 프록시 서버 지원
 
@@ -59,7 +59,7 @@ ms.locfileid: "75799389"
 
 
 #### <a name="service-connection-point"></a>서비스 연결 지점
-이 사이트 시스템 역할은 Configuration Manager 클라우드 서비스에 연결하여 Configuration Manager에 대한 버전 업데이트를 다운로드하고, 하이브리드 구성에서 Microsoft Intune에 연결합니다. 서비스 연결 지점을 호스팅하는 컴퓨터에 구성된 프록시 서버를 사용합니다.  
+이 사이트 시스템 역할은 Configuration Manager 클라우드 서비스에 연결하여 Configuration Manager에 대한 버전 업데이트를 다운로드합니다. 서비스 연결 지점을 호스팅하는 컴퓨터에 구성된 프록시 서버를 사용합니다.  
 
 
 #### <a name="software-update-point"></a>소프트웨어 업데이트 지점

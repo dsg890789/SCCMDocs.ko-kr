@@ -10,12 +10,12 @@ ms.assetid: 72d7b174-f015-498f-a0a7-2161b9929198
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: bbf74820d10bda727434ea00ec4e816150b2e5de
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 4dcd68408f489b32aa6901de09fba199f69affd4
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75800562"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034818"
 ---
 # <a name="accounts-used-in-configuration-manager"></a>Configuration Manager에서 사용되는 계정
 
@@ -348,7 +348,7 @@ Windows에서 계정의 암호를 변경하는 경우 작업 순서를 새 암�
 
 ### <a name="exchange-server-connection-account"></a>Exchange Server 연결 계정  
 
-사이트 서버는 **Exchange Server 연결 계정**을 사용하여 지정된 Exchange Server에 연결합니다. 이 연결을 통해 Exchange Server에 연결하는 모바일 디바이스를 찾고 관리합니다. 이 계정에는 Exchange Server 컴퓨터에 대한 필수 권한을 제공하는 Exchange PowerShell cmdlet이 필요합니다. cmdlet에 대한 자세한 내용은 [Configuration Manager와 Exchange를 사용하여 모바일 디바이스 관리](/sccm/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync)를 참조하세요.  
+사이트 서버는 **Exchange Server 연결 계정**을 사용하여 지정된 Exchange Server에 연결합니다. 이 연결을 통해 Exchange Server에 연결하는 모바일 디바이스를 찾고 관리합니다. 이 계정에는 Exchange Server 컴퓨터에 대한 필수 권한을 제공하는 Exchange PowerShell cmdlet이 필요합니다. cmdlet에 대한 자세한 내용은 [Exchange 커넥터 설치 및 구성](/configmgr/mdm/deploy-use/install-configure-exchange-connector)을 참조하세요.  
 
 
 ### <a name="management-point-connection-account"></a>관리 지점 연결 계정  

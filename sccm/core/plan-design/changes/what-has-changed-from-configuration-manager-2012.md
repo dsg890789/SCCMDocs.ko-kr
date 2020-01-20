@@ -10,12 +10,12 @@ ms.assetid: 3ae68fa6-8b30-45dd-9d12-50bb67cb4a9d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: b6d0ac8b1aebcffa7ce26f0b759c240f50cfaeb3
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 10fd2507ac89f14764afcb4847b7f41f4a69ee9e
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802823"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034972"
 ---
 # <a name="whats-changed-from-system-center-2012-configuration-manager"></a>System Center 2012 Configuration Manager의 변경된 내용
 
@@ -142,7 +142,7 @@ OS 배포에 대한 다음 변경 내용에 유의하세요.
 
     자세한 내용은 [구성 항목을 만드는 방법](/sccm/compliance/deploy-use/create-configuration-items)을 참조하세요.  
 
-- 구성 관리자 클라이언트를 사용하여 관리되는 Mac OS X 컴퓨터에서 설정을 관리할 수 있도록 지원합니다. [Configuration Manager 클라이언트 없이 관리되는 Mac OS X 디바이스에 대해 구성 항목을 만드는 방법](/sccm/compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)을 참조하세요.  
+- 구성 관리자 클라이언트를 사용하지 않고 관리되는 Mac OS X 컴퓨터에서 설정을 관리할 수 있도록 지원합니다.
 
 ### <a name="on-premises-mobile-device-management"></a>온-프레미스 MDM(모바일 디바이스 관리)  
 

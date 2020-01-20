@@ -10,12 +10,12 @@ ms.assetid: 63e08f3f-9558-4ed7-9bf3-3a185ddaac5c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d88e674281c00f5516c21312ba1e2d01ce19f8d2
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: d45a1e4fb29393a03836b8bef5b43952fcbfd2af
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75791362"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034619"
 ---
 # <a name="troubleshoot-desktop-analytics"></a>Desktop Analytics 문제 해결
 
@@ -46,6 +46,9 @@ ms.locfileid: "75791362"
 Configuration Manager의 **연결 상태** 대시보드를 사용하여 디바이스 상태별로 범주를 드릴다운합니다. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **Desktop Analytics 서비스** 노드를 펼치고, **연결 상태** 대시보드를 선택합니다.  
 
 자세한 내용은 [연결 상태 모니터링](/sccm/desktop-analytics/monitor-connection-health)을 참조하세요.
+
+> [!NOTE]
+> Desktop Analytics에 Configuration Manager 연결에는 서비스 연결 지점이 사용됩니다. 이 사이트 시스템 역할을 변경하면 클라우드 서비스와 동기화에 영향을 미칠 수 있습니다. 자세한 내용은 [서비스 연결 지점 정보](/configmgr/core/servers/deploy/configure/about-the-service-connection-point#bkmk_move)를 참조하세요.
 
 
 ## <a name="log-files"></a>로그 파일

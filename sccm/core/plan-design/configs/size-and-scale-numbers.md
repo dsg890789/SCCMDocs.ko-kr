@@ -10,12 +10,12 @@ ms.assetid: c5a42100-2f60-4952-b495-918025ea6559
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: b9ab1fe53f5d86fa3427e4637ffe1013e48171ce
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: f211f8b7a75070feecf221bcdc27a550fd4cc3f0
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802041"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034864"
 ---
 # <a name="size-and-scale-numbers-for-configuration-manager"></a>Configuration Manager의 크기 및 비율 값
 
@@ -181,13 +181,9 @@ ADR(자동 배포 규칙)의 보안 범위 수를 580 미만으로 제한합니�
 
 - Mac 및 Windows CE 7.0을 실행하는 디바이스 25,000대  
 
-- 배포에서 MDM(모바일 디바이스 관리)을 지원하는 방법에 따라 수치는 다음 중 하나입니다.  
+- 온-프레미스 MDM(모바일 디바이스 관리)을 사용하여 관리하는 디바이스 100,000대
 
-    - 온-프레미스 MDM을 사용하여 관리하는 디바이스 100,000대  
-
-    - 클라우드 기반 디바이스 300,000대  
-
-예를 들어 Microsoft Intune을 통합하면 계층 구조에서 데스크톱 700,000대, Mac 및 Windows CE 7.0 최대 25,000대, 클라우드 기반 디바이스 최대 300,000대를 지원할 수 있습니다. 이 계층 구조는 총 1,025,000대의 디바이스를 지원합니다. 온-프레미스 MDM으로 관리하는 디바이스를 지원하는 경우 이 계층 구조의 총 디바이스 수는 825,000대입니다.  
+예를 들어 계층 구조에서 데스크톱 700,000대, Mac 및 Windows CE 7.0 디바이스 최대 25,000대, 온-프레미스 MDM에서 관리하는 디바이스 최대 100,000대를 지원할 수 있습니다. 이 계층 구조는 총 825,000대의 디바이스를 지원합니다.
 
 > [!IMPORTANT]  
 > 중앙 관리 사이트가 SQL Server Standard Edition을 사용하는 계층 구조에서, 계층 구조는 최대 50,000대의 데스크톱 및 디바이스를 지원합니다. 50,000개 이상의 데스크톱과 디바이스를 지원하려면 SQL Server Enterprise Edition을 사용해야 합니다. 이 요구 사항은 중앙 관리 사이트에만 적용됩니다. 독립 실행형 기본 사이트 또는 자식 기본 사이트에는 적용되지 않습니다. 기본 사이트에 사용하는 SQL Server 버전은 명시된 클라이언트 수를 지원하는 용량을 제한하지 않습니다.
@@ -212,13 +208,9 @@ ADR(자동 배포 규칙)의 보안 범위 수를 580 미만으로 제한합니�
 
     - Mac 및 Windows CE 7.0을 실행하는 디바이스 25,000대
 
-    - 배포에서 모바일 디바이스 관리를 지원하는 방법에 따라 수치는 다음 중 하나입니다.  
+    - 온-프레미스 MDM을 사용하여 관리하는 디바이스 50,000대  
 
-        - 온-프레미스 MDM을 사용하여 관리하는 디바이스 50,000대  
-
-        - 클라우드 기반 디바이스 150,000  
-
-예를 들어 15,0000대 데스크톱 및 10,000대 Mac 또는 Windows CE 7.0을 지원하는 독립 실행형 기본 사이트에서는 15,000대의 추가 디바이스만 지원할 수 있습니다. 이러한 디바이스는 클라우드 기반이거나 온-프레미스 MDM을 사용하여 관리될 수 있습니다.  
+예를 들어 데스크톱 150,000대와 Mac 10,000대를 지원하는 독립 실행형 기본 사이트는 온-프레미스 MDM에서 관리하는 모바일 디바이스 15,000대만 추가로 지원할 수 있습니다.
 
 ### <a name="embedded"></a>기본 사이트와 Windows Embedded 디바이스
 

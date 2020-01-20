@@ -10,12 +10,12 @@ ms.assetid: 38b2bed2-20dd-4ce1-abc0-219343d2c4b8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: d0e82bc7eddb16f4b98e99a5c55081d15e0982be
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 1f078f62dbfd076dc56b0d1a9fcc6da1a9fbe112
+ms.sourcegitcommit: cf978bfea545ed9116dacadfac830cbb08aaa649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825560"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951648"
 ---
 # <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
 
@@ -124,14 +124,7 @@ Desktop Analytics에 등록된 디바이스는 사용이 허가된 사용자만 
 
 - Windows Virtual Desktop Access E3 또는 E5  
 
-라이선스 구독 비용 외에도 Desktop Analytics 사용에 대한 추가 비용은 없습니다. Azure Log Analytics 내에서 Desktop Analytics는 "등급 0"입니다. 이 등급은 선택한 Azure Log Analytics 가격 책정 계층에 관계 없이 데이터 제한과 비용에서 제외된 것을 의미합니다. Azure Log Analytics 가격 책정 계층에 대한 자세한 내용은 [가격 책정 - Log Analytics](https://azure.microsoft.com/pricing/details/monitor/)를 참조하세요.
-
-- 하루에 수집되는 데이터의 양에 대한 한도가 있는 무료 계층을 사용하는 경우 Desktop Analytics 데이터는 이 한도에 포함되지 않습니다. 디바이스에서 모든 Desktop Analytics 데이터를 수집할 수 있으며, 다른 원본에서 추가 데이터를 수집하는 데 사용할 수 있는 전체 한도가 있습니다.
-
-- 수집된 데이터의 GB당 요금이 청구되는 유료 계층을 사용하는 경우 Desktop Analytics 데이터에 대해 요금이 청구되지 않습니다. 모든 Desktop Analytics 데이터를 디바이스에서 수집할 수 있으며 비용은 발생하지 않습니다.
-
-> [!Note]  
-> Azure Log Analytics 계획마다 데이터 보존 기간이 다릅니다. Desktop Analytics는 작업 영역의 데이터 보존 정책을 상속합니다. 작업 영역이 무료 요금제인 경우 Desktop Analytics는 작업 영역에서 수집된 "일별 스냅샷"의 최근 30일을 유지합니다.
+라이선스 구독 비용 외에 Azure Log Analytics 내에서 Desktop Analytics 사용에 대한 추가 비용은 없습니다. Desktop Analytics에서 수집한 데이터 형식은 모든 Log Analytics 데이터 수집 및 보존 요금이 청구되지 않습니다. 또한 청구 불가능한 데이터 형식으로서 이 데이터는 Log Analytics 일일 데이터 수집 한도가 적용되지 않습니다. [Log Analytics 사용량 및 비용](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)에 대해 자세히 알아보세요.
 
 
 ## <a name="next-steps"></a>다음 단계

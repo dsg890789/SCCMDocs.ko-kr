@@ -2,7 +2,7 @@
 title: Desktop Analytics의 배포 계획
 titleSuffix: Configuration Manager
 description: Desktop Analytics의 배포 계획에 대해 알아봅니다.
-ms.date: 08/14/2019
+ms.date: 01/14/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 0f369f3a-f251-4f34-9302-1bdc6ea5d139
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0813f1be53691aa4fa3fef2beb888312408d36d4
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 412c61dccf895e1f09f998df14038091415e202d
+ms.sourcegitcommit: 21a750f700257202b035fbfb0cd8598709580fdc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75791807"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75914491"
 ---
 # <a name="about-deployment-plans-in-desktop-analytics"></a>Desktop Analytics의 배포 계획에 대한 정보
 
@@ -84,6 +84,12 @@ Desktop Analytics를 Configuration Manager에 연결한 후 배포 계획에서 
 - 활성 연결이 있는 네트워크 구성 요소는 해당 드라이버를 손실합니다. 즉, 업그레이드 후 네트워크 연결이 끊어질 수 있습니다.
 
 **다시 설치**해야 한다는 Windows 업데이트 결정은 업그레이드에 현재 위치 업그레이드가 아닌 다시 설치가 필요함을 나타냅니다. 
+
+**차단된** Windows 업그레이드 결정은 다음과 같은 이유로 발생할 수 있습니다.
+
+- 하나 이상의 자산에 대한 업그레이드 결정을 **사용할 수 없음**으로 설정했습니다.
+
+- 해당 디바이스에 대한 인벤토리 데이터가 불완전하며 Desktop Analytics가 전체 호환성 평가를 수행할 수 없습니다.
 
 ### <a name="apps"></a>앱
 

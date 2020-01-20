@@ -10,12 +10,12 @@ ms.assetid: b3ce6b9a-7d54-4374-9b7a-f017f872bd6f
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2d72ec6511498375efa94c466be8946d661f7705
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: ffe0a51e2f02a09a14c06f533e88e63a48006ec7
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75800698"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034834"
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1910"></a>1910 버전의 진단 사용량 현황 데이터 수집 수준
 
@@ -384,7 +384,7 @@ Configuration Manager 버전 1910의 경우 이 수준에는 다음과 같은 �
 
 - 모바일 디바이스 정책 개수  
 
-- Configuration Manager 및 Microsoft Intune에서 관리하는 모바일 디바이스 개수 및 등록 방법(대량, 사용자 기반)  
+- Configuration Manager에서 관리하는 모바일 디바이스 개수 및 등록 방법(대량, 사용자 기반)  
 
 - 등록된 여러 모바일 디바이스를 사용하는 사용자 개수  
 

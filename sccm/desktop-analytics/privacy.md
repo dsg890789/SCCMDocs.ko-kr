@@ -10,12 +10,12 @@ ms.assetid: b5606f15-f589-485c-a599-cdabf1a9e7ac
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 2db3403960e52ee5329d506189be77b7e3f1e292
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: b3ac5b3b9f91fbbb426a5314f72f3bb6d9b608db
+ms.sourcegitcommit: cf978bfea545ed9116dacadfac830cbb08aaa649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75791517"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951657"
 ---
 # <a name="desktop-analytics-data-privacy"></a>Desktop Analytics 데이터 프라이버시
 
@@ -89,5 +89,7 @@ Desktop Analytics에 대한 개인 정보 관련 질문과 대답은 [개인 정
 - [신뢰할 수 있는 클라우드의 신뢰도](https://azure.microsoft.com/overview/trusted-cloud/)  
 
 - [보안 센터](https://www.microsoft.com/trustcenter)  
+
+- [개인 정보 보호](https://www.privacyshield.gov/)  
 
 Configuration Manager는 Desktop Analytics와는 별도로 Microsoft에 진단 및 사용량 현황 데이터를 전송합니다. 이러한 데이터는 Microsoft에서 향후 Configuration Manager 릴리스 시의 설치 환경, 품질 및 보안을 개선하는 데 사용됩니다. 자세한 내용은 [Configuration Manager의 진단 및 사용량 현황 데이터](/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요.

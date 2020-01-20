@@ -10,12 +10,12 @@ ms.assetid: 7ed389c3-a9ab-48ce-a5eb-27d52ee4fb94
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 19f2eefca3c3a4148c4e4cd2f80fc5d210428129
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: fffa2c3d1e17796427aaac3110a57321c8becd0f
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825696"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034573"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>Configuration Manager를 Desktop Analytics와 연결하는 방법
 
@@ -128,11 +128,12 @@ Configuration Manager는 대상 컬렉션에서 디바이스를 구성하는 설
 
 Desktop Analytics에 대한 디바이스 구성을 모니터링합니다. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **Desktop Analytics Servicing** 노드를 확장하고 **Connection Health** 대시보드를 선택합니다.  
 
-자세한 내용은 [연결 상태 모니터링](/sccm/desktop-analytics/troubleshooting#monitor-connection-health)을 참조하세요.
+자세한 내용은 [연결 상태 모니터링](/sccm/desktop-analytics/monitor-connection-health)을 참조하세요.
 
 Configuration Manager는 연결을 만든 후 60분 이내에 컬렉션을 동기화합니다. Desktop Analytics 포털에서 **글로벌 파일럿**으로 이동하여 Configuration Manager 디바이스 컬렉션을 확인합니다.
 
-
+> [!NOTE]
+> Desktop Analytics에 Configuration Manager 연결에는 서비스 연결 지점이 사용됩니다. 이 사이트 시스템 역할을 변경하면 클라우드 서비스와 동기화에 영향을 미칠 수 있습니다. 자세한 내용은 [서비스 연결 지점 정보](/configmgr/core/servers/deploy/configure/about-the-service-connection-point#bkmk_move)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
