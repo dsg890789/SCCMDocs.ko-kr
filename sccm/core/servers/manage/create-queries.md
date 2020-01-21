@@ -10,12 +10,12 @@ ms.assetid: 868049d3-3209-47ec-b34a-9cc26941893a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 6430614c9b3cd82ee6b0b18c99625ade48e422bb
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 2bdd7762c929324fd712b8655a0fcd839d6f7d2b
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75795857"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033459"
 ---
 # <a name="create-queries-in-configuration-manager"></a>Configuration Manager에서 쿼리 만들기
 
@@ -163,18 +163,24 @@ Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdi
 |Mac 컴퓨터|5|  
 |Windows CE|6|  
 |Windows Embedded|7|  
-|iOS|8|  
-|iPad|9|  
-|iPod Touch|10|  
-|Android|11|  
 |칩의 Intel 시스템|12|  
 |Unix 및 Linux 서버|13|  
-|Apple macOS(MDM)|14|
 |Microsoft HoloLens(MDM)|15|
 |Microsoft Surface Hub(MDM)|16|
-|Android for Work|17|
 
- 예를 들어 Mac 컴퓨터만 반환하려면 다음 쿼리를 사용합니다.  
+> [!NOTE]
+> 이 표에 나열되지 않은 값은 더 이상 지원되지 않는 장치와 연결되어 있습니다.
+
+<!-- removed with hybrid EOL
+|iOS|8|  
+|iPad|9|  
+|iPod touch|10|  
+|Android|11|  
+|Apple macOS (MDM)|14|
+|Android for Work|17|
+ -->
+
+예를 들어 Mac 컴퓨터만 반환하려면 다음 쿼리를 사용합니다.  
 
 ``` WQL
 Select SMS_R_System.ClientEdition from SMS_R_System where SMS_R_System.ClientEdition = 5  

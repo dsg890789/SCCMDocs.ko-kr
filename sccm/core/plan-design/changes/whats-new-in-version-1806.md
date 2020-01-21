@@ -10,12 +10,12 @@ ms.assetid: 0249dbd3-1e85-4d05-a9e5-420fbe44d850
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 85c3612c84baeca85596ff6410d2a1de3338e438
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: ca11c8d0bee58f2e3bf85729d78e5f139774c04d
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802534"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034897"
 ---
 # <a name="whats-new-in-version-1806-of-configuration-manager-current-branch"></a>Configuration Manager 1806 버전의 새로운 기능
 
@@ -38,7 +38,7 @@ Configuration Manager의 현재 분기에 대한 1806 업데이트는 콘솔 내
 
 [제거되는 기능과 사용되지 않는 항목](/sccm/core/plan-design/changes/deprecated/removed-and-deprecated)에서 구현되기 전의 지원 변경 내용을 알아보세요.
 
-2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 기능이 사용되지 않습니다. 자세한 내용은 [하이브리드 MDM의 개념](/sccm/mdm/understand/hybrid-mobile-device-management)을 참조하세요.<!--Intune feature 2683117-->  
+2018년 8월 14일부터 하이브리드 모바일 디바이스 관리 기능이 사용되지 않습니다. 자세한 내용은 [하이브리드 MDM의 변경된 내용](/sccm/mdm/understand/what-happened-to-hybrid)을 참조하세요.<!--Intune feature 2683117-->  
 
 <!--
 Version 1806 drops support for the following products:

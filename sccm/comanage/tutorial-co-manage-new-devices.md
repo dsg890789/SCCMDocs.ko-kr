@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 7fb02a5c-e286-46b1-a972-6335c858429a
-ms.openlocfilehash: 272687ebddcd218ae29730d6506285d2d46898b3
-ms.sourcegitcommit: 7f64c5fb3e9fa3dba006af618b1f1ceaf61a99f0
+ms.openlocfilehash: c9bf9b668ba8d4922ffb6b6afe2e33fb2ac7dbe3
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75524053"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034772"
 ---
 # <a name="tutorial-enable-co-management-for-new-internet-based-devices"></a>자습서: 최신 인터넷 기반 디바이스의 공동 관리 사용
 
@@ -62,7 +62,7 @@ Azure AD(Active Directory)로 온-프레미스 AD를 조인하는 하이브리�
 
   또한 버전 1810에는 구성 관리자 클라이언트의 인터넷 기반 설치를 위해 더욱 간단한 명령줄이 도입되었습니다.
 
-- [MDM 기관](https://docs.microsoft.com/sccm/mdm/deploy-use/change-mdm-authority)은 Intune으로 설정되어야 함  
+- MDM 기관은 Intune으로 설정되어야 함  
 
 ### <a name="external-certificates"></a>외부 인증서
 

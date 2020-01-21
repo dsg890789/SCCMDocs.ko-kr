@@ -10,12 +10,12 @@ ms.assetid: 9afb4452-9e58-40eb-bfd8-cbf9042a2790
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 43781ec676957b46e193c6e2763e385d38dc1c57
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: c14e662dc9f24e050221d25dff4b99f1bc35c32a
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75796237"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034276"
 ---
 # <a name="checklist-for-installing-update-1910-for-configuration-manager"></a>Configuration Manager용 업데이트 1910을 설치하기 위한 검사 목록
 
@@ -230,7 +230,7 @@ Microsoft 또는 Microsoft 파트너에서 다른 제품으로 Configuration Man
 ### <a name="remove-intune-subscription-hybrid-mdm"></a>Intune 구독(하이브리드 MDM) 제거
 
 <!-- SCCMDocs-pr#4253 -->
-하이브리드 MDM 서비스 제품은 2019년 9월 1일부로 종료되었습니다. Configuration Manager 사이트에 Microsoft Intune 구독이 있었다면 이를 제거해야 합니다. 자세한 내용은 [하이브리드 MDM 제거](/configmgr/mdm/understand/hybrid-mobile-device-management#remove-hybrid-mdm)를 참조하세요.
+하이브리드 MDM 서비스 제품은 2019년 9월 1일부로 종료되었습니다. Configuration Manager 사이트에 Microsoft Intune 구독이 있었다면 이를 제거해야 합니다. 자세한 내용은 [하이브리드 MDM 제거](/configmgr/mdm/understand/what-happened-to-hybrid#remove-hybrid-mdm)를 참조하세요.
 
 ### <a name="run-the-setup-prerequisite-checker"></a>설치 필수 구성 요소 검사기 실행
 

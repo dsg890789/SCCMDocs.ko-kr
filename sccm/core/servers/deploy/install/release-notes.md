@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 12/20/2019
+ms.date: 01/14/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: f6eaebf71fb9f03c5ed27157ed23a67cf10dc715
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: bc899b6732d3fca21e35f82906001f25a942a4d6
+ms.sourcegitcommit: cf978bfea545ed9116dacadfac830cbb08aaa649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75798072"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951614"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -39,6 +39,16 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 
 
 ## <a name="set-up-and-upgrade"></a>설치 및 업그레이드  
+
+### <a name="client-automatic-upgrade-happens-immediately-for-all-clients"></a>클라이언트 자동 업그레이드는 모든 클라이언트에 대해 즉시 실행됨
+
+<!-- 6040412 -->
+
+*버전 1910에 적용*
+
+사이트에서 [자동 클라이언트 업그레이드](/configmgr/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 사용하는 경우 사이트를 버전 1910로 업데이트하면 사이트가 성공적으로 업데이트된 후에 모든 클라이언트가 즉시 업그레이드됩니다. 클라이언트가 정책을 받는 경우에만 임의 설정됩니다(기본적으로 1시간마다). 많은 클라이언트를 사용하는 큰 사이트의 경우 이 동작으로 인해 많은 양의 네트워크 트래픽 및 스트레스 배포 지점이 소비될 수 있습니다.
+
+이 문제를 해결하려면 자동 클라이언트 업그레이드를 일시적으로 사용하지 않도록 설정합니다. 다른 [클라이언트 업그레이드 방법](/configmgr/core/clients/manage/upgrade/upgrade-clients)을 사용하세요. Microsoft는 자동 클라이언트 업그레이드를 계속 사용할 수 있도록 이 문제에 대한 핫픽스를 곧 릴리스할 예정입니다.
 
 ### <a name="site-server-in-passive-mode-doesnt-update-configurationmof"></a>수동 모드의 사이트 서버가 configuration.mof를 업데이트하지 않음
 

@@ -10,12 +10,12 @@ ms.assetid: 140c522f-d09a-40b6-a4b0-e0d14742834a
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 816d1aeb2ba7fca8379e9c9de369776d88fbf8d8
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 118ab300877060c78ba4eed253671e381efb3da2
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75816805"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033239"
 ---
 # <a name="tutorial-enable-co-management-for-existing-configuration-manager-clients"></a>자습서: 기존 Configuration Manager 클라이언트에 대해 공동 관리 사용
 
@@ -57,7 +57,7 @@ ms.locfileid: "75816805"
 ### <a name="on-premises-infrastructure"></a>온-프레미스 인프라
 
 - Configuration Manager 현재 분기의 [지원되는 버전](https://docs.microsoft.com/sccm/core/servers/manage/updates#supported-versions)
-- [MDM(모바일 디바이스 관리) 권한](https://docs.microsoft.com/sccm/mdm/deploy-use/change-mdm-authority)은 Intune으로 설정되어 있어야 합니다.  
+- MDM(모바일 디바이스 관리) 권한은 Intune으로 설정되어 있어야 합니다.  
 
 ### <a name="permissions"></a>사용 권한
 

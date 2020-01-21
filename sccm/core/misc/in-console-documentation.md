@@ -2,7 +2,7 @@
 title: 콘솔 내 설명서
 titleSuffix: Configuration Manager
 description: 이 문서는 Configuration Manager 콘솔에만 표시됩니다.
-ms.date: 12/11/2019
+ms.date: 01/13/2020
 ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-other
@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 9dae4dd75398c84f465d411b2eb6b4a7d2ae953e
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 009662cc74c5cbbbc973b3a7f5ce184be0397b0e
+ms.sourcegitcommit: cf978bfea545ed9116dacadfac830cbb08aaa649
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802976"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951618"
 ---
 <!-- 
 - Feature 1357546
@@ -27,7 +27,7 @@ ms.locfileid: "75802976"
 
 # <a name="microsoft-endpoint-configuration-manager-documentation"></a>Microsoft Endpoint Configuration Manager 설명서
 
-*마지막 업데이트: 2019년 12월 11일*
+*마지막 업데이트: 2020년 1월 13일*
 
 이 콘텐츠는 Configuration Manager의 학습과 지원에 도움이 될 수 있습니다.
 
@@ -55,22 +55,22 @@ ms.locfileid: "75802976"
 
 ## <a name="trending"></a>인기
 
-2019년 11월 1일부터 11월 30일 사이의 가장 인기 있는 아티클입니다.
+2019년 11월 1일부터 11월 31일 사이에 가장 많이 조회된 문서입니다.
 
 | 페이지 보기 | 제목 |
 |------------|-------|
-| 20602 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) |
-| 15685 | [로그 파일 참조](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/log-files) |
-| 13393 | [연결에 사용되는 포트](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/ports) |
-| 13042 | [Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) |
-| 11132 | [버전 1906의 새로운 기능](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1906) |
-| 10930 | [Windows에 클라이언트 배포](https://docs.microsoft.com/configmgr/core/clients/deploy/deploy-clients-to-windows-computers) |
-| 10078 | [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/configmgr/comanage/overview) |
-| 9497 | [Windows 10에 대한 지원](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10) |
-| 8884 | [소프트웨어 센터 사용자 가이드](https://docs.microsoft.com/configmgr/core/understand/software-center) |
-| 8845 | [업데이트 및 서비스](https://docs.microsoft.com/configmgr/core/servers/manage/updates) |
+| 20311 | [버전 1910의 새로운 기능](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1910) |
+| 14109 | [로그 파일 참조](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/log-files) |
+| 12971 | [TLS 1.2를 사용하도록 설정하는 방법](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) |
+| 11896 | [업데이트 및 서비스](https://docs.microsoft.com/configmgr/core/servers/manage/updates) |
+| 11848 | [연결에 사용되는 포트](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/ports) |
+| 10420 | [Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) |
+| 10044 | [Windows에 클라이언트 배포](https://docs.microsoft.com/configmgr/core/clients/deploy/deploy-clients-to-windows-computers) |
+| 8726 | [Windows 10에 대한 지원](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10) |
+| 8282 | [Windows 10 디바이스에 대한 공동 관리](https://docs.microsoft.com/configmgr/comanage/overview) |
+| 8081 | [소프트웨어 센터 사용자 가이드](https://docs.microsoft.com/configmgr/core/understand/software-center) |
 
-[Configuration Manager 허브 페이지](https://docs.microsoft.com/configmgr/)에서 이 기간에 20,683번의 페이지 보기가 있었습니다.
+[Configuration Manager 허브 페이지](https://docs.microsoft.com/configmgr/)에서 이 기간에 23,792번의 페이지 보기가 있었습니다.
 
 ## <a name="recently-updated"></a>최근 업데이트 항목
 
@@ -78,16 +78,16 @@ ms.locfileid: "75802976"
 
 | 마지막 검토 | 제목 |
 |---------------|-------|
-| 2019년 11월 29일 | [버전 1910의 새로운 기능](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1910) |
-| 2019년 11월 29일 | [온-프레미스 사이트를 Microsoft Azure로 확장 및 마이그레이션](https://docs.microsoft.com/configmgr/core/support/azure-migration-tool) |
-| 2019년 11월 29일 | [비즈니스용 Windows Hello 설정](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-hello-for-business-settings) |
-| 2019년 11월 29일 | [Microsoft Endpoint Configuration Manager FAQ](https://docs.microsoft.com/configmgr/core/understand/microsoft-endpoint-manager-faq) |
-| 2019년 11월 29일 | [Microsoft Edge 버전 77 이상의 배포 및 업데이트](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-edge) |
-| 2019년 11월 29일 | [구성 기준 만들기](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-baselines) |
-| 2019년 11월 29일 | [BitLocker 관리 플랜](https://docs.microsoft.com/configmgr/protect/plan-design/bitlocker-management) |
-| 2019년 11월 29일 | [작업 순서 편집기 사용](https://docs.microsoft.com/configmgr/osd/understand/task-sequence-editor) |
-| 2019년 11월 5일 | [Desktop Analytics FAQ](https://docs.microsoft.com/configmgr/desktop-analytics/faq) |
-| 2019년 11월 4일 | [애플리케이션 배포 기술 참조 문제 해결](https://docs.microsoft.com/configmgr/apps/understand/app-deployment-technical-reference) |
+| 2019년 12월 20일 | [릴리스 정보](https://docs.microsoft.com/configmgr/core/servers/deploy/install/release-notes) |
+| 2019년 12월 20일 | [1910에 대한 검사 목록](https://docs.microsoft.com/configmgr/core/servers/manage/checklist-for-installing-update-1910) |
+| 2019년 12월 17일 | [Windows 10 업데이트 전송 최적화](https://docs.microsoft.com/configmgr/sum/deploy-use/optimize-windows-10-update-delivery) |
+| 2019년 12월 13일 | [클라이언트에서의 TLS(전송 계층 보안) 1.2 사용 설정 방법](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2-client) |
+| 2019년 12월 13일 | [사이트 서버 및 원격 사이트 시스템에서의 TLS(전송 계층 보안) 1.2 사용 설정](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2-server) |
+| 2019년 12월 13일 | [TLS(전송 계층 보안) 1.2 사용 설정 시 발생하는 일반적인 문제](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2-troubleshoot) |
+| 2019년 12월 13일 | [TLS(전송 계층 보안) 1.2 사용 설정 개요](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) |
+| 2019년 12월 12일 | [Desktop Analytics 데이터 프라이버시](https://docs.microsoft.com/configmgr/desktop-analytics/privacy) |
+| 2019년 12월 12일 | [기술 미리 보기 1912](https://docs.microsoft.com/configmgr/core/get-started/2019/technical-preview-1912) |
+| 2019년 12월 6일 | [Office 365 ProPlus 업데이트 관리](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates) |
 
 ## <a name="troubleshooting-articles"></a>문제 해결 문서
 
@@ -114,6 +114,5 @@ Configuration Manager 구성 요소 및 기능의 문제 해결을 지원하기 
 - [KB 4529824: Configuration Manager 현재 분기, 버전 1906용 메시지 처리 엔진 업데이트](https://support.microsoft.com/help/4529824)
 - [KB 4535819: Microsoft Endpoint Configuration Manager 버전 1910용 업데이트, 조기 업데이트 링](https://support.microsoft.com/help/4535819)
 - [KB 4535776: Microsoft Endpoint Configuration Manager 현재 분기, 버전 1910의 변경 내용 요약](https://support.microsoft.com/help/4535776)
-
 
 새로운 Configuration Manager 지원 문서의 Atom 또는 RSS 알림을 구독하려면 [지원 콘텐츠 업데이트](https://support.microsoft.com/help/4089498/)를 참조하고 **Microsoft Endpoint Configuration Manager**를 선택하세요.  

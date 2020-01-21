@@ -2,7 +2,7 @@
 title: 필수 구성 요소 검사기
 titleSuffix: Configuration Manager
 description: 필수 조건 검사기를 사용하여 사이트 또는 사이트 시스템 역할 설치를 차단하는 문제를 확인하고 해결하는 방법을 알아봅니다.
-ms.date: 01/08/2020
+ms.date: 01/13/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: aaf13bb8-4ba2-4bd7-9fac-d36a9d88a1b6
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 8c5764c9ad502abc9ef791c4db32e8080a08a7e2
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 88371c561e8c0d4e2abd70533592725e6d8cb97d
+ms.sourcegitcommit: 21a750f700257202b035fbfb0cd8598709580fdc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75798116"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75914451"
 ---
 # <a name="prerequisite-checker-for-configuration-manager"></a>Configuration Manager에 대한 필수 조건 검사기
 
@@ -53,6 +53,7 @@ ms.locfileid: "75798116"
     - prereqchk.exe
     - prereqcore.dll
     - prereqchkres.dll
+      - 이 파일은 설치 언어의 하위 폴더에 있습니다. 예를 들어 영어는 `00000409` 하위 폴더에 있습니다. <!--586808-->
     - basesql.dll
     - basesvr.dll
     - baseutil.dll

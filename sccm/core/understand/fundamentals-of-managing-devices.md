@@ -10,12 +10,12 @@ ms.assetid: 2bca3db9-115a-451d-8c93-f073ceefe0c7
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1002b3b822cde70970b8b533d4cd1552cd081f10
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: a6b225ce10c77b1fa876dbd98f220b4b847f8846
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75792164"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035041"
 ---
 # <a name="fundamentals-of-managing-devices-with-configuration-manager"></a>Configuration Manager를 사용한 디바이스 관리의 기본 사항
 
@@ -25,10 +25,7 @@ Configuration Manager는 다음 두 가지 범주의 디바이스를 관리할 �
 
 - *클라이언트*는 Configuration Manager 클라이언트 소프트웨어를 설치하는 워크스테이션, 랩톱, 서버, 모바일 디바이스 등의 디바이스입니다. 하드웨어 인벤토리 등의 일부 관리 기능을 사용하려면 이 클라이언트 소프트웨어가 필요합니다.  
 
-- *관리되는 디바이스*는 *클라이언트*를 포함할 수 있지만 일반적으로 Configuration Manager 클라이언트 소프트웨어가 설치되지 않은 모바일 디바이스입니다. 이런 디바이스에서는 Intune 또는 Configuration Manager의 기본 제공 온-프레미스 모바일 디바이스 관리를 사용하여 관리합니다.
-
-    > [!Important]  
-    > 하이브리드 모바일 디바이스 관리는 [사용되지 않는 기능](/sccm/mdm/understand/hybrid-mobile-device-management)입니다.
+- *관리되는 디바이스*는 *클라이언트*를 포함할 수 있지만 일반적으로 Configuration Manager 클라이언트 소프트웨어가 설치되지 않은 모바일 디바이스입니다. 이런 디바이스에서는 Configuration Manager의 기본 제공 온-프레미스 모바일 디바이스 관리를 사용하여 관리합니다.
 
 클라이언트 유형뿐 아니라 사용자를 기준으로 하여 디바이스를 그룹화하고 식별할 수도 있습니다.
 
