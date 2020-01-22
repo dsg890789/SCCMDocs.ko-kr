@@ -10,12 +10,12 @@ ms.assetid: 3bd1e487-ea18-43c1-b7c3-acbd9b86d429
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 3b3c138b2f84d5101957c3f0e0afe29350506d2d
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: 59eba57edbed0eb281074345dfa13e869fffe793
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75817808"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033186"
 ---
 # <a name="create-and-deploy-an-application-with-configuration-manager"></a>Configuration Manager를 사용하여 애플리케이션 만들기 및 배포
 
@@ -27,13 +27,11 @@ ms.locfileid: "75817808"
 
  각 플랫폼과 관련된 자세한 내용은 다음 항목 중 하나를 참조하세요.  
 
-- [Windows 애플리케이션 만들기](../../apps/get-started/creating-windows-applications.md)  
-- [iOS 애플리케이션 만들기](../../apps/get-started/creating-ios-applications.md)  
-- [Android 애플리케이션 만들기](../../apps/get-started/creating-android-applications.md)  
-- [Windows Phone 애플리케이션 만들기](../../apps/get-started/creating-windows-phone-applications.md)  
-- [Mac 컴퓨터 애플리케이션 만들기](../../apps/get-started/creating-mac-computer-applications.md)  
-- [Linux 및 UNIX 서버 애플리케이션 만들기](../../apps/get-started/creating-linux-and-unix-server-applications.md)
-- [Windows Embedded 애플리케이션 만들기](../../apps/get-started/creating-windows-embedded-applications.md)
+- [Windows 애플리케이션 만들기](/configmgr/apps/get-started/creating-windows-applications)
+- [Windows Phone 애플리케이션 만들기](/configmgr/mdm/deploy-use/management-tasks-applications#bkmk_winphone)
+- [Mac 컴퓨터 애플리케이션 만들기](/configmgr/apps/get-started/creating-mac-computer-applications)
+- [Linux 및 UNIX 서버 애플리케이션 만들기](/configmgr/apps/get-started/creating-linux-and-unix-server-applications)
+- [Windows Embedded 애플리케이션 만들기](/configmgr/apps/get-started/creating-windows-embedded-applications)
 
 
 Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 항목을 건너뛰어도 됩니다. 그러나 [애플리케이션 만들기](../../apps/deploy-use/create-applications.md)를 검토하여 애플리케이션을 만들어 배포할 때 사용할 수 있는 모든 옵션을 알아보는 것이 좋습니다.  
@@ -204,7 +202,7 @@ Configuration Manager 애플리케이션에 이미 익숙한 경우에는 이 �
 
 Configuration Manager를 통해 관리되며 Windows 10을 실행하는 PC의 사용자에게는 Contoso 애플리케이션을 설치해야 한다는 메시지가 표시됩니다. 사용자가 설치에 동의하면 애플리케이션이 설치됩니다.  
 
-Configuration Manager 버전 1906부터 **새 소프트웨어를 사용할 수** 있습니다. 알림은 지정 된 응용 프로그램 및 수정 버전의 사용자에 대해 한 번만 표시 됩니다. 이후에는 사용자가 로그인할 때 알림이 표시되지 않습니다. 애플리케이션이 변경되거나 다시 배포된 경우 애플리케이션에 대한 다른 알림만 표시됩니다.
+Configuration Manger 1906 버전부터 **새 소프트웨어를 사용할 수 있습니다** 알림은 특정 애플리케이션과 수정 버전의 사용자에게 한 번만 표시됩니다. 이후에는 사용자가 로그인할 때 알림이 표시되지 않습니다. 애플리케이션이 변경되거나 다시 배포된 경우 애플리케이션에 대한 다른 알림만 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

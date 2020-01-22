@@ -10,12 +10,12 @@ ms.assetid: 678c9622-c61b-47d1-ba25-690616e431c7
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.openlocfilehash: 0c63e26a082b07580230d01e9485a8c31a977742
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: 2b4de4eee35358dd93d134d29d40651c4711ee26
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75816652"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034174"
 ---
 # <a name="create-configuration-baselines-in-configuration-manager"></a>Configuration Manager에서 구성 기준 만들기
 
@@ -81,15 +81,15 @@ Configuration Manager의 구성 기준에는 미리 정의된 구성 항목과 �
 <!--3608345-->
 *(버전 1910에서 도입됨)*
 
-버전 1910부터, 이제 사용자 지정 구성 기준의 평가를 준수 정책 평가 규칙으로 추가할 수 있습니다. 구성 기준을 만들거나 편집하는 경우, **준수 정책 평가의 일부로 이 기준을 평가**할 수 있는 옵션을 사용할 수 있습니다. 준수 정책 규칙을 추가하거나 편집하는 경우, **준수 정책 평가에 구성된 기준 포함**이라는 조건을 사용할 수 있습니다. 공동 관리 디바이스의 경우 그리고 Configuration Manager 호환성 평가 결과를 전체 호환성 상태의 일부로 취하도록 Intune을 구성하는 경우 이 정보가 Azure AD로 전송됩니다. 이 정보를 [Office 365 리소스에 대한 조건부 액세스](/configmgr/mdm/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm#configure-conditional-access)에 사용할 수 있습니다.  
+버전 1910부터, 이제 사용자 지정 구성 기준의 평가를 준수 정책 평가 규칙으로 추가할 수 있습니다. 구성 기준을 만들거나 편집하는 경우, **준수 정책 평가의 일부로 이 기준을 평가**할 수 있는 옵션을 사용할 수 있습니다. 준수 정책 규칙을 추가하거나 편집하는 경우, **준수 정책 평가에 구성된 기준 포함**이라는 조건을 사용할 수 있습니다. 공동 관리 디바이스의 경우 그리고 Configuration Manager 호환성 평가 결과를 전체 호환성 상태의 일부로 취하도록 Intune을 구성하는 경우 이 정보가 Azure AD로 전송됩니다. 이 정보를 Office 365 리소스에 대한 조건부 액세스에 사용할 수 있습니다. 자세한 내용은 [공동 관리를 사용하는 조건부 액세스](/configmgr/comanage/quickstart-conditional-access)를 참조하세요.
 
 준수 정책 평가의 일환으로 사용자 지정 구성 기준을 포함하려면 다음 작업을 수행합니다.
 
-- [**규정 준수 정책 평가에 구성 된 기준을 포함**](#bkmk_CA)하는 규칙을 사용 하 여 규정 준수 정책을 만들고 사용자 컬렉션에 배포 합니다.
-- 장치 컬렉션에 배포 된 구성 기준에서 [**준수 정책 평가의 일부로이 기준 평가**](#bkmk_eval-baseline) 를 선택 합니다.
+- [**준수 정책 평가에 구성된 기준을 포함**](#bkmk_CA)하는 규칙을 사용하여 준수 정책을 만들고 사용자 컬렉션에 배포합니다.
+- 디바이스 컬렉션에 배포된 구성 기준에서 [**규정 준수 정책 평가의 일부로 이 기준 평가**](#bkmk_eval-baseline)를 선택합니다.
 
 > [!IMPORTANT]
-> 공동 관리 되는 장치를 대상으로 지정 하는 경우 [공동 관리 필수 구성 요소](/configmgr/comanage/overview#prerequisites)를 충족 하는지 확인 합니다.
+> 공동 관리되는 디바이스를 대상으로 지정하는 경우 [공동 관리 필수 구성 요소](/configmgr/comanage/overview#prerequisites)를 충족하는지 확인합니다.
 
 ### <a name="example-evaluation-scenario"></a>예제 평가 시나리오
 
@@ -116,7 +116,7 @@ Configuration Manager의 구성 기준에는 미리 정의된 구성 항목과 �
 ### <a name="bkmk_CA"></a> 기준 준수 정책 평가 규칙을 사용하여 준수 정책 만들기 및 배포
 
 1. **자산 및 규정 준수** 작업 영역에서, **규정 준수 설정**를 확장하고 **규정 준수 정책** 노드를 선택합니다.
-1. f리본에서 **준수 정책 만들기**를 클릭하여 **준수 정책 만들기 마법사**를 엽니다. 자세한 내용은 [디바이스 준수 정책 만들기 및 배포](/sccm/mdm/deploy-use/create-compliance-policy)를 참조하세요.
+1. f리본에서 **준수 정책 만들기**를 클릭하여 **준수 정책 만들기 마법사**를 엽니다. <!-- For more information, see [Create and deploy a device compliance policy](/sccm/mdm/deploy-use/create-compliance-policy). -->
 1. **일반** 페이지에서 **구성 관리자 클라이언트로 관리되는 디바이스의 규정 준수 규칙**을 선택합니다.
    - 준수 정책 평가의 일부로 사용자 지정 구성 기준을 포함하려면 구성 관리자 클라이언트를 사용하여 디바이스를 관리해야 합니다.
 1. **지원되는 플랫폼** 페이지에서 플랫폼을 선택합니다.
@@ -133,10 +133,10 @@ Configuration Manager의 구성 기준에는 미리 정의된 구성 항목과 �
 ### <a name="bkmk_eval-baseline"></a>구성 기준을 선택하고 "준수 정책 평가의 일부로 이 기준 평가" 선택
 
 1. **자산 및 규정 준수** 작업 영역에서 **규정 준수 설정**을 확장하고 **구성 기준**을 클릭합니다.
-1. 디바이스 컬렉션에 배포된 기존 기준을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다. 필요한 경우 새 기준선을 만들 수 있습니다.
+1. 디바이스 컬렉션에 배포된 기존 기준을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다. 필요한 경우 새 기준을 만들 수 있습니다.
    - 기준은 사용자 컬렉션이 아니라, 디바이스 컬렉션에 배포해야 합니다.
 1. **준수 정책 평가의 일부로 이 기준 평가** 설정을 활성화합니다.
-   - **장치 구성** 기관으로 Intune이 있는 공동 관리 장치의 경우 **공동 관리 클라이언트에 대해서도 항상이 기준 적용** 을 선택 해야 합니다.
+   - **디바이스 구성** 권한으로 Intune이 있는 공동 관리 디바이스의 경우 **공동 관리 클라이언트에 대해서도 항상 이 기준 적용**을 선택해야 합니다.
 1. 구성 기준의 변경 내용을 저장하려면 **확인**을 클릭합니다.
 
    ![구성 기준 속성 대화 상자](./media/3608345-configuration-baseline-properties.png)

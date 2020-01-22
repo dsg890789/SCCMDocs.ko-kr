@@ -10,12 +10,12 @@ ms.assetid: 4d26deed-3b16-4116-b640-f618f2c20f5a
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 54f38d0aa982213f06565dd343f0ec07e9057125
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: c630878ba9946c2d061f112b31f6423baee8c02f
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75817247"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76034178"
 ---
 # <a name="security-and-privacy-for-application-management-in-configuration-manager"></a>Configuration Manager의 애플리케이션 관리를 위한 보안 및 개인정보보호
 
@@ -52,7 +52,7 @@ HTTPS를 사용하지 않는 경우에 브랜딩 구성 옵션을 사용하지 �
 > [!Important]  
 > 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
-별도의 서버에 애플리케이션 카탈로그 웹 사이트 지점 및 애플리케이션 카탈로그 웹 서비스 지점을 설치합니다. 웹 사이트 지점이 손상 된 경우 웹 서비스 지점과는 별개입니다. 이 설계는 구성 관리자 클라이언트 및 인프라를 보호하는 데 도움이 됩니다. 특히 웹 사이트 지점이 인터넷에서 클라이언트 연결을 수락하는 경우 이 구성이 매우 중요합니다. 서버가 공격에 취약해질 수 있습니다.  
+별도의 서버에 애플리케이션 카탈로그 웹 사이트 지점 및 애플리케이션 카탈로그 웹 서비스 지점을 설치합니다. 웹 사이트 지점이 손상된 경우 웹 서비스 지점과는 별개입니다. 이 설계는 구성 관리자 클라이언트 및 인프라를 보호하는 데 도움이 됩니다. 특히 웹 사이트 지점이 인터넷에서 클라이언트 연결을 수락하는 경우 이 구성이 매우 중요합니다. 서버가 공격에 취약해질 수 있습니다.  
 
 ### <a name="close-browser-windows"></a>브라우저 창 닫기
 
@@ -83,7 +83,7 @@ HTTPS를 사용하지 않는 경우에 브랜딩 구성 옵션을 사용하지 �
 
 ### <a name="restrict-whether-users-can-install-software-interactively"></a>사용자가 소프트웨어를 대화형으로 설치할 수 있는지 여부를 제한합니다.
 
-**컴퓨터 에이전트** 그룹에 **설치 권한** 클라이언트 설정을 구성합니다. 이 설정은 소프트웨어 센터에서 소프트웨어를 설치할 수 있는 사용자 유형을 제한 합니다.
+**컴퓨터 에이전트** 그룹에 **설치 권한** 클라이언트 설정을 구성합니다. 이 설정은 소프트웨어 센터에서 소프트웨어를 설치할 수 있는 사용자 유형을 제한합니다.
 
 예를 들어 **설치 권한** 을 **관리자만**으로 설정하여 사용자 지정 클라이언트 설정을 만듭니다. 서버 컬렉션에 이 클라이언트 설정을 적용합니다. 이 구성은 관리 권한이 없는 사용자가 해당 서버에 소프트웨어를 설치하지 못하도록 합니다.  
 
@@ -167,10 +167,6 @@ Configuration Manager에 이 파일을 가져올 때 통신 채널을 보호합�
 
      App-V 애플리케이션이 컴퓨터에 게시되면 해당 컴퓨터에 로그인하는 모든 사용자가 이 애플리케이션을 설치할 수 있습니다. 애플리케이션이 게시된 후에는 애플리케이션을 설치할 수 있는 사용자를 제한할 수 없습니다.  
 
-- 모바일 디바이스에서 회사 포털에 대한 설치 권한을 제한할 수 없습니다.  
-
-     설치 권한을 제한하도록 클라이언트 설정을 구성할 수 있지만, 회사 포털에는 이 설정이 적용되지 않습니다. 이 문제는 권한 상승으로 이어질 수 있습니다. 사용자가 설치가 허용되지 않는 앱을 설치할 수 있습니다.  
-
 
 ## <a name="BKMK_CertificatesSilverlight5"></a> 애플리케이션 카탈로그에 필요한 높은 권한 모드 및 Microsoft Silverlight 5용 인증서  
 
@@ -205,14 +201,14 @@ Configuration Manager에서는 진단 및 사용량 데이터를 수집하며, �
 
 - **사용자 디바이스 선호도**는 사용자를 디바이스에 매핑합니다. Configuration Manager 관리자는 소프트웨어를 사용자에게 배포합니다. 클라이언트는 사용자가 가장 자주 사용하는 하나 이상의 컴퓨터에 소프트웨어를 자동으로 설치합니다.  
 
-- **소프트웨어 센터**는 구성 관리자 클라이언트를 설치할 때 디바이스에 자동으로 설치됩니다. 사용자가 설정을 변경 하 고 소프트웨어 센터에서 소프트웨어를 찾아 설치 합니다.  
+- **소프트웨어 센터**는 구성 관리자 클라이언트를 설치할 때 디바이스에 자동으로 설치됩니다. 사용자는 소프트웨어 센터에서 설정을 변경하고, 소프트웨어를 탐색하여 설치할 수 있습니다.  
 
 - **애플리케이션 카탈로그**는 사용자가 소프트웨어를 설치하도록 요청할 수 있는 웹 사이트입니다.  
 
     > [!Important]  
     > 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  
 
-### <a name="bkmk_privacy-uda"></a>사용자 장치 선호도 개인 정보
+### <a name="bkmk_privacy-uda"></a>사용자 디바이스 선호도 개인 정보
 
 - Configuration Manager는 클라이언트 및 관리 지점 사이트 시스템 간에 정보를 전송할 수 있습니다. 이 정보를 통해 컴퓨터와 로그인 계정 및 로그인 계정의 요약된 사용량을 식별할 수 있습니다.  
 
@@ -234,7 +230,7 @@ Configuration Manager에서는 진단 및 사용량 데이터를 수집하며, �
 
 - 소프트웨어 센터는 디바이스에서 Configuration Manager 클라이언트를 설치할 때 자동으로 설치됩니다.  
 
-### <a name="application-catalog-privacy-information"></a>응용 프로그램 카탈로그 개인 정보
+### <a name="application-catalog-privacy-information"></a>애플리케이션 카탈로그 개인 정보
 
 > [!Important]  
 > 버전 1910에서 애플리케이션 카탈로그 역할에 대한 지원이 종료됩니다. 자세한 내용은 [애플리케이션 카탈로그 제거](/sccm/apps/plan-design/plan-for-and-configure-application-management#bkmk_remove-appcat)를 참조하세요.  

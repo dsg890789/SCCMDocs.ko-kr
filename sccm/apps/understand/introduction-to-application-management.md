@@ -10,12 +10,12 @@ ms.assetid: 08f711ba-83bf-4b5f-9520-a0778c6ae7eb
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: f509380945f18c596b691dfaad4dc93fe70395b5
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 63523355c2a75a82982d7755d392fc89460b0dd0
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75818335"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76033152"
 ---
 # <a name="introduction-to-application-management-in-configuration-manager"></a>Configuration Manager의 애플리케이션 관리 소개
 
@@ -42,7 +42,7 @@ ms.locfileid: "75818335"
 
 - Windows 10 디바이스의 전체 기능을 위한 Windows Installer 패키지
 - 터미널 서버 팜에서 사용하기 위한 App-V 패키지
-- 모바일 사용자를 위한 Android 앱 패키지  
+- 모바일 사용자를 위한 웹앱  
 
 Configuration Manager에서 Astoria용 단일 애플리케이션을 만듭니다. 이 애플리케이션은 모든 설치 방법과 플랫폼에 공통되는 앱에 대한 상위 수준의 메타데이터를 정의합니다. 그런 다음, 사용 가능한 설치 방법에 대한 세 가지 배포 유형을 만들고 모든 사용자에게 애플리케이션을 배포합니다. 배포 유형에 대한 요구 사항 및 기타 구성을 기반으로 Configuration Manager는 각 사용 사례에 맞는 방법을 결정합니다.
 
@@ -144,19 +144,11 @@ Configuration Manager에서는 다음과 같은 앱 유형을 배포할 수 있�
 
 - macOS  
 
-또한 Microsoft Intune 또는 Configuration Manager 온-프레미스 디바이스 관리를 통해 디바이스를 관리하는 경우 다음과 같은 앱 유형을 추가로 관리합니다.  
+또한 Configuration Manager [온-프레미스 디바이스 관리](/configmgr/mdm/understand/manage-mobile-devices-with-on-premises-infrastructure)를 통해 디바이스를 관리하는 경우 다음과 같은 앱 유형을 추가로 관리합니다.  
 
 - Windows Phone 앱 패키지(xap)  
 
 - Microsoft Store의 Windows Phone 앱 패키지  
-
-- iOS용 앱 패키지(ipa)  
-
-- Apple 앱 스토어의 iOS용 앱 패키지  
-
-- Android용 앱 패키지(apk)  
-
-- Google Play의 Android용 앱 패키지  
 
 - MDM을 통한 Windows Installer(msi)  
 

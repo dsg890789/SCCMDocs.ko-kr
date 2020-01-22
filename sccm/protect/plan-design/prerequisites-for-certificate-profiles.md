@@ -10,12 +10,12 @@ ms.assetid: 0317fd02-3721-4634-b18b-7c976a4e92bf
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 6f925679ade6a5256fcb1b6c610bf19b044b4f9c
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: 396738fb854f859b1553bae02dd3709ef96b69ff
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75819168"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76032738"
 ---
 # <a name="prerequisites-for-certificate-profiles-in-configuration-manager"></a>Configuration Manager의 인증서 프로필에 대한 필수 구성 요소
 
@@ -33,13 +33,13 @@ Configuration Manager의 인증서 프로필에는 외부 종속성과 제품 �
 |Windows Server 2012 R2에서 실행되는 Active Directory 인증서 서비스의 NDES(네트워크 디바이스 등록 서비스 역할 서비스)입니다.<br /><br /> 또한,<br /><br /> TCP 443(HTTPS의 경우) 또는 TCP 80(HTTP의 경우) 이외의 포트 번호는 클라이언트와 네트워크 디바이스 등록 서비스 간의 통신에 지원되지 않습니다.<br /><br /> 네트워크 디바이스 등록 서비스를 실행하는 서버는 발급 CA와 다른 서버에 있어야 합니다.|Configuration Manager는 Windows Server 2012 R2의 네트워크 디바이스 등록 서비스와 통신하여 SCEP(단순 인증서 등록 프로토콜) 요청을 생성하고 확인합니다.<br /><br /> 인터넷에서 연결하는 사용자 또는 디바이스(예: Microsoft Intune에서 관리하는 모바일 디바이스)에 인증서를 발급할 경우 해당 디바이스에서 인터넷을 통해 네트워크 디바이스 등록 서비스를 실행하는 서버에 액세스할 수 있어야 합니다. 예를 들어 경계 네트워크(완충 지역 및 스크린된 서브넷이라고도 함)에 서버를 설치합니다.<br /><br /> 네트워크 디바이스 등록 서비스를 실행하는 서버와 발급 CA 간에 방화벽이 있으면 두 서버 간의 통신 트래픽(DCOM)을 허용하도록 방화벽을 구성해야 합니다. 또한 이 방화벽 요구 사항은 Configuration Manager 사이트 서버를 실행하는 서버 및 발급 CA에 적용되므로, Configuration Manager에서 인증서를 해지할 수 있습니다.<br /><br /> SSL(보안 모범 사례)이 필요하도록 네트워크 디바이스 등록 서비스를 구성한 경우 연결 디바이스에서 CRL(인증서 해지 목록)에 액세스하여 서버 인증서의 유효성을 검사할 수 있어야 합니다.<br /><br /> Windows Server 2012 R2의 네트워크 디바이스 등록 서비스에 대한 자세한 내용은 [Using a Policy Module with the Network Device Enrollment Service(네트워크 디바이스 등록 서비스와 함께 정책 모듈 사용)](https://go.microsoft.com/fwlink/p/?LinkId=328657)를 참조하세요.|  
 |발급 CA에서 Windows Server 2008 R2를 실행하는 경우 SCEP 갱신 요청을 위해 서버에 핫픽스 필요|발급 CA 컴퓨터에 아직 핫픽스를 설치하지 않은 경우 핫픽스를 설치하세요. 자세한 내용은 Microsoft 기술 자료에서 문서 [2483564: NDES를 사용하여 인증서를 관리하는 경우 Windows Server 2008 R2에서 SCEP 인증서에 대한 요청 갱신](https://go.microsoft.com/fwlink/?LinkId=311945)을 참조하십시오.|  
 |PKI 클라이언트 인증 인증서 및 내보낸 루트 CA 인증서|이 인증서는 Configuration Manager에 대해 네트워크 디바이스 등록 서비스를 실행하는 서버를 인증합니다.<br /><br /> 자세한 내용은 [Configuration Manager를 위한 PKI 인증서 요구 사항](../../core/plan-design/network/pki-certificate-requirements.md)을 참조하세요.|  
-|지원되는 디바이스 운영 체제|iOS, Windows 8.1, Windows RT 8.1, Windows 10 및 Android 운영 체제를 실행하는 디바이스에 인증서 프로필을 배포할 수 있습니다.|  
+|지원되는 디바이스 운영 체제|Windows 8.1, Windows RT 8.1 및 Windows 10을 실행하는 디바이스에 인증서 프로필을 배포할 수 있습니다.|  
 
 ## <a name="configuration-manager-dependencies"></a>Configuration Manager 종속성  
 
 |종속성|추가 정보|  
 |----------------|----------------------|  
-|인증서 등록 지점 사이트 시스템 역할|인증서 프로필을 사용하려면 먼저 인증서 등록 지점 사이트 시스템 역할을 설치해야 합니다. 이 역할은 Configuration Manager 데이터베이스, Configuration Manager 사이트 서버 및 Configuration Manager 정책 모듈과 통신 합니다.<br /><br /> 이 사이트 시스템 역할의 시스템 요구 사항 및 계층 내 역할 설치 위치에 대한 자세한 내용은 [Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md) 문서의 **사이트 시스템 요구 사항** 섹션을 참조하세요.<br /><br /> 네트워크 디바이스 등록 서비스를 실행하는 동일한 서버에 인증서 등록 지점을 설치하지 않아야 합니다.|  
+|인증서 등록 지점 사이트 시스템 역할|인증서 프로필을 사용하려면 먼저 인증서 등록 지점 사이트 시스템 역할을 설치해야 합니다. 이 역할은 Configuration Manager 데이터베이스, Configuration Manager 사이트 서버 및 Configuration Manager 정책 모듈과 통신합니다.<br /><br /> 이 사이트 시스템 역할의 시스템 요구 사항 및 계층 내 역할 설치 위치에 대한 자세한 내용은 [Configuration Manager에서 지원되는 구성](../../core/plan-design/configs/supported-configurations.md) 문서의 **사이트 시스템 요구 사항** 섹션을 참조하세요.<br /><br /> 네트워크 디바이스 등록 서비스를 실행하는 동일한 서버에 인증서 등록 지점을 설치하지 않아야 합니다.|  
 |Active Directory 인증서 서비스용 네트워크 디바이스 등록 서비스 역할 서비스를 실행하는 서버에 설치된 Configuration Manager 정책 모듈|인증서 프로필을 배포하려면 Configuration Manager 정책 모듈을 설치해야 합니다. 이 정책 모듈은 Configuration Manager 설치 미디어에서 찾을 수 있습니다.|  
 |검색 데이터|인증서 주체 및 주체 대체 이름 값은 Configuration Manager에서 제공하며 검색에서 수집된 정보에서 가져옵니다.<br /><br /> 사용자 인증서의 경우: Active Directory 사용자 검색<br /><br /> 컴퓨터 인증서의 경우: Active Directory 시스템 검색 및 네트워크 검색|  
 |인증서 프로필을 관리하는 특정 보안 권한|회사 리소스 액세스 설정(예: 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필)을 관리하려면 다음과 같은 보안 권한이 있어야 합니다.<br /><br /> 경고를 보고 관리하고 인증서 프로필에 대해 보고하려면 **경고** 개체에 대한 **만들기**, **삭제**, **수정**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> 인증서 프로필을 만들고 관리하려면 **인증서 프로필** 개체에 대한 **작성자 정책**, **보고서 수정**, **읽기**, **보고서 실행** 권한이 필요합니다.<br /><br /> Wi-Fi, 인증서 및 VPN 프로필 배포를 관리하려면 **컬렉션** 개체에 대한 **구성 정책 배포**, **클라이언트 상태 경고 수정**, **읽기** 및 **리소스 읽기** 권한이 필요합니다.<br /><br /> 모든 구성 정책을 관리하려면 **구성 정책** 개체에 대한 **만들기**, **삭제**, **수정**, **읽기** 및 **보안 범위 설정** 권한이 필요합니다.<br /><br /> 인증서 프로필과 관련된 쿼리를 실행하려면 **쿼리** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> Configuration Manager 콘솔에서 인증서 프로필 정보를 보려면 **사이트** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> 인증서 프로필에 대한 상태 메시지를 보려면 **상태 메시지** 개체에 대한 **읽기** 권한이 필요합니다.<br /><br /> 신뢰할 수 있는 CA 인증서 프로필을 만들고 수정하려면 **신뢰할 수 있는 CA 인증서 프로필** 개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> VPN 프로필을 만들고 관리하려면 **VPN 프로필** 개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> Wi-Fi 프로필을 만들고 관리하려면 **Wi-Fi 프로필** 개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.<br /><br /> **회사 리소스 액세스 관리자** 보안 역할에는 Configuration Manager에서 인증서 프로필을 관리하는 데 필요한 이와 같은 권한이 포함됩니다. 자세한 내용은 [보안 구성](../../core/plan-design/security/configure-security.md) 문서의 **역할 기반 관리 구성** 섹션을 참조하세요.|  

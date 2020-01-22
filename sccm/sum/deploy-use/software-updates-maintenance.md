@@ -10,12 +10,12 @@ ms.technology: configmgr-sum
 ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
 manager: dougeby
 ms.author: mstewart
-ms.openlocfilehash: 258c5535623c0824e49f09c556d6ffe943f96414
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: cbad055d3a50b015a99e831dc6a1d5715af44310
+ms.sourcegitcommit: d8fdeb1e70f44ccbed675af73f75a00c35b8380f
 ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75827386"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75869789"
 ---
 # <a name="software-updates-maintenance"></a>소프트웨어 업데이트 유지 관리
 
@@ -100,14 +100,14 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 
   자세한 내용과 지침은 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint/) 블로그 게시물을 참조하세요.
 
-## <a name="wsus-cleanup-starting-in-version-1906"></a>WSUS 정리 버전 1906부터
+## <a name="wsus-cleanup-starting-in-version-1906"></a>1906 버전부터 시작하는 WSUS 정리
 <!--41101009-->
 
- 정상 소프트웨어 업데이트 지점을 유지 관리하기 위해 Configuration Manager가 실행할 수 있는 WSUS 유지 관리 작업이 추가되었습니다. Wsus에서 만료 된 업데이트를 거부 하는 것 외에도, wsus 데이터베이스에 비클러스터형 인덱스를 추가 하 고 WSUS 데이터베이스에서 사용 되지 않는 업데이트를 제거할 수 Configuration Manager. 모든 동기화 후 WSUS 유지 관리가 발생합니다.
+ 정상 소프트웨어 업데이트 지점을 유지 관리하기 위해 Configuration Manager가 실행할 수 있는 WSUS 유지 관리 작업이 추가되었습니다. Configuration Manager는 WSUS에서 만료된 업데이트 거부할 뿐만 아니라, WSUS 데이터베이스에 비클러스터형 인덱스를 추가할 수 있으며 사용되지 않는 업데이트를 WSUS 데이터베이스에서 삭제할 수 있습니다. 모든 동기화 후 WSUS 유지 관리가 발생합니다.
 
 ### <a name="add-non-clustered-indexes-to-the-wsus-database-to-improve-wsus-cleanup-performance"></a>비클러스터형 인덱스를 WSUS 데이터베이스에 추가하여 WSUS 정리 성능 개선
 
-클러스터 되지 않은 인덱스를 추가 하면 Configuration Manager 하는 WSUS 정리 성능이 향상 됩니다.
+비클러스터형 인덱스를 추가하면 Configuration Manager가 수행하는 WSUS 정리 성능이 향상됩니다.
 
 1. Configuration Manager 콘솔에서 **관리** > **개요** > **사이트 구성** > **사이트**로 이동합니다.
 2. Configuration Manager 계층 구조의 최상위 사이트를 선택합니다.
@@ -119,17 +119,17 @@ Configuration Manager 1806 버전 이전의 WSUS 정리 옵션에서 실행하�
 
 #### <a name="sql-permissions-for-creating-indexes"></a>인덱스를 만들기 위한 SQL 사용 권한
 
-WSUS 데이터베이스가 원격 SQL Server인 경우 사이트 서버의 컴퓨터 계정에 다음 SQL 권한이 필요합니다.
+WSUS 데이터베이스가 원격 SQL Server에 있는 경우 인덱스를 만들기 위해 SQL에서 사용 권한을 추가해야 할 수 있습니다. WSUS 데이터베이스에 연결하고 인덱스를 만드는 데 사용되는 계정은 다를 수 있습니다. [소프트웨어 업데이트 지점 속성에서 WSUS 서버 연결 계정](/sccm/sum/get-started/install-a-software-update-point#wsus-server-connection-account)을 지정하는 경우 연결 계정에 SQL 권한이 있는지 확인합니다. WSUS 서버 연결 계정을 지정하지 않으면 사이트 서버의 컴퓨터 계정에 SQL 권한이 필요합니다.
 
-- 인덱스를 만들려면 테이블이나 뷰에 대해 `ALTER` 권한이 있어야 합니다. 사이트 서버의 컴퓨터 계정은 `sysadmin` 고정 서버 역할 또는 `db_ddladmin` 및 `db_owner` 고정 데이터베이스 역할의 구성원이어야 합니다. 인덱스 만들기 및 권한에 대한 자세한 내용은 [인덱스 만들기(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/create-index-transact-sql?view=sql-server-2017#permissions)를 참조하세요.
-- `CONNECT SQL` 서버 권한을 사이트 서버의 컴퓨터 계정에 부여해야 합니다. 자세한 내용은 [GRANT 서버 권한(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/grant-server-permissions-transact-sql?view=sql-server-2017)을 참조하세요. 
+- 인덱스를 만들려면 테이블이나 뷰에 대해 `ALTER` 권한이 있어야 합니다. 계정은 `sysadmin` 고정 서버 역할 또는 `db_ddladmin` 및 `db_owner` 고정 데이터베이스 역할의 구성원이어야 합니다. 인덱스 만들기 및 권한에 대한 자세한 내용은 [인덱스 만들기(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/create-index-transact-sql?view=sql-server-2017#permissions)를 참조하세요.
+- `CONNECT SQL` 서버 권한을 계정에 부여해야 합니다. 자세한 내용은 [GRANT 서버 권한(Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/grant-server-permissions-transact-sql?view=sql-server-2017)을 참조하세요.
 
 > [!NOTE]  
 >  WSUS 데이터베이스가 기본이 아닌 포트를 사용하는 원격 SQL Server에 있으면 인덱스를 추가할 수 없습니다. 이 시나리오의 경우 [SQL Server 구성 관리자를 사용하여 서버 별칭](https://docs.microsoft.com/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client?view=sql-server-2017)을 만들 수 있습니다. 별칭이 추가되고 Configuration Manager가 WSUS 데이터베이스에 연결할 수 있으면, 인덱스가 추가됩니다.
 
 ### <a name="remove-obsolete-updates-from-the-wsus-database"></a>사용되지 않는 업데이트를 WSUS 데이터베이스에서 제거
 
-사용 되지 않는 업데이트는 WSUS 데이터베이스에서 사용 되지 않는 업데이트 및 업데이트 수정 버전입니다. 일반적으로 [Microsoft 업데이트 카탈로그](https://www.catalog.update.microsoft.com/) 에는 없는 경우 업데이트는 사용 되지 않는 것으로 간주 되 고, 필수 구성 요소 또는 종속성으로 다른 업데이트에는 필요 하지 않습니다.
+사용되지 않는 업데이트는 WSUS 데이터베이스에서 사용되지 않는 업데이트 및 업데이트 수정 버전입니다. 일반적으로 [Microsoft 업데이트 카탈로그](https://www.catalog.update.microsoft.com/)에 없고 필수 구성 요소 또는 종속성으로 다른 업데이트에 필요하지 않으면 해당 업데이트는 사용되지 않는 것으로 간주합니다.
 
 1. Configuration Manager 콘솔에서 **관리** > **개요** > **사이트 구성** > **사이트**로 이동합니다.
 2. Configuration Manager 계층 구조의 최상위 사이트를 선택합니다.
@@ -137,7 +137,7 @@ WSUS 데이터베이스가 원격 SQL Server인 경우 사이트 서버의 컴�
 4. **WSUS 유지 관리** 탭에서 **WSUS 데이터베이스에서 사용되지 않는 업데이트 제거**를 선택합니다.
    - 사용되지 않는 업데이트 제거는 중지되기 전까지 최대 30분 동안 실행이 허용됩니다. 다음 동기화가 발생한 후 다시 시작됩니다.  
 
-#### <a name="sql-permissions-for-removing-obsolete-updates"></a>사용 되지 않는 업데이트 제거에 대 한 SQL 사용 권한
+#### <a name="sql-permissions-for-removing-obsolete-updates"></a>사용되지 않는 업데이트 제거에 대한 SQL 사용 권한
 
 WSUS 데이터베이스가 원격 SQL Server인 경우 사이트 서버의 컴퓨터 계정에 다음 SQL 권한이 필요합니다.
 
@@ -158,13 +158,13 @@ WSUS 데이터베이스가 원격 SQL Server인 경우 사이트 서버의 컴�
 
 다음 스키마를 살펴보세요.
 <!--5418148-->
-- Configuration Manager 버전 1906을 사용 하 고 있습니다.
-- Windows 내부 데이터베이스를 사용 하는 원격 소프트웨어 업데이트 지점이 있습니다.
+- Configuration Manager 버전 1906을 사용하고 계십니다.
+- Windows 내부 데이터베이스를 사용하는 원격 소프트웨어 업데이트 지점이 있습니다.
 - **소프트웨어 업데이트 지점 구성 요소 속성**의 **WSUS 유지 관리** 탭에서 다음 옵션 중 하나를 선택할 수 있습니다.
    - WSUS 데이터베이스에 비클러스터형 인덱스 추가
    - 사용되지 않는 업데이트를 WSUS 데이터베이스에서 제거
 
-이 시나리오에서 Configuration Manager는 Windows 내부 데이터베이스를 사용 하 여 원격 소프트웨어 업데이트 지점의 경우 위의 WSUS 유지 관리 작업을 수행할 수 없습니다. 이 문제는 Windows 내부 데이터베이스에서 원격 연결을 허용 하지 않기 때문에 발생 합니다. 사이트 서버의 `WSyncMgr.log`에 다음과 같은 오류가 표시 됩니다.
+이 시나리오에서 Configuration Manager는 Windows 내부 데이터베이스를 사용하여 원격 소프트웨어 업데이트 지점에 대해 위의 WSUS 유지 관리 작업을 수행할 수 없습니다. 이 문제는 Windows 내부 데이터베이스에서 원격 연결을 허용하지 않기 때문에 발생합니다. 사이트 서버의 `WSyncMgr.log`에 다음과 같은 오류가 표시됩니다.
 
 ```text
 Indexing Failed. Could not connect to SUSDB.
@@ -173,7 +173,7 @@ SqlException thrown while connect to SUSDB in Server: <SUP.CONTOSO.COM>. Error M
 Could not Delete Obselete Updates because ConfigManager could not connect to SUSDB: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) UpdateServer: <SUP.CONTOSO.COM>
 ```
 
-이 문제를 해결 하기 위해 Windows 내부 데이터베이스를 사용 하 여 원격 소프트웨어 업데이트 지점의 WSUS 유지 관리를 자동화할 수 있습니다. 자세한 내용과 단계는 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint)를 참조하세요.
+이 문제를 해결하기 위해 Windows 내부 데이터베이스를 사용하여 원격 소프트웨어 업데이트 지점에 대한 WSUS 유지 관리를 자동화할 수 있습니다. 자세한 내용과 단계는 [Microsoft WSUS 및 Configuration Manager SUP 유지 관리에 대한 전체 가이드](https://support.microsoft.com/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint)를 참조하세요.
 
 ## <a name="updates-cleanup-log-entries"></a>정리 로그 항목 업데이트
 

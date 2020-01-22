@@ -1,7 +1,7 @@
 ---
 title: 비즈니스용 Windows 업데이트 통합
 titleSuffix: Configuration Manager
-description: WUfB (비즈니스 Windows 업데이트)를 사용 하 여 Windows 업데이트 서비스에 연결 된 장치에 대 한 Windows 10을 최신 상태로 유지 합니다.
+description: 비즈니스용 Windows 업데이트(WUfB)를 사용하면 Windows 업데이트 서비스에 연결된 디바이스에 대해 Windows 10을 최신 상태로 유지할 수 있습니다.
 author: mestew
 ms.author: mstewart
 manager: dougeby
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: configuration-manager
 ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
-ms.openlocfilehash: 2556b983f9ba2fd646ee9cd5401442e9ce166ee4
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: be718c70af8673b0ec92897430d56b4ad14651e0
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75827437"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035049"
 ---
 # <a name="integrate-with-windows-update-for-business"></a>비즈니스용 Windows 업데이트와 통합
 
@@ -35,9 +35,7 @@ ms.locfileid: "75827437"
 
     -   **알 수 없음** 상태는 WSUS의 검색 상태를 다시 보고하지 않은 클라이언트에만 사용되었므로 전체적인 준수 상태 문제를 해결하기 어렵습니다. 이제 WU에서 업데이트를 수신하는 Configuration Manager 클라이언트도 포함됩니다.  
 
-    -   업데이트 준수 상태를 기반으로 하는 조건부 액세스(회사 리소스 대상)는 WU에서 업데이트를 수신하는 클라이언트에 대해 예상대로 작동하지 않습니다. 해당 클라이언트가 Configuration Manager의 준수를 충족하지 않기 때문입니다.  
-
-    -   정의 업데이트 준수는 전체 업데이트 준수 보고의 일부이며 역시 예상대로 작동하지 않습니다.  또한 정의 업데이트 준수는 조건부 액세스 평가의 일부이기도 합니다.  
+    -   정의 업데이트 준수는 전체 업데이트 준수 보고의 일부이며 역시 예상대로 작동하지 않습니다.
 
 -   업데이트 준수 상태를 기반으로 하는 Defender에 대한 전체 Endpoint Protection 보고에서는 검색 데이터가 누락되어 정확한 결과를 반환하지 않습니다.  
 
@@ -58,7 +56,7 @@ ms.locfileid: "75827437"
 
 #### <a name="to-identify-clients-that-use-wufb"></a>WUfB를 사용하는 클라이언트를 식별하려면 다음을 수행합니다.  
 
-1.  Windows 업데이트 에이전트가 WSUS에 대해 이전에 사용 하도록 설정 된 경우이를 검사 하지 않는지 확인 합니다. 다음 레지스트리 키는 컴퓨터가 WSUS 또는 Windows 업데이트에 대해 검사하는지를 나타내는데 사용될 수 있습니다. 레지스트리 키가 없는 경우 WSUS에 대해 검사 되지 않습니다.
+1.  이전에 설정된 경우 Windows 업데이트 에이전트가 WSUS에 대해 검사를 하지 않도록 해야 합니다. 다음 레지스트리 키는 컴퓨터가 WSUS 또는 Windows 업데이트에 대해 검사하는지를 나타내는데 사용될 수 있습니다. 레지스트리 키가 없는 경우 WSUS에 대해 검사하지 않습니다.
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer**
 
 2.  Configuration Manager 리소스 탐색기의 **Windows 업데이트** 노드 아래에 새 특성 **UseWUServer**가 있습니다.  

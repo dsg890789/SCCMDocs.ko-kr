@@ -10,12 +10,12 @@ ms.assetid: 2629c376-ec43-4f0e-a78b-4223cc9302bf
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3aedb49bfc98ccf800d6141394372ab72ed30796
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: c564d8a14c57ffdc64d014480cf4819b0f39a42f
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75815904"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76032788"
 ---
 # <a name="deploy-applications-with-configuration-manager"></a>Configuration Manager에서 애플리케이션 배포
 
@@ -40,7 +40,7 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 애플리
 
 1. Configuration Manager 콘솔에서 **소프트웨어 라이브러리** 작업 영역으로 이동하여 **애플리케이션 관리**를 확장하고 **애플리케이션** 또는 **애플리케이션 그룹** 노드 중에서 선택합니다.
 
-2. 목록에서 배포할 응용 프로그램 또는 응용 프로그램 그룹을 선택 합니다. 리본에서 **배포**를 클릭합니다.  
+2. 목록에서 배포할 애플리케이션 또는 애플리케이션 그룹을 선택합니다. 리본에서 **배포**를 클릭합니다.  
 
 > [!Note]  
 > 기존 배포의 속성을 보면 다음 섹션은 배포 속성 창의 탭에 해당합니다.  
@@ -51,7 +51,6 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 애플리
 > - [일정 예약](#bkmk_deploy-sched)
 > - [사용자 환경](#bkmk_deploy-ux)
 > - [경고](#bkmk_deploy-alerts)
-> - [iOS: 앱 구성 정책](#bkmk_deploy-ios)
 
 
 ### <a name="bkmk_deploy-general"></a> 배포 **일반** 정보
@@ -119,7 +118,7 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 애플리
 
 #### <a name="bkmk_approval"></a> 승인 설정
 
-응용 프로그램 승인 동작은 권장 선택적 기능을 사용 하도록 설정 하 고, **장치 당 사용자에 대 한 응용 프로그램 요청을 승인**하는지 여부에 따라 달라 집니다.
+애플리케이션 승인 동작은 권장된 선택적 기능인 **디바이스당 사용자에 대한 애플리케이션 요청 승인**을 사용하도록 설정하는지에 따라 달라집니다.
 
 - **관리자가 디바이스에서 이 애플리케이션에 대한 요청을 승인해야 함**: 이 선택적 기능을 사용하도록 설정하는 경우 관리자는 사용자가 요청된 디바이스에 애플리케이션을 설치하기 전에 모든 사용자 요청을 승인합니다. 관리자가 요청을 승인하면 사용자는 해당 디바이스에만 애플리케이션을 설치할 수 있습니다. 사용자가 다른 디바이스에 애플리케이션을 설치하려면 다른 요청을 제출해야 합니다. 배포 용도가 **필수**인 경우 또는 애플리케이션을 디바이스 컬렉션에 배포하는 경우에는 이 옵션이 회색으로 표시됩니다.
 
@@ -184,12 +183,6 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 애플리
 ### <a name="bkmk_deploy-alerts"></a> 배포 **경고**
 
 **경고** 페이지에서 Configuration Manager가 이 배포에 대한 경고를 생성하는 방법을 구성합니다. System Center Operations Manager도 사용 중인 경우 해당 경고를 구성합니다. 필수 배포에 대해서만 일부 경고를 구성할 수 있습니다. 
-
-
-### <a name="bkmk_deploy-ios"></a> iOS: **앱 구성 정책**
-
-한 가지 iOS 배포 유형을 배포하는 경우, **앱 구성 정책** 페이지도 표시됩니다. iOS 앱 구성 정책을 이미 구성한 경우에는 **새로 만들기**를 클릭하여 이 배포를 정책과 연결합니다. 이 유형의 정책에 대한 자세한 내용은 [앱 구성 정책을 사용하여 iOS 앱 구성](/sccm/apps/deploy-use/configure-ios-apps-with-app-configuration-policies)을 참조하세요.
-
 
 
 ## <a name="bkmk_phased"></a> 단계적 배포 만들기
@@ -260,7 +253,7 @@ Configuration Manager에서 디바이스 또는 사용자 컬렉션에 애플리
 5. 애플리케이션을 배포할 때 **배포 유형 속성 대화 상자의 설치 동작 탭에 지정한 모든 실행 중인 실행 파일 자동으로 닫기** 옵션을 선택합니다. 이 옵션은 배포 속성의 **배포 설정** 탭에 있습니다.  
 
 > [!Note]
-> 실행 중인 실행 파일을 확인 하 고 응용 [프로그램 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallApplication) 작업 순서 단계에 포함 하도록 응용 프로그램을 구성 하는 경우 작업 순서에서 해당 파일을 설치 하지 못합니다. 이 작업 순서 단계를 오류 발생 시 계속 하도록 구성 하지 않으면 전체 작업 순서가 실패 합니다.
+> 애플리케이션이 실행 가능 파일 실행을 확인하도록 구성하고 이를 [애플리케이션 설치](/sccm/osd/understand/task-sequence-steps#BKMK_InstallApplication) 작업 순서 단계에 포함한 경우, 작업 순서에서 해당 파일을 설치하지 못합니다. 이 작업 순서 단계를 오류 발생 시 계속하도록 구성하지 않으면 전체 작업 순서가 실패합니다.
 
 ### <a name="client-behaviors-and-user-notifications"></a>클라이언트 동작과 사용자 알림
 

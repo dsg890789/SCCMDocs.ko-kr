@@ -1,8 +1,8 @@
 ---
-title: 'VPN 프로필을 만드는 방법 '
+title: VPN 프로필을 만드는 방법
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 VPN 프로필을 만드는 방법에 대해 알아봅니다.
-ms.date: 11/20/2017
+ms.date: 01/14/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -10,68 +10,172 @@ ms.assetid: f338e4db-73b5-45ff-92f4-1b89a8ded989
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 7fc4329518808b0ab8bfe1dfd9dda7220081c21b
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: b16d9d41b1f560a2ac6384c822788ad7461cc2d9
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75820358"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035134"
 ---
 # <a name="how-to-create-vpn-profiles-in-configuration-manager"></a>Configuration Manager에서 VPN 프로필을 만드는 방법
 
 *적용 대상: Configuration Manager(현재 분기)*
 
-다양 한 장치 플랫폼에 사용할 수 있는 연결 형식은 [VPN 프로필](../../protect/deploy-use/vpn-profiles.md)에 설명 되어 있습니다.  
+Configuration Manager는 여러 VPN 연결 형식을 지원합니다. 다양한 디바이스 플랫폼에서 사용할 수 있는 연결 형식에 대한 자세한 내용은 [VPN 프로필](/configmgr/protect/deploy-use/vpn-profiles)을 참조하세요.
 
-타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
+타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 자세한 내용은 [애플리케이션 배포](/configmgr/apps/deploy-use/deploy-applications)를 참조하세요.
 
-### <a name="create-a-vpn-profile"></a>VPN 프로필 만들기   
+## <a name="create-a-vpn-profile"></a>VPN 프로필 만들기
 
-1. Configuration Manager 콘솔에서 **자산 및 준수** > **준수 설정** > **회사 리소스 액세스** > **VPN 프로필**을 선택합니다.  
+1. Configuration Manager 콘솔의 **자산 및 규정 준수** 작업 영역으로 가서 **규정 준수 설정**, **회사 리소스 액세스**를 차례로 확장하고 **VPN 프로필** 노드를 선택합니다.
 
-2. **홈** 탭의 **만들기** 그룹에서 **VPN 프로필 만들기**를 선택합니다.  
+1. 리본 메뉴에 있는 **홈** 탭의 **만들기** 그룹에서 **VPN 프로필 만들기**를 선택합니다.
 
+1. VPN 프로필 만들기 마법사의 **일반** 페이지에서 다음 정보를 지정합니다.
 
-3. **일반** 페이지를 완료합니다. 다음 사항에 유의하십시오.  
+    - **이름**: 콘솔에서 VPN 프로필을 식별하는 고유한 이름을 입력합니다.
 
-   - 적절한 **플랫폼**을 선택합니다.
+        > [!NOTE]
+        > VPN 프로필 이름에 `\/:*?<>|; ` 문자를 사용하지 않습니다. Windows VPN 프로필은 이러한 특수 문자를 지원하지 않습니다.
 
-      - Windows 8.1 플랫폼을 선택하면 **파일에서 기존 VPN 프로필 항목 가져오기**를 선택하여 XML 파일로 내보낸 VPN 프로필 정보를 가져오는 옵션이 있습니다.
+    - **설명**: 필요에 따라 VPN 프로필에 대한 추가 정보를 제공하는 설명을 입력합니다.
 
-   - VPN 프로필 이름에 \\/:*?&lt;>&#124; 문자나 공백 문자를 사용하지 마세요. 이러한 문자는 Windows Server VPN 프로필에서 지원되지 않습니다.  
+    - **VPN 프로필 유형**: 적절한 플랫폼을 선택합니다.
 
+        **Windows 8.1** 플랫폼을 선택하는 경우 **파일에서 가져오기** 할 수도 있습니다. 이 작업은 XML 파일에서 VPN 프로필 정보를 가져옵니다. 이 옵션을 선택하면 마법사의 나머지 부분에서 **지원되는 플랫폼** 및 **VPN 프로필 가져오기** 페이지가 간단해집니다.
 
-4. **연결** 페이지에서 다음을 지정합니다.  
+1. **지원되는 플랫폼** 페이지에서 이 VPN 프로필이 지원하는 OS 버전을 선택합니다.
 
-   - **연결 형식**: VPN 연결 형식을 선택합니다. 다음 표에 있는 연결 형식 중에서 선택할 수 있습니다.  
+1. **콘텐츠** 페이지에서 다음 정보를 지정합니다.
 
-   - **서버 목록**: VPN 연결에 사용할 새 서버를 추가합니다. 연결 형식에 따라 VPN 서버를 하나 이상 선택하고 기본 서버를 지정할 수 있습니다.  
+    - **연결 형식**: VPN 연결 형식을 선택합니다. 지원되는 형식에 대한 자세한 내용은 [VPN 프로필](/configmgr/protect/deploy-use/vpn-profiles)을 참조하세요.
 
-     > [!NOTE]  
-     >  iOS를 실행하는 디바이스에서는 여러 VPN 서버를 사용할 수 없습니다. 여러 VPN 서버를 구성한 후 VPN 프로필을 iOS 디바이스에 배포하는 경우 기본 서버만 사용됩니다.  
+    - **서버 목록**: VPN 연결에 사용할 새 서버를 추가합니다. 연결 형식에 따라 VPN 서버를 하나 이상 선택하고 어떤 서버가 기본인지 지정할 수 있습니다.
 
-     이 표에서는 연결 형식 옵션을 제공합니다. 자세한 내용은 VPN 서버 설명서를 참조하세요.
+    - **회사 네트워크에 연결된 경우 VPN 사용 안 함**: 내부 네트워크에 있는 VPN을 사용하지 않도록 클라이언트를 구성합니다. 필요한 경우 연결별로 DNS 이름을 지정합니다.
 
-| &nbsp;&nbsp;옵션&nbsp;&nbsp; | 추가 정보 | &nbsp;&nbsp;연결&nbsp;유형&nbsp;&nbsp; |  
-|----------------|----------------------|---------------------|  
-|**영역**     |사용하려는 인증 영역. 인증 영역은 Pulse Secure 연결 유형에서 사용되는 인증 리소스 그룹입니다.|Pulse Secure|    
-|**역할**        |이 연결에 대한 액세스 권한이 있는 사용자 역할. |Pulse Secure|  
-|**로그인 그룹 또는 도메인** |연결하려는 로그인 그룹 또는 도메인의 이름.|Dell SonicWALL Mobile Connect|  
-|**지문**  |신뢰할 수 있는 VPN 서버를 확인하는 데 사용할 문자열(예: 'Contoso 지문 코드').<br /><br /> 지문은 다음과 같은 작업에 사용할 수 있습니다.<br /><br /> - 연결 시 동일한 지문을 제시하는 서버는 신뢰할 수 있다는 것을 알 수 있도록 클라이언트에 전송됩니다.<br /><br /> - 디바이스에 지문이 아직 없으면 사용자에게 지문을 보여주면서 연결하려는 VPN 서버를 신뢰할 것인지 묻는 메시지가 표시됩니다. 사용자는 지문을 수동으로 확인한 후 연결 **신뢰**를 선택합니다.|검사점 모바일 VPN|  
-|**VPN 연결을 통해 모든 네트워크 트래픽 보내기** |이 옵션을 선택하지 않는 경우 연결( **Microsoft SSL(SSTP)** , **Microsoft 자동**, **IKEv2**, **PPTP** 및 **L2TP** 연결 형식의 경우)에 대해 추가 경로를 지정할 수 있습니다. 이러한 경로를 분할 또는 VPN 터널링이라고 합니다.<br /><br /> 회사 네트워크에 대한 연결만 VPN 터널을 통해 보내집니다. VPN 터널링은 인터넷에 있는 리소스에 연결할 경우에는 사용되지 않습니다. |모두|  
-|**연결별 DNS 접미사** |연결에 대해 연결별 DNS(Domain Name System) 접미사.|- Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - PPTP<br /><br /> - L2TP|  
-|**회사 Wi-Fi 네트워크에 연결된 경우 VPN 무시**  |디바이스가 회사 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN<br /><br /> - Microsoft SSL(SSTP)<br /><br /> - Microsoft 자동<br /><br /> - IKEv2<br /><br /> - L2TP|  
-|**홈 Wi-Fi 네트워크 연결 시 VPN 건너뛰기**  |디바이스가 가정용 Wi-Fi 네트워크에 연결된 경우 VPN 연결이 사용되지 않습니다.|모두|  
-|**응용 프로그램 VPN(iOS 7 이상, Mac OS X 10.9 및 이후 버전)당** |앱이 실행될 때 연결이 열리도록 이 VPN 연결을 iOS 앱과 연결합니다. 앱을 배포할 때 VPN 프로필을 앱과 연결할 수 있습니다.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
-|**사용자 지정 XML(선택 사항)** |VPN 연결을 구성하는 사용자 지정 XML 명령을 지정합니다.<br /><br /> 예:<br /><br /> **Pulse Secure**의 경우:<br /><br /> **&lt;pulse-schema><br /> &nbsp; &lt;isSingleSignOnCredential>true&lt;/isSingleSignOnCredential\><br />&lt;/pulse-schema>**<br /><br /> **CheckPoint Mobile VPN**의 경우:<br /><br /> **&lt;CheckPointVPN <br /> &nbsp; port="443" name="CheckPointSelfhost" <br /> &nbsp; sso="true" <br /> &nbsp; debug="3"<br />/>**<br /><br /> **Dell SonicWALL Mobile Connect**의 경우:<br /><br /> **&lt;MobileConnect\><br />&nbsp; &nbsp; &lt;Compression\>false&lt;/Compression\><br />&nbsp; &nbsp; &lt;debugLogging\>True&lt;/debugLogging\><br />&nbsp; &nbsp; &lt;packetCapture\>False&lt;/packetCapture\><br />&lt;/MobileConnect\>**<br /><br /> **F5 Edge Client**의 경우:<br /><br /> **&lt;f5-vpn-conf>&lt;single-sign-on-credential>&lt;/f5-vpn-conf>**<br /><br /> 사용자 지정 XML 명령을 작성하는 방법에 대한 자세한 내용은 각 제조업체의 VPN 설명서를 참조하세요.|- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - 검사점 모바일 VPN|  
+1. 마법사의 **인증 방법** 페이지에서 연결 형식으로 지원되는 방법을 선택합니다. 이 페이지의 설정 및 사용 가능한 옵션은 선택한 연결 형식에 따라 달라집니다. 자세한 내용은 [인증 방법 참조](#bkmk_auth)를 참조하세요.
 
-> [!NOTE]  
->  모바일 디바이스에 대한 VPN 프로필 만들기에 특정한 정보는 [VPN 프로필 만들기](../../mdm/deploy-use/create-vpn-profiles.md)를 참조하세요.  
+1. **프록시 설정** 페이지에서 VPN이 프록시 서버를 사용하는 경우 환경에 적합한 옵션 중 하나를 선택합니다. 그런 다음 프록시에 대한 구성 정보를 제공합니다.
 
-마법사를 완료합니다. 새로운 VPN 프로필이 **자산 및 호환성** 작업 영역의 **VPN 프로필** 노드에 표시됩니다.
+1. **애플리케이션** 페이지는 Windows 10 프로필에만 적용됩니다. 이 VPN에 자동으로 연결되는 데스크톱 및 유니버설 앱을 추가합니다. 앱 형식에 따라 앱 식별자가 결정됩니다.
 
-### <a name="next-steps"></a>다음 단계
+    - *데스크톱 앱*의 경우 앱의 파일 경로를 제공합니다.
 
-- 타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 앱을 배포하는 방법에 대한 자세한 내용은 [Configuration Manager에서 애플리케이션 배포](../../apps/deploy-use/deploy-applications.md)를 참조하세요.
+    - *유니버설 앱*의 경우 PFN(패키지 패밀리 이름)을 제공합니다. 앱의 PFN을 찾는 방법은 [Find a package family name for per-app VPN](/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)(앱별 VPN에 대한 패키지 패밀리 이름 찾기)을 참조하세요.
 
-- [프로필을 배포 하는 방법](deploy-wifi-vpn-email-cert-profiles.md)에 설명 된 대로 VPN 프로필을 배포 합니다.  
+    **나열된 앱만 이 VPN을 사용할 수 있도록** 옵션을 구성할 수도 있습니다.
+
+    > [!IMPORTANT]
+    > 앱별 VPN 구성을 위해 컴파일하는 모든 관련 앱 목록을 보호해야 합니다. 권한이 없는 사용자가 목록을 변경하고 해당 목록을 앱별 VPN 앱 목록으로 가져오는 경우 액세스 권한이 부여되면 안 되는 앱에 VPN 액세스 권한을 잠재적으로 부여하게 됩니다.
+
+1. **경계** 페이지는 VPN 경계를 구성하는 Windows 10 프로필에만 적용됩니다. 다음 옵션을 추가할 수 있습니다.
+
+    - **네트워크 트래픽 규칙**: VPN 연결에 사용할 프로토콜, 로컬 포트, 원격 포트 및 주소 범위를 설정합니다.  
+
+        > [!Note]
+        > 네트워크 트래픽 규칙을 만들지 않으면 모든 프로토콜, 포트 및 주소 범위를 사용할 수 있습니다. 규칙을 만들고 나면 해당 규칙이나 추가 규칙에서 지정하는 프로토콜, 포트 및 주소 범위만 VPN 연결에 사용됩니다.
+
+    - **DNS 이름 및 서버**: 디바이스에서 연결을 설정한 후 VPN 연결에 사용되는 DNS 서버입니다.
+
+    - **경로**: VPN 연결을 사용하는 네트워크 경로입니다. 경로가 60개를 초과하면 정책이 실패할 수 있습니다.
+
+1. 마법사를 완료합니다.
+
+새로운 VPN 프로필이 **자산 및 호환성** 작업 영역의 **VPN 프로필** 노드에 표시됩니다.
+
+## <a name="bkmk_auth"></a>인증 방법 참조
+
+사용 가능한 VPN 인증 방법은 연결 형식에 따라 달라집니다.
+
+### <a name="certificates"></a>인증서
+
+클라이언트 인증서가 네트워크 정책 서버와 같은 RADIUS 서버를 인증하는 경우 인증서의 주체 대체 이름을 사용자 계정 이름으로 설정합니다.
+
+지원되는 연결 형식:
+
+- Pulse Secure
+- F5 Edge Client
+- Dell SonicWALL Mobile Connect
+- 검사점 모바일 VPN
+
+### <a name="username-and-password"></a>사용자 이름 및 암호
+
+지원되는 연결 형식:
+
+- Pulse Secure
+- F5 Edge Client
+- Dell SonicWALL Mobile Connect
+- 검사점 모바일 VPN
+
+### <a name="microsoft-eap-ttls"></a>Microsoft EAP-TTLS
+
+지원되는 연결 형식:
+
+- Microsoft SSL(SSTP)
+- Microsoft 자동
+- PPTP
+- IKEv2
+- L2TP
+
+### <a name="microsoft-protected-eap-peap"></a>Microsoft 보호된 EAP(PEAP
+
+지원되는 연결 형식:
+
+- Microsoft SSL(SSTP)
+- Microsoft 자동
+- IKEv2
+- PPTP
+- L2TP
+
+### <a name="microsoft-secured-password-eap-mschap-v2"></a>Microsoft 보안 암호(EAP-MSCHAP v2)
+
+지원되는 연결 형식:
+
+- Microsoft SSL(SSTP)
+- Microsoft 자동
+- IKEv2
+- PPTP
+- L2TP
+
+### <a name="smart-card-or-other-certificate"></a>스마트 카드 또는 기타 인증서
+
+지원되는 연결 형식:
+
+- Microsoft SSL(SSTP)
+- Microsoft 자동
+- IKEv2
+- PPTP
+- L2TP
+
+### <a name="mschap-v2"></a>MSCHAP v2
+
+지원되는 연결 형식:
+
+- Microsoft SSL(SSTP)
+- Microsoft 자동
+- IKEv2
+- PPTP
+- L2TP
+
+### <a name="use-machine-certificates"></a>컴퓨터 인증서 사용
+
+지원되는 연결 형식:
+
+- IKEv2
+
+### <a name="additional-authentication-options"></a>추가 인증 옵션
+
+Windows 클라이언트 버전에서 지원하는 경우 인증 방법을 **구성**하는 옵션을 사용할 수 있습니다. 이 옵션은 인증 방법을 구성하는 Windows 속성 창을 엽니다.
+
+선택한 옵션에 따라 다음과 같은 추가 정보를 지정하라는 메시지가 표시될 수 있습니다.
+
+- **로그온할 때마다 사용자 자격 증명 기억**: 사용자가 연결할 때마다 자격 증명을 입력할 필요가 없도록 사용자 자격 증명이 기억됩니다.  
+
+- **클라이언트 인증을 위해 클라이언트 인증서 선택**: VPN 연결을 인증하기 위해 이전에 만든 클라이언트 SCEP 인증서를 선택합니다. 자세한 내용은 [PFX 인증서 프로필 만들기](/configmgr/protect/deploy-use/create-pfx-certificate-profiles)를 참조하세요.
+
+## <a name="next-steps"></a>다음 단계
+
+- 타사 VPN 연결의 경우 VPN 프로필을 배포하기 전에 VPN 앱을 배포합니다. 앱을 배포하지 않고 VPN에 연결하려고 하면 앱을 배포하라는 메시지가 표시됩니다. 자세한 내용은 [애플리케이션 배포](/configmgr/apps/deploy-use/deploy-applications)를 참조하세요.
+
+- VPN 프로필을 배포합니다. 자세한 내용은 [프로필 배포 방법](/configmgr/protect/deploy-use/deploy-wifi-vpn-email-cert-profiles)을 참조하세요.

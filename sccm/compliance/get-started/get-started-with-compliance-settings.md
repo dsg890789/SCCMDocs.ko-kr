@@ -10,12 +10,12 @@ ms.assetid: a2742d52-851e-4abc-b623-d12d91684c0b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 7e963b7e2e6e333db8ccc1820ad27fb53cd06df1
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: 8f8f970438d86d8b1b9e3f87b1b07c3fc70735e1
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75816261"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035010"
 ---
 # <a name="get-started-with-compliance-settings-in-configuration-manager"></a>Configuration Manager에서 호환성 설정 시작
 
@@ -41,12 +41,9 @@ Configuration Manager 준수 설정을 만들기 전에 먼저 핵심 개념에 
 | 디바이스 유형 | 추가 정보 |  
 |------------|----------------------|  
 | Configuration Manager 클라이언트를 사용하여 Windows PC 관리 | 사용자 지정 구성 항목을 만들어 레지스트리 키, 파일 및 Active Directory 특성과 같은 개체를 평가합니다.<br /><br /> Windows 10 구성 항목 유형을 사용하는 경우 미리 정의된 목록에서 설정을 선택합니다. |  
-| Windows PC(Microsoft Intune에 등록) | 미리 정의된 목록에서 설정을 선택합니다. |  
-| iOS 디바이스(Microsoft Intune에 등록) | 미리 정의된 목록에서 설정을 선택합니다. |  
-| Android 디바이스(Microsoft Intune에 등록) | 미리 정의된 목록에서 설정을 선택합니다. |  
-| Windows Phone 디바이스(Microsoft Intune에 등록) | 미리 정의된 목록에서 설정을 선택합니다. |  
+| Windows PC(온-프레미스 MDM에 등록) | 미리 정의된 목록에서 설정을 선택합니다. |  
+| Windows Phone 디바이스(온-프레미스 MDM에 등록) | 미리 정의된 목록에서 설정을 선택합니다. |  
 | Mac 컴퓨터(Configuration Manager 클라이언트 포함) | 사용자 지정 구성 항목을 만들어 macOS 기본 설정과 같은 개체 및 스크립트에서 반환되는 결과를 평가합니다. |  
-| Mac 컴퓨터(Microsoft Intune에 등록) | 미리 정의된 목록에서 설정을 선택합니다. |  
 
 
 

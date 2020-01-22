@@ -1,8 +1,8 @@
 ---
 title: Wi-Fi 및 VPN 프로필 필수 조건
 titleSuffix: Configuration Manager
-description: Configuration Manager의 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필을 관리하는 데 필요한 보안 권한에 대해 알아봅니다.
-ms.date: 11/23/2016
+description: Configuration Manager에서 Wi-Fi 프로필 및 VPN 프로필을 관리하기 위한 필수 구성 요소에 대해 알아봅니다.
+ms.date: 01/14/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-protect
 ms.topic: conceptual
@@ -10,20 +10,20 @@ ms.assetid: d2dacb2d-ab3b-42a2-8dc8-94da31f993c2
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 4255b3f1e177979087c7d529f8fbca0263f74792
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
-ms.translationtype: HT
+ms.openlocfilehash: 66047bb63f0a5f26dcbc0ad91d4f4e5ae05ab68d
+ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.translationtype: MTE75
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75819151"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76035109"
 ---
 # <a name="prerequisites-for-wi-fi-and-vpn-profiles-in-configuration-manager"></a>Configuration Manager의 Wi-Fi 및 VPN 프로필에 대한 필수 구성 요소
 
 *적용 대상: Configuration Manager(현재 분기)*
 
-Configuration Manager의 Wi-Fi 및 VPN 프로필에는 제품 내 종속성만 있습니다.  
+Configuration Manager의 Wi-Fi 및 VPN 프로필에는 제품 내 종속성만 있습니다.
 
- 회사 리소스 액세스 설정(예: 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필)을 관리하려면 다음과 같은 보안 권한이 있어야 합니다.  
+회사 리소스 액세스 설정(예: 인증서 프로필, Wi-Fi 프로필 및 VPN 프로필)을 관리하려면 다음과 같은 보안 권한이 있어야 합니다.  
 
 - Wi-Fi 및 프로필에 대한 경고와 보고서를 보고 관리하려면: **경고** 개체에 대한 **만들기**, **삭제**, **수정**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.  
 
@@ -45,4 +45,4 @@ Configuration Manager의 Wi-Fi 및 VPN 프로필에는 제품 내 종속성만 �
 
 - Wi-Fi 프로필을 만들고 관리하려면 **Wi-Fi 프로필** 개체에 대한 **작성자 정책**, **보고서 수정**, **읽기** 및 **보고서 실행** 권한이 필요합니다.  
 
-  **회사 리소스 액세스 관리자** 보안 역할에는 Configuration Manager에서 Wi-Fi 프로필을 관리하는 데 필요한 이와 같은 권한이 포함됩니다. 자세한 내용은 [보안 구성](../../core/plan-design/security/configure-security.md)을 참조하세요.
+**회사 리소스 액세스 관리자** 기본 제공 보안 역할에는 Configuration Manager에서 Wi-Fi 프로필을 관리하는 데 필요한 이와 같은 권한이 포함됩니다. 자세한 내용은 [보안 구성](/configmgr/core/plan-design/security/configure-security)을 참조하세요.
