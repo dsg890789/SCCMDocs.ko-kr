@@ -10,12 +10,13 @@ ms.assetid: 65f44bc6-f993-4c2c-88ba-4c9cea5cb824
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 844ec124bde38e60fee4de41c1b20d243623ac74
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ROBOTS: NOINDEX
+ms.openlocfilehash: e1b367c4df3fee58c15bf6446ea4a4e44a16e577
+ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75805728"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520024"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-1909"></a>Configuration Manager Technical Preview 버전 1909의 기능
 

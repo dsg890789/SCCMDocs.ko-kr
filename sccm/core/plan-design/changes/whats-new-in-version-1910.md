@@ -2,7 +2,7 @@
 title: 버전 1910의 새로운 기능
 titleSuffix: Configuration Manager
 description: Configuration Manager 현재 분기의 버전 1910에 도입된 변경 내용 및 새로운 기능에 대해 자세히 설명합니다.
-ms.date: 12/20/2019
+ms.date: 01/22/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 3e1ddb65-1193-46ce-a7c0-a48dfd9fd833
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 43bedd7418079c3badb24869b4bde71e781112cc
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: c573710ae8ded624281cbca040c6036214fc233c
+ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75802398"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519905"
 ---
 # <a name="whats-new-in-version-1910-of-configuration-manager-current-branch"></a>Configuration Manager 현재 분기 버전 1910의 새로운 기능
 
@@ -156,7 +156,7 @@ Configuration Manager 현재 분기 버전 1906에 [Windows Virtual Desktop](/sc
 
 ### <a name="deploy-microsoft-edge-version-77-and-later"></a>Microsoft Edge, 버전 77 이상 배포
 <!--4561024-->
-모든 새로운 Microsoft Edge는 비즈니스용으로 준비됩니다. 이제 Microsoft Edge 버전 77 이상을 사용자에게 배포할 수 있습니다. 관리자는 배포할 Microsoft Edge 클라이언트 버전과 함께 베타 또는 개발 채널을 선택할 수 있습니다.
+모든 새로운 Microsoft Edge는 비즈니스용으로 준비됩니다. 이제 Microsoft Edge 버전 77 이상을 사용자에게 배포할 수 있습니다. 관리자는 배포할 Microsoft Edge 클라이언트 버전과 함께 베타, 개발 또는 안정적인 채널을 선택할 수 있습니다.
 
 자세한 내용은 [Microsoft Edge 버전 77 이상 배포](/sccm/apps/deploy-use/deploy-edge)를 참조하세요.
 
