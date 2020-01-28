@@ -262,14 +262,14 @@
       items:
         - name: 기술 미리 보기 개요
           href: get-started/technical-preview.md
+        - name: 2001 기능
+          href: get-started/2020/technical-preview-2001.md
         - name: 1912 기능
           href: get-started/2019/technical-preview-1912.md
         - name: 1911 기능
           href: get-started/2019/technical-preview-1911.md
         - name: 1910 기능
           href: get-started/2019/technical-preview-1910.md
-        - name: 1909 기능
-          href: get-started/2019/technical-preview-1909.md
     - name: 계층 구조 간에 데이터 마이그레이션
       items:
         - name: 마이그레이션 개요
@@ -811,7 +811,7 @@
       items:
         - name: 소개
           href: clients/manage/asset-intelligence/introduction-to-asset-intelligence.md
-        - name: 필수 구성 요소
+        - name: 전제 조건
           href: clients/manage/asset-intelligence/prerequisites-for-asset-intelligence.md
         - name: Asset Intelligence 구성
           href: clients/manage/asset-intelligence/configuring-asset-intelligence.md
