@@ -10,12 +10,12 @@ ms.assetid: 7ed389c3-a9ab-48ce-a5eb-27d52ee4fb94
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: fffa2c3d1e17796427aaac3110a57321c8becd0f
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: 3414c6b91831d67002a2dd85e0b523ab6de118ee
+ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76034573"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519973"
 ---
 # <a name="how-to-connect-configuration-manager-with-desktop-analytics"></a>Configuration Manager를 Desktop Analytics와 연결하는 방법
 
@@ -94,6 +94,8 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
 
     ![Azure Services 마법사의 사용 가능한 기능 페이지 예제](media/available-functionality.png)
 
+<a name="bkmk_Collections"></a> 
+
 8. **컬렉션** 페이지에서 다음 설정을 구성합니다.  
 
     - **표시 이름**: Desktop Analytics 포털에서 이 이름을 사용하여 이 Configuration Manager 연결을 표시합니다. 이를 사용하여 서로 다른 계층을 구분합니다. 예를 들어 *테스트 랩* 또는 *프로덕션*입니다.  
@@ -113,9 +115,11 @@ Desktop Analytics는 Configuration Manager와 긴밀하게 통합되어 있습�
         >     - CollectionB: CollectionA로 제한됨
         >         - CollectionC: CollectionB로 제한됨
         > - CollectionD: **모든 시스템** 컬렉션에 의해 제한됨
-
+        >
+        > 배포 계획을 사용한 그룹화를 위해 Desktop Analytics 포털에서 제공되는 컬렉션을 관리하려면 Configuration Manager 콘솔에서 **관리** 작업 영역으로 이동하고, **Cloud Services**를 확장하고, **Azure 서비스** 노드를 선택합니다. **Desktop Analytics** Azure 서비스와 연결된 항목을 선택하고 **Desktop Analytics 컬렉션** 페이지에서 설정을 업데이트합니다.
+        
         > [!Important]  
-        > 이러한 컬렉션은 멤버 자격 변경 내용에 따라 계속 동기화됩니다. 예를 들어 배포 계획에서는 Windows 7 멤버 자격 규칙이 있는 컬렉션을 사용합니다. 이러한 디바이스가 Windows 10으로 업그레이드되고 Configuration Manager에서 컬렉션 멤버 자격을 평가하면 해당 디바이스는 컬렉션 및 배포 계획에서 제외됩니다.  
+        > 멤버 자격이 변경됨에 따라 이러한 컬렉션도 계속 동기화됩니다. 예를 들어 대상 컬렉션은 Windows 7 멤버 자격 규칙이 있는 컬렉션을 사용합니다. 해당 디바이스가 Windows 10으로 업그레이드되고 Configuration Manager에서 컬렉션 멤버 자격을 평가하면 해당 디바이스는 컬렉션 및 Desktop Analytics에서 제외됩니다.  
 
 
 9. 마법사를 완료합니다.  

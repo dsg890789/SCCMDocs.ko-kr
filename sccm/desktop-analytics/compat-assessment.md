@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 217851c3e9059925ce96fbda50e906d027344369
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: f2543eeb84dd81b3ed138316918a5e9085b8aa1c
+ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75791740"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520007"
 ---
 # <a name="compatibility-assessment-in-desktop-analytics"></a>Desktop Analytics의 호환성 평가
 
@@ -69,8 +69,8 @@ Windows에서 이러한 자산을 부분적으로 또는 완전히 제거할 수
 Desktop Analytics 포털에서 이 추천 사항을 확인하려면 다음을 수행합니다.
 
 1. 배포 계획에서 **파일럿 준비**를 선택합니다.
-1. 목록에서 자산을 선택합니다.
-1. 사이드 창에서 호환성 위험 요소 및 추천 사항을 확인합니다.
+1. **앱** 탭을 선택합니다.
+1. 앱을 선택한 다음, 사이드 창에서 호환성 위험 요소 및 추천 사항을 확인합니다.
 
 ![Desktop Analytics 포털의 자산 추천 사항에 대한 스크린샷](media/3594545-app-removed.png)
 

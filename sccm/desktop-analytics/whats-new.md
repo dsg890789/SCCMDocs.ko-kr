@@ -2,7 +2,7 @@
 title: Desktop Analytics의 새로운 기능
 titleSuffix: Configuration Manager
 description: Desktop Analytics 클라우드 서비스의 최신 월간 릴리스의 새로운 기능에 대한 요약합니다.
-ms.date: 10/23/2019
+ms.date: 01/16/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,22 +10,36 @@ ms.assetid: fa300181-86cb-4afe-8fbf-895a7572378d
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 198e7667383c48959c8b6069a251f81c867d2d87
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: e5ce07df62baf5966cb438eb308b497becd8ecc3
+ms.sourcegitcommit: 73b30a26db1c1566195c109eeb6e709707ca9c5a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75791335"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309338"
 ---
 # <a name="whats-new-in-desktop-analytics"></a>Desktop Analytics의 새로운 기능
 
 매월 Desktop Analytics의 새로운 기능에 대해 알아봅니다.
 
-> [!Tip]
+> [!TIP]
 > 매월 업데이트를 출시하는 데 최대 3일이 걸릴 수 있습니다. 일부 기능은 몇 주에 걸쳐 출시될 수 있고 첫 번째 주에는 모든 고객에게 제공되지 않습니다.
 
 이 페이지가 업데이트될 때 알림을 받으려면 다음 URL을 복사하여 RSS 피드 판독기에 붙여넣으세요. `https://docs.microsoft.com/api/search/rss?search=%22what%27s+new+in+desktop+analytics+-+Configuration+Manager%22&locale=en-us`
 <!-- a locale is required for the RSS search string -->
+
+## <a name="january-2020"></a>2020년 1월
+
+### <a name="additional-app-usage-detail"></a>추가 앱 사용량 세부 정보
+
+<!-- 5533890 -->
+
+앱을 선택하여 자세한 정보를 볼 때 이제 세부 정보 창에 추가 사용량 정보가 포함됩니다. 이 데이터를 사용하여 앱의 설치 범위뿐 아니라 사용자가 앱을 정기적으로 사용하는 디바이스를 파악할 수 있습니다. 자세한 내용은 [자산 정보 - 앱 사용량](/configmgr/desktop-analytics/about-assets#usage)을 참조하세요.
+
+### <a name="provide-feedback-on-desktop-analytics"></a>Desktop Analytics에 대한 피드백 제공
+
+<!-- 5451636 -->
+
+Desktop Analytics에 대한 피드백을 공유하려면 오른쪽에서 포털 맨 위에 있는 **웃는 얼굴 보내기** 아이콘을 선택합니다. 자세한 내용은 [제품 피드백 공유](/configmgr/desktop-analytics/get-support#bkmk_feedback)를 참조하세요.
 
 ## <a name="october-2019"></a>2019년 10월
 
@@ -55,7 +69,6 @@ ms.locfileid: "75791335"
 
 사용자 환경에 Desktop Analytics를 설정했지만 서비스 사용을 중지하려는 경우 이제 계정을 종료할 수 있습니다. 90일 내에 마음이 바뀌면 계정을 다시 활성화할 수 있습니다. 자세한 내용은 [계정을 종료하는 방법](/sccm/desktop-analytics/account-close)을 참조하세요.
 
-
 ## <a name="august-2019"></a>2019년 8월
 
 ### <a name="reset-your-account"></a>계정 다시 설정
@@ -75,7 +88,6 @@ ms.locfileid: "75791335"
 - Microsoft Store에서 관리 및 업데이트된 앱
 
 자세한 내용은 [시스템 및 스토어 앱의 자동 업그레이드 결정](/sccm/desktop-analytics/about-assets#bkmk_plan-autoapp)을 참조하세요.
-
 
 ## <a name="whats-new-in-configuration-manager"></a>Configuration Manager의 새로운 기능
 

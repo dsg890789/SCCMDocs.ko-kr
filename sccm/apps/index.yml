@@ -1,0 +1,68 @@
+### YamlMime:Landing
+title: 앱 관리 설명서
+summary: Configuration Manager를 사용하여 애플리케이션, 스크립트 및 패키지를 관리하고 배포합니다. 배포를 자동화하거나 사용자가 소프트웨어 센터에서 앱을 설치할 수 있도록 합니다.
+metadata:
+  title: 앱 관리 설명서
+  titleSuffix: Configuration Manager
+  description: Configuration Manager를 사용하여 애플리케이션, 스크립트 및 패키지를 관리하고 배포합니다. 배포를 자동화하거나 사용자가 소프트웨어 센터에서 앱을 설치할 수 있도록 합니다.
+  ms.prod: configuration-manager
+  ms.technology: configmgr-app
+  ms.topic: landing-page
+  author: aczechowski
+  ms.author: aaroncz
+  ms.date: 01/28/2020
+  ms.openlocfilehash: 660ac671ff2d9aa3d96afa5bb4627d071cfc5baf
+  ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 01/30/2020
+  ms.locfileid: "76891927"
+landingContent:
+- title: 앱 관리 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 앱 관리 소개
+      url: understand/introduction-to-application-management.md
+    - text: 앱 관리 계획
+      url: plan-design/plan-for-and-configure-application-management.md
+    - text: 소프트웨어 센터 계획
+      url: plan-design/plan-for-software-center.md
+  - linkListType: tutorial
+    links:
+    - text: 앱 만들기 및 배포
+      url: get-started/create-and-deploy-an-application.md
+- title: 시작
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 앱 만들기
+      url: deploy-use/create-applications.md
+    - text: PowerShell 스크립트 만들기 및 실행
+      url: deploy-use/create-deploy-scripts.md
+  - linkListType: deploy
+    links:
+    - text: 앱 배포
+      url: deploy-use/deploy-applications.md
+    - text: Microsoft Edge 배포 및 업데이트
+      url: deploy-use/deploy-edge.md
+- title: 상위 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 앱 그룹 만들기
+      url: deploy-use/create-app-groups.md
+    - text: 앱 승인
+      url: deploy-use/app-approval.md
+    - text: 디바이스용 앱 설치
+      url: deploy-use/install-app-for-device.md
+    - text: 사용자 디바이스 선호도
+      url: deploy-use/link-users-and-devices-with-user-device-affinity.md
+    - text: 소프트웨어 계량을 사용하여 앱 사용 모니터링
+      url: deploy-use/monitor-app-usage-with-software-metering.md
+  - linkListType: reference
+    links:
+    - text: 앱 배포 문제 해결
+      url: understand/app-deployment-technical-reference.md
+    - text: 패키지 및 프로그램
+      url: deploy-use/packages-and-programs.md

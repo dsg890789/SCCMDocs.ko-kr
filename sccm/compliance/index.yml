@@ -1,0 +1,66 @@
+### YamlMime:Landing
+title: 디바이스 규정 준수 설명서
+summary: Configuration Manager는 조직에서 디바이스의 구성과 호환성을 관리하는 데 필요한 도구와 리소스를 제공합니다.
+metadata:
+  title: 디바이스 규정 준수 설명서
+  titleSuffix: Configuration Manager
+  description: Configuration Manager는 조직에서 디바이스의 구성과 호환성을 관리하는 데 필요한 도구와 리소스를 제공합니다.
+  ms.product: configuration-manager
+  ms.technology: configmgr-compliance
+  ms.topic: landing-page
+  author: mestew
+  ms.author: mstewart
+  ms.date: 01/25/2020
+  ms.openlocfilehash: 5d2637304f3690eab198ea4578381e6cfdae57e4
+  ms.sourcegitcommit: d2b6450fbc75e9937b090ab7d8a5e1d524c92f87
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76826631"
+landingContent:
+- title: 디바이스 규정 준수 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 디바이스 규정 준수 소개
+      url: understand/ensure-device-compliance.md
+    - text: 준수 설정 시작
+      url: get-started/get-started-with-compliance-settings.md
+  - linkListType: architecture
+    links:
+    - text: 준수 설정 계획 및 구성
+      url: plan-design/plan-for-and-configure-compliance-settings.md
+- title: 시작
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 준수 관리를 위한 일반 작업
+      url: plan-design/common-tasks-for-managing-compliance-on-devices-with-the-client.md
+    - text: Windows 10 디바이스에 대한 구성 항목 만들기
+      url: deploy-use/create-configuration-items-for-windows-10-devices-managed-with-the-client.md
+    - text: 구성 기준 만들기
+      url: deploy-use/create-configuration-baselines.md
+  - linkListType: deploy
+    links:
+    - text: 구성 기준 배포
+      url: deploy-use/deploy-configuration-baselines.md
+  - linkListType: how-to-guide
+    links:
+    - text: 준수 설정 모니터링
+      url: deploy-use/monitor-compliance-settings.md
+- title: 상위 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 사용자 지정 구성 항목 만들기
+      url: deploy-use/create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-client.md
+    - text: 원격 연결 프로필 만들기
+      url: deploy-use/create-remote-connection-profiles.md
+    - text: 사용자 데이터 및 프로필 구성 항목 만들기
+      url: deploy-use/create-user-data-and-profiles-configuration-items.md
+  - linkListType: concept
+    links:
+    - text: 비즈니스용 OneDrive 프로필
+      url: deploy-use/onedrive-profile.md
+    - text: 구성 데이터 관리
+      url: deploy-use/management-tasks-for-configuration-data.md

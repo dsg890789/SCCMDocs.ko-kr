@@ -10,12 +10,12 @@ ms.assetid: 38b2bed2-20dd-4ce1-abc0-219343d2c4b8
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 1f078f62dbfd076dc56b0d1a9fcc6da1a9fbe112
-ms.sourcegitcommit: cf978bfea545ed9116dacadfac830cbb08aaa649
+ms.openlocfilehash: 570ce9983740656304827c941972544efac95f89
+ms.sourcegitcommit: 87a051434ddc9510d9e790814e76050362d6c0ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75951648"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76256430"
 ---
 # <a name="what-is-desktop-analytics"></a>Desktop Analytics란?
 
@@ -65,7 +65,7 @@ Desktop Analytics를 사용하려면 사용자 환경이 다음과 같은 필수
 
 ### <a name="technical"></a>기술
 
-- [글로벌 관리자](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator-permissions) 사용 권한이 있는 활성 Azure 구독 [Microsoft 계정](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)은 지원되지 않습니다.  
+- 활성 전역 Azure 구독 - [전역 관리자](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#company-administrator-permissions) 권한 부여. [Microsoft 계정](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)은 지원되지 않습니다.  
 
     > [!Important]  
     > Desktop Analytics에서는 현재 Azure AD 테넌트에 Office 365 서비스를 배포해야 합니다. 이는 나중에 필요하지 않습니다.

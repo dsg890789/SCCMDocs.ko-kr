@@ -2,7 +2,7 @@
 title: 상태 모니터링
 titleSuffix: Configuration Manager
 description: Desktop Analytics에서 상태 모니터링이 작동하는 방식에 대해 알아봅니다.
-ms.date: 04/22/2019
+ms.date: 01/16/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 343dbe2a-597c-4719-b7ac-45b1f39b49ee
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e02c168a95aa7fb1eccefa773c8347764f43b955
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 5687d8eb2033365f9d13593f685f2d4f70d60549
+ms.sourcegitcommit: 73b30a26db1c1566195c109eeb6e709707ca9c5a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825611"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309406"
 ---
 # <a name="health-status-monitoring-in-desktop-analytics"></a>Desktop Analytics의 상태 모니터링
 
@@ -30,9 +30,9 @@ ms.locfileid: "75825611"
 
 특정 앱에 대한 자세한 정보를 보려면 목록에서 선택합니다.
 
-
-
 ## <a name="apps"></a>앱
+
+### <a name="health-status-factors"></a>상태 요인
 
 ![Desktop Analytics에서 앱에 대한 상태 요소](media/monitor-health-status-factors.png)
 
@@ -40,15 +40,25 @@ Desktop Analytics는 앱에 대한 다음 상태 요소를 모니터링합니다
 
 - **% 디바이스에서 작동 중단 발생**: 지난 2주 동안 이 특정 앱이 작동 중단하는 디바이스의 수는 앱이 사용된 디바이스의 수로 나눈 값입니다. 이 보기를 사용하면 새 OS 버전에서 앱 안정성이 증가 또는 감소되었는지 확인할 수 있습니다. Desktop Analytics는 다음 세트에 대해 이 비율을 계산합니다.  
 
-    - **업데이트 후**: 배포 계획에 지정된 대상 OS 버전으로 업데이트된 디바이스입니다. 데이터가 충분하지 않은 자산 수를 줄이기 위해 Desktop Analytics는 업데이트된 모든 디바이스에 대해 이 데이터를 수집합니다. 이 세트에는 배포 계획에 없는 디바이스가 포함됩니다.  
+  - **업데이트 후**: 배포 계획에 지정된 대상 OS 버전으로 업데이트된 디바이스입니다. 데이터가 충분하지 않은 자산 수를 줄이기 위해 Desktop Analytics는 업데이트된 모든 디바이스에 대해 이 데이터를 수집합니다. 이 세트에는 배포 계획에 없는 디바이스가 포함됩니다.  
 
-    - **업데이트 전**: 배포 계획에 지정된 것보다 이전 버전의 OS에 있는 디바이스입니다. 이 목록에는 Windows 7을 실행하는 디바이스가 포함되지 않습니다.  
+  - **업데이트 전**: 배포 계획에 지정된 것보다 이전 버전의 OS에 있는 디바이스입니다. 이 목록에는 Windows 7을 실행하는 디바이스가 포함되지 않습니다.  
 
-    - **상업용 평균**: 모든 상업용 디바이스에서 평균(avg) 중단율입니다. 이 평균은 *모든* 버전의 앱에서 계산됩니다. 버전이 중단율을 상업적 평균 이상으로 표시하는 경우 더 안정된 버전을 사용할 수 있습니다.  
+  - **상업용 평균**: 모든 상업용 디바이스에서 평균(avg) 중단율입니다. 이 평균은 *모든* 버전의 앱에서 계산됩니다. 버전이 중단율을 상업적 평균 이상으로 표시하는 경우 더 안정된 버전을 사용할 수 있습니다.  
 
 - **% 세션에서 작동 중단 발생**: 앞과 유사하지만 지난 2주 동안 중단이 발생한 세션의 비율을 계산합니다.  
 
 앱의 상태를 확인하기 위해 Desktop Analytics에는 20개 이상의 디바이스에 있는 데이터가 필요합니다. 그렇지 않으면 앱에 대한 **데이터 부족**을 보고합니다. 이 서비스는 이러한 디바이스에서 *세션 중단율*을 기준으로 상태를 계산합니다. 디바이스 중단율은 정보 제공용으로만 제공됩니다. 상태 계산에는 사용되지 않습니다.
+
+### <a name="usage"></a>사용
+
+<!-- 5533890 -->
+
+- **활성 디바이스**: 이 값은 사용자가 지난 2주 이내에 선택한 앱을 시작한 디바이스 수입니다. 대상 버전의 Windows 10을 실행하는 선택한 배포 계획의 디바이스를 기준으로 합니다.
+
+- **세션**: 이 값은 사용자가 대상 버전의 Windows에서 선택한 앱을 시작한 총 횟수입니다.
+
+### <a name="additional-tabs"></a>추가 탭
 
 앱 세부 정보 페이지의 아래쪽에서 다음 세 개의 탭을 통해 문제를 해결할 수 있습니다.
 
@@ -61,7 +71,6 @@ Desktop Analytics는 앱에 대한 다음 상태 요소를 모니터링합니다
 - **최근 중단**:  앱이 최근에 중단된 디바이스 목록입니다. 오류 ID 및 기타 조건을 기준으로 필터링할 수 있습니다. 이 정보를 사용하여 광범위한 배포를 시도하기 전에 로그를 수집하거나 특정 디바이스에서 수정을 시도하여 문제를 해결할 수 있습니다.  
 
 해결할 수 없는 심각한 상태 회귀를 발견한 경우 앱의 **업그레이드 결정**을 **할 수 없음**으로 변경합니다. 이 작업을 수행하면 이 자산이 포함된 디바이스에 대한 업데이트의 향후 배포를 방지합니다.
-
 
 ## <a name="see-also"></a>참고 항목
 

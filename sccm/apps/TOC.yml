@@ -1,5 +1,5 @@
-- name: 애플리케이션 관리
-  href: understand/introduction-to-application-management.md
+- name: 앱 관리 설명서
+  href: index.yml
 - name: 이해 및 탐색
   items:
     - name: 소개
@@ -90,7 +90,7 @@
       items:
         - name: PowerShell 스크립트 보안에 대해 알아보기
           href: deploy-use/learn-script-security.md
-    - name: Package Conversion Manager
+    - name: "Package\_Conversion\_Manager"
       items:
         - name: Package Conversion Manager 계획
           href: pcm/package-conversion-manager.md

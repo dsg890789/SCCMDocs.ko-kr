@@ -10,12 +10,12 @@ ms.assetid: 637fbd8e-b8ea-4c7e-95ee-a60a323c496e
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 63eddcf725a309ed67e74934646dc72785ee0f99
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: f595630598192032ecffe3f8aeb408876b484383
+ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825645"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519990"
 ---
 # <a name="how-to-deploy-to-pilot-with-desktop-analytics"></a>Desktop Analytics를 사용하여 파일럿에 배포하는 방법
 
@@ -43,7 +43,9 @@ Desktop Analytics의 데이터를 보면 최적의 검사를 위해 포함할 �
 - 파일럿에서 특정 디바이스 **바꾸기**
 - 변경 작업이 완료되면 **다시 계산**
 
-## <a name="global-pilot"></a>글로벌 파일럿
+**권장**에서 **포함** 파일럿 목록으로 디바이스를 추가하면 파일럿에 있는 중요 자산의 적용 범위 및 중복도가 증가합니다. 중복도가 높을수록 적용된 자산의 통계적으로 중요한 디바이스 수가 파일럿에 포함됨을 의미합니다. 
+
+## <a name="bkmk_GlobalPilot"></a>전역 파일럿
 
 또한 파일럿에서 포함하거나 제외할 Configuration Manager 컬렉션에 대해 시스템 차원의 결정을 내릴 수 있습니다. 주 Desktop Analytics 메뉴의 글로벌 설정 그룹에서 **글로벌 파일럿**을 선택합니다.
 

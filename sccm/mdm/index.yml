@@ -7,16 +7,15 @@ metadata:
   ms.prod: configuration-manager
   ms.technology: configmgr-hybrid
   ms.topic: landing-page
-  ms.collection: M365-identity-device-management
   author: aczechowski
   ms.author: aaroncz
   ms.date: 12/31/2019
-  ms.openlocfilehash: ca54f0b81aa12ab27121b4d7031e138ddc6a8ed4
-  ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+  ms.openlocfilehash: c936f187dd10d4cbbe825c6b1146f1dd57e162c8
+  ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 01/15/2020
-  ms.locfileid: "76036276"
+  ms.lasthandoff: 01/30/2020
+  ms.locfileid: "76891690"
 landingContent:
 - title: 온-프레미스 MDM에 대한 정보
   linkLists:

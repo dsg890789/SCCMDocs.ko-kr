@@ -2,7 +2,7 @@
 title: Desktop Analytics의 자산
 titleSuffix: Configuration Manager
 description: Desktop Analytics의 디바이스, 드라이버 및 앱에 대해 알아봅니다.
-ms.date: 08/14/2019
+ms.date: 01/16/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: d07198cf-49bb-4712-8c63-063b4302cc11
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e5d2ca6139783ba6fbb362434dcbd7b9b6878d3e
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 542c73dc329dc5c349b410694cedc9353075180e
+ms.sourcegitcommit: 73b30a26db1c1566195c109eeb6e709707ca9c5a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825713"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309355"
 ---
 # <a name="assets-in-desktop-analytics"></a>Desktop Analytics의 자산
 
@@ -25,7 +25,6 @@ ms.locfileid: "75825713"
 - 설치된 앱  
 
 서비스 포털의 Desktop Analytics 메뉴에서 **자산**을 선택합니다.
-
 
 ## <a name="devices"></a>디바이스
 
@@ -46,10 +45,9 @@ ms.locfileid: "75825713"
 
 - 중요
 - 중요
-- 무시 
+- 무시
 - 검토되지 않음
 - 중요하지 않음<!-- 3587232 -->
-
 
 목록에서 앱을 선택하고 **편집**을 선택합니다. 이 작업은 앱의 세부 정보를 표시합니다. **중요도** 드롭다운 메뉴를 선택하고 값을 설정합니다. **소유자**를 할당할 수도 있습니다. 변경한 경우 **저장**을 선택합니다.
 
@@ -62,8 +60,8 @@ ms.locfileid: "75825713"
 
 - Microsoft Store에서 관리 및 업데이트된 앱
 
-> [!Tip]
-> 글로벌 수준 또는 배포 계획에 따라 모든 앱의 입력을 관리합니다. 
+> [!TIP]
+> 글로벌 수준 또는 배포 계획에 따라 모든 앱의 입력을 관리합니다.
 >
 > 1. Desktop Analytics 포털의 **관리** 메뉴에서 **자산**을 선택합니다. 그런 다음, **앱**을 선택합니다.
 >
@@ -72,12 +70,17 @@ ms.locfileid: "75825713"
 >    - 스토어 앱의 경우 **형식**을 **최신**으로 필터링합니다.
 >    - 시스템 앱의 경우 **범주**를 **백그라운드 프로세스** 또는 **Windows 구성 요소**로 필터링합니다.
 
-
-
 배포 계획에서 **업그레이드 결정**을 설정할 수도 있습니다. 자세한 내용은 [계획 자산](/sccm/desktop-analytics/about-deployment-plans#plan-assets)을 참조하세요.
 
+### <a name="usage"></a>사용
 
+<!-- 5533890 -->
 
+- **총 설치**: 이 값은 모든 Desktop Analytics 등록 디바이스에 있는 선택한 앱의 설치 수입니다.
+
+- **설치 백분율**: 이 값은 총 Desktop Analytics 등록 디바이스에 대한 선택한 앱의 설치 백분율입니다.
+
+- **지난 30일간 이 앱을 시작한 디바이스**: 이 값은 사용자가 선택한 앱을 시작한 디바이스 수입니다. 지난 30일간 사용량을 보고한 디바이스만 포함합니다. 이 수는 모든 버전의 Windows 10에서 실행되는 Desktop Analytics에 등록된 모든 디바이스에서 계산됩니다. 이 수는 배포 계획에 따라 달라질 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

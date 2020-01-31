@@ -1,5 +1,5 @@
-- name: Desktop Analytics
-  href: overview.md
+- name: Desktop Analytics 설명서
+  href: index.yml
 - name: 개요
   items:
     - name: Desktop Analytics란?
@@ -44,7 +44,7 @@
   items:
     - name: 데이터 공유를 사용하도록 설정
       href: enable-data-sharing.md
-    - name: 개인 정보 보호
+    - name: 개인 정보 취급 방침
       href: privacy.md
     - name: 문제 해결
       href: troubleshooting.md

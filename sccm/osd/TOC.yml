@@ -1,5 +1,5 @@
-- name: OS 배포
-  href: understand/introduction-to-operating-system-deployment.md
+- name: OS 배포 설명서
+  href: index.yml
 - name: 이해
   items:
     - name: OS 배포 소개

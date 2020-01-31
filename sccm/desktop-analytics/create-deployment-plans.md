@@ -10,12 +10,12 @@ ms.assetid: 8e0e8496-136b-461f-8239-cc19c6b78c3b
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 18bb8d2431e096969d193f32747249b6b84ed37f
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 577b74425cc3293c7bf55fa13513877bad3c3960
+ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75791680"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519956"
 ---
 # <a name="how-to-create-deployment-plans-in-desktop-analytics"></a>Desktop Analytics에서 배포 계획을 만드는 방법
 
@@ -37,7 +37,7 @@ ms.locfileid: "75791680"
 
     - **제품 및 버전**: 배포할 Windows 10 버전을 선택합니다. 최신 버전을 사용하는 배포 계획을 만드는 것이 좋습니다.  
 
-    - **디바이스 그룹**: 하나 이상의 그룹을 선택한 다음, **대상 그룹으로 설정**을 선택합니다. 원본으로 **SCCM**을 포함하는 그룹은 Configuration Manager에서 동기화된 컬렉션입니다.  
+    - **디바이스 그룹**: 동일한 계층 구조에서 하나 이상의 그룹을 선택합니다. 해당 그룹은 Configuration Manager에서 동기화된 [디바이스 컬렉션](/configmgr/desktop-analytics/connect-configmgr#bkmk_Collections)입니다.  
 
     - **준비 규칙**: 이러한 규칙은 업그레이드에 적합한 디바이스를 확인하는 데 도움이 됩니다. 자세한 내용은 [준비 규칙](#readiness-rules)을 참조하세요.  
 
