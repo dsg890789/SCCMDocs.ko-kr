@@ -1,0 +1,84 @@
+### YamlMime:Landing
+title: 핵심 인프라 설명서
+summary: 사이트 서버 및 클라이언트를 비롯한 Configuration Manager 제품에 대한 기본 정보입니다.
+metadata:
+  title: 핵심 인프라 설명서
+  titleSuffix: Configuration Manager
+  description: 사이트 서버 및 클라이언트를 비롯한 Configuration Manager 제품에 대한 기본 정보입니다.
+  ms.prod: configuration-manager
+  ms.technology: configmgr-other
+  ms.topic: landing-page
+  author: aczechowski
+  ms.author: aaroncz
+  ms.date: 01/30/2020
+  ms.openlocfilehash: 6202e560a1f19cdc4556b213fb18177d5d2c9392
+  ms.sourcegitcommit: bfece120a6f9a79dbcc8bacc83905f16f3f1b144
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 02/01/2020
+  ms.locfileid: "76941230"
+landingContent:
+- title: 핵심 인프라 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Configuration Manager란?
+      url: understand/introduction.md
+    - text: Microsoft Endpoint Configuration Manager FAQ
+      url: understand/microsoft-endpoint-manager-faq.md
+    - text: 새로운 기능
+      url: plan-design/changes/whats-new-incremental-versions.md
+    - text: 기술 미리 보기
+      url: get-started/technical-preview.md
+  - linkListType: get-started
+    links:
+    - text: 콘솔 사용
+      url: servers/manage/admin-console.md
+    - text: 소프트웨어 센터 사용
+      url: understand/software-center.md
+    - text: 문서 사용
+      url: understand/use-docs.md
+    - text: 도움말 찾기
+      url: understand/find-help.md
+- title: 시작
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: 지원되는 구성
+      url: plan-design/configs/supported-configurations.md
+    - text: Windows 10에 대한 지원
+      url: plan-design/configs/support-for-windows-10.md
+    - text: 사이트 필수 조건
+      url: plan-design/configs/site-and-site-system-prerequisites.md
+  - linkListType: deploy
+    links:
+    - text: 업데이트 및 서비스
+      url: servers/manage/updates.md
+    - text: 콘솔 내 업데이트 설치
+      url: servers/manage/install-in-console-updates.md
+    - text: 클라이언트 배포
+      url: clients/deploy/deploy-clients-to-windows-computers.md
+    - text: 계층 구조 간 마이그레이션
+      url: migration/migrate-data-between-hierarchies.md
+- title: 상위 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: TLS 1.2 사용
+      url: plan-design/security/enable-tls-1-2.md
+    - text: CMPivot
+      url: servers/manage/cmpivot.md
+    - text: CMG에 대한 플랜
+      url: clients/manage/cmg/plan-cloud-management-gateway.md
+    - text: 고급 HTTP
+      url: plan-design/hierarchy/enhanced-http.md
+  - linkListType: reference
+    links:
+    - text: 로그 파일
+      url: plan-design/hierarchy/about-log-files.md
+    - text: 포트
+      url: plan-design/hierarchy/ports.md
+    - text: 클라이언트 설정
+      url: clients/deploy/about-client-settings.md
+    - text: 도구
+      url: support/tools.md
