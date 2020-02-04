@@ -1,5 +1,5 @@
 - name: 핵심 인프라
-  href: understand/introduction.md
+  href: index.yml
 - name: 이해 및 탐색
   items:
     - name: Configuration Manager란?
@@ -46,8 +46,6 @@
           href: understand/configuration-manager-on-azure.md
     - name: 사이트 크기 조정 및 성능에 대한 FAQ
       href: understand/site-size-performance-faq.md
-    - name: 진단 및 사용량 현황 데이터에 대한 FAQ
-      href: understand/frequently-asked-questions-about-diagnostics-and-usage-data.md
     - name: 제품 및 라이선스에 대한 FAQ
       href: understand/product-and-licensing-faq.md
     - name: 사용해야 하는 Configuration Manager 분기
@@ -204,24 +202,28 @@
       items:
         - name: 진단 및 사용량 현황 데이터 개요
           href: plan-design/diagnostics/diagnostics-and-usage-data.md
-        - name: 진단 및 사용량 현황 데이터 사용 방법
+        - name: Microsoft의 진단 및 사용량 현황 데이터 사용 방법
           href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md
-        - name: 1910에 대한 진단 데이터
-          href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1910.md
-        - name: 1906에 대한 진단 데이터
-          href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1906.md
-        - name: 1902에 대한 진단 데이터
-          href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1902.md
-        - name: 1810에 대한 진단 데이터
-          href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1810.md
-        - name: 1806에 대한 진단 데이터
-          href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806.md
-        - name: 진단 및 사용량 현황 데이터 수집 방법
+        - name: Configuration Manager의 데이터 수집 방법
           href: plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md
         - name: 진단 및 사용량 현황 데이터를 보는 방법
           href: plan-design/diagnostics/view-diagnostics-and-usage-data.md
-        - name: CEIP(사용자 환경 개선 프로그램)
-          href: plan-design/diagnostics/customer-experience-improvement-program-ceip.md
+        - name: 진단 및 사용 현황 데이터의 수준
+          items:
+            - name: 수준 개요
+              href: plan-design/diagnostics/levels-overview.md
+            - name: 버전 1910에 대한 데이터
+              href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1910.md
+            - name: 버전 1906에 대한 데이터
+              href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1906.md
+            - name: 버전 1902에 대한 데이터
+              href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1902.md
+            - name: 버전 1810에 대한 데이터
+              href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1810.md
+            - name: 버전 1806에 대한 데이터
+              href: plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1806.md
+        - name: 질문과 대답(FAQ)
+          href: plan-design/diagnostics/frequently-asked-questions.md
     - name: Configuration Manager에 대한 보안 및 개인 정보
       items:
         - name: 보안 및 개인 정보 개요
@@ -723,10 +725,6 @@
       items:
         - name: 클라이언트를 모니터링하는 방법
           href: clients/manage/monitor-clients.md
-        - name: Windows Analytics 사용
-          href: clients/manage/monitor-windows-analytics.md
-        - name: 업그레이드 준비
-          href: clients/manage/upgrade-readiness.md
         - name: Linux 및 UNIX 클라이언트를 모니터링하는 방법
           href: clients/manage/monitor-clients-for-linux-and-unix-servers.md
         - name: 클라이언트를 관리하는 방법
