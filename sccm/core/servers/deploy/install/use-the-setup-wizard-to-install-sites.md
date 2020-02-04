@@ -9,12 +9,12 @@ ms.assetid: 1f703376-5f2c-4fd2-8209-7028c931ddc7
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: e4325b5bfeff07768abb41462b9a737b955eb216
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 82e78e3c670b60a567ff7f9950b53071ca655305
+ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75797876"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76891623"
 ---
 # <a name="use-the-setup-wizard-to-install-configuration-manager-sites"></a>설치 마법사를 사용하여 Configuration Manager 사이트 설치
 
@@ -33,7 +33,9 @@ Configuration Manager 콘솔 내에서 보조 사이트를 설치합니다. 보�
 > - **필요한 필수 구성 요소 파일 다운로드**: `smssetup\bin\x64\setupdl.exe`. 자세한 내용은 [설치 다운로더](/sccm/core/servers/deploy/install/setup-downloader)를 참조하세요.
 > - **Configuration Manager 콘솔 설치**: `smssetup\bin\i386\consolesetup.exe`. 자세한 내용은 [콘솔 설치](/sccm/core/servers/deploy/install/install-consoles)를 참조하세요.
 > - [**System Center 업데이트 게시자 다운로드**](/sccm/sum/tools/updates-publisher) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626548 -->
-> - [**추가 운영 체제에 대한 클라이언트 다운로드**](https://www.microsoft.com/download/details.aspx?id=47719) <!-- https://go.microsoft.com/fwlink/p/?LinkId=626550 -->
+> - **추가 운영 체제에 대한 클라이언트 다운로드**: <!-- https://go.microsoft.com/fwlink/p/?LinkId=626550 -->
+>   - [Microsoft Endpoint Configuration Manager - macOS 클라이언트(64비트)](https://www.microsoft.com/download/details.aspx?id=100850)
+>   - [UNIX 및 Linux용 클라이언트](https://www.microsoft.com/download/details.aspx?id=47719)
 > - [**릴리스 정보**](/sccm/core/servers/deploy/install/release-notes) <!-- https://go.microsoft.com/fwlink/?LinkID=626571 -->
 > - [**설명서 읽기**](https://docs.microsoft.com/sccm)<!-- https://go.microsoft.com/fwlink/p/?LinkId=626547 -->
 > - **설치 지원 받기**: [TechNet 포럼: Configuration Manager(현재 분기) – 사이트 및 클라이언트 배포](https://social.technet.microsoft.com/Forums/en-us/home?forum=ConfigMgrDeployment) <!--NOTE: this link requires en-us locale to work-->   <!-- https://go.microsoft.com/fwlink/p/?LinkId=626549 -->

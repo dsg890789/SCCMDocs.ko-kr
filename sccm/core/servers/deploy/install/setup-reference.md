@@ -10,12 +10,12 @@ ms.assetid: cdb9fb0c-0912-41e4-b427-f40620971763
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 3fdcce193c7f586c731d25d9b5c374a84a4fb7fc
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 68dc0e0540eccabd07249b3b418b760d736f5be9
+ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75798011"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76891639"
 ---
 # <a name="reference-for-configuration-manager-setup"></a>Configuration Manager 설치에 대한 참조
 
@@ -40,13 +40,15 @@ Configuration Manager 사이트를 새로 설치하기 전에 성공적인 배�
 ##  <a name="bkmk_Addclients"></a> 추가 운영 체제에 대한 클라이언트  
 Microsoft 다운로드 센터에서 다음 운영 체제에 대한 Configuration Manager용 클라이언트 소프트웨어를 다운로드할 수 있습니다.  
 
--   Mac(Apple)  
--   UNIX  
--   Linux  
+- macOS(Apple)
+- UNIX
+- Linux
 
 사용하는 Configuration Manager 버전용 클라이언트를 다운로드하려면 다음 링크를 사용합니다.  
 
--   [Microsoft Configuration Manager - 추가 운영 체제용 클라이언트](https://www.microsoft.com/download/details.aspx?id=47719)를 참조하세요.  
+- [Microsoft Endpoint Configuration Manager - macOS 클라이언트(64비트)](https://www.microsoft.com/download/details.aspx?id=100850)
+
+- [추가 운영 체제용 Microsoft Configuration Manager 클라이언트](https://www.microsoft.com/download/details.aspx?id=47719)
 
 ##  <a name="bkmk_usage"></a> 사용량 현황 데이터 수준 및 설정  
 Configuration Manager 사이트를 처음 설치하는 경우 Configuration Manager가 자동으로 설치되고 사이트 서버에 새 사이트 시스템 역할 **서비스 연결 지점**이 구성됩니다. 서비스 연결 지점의 기본 설정은 다음과 같습니다.  

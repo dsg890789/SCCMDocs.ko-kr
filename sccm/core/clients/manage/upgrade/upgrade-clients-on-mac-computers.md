@@ -10,12 +10,12 @@ ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 412a2528e25e732f28146e9a5f82f8e7b7e7201e
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: be93688ec3433ba95b04fc8bbc287234602b9a31
+ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75823690"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76891582"
 ---
 # <a name="how-to-upgrade-clients-on-mac-computers-in-configuration-manager"></a>Configuration Manager에서 Mac 컴퓨터의 클라이언트를 업그레이드하는 방법
 
@@ -28,11 +28,11 @@ ms.locfileid: "75823690"
 
 ## <a name="download-the-latest-mac-client"></a>최신 Mac 클라이언트 다운로드
 
-Configuration Manager용 Mac 클라이언트는 Configuration Manager 설치 미디어에 제공되지 않습니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=47719)에서 다운로드합니다. Mac 클라이언트 설치 파일은 **ConfigmgrMacClient.msi**라는 Windows Installer 파일에 포함되어 있습니다.  
+Configuration Manager용 Mac 클라이언트는 Configuration Manager 설치 미디어에 제공되지 않습니다. Microsoft 다운로드 센터 [Microsoft Endpoint Configuration Manager- macOS 클라이언트(64비트)](https://www.microsoft.com/download/details.aspx?id=100850)에서 다운로드합니다. Mac 클라이언트 설치 파일은 **ConfigmgrMacClient.msi**라는 Windows Installer 파일에 포함되어 있습니다.  
 
 ## <a name="create-the-mac-client-installation-file"></a>Mac 클라이언트 설치 파일 만들기
 
-Windows를 실행하는 컴퓨터에서 **ConfigmgrMacClient.msi**를 실행합니다. 이 설치 관리자는 **Macclient.dmg**라는 Mac 클라이언트 설치 파일의 압축을 풉니다. 기본적으로 다음 폴더에서 이 파일을 찾을 수 있습니다. **C:\Program Files(x86)\Microsoft\System Center 2012 Configuration Manager Mac Client**.  
+Windows를 실행하는 컴퓨터에서 **ConfigmgrMacClient.msi**를 실행합니다. 이 설치 관리자는 **Macclient.dmg**라는 Mac 클라이언트 설치 파일의 압축을 풉니다. 기본적으로 다음 폴더에서 이 파일을 찾을 수 있습니다. **C:\Program Files\Microsoft\System Center Configuration Manager for Mac client**.  
 
 ## <a name="extract-the-client-installation-files"></a>클라이언트 설치 파일 추출
 

@@ -10,13 +10,12 @@ ms.assetid: ea78f726-b1b3-49b0-8141-d916be48c458
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ROBOTS: NOINDEX
-ms.openlocfilehash: f2543eeb84dd81b3ed138316918a5e9085b8aa1c
-ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
+ms.openlocfilehash: 6f63860d2d38740ea637c01e0ab543f4e0ab1e8c
+ms.sourcegitcommit: c49470c6b9b5a39fdf69d0125349b5c82d08b078
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520007"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726167"
 ---
 # <a name="compatibility-assessment-in-desktop-analytics"></a>Desktop Analytics의 호환성 평가
 
@@ -146,7 +145,7 @@ Desktop Analytics는 다음과 같은 추가 인사이트를 사용하여 문제
 
 ### <a name="adopted-version-available"></a>사용 가능한 채택 버전
 
-다른 고객이 많이 채택하는 이 앱의 또 다른 버전이 있습니다. 이 표시는 Ready for Windows의 데이터를 사용합니다. 현재 버전의 업그레이드 차단이 있는 경우 대체 버전을 대신 배포하는 것이 좋습니다.
+다른 고객이 많이 채택하는 이 앱의 또 다른 버전이 있습니다. 이 신호는 Windows 에코시스템으로부터 도입 데이터를 사용합니다. 현재 버전의 업그레이드 차단이 있는 경우 대체 버전을 대신 배포하는 것이 좋습니다. 대체 애플리케이션 도입 버전을 찾으려면 "프로덕션 준비"에서 애플리케이션 상태를 참조하세요.
 
 ### <a name="driver-dependency"></a>드라이버 종속성
 

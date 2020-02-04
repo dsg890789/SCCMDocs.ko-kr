@@ -2,7 +2,7 @@
 title: 지원되는 클라이언트 및 디바이스
 titleSuffix: Configuration Manager
 description: Configuration Manager에서 클라이언트 및 디바이스에 대해 지원하는 OS 버전을 알아봅니다.
-ms.date: 11/29/2019
+ms.date: 01/23/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: fda54091063cd95538c9d4b6353339224dc22fd7
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: ca3f26091f5bfbb8153f0fdf4cf58c108e987d21
+ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76034853"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76891605"
 ---
 # <a name="supported-os-versions-for-clients-and-devices-for-configuration-manager"></a>Configuration Manager의 클라이언트 및 디바이스에 대해 지원되는 OS 버전
 
@@ -203,7 +203,7 @@ Windows 소프트웨어 업데이트 관리와 관련되지 않은 클라이언�
 
 macOS용 Configuration Manager 클라이언트로 Apple Mac 컴퓨터를 관리하세요.  
 
-macOS 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=47719)에서 **추가 운영 체제용 클라이언트**를 다운로드합니다.  
+macOS 클라이언트 설치 패키지는 Configuration Manager 미디어와 함께 제공되지 않습니다. Microsoft 다운로드 센터 [Microsoft Endpoint Configuration Manager- macOS 클라이언트(64비트)](https://www.microsoft.com/download/details.aspx?id=100850)에서 다운로드합니다.  
 
 자세한 내용은 [How to deploy clients to Macs](/sccm/core/clients/deploy/deploy-clients-to-macs)(Mac에 클라이언트를 배포하는 방법)를 참조하세요.  
 
@@ -213,24 +213,11 @@ macOS 클라이언트 설치 패키지는 Configuration Manager 미디어와 함
 
 ### <a name="supported-versions"></a>지원되는 버전
 
+- **macOS Catalina(10.15)** (Configuration Manager 사이트 버전 1910 이상, macOS용 Configuration Manager 클라이언트 버전 5.0.8742.1000 이상 필요)
+
 - **macOS Mojave(10.14)**
 
 - **macOS High Sierra(10.13)**
-
-- **macOS Sierra(10.12)**
-
-- **macOS 10.11**(El Capitan)  
-
-- **macOs 10.10**(Yosemite)  
-
-- **macOs 10.9**(Mavericks)
-
-- **macOS 10.8**(Mountain Lion)
-
-- **macOS 10.7**(Lion)
-
-- **macOS 10.6**(Snow Leopard)
-
 
 ## <a name="linux-and-unix-servers"></a>Linux 및 UNIX 서버  
 

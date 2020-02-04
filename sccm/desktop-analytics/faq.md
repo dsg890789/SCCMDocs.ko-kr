@@ -10,12 +10,12 @@ ms.assetid: e0db3311-2303-4013-a906-76b408172d3c
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 279da97960866123e109fd8f51d9a6c81353c593
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 5b93b2ae2d8c92e796909b04b2c1a237106b99b9
+ms.sourcegitcommit: c49470c6b9b5a39fdf69d0125349b5c82d08b078
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825628"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726155"
 ---
 # <a name="desktop-analytics-faq"></a>Desktop Analytics FAQ
 
@@ -63,7 +63,7 @@ Desktop Analytics는 현재 위치 업그레이드를 가장 잘 지원하도록
 
 ### <a name="can-i-use-desktop-analytics-with-windows-10-ltsc"></a>Windows 10 LTSC에서 Desktop Analytics를 사용할 수 있나요?
 
-Desktop Analytics를 사용하여 Windows 10 LTSC(장기 서비스 채널)에서 Windows 10 반기 채널로 디바이스를 업데이트하는 데 도움을 제공할 수 있지만, Desktop Analytics에서는 Windows 10 LTSC로의 업데이트를 지원하지 않습니다. 이 Windows 10 채널은 광범위하게 사용하기 위한 것이 아니며 기능 업데이트를 수신하지 않으므로 Desktop Analytics에서 지원되는 대상이 아닙니다. 자세한 내용은 [Windows as a Service 개요](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)를 참조하세요.
+Desktop Analytics에서는 Windows 10 LTSC(장기 서비스 채널) 디바이스를 지원하지 않습니다. 자세한 내용은 [Windows as a Service 개요](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)를 참조하세요.
 
 ### <a name="can-i-reduce-the-amount-of-time-it-takes-for-data-to-refresh-in-my-desktop-analytics-portal"></a>내 Desktop Analytics 포털에서 데이터를 새로 고치는 데 걸리는 시간을 줄일 수 있나요?
 

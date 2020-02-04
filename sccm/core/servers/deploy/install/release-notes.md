@@ -2,7 +2,7 @@
 title: 릴리스 정보
 titleSuffix: Configuration Manager
 description: Microsoft 지원 기술 자료 문서에서 다루지 않거나 제품에서 아직 해결되지 않은 긴급한 문제에 대해 알아봅니다.
-ms.date: 01/14/2020
+ms.date: 01/27/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: bc899b6732d3fca21e35f82906001f25a942a4d6
-ms.sourcegitcommit: cf978bfea545ed9116dacadfac830cbb08aaa649
+ms.openlocfilehash: 5a03df7bb4e9860b34e7d2064e1006206c1d8f89
+ms.sourcegitcommit: d2b6450fbc75e9937b090ab7d8a5e1d524c92f87
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75951614"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76813827"
 ---
 # <a name="release-notes-for-configuration-manager"></a>Configuration Manager의 릴리스 정보
 
@@ -48,7 +48,7 @@ Configuration Manager에서는 제품 릴리스 정보가 긴급한 문제로 �
 
 사이트에서 [자동 클라이언트 업그레이드](/configmgr/core/clients/manage/upgrade/upgrade-clients#automatic-client-upgrade)를 사용하는 경우 사이트를 버전 1910로 업데이트하면 사이트가 성공적으로 업데이트된 후에 모든 클라이언트가 즉시 업그레이드됩니다. 클라이언트가 정책을 받는 경우에만 임의 설정됩니다(기본적으로 1시간마다). 많은 클라이언트를 사용하는 큰 사이트의 경우 이 동작으로 인해 많은 양의 네트워크 트래픽 및 스트레스 배포 지점이 소비될 수 있습니다.
 
-이 문제를 해결하려면 자동 클라이언트 업그레이드를 일시적으로 사용하지 않도록 설정합니다. 다른 [클라이언트 업그레이드 방법](/configmgr/core/clients/manage/upgrade/upgrade-clients)을 사용하세요. Microsoft는 자동 클라이언트 업그레이드를 계속 사용할 수 있도록 이 문제에 대한 핫픽스를 곧 릴리스할 예정입니다.
+영향을 받는 버전에 대한 자세한 내용은 [Configuration Manager 현재 분기, 버전 1910용 클라이언트 업데이트](https://support.microsoft.com/help/4538166)를 참조하세요.
 
 ### <a name="site-server-in-passive-mode-doesnt-update-configurationmof"></a>수동 모드의 사이트 서버가 configuration.mof를 업데이트하지 않음
 
@@ -205,6 +205,20 @@ Configuration Manager 콘솔을 사용하여 파일럿 배포 상태를 모니�
 
 ## <a name="cloud-services"></a>Cloud Services
 
+### <a name="azure-service-for-us-government-cloud-shows-as-public-cloud"></a>미국 정부 클라우드용 Azure 서비스가 퍼블릭 클라우드로 표시됩니다.
+
+<!-- 6036748 -->
+
+*버전 1910에 적용*
+
+Azure 서비스에 대한 연결을 만들고 **Azure 환경**을 정부 클라우드로 설정하는 경우 연결 속성은 환경을 Azure 퍼블릭 클라우드로 표시합니다. 이 문제는 콘솔에서의 표시 문제일 뿐이며, 서비스는 정부 클라우드에 있습니다. 구성을 확인하려면 사이트 데이터베이스에서 다음 SQL 쿼리를 실행하세요.
+
+```SQL
+Select Environment, Name, TenantID From AAD_Tenant_Ex
+```
+
+정부 클라우드의 경우 이 쿼리의 결과가 특정 테넌트에 대해 `2`입니다.
+
 ### <a name="cant-download-content-from-a-cloud-management-gateway-enabled-for-tls-12"></a>TLS 1.2를 사용하도록 설정된 클라우드 관리 게이트웨이에서 콘텐츠를 다운로드할 수 없음
 
 <!-- 5771680 -->
@@ -234,3 +248,15 @@ ERROR: Exception processing request. Microsoft.WindowsAzure.Storage.StorageExcep
 - 2019년 12월 20일에 출시되어 전 세계적으로 사용 가능한 1910 버전으로 사이트를 업데이트합니다. 이전에 1910 초기 업데이트 링으로 업데이트한 경우에는 사용 가능할 때 이 빌드로 업데이트해야 합니다.
 
 - 또는 기존의 [클라우드 배포 지점](/configmgr/core/plan-design/hierarchy/use-a-cloud-based-distribution-point)을 사용합니다. 이 역할은 TLS 1.2를 적용하지는 않지만 TLS 1.2가 필요한 클라이언트와 호환됩니다.
+
+## <a name="protection"></a>보호
+
+### <a name="bitlocker-management-appears-in-version-1906"></a>BitLocker 관리가 버전 1906에 표시됩니다.
+
+*버전 1906에 적용*
+
+<!-- 5984688 -->
+
+2019년 11월 21일 이후로 버전 1902 또는 이전 버전에서 버전 1906로 업데이트하는 경우 BitLocker 관리 기능이 설정되고 사용 가능합니다. 이 기능은 버전 1910부터 시작되는 선택적 기능입니다. 버전 1906에서는 지원되지 않습니다. 이 기능을 버전 1906에서 사용하려고 시도하는 경우 예기치 않은 결과가 발생할 수 있습니다. 이 기능을 사용하지 않는 경우에는 영향을 주지 않습니다.
+
+[BitLocker 관리 기능](/configmgr/protect/plan-design/bitlocker-management)을 사용하려면 버전 1910으로 업데이트하세요.

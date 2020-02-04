@@ -2,7 +2,7 @@
 title: 제품 및 라이선스 FAQ
 titleSuffix: Configuration Manager
 description: Configuration Manager에 대한 일반적인 제품 및 라이선스 질문의 대답을 알아봅니다.
-ms.date: 11/29/2019
+ms.date: 01/24/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: ee8d611f-aa0c-4efd-b0ad-dbd14d0a0623
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 0cf5cca3093b5975cbb04b284de6740f977fc3fb
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: fc6eb9c4e932fd98eeb2e7b41eb87b320704d648
+ms.sourcegitcommit: d2b6450fbc75e9937b090ab7d8a5e1d524c92f87
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76034617"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76813929"
 ---
 # <a name="frequently-asked-questions-for-configuration-manager-branches-and-licensing"></a>Configuration Manager 분기 및 라이선스에 대한 질문과 대답
 
@@ -70,9 +70,9 @@ https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-pla
 
 ### <a name="bkmk_mem"></a> Microsoft Endpoint Manager의 리브랜딩으로 인해 변경되는 사항이 있나요?
 
-예. 기존에 Configuration Manager를 사용하도록 라이선스가 부여된 경우 Intune을 사용하여 Windows PC를 [공동 관리](/configmgr/comanage/overview)에 등록할 수 있습니다. 이로 인해 Microsoft Endpoint Manager로 Windows 디바이스를 더욱 쉽게 관리할 수 있게 됩니다.
+예. 2019년 12월 1일부로, 기존에 Configuration Manager를 사용하도록 라이선스가 부여된 경우 Intune을 사용하여 Windows PC를 [공동 관리](/configmgr/comanage/overview)에 등록할 수 있습니다. 이로 인해 Microsoft Endpoint Manager로 Windows 디바이스를 더욱 쉽게 관리할 수 있게 됩니다.
 
-소프트웨어 보증이 있는 Configuration Manager 고객이 공동 관리를 위해 Intune 라이선스를 추가로 구매하지 않아도 Intune PC 관리 권한을 가질 수 있도록 해 주는 새로운 라이선스가 공개되었습니다. 이제 더 이상 사용자에게 개별 Intune 또는 EMS 라이선스를 할당하지 않아도 됩니다.
+소프트웨어 보증이 있는 Configuration Manager 고객이 공동 관리를 위해 Intune 라이선스를 추가로 구매하지 않아도 Intune PC 관리 권한을 가질 수 있도록 해 주는 새로운 라이선스가 공개되었습니다. 이제 더 이상 개별 Intune 또는 EMS 라이선스를 구매하여 사용자에게 할당하지 않아도 됩니다.
 
 - Configuration Manager로 관리되고 공동 관리에 등록된 디바이스는 독립 실행형 Intune으로 관리되는 PC와 거의 동일한 권리를 갖습니다. 단, 다시 설정된 뒤에는 AutopIlot으로 다시 프로비저닝할 수 없습니다.
 
@@ -81,7 +81,6 @@ https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-pla
 - iOS, Android 또는 macOS 디바이스의 관리를 위해 Intune을 사용하려는 경우에는 독립 실행형 Intune 라이선스, EMS(Enterprise Mobility + Security) 또는 Microsoft 365를 통해 적절한 Intune 구독이 필요합니다.
 
 - 이전에 System Center Configuration Manager에서 이용했던 라이선싱도 종전과 같이 Microsoft Endpoint Configuration Manager에 적용됩니다. 새 사이트를 설치할 때는 기존 제품 키를 사용하세요.
-
 
 ### <a name="bkmk_ems-expires"></a> Enterprise Mobility + Security가 있지만 만료되었습니다. 이제 어떻게 해야 하나요?  
 

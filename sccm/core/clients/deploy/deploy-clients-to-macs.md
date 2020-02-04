@@ -10,12 +10,12 @@ ms.assetid: e46ad501-5d73-44ac-92de-0de14ef72b83
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: e60a2bceee5736556164ab27ecb90cc155be8e4e
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: ad3d8fbc0b424778e71375eb4201339db1934428
+ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75825118"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76891547"
 ---
 # <a name="how-to-deploy-clients-to-macs"></a>Mac에 클라이언트를 배포하는 방
 
@@ -80,11 +80,11 @@ Mac 컴퓨터에 대한 등록을 구성하려면 [기본 클라이언트 설정
 
 
 
-## <a name="bkmk_download"></a> Mac 클라이언트 다운로드  
+## <a name="bkmk_download"></a> macOS용 클라이언트 다운로드
 
-1. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=47719)에서 Mac OS X 클라이언트 파일 패키지를 다운로드합니다. **ConfigmgrMacClient.msi**를 Windows를 실행하는 컴퓨터에 저장합니다. 이 파일은 Configuration Manager 설치 미디어에 없습니다.  
+1. macOS 클라이언트 파일 패키지 [Microsoft Endpoint Configuration Manager - macOS 클라이언트(64비트)](https://www.microsoft.com/download/details.aspx?id=100850)를 다운로드합니다. **ConfigmgrMacClient.msi**를 Windows를 실행하는 컴퓨터에 저장합니다. 이 파일은 Configuration Manager 설치 미디어에 없습니다.  
 
-2. Windows 컴퓨터에서 설치 관리자를 실행합니다. **Macclient.dmg** Mac 클라이언트 패키지를 로컬 디스크의 폴더에 추출합니다. 기본 경로는 `C:\Program Files (x86)\Microsoft\System Center 2012 Configuration Manager Mac Client`입니다.  
+2. Windows 컴퓨터에서 설치 관리자를 실행합니다. **Macclient.dmg** Mac 클라이언트 패키지를 로컬 디스크의 폴더에 추출합니다. 기본 경로는 `C:\Program Files\Microsoft\System Center Configuration Manager for Mac client`입니다.  
 
 3. **Macclient.dmg** 파일을 Mac 컴퓨터의 폴더에 복사합니다.  
 
