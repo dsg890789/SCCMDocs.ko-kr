@@ -264,6 +264,8 @@
       items:
         - name: 기술 미리 보기 개요
           href: get-started/technical-preview.md
+        - name: 2001.2 기능
+          href: get-started/2020/technical-preview-2001-2.md
         - name: 2001 기능
           href: get-started/2020/technical-preview-2001.md
         - name: 1912 기능
