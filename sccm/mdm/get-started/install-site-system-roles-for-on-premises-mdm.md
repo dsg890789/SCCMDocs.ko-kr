@@ -10,12 +10,12 @@ ms.assetid: c3cf9f64-c2b9-4ace-9527-2aba6d4eef04
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 25df578e0fed22778b2d670a85cb8d25aa47acfa
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: 3768d5930c2523fbc9a5be3e68788206915ec73e
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76035210"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035235"
 ---
 # <a name="install-site-system-roles-for-on-premises-mdm-in-configuration-manager"></a>Configuration Manager에서 온-프레미스 MDM에 대 한 사이트 시스템 역할 설치
 
@@ -31,13 +31,13 @@ Configuration Manager 온-프레미스 MDM (모바일 장치 관리)을 사용 �
 
 - 장치 관리 지점-모바일 장치에 대해 허용 하는 관리 지점
 
-## <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항:
+## <a name="requirements-and-limitations"></a>요구 사항 및 제한 사항
 
 - 온-프레미스 MDM을 사용 하려면 HTTPS 통신에 대 한 사이트 시스템 역할을 사용 하도록 설정 해야 합니다. 자세한 내용은 [온-프레미스 MDM에서 신뢰할 수 있는 통신에 대 한 인증서 설정](/sccm/mdm/get-started/set-up-certificates-on-premises-mdm)을 참조 하세요.
 
 - 현재 Configuration Manager 분기는 장치에서 온-프레미스 MDM에 대 한 배포 지점 및 장치 관리 지점으로의 *인트라넷* 연결만 지원 합니다. 그러나 macOS 컴퓨터도 관리 하는 경우 해당 클라이언트는 동일한 역할에 대 한 *인터넷* 연결이 필요 합니다. 배포 지점 및 장치 관리 지점을 구성할 때 **인트라넷 및 인터넷 연결을 허용**하는 옵션을 사용 합니다.
 
-- 인트라넷 연결에 대해 구성 하는 배포 지점의 경우 사이트 경계를 구성 해야 합니다. Configuration Manager은 온-프레미스 MDM에 대 한 IPv4 범위 경계를 지원 합니다. 자세한 내용은 [사이트 경계 및 경계 그룹 정의](/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)를 참조하세요.
+- 인트라넷 연결에 대해 구성 하는 배포 지점의 경우 사이트 경계를 구성 해야 합니다. Configuration Manager은 온-프레미스 MDM에 대 한 IPv4 범위 경계를 지원 합니다. 자세한 내용은 [사이트 경계 및 경계 그룹 정의](/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups)를 참조하세요.
 
 - 장치 관리 지점에서 [데이터베이스 복제본](/configmgr/core/servers/deploy/configure/database-replicas-for-management-points) 을 사용 하는 경우 새로 등록 된 장치는 처음에 연결에 실패 합니다. 이 연결 오류는 데이터베이스 복제본에 성공적인 연결에 필요한 새로 등록 된 장치에 대 한 정보가 없기 때문에 발생 합니다. 복제본은 5 분 마다 동기화 됩니다. 장치는 등록 후 처음 5 분 동안 연결 되지 않고 일반적으로 두 번 연결을 시도 합니다. 그러면 장치가 성공적으로 연결 됩니다.
 
