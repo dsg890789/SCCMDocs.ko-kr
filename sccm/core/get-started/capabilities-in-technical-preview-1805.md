@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: c5dcda08e66ad2b11d62c4d14a8ebbcf411dfdc8
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: d60b99bc17c40e20e6472b367a67b06f9f22a15f
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75804438"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035269"
 ---
 # <a name="capabilities-in-technical-preview-1805-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1805의 기능
 
@@ -227,7 +227,7 @@ Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데
 
 CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화할 수 있습니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다.
 
-예를 들어, [잘못된 실행 부채널 취약성을 완화](https://blogs.technet.microsoft.com/configurationmgr/2018/01/08/additional-guidance-to-mitigate-speculative-execution-side-channel-vulnerabilities/)할 때 요구 사항 중 하나는 시스템 BIOS 업데이트입니다. CMPivot을 사용하여 시스템 BIOS 정보를 신속하게 쿼리하고 준수하지 않는 클라이언트를 찾을 수 있습니다. 
+예를 들어, [잘못된 실행 부채널 취약성을 완화](https://techcommunity.microsoft.com/t5/configuration-manager-blog/additional-guidance-to-mitigate-speculative-execution-side/ba-p/274974)할 때 요구 사항 중 하나는 시스템 BIOS 업데이트입니다. CMPivot을 사용하여 시스템 BIOS 정보를 신속하게 쿼리하고 준수하지 않는 클라이언트를 찾을 수 있습니다. 
 
 다음 스크린샷에서 CMPivot은 각각 디바이스 수가 하나인 별도의 BIOS 버전 두 개를 보여 줍니다. CMPivot을 사용해 볼 때 이 예제 쿼리를 사용할 수 있습니다.  
 `Registry('hklm:\\Hardware\\Description\\System\\BIOS') | where (Property == 'BIOSVersion') | summarize dcount( Device ) by Value`  

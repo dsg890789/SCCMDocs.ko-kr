@@ -10,12 +10,12 @@ ms.assetid: 7e4ec207-bb49-401f-af1b-dd705ecb465d
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 7dff8764acdb0b1b29139dbb894ca7d7b830d970
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: ec8ff67f131d065eda98152925aa7a6f4a949b20
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75798944"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035218"
 ---
 # <a name="configure-sql-server-always-on-availability-groups-for-configuration-manager"></a>Configuration Manager용 SQL Server Always On 가용성 그룹 구성
 
@@ -131,7 +131,7 @@ ms.locfileid: "75798944"
 
 Configuration Manager 설치 프로그램은 SQL 데이터베이스 이동 작업을 사용하며 노드가 올바르게 구성되었는지 확인합니다.
 
-버전 1902 또는 이전 버전에서 이 프로세스를 수동으로 수행하는 자세한 방법은 [ConfigMgr 1702: 기존 SQL AO AG에 새 노드(보조 복제본) 추가](https://blogs.technet.microsoft.com/umairkhan/2017/07/17/configmgr-1702-adding-a-new-node-secondary-replica-to-an-existing-sql-ao-ag/)를 참조하세요.
+버전 1902 또는 이전 버전에서 이 프로세스를 수동으로 수행하는 자세한 방법은 [ConfigMgr 1702: 기존 SQL AO AG에 새 노드(보조 복제본) 추가](https://techcommunity.microsoft.com/t5/configuration-manager-archive/configmgr-1702-adding-a-new-node-secondary-replica-to-an/ba-p/339960)를 참조하세요.
 
 ### <a name="remove-a-replica-member"></a>복제본 구성원 제거
 

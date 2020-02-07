@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8062136a9a6a753dabadffa111bf09d9e9396a56
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: 3f5abd4dcd762cedc7159f81ce25dd441ed9586c
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76034594"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035286"
 ---
 # <a name="capabilities-in-technical-preview-1702-for-configuration-manager"></a>Configuration Manager용 Technical Preview 1702의 기능
 
@@ -148,7 +148,7 @@ Windows Update for Business 업데이트에 대한 준수 평가 정보를 수�
 4. 작업이 끝나면 **확인**을 클릭합니다.
 
 ### <a name="monitor-the-compliance-policy"></a>규정 준수 정책 모니터링
-준수 정책을 만든 후 Configuration Manager 콘솔에서 준수 결과를 모니터링할 수 있습니다. 자세한 내용은 [준수 정책 모니터링](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)을 참조하세요.
+준수 정책을 만든 후 Configuration Manager 콘솔에서 준수 결과를 모니터링할 수 있습니다. 자세한 내용은 [준수 정책 모니터링](https://docs.microsoft.com/sccm/protect/deploy-use/create-compliance-policy)을 참조하세요.
 
 
 ## <a name="improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences"></a>영향력이 큰 작업 순서에 대한 소프트웨어 센터 설정 및 알림 메시지 개선

@@ -11,12 +11,12 @@ author: mestew
 ms.author: mstewart
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 54373c35717307d97be66363265e0395d47d53ee
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: 5333c6f6cbed0f8d13ab90a559ebf5500dfafaf7
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76034546"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035371"
 ---
 # <a name="what39s-new-in-version-1610-of-configuration-manager"></a>Configuration Manager 1610 버전의 새로운 기능
 
@@ -196,7 +196,7 @@ Configuration Manager 현재 분기의 업데이트 1610은 버전 1511, 1602 �
 
 
 ## <a name="intune-compliance-policy-charts"></a>Intune 준수 정책 차트
-이제 Configuration Manager 콘솔의 **모니터링** 작업 영역 아래에 있는 새 차트를 사용하여 디바이스의 전체 준수 및 주요 비준수 이유에 대한 간략한 보기를 볼 수 있습니다. 차트에서 섹션을 클릭하여 해당 범주의 디바이스 목록으로 드릴다운할 수 있습니다. 자세한 내용은 [준수 정책 모니터링](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)을 참조하세요.
+이제 Configuration Manager 콘솔의 **모니터링** 작업 영역 아래에 있는 새 차트를 사용하여 디바이스의 전체 준수 및 주요 비준수 이유에 대한 간략한 보기를 볼 수 있습니다. 차트에서 섹션을 클릭하여 해당 범주의 디바이스 목록으로 드릴다운할 수 있습니다. 자세한 내용은 [준수 정책 모니터링](/sccm/protect/deploy-use/create-compliance-policy)을 참조하세요.
 
 
 ## <a name="lookout-integration-for-hybrid-implementations-to-protect-ios-and-android-devices"></a>하이브리드 구현에서 iOS 및 Android 디바이스를 보호하기 위한 Lookout 통합

@@ -10,12 +10,12 @@ ms.assetid: c5a42100-2f60-4952-b495-918025ea6559
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: f211f8b7a75070feecf221bcdc27a550fd4cc3f0
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: 552ac6d1f974b41fa97e7343e72a187c99c9b44f
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76034864"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035167"
 ---
 # <a name="size-and-scale-numbers-for-configuration-manager"></a>Configuration Manager의 크기 및 비율 값
 
@@ -153,7 +153,7 @@ ms.locfileid: "76034864"
 
     IIS 애플리케이션 풀:
     - WsusPool 큐 길이를 2000으로 증가
-    - WsusPool 프라이빗 메모리 제한을 4배로 늘리거나 0(무제한)으로 설정합니다. 예를 들어, 기본 제한이 1,843,200KB이면 7,372,800으로 증가합니다. 자세한 내용은 이 [Configuration Manager 지원 팀 블로그 게시물](https://blogs.technet.microsoft.com/configurationmgr/2015/03/23/configmgr-2012-support-tip-wsus-sync-fails-with-http-503-errors/)을 참조하세요.  
+    - WsusPool 프라이빗 메모리 제한을 4배로 늘리거나 0(무제한)으로 설정합니다. 예를 들어, 기본 제한이 1,843,200KB이면 7,372,800으로 증가합니다. 자세한 내용은 이 [Configuration Manager 지원 팀 블로그 게시물](https://www.phoenixtekk.com/configmgr-2012-support-tip-wsus-sync-fails-with-http-503-errors/)을 참조하세요.  
 
     소프트웨어 업데이트 지점의 하드웨어 요구 사항에 대한 자세한 내용은 [사이트 시스템용 권장 하드웨어](/sccm/core/plan-design/configs/recommended-hardware#bkmk_ScaleSieSystems)를 참조하세요.  
 

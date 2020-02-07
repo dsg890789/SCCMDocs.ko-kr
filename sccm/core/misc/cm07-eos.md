@@ -11,12 +11,12 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8c3abca9caec6c0e59d43bb9b2f871d45a13c867
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: d85343adc0a4a450e1a2247cc6932c7b7c3be195
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75803027"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035337"
 ---
 # <a name="product-end-of-support"></a>지원 종료 제품
 
@@ -42,7 +42,7 @@ Microsoft는 다음 마이그레이션 계획을 권장합니다.
 자세한 내용은 다음 아티클을 참조하세요.
 
 - [Microsoft 지원 문서](https://support.microsoft.com/help/4096323)  
-- [Configuration Manager 지원 블로그 게시글](https://blogs.technet.microsoft.com/configurationmgr/2018/03/30/configuration-manager-2007-approaching-end-of-support-what-you-need-to-know/)  
+- [Configuration Manager 지원 블로그 게시글](https://techcommunity.microsoft.com/t5/configuration-manager-blog/configuration-manager-2007-approaching-end-of-support-what-you/ba-p/274995)  
 - [Configuration Manager 현재 분기 소개](/sccm/core/understand/introduction)  
 - [Configuration Manager 현재 분기로 마이그레이션하는 방법에 관한 문서](/sccm/core/migration/migrate-data-between-hierarchies)  
     이 문서에는 일반적인 마이그레이션 시나리오를 설명하고 보여주는 비디오도 포함되어 있습니다.

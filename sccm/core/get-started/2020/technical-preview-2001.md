@@ -10,12 +10,12 @@ ms.assetid: ec4f18de-861b-4198-935f-44d7ca4de41c
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: dbf46368f03feeefbf6d7732fc7f5d0101a2a49e
-ms.sourcegitcommit: d1c6f3f2fa6821f15041e73d411cc4e1de0850ba
+ms.openlocfilehash: 9dc874269463c49efb693f5078cbc33c4da37a4c
+ms.sourcegitcommit: 36920d640a322ed44e34fb5bbc5027c66633bd72
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520644"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975817"
 ---
 # <a name="features-in-configuration-manager-technical-preview-version-2001"></a>Configuration Manager 기술 미리 보기 버전 2001의 기능
 
@@ -36,8 +36,9 @@ ms.locfileid: "76520644"
 [!INCLUDE [OneTrace log groups](includes/2001/5559993.md)]
 [!INCLUDE [Improvements to administration service](includes/2001/5728365.md)]
 [!INCLUDE [Wake up a device from the central administration site](includes/2001/6030715.md)]
-[!INCLUDE [Improvements to task sequence progress](includes/2001/2356386.md)]
 
+[!INCLUDE [Improvements to task sequence progress](includes/2001/2356386.md)]
+<!-- 5932692, fka 2356386 -->
 
 <!--
 ## General known issues

@@ -2,7 +2,7 @@
 title: SQL 복제 문제 해결
 titleSuffix: Configuration Manager
 description: 이러한 다이어그램을 사용하여 Configuration Manager 사이트 간 SQL 복제를 이해하고 관련 문제를 해결할 수 있습니다.
-ms.date: 08/09/2019
+ms.date: 02/05/2020
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.assetid: 71d7430e-c5aa-485b-8dc0-c80fd8f29f17
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 26bba05d2d19758a9e1d7bb0f605c272b2a1b0b5
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: e8c2e6cc42e8945cf1cfc20f26f3c6dae6c6c989
+ms.sourcegitcommit: 5ffa00d961b5b166cd723e732e4f0fd5325d584b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75826291"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051369"
 ---
 # <a name="troubleshoot-sql-replication"></a>SQL 복제 문제 해결
 
@@ -39,8 +39,8 @@ SQL 복제 관련 문제를 보다 잘 이해하고 해결하려면 다음 다�
 
 자세한 내용은 Microsoft 지원에서 다음 블로그 시리즈를 참조하세요.
 
-- [ConfigMgr DRS 동기화 내부](https://blogs.technet.microsoft.com/umairkhan/2019/06/01/configmgr-drs-synchronization-internals/)
-- [ConfigMgr 2012 DRS(데이터 복제 서비스) 제한 해제](https://blogs.technet.microsoft.com/umairkhan/2014/02/17/configmgr-2012-data-replication-service-drs-unleashed/)
-- [ConfigMgr 2012 DRS – 문제 해결 FAQ](https://blogs.technet.microsoft.com/umairkhan/2014/03/24/configmgr-2012-drs-troubleshooting-faqs/)
-- [ConfigMgr 2012 DRS 초기화 내부](https://blogs.technet.microsoft.com/umairkhan/2015/01/21/configmgr-2012-drs-initialization-internals/)
-- [ConfigMgr 2012: DRS 및 SQL Service Broker 인증서 이슈](https://blogs.technet.microsoft.com/umairkhan/2013/12/12/configmgr-2012-drs-and-sql-service-broker-certificate-issues/)
+- [ConfigMgr DRS 동기화 내부](https://techcommunity.microsoft.com/t5/configuration-manager-archive/configmgr-drs-synchronization-internals/ba-p/1154317)
+- [ConfigMgr 2012 DRS(데이터 복제 서비스) 제한 해제](https://techcommunity.microsoft.com/t5/configuration-manager-archive/configmgr-2012-data-replication-service-drs-unleashed/ba-p/339916)
+- [ConfigMgr 2012 DRS – 문제 해결 FAQ](https://techcommunity.microsoft.com/t5/configuration-manager-archive/configmgr-2012-drs-troubleshooting-faqs/ba-p/339934)
+- [ConfigMgr 2012 DRS 초기화 내부](https://techcommunity.microsoft.com/t5/configuration-manager-archive/configmgr-2012-drs-initialization-internals/ba-p/339948)
+- [ConfigMgr 2012: DRS 및 SQL Service Broker 인증서 이슈](https://techcommunity.microsoft.com/t5/configuration-manager-archive/configmgr-2012-drs-and-sql-service-broker-certificate-issues/ba-p/339910)

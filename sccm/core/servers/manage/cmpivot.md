@@ -10,12 +10,12 @@ ms.assetid: 32e2d6b9-148f-45e2-8083-98c656473f82
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 50112b1ed19b23e355bfd64c4320be8d84802359
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: e7d9062d45d553eb2aa8b83621cecda46a17aa9b
+ms.sourcegitcommit: e7583b5e522d01bc8710ec8e0fe3e5f75a281577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75796101"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77035320"
 ---
 # <a name="cmpivot-for-real-time-data-in-configuration-manager"></a>Configuration Manager에서 실시간 데이터에 대한 CMPivot
 
@@ -25,7 +25,7 @@ ms.locfileid: "75796101"
 
 Configuration Manager는 고객이 보고용으로 사용하는 디바이스 데이터의 대규모 중앙 저장소를 항상 제공해왔습니다. 이 사이트는 일반적으로 매주 이 데이터를 수집합니다. 버전 1806부터 CMPivot은 사용자 환경에서 디바이스의 실시간 상태에 액세스할 수 있는 새로운 콘솔 내 유틸리티입니다. 이 유틸리티는 대상 컬렉션에서 현재 연결된 모든 디바이스에 대해 바로 쿼리를 실행하고 결과를 반환합니다. 그러면 도구에서 이 데이터를 필터링하고 그룹화합니다. 온라인 클라이언트에서 실시간 데이터를 제공함으로써 비즈니스 질문에 신속하게 대답하고 문제를 해결하며 보안 인시던트에 응답할 수 있습니다.
 
-예를 들어, [잘못된 실행 부채널 취약성을 완화](https://blogs.technet.microsoft.com/configurationmgr/2018/01/08/additional-guidance-to-mitigate-speculative-execution-side-channel-vulnerabilities/)할 때 요구 사항 중 하나는 시스템 BIOS 업데이트입니다. CMPivot을 사용하여 시스템 BIOS 정보를 신속하게 쿼리하고 준수하지 않는 클라이언트를 찾을 수 있습니다.
+예를 들어, [잘못된 실행 부채널 취약성을 완화](https://techcommunity.microsoft.com/t5/configuration-manager-blog/additional-guidance-to-mitigate-speculative-execution-side/ba-p/274974)할 때 요구 사항 중 하나는 시스템 BIOS 업데이트입니다. CMPivot을 사용하여 시스템 BIOS 정보를 신속하게 쿼리하고 준수하지 않는 클라이언트를 찾을 수 있습니다.
 
  > [!Tip]  
  > 일부 보안 소프트웨어는 c:\windows\ccm\scriptstore에서 실행되는 스크립트를 차단할 수 있습니다. 이 기능은 CMPivot 쿼리가 성공적인 실행되지 않도록 막을 수 있습니다. 일부 보안 소프트웨어는 CMPivot PowerShell을 실행할 때 감사 이벤트 또는 경고를 생성할 수도 있습니다.
@@ -221,7 +221,7 @@ CMPivot 창은 다음과 같은 요소를 포함합니다.
 
 ### <a name="example-3-bios-version"></a>예제 3: BIOS 버전
 
-[잘못된 실행 부채널 취약성을 완화](https://blogs.technet.microsoft.com/configurationmgr/2018/01/08/additional-guidance-to-mitigate-speculative-execution-side-channel-vulnerabilities/)하기 위해 요구 사항 중 하나는 시스템 BIOS를 업데이트하는 것입니다. **BIOS** 엔터티에 대한 쿼리를 시작합니다. 그런 다음, **버전** 속성별로 **그룹화**합니다. 그런 다음, "LENOVO - 1140"과 같은 특정 값을 마우스 오른쪽 단추로 클릭하고 **다음과 함께 디바이스 표시**를 선택합니다.  
+[잘못된 실행 부채널 취약성을 완화](https://techcommunity.microsoft.com/t5/configuration-manager-blog/additional-guidance-to-mitigate-speculative-execution-side/ba-p/274974)하기 위해 요구 사항 중 하나는 시스템 BIOS를 업데이트하는 것입니다. **BIOS** 엔터티에 대한 쿼리를 시작합니다. 그런 다음, **버전** 속성별로 **그룹화**합니다. 그런 다음, "LENOVO - 1140"과 같은 특정 값을 마우스 오른쪽 단추로 클릭하고 **다음과 함께 디바이스 표시**를 선택합니다.  
 
 `Bios | summarize countif( (Version == 'LENOVO - 1140') ) by Device | where (countif_ > 0)`
 

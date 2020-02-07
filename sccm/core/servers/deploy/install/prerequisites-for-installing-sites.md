@@ -10,12 +10,12 @@ ms.assetid: 92b339ef-2723-4322-bec6-077b3e8846b0
 author: mestew
 ms.author: mstewart
 manager: dougeby
-ms.openlocfilehash: 0da6cbc4d05334b54184b41b506d849d544701e2
-ms.sourcegitcommit: 148745e1c3d9817d8beea20684a54436210959c6
+ms.openlocfilehash: 3158c55ad7e0ba62f4607eaf69560bc87badfe06
+ms.sourcegitcommit: bfece120a6f9a79dbcc8bacc83905f16f3f1b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75798099"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76917185"
 ---
 # <a name="prerequisites-for-installing-configuration-manager-sites"></a>Configuration Manager 사이트 설치에 대한 필수 조건
 
@@ -131,7 +131,6 @@ Configuration Manager만 계층의 최상위 사이트에서 이러한 역할을
 사이트를 확장한 다음 Configuration Manager에서 다음의 Azure 서비스를 다시 구성해야 합니다.
 
 - [Log Analytics](/sccm/core/clients/manage/sync-data-log-analytics)  
-- [업그레이드 준비](/sccm/core/clients/manage/upgrade-readiness)  
 - [비즈니스용 Microsoft Store](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)  
 - [클라우드 관리 게이트웨이](/sccm/core/clients/manage/cmg/plan-cloud-management-gateway)
 

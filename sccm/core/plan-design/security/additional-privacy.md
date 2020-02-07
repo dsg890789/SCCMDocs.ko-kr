@@ -10,12 +10,12 @@ ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.openlocfilehash: 3f9a3f89881fd96261ac7723a879bd1d075d1290
-ms.sourcegitcommit: 4ca147f2bb3de35bd5089743c832e00bc3babd19
+ms.openlocfilehash: c7908ce69984e7bf1c9c4efa98aef4229110fc09
+ms.sourcegitcommit: bfece120a6f9a79dbcc8bacc83905f16f3f1b144
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76033607"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76917266"
 ---
 # <a name="additional-information-about-privacy-for-configuration-manager"></a>Configuration Manager의 개인정보보호 대한 추가 정보
 
@@ -40,19 +40,6 @@ Configuration Manager는 사이트 SQL Server 데이터베이스에서만 데이
 관리자는 Configuration Manager 콘솔의 **사용량 데이터** 섹션으로 이동하여 수집된 데이터의 수준을 변경할 수 있습니다.
 
 사용량 데이터 수준 및 설정에 대한 자세한 내용은 [진단 및 사용량 데이터](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)를 참조하세요.
-
-
-
-## <a name="customer-experience-improvement-program"></a>사용자 환경 개선 프로그램
-
-> [!Note]  
-> Configuration Manager 버전 1802부터 CEIP 기능은 제품에서 제거됩니다.
-
-"CEIP"(사용자 환경 개선 프로그램)는 사용 패턴과 경향을 파악하기 위해 Configuration Manager 콘솔에서 사용자의 하드웨어 구성과 소프트웨어 및 서비스 사용 방식에 대한 기본 정보를 수집하는 기능입니다. 또한 CEIP는 발생한 오류 유형과 개수, 소프트웨어 및 하드웨어 성능, 서비스의 속도를 수집합니다. 그러나 사용자 이름, 주소 또는 기타 연락처 정보는 수집하지 않습니다. 또한 클라이언트 컴퓨터에서는 어떤 CEIP 데이터도 수집하지 않습니다.
-
-수집된 정보는 Microsoft 소프트웨어 및 서비스의 품질, 안정성 및 성능을 개선하는 데 사용됩니다.
-
-CEIP를 통해 수집, 처리 또는 전송되는 정보에 대한 자세한 내용은 [CEIP 개인정보취급방침](https://go.microsoft.com/fwlink/?LinkID=525211)을 참조하세요.
 
 
 
