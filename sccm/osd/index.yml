@@ -3,6 +3,7 @@ title: OS 배포 설명서
 summary: Configuration Manager을 사용하여 다양한 방법으로 Windows를 배포하고 작업을 자동화합니다.
 metadata:
   title: OS 배포 설명서
+  titleSuffix: Configuration Manager
   description: Configuration Manager을 사용하여 다양한 방법으로 Windows를 배포하고 작업을 자동화합니다.
   ms.prod: configuration-manager
   ms.technology: configmgr-osd
@@ -10,12 +11,12 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   ms.date: 01/28/2020
-  ms.openlocfilehash: 4930abfcaf700f757c82e4520585888157a74320
-  ms.sourcegitcommit: 4d49103722654f12ffe8df4d5848def44b7e1eb3
+  ms.openlocfilehash: db10cd75964e1828784474600ad7ec4bd7b3313e
+  ms.sourcegitcommit: be37256f98120ad30d5f7925bc32f05a07f15984
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 01/30/2020
-  ms.locfileid: "76891944"
+  ms.lasthandoff: 02/07/2020
+  ms.locfileid: "77071455"
 landingContent:
 - title: OS 배포 정보
   linkLists:

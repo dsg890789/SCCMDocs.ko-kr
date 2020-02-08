@@ -3,12 +3,12 @@ title: Microsoft Endpoint Configuration Manager 설명서
 summary: 'Microsoft Endpoint Manager의 다음 구성 요소에 대한 공식 제품 설명서: Configuration Manager, 공동 관리 및 Desktop Analytics'
 metadata:
   ms.topic: hub-page
-  ms.openlocfilehash: b7bb0dccb8930987d79158b705a33bfecca3649e
-  ms.sourcegitcommit: 2f34d9457d95a9bd25603699fcf0e26cac77ad30
+  ms.openlocfilehash: deed7e7893e921c2672bd33489dfd8f08c7a7e15
+  ms.sourcegitcommit: be37256f98120ad30d5f7925bc32f05a07f15984
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/29/2019
-  ms.locfileid: "74661008"
+  ms.lasthandoff: 02/07/2020
+  ms.locfileid: "77071921"
 highlightedContent:
   items:
   - title: 새로운 기능
@@ -55,7 +55,7 @@ conceptualContent:
       itemType: overview
     footerLink:
       text: 자세히 보기
-      url: ./comanage/overview.md
+      url: ./comanage/index.yml
   - title: 실시간 관리
     links:
     - text: CMPivot
@@ -80,7 +80,7 @@ conceptualContent:
       itemType: learn
     footerLink:
       text: 자세히 보기
-      url: ./desktop-analytics/overview.md
+      url: ./desktop-analytics/index.yml
   - title: 인프라 간소화
     links:
     - text: 사이트 서버 고가용성
@@ -105,7 +105,7 @@ conceptualContent:
       itemType: learn
     footerLink:
       text: 자세히 보기
-      url: ./core/understand/introduction.md
+      url: ./core/index.yml
   - title: 앱 관리
     links:
     - text: 앱 만들기
@@ -122,7 +122,7 @@ conceptualContent:
       itemType: how-to-guide
     footerLink:
       text: 자세히 보기
-      url: ./apps/understand/introduction-to-application-management.md
+      url: ./apps/index.yml
   - title: OS 배포
     links:
     - text: Windows 10으로 업그레이드
@@ -136,7 +136,7 @@ conceptualContent:
       itemType: learn
     footerLink:
       text: 자세히 보기
-      url: ./osd/understand/introduction-to-operating-system-deployment.md
+      url: ./osd/index.yml
   - title: 소프트웨어 업데이트
     links:
     - text: 소프트웨어 업데이트 계획
@@ -153,7 +153,7 @@ conceptualContent:
       itemType: how-to-guide
     footerLink:
       text: 자세히 보기
-      url: ./sum/understand/software-updates-introduction.md
+      url: ./sum/index.yml
   - title: 디바이스 정책 준수
     links:
     - text: 구성 항목 만들기
@@ -167,7 +167,7 @@ conceptualContent:
       itemType: how-to-guide
     footerLink:
       text: 자세히 보기
-      url: ./compliance/understand/ensure-device-compliance.md
+      url: ./compliance/index.yml
   - title: 보호
     links:
     - text: Windows Defender
@@ -181,7 +181,7 @@ conceptualContent:
       itemType: overview
     footerLink:
       text: 자세히 보기
-      url: ./protect/understand/protect-data-and-site-infrastructure.md
+      url: ./protect/index.yml
 additionalContent:
   sections:
   - title: Configuration Manager 커뮤니티 및 지원
@@ -201,7 +201,7 @@ additionalContent:
     - title: 제품 지원
       summary: Microsoft 지원에서 전문가의 도움을 받으세요
       url: https://aka.ms/cmcbsupport
-    - title: System Center 2012 R2 Configuration Manager
+    - title: System  Center  2012  R2  Configuration  Manager
       summary: 이전 버전의 Configuration Manager 설명서
       url: https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682144(v=technet.10)
   - title: 다른 콘텐츠
@@ -210,7 +210,7 @@ additionalContent:
       links:
       - url: https://docs.microsoft.com/powershell/sccm/overview?view=sccm-ps
         text: PowerShell
-      - url: ./develop/core/misc/system-center-configuration-manager-sdk.md
+      - url: ./develop/index.yml
         text: SDK 개념
       - url: ./develop/reference/configuration-manager-reference.md
         text: SDK 참조
@@ -223,7 +223,7 @@ additionalContent:
       - url: ./mdt/index.yml
         text: MDT
       - url: ./apps/pcm/package-conversion-manager.md
-        text: Package Conversion Manager
+        text: Package Conversion Manager
       - url: ./core/support/tools.md
         text: 자세히 보기 >
     - title: 다른 커뮤니티 사이트
